@@ -24,6 +24,33 @@ Nothing here is playable yet. What exists:
   [docs/GAME_CAREER_SIM.md](docs/GAME_CAREER_SIM.md)).
 - A placeholder showcase page ([site/index.html](site/index.html)).
 
+## Broader research: IslamicateOccultPortal
+
+`../IslamicateOccultPortal/` (sibling project, added 2026-08-30) is the broader
+research home this game's world is drawn from — lettrism, the Brethren of Purity,
+al-Buni, and the courtly networks beyond Ibn Turka's own story specifically. It holds:
+- A larger source corpus (21 sources beyond TurkaGame's own 3 papers) with full text
+  preserved for research (`../IslamicateOccultPortal/corpus/`).
+- **The image catalog** — every manuscript/portrait/diagram image referenced or
+  extracted from the scholarly sources, including TurkaGame's own 3 papers
+  (`../IslamicateOccultPortal/CLAUDE.md` § "Image catalog"). This is a research index
+  of what's *available*; it is not the same thing as this project's
+  `assets/manuscripts/registry.json`, which tracks only images already cleared and
+  copied for actual game use. When looking for a candidate manuscript image to bring
+  into a TurkaGame prototype, start in the portal's image catalog
+  (`../IslamicateOccultPortal/site/images/index.html` or query
+  `../IslamicateOccultPortal/db/islamicate.db` directly), then run it through
+  `research/scripts/register_asset.py` here once its rights are actually checked.
+- A `game_connections` table recording which portal concepts/figures have been used
+  in which of *this* project's design docs — query it before assuming a piece of
+  research hasn't been tapped yet.
+
+TurkaGame's own `research/` folder was deliberately kept separate rather than
+migrated into the portal (see [docs/DECISIONS.md](docs/DECISIONS.md)) — this project
+stays the game-prototypes workspace; the portal is the DH research project. Add new
+biographical/cosmological facts about Ibn Turka's world to the portal's seed first if
+they're general research, not TurkaGame-specific game design.
+
 ## Ground rules for this project specifically
 
 - **No copyrighted source PDFs in the repo.** The scholarly articles this project is built

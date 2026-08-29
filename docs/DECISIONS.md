@@ -39,6 +39,26 @@ the 3dprintlab project.
 `t3dy/TurkaGame` already existed (created 2026-08-29) with placeholder description
 "Islamicate Chill Pills: The Video Game." Left as-is — not changed without asking.
 
+## IslamicateOccultPortal (2026-08-30)
+
+A broader DH research portal, `C:\Dev\IslamicateOccultPortal`, was created as a
+**new sibling project** rather than folded into TurkaGame's own `research/` — matching
+the pattern of this workspace's other knowledge portals (WitcherPortal,
+IlluminatusPortal): SQLite source of truth, Python static-site generator, vanilla
+HTML/CSS/JS. TurkaGame's own research/ was NOT migrated into it; the two stay
+separate, cross-linked via a `game_connections` table in the portal's DB and pointers
+in this file's CLAUDE.md. Reasoning: TurkaGame is a game-prototypes workspace, the
+portal is the general Islamicate-occult-world research project — Ibn Turka's own
+story is one figure within a much larger corpus (Brethren of Purity, al-Buni,
+lettrism generally) that has its own DH-portal-shaped audience independent of any
+game.
+
+The portal also became the home for **the image catalog** — a research index of
+every manuscript/portrait/diagram image referenced or extracted from the scholarly
+sources (including TurkaGame's own 3 papers), separate from this project's
+`assets/manuscripts/registry.json` (which only tracks images already cleared and
+copied for actual game use). See `../IslamicateOccultPortal/CLAUDE.md`.
+
 ## Open items flagged at kickoff, not yet resolved
 - Only 3 of an expected 4 research PDFs were found in Downloads (see
   [docs/RESEARCH_BRIEF.md](RESEARCH_BRIEF.md) Sources section). Confirm whether a 4th is
