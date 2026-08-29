@@ -6,6 +6,13 @@
 > Assets are sourced from extant manuscripts and other historical material, not invented
 > fantasy art.
 
+Also inherits `C:\Dev\CLAUDE.md`'s **Working Discipline** (verify-before-done, no secrets in chat, log decisions to a file, checkpoint long jobs) even where this file doesn't restate it.
+
+**New session? Read [HANDOVER.md](HANDOVER.md) first** — current state, what's
+verified vs. not, likely next step. Full kickoff-conversation rationale lives in
+`CONVO1.md`, opened by section only when `HANDOVER.md` or `docs/DECISIONS.md` point
+you there — don't read it end to end.
+
 ## Status (2026-08-29, project init)
 
 Sequencing decision: **research pipeline first**, then a visual-novel vertical slice, with
