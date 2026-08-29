@@ -30,12 +30,25 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
   (narrative report, grounding-tagged), `STATE_MODEL.md` (mechanics design),
   `choices.json` (validated structured data — options/skills/flags/gates for all 40).
 - **A playable VN prototype** (`games/visual-novel/`): the full 40-choice, 8-act
-  skeleton, forked from EmblemNovel's engine pattern. Verified end to end in-browser —
-  full playthrough, skill accumulation, gate-blocking (an early choice genuinely
-  closes off a later option), ending computation, restart. Scene text is
-  **deliberately thin/placeholder**, not final prose — see `games/visual-novel/README.md`.
-- Showcase site with a real feature-pitch tab: `site/index.html`, `site/features.html`
-  (links to the playable prototype), both verified rendering.
+  loop — title screen, act-transition screens, choice screen, a consequence beat
+  after every pick, and an ending screen with a full act-by-act journal. Forked from
+  EmblemNovel's engine pattern. Real scene-setting prose for all 40 choices plus
+  ~110 lines of per-option consequence text (not final/polished, but real sentences,
+  not placeholders — see `NEXTSTEPS.md` Tier 1 for what's still thin). 4 choices
+  (`c12`/`c31`/`c33`/`c38`) have dynamic text that changes based on earlier choices.
+  Verified end to end, including live on GitHub Pages: full playthrough, skill
+  accumulation, gate-blocking (confirmed: choice #10 concretely closes off an option
+  at choice #31), save/resume mid-game restores to the exact right act and choice,
+  mobile-responsive.
+- **Live on GitHub Pages**: https://t3dy.github.io/TurkaGame/ (repo root is the
+  Pages source; a root `index.html` redirects to `site/index.html` since the actual
+  homepage lives under `site/`). Verified live, including the game itself and its
+  manuscript images, not just locally.
+- Showcase site: `site/index.html`, `site/features.html` (links to the playable
+  prototype), both verified rendering live.
+- Narrative-design docs: `GAMELOOP.md` (how the play loop actually works, beat by
+  beat, and where it's thinner than the design deserves) and `NEXTSTEPS.md`
+  (prioritized roadmap in 4 tiers). `README.md` rewritten with the live link at top.
 - IslamicateOccultPortal: 21 corpus sources converted (full text, footnotes intact),
   552-image research catalog (5 human-verified, 547 auto-extracted review queue),
   SQLite-backed site seeded with the material already covered by TurkaGame's own
@@ -46,12 +59,13 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
 
 ## What's NOT done — the important gaps, not hidden
 
-1. **The VN's narrative prose is thin/placeholder, not final.** One line of scene text
-   per choice (`games/visual-novel/js/narrative.js`) — enough to make the prototype
-   readable and provable, nowhere near the depth CHOICES.md's tagging (ATTESTED /
-   PLAUSIBLE-GAP / INVENTED-COMPATIBLE) deserves in the final text. Real prose
-   authoring is still a separate, larger task. Only 8 of 40 choices have a backdrop
-   image (one per act, not one per choice).
+1. **The VN's narrative prose is a real first pass, not final writing.** Every
+   choice has genuine scene-setting prose and a consequence line now (not
+   placeholders), but only 4 of 40 scenes are reactive to earlier choices, the
+   consequence beats are uniformly one line even for the highest-stakes choices, and
+   only 8 of 40 choices have a backdrop image (one per act, not one per choice). See
+   `NEXTSTEPS.md` Tier 1 for the specific, ranked next improvements — don't just
+   rewrite it all again without reading that first.
 2. **Only 3 of the portal's 21 corpus sources are mined into entities** — the rest
    (Brethren of Purity philosophy specifically, al-Buni's corpus in depth, ~18 more
    sources) are converted and grep-able but not yet synthesized into
@@ -70,21 +84,25 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
 
 ## Likely next step
 
-Write real narrative prose for the 40 choices in `games/visual-novel/js/narrative.js`,
-replacing the placeholder one-liners — the engine, state model, and asset pipeline are
-all proven and don't need to change for this. Secondary: source per-choice (not just
-per-act) images from OCCULTIMGDB as prose is fleshed out.
+Read `NEXTSTEPS.md` — it's the current prioritized roadmap and supersedes any older
+"likely next step" note. Tier 0 is verification (confirm the live Pages build still
+works, playtest the gate/consequence loop cold). Tier 1 is the highest-leverage work
+on the VN that already exists (escalate the highest-stakes consequence beats, add a
+few more reactive scenes, per-choice imagery). Don't jump to Tier 2/3 (broader
+content, the other two prototypes) before Tier 1 — see `NEXTSTEPS.md`'s "Explicitly
+not next" section for why a second full prose rewrite isn't the right next move yet.
 
 ## Progressive context — how to go deeper without reloading everything
 
 - **`docs/DECISIONS.md`** — terse, authoritative log of every decision made and why.
   Read this before re-asking the user something already settled.
-- **`CONVO1.md`** — the full kickoff-conversation record, organized into 4 `## Part`
-  sections (TurkaGame kickoff / IslamicateOccultPortal / 40 Choices+mechanics / this
-  handover). **Do not read it end to end.** Grep it for a keyword, or open the one
-  `## Part` relevant to what you're doing, with offset/limit. It exists for
+- **`CONVO1.md`** — kickoff through the first playable prototype (TurkaGame init,
+  IslamicateOccultPortal, 40 choices + mechanics, first HANDOVER.md).
+- **`CONVO2.md`** — the writing/UX polish + GitHub Pages hosting + README/GAMELOOP/
+  NEXTSTEPS session.
+- **Both are opened by section, never end to end.** Grep for a keyword, or read the
+  one `## Part` relevant to what you're doing, with offset/limit. They exist for
   narrative/rationale depth behind a specific decision — the "why," not routine
   continuation, which this file and `DECISIONS.md` already cover.
-- If a new major phase of work starts (e.g. VN prose authoring begins in earnest),
-  create `CONVO2.md` for it and update this file's pointers — don't append
-  indefinitely to `CONVO1.md`.
+- If a new major phase of work starts, create `CONVO3.md` and update this file's
+  pointers — don't append indefinitely to either existing file.

@@ -109,6 +109,30 @@ building:
   conventions vary by genre/period — the VN uses one real manuscript/diagram/object
   image as a backdrop per act (8 total), never an invented portrait.
 
+## Writing, hosting, and roadmap docs (2026-08-30, later session — CONVO2.md)
+
+- **Hosting: GitHub Pages, source = repo root, not `/site`.** Required because
+  `site/features.html` links to `../games/visual-novel/` and the game's own asset
+  paths go `../../assets/manuscripts/...` — both need site/ and games/ served from
+  the same root. Added a root `index.html` redirecting to `site/index.html` since
+  the actual homepage isn't at repo root. Live: https://t3dy.github.io/TurkaGame/,
+  verified including the game itself and its images, not just the redirect.
+- **Narrative content: real prose for all 40 choices**, not final writing — see
+  `NEXTSTEPS.md` for what's still thin (uniform consequence-beat length, only 4
+  reactive scenes, one image per act not per choice). Deliberately did not attempt a
+  second, deeper prose pass in the same session — `NEXTSTEPS.md`'s "Explicitly not
+  next" section argues structural loop changes (Tier 1) should land before rewriting
+  prose again.
+- **Engine: added an explicit screen state machine** (title/act_intro/choice/
+  consequence/ending) to `main.js`, where the previous version only had
+  title-less choice-to-choice flow. The consequence screen specifically was judged
+  the highest-leverage single addition — see `GAMELOOP.md` for the reasoning.
+- **Docs: `GAMELOOP.md` and `NEXTSTEPS.md` added at repo root**, in the same
+  narrative-designer voice as `games/visual-novel/CHOICES.md`. `README.md` rewritten
+  with the live link as its first line, per explicit request.
+- **`CONVO2.md` started** rather than appending to `CONVO1.md`, per CONVO1.md's own
+  stated policy for a new major phase of work. `HANDOVER.md` now points to both.
+
 ## Open items flagged at kickoff, not yet resolved
 - Only 3 of an expected 4 research PDFs were found in Downloads (see
   [docs/RESEARCH_BRIEF.md](RESEARCH_BRIEF.md) Sources section). Confirm whether a 4th is
