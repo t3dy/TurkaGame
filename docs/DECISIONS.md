@@ -83,6 +83,32 @@ branching life-choices), four mechanics decisions:
   endings sketched in STATE_MODEL.md, exact selection logic not yet implemented in
   code.
 
+## Prototype build (2026-08-30)
+
+Following the CYOA/RPG mechanics decisions, four more decisions to actually start
+building:
+
+- **Prototype scope: full skeleton, all 8 acts, thin prose.** Wire the whole engine
+  to all 40 choices with lightweight placeholder scene text, proving the entire
+  state/skill/gate/ending system in one pass, rather than a smaller, more-polished
+  slice on one or two acts. Built and verified — see `games/visual-novel/README.md`.
+- **Engine: forked EmblemNovel's pattern**, not built from scratch. Reused the
+  state.js/scenes.js/main.js shape (small, no-build, localStorage saves), extended
+  with the 5-score skill tree and gate-checking `choices.json` needs.
+- **Asset source: OCCULTIMGDB primary.** A separate, pre-existing project
+  (`C:\Dev\OCCULTIMGDB`) turned out to already have 136 rights-cleared Islamicate
+  images across 14 works — used instead of (not merely alongside) TurkaGame's own
+  research pipeline or IslamicateOccultPortal's mostly-unverified image catalog for
+  actual game assets. 8 images pulled and registered into this project's own
+  `assets/manuscripts/registry.json` with real provenance from OCCULTIMGDB's own
+  citation records. IslamicateOccultPortal's catalog remains the place to look for
+  period-specific leads OCCULTIMGDB doesn't have (e.g. the Ṭahawī Circle at Tehran MS
+  10196).
+- **Image role: backdrops and diagrams only, no invented character portraits.**
+  Manuscripts don't depict Ibn Turka's face and Islamicate figural-depiction
+  conventions vary by genre/period — the VN uses one real manuscript/diagram/object
+  image as a backdrop per act (8 total), never an invented portrait.
+
 ## Open items flagged at kickoff, not yet resolved
 - Only 3 of an expected 4 research PDFs were found in Downloads (see
   [docs/RESEARCH_BRIEF.md](RESEARCH_BRIEF.md) Sources section). Confirm whether a 4th is

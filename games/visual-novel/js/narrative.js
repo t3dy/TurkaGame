@@ -1,0 +1,58 @@
+// narrative.js — thin, placeholder scene-setting text per choice (one line each).
+// Deliberately terse per docs/DECISIONS.md's "full skeleton, all 8 acts, thin prose"
+// scope decision — this is a first pass to prove the engine, not final VN writing.
+// Full prose is a separate, larger authoring task — see HANDOVER.md.
+
+export const ACT_INTROS = {
+  1: 'CAIRO & FORMATION — A young scholar arrives in Cairo, searching for teachers worth the risk of following.',
+  2: 'FIRST PATRON: ISKANDAR SULTAN — A Timurid prince offers patronage. What you bring to his court will shape everything after.',
+  3: 'SECOND PATRON: BĀYSUNGHUR — A new court, a new prince, a chance to present yourself again.',
+  4: 'CHOOSING THE SCIENCES — Which of the five occult sciences will define your life\'s work?',
+  5: 'POPULARIZER OR SECRET-KEEPER — Your ideas exist now. Who gets to have them?',
+  6: 'THE BENCH: JUDGE OF ISFAHAN — By day, you administer the law of a great city.',
+  7: 'THREE INQUISITIONS — Rivals move against you. History says you survive two.',
+  8: 'EXILE & LEGACY — Whatever happens next, something of you will or won\'t outlive you.',
+};
+
+export const CHOICE_TEXT = {
+  c01: 'Word reaches you of half a dozen teachers worth seeking in this city. Where do you start?',
+  c02: 'Sayyid Ḥusayn Akhlātī is a brilliant, dangerous name to be seen beside.',
+  c03: 'Sharaf al-Dīn ʿAlī of Yazd has become the closest thing you have to a brother in this work.',
+  c04: 'Qāsim-i Anvār, a fellow traveler in Cairo\'s lettrist circles, offers his friendship freely.',
+  c05: 'Two masters stand behind everything you are building — Ibn ʿArabī, and the less-celebrated Ḥamūya.',
+  c06: 'Iskandar Sultan\'s court sends word: a place awaits you, if you want it.',
+  c07: 'The prince asks, plainly, what it is you actually believe.',
+  c08: 'The atelier hums with poets and painters chasing the same cosmos you are.',
+  c09: 'A colleague raises an eyebrow at your growing reputation — and says so, publicly.',
+  c10: 'Iskandar Sultan\'s fortunes are no longer what they were.',
+  c11: 'Bāysunghur receives you for the first time. What do you lead with?',
+  c12: 'Work has begun on a Qur\'an unlike any produced before. You could have a hand in it.',
+  c13: 'The docket of the Isfahan court does not shrink because your philosophy is growing.',
+  c14: 'Samarkand\'s observatory rises under Ulugh Beg. Yazdi is already there.',
+  c15: 'A rival scholar challenges your framework, in front of witnesses.',
+  c16: 'The Occult Quintet lies open before you — five sciences, five different lives.',
+  c17: 'Mastery or income: you cannot fully have both at once.',
+  c18: 'Do you build the mathematics first, or the cosmology first?',
+  c19: 'Your new sensory theory overturns received wisdom. Is it time to say so?',
+  c20: 'The central diagram of your life\'s work is nearly finished.',
+  c21: 'How you write this book will decide who can read it.',
+  c22: 'Students gather, more of them each season, asking to be taught.',
+  c23: 'A patron\'s officer asks whether a simpler, Persian version might reach further.',
+  c24: 'A request arrives: something practical, something sellable.',
+  c25: 'When you write of your sources, how generous will you be?',
+  c26: 'The post of Chief Judge is offered to you.',
+  c27: 'A case comes before your bench that everyone is watching.',
+  c28: 'An argument in court could be won faster with lettrist reasoning — if you dared use it.',
+  c29: 'The accused in this case practices something uncomfortably close to your own work.',
+  c30: 'The years of your greatest capacity are passing. Where do they go?',
+  c31: 'The first inquisition is convened. You will need to answer for yourself.',
+  c32: 'The tribunal offers you a way to make this easier on everyone.',
+  c33: 'A second inquisition follows the first. Names are being asked for.',
+  c34: 'The third inquisition. This time, the accusation will not be argued away easily.',
+  c35: 'Word reaches you before the tribunal does: there may still be time to run.',
+  c36: 'Exile begins. Five years of it, if the histories are right.',
+  c37: 'Even in exile, the work does not stop wanting to be done.',
+  c38: 'Yazdi asks, gently, whether you mean to leave your papers to anyone.',
+  c39: 'However this ends, it is ending.',
+  c40: 'One last thing, if there is to be one, for whoever comes after.',
+};

@@ -1,1 +1,225 @@
-[]
+[
+  {
+    "id": "79900a51-e71b-4619-a17c-9983a2f60546",
+    "title": "Shams al-Ma'arif — Manuscript Opening, Early 17th Century",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "early 17th century",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Shams_al-Ma%27arif.jpg",
+    "rights_note": "CC BY-SA 3.0 / GFDL. Photograph by Danieliness, cropped by User:User-duck.",
+    "local_file": "act1-ms-17c-opening.jpg",
+    "sha256": "63b9f03609fc112e8f987ac38304acffdac70fa1afae902c7c8fbc7a5ce18946",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [
+      "al-Buni",
+      "Shams al-Ma'arif",
+      "Arabic manuscript",
+      "lettrism",
+      "huruf",
+      "Islamic magic"
+    ],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=shams_al_maarif__ms-17c-opening). Act I backdrop — Cairo & Formation. Creator: Ahmad ibn Ali al-Buni."
+  },
+  {
+    "id": "b46e97b3-b62b-4fd1-9c54-a86d17b6d7e7",
+    "title": "Persian Astrolabe (brass)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "undated (Safavid/Qajar Iran)",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Astrolabe,_Iran,_undated,_brass_-_Huntington_Museum_of_Art_-_DSC04900.JPG",
+    "rights_note": "Public domain (CC0, Huntington Museum of Art). Via Wikimedia Commons.",
+    "local_file": "act2-persian-astrolabe.jpg",
+    "sha256": "2d18457556595dfa8ab585d4a321d4c5d19fb3075adad2f83159007ed35d0efb",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [
+      "astrolabe",
+      "instrument",
+      "brass",
+      "rete",
+      "star pointers",
+      "ecliptic"
+    ],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamicate_occult__persian-astrolabe). Act II backdrop — First Patron: Iskandar Sultan. Creator: Anonymous instrument-maker."
+  },
+  {
+    "id": "d63f51fd-3ce7-45e0-8458-16f849e31293",
+    "title": "Geometric Diamond-Lattice Chapter Heading — Shams al-Ma'arif (p. 150)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "[1920s–1930s] (printed ed.); tradition c. 13th c.",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Shams_al-Ma%27arif.jpg",
+    "rights_note": "Public Domain — printed edition over 100 years old. Scan: McGill University Libraries.",
+    "local_file": "act3-printed-chapter-heading-p150.jpg",
+    "sha256": "f6e34b4f17190731fda96afdd1fed2e82c14b80ea3780844589e59f89b023432",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [
+      "geometric pattern",
+      "diamond lattice",
+      "al-Buni",
+      "Shams al-Ma'arif",
+      "chapter heading",
+      "Islamic geometric art"
+    ],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=shams_al_maarif__printed-chapter-heading-p150). Act III backdrop — Second Patron: Baysunghur. Creator: Ahmad ibn Ali al-Buni."
+  },
+  {
+    "id": "fe918759-e456-4638-bc00-77251d5d4116",
+    "title": "Magic Squares (Awfaq) and Letter-Grid Tables — Shams al-Ma'arif (p. 201)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "[1920s–1930s] (printed ed.); tradition c. 13th c.",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Shams_al-Ma%27arif.jpg",
+    "rights_note": "Public Domain — printed edition over 100 years old. Scan: McGill University Libraries.",
+    "local_file": "act4-printed-magic-squares-p201.jpg",
+    "sha256": "1007479703b51e1bc5ac3a35b1d43fc6bee6235879c1d6fbad624b3e8ff5c48a",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [
+      "magic square",
+      "wafq",
+      "awfaq",
+      "letter grid",
+      "al-Buni",
+      "Shams al-Ma'arif"
+    ],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=shams_al_maarif__printed-magic-squares-p201). Act IV backdrop — Choosing the Sciences. Creator: Ahmad ibn Ali al-Buni."
+  },
+  {
+    "id": "bae34bcd-86d2-4841-9245-67bb88131e72",
+    "title": "Persian Manuscript on Talismans",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "18th–19th century",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:A_Persian_manuscript_on_talismans.jpg",
+    "rights_note": "Public Domain",
+    "local_file": "act5-persian-ms-talismans.jpg",
+    "sha256": "2d7c00a715481267360b52894ad33351dc6d93c011cbfd7c20c6c3414137b253",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [
+      "talisman",
+      "talismanic seal",
+      "persian manuscript",
+      "amulet",
+      "islamic occult"
+    ],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamic_talismans__persian-ms-talismans). Act V backdrop — Popularizer or Secret-Keeper. Creator: various."
+  },
+  {
+    "id": "c7fe7b30-9602-4408-b404-754a8ad22797",
+    "title": "Arabic Geomantic Signs, Wheel of Life and Death, and Zodiac — Wellcome Collection",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "undated (engraving, probably 19th c. European)",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Arabic_geomantic_signs,_wheel_of_life_and_death,_the_zodiac_Wellcome_V0025818ER.jpg",
+    "rights_note": "CC BY 4.0. Via Wellcome Collection (V0025818ER).",
+    "local_file": "act6-wellcome-geomantic-wheel.jpg",
+    "sha256": "dd55ded3a9ff345aba6c20f4c2f24142b71e4b7bc657be25027297d60cbbda51",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [
+      "geomancy",
+      "raml",
+      "zodiac",
+      "wheel of life",
+      "European occultism",
+      "Wellcome"
+    ],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamicate_geomancy__wellcome-geomantic-wheel). Act VI backdrop — The Bench: Judge of Isfahan. Creator: various."
+  },
+  {
+    "id": "d64a741c-e7c3-4ef7-be22-6d0793a3bfaa",
+    "title": "Red Diagonal-Cross Talisman — The Fourteenth Operation (f. 17a)",
+    "institution": "Princeton University Library",
+    "shelfmark": "Princeton University Library, Garrett Collection (figgy 1626111a)",
+    "folio": null,
+    "date_or_period": "17th century CE",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://dpul.princeton.edu/islamicmss/catalog/dc3t946275p",
+    "rights_note": "Public Domain. Princeton University Library.",
+    "local_file": "act7-red-x-talisman-fourteenth-operation-c036.jpg",
+    "sha256": "0505d7e622af6af1305a4377278301301a1ffe5eb13053f29efb9b6d4bfd2170",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [
+      "geometric diagram",
+      "X cross",
+      "diagonal cross",
+      "talisman",
+      "red ink",
+      "Gabriel"
+    ],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=princeton_sirr__red-x-talisman-fourteenth-operation-c036). Act VII backdrop — Three Inquisitions. Creator: attributed to al-Ghazzālī (1058–1111); described as extract from Kitāb al-Jafr of Imam ʻAlī ibn Abī Ṭālib."
+  },
+  {
+    "id": "69b528d3-e6d8-43d7-ab64-39408b9bd787",
+    "title": "Teardrop Cosmological Diagram — Shams al-Ma'arif (p. 256)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "[1920s–1930s] (printed ed.); tradition c. 13th c.",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Shams_al-Ma%27arif.jpg",
+    "rights_note": "Public Domain — printed edition over 100 years old. Scan: McGill University Libraries.",
+    "local_file": "act8-printed-teardrop-cosmogram-p256.jpg",
+    "sha256": "3fba4c4673523dae8d3a86beb2e784d124063368653b5c086c82f4cdff4d81a7",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [
+      "cosmological diagram",
+      "teardrop",
+      "mandorla",
+      "al-Buni",
+      "Shams al-Ma'arif",
+      "Islamic cosmology"
+    ],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=shams_al_maarif__printed-teardrop-cosmogram-p256). Act VIII backdrop — Exile & Legacy. Creator: Ahmad ibn Ali al-Buni."
+  }
+]

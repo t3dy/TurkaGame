@@ -23,22 +23,35 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
 
 - Research brief + 3-paper synthesis: `docs/RESEARCH_BRIEF.md`, `research/notes/`.
 - Working asset-provenance CLI: `research/scripts/register_asset.py` (smoke-tested).
+  8 real manuscript images now registered in `assets/manuscripts/registry.json`,
+  sourced from OCCULTIMGDB with full public-domain provenance.
 - Design docs for all 3 prototypes: `docs/GAME_{VISUAL_NOVEL,ROGUELIKE,CAREER_SIM}.md`.
 - **40 branching life-choices**, fully structured: `games/visual-novel/CHOICES.md`
   (narrative report, grounding-tagged), `STATE_MODEL.md` (mechanics design),
   `choices.json` (validated structured data — options/skills/flags/gates for all 40).
-- Placeholder showcase site: `site/index.html` (verified rendering).
+- **A playable VN prototype** (`games/visual-novel/`): the full 40-choice, 8-act
+  skeleton, forked from EmblemNovel's engine pattern. Verified end to end in-browser —
+  full playthrough, skill accumulation, gate-blocking (an early choice genuinely
+  closes off a later option), ending computation, restart. Scene text is
+  **deliberately thin/placeholder**, not final prose — see `games/visual-novel/README.md`.
+- Showcase site with a real feature-pitch tab: `site/index.html`, `site/features.html`
+  (links to the playable prototype), both verified rendering.
 - IslamicateOccultPortal: 21 corpus sources converted (full text, footnotes intact),
   552-image research catalog (5 human-verified, 547 auto-extracted review queue),
   SQLite-backed site seeded with the material already covered by TurkaGame's own
   research, verified rendering end to end.
+- OCCULTIMGDB (`C:\Dev\OCCULTIMGDB`, a separate pre-existing project) confirmed as a
+  strong, ready-to-use asset source: 136 rights-cleared Islamicate images across 14
+  works, including images of al-Buni's own *Shams al-Ma'arif*.
 
 ## What's NOT done — the important gaps, not hidden
 
-1. **No narrative prose written for the VN.** The 40-choice *structure* (`choices.json`)
-   is real and validated. The actual scene text a player would read is a separate,
-   large authoring task, not started. Don't let anyone (including a future you) treat
-   "the choice graph exists" as "the VN is written."
+1. **The VN's narrative prose is thin/placeholder, not final.** One line of scene text
+   per choice (`games/visual-novel/js/narrative.js`) — enough to make the prototype
+   readable and provable, nowhere near the depth CHOICES.md's tagging (ATTESTED /
+   PLAUSIBLE-GAP / INVENTED-COMPATIBLE) deserves in the final text. Real prose
+   authoring is still a separate, larger task. Only 8 of 40 choices have a backdrop
+   image (one per act, not one per choice).
 2. **Only 3 of the portal's 21 corpus sources are mined into entities** — the rest
    (Brethren of Purity philosophy specifically, al-Buni's corpus in depth, ~18 more
    sources) are converted and grep-able but not yet synthesized into
@@ -52,16 +65,15 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
    alone and never converted** (Roman Egypt Isis figurines, a Renaissance-Scotland
    festschrift, Averroes' Physics, a Deleuze/postcolonial-theory piece) — never
    confirmed with the user whether that guess was right.
-6. **No game code exists in any prototype folder.** All three `games/*/` are design
-   docs (or, for visual-novel, design docs + the choice-data structure) only.
+6. **Roguelike and career-sim have no code**, design docs only (unchanged from
+   kickoff) — the visual-novel is the only prototype with a working engine.
 
 ## Likely next step
 
-Per the CYOA/RPG mechanics decisions (`docs/DECISIONS.md`, "VN mechanics" section):
-start authoring narrative prose for `choices.json`'s 40 choices, OR pick an engine
-(check whether EmblemNovel's scene engine can be forked before writing one — flagged
-as unresolved in `docs/GAME_VISUAL_NOVEL.md`). Either is a reasonable place to pick
-back up; check with the user before assuming which.
+Write real narrative prose for the 40 choices in `games/visual-novel/js/narrative.js`,
+replacing the placeholder one-liners — the engine, state model, and asset pipeline are
+all proven and don't need to change for this. Secondary: source per-choice (not just
+per-act) images from OCCULTIMGDB as prose is fleshed out.
 
 ## Progressive context — how to go deeper without reloading everything
 

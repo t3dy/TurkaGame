@@ -97,8 +97,11 @@ TurkaGame/
 
 ## Run & verify
 
-Nothing has a build step yet. Once the VN slice exists, add its dev-server config to
-`.claude/launch.json` and update this section — follow the no-build, `preview_start`-driven
-pattern used in [EmblemRoguelike](../EmblemRoguelike/CLAUDE.md) and
-[DungeonAB](../DungeonAB/CLAUDE.md) unless the VN's needs justify diverging (see
-docs/DECISIONS.md).
+No build step. `.claude/launch.json` config `turkagame-site` (port 7521) serves this
+whole project directory as root — use it for both the showcase site
+(`/site/index.html`, `/site/features.html`) and the VN prototype
+(`/games/visual-novel/index.html`), since `features.html` links directly to the
+game and both need the same served root to resolve correctly. Prefer `preview_start`
+over raw Bash, per [EmblemRoguelike](../EmblemRoguelike/CLAUDE.md)'s convention.
+
+VN debug handle: `window.__turkaVN` (`.state`, `.choices`, `.restart()`).
