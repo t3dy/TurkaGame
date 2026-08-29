@@ -1,0 +1,45 @@
+{
+  "$schema_note": "Bibliographic registry of source texts. Never commit the PDFs themselves — see research/library/README.md. This file tracks citation metadata and local research notes only.",
+  "sources": [
+    {
+      "id": "melvin-koushki-2021-dee-ottoman",
+      "title": "Dr Dee's Ottoman Adventure",
+      "author": "Matthew Melvin-Koushki",
+      "venue": "Hellebore",
+      "issue": "Fall 2021",
+      "pages": "71-79",
+      "local_library_file": "research/library/Melvin-Koushki - Dr Dee's Ottoman adventure - Hellebore Fall 2021.pdf",
+      "notes_file": "research/notes/01-dr-dees-ottoman-adventure.md",
+      "topics": ["john-dee", "ottoman-court", "comparative", "murad-iii", "tahawi-circle"]
+    },
+    {
+      "id": "melvin-koushki-2025-pythagorean-renaissance",
+      "title": "Prologue to Pythagorean Renaissance: Ibn Turka's Investigations (1420) as Opening Anthem of the Scientific Revolution, Islamic and Otherwise",
+      "author": "Matthew Melvin-Koushki",
+      "venue": "Intellectual History of the Islamicate World (forthcoming, 13/1, 2025)",
+      "local_library_file": "research/library/Melvin-Koushki - Prologue to Pythagorean Renaissance.pdf",
+      "notes_file": "research/notes/02-prologue-to-pythagorean-renaissance.md",
+      "topics": ["biography", "lettrism", "cosmology", "tahawi-circle", "samarkand-observatory", "inquisitions"]
+    },
+    {
+      "id": "melvin-koushki-2025-occult-court",
+      "title": "The Occult Court",
+      "author": "Matthew Melvin-Koushki",
+      "venue": "Al-Masaq: Journal of the Medieval Mediterranean",
+      "year": 2025,
+      "local_library_file": "research/library/Melvin-Koushki - The occult court - 2025.pdf",
+      "notes_file": "research/notes/03-the-occult-court.md",
+      "topics": ["court-culture", "patronage", "occult-quintet", "boon-for-the-khan", "kashifi", "political-economy"]
+    }
+  ],
+  "gaps": [
+    {
+      "need": "Melvin-Koushki, \"Selenocentrism and Heliocentrism\" — full 7-tier epistemic hierarchy",
+      "why": "Career-sim skill-tree design needs the complete traditionist-literalism-to-lettrism hierarchy, currently only partially attested."
+    },
+    {
+      "need": "Possible 4th source PDF",
+      "why": "User's original request mentioned four dropped PDFs; only three were found in Downloads at project init (2026-08-29)."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TurkaGame manuscript asset provenance record",
+  "description": "One record per curated image under assets/manuscripts/. Every field marked required must be filled before an asset's usage_status can be 'approved'.",
+  "type": "object",
+  "required": ["id", "title", "institution", "local_file", "rights_note", "usage_status", "added_date"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable unique id (uuid4), assigned by register_asset.py."
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable description of what the image depicts."
+    },
+    "institution": {
+      "type": "string",
+      "description": "Holding institution, e.g. 'Tehran, Majlis Library'."
+    },
+    "shelfmark": {
+      "type": ["string", "null"],
+      "description": "Manuscript shelfmark, e.g. 'MS 10196'."
+    },
+    "folio": {
+      "type": ["string", "null"],
+      "description": "Folio or page reference, e.g. 'f. 63a'."
+    },
+    "date_or_period": {
+      "type": ["string", "null"],
+      "description": "Date or period of the source object, e.g. 'copied 1420-25' or 'ca. 15th c.'."
+    },
+    "creator_or_scribe": {
+      "type": ["string", "null"]
+    },
+    "digitization_source_url": {
+      "type": ["string", "null"],
+      "description": "URL of the digital library / catalog entry the image was sourced from, if any."
+    },
+    "rights_note": {
+      "type": "string",
+      "description": "Rights/licensing status as best determined (e.g. public domain, institution's stated terms, fair-use-for-scholarship rationale). Must be non-empty before 'approved'."
+    },
+    "local_file": {
+      "type": "string",
+      "description": "Path relative to assets/manuscripts/."
+    },
+    "sha256": {
+      "type": ["string", "null"],
+      "description": "SHA-256 of the local file, for integrity checking."
+    },
+    "cited_in": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "research/sources.json ids or research/notes/*.md filenames this asset traces back to."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "added_by": {
+      "type": "string"
+    },
+    "added_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "usage_status": {
+      "type": "string",
+      "enum": ["candidate", "approved", "rejected"],
+      "description": "candidate = logged but not cleared for use in a game; approved = rights_note confirmed, safe to use; rejected = investigated and ruled out."
+    },
+    "notes": {
+      "type": ["string", "null"]
+    }
+  }
+}
