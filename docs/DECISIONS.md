@@ -59,6 +59,30 @@ sources (including TurkaGame's own 3 papers), separate from this project's
 `assets/manuscripts/registry.json` (which only tracks images already cleared and
 copied for actual game use). See `../IslamicateOccultPortal/CLAUDE.md`.
 
+## VN mechanics: CYOA + RPG hybrid (2026-08-30)
+
+Following up [games/visual-novel/CHOICES.md](../games/visual-novel/CHOICES.md) (40
+branching life-choices), four mechanics decisions:
+
+- **State system: Occult Quintet skill tree only.** No separate inventory or
+  relationship-meter UI for now — bonds and objects (the autograph manuscript, the
+  Yazdi/Qasim-i Anvar relationships) are tracked as flags, not visible meters/items.
+  Can be upgraded later (a meter is just a flag with more states) without
+  restructuring, if playtesting shows the invisible version under-communicates
+  consequence.
+- **Branch topology: fully divergent, not branch-and-reconverge.** Made tractable by
+  a flag/skill state model rather than literal per-combination scene authoring — see
+  [games/visual-novel/STATE_MODEL.md](../games/visual-novel/STATE_MODEL.md).
+- **Slice scope: all 8 acts, all 40 choices** — not staged by act. This is a real
+  scope commitment; the mechanical structure for all 40 is built
+  ([games/visual-novel/choices.json](../games/visual-novel/choices.json)), but full
+  narrative prose for each choice/scene is a separate, larger authoring task still
+  to come. Don't let "the choice graph is done" get reported as "the VN is done."
+- **Endings: multiple, historical outcome is one among several**, not privileged —
+  matches the "choices he might have made differently" framing directly. ~7 named
+  endings sketched in STATE_MODEL.md, exact selection logic not yet implemented in
+  code.
+
 ## Open items flagged at kickoff, not yet resolved
 - Only 3 of an expected 4 research PDFs were found in Downloads (see
   [docs/RESEARCH_BRIEF.md](RESEARCH_BRIEF.md) Sources section). Confirm whether a 4th is

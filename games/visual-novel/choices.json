@@ -1,0 +1,223 @@
+{
+  "_meta": {
+    "note": "Structured choice/state graph for all 40 choices in CHOICES.md. This is the mechanical structure (options, skill/flag effects, gates) — NOT the narrative prose for each scene, which is separate, larger authoring work not yet done. See STATE_MODEL.md for how this data drives divergence and endings.",
+    "skills": ["kimiya", "limiya", "himiya", "simiya", "rimiya"]
+  },
+  "choices": [
+    { "id": "c01", "act": 1, "title": "Which teacher to seek out first", "grounding": "ATTESTED",
+      "options": [
+        { "id": "scholastic", "label": "Rigorous scholastic training first", "flags": { "c01": "scholastic" } },
+        { "id": "unconventional", "label": "Seek unconventional teachers immediately", "flags": { "c01": "unconventional" } }
+      ] },
+    { "id": "c02", "act": 1, "title": "How openly to align with Akhlati", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "public", "label": "Declare discipleship openly", "flags": { "c02": "public" } },
+        { "id": "quiet", "label": "Study quietly, keep it deniable", "flags": { "c02": "quiet" } }
+      ] },
+    { "id": "c03", "act": 1, "title": "How to treat the friendship with Yazdi", "grounding": "ATTESTED",
+      "options": [
+        { "id": "equal", "label": "Collaborate as equals", "flags": { "c03": "equal" } },
+        { "id": "mentor", "label": "Mentor him at arm's length", "flags": { "c03": "mentor" } }
+      ] },
+    { "id": "c04", "act": 1, "title": "How close to stand with Qasim-i Anvar", "grounding": "ATTESTED",
+      "options": [
+        { "id": "deep", "label": "Bond deeply as fellow-travelers", "flags": { "c04": "deep" } },
+        { "id": "distant", "label": "Keep a respectful distance", "flags": { "c04": "distant" } }
+      ] },
+    { "id": "c05", "act": 1, "title": "Which lineage to foreground", "grounding": "ATTESTED",
+      "options": [
+        { "id": "ibn_arabi", "label": "Commit to Ibn 'Arabi's tradition", "flags": { "c05": "ibn_arabi" } },
+        { "id": "hamuya", "label": "Elevate Hamuya instead", "flags": { "c05": "hamuya" } },
+        { "id": "both", "label": "Insist on both (the historical choice)", "flags": { "c05": "both" } }
+      ] },
+
+    { "id": "c06", "act": 2, "title": "Accept patronage at all", "grounding": "ATTESTED",
+      "options": [
+        { "id": "accepted", "label": "Accept the court appointment", "flags": { "c06": "accepted" } },
+        { "id": "independent", "label": "Remain independent", "flags": { "c06": "independent" } }
+      ] },
+    { "id": "c07", "act": 2, "title": "How much doctrine to reveal to Iskandar Sultan", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "full", "label": "Present the full, still-forming system", "flags": { "c07": "full" } },
+        { "id": "palatable", "label": "A court-palatable, watered-down version", "flags": { "c07": "palatable" } }
+      ] },
+    { "id": "c08", "act": 2, "title": "Align with the atelier's artists, or stand apart", "grounding": "ATTESTED",
+      "options": [
+        { "id": "artist", "label": "Collaborate with poets and painters", "flags": { "c08": "artist" }, "skills": { "simiya": 1 } },
+        { "id": "separate", "label": "Keep to philosophy and law", "flags": { "c08": "separate" } }
+      ] },
+    { "id": "c09", "act": 2, "title": "React to the first flicker of rival jealousy", "grounding": "ATTESTED",
+      "options": [
+        { "id": "flaunt", "label": "Flaunt the theory to build reputation fast", "flags": { "c09": "flaunt" } },
+        { "id": "cautious", "label": "Introduce it cautiously", "flags": { "c09": "cautious" } }
+      ] },
+    { "id": "c10", "act": 2, "title": "Loyalty through political risk", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "loyal", "label": "Stay loyal to Iskandar Sultan through the downturn", "flags": { "c10": "loyal" } },
+        { "id": "early_defect", "label": "Quietly cultivate the next patron early", "flags": { "c10": "early_defect" } }
+      ] },
+
+    { "id": "c11", "act": 3, "title": "How to present himself anew at Baysunghur's court", "grounding": "ATTESTED",
+      "options": [
+        { "id": "calligraphy", "label": "Lead with manuscript-arts affinity", "flags": { "c11": "calligraphy" }, "skills": { "limiya": 1 } },
+        { "id": "astronomy", "label": "Lead with astronomical prestige", "flags": { "c11": "astronomy" }, "skills": { "kimiya": 1 } }
+      ] },
+    { "id": "c12", "act": 3, "title": "Whether to work on the Baysunghur Qur'an", "grounding": "ATTESTED",
+      "options": [
+        { "id": "collaborate", "label": "Offer a lettrist framing for the calligraphy program", "flags": { "c12": "collaborate" }, "gate": { "c07": "full" } },
+        { "id": "separate", "label": "Stay deliberately separate", "flags": { "c12": "separate" } }
+      ] },
+    { "id": "c13", "act": 3, "title": "Balance judiciary duties against court philosophy", "grounding": "ATTESTED",
+      "options": [
+        { "id": "formality", "label": "Let the qadi post lapse into formality", "flags": { "c13": "formality" } },
+        { "id": "active", "label": "Stay genuinely active on the bench", "flags": { "c13": "active" } }
+      ] },
+    { "id": "c14", "act": 3, "title": "Pursue a formal tie to the Samarkand Observatory", "grounding": "ATTESTED",
+      "options": [
+        { "id": "formal", "label": "Actively seek association through Yazdi", "flags": { "c14": "formal" }, "skills": { "kimiya": 1 } },
+        { "id": "informal", "label": "Stay Isfahan-rooted", "flags": { "c14": "informal" } }
+      ] },
+    { "id": "c15", "act": 3, "title": "Respond to a rival's first public challenge", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "immediate", "label": "Answer publicly and immediately", "flags": { "c15": "immediate" } },
+        { "id": "delayed", "label": "Let it pass", "flags": { "c15": "delayed" } }
+      ] },
+
+    { "id": "c16", "act": 4, "title": "Primary specialization", "grounding": "ATTESTED",
+      "options": [
+        { "id": "kimiya", "label": "Kimiya (alchemy)", "flags": { "c16": "kimiya", "primary_science": "kimiya" }, "skills": { "kimiya": 3 } },
+        { "id": "limiya", "label": "Limiya (talismanry)", "flags": { "c16": "limiya", "primary_science": "limiya" }, "skills": { "limiya": 3 } },
+        { "id": "himiya", "label": "Himiya (subjugation)", "flags": { "c16": "himiya", "primary_science": "himiya" }, "skills": { "himiya": 3 } },
+        { "id": "simiya", "label": "Simiya (illusionism)", "flags": { "c16": "simiya", "primary_science": "simiya" }, "skills": { "simiya": 3 } },
+        { "id": "rimiya", "label": "Rimiya (trickery)", "flags": { "c16": "rimiya", "primary_science": "rimiya" }, "skills": { "rimiya": 3 } }
+      ] },
+    { "id": "c17", "act": 4, "title": "Specialize narrowly or diversify", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "narrow", "label": "Pursue the primary science exclusively", "flags": { "c17": "narrow" } },
+        { "id": "diversify", "label": "Diversify for steadier income", "flags": { "c17": "diversify" }, "skills": { "rimiya": 1 } }
+      ] },
+    { "id": "c18", "act": 4, "title": "Mathematical foundation first, or theurgic ambition first", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "math_first", "label": "Build rigorous grounding first", "flags": { "c18": "math_first" }, "skills": { "kimiya": 1 } },
+        { "id": "theurgy_first", "label": "Lead with bold cosmological claims", "flags": { "c18": "theurgy_first" }, "skills": { "himiya": 1 } }
+      ] },
+    { "id": "c19", "act": 4, "title": "When to go public with the sensory-theory innovations", "grounding": "ATTESTED",
+      "options": [
+        { "id": "early", "label": "Publish early to stake the claim", "flags": { "c19": "early" } },
+        { "id": "hold", "label": "Hold back until reputation is secure", "flags": { "c19": "hold" } }
+      ] },
+    { "id": "c20", "act": 4, "title": "When to finalize and circulate the core diagram", "grounding": "ATTESTED",
+      "options": [
+        { "id": "rush", "label": "Publish alongside the observatory's prestige", "flags": { "c20": "rush" } },
+        { "id": "refine", "label": "Take the years needed to refine privately", "flags": { "c20": "refine" }, "skills": { "limiya": 1 } }
+      ] },
+
+    { "id": "c21", "act": 5, "title": "Register of the masterwork", "grounding": "ATTESTED",
+      "options": [
+        { "id": "elite", "label": "Dense, elite register (the historical choice)", "flags": { "c21": "elite" } },
+        { "id": "accessible", "label": "Aim for Kashifi-style accessibility", "flags": { "c21": "accessible" }, "skills": { "rimiya": 1 } }
+      ] },
+    { "id": "c22", "act": 5, "title": "Teach widely or keep the circle small", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "wide", "label": "Recruit and train students broadly", "flags": { "c22": "wide" } },
+        { "id": "small", "label": "Keep the New Brethren small and trusted", "flags": { "c22": "small" } }
+      ] },
+    { "id": "c23", "act": 5, "title": "Write vernacular popularizations alongside the masterwork", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "yes", "label": "Produce simplified Persian versions", "flags": { "c23": "yes" }, "skills": { "simiya": 1 } },
+        { "id": "no", "label": "Refuse — full difficulty or nothing", "flags": { "c23": "no" } }
+      ] },
+    { "id": "c24", "act": 5, "title": "Handle requests for simplified, practical grimoire content", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "accept", "label": "Take the income and status", "flags": { "c24": "accept" }, "skills": { "rimiya": 1 } },
+        { "id": "decline", "label": "Decline, protect the work's prestige", "flags": { "c24": "decline" } }
+      ] },
+    { "id": "c25", "act": 5, "title": "How fully to name his sources", "grounding": "ATTESTED",
+      "options": [
+        { "id": "generous", "label": "Be generous crediting the tradition", "flags": { "c25": "generous" } },
+        { "id": "overclaim", "label": "Claim more originality than is strictly true", "flags": { "c25": "overclaim" } }
+      ] },
+
+    { "id": "c26", "act": 6, "title": "Accept the Chief Judge appointment at all", "grounding": "ATTESTED",
+      "options": [
+        { "id": "accepted", "label": "Take the post (the historical choice)", "flags": { "c26": "accepted" } },
+        { "id": "declined", "label": "Decline to remain scholar-only", "flags": { "c26": "declined" } }
+      ] },
+    { "id": "c27", "act": 6, "title": "A defining case", "grounding": "ATTESTED",
+      "options": [
+        { "id": "powerful", "label": "Rule for the powerful patron's interest", "flags": { "c27": "powerful" } },
+        { "id": "weak", "label": "Rule for the weaker party (the historical reputation)", "flags": { "c27": "weak" } }
+      ] },
+    { "id": "c28", "act": 6, "title": "Occult reasoning on the bench", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "separate", "label": "Keep judge and occultist personas separate", "flags": { "c28": "separate" } },
+        { "id": "blended", "label": "Let lettrist reasoning inform judicial argument", "flags": { "c28": "blended" }, "gate": { "c19": "early" } }
+      ] },
+    { "id": "c29", "act": 6, "title": "A case touching a rival occultist", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "mercy", "label": "Show scholarly solidarity and mercy", "flags": { "c29": "mercy" } },
+        { "id": "orthodoxy", "label": "Enforce orthodoxy strictly", "flags": { "c29": "orthodoxy" } }
+      ] },
+    { "id": "c30", "act": 6, "title": "Where peak years go", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "bench", "label": "Prioritize the bench's legitimacy", "flags": { "c30": "bench" } },
+        { "id": "writing", "label": "Prioritize the philosophical writing", "flags": { "c30": "writing" }, "skills": { "primary_bonus": 1 } }
+      ] },
+
+    { "id": "c31", "act": 7, "title": "First inquisition: mode of defense", "grounding": "ATTESTED",
+      "options": [
+        { "id": "legal", "label": "Rigorous legal/rhetorical defense", "flags": { "c31": "legal" } },
+        { "id": "patron", "label": "Call in patron favor", "flags": { "c31": "patron" }, "gate": { "c10": "loyal" } },
+        { "id": "both", "label": "Attempt both at once", "flags": { "c31": "both" }, "gate": { "c10": "loyal" } }
+      ] },
+    { "id": "c32", "act": 7, "title": "First inquisition: recant or hold firm", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "recant", "label": "Partial, face-saving recantation", "flags": { "c32": "recant" } },
+        { "id": "hold", "label": "Hold every position", "flags": { "c32": "hold" } }
+      ] },
+    { "id": "c33", "act": 7, "title": "Second inquisition: distance from associates, or not", "grounding": "ATTESTED",
+      "options": [
+        { "id": "distance", "label": "Preemptively distance from Qasim-i Anvar", "flags": { "c33": "distance" } },
+        { "id": "refuse", "label": "Refuse to abandon anyone", "flags": { "c33": "refuse" }, "narrative_weight_scales_with": "c04" }
+      ] },
+    { "id": "c34", "act": 7, "title": "Third inquisition: bend the knee", "grounding": "ATTESTED",
+      "options": [
+        { "id": "bend", "label": "Bend — survive compromised", "flags": { "c34": "bend" } },
+        { "id": "hold", "label": "Hold firm (the historical choice)", "flags": { "c34": "hold" } }
+      ] },
+    { "id": "c35", "act": 7, "title": "Third inquisition: flee, or stand trial", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "flee", "label": "Attempt to flee before judgment", "flags": { "c35": "flee" } },
+        { "id": "stand", "label": "Stand and face the tribunal", "flags": { "c35": "stand" } }
+      ] },
+
+    { "id": "c36", "act": 8, "title": "Destination in exile", "grounding": "ATTESTED (exile) / PLAUSIBLE-GAP (destination)",
+      "options": [
+        { "id": "new_patron", "label": "Seek a new patron at a rival court", "flags": { "c36": "new_patron" } },
+        { "id": "retreat", "label": "Retreat into pure private scholarship", "flags": { "c36": "retreat" } },
+        { "id": "reconcile", "label": "Attempt reconciliation and return", "flags": { "c36": "reconcile" } }
+      ] },
+    { "id": "c37", "act": 8, "title": "Keep working, or go dark", "grounding": "PLAUSIBLE-GAP",
+      "options": [
+        { "id": "continue", "label": "Continue writing and teaching", "flags": { "c37": "continue" } },
+        { "id": "silent", "label": "Go silent to protect what remains", "flags": { "c37": "silent" } }
+      ] },
+    { "id": "c38", "act": 8, "title": "Entrust the manuscripts to Yazdi", "grounding": "ATTESTED",
+      "options": [
+        { "id": "entrust", "label": "Formally entrust the papers to Yazdi", "flags": { "c38": "entrust" } },
+        { "id": "keep", "label": "Keep them close", "flags": { "c38": "keep" } }
+      ],
+      "note": "Transmission completeness in the ending logic depends on c03: entrust+equal = full transmission, entrust+mentor = partial, keep = lost regardless of c03." },
+    { "id": "c39", "act": 8, "title": "How to face death", "grounding": "ATTESTED",
+      "options": [
+        { "id": "peace", "label": "Reconciled and at peace", "flags": { "c39": "peace" } },
+        { "id": "bitter", "label": "Embittered, railing against accusers", "flags": { "c39": "bitter" } },
+        { "id": "defiant", "label": "Defiantly triumphant", "flags": { "c39": "defiant" } }
+      ] },
+    { "id": "c40", "act": 8, "title": "The final testament", "grounding": "INVENTED-COMPATIBLE",
+      "options": [
+        { "id": "public", "label": "A public, defiant final statement", "flags": { "c40": "public" } },
+        { "id": "quiet", "label": "Quiet transmission to the New Brethren only", "flags": { "c40": "quiet" } }
+      ] }
+  ]
+}

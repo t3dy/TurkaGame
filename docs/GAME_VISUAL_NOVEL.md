@@ -4,6 +4,23 @@ Status: **design only, not started.** This is the first prototype to actually ge
 once the research pipeline has at least one approved manuscript asset to build the slice
 around. See [docs/DECISIONS.md](DECISIONS.md) for why VN was picked first.
 
+## Choices, state, and endings — CYOA/RPG mechanics (2026-08-30)
+
+- [games/visual-novel/CHOICES.md](../games/visual-novel/CHOICES.md) — a narrative
+  designer's report on 40 branching choices across Ibn Turka's life, each tagged for
+  how grounded it is (ATTESTED / PLAUSIBLE-GAP / INVENTED-COMPATIBLE).
+- [games/visual-novel/STATE_MODEL.md](../games/visual-novel/STATE_MODEL.md) — the
+  mechanics design: an Occult-Quintet skill tree (5 scores) + one flag per choice
+  drives a fully-divergent branch structure without requiring one hand-authored
+  scene per combinatorial path. Gates table shows where later choices are actually
+  narrowed/widened by earlier ones. Endings are computed from final state, multiple
+  named endings, the historical outcome is one among several (not privileged).
+- [games/visual-novel/choices.json](../games/visual-novel/choices.json) — all 40
+  choices encoded as structured data (options, skill effects, flags, gates). This is
+  the mechanical *structure* for all 40, built and validated. **The narrative prose
+  for each scene is separate, larger authoring work not yet done** — don't conflate
+  "the choice graph exists" with "the VN is written."
+
 ## Premise
 
 Play through episodes of Ibn Turka's life — Cairo apprenticeship under Sayyid Ḥusayn
