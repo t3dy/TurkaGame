@@ -6,50 +6,113 @@
 <title>Ibn Turka — A Visual Novel (prototype)</title>
 <style>
   :root {
-    --ink: #2a2016; --parchment: #f4ecd8; --gold: #9c7a2e; --rule: #c9b892;
-    --card-bg: #fbf6ea; --navy: #1c2b3a;
+    --ink: #2a2016; --parchment: #f4ecd8; --gold: #b6924f; --gold-deep: #9c7a2e;
+    --rule: #c9b892; --card-bg: #fbf6ea; --navy: #16212c; --navy-deep: #0f1720;
   }
   * { box-sizing: border-box; }
+  html, body { height: 100%; }
   body {
-    margin: 0; background: var(--navy); color: var(--parchment);
+    margin: 0; color: var(--parchment);
     font-family: Georgia, "Times New Roman", serif; line-height: 1.6;
+    background: radial-gradient(ellipse at top, var(--navy) 0%, var(--navy-deep) 100%);
+    min-height: 100vh;
   }
-  #app { max-width: 40rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
-  .scene { background: var(--parchment); color: var(--ink); border-radius: 8px;
-    padding: 1.5rem 1.75rem; border: 1px solid var(--rule); position: relative; }
-  .backdrop { width: 100%; max-height: 16rem; object-fit: cover; border-radius: 6px;
-    margin-bottom: 1rem; border: 1px solid var(--rule); }
-  .act-badge { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em;
-    color: var(--gold); margin-bottom: 0.4rem; }
-  .grounding-badge { display: inline-block; font-size: 0.68rem; text-transform: uppercase;
-    letter-spacing: 0.04em; border: 1px solid var(--rule); border-radius: 999px;
-    padding: 0.1rem 0.5rem; color: #6b5e47; float: right; }
-  h2 { margin: 0.3rem 0 0.6rem; font-size: 1.3rem; }
-  .scene-text { font-size: 1rem; margin-bottom: 1.2rem; }
-  .options { display: flex; flex-direction: column; gap: 0.6rem; }
+  a.back {
+    color: #cbb98a; font-size: 0.85rem; display: inline-block;
+    margin: 1rem 0 0 1.25rem; text-decoration: none; opacity: 0.8;
+  }
+  a.back:hover { opacity: 1; text-decoration: underline; }
+  #app { max-width: 40rem; margin: 0 auto; padding: 1.5rem 1.25rem 5rem; }
+
+  /* --- shared card look --- */
+  .title-card, .act-card, .scene, .consequence-card, .ending {
+    background: var(--card-bg); color: var(--ink); border-radius: 10px;
+    padding: 1.75rem 1.9rem; border: 1px solid var(--rule);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    animation: fadein 0.35s ease-out;
+  }
+  @keyframes fadein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
   .option-btn {
     font-family: inherit; font-size: 0.95rem; text-align: left;
-    background: var(--card-bg); border: 1px solid var(--rule); border-radius: 5px;
-    padding: 0.7rem 1rem; cursor: pointer; color: var(--ink);
+    background: #fff9ec; border: 1px solid var(--rule); border-radius: 6px;
+    padding: 0.75rem 1.05rem; cursor: pointer; color: var(--ink);
+    transition: background 0.15s, border-color 0.15s, transform 0.1s;
   }
-  .option-btn:hover { background: #f0e4c8; border-color: var(--gold); }
-  .gated-note { font-size: 0.8rem; color: #8a7a5a; font-style: italic; margin-top: 0.8rem; }
-  .skill-panel { background: var(--card-bg); color: var(--ink); border-radius: 8px;
+  .option-btn:hover { background: #f4e8c8; border-color: var(--gold-deep); transform: translateX(2px); }
+  .option-btn:active { transform: translateX(2px) scale(0.99); }
+  .option-btn.primary {
+    background: var(--gold-deep); color: var(--parchment); border-color: var(--gold-deep);
+    text-align: center; font-weight: bold;
+  }
+  .option-btn.primary:hover { background: #86671f; }
+
+  /* --- title screen --- */
+  .screen-title { display: flex; align-items: center; min-height: calc(100vh - 3rem); }
+  .title-card { text-align: center; padding: 3rem 2rem; }
+  .title-eyebrow { font-size: 0.75rem; letter-spacing: 0.12em; color: var(--gold-deep); margin-bottom: 0.6rem; }
+  .title-h1 { font-size: 2.6rem; margin: 0 0 0.3rem; }
+  .title-sub { font-style: italic; color: var(--gold-deep); margin: 0 0 1.4rem; }
+  .title-desc { font-size: 0.98rem; max-width: 32rem; margin: 0 auto 1.8rem; }
+  .title-actions { display: flex; flex-direction: column; gap: 0.7rem; max-width: 18rem; margin: 0 auto; }
+
+  /* --- act-intro screen --- */
+  .screen-act { display: flex; align-items: center; min-height: calc(100vh - 3rem); }
+  .act-card { text-align: center; padding: 3rem 2rem; }
+  .act-eyebrow { font-size: 0.75rem; letter-spacing: 0.12em; color: var(--gold-deep); margin-bottom: 0.6rem; }
+  .act-h1 { font-size: 1.9rem; margin: 0 0 1rem; }
+  .act-text { font-size: 1.05rem; font-style: italic; max-width: 30rem; margin: 0 auto 1.8rem; }
+
+  /* --- choice screen --- */
+  .backdrop { width: 100%; max-height: 15rem; object-fit: cover; border-radius: 7px;
+    margin-bottom: 1rem; border: 1px solid var(--rule); }
+  .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem; }
+  .act-badge { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold-deep); }
+  .grounding-badge { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.04em;
+    border: 1px solid var(--rule); border-radius: 999px; padding: 0.1rem 0.55rem; color: #7a6a45; }
+  h2 { margin: 0.2rem 0 0.7rem; font-size: 1.3rem; }
+  .scene-text { font-size: 1rem; margin-bottom: 1.3rem; }
+  .options { display: flex; flex-direction: column; gap: 0.6rem; }
+  .gated-note { font-size: 0.8rem; color: #8a7a5a; font-style: italic; margin-top: 0.9rem; }
+
+  /* --- consequence screen --- */
+  .screen-consequence { display: flex; align-items: center; min-height: calc(100vh - 3rem); }
+  .consequence-card { text-align: center; padding: 2.5rem 2rem; }
+  .consequence-text { font-size: 1.1rem; font-style: italic; max-width: 30rem; margin: 0 auto 1.6rem; }
+
+  /* --- skill panel + progress --- */
+  .skill-panel { background: var(--card-bg); color: var(--ink); border-radius: 10px;
     border: 1px solid var(--rule); padding: 1rem 1.25rem; margin-top: 1rem; }
-  .skill-panel h3 { margin: 0 0 0.6rem; font-size: 0.85rem; text-transform: uppercase;
-    letter-spacing: 0.05em; color: var(--gold); }
-  .skill-row { display: grid; grid-template-columns: 9rem 1fr 1.5rem; align-items: center;
-    gap: 0.6rem; font-size: 0.82rem; margin-bottom: 0.35rem; }
+  .skill-panel h3 { margin: 0 0 0.7rem; font-size: 0.8rem; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--gold-deep); }
+  .skill-row { display: grid; grid-template-columns: 9.5rem 1fr 1.6rem; align-items: center;
+    gap: 0.6rem; font-size: 0.82rem; margin-bottom: 0.4rem; }
   .skill-bar { height: 0.5rem; background: #e5d8b8; border-radius: 999px; overflow: hidden; }
-  .skill-fill { height: 100%; background: var(--gold); }
+  .skill-fill { height: 100%; background: linear-gradient(90deg, var(--gold-deep), var(--gold));
+    transition: width 0.3s ease; }
   .skill-val { text-align: right; }
-  .progress { text-align: center; font-size: 0.78rem; color: #9c8f74; margin-top: 0.8rem; }
-  .ending { background: var(--card-bg); color: var(--ink); border-radius: 8px;
-    padding: 2rem 1.75rem; border: 1px solid var(--rule); }
-  .ending h1 { margin-top: 0; }
-  .ending-text { font-size: 1.05rem; }
+  .progress { text-align: center; font-size: 0.78rem; color: #9c8f74; margin-top: 0.9rem; }
+
+  /* --- ending screen --- */
+  .ending-eyebrow { font-size: 0.75rem; letter-spacing: 0.12em; color: var(--gold-deep); margin-bottom: 0.4rem; }
+  .ending h1 { margin: 0 0 0.7rem; }
+  .ending-text { font-size: 1.08rem; }
   .ending-note { font-size: 0.85rem; font-style: italic; color: #6b5e47; }
-  a.back { color: #cbb98a; font-size: 0.85rem; display: inline-block; margin: 1rem 0 0 1.25rem; }
+  .journal { margin-top: 1.2rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
+  .journal h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold-deep); margin-bottom: 0.6rem; }
+  .journal-act { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;
+    color: var(--gold-deep); margin: 0.9rem 0 0.3rem; }
+  .journal-row { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.85rem;
+    padding: 0.25rem 0; border-bottom: 1px dotted var(--rule); }
+  .journal-choice { color: #6b5e47; }
+  .journal-pick { text-align: right; font-weight: 600; }
+  .ending .option-btn { margin-top: 1.5rem; width: 100%; }
+
+  @media (max-width: 30rem) {
+    .title-h1 { font-size: 2rem; }
+    .skill-row { grid-template-columns: 7rem 1fr 1.4rem; font-size: 0.75rem; }
+    .scene, .title-card, .act-card, .consequence-card, .ending { padding: 1.25rem 1.3rem; }
+  }
 </style>
 </head>
 <body>
