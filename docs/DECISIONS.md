@@ -109,6 +109,23 @@ building:
   conventions vary by genre/period — the VN uses one real manuscript/diagram/object
   image as a backdrop per act (8 total), never an invented portrait.
 
+## GitHub Pages CDN cache note (2026-08-30, sixth session)
+
+While verifying the themed-journal deploy live, a browser tab that had visited
+the site earlier in the session kept showing the *previous* deploy's HTML
+(`js/main.js?v=9` instead of the just-pushed `v=10`) even after a forced
+reload. `curl -I` against the live URL directly showed the origin was already
+correct (`Age: 0`, `X-Cache: MISS`) — GitHub Pages serves with
+`Cache-Control: max-age=600`, so a browser that fetched the page within the
+prior 10 minutes can legitimately keep serving its own cached copy regardless
+of what's now live, until that window expires or the URL is cache-busted (a
+`?nocache=1`-style query param works). **Not a bug** — a real first-time
+visitor gets the fresh deploy immediately (confirmed via `curl`). But it means
+"verify live" checks done within ~10 minutes of a push, in a browser session
+that already touched the page, need a cache-busted URL or they'll falsely
+report the deploy as broken. Worth knowing before mis-diagnosing a future
+"live verification failed" as an actual regression.
+
 ## v3 writing audit (2026-08-30, fifth session)
 
 - **User audit found v2's option text drifting long and generic** — averaging ~41
