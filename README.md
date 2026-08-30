@@ -17,15 +17,19 @@ of occult sciences), gates where an early decision concretely closes off a later
 option, and several distinct computed endings — the historical outcome (exile, death
 in 1432) is one ending among several, not privileged over the others.
 
-▶ **[Play Version 2.0](https://t3dy.github.io/TurkaGame/games/visual-novel/index.html)**
-— every one of the 87 choice options now comes with real reasoning (values, risk,
-what it signals), not just a short label. Every scene is written to
-[reveal something specific and real](games/visual-novel/WRITING_GUIDE.md) from the
-historical scholarship, not generic occult-fantasy dressing.
+▶ **[Play Version 3.0](https://t3dy.github.io/TurkaGame/games/visual-novel/index.html)**
+— every one of the 87 choice options carries a short (~10–20 word), sharp line of
+reasoning that names a real person, text, or institution wherever the historical
+record allows it (see the
+[writing guide](games/visual-novel/WRITING_GUIDE.md)) instead of generic
+occult-fantasy dressing.
 
-▶ [Play Version 1.0](https://t3dy.github.io/TurkaGame/games/visual-novel-v1/index.html)
-— the original prototype with short choice labels, kept live and playable
-side-by-side for comparison rather than overwritten.
+▶ [Version 2.0](https://t3dy.github.io/TurkaGame/games/visual-novel-v2/index.html)
+— archived: the same idea with longer (2–4 sentence) reasoning per option.
+
+▶ [Version 1.0](https://t3dy.github.io/TurkaGame/games/visual-novel-v1/index.html)
+— the original prototype, short choice labels only. All three stay live and
+playable side by side rather than being overwritten.
 
 ## Three prototypes
 

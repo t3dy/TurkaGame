@@ -29,34 +29,33 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
 - **40 branching life-choices**, fully structured: `games/visual-novel/CHOICES.md`
   (narrative report, grounding-tagged), `STATE_MODEL.md` (mechanics design),
   `choices.json` (validated structured data — options/skills/flags/gates for all 40).
-- **Two live, playable VN versions**, deployed side by side rather than
+- **Three live, playable VN versions**, deployed side by side rather than
   overwriting one another:
-  - **`games/visual-novel/` — Version 2.0 (current).** The full 40-choice, 8-act
+  - **`games/visual-novel/` — Version 3.0 (current).** The full 40-choice, 8-act
     loop — title screen, act-transition screens, choice screen, a consequence beat
     after every pick, an ending screen with a full act-by-act journal and a
-    personalized epilogue. All 87 choice options now carry a `detail` field (2-4
-    sentences of reasoning — values, risk, how it reads to others), rendered as a
-    bold label + body paragraph inside each option button. 7 of 40 scenes are
-    reactive to earlier choices. Every scene is written per
-    **`games/visual-novel/WRITING_GUIDE.md`** (new house rule, also linked from
-    `CLAUDE.md`'s ground rules) to reveal something specific and real from
-    `docs/BIOGRAPHY.md`/`site/data/timeline.json` — a named text, institution, or
-    practice — not generic occult atmosphere.
-  - **`games/visual-novel-v1/` — Version 1.0 (archived).** Frozen snapshot of the
-    prototype as of commit `7bf20cd`, before option-detail text was added — the
-    "short choice labels" version, kept playable rather than deleted so the
-    before/after of that change is directly comparable, not just described in a
-    commit message. Not maintained going forward; see its own `README.md`.
-  - Both cross-link to each other via a version banner. Both use `?v=6` query
-    params on every local module import (bumped again after each content change)
-    because `python -m http.server` sends no cache-control headers and browsers
-    were observed serving stale JS/JSON across navigations without it — a real bug
-    caught mid-session, not a hypothetical.
-  - Verified end to end on both versions, including live on GitHub Pages: full
-    playthroughs, skill accumulation, gate-blocking (choice #10 concretely closes
-    off an option at choice #31), save/resume mid-game restores to the exact right
-    act and choice, mobile-responsive, v1 confirmed to render short labels only,
-    v2 confirmed to render full detail text.
+    personalized epilogue. All 87 choice options carry a `detail` field, audited
+    down to ~14 words average (from v2's ~41) and rewritten to name a real person,
+    text, or institution wherever `docs/BIOGRAPHY.md` supports one — e.g. c01's
+    "seek unconventional teachers" now names Sayyid Husayn Akhlati specifically.
+    7 of 40 scenes are reactive to earlier choices. Every scene follows
+    **`games/visual-novel/WRITING_GUIDE.md`** (linked from `CLAUDE.md`'s ground
+    rules), which now has an explicit brevity target (~10-20 words, "a third not a
+    half") plus the specificity rule, added after v2 drifted long and generic.
+  - **`games/visual-novel-v2/` — Version 2.0 (archived).** Snapshot before the v3
+    writing audit — same structure as v3, longer (2-4 sentence) option reasoning.
+  - **`games/visual-novel-v1/` — Version 1.0 (archived).** Snapshot of commit
+    `7bf20cd`, before option-detail text existed at all — short choice labels only.
+  - All three cross-link via a version banner. All use `?v=N` query params on
+    every local module import (v3 is currently `v=7`), bumped on every content
+    change, because `python -m http.server` sends no cache-control headers and
+    browsers were repeatedly observed serving stale JS/JSON across navigations
+    without it — hit this bug twice this project, now a standing discipline, not
+    a one-time fix.
+  - Verified end to end on all three versions, including live on GitHub Pages:
+    full playthroughs, gate-blocking, save/resume, mobile-responsive; each
+    version confirmed to render its own distinct option-text length/style, not a
+    cached copy of another version's.
 - **Live on GitHub Pages**: https://t3dy.github.io/TurkaGame/ (repo root is the
   Pages source; a root `index.html` redirects to `site/index.html` since the actual
   homepage lives under `site/`). Verified live, including the game itself and its

@@ -63,11 +63,46 @@ When writing or revising `CHOICE_TEXT`/`OPTION_CONSEQUENCE` entries in
    *kitābkhāna* for the atelier/scriptorium institution, *nāmūs* for a named
    magical "operation" in the Kāshifī/ʿAlī Ṣafī textual tradition.
 
+## Option-level detail text: name someone real, then stop
+
+`choices.json`'s per-option `detail` field (the reasoning shown inside each
+option button — not the scene-setting `CHOICE_TEXT`) has its own two rules, added
+after an audit found it drifting long and generic:
+
+1. **One sentence, occasionally two. Roughly 10–20 words.** Not a mini-essay on
+   values and risk — a single sharp line. If it takes three sentences to say, the
+   idea probably needs one clause, not three. `js/narrative.js` used to average
+   ~41 words per option; audited down to ~14. That ratio (a third, not a half) is
+   the target for any future revision — trimming to "a bit shorter" tends to
+   regress back up over successive edits if there's no numeric anchor to check
+   against.
+2. **Name someone or something real whenever the option allows it — a person, a
+   text, an institution — rather than describing the choice in the abstract.**
+   `c01`'s "seek unconventional teachers" option used to read as generic
+   atmosphere ("real, dangerous knowledge," "the fringe teachers"). It now reads
+   *"Skip the madrasa. The unconventional circles are where Sayyid Husayn Akhlati
+   actually teaches"* — the same choice, naming the one teacher Ibn Turka is
+   actually attested to have studied under. Do this everywhere the record
+   supports a name (Akhlati, Yazdi, Qasim-i Anvar, Ibn ʿArabī, Hamūya, Iskandar
+   Sultan, Bāysunghur, Ulugh Beg, the New Brethren of Purity, *Investigations*,
+   the Ṭahawī Circle) rather than defaulting to "your mentor" / "a colleague" /
+   "the work." Where no name is attested for a given option (most of the
+   `PLAUSIBLE-GAP` choices, which are genuinely undocumented decisions), keep the
+   concrete stakes but don't manufacture a name that isn't in BIOGRAPHY.md.
+
 ## Before / after — what this looks like in practice
 
 Not a hypothetical: these are real revisions made to `narrative.js` when this
 guide was written, because the "before" text was generic where a real hook was
 sitting unused in BIOGRAPHY.md.
+
+**c01 (which teacher to seek out first)**
+- *Before (v2):* "Going straight to the fringe teachers means faster access to
+  real, dangerous knowledge, and it signals real seriousness to the people who
+  matter most in that world. It also means skipping the credentialing that
+  protects a scholar later..." (41 words, no name.)
+- *After (v3):* "Skip the madrasa. The unconventional circles are where Sayyid
+  Husayn Akhlati actually teaches." (14 words, names the one attested teacher.)
 
 **c22 (teach widely or keep the circle small)**
 - *Before:* "Students keep arriving, more each season, most of them earnest, a few

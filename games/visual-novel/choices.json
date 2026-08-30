@@ -22,7 +22,7 @@
           "flags": {
             "c01": "scholastic"
           },
-          "detail": "The madrasa route means years under recognized teachers, learning the tradition's own internal logic before you're trusted to argue past it. It is slower, and it costs you nothing in reputation — orthodox training is never held against a scholar later. But it also means that if you ever do reach the unconventional teachers, you'll arrive already shaped by exactly the system they exist to challenge."
+          "detail": "Formal madrasa training — orthodox, respected, and no faster route into Akhlati's more radical circle."
         },
         {
           "id": "unconventional",
@@ -30,7 +30,7 @@
           "flags": {
             "c01": "unconventional"
           },
-          "detail": "Going straight to the fringe teachers means faster access to real, dangerous knowledge, and it signals real seriousness to the people who matter most in that world. It also means skipping the credentialing that protects a scholar later — when rivals eventually call your system heretical, you won't have an orthodox pedigree to point to as cover."
+          "detail": "Skip the madrasa. The unconventional circles are where Sayyid Husayn Akhlati actually teaches."
         }
       ]
     },
@@ -46,7 +46,7 @@
           "flags": {
             "c02": "public"
           },
-          "detail": "Declaring yourself Akhlati's disciple openly announces exactly where your intellectual loyalties lie. It earns you standing with everyone who respects him — and it means his enemies, and any future inquisitors, will always know exactly where to start when building a case against you."
+          "detail": "Everyone will know you study under Akhlati — respected by his admirers, flagged by his enemies."
         },
         {
           "id": "quiet",
@@ -54,7 +54,7 @@
           "flags": {
             "c02": "quiet"
           },
-          "detail": "Studying quietly costs you nothing in the short term: no one can prove the association, and your options stay open. But knowledge half-hidden is knowledge half-trusted — teachers notice students who won't stand behind them, and it can cost you the depth of instruction reserved for those who commit visibly."
+          "detail": "Study with Akhlati quietly. Deniable for now — and he may trust you less for it."
         }
       ]
     },
@@ -70,7 +70,7 @@
           "flags": {
             "c03": "equal"
           },
-          "detail": "Treating Yazdi as a genuine intellectual partner rather than a subordinate means the two of you build something together neither could alone — real collaboration, real trust, a bond that could matter enormously later. It also means surrendering some of the authority a master normally keeps, and trusting someone still young with the full shape of your thinking."
+          "detail": "Treat Yazdi, your sharpest student, as a genuine partner, not a subordinate."
         },
         {
           "id": "mentor",
@@ -78,7 +78,7 @@
           "flags": {
             "c03": "mentor"
           },
-          "detail": "Keeping Yazdi at a respectful, structured distance protects your authority and keeps the relationship legible to everyone watching — a teacher and his promising student, nothing more complicated. It's safer, and it costs you the kind of deep, load-bearing friendship that could carry your legacy forward if your own path goes wrong."
+          "detail": "Keep Yazdi at a teacher's distance. Safer authority, a shallower bond."
         }
       ]
     },
@@ -94,7 +94,7 @@
           "flags": {
             "c04": "deep"
           },
-          "detail": "Bonding deeply with Qasim-i Anvar means real solidarity — someone who will stand with you when it's costly to do so, and you for him. It also means your fates become entangled: whatever risk his lettrist associations carry, you now share it too."
+          "detail": "Bond deeply with Qasim-i Anvar. Real loyalty — and his risks become yours."
         },
         {
           "id": "distant",
@@ -102,7 +102,7 @@
           "flags": {
             "c04": "distant"
           },
-          "detail": "Keeping Qasim-i Anvar at a respectful distance is the cautious, self-protective choice — his troubles, when they come, won't automatically become yours. But it also forgoes the kind of bond that might matter later, when you need someone who won't abandon you either."
+          "detail": "Keep Qasim-i Anvar at arm's length. Safer, and less to lean on later."
         }
       ]
     },
@@ -118,7 +118,7 @@
           "flags": {
             "c05": "ibn_arabi"
           },
-          "detail": "Foregrounding Ibn 'Arabi alone aligns you with the tradition's most famous, most argued-over authority — instant legitimacy with everyone who already reveres him, and instant target status with anyone who considers him controversial."
+          "detail": "Foreground Ibn 'Arabi alone — the famous, fiercely contested half of the tradition."
         },
         {
           "id": "hamuya",
@@ -126,7 +126,7 @@
           "flags": {
             "c05": "hamuya"
           },
-          "detail": "Elevating Hamuya over the far more famous Ibn 'Arabi is the bolder, riskier claim — you're betting your own judgment against the tradition's settled hierarchy of who matters, in front of readers who may never have even heard Hamuya's name."
+          "detail": "Elevate the lesser-known Sa'd al-Din Hamuya instead — a bolder, riskier claim."
         },
         {
           "id": "both",
@@ -134,7 +134,7 @@
           "flags": {
             "c05": "both"
           },
-          "detail": "Insisting on both traditions at once, the historical choice, commits you to a harder synthesis and pleases no faction's partisans completely. It is also the intellectually honest position — and the one most likely to be remembered as genuinely original rather than merely derivative."
+          "detail": "Insist on both Ibn 'Arabi and Hamuya as co-founders — harder to argue, truer to what you believe."
         }
       ]
     },
@@ -150,7 +150,7 @@
           "flags": {
             "c06": "accepted"
           },
-          "detail": "Accepting the court appointment buys you security, resources, and a stage — but it also ties your fortunes to Iskandar Sultan's own, for better or worse. If his star falls, you may fall with it."
+          "detail": "Accept Iskandar Sultan's court appointment. Security now, tied to his fortunes."
         },
         {
           "id": "independent",
@@ -158,7 +158,7 @@
           "flags": {
             "c06": "independent"
           },
-          "detail": "Staying unaffiliated means no one owns your time or your doctrine — you write and teach exactly as you see fit. It also means going without patronage's protection and its purse, in a world where an unattached scholar is an unprotected one."
+          "detail": "Stay unaffiliated. No patron owns your time — none protects you either."
         }
       ]
     },
@@ -174,7 +174,7 @@
           "flags": {
             "c07": "full"
           },
-          "detail": "Presenting your full, still-forming system to a young prince is a bet that his curiosity outweighs his caution — it can win you a patron who genuinely understands and champions the work, not just funds it. It also means he now knows exactly how far your thinking goes, which he may repeat, misremember, or someday use against you."
+          "detail": "Show Iskandar Sultan the full, unabridged system. Impressive — and now he knows all of it."
         },
         {
           "id": "palatable",
@@ -182,7 +182,7 @@
           "flags": {
             "c07": "palatable"
           },
-          "detail": "Offering a safer, court-palatable version protects you from early exposure and keeps the prince comfortable. It also means he never really knows what he's patronizing — and doors that require his genuine understanding, later, may simply not open."
+          "detail": "Offer the prince a safer, watered-down version. He never really knows what he's funding."
         }
       ]
     },
@@ -201,7 +201,7 @@
           "skills": {
             "simiya": 1
           },
-          "detail": "Joining the atelier's poets and painters means your ideas start absorbing their instincts — image, rhythm, spectacle — which can make your work more vivid and more widely felt. It also blurs the line between philosopher and courtier, a line some colleagues will later use against your seriousness."
+          "detail": "Join Iskandar Sultan's atelier of poets and painters. Your ideas gain color; your seriousness gets questioned."
         },
         {
           "id": "separate",
@@ -209,7 +209,7 @@
           "flags": {
             "c08": "separate"
           },
-          "detail": "Keeping to philosophy and law preserves your reputation as a serious thinker, untouched by the atelier's more decorative reputation. It also means missing whatever cross-pollination might have sharpened your own ideas, and staying a little apart from the court's most influential circle."
+          "detail": "Stay apart from the atelier. Respected, and a little outside the court's real influence."
         }
       ]
     },
@@ -225,7 +225,7 @@
           "flags": {
             "c09": "flaunt"
           },
-          "detail": "Flaunting the theory builds your reputation fast — more students, more attention, more standing at court, right when you need it. It also broadcasts exactly what a jealous rival needs to know, years before you're ready to defend it."
+          "detail": "Flaunt the theory now. Reputation grows fast — so does the list of rivals watching."
         },
         {
           "id": "cautious",
@@ -233,7 +233,7 @@
           "flags": {
             "c09": "cautious"
           },
-          "detail": "Introducing the idea cautiously keeps you safer for longer — word spreads by reputation rather than declaration, with little for a rival to seize on directly. It also means slower growth, and risks others claiming credit for ideas you were too careful to attach your name to loudly."
+          "detail": "Let it spread quietly, by word of mouth. Slower, and harder for anyone to attack."
         }
       ]
     },
@@ -249,7 +249,7 @@
           "flags": {
             "c10": "loyal"
           },
-          "detail": "Staying loyal through Iskandar Sultan's decline is a bet on gratitude — if he remembers who stood with him, that debt could matter enormously later. It is also a bet against the odds: falling patrons rarely recover, and loyalty to a losing side can taint you by association."
+          "detail": "Stay loyal as Iskandar Sultan's star fades. A debt he may remember, if he survives to."
         },
         {
           "id": "early_defect",
@@ -257,7 +257,7 @@
           "flags": {
             "c10": "early_defect"
           },
-          "detail": "Quietly building ties to your next patron while the current one still reigns is simple self-preservation — you land safely no matter what happens to Iskandar Sultan. It also means there's no debt of loyalty left to call in later, from him or from anyone watching how you treated him."
+          "detail": "Quietly court your next patron early. Safe — and nothing left to call in later."
         }
       ]
     },
@@ -276,7 +276,7 @@
           "skills": {
             "limiya": 1
           },
-          "detail": "Leading with a shared love of the manuscript arts speaks to Baysunghur as a craftsman first, prince second — the fastest route to his genuine personal warmth, not just his patronage."
+          "detail": "Open with the manuscript arts, Baysunghur's own passion, and win him as a craftsman."
         },
         {
           "id": "astronomy",
@@ -287,7 +287,7 @@
           "skills": {
             "kimiya": 1
           },
-          "detail": "Leading with Samarkand's rising astronomical prestige signals ambition and relevance to the wider Timurid project — impressive, but it risks reading as political positioning rather than the personal connection calligraphy could offer."
+          "detail": "Open with Samarkand's rising prestige. Impressive, more distant than a shared craft."
         }
       ]
     },
@@ -306,7 +306,7 @@
           "gate": {
             "c07": "full"
           },
-          "detail": "Offering a lettrist framework for the Qur'an program embeds your doctrine into one of the most scrutinized objects this court will ever produce — permanent, prestigious, and permanently exposed to anyone later looking for evidence of unorthodox thinking."
+          "detail": "Offer a lettrist framework for the Baysunghur Qur'an itself — permanent, and permanently exposed."
         },
         {
           "id": "separate",
@@ -314,7 +314,7 @@
           "flags": {
             "c12": "separate"
           },
-          "detail": "Staying deliberately apart from a project this visible protects you from that scrutiny entirely. It also forfeits the chance to leave a literal, lasting mark on the single most important manuscript this court will produce."
+          "detail": "Stay apart from the Qur'an project. Safe, and no mark left on it."
         }
       ]
     },
@@ -330,7 +330,7 @@
           "flags": {
             "c13": "formality"
           },
-          "detail": "Letting the judgeship lapse into formality frees real time and attention for the philosophical work at its most demanding stage. It also means the post — and the legitimacy, income, and legal protection it carries — is quietly weakening under you."
+          "detail": "Let the qadi post lapse into formality. More hours for philosophy, less legal cover."
         },
         {
           "id": "active",
@@ -338,7 +338,7 @@
           "flags": {
             "c13": "active"
           },
-          "detail": "Staying genuinely active on the bench keeps your legal standing and public reputation strong, a second source of legitimacy independent of your patron's favor. It costs hours and focus the philosophical project badly needs, especially now."
+          "detail": "Stay genuinely active on the bench. Real legal standing, at real cost to the work."
         }
       ]
     },
@@ -357,7 +357,7 @@
           "skills": {
             "kimiya": 1
           },
-          "detail": "Actively seeking a formal tie to Samarkand through Yazdi could open real institutional doors — access, resources, a second base of legitimacy in the most prestigious scientific project of the age. It also costs effort and political capital chasing an association that may never fully materialize."
+          "detail": "Seek a formal tie to Ulugh Beg's Samarkand Observatory through Yazdi. Real weight, real effort."
         },
         {
           "id": "informal",
@@ -365,7 +365,7 @@
           "flags": {
             "c14": "informal"
           },
-          "detail": "Staying Isfahan-rooted keeps your effort focused on what's already working. It also means the friendship with Yazdi carries the entire weight of that connection — powerful while it lasts, and entirely dependent on one relationship holding."
+          "detail": "Let the friendship with Yazdi carry it instead. Lighter, entirely dependent on him."
         }
       ]
     },
@@ -381,7 +381,7 @@
           "flags": {
             "c15": "immediate"
           },
-          "detail": "Answering the challenge on the spot, in the same room, is the decisive move — it can end the argument before it spreads, and shows you're not afraid of scrutiny. It's also irreversible: whatever you say in that moment becomes the permanent public record of how you responded."
+          "detail": "Answer the rival publicly, on the spot. Decisive, and irreversible."
         },
         {
           "id": "delayed",
@@ -389,7 +389,7 @@
           "flags": {
             "c15": "delayed"
           },
-          "detail": "Letting the challenge pass costs you nothing in the moment and denies the rival the satisfaction of a public confrontation. It also lets the accusation sit unanswered in the room, free for anyone to interpret as evidence you had no real response."
+          "detail": "Let the challenge pass unanswered. Costs nothing now; reads however the room wants."
         }
       ]
     },
@@ -409,7 +409,7 @@
           "skills": {
             "kimiya": 3
           },
-          "detail": "Alchemy is the most elite and technically demanding of the five sciences — mastering it signals serious, expensive, years-deep commitment, and the kind of prestige only the most rigorous scholars command. It is also the slowest science to show results, and the one most likely to invite accusations of chasing gold rather than truth."
+          "detail": "Kimiya, alchemy — the most elite science, the slowest to pay off."
         },
         {
           "id": "limiya",
@@ -421,7 +421,7 @@
           "skills": {
             "limiya": 3
           },
-          "detail": "Talismanry — binding celestial forces to earthly ones — sits just below alchemy in prestige, demanding careful astronomical and ritual precision. It offers real, demonstrable effects sooner than alchemy does, at only slightly less elite cost."
+          "detail": "Limiya, talismanry — binding heaven to earth, one rank below alchemy."
         },
         {
           "id": "himiya",
@@ -433,7 +433,7 @@
           "skills": {
             "himiya": 3
           },
-          "detail": "Subjugation — compelling planets and jinn through rigorous invocation — is powerful and dramatic, drawing both awe and suspicion in equal measure. It is a science of command, and commanding forces others fear is never entirely safe for the one doing the commanding."
+          "detail": "Himiya, subjugation — commanding jinn and planets. Commanding fear, too."
         },
         {
           "id": "simiya",
@@ -445,7 +445,7 @@
           "skills": {
             "simiya": 3
           },
-          "detail": "Illusionism — projecting convincing but unreal images into an observer's perception — is subtler and more dangerous than it sounds: mastering how people see is mastering how they believe, which makes you as useful to a patron as you are threatening to a rival."
+          "detail": "Simiya, illusionism — shaping what other people believe they see."
         },
         {
           "id": "rimiya",
@@ -457,7 +457,7 @@
           "skills": {
             "rimiya": 3
           },
-          "detail": "Trickery is the most accessible of the five sciences, the fastest to learn and the fastest to astonish a room. It is also the least prestigious — a science that pays quickly in attention and slowly, if ever, in the deep scholarly respect the other four can eventually earn."
+          "detail": "Rimiya, trickery — the fastest science to learn, the least prestigious."
         }
       ]
     },
@@ -473,7 +473,7 @@
           "flags": {
             "c17": "narrow"
           },
-          "detail": "Committing to one science alone is the historical, harder path: total specialization, total identification with a single discipline, and no fallback if that discipline falls out of favor at court."
+          "detail": "Commit to one science alone — the harder, historical path."
         },
         {
           "id": "diversify",
@@ -484,7 +484,7 @@
           "skills": {
             "rimiya": 1
           },
-          "detail": "Spreading study across several sciences means steadier income and more paths forward if any one falls out of fashion. It also means you'll likely never be the single most respected master of any one science in the room."
+          "detail": "Spread across several sciences. Steadier income, never the deepest master in the room."
         }
       ]
     },
@@ -503,7 +503,7 @@
           "skills": {
             "kimiya": 1
           },
-          "detail": "Building the mathematical foundation first is slower and less immediately impressive, but it means nothing you build afterward rests on an argument you can't actually defend under real scrutiny."
+          "detail": "Build the mathematics first. Slower to impress; nothing built on sand."
         },
         {
           "id": "theurgy_first",
@@ -514,7 +514,7 @@
           "skills": {
             "himiya": 1
           },
-          "detail": "Leading with the bold cosmological claims wins attention and patron interest fast, dazzling before it's fully proven. It also means the underlying mathematics has to catch up under pressure, in public, after the claims are already out."
+          "detail": "Lead with the bold cosmological claims. Faster to dazzle, math catches up under pressure."
         }
       ]
     },
@@ -530,7 +530,7 @@
           "flags": {
             "c19": "early"
           },
-          "detail": "Publishing the sensory-theory breakthrough now stakes your claim to it before anyone else can — priority matters, and being first is remembered. It also means defending genuinely new, unproven ideas with a reputation not yet strong enough to absorb being wrong."
+          "detail": "Publish the sensory theory now, against Avicenna's own hierarchy. Bold, and early."
         },
         {
           "id": "hold",
@@ -538,7 +538,7 @@
           "flags": {
             "c19": "hold"
           },
-          "detail": "Holding the theory back until your standing can absorb any backlash is the patient, protected choice. It also risks someone else reaching the same insight first, or the idea losing its edge by the time you finally publish it."
+          "detail": "Hold it until your name can absorb the backlash. Patient, possibly too patient."
         }
       ]
     },
@@ -554,7 +554,7 @@
           "flags": {
             "c20": "rush"
           },
-          "detail": "Circulating the core diagram alongside the observatory's own rising prestige means maximum attention at the moment attention is easiest to get. It also means less time to refine a diagram meant to summarize your entire life's work."
+          "detail": "Circulate the Tahawi Circle alongside Samarkand's own rising fame. Maximum attention, minimum polish."
         },
         {
           "id": "refine",
@@ -565,7 +565,7 @@
           "skills": {
             "limiya": 1
           },
-          "detail": "Taking the years the diagram actually needs means it will be exactly as good as it should be when it finally appears. It also risks missing the specific moment when Samarkand's fame could have carried your own work further, faster."
+          "detail": "Take the years the diagram needs. Right — and possibly too late to matter as much."
         }
       ]
     },
@@ -581,7 +581,7 @@
           "flags": {
             "c21": "elite"
           },
-          "detail": "Writing in the dense, demanding register the historical Investigations actually used signals total seriousness and secures the tradition's respect — at the cost of a readership small enough that most of the court will never actually understand what you built."
+          "detail": "Write Investigations dense and demanding, as it actually was. Respected by few, understood by fewer."
         },
         {
           "id": "accessible",
@@ -592,7 +592,7 @@
           "skills": {
             "rimiya": 1
           },
-          "detail": "Writing toward Kashifi-style accessibility means far more people can actually read and use the work — wider reach, wider influence, sooner. It also trades away some of the rigor and prestige a denser, harder text would have carried."
+          "detail": "Write toward a Kashifi-style wider readership. More readers, less mystique."
         }
       ]
     },
@@ -608,7 +608,7 @@
           "flags": {
             "c22": "wide"
           },
-          "detail": "Recruiting and teaching broadly means your ideas start living in more minds than just your own — real insurance against the whole system being lost if anything happens to you. It also means less control over how faithfully those ideas get carried, and a wider circle for a hostile inquiry to eventually investigate."
+          "detail": "Grow the New Brethren of Purity broadly. Harder to erase, harder to trust completely."
         },
         {
           "id": "small",
@@ -616,7 +616,7 @@
           "flags": {
             "c22": "small"
           },
-          "detail": "Keeping the New Brethren small and vetted means tighter trust and far less exposure — fewer people who could turn against you or misrepresent the work under pressure. It also means the entire system depends on very few people surviving intact."
+          "detail": "Keep the New Brethren small and vetted. Tight trust, total dependence on a few."
         }
       ]
     },
@@ -635,7 +635,7 @@
           "skills": {
             "simiya": 1
           },
-          "detail": "Producing a simplified Persian version alongside the masterwork reaches an audience the dense Arabic original never could — real influence, real income, real popular reach. It also means the simplified version becomes, for most people, the only version of your thinking they'll ever actually encounter."
+          "detail": "Produce a simplified Persian edition alongside Investigations. Wider reach — and it becomes 'you' to most readers."
         },
         {
           "id": "no",
@@ -643,7 +643,7 @@
           "flags": {
             "c23": "no"
           },
-          "detail": "Refusing to simplify protects the work's full difficulty and its prestige among serious readers. It also cedes the popular audience entirely to whoever is willing to simplify similar material instead."
+          "detail": "Refuse to simplify. Full difficulty stands; Kashifi's circle gets the popular audience instead."
         }
       ]
     },
@@ -662,7 +662,7 @@
           "skills": {
             "rimiya": 1
           },
-          "detail": "Taking on the practical grimoire commission means real income and real status among a wider audience, right now, when both are useful. It also attaches your name to something far less rigorous than your actual life's work, in the eyes of anyone keeping score."
+          "detail": "Take the commission — a Boon-for-the-Khan-style manual of named operations. Real money, less prestige."
         },
         {
           "id": "decline",
@@ -670,7 +670,7 @@
           "flags": {
             "c24": "decline"
           },
-          "detail": "Declining protects the seriousness and prestige of the philosophical project from any association with cheaper, more commercial material. It also turns down income and reach you may come to miss, especially once patronage becomes less reliable."
+          "detail": "Decline the popular commission. Prestige intact, income and reach forgone."
         }
       ]
     },
@@ -686,7 +686,7 @@
           "flags": {
             "c25": "generous"
           },
-          "detail": "Crediting Ibn 'Arabi and Hamuya generously is the intellectually honest move, and it buys real goodwill from anyone who reveres either name. It also means some of the credit for the system's originality goes to them rather than to you."
+          "detail": "Credit Ibn 'Arabi and Hamuya generously. Honest — and less of the credit is yours."
         },
         {
           "id": "overclaim",
@@ -694,7 +694,7 @@
           "flags": {
             "c25": "overclaim"
           },
-          "detail": "Letting your own name carry more of the credit than is strictly earned reads impressively in the moment — a system that looks entirely your own invention. It is also exactly the kind of thing a rival remembers and produces as evidence, later, when your honesty is in question for other reasons."
+          "detail": "Let your own name carry more credit than earned. Impressive now, dangerous evidence later."
         }
       ]
     },
@@ -710,7 +710,7 @@
           "flags": {
             "c26": "accepted"
           },
-          "detail": "Taking the Chief Judge post, the historical choice, means real income, real legal standing, and a second, more conventional form of legitimacy layered on top of your philosophical reputation. It also means a second full-time job — and a second set of rivals who resent a philosopher holding real legal power."
+          "detail": "Take the Chief Judge post, the historical choice. Real standing, a second set of enemies."
         },
         {
           "id": "declined",
@@ -718,7 +718,7 @@
           "flags": {
             "c26": "declined"
           },
-          "detail": "Declining the judgeship keeps you a scholar-only figure, free of the bench's daily demands and its particular political dangers. It also gives up the kind of institutional legitimacy and protection the post would have provided when you needed it most."
+          "detail": "Decline the judgeship. Purer as a scholar, and less protected."
         }
       ]
     },
@@ -734,7 +734,7 @@
           "flags": {
             "c27": "powerful"
           },
-          "detail": "Ruling for the powerful party is the expedient choice — it costs you nothing today and may buy useful goodwill from people who matter. It is also the choice that quietly corrodes the exact reputation, a judge who defends the weak, that has protected you until now."
+          "detail": "Rule for the powerful man's interest. Easy today, corrosive to your name as a defender of the weak."
         },
         {
           "id": "weak",
@@ -742,7 +742,7 @@
           "flags": {
             "c27": "weak"
           },
-          "detail": "Ruling for the weaker party against real political pressure is the choice the histories actually remember you making — real courage, real cost, and a reputation that follows you for the rest of your life. It also makes you a concrete enemy of whoever the powerful party answers to."
+          "detail": "Rule for the weaker party — the reputation history remembers. Costly, and a real enemy made."
         }
       ]
     },
@@ -758,7 +758,7 @@
           "flags": {
             "c28": "separate"
           },
-          "detail": "Keeping judge and occultist strictly separate protects the bench from any accusation of sorcery influencing the law. It also means the two halves of your life never reinforce each other, and the court never sees what your full method can actually do."
+          "detail": "Keep judge and occultist strictly apart. No accusation of sorcery — and no proof of your method either."
         },
         {
           "id": "blended",
@@ -769,7 +769,7 @@
           "gate": {
             "c19": "early"
           },
-          "detail": "Letting lettrist reasoning shape a judicial argument, in open court, is a genuine first — it can win the case more decisively than conventional argument alone. It also puts your occult method on the legal record, permanently, for anyone later looking for grounds to call your judgment itself unorthodox."
+          "detail": "Let lettrist reasoning argue the case in open court, a first. It works — and it's now on the record."
         }
       ]
     },
@@ -785,7 +785,7 @@
           "flags": {
             "c29": "mercy"
           },
-          "detail": "Extending quiet solidarity to a fellow practitioner is the humane choice, consistent with everything else you believe. It is also a matter of public record — a pattern, if anyone is ever looking for one, of a judge sympathetic to occult practitioners specifically."
+          "detail": "Show quiet solidarity with the accused occultist. Humane, and a pattern someone could notice."
         },
         {
           "id": "orthodoxy",
@@ -793,7 +793,7 @@
           "flags": {
             "c29": "orthodoxy"
           },
-          "detail": "Enforcing the law strictly, without visible sympathy, protects you from that exact pattern. It also means condemning someone whose only real difference from you is that they got caught."
+          "detail": "Enforce the law strictly. Protects you; condemns someone whose real difference is getting caught."
         }
       ]
     },
@@ -809,7 +809,7 @@
           "flags": {
             "c30": "bench"
           },
-          "detail": "Giving the year to the bench's legitimacy keeps that second source of standing solid, right when political winds are shifting. It also means the philosophical work, at the height of your intellectual powers, simply waits."
+          "detail": "Give the year to the bench's legitimacy. Steady — the philosophy simply waits."
         },
         {
           "id": "writing",
@@ -820,7 +820,7 @@
           "skills": {
             "primary_bonus": 1
           },
-          "detail": "Giving the year to the philosophical work at its peak means producing work that may never be equaled later. It also means the docket suffers, and with it some of the legitimacy the bench provides."
+          "detail": "Give the year to the work at its peak. The docket suffers; the philosophy doesn't."
         }
       ]
     },
@@ -836,7 +836,7 @@
           "flags": {
             "c31": "legal"
           },
-          "detail": "Mounting a rigorous legal defense on the merits alone is the harder case to build and the cleanest one to win — no debts owed, no favors spent, just the argument itself standing or falling on its own strength."
+          "detail": "Mount a rigorous legal defense alone — the harder, cleanest case to win."
         },
         {
           "id": "patron",
@@ -847,7 +847,7 @@
           "gate": {
             "c10": "loyal"
           },
-          "detail": "Calling in Iskandar Sultan's old loyalty, available only if you stayed loyal through his downturn, is faster and more certain — but it spends a debt you may need again, and puts your fate visibly in someone else's hands rather than your own argument's."
+          "detail": "Call in Iskandar Sultan's old loyalty. Faster — and it spends a debt for good."
         },
         {
           "id": "both",
@@ -858,7 +858,7 @@
           "gate": {
             "c10": "loyal"
           },
-          "detail": "Attempting both the legal defense and the patron favor at once is the strongest possible combination — and the hardest to coordinate without one undermining the other's credibility in the tribunal's eyes."
+          "detail": "Attempt both the legal defense and the patron's favor. Strongest combination, hardest to coordinate."
         }
       ]
     },
@@ -874,7 +874,7 @@
           "flags": {
             "c32": "recant"
           },
-          "detail": "Offering a partial, face-saving recantation, phrased so everyone can pretend it wasn't quite one, is the fastest way to end this safely. It also means living afterward with having said the words, whatever you privately still believe."
+          "detail": "Offer a face-saving recantation. Ends this fast; you'll hear your own words for years."
         },
         {
           "id": "hold",
@@ -882,7 +882,7 @@
           "flags": {
             "c32": "hold"
           },
-          "detail": "Holding every position without concession, in front of people who wanted you to bend, is the harder and more expensive path. It also means nothing you actually believe gets compromised in the record — whatever this costs, it won't include that."
+          "detail": "Hold every position without concession. Costly, and nothing you believe gets compromised."
         }
       ]
     },
@@ -898,7 +898,7 @@
           "flags": {
             "c33": "distance"
           },
-          "detail": "Preemptively distancing yourself from Qasim-i Anvar may protect you from being tied to his troubles — but if you bonded deeply with him back in Cairo, he will feel this as exactly the betrayal it looks like."
+          "detail": "Distance yourself from Qasim-i Anvar under pressure. May save you — he will feel the betrayal."
         },
         {
           "id": "refuse",
@@ -907,7 +907,7 @@
             "c33": "refuse"
           },
           "narrative_weight_scales_with": "c04",
-          "detail": "Refusing to abandon anyone under pressure is the loyal, principled choice, and it costs you nothing in your own conscience. It also means accepting whatever risk comes from being associated with someone the tribunal has already decided to suspect."
+          "detail": "Refuse to abandon anyone. Principled — and the shared risk is now yours too."
         }
       ]
     },
@@ -923,7 +923,7 @@
           "flags": {
             "c34": "bend"
           },
-          "detail": "Bending the knee means surviving this — diminished, your system publicly qualified, but alive to argue another day. It also means saying, out loud, in front of witnesses, something less than the whole truth of what you believe."
+          "detail": "Bend the knee. You survive, diminished, having said less than the whole truth."
         },
         {
           "id": "hold",
@@ -931,7 +931,7 @@
           "flags": {
             "c34": "hold"
           },
-          "detail": "Holding firm, the historical choice, means refusing to give the tribunal what it wants, whatever that costs. It is the harder, more expensive choice — and the one more likely to be remembered as integrity rather than survival."
+          "detail": "Hold firm, the historical choice. Whatever it costs, it isn't your integrity."
         }
       ]
     },
@@ -947,7 +947,7 @@
           "flags": {
             "c35": "flee"
           },
-          "detail": "Attempting to flee before judgment is undignified and uncertain, but it keeps you alive to see what happens next — outcomes a trial verdict might foreclose entirely."
+          "detail": "Attempt to flee before judgment. Undignified, uncertain, and alive to see what's next."
         },
         {
           "id": "stand",
@@ -955,7 +955,7 @@
           "flags": {
             "c35": "stand"
           },
-          "detail": "Standing to face the tribunal directly, on your own name, means whatever is said of you afterward, no one can say you weren't there when it mattered. It also means accepting whatever the tribunal decides, with no way out if the verdict goes against you."
+          "detail": "Stand and face the tribunal on your own name. No one can say you weren't there."
         }
       ]
     },
@@ -971,7 +971,7 @@
           "flags": {
             "c36": "new_patron"
           },
-          "detail": "Seeking a new patron at a rival court bets that your reputation still travels faster than the scandal that ended your last position. It could restore some of what you lost — or it could mean discovering the scandal arrived first."
+          "detail": "Seek a new patron at a rival court, betting your name outruns the scandal."
         },
         {
           "id": "retreat",
@@ -979,7 +979,7 @@
           "flags": {
             "c36": "retreat"
           },
-          "detail": "Retreating into pure private scholarship, with no patron and no court, protects you from further political exposure entirely. It also means the work most likely goes as far as your own remaining years and no further."
+          "detail": "Retreat into private scholarship. Safe — the work goes only as far as you do."
         },
         {
           "id": "reconcile",
@@ -987,7 +987,7 @@
           "flags": {
             "c36": "reconcile"
           },
-          "detail": "Attempting reconciliation and a path back toward Isfahan is the hardest and highest-risk option — real vindication if it works, and confirmation of everything your accusers said about you if it doesn't."
+          "detail": "Attempt reconciliation toward Isfahan. Real vindication if it works, confirmation of the worst if not."
         }
       ]
     },
@@ -1003,7 +1003,7 @@
           "flags": {
             "c37": "continue"
           },
-          "detail": "Continuing to write and teach in exile keeps the work alive and visible, which matters if you want it to survive you. It also means staying a visible, reachable target for anyone still interested in finishing what the third inquisition started."
+          "detail": "Keep writing and teaching in exile. Alive and visible — and reachable."
         },
         {
           "id": "silent",
@@ -1011,7 +1011,7 @@
           "flags": {
             "c37": "silent"
           },
-          "detail": "Going quiet protects what remains of both the work and yourself from further exposure. It also means nothing new gets added to it — whatever exists now is likely all that ever will."
+          "detail": "Go quiet to protect what remains. Safer; nothing new gets added."
         }
       ]
     },
@@ -1027,7 +1027,7 @@
           "flags": {
             "c38": "entrust"
           },
-          "detail": "Formally entrusting your papers to Yazdi means the work has somewhere to go no matter what happens to you now — and if you built real partnership with him back in Cairo, he's positioned to carry it forward whole, not just faithfully."
+          "detail": "Formally entrust the papers to Yazdi at the Samarkand Observatory. The work has somewhere to go."
         },
         {
           "id": "keep",
@@ -1035,7 +1035,7 @@
           "flags": {
             "c38": "keep"
           },
-          "detail": "Keeping the papers close protects them from any hand you don't fully trust. It also means they travel exactly as far as you do, and no further — nothing survives that you don't personally carry."
+          "detail": "Keep the papers close. They travel exactly as far as you do."
         }
       ],
       "note": "Transmission completeness in the ending logic depends on c03: entrust+equal = full transmission, entrust+mentor = partial, keep = lost regardless of c03."
@@ -1052,7 +1052,7 @@
           "flags": {
             "c39": "peace"
           },
-          "detail": "Making peace with everything this cost doesn't undo any of it — but it may be the one operation, of everything you ever mastered, that actually matters at the end."
+          "detail": "Make peace with what this cost. It changes nothing — and it may be what matters most."
         },
         {
           "id": "bitter",
@@ -1060,7 +1060,7 @@
           "flags": {
             "c39": "bitter"
           },
-          "detail": "Going out angry at the men who did this is not wrong, exactly — they did do this. It also means the last thing anyone remembers of you is the anger, not the work."
+          "detail": "Go out angry at your accusers. Not wrong — and it's what people will remember."
         },
         {
           "id": "defiant",
@@ -1068,7 +1068,7 @@
           "flags": {
             "c39": "defiant"
           },
-          "detail": "Going out certain history will eventually agree with you is either the greatest act of faith in your life or the most accurate prediction you ever made — and you won't live to find out which."
+          "detail": "Go out certain history will agree with you. Faith or prophecy — you won't learn which."
         }
       ]
     },
@@ -1084,7 +1084,7 @@
           "flags": {
             "c40": "public"
           },
-          "detail": "Leaving a public, unmistakable final statement invites condemnation from exactly the people who condemned you before — but condemnation is a form of being read, argued with, and therefore remembered."
+          "detail": "Leave a public final statement on Investigations's fate. Condemned again, and therefore read."
         },
         {
           "id": "quiet",
@@ -1092,7 +1092,7 @@
           "flags": {
             "c40": "quiet"
           },
-          "detail": "Leaving a quiet transmission for the New Brethren alone means no proclamation and no audience, just the work itself passed hand to hand — smaller, and much harder for anyone to burn."
+          "detail": "Leave a quiet transmission to the New Brethren alone. Small, and hard to burn."
         }
       ]
     }

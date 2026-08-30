@@ -109,6 +109,19 @@ building:
   conventions vary by genre/period — the VN uses one real manuscript/diagram/object
   image as a backdrop per act (8 total), never an invented portrait.
 
+## v3 writing audit (2026-08-30, fifth session)
+
+- **User audit found v2's option text drifting long and generic** — averaging ~41
+  words, naming real entities inconsistently. Rewrote all 87 to ~14 words average
+  (a third of v2, per the user's own "half or a third" target) and audited each
+  for a real name to attach wherever `docs/BIOGRAPHY.md` supports one.
+  `WRITING_GUIDE.md` gained a numeric anchor (~10-20 words) specifically because
+  "a bit shorter" without a number tends to regress back up over successive
+  edits — this is now checkable, not just a vibe.
+- **v2 frozen as `games/visual-novel-v2/`**, following the v1 precedent exactly —
+  versioned deploy, not overwrite, is now the established pattern for any future
+  writing-style change substantial enough to be worth comparing.
+
 ## Versioned deploy + writing discipline (2026-08-30, fourth session)
 
 - **Versioned deploy, not overwrite.** When choice options grew from short labels
