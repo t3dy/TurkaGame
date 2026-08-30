@@ -60,6 +60,15 @@ they're general research, not TurkaGame-specific game design.
 
 ## Ground rules for this project specifically
 
+- **Scenes reveal the real world, not generic occult-fantasy atmosphere.** Before
+  writing or revising any VN scene text, read
+  [games/visual-novel/WRITING_GUIDE.md](games/visual-novel/WRITING_GUIDE.md) —
+  every scene should surface something specific and real (a named text,
+  institution, practice, or historiographical fact) from
+  [docs/BIOGRAPHY.md](docs/BIOGRAPHY.md) / [site/data/timeline.json](site/data/timeline.json),
+  which are the canonical research-access layer, not `docs/RESEARCH_BRIEF.md`'s
+  looser prose. This is a house rule, not a suggestion — it's the difference
+  between this project and a fantasy VN with the serial numbers filed off.
 - **No copyrighted source PDFs in the repo.** The scholarly articles this project is built
   on (Melvin-Koushki's papers) stay in `research/library/`, which is gitignored. Only
   original, paraphrased synthesis (with citations) goes into tracked files. Never commit a

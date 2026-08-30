@@ -2,14 +2,11 @@
 // title -> act_intro -> choice -> consequence -> (loop) -> ending
 // Debug handle: window.__turkaVN (matches EmblemNovel's window.__novel convention).
 
-// v4 — bump this and every import below on content/logic changes; python
-// http.server sends no cache-control headers, so browsers heuristically cache
-// these module files hard, and a bare `location.reload()` doesn't bust that.
-import { State } from './state.js?v=6';
-import { ACT_INTROS, CHOICE_TEXT, CHOICE_TEXT_DYNAMIC, OPTION_CONSEQUENCE, OPTION_CONSEQUENCE_DYNAMIC } from './narrative.js?v=6';
-import { ACT_BACKDROP, backdropFor } from './assets.js?v=6';
-import { computeEnding, epilogueFor } from './endings.js?v=6';
-import { renderTitle, renderActIntro, renderChoice, renderConsequence, renderEnding } from './ui.js?v=6';
+import { State } from './state.js';
+import { ACT_INTROS, CHOICE_TEXT, CHOICE_TEXT_DYNAMIC, OPTION_CONSEQUENCE, OPTION_CONSEQUENCE_DYNAMIC } from './narrative.js';
+import { ACT_BACKDROP, backdropFor } from './assets.js';
+import { computeEnding, epilogueFor } from './endings.js';
+import { renderTitle, renderActIntro, renderChoice, renderConsequence, renderEnding } from './ui.js';
 
 let CHOICES = [];
 let state = new State();
@@ -18,9 +15,7 @@ let lastRenderedAct = 0;
 let pendingConsequence = null; // { text, skillGains }
 
 async function loadChoices() {
-  // no-store: choices.json changes with content updates (new prose, new detail
-  // text) more often than the browser's heuristic HTTP cache would revalidate it.
-  const res = await fetch('./choices.json', { cache: 'no-store' });
+  const res = await fetch('./choices.json');
   const data = await res.json();
   return data.choices;
 }

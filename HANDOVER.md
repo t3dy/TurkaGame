@@ -29,17 +29,34 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
 - **40 branching life-choices**, fully structured: `games/visual-novel/CHOICES.md`
   (narrative report, grounding-tagged), `STATE_MODEL.md` (mechanics design),
   `choices.json` (validated structured data — options/skills/flags/gates for all 40).
-- **A playable VN prototype** (`games/visual-novel/`): the full 40-choice, 8-act
-  loop — title screen, act-transition screens, choice screen, a consequence beat
-  after every pick, and an ending screen with a full act-by-act journal. Forked from
-  EmblemNovel's engine pattern. Real scene-setting prose for all 40 choices plus
-  ~110 lines of per-option consequence text (not final/polished, but real sentences,
-  not placeholders — see `NEXTSTEPS.md` Tier 1 for what's still thin). 4 choices
-  (`c12`/`c31`/`c33`/`c38`) have dynamic text that changes based on earlier choices.
-  Verified end to end, including live on GitHub Pages: full playthrough, skill
-  accumulation, gate-blocking (confirmed: choice #10 concretely closes off an option
-  at choice #31), save/resume mid-game restores to the exact right act and choice,
-  mobile-responsive.
+- **Two live, playable VN versions**, deployed side by side rather than
+  overwriting one another:
+  - **`games/visual-novel/` — Version 2.0 (current).** The full 40-choice, 8-act
+    loop — title screen, act-transition screens, choice screen, a consequence beat
+    after every pick, an ending screen with a full act-by-act journal and a
+    personalized epilogue. All 87 choice options now carry a `detail` field (2-4
+    sentences of reasoning — values, risk, how it reads to others), rendered as a
+    bold label + body paragraph inside each option button. 7 of 40 scenes are
+    reactive to earlier choices. Every scene is written per
+    **`games/visual-novel/WRITING_GUIDE.md`** (new house rule, also linked from
+    `CLAUDE.md`'s ground rules) to reveal something specific and real from
+    `docs/BIOGRAPHY.md`/`site/data/timeline.json` — a named text, institution, or
+    practice — not generic occult atmosphere.
+  - **`games/visual-novel-v1/` — Version 1.0 (archived).** Frozen snapshot of the
+    prototype as of commit `7bf20cd`, before option-detail text was added — the
+    "short choice labels" version, kept playable rather than deleted so the
+    before/after of that change is directly comparable, not just described in a
+    commit message. Not maintained going forward; see its own `README.md`.
+  - Both cross-link to each other via a version banner. Both use `?v=6` query
+    params on every local module import (bumped again after each content change)
+    because `python -m http.server` sends no cache-control headers and browsers
+    were observed serving stale JS/JSON across navigations without it — a real bug
+    caught mid-session, not a hypothetical.
+  - Verified end to end on both versions, including live on GitHub Pages: full
+    playthroughs, skill accumulation, gate-blocking (choice #10 concretely closes
+    off an option at choice #31), save/resume mid-game restores to the exact right
+    act and choice, mobile-responsive, v1 confirmed to render short labels only,
+    v2 confirmed to render full detail text.
 - **Live on GitHub Pages**: https://t3dy.github.io/TurkaGame/ (repo root is the
   Pages source; a root `index.html` redirects to `site/index.html` since the actual
   homepage lives under `site/`). Verified live, including the game itself and its

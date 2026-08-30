@@ -109,6 +109,29 @@ building:
   conventions vary by genre/period — the VN uses one real manuscript/diagram/object
   image as a backdrop per act (8 total), never an invented portrait.
 
+## Versioned deploy + writing discipline (2026-08-30, fourth session)
+
+- **Versioned deploy, not overwrite.** When choice options grew from short labels
+  to full reasoning text, the previous state was frozen as `games/visual-novel-v1/`
+  (a snapshot of commit `7bf20cd`) rather than lost to history-only. Both versions
+  stay live and cross-linked. Precedent for future major content shifts: freeze a
+  v-N snapshot before a change substantial enough that someone might want to
+  compare, don't just trust the git log to make that comparison accessible.
+- **Scenes must reveal real scholarship, codified as a house rule**, not left
+  implicit. `games/visual-novel/WRITING_GUIDE.md` is the new required read before
+  touching `narrative.js`, linked from `CLAUDE.md`'s ground rules. `docs/BIOGRAPHY.md`
+  and `site/data/timeline.json` are named explicitly as the canonical
+  research-access layer for this purpose — supersedes `docs/RESEARCH_BRIEF.md`'s
+  looser prose for this specific purpose (RESEARCH_BRIEF.md is unchanged and still
+  fine for general texture).
+- **Cache-busting is now load-bearing, not optional.** Hit a real bug this session
+  (twice) where `python -m http.server`'s lack of cache-control headers let
+  browsers serve stale `choices.json`/JS modules across navigations. Fixed with
+  `cache: 'no-store'` on the choices.json fetch and a shared `?v=N` query param
+  across every local module import, bumped on every content change — not just a
+  one-time fix, an ongoing discipline every future narrative.js edit needs to
+  remember.
+
 ## Biography and Timeline (2026-08-30, third session)
 
 - **Portal-first for new biographical facts, per this project's own CLAUDE.md

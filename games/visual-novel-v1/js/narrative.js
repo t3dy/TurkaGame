@@ -37,9 +37,9 @@ export const CHOICE_TEXT = {
   c19: 'The new theory of the senses you have been developing overturns a hierarchy Avicenna himself never questioned. It is either the most important thing you will ever publish, or the fastest way to make yourself a target before you are ready for one.',
   c20: 'The Ṭahawī Circle — the diagram that summarizes everything you believe about the cosmos in a single figure — is nearly finished. Samarkand\'s observatory is rising at the same moment, and the timing will not go unnoticed either way.',
   c21: 'You could write Investigations the way it wants to be written — dense, demanding, built for readers willing to earn every page — or you could write something a wider court could actually follow. Both are honest choices. Only one is the one history remembers you making.',
-  c22: 'The New Brethren of Purity — the name your circle chose for itself, consciously invoking the old Ikhwan al-Safa\' whose Rasa\'il once tried to gather all knowledge into one encyclopedia — keeps growing whether you plan for it or not. More students arrive each season, most of them earnest, a few of them clearly here to report back to someone. A wide brotherhood is influence. A small one is safety.',
+  c22: 'Students keep arriving, more each season, most of them earnest, a few of them clearly here to report back to someone. A wide circle is influence. A small one is safety.',
   c23: 'An officer at court asks, diplomatically, whether a simplified Persian edition might do more good in the world than the Arabic masterwork alone. He is not wrong. He is also not entirely disinterested.',
-  c24: 'A patron\'s steward arrives with a commission out of the popular grimoire tradition — the kind of thing \'Ali Safi will later call a Boon for the Khan: name the suffumigation that produces a convincing illusion, the rite that lets a sleeper be interrogated, the operation for dowsing buried treasure. Concrete, sellable, nothing like the grand system you\'ve been building. The money is real either way.',
+  c24: 'A patron\'s steward arrives with a specific, practical, faintly embarrassing request — something sellable, something popular, nothing like the grand system you\'ve been building. The money is real either way.',
   c25: 'Two names anchor everything you\'ve built: Ibn ʿArabī and Ḥamūya. You could credit them generously and let the debt show, or let your own name carry more of the weight than is strictly earned.',
   c26: 'The post of Chief Judge of Isfahan is offered — real income, real legal standing, and a second full-time life layered on top of the one you already have.',
   c27: 'A case comes before your bench that the whole city is watching: a powerful man\'s claim against a poor one, with the powerful man\'s friends already circling the courthouse.',
@@ -55,13 +55,13 @@ export const CHOICE_TEXT = {
   c37: 'Even here, even now, the work does not stop wanting to be written. The only question is whether writing it is wisdom or a habit you can no longer break.',
   c38: 'Yazdi finds you in exile — loyal as ever, older now, still the best mind you have ever argued with. He asks, carefully, whether you mean to leave your papers to anyone, and whether he might be that anyone.',
   c39: 'However this ends, it is ending. You have time, at least, to choose the shape of it.',
-  c40: 'Investigations is already, quietly, becoming the kind of book that gets copied less than it is talked about — respected by name, read by almost no one, the way difficult books go unfashionable long before anyone declares them so. Whatever you leave now, if anything, is what a reader centuries from now will eventually have to work with.',
+  c40: 'One more thing, if there is to be one more thing, for whoever eventually goes looking for what you left behind.',
 };
 
 export const CHOICE_TEXT_DYNAMIC = {
   c22: (state) => state.flags.c03 === 'equal'
-    ? 'The New Brethren of Purity keep arriving, more each season. Yazdi — who you let all the way into the work — argues you should trust others the way you trusted him: the ideas got stronger for it, not weaker. A wide brotherhood is influence. A small one is safety.'
-    : 'The New Brethren of Purity keep arriving, more each season. You have kept even Yazdi at a certain distance from the innermost work, and it has served you — no leaks, no distortions. But a system only one man fully holds is a system one death can erase. A wide brotherhood is influence. A small one is safety.',
+    ? 'Students keep arriving, more each season. Yazdi — who you let all the way into the work — argues you should trust others the way you trusted him: the ideas got stronger for it, not weaker. A wide circle is influence. A small one is safety.'
+    : 'Students keep arriving, more each season. You have kept even Yazdi at a certain distance from the innermost work, and it has served you — no leaks, no distortions. But a system only one man fully holds is a system one death can erase. A wide circle is influence. A small one is safety.',
   c27: (state) => state.flags.c09 === 'flaunt'
     ? 'A case comes before your bench that the whole city is watching: a powerful man\'s claim against a poor one. Your name is already loud — you made sure of that years ago — which means whichever way you rule, everyone will say it proves what they always suspected about you.'
     : 'A case comes before your bench that the whole city is watching: a powerful man\'s claim against a poor one. You have spent years keeping your name quiet, and it bought you this: for once, the ruling will be read as law, not as a philosopher\'s ambition. That makes it more dangerous, not less.',

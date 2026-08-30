@@ -4,7 +4,7 @@
 // eight-pointed khatam seal drawn as inline SVG — pure geometry as UI ornament,
 // never presented as historical manuscript art.
 
-import { SCIENCE_COLORS, SCIENCE_LABELS } from './assets.js?v=6';
+import { SCIENCE_COLORS, SCIENCE_LABELS } from './assets.js';
 
 const GROUNDING_TIPS = {
   'ATTESTED': 'This juncture is directly documented in the historical record.',
@@ -165,13 +165,10 @@ export function renderChoice({ choice, sceneText, actTitle, backdropUrl, state, 
   const unavailable = choice.options.filter((o) => !state.optionAvailable(o));
 
   available.forEach((opt, i) => {
-    const btn = el('button', 'option-btn option-btn-detailed');
+    const btn = el('button', 'option-btn');
     const key = el('span', 'option-key', String(i + 1));
-    const body = el('span', 'option-body');
-    body.appendChild(el('span', 'option-label', opt.label));
-    if (opt.detail) body.appendChild(el('span', 'option-detail', opt.detail));
     btn.appendChild(key);
-    btn.appendChild(body);
+    btn.appendChild(document.createTextNode(opt.label));
     btn.addEventListener('click', () => onPick(opt));
     optionsEl.appendChild(btn);
   });
