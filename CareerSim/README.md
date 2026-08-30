@@ -17,7 +17,7 @@ TurkaGame research layer (`../docs/BIOGRAPHY.md`) and the IslamicateOccultPortal
 corpus. Every encounter carries an inspectable grounding tag: ATTESTED,
 PLAUSIBLE-GAP, or INVENTED-COMPATIBLE.
 
-**Status: design-complete, pre-code.** Start at [DESIGN.md](DESIGN.md);
+**Status: Slice 0 playable** — the Cairo phase, as a static no-build site: serve the repo root and open `/CareerSim/`. Design at [DESIGN.md](DESIGN.md);
 build order in [docs/ROADMAP.md](docs/ROADMAP.md).
 
 Stack (decided): Next.js + Supabase on Vercel; framework-agnostic engine; anonymous

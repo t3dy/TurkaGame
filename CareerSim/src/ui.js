@@ -1,0 +1,280 @@
+// ui.js — rendering per docs/UI_STYLE_GUIDE.md. Templates: Frontispiece,
+// Itinerary, Folio, Seal-and-Line, Two-Page Spread, Player's Codex.
+// Two-voice rule: world text arrives from content (Chronicle voice); everything
+// authored here is Gloss voice — plain, ≤2 sentences, one question answered.
+
+import { QUINTET } from './engine/state.js?v=1';
+
+const $ = (sel) => document.querySelector(sel);
+export const app = () => $('#app');
+
+const SCI = { kimiya: 'kīmiyā', limiya: 'līmiyā', himiya: 'hīmiyā', simiya: 'sīmiyā', rimiya: 'rīmiyā' };
+const BAND_LABEL = {
+  triumph: 'TRIUMPH', success: 'SUCCESS', qualified: 'QUALIFIED SUCCESS',
+  ambiguous: 'AMBIGUOUS', backfire: 'BACKFIRE', disaster: 'DISASTER',
+};
+const GROUND = {
+  'ATTESTED': { seal: '⬤', gloss: 'Attested: the sources record this directly.' },
+  'PLAUSIBLE-GAP': { seal: '◐', gloss: 'Plausible: fits the record; the record itself is silent here.' },
+  'INVENTED-COMPATIBLE': { seal: '○', gloss: 'Imagined: invented for play, built to be compatible with the world the sources describe.' },
+};
+
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+// ---- margin column ----------------------------------------------------------
+
+export function marginColumn(state, people) {
+  const dots = (n, max, cls) =>
+    Array.from({ length: max }, (_, i) => `<i class="dot ${i < n ? 'on ' + (cls || '') : ''}"></i>`).join('');
+  const rep = (k) => {
+    const v = state.rep[k];
+    const cls = v > 0 ? 'pos' : v < 0 ? 'neg' : '';
+    return `<div class="mrow" data-gloss="${esc(REP_GLOSS[k])}"><span>${k}</span><b class="${cls}">${v > 0 ? '+' + v : v}</b></div>`;
+  };
+  const sci = QUINTET.filter((k) => state.quintet[k] > 0)
+    .map((k) => `<div class="mrow"><span>${SCI[k]}</span><b>${'●'.repeat(state.quintet[k])}</b></div>`).join('');
+  const net = state.people.map((id) => `<div class="mrow person" data-gloss="${esc(people[id].gloss)}"><span>${esc(people[id].name)}</span></div>`).join('');
+  return `
+  <aside class="margin-col">
+    <div class="mblock" data-gloss="Seasons left in Cairo. Every visit spends one. When they run out, only the road home remains.">
+      <div class="mhead">TIME</div>
+      <div class="mdots">${dots(state.time, 7, 'time')}</div>
+    </div>
+    <div class="mblock" data-gloss="How visible your success has made you. It rises; it almost never falls. High exposure invites challenges, then accusations.">
+      <div class="mhead">EXPOSURE</div>
+      <div class="mdots">${dots(state.meters.exposure, 10, 'fire')}<span class="mnum">${state.meters.exposure}</span></div>
+    </div>
+    <div class="mblock">
+      <div class="mhead">THE WORK</div>
+      <div class="mrow" data-gloss="How much of the universal system you understand — the connections drawn so far."><span>synthesis</span><b>${state.meters.synthesis}</b></div>
+      <div class="mrow" data-gloss="How convincingly you can make the system work in front of people."><span>demonstration</span><b>${state.meters.demonstration}</b></div>
+      <div class="mrow" data-gloss="How much of the system exists outside your own head — in students, verses, letters, copies."><span>transmission</span><b>${state.meters.transmission}</b></div>
+    </div>
+    <div class="mblock"><div class="mhead">STANDING</div>${['orthodox', 'occult', 'imperial', 'scholarly'].map(rep).join('')}</div>
+    ${sci ? `<div class="mblock"><div class="mhead">SCIENCES</div>${sci}</div>` : ''}
+    ${net ? `<div class="mblock"><div class="mhead">COMPANIONS</div>${net}</div>` : ''}
+  </aside>`;
+}
+
+const REP_GLOSS = {
+  orthodox: 'How safe you look to jurists and preachers. It will be spent defending you one day.',
+  occult: 'How seriously the practitioners of the hidden sciences take you.',
+  imperial: 'How useful you look to rulers and their servants. Cairo offers little of it — the courts come later.',
+  scholarly: 'Your credit among the learned — the reputation that survives arguments.',
+};
+
+// ---- screens ----------------------------------------------------------------
+
+export function renderTitle(hasSave) {
+  app().innerHTML = `
+  <div class="screen frontispiece">
+    <div class="plate-frame title-plate">
+      <img src="../assets/manuscripts/act1-ms-17c-opening.jpg" alt="Manuscript opening, Shams al-Maʿārif, early 17th century">
+    </div>
+    <h1 class="game-title">Ibn Turka<span class="title-sep">·</span>The Occult Court</h1>
+    <p class="title-thesis">A career roguelike about making a universal science real</p>
+    <p class="title-sub">Slice 0 — the Cairo years, c. 1385–1397</p>
+    <nav class="toc">
+      <button class="toc-line" data-act="new"><span>Begin a Life</span><i class="toc-dots"></i><span class="toc-n">I</span></button>
+      ${hasSave ? '<button class="toc-line" data-act="continue"><span>Continue</span><i class="toc-dots"></i><span class="toc-n">II</span></button>' : ''}
+      <button class="toc-line" data-act="manual"><span>How to Read This Game</span><i class="toc-dots"></i><span class="toc-n">${hasSave ? 'III' : 'II'}</span></button>
+    </nav>
+    <p class="colophon-note">Built on the research of Matthew Melvin-Koushki · every situation carries its grounding seal</p>
+  </div>`;
+}
+
+export function renderManual() {
+  app().innerHTML = `
+  <div class="screen manual">
+    <div class="rubric">HOW TO READ THIS GAME</div>
+    <div class="folio">
+      <p class="manual-p"><b>The itinerary.</b> Cairo is a map of places to invest attention. Each visit costs one season of <b>time</b>; you have seven. You will not see everything — that is the design, not a fault.</p>
+      <p class="manual-p"><b>The folio.</b> Each situation offers choices. Beneath every open choice you'll see <i>why you have it</i> — the teacher, science, or friendship that unlocked it. Locked choices stay visible with what they would need. Your preparation is always credited.</p>
+      <p class="manual-p"><b>The seal.</b> Outcomes land on a ladder — triumph to disaster — tilted by what you bring, never a coin-flip. Every change is shown; nothing moves silently.</p>
+      <p class="manual-p"><b>Memory.</b> When you're told <i>"this will be remembered,"</i> believe it. Some later situation reads that memory. Nothing in this world forgets.</p>
+      <p class="manual-p"><b>The chronicle.</b> Your run writes itself as a chronicle, line by line, and hands it to you at the end. The small seals on each situation — ⬤ attested, ◐ plausible, ○ imagined — tell you honestly where history ends and the game begins.</p>
+    </div>
+    <button class="quiet-btn" data-act="back">↩ return to the frontispiece</button>
+  </div>`;
+}
+
+export function renderMap(state, phase, nodes, nodeStatus, people, firstVisit) {
+  const cells = nodes.map((n) => {
+    const st = nodeStatus[n.id]; // 'open' | 'spent' | 'locked'
+    const visits = state.visits[n.id] || 0;
+    return `
+    <button class="node ${st}${n.departure ? ' departure' : ''}" data-node="${n.id}" ${st === 'spent' ? 'disabled' : ''}>
+      <span class="node-icon">${n.icon}</span>
+      <span class="node-name">${esc(n.name)}</span>
+      <span class="node-hook">${esc(st === 'spent' ? 'Nothing more calls you here.' : n.hook)}</span>
+      <span class="node-cost">${n.departure ? 'ends the Cairo years' : '⏳ one season'}${visits ? ` · visited ${visits}×` : ''}</span>
+    </button>`;
+  }).join('');
+  app().innerHTML = `
+  <div class="screen with-margin">
+    <main class="play-area">
+      <div class="rubric">PHASE I — ${esc(phase.name)} · ${esc(phase.dateline)}</div>
+      ${firstVisit ? `<p class="marginalia" data-note="map">Each place costs one season of your seven. Depth or breadth — returning somewhere twice goes deeper than seeing everywhere once. <button class="dismiss" data-dismiss="map">understood</button></p>` : ''}
+      <div class="itinerary">${cells}</div>
+    </main>
+    ${marginColumn(state, people)}
+  </div>`;
+}
+
+export function renderEncounter(state, enc, evaluated, people, firstEnc) {
+  const g = GROUND[enc.grounding];
+  const opts = evaluated.map((ev, i) => {
+    const o = ev.opt;
+    if (ev.available) {
+      const unlocked = ev.unlockedBy.length
+        ? `<span class="unlockedby">— open to you because of ${esc(ev.unlockedBy.join(', '))}</span>` : '';
+      const favored = ev.favoredBy.length
+        ? `<span class="favoredby">favored by ${esc(ev.favoredBy.join(', '))}</span>` : '';
+      return `
+      <button class="option" data-opt="${i}">
+        <span class="opt-label"><b class="opt-key">${i + 1}</b> ${esc(o.label)}</span>
+        <span class="opt-detail">${esc(o.detail)}</span>
+        ${unlocked}${favored}
+      </button>`;
+    }
+    return `
+    <div class="option locked">
+      <span class="opt-label">${esc(o.label)}</span>
+      <span class="opt-detail">${esc(o.detail)}</span>
+      <span class="lockedby">🔒 ${esc(ev.lockedBy.join(' · '))}</span>
+    </div>`;
+  }).join('');
+  app().innerHTML = `
+  <div class="screen with-margin">
+    <main class="play-area">
+      <div class="folio">
+        <div class="rubric">${esc(enc.rubric)}</div>
+        ${enc.plate ? `<figure class="plate-frame"><img src="${esc(enc.plate.src)}" alt=""><figcaption>${esc(enc.plate.caption)}</figcaption></figure>` : ''}
+        <p class="situation">${esc(enc.situation)}
+          <button class="ground-seal" data-gloss="${esc(g.gloss)} Source: ${esc(enc.source)}">${g.seal} ${enc.grounding.split('-')[0].toLowerCase()}</button>
+        </p>
+        ${firstEnc ? `<p class="marginalia" data-note="enc">Open choices show <i>why</i> you have them; locked ones show what they'd need. What you study and whom you befriend decides which doors exist. <button class="dismiss" data-dismiss="enc">understood</button></p>` : ''}
+        <div class="options">${opts}</div>
+      </div>
+    </main>
+    ${marginColumn(state, people)}
+  </div>`;
+}
+
+export function renderResolution(state, enc, result, people, firstRes) {
+  const chips = result.deltas.filter((d) => d.kind !== 'time').map((d) => {
+    if (d.kind === 'meter') return chip(d.d > 0 ? 'up' : 'down', `${d.key} ${d.d > 0 ? '+' + d.d : d.d}`, d.key === 'exposure' ? 'fire' : '');
+    if (d.kind === 'rep') return chip(d.d > 0 ? 'up' : 'down', `${d.key} standing ${d.d > 0 ? '+' + d.d : d.d}`);
+    if (d.kind === 'quintet') return chip('up', `${SCI[d.key]} ${'●'.repeat(state.quintet[d.key])}`);
+    if (d.kind === 'person') return chip('gain', `${people[d.key].name} joins your circle`);
+    if (d.kind === 'access') return chip('gain', `access: ${d.key.replace(/_/g, ' ')}`);
+    if (d.kind === 'artifact') return chip('gain', 'artifact gained');
+    return '';
+  }).join('');
+  const mem = result.memWrites.length
+    ? `<p class="mem-note">✎ This will be remembered${result.memWrites.length > 1 ? ` (${result.memWrites.length} things noted)` : ''}.</p>` : '';
+  app().innerHTML = `
+  <div class="screen with-margin">
+    <main class="play-area">
+      <div class="folio resolution">
+        <div class="seal band-${result.band}">${BAND_LABEL[result.band]}</div>
+        <p class="outcome-text">${esc(result.text)}</p>
+        <div class="delta-chips">${chips}</div>
+        ${mem}
+        ${firstRes ? `<p class="marginalia" data-note="res">The seal is the outcome's rank on a six-step ladder — your preparation tilted the odds. The italic line below joins your chronicle. <button class="dismiss" data-dismiss="res">understood</button></p>` : ''}
+        ${result.chronicleLine ? `<p class="chron-line" id="chron-ink"></p>` : ''}
+        <button class="continue-btn">continue ⤳</button>
+      </div>
+    </main>
+    ${marginColumn(state, people)}
+  </div>`;
+  if (result.chronicleLine) inkIn($('#chron-ink'), '“' + result.chronicleLine + '”');
+}
+
+function chip(dir, text, extra) {
+  const glyph = dir === 'up' ? '▲' : dir === 'down' ? '▼' : '✚';
+  return `<span class="chip ${dir} ${extra || ''}">${glyph} ${esc(text)}</span>`;
+}
+
+export function renderEnding(state, verdict, people) {
+  const chron = state.chronicle.map((l) => `<p class="codex-line band-t-${l.band}">${esc(l.text)}</p>`).join('');
+  const notes = verdict.notes.map((n) => `<p class="verdict-note">· ${esc(n)}</p>`).join('');
+  app().innerHTML = `
+  <div class="screen ending">
+    <div class="rubric">THE CAIRO YEARS ARE OVER</div>
+    <div class="spread">
+      <div class="folio page">
+        <div class="page-head">THE MAN</div>
+        <h2 class="verdict-title">${esc(verdict.man.title)}</h2>
+        <p class="verdict-text">${esc(verdict.man.text)}</p>
+        <div class="page-stats">
+          ${['orthodox', 'occult', 'scholarly'].map((k) => `<span class="chip">${k} ${state.rep[k] > 0 ? '+' + state.rep[k] : state.rep[k]}</span>`).join('')}
+          <span class="chip fire">exposure ${state.meters.exposure}</span>
+        </div>
+      </div>
+      <div class="folio page">
+        <div class="page-head">THE SYSTEM</div>
+        <h2 class="verdict-title">${esc(verdict.system.title)}</h2>
+        <p class="verdict-text">${esc(verdict.system.text)}</p>
+        <div class="page-stats">
+          <span class="chip">synthesis ${state.meters.synthesis}</span>
+          <span class="chip">transmission ${state.meters.transmission}</span>
+          <span class="chip">${state.people.length} companion${state.people.length === 1 ? '' : 's'}</span>
+        </div>
+      </div>
+    </div>
+    ${notes ? `<div class="folio verdict-margin"><div class="page-head">MARGINALIA</div>${notes}</div>` : ''}
+    <div class="folio codex">
+      <div class="rubric">THE CHRONICLE OF THE CAIRO YEARS</div>
+      ${chron || '<p class="codex-line">— the pages are blank; he did almost nothing, which is also a life —</p>'}
+      <p class="codex-note">In a later build this chronicle becomes yours to keep and emend. Phases II–V — Isfahan, the courts, the <i>Investigations</i>, the trials — are the next slices.</p>
+    </div>
+    <button class="toc-line center" data-act="restart"><span>Begin another life</span></button>
+  </div>`;
+}
+
+// ---- flourishes -------------------------------------------------------------
+
+export function inkIn(el, text) {
+  if (!el) return;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) { el.textContent = text; return; }
+  el.textContent = '';
+  let i = 0;
+  const tick = () => {
+    el.textContent = text.slice(0, ++i);
+    if (i < text.length) el._t = setTimeout(tick, 18);
+  };
+  tick();
+  el.addEventListener('click', () => { clearTimeout(el._t); el.textContent = text; }, { once: true });
+}
+
+// Gloss tooltips: one shared element, follows data-gloss hovers/taps.
+export function bindGlosses() {
+  let tip = $('#gloss-tip');
+  if (!tip) {
+    tip = document.createElement('div');
+    tip.id = 'gloss-tip';
+    document.body.appendChild(tip);
+  }
+  document.body.addEventListener('mouseover', (e) => {
+    const t = e.target.closest('[data-gloss]');
+    if (!t) { tip.classList.remove('show'); return; }
+    tip.textContent = t.getAttribute('data-gloss');
+    const r = t.getBoundingClientRect();
+    tip.style.top = Math.max(8, r.bottom + 6) + 'px';
+    tip.style.left = Math.min(window.innerWidth - 290, Math.max(8, r.left)) + 'px';
+    tip.classList.add('show');
+  });
+  document.body.addEventListener('click', (e) => {
+    const t = e.target.closest('[data-gloss]');
+    if (t) {
+      tip.textContent = t.getAttribute('data-gloss');
+      const r = t.getBoundingClientRect();
+      tip.style.top = Math.max(8, r.bottom + 6) + 'px';
+      tip.style.left = Math.min(window.innerWidth - 290, Math.max(8, r.left)) + 'px';
+      tip.classList.add('show');
+      setTimeout(() => tip.classList.remove('show'), 4000);
+    }
+  });
+}

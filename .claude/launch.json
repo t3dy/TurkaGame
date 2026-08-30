@@ -4,7 +4,11 @@
     {
       "name": "turkagame-site",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "7521", "--directory", "site"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "7521"
+      ],
       "port": 7521
     }
   ]

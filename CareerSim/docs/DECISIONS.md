@@ -53,3 +53,22 @@ user calls made at project creation.
 - Supabase project not yet created; schema drafted at Slice 2, not before.
 - Whether chronicles are shareable/public (read-only links) — deferred to Slice 2+,
   needs a user call; default private.
+
+## Slice 0 build (2026-08-30, same day)
+
+- **Static-first, Next.js deferred to Slice 2** (user-directed: "don't bother with
+  supabase or vercel deployment yet... give me a static website to test it").
+  Slice 0/1 are no-build vanilla JS ES modules (`index.html` + `src/` + `content/`),
+  served by the parent repo's `turkagame-site` launch config. The engine was specced
+  framework-agnostic anyway, so the Slice 2 Next.js wrap is packaging, not rewrite.
+  ROADMAP Slice 0's "Next.js scaffold" bullet is superseded by this.
+- **Parent `.claude/launch.json` fixed to serve the repo root** (was `--directory
+  site`, contradicting the parent CLAUDE.md's own description); the game is at
+  `http://localhost:7521/CareerSim/`.
+- **Time model v1**: node visit = 1 season, budget 7, departure node free; at time 0
+  the Road Home fires automatically. Depth-vs-breadth (revisiting a node digs deeper
+  into its encounter chain) is the phase's core strategic texture.
+- **Boost mechanic v1**: met `boosts` clauses multiply the two best outcome bands'
+  weights (×(1+n)) — preparation tilts the ladder, shown as "favored by …".
+- **Cache-bust discipline inherited**: `?v=N` on module/CSS URLs, bumped per change
+  (parent repo's standing rule; `index.html` is the version source of truth).
