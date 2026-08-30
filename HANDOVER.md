@@ -56,6 +56,20 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
     full playthroughs, gate-blocking, save/resume, mobile-responsive; each
     version confirmed to render its own distinct option-text length/style, not a
     cached copy of another version's.
+- **8 endings, not 7** — added "Source Code of Empire" after a fresh research
+  audit (`games/visual-novel/ENDINGS_AUDIT.md`) found the existing 7 endings all
+  scored Ibn Turka's *personal* outcome, but the single biggest claim in
+  `research/notes/03-the-occult-court.md` — that his platform became default
+  imperial cosmology across six court cultures for centuries, regardless of his
+  own fate — had no ending reflecting it. Also fixed two real gaps the audit
+  found: `c33`/`c04` (the Qasim-i Anvar loyalty arc) and `c36=reconcile` both had
+  zero effect on the ending/epilogue despite `CHOICES.md` framing them as
+  consequential — both now feed `epilogueFor()`. One larger proposal (naming Shah
+  Rukh's actual violence against Iskandar Sultan in `c10`'s scene text, or a new
+  choice about petitioning him directly) is written up but deliberately not
+  implemented this pass — see `NEXTSTEPS.md` items 5-7 and the audit doc for why.
+  New ending verified reachable through actual gameplay (not just unit logic) and
+  live on GitHub Pages.
 - **Live on GitHub Pages**: https://t3dy.github.io/TurkaGame/ (repo root is the
   Pages source; a root `index.html` redirects to `site/index.html` since the actual
   homepage lives under `site/`). Verified live, including the game itself and its

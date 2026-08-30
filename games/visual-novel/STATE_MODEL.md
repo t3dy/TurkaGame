@@ -72,6 +72,16 @@ c38, c33+c04, c39, c40)` produces a handful of named, distinct endings. Sketch
    transmission) — the philosophy dies with him, unrecorded.
 3. **The New Brethren Endures** — `c34=hold`, `c22=wide` (taught broadly) — the
    ideas survive through a dispersed circle even without a single clean heir.
+3b. **Source Code of Empire** (added 2026-08-30, see `ENDINGS_AUDIT.md`) —
+   `c34=hold`, `c22=wide` AND `c23=yes` (also wrote popularizations) — checked
+   before #3 since it's the stricter combination. Not just "students carry
+   pieces forward": per `research/notes/03-the-occult-court.md`, the
+   lettrist-astrological platform Ibn Turka's circle founded became the default
+   imperial cosmology across Timurid, Aqquyunlu, Safavid, Uzbek, Ottoman, and
+   Mughal courts for centuries — regardless of his own personal fate. This
+   ending plays that irony straight: the platform wins either way in the real
+   world, but breadth-of-teaching + writing in forms that could travel is what
+   the player's choices actually control.
 4. **The Quiet Compromise** — `c34=bend` — survives, diminished, the system
    publicly renounced in whole or part; downstream texture depends on
    `c39`/`c40`.

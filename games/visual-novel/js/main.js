@@ -5,11 +5,11 @@
 // v4 — bump this and every import below on content/logic changes; python
 // http.server sends no cache-control headers, so browsers heuristically cache
 // these module files hard, and a bare `location.reload()` doesn't bust that.
-import { State } from './state.js?v=7';
-import { ACT_INTROS, CHOICE_TEXT, CHOICE_TEXT_DYNAMIC, OPTION_CONSEQUENCE, OPTION_CONSEQUENCE_DYNAMIC } from './narrative.js?v=7';
-import { ACT_BACKDROP, backdropFor } from './assets.js?v=7';
-import { computeEnding, epilogueFor } from './endings.js?v=7';
-import { renderTitle, renderActIntro, renderChoice, renderConsequence, renderEnding } from './ui.js?v=7';
+import { State } from './state.js?v=8';
+import { ACT_INTROS, CHOICE_TEXT, CHOICE_TEXT_DYNAMIC, OPTION_CONSEQUENCE, OPTION_CONSEQUENCE_DYNAMIC } from './narrative.js?v=8';
+import { ACT_BACKDROP, backdropFor } from './assets.js?v=8';
+import { computeEnding, epilogueFor } from './endings.js?v=8';
+import { renderTitle, renderActIntro, renderChoice, renderConsequence, renderEnding } from './ui.js?v=8';
 
 let CHOICES = [];
 let state = new State();

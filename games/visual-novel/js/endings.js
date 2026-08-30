@@ -7,6 +7,14 @@
 // so it is checked BEFORE the bend/hold split, not inside the bend branch (where it
 // contradicted its own premise). "The Solitary Sage" (a fully withdrawn exile) is
 // likewise reachable from either branch.
+//
+// 2026-08-30, ENDINGS_AUDIT.md pass: added "Source Code of Empire" (see audit
+// finding #1 — the existing endings all scored personal outcomes, but the single
+// biggest real claim in the research — the platform became default imperial
+// cosmology across six court cultures for centuries, regardless of Ibn Turka's
+// own fate — had no ending reflecting it). Checked before the plainer
+// "New Brethren Endures" since it requires a stricter combination (breadth of
+// teaching AND writing in forms that could actually travel).
 
 const ENDINGS = {
   vindicated_martyr: {
@@ -16,6 +24,10 @@ const ENDINGS = {
   lost_legacy: {
     title: 'The Lost Legacy',
     text: 'You held firm. But what you built did not survive intact — no one received the whole of it, and much of a life\'s work goes into the ground with you.',
+  },
+  source_code_of_empire: {
+    title: 'Source Code of Empire',
+    text: 'You held firm, taught broadly, and wrote so the ideas could actually travel. What happens next is almost beside the point: this platform — the lettrist-astrological cosmology you helped found — becomes the default political science of empires you will never see, from Herat to Istanbul to Delhi, for centuries. Your own name may or may not survive the transmission. The system does.',
   },
   new_brethren_endures: {
     title: 'The New Brethren Endures',
@@ -60,6 +72,7 @@ export function computeEnding(state) {
 
     if (transmissionComplete && f.c39 === 'defiant') return ENDINGS.vindicated_martyr;
     if (transmissionLost) return ENDINGS.lost_legacy;
+    if (f.c22 === 'wide' && f.c23 === 'yes') return ENDINGS.source_code_of_empire;
     if (f.c22 === 'wide') return ENDINGS.new_brethren_endures;
     return ENDINGS.vindicated_martyr; // hold-firm default
   }
@@ -71,9 +84,25 @@ export function computeEnding(state) {
 
 // A one-or-two-sentence coda, personalized by how the player faced the end —
 // makes each run's final screen feel like *their* run, not just their ending bucket.
+//
+// 2026-08-30, ENDINGS_AUDIT.md pass: added c33/c04 (Qasim-i Anvar loyalty) and
+// c36=reconcile clauses — CHOICES.md itself frames both as consequential
+// ("this is where Act I's choice #4 pays off or costs the most"; reconcile as
+// "the hardest and highest-risk option") but neither had previously reached the
+// ending or epilogue logic at all.
 export function epilogueFor(state) {
   const f = state.flags;
   const parts = [];
+
+  if (f.c33 === 'distance' && f.c04 === 'deep') {
+    parts.push('Qasim-i Anvar was the friend you chose, in Cairo, to bond with deeply — and the one you distanced yourself from when the tribunal asked. He never said so aloud. He also never fully forgave it.');
+  } else if (f.c33 === 'refuse' && f.c04 === 'deep') {
+    parts.push('You never gave up Qasim-i Anvar, the friend you chose to trust completely back in Cairo. Whatever else this cost, that loyalty was returned in kind.');
+  }
+
+  if (f.c36 === 'reconcile') {
+    parts.push('The attempt to return to Isfahan society was the highest-risk path available in exile. Whether it actually succeeded is not something the sources settle — only that you tried.');
+  }
 
   if (f.c39 === 'peace') {
     parts.push('You died reconciled to what it all cost — which is more than most of the men who tried you managed.');

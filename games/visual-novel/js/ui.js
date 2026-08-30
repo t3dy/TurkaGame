@@ -4,7 +4,7 @@
 // eight-pointed khatam seal drawn as inline SVG — pure geometry as UI ornament,
 // never presented as historical manuscript art.
 
-import { SCIENCE_COLORS, SCIENCE_LABELS } from './assets.js?v=7';
+import { SCIENCE_COLORS, SCIENCE_LABELS } from './assets.js?v=8';
 
 const GROUNDING_TIPS = {
   'ATTESTED': 'This juncture is directly documented in the historical record.',
