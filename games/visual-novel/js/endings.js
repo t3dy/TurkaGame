@@ -1,6 +1,12 @@
-// endings.js — computes one of several named endings from final state.
+// endings.js — computes one of several named endings from final state, plus a
+// short epilogue coda personalized by how the player faced the end.
 // Implements the sketch in ../STATE_MODEL.md. Priority-ordered: first match wins.
-// This is a first-pass implementation of that sketch, not final narrative text.
+//
+// Ordering note (2026-08-30 fix): "The Court Philosopher" is the avoided-the-fate
+// branch — earlier caution kept the third inquisition from ever having real teeth —
+// so it is checked BEFORE the bend/hold split, not inside the bend branch (where it
+// contradicted its own premise). "The Solitary Sage" (a fully withdrawn exile) is
+// likewise reachable from either branch.
 
 const ENDINGS = {
   vindicated_martyr: {
@@ -25,17 +31,28 @@ const ENDINGS = {
   },
   solitary_sage: {
     title: 'The Solitary Sage',
-    text: 'Exile became retreat, and retreat became a whole second life, small and private. Whatever influence this work has, it will not be felt in your lifetime.',
+    text: 'Exile became retreat, and retreat became a whole second life — small, silent, and entirely your own. Whatever influence this work has, it will not be felt in your lifetime.',
   },
   court_philosopher: {
     title: 'The Court Philosopher',
-    text: 'You never gave your rivals the opening they needed. Caution, deferral, and a quiet register kept you below real notice — a different, less dramatic life than the one the histories record.',
+    text: 'You never gave your rivals the opening they needed. Caution, deferral, and a quiet register kept you below real notice — when the third tribunal convened, it found nothing it could hold. A different, less dramatic life than the one the histories record.',
   },
 };
 
 export function computeEnding(state) {
   const f = state.flags;
   const breadth = state.breadth();
+
+  // The avoided-the-fate branch: a lifetime of deliberate quietness defuses the
+  // third inquisition regardless of how the player answered it in the moment.
+  if (f.c09 === 'cautious' && f.c15 === 'delayed' && f.c21 === 'elite' && f.c22 === 'small') {
+    return ENDINGS.court_philosopher;
+  }
+
+  // The full withdrawal: reachable whether you bent or held.
+  if (f.c36 === 'retreat' && f.c37 === 'silent' && f.c22 === 'small') {
+    return ENDINGS.solitary_sage;
+  }
 
   if (f.c34 === 'hold') {
     const transmissionComplete = f.c38 === 'entrust' && f.c03 === 'equal';
@@ -49,11 +66,28 @@ export function computeEnding(state) {
 
   // c34 === 'bend'
   if (f.c27 === 'weak' && breadth >= 2) return ENDINGS.rehabilitated_judge;
+  return ENDINGS.quiet_compromise;
+}
 
-  // Bend/hold-independent overrides, checked last so the inquisition outcome
-  // still dominates in the common case.
-  if (f.c36 === 'retreat' && breadth <= 1) return ENDINGS.solitary_sage;
-  if (f.c09 === 'cautious' && f.c15 === 'delayed' && f.c21 === 'elite') return ENDINGS.court_philosopher;
+// A one-or-two-sentence coda, personalized by how the player faced the end —
+// makes each run's final screen feel like *their* run, not just their ending bucket.
+export function epilogueFor(state) {
+  const f = state.flags;
+  const parts = [];
 
-  return ENDINGS.quiet_compromise; // bend default
+  if (f.c39 === 'peace') {
+    parts.push('You died reconciled to what it all cost — which is more than most of the men who tried you managed.');
+  } else if (f.c39 === 'bitter') {
+    parts.push('You died angry, and you were not wrong to. The anger is in the margins of everything you wrote that last year.');
+  } else if (f.c39 === 'defiant') {
+    parts.push('You died certain that history would come around. It took five centuries longer than you expected.');
+  }
+
+  if (f.c40 === 'public') {
+    parts.push('Your final statement circulated openly — copied, argued with, condemned, and therefore preserved.');
+  } else if (f.c40 === 'quiet') {
+    parts.push('Your last transmission went to the New Brethren alone. Smaller. Much harder to burn.');
+  }
+
+  return parts.join(' ');
 }

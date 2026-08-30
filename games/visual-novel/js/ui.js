@@ -240,7 +240,7 @@ const ACT_TITLES = {
   7: 'Three Inquisitions', 8: 'Exile & Legacy',
 };
 
-export function renderEnding({ ending, state, choices }) {
+export function renderEnding({ ending, epilogue, state, choices }) {
   const app = document.getElementById('app');
   app.innerHTML = '';
   app.className = 'screen-ending';
@@ -256,6 +256,7 @@ export function renderEnding({ ending, state, choices }) {
   wrap.appendChild(head);
 
   wrap.appendChild(el('p', 'ending-text', ending.text));
+  if (epilogue) wrap.appendChild(el('p', 'ending-epilogue', epilogue));
   wrap.appendChild(el('p', 'ending-note',
     'This is one ending among several — the documented historical outcome (exile, death in 1432) is not privileged over the others.'));
 

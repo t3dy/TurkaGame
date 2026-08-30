@@ -59,6 +59,19 @@ export const CHOICE_TEXT = {
 };
 
 export const CHOICE_TEXT_DYNAMIC = {
+  c22: (state) => state.flags.c03 === 'equal'
+    ? 'Students keep arriving, more each season. Yazdi — who you let all the way into the work — argues you should trust others the way you trusted him: the ideas got stronger for it, not weaker. A wide circle is influence. A small one is safety.'
+    : 'Students keep arriving, more each season. You have kept even Yazdi at a certain distance from the innermost work, and it has served you — no leaks, no distortions. But a system only one man fully holds is a system one death can erase. A wide circle is influence. A small one is safety.',
+  c27: (state) => state.flags.c09 === 'flaunt'
+    ? 'A case comes before your bench that the whole city is watching: a powerful man\'s claim against a poor one. Your name is already loud — you made sure of that years ago — which means whichever way you rule, everyone will say it proves what they always suspected about you.'
+    : 'A case comes before your bench that the whole city is watching: a powerful man\'s claim against a poor one. You have spent years keeping your name quiet, and it bought you this: for once, the ruling will be read as law, not as a philosopher\'s ambition. That makes it more dangerous, not less.',
+  c34: (state) => {
+    const total = Object.values(state.skills).reduce((a, b) => a + b, 0);
+    const deep = total >= 7;
+    return deep
+      ? 'The third inquisition is not like the first two. The accusation is sharper, the patrons less reliable — and this time it is not just your name on trial but everything you have built: the years of study, the system, the science itself. They are asking you to renounce the work of a lifetime, and they know exactly what they are asking.'
+      : 'The third inquisition is not like the first two. The accusation is sharper, the patrons less reliable, and everyone in the room already knows this is the one that matters. You kept your studies modest, which gives them less to burn — and you less to bargain with.';
+  },
   c12: (state) => state.flags.c07 === 'full'
     ? 'A Qur\'an unlike any yet produced is taking shape under Bāysunghur\'s patronage. Because you never hid your full system from this court, the calligraphers already trust you enough to ask: would you offer a numerological framework for the illumination program?'
     : 'A Qur\'an unlike any yet produced is taking shape under Bāysunghur\'s patronage. You kept your full doctrine to yourself when you arrived at this court, and it shows — no one here has thought to ask you for anything more than competent legal counsel.',
@@ -71,6 +84,33 @@ export const CHOICE_TEXT_DYNAMIC = {
   c38: (state) => state.flags.c03 === 'equal'
     ? 'Yazdi finds you in exile — the same brother-in-arms you chose, in Cairo, to treat as an equal rather than a subordinate student. He knows this work as well as you do. He asks whether he might carry it forward.'
     : 'Yazdi finds you in exile — the loyal, capable student you kept, back in Cairo, at a mentor\'s respectful distance. He is willing to carry your papers forward, though he will be transmitting the letter of the work more than its deepest intentions.',
+};
+
+// Consequence lines that change based on EARLIER choices — this is where the
+// state machine gets to talk. Checked before OPTION_CONSEQUENCE; return a string
+// or null/undefined to fall through to the static line.
+export const OPTION_CONSEQUENCE_DYNAMIC = {
+  c31: {
+    patron: (state) => state.flags.c10 === 'loyal'
+      ? 'You call in the favor. Iskandar Sultan\'s people remember who stayed when the star was falling — and a word travels from that memory to this tribunal. Loyalty, it turns out, was an investment after all. It is now spent.'
+      : null,
+    both: (state) => state.flags.c10 === 'loyal'
+      ? 'Law and loyalty at once — the argument on its merits, and the old debt called in behind it. It is the strongest defense a man can mount, and the most expensive: nothing you are owed survives this morning.'
+      : null,
+  },
+  c33: {
+    refuse: (state) => state.flags.c04 === 'deep'
+      ? 'You refuse to give them Qāsim-i Anvār. He is not an associate; he is the friend you chose in Cairo, before any of this had stakes. The tribunal writes down your refusal. He will hear of it — and so will everyone deciding whether you are worth standing beside.'
+      : 'You refuse to name anyone, on principle rather than affection — you never let Qāsim-i Anvār close enough for it to be more. The tribunal notes the refusal all the same. Principle, it turns out, reads the same as loyalty from the bench.',
+    distance: (state) => state.flags.c04 === 'deep'
+      ? 'You put distance between yourself and the man who was, for years, the nearest thing you had to a brother in this work. It may save you. He will learn what you said here, and there is no version of this where he learns it gently.'
+      : null,
+  },
+  c38: {
+    entrust: (state) => state.flags.c03 === 'equal'
+      ? 'You hand Yazdi the papers, and it is not a bequest — it is the last move in a collaboration that started in Cairo. He knows this work almost as well as you do, because you let him. Nothing of it will be lost in his hands.'
+      : 'You hand Yazdi the papers. He is loyal, careful, and capable — and he was always your student, never quite your partner. He will preserve every word faithfully. The parts of the work that lived only in conversation, in the room you never fully let him into, go with you.',
+  },
 };
 
 export const OPTION_CONSEQUENCE = {
@@ -105,13 +145,13 @@ export const OPTION_CONSEQUENCE = {
   c29: { mercy: 'You extend quiet solidarity to a fellow practitioner. Humane. Also a matter of public record, should anyone ever go looking for a pattern.', orthodoxy: 'You enforce the law strictly, distancing yourself from anything that could look like professional sympathy for the accused.' },
   c30: { bench: 'You give the year to the bench\'s legitimacy. Steady. The desk work waits.', writing: 'You give the year to the work at the height of your powers. The docket suffers. The philosophy does not.' },
   c31: { legal: 'You mount a rigorous legal defense on the merits alone. It is the harder case to make and the cleaner one to win.', patron: 'You call in the favor you\'re owed. Faster, and it spends something you may need again.', both: 'You attempt both at once — the strongest possible defense, and the hardest one to coordinate without a misstep.' },
-  c32: { recant: 'You offer the face-saving recantation. The tribunal accepts it. Something in your own account of yourself does not.', hold: 'You hold every position, without concession, in front of people who wanted you to bend. It is noted.' },
+  c32: { recant: 'You offer the face-saving recantation, phrased so carefully that everyone can pretend it was not one. The tribunal accepts it. Something in your own account of yourself does not, and you will hear that dissent, quietly, for years.', hold: 'You hold every position, without concession, in front of people who wanted you to bend. The room notes it. The men who convened this tribunal note it most of all — you have just taught them that the next one will have to be built differently.' },
   c33: { distance: 'You put visible distance between yourself and the associates now under suspicion. It may save you. It will not be forgotten by the people you distanced yourself from.', refuse: 'You refuse to abandon anyone, and accept the shared risk that comes with it.' },
-  c34: { bend: 'You bend. You survive this — diminished, your system publicly qualified, but alive to argue another day.', hold: 'You hold firm, as the record says you did, whatever it costs from here.' },
-  c35: { flee: 'You take the window while it is still open. Uncertain, undignified, and it keeps you alive to see what happens next.', stand: 'You stand and face the tribunal directly, on your own name, without running.' },
+  c34: { bend: 'You bend. The words come out of your mouth in the right order and the tribunal hears what it needs to hear. You survive this — diminished, your system publicly qualified, alive to argue another day. On the walk home you cannot remember deciding to say it. Only that you said it.', hold: 'You hold firm. The room goes very quiet, the way rooms do when a man chooses the expensive thing in front of witnesses. Whatever this costs from here — and it will cost everything the histories say it cost — it will not include the one thing they came here to take.' },
+  c35: { flee: 'You take the window while it is still open. It is uncertain, undignified, and entirely survivable — three qualities that will define everything from here.', stand: 'You stand and face the tribunal directly, on your own name, without running. Whatever else is said of you afterward, no one will say you were not there.' },
   c36: { new_patron: 'You seek a new patron at a rival court, betting that your reputation still travels faster than the scandal that made you leave.', retreat: 'You retreat into private scholarship, no court, no patron, just the work and whatever time is left to do it in.', reconcile: 'You attempt reconciliation and the long, uncertain path back toward Isfahan.' },
   c37: { continue: 'You keep writing and teaching in exile — vulnerable, visible, and still producing.', silent: 'You go quiet, protecting what remains of the work and of yourself, at the cost of anything new.' },
-  c38: { entrust: 'You formally entrust your papers to Yazdi. Whatever happens to you now, the work has somewhere to go.', keep: 'You keep the papers close. They will go exactly as far as you do, and no further.' },
-  c39: { peace: 'You make your peace with the cost of everything you chose. It does not undo any of it. It helps anyway.', bitter: 'You go out railing against the men who did this to you, and you are not wrong to.', defiant: 'You go out certain — genuinely certain — that history will eventually agree with you.' },
-  c40: { public: 'You leave a public, unmistakable final word for the wider scholarly world to reckon with.', quiet: 'You leave a quiet transmission for the New Brethren alone — smaller, and much harder to burn.' },
+  c38: { entrust: 'You hand Yazdi the papers — every draft, every diagram, the whole argument of a life. He takes them the way a man takes something he already knows he will spend the rest of his own life protecting. Whatever happens to you now, the work has somewhere to go.', keep: 'You keep the papers close. You tell yourself it is caution; some nights it feels more like not being able to let go. They will travel exactly as far as you do, and no further.' },
+  c39: { peace: 'You make your peace with the cost of everything you chose. It does not undo any of it, and it does not need to. Of all the operations you ever mastered, this turns out to be the difficult one.', bitter: 'You go out railing against the men who did this to you, and you are not wrong to. But bitterness is a fire that burns in only one hearth, and it is yours.', defiant: 'You go out certain — genuinely, serenely certain — that history will eventually agree with you. It is either the greatest act of faith in your life or the most accurate prediction you ever made.' },
+  c40: { public: 'You leave a public, unmistakable final word for the wider scholarly world to reckon with. Let them condemn it; condemnation is a form of copying.', quiet: 'You leave a quiet transmission for the New Brethren alone. No proclamation, no audience — just the work itself, passed hand to hand, small enough to survive.' },
 };

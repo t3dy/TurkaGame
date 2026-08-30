@@ -20,25 +20,27 @@ is.
 
 These improve the 40 choices already built, rather than adding new scope.
 
-1. **Escalate the consequence beat for the handful of choices that deserve it.**
-   Currently every consequence is one line, uniformly. Choice #34 (bend the knee),
-   #38 (entrust the manuscripts), and #39/#40 (death, testament) are the emotional
-   high points of the whole life — give those a slightly longer, more composed
-   consequence text than the routine ones, so the loop's rhythm has real peaks, not
-   just a flat cadence of one-liners.
-2. **Add a handful more reactive/dynamic scenes.** Only 4 of 40 choices currently
-   read differently based on earlier state (`c12`, `c31`, `c33`, `c38` in
-   `narrative.js`). Good next candidates, ranked by dramatic payoff: `c27` (the
-   defining case) referencing `c08`/`c09` (how visible a reputation you built
-   earlier); `c34` (bend the knee) referencing accumulated skill breadth so the
-   scene itself acknowledges what the player has built toward losing; `c22`
-   (teach widely vs. small circle) referencing `c03` (how you treated Yazdi) since
-   both are about how much you trust people with your work.
-3. **Per-choice imagery, not just per-act.** One backdrop image per act (8 total)
-   means most choices share an image with four others. OCCULTIMGDB has more than
-   enough curated Islamicate material to go deeper — pull 2–3 additional images per
-   act (aim for ~20 total) and vary them by choice within the act, prioritizing the
-   highest-stakes choices identified above.
+1. ~~**Escalate the consequence beat for the handful of choices that deserve it.**~~
+   **Done (2026-08-30):** c32, c34, c35, c38, c39, c40 got longer, more composed
+   consequence text. Also added `OPTION_CONSEQUENCE_DYNAMIC` — c31/c33/c38's
+   consequence text (not just their scene text) now differs based on c10/c04/c03,
+   so a gate payoff and its emotional beat land in the same breath.
+2. ~~**Add a handful more reactive/dynamic scenes.**~~ **Done (2026-08-30):** c22
+   (Yazdi's argument for a wide circle, reactive to c03), c27 (reactive to c09's
+   reputation), and c34 (reactive to accumulated skill total) added — 7 of 40
+   scenes are now reactive. Also fixed a real bug found while doing this: the
+   "Court Philosopher" ending (avoided-the-fate) was nested inside the `bend`
+   branch of `computeEnding`, where it could never actually fire since its whole
+   premise is that the third inquisition never gets serious — moved it to a
+   precondition checked before the bend/hold split. Added a personalized epilogue
+   paragraph (`epilogueFor` in `endings.js`) reactive to c39/c40, shown under
+   every ending.
+3. ~~**Per-choice imagery, not just per-act.**~~ **Done (2026-08-30 graphics pass):**
+   11 per-choice backdrop overrides added (19 registered images total), each
+   thematically matched (e.g. the Falnama Seven Sleepers refuge folio for the exile
+   choice c36, a sultan-court wafq testimony page for the first inquisition c31).
+   Remaining choices fall back to their act backdrop by design; going denser than
+   this should wait for playtesting.
 4. **A themed, not just chronological, ending journal.** Currently the ending's
    journal lists all 40 choices strictly by act. Grouping by *axis* instead (skill
    investment, loyalty spent, secrets kept vs. taught) would make the "story of the
@@ -82,9 +84,11 @@ VN's core loop has had real playtesting:
 - Transition animations between screens beyond the current fade-in.
 - A proper settings/about screen (currently the only way back to the main site is
   the small "← TurkaGame" link).
-- Accessibility pass (keyboard navigation through options, screen-reader labels on
-  the skill bars) — worth doing before any wider sharing of the prototype, not
-  before.
+- ~~Accessibility pass~~ **Largely done (2026-08-30 graphics pass):** keyboard
+  navigation (1–5 pick options, Enter continues), `focus-visible` outlines,
+  ARIA roles/labels on skill bars and the act progress bar,
+  `prefers-reduced-motion` support. Remaining: a screen-reader walkthrough by an
+  actual SR user before wider sharing.
 
 ## Explicitly not next
 

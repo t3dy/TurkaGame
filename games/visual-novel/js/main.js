@@ -3,9 +3,9 @@
 // Debug handle: window.__turkaVN (matches EmblemNovel's window.__novel convention).
 
 import { State } from './state.js';
-import { ACT_INTROS, CHOICE_TEXT, CHOICE_TEXT_DYNAMIC, OPTION_CONSEQUENCE } from './narrative.js';
+import { ACT_INTROS, CHOICE_TEXT, CHOICE_TEXT_DYNAMIC, OPTION_CONSEQUENCE, OPTION_CONSEQUENCE_DYNAMIC } from './narrative.js';
 import { ACT_BACKDROP, backdropFor } from './assets.js';
-import { computeEnding } from './endings.js';
+import { computeEnding, epilogueFor } from './endings.js';
 import { renderTitle, renderActIntro, renderChoice, renderConsequence, renderEnding } from './ui.js';
 
 let CHOICES = [];
@@ -102,9 +102,16 @@ function render() {
     state,
     onPick: (option) => {
       const gains = skillGainsFor(option); // resolve BEFORE applyChoice mutates flags
+      // Dynamic consequence lines read PRE-choice state too (the flag being set now
+      // shouldn't influence how the past is invoked).
+      const dynFn = (OPTION_CONSEQUENCE_DYNAMIC[choice.id] || {})[option.id];
+      const dynText = dynFn ? dynFn(state) : null;
       state.applyChoice(choice, option);
       state.save();
-      pendingConsequence = { text: (OPTION_CONSEQUENCE[choice.id] || {})[option.id] || '', skillGains: gains };
+      pendingConsequence = {
+        text: dynText || (OPTION_CONSEQUENCE[choice.id] || {})[option.id] || '',
+        skillGains: gains,
+      };
       screen = 'consequence';
       render();
     },
@@ -116,7 +123,7 @@ function finish() {
   const ending = computeEnding(state);
   state.endingId = ending.title;
   state.save();
-  renderEnding({ ending, state, choices: CHOICES });
+  renderEnding({ ending, epilogue: epilogueFor(state), state, choices: CHOICES });
 }
 
 function beginNewGame() {
