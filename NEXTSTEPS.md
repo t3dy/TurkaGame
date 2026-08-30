@@ -45,23 +45,19 @@ These improve the 40 choices already built, rather than adding new scope.
    journal lists all 40 choices strictly by act. Grouping by *axis* instead (skill
    investment, loyalty spent, secrets kept vs. taught) would make the "story of the
    story" legible at a glance rather than requiring the player to read 40 rows.
-5. **Name Shah Rukh's violence explicitly in `c10`'s scene text.** From
-   `ENDINGS_AUDIT.md`'s counterfactual audit: Iskandar Sultan wasn't just a fading
-   patron — he was blinded and executed in 1415 by his own uncle, Shah Rukh, whose
-   son (Baysunghur) is Ibn Turka's *next* patron. The current scene text never
-   makes this explicit, which undersells the real stakes of `c10`'s loyalty choice.
-   Lower-risk version of a larger proposal (a new choice about petitioning Shah
-   Rukh directly) that the audit deliberately didn't implement — see that doc for
-   why.
-6. **Name the Aqquyunlu explicitly in `c36`'s "new_patron" option.** `CHOICES.md`
-   itself names them as the real candidate ("a rival court (Aqquyunlu? further
-   east?)"); the shipped option text still just says "a rival court." Cheap fix,
-   same specificity discipline as `WRITING_GUIDE.md`.
-7. **Give `c17` (narrow/diversify) and `c25` (generous/overclaim) their own
-   epilogue clauses**, same pattern as the `c33`/`c36` clauses added in the
-   `ENDINGS_AUDIT.md` pass. `c25` especially — honesty about originality is
-   thematically central to a game about how history judges you — currently has no
-   effect on the ending or epilogue at all.
+5. ~~**Name Shah Rukh's violence explicitly in `c10`'s scene text.**~~ **Done
+   (2026-08-30):** `c10`'s scene and consequence text now name Shah Rukh's
+   blinding and execution of Iskandar Sultan directly, and that Bāysunghur (Ibn
+   Turka's next patron) is Shah Rukh's own son. The larger proposal (a new choice
+   about petitioning Shah Rukh directly) remains unimplemented — see
+   `ENDINGS_AUDIT.md` for why.
+6. ~~**Name the Aqquyunlu explicitly in `c36`'s "new_patron" option.**~~ **Done
+   (2026-08-30):** option label, detail, scene text, and consequence text all now
+   name the Aqquyunlu specifically instead of "a rival court."
+7. ~~**Give `c17`/`c25` their own epilogue clauses.**~~ **Done (2026-08-30):**
+   `epilogueFor()` now adds a clause for `c17=narrow` (single-science legacy) and
+   `c25=overclaim` (credit-taking that historians eventually catch), same
+   selective-firing pattern as the `c33`/`c36` clauses.
 
 ## Tier 2 — broaden the existing VN's content
 

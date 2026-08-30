@@ -61,20 +61,24 @@ deep bond was honored or a friend was distanced under pressure) and one for
 the sources don't say whether such an attempt would have succeeded, so the
 epilogue holds that ambiguity rather than inventing a verdict).
 
-## 3. A real, under-dramatized counterfactual: Shah Rukh's violence — proposed, not yet implemented
+## 3. A real, under-dramatized counterfactual: Shah Rukh's violence
 
-**The gap:** `c10` ("loyalty through political risk") currently frames Iskandar
-Sultan's decline abstractly — *"his star... has begun to dim... everyone at
-court is doing the math on when to leave."* The actual historical event behind
-that framing is much starker and currently invisible to the player: Iskandar
-Sultan was **defeated, blinded, and executed in 1415 on the order of his own
-uncle, Shah Rukh** (in `site/data/timeline.json` as `1415-iskandar-sultan-fall`,
-tagged `CONTEXT` since it's standard Timurid political history rather than
-something Melvin-Koushki's papers state directly — but it's the necessary,
-real explanation for why Ibn Turka's patronage shifts to Baysunghur, Shah Rukh's
-own son). Right now the game never makes a player reckon with having been a
-known associate of a prince who was just blinded and executed by the man whose
-son is about to become their next patron.
+**✅ Lower-risk version implemented (2026-08-30):** `c10`'s scene and
+consequence text now name the blinding and execution directly, and that
+Bāysunghur is Shah Rukh's own son. The full proposal below — a genuinely new
+choice about petitioning Shah Rukh directly — remains unimplemented; the
+sequencing reasoning stands.
+
+**The gap (as originally found):** `c10` ("loyalty through political risk")
+used to frame Iskandar Sultan's decline abstractly — *"his star... has begun to
+dim... everyone at court is doing the math on when to leave."* The actual
+historical event behind that framing is much starker: Iskandar Sultan was
+**defeated, blinded, and executed in 1415 on the order of his own uncle, Shah
+Rukh** (in `site/data/timeline.json` as `1415-iskandar-sultan-fall`, tagged
+`CONTEXT` since it's standard Timurid political history rather than something
+Melvin-Koushki's papers state directly — but it's the necessary, real
+explanation for why Ibn Turka's patronage shifts to Baysunghur, Shah Rukh's own
+son).
 
 **Why this is a genuine counterfactual, not just missing flavor:** Melvin-Koushki's
 own method (used explicitly in "Dr Dee's Ottoman Adventure") is to take a real
@@ -106,17 +110,15 @@ execution explicitly**, without adding a new choice — recommended as the
 immediate next step over the full new-choice version. Left for a future pass so
 it can get proper attention rather than being squeezed in here.
 
-## Smaller notes, not acted on
+## Smaller notes — now acted on (2026-08-30 follow-up)
 
-- `c17` (narrow vs. diversify) and `c25` (generous vs. overclaim crediting
-  sources) still don't individually influence which ending results, only
-  `breadth()` in aggregate. `c25` in particular is thematically ending-relevant
-  (honesty about originality, in a game about how history judges you) and is a
-  good future candidate for its own epilogue clause, same pattern as `c33`/`c36`
-  above.
-- The Aqquyunlu — the actual contemporary rival Turkic dynasty a wandering exile
-  in this exact period and place could plausibly seek patronage from — is named
-  in `CHOICES.md`'s own commentary on `c36` ("a rival court (Aqquyunlu? further
-  east?)") but never made it into the shipped `new_patron` option text, which
-  still just says "a rival court." Cheap, high-value future fix matching
-  `WRITING_GUIDE.md`'s naming rule.
+- ~~`c17`/`c25` don't individually influence...~~ **Done:** both now have their
+  own `epilogueFor()` clauses (`c17=narrow` — single-science legacy;
+  `c25=overclaim` — credit historians eventually catch), same selective-firing
+  pattern as `c33`/`c36`. Note they still don't affect *which named ending*
+  results, only the epilogue text under whichever ending was already reached —
+  that's a deliberate scope limit, not an oversight, to avoid the ending logic
+  itself getting combinatorially harder to reason about.
+- ~~The Aqquyunlu... never made it into the shipped option text~~ **Done:**
+  `c36`'s `new_patron` option (label, detail, scene text, consequence text) all
+  name the Aqquyunlu specifically now.

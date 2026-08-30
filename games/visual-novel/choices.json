@@ -240,24 +240,24 @@
     {
       "id": "c10",
       "act": 2,
-      "title": "Loyalty through political risk",
+      "title": "Loyalty as Shah Rukh moves against Iskandar Sultan",
       "grounding": "PLAUSIBLE-GAP",
       "options": [
         {
           "id": "loyal",
-          "label": "Stay loyal to Iskandar Sultan through the downturn",
+          "label": "Stay loyal as he is blinded and executed",
           "flags": {
             "c10": "loyal"
           },
-          "detail": "Stay loyal as Iskandar Sultan's star fades. A debt he may remember, if he survives to."
+          "detail": "Stand visibly by Iskandar Sultan as Shah Rukh destroys him. Reckless now, unforgettable if you survive it."
         },
         {
           "id": "early_defect",
-          "label": "Quietly cultivate the next patron early",
+          "label": "Distance yourself before the executioner arrives",
           "flags": {
             "c10": "early_defect"
           },
-          "detail": "Quietly court your next patron early. Safe — and nothing left to call in later."
+          "detail": "Quietly court Baysunghur before the axe falls. Safe -- and nothing left to call in later."
         }
       ]
     },
@@ -967,11 +967,11 @@
       "options": [
         {
           "id": "new_patron",
-          "label": "Seek a new patron at a rival court",
+          "label": "Seek patronage at the Aqquyunlu court",
           "flags": {
             "c36": "new_patron"
           },
-          "detail": "Seek a new patron at a rival court, betting your name outruns the scandal."
+          "detail": "Seek a new patron among the rival Aqquyunlu, betting your name outruns the scandal that far."
         },
         {
           "id": "retreat",

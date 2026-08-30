@@ -104,6 +104,14 @@ export function epilogueFor(state) {
     parts.push('The attempt to return to Isfahan society was the highest-risk path available in exile. Whether it actually succeeded is not something the sources settle — only that you tried.');
   }
 
+  if (f.c17 === 'narrow') {
+    parts.push('You never diversified. Whatever is remembered of your work will be remembered as the work of one science, pursued as far as a single lifetime could take it.');
+  }
+
+  if (f.c25 === 'overclaim') {
+    parts.push('You let your own name carry more of the credit than was strictly earned. No one caught it in your lifetime. Historians eventually do.');
+  }
+
   if (f.c39 === 'peace') {
     parts.push('You died reconciled to what it all cost — which is more than most of the men who tried you managed.');
   } else if (f.c39 === 'bitter') {
