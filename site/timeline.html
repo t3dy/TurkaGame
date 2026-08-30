@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timeline — TurkaGame</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .timeline-intro { max-width: 44rem; }
+  .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0 2rem; }
+  .filter-chip {
+    font-family: inherit; font-size: 0.82rem; cursor: pointer;
+    background: var(--card-bg); border: 1px solid var(--rule); border-radius: 999px;
+    padding: 0.35rem 0.9rem; color: var(--ink);
+  }
+  .filter-chip[aria-pressed="true"] { background: var(--navy); color: var(--parchment); border-color: var(--navy); }
+  .filter-chip:hover { border-color: var(--gold-deep); }
+  .tl-count { font-size: 0.85rem; color: #6b5e47; margin-bottom: 1.5rem; }
+
+  .tl { position: relative; padding-left: 1.6rem; border-left: 2px solid var(--rule); }
+  .tl-item { position: relative; margin-bottom: 1.6rem; }
+  .tl-item::before {
+    content: ""; position: absolute; left: -1.95rem; top: 0.35rem;
+    width: 0.65rem; height: 0.65rem; border-radius: 50%;
+    background: var(--gold-deep); border: 2px solid var(--parchment);
+  }
+  .tl-item.cat-biography::before { background: #a33b2e; }
+  .tl-item.cat-texts::before { background: #2e6b4f; }
+  .tl-item.cat-historiography::before { background: #5b3e8c; }
+  .tl-item.cat-renaissance-magi::before { background: #2e5d8c; }
+
+  .tl-year { font-family: Georgia, serif; font-weight: bold; font-size: 1.1rem; color: var(--gold-deep); }
+  .tl-head { display: flex; align-items: baseline; gap: 0.7rem; flex-wrap: wrap; }
+  .tl-title { font-weight: bold; }
+  .tl-badges { display: flex; gap: 0.4rem; margin-left: auto; flex-wrap: wrap; }
+  .tl-cat-badge, .tl-ground-badge {
+    font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.04em;
+    border-radius: 999px; padding: 0.08rem 0.55rem; white-space: nowrap;
+  }
+  .tl-cat-badge { background: var(--card-bg); border: 1px solid var(--rule); color: #6b5e47; }
+  .tl-ground-badge { color: #fff; }
+  .ground-ATTESTED { background: #2e6b4f; }
+  .ground-COMPARATIVE { background: #2e5d8c; }
+  .ground-CONTEXT { background: #8a7a5a; }
+  .ground-HISTORIOGRAPHY { background: #5b3e8c; }
+
+  .tl-summary { font-size: 0.94rem; margin: 0.35rem 0 0.25rem; }
+  .tl-source { font-size: 0.78rem; color: #7a6a45; font-style: italic; }
+
+  .legend { font-size: 0.8rem; color: #6b5e47; margin-top: 3rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
+  .legend dt { font-weight: bold; display: inline; }
+  .legend dd { display: inline; margin: 0 1.2rem 0 0.3rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><a href="index.html">TurkaGame</a></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">The Visual Novel</a>
+    <a href="timeline.html" class="active">Timeline</a>
+    <a href="https://github.com/t3dy/TurkaGame">GitHub</a>
+  </nav>
+</header>
+<main class="wide">
+  <h1>Timeline</h1>
+  <p class="subtitle">50 dated events, 950–2025</p>
+
+  <div class="timeline-intro">
+    <p>
+      Four interleaved threads: Ibn Turka's own <strong>biography</strong>; the
+      <strong>texts and discoveries</strong> around him (his own works, the
+      Samarkand Observatory, the sources his lettrism draws on); the
+      <strong>historiography of science</strong> &mdash; when and how modern
+      scholarship came to recover this material; and his <strong>relationship to
+      European Renaissance magi</strong> &mdash; not documented direct contact
+      (there was none), but the explicit comparisons Matthew Melvin-Koushki draws
+      to Cusa, Pico, Bruno, and Dee, plus surrounding context.
+    </p>
+    <p>
+      Every event is tagged with how well-grounded it is &mdash; see the legend at
+      the bottom. This isn't decoration: several of the historiography entries are
+      honestly marked <span class="tl-ground-badge ground-HISTORIOGRAPHY" style="display:inline-block">HISTORIOGRAPHY</span>
+      / low-confidence because they're drawn from general knowledge of the field
+      rather than a source document this project actually has in hand.
+    </p>
+  </div>
+
+  <div class="filters" id="filters" role="group" aria-label="Filter timeline by category"></div>
+  <p class="tl-count" id="tl-count"></p>
+  <div class="tl" id="tl"></div>
+
+  <dl class="legend">
+    <dt>ATTESTED</dt><dd>Directly stated in a source this project has in hand.</dd>
+    <dt>COMPARATIVE</dt><dd>A comparison Melvin-Koushki explicitly draws &mdash; not a claim of direct contact.</dd>
+    <dt>CONTEXT</dt><dd>Standard, well-established general history, orienting rather than project-specific.</dd>
+    <dt>HISTORIOGRAPHY</dt><dd>About modern scholarship itself; some entries flagged low-confidence pending verification.</dd>
+  </dl>
+
+  <footer>
+    <a href="https://github.com/t3dy/TurkaGame/blob/main/docs/BIOGRAPHY.md">Full biography &amp; sourcing</a> &middot;
+    <a href="https://github.com/t3dy/TurkaGame">github.com/t3dy/TurkaGame</a>
+  </footer>
+</main>
+<script>
+const CATS = [
+  { key: 'biography', label: 'Biography' },
+  { key: 'texts', label: 'Texts & Discoveries' },
+  { key: 'historiography', label: 'Historiography' },
+  { key: 'renaissance-magi', label: 'Renaissance Magi' },
+];
+let active = new Set(CATS.map(c => c.key));
+let EVENTS = [];
+
+function renderFilters() {
+  const el = document.getElementById('filters');
+  el.innerHTML = '';
+  const allBtn = document.createElement('button');
+  allBtn.className = 'filter-chip';
+  allBtn.textContent = 'All';
+  allBtn.setAttribute('aria-pressed', String(active.size === CATS.length));
+  allBtn.addEventListener('click', () => { active = new Set(CATS.map(c => c.key)); render(); });
+  el.appendChild(allBtn);
+  for (const c of CATS) {
+    const btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.textContent = c.label;
+    btn.setAttribute('aria-pressed', String(active.has(c.key)));
+    btn.addEventListener('click', () => {
+      if (active.has(c.key)) active.delete(c.key); else active.add(c.key);
+      if (active.size === 0) active = new Set(CATS.map(x => x.key));
+      render();
+    });
+    el.appendChild(btn);
+  }
+}
+
+function yearLabel(e) {
+  const isCirca = e.slug.startsWith('c') && /^\d/.test(e.slug.replace(/^c/, ''));
+  const prefix = e.slug.startsWith('c') && e.slug.match(/^c\d/) ? 'c. ' : '';
+  return e.year_end && e.year_end !== e.year_start ? `${prefix}${e.year_start}–${e.year_end}` : `${prefix}${e.year_start}`;
+}
+
+function render() {
+  const filtered = EVENTS.filter(e => active.has(e.category));
+  document.getElementById('tl-count').textContent = `Showing ${filtered.length} of ${EVENTS.length} events`;
+  const tl = document.getElementById('tl');
+  tl.innerHTML = '';
+  for (const e of filtered) {
+    const item = document.createElement('div');
+    item.className = `tl-item cat-${e.category}`;
+    const catLabel = CATS.find(c => c.key === e.category)?.label || e.category;
+    item.innerHTML = `
+      <div class="tl-head">
+        <span class="tl-year">${yearLabel(e)}</span>
+        <span class="tl-title">${e.title}</span>
+        <span class="tl-badges">
+          <span class="tl-cat-badge">${catLabel}</span>
+          <span class="tl-ground-badge ground-${e.grounding}">${e.grounding}</span>
+        </span>
+      </div>
+      <p class="tl-summary">${e.summary}</p>
+      <p class="tl-source">${e.source}</p>
+    `;
+    tl.appendChild(item);
+  }
+  renderFilters();
+}
+
+fetch('data/timeline.json')
+  .then(r => r.json())
+  .then(data => { EVENTS = data.slice().sort((a, b) => a.year_start - b.year_start); render(); })
+  .catch(err => {
+    document.getElementById('tl').textContent = 'Could not load timeline data: ' + err.message;
+  });
+</script>
+</body>
+</html>

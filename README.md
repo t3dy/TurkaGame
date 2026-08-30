@@ -29,6 +29,12 @@ The scene text is real prose, not filler, but it's still an early pass — see
   [games/visual-novel/CHOICES.md](games/visual-novel/CHOICES.md), each tagged for how
   grounded it is in the historical record (ATTESTED / PLAUSIBLE-GAP /
   INVENTED-COMPATIBLE).
+- **Timeline** — 50 dated events (950–2025) spanning Ibn Turka's biography, the
+  texts and discoveries around him, the historiography of how this material got
+  recovered by modern scholarship, and his comparative relationship to European
+  Renaissance magi (Cusa, Pico, Bruno, Dee — explicit comparisons Melvin-Koushki
+  draws, not documented contact). See [site/timeline.html](site/timeline.html) /
+  [docs/BIOGRAPHY.md](docs/BIOGRAPHY.md).
 - **Roguelike** — *design stage.* Built on the same Occult Quintet hierarchy, in the
   vein of this workspace's other Atalanta-Fugiens-based roguelikes. See
   [docs/GAME_ROGUELIKE.md](docs/GAME_ROGUELIKE.md).
@@ -91,6 +97,8 @@ python research/scripts/register_asset.py add \
 
 ## Status & what's next
 
+- [docs/BIOGRAPHY.md](docs/BIOGRAPHY.md) — the canonical, citation-grounded
+  biography this project draws choices/events/encounters from.
 - [HANDOVER.md](HANDOVER.md) — current state for a fresh session to read first:
   what's built, what's verified, and the honest gaps.
 - [NEXTSTEPS.md](NEXTSTEPS.md) — prioritized roadmap from a narrative-design pass.

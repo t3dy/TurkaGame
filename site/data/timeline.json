@@ -1,0 +1,461 @@
+[
+ {
+  "slug": "c10th-c-rasail-ikhwan",
+  "title": "Compilation of the Rasa'il Ikhwan al-Safa'",
+  "year_start": 950,
+  "year_end": 980,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "The medieval Brethren of Purity compile their vast philosophical-scientific encyclopedia, the Rasa'il -- the direct namesake and inspiration for Ibn Turka's own \"New Brethren of Purity\" circle roughly 450 years later, and part of the same tradition behind the Ghayat al-hakim / Picatrix.",
+  "source": "RESEARCH_BRIEF.md, \"Cosmology and core concepts\"; standard dating for the historical Ikhwan al-Safa'"
+ },
+ {
+  "slug": "c1165-1240-ibn-arabi",
+  "title": "Life of Ibn 'Arabi",
+  "year_start": 1165,
+  "year_end": 1240,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "The Andalusian \"Supreme Master\" Ibn 'Arabi lives and writes. Ibn Turka credits him, alongside Sa'd al-Din Hamuya, as one of lettrism's two co-founders after 'Ali -- the two named sources anchoring the entire Investigations project.",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "c1225-buni-death",
+  "title": "Death of Ahmad al-Buni",
+  "year_start": 1225,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Ahmad ibn 'Ali al-Buni dies, having compiled the Shams al-Ma'arif al-Kubra -- the most widely copied Arabic magical handbook in history, systematizing the occult properties of the 28 Arabic letters and the 99 Names of God into a cosmological system Ibn Turka's own lettrism draws on two centuries later.",
+  "source": "OCCULTIMGDB registry record (shams_al_maarif work entry), citing Savage-Smith 2004"
+ },
+ {
+  "slug": "c1252-hamuya-death",
+  "title": "Death of Sa'd al-Din Hamuya",
+  "year_start": 1252,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Hamuya, described in the sources as Ibn 'Arabi's \"Iranian twin,\" dies. Ibn Turka is credited as the first to pair Ibn 'Arabi and Hamuya explicitly as lettrism's two co-founders.",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "1369-ibn-turka-birth",
+  "title": "Birth of Ibn Turka",
+  "year_start": 1369,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Sa'in al-Din 'Ali ibn Turka Isfahani is born. He becomes Chief Judge of Isfahan and, per Melvin-Koushki, the foremost occult philosopher of Timurid Iran.",
+  "source": "Melvin-Koushki 2025, \"Prologue to Pythagorean Renaissance\""
+ },
+ {
+  "slug": "c1390s-cairo-formation",
+  "title": "Formation years in Cairo",
+  "year_start": 1390,
+  "year_end": 1397,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka studies in Cairo under Sayyid Husayn Akhlati, a lettrist, alchemist, and geomancer who is the hub of a network the circle calls the \"New Brethren of Purity,\" consciously invoking the medieval Ikhwan al-Safa'.",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "1397-akhlati-death",
+  "title": "Death of Sayyid Husayn Akhlati",
+  "year_start": 1397,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka's mentor dies. Akhlati's network had radiated from Cairo to Iran, India, and Anatolia -- the connective tissue of Ibn Turka's entire later intellectual world.",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "1405-timur-death",
+  "title": "Death of Timur",
+  "year_start": 1405,
+  "category": "biography",
+  "grounding": "CONTEXT",
+  "summary": "Timur dies during a campaign against Ming China. A succession struggle among his sons and grandsons follows -- the Timurid princely rivalries (Iskandar Sultan, Baysunghur, Shah Rukh) that structure Ibn Turka's patronage career all trace back to this moment.",
+  "source": "Standard Timurid-era chronology"
+ },
+ {
+  "slug": "c1409-iskandar-sultan-patronage",
+  "title": "Ibn Turka enters Iskandar Sultan's court",
+  "year_start": 1409,
+  "year_end": 1414,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka becomes attached to the court of Iskandar Sultan, a Timurid prince and governor of Fars whose atelier fused star science, poetry, and manuscript painting -- his first major patron.",
+  "source": "Melvin-Koushki 2025; RESEARCH_BRIEF.md"
+ },
+ {
+  "slug": "1415-iskandar-sultan-fall",
+  "title": "Fall of Iskandar Sultan",
+  "year_start": 1415,
+  "category": "biography",
+  "grounding": "CONTEXT",
+  "summary": "Iskandar Sultan is defeated, blinded, and executed on the order of his uncle Shah Rukh after a failed bid for wider power. Ibn Turka's first great patron is gone, forcing a transition to a new court.",
+  "source": "Standard Timurid-era chronology (context for the Iskandar Sultan -> Baysunghur transition Melvin-Koushki's biography implies)"
+ },
+ {
+  "slug": "c1416-baysunghur-patronage",
+  "title": "Ibn Turka enters Baysunghur's court",
+  "year_start": 1416,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka becomes attached to Baysunghur, Shah Rukh's son, an accomplished calligrapher and the likely commissioner of the monumental Baysunghur Qur'an -- his second and longer-lasting patron.",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "1420-investigations-composed",
+  "title": "Investigations (Kitab al-Mafahis) composed",
+  "year_start": 1420,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka completes his masterwork, described by Melvin-Koushki as the first fully systematic summa of Islamic lettrism ('ilm al-huruf) -- a mathematical-theurgic philosophy challenging the dominant Aristotelian-Avicennan system of his day.",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "1420-samarkand-observatory",
+  "title": "Samarkand Observatory construction begins",
+  "year_start": 1420,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Ulugh Beg begins building his observatory in Samarkand the same year Ibn Turka composes Investigations. Melvin-Koushki treats the coincidence as more than decorative: star science and letter science boomed together in this milieu.",
+  "source": "Melvin-Koushki 2025; RESEARCH_BRIEF.md"
+ },
+ {
+  "slug": "c1420-tahawi-circle",
+  "title": "The Tahawi Circle diagram",
+  "year_start": 1420,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Investigations's central diagram -- called the first \"modern\" lettrist reworking of the Pythagorean Tetractys -- survives in Ibn Turka's own autograph (Tehran, Majlis Library MS 10196, f. 63a). The single strongest candidate for a curated manuscript image of his actual work.",
+  "source": "Melvin-Koushki 2021, 2025"
+ },
+ {
+  "slug": "1420-25-yazdi-copies-mafahis",
+  "title": "Yazdi copies the Mafahis autograph",
+  "year_start": 1420,
+  "year_end": 1425,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Sharaf al-Din 'Ali Yazdi -- Ibn Turka's best friend and foremost student, later a Timurid imperial historian at the Samarkand Observatory -- likely copies Ibn Turka's own autograph manuscript (Tehran, Majlis Library MS 10196, ff. 52a-56a).",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "c1420-splitting-of-the-moon",
+  "title": "On the Splitting of the Moon and the Last Hour",
+  "year_start": 1420,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka's Persian treatise laying out a seven-tier epistemic hierarchy, from traditionist literalism at the bottom to lettrism at the apex of human perfection. Only the two endpoints plus three intermediate tiers (theologians, philosophers, Sufis) are confirmed in sources currently in hand.",
+  "source": "Melvin-Koushki 2025; the full seven-tier breakdown is an open research gap, cited onward to Melvin-Koushki's \"Selenocentrism and Heliocentrism\" (not yet acquired)"
+ },
+ {
+  "slug": "c1420s-baysunghur-quran",
+  "title": "The Baysunghur Qur'an",
+  "year_start": 1420,
+  "year_end": 1433,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "A monumental illuminated Qur'an produced under Baysunghur's patronage. Ibn Turka's circle's numerological/lettrist framing of manuscript illumination programs makes this exactly the kind of project his doctrine could plausibly have touched.",
+  "source": "RESEARCH_BRIEF.md, \"Courts and political economy\""
+ },
+ {
+  "slug": "c1420s-first-two-inquisitions",
+  "title": "First two state inquisitions",
+  "year_start": 1420,
+  "year_end": 1427,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka is subjected to two state inquisitions engineered by jealous, rival colleagues -- and wins both. Exact years are not established in the sources currently in hand; placed here only as approximate, pre-1427 events.",
+  "source": "Melvin-Koushki 2025 (dates not given in source)"
+ },
+ {
+  "slug": "1427-qasim-i-anvar-exile",
+  "title": "Qasim-i Anvar exiled for lettrist associations",
+  "year_start": 1427,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka's Cairo companion, the Sufi poet Qasim-i Anvar, is exiled over the same lettrist associations that will soon threaten Ibn Turka himself -- a parallel persecution and an early warning sign.",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "c1427-third-inquisition",
+  "title": "The third inquisition -- and defeat",
+  "year_start": 1427,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka faces a third state inquisition and, this time, loses. Five years of wandering exile follow before his death in 1432, which places this event at approximately 1427.",
+  "source": "Melvin-Koushki 2025 (year inferred: death in 1432 minus five years of exile)"
+ },
+ {
+  "slug": "1432-ibn-turka-death",
+  "title": "Ibn Turka dies in exile",
+  "year_start": 1432,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "After losing his third inquisition and five years of wandering exile, Ibn Turka dies impoverished and in legal limbo. His Mafahis, per Melvin-Koushki, remains understudied -- \"on the Index\" -- for centuries afterward.",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "1433-ficino-born",
+  "title": "Marsilio Ficino is born",
+  "year_start": 1433,
+  "category": "renaissance-magi",
+  "grounding": "CONTEXT",
+  "summary": "One year after Ibn Turka's death, the man who will become the central translator-philosopher of Renaissance Hermeticism in Europe is born in Florence. Not a documented comparison in the sources in hand -- included only as an orienting coincidence of timing.",
+  "source": "Standard European Renaissance chronology"
+ },
+ {
+  "slug": "1437-ulugh-beg-zij",
+  "title": "Ulugh Beg's star catalog completed",
+  "year_start": 1437,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "The Zij-i Sultani, produced at the Samarkand Observatory Ibn Turka's own circle was adjacent to via Yazdi, is completed five years after Ibn Turka's death -- the most accurate pre-telescopic star tables produced, remaining in active use from the Strait of Malacca to London into the 19th century.",
+  "source": "RESEARCH_BRIEF.md; Melvin-Koushki 2021"
+ },
+ {
+  "slug": "1440-cusa-docta-ignorantia",
+  "title": "Nicholas of Cusa, De Docta Ignorantia",
+  "year_start": 1440,
+  "category": "renaissance-magi",
+  "grounding": "COMPARATIVE",
+  "summary": "Cusa's treatise on \"learned ignorance\" appears. Melvin-Koushki explicitly compares Ibn Turka to Cusa -- \"fellow lawyer, fellow Pythagoreanizer, but far less immediately influential\" than Ibn Turka was in his own world.",
+  "source": "Melvin-Koushki 2025 (comparison); publication date is standard European intellectual history"
+ },
+ {
+  "slug": "c1450s-kashifi-popularization",
+  "title": "Kashifi's \"Everyman's Library\" popularizations",
+  "year_start": 1450,
+  "year_end": 1504,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Husayn Va'iz Kashifi and his son 'Ali Safi simplify and popularize the same occult-science material Ibn Turka treats with dense, elite difficulty, aiming at a wider, more commercial readership -- a live tension between hoarding prestige and teaching for reach that runs through the whole tradition.",
+  "source": "RESEARCH_BRIEF.md, \"Courts and political economy\""
+ },
+ {
+  "slug": "1454-yazdi-death",
+  "title": "Death of Sharaf al-Din 'Ali Yazdi",
+  "year_start": 1454,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka's best friend and foremost student -- by then a celebrated Timurid imperial historian working at the Samarkand Observatory -- dies, 22 years after his teacher.",
+  "source": "RESEARCH_BRIEF.md"
+ },
+ {
+  "slug": "1463-ficino-corpus-hermeticum",
+  "title": "Ficino translates the Corpus Hermeticum",
+  "year_start": 1463,
+  "category": "renaissance-magi",
+  "grounding": "COMPARATIVE",
+  "summary": "Commissioned by Cosimo de' Medici, Ficino's Latin translation of the (pseudo-)Hermetic corpus becomes the founding textual act of European Renaissance Hermeticism -- a structurally close parallel to Ibn Turka's own project of systematizing an inherited esoteric-philosophical tradition into a totalizing cosmology, though not a comparison drawn directly in the sources currently in hand.",
+  "source": "Standard Renaissance-Hermeticism historiography (see Yates 1964, below)"
+ },
+ {
+  "slug": "boon-for-the-khan",
+  "title": "'Ali Safi, Boon for the Khan",
+  "year_start": 1470,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "A Persian manual of illusionism and trickery, dedicated as a \"royal boon\" to a specific Safavid Qizilbash patron, cataloguing concrete named operations: putrefactions, suffumigations, sleeper interrogation, treasure dowsing, instant agriculture. Real period spellbook texture, translated in full in Melvin-Koushki's \"The Occult Court.\"",
+  "source": "Melvin-Koushki, \"The Occult Court\"; year is an approximate placement within 'Ali Safi's working lifetime, not independently confirmed"
+ },
+ {
+  "slug": "1486-pico-oration",
+  "title": "Pico della Mirandola, Oration on the Dignity of Man",
+  "year_start": 1486,
+  "category": "renaissance-magi",
+  "grounding": "COMPARATIVE",
+  "summary": "Pico's Oration and his 900 Theses -- which incorporate Christian Kabbalah alongside Hermeticism and scholastic philosophy -- appear. Melvin-Koushki names Pico directly, alongside Cusa, Bruno, and Dee, as a figure worth reading Ibn Turka against.",
+  "source": "Melvin-Koushki 2025 (comparison, named directly); dates are standard Renaissance chronology"
+ },
+ {
+  "slug": "1487-pico-condemned",
+  "title": "Pico's Theses condemned; disputation blocked",
+  "year_start": 1487,
+  "category": "renaissance-magi",
+  "grounding": "CONTEXT",
+  "summary": "Pope Innocent VIII condemns several of Pico's 900 Theses and blocks the public Rome disputation Pico had planned. A structural echo of Ibn Turka's own inquisitions: a syncretic occult-philosophical system provoking institutional persecution, in a European context roughly contemporary with Ibn Turka's own reception history.",
+  "source": "Standard Renaissance chronology; the structural parallel to Ibn Turka's inquisitions is this project's own observation, not a claim from the sources in hand"
+ },
+ {
+  "slug": "1527-dee-born",
+  "title": "John Dee is born",
+  "year_start": 1527,
+  "category": "renaissance-magi",
+  "grounding": "COMPARATIVE",
+  "summary": "Born in London. Nearly a century after Ibn Turka's death, Dee becomes the Elizabethan mathematician-magus Melvin-Koushki pairs Ibn Turka against most extensively: \"Ibn Turka is best approached as a Timurid Dr. Dee -- or Dee best approached as an Elizabethan Dr. Littleturk.\"",
+  "source": "Melvin-Koushki 2021, \"Dr Dee's Ottoman Adventure\""
+ },
+ {
+  "slug": "1533-agrippa-occulta-philosophia",
+  "title": "Agrippa, De Occulta Philosophia (full edition)",
+  "year_start": 1533,
+  "category": "renaissance-magi",
+  "grounding": "CONTEXT",
+  "summary": "Cornelius Agrippa's three-book encyclopedic synthesis of natural, celestial, and ceremonial magic reaches its full published form -- Europe's closest analog to the encyclopedic occult-science manuals (like 'Ali Safi's Boon for the Khan) circulating in Ibn Turka's own milieu.",
+  "source": "Standard European occult-history chronology; not a direct comparison drawn in the sources in hand"
+ },
+ {
+  "slug": "1548-bruno-born",
+  "title": "Giordano Bruno is born",
+  "year_start": 1548,
+  "category": "renaissance-magi",
+  "grounding": "COMPARATIVE",
+  "summary": "Born in Nola, Kingdom of Naples. Bruno becomes the figure Melvin-Koushki compares Ibn Turka to most extensively and explicitly: both subordinated all contemporary schools of thought to a totalizing Pythagorean/lettrist code, and both were \"historiographically burnt at the stake\" -- Bruno literally, Ibn Turka's Mafahis left understudied and effectively \"on the Index\" for centuries.",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "1556-akbar-accession",
+  "title": "Akbar becomes Mughal emperor",
+  "year_start": 1556,
+  "category": "renaissance-magi",
+  "grounding": "COMPARATIVE",
+  "summary": "Akbar's reign (1556-1605) is offered by Melvin-Koushki as the most successful avatar of the millennial occult-scientific sovereignty model Ibn Turka's circle helped originate -- syncretizing Muslim, Hindu, Jain, and Christian traditions into what becomes \"modern India.\"",
+  "source": "Melvin-Koushki 2021"
+ },
+ {
+  "slug": "1574-murad-iii-accession",
+  "title": "Murad III becomes Ottoman Sultan",
+  "year_start": 1574,
+  "category": "renaissance-magi",
+  "grounding": "COMPARATIVE",
+  "summary": "Murad III's reign (1574-1595) is framed by Melvin-Koushki as that of a Sufi-initiate sultan devoted to oneiromancy, astrology, and talismanry -- a \"sister science\" to Jewish kabbalah -- who fashioned himself a prophet-saint-king on the strength of personal angelic communications, directly paralleling Dee's own angel-conversations. His reign spans the Islamic millennium (992 AH / 1592 CE).",
+  "source": "Melvin-Koushki 2021"
+ },
+ {
+  "slug": "1580s-dee-kelley-angels",
+  "title": "Dee and Kelley's angelic conversations",
+  "year_start": 1582,
+  "year_end": 1589,
+  "category": "renaissance-magi",
+  "grounding": "CONTEXT",
+  "summary": "John Dee and Edward Kelley conduct their scrying sessions, recording conversations with angels including material connected to the garbled \"Arabic book\" lore (the Book of Soyga) that Melvin-Koushki argues derives from the Bunian-Bistamian magical corpus popular in Ottoman courtly circles -- a direct textual thread from the Islamicate lettrist-talismanic tradition into English angel magic.",
+  "source": "Melvin-Koushki 2021"
+ },
+ {
+  "slug": "safavid-isfahan-talismanic-city",
+  "title": "Safavid New Isfahan built as talismanic architecture",
+  "year_start": 1598,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Shah Abbas I's New Isfahan and the Shaykh Lutf Allah Mosque are read by Melvin-Koushki as literal built diagrams of the same Planet-Pearl-Peach cosmology structuring Ibn Turka's Investigations -- cities and buildings as functioning talismans, not merely symbolic ones, nearly two centuries after Ibn Turka's death.",
+  "source": "Melvin-Koushki 2025"
+ },
+ {
+  "slug": "1600-bruno-execution",
+  "title": "Giordano Bruno executed in Rome",
+  "year_start": 1600,
+  "category": "renaissance-magi",
+  "grounding": "COMPARATIVE",
+  "summary": "Bruno is burned at the stake by the Roman Inquisition. The literal event behind Melvin-Koushki's framing of both Bruno and Ibn Turka as men \"historiographically burnt at the stake\" for a totalizing occult-scientific system -- one destroyed by fire, the other by centuries of scholarly neglect.",
+  "source": "Melvin-Koushki 2025 (framing); execution date is standard history"
+ },
+ {
+  "slug": "1608-dee-death",
+  "title": "John Dee dies in poverty",
+  "year_start": 1608,
+  "category": "renaissance-magi",
+  "grounding": "COMPARATIVE",
+  "summary": "Dee dies poor, his library destroyed, his repeated bids for imperial patronage in England and the Habsburg lands all having failed -- the real ending Melvin-Koushki's counterfactual \"Dr Dee's Ottoman Adventure\" imagines Dee escaping by seeking patronage in the more occult-friendly Ottoman court instead.",
+  "source": "Melvin-Koushki 2021"
+ },
+ {
+  "slug": "1943-kristeller-ficino",
+  "title": "Kristeller, The Philosophy of Marsilio Ficino",
+  "year_start": 1943,
+  "category": "historiography",
+  "grounding": "HISTORIOGRAPHY",
+  "summary": "Paul Oskar Kristeller's foundational study establishes Renaissance Platonism-Hermeticism as a serious field of modern scholarship in Europe -- decades before comparable systematic attention was paid to the Islamicate occult-scientific tradition Ibn Turka worked in.",
+  "source": "General Renaissance-studies historiography; not verified against a primary bibliographic record in this project's corpus"
+ },
+ {
+  "slug": "1964-yates-bruno-hermetic",
+  "title": "Yates, Giordano Bruno and the Hermetic Tradition",
+  "year_start": 1964,
+  "category": "historiography",
+  "grounding": "HISTORIOGRAPHY",
+  "summary": "Frances Yates's landmark study argues Renaissance Hermeticism -- not just humanism -- was a driving force behind the early Scientific Revolution in Europe. Melvin-Koushki's own \"Occult-Scientific Revolution\" framing for Ibn Turka's world explicitly writes in the shadow of, and against the geographic limits of, this book's influence.",
+  "source": "General historiography of Renaissance esotericism; not verified against a primary bibliographic record in this project's corpus"
+ },
+ {
+  "slug": "1987-sabra-appropriation",
+  "title": "Sabra challenges the \"decline\" narrative of Islamic science",
+  "year_start": 1987,
+  "category": "historiography",
+  "grounding": "HISTORIOGRAPHY",
+  "summary": "A.I. Sabra's \"The Appropriation and Subsequent Naturalization of Greek Science in Medieval Islam\" reframes Islamic science as a fully naturalized, ongoing tradition rather than a transmission pipeline that declined after a supposed \"golden age\" -- part of the historiographical groundwork that makes a claim like Ibn Turka's continued 15th-century scientific vitality legible to later scholars.",
+  "source": "General historiography of Islamic science; not verified against a primary bibliographic record in this project's corpus"
+ },
+ {
+  "slug": "1991-netton-muslim-neoplatonists",
+  "title": "Netton, Muslim Neoplatonists",
+  "year_start": 1991,
+  "category": "historiography",
+  "grounding": "HISTORIOGRAPHY",
+  "summary": "Ian Richard Netton's introduction to the Brethren of Purity's thought becomes a standard English-language reference for the Ikhwan al-Safa' tradition Ibn Turka's own circle explicitly names itself after.",
+  "source": "IslamicateOccultPortal bibliography (data/seed.json)"
+ },
+ {
+  "slug": "2007-saliba-islamic-science-renaissance",
+  "title": "Saliba, Islamic Science and the Making of the European Renaissance",
+  "year_start": 2007,
+  "category": "historiography",
+  "grounding": "HISTORIOGRAPHY",
+  "summary": "George Saliba argues for direct textual transmission from the late Islamic astronomical tradition -- including work connected to the Maragha and Samarkand schools -- into Copernicus's own models, the single strongest historiographical bridge between the world Ulugh Beg's observatory belonged to and the European Scientific Revolution story.",
+  "source": "General historiography of Islamic science; not verified against a primary bibliographic record in this project's corpus"
+ },
+ {
+  "slug": "2012-gardiner-forbidden-knowledge",
+  "title": "Gardiner on al-Buni's manuscript transmission",
+  "year_start": 2012,
+  "category": "historiography",
+  "grounding": "HISTORIOGRAPHY",
+  "summary": "Noah Gardiner's \"Forbidden Knowledge? Notes on the Production, Transmission, and Reception of the Major Works of Ahmad al-Buni\" reconstructs how al-Buni's foundational lettrist-talismanic corpus actually circulated in manuscript -- essential groundwork for tracing the textual lineage feeding into Ibn Turka's own generation.",
+  "source": "OCCULTIMGDB registry citation record"
+ },
+ {
+  "slug": "2012-melvin-koushki-dissertation",
+  "title": "Melvin-Koushki's dissertation on Ibn Turka",
+  "year_start": 2012,
+  "category": "historiography",
+  "grounding": "HISTORIOGRAPHY",
+  "summary": "Matthew Melvin-Koushki completes his Yale doctoral dissertation on Ibn Turka's occult philosophy -- the modern scholarly rediscovery this entire project's research ultimately traces back to. Title and year recalled from general knowledge of the field, not yet verified against a source document in this project's own corpus.",
+  "source": "General knowledge of the field -- LOW confidence, flagged for verification"
+ },
+ {
+  "slug": "2016-melvin-koushki-astrology-lettrism-geomancy",
+  "title": "\"Astrology, Lettrism, Geomancy\" article",
+  "year_start": 2016,
+  "category": "historiography",
+  "grounding": "HISTORIOGRAPHY",
+  "summary": "Melvin-Koushki's \"Astrology, Lettrism, Geomancy: The Occult-Scientific Methods of Post-Mongol Islamicate Imperialism\" (Medieval History Journal 19.1) lays out the framework -- occult science as literal imperial political technology across the post-Mongol Persianate world -- that the later papers on Ibn Turka specifically build on.",
+  "source": "Citation recorded in OCCULTIMGDB's shams_al_maarif and persian-astrolabe registry entries"
+ },
+ {
+  "slug": "2021-melvin-koushki-dee-ottoman",
+  "title": "\"Dr Dee's Ottoman Adventure\" published",
+  "year_start": 2021,
+  "category": "historiography",
+  "grounding": "ATTESTED",
+  "summary": "Melvin-Koushki publishes the counterfactual essay explicitly pairing Ibn Turka and John Dee -- the single richest source in this project's hands for the direct comparative framing between Islamicate and European Renaissance occult philosophy.",
+  "source": "This project's own bibliography, research/notes/01-dr-dees-ottoman-adventure.md"
+ },
+ {
+  "slug": "2025-melvin-koushki-pythagorean-renaissance",
+  "title": "\"Prologue to Pythagorean Renaissance\" published",
+  "year_start": 2025,
+  "category": "historiography",
+  "grounding": "ATTESTED",
+  "summary": "Melvin-Koushki's core biographical and cosmological source on Ibn Turka appears, arguing Investigations is the opening anthem of an Islamicate parallel to (and, per the author, a source for) the European Scientific Revolution story.",
+  "source": "This project's own bibliography, research/notes/02-prologue-to-pythagorean-renaissance.md"
+ },
+ {
+  "slug": "2025-melvin-koushki-occult-court",
+  "title": "\"The Occult Court\" published",
+  "year_start": 2025,
+  "category": "historiography",
+  "grounding": "ATTESTED",
+  "summary": "Melvin-Koushki's Al-Masaq article lays out the Occult Quintet hierarchy and the patronage economics of the Timurid-to-Safavid occult courts in full, including a complete translation of 'Ali Safi's Boon for the Khan -- this project's core source for court culture and game-mechanical structure alike.",
+  "source": "This project's own bibliography, research/notes/03-the-occult-court.md"
+ }
+]

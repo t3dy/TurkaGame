@@ -49,6 +49,25 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
 - Narrative-design docs: `GAMELOOP.md` (how the play loop actually works, beat by
   beat, and where it's thinner than the design deserves) and `NEXTSTEPS.md`
   (prioritized roadmap in 4 tiers). `README.md` rewritten with the live link at top.
+- **`docs/BIOGRAPHY.md`** — the canonical, citation-grounded biography (formation
+  in Cairo → two patrons → the 1420 pivot year → three inquisitions → exile/death),
+  written to be the single source future choices/events/encounters draw from. Ends
+  with an explicit "for game design" section naming open research gaps not to
+  invent past.
+- **`site/timeline.html`** (+ `site/data/timeline.json`) — a new site tab, 50 dated
+  events (950–2025) across four filterable categories: biography, texts &
+  discoveries, historiography of science, and Ibn Turka's *comparative* relationship
+  to European Renaissance magi (Cusa/Pico/Bruno/Dee — comparisons Melvin-Koushki
+  himself draws, explicitly not claims of direct contact). Every event tagged
+  ATTESTED/COMPARATIVE/CONTEXT/HISTORIOGRAPHY, with ~5 historiography entries
+  honestly flagged low-confidence (drawn from general field knowledge, not a
+  source document this project has in hand — e.g. Melvin-Koushki's dissertation
+  year). The same 50 events were also loaded into
+  **IslamicateOccultPortal's real SQLite pipeline** (`timeline_events` table,
+  replacing its previous 4-event placeholder) — `init_db.py` →
+  `seed_from_json.py` → `build_site.py` all re-run and verified clean. Verified
+  in-browser: filter chips, mobile viewport, all 50 events present with correct
+  badges.
 - IslamicateOccultPortal: 21 corpus sources converted (full text, footnotes intact),
   552-image research catalog (5 human-verified, 547 auto-extracted review queue),
   SQLite-backed site seeded with the material already covered by TurkaGame's own
