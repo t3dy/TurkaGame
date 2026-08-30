@@ -57,11 +57,20 @@ These improve the 40 choices already built, rather than adding new scope.
    still only partially sourced — acquiring Melvin-Koushki's "Selenocentrism and
    Heliocentrism" would let choice #16–20 (the sciences act) reference a real
    secondary axis of depth-of-mastery, not just breadth.
-3. **A short epilogue scene per ending**, distinct from the current single ending
-   paragraph — even two or three sentences of "five years later..." per named
-   ending would give the ~7 endings more individual identity than they currently
-   have (right now they're differentiated by title and one paragraph; playtesting
-   will likely show players want a bit more).
+3. ~~**A short epilogue scene per ending.**~~ **Done (2026-08-30):** `epilogueFor`
+   in `endings.js` adds a personalized paragraph reactive to c39/c40 under every
+   ending.
+4. **Verify the 5 LOW-confidence historiography dates** in
+   `site/data/timeline.json` (Melvin-Koushki's dissertation year, Yates 1964,
+   Kristeller 1943, Sabra 1987, Saliba 2007) against an actual bibliographic
+   record rather than general field knowledge — flagged honestly as unverified
+   when added (2026-08-30), not a blocker for the timeline shipping, but worth
+   closing before citing these dates anywhere more load-bearing than the tab.
+5. **Mine `docs/BIOGRAPHY.md`'s "for game design" section for new choices.** It
+   names concrete gaps (7-tier hierarchy, undated first two inquisitions,
+   pre-Cairo life) the VN currently works around — closing any of them (e.g. via
+   Melvin-Koushki's "Selenocentrism and Heliocentrism," same acquisition target as
+   item 2 above) could unlock new choice material, not just texture.
 
 ## Tier 3 — the other two prototypes
 

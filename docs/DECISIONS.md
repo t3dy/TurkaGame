@@ -109,6 +109,33 @@ building:
   conventions vary by genre/period — the VN uses one real manuscript/diagram/object
   image as a backdrop per act (8 total), never an invented portrait.
 
+## Biography and Timeline (2026-08-30, third session)
+
+- **Portal-first for new biographical facts, per this project's own CLAUDE.md
+  rule.** All 50 timeline events were authored into
+  `IslamicateOccultPortal/data/seed.json`'s `timeline_events` table (replacing its
+  4-event placeholder) and run through the portal's real pipeline
+  (`init_db.py` → `seed_from_json.py` → `build_site.py`) *before* being exported
+  into `TurkaGame/site/data/timeline.json` for the site tab — not authored
+  TurkaGame-side first and back-filled.
+- **Comparison ≠ contact.** Ibn Turka never met any European Renaissance figure.
+  What's real is that Melvin-Koushki himself explicitly compares him to Cusa,
+  Pico, Bruno, and Dee — tagged `COMPARATIVE` in the timeline, distinct from
+  `ATTESTED` (direct source claim) and `CONTEXT` (general history included only
+  for orientation). This distinction is load-bearing: don't let a future pass
+  collapse `COMPARATIVE` entries into implying documented contact.
+- **Honest low-confidence flagging over omission.** 5 of 50 events (general
+  historiography-of-science dates: Melvin-Koushki's dissertation year, Yates 1964,
+  Kristeller 1943, Sabra 1987, Saliba 2007) are drawn from general field knowledge
+  rather than a source document this project has in hand. Included anyway,
+  explicitly flagged `LOW` confidence and named in `NEXTSTEPS.md` for
+  verification, rather than either omitted (losing real orienting value) or
+  presented with false certainty.
+- **`docs/BIOGRAPHY.md` is the new canonical biography**, superseding
+  `docs/RESEARCH_BRIEF.md`'s "Biography" section as the source for future
+  choices/events/encounters (RESEARCH_BRIEF.md itself is unchanged and still the
+  right place for cosmology/mechanics-focused material).
+
 ## Writing, hosting, and roadmap docs (2026-08-30, later session — CONVO2.md)
 
 - **Hosting: GitHub Pages, source = repo root, not `/site`.** Required because
