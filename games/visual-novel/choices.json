@@ -32,7 +32,8 @@
           },
           "detail": "Skip the madrasa. The unconventional circles are where Sayyid Husayn Akhlati actually teaches."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c02",
@@ -56,7 +57,8 @@
           },
           "detail": "Study with Akhlati quietly. Deniable for now — and he may trust you less for it."
         }
-      ]
+      ],
+      "theme": "loyalty"
     },
     {
       "id": "c03",
@@ -80,7 +82,8 @@
           },
           "detail": "Keep Yazdi at a teacher's distance. Safer authority, a shallower bond."
         }
-      ]
+      ],
+      "theme": "loyalty"
     },
     {
       "id": "c04",
@@ -104,7 +107,8 @@
           },
           "detail": "Keep Qasim-i Anvar at arm's length. Safer, and less to lean on later."
         }
-      ]
+      ],
+      "theme": "loyalty"
     },
     {
       "id": "c05",
@@ -136,7 +140,8 @@
           },
           "detail": "Insist on both Ibn 'Arabi and Hamuya as co-founders — harder to argue, truer to what you believe."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c06",
@@ -160,7 +165,8 @@
           },
           "detail": "Stay unaffiliated. No patron owns your time — none protects you either."
         }
-      ]
+      ],
+      "theme": "power"
     },
     {
       "id": "c07",
@@ -184,7 +190,8 @@
           },
           "detail": "Offer the prince a safer, watered-down version. He never really knows what he's funding."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c08",
@@ -211,7 +218,8 @@
           },
           "detail": "Stay apart from the atelier. Respected, and a little outside the court's real influence."
         }
-      ]
+      ],
+      "theme": "power"
     },
     {
       "id": "c09",
@@ -235,7 +243,8 @@
           },
           "detail": "Let it spread quietly, by word of mouth. Slower, and harder for anyone to attack."
         }
-      ]
+      ],
+      "theme": "power"
     },
     {
       "id": "c10",
@@ -259,7 +268,8 @@
           },
           "detail": "Quietly court Baysunghur before the axe falls. Safe -- and nothing left to call in later."
         }
-      ]
+      ],
+      "theme": "loyalty"
     },
     {
       "id": "c11",
@@ -289,7 +299,8 @@
           },
           "detail": "Open with Samarkand's rising prestige. Impressive, more distant than a shared craft."
         }
-      ]
+      ],
+      "theme": "power"
     },
     {
       "id": "c12",
@@ -316,7 +327,8 @@
           },
           "detail": "Stay apart from the Qur'an project. Safe, and no mark left on it."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c13",
@@ -340,7 +352,8 @@
           },
           "detail": "Stay genuinely active on the bench. Real legal standing, at real cost to the work."
         }
-      ]
+      ],
+      "theme": "power"
     },
     {
       "id": "c14",
@@ -367,7 +380,8 @@
           },
           "detail": "Let the friendship with Yazdi carry it instead. Lighter, entirely dependent on him."
         }
-      ]
+      ],
+      "theme": "loyalty"
     },
     {
       "id": "c15",
@@ -391,7 +405,8 @@
           },
           "detail": "Let the challenge pass unanswered. Costs nothing now; reads however the room wants."
         }
-      ]
+      ],
+      "theme": "power"
     },
     {
       "id": "c16",
@@ -459,7 +474,8 @@
           },
           "detail": "Rimiya, trickery — the fastest science to learn, the least prestigious."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c17",
@@ -486,7 +502,8 @@
           },
           "detail": "Spread across several sciences. Steadier income, never the deepest master in the room."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c18",
@@ -516,7 +533,8 @@
           },
           "detail": "Lead with the bold cosmological claims. Faster to dazzle, math catches up under pressure."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c19",
@@ -540,7 +558,8 @@
           },
           "detail": "Hold it until your name can absorb the backlash. Patient, possibly too patient."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c20",
@@ -567,7 +586,8 @@
           },
           "detail": "Take the years the diagram needs. Right — and possibly too late to matter as much."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c21",
@@ -594,7 +614,8 @@
           },
           "detail": "Write toward a Kashifi-style wider readership. More readers, less mystique."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c22",
@@ -618,7 +639,8 @@
           },
           "detail": "Keep the New Brethren small and vetted. Tight trust, total dependence on a few."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c23",
@@ -645,7 +667,8 @@
           },
           "detail": "Refuse to simplify. Full difficulty stands; Kashifi's circle gets the popular audience instead."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c24",
@@ -672,7 +695,8 @@
           },
           "detail": "Decline the popular commission. Prestige intact, income and reach forgone."
         }
-      ]
+      ],
+      "theme": "power"
     },
     {
       "id": "c25",
@@ -696,7 +720,8 @@
           },
           "detail": "Let your own name carry more credit than earned. Impressive now, dangerous evidence later."
         }
-      ]
+      ],
+      "theme": "loyalty"
     },
     {
       "id": "c26",
@@ -720,7 +745,8 @@
           },
           "detail": "Decline the judgeship. Purer as a scholar, and less protected."
         }
-      ]
+      ],
+      "theme": "power"
     },
     {
       "id": "c27",
@@ -744,7 +770,8 @@
           },
           "detail": "Rule for the weaker party — the reputation history remembers. Costly, and a real enemy made."
         }
-      ]
+      ],
+      "theme": "integrity"
     },
     {
       "id": "c28",
@@ -771,7 +798,8 @@
           },
           "detail": "Let lettrist reasoning argue the case in open court, a first. It works — and it's now on the record."
         }
-      ]
+      ],
+      "theme": "integrity"
     },
     {
       "id": "c29",
@@ -795,7 +823,8 @@
           },
           "detail": "Enforce the law strictly. Protects you; condemns someone whose real difference is getting caught."
         }
-      ]
+      ],
+      "theme": "loyalty"
     },
     {
       "id": "c30",
@@ -822,7 +851,8 @@
           },
           "detail": "Give the year to the work at its peak. The docket suffers; the philosophy doesn't."
         }
-      ]
+      ],
+      "theme": "power"
     },
     {
       "id": "c31",
@@ -860,7 +890,8 @@
           },
           "detail": "Attempt both the legal defense and the patron's favor. Strongest combination, hardest to coordinate."
         }
-      ]
+      ],
+      "theme": "integrity"
     },
     {
       "id": "c32",
@@ -884,7 +915,8 @@
           },
           "detail": "Hold every position without concession. Costly, and nothing you believe gets compromised."
         }
-      ]
+      ],
+      "theme": "integrity"
     },
     {
       "id": "c33",
@@ -909,7 +941,8 @@
           "narrative_weight_scales_with": "c04",
           "detail": "Refuse to abandon anyone. Principled — and the shared risk is now yours too."
         }
-      ]
+      ],
+      "theme": "loyalty"
     },
     {
       "id": "c34",
@@ -933,7 +966,8 @@
           },
           "detail": "Hold firm, the historical choice. Whatever it costs, it isn't your integrity."
         }
-      ]
+      ],
+      "theme": "integrity"
     },
     {
       "id": "c35",
@@ -957,7 +991,8 @@
           },
           "detail": "Stand and face the tribunal on your own name. No one can say you weren't there."
         }
-      ]
+      ],
+      "theme": "integrity"
     },
     {
       "id": "c36",
@@ -989,7 +1024,8 @@
           },
           "detail": "Attempt reconciliation toward Isfahan. Real vindication if it works, confirmation of the worst if not."
         }
-      ]
+      ],
+      "theme": "power"
     },
     {
       "id": "c37",
@@ -1013,7 +1049,8 @@
           },
           "detail": "Go quiet to protect what remains. Safer; nothing new gets added."
         }
-      ]
+      ],
+      "theme": "knowledge"
     },
     {
       "id": "c38",
@@ -1038,7 +1075,8 @@
           "detail": "Keep the papers close. They travel exactly as far as you do."
         }
       ],
-      "note": "Transmission completeness in the ending logic depends on c03: entrust+equal = full transmission, entrust+mentor = partial, keep = lost regardless of c03."
+      "note": "Transmission completeness in the ending logic depends on c03: entrust+equal = full transmission, entrust+mentor = partial, keep = lost regardless of c03.",
+      "theme": "loyalty"
     },
     {
       "id": "c39",
@@ -1070,7 +1108,8 @@
           },
           "detail": "Go out certain history will agree with you. Faith or prophecy — you won't learn which."
         }
-      ]
+      ],
+      "theme": "integrity"
     },
     {
       "id": "c40",
@@ -1094,7 +1133,8 @@
           },
           "detail": "Leave a quiet transmission to the New Brethren alone. Small, and hard to burn."
         }
-      ]
+      ],
+      "theme": "knowledge"
     }
   ]
 }

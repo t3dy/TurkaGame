@@ -41,10 +41,12 @@ These improve the 40 choices already built, rather than adding new scope.
    choice c36, a sultan-court wafq testimony page for the first inquisition c31).
    Remaining choices fall back to their act backdrop by design; going denser than
    this should wait for playtesting.
-4. **A themed, not just chronological, ending journal.** Currently the ending's
-   journal lists all 40 choices strictly by act. Grouping by *axis* instead (skill
-   investment, loyalty spent, secrets kept vs. taught) would make the "story of the
-   story" legible at a glance rather than requiring the player to read 40 rows.
+4. ~~**A themed, not just chronological, ending journal.**~~ **Done
+   (2026-08-30):** every choice in `choices.json` now carries a `theme` field
+   (`loyalty` / `knowledge` / `power` / `integrity`, ~9-14 choices each). The
+   ending journal defaults to grouping by theme (`journal-group` sections in
+   `ui.js`'s `buildJournalRows`) with a toggle button to switch back to
+   chronological-by-act. All 40 rows verified present in both modes.
 5. ~~**Name Shah Rukh's violence explicitly in `c10`'s scene text.**~~ **Done
    (2026-08-30):** `c10`'s scene and consequence text now name Shah Rukh's
    blinding and execution of Iskandar Sultan directly, and that Bāysunghur (Ibn

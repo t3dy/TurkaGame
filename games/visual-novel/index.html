@@ -186,8 +186,16 @@
   .ending-text { font-size: 1.08rem; }
   .ending-note { font-size: 0.85rem; font-style: italic; color: #6b5e47; }
   .journal { margin-top: 1.2rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
-  .journal h3 { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold-deep); margin-bottom: 0.6rem; }
-  .journal-act { font-family: var(--display); font-size: 1.02rem; font-weight: 700;
+  .journal-head { display: flex; align-items: baseline; justify-content: space-between;
+    gap: 0.8rem; margin-bottom: 0.6rem; }
+  .journal h3 { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold-deep); margin: 0; }
+  .journal-toggle {
+    font-family: inherit; font-size: 0.75rem; color: var(--gold-deep);
+    background: none; border: 1px solid var(--rule); border-radius: 999px;
+    padding: 0.2rem 0.7rem; cursor: pointer; white-space: nowrap;
+  }
+  .journal-toggle:hover { border-color: var(--gold-deep); background: #f4e8c8; }
+  .journal-group { font-family: var(--display); font-size: 1.02rem; font-weight: 700;
     color: var(--gold-deep); margin: 1rem 0 0.3rem; }
   .journal-row { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.85rem;
     padding: 0.28rem 0; border-bottom: 1px dotted var(--rule); }
@@ -211,6 +219,6 @@
 <a class="back" href="../../site/features.html">&larr; TurkaGame</a>
 <div class="version-banner">Version 3.0 &middot; <a href="../visual-novel-v1/index.html">Version 1.0</a> &middot; <a href="../visual-novel-v2/index.html">Version 2.0</a></div>
 <div id="app"></div>
-<script type="module" src="js/main.js?v=9"></script>
+<script type="module" src="js/main.js?v=10"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 // eight-pointed khatam seal drawn as inline SVG — pure geometry as UI ornament,
 // never presented as historical manuscript art.
 
-import { SCIENCE_COLORS, SCIENCE_LABELS } from './assets.js?v=9';
+import { SCIENCE_COLORS, SCIENCE_LABELS } from './assets.js?v=10';
 
 const GROUNDING_TIPS = {
   'ATTESTED': 'This juncture is directly documented in the historical record.',
@@ -243,6 +243,62 @@ const ACT_TITLES = {
   7: 'Three Inquisitions', 8: 'Exile & Legacy',
 };
 
+// Journal grouping: themed (default) reads as "the story of the story" — every
+// loyalty choice together, every knowledge choice together — rather than
+// requiring the player to read all 40 rows in chronological order to see a
+// pattern. Chronological stays one click away for players who want the act-by-act
+// read instead. See NEXTSTEPS.md Tier 1 #4.
+const THEME_ORDER = ['loyalty', 'knowledge', 'power', 'integrity'];
+const THEME_LABELS = {
+  loyalty: 'Loyalty & Trust',
+  knowledge: 'Knowledge & Secrecy',
+  power: 'Power & Position',
+  integrity: 'Tested Under Pressure',
+};
+
+function buildJournalRows(mode, state, choices) {
+  const frag = document.createDocumentFragment();
+  const choiceById = new Map(choices.map((c) => [c.id, c]));
+
+  if (mode === 'act') {
+    let lastAct = 0;
+    for (const { choiceId, optionId, act } of state.history) {
+      if (act !== lastAct) {
+        lastAct = act;
+        frag.appendChild(el('div', 'journal-group', ACT_TITLES[act] || `Act ${act}`));
+      }
+      frag.appendChild(journalRow(choiceById.get(choiceId), optionId));
+    }
+    return frag;
+  }
+
+  // mode === 'theme'
+  const byTheme = new Map(THEME_ORDER.map((t) => [t, []]));
+  for (const entry of state.history) {
+    const choiceDef = choiceById.get(entry.choiceId);
+    const theme = choiceDef?.theme || 'knowledge';
+    if (!byTheme.has(theme)) byTheme.set(theme, []);
+    byTheme.get(theme).push(entry);
+  }
+  for (const theme of THEME_ORDER) {
+    const entries = byTheme.get(theme);
+    if (!entries || !entries.length) continue;
+    frag.appendChild(el('div', 'journal-group', THEME_LABELS[theme] || theme));
+    for (const { choiceId, optionId } of entries) {
+      frag.appendChild(journalRow(choiceById.get(choiceId), optionId));
+    }
+  }
+  return frag;
+}
+
+function journalRow(choiceDef, optionId) {
+  const optDef = choiceDef?.options.find((o) => o.id === optionId);
+  const row = el('div', 'journal-row');
+  row.appendChild(el('span', 'journal-choice', choiceDef?.title || '?'));
+  row.appendChild(el('span', 'journal-pick', optDef?.label || optionId));
+  return row;
+}
+
 export function renderEnding({ ending, epilogue, state, choices }) {
   const app = document.getElementById('app');
   app.innerHTML = '';
@@ -266,20 +322,22 @@ export function renderEnding({ ending, epilogue, state, choices }) {
   wrap.appendChild(renderSkillPanel(state));
 
   const journal = el('div', 'journal');
-  journal.appendChild(el('h3', null, 'The choices that made this life'));
-  let lastAct = 0;
-  for (const { choiceId, optionId, act } of state.history) {
-    if (act !== lastAct) {
-      lastAct = act;
-      journal.appendChild(el('div', 'journal-act', ACT_TITLES[act] || `Act ${act}`));
-    }
-    const choiceDef = choices.find((c) => c.id === choiceId);
-    const optDef = choiceDef?.options.find((o) => o.id === optionId);
-    const row = el('div', 'journal-row');
-    row.appendChild(el('span', 'journal-choice', choiceDef?.title || choiceId));
-    row.appendChild(el('span', 'journal-pick', optDef?.label || optionId));
-    journal.appendChild(row);
-  }
+  const journalHead = el('div', 'journal-head');
+  journalHead.appendChild(el('h3', null, 'The choices that made this life'));
+  const toggle = el('button', 'journal-toggle', 'View chronologically');
+  journalHead.appendChild(toggle);
+  journal.appendChild(journalHead);
+
+  const journalBody = el('div', 'journal-body');
+  let mode = 'theme';
+  journalBody.appendChild(buildJournalRows(mode, state, choices));
+  journal.appendChild(journalBody);
+  toggle.addEventListener('click', () => {
+    mode = mode === 'theme' ? 'act' : 'theme';
+    toggle.textContent = mode === 'theme' ? 'View chronologically' : 'View by theme';
+    journalBody.innerHTML = '';
+    journalBody.appendChild(buildJournalRows(mode, state, choices));
+  });
   wrap.appendChild(journal);
 
   const restartBtn = el('button', 'option-btn primary', 'Play again');
