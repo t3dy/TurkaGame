@@ -221,5 +221,236 @@
     "added_date": "2026-08-29",
     "usage_status": "approved",
     "notes": "Imported from OCCULTIMGDB (id=shams_al_maarif__printed-teardrop-cosmogram-p256). Act VIII backdrop — Exile & Legacy. Creator: Ahmad ibn Ali al-Buni."
+  },
+  {
+    "id": "a440fc2a-4487-4d8c-a862-a3399d0564b0",
+    "title": "Celestial Globe (silvered brass), Mughal India",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "18th c. (Mughal period)",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Celestial_globe,_India,_Moghul_period,_18th_century_AD,_silvered_brass_-_Linden-Museum_-_Stuttgart,_Germany_-_DSC03849.jpg",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "c11-celestial-globe.jpg",
+    "sha256": "23b2b190be901a07843b5f8c7059134b635c2812119a4100f733d90c2d85d5a3",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamicate_occult__celestial-globe). Choice c11 backdrop — presenting astronomy at Baysunghur's court. Creator: Anonymous instrument-maker."
+  },
+  {
+    "id": "18f0369d-5769-466e-a22c-24bb969a49f4",
+    "title": "Ursa Major, al-Ṣūfī's Book of Fixed Stars",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "manuscript copy of a 964 CE text",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Al_Sufi_-_Book_of_Fixed_Stars_-_Ursa_Major_(The_Great_Bear)_-_Bodleian_Library_-_Marsh_144.jpg",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "c14-sufi-fixed-stars.jpg",
+    "sha256": "7fd7d741c2f01253b52d9475124b5fbd8fe0412a059c4010e93d089605469474",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamicate_occult__sufi-fixed-stars). Choice c14 backdrop — the Samarkand Observatory tie (al-Sufi star science). Creator: ʿAbd al-Raḥmān al-Ṣūfī."
+  },
+  {
+    "id": "ec2d02fd-1f4b-40ae-94a4-867e633fd20d",
+    "title": "Khatim Diamond Talisman — Shams al-Ma'arif (Cairo Edition, p. 56)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "[1920s–1930s] (printed ed.); diagram tradition c. 13th c.",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Shams_al-Ma%27arif.jpg",
+    "rights_note": "Public Domain — printed edition over 100 years old (Mustafa al-Babi al-Halabi). Scan: McGill University Libraries, Islamic Studies Library (educational use).",
+    "local_file": "c16-printed-khatim-diamond-p56.jpg",
+    "sha256": "ceae2238a975f9f5e90333a3c3deb018de9a2c6e52c99803fc446a751b12456a",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=shams_al_maarif__printed-khatim-diamond-p56). Choice c16 backdrop — choosing a primary science (khatim talisman). Creator: Ahmad ibn Ali al-Buni."
+  },
+  {
+    "id": "03358bcf-861e-46d8-800f-1d69b29e2fe7",
+    "title": "Winged Angels (and Winged Feline and Cow), al-Qazwīnī's ʿAjāʾib al-makhlūqāt",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "manuscript copy, 18th c. (text 13th c.)",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:A)_Winged_Feline_and_Cow;_b)_Two_Winged_Angels,_Folio_from_a_Manuscript_of_Al-Qazwini%27s_Ajaib_Al-Makhluqat_LACMA_M.88.213.8a-b.jpg",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "c19-qazwini-angel.jpg",
+    "sha256": "2403ffe4490f2fbaed133bf14a648be95e1b5278cab8406b813f3a191249d735",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamicate_occult__qazwini-angel). Choice c19 backdrop — sensory theory / wonders of perception. Creator: after Zakariyyāʾ al-Qazwīnī."
+  },
+  {
+    "id": "21d93ec8-50a4-47c0-8337-837efe769a3f",
+    "title": "Large Letter-Word Wafq Table — Quranic Name Operations Grid (f. 14r)",
+    "institution": "Princeton University Library",
+    "shelfmark": "Princeton University Library, Garrett no. 3182Y (figgy 567baddd)",
+    "folio": null,
+    "date_or_period": "19th century CE",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://dpul.princeton.edu/islamicmss/catalog/dc4q77g332q",
+    "rights_note": "Public Domain. Princeton University Library.",
+    "local_file": "c20-letter-word-wafq-table-c030.jpg",
+    "sha256": "c1da2d612c3ea3559d9973408950c95f35b8d6977444ba3e2b92081e6ee7430b",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=princeton_shumus__letter-word-wafq-table-c030). Choice c20 backdrop — finalizing the core diagram (letter-wafq table). Creator: attributed to Ibn al-Ḥājj Muḥammad ibn Muḥammad (d. 1336); anonymous copyist (19th century)."
+  },
+  {
+    "id": "2153cb0d-4dd2-4b5c-a2ab-4aff9feb6875",
+    "title": "Arabic Diagram of Geomantic Figures Classification (15th c., from Madagascar)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "15th century",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Arab_geomantic_figures_classification.jpg",
+    "rights_note": "Public domain. Sourced from OpenEdition Journals (L'Homme).",
+    "local_file": "c23-arab-figures-classification.jpg",
+    "sha256": "6644317cf741ac9c28c9994254c11e6d4ec47e64ba5561cf339ab40158914944",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamicate_geomancy__arab-figures-classification). Choice c23 backdrop — knowledge traveling in the vernacular (geomantic classification, Madagascar). Creator: various."
+  },
+  {
+    "id": "2ca205ed-1437-4b95-885b-91794dac179a",
+    "title": "Geomantic Instrument — Egypt or Syria, 1241/42 CE (Full View)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "629–630 AH / 1241–1242 CE",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Geomantic_instrument_Egypt_or_Syria_1241_1242_CE_Muhammad_ibn_Khutlukh_al_Mawsuli.jpg",
+    "rights_note": "Public domain. Photographed at the British Museum by User:PHGCOM, 2009.",
+    "local_file": "c28-bm-instrument-full-1241.jpg",
+    "sha256": "d844b026c4a69f4d026791a92a434bec7b074a36066ec2cd792cf405712fad98",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamicate_geomancy__bm-instrument-full-1241). Choice c28 backdrop — occult computation on the bench (BM geomantic instrument). Creator: Muhammad ibn Khutlukh al-Mawsuli."
+  },
+  {
+    "id": "cbe6753a-b468-48eb-a2ea-d86e59f3c8df",
+    "title": "5×5 Numeric Jafr Wafq — Imam Jafar Sultan-Court Efficacy Testimony (f. 26b)",
+    "institution": "Princeton University Library",
+    "shelfmark": "Princeton University Library, Garrett Collection (figgy 1626111a)",
+    "folio": null,
+    "date_or_period": "17th century CE",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://dpul.princeton.edu/islamicmss/catalog/dc3t946275p",
+    "rights_note": "Public Domain. Princeton University Library.",
+    "local_file": "c31-5x5-jafar-wafq-sultan-testimony-c055.jpg",
+    "sha256": "66d3e2ad2b7fbf5523f02f898fd753ab68190fc874d9539ba1be450dce8c8411",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=princeton_sirr__5x5-jafar-wafq-sultan-testimony-c055). Choice c31 backdrop — first inquisition (wafq with sultan-court testimony). Creator: attributed to al-Ghazzālī (1058–1111); described as extract from Kitāb al-Jafr of Imam ʻAlī ibn Abī Ṭālib."
+  },
+  {
+    "id": "d35b9a2e-b3a9-43bd-9419-70e92490d415",
+    "title": "The Seven Sleepers of Ephesus, Folio from a Falnāma (Book of Omens)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "16th–17th c.",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:%22The_Seven_Sleepers_of_Ephesus_Discovered_by_Alexander_the_Great%22,_Folio_from_a_Falnama_(Book_of_Omens)_MET_121050.jpg",
+    "rights_note": "Public domain (CC0, Metropolitan Museum of Art). Via Wikimedia Commons.",
+    "local_file": "c36-falnama-omen.jpg",
+    "sha256": "ade3cf05fcfeaea8710f7140a603ce3394be230df5285d8589fb6a8f51588283",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamicate_occult__falnama-omen). Choice c36 backdrop — exile (Seven Sleepers refuge folio, Falnama). Creator: Anonymous (Safavid or Ottoman court workshop)."
+  },
+  {
+    "id": "3752302f-dde1-4e90-8647-39336a84d3d1",
+    "title": "Al-Buni Magic Manuscript, Khalili mss 0300 (fol. 108b–109a)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "13th–14th century",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Khalili_Collection_Islamic_Art_mss_0300_fol_108b-109a.jpg",
+    "rights_note": "CC BY-SA 3.0 IGO",
+    "local_file": "c38-khalili-mss-0300-buni.jpg",
+    "sha256": "e1a1c0e90e67c3849aa52440b4988fe1d465e0e2611c5567dbac8703092f81e9",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamic_talismans__khalili-mss-0300-buni). Choice c38 backdrop — entrusting the manuscripts (al-Buni MS spread). Creator: various."
+  },
+  {
+    "id": "3b8089c4-494b-4093-9682-0bfd327f391e",
+    "title": "Talismanic Prayer Scroll (ACM-03625)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "18th–19th century",
+    "creator_or_scribe": null,
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:ACM-Talismanic_prayer_scroll-03625.jpg",
+    "rights_note": "CC0",
+    "local_file": "c40-acm-scroll-03625.jpg",
+    "sha256": "b4c7134615ce0a4bc087e07b5da7940f9ad2c62f48e4760aa55455ac9d542e76",
+    "cited_in": [
+      "occultimgdb"
+    ],
+    "tags": [],
+    "added_by": "occultimgdb-import",
+    "added_date": "2026-08-29",
+    "usage_status": "approved",
+    "notes": "Imported from OCCULTIMGDB (id=islamic_talismans__acm-scroll-03625). Choice c40 backdrop — the final testament (talismanic prayer scroll). Creator: various."
   }
 ]

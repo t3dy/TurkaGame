@@ -1,11 +1,15 @@
 // ui.js — DOM rendering for every screen: title, act-intro, choice, consequence, ending.
+// Visual language: parchment cards over deep navy, real manuscript backdrops,
+// per-science identity colors (matching the pitch art's skill key), and a geometric
+// eight-pointed khatam seal drawn as inline SVG — pure geometry as UI ornament,
+// never presented as historical manuscript art.
 
-const SKILL_LABELS = {
-  kimiya: 'Kīmiyā (Alchemy)',
-  limiya: 'Līmiyā (Talismanry)',
-  himiya: 'Hīmiyā (Subjugation)',
-  simiya: 'Sīmiyā (Illusionism)',
-  rimiya: 'Rīmiyā (Trickery)',
+import { SCIENCE_COLORS, SCIENCE_LABELS } from './assets.js';
+
+const GROUNDING_TIPS = {
+  'ATTESTED': 'This juncture is directly documented in the historical record.',
+  'PLAUSIBLE-GAP': 'A real, documented life-transition; the sources are silent on the decision itself.',
+  'INVENTED-COMPATIBLE': 'Not attested — invented for pacing, consistent with the attested world.',
 };
 
 function el(tag, className, text) {
@@ -15,50 +19,116 @@ function el(tag, className, text) {
   return e;
 }
 
+// Eight-pointed star (two overlapping rotated squares) — the khatam/rub-el-hizb
+// geometry ubiquitous in Islamicate ornament. Drawn from math, tinted per context.
+function seal(color, size) {
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('viewBox', '-50 -50 100 100');
+  svg.setAttribute('width', size);
+  svg.setAttribute('height', size);
+  svg.setAttribute('aria-hidden', 'true');
+  svg.classList.add('seal');
+  const sq = (rot, opacity) => {
+    const r = document.createElementNS(ns, 'rect');
+    r.setAttribute('x', -30); r.setAttribute('y', -30);
+    r.setAttribute('width', 60); r.setAttribute('height', 60);
+    r.setAttribute('transform', `rotate(${rot})`);
+    r.setAttribute('fill', 'none');
+    r.setAttribute('stroke', color);
+    r.setAttribute('stroke-width', 2.4);
+    r.setAttribute('opacity', opacity);
+    return r;
+  };
+  svg.appendChild(sq(0, 0.9));
+  svg.appendChild(sq(45, 0.9));
+  const dot = document.createElementNS(ns, 'circle');
+  dot.setAttribute('r', 4.5);
+  dot.setAttribute('fill', color);
+  svg.appendChild(dot);
+  return svg;
+}
+
+function ornamentRule(color) {
+  const wrap = el('div', 'ornament-rule');
+  wrap.appendChild(el('span', 'ornament-line'));
+  wrap.appendChild(seal(color || '#9c7a2e', 22));
+  wrap.appendChild(el('span', 'ornament-line'));
+  return wrap;
+}
+
 export function renderTitle({ hasSave, onBegin, onResume }) {
   const app = document.getElementById('app');
   app.innerHTML = '';
   app.className = 'screen-title';
 
-  const wrap = el('div', 'title-card');
-  wrap.appendChild(el('div', 'title-eyebrow', 'A VISUAL NOVEL — PROTOTYPE'));
-  wrap.appendChild(el('h1', 'title-h1', 'Ibn Turka'));
-  wrap.appendChild(el('p', 'title-sub', 'Choices. Knowledge. Power. Consequence.'));
-  const desc = el('p', 'title-desc',
+  const wrap = el('div', 'title-card veiled');
+  wrap.style.setProperty('--veil-img', "url('../../assets/manuscripts/act8-printed-teardrop-cosmogram-p256.jpg')");
+
+  const inner = el('div', 'veiled-inner');
+  inner.appendChild(seal('#e8cf8a', 44));
+  inner.appendChild(el('div', 'title-eyebrow', 'A VISUAL NOVEL — PROTOTYPE'));
+  inner.appendChild(el('h1', 'title-h1', 'Ibn Turka'));
+  inner.appendChild(el('p', 'title-sub', 'Choices. Knowledge. Power. Consequence.'));
+  inner.appendChild(el('p', 'title-desc',
     'Play through the life of Ṣāʾin al-Dīn ʿAlī ibn Turka Iṣfahānī — judge, philosopher, ' +
     'occultist — across 40 choices and eight acts. What you build, who you trust, and what ' +
-    'you refuse to give up all shape which of several possible lives you end up living.');
-  wrap.appendChild(desc);
+    'you refuse to give up all shape which of several possible lives you end up living.'));
 
   const actions = el('div', 'title-actions');
   const beginBtn = el('button', 'option-btn primary', hasSave ? 'Begin a new life' : 'Begin');
   beginBtn.addEventListener('click', onBegin);
   actions.appendChild(beginBtn);
   if (hasSave) {
-    const resumeBtn = el('button', 'option-btn', 'Continue your story');
+    const resumeBtn = el('button', 'option-btn ghost', 'Continue your story');
     resumeBtn.addEventListener('click', onResume);
     actions.appendChild(resumeBtn);
   }
-  wrap.appendChild(actions);
+  inner.appendChild(actions);
+  inner.appendChild(el('p', 'title-hint', 'Tip: press 1–5 to choose, Enter to continue.'));
 
+  wrap.appendChild(inner);
   app.appendChild(wrap);
 }
 
-export function renderActIntro({ act, onContinue }) {
+export function renderActIntro({ act, actNumber, backdropUrl, onContinue }) {
   const app = document.getElementById('app');
   app.innerHTML = '';
   app.className = 'screen-act';
 
-  const wrap = el('div', 'act-card');
-  wrap.appendChild(el('div', 'act-eyebrow', 'NEW ACT'));
-  wrap.appendChild(el('h1', 'act-h1', act.title));
-  wrap.appendChild(el('p', 'act-text', act.text));
+  const wrap = el('div', 'act-card veiled');
+  if (backdropUrl) wrap.style.setProperty('--veil-img', `url('${backdropUrl}')`);
+
+  const inner = el('div', 'veiled-inner');
+  inner.appendChild(el('div', 'act-eyebrow', `ACT ${['I','II','III','IV','V','VI','VII','VIII'][actNumber - 1] || actNumber}`));
+  inner.appendChild(el('h1', 'act-h1', act.title.replace(/^Act [IVX]+ — /, '')));
+  inner.appendChild(ornamentRule('#e8cf8a'));
+  inner.appendChild(el('p', 'act-text', act.text));
 
   const btn = el('button', 'option-btn primary', 'Continue');
   btn.addEventListener('click', onContinue);
-  wrap.appendChild(btn);
+  inner.appendChild(btn);
 
+  wrap.appendChild(inner);
   app.appendChild(wrap);
+}
+
+function actProgress(state, choice) {
+  const bar = el('div', 'act-progress');
+  bar.setAttribute('role', 'progressbar');
+  bar.setAttribute('aria-label', `Choice ${state.globalIndex + 1} of 40`);
+  bar.setAttribute('aria-valuenow', state.globalIndex + 1);
+  bar.setAttribute('aria-valuemax', 40);
+  for (let act = 1; act <= 8; act++) {
+    const seg = el('div', 'act-seg');
+    const done = state.history.filter((h) => h.act === act).length;
+    const fill = el('div', 'act-seg-fill');
+    fill.style.width = `${(done / 5) * 100}%`;
+    seg.appendChild(fill);
+    if (act === choice.act) seg.classList.add('current');
+    bar.appendChild(seg);
+  }
+  return bar;
 }
 
 export function renderChoice({ choice, sceneText, actTitle, backdropUrl, state, onPick }) {
@@ -69,48 +139,73 @@ export function renderChoice({ choice, sceneText, actTitle, backdropUrl, state, 
   const wrap = el('div', 'scene');
 
   if (backdropUrl) {
+    const frame = el('div', 'backdrop-frame');
     const img = el('img', 'backdrop');
     img.src = backdropUrl;
-    img.alt = `${actTitle} backdrop`;
-    wrap.appendChild(img);
+    img.alt = `${actTitle} — manuscript backdrop`;
+    img.loading = 'eager';
+    frame.appendChild(img);
+    wrap.appendChild(frame);
   }
 
   const topRow = el('div', 'top-row');
   topRow.appendChild(el('div', 'act-badge', actTitle));
-  topRow.appendChild(el('span', 'grounding-badge', choice.grounding.split(' ')[0]));
+  const grounding = choice.grounding.split(' ')[0];
+  const badge = el('span', 'grounding-badge', grounding);
+  badge.title = GROUNDING_TIPS[grounding] || choice.grounding;
+  badge.setAttribute('tabindex', '0');
+  topRow.appendChild(badge);
   wrap.appendChild(topRow);
 
   wrap.appendChild(el('h2', null, choice.title));
-  wrap.appendChild(el('p', 'scene-text', sceneText));
+  wrap.appendChild(el('p', 'scene-text dropcap', sceneText));
 
   const optionsEl = el('div', 'options');
   const available = choice.options.filter((o) => state.optionAvailable(o));
   const unavailable = choice.options.filter((o) => !state.optionAvailable(o));
 
-  for (const opt of available) {
-    const btn = el('button', 'option-btn', opt.label);
+  available.forEach((opt, i) => {
+    const btn = el('button', 'option-btn');
+    const key = el('span', 'option-key', String(i + 1));
+    btn.appendChild(key);
+    btn.appendChild(document.createTextNode(opt.label));
     btn.addEventListener('click', () => onPick(opt));
     optionsEl.appendChild(btn);
-  }
+  });
   wrap.appendChild(optionsEl);
 
   if (unavailable.length) {
-    wrap.appendChild(el('p', 'gated-note',
+    const note = el('p', 'gated-note');
+    note.appendChild(el('span', 'gated-mark', '⊘ '));
+    note.appendChild(document.createTextNode(
       `Not open to you here: ${unavailable.map((o) => o.label).join('; ')} — an earlier choice closed this door.`));
+    wrap.appendChild(note);
   }
 
   app.appendChild(wrap);
   app.appendChild(renderSkillPanel(state));
-  app.appendChild(renderProgress(state));
+  app.appendChild(actProgress(state, choice));
 }
 
-export function renderConsequence({ text, onContinue }) {
+export function renderConsequence({ text, skillGains, onContinue }) {
   const app = document.getElementById('app');
   app.innerHTML = '';
   app.className = 'screen-consequence';
 
   const wrap = el('div', 'consequence-card');
+  wrap.appendChild(ornamentRule('#9c7a2e'));
   wrap.appendChild(el('p', 'consequence-text', text || '…'));
+
+  if (skillGains && skillGains.length) {
+    const chips = el('div', 'gain-chips');
+    for (const { skill, delta } of skillGains) {
+      const chip = el('span', 'gain-chip', `+${delta} ${SCIENCE_LABELS[skill] || skill}`);
+      chip.style.setProperty('--chip-color', SCIENCE_COLORS[skill] || '#9c7a2e');
+      chips.appendChild(chip);
+    }
+    wrap.appendChild(chips);
+  }
+
   const btn = el('button', 'option-btn primary', 'Continue');
   btn.addEventListener('click', onContinue);
   wrap.appendChild(btn);
@@ -121,12 +216,16 @@ export function renderConsequence({ text, onContinue }) {
 export function renderSkillPanel(state) {
   const panel = el('div', 'skill-panel');
   panel.appendChild(el('h3', null, 'The Occult Quintet'));
-  for (const [key, label] of Object.entries(SKILL_LABELS)) {
+  for (const [key, label] of Object.entries(SCIENCE_LABELS)) {
     const row = el('div', 'skill-row');
     row.appendChild(el('span', null, label));
     const bar = el('div', 'skill-bar');
+    bar.setAttribute('role', 'meter');
+    bar.setAttribute('aria-label', label);
+    bar.setAttribute('aria-valuenow', state.skills[key]);
     const fill = el('div', 'skill-fill');
     fill.style.width = `${Math.min(100, state.skills[key] * 15)}%`;
+    fill.style.background = SCIENCE_COLORS[key];
     bar.appendChild(fill);
     row.appendChild(bar);
     row.appendChild(el('span', 'skill-val', String(state.skills[key])));
@@ -135,13 +234,6 @@ export function renderSkillPanel(state) {
   return panel;
 }
 
-export function renderProgress(state) {
-  return el('div', 'progress', `Choice ${state.globalIndex + 1} of 40`);
-}
-
-function actTitleFor(act) {
-  return ACT_TITLES[act] || `Act ${act}`;
-}
 const ACT_TITLES = {
   1: 'Cairo & Formation', 2: 'First Patron: Iskandar Sultan', 3: 'Second Patron: Bāysunghur',
   4: 'Choosing the Sciences', 5: 'Popularizer or Secret-Keeper', 6: 'The Bench: Judge of Isfahan',
@@ -153,9 +245,16 @@ export function renderEnding({ ending, state, choices }) {
   app.innerHTML = '';
   app.className = 'screen-ending';
 
+  const dominant = state.dominantScience();
+  const sealColor = SCIENCE_COLORS[dominant] || '#9c7a2e';
+
   const wrap = el('div', 'ending');
-  wrap.appendChild(el('div', 'ending-eyebrow', 'YOUR LIFE, AS LIVED'));
-  wrap.appendChild(el('h1', null, ending.title));
+  const head = el('div', 'ending-head');
+  head.appendChild(seal(sealColor, 56));
+  head.appendChild(el('div', 'ending-eyebrow', 'YOUR LIFE, AS LIVED'));
+  head.appendChild(el('h1', null, ending.title));
+  wrap.appendChild(head);
+
   wrap.appendChild(el('p', 'ending-text', ending.text));
   wrap.appendChild(el('p', 'ending-note',
     'This is one ending among several — the documented historical outcome (exile, death in 1432) is not privileged over the others.'));
@@ -168,7 +267,7 @@ export function renderEnding({ ending, state, choices }) {
   for (const { choiceId, optionId, act } of state.history) {
     if (act !== lastAct) {
       lastAct = act;
-      journal.appendChild(el('div', 'journal-act', actTitleFor(act)));
+      journal.appendChild(el('div', 'journal-act', ACT_TITLES[act] || `Act ${act}`));
     }
     const choiceDef = choices.find((c) => c.id === choiceId);
     const optDef = choiceDef?.options.find((o) => o.id === optionId);
