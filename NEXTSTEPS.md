@@ -1,5 +1,15 @@
 # NEXTSTEPS.md — Prioritized Roadmap
 
+> **⚠ Superseded for systems work (2026-08-30):** a design review found that 20
+> of 40 choice flags are never read downstream and that *which* science a player
+> picks is mechanically cosmetic — see
+> [games/visual-novel/CONVERSATION.md](games/visual-novel/CONVERSATION.md)
+> (the narrative-designer × systems-programmer session) and
+> [games/visual-novel/PROPOSAL.md](games/visual-novel/PROPOSAL.md) (four
+> workstreams, acceptance checks, non-goals). **Do PROPOSAL.md's Workstreams A–D
+> before anything below in Tier 2/3** — building more content on unwired systems
+> compounds the debt.
+
 A narrative designer's read on what actually moves the needle next, in priority
 order. Grounded in the gaps named in [GAMELOOP.md](GAMELOOP.md) and
 [HANDOVER.md](HANDOVER.md), not a wishlist — each item says why it's ranked where it
