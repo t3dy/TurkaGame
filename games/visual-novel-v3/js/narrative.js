@@ -62,67 +62,25 @@ export const CHOICE_TEXT_DYNAMIC = {
   c22: (state) => state.flags.c03 === 'equal'
     ? 'The New Brethren of Purity keep arriving, more each season. Yazdi — who you let all the way into the work — argues you should trust others the way you trusted him: the ideas got stronger for it, not weaker. A wide brotherhood is influence. A small one is safety.'
     : 'The New Brethren of Purity keep arriving, more each season. You have kept even Yazdi at a certain distance from the innermost work, and it has served you — no leaks, no distortions. But a system only one man fully holds is a system one death can erase. A wide brotherhood is influence. A small one is safety.',
-  c27: (state) => {
-    const rep = state.flags.c09 === 'flaunt'
-      ? 'Your name is already loud — you made sure of that years ago — which means whichever way you rule, everyone will say it proves what they always suspected about you.'
-      : 'You have spent years keeping your name quiet, and it bought you this: for once, the ruling will be read as law, not as a philosopher\'s ambition. That makes it more dangerous, not less.';
-    const bench = state.flags.c13 === 'active'
-      ? 'It lands on your bench because your bench is where hard cases go — you never let the post lapse, and the city knows it.'
-      : 'It lands on your bench even though your court half runs itself these days — some cases refuse to be delegated.';
-    return `A case comes before your bench that the whole city is watching: a powerful man\'s claim against a poor one. ${bench} ${rep}`;
-  },
+  c27: (state) => state.flags.c09 === 'flaunt'
+    ? 'A case comes before your bench that the whole city is watching: a powerful man\'s claim against a poor one. Your name is already loud — you made sure of that years ago — which means whichever way you rule, everyone will say it proves what they always suspected about you.'
+    : 'A case comes before your bench that the whole city is watching: a powerful man\'s claim against a poor one. You have spent years keeping your name quiet, and it bought you this: for once, the ruling will be read as law, not as a philosopher\'s ambition. That makes it more dangerous, not less.',
   c34: (state) => {
     const total = Object.values(state.skills).reduce((a, b) => a + b, 0);
     const deep = total >= 7;
-    const base = deep
+    return deep
       ? 'The third inquisition is not like the first two. The accusation is sharper, the patrons less reliable — and this time it is not just your name on trial but everything you have built: the years of study, the system, the science itself. They are asking you to renounce the work of a lifetime, and they know exactly what they are asking.'
       : 'The third inquisition is not like the first two. The accusation is sharper, the patrons less reliable, and everyone in the room already knows this is the one that matters. You kept your studies modest, which gives them less to burn — and you less to bargain with.';
-    const recant = state.flags.c32 === 'recant'
-      ? ' And they have your recantation from the first tribunal — read aloud, in your own phrasing, before you say a word. A man who bent once, they are telling the room, is a man who bends.'
-      : '';
-    return base + recant;
   },
-  c12: (state) => {
-    const doctrine = state.flags.c07 === 'full'
-      ? 'Because you never hid your full system from this court, the calligraphers already trust you enough to ask: would you offer a numerological framework for the illumination program?'
-      : 'You kept your full doctrine to yourself when you arrived at this court, and it shows — no one here has thought to ask you for anything more than competent legal counsel.';
-    const atelier = state.flags.c08 === 'artist'
-      ? ' The invitation comes warmly — several of these calligraphers worked beside you in Iskandar Sultan\'s atelier, and they remember.'
-      : '';
-    return `A Qur\'an unlike any yet produced is taking shape under Bāysunghur\'s patronage.${atelier} ${doctrine}`;
-  },
-  c25: (state) => {
-    if (state.flags.c05 === 'both') {
-      return 'Two names anchor everything you built: Ibn ʿArabī and Ḥamūya, the pairing you insisted on when everyone said choose. Now, writing of your sources, the question returns: how visibly does that double debt appear on the page?';
-    }
-    if (state.flags.c05 === 'hamuya') {
-      return 'You built on Ḥamūya, the quieter master almost no one else thought to elevate. Crediting him fully means explaining him to readers who barely know his name; claiming the ground as your own would be easy. Which is exactly the problem.';
-    }
-    return 'You built on Ibn ʿArabī, the most argued-over name in the tradition. Credit him fully and inherit his enemies along with his authority — or let your own name carry more of the weight than is strictly earned.';
-  },
-  c31: (state) => {
-    const loyalty = state.flags.c10 === 'loyal'
-      ? 'You stayed loyal to Iskandar Sultan through the lean years, and that loyalty is a debt someone at this court may still remember owing.'
-      : 'You left Iskandar Sultan\'s falling star early enough to land somewhere safer — which means there is no old loyalty left to call in now that you need one.';
-    const file = state.flags.c02 === 'public'
-      ? ' They open with the file they have kept since Cairo: your open discipleship under the infamous Akhlāṭī, read into the record as Exhibit A.'
-      : ' They reach for the Cairo years first — and find little they can prove. You kept the Akhlāṭī association deniable, and today that caution pays.';
-    return `The first inquisition convenes.${file} ${loyalty}`;
-  },
-  c33: (state) => {
-    const bond = state.flags.c04 === 'deep'
-      ? 'Qāsim-i Anvār\'s is one of them — the friend you chose, back in Cairo, to bond with deeply rather than keep at arm\'s length. This will cost something either way.'
-      : 'Qāsim-i Anvār\'s is one of them — a man you always kept at a respectful, useful distance. Distancing yourself further now would barely need explaining.';
-    let mercy = '';
-    if (state.flags.c29 === 'mercy') {
-      mercy = ' In the gallery sits the practitioner you once spared from your own bench. He has not forgotten; whether that helps or damns you today is not in your hands.';
-    } else if (state.flags.c29 === 'orthodoxy') {
-      mercy = ' Someone has already reminded the tribunal that you once condemned a man for practices near your own — offered as proof of orthodoxy, it reads uncomfortably like proof you know exactly where the line is.';
-    } else if (state.flags.c29 === 'expose') {
-      mercy = ' The tribunal remembers the trial where you unmasked a fraud from the bench — expertise that cut in your favor then, and cuts both ways now.';
-    }
-    return `A second inquisition follows the first, and this time the tribunal wants names.${mercy} ${bond}`;
-  },
+  c12: (state) => state.flags.c07 === 'full'
+    ? 'A Qur\'an unlike any yet produced is taking shape under Bāysunghur\'s patronage. Because you never hid your full system from this court, the calligraphers already trust you enough to ask: would you offer a numerological framework for the illumination program?'
+    : 'A Qur\'an unlike any yet produced is taking shape under Bāysunghur\'s patronage. You kept your full doctrine to yourself when you arrived at this court, and it shows — no one here has thought to ask you for anything more than competent legal counsel.',
+  c31: (state) => state.flags.c10 === 'loyal'
+    ? 'The first inquisition convenes. You stayed loyal to Iskandar Sultan through the lean years, and that loyalty is a debt someone at this court may still remember owing.'
+    : 'The first inquisition convenes. You left Iskandar Sultan\'s falling star early enough to land somewhere safer — which means there is no old loyalty left to call in now that you need one.',
+  c33: (state) => state.flags.c04 === 'deep'
+    ? 'A second inquisition follows the first, and this time the tribunal wants names. Qāsim-i Anvār\'s is one of them — the friend you chose, back in Cairo, to bond with deeply rather than keep at arm\'s length. This will cost something either way.'
+    : 'A second inquisition follows the first, and this time the tribunal wants names. Qāsim-i Anvār\'s is one of them — a man you always kept at a respectful, useful distance. Distancing yourself further now would barely need explaining.',
   c38: (state) => state.flags.c03 === 'equal'
     ? 'Yazdi finds you in exile — the same brother-in-arms you chose, in Cairo, to treat as an equal rather than a subordinate student. He knows this work as well as you do. He asks whether he might carry it forward.'
     : 'Yazdi finds you in exile — the loyal, capable student you kept, back in Cairo, at a mentor\'s respectful distance. He is willing to carry your papers forward, though he will be transmitting the letter of the work more than its deepest intentions.',
@@ -132,14 +90,6 @@ export const CHOICE_TEXT_DYNAMIC = {
 // state machine gets to talk. Checked before OPTION_CONSEQUENCE; return a string
 // or null/undefined to fall through to the static line.
 export const OPTION_CONSEQUENCE_DYNAMIC = {
-  c18: {
-    math_first: (state) => state.flags.c01 === 'scholastic'
-      ? 'You build the mathematics first, and the madrasa years show: the discipline of proofs was drilled into you before you ever touched a letter-table. Nothing you build will rest on sand.'
-      : 'You build the mathematics first — the hard way, teaching yourself the discipline the madrasa would have drilled in years ago. Slower than it should be. Sturdier than anyone expects.',
-    theurgy_first: (state) => state.flags.c01 === 'unconventional'
-      ? 'You lead with the bold claims, exactly as the unconventional teachers taught you to — vision first, rigor after. The math will have to catch up in public.'
-      : null,
-  },
   c31: {
     patron: (state) => state.flags.c10 === 'loyal'
       ? 'You call in the favor. Iskandar Sultan\'s people remember who stayed when the star was falling — and a word travels from that memory to this tribunal. Loyalty, it turns out, was an investment after all. It is now spent.'
@@ -187,18 +137,18 @@ export const OPTION_CONSEQUENCE = {
   c21: { elite: 'You write the dense, demanding version — the one history remembers, and the one almost no one outside your circle can actually follow.', accessible: 'You write toward a wider readership, closer to what Kāshifī\'s generation will later perfect. More readers. Less mystique.' },
   c22: { wide: 'You teach broadly. The ideas start living in more heads than just your own — which means they can survive you.', small: 'You keep the New Brethren small and vetted. Safer to trust. Much easier to wipe out in a single afternoon.' },
   c23: { yes: 'A simplified Persian edition goes out into the world under your name, reaching further and faster than the Arabic ever could alone.', no: 'You refuse. The work stands at its full difficulty, or it doesn\'t stand for you at all.' },
-  c24: { accept: 'You take the commission. The income is real, and so is the small dent in how seriously the work is taken.', decline: 'You decline, and protect the work\'s prestige at a cost you\'ll feel the next time rent is due.', alchemical: 'You counter-offer the elite commission instead — kīmiyā, the science princes pay for without embarrassment. The steward leaves satisfied; your prestige leaves intact; the ledger, for once, agrees with your principles.' },
+  c24: { accept: 'You take the commission. The income is real, and so is the small dent in how seriously the work is taken.', decline: 'You decline, and protect the work\'s prestige at a cost you\'ll feel the next time rent is due.' },
   c25: { generous: 'You credit Ibn ʿArabī and Ḥamūya generously, debt fully visible. It costs you a little originality and buys you a great deal of goodwill.', overclaim: 'You let your own name carry more of the credit than is strictly earned. It reads well today. It is exactly the kind of thing a rival remembers later.' },
   c26: { accepted: 'You take the judgeship. A second career, a second reputation, and a second set of enemies to go with it.', declined: 'You decline, staying a scholar-only figure — purer, and considerably more precarious.' },
   c27: { powerful: 'You rule for the powerful man. Expedient. Quietly corrosive to the reputation you\'ve spent years building.', weak: 'You rule for the weaker party, at real political cost — the choice the histories actually remember you making.' },
   c28: { separate: 'You keep judge and occultist strictly apart. No one can accuse the bench of sorcery. No one benefits from the overlap either.', blended: 'You let lettrist reasoning shape the argument, in open court, for the first time anyone can recall. It works. It is also now on the record.' },
-  c29: { mercy: 'You extend quiet solidarity to a fellow practitioner. Humane. Also a matter of public record, should anyone ever go looking for a pattern.', orthodoxy: 'You enforce the law strictly, distancing yourself from anything that could look like professional sympathy for the accused.', expose: 'From the bench, you demonstrate the trick — sleight and stagecraft, not sorcery. The accused walks free of the sorcery charge, convicted only of fraud; you have acquitted a man without defending a doctrine. The room does not entirely know what it just watched.' },
+  c29: { mercy: 'You extend quiet solidarity to a fellow practitioner. Humane. Also a matter of public record, should anyone ever go looking for a pattern.', orthodoxy: 'You enforce the law strictly, distancing yourself from anything that could look like professional sympathy for the accused.' },
   c30: { bench: 'You give the year to the bench\'s legitimacy. Steady. The desk work waits.', writing: 'You give the year to the work at the height of your powers. The docket suffers. The philosophy does not.' },
-  c31: { legal: 'You mount a rigorous legal defense on the merits alone. It is the harder case to make and the cleaner one to win.', patron: 'You call in the favor you\'re owed. Faster, and it spends something you may need again.', both: 'You attempt both at once — the strongest possible defense, and the hardest one to coordinate without a misstep.', warded: 'You enter warded — the operations prepared through years of hīmiyā, the composure of a man under protections he trusts. Whether the wards work is between you and the unseen. That the tribunal cannot rattle you is visible to everyone.' },
+  c31: { legal: 'You mount a rigorous legal defense on the merits alone. It is the harder case to make and the cleaner one to win.', patron: 'You call in the favor you\'re owed. Faster, and it spends something you may need again.', both: 'You attempt both at once — the strongest possible defense, and the hardest one to coordinate without a misstep.' },
   c32: { recant: 'You offer the face-saving recantation, phrased so carefully that everyone can pretend it was not one. The tribunal accepts it. Something in your own account of yourself does not, and you will hear that dissent, quietly, for years.', hold: 'You hold every position, without concession, in front of people who wanted you to bend. The room notes it. The men who convened this tribunal note it most of all — you have just taught them that the next one will have to be built differently.' },
   c33: { distance: 'You put visible distance between yourself and the associates now under suspicion. It may save you. It will not be forgotten by the people you distanced yourself from.', refuse: 'You refuse to abandon anyone, and accept the shared risk that comes with it.' },
   c34: { bend: 'You bend. The words come out of your mouth in the right order and the tribunal hears what it needs to hear. You survive this — diminished, your system publicly qualified, alive to argue another day. On the walk home you cannot remember deciding to say it. Only that you said it.', hold: 'You hold firm. The room goes very quiet, the way rooms do when a man chooses the expensive thing in front of witnesses. Whatever this costs from here — and it will cost everything the histories say it cost — it will not include the one thing they came here to take.' },
-  c35: { flee: 'You take the window while it is still open. It is uncertain, undignified, and entirely survivable — three qualities that will define everything from here.', stand: 'You stand and face the tribunal directly, on your own name, without running. Whatever else is said of you afterward, no one will say you were not there.', veiled: 'You leave the way sīmiyā leaves — by being somewhere else when the looking happens. No flight in the night, no indignity; the summons arrives at an empty house, and the stories about how disagree with each other forever.' },
+  c35: { flee: 'You take the window while it is still open. It is uncertain, undignified, and entirely survivable — three qualities that will define everything from here.', stand: 'You stand and face the tribunal directly, on your own name, without running. Whatever else is said of you afterward, no one will say you were not there.' },
   c36: { new_patron: 'You seek a new patron at the Aqquyunlu court, betting that your reputation still travels faster than the scandal that made you leave.', retreat: 'You retreat into private scholarship, no court, no patron, just the work and whatever time is left to do it in.', reconcile: 'You attempt reconciliation and the long, uncertain path back toward Isfahan.' },
   c37: { continue: 'You keep writing and teaching in exile — vulnerable, visible, and still producing.', silent: 'You go quiet, protecting what remains of the work and of yourself, at the cost of anything new.' },
   c38: { entrust: 'You hand Yazdi the papers — every draft, every diagram, the whole argument of a life. He takes them the way a man takes something he already knows he will spend the rest of his own life protecting. Whatever happens to you now, the work has somewhere to go.', keep: 'You keep the papers close. You tell yourself it is caution; some nights it feels more like not being able to let go. They will travel exactly as far as you do, and no further.' },

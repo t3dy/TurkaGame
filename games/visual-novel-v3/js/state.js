@@ -14,17 +14,10 @@ export class State {
     this.endingId = null;
   }
 
-  // Is `option` available given flags set so far? Reads option.gate, e.g. {c10:"loyal"},
-  // and option.skill_gate, e.g. {simiya: 3} — the v4 mechanism that makes WHICH science
-  // a player built actually unlock different options (see PROPOSAL.md Workstream A).
+  // Is `option` available given flags set so far? Reads option.gate, e.g. {c10:"loyal"}.
   optionAvailable(option) {
-    if (option.gate && !Object.entries(option.gate).every(([choiceId, requiredOptionId]) => this.flags[choiceId] === requiredOptionId)) {
-      return false;
-    }
-    if (option.skill_gate && !Object.entries(option.skill_gate).every(([skill, min]) => (this.skills[skill] || 0) >= min)) {
-      return false;
-    }
-    return true;
+    if (!option.gate) return true;
+    return Object.entries(option.gate).every(([choiceId, requiredOptionId]) => this.flags[choiceId] === requiredOptionId);
   }
 
   applyChoice(choice, option) {

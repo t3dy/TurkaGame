@@ -4,7 +4,7 @@
 // eight-pointed khatam seal drawn as inline SVG — pure geometry as UI ornament,
 // never presented as historical manuscript art.
 
-import { SCIENCE_COLORS, SCIENCE_LABELS } from './assets.js?v=11';
+import { SCIENCE_COLORS, SCIENCE_LABELS } from './assets.js?v=10';
 
 const GROUNDING_TIPS = {
   'ATTESTED': 'This juncture is directly documented in the historical record.',
@@ -86,38 +86,6 @@ export function renderTitle({ hasSave, onBegin, onResume }) {
   }
   inner.appendChild(actions);
   inner.appendChild(el('p', 'title-hint', 'Tip: press 1–5 to choose, Enter to continue.'));
-
-  wrap.appendChild(inner);
-  app.appendChild(wrap);
-}
-
-// The prologue (Workstream C1): one screen, three jobs — state the premise
-// (occult science as court technology), define lettrism once, place the
-// protagonist. Deliberately not a lore dump; the player should feel the world
-// before they can define it.
-export function renderPrologue({ onContinue }) {
-  const app = document.getElementById('app');
-  app.innerHTML = '';
-  app.className = 'screen-act';
-
-  const wrap = el('div', 'act-card veiled');
-  wrap.style.setProperty('--veil-img', "url('../../assets/manuscripts/act4-printed-magic-squares-p201.jpg')");
-
-  const inner = el('div', 'veiled-inner');
-  inner.appendChild(el('div', 'act-eyebrow', 'ISFAHAN, 1369'));
-  inner.appendChild(el('h1', 'act-h1', 'The World You Are Born Into'));
-  inner.appendChild(ornamentRule('#e8cf8a'));
-  inner.appendChild(el('p', 'act-text',
-    'In this century, empires run on the occult sciences the way they run on treasuries — ' +
-    'princes keep astrologers the way they keep armies, and a well-made talisman is statecraft. ' +
-    'The highest of these arts is ʿilm al-ḥurūf, the science of letters: the conviction that ' +
-    'creation is written in an alphabet, and that its mathematics can be read — and worked. ' +
-    'You are born to a family of jurists in Isfahan. The law will feed you. ' +
-    'The letters will cost you everything else.'));
-
-  const btn = el('button', 'option-btn primary', 'Begin in Cairo');
-  btn.addEventListener('click', onContinue);
-  inner.appendChild(btn);
 
   wrap.appendChild(inner);
   app.appendChild(wrap);
@@ -209,25 +177,11 @@ export function renderChoice({ choice, sceneText, actTitle, backdropUrl, state, 
   });
   wrap.appendChild(optionsEl);
 
-  const flagGated = unavailable.filter((o) => !o.skill_gate);
-  const skillGated = unavailable.filter((o) => o.skill_gate);
-  if (flagGated.length) {
+  if (unavailable.length) {
     const note = el('p', 'gated-note');
     note.appendChild(el('span', 'gated-mark', '⊘ '));
     note.appendChild(document.createTextNode(
-      `Not open to you here: ${flagGated.map((o) => o.label).join('; ')} — an earlier choice closed this door.`));
-    wrap.appendChild(note);
-  }
-  if (skillGated.length) {
-    const note = el('p', 'gated-note');
-    note.appendChild(el('span', 'gated-mark skill-mark', '◇ '));
-    const reqs = skillGated.map((o) => {
-      const req = Object.entries(o.skill_gate)
-        .map(([s, n]) => `${SCIENCE_LABELS[s]?.split(' ')[0] || s} ${n}`).join(', ');
-      return `${o.label} (requires ${req})`;
-    }).join('; ');
-    note.appendChild(document.createTextNode(
-      `Beyond your sciences as studied: ${reqs}.`));
+      `Not open to you here: ${unavailable.map((o) => o.label).join('; ')} — an earlier choice closed this door.`));
     wrap.appendChild(note);
   }
 
@@ -262,28 +216,12 @@ export function renderConsequence({ text, skillGains, onContinue }) {
   app.appendChild(wrap);
 }
 
-// One-line glosses reused as pre-declaration tooltips (Workstream C2) so the
-// panel teaches instead of intimidating during Acts I-III.
-const SCIENCE_GLOSSES = {
-  kimiya: 'Alchemy — the most elite science, the slowest to pay off.',
-  limiya: 'Talismanry — binding celestial forces to earthly things.',
-  himiya: 'Subjugation — commanding jinn and planets through ritual.',
-  simiya: 'Illusionism — shaping what other people believe they see.',
-  rimiya: 'Trickery — the most accessible science, astonishing by earthly means.',
-};
-
 export function renderSkillPanel(state) {
   const panel = el('div', 'skill-panel');
-  const declared = !!(state.flags && (state.flags.primary_science || state.flags.c16));
   panel.appendChild(el('h3', null, 'The Occult Quintet'));
-  if (!declared) {
-    panel.appendChild(el('p', 'skill-subtitle', 'The five occulted sciences — undeclared. Your studies will choose among them in Act IV.'));
-  }
   for (const [key, label] of Object.entries(SCIENCE_LABELS)) {
     const row = el('div', 'skill-row');
-    const name = el('span', null, label);
-    name.title = SCIENCE_GLOSSES[key] || '';
-    row.appendChild(name);
+    row.appendChild(el('span', null, label));
     const bar = el('div', 'skill-bar');
     bar.setAttribute('role', 'meter');
     bar.setAttribute('aria-label', label);

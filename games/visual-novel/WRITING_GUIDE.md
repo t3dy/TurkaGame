@@ -90,6 +90,29 @@ after an audit found it drifting long and generic:
    `PLAUSIBLE-GAP` choices, which are genuinely undocumented decisions), keep the
    concrete stakes but don't manufacture a name that isn't in BIOGRAPHY.md.
 
+## Segment templates: Teach / Complicate / Pay off (v4, PROPOSAL.md Workstream D)
+
+One template can't serve three jobs. The global rules above (name real things,
+~10–20-word option details) hold everywhere; these addenda vary by act:
+
+- **Acts I–II — "Teach."** Scene text may run 50–90 words. Every proper noun
+  arrives with a role clause on first meeting. At most one new period term per
+  scene, glossed per the first-use rule below. The player should *feel* stakes
+  before they can define terms. The prologue carries the heaviest definitions
+  (the premise, *ʿilm al-ḥurūf*) so scenes don't have to.
+- **Acts III–VI — "Complicate."** 40–70 words. Vocabulary assumed; no
+  re-glossing. Reactivity budget: every act keeps ≥ 1 scene that reads earlier
+  state (currently III: c12, IV: c18's consequence, V: c22, VI: c27/c33-adjacent
+  wiring).
+- **Acts VII–VIII — "Pay off."** Every scene reads at least one earlier flag —
+  the game reciting the player's own record back (c31 reads c02+c10, c33 reads
+  c04+c29, c34 reads c32+skills, c38 reads c03). Consequence beats may run long
+  here; nowhere else.
+
+**First-use gloss rule:** the first appearance of any period term gets an
+appositive gloss of ≤ 6 words, once, never re-glossed. Specificity without
+pedagogy is a paywall.
+
 ## Before / after — what this looks like in practice
 
 Not a hypothetical: these are real revisions made to `narrative.js` when this

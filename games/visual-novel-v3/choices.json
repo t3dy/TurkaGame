@@ -585,17 +585,6 @@
             "limiya": 1
           },
           "detail": "Take the years the diagram needs. Right — and possibly too late to matter as much."
-        },
-        {
-          "id": "talisman",
-          "label": "Seal the Ṭahawī Circle as a working talisman",
-          "flags": {
-            "c20": "talisman"
-          },
-          "skill_gate": {
-            "limiya": 3
-          },
-          "detail": "Your talismanry can make the diagram operative, not just descriptive — a figure that does something. No one has dared this."
         }
       ],
       "theme": "knowledge"
@@ -705,17 +694,6 @@
             "c24": "decline"
           },
           "detail": "Decline the popular commission. Prestige intact, income and reach forgone."
-        },
-        {
-          "id": "alchemical",
-          "label": "Counter-offer alchemical patronage",
-          "flags": {
-            "c24": "alchemical"
-          },
-          "skill_gate": {
-            "kimiya": 3
-          },
-          "detail": "Your kīmiyā standing lets you propose the elite commission instead — prestige kept, income found."
         }
       ],
       "theme": "power"
@@ -844,17 +822,6 @@
             "c29": "orthodoxy"
           },
           "detail": "Enforce the law strictly. Protects you; condemns someone whose real difference is getting caught."
-        },
-        {
-          "id": "expose",
-          "label": "Expose the craft behind the accusation",
-          "flags": {
-            "c29": "expose"
-          },
-          "skill_gate": {
-            "rimiya": 2
-          },
-          "detail": "Your rīmiyā eye sees it at once: stage-craft, not sorcery. Demonstrate the trick and the case dissolves — no doctrine required."
         }
       ],
       "theme": "loyalty"
@@ -922,17 +889,6 @@
             "c10": "loyal"
           },
           "detail": "Attempt both the legal defense and the patron's favor. Strongest combination, hardest to coordinate."
-        },
-        {
-          "id": "warded",
-          "label": "Enter the tribunal warded",
-          "flags": {
-            "c31": "warded"
-          },
-          "skill_gate": {
-            "himiya": 3
-          },
-          "detail": "Years of hīmiyā mean you walk in protected — operations prepared, composure absolute. The tribunal notices."
         }
       ],
       "theme": "integrity"
@@ -1034,17 +990,6 @@
             "c35": "stand"
           },
           "detail": "Stand and face the tribunal on your own name. No one can say you weren't there."
-        },
-        {
-          "id": "veiled",
-          "label": "Leave by misdirection",
-          "flags": {
-            "c35": "veiled"
-          },
-          "skill_gate": {
-            "simiya": 3
-          },
-          "detail": "Your sīmiyā mastery makes departure invisible — gone before the summons lands, with none of flight's indignity."
         }
       ],
       "theme": "integrity"

@@ -1,5 +1,15 @@
 # PROPOSAL.md — Rethinking the Game Systems Before Building Further
 
+> **Implementation status (2026-08-30): SHIPPED as v4.0.** All four workstreams
+> implemented and verified. One correction caught during implementation: the
+> rīmiyā gate moved from c15 to c29 — every rīmiyā point source (c16/c17/c21/c24)
+> comes *after* c15, making the proposed gate unreachable as specified. Final
+> audit: literally-unread flags 20 → 8, of which 5 feed the skill system and 3
+> are declared expressive in STATE_MODEL (beats the ≤6 target); all 5 sciences
+> gate an option; the two-run c16 divergence check found 3 observable
+> differences (option availability at c24 and c35, distinct science-legacy
+> epilogues); c26=declined verified to no longer reach "Rehabilitated Judge."
+
 Formalizes the findings of [CONVERSATION.md](CONVERSATION.md) (2026-08-30) into
 four workstreams with priorities, concrete specs, scope estimates, and explicit
 non-goals. **Nothing here is implemented yet** — this is the plan to agree on

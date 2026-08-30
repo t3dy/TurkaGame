@@ -5,15 +5,15 @@
 // v4 — bump this and every import below on content/logic changes; python
 // http.server sends no cache-control headers, so browsers heuristically cache
 // these module files hard, and a bare `location.reload()` doesn't bust that.
-import { State } from './state.js?v=11';
-import { ACT_INTROS, CHOICE_TEXT, CHOICE_TEXT_DYNAMIC, OPTION_CONSEQUENCE, OPTION_CONSEQUENCE_DYNAMIC } from './narrative.js?v=11';
-import { ACT_BACKDROP, backdropFor } from './assets.js?v=11';
-import { computeEnding, epilogueFor } from './endings.js?v=11';
-import { renderTitle, renderPrologue, renderActIntro, renderChoice, renderConsequence, renderEnding } from './ui.js?v=11';
+import { State } from './state.js?v=10';
+import { ACT_INTROS, CHOICE_TEXT, CHOICE_TEXT_DYNAMIC, OPTION_CONSEQUENCE, OPTION_CONSEQUENCE_DYNAMIC } from './narrative.js?v=10';
+import { ACT_BACKDROP, backdropFor } from './assets.js?v=10';
+import { computeEnding, epilogueFor } from './endings.js?v=10';
+import { renderTitle, renderActIntro, renderChoice, renderConsequence, renderEnding } from './ui.js?v=10';
 
 let CHOICES = [];
 let state = new State();
-let screen = 'title'; // 'title' | 'prologue' | 'act_intro' | 'choice' | 'consequence' | 'ending'
+let screen = 'title'; // 'title' | 'act_intro' | 'choice' | 'consequence' | 'ending'
 let lastRenderedAct = 0;
 let pendingConsequence = null; // { text, skillGains }
 
@@ -55,11 +55,6 @@ function render() {
   if (screen === 'title') {
     const saved = State.load();
     renderTitle({ hasSave: !!saved && !saved.finished, onBegin: beginNewGame, onResume: resumeGame });
-    return;
-  }
-
-  if (screen === 'prologue') {
-    renderPrologue({ onContinue: () => { screen = 'act_intro'; render(); } });
     return;
   }
 
@@ -140,7 +135,7 @@ function beginNewGame() {
   State.reset();
   state = new State();
   lastRenderedAct = 1;
-  screen = 'prologue';
+  screen = 'act_intro';
   render();
 }
 
@@ -169,7 +164,7 @@ document.addEventListener('keydown', (e) => {
     const btns = document.querySelectorAll('.options .option-btn');
     const idx = Number(e.key) - 1;
     if (btns[idx]) { e.preventDefault(); btns[idx].click(); }
-  } else if (e.key === 'Enter' && (screen === 'prologue' || screen === 'act_intro' || screen === 'consequence')) {
+  } else if (e.key === 'Enter' && (screen === 'act_intro' || screen === 'consequence')) {
     const btn = document.querySelector('.option-btn.primary');
     if (btn) { e.preventDefault(); btn.click(); }
   }

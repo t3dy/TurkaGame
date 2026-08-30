@@ -78,21 +78,9 @@ export function computeEnding(state) {
   }
 
   // c34 === 'bend'
-  // v4 fix (PROPOSAL.md B1): you cannot survive "specifically as a judge" if you
-  // declined the judgeship at c26 — previously unchecked, a bug-level gap.
-  if (f.c26 === 'accepted' && f.c27 === 'weak' && breadth >= 2) return ENDINGS.rehabilitated_judge;
+  if (f.c27 === 'weak' && breadth >= 2) return ENDINGS.rehabilitated_judge;
   return ENDINGS.quiet_compromise;
 }
-
-// One sentence per dominant science, appended to every epilogue (PROPOSAL.md A2) —
-// the c16 specialization read back to the player at the end of every single run.
-const SCIENCE_LEGACY = {
-  kimiya: 'It was kīmiyā that shaped your reputation in the end — the patient, expensive science, and the patience it taught leaks into everything else they say about you.',
-  limiya: 'It was līmiyā that marked your work — the talisman-maker\'s habit of binding heaven to earth runs through every diagram you left behind.',
-  himiya: 'It was hīmiyā that colored your legend — a man who commanded the unseen is remembered carefully, even by those who deny the unseen exists.',
-  simiya: 'It was sīmiyā that defined how they speak of you — the master of appearances, which made everything you showed the world suspect, and everything you hid plausible.',
-  rimiya: 'It was rīmiyā they remembered at gatherings — the astonishments, the demonstrations. Fewer remember the system underneath them. That was always the trade.',
-};
 
 // A one-or-two-sentence coda, personalized by how the player faced the end —
 // makes each run's final screen feel like *their* run, not just their ending bucket.
@@ -104,25 +92,7 @@ const SCIENCE_LEGACY = {
 // ending or epilogue logic at all.
 export function epilogueFor(state) {
   const f = state.flags;
-  const s = state.skills || {};
   const parts = [];
-
-  // A3 (PROPOSAL.md): the survivability nuance STATE_MODEL promised — protections
-  // and loyalties that made holding firm survivable in spirit: the work's survival,
-  // since the historical death in 1432 stays fixed on hold-firm paths.
-  if (f.c34 === 'hold' && (((s.himiya || 0) + (s.limiya || 0)) >= 4 || f.c31 === 'patron' || f.c31 === 'both' || f.c31 === 'warded' || f.c10 === 'loyal')) {
-    parts.push('Holding firm did not save your life. But the protections you had built — sciences studied, loyalties kept — meant it did not erase you either: the work, and the people who carried it, outlasted the verdict.');
-  }
-
-  if (f.c20 === 'talisman') {
-    parts.push('The Ṭahawī Circle you sealed as a working talisman is copied more carefully than anything else you wrote — by some as a diagram, by others as a thing they are careful not to activate.');
-  }
-  if (f.c24 === 'alchemical') {
-    parts.push('The alchemical patronage you negotiated kept the lamps lit without costing the work its dignity — a solvency your rivals never forgave.');
-  }
-  if (f.c35 === 'veiled') {
-    parts.push('How you left the city was never established. Three accounts survive; they cannot all be true; sīmiyā smiles.');
-  }
 
   if (f.c33 === 'distance' && f.c04 === 'deep') {
     parts.push('Qasim-i Anvar was the friend you chose, in Cairo, to bond with deeply — and the one you distanced yourself from when the tribunal asked. He never said so aloud. He also never fully forgave it.');
@@ -154,12 +124,6 @@ export function epilogueFor(state) {
     parts.push('Your final statement circulated openly — copied, argued with, condemned, and therefore preserved.');
   } else if (f.c40 === 'quiet') {
     parts.push('Your last transmission went to the New Brethren alone. Smaller. Much harder to burn.');
-  }
-
-  // A2: the dominant science, read back at the end of every run.
-  const dominant = typeof state.dominantScience === 'function' ? state.dominantScience() : null;
-  if (dominant && (s[dominant] || 0) > 0 && SCIENCE_LEGACY[dominant]) {
-    parts.push(SCIENCE_LEGACY[dominant]);
   }
 
   return parts.join(' ');

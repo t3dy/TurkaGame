@@ -50,9 +50,39 @@ flavor text:
 |---|---|---|
 | #31 "call in patron favor" | `c10 == "loyal"` | Option hidden — you have no favor to call in if you defected early |
 | #33 "refuse to abandon anyone" | none (always available) | but its *cost* scales with `c04 == "deep"` — a deep bond makes refusal more narratively expensive |
-| #34 "hold firm" | none (always available — this is the historical choice and must stay reachable) | but its *survivability* in the ending logic depends on accumulated `himiya`/`limiya` (protective/subjugation sciences) and patron-favor flags from `c07`, `c10`, `c31` |
+| #34 "hold firm" | none (always available — this is the historical choice and must stay reachable) | v4: holding firm with `himiya+limiya >= 4`, or `c31 ∈ {patron, both, warded}`, or `c10 = loyal`, adds a survivability epilogue clause (the work and its carriers outlast the verdict; the 1432 death itself stays fixed). Implemented in `epilogueFor()` — this row previously described logic that did not exist (caught by the 2026-08-30 audit, see `CONVERSATION.md`). |
 | #38 "entrust to Yazdi, fully trusted" | `c03 == "equal"` | With `c03 == "mentor"`, entrusting is still possible but the ending logic treats the transmission as less complete (Yazdi received the letter of the work, not its full context) |
 | #12 "lettrist framing for the Qur'an" | `c07 == "full"` | You can't offer a doctrine you chose to keep hidden from patrons in choice #7 |
+
+### Skill gates (v4, PROPOSAL.md Workstream A)
+
+`optionAvailable()` also honors `skill_gate: {science: min}` — the mechanism that
+makes WHICH science a player built unlock different options. One signature moment
+per science (all additive; no pre-v4 path was removed or tightened):
+
+| Choice | Option | Gate |
+|---|---|---|
+| #20 | Seal the Ṭahawī Circle as a working talisman | `limiya >= 3` |
+| #24 | Counter-offer alchemical patronage | `kimiya >= 3` |
+| #29 | Expose the craft behind the accusation | `rimiya >= 2` |
+| #31 | Enter the tribunal warded | `himiya >= 3` |
+| #35 | Leave by misdirection | `simiya >= 3` |
+
+(The PROPOSAL originally placed the rīmiyā moment at #15; implementation caught
+that every rīmiyā point source comes after #15, making that gate unreachable —
+moved to #29.) `epilogueFor()` additionally appends one dominant-science legacy
+sentence to every run, and reads the `talisman`/`alchemical`/`veiled` flag values.
+
+### Expressive choices (declared, v4)
+
+After the v4 echo pass, exactly three flags are read by nothing downstream — 
+**deliberately**: `c06` (accept patronage at all), `c12` (work on the Bāysunghur
+Qur'an), `c28` (occult reasoning on the bench). These are the player stating who
+they are; the game witnesses rather than scores them. (`c12` and `c28` are also
+gate *targets* — their meaning lives upstream in `c07`/`c19`.) Five more flags —
+`c11`, `c14`, `c16`, `c18`, `c30` — are unread as flags but feed the skill system,
+which v4's gates and epilogue read constantly. Any future audit should check new
+dead flags against this list before calling them bugs.
 
 More gates can be added as `choices.json` is authored further — this table is the
 starting set, not exhaustive.
@@ -86,8 +116,10 @@ c38, c33+c04, c39, c40)` produces a handful of named, distinct endings. Sketch
    publicly renounced in whole or part; downstream texture depends on
    `c39`/`c40`.
 5. **The Rehabilitated Judge** — `c34=bend`, high `c27=weak`-party-defense
-   reputation carried through — survives specifically *as* a judge, occult
-   ambitions curtailed but legal legacy intact.
+   reputation carried through, **and `c26=accepted`** (v4 fix: you cannot survive
+   "specifically as a judge" if you declined the judgeship — previously
+   unchecked) — survives specifically *as* a judge, occult ambitions curtailed
+   but legal legacy intact.
 6. **The Solitary Sage** — `c36=retreat`, low breadth (single-science depth, small
    circle `c22=small`) — survives exile as a private scholar, influence minimal in
    his lifetime, rediscovered later (or not — open).
