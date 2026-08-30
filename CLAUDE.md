@@ -20,7 +20,14 @@ the roguelike and career-sim staying at design-doc stage until the VN slice prov
 pattern. See [docs/DECISIONS.md](docs/DECISIONS.md) for the full record of choices made at
 kickoff (sequencing, asset sourcing, tech stack).
 
-Nothing here is playable yet. What exists:
+**Update 2026-08-30 (later)**: the VN slice is playable and live; the **career sim
+graduated to its own full subproject at [CareerSim/](CareerSim/CLAUDE.md)**
+(design-complete, pre-code — entry `CareerSim/CLAUDE.md`, decisions
+`CareerSim/docs/DECISIONS.md`). It supersedes `docs/GAME_CAREER_SIM.md` and the
+`games/career-sim/` placeholder, and will deploy separately (Vercel + Supabase),
+not via this repo's GitHub Pages.
+
+What existed at project init:
 - A real research brief synthesized from the three source papers currently in hand
   ([docs/RESEARCH_BRIEF.md](docs/RESEARCH_BRIEF.md)).
 - A working, dependency-free asset-provenance pipeline
@@ -100,7 +107,9 @@ TurkaGame/
 ├── games/
 │   ├── visual-novel/         next up — see docs/GAME_VISUAL_NOVEL.md
 │   ├── roguelike/              design doc only, see docs/GAME_ROGUELIKE.md
-│   └── career-sim/             design doc only, see docs/GAME_CAREER_SIM.md
+│   └── career-sim/             pointer only — moved to CareerSim/
+├── CareerSim/               the career-sim subproject (own CLAUDE.md/DESIGN.md/docs;
+│                             Next.js+Supabase target, deploys separately to Vercel)
 └── site/                    showcase page, currently a placeholder
 ```
 

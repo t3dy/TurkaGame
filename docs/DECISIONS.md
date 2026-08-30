@@ -224,3 +224,32 @@ report the deploy as broken. Worth knowing before mis-diagnosing a future
   Pythagorean Renaissance paper is sourced to a different Melvin-Koushki article
   ("Selenocentrism and Heliocentrism") not currently in hand — needed before the
   career-sim's skill-tree design can be finalized.
+
+## CareerSim kickoff (2026-08-30, seventh session)
+
+The career sim moved from parked design doc to **its own full subproject at
+`CareerSim/`** (repo root, not `games/career-sim/` — user-directed: "its own full set
+of system files as a separate project in a CareerSim subfolder"). The `games/` rule
+gets a recorded exception because CareerSim has its own deploy target and system-file
+set; `games/career-sim/` is now a pointer. Design source: `TurkaCareerSim.txt`
+(a 3,778-line design conversation dropped in Downloads, imported verbatim to
+`CareerSim/docs/DESIGN_CONVERSATION.md`).
+
+Four user calls made via explicit Q&A at kickoff (full detail in
+`CareerSim/docs/DECISIONS.md` — that file is authoritative for CareerSim decisions):
+
+- **Run shape: life-phase sectors** (Cairo → Isfahan → Courts branch → 1420 Pivot →
+  Trials), one run = one compressed life.
+- **Slice spine: DungeonAB-style encounter engine** (capability × affordance,
+  unlockedBy provenance, gradient outcomes); synthesis graph and composition
+  workbench are later slices.
+- **Stack: Next.js + Supabase on Vercel** — supersedes this file's earlier tentative
+  "likely Next.js" note with a firm decision, driven by a new requirement: player
+  logins and player-editable text in saved run chronicles.
+- **Content: mine the VN's 40 choices as encounter atoms** — conversion mapping in
+  `CareerSim/docs/ENCOUNTER_ATOMS.md`; the VN itself untouched, no shared runtime
+  content layer.
+
+`docs/GAME_CAREER_SIM.md` is superseded by `CareerSim/DESIGN.md` (banner added). The
+seven-tier-hierarchy blocker recorded above still stands and is carried in the
+CareerSim decisions log as an open item.

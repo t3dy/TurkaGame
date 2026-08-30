@@ -1,9 +1,11 @@
 # Design Doc: Esoteric Scholar Career Sim
 
-Status: **design only, not started, and design isn't locked** — this is the most novel
-concept of the three, with the least precedent elsewhere in this workspace, so it needs
-more design-first work before implementation starts. Stays parked until the visual novel
-slice is done. See [docs/DECISIONS.md](DECISIONS.md).
+Status: **SUPERSEDED (2026-08-30)** by the full CareerSim subproject —
+[../CareerSim/DESIGN.md](../CareerSim/DESIGN.md) ("Ibn Turka: The Occult Court").
+This file is kept as the kickoff-era sketch; do not extend it. The Quintet-as-skill-tree
+framing below was specifically rejected in the new design (sciences are capability/verb
+families, not levels). The seven-tier-hierarchy blocker noted below still stands and is
+carried in `../CareerSim/docs/DECISIONS.md`.
 
 ## Premise
 

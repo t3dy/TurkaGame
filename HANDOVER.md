@@ -128,8 +128,12 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
    alone and never converted** (Roman Egypt Isis figurines, a Renaissance-Scotland
    festschrift, Averroes' Physics, a Deleuze/postcolonial-theory piece) — never
    confirmed with the user whether that guess was right.
-6. **Roguelike and career-sim have no code**, design docs only (unchanged from
-   kickoff) — the visual-novel is the only prototype with a working engine.
+6. **Roguelike has no code**, design doc only (unchanged from kickoff). The
+   **career sim graduated (2026-08-30) to its own design-complete subproject at
+   `CareerSim/`** — full system-file set (CLAUDE.md, DESIGN.md, SYSTEMS,
+   UI_STYLE_GUIDE, ENCOUNTER_ATOMS, ROADMAP, DECISIONS, its own HANDOVER.md), but
+   still zero code; the visual-novel remains the only prototype with a working
+   engine. New CareerSim sessions start at `CareerSim/HANDOVER.md`.
 
 ## Likely next step
 
