@@ -72,6 +72,45 @@ These improve the 40 choices already built, rather than adding new scope.
    `c25=overclaim` (credit-taking that historians eventually catch), same
    selective-firing pattern as the `c33`/`c36` clauses.
 
+## Tier 1b — findings from the v4 simulation pass (2026-08-30)
+
+Measured, not guessed — see [logs/ANALYSIS.md](games/visual-novel/logs/ANALYSIS.md)
+and [REFLECTION.md](games/visual-novel/REFLECTION.md). Ranked by severity.
+
+1. **No mechanic conveys that lettrism was *rigorous*.** The single biggest gap
+   against Melvin-Koushki's actual thesis: the game teaches that occult science
+   was *powerful* (skill gates do this well) but never that it was technical,
+   mathematical, Pythagorean — which is the whole reason he argues it belongs in
+   the history of science. The five sciences are currently functionally identical
+   systems with different labels. Needs a mechanic that feels like *doing*
+   letter-mathematics, even a small one. Hardest and most valuable item here.
+2. **Act IV is 0% reactive** — the sciences act, the most identity-defining
+   stretch in the game, and not one of c16–c20 reads differently based on prior
+   state. `c02` (open vs. deniable discipleship) and `c09` (flaunt vs. cautious)
+   are both set and unused by then. (Acts I and II are also 0%, but Act I
+   *cannot* be reactive — no prior state exists — and Act II is the "Teach"
+   segment where reflecting the player back is premature. Correct the
+   WRITING_GUIDE budget line to exempt them rather than forcing content.)
+3. **kīmiyā's gate inverts the historical hierarchy.** Alchemy is the most elite
+   and demanding science in the sources, but its c24 gate is reachable by a
+   generalist (max 3 without ever choosing it), while hīmiyā and līmiyā — *below*
+   it in the pentad — require full commitment. Cause: too many incidental kīmiyā
+   point sources (c11 astronomy, c14 formal, c18 math_first). Fix by thinning
+   those, not by raising the gate.
+4. **The thesis ending is the rarest at 4.7%.** Source Code of Empire states the
+   game's own argument and fewer than 1 in 20 players will see it. Don't make it
+   common — make the other endings gesture at it, so the platform's survival is
+   ambient rather than locked behind the rarest branch.
+5. **The comparative frame is absent from the game.** Cusa/Pico/Bruno/Dee exist
+   only on the timeline tab. Proposal: an end-of-game card *after* the ending —
+   not dramatized contact (which the "comparison ≠ contact" rule forbids) but a
+   plain statement that the scholar you just played was buried for five centuries
+   and is now argued to belong beside them.
+6. **Consider Planet–Pearl–Peach as act structure.** Ibn Turka's own book is
+   built as ascent–descent–ascent and his prologue's argument is that form *is*
+   content. We used a conventional flat eight-act tree. Speculative, but the
+   research has been sitting there unused.
+
 ## Tier 2 — broaden the existing VN's content
 
 1. **OCR `al-buni-shams-al-maarif`** (in IslamicateOccultPortal) or lean further on
