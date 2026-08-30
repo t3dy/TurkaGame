@@ -7,14 +7,15 @@ is.
 
 ## Tier 0 — confirm what should already be true
 
-- [ ] **Verify the live GitHub Pages build.** Enabled this session; confirm
-  `https://t3dy.github.io/TurkaGame/` actually loads, the root redirect lands on
-  `site/index.html`, and the "Play the prototype" links resolve correctly from the
-  deployed site (not just local `http.server`) — asset paths and the site/games
-  cross-link both depend on Pages serving the *repo root*, not `/site`.
+- [x] **Verify the live GitHub Pages build.** Repeatedly confirmed across every
+  session since: `https://t3dy.github.io/TurkaGame/` loads, all three VN versions
+  resolve, and every subsequent content/logic change has been checked live (not
+  just locally) via scripted playthroughs before being called done.
 - [ ] **Playtest cold**, without the designer's own knowledge of the gates. Watch
   whether the "closed door" note at a gated choice reads as an intentional
   consequence or a confusing dead end (flagged as an open question in GAMELOOP.md).
+  Still open — this needs an actual human unfamiliar with the design, not
+  something an agent can meaningfully self-check.
 
 ## Tier 1 — highest leverage on the loop that already exists
 
