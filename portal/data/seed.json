@@ -484,6 +484,39 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "ismail-safavi",
+      "name": "Ismail I",
+      "name_full": "Ismail ibn Haydar al-Safavi",
+      "name_variants": [
+        "Shah Ismail",
+        "Ismail Safavi"
+      ],
+      "role": "RULER",
+      "lifespan": "1487–1524 / 894–931 AH",
+      "birth_year": 1487,
+      "death_year": 1524,
+      "region": "Persia / Iran",
+      "relation_to_turka": "political_successor",
+      "card": "Shah Ismail I (1487–1524), founder of Safavid dynasty. Established Twelver Shi'ism as state religion of Persia. Created court environment that canonized Ibn Turka's intellectual tradition. Safavid support transformed Ibn Turka from Isfahan Circle figure to foundational voice of Islamic philosophy.",
+      "body": "Shah Ismail I founded the Safavid dynasty and established Twelver Shi'ism as Persia's state religion. Under Safavid rule, the intellectual networks and traditions established by Ibn Turka achieved institutional stability and court patronage. Ismail's successors, particularly Abbas I, canonized Ibn Turka's works and the Ibn Turka tradition became central to Safavid intellectual establishment. The Safavid court provided resources, protection, and legitimacy for occult philosophers. This political context enabled the transmission of Ibn Turka's system from 15th-century innovation to 16th-17th century canonical status.",
+      "key_works": [],
+      "affiliations": [
+        "safavid-dynasty"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. The Occult Court."
+      ],
+      "tags": [
+        "ruler",
+        "safavid",
+        "patron",
+        "political"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "concepts": [
