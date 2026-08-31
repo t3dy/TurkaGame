@@ -836,6 +836,58 @@
           "depicts": null
         },
         {
+          "id": "architecture-full",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            89,
+            196,
+            1464,
+            2154
+          ],
+          "label": "The impossible palace — the whole structure",
+          "depicts": null
+        },
+        {
+          "id": "cupola",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            762,
+            36,
+            976,
+            226
+          ],
+          "label": "Crowning octagonal kiosk with finial — the roof above the roof",
+          "depicts": null
+        },
+        {
+          "id": "roof-eaves-band",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            660,
+            175,
+            1290,
+            360
+          ],
+          "label": "Blue-tiled eaves band and inscribed cornice",
+          "depicts": null
+        },
+        {
+          "id": "badgir-kiosk",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            1285,
+            360,
+            1445,
+            625
+          ],
+          "label": "Blue-and-white turreted kiosk, upper right — a tower reachable from nowhere",
+          "depicts": null
+        },
+        {
           "id": "the-chamber",
           "kind": "scene",
           "cut": "rect",
@@ -849,6 +901,19 @@
           "depicts": null
         },
         {
+          "id": "chamber-arch",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            740,
+            415,
+            1125,
+            570
+          ],
+          "label": "White pointed arch of the upper chamber",
+          "depicts": null
+        },
+        {
           "id": "yusuf",
           "kind": "figure",
           "cut": "matte",
@@ -858,7 +923,7 @@
             995,
             995
           ],
-          "label": "Yūsuf in green, flame-haloed, mid-stride",
+          "label": "Yusuf in green, flame-haloed, mid-stride",
           "depicts": null,
           "seeds": {
             "fg": [
@@ -890,6 +955,19 @@
               ]
             ]
           }
+        },
+        {
+          "id": "yusuf-halo",
+          "kind": "object",
+          "cut": "rect",
+          "box": [
+            855,
+            480,
+            1005,
+            610
+          ],
+          "label": "Yusuf's flame-halo — the only light source in the picture",
+          "depicts": null
         },
         {
           "id": "zulaykha",
@@ -931,29 +1009,276 @@
           }
         },
         {
-          "id": "architecture-full",
-          "kind": "architecture",
+          "id": "chamber-tile-panel",
+          "kind": "ornament",
           "cut": "rect",
           "box": [
-            89,
-            196,
-            1464,
-            2154
+            672,
+            555,
+            805,
+            935
           ],
-          "label": "The impossible palace — the whole structure",
+          "label": "Blue floral tile revetment, chamber's left wall",
           "depicts": null
         },
         {
-          "id": "staircase",
+          "id": "chamber-carpet",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            825,
+            925,
+            1095,
+            1045
+          ],
+          "label": "Patterned floor panel under Yusuf's feet",
+          "depicts": null
+        },
+        {
+          "id": "chamber-threshold",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            640,
+            1035,
+            1185,
+            1125
+          ],
+          "label": "The chamber sill — tasselled ledge over open air",
+          "depicts": null
+        },
+        {
+          "id": "red-balcony",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            1120,
+            745,
+            1455,
+            1105
+          ],
+          "label": "The red cantilevered balcony",
+          "depicts": null
+        },
+        {
+          "id": "balcony-doorway",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            1288,
+            758,
+            1448,
+            1015
+          ],
+          "label": "Arched doorway in the balcony's back wall",
+          "depicts": null
+        },
+        {
+          "id": "muqarnas-eaves",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            1160,
+            612,
+            1455,
+            762
+          ],
+          "label": "Muqarnas eaves over the balcony",
+          "depicts": null
+        },
+        {
+          "id": "balcony-brackets",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            1145,
+            1045,
+            1455,
+            1270
+          ],
+          "label": "Cantilever brackets carrying the balcony over nothing",
+          "depicts": null
+        },
+        {
+          "id": "tile-roundel",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            1148,
+            772,
+            1278,
+            888
+          ],
+          "label": "Blue-and-gold tile roundel panel",
+          "depicts": null
+        },
+        {
+          "id": "blue-tile-court",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            128,
+            398,
+            455,
+            985
+          ],
+          "label": "Upper-left blue tile court with lapis floral ground",
+          "depicts": null
+        },
+        {
+          "id": "green-door-arch",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            185,
+            525,
+            428,
+            958
+          ],
+          "label": "Blue arched niche framing the green door",
+          "depicts": null
+        },
+        {
+          "id": "green-door",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            252,
+            628,
+            358,
+            935
+          ],
+          "label": "The green double door",
+          "depicts": null
+        },
+        {
+          "id": "orange-door-upper",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            488,
+            392,
+            600,
+            592
+          ],
+          "label": "Tall orange door, upper storey",
+          "depicts": null
+        },
+        {
+          "id": "inscription-tablet",
+          "kind": "text",
+          "cut": "rect",
+          "box": [
+            496,
+            590,
+            572,
+            642
+          ],
+          "label": "Small epigraphic tablet beside the orange door",
+          "depicts": null
+        },
+        {
+          "id": "black-inscription-panel",
+          "kind": "text",
+          "cut": "rect",
+          "box": [
+            120,
+            318,
+            505,
+            412
+          ],
+          "label": "Black-ground gold nastaliq panel",
+          "depicts": null
+        },
+        {
+          "id": "staircase-upper",
           "kind": "architecture",
           "cut": "rect",
           "box": [
             143,
-            1071,
-            500,
-            1726
+            1055,
+            458,
+            1335
           ],
-          "label": "Orange staircase turning at impossible angles",
+          "label": "Upper flight of the orange staircase",
+          "depicts": null
+        },
+        {
+          "id": "stair-landing",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            328,
+            1135,
+            472,
+            1295
+          ],
+          "label": "Stair landing",
+          "depicts": null
+        },
+        {
+          "id": "staircase-lower",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            178,
+            1295,
+            472,
+            1745
+          ],
+          "label": "Lower flight, turning at an angle no stair turns at",
+          "depicts": null
+        },
+        {
+          "id": "orange-door-stairhead",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            345,
+            1142,
+            458,
+            1278
+          ],
+          "label": "Orange door at the stairhead",
+          "depicts": null
+        },
+        {
+          "id": "verse-cartouche-mid",
+          "kind": "text",
+          "cut": "rect",
+          "box": [
+            382,
+            1238,
+            545,
+            1412
+          ],
+          "label": "Gold nastaliq verse cartouche on green ground",
+          "depicts": null
+        },
+        {
+          "id": "ornate-door-lower",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            292,
+            1488,
+            382,
+            1628
+          ],
+          "label": "Muqarnas-crowned ornate door beneath the stair",
+          "depicts": null
+        },
+        {
+          "id": "orange-door-under-stair",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            290,
+            1618,
+            398,
+            1792
+          ],
+          "label": "Orange double door under the stair",
           "depicts": null
         },
         {
@@ -966,37 +1291,128 @@
             1071,
             1583
           ],
-          "label": "Lower arched portal with lapis spandrels",
+          "label": "The central iwan — lower arched portal with lapis spandrels",
           "depicts": null
         },
         {
-          "id": "pink-doorway",
+          "id": "iwan-door",
           "kind": "architecture",
           "cut": "rect",
           "box": [
-            702,
-            1714,
-            988,
-            2023
+            658,
+            1248,
+            835,
+            1475
           ],
-          "label": "The pink street doorway — the outermost of the seven",
+          "label": "Orange door inside the iwan",
           "depicts": null
         },
         {
-          "id": "cupola",
+          "id": "iwan-spandrel-tile",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            571,
+            1178,
+            1071,
+            1262
+          ],
+          "label": "Inscribed lapis band and spandrels over the iwan",
+          "depicts": null
+        },
+        {
+          "id": "tile-field-left",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            418,
+            1428,
+            572,
+            1722
+          ],
+          "label": "Green-and-gold star tile field, left",
+          "depicts": null
+        },
+        {
+          "id": "tile-field-right",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            1048,
+            1148,
+            1242,
+            1562
+          ],
+          "label": "Green-and-gold star tile field, right",
+          "depicts": null
+        },
+        {
+          "id": "brick-wall",
           "kind": "architecture",
           "cut": "rect",
           "box": [
-            762,
-            36,
-            976,
-            226
+            430,
+            1642,
+            1362,
+            1902
           ],
-          "label": "Crowning cupola with finial",
+          "label": "The grey brick street wall",
           "depicts": null
         },
         {
-          "id": "verse-cartouche",
+          "id": "pink-portal",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            698,
+            1658,
+            992,
+            2066
+          ],
+          "label": "Pink street portal — the outermost frame",
+          "depicts": null
+        },
+        {
+          "id": "street-door",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            798,
+            1830,
+            950,
+            2064
+          ],
+          "label": "The street door — the outermost of the doors",
+          "depicts": null
+        },
+        {
+          "id": "blue-dado",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            398,
+            1852,
+            1302,
+            2066
+          ],
+          "label": "Dark blue dado band at street level",
+          "depicts": null
+        },
+        {
+          "id": "verse-cartouche-top",
+          "kind": "text",
+          "cut": "rect",
+          "box": [
+            95,
+            205,
+            1240,
+            340
+          ],
+          "label": "Nastaliq verse cartouches across the top",
+          "depicts": null
+        },
+        {
+          "id": "verse-cartouche-upper-left",
           "kind": "text",
           "cut": "rect",
           "box": [
@@ -1005,20 +1421,20 @@
             536,
             400
           ],
-          "label": "Nastaʿlīq verse cartouche, upper left",
+          "label": "Nastaliq verse cartouche, upper left",
           "depicts": null
         },
         {
-          "id": "tile-field",
-          "kind": "ornament",
+          "id": "verse-cartouche-foot",
+          "kind": "text",
           "cut": "rect",
           "box": [
-            107,
-            417,
-            393,
-            928
+            118,
+            2072,
+            1338,
+            2200
           ],
-          "label": "Lapis and turquoise tile field with blossom",
+          "label": "Nastaliq verse cartouches along the foot",
           "depicts": null
         }
       ]
