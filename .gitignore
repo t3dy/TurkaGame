@@ -21,3 +21,6 @@ portal/images/extracted/
 
 # Research inbox - source PDFs, never committed
 research inbox/
+
+# Image cutouts derived from sources whose rights are not yet cleared (FOUNDER.md S5)
+imagelab/output/

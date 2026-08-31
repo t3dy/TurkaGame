@@ -101,9 +101,9 @@
       "birth_year": 1370,
       "death_year": 1454,
       "region": "Yazd / Isfahan",
-      "relation_to_turka": "peer",
+      "relation_to_turka": "disciple and closest associate",
       "card": "**Sharaf al-Dīn ʿAlī Yazdī** (c. 1370s–1454), scholar, historian, and occult philosopher. One of the two most prominent intellectuals of Shahrukhid Iran (identified with Ibn Turka by Dawlatshah Samarqandi). Member of the Isfahan Circle; author of the *Ẓafarnāma* (universal history from an astrological-lettrist perspective). Integrated [[ilm-al-huruf]] with historical and political analysis. Represents the application of lettrist philosophy to the writing of history and the interpretation of empire.",
-      "body": "**Sharaf al-Dīn ʿAlī Yazdī** (c. 1370s–1454) was among the most accomplished intellectuals of 15th-century Iran. Born in Yazd, he emerged as one of the two leading figures of his age, identified by the historian Dawlatshah Samarqandi (d. 1494–1507) as equal in prominence to [[ibn-turka]] himself. Unlike Ibn Turka, who was primarily a philosopher and occultist, Sharaf al-Dīn applied lettrist and astrological principles to the practice of history-writing and political analysis. His magnum opus, the *Ẓafarnāma* (Book of Victories), is a universal history organized according to astrological and lettrist principles—demonstrating that history itself unfolds according to cosmic cycles encoded in letters and divine names. This work became canonical in the Timurid and Safavid periods. Sharaf al-Dīn's synthesis of lettrism, astrology, and historiography shows how Ibn Turka's philosophical framework could be applied practically to statecraft and the interpretation of events.",
+      "body": "**Sharaf al-Dīn ʿAlī Yazdī** (c. 1370s–1454) was among the most accomplished intellectuals of 15th-century Iran. Born in Yazd, he emerged as one of the two leading figures of his age, identified by the historian Dawlatshah Samarqandi (d. 1494–1507) as equal in prominence to [[ibn-turka]] himself. Unlike Ibn Turka, who was primarily a philosopher and occultist, Sharaf al-Dīn applied lettrist and astrological principles to the practice of history-writing and political analysis. His magnum opus, the *Ẓafarnāma* (Book of Victories), is a universal history organized according to astrological and lettrist principles—demonstrating that history itself unfolds according to cosmic cycles encoded in letters and divine names. This work became canonical in the Timurid and Safavid periods. Sharaf al-Dīn's synthesis of lettrism, astrology, and historiography shows how Ibn Turka's philosophical framework could be applied practically to statecraft and the interpretation of events.\n\n**Correction on the relationship.** An earlier version of this entry described Yazdī as Ibn Turka's peer. The dissertation is more specific: he is *his disciple and closest associate*. The *Munshaʾāt-i Yazdī* preserves eight items relating to Ibn Turka or his immediate family, showing Yazdī's attendance at his teacher's *majālis*, his accompanying Ibn Turka on journeys to Herat, and his concern for Ibn Turka's children (*makhdūm-zādagān*) after their father's death (*The Quest*, 135–36). The bond is pedagogical and personal, not collegial — which is what makes Yazdī the one figure positioned to carry the system forward.",
       "key_works": [
         "zafarnama"
       ],
@@ -112,7 +112,8 @@
         "yazd"
       ],
       "literature": [
-        "Melvin-Koushki, Matthew. 'Sharaf al-Din Ali Yazdi and the Occult Sciences in Timurid Iran.' Journal of the American Oriental Society."
+        "Melvin-Koushki, Matthew. 'Sharaf al-Din Ali Yazdi and the Occult Sciences in Timurid Iran.' Journal of the American Oriental Society.",
+        "Melvin-Koushki, Matthew. *The Quest for a Universal Science* (PhD diss., Yale, 2012), 135–36."
       ],
       "tags": [
         "lettrist",
@@ -121,7 +122,7 @@
         "political-philosophy",
         "timurid"
       ],
-      "source_method": "CORPUS_SYNTHESIS",
+      "source_method": "CORPUS_READ",
       "review_status": "DRAFT",
       "confidence": "HIGH"
     },
@@ -475,6 +476,85 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "LOW"
+    },
+    {
+      "slug": "ulugh-beg",
+      "name": "Ulugh Beg",
+      "name_full": "Muḥammad Ṭaraghay Ulugh Beg b. Shāhrukh",
+      "name_variants": [
+        "Uluġ Beg",
+        "Ulugh Bek",
+        "Mīrzā Ulugh Beg"
+      ],
+      "role": "RULER",
+      "lifespan": "1394–1449 / 796–853 AH",
+      "birth_year": 1394,
+      "death_year": 1449,
+      "region": "Samarkand / Transoxiana",
+      "relation_to_turka": "would-be patron",
+      "card": "**Ulugh Beg** (1394–1449), Shāhrukh's son, governor of Transoxiana and founder of the **Samarkand Observatory** — by a distance the most famous Timurid for history-of-science purposes. He was styled *al-sulṭān al-faylasūf*, the philosopher-sultan. For Ibn Turka he is the **would-be third patron**: the one ruler whose programme — the mathematicalization of the sciences — was the same programme, and whose patronage never quite arrived.",
+      "body": "## Ulugh Beg: the patron who should have been\n\n**The sultan-scientist.** Muḥammad Ṭaraghay Ulugh Beg (1394–1449), Temür's grandson and Shāhrukh's son, governed Transoxiana from Samarkand and did something no other Timurid did: he practised the science he patronised. He founded the Samarkand Observatory, breaking ground in 1420, and the *Zīj-i Sulṭānī* produced there stood as the most accurate star table in the world for two centuries. He was awarded the title *al-sulṭān al-faylasūf* — the philosopher-sultan (Fazlıoğlu, *Mathematical-Astronomical School*, 41; on the observatory and the *zīj*, Blake, *Astronomy and Astrology*, ch. 6).\n\n**Why he belongs in Ibn Turka's story.** Melvin-Koushki's argument makes the connection structural rather than incidental. His thesis is that the occult sciences in Ilkhanid–Timurid–Aqquyunlu Iran were **moved out of the natural sciences and into the mathematical sciences** to reassert their legitimacy — and that this mathematicalization is the immediate context for *the celebrated mathematization of astronomy by the members of the Samarkand Observatory* (*Powers of One*, 1). Ulugh Beg's observatory and Ibn Turka's [[ilm-al-huruf|lettrism]] are not two subjects that happen to share a century. They are two faces of one movement: the conviction that number is the ground on which a science must stand.\n\nHe names the pairing directly — *the model established by Iskandar Sulṭān and Ulugh Beg* ensured that astronomy-astrology and lettrism **in particular** would continue to be heavily patronised by subsequent Timurid and Indo-Timurid dynasts, and by their Safavid and Ottoman competitors (*Philosopher-Kings as Sultan-Scientists*, 599). Ibn Turka's first patron and his would-be last are the two poles of that model.\n\n**The would-be.** The sequence of Ibn Turka's patrons is a sequence of losses. [[iskandar-sultan|Iskandar Sulṭān]], who commissioned *Of Letters* and at whose instance he began the [[kitab-al-mafahis|Book of Inquiries]], was defeated and blinded in 1415. Under Shāhrukh he found a place — he was close to Bāysunghur in particular — and then in **1427 was exiled from Herat**, alongside his old Cairo associate Qāsim-i Anvār, the official excuse being a putative connection with the Ḥurūfīs (*The Quest*, 456 n.16).\n\nSamarkand was the obvious remaining door, and the right one. A ruler who had staked his reputation on mathematical astronomy was the natural patron for a man arguing that the occult sciences belong among the mathematical sciences. Ibn Turka died in 1432, seventeen years before Ulugh Beg was killed by his own son's faction in 1449. The patronage that would have made the most sense of his career is the one the record does not show him receiving.\n\n**Afterlife.** The lettrist-astronomical fusion Ulugh Beg's institution made possible outlived them both. Shāhjahān commissioned the *Zīj-i Shāhjahānī*, an updated and corrected version of Ulugh Beg's tables of two centuries prior — and it carries **the first preface in the Arabo-Persian astronomical tradition to be explicitly and thoroughgoingly lettrist in tenor** (*Philosopher-Kings*, 599). Ibn Turka's science reached Ulugh Beg's star tables in the end. It simply took two hundred years.",
+      "key_works": [
+        "zij-i-sultani"
+      ],
+      "affiliations": [
+        "samarkand-observatory",
+        "timurid-court"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. *Timurid-Mughal Philosopher-Kings as Sultan-Scientists*, 599.",
+        "Melvin-Koushki, Matthew. *Powers of One*, 1.",
+        "Melvin-Koushki, Matthew. *The Quest for a Universal Science* (PhD diss., Yale, 2012), 456.",
+        "Blake, Stephen P. *Astronomy and Astrology in the Islamic World*, ch. 6.",
+        "Fazlıoğlu, İhsan. *The Samarqand Mathematical-Astronomical School*, 41."
+      ],
+      "tags": [
+        "ruler",
+        "patron",
+        "astronomer",
+        "timurid",
+        "samarkand",
+        "sultan-scientist",
+        "mathematicalization"
+      ],
+      "source_method": "CORPUS_READ",
+      "review_status": "DRAFT",
+      "confidence": "HIGH"
+    },
+    {
+      "slug": "iskandar-sultan",
+      "name": "Iskandar Sulṭān",
+      "name_full": "Iskandar b. ʿUmar Shaykh b. Tīmūr",
+      "name_variants": [
+        "Iskandar Sultan",
+        "Eskandar Soltan"
+      ],
+      "role": "PATRON",
+      "lifespan": "1384–1415 / 786–818 AH",
+      "birth_year": 1384,
+      "death_year": 1415,
+      "region": "Fars / Isfahan / Shiraz",
+      "relation_to_turka": "patron",
+      "card": "**Iskandar Sulṭān** (1384–1415), Temür's grandson and ruler of Fars — Ibn Turka's first and most consequential patron. He commissioned *Of Letters*, and it was almost certainly at his instance that Ibn Turka began the [[kitab-al-mafahis|Book of Inquiries]]. His court was famous for astrological and occult patronage on a scale that set a model; his defeat in 1415 removed Ibn Turka's protection at a stroke.",
+      "body": "**Iskandar Sulṭān b. ʿUmar Shaykh** (1384–1415) ruled Fars from Shiraz and Isfahan as one of the most lavishly bookish and most astrologically preoccupied of the Timurid princes. His patronage is directly responsible for Ibn Turka's two central lettrist works: he commissioned *Of Letters*, and Melvin-Koushki judges that Ibn Turka began the [[kitab-al-mafahis|*Kitāb al-Mafāḥiṣ*]] shortly afterward, again almost certainly at Iskandar's instance (*Of Islamic Grammatology*, 66).\n\nThe relationship matters beyond biography. Melvin-Koushki names *the model established by Iskandar Sulṭān and [[ulugh-beg|Ulugh Beg]]* as what ensured astronomy-astrology and lettrism in particular would go on being heavily patronised by later Timurid, Indo-Timurid, Safavid and Ottoman courts (*Philosopher-Kings as Sultan-Scientists*, 599). Iskandar is the opening term of the pattern that defines the [[isfahan-circle|occult court]].\n\nHe rebelled against Shāhrukh and was defeated, blinded and killed in 1415. For Ibn Turka the consequence was immediate and lasting: the patron who had commissioned his life's work became, retroactively, a dangerous association — the first of the reversals that would culminate in his exile from Herat in 1427.",
+      "key_works": [],
+      "affiliations": [
+        "timurid-court"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. *Of Islamic Grammatology*, 66.",
+        "Melvin-Koushki, Matthew. *Timurid-Mughal Philosopher-Kings as Sultan-Scientists*, 599."
+      ],
+      "tags": [
+        "patron",
+        "timurid",
+        "fars",
+        "astrology",
+        "commission"
+      ],
+      "source_method": "CORPUS_READ",
+      "review_status": "DRAFT",
+      "confidence": "HIGH"
     }
   ],
   "concepts": [
@@ -1503,6 +1583,30 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "samarkand-observatory",
+      "name": "The Samarkand Observatory",
+      "type": "OBSERVATORY",
+      "period": "Founded 1420; destroyed after 1449",
+      "location": "Samarkand",
+      "card": "**The Samarkand Observatory**, founded by [[ulugh-beg|Ulugh Beg]] in 1420 around a meridian arc of unprecedented scale. Its *Zīj-i Sulṭānī* was the most accurate star table in the world for two centuries. Melvin-Koushki's argument places it inside Ibn Turka's story rather than beside it: the mathematization of astronomy achieved here and the [[neoplatonism|mathematicalization of the occult sciences]] are the same movement, and have been studied in isolation only by accident of modern disciplinary boundaries.",
+      "body": "## The Samarkand Observatory\n\n**The institution.** [[ulugh-beg|Ulugh Beg]] broke ground in 1420 on what became the largest astronomical instrument on earth: a meridian arc sunk into bedrock, housed in a three-storey building, staffed by the best mathematical astronomers of the age — Qāḍīzāda Rūmī among them, and later Jamshīd al-Kāshī and ʿAlī Qushjī. The *Zīj-i Sulṭānī* it produced remained the most accurate star catalogue in the world for roughly two centuries.\n\n**Why it belongs to this portal.** The conventional account treats Samarkand as a triumph of exact science and Timurid occultism as a separate, embarrassing phenomenon. Melvin-Koushki's thesis denies the separation. He argues that the mathematicalization, neopythagoreanization and sanctification of occultism in Ilkhanid–Timurid–Aqquyunlu Iran is *the immediate intellectual and sociopolitical context* for the celebrated mathematization of astronomy by the members of the Samarkand Observatory — processes which, he notes, have heretofore been studied in atomistic isolation (*Powers of One*, 1).\n\nThe observatory and the [[kitab-al-mafahis|Book of Inquiries]] were begun in the same year, 1420, a few hundred miles apart, by men working out the same conviction: that a science earns its standing by becoming mathematical. [[qazizada-rumi|Qāḍīzāda Rūmī]] worked at both ends of it.\n\n**The end.** Ulugh Beg was killed in 1449 and the observatory was abandoned and dismantled not long after; its foundations were not rediscovered until 1908. The tables outlived the building, and reached Mughal India, where Shāhjahān's *Zīj-i Shāhjahānī* updated them behind the first thoroughly **lettrist** preface in the Arabo-Persian astronomical tradition (*Philosopher-Kings as Sultan-Scientists*, 599).",
+      "literature": [
+        "Melvin-Koushki, Matthew. *Powers of One*, 1.",
+        "Melvin-Koushki, Matthew. *Timurid-Mughal Philosopher-Kings as Sultan-Scientists*, 599.",
+        "Blake, Stephen P. *Astronomy and Astrology in the Islamic World*, ch. 6."
+      ],
+      "tags": [
+        "observatory",
+        "astronomy",
+        "samarkand",
+        "timurid",
+        "mathematicalization"
+      ],
+      "source_method": "CORPUS_READ",
+      "review_status": "DRAFT",
+      "confidence": "HIGH"
     }
   ],
   "arguments": []

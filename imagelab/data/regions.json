@@ -1,0 +1,819 @@
+{
+  "_note": "Region manifest. Boxes are [x1,y1,x2,y2] in ORIGINAL pixel coords, derived by visual inspection. kind: figure|face|object|architecture|ornament|text|scene. cut: rect (plain crop) | matte (GrabCut alpha cutout).",
+  "images": [
+    {
+      "id": "turka-triple-portrait",
+      "file": "Turka white beard with Qazizada Rumi director of the Samarkand Observatory and Yazdi.png",
+      "width": 1038,
+      "height": 1099,
+      "short_title": "Ibn Turka with Qāḍīzāda Rūmī and Yazdī",
+      "regions": [
+        {
+          "id": "panel-full",
+          "kind": "scene",
+          "cut": "rect",
+          "box": [
+            296,
+            28,
+            796,
+            1024
+          ],
+          "label": "The framed painting panel",
+          "depicts": null
+        },
+        {
+          "id": "niche-interior",
+          "kind": "scene",
+          "cut": "rect",
+          "box": [
+            330,
+            228,
+            772,
+            1020
+          ],
+          "label": "Arched niche interior — the three-figure council",
+          "depicts": null
+        },
+        {
+          "id": "ibn-turka",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            316,
+            396,
+            548,
+            1014
+          ],
+          "label": "Ibn Turka — white beard, brown robe, green turban-cap",
+          "depicts": "ibn-turka",
+          "seeds": {
+            "fg": [
+              [
+                390,
+                850
+              ],
+              [
+                360,
+                700
+              ],
+              [
+                400,
+                510
+              ],
+              [
+                395,
+                600
+              ],
+              [
+                370,
+                950
+              ]
+            ],
+            "bg": [
+              [
+                530,
+                600
+              ],
+              [
+                330,
+                1000
+              ],
+              [
+                520,
+                985
+              ],
+              [
+                325,
+                430
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ibn-turka-head",
+          "kind": "face",
+          "cut": "rect",
+          "box": [
+            336,
+            400,
+            512,
+            580
+          ],
+          "label": "Ibn Turka, head and turban",
+          "depicts": "ibn-turka"
+        },
+        {
+          "id": "qazizada",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            474,
+            470,
+            664,
+            1006
+          ],
+          "label": "Qāḍīzāda Rūmī — black beard, lapis robe, gold cap",
+          "depicts": "qazizada-rumi",
+          "seeds": {
+            "fg": [
+              [
+                560,
+                760
+              ],
+              [
+                580,
+                880
+              ],
+              [
+                560,
+                570
+              ],
+              [
+                566,
+                500
+              ],
+              [
+                545,
+                700
+              ]
+            ],
+            "bg": [
+              [
+                487,
+                975
+              ],
+              [
+                655,
+                950
+              ],
+              [
+                490,
+                485
+              ],
+              [
+                650,
+                560
+              ]
+            ]
+          }
+        },
+        {
+          "id": "qazizada-head",
+          "kind": "face",
+          "cut": "rect",
+          "box": [
+            506,
+            478,
+            644,
+            668
+          ],
+          "label": "Qāḍīzāda Rūmī, head and turban",
+          "depicts": "qazizada-rumi"
+        },
+        {
+          "id": "yazdi",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            592,
+            524,
+            768,
+            1014
+          ],
+          "label": "Sharaf al-Dīn Yazdī — red beard, green robe",
+          "depicts": "sharaf-al-din-yazdi",
+          "seeds": {
+            "fg": [
+              [
+                680,
+                850
+              ],
+              [
+                700,
+                930
+              ],
+              [
+                680,
+                620
+              ],
+              [
+                660,
+                760
+              ]
+            ],
+            "bg": [
+              [
+                602,
+                560
+              ],
+              [
+                760,
+                1000
+              ],
+              [
+                606,
+                990
+              ],
+              [
+                755,
+                560
+              ]
+            ]
+          }
+        },
+        {
+          "id": "yazdi-head",
+          "kind": "face",
+          "cut": "rect",
+          "box": [
+            606,
+            536,
+            754,
+            712
+          ],
+          "label": "Yazdī, head and turban",
+          "depicts": "sharaf-al-din-yazdi"
+        },
+        {
+          "id": "the-document",
+          "kind": "object",
+          "cut": "rect",
+          "box": [
+            420,
+            716,
+            576,
+            844
+          ],
+          "label": "The open bifolium — the system changing hands",
+          "depicts": null
+        },
+        {
+          "id": "tile-star-cross",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            56,
+            0,
+            330,
+            344
+          ],
+          "label": "Star-and-cross tile field, light blue and orange",
+          "depicts": null
+        },
+        {
+          "id": "tile-interlace-left",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            70,
+            400,
+            312,
+            1032
+          ],
+          "label": "White interlace with dark-red rosettes, left",
+          "depicts": null
+        },
+        {
+          "id": "tile-interlace-right",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            778,
+            400,
+            1014,
+            1032
+          ],
+          "label": "White interlace with dark-red rosettes, right",
+          "depicts": null
+        },
+        {
+          "id": "cartouche-top",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            332,
+            50,
+            768,
+            218
+          ],
+          "label": "Upper cartouche, green ground with gold",
+          "depicts": null
+        }
+      ]
+    },
+    {
+      "id": "samarkand-observatory-mural",
+      "file": "mural in the little museum standing by the Samarkand Observatory ruins.jpg",
+      "width": 1536,
+      "height": 2048,
+      "short_title": "Ulugh Beg at the Samarkand Observatory (modern mural)",
+      "regions": [
+        {
+          "id": "scene-full",
+          "kind": "scene",
+          "cut": "rect",
+          "box": [
+            300,
+            160,
+            1460,
+            1760
+          ],
+          "label": "The mural field",
+          "depicts": null
+        },
+        {
+          "id": "ulugh-beg",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            770,
+            630,
+            1040,
+            1560
+          ],
+          "label": "Ulugh Beg — plumed turban, gold robe, holding an astrolabe",
+          "depicts": "ulugh-beg"
+        },
+        {
+          "id": "ulugh-beg-head",
+          "kind": "face",
+          "cut": "rect",
+          "box": [
+            820,
+            636,
+            980,
+            800
+          ],
+          "label": "Ulugh Beg, head and plumed turban",
+          "depicts": "ulugh-beg"
+        },
+        {
+          "id": "scholar-with-book",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            536,
+            670,
+            724,
+            1540
+          ],
+          "label": "Standing scholar holding a bound book",
+          "depicts": null
+        },
+        {
+          "id": "apprentice-globe",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            1108,
+            1140,
+            1310,
+            1625
+          ],
+          "label": "Kneeling apprentice marking a celestial globe",
+          "depicts": null
+        },
+        {
+          "id": "astrolabe",
+          "kind": "object",
+          "cut": "rect",
+          "box": [
+            900,
+            780,
+            1005,
+            900
+          ],
+          "label": "Astrolabe in Ulugh Beg's hands",
+          "depicts": null
+        },
+        {
+          "id": "celestial-globe",
+          "kind": "object",
+          "cut": "matte",
+          "box": [
+            955,
+            1292,
+            1155,
+            1545
+          ],
+          "label": "Celestial globe on a turned stand",
+          "depicts": null,
+          "seeds": {
+            "fg": [
+              [
+                1050,
+                1380
+              ],
+              [
+                1050,
+                1490
+              ],
+              [
+                1010,
+                1400
+              ]
+            ],
+            "bg": [
+              [
+                963,
+                1300
+              ],
+              [
+                1148,
+                1300
+              ],
+              [
+                968,
+                1535
+              ]
+            ]
+          }
+        },
+        {
+          "id": "rihal-bookstand",
+          "kind": "object",
+          "cut": "rect",
+          "box": [
+            628,
+            1036,
+            878,
+            1440
+          ],
+          "label": "Carved rihāl (book-stand) with open manuscript",
+          "depicts": null
+        },
+        {
+          "id": "candlestick",
+          "kind": "object",
+          "cut": "matte",
+          "box": [
+            310,
+            1232,
+            405,
+            1665
+          ],
+          "label": "Brass candlestick with lit candle",
+          "depicts": null,
+          "seeds": {
+            "fg": [
+              [
+                357,
+                1330
+              ],
+              [
+                357,
+                1420
+              ],
+              [
+                357,
+                1560
+              ],
+              [
+                357,
+                1630
+              ]
+            ],
+            "bg": [
+              [
+                318,
+                1300
+              ],
+              [
+                398,
+                1450
+              ],
+              [
+                318,
+                1620
+              ],
+              [
+                396,
+                1260
+              ]
+            ]
+          }
+        },
+        {
+          "id": "observatory-building",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            710,
+            385,
+            1420,
+            925
+          ],
+          "label": "The observatory façade with meridian-arc housing",
+          "depicts": "samarkand-observatory"
+        },
+        {
+          "id": "border-ornament",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            228,
+            170,
+            320,
+            1745
+          ],
+          "label": "Blue-and-gold Persian border ornament",
+          "depicts": null
+        },
+        {
+          "id": "tiled-dado",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            300,
+            1760,
+            1460,
+            2020
+          ],
+          "label": "Geometric star-tile dado, blue and green",
+          "depicts": null
+        }
+      ]
+    },
+    {
+      "id": "akhlati-receiving-gifts",
+      "file": "Husayn Akhlati receiving gifts from Barquq - Majalis al-'Ushshaq - BL Or 11837 f 117 Shiraz c 1560.jpeg",
+      "width": 640,
+      "height": 1067,
+      "short_title": "Ḥusayn Akhlāṭī receiving gifts from Barqūq",
+      "regions": [
+        {
+          "id": "folio-full",
+          "kind": "scene",
+          "cut": "rect",
+          "box": [
+            30,
+            15,
+            610,
+            1000
+          ],
+          "label": "The complete folio — text, image, text",
+          "depicts": null
+        },
+        {
+          "id": "painting-panel",
+          "kind": "scene",
+          "cut": "rect",
+          "box": [
+            193,
+            352,
+            545,
+            706
+          ],
+          "label": "The painting panel — the audience scene",
+          "depicts": null
+        },
+        {
+          "id": "akhlati",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            455,
+            470,
+            545,
+            610
+          ],
+          "label": "Ḥusayn Akhlāṭī — white turban, blue robe, receiving",
+          "depicts": "sayyid-husayn-akhlati",
+          "seeds": {
+            "fg": [
+              [
+                505,
+                545
+              ],
+              [
+                500,
+                489
+              ],
+              [
+                515,
+                572
+              ]
+            ],
+            "bg": [
+              [
+                461,
+                601
+              ],
+              [
+                541,
+                477
+              ],
+              [
+                459,
+                477
+              ]
+            ]
+          }
+        },
+        {
+          "id": "seated-donor",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            322,
+            468,
+            425,
+            615
+          ],
+          "label": "Seated figure in vermilion — the gift-giver",
+          "depicts": null,
+          "seeds": {
+            "fg": [
+              [
+                368,
+                565
+              ],
+              [
+                356,
+                507
+              ],
+              [
+                380,
+                590
+              ]
+            ],
+            "bg": [
+              [
+                327,
+                476
+              ],
+              [
+                419,
+                606
+              ],
+              [
+                329,
+                611
+              ]
+            ]
+          }
+        },
+        {
+          "id": "attendants",
+          "kind": "figure",
+          "cut": "rect",
+          "box": [
+            200,
+            448,
+            335,
+            668
+          ],
+          "label": "Standing attendants in red tāj caps",
+          "depicts": null
+        },
+        {
+          "id": "kneeling-servant",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            378,
+            632,
+            458,
+            712
+          ],
+          "label": "Kneeling servant presenting a dish",
+          "depicts": null,
+          "seeds": {
+            "fg": [
+              [
+                415,
+                672
+              ],
+              [
+                425,
+                690
+              ]
+            ],
+            "bg": [
+              [
+                381,
+                702
+              ],
+              [
+                453,
+                639
+              ],
+              [
+                383,
+                637
+              ]
+            ]
+          }
+        },
+        {
+          "id": "gift-platter",
+          "kind": "object",
+          "cut": "rect",
+          "box": [
+            440,
+            600,
+            528,
+            648
+          ],
+          "label": "Gold platter of gifts — the icon of patronage",
+          "depicts": null
+        },
+        {
+          "id": "two-outside-wall",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            58,
+            672,
+            195,
+            950
+          ],
+          "label": "Two figures conferring outside the wall — the excluded, the watchers",
+          "depicts": null,
+          "seeds": {
+            "fg": [
+              [
+                100,
+                790
+              ],
+              [
+                150,
+                800
+              ],
+              [
+                120,
+                880
+              ]
+            ],
+            "bg": [
+              [
+                62,
+                700
+              ],
+              [
+                190,
+                700
+              ],
+              [
+                64,
+                940
+              ]
+            ]
+          }
+        },
+        {
+          "id": "tree-and-cypress",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            52,
+            18,
+            205,
+            362
+          ],
+          "label": "Blossoming tree and cypress above the wall",
+          "depicts": null
+        },
+        {
+          "id": "text-block-upper",
+          "kind": "text",
+          "cut": "rect",
+          "box": [
+            193,
+            183,
+            555,
+            350
+          ],
+          "label": "Nastaʿlīq text block, upper",
+          "depicts": null
+        },
+        {
+          "id": "text-block-lower",
+          "kind": "text",
+          "cut": "rect",
+          "box": [
+            193,
+            742,
+            555,
+            945
+          ],
+          "label": "Nastaʿlīq text block, lower",
+          "depicts": null
+        },
+        {
+          "id": "brick-wall",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            58,
+            360,
+            195,
+            690
+          ],
+          "label": "Tan brick garden wall",
+          "depicts": null
+        }
+      ]
+    }
+  ]
+}
