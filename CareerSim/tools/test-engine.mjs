@@ -2,8 +2,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { newRun, applyEffects, checkReq } from '../src/engine/state.js?v=2';
-import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict, BANDS } from '../src/engine/engine.js?v=2';
+import { newRun, applyEffects, checkReq } from '../src/engine/state.js?v=3';
+import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict, BANDS } from '../src/engine/engine.js?v=3';
 import { NODES } from '../content/phase1.js?v=2';
 import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=1';
 import { addObligation, chargeObligations, offerContract, tickContracts, exposureTier, finalVerdict, LEGACY_NOTES } from '../src/engine/career.js?v=1';
@@ -358,4 +358,60 @@ test('system-fate axis: Yazdi and condemnation produce their own outcomes', () =
   const indexed = newRun();
   applyEffects(indexed, { meters: { transmission: 3 }, memory: { book_condemned: true } }, 'test');
   assert.equal(finalVerdict(indexed).system.key, 'indexed');
+});
+
+// ---- audit-session lints ----------------------------------------------------
+
+test('lint: no dead Quintet branches — every science is required or boosted after Cairo', () => {
+  const used = { kimiya: 0, limiya: 0, himiya: 0, simiya: 0, rimiya: 0 };
+  for (const enc of Object.values(ENCOUNTERS)) {
+    if (enc.phase === 1) continue; // Cairo grants; later phases must spend
+    for (const o of enc.options) {
+      for (const r of [...(o.requires || []), ...(o.boosts || [])]) {
+        const m = r.match(/^(kimiya|limiya|himiya|simiya|rimiya)>=/);
+        if (m) used[m[1]]++;
+      }
+    }
+  }
+  for (const [sci, n] of Object.entries(used)) {
+    assert.ok(n >= 1, `${sci} is granted in Cairo but never required/boosted in any later phase — a dead capability branch`);
+  }
+});
+
+test('artifacts are load-bearing: artifact requirement resolves and names the work', () => {
+  const s = newRun();
+  const r1 = checkReq(s, 'artifact:tahawi_circle', PEOPLE, ARTIFACTS);
+  assert.equal(r1.ok, false);
+  assert.match(r1.text, /Ṭahawī Circle/);
+  applyEffects(s, { artifacts: ['tahawi_circle'] }, 'test');
+  assert.equal(checkReq(s, 'artifact:tahawi_circle', PEOPLE, ARTIFACTS).ok, true);
+
+  // and content actually uses it: the third tribunal's firm stance is favored by the Circle
+  const enc = ENCOUNTERS.trial_third;
+  const firm = enc.options.find((o) => o.id === 'hold_firm');
+  assert.ok(firm.boosts.includes('artifact:tahawi_circle'));
+});
+
+test('marginalia precedence: taught_widely + hoarded merge into one line', async () => {
+  const s = newRun();
+  applyEffects(s, { memory: { taught_widely: true, hoarded: true } }, 'test');
+  const v = finalVerdict(s);
+  const text = v.notes.join(' | ');
+  assert.ok(/by turns/.test(text), 'merged tension line present');
+  assert.ok(!/He taught widely, and lost control/.test(text), 'individual taught_widely line suppressed');
+  assert.ok(!/qualified few were fewer/.test(text), 'individual hoarded line suppressed');
+});
+
+test('lexicon: every term defined is actually used somewhere a player can meet it', async () => {
+  const { LEXICON } = await import('../content/lexicon.js?v=1');
+  const { readFileSync } = await import('node:fs');
+  const { fileURLToPath } = await import('node:url');
+  const here = fileURLToPath(new URL('.', import.meta.url));
+  let corpus = '';
+  for (const f of ['phase1.js', 'phase2.js', 'phase3.js', 'phase4.js', 'phase5.js']) {
+    corpus += readFileSync(here + '../content/' + f, 'utf8');
+  }
+  corpus += readFileSync(here + '../src/ui.js', 'utf8'); // manual folio uses some directly
+  const unusedTerms = Object.keys(LEXICON).filter((t) => !corpus.includes(t));
+  assert.deepEqual(unusedTerms, [], 'lexicon terms never encountered in play: ' + JSON.stringify(unusedTerms));
 });

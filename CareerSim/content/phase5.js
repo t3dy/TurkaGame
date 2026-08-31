@@ -19,7 +19,7 @@ export const NODES = [
   {
     id: 'tribunal5', name: 'The Tribunal', icon: '⚖',
     hook: 'Where the doctrine is put on trial and you answer for it in person.',
-    encounters: ['trial_first', 'trial_second', 'trial_third'],
+    encounters: ['trial_first', 'trial_second', 'trial_third', 'trial_checkpoint'],
   },
   {
     id: 'protection', name: 'The Patron’s Door', icon: '👑',
@@ -29,7 +29,7 @@ export const NODES = [
   {
     id: 'circle5', name: 'The Circle', icon: '✳',
     hook: 'Your people — some of whom are now liabilities, and some of whom are the only thing that outlives you.',
-    encounters: ['trial_qasim_exile', 'trial_student_copy', 'trial_rival_book'],
+    encounters: ['trial_qasim_exile', 'trial_letters', 'trial_student_copy', 'trial_rival_book'],
   },
   {
     id: 'road5', name: 'The Road', icon: '🐪', departure: true,
@@ -48,7 +48,7 @@ export const ENCOUNTERS = {
     plate: IMG('cs-p5-harut-marut.jpg', 'The fallen angels Hārūt and Mārūt, suspended at Babel — Iran, 16th–17th c. (Wikimedia Commons)'),
     situation:
       'The charge is framed around Qurʾan 2:102 and the angels at Babel who taught men magic: whatever you call your ' +
-      'science, the prosecution says, this is what it descends from. Your accusers are colleagues. They have read you ' +
+      'ʿilm al-ḥurūf, the prosecution says, this is what it descends from. Your accusers are colleagues. They have read you ' +
       'closely, which is the problem.',
     options: [
       {
@@ -113,7 +113,7 @@ export const ENCOUNTERS = {
         id: 'defend_text', label: 'Defend the passage as written',
         detail: 'Stand on the text. Explain what it means and refuse to disown it.',
         requires: [],
-        boosts: ['meter:synthesis>=6', 'rep:scholarly>=3'],
+        boosts: ['meter:synthesis>=6', 'rep:scholarly>=3', 'artifact:investigations'],
         effects: { meters: { exposure: 1 }, memory: { second_inquisition: 'fought' } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'You take the panel through the passage until the difficulty dissolves into the argument it belongs to. Acquitted, and two of the panel ask for copies afterward.',
@@ -171,7 +171,7 @@ export const ENCOUNTERS = {
         id: 'hold_firm', label: 'Hold firm and refuse to bend',
         detail: 'The historically attested answer. It costs everything and concedes nothing.',
         requires: [],
-        boosts: ['rep:scholarly>=4', 'mem:public_defense_won', 'person:yazdi'],
+        boosts: ['rep:scholarly>=4', 'mem:public_defense_won', 'person:yazdi', 'artifact:tahawi_circle'],
         effects: { meters: { exposure: 1 }, memory: { third_stance: 'firm' } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Against every expectation the panel splits, and a split panel cannot condemn. You walk out — ruined at court, unbroken in doctrine, and alive.',
@@ -256,6 +256,7 @@ export const ENCOUNTERS = {
         id: 'offer_service', label: 'Offer something first',
         detail: 'Arrive with a gift, not a request. A horoscope, a dedication, a useful method.',
         requires: ['meter:demonstration>=3'],
+        boosts: ['artifact:horoscope'],
         effects: { rep: { imperial: 1 }, memory: { asked_protection: true, has_protection: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'You come with work in hand and leave with protection that does not feel like charity. Both of you prefer it this way.',
@@ -479,6 +480,110 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'qualified', weight: 1, text: 'It spreads without you, imperfectly, unstoppably. That may be what transmission always was.',
             chronicle: 'He let the simplified version spread unopposed, being occupied with a tribunal.' },
+        ],
+      },
+    ],
+  },
+
+  trial_checkpoint: {
+    id: 'trial_checkpoint', phase: 5,
+    rubric: 'THE EASTERN GATE \u00b7 A CHECKPOINT WITH YOUR NAME AT IT',
+    grounding: 'INVENTED-COMPATIBLE',
+    source: 'The s\u012bmiy\u0101 signature moment (VN PROPOSAL: escape by misdirection); the five-year exile itself is ATTESTED',
+    when: ['mem:third_inquisition=lost'],
+    affordances: ['gate_guards', 'crowd'],
+    situation:
+      'The sentence entitles you to leave; a clerk\u2019s addendum entitles the governor to everything you carry. At the ' +
+      'eastern gate the soldiers have a list, and your baggage \u2014 books, tables, the years of paper \u2014 is exactly what ' +
+      'the list is for. The exile may pass. The archive may not.',
+    options: [
+      {
+        id: 'misdirect', label: 'Let them seize the wrong chest',
+        detail: 'S\u012bmiy\u0101 at last: a decoy chest, a staged reluctance, and every eye drawn where you want it.',
+        requires: ['simiya>=1'],
+        effects: { memory: { checkpoint_escape: true } },
+        outcomes: [
+          { band: 'triumph', weight: 2, text: 'You cling to the decoy chest so convincingly that they pry it from you in triumph \u2014 sermon drafts and old dockets. The real papers ride out under a mule-load of onions. It is the finest performance of your life, and no audience will ever know.',
+            effects: { meters: { demonstration: 1, transmission: 1 } },
+            chronicle: 'At the eastern gate he surrendered a decoy chest with convincing grief, and the real archive left the city under onions.' },
+          { band: 'qualified', weight: 1, text: 'The switch works, mostly. One bundle of letters goes with the decoy \u2014 a decade of correspondence you will spend exile trying to reconstruct.',
+            effects: { meters: { transmission: 1 } },
+            chronicle: 'His gate-trick saved the archive and cost him a decade of letters.' },
+        ],
+      },
+      {
+        id: 'bribe', label: 'Pay what the soldiers ask',
+        detail: 'Coin instead of craft. It empties the purse that was meant to last five years.',
+        requires: [],
+        effects: { memory: { checkpoint_bribed: true } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'Expensive, effective, unremarkable. The books pass as \u201cpersonal effects.\u201d Poverty arrives a year early.',
+            chronicle: 'He bought his archive through the eastern gate, and began his exile poorer than the sentence required.' },
+          { band: 'backfire', weight: 1, text: 'The first soldier takes the bribe; the second, who saw it, requires his own. By the gate\u2019s far side the five-year purse is a two-year purse.',
+            chronicle: 'The gate cost him two bribes and most of the money the exile was to live on.' },
+        ],
+      },
+      {
+        id: 'surrender_books', label: 'Let them take the chests',
+        detail: 'The work is in other hands or it is nowhere. Walk out with a staff and a cloak.',
+        requires: [],
+        effects: { meters: { transmission: -1 }, memory: { checkpoint_lost_books: true } },
+        outcomes: [
+          { band: 'ambiguous', weight: 1, text: 'You watch the chests carried into the guardhouse and walk east with nothing. Whatever survives of your system now survives because you gave it away earlier \u2014 or it does not survive.',
+            chronicle: 'He let the state take his chests at the gate, and walked into exile carrying only what others already held.' },
+        ],
+      },
+    ],
+  },
+
+  trial_letters: {
+    id: 'trial_letters', phase: 5,
+    rubric: 'THE CIRCLE \u00b7 A COURT STILL WRITES',
+    grounding: 'ATTESTED',
+    source: 'RESEARCH \u2014 "applied lettrism remains an important technology of empire and personal advancement alike"; courts commissioned occult work from suspect scholars throughout',
+    when: ['mem:first_inquisition=won'],
+    affordances: ['manuscripts', 'private_audience'],
+    situation:
+      'A letter arrives under a careful seal: a provincial court \u2014 one that knows precisely what tribunals you have ' +
+      'stood before \u2014 would like a protective inscription for a newborn prince. Discreetly. The same science being ' +
+      'tried in one city is being commissioned from another, and nobody on either side finds this strange.',
+    options: [
+      {
+        id: 'accept_inscription', label: 'Compose the inscription',
+        detail: 'L\u012bmiy\u0101, paid in silver and silence. Useful money; documentary evidence.',
+        requires: ['limiya>=2'],
+        effects: { meters: { exposure: 1 }, memory: { exile_commission: 'accepted' } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'The wafq is exact, the fee is generous, and somewhere a prince will grow up under your letters. The receipt, of course, exists.',
+            effects: { rep: { occult: 1 }, meters: { transmission: 1 } },
+            chronicle: 'Under indictment in one city, he was commissioned in another \u2014 a protective inscription for a prince\u2019s cradle.' },
+          { band: 'backfire', weight: 1, text: 'The work is flawless and the court is grateful \u2014 and careless. Within a year your accusers can prove you practiced while under review.',
+            effects: { meters: { exposure: 2 } },
+            chronicle: 'The cradle-inscription was excellent and indiscreet, and his accusers acquired the receipt.' },
+        ],
+      },
+      {
+        id: 'teach_instead', label: 'Send them the method, not the work',
+        detail: 'Decline the commission; teach their own scholar to do it. Transmission over fee.',
+        requires: [],
+        boosts: ['meter:transmission>=4'],
+        effects: { meters: { transmission: 1 }, memory: { exile_commission: 'taught' } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'You write back a small treatise on the principles and decline the silver. Their court scholar learns it, uses it, teaches it \u2014 and owes you. This is how a system colonizes a court its author never visits.',
+            effects: { meters: { transmission: 1 }, rep: { scholarly: 1 } },
+            chronicle: 'He refused the fee and sent the method instead, and a distant court began practicing his science without him.' },
+          { band: 'qualified', weight: 1, text: 'The method travels; the fee does not. Principle is a currency you cannot eat.',
+            chronicle: 'He sent the distant court his method and kept his poverty intact.' },
+        ],
+      },
+      {
+        id: 'refuse_commission5', label: 'Burn the letter',
+        detail: 'While tribunals sit, practice is evidence. Decline everything.',
+        requires: [],
+        effects: { rep: { orthodox: 1 }, memory: { exile_commission: 'refused' } },
+        outcomes: [
+          { band: 'qualified', weight: 1, text: 'The letter burns well. So does the bridge \u2014 that court will not write twice.',
+            chronicle: 'He burned a court\u2019s discreet commission unanswered, while the tribunals sat.' },
         ],
       },
     ],

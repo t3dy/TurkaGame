@@ -282,3 +282,9 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 
 .codex-phase { margin-bottom: 1.4rem; }
 .codex-phase .rubric { font-size: 0.75rem; margin-bottom: 0.7rem; }
+
+/* ---- audit session: lexicon glossing, works, attested life ---- */
+.lex { border-bottom: 1px dotted var(--gold); cursor: help; }
+.mrow.work span { color: var(--verdigris); }
+.attested-life .att-hist { font-weight: 600; color: var(--ink); }
+.attested-intro { margin-bottom: 0.7rem; }

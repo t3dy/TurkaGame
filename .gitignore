@@ -13,3 +13,11 @@ Thumbs.db
 # Editor
 .vscode/
 *.swp
+
+# Portal corpus - full text of copyrighted scholarship, local research only
+portal/corpus/sources/
+portal/db/*.db
+portal/images/extracted/
+
+# Research inbox - source PDFs, never committed
+research inbox/

@@ -29,7 +29,7 @@ export const NODES = [
   {
     id: 'scriptorium', name: 'The Warrāq’s Shop', icon: '🖋',
     hook: 'A copyist who will duplicate anything you hand him. Circulation starts here.',
-    encounters: ['isfahan_copyists', 'isfahan_first_treatise'],
+    encounters: ['isfahan_copyists', 'isfahan_inks', 'isfahan_first_treatise'],
   },
   {
     id: 'mosque', name: 'The Friday Mosque', icon: '🕌',
@@ -322,6 +322,54 @@ export const ENCOUNTERS = {
     ],
   },
 
+  isfahan_inks: {
+    id: 'isfahan_inks', phase: 2,
+    rubric: 'THE WARRĀQ’S SHOP · THE INK THAT EATS THE PAGE',
+    grounding: 'INVENTED-COMPATIBLE',
+    source: 'Artisanal-epistemology layer (DESIGN.md, after Pamela Smith); iron-gall ink corrosion is real period chemistry',
+    when: ['mem:copyist_engaged'],
+    affordances: ['manuscripts', 'workshop'],
+    situation:
+      'The warrāq shows you a ruined quire: last year’s copies, the ink gone brown and the paper crumbling where the ' +
+      'strokes ran thickest. Iron-gall ink, badly compounded, is slowly eating your own words. He knows you studied ' +
+      'strange arts in Cairo. He is asking, without quite asking, whether any of them were useful ones.',
+    options: [
+      {
+        id: 'compound', label: 'Compound a stable ink yourself',
+        detail: 'Kīmiyā at its least glamorous: gall, vitriol, gum, and exact proportion.',
+        requires: ['kimiya>=1'],
+        effects: { meters: { demonstration: 1 }, memory: { inks_solved: true } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'Three batches, one that holds. The warrāq watches you work the proportions like a recipe and revises his opinion of Cairo entirely. Your copies will outlive their rivals’ — literally.',
+            effects: { meters: { transmission: 1 }, rep: { occult: 1 } },
+            chronicle: 'He compounded the warrāq’s ink himself, and his copies outlasted other men’s books.' },
+          { band: 'success', weight: 2, text: 'The new batch holds. It is the least mystical thing the furnace ever taught you, and among the most useful.',
+            chronicle: 'The furnace-craft of Cairo resurfaced as a copyist’s ink, and the pages stopped eating themselves.' },
+        ],
+      },
+      {
+        id: 'source_it', label: 'Find him a better supplier',
+        detail: 'No chemistry, just diligence. Solves today; teaches nothing.',
+        requires: [],
+        effects: { memory: { inks_sourced: true } },
+        outcomes: [
+          { band: 'qualified', weight: 1, text: 'A supplier in the dyers’ quarter mixes honestly. The problem is patched, not understood — which is how most problems in the world are handled.',
+            chronicle: 'He found the warrāq honester ink, and left the chemistry of it unexamined.' },
+        ],
+      },
+      {
+        id: 'shrug', label: 'Paper is the copyist’s problem',
+        detail: 'You are a judge with a book to write. Walk away.',
+        requires: [],
+        effects: { memory: { inks_ignored: true } },
+        outcomes: [
+          { band: 'ambiguous', weight: 1, text: 'You leave it. Years from now a reader will turn a page of your early work and hold a lace of holes up to the light.',
+            chronicle: 'He left the ink problem to the tradesmen, and some of his earliest pages did not survive it.' },
+        ],
+      },
+    ],
+  },
+
   isfahan_first_treatise: {
     id: 'isfahan_first_treatise', phase: 2,
     rubric: 'THE WARRĀQ’S SHOP · THE FIRST THING WORTH CIRCULATING',
@@ -492,7 +540,7 @@ export const ENCOUNTERS = {
         id: 'push', label: 'Work it through to the end',
         detail: 'Seasons of arithmetic to prove or kill the connection.',
         requires: [],
-        boosts: ['person:yazdi', 'access:family_library'],
+        boosts: ['person:yazdi', 'access:family_library', 'artifact:letter_grid_ms'],
         effects: { meters: { synthesis: 2 } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'It holds. Letters, ratios, the harmonic intervals — one architecture, and you can show the working.',

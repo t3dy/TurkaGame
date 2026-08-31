@@ -343,7 +343,7 @@ export const ENCOUNTERS = {
     affordances: ['manuscripts', 'inscription', 'royal_patronage'],
     plate: IMG('cs-p3-safavid-illuminated-ms.jpg', 'Safavid illuminated manuscript page, Shahnameh tradition (Wikimedia Commons)'),
     situation:
-      'The atelier offers to make one of your cosmological diagrams the way they make things for princes: gold, lapis, ' +
+      'The kitābkhāna offers to make one of your cosmological diagrams the way it makes things for princes: gold, lapis, ' +
       'a full folio. A diagram that beautiful is an argument that travels — and a diagram that beautiful is also evidence.',
     options: [
       {
@@ -508,6 +508,7 @@ export const ENCOUNTERS = {
         id: 'vanishing_ink', label: 'The vanishing ink',
         detail: 'Write, let them read, let it disappear. Delightful — and quietly useful to certain people.',
         requires: ['rimiya>=2'],
+        boosts: ['kimiya>=1', 'mem:inks_solved'],
         effects: { meters: { demonstration: 1, exposure: 1 }, rep: { occult: 1 }, memory: { showed_vanishing_ink: true } },
         outcomes: [
           { band: 'triumph', weight: 2, text: 'The table is delighted. The prince laughs. The man who keeps the prince’s correspondence does not laugh — he leans forward and asks a very specific question.',
@@ -660,6 +661,7 @@ export const ENCOUNTERS = {
         id: 'give_method', label: 'Give him the working method',
         detail: 'Your party trick becomes state apparatus. That is what usefulness means.',
         requires: [],
+        boosts: ['kimiya>=1'],
         effects: {
           rep: { imperial: 2 }, meters: { exposure: 1, transmission: 1 },
           memory: { military_application: true },

@@ -3,8 +3,8 @@
 // with unlockedBy provenance → weighted gradient outcome → memory + chronicle.
 // Framework-agnostic; see docs/SYSTEMS.md §3, §8.
 
-import { checkReq, applyEffects } from './state.js?v=2';
-import { meetsExposure } from './career.js?v=1';
+import { checkReq, applyEffects } from './state.js?v=3';
+import { meetsExposure } from './career.js?v=3';
 
 export const BANDS = ['triumph', 'success', 'qualified', 'ambiguous', 'backfire', 'disaster'];
 
@@ -34,7 +34,7 @@ export function drawEncounter(state, node, encounters) {
 //   unlockedBy  — human clauses for its met requirements (provenance; [] if free)
 //   lockedBy    — human clauses for unmet requirements (teach through the locked door)
 //   favoredBy   — met boost clauses (they shift the outcome roll upward)
-export function evaluateOptions(state, enc, people) {
+export function evaluateOptions(state, enc, people, artifacts) {
   const affs = new Set(enc.affordances || []);
   return enc.options.map((opt) => {
     const unlockedBy = [];
@@ -46,13 +46,13 @@ export function evaluateOptions(state, enc, people) {
         else lockedBy.push(`needs ${a.replace(/_/g, ' ')}`);
         continue;
       }
-      const r = checkReq(state, req, people);
+      const r = checkReq(state, req, people, artifacts);
       if (r.ok) unlockedBy.push(r.text);
       else lockedBy.push(`needs ${r.text}`);
     }
     const favoredBy = [];
     for (const req of opt.boosts || []) {
-      const r = checkReq(state, req, people);
+      const r = checkReq(state, req, people, artifacts);
       if (r.ok) favoredBy.push(r.text);
     }
     return { opt, available: lockedBy.length === 0, unlockedBy, lockedBy, favoredBy };

@@ -2,14 +2,14 @@
 // title → phase intro → map → encounter → resolution → colophon → … → ending.
 // Engine stays pure; this file owns flow, time, obligations, contracts, saves.
 
-import { newRun, save, load, clearSave } from './engine/state.js?v=2';
-import { drawEncounter, evaluateOptions, resolveOption, encounterEligible } from './engine/engine.js?v=2';
+import { newRun, save, load, clearSave } from './engine/state.js?v=3';
+import { drawEncounter, evaluateOptions, resolveOption, encounterEligible } from './engine/engine.js?v=3';
 import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, exposureTier,
   finalVerdict, settleContracts,
-} from './engine/career.js?v=2';
-import { PEOPLE, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=1';
-import * as ui from './ui.js?v=2';
+} from './engine/career.js?v=3';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=3';
+import * as ui from './ui.js?v=3';
 
 let state = null;
 let current = null;
@@ -40,7 +40,7 @@ function toMap() {
     if (dep && !state.seen.includes(dep.encounters[0])) { enterNode(dep); return; }
   }
   const first = !onboard.map; onboard.map = true;
-  ui.renderMap(state, phase(), phase().nodes, nodeStatus(), PEOPLE, first, exposureTier(state));
+  ui.renderMap(state, phase(), phase().nodes, nodeStatus(), PEOPLE, ARTIFACTS, first, exposureTier(state));
 }
 
 function enterNode(node) {
@@ -54,9 +54,9 @@ function enterNode(node) {
     turnReport.obligations = chargeObligations(state);
     turnReport.contracts = tickContracts(state);
   }
-  current = { enc, evaluated: evaluateOptions(state, enc, PEOPLE), turnReport, node };
+  current = { enc, evaluated: evaluateOptions(state, enc, PEOPLE, ARTIFACTS), turnReport, node };
   const first = !onboard.enc; onboard.enc = true;
-  ui.renderEncounter(state, enc, current.evaluated, PEOPLE, first, turnReport, exposureTier(state));
+  ui.renderEncounter(state, enc, current.evaluated, PEOPLE, ARTIFACTS, first, turnReport, exposureTier(state));
 }
 
 function choose(idx) {
@@ -72,7 +72,7 @@ function choose(idx) {
 
   save(state);
   const first = !onboard.res; onboard.res = true;
-  ui.renderResolution(state, current.enc, result, PEOPLE, first, exposureTier(state));
+  ui.renderResolution(state, current.enc, result, PEOPLE, ARTIFACTS, first, exposureTier(state));
   current.isDeparture = !!(current.node && current.node.departure);
 }
 
@@ -159,6 +159,6 @@ window.__turkaCS = {
   restart() { state = newRun(); save(state); toPhaseIntro(); },
   skipTo(p) { state.phase = p; state.time = phaseById(p).time; toPhaseIntro(); },
   grant(fx) {
-    import('./engine/state.js?v=2').then((m) => { m.applyEffects(state, fx, 'debug'); toMap(); });
+    import('./engine/state.js?v=3').then((m) => { m.applyEffects(state, fx, 'debug'); toMap(); });
   },
 };

@@ -3,7 +3,7 @@
 // and expectation inflation), exposure tiers (compounding political pressure).
 // Framework-agnostic. See docs/SYSTEMS.md §4, §6, and DESIGN.md thesis #6.
 
-import { applyEffects, checkReq } from './state.js?v=2';
+import { applyEffects, checkReq } from './state.js?v=3';
 
 // ---- exposure tiers ---------------------------------------------------------
 // Exposure is the rebel fleet: it rises, it does not reset, and each tier changes
@@ -383,12 +383,34 @@ export const LEGACY_NOTES = {
   took_judgeship: 'He was, first and last, a judge of Isfahan.',
   has_deputy: 'A deputy carried his docket, which bought him the hours the work required.',
   family_library: 'The family library was opened to him, and it mattered more than the allowance did.',
+
+  // — audit-session additions —
+  inks_solved: 'He compounded a stable ink with his own hands, and his early copies outlived other men’s books.',
+  inks_sourced: 'He solved the warrāq’s ink problem with diligence rather than chemistry.',
+  inks_ignored: 'He left the ink problem to tradesmen, and some early pages did not survive it.',
+  'globes_structure=journey': 'He shaped the summa as an ascent, a descent, and an ascent — three Globes of Light — so that reading it enacted the doctrine.',
+  'globes_structure=curriculum': 'He ordered the three Globes of Light as a curriculum, and teachers used it as one for a century.',
+  checkpoint_escape: 'At the eastern gate he saved the archive with a decoy chest and the finest misdirection of his life.',
+  checkpoint_bribed: 'He bought his books through the eastern gate with the money his exile was to live on.',
+  checkpoint_lost_books: 'The state took his chests at the gate, and he walked into exile empty-handed.',
+  'exile_commission=accepted': 'Disgraced in one city, he was still commissioned in another — a cradle-inscription for a prince, receipt and all.',
+  'exile_commission=taught': 'A distant court asked for his work; he sent the method instead of the object, and his science traveled without him.',
+  'exile_commission=refused': 'While the tribunals sat he burned a court’s discreet commission unanswered.',
 };
 
 function legacyNotes(state) {
   const n = [];
   const mem = state.memory;
+  // Precedence: some flag pairs are true together across different phases but read
+  // as flat contradiction if printed side by side. Merge them into the tension
+  // itself — which is the truer historical statement anyway.
+  const skip = new Set();
+  if (mem.taught_widely && mem.hoarded) {
+    skip.add('taught_widely').add('hoarded');
+    n.push('He taught widely and hoarded jealously by turns — reach for the doctrine, reserve for its operative core — and the tension was never resolved, only lived.');
+  }
   for (const [key, line] of Object.entries(LEGACY_NOTES)) {
+    if (skip.has(key)) continue;
     const eq = key.indexOf('=');
     if (eq >= 0) {
       if (String(mem[key.slice(0, eq)]) === key.slice(eq + 1)) n.push(line);

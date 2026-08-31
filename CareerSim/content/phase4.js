@@ -19,7 +19,7 @@ export const NODES = [
   {
     id: 'desk', name: 'The Desk', icon: '✒',
     hook: 'Where the summa is actually written. Nothing else gets it done.',
-    encounters: ['pivot_begin', 'pivot_language', 'pivot_structure'],
+    encounters: ['pivot_begin', 'pivot_language', 'pivot_structure', 'pivot_globes'],
   },
   {
     id: 'diagram', name: 'The Drawing Board', icon: '◎',
@@ -203,6 +203,47 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'qualified', weight: 1, text: 'A perfect object for a readership of perhaps thirty men, most of whom you have met.',
             chronicle: 'He wrote for the thirty men who could already read him, and for nobody else.' },
+        ],
+      },
+    ],
+  },
+
+  pivot_globes: {
+    id: 'pivot_globes', phase: 4,
+    rubric: 'THE DESK · THE THREE GLOBES OF LIGHT',
+    grounding: 'ATTESTED',
+    source: 'BIOGRAPHY — Investigations’ own structure: three Globes of Light (Planet, Pearl, Peach) for the Mental, Written and Spoken Letter; an ascent–descent–ascent; "form is content"',
+    when: ['mem:investigations_begun'],
+    affordances: ['quiet'],
+    situation:
+      'The architecture question, finally: the Letter exists three ways — thought, written, spoken — and you have taken ' +
+      'to calling their registers the three Globes of Light: Planet, Pearl, and Peach. A summa could march through them ' +
+      'in order like a curriculum. Or it could move as the soul does — up, then down into the world, then up again — ' +
+      'so that the book’s own shape performs the doctrine. Form as content. No one has built a book that way.',
+    options: [
+      {
+        id: 'journey', label: 'Structure it as ascent–descent–ascent',
+        detail: 'The book’s shape performs the doctrine. Astonishing if it works; bewildering if it half-works.',
+        requires: ['meter:synthesis>=5'],
+        effects: { meters: { synthesis: 1 }, memory: { globes_structure: 'journey' } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'It locks. Planet, Pearl, Peach — mind, page, voice — and the reader who completes the circuit has enacted the cosmology, not merely read it. The book is now a machine that does something to the person who finishes it.',
+            effects: { meters: { synthesis: 1, transmission: 1 }, rep: { occult: 1 } },
+            chronicle: 'He built the summa as an ascent and descent and ascent, three Globes of Light, so that reading it performed the doctrine it argued.' },
+          { band: 'ambiguous', weight: 1, text: 'The structure holds — for readers who see it. Those who do not will call the book disordered, and some of them will be reviewing it for tribunals.',
+            effects: { rep: { scholarly: -1 } },
+            chronicle: 'His summa’s spiral structure enacted the doctrine for those who saw it, and looked like disorder to those who did not.' },
+        ],
+      },
+      {
+        id: 'curriculum', label: 'Structure it as a plain curriculum',
+        detail: 'Definitions to applications, in teaching order. Loses the enactment; gains every student.',
+        requires: [],
+        effects: { meters: { transmission: 1 }, memory: { globes_structure: 'curriculum' } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'Mental, then written, then spoken, each Globe closed before the next opens. A teacher can walk a class through it chapter by chapter — which is precisely what teachers will do with it for a century.',
+            effects: { meters: { transmission: 1 } },
+            chronicle: 'He ordered the three Globes as a curriculum, and teachers marched their students through it for a hundred years.' },
         ],
       },
     ],

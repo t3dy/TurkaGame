@@ -15,7 +15,7 @@ export const PHASE = {
     'Where you spend them decides who arrives in Isfahan.',
 };
 
-export { PEOPLE, ARTIFACTS } from './people.js?v=1';
+export { PEOPLE, ARTIFACTS } from './people.js?v=2';
 
 const IMG = (file, caption) => ({ src: '../assets/manuscripts/' + file, caption });
 
@@ -338,7 +338,7 @@ export const ENCOUNTERS = {
     source: 'BIOGRAPHY — Formation: Qāsim-i Anvār a close Cairo companion (VN c04)',
     affordances: ['sufi_gathering'],
     situation:
-      'Qāsim-i Anvār recites and the lodge forgets to breathe. Afterward he finds you, laughing, quoting your own ' +
+      'Qāsim-i Anvār recites and the whole khānqāh forgets to breathe. Afterward he finds you, laughing, quoting your own ' +
       'question back at you improved. Men like this either become your brother or your epitaph. Sometimes both.',
     options: [
       {

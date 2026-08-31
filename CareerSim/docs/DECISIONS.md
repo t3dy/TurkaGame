@@ -124,3 +124,35 @@ All five phases built and verified playable. Decisions made during the build:
   collapsed into the generic "Died With Its Author".
 - **`Carried in One Hand`** makes the Yazdī relationship legible as a *system*
   outcome rather than only a marginalia line; it is the attested transmission route.
+
+## Full-loop audit + educational layer (2026-08-31, fifth session)
+
+AUDIT.md created (evidence-based; grep/test/play, not recall) and its do-now items
+executed the same session:
+
+- **Artifacts made load-bearing**: `artifact:` joined the requirement grammar, a WORKS
+  margin block shows composed works with glosses, and the trials read them — the
+  Ṭahawī Circle favors the firm stance at the third tribunal, the summa favors the
+  textual defense at the second, the horoscope favors the patron gift. Rationale:
+  preparation must create verbs; a composed masterwork that changed nothing violated
+  the project's core loop promise.
+- **No dead Quintet branches, as a lint**: kīmiyā and sīmiyā were granted in Cairo and
+  never spent anywhere (grep-proved). New content spends them (ink chemistry at the
+  warrāq's; the decoy-chest escape at the eastern gate) and a test now fails the build
+  if any science is unspent post-Cairo.
+- **The educational layer is the gloss apparatus**: `content/lexicon.js` (23 real terms,
+  defined from the research) auto-glossed in situation prose with dotted underlines;
+  lint requires every defined term to be reachable in play. Rejected alternative: a
+  separate glossary screen — glossing at the moment of encounter teaches; an appendix
+  is homework.
+- **"The Attested Life"** ending folio: the historical record, row by row, each paired
+  with what this run did instead. The counterfactual thesis finally has its witness.
+- **Marginalia precedence**: contradictory flag pairs (taught_widely+hoarded) merge
+  into a line about the tension itself.
+- **+4 encounters** (62 total): isfahan_inks (Smith's artisanal epistemology),
+  pivot_globes (the Three Globes of Light, ATTESTED), trial_checkpoint, trial_letters.
+- **Cache-bust discipline bit us again**: engine.js imported state.js?v=2 after state
+  changed → browser ran stale grammar while node tests passed. Every internal module
+  version now bumps with its file; verified by re-testing the artifact boost live.
+- **Deferred, recorded in AUDIT.md**: demand profiles (SYSTEMS §6), citation-grade seal
+  sources, the Codex trophy page, people cap-tag coverage.

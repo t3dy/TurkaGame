@@ -39,6 +39,7 @@ export function newRun() {
 //   "person:yazdi"       person in network
 //   "access:observatory" institutional access
 //   "cap:poetry"         capability tag from people/artifacts
+//   "artifact:tahawi_circle"  a composed work is in hand
 //   "rep:scholarly>=2"   reputation threshold (also <= for negatives)
 //   "meter:synthesis>=3" meter threshold
 //   "mem:c02=public"     memory flag equals value
@@ -46,7 +47,7 @@ export function newRun() {
 //   "!mem:..."           negation of either memory form
 // Returns { ok, text } — text is the human-readable clause used for
 // unlockedBy / locked-reason display (UI guarantee #1, UI_STYLE_GUIDE §4).
-export function checkReq(state, req, people) {
+export function checkReq(state, req, people, artifacts) {
   const neg = req.startsWith('!');
   const body = neg ? req.slice(1) : req;
   let ok = false;
@@ -72,6 +73,10 @@ export function checkReq(state, req, people) {
     const id = body.slice(7);
     ok = state.access.includes(id);
     text = `access to ${id.replace(/_/g, ' ')}`;
+  } else if (body.startsWith('artifact:')) {
+    const id = body.slice(9);
+    ok = state.artifacts.includes(id);
+    text = artifacts && artifacts[id] ? artifacts[id].name : id.replace(/_/g, ' ');
   } else if (body.startsWith('cap:')) {
     const id = body.slice(4);
     ok = capSet(state, people).has(id);

@@ -1,8 +1,10 @@
 # Handover — CareerSim
 
-## State (2026-08-31, fourth session: SLICE 1 SHIPPED + ending fates tuned + pushed)
+## State (2026-08-31, fifth session: full-loop AUDIT + educational layer shipped)
 
 **All five phases play end to end as a static no-build site**, verified in-browser.
+**Read [AUDIT.md](AUDIT.md) before planning new work** — it is the evidence-based map
+of what interlocks, what was fixed on 2026-08-31, and the ranked remaining inventory.
 Supabase/Vercel still deliberately deferred (docs/DECISIONS.md "Slice 0 build").
 
 Run it: serve the repo root (`turkagame-site` launch config) → `/CareerSim/`.
@@ -24,10 +26,11 @@ Run it: serve the repo root (`turkagame-site` launch config) → `/CareerSim/`.
     phase end), the **two-axis ending matrix** (14 personal fates × 9 system fates),
     and `LEGACY_NOTES` — the ~150-entry marginalia table that reads the run's whole
     memory back to the player.
-- **Content** (`content/`) — **58 encounters across 5 phases**, 20 registry plates,
+- **Content** (`content/`) — **62 encounters across 5 phases**, 20+ registry plates,
   11 people, 6 artifacts. Every encounter grounded (ATTESTED / PLAUSIBLE-GAP /
-  INVENTED-COMPATIBLE) + sourced. `people.js` holds the shared cast; `index.js`
-  aggregates; each `phaseN.js` is content-only, no logic.
+  INVENTED-COMPATIBLE) + sourced. `people.js` holds the shared cast; `lexicon.js`
+  holds the 23-term historical glossary (auto-glossed in situation prose — the
+  educational layer); `index.js` aggregates; each `phaseN.js` is content-only.
 - **UI** (`src/ui.js`, `css/game.css`) — full UI_STYLE_GUIDE set: Frontispiece,
   **Phase Intro**, Itinerary, Folio, Seal-and-Line, **Colophon**, Two-Page Spread,
   phase-grouped Chronicle codex; margin column now shows exposure tier, obligations
@@ -39,12 +42,14 @@ Run it: serve the repo root (`turkagame-site` launch config) → `/CareerSim/`.
   nativity figure (II), square Kufic Bismillah / Safavid illuminated folio /
   "Caesar Makes a Talisman" / zodiac-and-lunar-mansions map (III), Persian 6×6 wafq
   (IV), Hārūt and Mārūt at Babel + Hilye (V). All rights-cleared, full provenance.
-- **Tests** (`tools/test-engine.mjs`) — **21 passing** via `node --test`, including
+- **Tests** (`tools/test-engine.mjs`) — **25 passing** via `node --test`, including
   the Chekhov's-gun memory lint (now reads `LEGACY_NOTES` directly), phase/exposure
   gating, obligation charging, contract delivery/failure/settlement, the
   historical-trajectory reachability check, fate-differentiation checks (11 distinct
   lives → 11 distinct verdicts), and a lint that **every plate image exists in the
-  provenance registry**.
+  provenance registry**, plus the audit lints: **no dead Quintet branches** (every
+  science must be required/boosted post-Cairo), artifact load-bearing-ness, marginalia
+  contradiction precedence, and **every lexicon term reachable in play**.
 
 ### Verified in-browser this session
 

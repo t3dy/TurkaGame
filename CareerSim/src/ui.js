@@ -3,7 +3,8 @@
 // Two-voice rule: world text arrives from content (Chronicle voice); everything
 // authored here is Gloss voice — plain, ≤2 sentences, one question answered.
 
-import { QUINTET } from './engine/state.js?v=2';
+import { QUINTET } from './engine/state.js?v=3';
+import { LEXICON } from '../content/lexicon.js?v=2';
 
 const $ = (sel) => document.querySelector(sel);
 export const app = () => $('#app');
@@ -23,9 +24,26 @@ const ROMAN = { 1: 'PHASE I', 2: 'PHASE II', 3: 'PHASE III', 4: 'PHASE IV', 5: '
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
+// The educational layer: wrap the first occurrence of each lexicon term in a
+// glossed span (dotted underline, definition on hover/tap). Input must already be
+// escaped. Longest terms first so "Ṭahawī Circle" wins over "Tetractys" nesting.
+const LEX_TERMS = Object.keys(LEXICON).sort((a, b) => b.length - a.length);
+function glossify(escaped) {
+  let out = escaped;
+  for (const term of LEX_TERMS) {
+    const i = out.indexOf(term);
+    if (i === -1) continue;
+    // don't gloss inside an already-inserted span
+    const before = out.slice(0, i);
+    if ((before.match(/<span/g) || []).length !== (before.match(/<\/span>/g) || []).length) continue;
+    out = before + `<span class="lex" data-gloss="${esc(LEXICON[term])}">${term}</span>` + out.slice(i + term.length);
+  }
+  return out;
+}
+
 // ---- margin column ----------------------------------------------------------
 
-export function marginColumn(state, people, tier) {
+export function marginColumn(state, people, artifacts, tier) {
   const dots = (n, max, cls) =>
     Array.from({ length: max }, (_, i) => `<i class="dot ${i < n ? 'on ' + (cls || '') : ''}"></i>`).join('');
   const rep = (k) => {
@@ -36,6 +54,10 @@ export function marginColumn(state, people, tier) {
   const sci = QUINTET.filter((k) => state.quintet[k] > 0)
     .map((k) => `<div class="mrow"><span>${SCI[k]}</span><b>${'●'.repeat(state.quintet[k])}</b></div>`).join('');
   const net = state.people.map((id) => `<div class="mrow person" data-gloss="${esc(people[id].gloss)}"><span>${esc(people[id].name)}</span></div>`).join('');
+  const works = state.artifacts.map((id) => {
+    const a = (artifacts || {})[id];
+    return `<div class="mrow work" data-gloss="${esc(a ? a.gloss : '')}"><span>${esc(a ? a.name : id)}</span></div>`;
+  }).join('');
   return `
   <aside class="margin-col">
     <div class="mblock" data-gloss="Seasons left in this phase. Every visit spends one. When they run out, only the departure remains.">
@@ -57,6 +79,7 @@ export function marginColumn(state, people, tier) {
     <div class="mblock"><div class="mhead">STANDING</div>${['orthodox', 'occult', 'imperial', 'scholarly'].map(rep).join('')}</div>
     ${sci ? `<div class="mblock"><div class="mhead">SCIENCES</div>${sci}</div>` : ''}
     ${net ? `<div class="mblock"><div class="mhead">COMPANIONS</div>${net}</div>` : ''}
+    ${works ? `<div class="mblock"><div class="mhead">WORKS</div>${works}</div>` : ''}
   </aside>`;
 }
 
@@ -109,6 +132,10 @@ export function renderManual() {
   <div class="screen manual">
     <div class="rubric">HOW TO READ THIS GAME</div>
     <div class="folio">
+      <p class="manual-p"><b>The history.</b> Ṣāʾin al-Dīn ʿAlī ibn Turka of Isfahan (1369–1432) was real: Chief Judge of Isfahan, and the most systematic occult philosopher of Timurid Iran — a man who tried to turn the science of letters into a universal, mathematical science of everything, and paid for its success with three state inquisitions and exile. This game is built on the scholarship of Matthew Melvin-Koushki, quoted with permission. You are invited to lead this life differently — the game will tell you, at the end, how the record differs.</p>
+      <p class="manual-p"><b>The seals and the words.</b> Every situation carries a seal — ⬤ attested, ◐ plausible, ○ imagined — click it for the source. Historical terms in the text (<span class="lex">muwaqqit</span>, <span class="lex">bazm</span>, <span class="lex">wafq</span>…) carry a dotted underline: hover or tap for what they really meant.</p>
+    </div>
+    <div class="folio">
       <p class="manual-p"><b>The life.</b> Five phases — Cairo, Isfahan, the courts, the pivot year, the trials. Each is a map of places to invest attention, and each visit costs one season. You will never see everything in a phase; that is the design, not a fault.</p>
       <p class="manual-p"><b>Obligations and promises.</b> An office (the judgeship) takes its season whether or not you are writing. A patron's commission has a deadline and a reward — and every commission you deliver raises what the next patron will demand.</p>
       <p class="manual-p"><b>The folio.</b> Each situation offers choices. Beneath every open choice you'll see <i>why you have it</i> — the teacher, science, or friendship that unlocked it. Locked choices stay visible with what they would need. Your preparation is always credited.</p>
@@ -121,7 +148,7 @@ export function renderManual() {
   </div>`;
 }
 
-export function renderMap(state, phase, nodes, nodeStatus, people, firstVisit, tier) {
+export function renderMap(state, phase, nodes, nodeStatus, people, artifacts, firstVisit, tier) {
   const cells = nodes.map((n) => {
     const st = nodeStatus[n.id]; // 'open' | 'spent' | 'locked'
     const visits = state.visits[n.id] || 0;
@@ -140,11 +167,11 @@ export function renderMap(state, phase, nodes, nodeStatus, people, firstVisit, t
       ${firstVisit ? `<p class="marginalia" data-note="map">Each place costs one season of your seven. Depth or breadth — returning somewhere twice goes deeper than seeing everywhere once. <button class="dismiss" data-dismiss="map">understood</button></p>` : ''}
       <div class="itinerary">${cells}</div>
     </main>
-    ${marginColumn(state, people, tier)}
+    ${marginColumn(state, people, artifacts, tier)}
   </div>`;
 }
 
-export function renderEncounter(state, enc, evaluated, people, firstEnc, turnReport, tier) {
+export function renderEncounter(state, enc, evaluated, people, artifacts, firstEnc, turnReport, tier) {
   const g = GROUND[enc.grounding];
   const opts = evaluated.map((ev, i) => {
     const o = ev.opt;
@@ -174,25 +201,25 @@ export function renderEncounter(state, enc, evaluated, people, firstEnc, turnRep
       <div class="folio">
         <div class="rubric">${esc(enc.rubric)}</div>
         ${enc.plate ? `<figure class="plate-frame"><img src="${esc(enc.plate.src)}" alt=""><figcaption>${esc(enc.plate.caption)}</figcaption></figure>` : ''}
-        <p class="situation">${esc(enc.situation)}
+        <p class="situation">${glossify(esc(enc.situation))}
           <button class="ground-seal" data-gloss="${esc(g.gloss)} Source: ${esc(enc.source)}">${g.seal} ${enc.grounding.split('-')[0].toLowerCase()}</button>
         </p>
         ${firstEnc ? `<p class="marginalia" data-note="enc">Open choices show <i>why</i> you have them; locked ones show what they'd need. What you study and whom you befriend decides which doors exist. <button class="dismiss" data-dismiss="enc">understood</button></p>` : ''}
         <div class="options">${opts}</div>
       </div>
     </main>
-    ${marginColumn(state, people, tier)}
+    ${marginColumn(state, people, artifacts, tier)}
   </div>`;
 }
 
-export function renderResolution(state, enc, result, people, firstRes, tier) {
+export function renderResolution(state, enc, result, people, artifacts, firstRes, tier) {
   const chips = result.deltas.filter((d) => d.kind !== 'time').map((d) => {
     if (d.kind === 'meter') return chip(d.d > 0 ? 'up' : 'down', `${d.key} ${d.d > 0 ? '+' + d.d : d.d}`, d.key === 'exposure' ? 'fire' : '');
     if (d.kind === 'rep') return chip(d.d > 0 ? 'up' : 'down', `${d.key} standing ${d.d > 0 ? '+' + d.d : d.d}`);
     if (d.kind === 'quintet') return chip('up', `${SCI[d.key]} ${'●'.repeat(state.quintet[d.key])}`);
     if (d.kind === 'person') return chip('gain', `${people[d.key].name} joins your circle`);
     if (d.kind === 'access') return chip('gain', `access: ${d.key.replace(/_/g, ' ')}`);
-    if (d.kind === 'artifact') return chip('gain', 'artifact gained');
+    if (d.kind === 'artifact') return chip('gain', ((artifacts || {})[d.key] || { name: 'a work' }).name + ' — now among your works');
     return '';
   }).join('');
   const mem = result.memWrites.length
@@ -210,7 +237,7 @@ export function renderResolution(state, enc, result, people, firstRes, tier) {
         <button class="continue-btn">continue ⤳</button>
       </div>
     </main>
-    ${marginColumn(state, people, tier)}
+    ${marginColumn(state, people, artifacts, tier)}
   </div>`;
   if (result.chronicleLine) inkIn($('#chron-ink'), '“' + result.chronicleLine + '”');
 }
@@ -253,6 +280,11 @@ export function renderEnding(state, verdict, people, phases) {
       </div>
     </div>
     ${notes ? `<div class="folio verdict-margin"><div class="page-head">MARGINALIA</div>${notes}</div>` : ''}
+    <div class="folio verdict-margin attested-life">
+      <div class="page-head">THE ATTESTED LIFE</div>
+      <p class="verdict-note attested-intro">What the record says of the historical Ṣāʾin al-Dīn ʿAlī ibn Turka (1369–1432) — beside the life you led:</p>
+      ${attestedComparison(state)}
+    </div>
     <div class="folio codex">
       <div class="rubric">THE CHRONICLE OF ʿALĪ IBN TURKA</div>
       ${byPhase || '<p class="codex-line">— the pages are blank —</p>'}
@@ -269,7 +301,7 @@ export function renderPhaseIntro(phase, state) {
     <div class="rubric">${ROMAN[phase.id]} · ${esc(phase.dateline)}</div>
     <h1 class="phase-title">${esc(phase.name)}</h1>
     <div class="folio">
-      <p class="phase-blurb">${esc(phase.intro)}</p>
+      <p class="phase-blurb">${glossify(esc(phase.intro))}</p>
       <p class="phase-budget">⏳ ${phase.time} seasons${state.obligations && state.obligations.length ? ' · standing obligations: ' + state.obligations.map((o) => esc(o.name)).join(', ') : ''}</p>
     </div>
     <button class="toc-line center begin-phase-btn"><span>Begin ⤳</span></button>
@@ -313,6 +345,33 @@ function turnReportBanner(r) {
       : `<span class="chip down">✘ ${esc(c.contract.name)} failed at its deadline</span>`);
   }
   return bits.length ? `<div class="turn-report">${bits.join('')}</div>` : '';
+}
+
+// The educational payoff: the historical record, line by line, each paired with
+// what happened in THIS run. Chronicle voice for history, plain contrast after the em-dash.
+function attestedComparison(state) {
+  const m = state.memory;
+  const rows = [];
+  const row = (hist, yours) => rows.push(`<p class="verdict-note"><b class="att-hist">${hist}</b> — ${yours}</p>`);
+
+  row('He studied in Cairo under Sayyid Ḥusayn Akhlāṭī, lettrist, alchemist and geomancer.',
+    m.circle_member ? 'so did you.' : 'you never entered the circle — a formation the historical man could not have skipped.');
+  row('He served as Chief Judge of Isfahan, famous for defending the weak against the powerful.',
+    m.took_judgeship ? (m.defended_weak ? 'you took the bench and ruled as he did.' : 'you took the bench; whether you used it as he did, your chronicle knows.') : 'you refused the bench he was defined by.');
+  row('In 1420 he completed Investigations — the first systematic summa of Islamic lettrism — as Ulugh Beg broke ground on the Samarkand observatory.',
+    m.investigations_begun ? 'your summa exists.' : 'your summa was never written — the counterfactual is total.');
+  row('His central diagram, the Ṭahawī Circle, survives in his own handwriting (Tehran, Majlis Library MS 10196, f. 63a).',
+    m.tahawi_circle ? 'you drew it.' : 'you never drew the Circle; your system has no surviving image.');
+  row('He faced three state inquisitions engineered by rival colleagues: he won the first two and lost the third, c. 1427.',
+    m.third_inquisition === 'lost' ? 'the same road, ending the same way.'
+      : m.third_inquisition === 'survived' ? 'you survived all three — a thing the record does not grant the historical man.'
+      : m.recanted ? 'you bent, which the record says he refused to do.'
+      : 'the third tribunal never reached you.');
+  row('Qāsim-i Anvār, his Cairo companion, was exiled in 1427 over the same lettrist associations.',
+    m.qasim_defended ? 'you stood by him.' : m.qasim_abandoned ? 'you let him go alone.' : 'in your life the friendship never came to its test.');
+  row('He died in 1432, impoverished and in legal limbo, after five years of wandering exile; Yazdī — who copied his autograph — outlived him by twenty-two years, and the platform they built became imperial cosmology across six court cultures.',
+    (m.yazdi_copied || m.yazdi_keeps) ? 'your Yazdī carries the copy too.' : 'your Yazdī never copied the work — history’s own transmission route, closed.');
+  return rows.join('');
 }
 
 // ---- flourishes -------------------------------------------------------------
