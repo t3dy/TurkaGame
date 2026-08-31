@@ -804,6 +804,51 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "occult-philosophy",
+      "name": "Occult Philosophy",
+      "category": "OCCULT_SCIENCE",
+      "card": "Islamic tradition positioning occult sciences as rigorous, systematic inquiry into hidden principles of creation. Distinguished from superstition by mathematical grounding and philosophical coherence. Ibn Turka's system is exemplar.",
+      "body": "Occult philosophy in Islamic context means systematic inquiry into principles underlying manifest reality—what is hidden (*batin*) as opposed to manifest (*zahir*). Not superstition but rigorous science grounded in mathematics and metaphysics.",
+      "related_concepts": [
+        "ilm-al-huruf",
+        "talismanic-science",
+        "occult-science-universal"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. The Occult Court."
+      ],
+      "tags": [
+        "occult",
+        "philosophy",
+        "systematic"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "slug": "timurid-patronage",
+      "name": "Timurid Court Patronage",
+      "category": "INSTITUTION_TERM",
+      "card": "The institutional and political context enabling Ibn Turka and Isfahan Circle. Timurid rulers patronized scholars, established courts as intellectual centers, created conditions for systematic philosophical innovation.",
+      "body": "Timurid dynasty (1370–1506) under figures like Shahrukh actively patronized scholars and artists. Courts in Samarkand, Isfahan, Yazd became magnets for intellectuals. This patronage enabled Ibn Turka's work and the Isfahan Circle's activities.",
+      "related_concepts": [
+        "isfahan-circle"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. The Occult Court."
+      ],
+      "tags": [
+        "patronage",
+        "timurid",
+        "court",
+        "political"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "bibliography": [
@@ -1054,6 +1099,55 @@
         "metaphysics",
         "mysticism",
         "theology"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "source_id": "corbin-islamic-philosophy-1993",
+      "author": "Corbin, Henry",
+      "title": "History of Islamic Philosophy",
+      "year": 1993,
+      "publisher": "Kegan Paul International",
+      "pub_type": "monograph",
+      "relevance": "CONTEXTUAL",
+      "card": "Corbin's magisterial history covering Ibn Arabi, Suhrawardi, and later Islamic philosophy. Essential context for understanding Ibn Turka within broader tradition of Islamic thought.",
+      "body": "Corbin's comprehensive survey situates Ibn Turka within longer historical trajectory of Islamic philosophy. Particularly strong on Illuminationist philosophy and its development through Suhrawardi and Mulla Sadra.",
+      "key_arguments": [
+        "islamic-philosophy-continuity"
+      ],
+      "conversion_status": "EXTERNAL",
+      "page_count": 500,
+      "tags": [
+        "philosophy",
+        "history",
+        "illuminationism"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "source_id": "nasr-islamic-sciences-1976",
+      "author": "Nasr, Seyyed Hossein",
+      "title": "Islamic Science and the Making of the European Renaissance",
+      "year": 1976,
+      "publisher": "Mithras Publications",
+      "pub_type": "monograph",
+      "relevance": "CONTEXTUAL",
+      "card": "Nasr argues Islamic sciences were not declinist but generative throughout medieval and early modern periods. Situates occult sciences and Ibn Turka within global intellectual history.",
+      "body": "Positions Islamic philosophy and science as continuous achievement rather than decline. Relevant to understanding Ibn Turka's system as genuine innovation, not preservation.",
+      "key_arguments": [
+        "against-decline",
+        "islamic-science-achievement"
+      ],
+      "conversion_status": "EXTERNAL",
+      "page_count": 300,
+      "tags": [
+        "islamic-science",
+        "philosophy",
+        "historiography"
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
