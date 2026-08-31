@@ -663,6 +663,35 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "peripatetic-philosophy",
+      "name": "Peripatetic Philosophy",
+      "name_arabic": "الفلسفة المشائية",
+      "name_script": "الفلسفة المشائية",
+      "literal_meaning": "Philosophy of those who walk (Aristotelian school)",
+      "category": "EPISTEMOLOGY",
+      "card": "**Al-Falsafa al-Mashaʾiya** (Peripatetic Philosophy). The Aristotelian philosophical tradition as transmitted and developed in Islamic world. Emphasizes rational inquiry, logical syllogism, study of natural world, metaphysics grounded in being and causation. Ibn Turka synthesized peripatetic logic and metaphysics with [[ilm-al-huruf|lettrism]] and [[pythagorean-cosmology|Pythagorean mathematics]], arguing that occult science achieves what peripatetic philosophy merely attempts—systematic knowledge of causation and being.",
+      "body": "**Peripatetic philosophy** (*al-falsafa al-mashaʾiya*) refers to the Aristotelian tradition as developed and transmitted in the Islamic world. The name derives from Aristotle's practice of teaching while walking (*peripateo*) in the Lyceum. Islamic philosophers—al-Kindi, al-Farabi, Ibn Sina—adopted and adapted Aristotelian logic, metaphysics, and natural philosophy, integrating them with Islamic theology and the philosophical heritage of Greek Neoplatonism. Key commitments: (1) Reason (*ʿaql*) is primary tool for understanding reality. (2) Logic (syllogistic reasoning) provides rigorous methodology. (3) Being (*wujud*) is fundamental category; understanding causation requires understanding gradations and dependencies of being. (4) Metaphysics is possible: systematic knowledge of principles transcending particular things. By Ibn Turka's era, peripatetic philosophy was the dominant intellectual framework across Islamic world. But Ibn Turka and his circle saw its limitations: peripatetic method, while rigorous, remained abstract and speculative. It described cosmic structure but did not engage it operatively. Peripatetic philosophers asked *how* creation unfolds; Ibn Turka asked *how to participate in its unfolding*. By integrating peripatetic logic with [[ilm-al-huruf|lettrism]] and [[pythagorean-cosmology|Pythagorean mathematics]], Ibn Turka claimed to achieve what peripatetic philosophy merely attempted—systematic, rationally grounded knowledge of causation and being that is simultaneously operative (producing real effects). In this sense, Ibn Turka's system transcends peripatetic philosophy by incorporating and surpassing it.",
+      "hierarchy_note": "Peripatetic philosophy is the dominant rational framework Ibn Turka synthesizes with and transcends through lettrism.",
+      "related_concepts": [
+        "ilm-al-huruf",
+        "pythagorean-cosmology",
+        "epistemology"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. Powers of One, pp. 100-140."
+      ],
+      "tags": [
+        "philosophy",
+        "aristotelian",
+        "logic",
+        "metaphysics",
+        "reason"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "bibliography": [
