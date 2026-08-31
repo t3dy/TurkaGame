@@ -624,6 +624,31 @@
       "review_status": "DRAFT",
       "confidence": "MEDIUM",
       "period": "1395-1432"
+    },
+    {
+      "slug": "new-brethren-purity",
+      "name": "New Brethren of Purity",
+      "institution_type": "SCHOLARLY_NETWORK",
+      "period": "1390-1450",
+      "region": "Isfahan / Cairo / Anatolia",
+      "card": "**Ikhwan al-Safa al-Jadid** (The New Brethren of Purity). Transregional network of late 14th- and 15th-century scholars, occultists, and courtiers claiming succession to the 10th-century Brethren of Purity. Members included [[ibn-turka|Ibn Turka]], [[akhlati|Akhlati]], [[sharaf-al-din-yazdi|Sharaf al-Din Yazdi]], and figures across Ottoman, Mamluk, and Persian courts. United by commitment to [[ilm-al-huruf|lettrism]], [[abjad-numerology|numerology]], and the integration of occult sciences with [[pythagorean-cosmology|Pythagorean philosophy]]. Represented a self-conscious intellectual movement to establish occultism as legitimate, rational universal science.",
+      "body": "## Ikhwan al-Safa al-Jadid: The New Brethren of Purity\n\nThe **New Brethren of Purity** (Ikhwan al-Safa al-Jadid) was a transregional network of scholars and practitioners spanning three major power centers—Ottoman Anatolia, Mamluk Egypt/Syria, and Timurid Persia—in the late 14th and 15th centuries. They invoked the name of the legendary 10th-century Brethren of Purity (*Ikhwan al-Safa*), but understood themselves as a *new* order inaugurating a fresh era of occult science.\n\n### Network Structure\n\nUnlike formal institutions, the New Brethren functioned as a loose confederation bound by shared intellectual commitments rather than hierarchy or bylaws. Key nodes included:\n- **Isfahan Circle** ([[ibn-turka|Ibn Turka]], [[sharaf-al-din-yazdi|Sharaf al-Din Yazdi]], [[qazizada-rumi|Qazizada Rumi]])\n- **Cairo/Mamluk court** ([[akhlati|Sayyid Husayn Akhlati]], Ottoman and Mamluk occultists)\n- **Anatolian scholars** (Ottoman court philosophers and talismanic practitioners)\n\n### Core Project\n\nThe New Brethren were united by a single grand project: to establish that [[ilm-al-huruf|lettrism]], [[abjad-numerology|numerology]], [[pythagorean-cosmology|Pythagorean mathematics]], and [[divine-names|divine-names doctrine]] constitute a comprehensive, rational science encompassing metaphysics, ethics, cosmology, and operative practice. This was not mysticism in the Sufi sense but *rational occultism*—grounded in logic, mathematics, and philosophical rigor.\n\n### Historical Significance\n\nMelvin-Koushki's research demonstrates that the New Brethren were not marginal occultists but central intellectual figures in their respective courts, commanding patronage, commanding audiences, and exerting real influence over political and administrative thought. They succeeded in their project: by the early 16th century, their intellectual synthesis had become canonical in Ottoman and Safavid philosophy.\n\nThe New Brethren represent a crucial moment in global intellectual history—when Islamic occult philosophy achieved systematic articulation, international coordination, and institutional legitimacy, rivaling and arguably exceeding contemporary European and Chinese philosophical achievements.",
+      "literature": [
+        "Melvin-Koushki, Matthew. *The New Brethren of Purity: Occult Science and Statecraft in the Islamic World*. Boston: BRILL, 2019.",
+        "Melvin-Koushki, Matthew. *The Occult Court: Magic, Medicine, and Mathematics in the Fourteenth and Fifteenth-Century Isfahan*. Boston: BRILL, 2025."
+      ],
+      "tags": [
+        "network",
+        "occult-science",
+        "transnational",
+        "philosophy",
+        "timurid",
+        "mamluk",
+        "ottoman"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ]
 }
