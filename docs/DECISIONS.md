@@ -253,3 +253,50 @@ Four user calls made via explicit Q&A at kickoff (full detail in
 `docs/GAME_CAREER_SIM.md` is superseded by `CareerSim/DESIGN.md` (banner added). The
 seven-tier-hierarchy blocker recorded above still stands and is carried in the
 CareerSim decisions log as an open item.
+
+## 2026-08-31: Ibn Turka Portal Architecture
+
+### Scope & Purpose
+Built a standalone, TurkaGame-internal knowledge portal from Melvin-Koushki's complete corpus (43 sources, ~6M characters). Purely scholarly, no game material in the schema — design work citing the portal lives in `../docs/` and the game folders.
+
+### Decisions
+
+**Portal home:** TurkaGame/portal/ (not merged into sibling IslamicateOccultPortal)
+- Reason: Ibn Turka-centered, tightly coupled to game world-building. Corpus and entities are game-specific first-pass (focused on Ibn Turka himself), not the general Islamicate tradition. The two projects stay separate, cross-link via slug references.
+
+**Entry depth strategy:** Full encyclopedia-quality on Ibn Turka and core lettrism first. Secondary figures, peripheral topics, and synthesis essays in later passes.
+- Reason: Constrains scope to achievable first-session work; establishes the house style and research discipline on the highest-value material; other entries build on that foundation.
+
+**Entry format:** Markdown card + body in seed.json, rendered to HTML at build time.
+- Reason: Match your existing card/page system (ALCHEMYTIMELINEMAP, Pico). Easier for me to write and you to edit while still producing your canonical HTML entry pages.
+
+**No game material in the portal schema itself** — no `game_note` fields, no `game_connections` table. 
+- Reason: Clean fact/fiction separation (inherited from WitcherPortal convention). The portal is a research reference; game design docs reference portal entries by slug, keeping the two layers intellectually distinct and independently reusable.
+
+**Research tool:** Corpus isn't read end-to-end. mine_corpus.py enforces the pattern: rank → kwic → read → cite. Every hit includes source + page number, enabling immediate provenance-grounded writing.
+
+### Artifact Structure
+```
+portal/
+├── corpus/sources/*.md    — 42 converted PDFs + INDEX.md (gitignored, copyrighted)
+├── db/turka.db            — SQLite (generated, gitignored)
+├── data/
+│   ├── seed.json          — Hand-authored entries (figures, concepts, etc.)
+│   └── corpus_manifest.json
+├── scripts/
+│   ├── convert_corpus.py  — PDF → markdown
+│   ├── init_db.py         — Create schema
+│   ├── mine_corpus.py     — Search tool (not for writing, for research)
+│   ├── seed_from_json.py  — JSON → DB
+│   └── build_site.py      — DB → HTML
+├── site/                  — Generated HTML (git-tracked)
+├── docs/
+│   └── STYLE_ENTRIES.md   — Encyclopedia entry guide
+└── README.md
+```
+
+### Why This Matters
+The corpus alone is an 6M-character haystack. A research tool that returns results with page numbers is the difference between "I could probably find it" and "here's the exact source." This enforces provenance rigor from the start and saves massive rework later when entries need to be cited.
+
+The purely-scholarly schema (no game fields) lets the portal stand alone, useful for any future project touching Islamicate occultism or Ibn Turka, while keeping game design work in its proper place (the game folders and design docs).
+
