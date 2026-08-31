@@ -3,7 +3,7 @@
 // Two-voice rule: world text arrives from content (Chronicle voice); everything
 // authored here is Gloss voice — plain, ≤2 sentences, one question answered.
 
-import { QUINTET } from './engine/state.js?v=1';
+import { QUINTET } from './engine/state.js?v=2';
 
 const $ = (sel) => document.querySelector(sel);
 export const app = () => $('#app');
@@ -19,11 +19,13 @@ const GROUND = {
   'INVENTED-COMPATIBLE': { seal: '○', gloss: 'Imagined: invented for play, built to be compatible with the world the sources describe.' },
 };
 
+const ROMAN = { 1: 'PHASE I', 2: 'PHASE II', 3: 'PHASE III', 4: 'PHASE IV', 5: 'PHASE V' };
+
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 // ---- margin column ----------------------------------------------------------
 
-export function marginColumn(state, people) {
+export function marginColumn(state, people, tier) {
   const dots = (n, max, cls) =>
     Array.from({ length: max }, (_, i) => `<i class="dot ${i < n ? 'on ' + (cls || '') : ''}"></i>`).join('');
   const rep = (k) => {
@@ -36,14 +38,16 @@ export function marginColumn(state, people) {
   const net = state.people.map((id) => `<div class="mrow person" data-gloss="${esc(people[id].gloss)}"><span>${esc(people[id].name)}</span></div>`).join('');
   return `
   <aside class="margin-col">
-    <div class="mblock" data-gloss="Seasons left in Cairo. Every visit spends one. When they run out, only the road home remains.">
+    <div class="mblock" data-gloss="Seasons left in this phase. Every visit spends one. When they run out, only the departure remains.">
       <div class="mhead">TIME</div>
-      <div class="mdots">${dots(state.time, 7, 'time')}</div>
+      <div class="mdots">${dots(state.time, Math.max(state.time, 9), 'time')}<span class="mnum">${state.time}</span></div>
     </div>
-    <div class="mblock" data-gloss="How visible your success has made you. It rises; it almost never falls. High exposure invites challenges, then accusations.">
-      <div class="mhead">EXPOSURE</div>
+    <div class="mblock" data-gloss="${esc(tier ? tier.gloss : 'How visible your success has made you. It rises; it almost never falls.')}">
+      <div class="mhead">EXPOSURE${tier ? ' · <span class="tier">' + esc(tier.label) + '</span>' : ''}</div>
       <div class="mdots">${dots(state.meters.exposure, 10, 'fire')}<span class="mnum">${state.meters.exposure}</span></div>
     </div>
+    ${obligationsBlock(state)}
+    ${contractsBlock(state)}
     <div class="mblock">
       <div class="mhead">THE WORK</div>
       <div class="mrow" data-gloss="How much of the universal system you understand — the connections drawn so far."><span>synthesis</span><b>${state.meters.synthesis}</b></div>
@@ -54,6 +58,23 @@ export function marginColumn(state, people) {
     ${sci ? `<div class="mblock"><div class="mhead">SCIENCES</div>${sci}</div>` : ''}
     ${net ? `<div class="mblock"><div class="mhead">COMPANIONS</div>${net}</div>` : ''}
   </aside>`;
+}
+
+function obligationsBlock(state) {
+  if (!state.obligations || !state.obligations.length) return '';
+  const rows = state.obligations.map((o) =>
+    `<div class="mrow ob" data-gloss="${esc(o.gloss || '')}"><span>${esc(o.name)}</span><b>⏳${o.cost}</b></div>`).join('');
+  return `<div class="mblock"><div class="mhead">OBLIGATIONS</div>${rows}</div>`;
+}
+
+function contractsBlock(state) {
+  const open = (state.contracts || []).filter((c) => c.status === 'open');
+  if (!open.length) return '';
+  const rows = open.map((c) => {
+    const urgent = c.turnsLeft <= 2 ? ' urgent' : '';
+    return `<div class="mrow contract${urgent}" data-gloss="${esc(c.promise + ' — a patron’s expectations, once raised, never come back down.')}"><span>${esc(c.name)}</span><b>${c.turnsLeft}⏳</b></div>`;
+  }).join('');
+  return `<div class="mblock"><div class="mhead">PROMISES</div>${rows}</div>`;
 }
 
 const REP_GLOSS = {
@@ -73,10 +94,10 @@ export function renderTitle(hasSave) {
     </div>
     <h1 class="game-title">Ibn Turka<span class="title-sep">·</span>The Occult Court</h1>
     <p class="title-thesis">A career roguelike about making a universal science real</p>
-    <p class="title-sub">Slice 0 — the Cairo years, c. 1385–1397</p>
+    <p class="title-sub">A life in five phases · Cairo 1385 — exile 1432</p>
     <nav class="toc">
       <button class="toc-line" data-act="new"><span>Begin a Life</span><i class="toc-dots"></i><span class="toc-n">I</span></button>
-      ${hasSave ? '<button class="toc-line" data-act="continue"><span>Continue</span><i class="toc-dots"></i><span class="toc-n">II</span></button>' : ''}
+      ${hasSave ? '<button class="toc-line" data-act="resume"><span>Continue</span><i class="toc-dots"></i><span class="toc-n">II</span></button>' : ''}
       <button class="toc-line" data-act="manual"><span>How to Read This Game</span><i class="toc-dots"></i><span class="toc-n">${hasSave ? 'III' : 'II'}</span></button>
     </nav>
     <p class="colophon-note">Built on the research of Matthew Melvin-Koushki · every situation carries its grounding seal</p>
@@ -88,17 +109,19 @@ export function renderManual() {
   <div class="screen manual">
     <div class="rubric">HOW TO READ THIS GAME</div>
     <div class="folio">
-      <p class="manual-p"><b>The itinerary.</b> Cairo is a map of places to invest attention. Each visit costs one season of <b>time</b>; you have seven. You will not see everything — that is the design, not a fault.</p>
+      <p class="manual-p"><b>The life.</b> Five phases — Cairo, Isfahan, the courts, the pivot year, the trials. Each is a map of places to invest attention, and each visit costs one season. You will never see everything in a phase; that is the design, not a fault.</p>
+      <p class="manual-p"><b>Obligations and promises.</b> An office (the judgeship) takes its season whether or not you are writing. A patron's commission has a deadline and a reward — and every commission you deliver raises what the next patron will demand.</p>
       <p class="manual-p"><b>The folio.</b> Each situation offers choices. Beneath every open choice you'll see <i>why you have it</i> — the teacher, science, or friendship that unlocked it. Locked choices stay visible with what they would need. Your preparation is always credited.</p>
       <p class="manual-p"><b>The seal.</b> Outcomes land on a ladder — triumph to disaster — tilted by what you bring, never a coin-flip. Every change is shown; nothing moves silently.</p>
       <p class="manual-p"><b>Memory.</b> When you're told <i>"this will be remembered,"</i> believe it. Some later situation reads that memory. Nothing in this world forgets.</p>
+      <p class="manual-p"><b>Exposure.</b> Success makes you visible, and visibility is the whole indictment. Exposure rises and almost never falls; at each tier the world sends harder things at you. The three inquisitions are where it comes due.</p>
       <p class="manual-p"><b>The chronicle.</b> Your run writes itself as a chronicle, line by line, and hands it to you at the end. The small seals on each situation — ⬤ attested, ◐ plausible, ○ imagined — tell you honestly where history ends and the game begins.</p>
     </div>
     <button class="quiet-btn" data-act="back">↩ return to the frontispiece</button>
   </div>`;
 }
 
-export function renderMap(state, phase, nodes, nodeStatus, people, firstVisit) {
+export function renderMap(state, phase, nodes, nodeStatus, people, firstVisit, tier) {
   const cells = nodes.map((n) => {
     const st = nodeStatus[n.id]; // 'open' | 'spent' | 'locked'
     const visits = state.visits[n.id] || 0;
@@ -113,15 +136,15 @@ export function renderMap(state, phase, nodes, nodeStatus, people, firstVisit) {
   app().innerHTML = `
   <div class="screen with-margin">
     <main class="play-area">
-      <div class="rubric">PHASE I — ${esc(phase.name)} · ${esc(phase.dateline)}</div>
+      <div class="rubric">${ROMAN[phase.id]} · ${esc(phase.name)} · ${esc(phase.dateline)}</div>
       ${firstVisit ? `<p class="marginalia" data-note="map">Each place costs one season of your seven. Depth or breadth — returning somewhere twice goes deeper than seeing everywhere once. <button class="dismiss" data-dismiss="map">understood</button></p>` : ''}
       <div class="itinerary">${cells}</div>
     </main>
-    ${marginColumn(state, people)}
+    ${marginColumn(state, people, tier)}
   </div>`;
 }
 
-export function renderEncounter(state, enc, evaluated, people, firstEnc) {
+export function renderEncounter(state, enc, evaluated, people, firstEnc, turnReport, tier) {
   const g = GROUND[enc.grounding];
   const opts = evaluated.map((ev, i) => {
     const o = ev.opt;
@@ -147,6 +170,7 @@ export function renderEncounter(state, enc, evaluated, people, firstEnc) {
   app().innerHTML = `
   <div class="screen with-margin">
     <main class="play-area">
+      ${turnReportBanner(turnReport)}
       <div class="folio">
         <div class="rubric">${esc(enc.rubric)}</div>
         ${enc.plate ? `<figure class="plate-frame"><img src="${esc(enc.plate.src)}" alt=""><figcaption>${esc(enc.plate.caption)}</figcaption></figure>` : ''}
@@ -157,11 +181,11 @@ export function renderEncounter(state, enc, evaluated, people, firstEnc) {
         <div class="options">${opts}</div>
       </div>
     </main>
-    ${marginColumn(state, people)}
+    ${marginColumn(state, people, tier)}
   </div>`;
 }
 
-export function renderResolution(state, enc, result, people, firstRes) {
+export function renderResolution(state, enc, result, people, firstRes, tier) {
   const chips = result.deltas.filter((d) => d.kind !== 'time').map((d) => {
     if (d.kind === 'meter') return chip(d.d > 0 ? 'up' : 'down', `${d.key} ${d.d > 0 ? '+' + d.d : d.d}`, d.key === 'exposure' ? 'fire' : '');
     if (d.kind === 'rep') return chip(d.d > 0 ? 'up' : 'down', `${d.key} standing ${d.d > 0 ? '+' + d.d : d.d}`);
@@ -186,7 +210,7 @@ export function renderResolution(state, enc, result, people, firstRes) {
         <button class="continue-btn">continue ⤳</button>
       </div>
     </main>
-    ${marginColumn(state, people)}
+    ${marginColumn(state, people, tier)}
   </div>`;
   if (result.chronicleLine) inkIn($('#chron-ink'), '“' + result.chronicleLine + '”');
 }
@@ -196,19 +220,24 @@ function chip(dir, text, extra) {
   return `<span class="chip ${dir} ${extra || ''}">${glyph} ${esc(text)}</span>`;
 }
 
-export function renderEnding(state, verdict, people) {
-  const chron = state.chronicle.map((l) => `<p class="codex-line band-t-${l.band}">${esc(l.text)}</p>`).join('');
-  const notes = verdict.notes.map((n) => `<p class="verdict-note">· ${esc(n)}</p>`).join('');
+export function renderEnding(state, verdict, people, phases) {
+  const byPhase = (phases || []).map((p) => {
+    const lines = state.chronicle.filter((l) => l.phase === p.id);
+    if (!lines.length) return '';
+    return `<div class="codex-phase"><div class="rubric">${ROMAN[p.id]} · ${esc(p.name)}</div>` +
+      lines.map((l) => `<p class="codex-line band-t-${l.band}">${esc(l.text)}</p>`).join('') + '</div>';
+  }).join('');
+  const notes = (verdict.notes || []).map((n) => `<p class="verdict-note">· ${esc(n)}</p>`).join('');
   app().innerHTML = `
   <div class="screen ending">
-    <div class="rubric">THE CAIRO YEARS ARE OVER</div>
+    <div class="rubric">1432 · THE ACCOUNT IS CLOSED</div>
     <div class="spread">
       <div class="folio page">
         <div class="page-head">THE MAN</div>
         <h2 class="verdict-title">${esc(verdict.man.title)}</h2>
         <p class="verdict-text">${esc(verdict.man.text)}</p>
         <div class="page-stats">
-          ${['orthodox', 'occult', 'scholarly'].map((k) => `<span class="chip">${k} ${state.rep[k] > 0 ? '+' + state.rep[k] : state.rep[k]}</span>`).join('')}
+          ${['orthodox', 'occult', 'imperial', 'scholarly'].map((k) => `<span class="chip">${k} ${state.rep[k] > 0 ? '+' + state.rep[k] : state.rep[k]}</span>`).join('')}
           <span class="chip fire">exposure ${state.meters.exposure}</span>
         </div>
       </div>
@@ -225,12 +254,65 @@ export function renderEnding(state, verdict, people) {
     </div>
     ${notes ? `<div class="folio verdict-margin"><div class="page-head">MARGINALIA</div>${notes}</div>` : ''}
     <div class="folio codex">
-      <div class="rubric">THE CHRONICLE OF THE CAIRO YEARS</div>
-      ${chron || '<p class="codex-line">— the pages are blank; he did almost nothing, which is also a life —</p>'}
-      <p class="codex-note">In a later build this chronicle becomes yours to keep and emend. Phases II–V — Isfahan, the courts, the <i>Investigations</i>, the trials — are the next slices.</p>
+      <div class="rubric">THE CHRONICLE OF ʿALĪ IBN TURKA</div>
+      ${byPhase || '<p class="codex-line">— the pages are blank —</p>'}
+      <p class="codex-note">In a later build this chronicle becomes yours to keep and emend, as its historian.</p>
     </div>
     <button class="toc-line center" data-act="restart"><span>Begin another life</span></button>
   </div>`;
+}
+
+
+export function renderPhaseIntro(phase, state) {
+  app().innerHTML = `
+  <div class="screen phase-intro">
+    <div class="rubric">${ROMAN[phase.id]} · ${esc(phase.dateline)}</div>
+    <h1 class="phase-title">${esc(phase.name)}</h1>
+    <div class="folio">
+      <p class="phase-blurb">${esc(phase.intro)}</p>
+      <p class="phase-budget">⏳ ${phase.time} seasons${state.obligations && state.obligations.length ? ' · standing obligations: ' + state.obligations.map((o) => esc(o.name)).join(', ') : ''}</p>
+    </div>
+    <button class="toc-line center begin-phase-btn"><span>Begin ⤳</span></button>
+  </div>`;
+}
+
+export function renderColophon(state, phase, settled) {
+  const lines = state.chronicle.filter((l) => l.phase === phase.id);
+  const pivotal = lines.slice(-3).map((l) => `<p class="verdict-note">· ${esc(l.text)}</p>`).join('');
+  app().innerHTML = `
+  <div class="screen colophon">
+    <div class="rubric">HERE ENDS ${ROMAN[phase.id]}</div>
+    <div class="folio">
+      <div class="page-head">${esc(phase.name)} · ${esc(phase.dateline)}</div>
+      ${pivotal || '<p class="verdict-note">· little was written of these years ·</p>'}
+      ${settled && settled.length ? '<div class="turn-report" style="margin-top:1rem">' + settled.map((c) => c.outcome === 'delivered'
+        ? `<span class="chip gain">✔ ${esc(c.contract.name)} delivered — expectations rise</span>`
+        : `<span class="chip down">✘ ${esc(c.contract.name)} came due unfulfilled</span>`).join('') + '</div>' : ''}
+      <div class="delta-chips" style="margin-top:1rem">
+        <span class="chip">synthesis ${state.meters.synthesis}</span>
+        <span class="chip">transmission ${state.meters.transmission}</span>
+        <span class="chip fire">exposure ${state.meters.exposure}</span>
+        <span class="chip">${state.people.length} companion${state.people.length === 1 ? '' : 's'}</span>
+      </div>
+    </div>
+    <button class="toc-line center next-phase-btn"><span>The years turn ⤳</span></button>
+  </div>`;
+}
+
+function turnReportBanner(r) {
+  if (!r) return '';
+  const bits = [];
+  for (const o of r.obligations || []) {
+    bits.push(o.paid
+      ? `<span class="chip">⚖ ${esc(o.ob.name)} took its season</span>`
+      : `<span class="chip down">⚖ ${esc(o.ob.name)} went unserved</span>`);
+  }
+  for (const c of r.contracts || []) {
+    bits.push(c.outcome === 'delivered'
+      ? `<span class="chip gain">✔ ${esc(c.contract.name)} delivered — expectations rise</span>`
+      : `<span class="chip down">✘ ${esc(c.contract.name)} failed at its deadline</span>`);
+  }
+  return bits.length ? `<div class="turn-report">${bits.join('')}</div>` : '';
 }
 
 // ---- flourishes -------------------------------------------------------------

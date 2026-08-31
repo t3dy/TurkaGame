@@ -452,5 +452,213 @@
     "added_date": "2026-08-29",
     "usage_status": "approved",
     "notes": "Imported from OCCULTIMGDB (id=islamic_talismans__acm-scroll-03625). Choice c40 backdrop — the final testament (talismanic prayer scroll). Creator: various."
+  },
+  {
+    "id": "9e5a460a-846e-46cf-8b22-845455c3257c",
+    "title": "Astrological Figure from a Book of Nativities (after Abū Maʿshar)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "manuscript copy (text 9th c.)",
+    "creator_or_scribe": "after Abū Maʿshar al-Balkhī",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Abu_Ma%27shar(Ibn_Balkhi)-850AD.png",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "cs-p2-mawalid-nativity.jpg",
+    "sha256": "1b8a31147b6079f19a2cb4aa461d9535331aa04bb723f24f84caad8c397a249c",
+    "cited_in": [
+      "occultimgdb:islamicate_deep__mawalid-nativity"
+    ],
+    "tags": [
+      "careersim",
+      "phase2",
+      "horoscope",
+      "nativity"
+    ],
+    "added_by": "careersim-slice1",
+    "added_date": "2026-08-30",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Iran / Islamic world"
+  },
+  {
+    "id": "b20e61b8-77b0-467c-92fc-0850f8e6f9da",
+    "title": "Square Kufic Bismillah Page by Ahmed Karahisari",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "16th c.",
+    "creator_or_scribe": "Ahmed Karahisari",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Karahisari.jpg",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "cs-p3-square-kufic-bismillah.jpg",
+    "sha256": "1e9182938c96f5adab01edfb5ec4ebc755ef008c60ec6df44106a7610c948b31",
+    "cited_in": [
+      "occultimgdb:lettrism__ottoman-album"
+    ],
+    "tags": [
+      "careersim",
+      "phase3",
+      "calligraphy",
+      "atelier"
+    ],
+    "added_by": "careersim-slice1",
+    "added_date": "2026-08-30",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Istanbul, Ottoman Empire"
+  },
+  {
+    "id": "b0bd9e21-19dd-4377-b59e-ed3a464aff61",
+    "title": "Safavid Illuminated Manuscript: The Shahnameh Tradition",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "c. 1577 (Safavid period)",
+    "creator_or_scribe": "Safavid calligraphers and painters; Shah Isma'il II workshop",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:The_Opening_Illuminated_Double_Page_from_the_Shah_Isma%27il_II_Manuscript_of_Firdausi%27s_Shahnameh,_Persia,_Qazvin,_Safavid,_circa_1577.jpg",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "cs-p3-safavid-illuminated-ms.jpg",
+    "sha256": "83cebf221d0f0e2f35ad1fa54ca6873c54fedc4c1ad533dca739c96adbf6d59a",
+    "cited_in": [
+      "occultimgdb:islamic_alchemy__gold-leaf-ms"
+    ],
+    "tags": [
+      "careersim",
+      "phase3",
+      "manuscript",
+      "atelier"
+    ],
+    "added_by": "careersim-slice1",
+    "added_date": "2026-08-30",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Qazvin, Persia"
+  },
+  {
+    "id": "8817675e-cb8d-42e9-bec0-36a70a57cd55",
+    "title": "'Caesar Makes a Talisman', Shahnama Folio (MET, CC0)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "c. 1330–1340",
+    "creator_or_scribe": "various",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:%22Caesar_Makes_a_Talisman%22%2C_Folio_from_a_Shahnama_%28Book_of_Kings%29_MET_DP223864.jpg",
+    "rights_note": "CC0",
+    "local_file": "cs-p3-shahnama-caesar-talisman.jpg",
+    "sha256": "d1fcb878ddb881bef3f6b56dc1d67ccfd034dd6b890d7444257df8ef27297f2d",
+    "cited_in": [
+      "occultimgdb:islamic_talismans__shahnama-caesar-talisman-met"
+    ],
+    "tags": [
+      "careersim",
+      "phase3",
+      "talisman",
+      "court"
+    ],
+    "added_by": "careersim-slice1",
+    "added_date": "2026-08-30",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Iran (Ilkhanid / early Jalayirid)"
+  },
+  {
+    "id": "d7fe184a-4289-4870-a594-810643a82d9f",
+    "title": "Celestial Map: Zodiac and Lunar Mansions",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "late 16th c. (Ottoman)",
+    "creator_or_scribe": "Seyyid Lokman (workshop)",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Celestial_map,_signs_of_the_Zodiac_and_lunar_mansions..JPG",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "cs-p3-zodiac-lunar-mansions.jpg",
+    "sha256": "cebb9aef03776a3c0dca95bfb6c7e05f06efc0bbccaf9305d11840aba776723d",
+    "cited_in": [
+      "occultimgdb:islamicate_deep__lunar-mansions"
+    ],
+    "tags": [
+      "careersim",
+      "phase3",
+      "astronomy",
+      "observatory"
+    ],
+    "added_by": "careersim-slice1",
+    "added_date": "2026-08-30",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Ottoman lands (Istanbul)"
+  },
+  {
+    "id": "72b28b8f-2059-47ca-85bd-b772e0831c3a",
+    "title": "Persian Wafq — a 6×6 Magic Square with Instructions",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "16th c.",
+    "creator_or_scribe": "Anonymous",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:16th_century_arabic_magic_square.jpg",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "cs-p4-persian-wafq-6x6.jpg",
+    "sha256": "8b3436ebf0c4b2bd05e382ac3654795938d294665a4df071a1f6f141dacd2ff0",
+    "cited_in": [
+      "occultimgdb:lettrism__magic-square-islam"
+    ],
+    "tags": [
+      "careersim",
+      "phase4",
+      "wafq",
+      "diagram"
+    ],
+    "added_by": "careersim-slice1",
+    "added_date": "2026-08-30",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Persia"
+  },
+  {
+    "id": "a02f3f13-b2c5-4b8d-9d18-056e600fac27",
+    "title": "The Fallen Angels Hārūt and Mārūt",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "16th–17th c.",
+    "creator_or_scribe": "Anonymous (Persianate workshop)",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:FallenAngelsHarutandMarut.jpg",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "cs-p5-harut-marut.jpg",
+    "sha256": "5f1cfb1bff3532be0b5110f2b4fa25d02cfb815c0aca67548967e5eba140a25f",
+    "cited_in": [
+      "occultimgdb:islamicate_deep__falnama-angel"
+    ],
+    "tags": [
+      "careersim",
+      "phase5",
+      "inquisition",
+      "sorcery"
+    ],
+    "added_by": "careersim-slice1",
+    "added_date": "2026-08-30",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Iran"
+  },
+  {
+    "id": "ccf9a150-5006-40ea-9d4b-8c66ad4d0857",
+    "title": "Hilye-i Şerif (Calligraphic Description of the Prophet)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "Ottoman, 18th–19th c.",
+    "creator_or_scribe": "Anonymous (Ottoman)",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Hilya.JPG",
+    "rights_note": "CC BY 3.0 (uploader 'Orientalist'). Via Wikimedia Commons.",
+    "local_file": "cs-p5-hilya-creed.jpg",
+    "sha256": "f49e14f9a7bcdb9d47213d78dd1ae8fc33bc88b14882400cadd8b13f4b2429ce",
+    "cited_in": [
+      "occultimgdb:lettrism__hilya"
+    ],
+    "tags": [
+      "careersim",
+      "phase5",
+      "orthodoxy",
+      "creed"
+    ],
+    "added_by": "careersim-slice1",
+    "added_date": "2026-08-30",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Ottoman Empire"
   }
 ]

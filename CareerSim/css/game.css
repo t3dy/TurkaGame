@@ -256,3 +256,29 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* ---- Slice 1 additions: phases, obligations, contracts, turn report ---- */
+
+.phase-intro, .colophon { max-width: 640px; text-align: center; }
+.phase-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.1rem; font-weight: 600; margin: 0.2rem 0 1.1rem; line-height: 1.2;
+}
+.phase-blurb { text-align: left; font-size: 1.05rem; }
+.phase-budget {
+  margin-top: 0.9rem; padding-top: 0.7rem; border-top: 1px solid var(--line);
+  font-variant: small-caps; letter-spacing: 0.08em; font-size: 0.85rem; color: var(--ink-faint);
+}
+
+.mhead .tier { color: var(--vermillion); font-variant: small-caps; letter-spacing: 0.08em; }
+.mrow.ob b, .mrow.contract b { color: var(--ink-faint); }
+.mrow.contract.urgent { color: var(--vermillion); }
+.mrow.contract.urgent b { color: var(--vermillion); font-weight: 700; }
+
+.turn-report {
+  display: flex; flex-wrap: wrap; gap: 0.45rem; justify-content: center;
+  margin-bottom: 0.8rem;
+}
+
+.codex-phase { margin-bottom: 1.4rem; }
+.codex-phase .rubric { font-size: 0.75rem; margin-bottom: 0.7rem; }

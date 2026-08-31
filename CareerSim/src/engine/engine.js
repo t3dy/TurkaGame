@@ -3,13 +3,16 @@
 // with unlockedBy provenance → weighted gradient outcome → memory + chronicle.
 // Framework-agnostic; see docs/SYSTEMS.md §3, §8.
 
-import { checkReq, applyEffects } from './state.js?v=1';
+import { checkReq, applyEffects } from './state.js?v=2';
+import { meetsExposure } from './career.js?v=1';
 
 export const BANDS = ['triumph', 'success', 'qualified', 'ambiguous', 'backfire', 'disaster'];
 
 // Is this encounter currently eligible to fire? (memory predicates + once-only)
 export function encounterEligible(state, enc) {
   if (state.seen.includes(enc.id)) return false;
+  if (enc.phase != null && enc.phase !== state.phase) return false;
+  if (!meetsExposure(state, enc)) return false;
   for (const req of enc.when || []) {
     if (!checkReq(state, req).ok) return false;
   }
@@ -88,7 +91,7 @@ export function resolveOption(state, enc, evaluated, rng) {
   if (opt.time) merge(applyEffects(state, { time: -opt.time }, enc.id));
 
   const line = picked.chronicle || opt.chronicle || null;
-  if (line) state.chronicle.push({ text: line, band: picked.band, encounterId: enc.id });
+  if (line) state.chronicle.push({ text: line, band: picked.band, encounterId: enc.id, phase: state.phase });
   state.seen.push(enc.id);
 
   return { band: picked.band, text: picked.text, deltas: applied.deltas, memWrites: applied.memWrites, chronicleLine: line };

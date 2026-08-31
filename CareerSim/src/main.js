@@ -1,18 +1,25 @@
-// main.js — screen state machine: title → map → encounter → resolution → ending.
-// Engine stays pure; this file owns flow, time-charging, saves, and onboarding flags.
+// main.js — screen state machine across all five phases:
+// title → phase intro → map → encounter → resolution → colophon → … → ending.
+// Engine stays pure; this file owns flow, time, obligations, contracts, saves.
 
-import { newRun, save, load, clearSave } from './engine/state.js?v=1';
-import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict } from './engine/engine.js?v=1';
-import { PHASE, PEOPLE, NODES, ENCOUNTERS } from '../content/phase1.js?v=1';
-import * as ui from './ui.js?v=1';
+import { newRun, save, load, clearSave } from './engine/state.js?v=2';
+import { drawEncounter, evaluateOptions, resolveOption, encounterEligible } from './engine/engine.js?v=2';
+import {
+  addObligation, dropObligation, chargeObligations, offerContract, tickContracts, exposureTier,
+  finalVerdict, settleContracts,
+} from './engine/career.js?v=2';
+import { PEOPLE, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=1';
+import * as ui from './ui.js?v=2';
 
 let state = null;
-let current = null; // { enc, evaluated }
-const onboard = { map: false, enc: false, res: false }; // marginalia shown-once flags (per session)
+let current = null;
+const onboard = { map: false, enc: false, res: false };
+
+const phase = () => phaseById(state.phase);
 
 function nodeStatus() {
   const st = {};
-  for (const n of NODES) {
+  for (const n of phase().nodes) {
     if (n.departure) { st[n.id] = 'open'; continue; }
     const any = n.encounters.some((id) => ENCOUNTERS[id] && encounterEligible(state, ENCOUNTERS[id]));
     st[n.id] = any ? 'open' : 'spent';
@@ -20,78 +27,109 @@ function nodeStatus() {
   return st;
 }
 
-function toTitle() {
-  ui.renderTitle(!!load());
+function toTitle() { ui.renderTitle(!!load()); }
+
+function toPhaseIntro() {
+  ui.renderPhaseIntro(phase(), state);
 }
 
 function toMap() {
   save(state);
-  // Out of time → the road is the only open door.
-  if (state.time <= 0 && !state.seen.includes('road_home')) {
-    const road = NODES.find((n) => n.departure);
-    enterNode(road);
-    return;
+  if (state.time <= 0) {
+    const dep = phase().nodes.find((n) => n.departure);
+    if (dep && !state.seen.includes(dep.encounters[0])) { enterNode(dep); return; }
   }
   const first = !onboard.map; onboard.map = true;
-  ui.renderMap(state, PHASE, NODES, nodeStatus(), PEOPLE, first);
+  ui.renderMap(state, phase(), phase().nodes, nodeStatus(), PEOPLE, first, exposureTier(state));
 }
 
 function enterNode(node) {
   const enc = drawEncounter(state, node, ENCOUNTERS);
   if (!enc) { toMap(); return; }
+
+  const turnReport = { obligations: [], contracts: [] };
   if (!node.departure) {
     state.time = Math.max(0, state.time - 1);
     state.visits[node.id] = (state.visits[node.id] || 0) + 1;
+    turnReport.obligations = chargeObligations(state);
+    turnReport.contracts = tickContracts(state);
   }
-  current = { enc, evaluated: evaluateOptions(state, enc, PEOPLE) };
+  current = { enc, evaluated: evaluateOptions(state, enc, PEOPLE), turnReport, node };
   const first = !onboard.enc; onboard.enc = true;
-  ui.renderEncounter(state, enc, current.evaluated, PEOPLE, first);
+  ui.renderEncounter(state, enc, current.evaluated, PEOPLE, first, turnReport, exposureTier(state));
 }
 
 function choose(idx) {
   const ev = current.evaluated[idx];
   if (!ev || !ev.available) return;
   const result = resolveOption(state, current.enc, ev);
+
+  // Option-attached career effects: obligations gained/dropped, contracts opened.
+  const opt = ev.opt;
+  if (opt.grantsObligation) { addObligation(state, opt.grantsObligation); result.obligationAdded = opt.grantsObligation; }
+  if (opt.dropsObligation) { dropObligation(state, opt.dropsObligation); result.obligationDropped = opt.dropsObligation; }
+  if (opt.contract) { offerContract(state, opt.contract); result.contractOpened = opt.contract; }
+
   save(state);
   const first = !onboard.res; onboard.res = true;
-  ui.renderResolution(state, current.enc, result, PEOPLE, first);
-  current._resolvedDeparture = !!NODES.find((n) => n.departure && n.encounters.includes(current.enc.id));
+  ui.renderResolution(state, current.enc, result, PEOPLE, first, exposureTier(state));
+  current.isDeparture = !!(current.node && current.node.departure);
 }
 
 function afterResolution() {
-  if (current && current._resolvedDeparture) {
-    state.over = true;
-    state.verdict = cairoVerdict(state);
-    clearSave(); // a finished run doesn't resume
-    ui.renderEnding(state, state.verdict, PEOPLE);
+  if (current && current.isDeparture) {
+    // Promises made at a court are settled when that court's years end — an open
+    // commission must never quietly outlive the phase it was made in.
+    const settled = settleContracts(state);
+    if (state.phase >= LAST_PHASE) {
+      state.over = true;
+      state.verdict = finalVerdict(state);
+      clearSave();
+      ui.renderEnding(state, state.verdict, PEOPLE, PHASES);
+    } else {
+      ui.renderColophon(state, phase(), settled);
+    }
     return;
   }
   toMap();
 }
 
-// ---- event delegation -------------------------------------------------------
+function advancePhase() {
+  state.phase += 1;
+  const p = phase();
+  state.time = p.time;
+  // Contracts that survive a phase boundary keep ticking; obligations persist too.
+  save(state);
+  toPhaseIntro();
+}
+
+// ---- events -----------------------------------------------------------------
 
 document.body.addEventListener('click', (e) => {
   const dismiss = e.target.closest('[data-dismiss]');
   if (dismiss) { dismiss.closest('.marginalia').remove(); return; }
 
+  if (e.target.closest('.continue-btn')) { afterResolution(); return; }
+  if (e.target.closest('.next-phase-btn')) { advancePhase(); return; }
+  if (e.target.closest('.begin-phase-btn')) { toMap(); return; }
+
   const act = e.target.closest('[data-act]');
   if (act) {
     const a = act.getAttribute('data-act');
-    if (a === 'new') { state = newRun(); save(state); toMap(); }
-    else if (a === 'continue') {
+    if (a === 'new') { state = newRun(); save(state); toPhaseIntro(); }
+    else if (a === 'resume') {
       const s = load();
-      if (s) { state = s; toMap(); } else { state = newRun(); toMap(); }
+      if (s) { state = s; toMap(); } else { state = newRun(); toPhaseIntro(); }
     }
     else if (a === 'manual') ui.renderManual();
     else if (a === 'back') toTitle();
-    else if (a === 'restart') { state = newRun(); save(state); toMap(); }
+    else if (a === 'restart') { state = newRun(); save(state); toPhaseIntro(); }
     return;
   }
 
   const nodeBtn = e.target.closest('[data-node]');
   if (nodeBtn && !nodeBtn.disabled) {
-    const node = NODES.find((n) => n.id === nodeBtn.getAttribute('data-node'));
+    const node = phase().nodes.find((n) => n.id === nodeBtn.getAttribute('data-node'));
     if (node) enterNode(node);
     return;
   }
@@ -100,36 +138,27 @@ document.body.addEventListener('click', (e) => {
   if (optBtn) { choose(parseInt(optBtn.getAttribute('data-opt'), 10)); return; }
 });
 
-// "continue ⤳" on resolution screens
-document.body.addEventListener('click', (e) => {
-  const c = e.target.closest('.continue-btn');
-  if (c) afterResolution();
-});
-
-// number-key hotkeys for options (UI guarantee: keyboard play)
 document.addEventListener('keydown', (e) => {
-  if (!current) return;
   const n = parseInt(e.key, 10);
-  if (n >= 1 && n <= 9 && document.querySelector('.options')) {
-    const avail = current.evaluated
-      .map((ev, i) => ({ ev, i }))
-      .filter((x) => x.ev.available);
+  if (current && n >= 1 && n <= 9 && document.querySelector('.options')) {
+    const avail = current.evaluated.map((ev, i) => ({ ev, i })).filter((x) => x.ev.available);
     if (avail[n - 1]) choose(avail[n - 1].i);
-  } else if ((e.key === 'Enter' || e.key === 'Return') && document.querySelector('.continue-btn')) {
-    afterResolution();
+  } else if (e.key === 'Enter' || e.key === 'Return') {
+    const btn = document.querySelector('.continue-btn, .next-phase-btn, .begin-phase-btn');
+    if (btn) btn.click();
   }
 });
 
 ui.bindGlosses();
 toTitle();
 
-// Debug handle, mirroring the VN's window.__turkaVN convention.
 window.__turkaCS = {
   get state() { return state; },
   encounters: ENCOUNTERS,
-  nodes: NODES,
-  restart() { state = newRun(); save(state); toMap(); },
-  grant(fxJson) { // e.g. __turkaCS.grant({quintet:{rimiya:2}})
-    import('./engine/state.js?v=1').then((m) => { m.applyEffects(state, fxJson, 'debug'); toMap(); });
+  phases: PHASES,
+  restart() { state = newRun(); save(state); toPhaseIntro(); },
+  skipTo(p) { state.phase = p; state.time = phaseById(p).time; toPhaseIntro(); },
+  grant(fx) {
+    import('./engine/state.js?v=2').then((m) => { m.applyEffects(state, fx, 'debug'); toMap(); });
   },
 };

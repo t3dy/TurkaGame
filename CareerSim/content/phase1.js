@@ -15,30 +15,7 @@ export const PHASE = {
     'Where you spend them decides who arrives in Isfahan.',
 };
 
-export const PEOPLE = {
-  akhlati: {
-    name: 'Sayyid Ḥusayn Akhlāṭī',
-    grants: ['esoteric_authority', 'heterodox_knowledge'],
-    gloss: 'The master of the Cairo circle. His authority opens hidden doors; his infamy is contagious.',
-  },
-  qasim: {
-    name: 'Qāsim-i Anvār',
-    grants: ['poetry', 'sufi_network', 'popular_reach'],
-    gloss: 'Sufi poet, beloved and reckless. His verses travel farther than any treatise — so does association with him.',
-  },
-  yazdi: {
-    name: 'Sharaf al-Dīn ʿAlī Yazdī',
-    grants: ['mathematics', 'historiography', 'manuscript_transmission'],
-    gloss: 'A mathematician who thinks in histories. The one mind that can carry your system somewhere you cannot.',
-  },
-};
-
-export const ARTIFACTS = {
-  letter_grid_ms: {
-    name: 'The Letter-Grid Manuscript',
-    gloss: 'An unattributed treatise of number-letter tables, bought in the bazaar. Whoever wrote it thought in your direction first.',
-  },
-};
+export { PEOPLE, ARTIFACTS } from './people.js?v=1';
 
 const IMG = (file, caption) => ({ src: '../assets/manuscripts/' + file, caption });
 
@@ -84,6 +61,7 @@ export const ENCOUNTERS = {
   // ---- THE MADRASA ----------------------------------------------------------
   madrasa_training: {
     id: 'madrasa_training',
+    phase: 1,
     rubric: 'AT THE MADRASA · MORNING LESSONS',
     grounding: 'ATTESTED',
     source: 'BIOGRAPHY — Formation (Cairo); VN c01',
@@ -123,6 +101,7 @@ export const ENCOUNTERS = {
 
   madrasa_disputation: {
     id: 'madrasa_disputation',
+    phase: 1,
     rubric: 'AT THE MADRASA · A PUBLIC DISPUTATION',
     grounding: 'INVENTED-COMPATIBLE',
     source: 'BIOGRAPHY — Formation; disputation was the standard exam form',
@@ -177,6 +156,7 @@ export const ENCOUNTERS = {
   // ---- AKHLĀṬĪ’S CIRCLE -----------------------------------------------------
   circle_entry: {
     id: 'circle_entry',
+    phase: 1,
     rubric: 'A COURTYARD OFF THE COPPERSMITHS’ STREET · AFTER DARK',
     grounding: 'ATTESTED',
     source: 'BIOGRAPHY — Formation (Cairo): studied under Akhlāṭī',
@@ -221,6 +201,7 @@ export const ENCOUNTERS = {
 
   circle_discipleship: {
     id: 'circle_discipleship',
+    phase: 1,
     rubric: 'AKHLĀṬĪ’S COURTYARD · THE MASTER’S REQUEST',
     grounding: 'PLAUSIBLE-GAP',
     source: 'BIOGRAPHY — Formation; the publicness of the tie is undocumented (VN c02)',
@@ -260,6 +241,7 @@ export const ENCOUNTERS = {
 
   circle_lineages: {
     id: 'circle_lineages',
+    phase: 1,
     rubric: 'AKHLĀṬĪ’S COURTYARD · AN ARGUMENT OF FATHERS',
     grounding: 'ATTESTED',
     source: 'BIOGRAPHY — Formation: first to pair Ibn ʿArabī and Ḥamūya as co-founders (VN c05)',
@@ -309,6 +291,7 @@ export const ENCOUNTERS = {
 
   circle_naming: {
     id: 'circle_naming',
+    phase: 1,
     rubric: 'AKHLĀṬĪ’S COURTYARD · THE CIRCLE TAKES A NAME',
     grounding: 'ATTESTED',
     source: 'BIOGRAPHY — Formation: the circle’s self-naming as Ikhwān al-Ṣafāʾ',
@@ -349,6 +332,7 @@ export const ENCOUNTERS = {
   // ---- THE KHĀNQĀH ----------------------------------------------------------
   khanqah_qasim: {
     id: 'khanqah_qasim',
+    phase: 1,
     rubric: 'AT THE KHĀNQĀH · A POET IN FULL FLIGHT',
     grounding: 'ATTESTED',
     source: 'BIOGRAPHY — Formation: Qāsim-i Anvār a close Cairo companion (VN c04)',
@@ -385,6 +369,7 @@ export const ENCOUNTERS = {
 
   khanqah_sama: {
     id: 'khanqah_sama',
+    phase: 1,
     rubric: 'AT THE KHĀNQĀH · SAMĀʿ, AND WHAT FOLLOWS IT',
     grounding: 'INVENTED-COMPATIBLE',
     source: 'BIOGRAPHY — Formation; samāʿ practice standard in the lodges',
@@ -425,6 +410,7 @@ export const ENCOUNTERS = {
   // ---- THE BOOKSELLERS’ BAZAAR ---------------------------------------------
   bazaar_manuscript: {
     id: 'bazaar_manuscript',
+    phase: 1,
     rubric: 'THE BOOKSELLERS’ BAZAAR · AN UNATTRIBUTED TREATISE',
     grounding: 'INVENTED-COMPATIBLE',
     source: 'Design conversation, “The New Manuscript” pattern; bazaar trade attested',
@@ -478,6 +464,7 @@ export const ENCOUNTERS = {
   // ---- THE TIMEKEEPER’S POST ------------------------------------------------
   muwaqqit_lesson: {
     id: 'muwaqqit_lesson',
+    phase: 1,
     rubric: 'THE TIMEKEEPER’S POST · INSTRUMENTS AND HOURS',
     grounding: 'PLAUSIBLE-GAP',
     source: 'BIOGRAPHY — Formation; the muwaqqit’s office was Cairo’s licensed astronomy',
@@ -516,6 +503,7 @@ export const ENCOUNTERS = {
 
   muwaqqit_yazdi: {
     id: 'muwaqqit_yazdi',
+    phase: 1,
     rubric: 'THE TIMEKEEPER’S POST · ANOTHER PERSIAN AT THE DIALS',
     grounding: 'ATTESTED',
     source: 'BIOGRAPHY — Formation: the Yazdī friendship (VN c03); meeting-place is PLAUSIBLE-GAP',
@@ -556,6 +544,7 @@ export const ENCOUNTERS = {
   // ---- THE MERCHANT’S MAJLIS ------------------------------------------------
   majlis_dervish: {
     id: 'majlis_dervish',
+    phase: 1,
     rubric: 'THE MERCHANT’S MAJLIS · A WANDERER’S IMPOSSIBLE CLAIM',
     grounding: 'INVENTED-COMPATIBLE',
     source: 'Design conversation, Node 11 — credulity vs. demonstration; later manuals attest the type',
@@ -606,6 +595,7 @@ export const ENCOUNTERS = {
 
   majlis_feast: {
     id: 'majlis_feast',
+    phase: 1,
     rubric: 'THE MERCHANT’S MAJLIS · THE HOST WANTS A WONDER',
     grounding: 'INVENTED-COMPATIBLE',
     source: 'Bazm culture per The Occult Court; the request type attested in later manuals',
@@ -679,6 +669,7 @@ export const ENCOUNTERS = {
   // ---- THE ROAD HOME --------------------------------------------------------
   road_home: {
     id: 'road_home',
+    phase: 1,
     rubric: 'THE ROAD HOME · CAIRO ENDS',
     grounding: 'ATTESTED',
     source: 'BIOGRAPHY — Formation: Akhlāṭī dies 1397; the return to Iran follows',

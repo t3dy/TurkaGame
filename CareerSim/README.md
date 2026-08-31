@@ -17,7 +17,7 @@ TurkaGame research layer (`../docs/BIOGRAPHY.md`) and the IslamicateOccultPortal
 corpus. Every encounter carries an inspectable grounding tag: ATTESTED,
 PLAUSIBLE-GAP, or INVENTED-COMPATIBLE.
 
-**Status: Slice 0 playable** — the Cairo phase, as a static no-build site: serve the repo root and open `/CareerSim/`. Design at [DESIGN.md](DESIGN.md);
+**Status: Slice 1 playable** — the whole life, Cairo 1385 to exile 1432, as a static no-build site: serve the repo root and open `/CareerSim/`. 58 grounded encounters across five phases. Design at [DESIGN.md](DESIGN.md);
 build order in [docs/ROADMAP.md](docs/ROADMAP.md).
 
 Stack (decided): Next.js + Supabase on Vercel; framework-agnostic engine; anonymous

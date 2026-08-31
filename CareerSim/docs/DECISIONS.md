@@ -72,3 +72,35 @@ user calls made at project creation.
   weights (×(1+n)) — preparation tilts the ladder, shown as "favored by …".
 - **Cache-bust discipline inherited**: `?v=N` on module/CSS URLs, bumped per change
   (parent repo's standing rule; `index.html` is the version source of truth).
+
+## Slice 1 build (2026-08-30, third session)
+
+All five phases built and verified playable. Decisions made during the build:
+
+- **Career systems live in `src/engine/career.js`**, separate from the encounter
+  engine: exposure tiers, obligations, contracts, and the ending matrix. Keeps
+  `engine.js` about situations-and-options only, which is what makes it portable.
+- **Obligations charge per action, not per season.** The judgeship costs a season
+  every time the player *does* something, so the office competes with the work
+  directly rather than as a flat tax. Neglect (can't pay) applies a penalty and
+  writes `neglected_bench` rather than blocking the action.
+- **Contracts settle at phase end** (`settleContracts`), not only at their deadline.
+  Found by playtest: an open commission could outlive the phase and quietly
+  evaporate, so a promise had no consequence. A commission now always comes due.
+- **`LEGACY_NOTES` is the marginalia table** and the lint's source of truth — the
+  Chekhov's-gun test imports it directly rather than regex-scanning, so a content
+  author who adds a memory flag must add its ending line or the build fails. This
+  is what makes "every choice echoes at the end" enforceable rather than aspirational.
+- **Exposure gates content** via `exposure_min` on encounters (the second and third
+  inquisitions require it). Pressure escalates because the player succeeded, which
+  is the thesis; it is not a random event table.
+- **Phase tagging on every encounter** (`phase: N`), enforced by test — an encounter
+  can never leak into the wrong phase's pool.
+- **Assets sourced from OCCULTIMGDB via the provenance CLI**, 8 new images (registry
+  27 total), chosen per phase for what the encounter is actually about (Hārūt and
+  Mārūt for the inquisition, since Qurʾan 2:102 is the proof-text the charge rests
+  on). Deliberately **rejected two modern diagrams** (a modern "levels of heaven"
+  redrawing and a modern muqaṭṭaʿāt roundel) despite good fit: this project's rule
+  is historical material, not modern illustration of it.
+- **A test now lints plate→registry**: an encounter cannot reference an image that
+  has no provenance record.

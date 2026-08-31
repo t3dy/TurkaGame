@@ -4,7 +4,7 @@ Vertical slices with hard acceptance gates, per this workspace's discipline. A s
 is done when its gate is verified in a browser (and, once deployed, live), not when
 its code exists. Don't start slice N+1 before slice N's gate passes.
 
-## Slice 0 — Engine core + Cairo (the proof)
+## Slice 0 — Engine core + Cairo (the proof) — ✅ DONE (2026-08-30)
 
 **Goal**: prove the encounter-engine loop with real content in one phase.
 
@@ -26,18 +26,29 @@ path) verifiably sees options an unprepared player doesn't, with provenance show
 one memory written in an early encounter changes a later one; chronicle renders;
 both palettes pass contrast; playable at 375px width.
 
-## Slice 1 — The whole life, thin
+## Slice 1 — The whole life, thin — ✅ DONE (2026-08-30)
 
 - Phases II–V with smaller pools (~6 encounters each; Phase III with all three court
   branches but shallow), obligations/time competition in Phase II, one contract chain
   in Phase III, exposure-tier encounter injection, inquisition encounters in Phase V.
 - Two-axis ending matrix + Two-Page Spread screen; ≥8 named endings including the
   historical trajectory (reachable, not optimal — verify by playing both).
-- Chronicle editable locally.
+- ~~Chronicle editable locally.~~ **Deferred to Slice 2** — editing is only meaningful
+  once a chronicle persists to an account; a locally-editable, unsaved chronicle is a
+  toy. Not built in Slice 1; do not report it as done.
 
 **Gate**: two cold playthroughs (one historical-ish, one divergent) reach different
 named endings with legibly different chronicles; exposure demonstrably escalates
 encounter pressure; a broken contract has visible consequences.
+
+**Gate status (2026-08-30): met on the mechanical criteria, pending a human.** Two
+contrasting agent playthroughs reached different system verdicts (Source Code of
+Empire vs. Died With Its Author) with 29-line phase-grouped chronicles; exposure
+gating on the 2nd/3rd inquisitions verified; a failed commission verified applying
+its penalty and appearing in the turn banner. Still outstanding: an actual cold
+human playtest, and the personal-fate axis is under-differentiated (both runs landed
+"The Judge of Isfahan") — see HANDOVER.md "What's NOT done" #2, which should be
+fixed before Slice 3.
 
 ## Slice 2 — Accounts and kept chronicles
 

@@ -5,11 +5,11 @@ export const METERS = ['synthesis', 'demonstration', 'transmission', 'exposure']
 export const REPS = ['orthodox', 'occult', 'imperial', 'scholarly'];
 export const QUINTET = ['kimiya', 'limiya', 'himiya', 'simiya', 'rimiya'];
 
-const SAVE_KEY = 'turka-careersim-run-v1';
+const SAVE_KEY = 'turka-careersim-run-v2';
 
 export function newRun() {
   return {
-    v: 1,
+    v: 2,
     phase: 1,
     time: 7,
     meters: { synthesis: 0, demonstration: 0, transmission: 0, exposure: 0 },
@@ -21,9 +21,12 @@ export function newRun() {
     artifacts: [],
     memory: {},      // flag -> value (CourtMemory flags)
     memLog: [],      // { flag, value, source } — append-only "why" log
-    chronicle: [],   // { text, band, encounterId }
+    chronicle: [],   // { text, band, encounterId, phase }
     visits: {},      // nodeId -> count
     seen: [],        // encounter ids resolved
+    obligations: [], // standing duties draining time each turn (career.js)
+    contracts: [],   // patron promises with deadlines (career.js)
+    expectation: 0,  // patron expectation inflation — success compounds it
     over: false,
     verdict: null,
   };
@@ -57,7 +60,8 @@ export function checkReq(state, req, people) {
     if (QUINTET.includes(head)) { val = state.quintet[head]; text = `${sciName(head)} ${dots(num)}`; }
     else if (head === 'rep') { val = state.rep[sub]; text = `${sub} standing ${num >= 0 ? '+' : ''}${num}`; }
     else if (head === 'meter') { val = state.meters[sub]; text = `${sub} ${num}`; }
-    else if (head === 'time') { val = state.time; text = `${num} days remaining`; }
+    else if (head === 'time') { val = state.time; text = `${num} seasons remaining`; }
+    else if (head === 'expectation') { val = state.expectation || 0; text = `patron expectation ${num}`; }
     else return { ok: false, text: `unknown requirement ${req}` };
     ok = op === '>=' ? val >= num : val <= num;
   } else if (body.startsWith('person:')) {
@@ -161,7 +165,7 @@ export function load(storage) {
     const raw = (storage || globalThis.localStorage).getItem(SAVE_KEY);
     if (!raw) return null;
     const s = JSON.parse(raw);
-    return s && s.v === 1 ? s : null;
+    return s && s.v === 2 ? s : null;
   } catch (e) { return null; }
 }
 export function clearSave(storage) {
