@@ -498,6 +498,36 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "imaginal-realm",
+      "name": "The Imaginal Realm",
+      "name_arabic": "الخيال المطلق",
+      "name_script": "الخيال المطلق",
+      "literal_meaning": "The realm of forms; the world of imagination",
+      "category": "COSMOLOGY",
+      "card": "**Al-ʿAlam al-Khiyāl** (The Imaginal Realm). In [[ibn-arabi|Ibn Arabi's]] metaphysics, the ontological layer between pure intellect and material sense where forms (*ashkāl*) exist independently of physical matter. The domain where mystical visions occur, where symbols manifest, where divine names express themselves in subtle forms. Central to understanding how knowledge operates in Islamic mysticism and occultism: the imaginal realm is where letters and divine names acquire form, where talismanic operations work, where the barzakh functions.",
+      "body": "## Al-ʿAlam al-Khiyāl: The Imaginal Realm\n\n**Al-ʿAlam al-Khiyāl** (literally \"the imaginal realm\" or \"the realm of imagination\") is [[ibn-arabi|Ibn Arabi's]] term for an intermediate ontological domain between pure intellect (ʿaql) and material sensation (ḥiss). The Arabic word *khiyāl* is often mistranslated as \"imagination\" in the modern sense (the faculty of fantasy); Ibn Arabi means something far more precise and metaphysically serious: a realm of subtle forms (*ashkāl*) that possess reality independent of physical matter.\n\nThe imaginal realm occupies the same position in Ibn Arabi's cosmology that the [[barzakh|barzakh]] occupies in Ibn Turka's refinement of it: the crucial intermediate domain where causation operates, where divine principles become manifest in form, where knowledge acquires structure.\n\n### Three Realms of Being\n\nIbn Arabi divides creation into three principal domains:\n\n1. **The Intelligible Realm** (*ʿālam al-ʿaql*): Pure intellect, transcendent principles, divine names in their unmanifested essence\n2. **The Imaginal Realm** (*ʿālam al-khiyāl*): Forms, symbols, subtle bodies, the world of vision and mystical knowledge\n3. **The Sensible Realm** (*ʿālam al-ḥiss*): Material existence, the physical world knowable through sense perception\n\nEach realm participates in the others; none is hermetically sealed. The imaginal realm serves as the *medium* through which the intelligible becomes sensible, through which the transcendent becomes immanent.\n\n### The Imaginal in Mystical Experience\n\nFor Ibn Arabi, mystical visions (*mushāhadāt*) are not hallucinations or mere psychological phenomena—they are direct perception of the imaginal realm. When a mystic \"sees\" an angel, perceives a divine light, or encounters a teacher in a dream, they are perceiving realities that exist in the imaginal realm. These perceptions are as real as sensory experience, though they operate in a different ontological register.\n\nThis doctrine revolutionizes Islamic mysticism: it legitimizes mystical experience as a form of genuine knowledge by establishing that there is an objective realm (the imaginal) in which such experiences occur. Mysticism is not projection; it is perception.\n\n### The Imaginal in Occult Practice\n\n[[ibn-turka|Ibn Turka]] and the later occult philosophers adopted this framework. When a practitioner creates a talisman by writing letters and numbers with specific intention, the operation works in the imaginal realm first: the talisman, as an imaginal object (a form constituted by [[abjad-numerology|numerical correspondences]] and divine names), exerts influence on the sensible world. The imaginal realm is where the power resides; the physical talisman is the expression.\n\nSimilarly, [[ilm-al-huruf|lettrist operations]] work because letters—as forms carrying [[divine-names|divine names]]—are primarily imaginal realities. Mastery of letters grants access to the imaginal realm, whence all material creation flows.\n\n### Legacy and Transmission\n\n[[qunavi|Qūnavī]] elaborated Ibn Arabi's doctrine of the imaginal realm into a full philosophy of knowledge (*gnosis* vs. *reason*). Through the [[qunavi|Qūnavī]]-Jandī school, the imaginal realm became part of the theoretical apparatus available to philosophers, mystics, and occultists across the Islamic world. By Ibn Turka's time, the imaginal realm was accepted as a foundational concept: its reality was presupposed, not debated.",
+      "hierarchy_note": "The imaginal realm is Ibn Arabi's key metaphysical contribution; all later Islamic occultism presupposes it.",
+      "related_concepts": [
+        "barzakh",
+        "divine-names",
+        "ilm-al-huruf"
+      ],
+      "literature": [
+        "Chittick, William C. *The Sufi Path of Knowledge: Ibn Arabi's Metaphysics of Imagination*. Albany: SUNY Press, 1989.",
+        "Melvin-Koushki, Matthew. *Being with a Capital B: Imaginal Ontology and the New Brethren of Purity*."
+      ],
+      "tags": [
+        "metaphysics",
+        "mysticism",
+        "ontology",
+        "imaginal",
+        "ibn-arabi"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "bibliography": [
