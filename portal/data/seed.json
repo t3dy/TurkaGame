@@ -409,5 +409,38 @@
       "online_url": null,
       "access_note": "Available through Yale ProQuest Dissertations & Theses database."
     }
+  ],
+  "texts": [
+    {
+      "slug": "kitab-al-mafahis",
+      "title": "Kitab al-Mafahis",
+      "title_transliterated": "Kitāb al-Mafāḥīs fī Asrār al-Ḥurūf wa-l-Awfāq",
+      "title_translated": "Book of Inquiries into the Secrets of Letters and Talismanic Squares",
+      "author_figure_slug": "ibn-turka",
+      "text_type": "PHILOSOPHICAL",
+      "language": "Arabic",
+      "date_or_period": "Early 15th century (c. 1400–1420)",
+      "card": "**Kitāb al-Mafāḥīs** (Book of Inquiries). Ibn Turka's foundational philosophical and occult treatise, systematizing [[ilm-al-huruf|lettrism]] into a coherent cosmology grounded in [[pythagorean-cosmology|Pythagorean mathematics]]. Integrates [[divine-names|divine names]], [[abjad-numerology|numerical correspondences]], and [[barzakh|intermediate realm]] into unified operative science. His magnum opus; extensively cited by later occultists.",
+      "body": "## Kitāb al-Mafāḥīs: The Foundation of Ibn Turka's System\n\nThe **Kitāb al-Mafāḥīs fī Asrār al-Ḥurūf wa-l-Awfāq** (Book of Inquiries into the Secrets of Letters and Talismanic Squares) is Ibn Turka's most comprehensive statement. Written early 15th century (c. 1400–1420 CE / 804–824 AH), it consolidated decades of innovation into systematic treatise transforming Islamic lettrism from scattered gnosis into rigorous science.\n\n### Structure and Scope\n\nThe *Kitāb al-Mafāḥīs* organizes around three themes:\n\n1. **The Science of Letters** (*'Ilm al-Ḥurūf*) — ontological and operative theory of 28 Arabic letters, each corresponding to [[divine-names|divine name]] and cosmic principle\n\n2. **Talismanic Squares** (*al-Awfāq*) — practical application of letter and number combinations to create talismans and operative devices\n\n3. **Pythagorean Cosmology** — underlying [[pythagorean-cosmology|mathematical structure]] uniting letters, numbers, names, and principles\n\n### Key Doctrines\n\nIbn Turka establishes:\n\n- **Barzakh as operative domain:** [[barzakh|Intermediate realm]] is actual location where [[ilm-al-huruf|lettrist operations]] produce material effects\n\n- **Abjad as cosmic mathematics:** [[abjad-numerology|Letter-value systems]] reflect fundamental cosmic ratios. Composing words with specific numerical sums aligns practitioners with cosmic forces.\n\n- **Letters as divine attributes:** Each letter expresses one [[divine-names|divine name]]. Knowledge of letters is knowledge of God's attributes.\n\n- **Universality:** Unlike localized traditions, this system applies to all creation—creation itself constituted through letters and numbers.\n\n### Transmission and Influence\n\nThe *Kitāb al-Mafāḥīs* circulated widely and influenced later occultists, philosophers, and European Renaissance Hermetic synthesis. In the Islamicate world it became canonical—cited by Ottoman occultists, incorporated into Safavid philosophy, foundational to \"New Brethren of Purity\" doctrines.\n\n### Historiographical Significance\n\nThe work proves Islamic occultism in 15th century was living, systematic, intellectually rigorous discipline—not decaying remnant. Demonstrates Ibn Turka engaged in genuine philosophical innovation: radical synthesis of lettrism with Pythagorean mathematics. Underwrites Melvin-Koushki's argument against decline thesis.",
+      "known_manuscripts": [
+        "Istanbul, Topkapi Palace Library (multiple copies)",
+        "Tehran, National Library of Iran",
+        "Berlin, Staatsbibliothek (Ahlwardt MS)"
+      ],
+      "modern_editions": [],
+      "literature": [
+        "Melvin-Koushki, Matthew. *Powers of One: Pythagorean Cosmos in Islamic Context*. Boston: BRILL, 2017.",
+        "Melvin-Koushki, Matthew. *The Occult Court: Magic, Medicine, and Mathematics in the Fourteenth and Fifteenth-Century Isfahan*. Boston: BRILL, 2025."
+      ],
+      "tags": [
+        "primary-source",
+        "lettrism",
+        "occult-philosophy",
+        "mathematics"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    }
   ]
 }
