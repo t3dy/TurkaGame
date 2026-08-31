@@ -5,6 +5,7 @@
 
 import { QUINTET } from './engine/state.js?v=3';
 import { LEXICON } from '../content/lexicon.js?v=2';
+import { attestedRows } from './engine/career.js?v=5';
 
 const $ = (sel) => document.querySelector(sel);
 export const app = () => $('#app');
@@ -350,28 +351,9 @@ function turnReportBanner(r) {
 // The educational payoff: the historical record, line by line, each paired with
 // what happened in THIS run. Chronicle voice for history, plain contrast after the em-dash.
 function attestedComparison(state) {
-  const m = state.memory;
-  const rows = [];
-  const row = (hist, yours) => rows.push(`<p class="verdict-note"><b class="att-hist">${hist}</b> — ${yours}</p>`);
-
-  row('He studied in Cairo under Sayyid Ḥusayn Akhlāṭī, lettrist, alchemist and geomancer.',
-    m.circle_member ? 'so did you.' : 'you never entered the circle — a formation the historical man could not have skipped.');
-  row('He served as Chief Judge of Isfahan, famous for defending the weak against the powerful.',
-    m.took_judgeship ? (m.defended_weak ? 'you took the bench and ruled as he did.' : 'you took the bench; whether you used it as he did, your chronicle knows.') : 'you refused the bench he was defined by.');
-  row('In 1420 he completed Investigations — the first systematic summa of Islamic lettrism — as Ulugh Beg broke ground on the Samarkand observatory.',
-    m.investigations_begun ? 'your summa exists.' : 'your summa was never written — the counterfactual is total.');
-  row('His central diagram, the Ṭahawī Circle, survives in his own handwriting (Tehran, Majlis Library MS 10196, f. 63a).',
-    m.tahawi_circle ? 'you drew it.' : 'you never drew the Circle; your system has no surviving image.');
-  row('He faced three state inquisitions engineered by rival colleagues: he won the first two and lost the third, c. 1427.',
-    m.third_inquisition === 'lost' ? 'the same road, ending the same way.'
-      : m.third_inquisition === 'survived' ? 'you survived all three — a thing the record does not grant the historical man.'
-      : m.recanted ? 'you bent, which the record says he refused to do.'
-      : 'the third tribunal never reached you.');
-  row('Qāsim-i Anvār, his Cairo companion, was exiled in 1427 over the same lettrist associations.',
-    m.qasim_defended ? 'you stood by him.' : m.qasim_abandoned ? 'you let him go alone.' : 'in your life the friendship never came to its test.');
-  row('He died in 1432, impoverished and in legal limbo, after five years of wandering exile; Yazdī — who copied his autograph — outlived him by twenty-two years, and the platform they built became imperial cosmology across six court cultures.',
-    (m.yazdi_copied || m.yazdi_keeps) ? 'your Yazdī carries the copy too.' : 'your Yazdī never copied the work — history’s own transmission route, closed.');
-  return rows.join('');
+  return attestedRows(state)
+    .map((r) => `<p class="verdict-note"><b class="att-hist">${esc(r.hist)}</b> — ${esc(r.yours)}</p>`)
+    .join('');
 }
 
 // ---- flourishes -------------------------------------------------------------

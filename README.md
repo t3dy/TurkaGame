@@ -1,11 +1,34 @@
 # TurkaGame
 
-**🔗 Live site: [t3dy.github.io/TurkaGame](https://t3dy.github.io/TurkaGame/)** — includes a
-[playable visual-novel prototype](https://t3dy.github.io/TurkaGame/games/visual-novel/index.html).
+> Games and a knowledge portal built on **Ṣāʾin al-Dīn ʿAlī ibn Turka Iṣfahānī**
+> (1369–1432), Chief Judge of Isfahan and the foremost occult philosopher of Timurid
+> Iran — sourced from extant manuscripts and real scholarship, not invented fantasy.
 
-Games and a research pipeline built on **Ṣāʾin al-Dīn ʿAlī ibn Turka Iṣfahānī**
-(1369–1432), Chief Judge of Isfahan and the foremost occult philosopher of Timurid
-Iran — sourced from extant manuscripts and real scholarship, not invented fantasy.
+## 🔗 Everything, in one place
+
+**[t3dy.github.io/TurkaGame](https://t3dy.github.io/TurkaGame/)** — the front page.
+
+### Play
+| | |
+|---|---|
+| **[Ibn Turka: The Occult Court](https://t3dy.github.io/TurkaGame/CareerSim/)** | Career roguelike — a whole life in five phases, 70 grounded encounters, obligations and patron contracts, compounding exposure, a two-axis ending. **Current build.** |
+| **[The Visual Novel](https://t3dy.github.io/TurkaGame/games/visual-novel/)** | 40 branching life-choices across 8 acts, the Occult Quintet skill tree, 8 endings. Version 3. |
+
+### Read
+| | |
+|---|---|
+| **[The Ibn Turka Knowledge Portal](https://t3dy.github.io/TurkaGame/site/portal/)** | 52 pages. Six **Intersection** articles on where Ibn Turka meets the wider Islamicate occult world — the Brethren of Purity, al-Būnī, the occult court, the Pythagorean revival, the Akbarian inheritance, the defense of divination — plus entries on figures, concepts, texts, institutions. |
+| **[The Timeline](https://t3dy.github.io/TurkaGame/site/timeline.html)** | 50 dated events, 950–2025, each tagged for how firmly it is grounded. |
+| **[The Visual Novel: full pitch](https://t3dy.github.io/TurkaGame/site/features.html)** | What the VN is and where its research comes from. |
+
+### Every version
+**[The archive](https://t3dy.github.io/TurkaGame/site/archive.html)** — every build kept
+playable, including superseded ones:
+[VN v3](https://t3dy.github.io/TurkaGame/games/visual-novel/) ·
+[VN v2](https://t3dy.github.io/TurkaGame/games/visual-novel-v2/) ·
+[VN v1](https://t3dy.github.io/TurkaGame/games/visual-novel-v1/)
+
+---
 
 ![Ibn Turka: A Visual Novel — pitch overview](site/images/pitch-overview.png)
 
