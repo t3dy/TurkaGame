@@ -104,3 +104,23 @@ All five phases built and verified playable. Decisions made during the build:
   is historical material, not modern illustration of it.
 - **A test now lints plate→registry**: an encounter cannot reference an image that
   has no provenance record.
+
+## Ending-fate tuning (2026-08-31)
+
+- **Fate ordering is the design, not an implementation detail.** `MAN_FATES` is
+  ordered so the third tribunal's outcome is read first, then how he survived it,
+  and only a life no tribunal ever touched is judged on career shape (imperial
+  standing, the bench, exposure level). Rationale: the tribunals are the dramatic
+  spine of this biography, so a run must never "fall through" to a verdict that
+  ignores the most consequential thing that happened in it — the Slice 1 playtest
+  filed a defiant third-tribunal survivor as a quiet provincial judge.
+- **14 personal fates, 9 system fates.** Added fates for the paths the content
+  already supported but the matrix ignored: fleeing before the verdict, giving a
+  name, surviving by refusing, being condemned along with the book, and the two
+  no-tribunal lives (never visible enough to summon vs. visible and never acted on).
+- **`Complete, and Unread`** (synthesis ≥7, transmission low) is the tuning's most
+  important addition: it names the specific tragedy the meters were already able to
+  produce — he understood everything and transmitted none of it — which previously
+  collapsed into the generic "Died With Its Author".
+- **`Carried in One Hand`** makes the Yazdī relationship legible as a *system*
+  outcome rather than only a marginalia line; it is the attested transmission route.

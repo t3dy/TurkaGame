@@ -279,3 +279,83 @@ test('an open contract cannot outlive its phase — settling forces resolution',
   assert.equal(s.memory.boon_failed, true);
   assert.equal(s.contracts.filter((c) => c.status === 'open').length, 0);
 });
+
+test('personal-fate axis is differentiated: distinct lives get distinct verdicts', () => {
+  const profile = (fx) => { const s = newRun(); applyEffects(s, fx, 'test'); return finalVerdict(s).man.key; };
+
+  const cases = {
+    // the attested arc: refused to bend, condemned, exiled
+    historical: profile({ memory: { third_inquisition: 'lost', third_stance: 'firm' }, meters: { exposure: 6 } }),
+    // condemned and the work named in the judgment
+    withBook: profile({ memory: { third_inquisition: 'lost', book_condemned: true }, meters: { exposure: 6 } }),
+    // ran before the verdict
+    fled: profile({ memory: { third_inquisition: 'lost', fled: true }, meters: { exposure: 5 } }),
+    // survived by refusing — the rare defiant acquittal
+    vindicated: profile({ memory: { third_inquisition: 'survived', third_stance: 'firm' }, meters: { exposure: 7 } }),
+    // survived by other means
+    acquitted: profile({ memory: { third_inquisition: 'survived', third_stance: 'patron' }, meters: { exposure: 7 } }),
+    // said the words
+    recanted: profile({ memory: { recanted: true }, meters: { exposure: 6 } }),
+    // bought freedom with a friend
+    informer: profile({ memory: { betrayed_friend: true, third_inquisition: 'survived' }, meters: { exposure: 6 } }),
+    // beat the early tribunals, third never came
+    harried: profile({ memory: { first_inquisition: 'won', second_inquisition: 'won' }, meters: { exposure: 6 } }),
+    // court-protected, never accused
+    eminent: profile({ rep: { imperial: 4 }, meters: { exposure: 3 } }),
+    // stayed small
+    unremarked: profile({ meters: { exposure: 1 } }),
+    // visible but never acted on
+    watched: profile({ meters: { exposure: 6 } }),
+  };
+
+  // Each profile should land on its own intended fate, not fall through to a generic one.
+  assert.equal(cases.historical, 'exiled');
+  assert.equal(cases.withBook, 'condemned_with_book');
+  assert.equal(cases.fled, 'fugitive');
+  assert.equal(cases.vindicated, 'vindicated');
+  assert.equal(cases.acquitted, 'acquitted');
+  assert.equal(cases.recanted, 'recanted');
+  assert.equal(cases.informer, 'informer');
+  assert.equal(cases.harried, 'harried');
+  assert.equal(cases.eminent, 'eminent');
+  assert.equal(cases.unremarked, 'unremarked');
+  assert.equal(cases.watched, 'watched');
+
+  // and no two of these lives share a verdict
+  const keys = Object.values(cases);
+  assert.equal(new Set(keys).size, keys.length, 'distinct lives collapsed onto the same fate: ' + JSON.stringify(cases));
+});
+
+test('the two Slice-1 playtest runs no longer collapse onto the same personal fate', () => {
+  // Reproduces the actual states the two verified playthroughs ended in.
+  const bold = newRun();
+  applyEffects(bold, {
+    rep: { orthodox: 3, occult: 5, scholarly: 5 }, meters: { exposure: 9, synthesis: 10, transmission: 10 },
+    memory: { third_inquisition: 'survived', third_stance: 'firm', kept_judgeship: true, first_inquisition: 'won', second_inquisition: 'won' },
+  }, 'test');
+  const cautious = newRun();
+  applyEffects(cautious, {
+    rep: { orthodox: 5, scholarly: 4, imperial: 2 }, meters: { exposure: 1, synthesis: 10, transmission: 1 },
+    memory: { kept_judgeship: true, wrote_creed: true },
+  }, 'test');
+
+  const vb = finalVerdict(bold), vc = finalVerdict(cautious);
+  assert.equal(vb.man.key, 'vindicated', 'the defiant survivor is no longer filed as a quiet judge');
+  // The cautious life genuinely is the Judge of Isfahan — bench kept, orthodox
+  // standing high, never summoned. What matters is that it is no longer the same
+  // verdict as the defiant survivor's.
+  assert.equal(vc.man.key, 'judge');
+  assert.notEqual(vb.man.key, vc.man.key);
+  assert.notEqual(vb.system.key, vc.system.key);
+  assert.equal(vc.system.key, 'unread', 'understood everything, transmitted nothing');
+});
+
+test('system-fate axis: Yazdi and condemnation produce their own outcomes', () => {
+  const withYazdi = newRun();
+  applyEffects(withYazdi, { meters: { transmission: 4, synthesis: 5 }, memory: { yazdi_copied: true } }, 'test');
+  assert.equal(finalVerdict(withYazdi).system.key, 'one_hand');
+
+  const indexed = newRun();
+  applyEffects(indexed, { meters: { transmission: 3 }, memory: { book_condemned: true } }, 'test');
+  assert.equal(finalVerdict(indexed).system.key, 'indexed');
+});

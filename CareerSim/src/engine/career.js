@@ -128,23 +128,58 @@ export function settleContracts(state) {
 // ---- the two-axis ending matrix (full-run scale) ----------------------------
 // Personal fate x system fate, scored independently. Legacy, not survival.
 // docs/SYSTEMS.md §9; DESIGN.md "The ending is a two-axis verdict".
+//
+// Ordering is the design: the tribunals are the dramatic spine of the life, so
+// what happened there is read FIRST, and only a life the tribunals never touched
+// falls through to be judged on its career shape. Each test is written to be
+// mutually exclusive in practice — a run should never merely "fall through" to a
+// fate that ignores the most consequential thing that happened to it.
 
 const MAN_FATES = [
-  { key: 'executed', title: 'Broken by the State',
+  // — the third tribunal went against him —
+  { key: 'condemned_with_book', title: 'Condemned With His Book',
+    test: (s) => s.memory.third_inquisition === 'lost' && s.memory.book_condemned,
+    text: 'The judgment named the work as well as the man. He goes into exile knowing they understood exactly what they were burying.' },
+  { key: 'broken', title: 'Broken by the State',
     test: (s) => s.memory.third_inquisition === 'lost' && s.meters.exposure >= 8,
-    text: 'He lost the third inquisition with nothing left to spend. What followed was not survivable.' },
+    text: 'He lost the third inquisition with nothing left to spend — no patron, no standing, and a file thick enough to bury anyone.' },
+  { key: 'fugitive', title: 'The Fugitive',
+    test: (s) => s.memory.fled,
+    text: 'He did not stay to hear it. Condemned in absence, he spends what is left of his life one town ahead of the sentence.' },
   { key: 'exiled', title: 'The Wandering Exile',
     test: (s) => s.memory.third_inquisition === 'lost',
-    text: 'Five years of wandering follow the verdict. He dies impoverished, in legal limbo — the historical fate, arrived at by your own road.' },
+    text: 'Five years of wandering follow the verdict. He dies impoverished, in legal limbo — the attested fate, arrived at by your own road.' },
+
+  // — he survived, and how he survived is the whole question —
+  { key: 'informer', title: 'The Man Who Gave a Name',
+    test: (s) => s.memory.betrayed_friend,
+    text: 'He walked out of the third tribunal because someone else did not. Nobody in his circle ever raises it, and nobody forgets it either.' },
   { key: 'recanted', title: 'The Man Who Bent',
     test: (s) => s.memory.recanted === true,
     text: 'He kept his life and his post by conceding the thing he had spent it building. The court is satisfied. He is not.' },
+  { key: 'vindicated', title: 'Vindicated in Open Court',
+    test: (s) => s.memory.third_inquisition === 'survived' && s.memory.third_stance === 'firm',
+    text: 'He refused to bend and the panel could not condemn him. He ends his life what almost no one in his position ever was: tried three times, and unbroken.' },
+  { key: 'acquitted', title: 'Thrice Tried, Thrice Standing',
+    test: (s) => s.memory.third_inquisition === 'survived',
+    text: 'Three tribunals, three survivals — by argument, by patronage, by whatever came to hand. The record is clean and everybody knows what it cost.' },
+  { key: 'harried', title: 'Harried to the End',
+    test: (s) => s.memory.second_inquisition === 'won' || s.memory.first_inquisition === 'won',
+    text: 'He beat the tribunals that came and spent his last years waiting for the one that did not. The waiting was its own sentence.' },
+
+  // — the tribunals never came: judged on the career he built instead —
   { key: 'eminent', title: 'Eminence Without Incident',
-    test: (s) => s.rep.imperial >= 3 && s.meters.exposure <= 5,
-    text: 'He ends his life a court fixture — protected, consulted, and never once formally accused.' },
+    test: (s) => s.rep.imperial >= 3 && s.meters.exposure <= 6,
+    text: 'He ends his life a court fixture — protected, consulted, and never once formally accused. Proximity to power turned out to be the best defense available.' },
   { key: 'judge', title: 'The Judge of Isfahan',
-    test: (s) => s.rep.orthodox >= 2 && s.memory.kept_judgeship,
-    text: 'He dies as he began: a jurist of standing, in his own city, his other work a private matter.' },
+    test: (s) => s.rep.orthodox >= 3 && s.memory.kept_judgeship && s.meters.exposure <= 4,
+    text: 'He dies as he began: a jurist of standing, in his own city, his other work a private matter between himself and the paper.' },
+  { key: 'unremarked', title: 'Never Worth Summoning',
+    test: (s) => s.meters.exposure <= 2,
+    text: 'He was careful enough, for long enough, that the state never formed an opinion about him. It is a kind of victory, and it tastes like one.' },
+  { key: 'watched', title: 'Watched, and Left Alone',
+    test: (s) => s.meters.exposure >= 5,
+    text: 'A file exists. It was never acted on, and he lived every remaining year knowing it was there.' },
   { key: 'obscure', title: 'A Quiet Obscurity',
     test: () => true,
     text: 'No tribunal ever bothered with him. Neither did history, much.' },
@@ -158,14 +193,23 @@ const SYSTEM_FATES = [
     test: (s) => s.meters.transmission >= 6 && s.rep.scholarly >= 3,
     text: 'The system survives where it was built to survive: in scholars’ hands, copied, argued over, taught. Not an empire’s cosmology — a discipline’s.' },
   { key: 'escaped', title: 'A Movement Beyond Him',
-    test: (s) => s.meters.transmission >= 6 && s.rep.occult >= 3 && s.meters.synthesis < 6,
+    test: (s) => s.meters.transmission >= 6,
     text: 'It spread faster than it was understood. What bears his name in a generation is popular, powerful, and not quite his.' },
+  { key: 'one_hand', title: 'Carried in One Hand',
+    test: (s) => (s.memory.yazdi_copied || s.memory.yazdi_keeps) && s.meters.transmission >= 3,
+    text: 'Yazdī had a copy in his own hand and outlived him by twenty-two years. The whole survival of the thing runs through one friendship — which turns out to be enough.' },
+  { key: 'indexed', title: 'On the Index',
+    test: (s) => s.memory.book_condemned && s.meters.transmission >= 2,
+    text: 'Named in a judgment and therefore unreadable in public for centuries. It is not destroyed; it is shelved, which is slower and nearly as effective.' },
   { key: 'appropriated', title: 'Taken and Hollowed',
     test: (s) => s.rep.imperial >= 4 && s.meters.synthesis < 6,
     text: 'The court kept the useful parts — the prognostics, the legitimating mathematics — and quietly discarded the philosophy that made them mean anything.' },
   { key: 'underground', title: 'Suppressed, Not Extinguished',
     test: (s) => s.meters.transmission >= 3,
-    text: 'Officially the work is on the Index. Unofficially the manuscripts move hand to hand, and the copying never entirely stops.' },
+    text: 'Officially the work is out of favour. Unofficially the manuscripts move hand to hand, and the copying never entirely stops.' },
+  { key: 'unread', title: 'Complete, and Unread',
+    test: (s) => s.meters.synthesis >= 7,
+    text: 'He finished it. The system is whole, rigorous, and sits in a box that nobody opens for four hundred years — which is not the same as dying, but it is not much better.' },
   { key: 'died', title: 'Died With Its Author',
     test: () => true,
     text: 'The connections existed in one man’s head and one man’s hand. Both are gone.' },

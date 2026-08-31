@@ -1,6 +1,6 @@
 # Handover — CareerSim
 
-## State (2026-08-30, third session: SLICE 1 SHIPPED — the whole life is playable)
+## State (2026-08-31, fourth session: SLICE 1 SHIPPED + ending fates tuned + pushed)
 
 **All five phases play end to end as a static no-build site**, verified in-browser.
 Supabase/Vercel still deliberately deferred (docs/DECISIONS.md "Slice 0 build").
@@ -21,7 +21,7 @@ Run it: serve the repo root (`turkagame-site` launch config) → `/CareerSim/`.
   - `career.js` — **exposure tiers** (Unremarked→Summoned; rises, never resets),
     **obligations** (recurring time drains + neglect penalties), **contracts**
     (deadline, reward, failure, expectation inflation, and `settleContracts` at
-    phase end), the **two-axis ending matrix** (6 personal fates × 6 system fates),
+    phase end), the **two-axis ending matrix** (14 personal fates × 9 system fates),
     and `LEGACY_NOTES` — the ~150-entry marginalia table that reads the run's whole
     memory back to the player.
 - **Content** (`content/`) — **58 encounters across 5 phases**, 20 registry plates,
@@ -39,11 +39,12 @@ Run it: serve the repo root (`turkagame-site` launch config) → `/CareerSim/`.
   nativity figure (II), square Kufic Bismillah / Safavid illuminated folio /
   "Caesar Makes a Talisman" / zodiac-and-lunar-mansions map (III), Persian 6×6 wafq
   (IV), Hārūt and Mārūt at Babel + Hilye (V). All rights-cleared, full provenance.
-- **Tests** (`tools/test-engine.mjs`) — **18 passing** via `node --test`, including
+- **Tests** (`tools/test-engine.mjs`) — **21 passing** via `node --test`, including
   the Chekhov's-gun memory lint (now reads `LEGACY_NOTES` directly), phase/exposure
   gating, obligation charging, contract delivery/failure/settlement, the
-  historical-trajectory reachability check, and a lint that **every plate image
-  exists in the provenance registry**.
+  historical-trajectory reachability check, fate-differentiation checks (11 distinct
+  lives → 11 distinct verdicts), and a lint that **every plate image exists in the
+  provenance registry**.
 
 ### Verified in-browser this session
 
@@ -52,10 +53,12 @@ colophon screens; the judgeship charging a second season per action with the
 "⚖ The Judgeship took its season" banner (and "went unserved" when time ran out);
 a bold commission opening in PROMISES with a countdown and failing at its deadline;
 Samarkand locked without Yazdī; exposure tier labels; ending two-axis verdict with
-34 marginalia lines and a 29-line phase-grouped chronicle. Two contrasting runs give
-materially different verdicts — bold: **Source Code of Empire**; cautious:
-**synthesis 10 / transmission 1 → Died With Its Author**. Mobile 375px + light
-palette clean, no horizontal scroll, zero console errors.
+34 marginalia lines and a 29-line phase-grouped chronicle. After the fate tuning,
+two contrasting runs give fully divergent verdicts on **both** axes — bold:
+**Broken by the State / Source Code of Empire** (the design's headline pairing:
+personally destroyed, intellectually triumphant); cautious: **Harried to the End /
+Complete, and Unread**. Mobile 375px + light palette clean, no horizontal scroll,
+zero console errors.
 
 **Bug found by playing and fixed**: an open contract could outlive its phase and
 silently evaporate (promise made, no consequence ever). `settleContracts` now
@@ -65,10 +68,17 @@ resolves every open commission at phase end and the colophon reports it.
 
 1. **No cold human playtest yet.** Agent playthroughs are not a cold reader; pacing,
    difficulty and legibility all still unvalidated by a person.
-2. **The personal-fate axis is under-differentiated.** Both test runs landed on
-   "The Judge of Isfahan" because `MAN_FATES`' `judge` test (orthodox≥2 +
-   kept_judgeship) catches broadly. The system axis diverges well; the man axis
-   needs tuning passes — likely tighter tests and 2–3 more fates.
+2. ~~The personal-fate axis is under-differentiated.~~ **FIXED (2026-08-31).**
+   `MAN_FATES` rewritten to 14 fates ordered so the tribunals — the dramatic spine —
+   are read before career shape, and only a life the tribunals never touched falls
+   through to be judged on standing. New fates: Condemned With His Book, The
+   Fugitive, The Man Who Gave a Name, Vindicated in Open Court, Thrice Tried Thrice
+   Standing, Harried to the End, Never Worth Summoning, Watched and Left Alone.
+   `SYSTEM_FATES` grew to 9 with **Carried in One Hand** (Yazdī's copy alone carries
+   it), **On the Index** (named in a judgment), and **Complete, and Unread**
+   (high synthesis, no transmission). Verified in-browser: the two contrasting runs
+   now give *Broken by the State / Source Code of Empire* vs. *Harried to the End /
+   Complete, and Unread* — both axes diverge. Covered by 3 new tests (21 total).
 3. **Contradictory marginalia can co-fire** (e.g. "taught widely" and "held the
    hardest parts close" both true across different phases). Realistic, but reads
    oddly; consider precedence rules.
@@ -78,14 +88,16 @@ resolves every open commission at phase end and the colophon reports it.
    Phase IV represents composition as choices, not as an assembly UI.
 6. **Chronicle is read-only**; editing + accounts = Slice 2 (do NOT create Supabase
    before then).
-7. Not pushed to GitHub in this state until asked. Pages would serve it at
-   `https://t3dy.github.io/TurkaGame/CareerSim/` with no extra config.
+7. **Live on GitHub Pages** at `https://t3dy.github.io/TurkaGame/CareerSim/`
+   (pushed 2026-08-31). Note the parent repo's CDN cache gotcha in
+   `../docs/DECISIONS.md` — a browser that touched the page in the last ~10 min may
+   serve its own cached copy; verify with a cache-busted URL.
 
 ## Likely next step
 
-Either (a) cold playtest → tuning pass on the issues above, or (b) ROADMAP Slice 3
-(composition workbench, cosmogram). Before more content, fix #2 — the ending is the
-payoff and the man axis currently under-delivers on it.
+Either (a) **cold human playtest** — the one gate item nothing else can substitute
+for — or (b) ROADMAP Slice 3 (composition workbench, synthesis cosmogram). Content
+depth in Phases IV–V (#4) is the cheapest meaningful work if neither appeals.
 
 Debug handle: `window.__turkaCS` — `.state`, `.restart()`, `.skipTo(phase)`,
 `.grant({quintet:{rimiya:2}})`.
