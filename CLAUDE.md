@@ -88,6 +88,12 @@ they're general research, not TurkaGame-specific game design.
 - **Games are separate, independently runnable folders** under `games/`, one per prototype.
   Don't reach across game folders for shared code until at least two prototypes are past
   their first slice — premature sharing here has bitten other projects in this workspace.
+- **Pick the model deliberately; Sonnet 5 is the default, not Opus.** Which model for
+  which job, how much corpus belongs in a context, and the resumable batch harness for
+  per-item sweeps are all in
+  [CONTEXTENGINEERINGGAMEPIPELINES.md](CONTEXTENGINEERINGGAMEPIPELINES.md). Scene prose
+  and schema decisions are Opus work; plumbing is Sonnet; bounded per-item rubrics are
+  Haiku via `tools/batch/`.
 - **Mixed tech stack is intentional.** Pick the simplest stack that fits each prototype
   (see [docs/DECISIONS.md](docs/DECISIONS.md)) rather than forcing one framework across all
   three.
@@ -107,6 +113,8 @@ TurkaGame/
 ├── games/
 │   ├── visual-novel/         next up — see docs/GAME_VISUAL_NOVEL.md
 │   ├── roguelike/              design doc only, see docs/GAME_ROGUELIKE.md
+│   ├── yusuf-ascent/           standalone puzzle minigame + research portal on one
+│   │                             painting — see games/yusuf-ascent/README.md
 │   └── career-sim/             pointer only — moved to CareerSim/
 ├── CareerSim/               the career-sim subproject (own CLAUDE.md/DESIGN.md/docs;
 │                             Next.js+Supabase target, deploys separately to Vercel)
@@ -123,3 +131,29 @@ game and both need the same served root to resolve correctly. Prefer `preview_st
 over raw Bash, per [EmblemRoguelike](../EmblemRoguelike/CLAUDE.md)'s convention.
 
 VN debug handle: `window.__turkaVN` (`.state`, `.choices`, `.restart()`).
+Yūsuf Ascent handles: `window.__yusufA` / `__yusufB` / `__yusufC` / `__yusufPortal`;
+`__yusufB.checkStationInvariant()` is its numerical self-test.
+
+## Yūsuf Ascent (added 2026-08-31)
+
+[`games/yusuf-ascent/`](games/yusuf-ascent/README.md) — a **standalone** minigame on
+Bihzād's *Yūsuf fleeing Zulaykha* (Cairo, Adab Farsi 22, f. 52b). The folio is cut into
+43 interactable elements and rebuilt three ways (2D door-chain, 3D station-point stack,
+drag-sort ladder), with a research portal doing the deep dive. Entry:
+[`games/yusuf-ascent/README.md`](games/yusuf-ascent/README.md); design rationale in
+`DESIGN.md`, forward proposals in `GRAPHICS.md` / `INTERFACE.md`.
+
+Two house rules it establishes, worth reusing:
+
+- **Region boxes live in `imagelab/data/regions.json`, never in a game folder.** Each
+  game's build script merges boxes with its own interpretation. This kept crops
+  re-cuttable when the reading changed mid-build.
+- **Interpretation is labelled where the player is judging, not in an About page.** The
+  game's seven-rung ascent and door chain are *ours*, not the painting's, and every
+  surface that uses them says so at the point of use — including the negative result
+  that no source in the 43-source corpus mentions Bihzād or Zulaykha at all.
+
+Companion research: [`docs/VISIONARY_ENVIRONMENTS.md`](docs/VISIONARY_ENVIRONMENTS.md) —
+eight other Persianate visionary traditions (the Herat *Miʿrājnāma*, the Freer Jalāyirid
+*Dīwān*, *Haft Paykar*, Siyah Qalam, the *Falnāma*, the *muraqqaʿ*, Qazwīnī, the lettrist
+grid) assessed as game environments, with a ranked build order.

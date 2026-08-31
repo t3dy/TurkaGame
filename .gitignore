@@ -25,3 +25,6 @@ research inbox/
 # Image cutouts derived from sources whose rights are not yet cleared (FOUNDER.md S5)
 imagelab/output/
 imagelab/site/
+
+# batch runner checkpoints (regenerate with tools/batch/make_tasks.py)
+tools/batch/tasks/*.status.json
