@@ -416,6 +416,43 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "jandi",
+      "name": "Jandi",
+      "name_full": "ʿAbd al-Razzaq al-Jandī",
+      "name_variants": [
+        "Abd al-Razzaq Jandi",
+        "Qadi al-Jandi"
+      ],
+      "role": "SCHOLAR",
+      "lifespan": "fl. 13th century / 600–700 AH",
+      "birth_year": 1200,
+      "death_year": 1290,
+      "region": "Jiroft / Jirft (Jiroft region, Persia)",
+      "relation_to_turka": "intellectual_ancestor",
+      "card": "**ʿAbd al-Razzaq al-Jandī** (fl. 13th c.). Persian philosopher-mystic; student of Qunavi and successor in Illuminationist tradition. Elaborated the correspondence between divine names, letters, and cosmic principles. His commentaries on Ibn Arabi and development of divine-names epistemology became foundational to later Islamic occultism. Ibn Turka inherited and systematized Jandi's framework through the Qunavi-Jandi school tradition.",
+      "body": "**ʿAbd al-Razzaq al-Jandī** (fl. 13th century) was a Persian philosopher-mystic active in the post-Suhrawardi era. He is best known as a leading figure in the Qunavi-Jandi school tradition—the intellectual lineage that systematized Ibn Arabi's metaphysics for transmission to later generations. Where Qunavi had codified Ibn Arabi, Jandi extended and elaborated. His central contribution was developing the correspondence between divine names (*asmaʾ*), cosmic principles, and the structure of knowledge itself. Jandi argued that the 99 divine names are not merely attributes of God but constitute the framework through which creation manifests and through which the human intellect understands reality. Each name is a lens through which to perceive divine and created being. This doctrine proved transformative for later occultists: Ibn Turka adopted Jandi's framework and radicalized it by mapping the divine names onto the 28 Arabic letters, thereby making lettrism the operative expression of Jandi's metaphysics. Through Jandi, Ibn Turka inherited two centuries of Islamic philosophical synthesis: Ibn Arabi's metaphysics → Qunavi's systematization → Jandi's elaboration → Ibn Turka's operationalization.",
+      "key_works": [
+        "commentary-on-fusus",
+        "sharh-al-mawaqif"
+      ],
+      "affiliations": [
+        "qunavi-jandi-school",
+        "illuminationist-tradition"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. Being with a Capital B: Islamic Pythagoreanism and Imaginal Ontology."
+      ],
+      "tags": [
+        "philosopher",
+        "mystic",
+        "divine-names",
+        "qunavi-school"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "concepts": [
@@ -681,6 +718,38 @@
         "lettrism",
         "ibn-turka",
         "occult-science"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "HIGH"
+    },
+    {
+      "source_id": "melvin-koushki-of-islamic-grammatology-2016",
+      "author": "Melvin-Koushki, Matthew",
+      "title": "Of Islamic Grammatology: Towards a Philosophy of the Arabic Letter",
+      "year": 2016,
+      "publisher": "BRILL",
+      "journal": null,
+      "pub_type": "monograph",
+      "relevance": "PRIMARY",
+      "card": "**Matthew Melvin-Koushki, Of Islamic Grammatology** (BRILL, 2016, 73 pp). Explores how Islamic lettrism positions the Arabic letter as fundamental ontological and epistemological principle. Traces development from early Islamic exegesis through Ibn Arabi to Ibn Turka. Central for understanding letters as not merely symbols but cosmic entities encoding divine principles.",
+      "body": "**Matthew Melvin-Koushki, Of Islamic Grammatology: Towards a Philosophy of the Arabic Letter** (Boston: BRILL, 2016, 73 pages). Grammatology—the study of writing systems as philosophical and cosmological frameworks—becomes Islamic when the letter itself is understood as cosmic principle. Melvin-Koushki traces this development: from Qur'anic exegesis that saw letters as carriers of divine meaning, through Ibn Arabi's theory of names and letters, to Ibn Turka's full systematization of lettrism. The book establishes that Islamic lettrism is not superstition but a sophisticated epistemology: it claims that letters are the fundamental units through which knowledge and reality alike are constituted. Mastery of letters grants mastery of meaning, causation, and cosmic structure. Essential for understanding the theoretical foundations of Ibn Turka's entire project.",
+      "key_arguments": [
+        "letters-as-ontology",
+        "lettrism-as-epistemology",
+        "quranic-basis",
+        "ibn-turka-synthesis"
+      ],
+      "corpus_file": null,
+      "conversion_status": "EXTERNAL",
+      "page_count": 73,
+      "online_url": "https://brill.com/display/title/24647",
+      "access_note": "Published monograph; available through university libraries and BRILL",
+      "tags": [
+        "lettrism",
+        "grammatology",
+        "letters",
+        "ontology"
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
