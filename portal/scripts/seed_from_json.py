@@ -23,7 +23,30 @@ SEED_DEFAULT = BASE_DIR / "data" / "seed.json"
 
 def load_seed(path: Path) -> dict[str, Any]:
     with open(path, 'r', encoding='utf-8') as f:
-        return json.load(f)
+        seed = json.load(f)
+    assert_unique(seed)
+    return seed
+
+
+def assert_unique(seed: dict[str, Any]) -> None:
+    """Fail loudly on duplicate keys.
+
+    INSERT OR REPLACE silently collapses duplicates, so a seed file can carry two
+    copies of an entry indefinitely while the database looks correct. It did:
+    sharaf-al-din-yazdi and qazizada-rumi were each in there twice.
+    """
+    problems = []
+    for table, key in (('figures', 'slug'), ('concepts', 'slug'),
+                       ('institutions', 'slug'), ('texts', 'slug'),
+                       ('arguments', 'slug'), ('bibliography', 'source_id')):
+        seen: set[str] = set()
+        for item in seed.get(table, []):
+            ident = item.get(key)
+            if ident in seen:
+                problems.append(f"  {table}: duplicate {key} {ident!r}")
+            seen.add(ident)
+    if problems:
+        raise SystemExit("Duplicate entries in seed.json:\n" + "\n".join(problems))
 
 
 def ingest_figures(conn: sqlite3.Connection, figures: list[dict]) -> int:
