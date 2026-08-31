@@ -692,6 +692,34 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "sufism",
+      "name": "Sufism",
+      "name_arabic": "التصوف",
+      "name_script": "التصوف",
+      "literal_meaning": "The way; spiritual discipline",
+      "category": "THEOLOGICAL",
+      "card": "**Al-Tasawwuf** (Sufism). Islamic mysticism emphasizing direct experiential knowledge of the divine through discipline, contemplation, and often ecstatic experience. Developed systematically from 9th century onward; by Ibn Turka's era, Sufism was integral to Islamic orthodoxy. [[ibn-arabi|Ibn Arabi]], [[suhrawardi|Suhrawardi]], [[al-ghazali|Al-Ghazali]], and other philosophical predecessors were Sufi-philosophers. Ibn Turka inherited and operationalized Sufi gnosis through lettrism, positioning occult science as Sufi practice systematized into rational discipline.",
+      "body": "## Sufism: Islamic Mysticism and Spiritual Practice\n\n**Al-Tasawwuf** (Sufism) is Islamic mysticism—the disciplined pursuit of direct experiential knowledge (*dhawq*; literally \"tasting\") of divine reality. Sufism emerged in the 8th-9th centuries as ascetic movement emphasizing renunciation, devotion, and intimate knowledge of God. By the medieval period, it had become systematized into orders (*tariqas*) with formal training, ritual practices, and hierarchical initiation. Key Sufi commitments: (1) Reason alone cannot reach ultimate truth; direct mystical intuition is necessary. (2) The soul possesses faculties beyond intellect—faculties for perceiving divine light and truth. (3) Ascetic discipline, remembrance (*dhikr*), and sincere devotion purify the soul and grant illumination. (4) The spiritual master (*shaykh*) guides disciples on the path. By Ibn Turka's era, Sufism was thoroughly integrated into Islamic orthodoxy. Major philosophical-theologians—[[ibn-arabi|Ibn Arabi]], [[suhrawardi|Suhrawardi]], [[al-ghazali|Al-Ghazali]]—were simultaneously Sufi mystics and systematic philosophers. Sufism provided the conceptual vocabulary and experiential framework for occult philosophy: if the soul can experience divine light directly, if mystical knowledge is genuine, then the soul's interaction with the imaginal realm and its deployment of lettrist gnosis are not irrational but expressions of mystical capacity. Ibn Turka inherited Sufi gnosis and transformed it: where Sufi masters cultivated mystical states through meditation and discipline, Ibn Turka systematized the underlying principles and made them operative through lettrist-talismanic technique. Sufi mysticism became Sufi science.",
+      "hierarchy_note": "Sufism is the experiential-spiritual foundation upon which Ibn Turka builds his rational occult science; all mystical vocabulary derives from Sufi tradition.",
+      "related_concepts": [
+        "ilm-al-huruf",
+        "imaginal-realm",
+        "divine-names"
+      ],
+      "literature": [
+        "Chittick, William C. The Sufi Path of Knowledge: Ibn Arabi's Metaphysics of Imagination."
+      ],
+      "tags": [
+        "mysticism",
+        "spiritual-practice",
+        "discipline",
+        "gnosis"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "bibliography": [
