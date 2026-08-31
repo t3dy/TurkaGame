@@ -417,3 +417,45 @@ test('lexicon: every term defined is actually used somewhere a player can meet i
   const unusedTerms = Object.keys(LEXICON).filter((t) => !corpus.includes(t));
   assert.deepEqual(unusedTerms, [], 'lexicon terms never encountered in play: ' + JSON.stringify(unusedTerms));
 });
+
+test('log illustrations: a scholar contribution outranks a player one and raises a notification', async () => {
+  const X = await import('../src/engine/export.js?v=2');
+  const payload = { log: [{ encounterId: 'trial_first', rubric: 'THE TRIBUNAL' }], illustrations: [] };
+
+  X.addIllustration(payload, 0, { src: 'data:,a', caption: 'from a player' },
+    { name: 'someone', role: 'player' });
+  X.addIllustration(payload, 0, { src: 'data:,b', caption: 'the actual manuscript',
+    source: { repository: 'Chester Beatty', shelfmark: 'CBL Per 000' } },
+    { name: 'Matthew Melvin-Koushki', role: 'scholar' });
+
+  const q = X.reviewQueue(payload);
+  assert.equal(q.length, 2, 'both pending');
+  assert.equal(q[0].by.role, 'scholar', 'scholar sorts first in the review queue');
+  assert.equal(X.notifyCount(payload), 1, 'only the scholar contribution interrupts');
+  assert.equal(q[0].encounterId, 'trial_first', 'contribution is bound to the encounter, not just an index');
+  assert.equal(q[0].source.shelfmark, 'CBL Per 000', 'provenance fields survive');
+});
+
+test('log illustrations: declining removes from the page but accepting keeps ordering', async () => {
+  const X = await import('../src/engine/export.js?v=2');
+  const payload = { log: [{ encounterId: 'pivot_begin' }], illustrations: [] };
+  const a = X.addIllustration(payload, 0, { src: 'data:,a' }, { role: 'player' });
+  const b = X.addIllustration(payload, 0, { src: 'data:,b' }, { role: 'scholar' });
+
+  assert.equal(X.illustrationsFor(payload, 0).length, 2);
+  assert.equal(X.illustrationsFor(payload, 0)[0].id, b.id, 'best-sourced first');
+
+  X.setIllustrationStatus(payload, a.id, 'declined');
+  assert.equal(X.illustrationsFor(payload, 0).length, 1, 'declined image drops off the page');
+  X.setIllustrationStatus(payload, b.id, 'accepted');
+  assert.equal(X.reviewQueue(payload).length, 0, 'nothing left pending');
+  assert.throws(() => X.setIllustrationStatus(payload, b.id, 'nonsense'), /bad status/);
+});
+
+test('log illustrations: an unknown role degrades to player rather than throwing', async () => {
+  const X = await import('../src/engine/export.js?v=2');
+  const payload = { log: [{}], illustrations: [] };
+  const rec = X.addIllustration(payload, 0, { src: 'data:,x' }, { role: 'archbishop' });
+  assert.equal(rec.by.role, 'player');
+  assert.equal(rec.notify, false, 'an unknown role must never trigger a notification');
+});

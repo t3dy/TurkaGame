@@ -8,6 +8,10 @@
 
 **[t3dy.github.io/TurkaGame](https://t3dy.github.io/TurkaGame/)** — the front page.
 
+> 🖼 **[The Illustration Catalogue](https://t3dy.github.io/TurkaGame/site/plates/)** — every one of
+> the 70 choice pages in the career sim, paired with the period illustration it uses or an art brief
+> and candidate archive sources for the plate it still needs. Design-phase working document.
+
 ### Play
 | | |
 |---|---|
@@ -20,6 +24,7 @@
 | **[The Ibn Turka Knowledge Portal](https://t3dy.github.io/TurkaGame/site/portal/)** | 52 pages. Six **Intersection** articles on where Ibn Turka meets the wider Islamicate occult world — the Brethren of Purity, al-Būnī, the occult court, the Pythagorean revival, the Akbarian inheritance, the defense of divination — plus entries on figures, concepts, texts, institutions. |
 | **[The Timeline](https://t3dy.github.io/TurkaGame/site/timeline.html)** | 50 dated events, 950–2025, each tagged for how firmly it is grounded. |
 | **[The Visual Novel: full pitch](https://t3dy.github.io/TurkaGame/site/features.html)** | What the VN is and where its research comes from. |
+| **[The Illustration Catalogue](https://t3dy.github.io/TurkaGame/site/plates/)** | 70 choice pages, 24 plated and 46 briefed, against 78 candidate sources in 8 researched archives. Rights are not cleared — the catalogue records repository, shelfmark and licence so they can be sought later. |
 
 ### Every version
 **[The archive](https://t3dy.github.io/TurkaGame/site/archive.html)** — every build kept
