@@ -1013,7 +1013,7 @@
       "title_transliterated": "Kitāb al-Mafāḥīs fī Asrār al-Ḥurūf wa-l-Awfāq",
       "title_translated": "Book of Inquiries into the Secrets of Letters and Talismanic Squares",
       "author_figure_slug": "ibn-turka",
-      "text_type": "PHILOSOPHICAL",
+      "text_type": "PRIMARY_TREATISE",
       "language": "Arabic",
       "date_or_period": "Early 15th century (c. 1400–1420)",
       "card": "**Kitāb al-Mafāḥīs** (Book of Inquiries). Ibn Turka's foundational philosophical and occult treatise, systematizing [[ilm-al-huruf|lettrism]] into a coherent cosmology grounded in [[pythagorean-cosmology|Pythagorean mathematics]]. Integrates [[divine-names|divine names]], [[abjad-numerology|numerical correspondences]], and [[barzakh|intermediate realm]] into unified operative science. His magnum opus; extensively cited by later occultists.",
@@ -1037,6 +1037,36 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "treatise-on-barzakh",
+      "title": "Treatise on the Barzakh",
+      "title_translated": "Treatise on the Intermediate Realm",
+      "author_figure_slug": "ibn-turka",
+      "text_type": "PRIMARY_TREATISE",
+      "language": "Arabic",
+      "date_or_period": "Early 15th century (c. 1400–1420)",
+      "card": "**Risalat al-Barzakh**. Ibn Turka's dedicated treatise on the intermediate realm (barzakh) where causation operates. Expounds the metaphysical framework grounding all lettrist operations: how divine names become manifest in forms, how letters function as operative principles, how human will participates in cosmic causation through knowledge of the barzakh.",
+      "body": "The Treatise on the Barzakh is Ibn Turka's specialized exposition of the ontological and operative theory of the intermediate realm. Where the Kitab al-Mafahis provides comprehensive systematization of all lettrist sciences, the Barzakh treatise focuses on the metaphysical domain where all operations occur. It establishes: (1) Ontological status of barzakh—it is not merely symbolic or psychological but an actual realm possessing objective reality. (2) The barzakh as causal nexus—all causation flows through the intermediate domain; material effects originate in barzakh-level operations. (3) Human participation—the soul operates in the barzakh; through knowledge of letters and divine names, the will can align with cosmic principles and effect change. (4) Letters as barzakh-entities—letters are primarily barzakh realities; their material expression (ink, stone, parchment) is secondary manifestation. The Barzakh treatise is essential reading for understanding the operational framework underlying all talismanic and lettrist practice.",
+      "known_manuscripts": [
+        "Istanbul",
+        "Tehran",
+        "Berlin"
+      ],
+      "modern_editions": [],
+      "literature": [
+        "Melvin-Koushki, Matthew. The Occult Court, pp. 150–200."
+      ],
+      "tags": [
+        "primary-source",
+        "barzakh",
+        "metaphysics",
+        "causation"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM",
+      "title_script": "رسالة البرزخ"
     }
   ],
   "institutions": [
@@ -1101,5 +1131,6 @@
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
     }
-  ]
+  ],
+  "arguments": []
 }

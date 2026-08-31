@@ -125,6 +125,52 @@ def ingest_institutions(conn: sqlite3.Connection, institutions: list[dict]) -> i
         ))
     conn.commit()
     return len(institutions)
+
+
+def ingest_texts(conn: sqlite3.Connection, texts: list[dict]) -> int:
+    c = conn.cursor()
+    for txt in texts:
+        c.execute("""
+            INSERT OR REPLACE INTO texts (
+                slug, title, title_script, title_translated, author_figure_slug,
+                text_type, language, date_or_period, card, body, known_manuscripts,
+                modern_editions, literature, tags, source_method, review_status, confidence
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            txt['slug'], txt['title'], txt.get('title_script'),
+            txt.get('title_translated'), txt.get('author_figure_slug'),
+            txt['text_type'], txt.get('language'),
+            txt.get('date_or_period'), txt.get('card'), txt.get('body'),
+            json.dumps(txt.get('known_manuscripts', [])),
+            json.dumps(txt.get('modern_editions', [])),
+            json.dumps(txt.get('literature', [])),
+            json.dumps(txt.get('tags', [])),
+            txt.get('source_method', 'CORPUS_SYNTHESIS'),
+            txt.get('review_status', 'DRAFT'),
+            txt.get('confidence', 'MEDIUM')
+        ))
+    conn.commit()
+    return len(texts)
+
+
+def ingest_arguments(conn: sqlite3.Connection, arguments: list[dict]) -> int:
+    c = conn.cursor()
+    for arg in arguments:
+        c.execute("""
+            INSERT OR REPLACE INTO arguments (
+                slug, title, card, body, literature, tags,
+                source_method, review_status, confidence
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            arg['slug'], arg['title'], arg.get('card'), arg.get('body'),
+            json.dumps(arg.get('literature', [])),
+            json.dumps(arg.get('tags', [])),
+            arg.get('source_method', 'CORPUS_SYNTHESIS'),
+            arg.get('review_status', 'DRAFT'),
+            arg.get('confidence', 'MEDIUM')
+        ))
+    conn.commit()
+    return len(arguments)
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--seed-file', type=Path, default=SEED_DEFAULT)
@@ -146,9 +192,11 @@ def main() -> int:
         n_fig = ingest_figures(conn, seed.get('figures', []))
         n_con = ingest_concepts(conn, seed.get('concepts', []))
         n_inst = ingest_institutions(conn, seed.get('institutions', []))
+        n_txt = ingest_texts(conn, seed.get('texts', []))
+        n_arg = ingest_arguments(conn, seed.get('arguments', []))
         n_bib = ingest_bibliography(conn, seed.get('bibliography', []))
 
-        print(f"Ingested {n_fig} figures, {n_con} concepts, {n_inst} institutions, {n_bib} bibliography entries.")
+        print(f"Ingested {n_fig} figures, {n_con} concepts, {n_inst} institutions, {n_txt} texts, {n_arg} arguments, {n_bib} bibliography entries.")
 
         # Verify
         c = conn.cursor()
