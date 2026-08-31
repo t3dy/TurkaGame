@@ -557,5 +557,42 @@
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
     }
+  ],
+  "institutions": [
+    {
+      "slug": "isfahan-circle",
+      "name": "Isfahan Circle",
+      "name_transliterated": "Dayira-yi Isfahan",
+      "name_arabic": "الحلقة الأصفهانية",
+      "location": "Isfahan / Yazd",
+      "founded_year": 1395,
+      "dissolved_year": 1432,
+      "type": "INTELLECTUAL_NETWORK",
+      "key_figures": [
+        "ibn-turka",
+        "sharaf-al-din-yazdi",
+        "qazizada-rumi"
+      ],
+      "card": "**Isfahan Circle** (Dayira-yi Isfahan). The intellectual network centered on [[ibn-turka|Ibn Turka]] in late 14th- and early 15th-century Isfahan and Yazd. Members included [[sharaf-al-din-yazdi|Sharaf al-Din Yazdi]] (historian), [[qazizada-rumi|Qazizada Rumi]] (mathematician/astronomer), and other Timurid court scholars. Nexus of [[ilm-al-huruf|lettrist]] philosophy, [[pythagorean-cosmology|Pythagorean mathematics]], and political-administrative theory. The group represented a self-conscious intellectual project to synthesize Islamic occultism with reason, integrating mysticism, philosophy, and operative science.",
+      "body": "## The Isfahan Circle: Nexus of Timurid Occult Science\n\nThe **Isfahan Circle** (c. 1395–1432) was the intellectual and social network that crystallized around [[ibn-turka|Ṣāʾin al-Dīn ʿAlī ibn Turka]] during his residence in Isfahan and Yazd in the early 15th century. This was not a formal institution with buildings or bylaws, but rather a network of scholars, courtiers, administrators, and practitioners who shared commitment to advancing knowledge of the occult sciences, [[ilm-al-huruf|lettrism]], mathematics, and philosophy within the framework of [[ilm-al-huruf|Islamic intellectual orthodoxy]].\n\n### Core Members\n\nThe Circle's most prominent members included:\n\n- **[[ibn-turka|Ṣāʾin al-Dīn ʿAlī ibn Turka]]** — the intellectual hub, occult philosopher and systematizer of [[ilm-al-huruf|lettrism]]\n- **[[sharaf-al-din-yazdi|Sharaf al-Dīn Yazdi]]** — historian and occult theorist; author of the *Ẓafarnāma* (universal history organized by astrological and lettrist principles)\n- **[[qazizada-rumi|Qāżīzāda Rūmī]]** — mathematician and astronomer; integrator of mathematical rigor into [[ilm-al-huruf|occult inquiry]]\n- **[[saad-al-din-hamuyya|Saad al-Din Hamuyya]]** — (slightly earlier, but cited as predecessor by Ibn Turka) pioneering lettrist theorist\n\n### Intellectual Project\n\nThe Isfahan Circle was driven by a unified vision: to demonstrate that the occult sciences—particularly [[ilm-al-huruf|lettrism]], [[abjad-numerology|numerology]], and talismanic practice—constitute a legitimate, rational science encompassing metaphysics, ethics, cosmology, and practice. This project required synthesis:\n\n1. **Theoretical**: Integrating [[ibn-arabi|Ibn Arabi's]] metaphysics (via the [[qunavi|Qūnavī]]-Jandī school) with [[pythagorean-cosmology|Pythagorean mathematics]] and peripatetic philosophy\n2. **Practical**: Demonstrating operative efficacy—showing that knowledge of letters, numbers, and divine names actually produces effects\n3. **Political**: Positioning occult science as essential to statecraft and imperial administration\n\n### Historical Context: The Timurid Court\n\nThe Isfahan Circle emerged during the reign of [[shah-rukh|Shahrukh]] (r. 1405–1447), grandson of Timur. Shahrukh was a patron of scholars and sought legitimacy through cultural achievement and intellectual advancement. The Timurid court in Isfahan and Samarqand became a magnet for scholars across the Islamic world. Within this milieu, Ibn Turka's circle could flourish—court patronage provided resources, institutional sanction provided protection, and the cosmopolitan court environment created space for intellectual experimentation.\n\n### Transregional Network: The Ikhwan al-Safa Connection\n\nMost significantly, the Isfahan Circle saw itself as part of a larger, transregional network stretching from Anatolia through Isfahan to Cairo and Mamluk Syria. Members referred to themselves cryptically as the *Ikhwān al-Ṣafāʾ* (Brethren of Purity), invoking the name of the famous 10th-century Brethren while claiming to represent a \"new\" order. This network included Ottoman scholars in Anatolia, Mamluk court practitioners in Cairo, and Persian philosophers scattered across Timurid lands. The network's coherence lay not in formal organization but in shared commitment to the project of [[ilm-al-huruf|occult science as universal system]].\n\n### Legacy\n\nThe Isfahan Circle disbanded with Ibn Turka's death (1432) and the gradual fragmentation of Timurid power. However, its intellectual legacy persisted: the systematization of [[ilm-al-huruf|lettrism]], the integration of [[pythagorean-cosmology|Pythagorean mathematics]], and the claim that occultism constitutes rational science became foundational to later Safavid, Ottoman, and European occultist traditions. The Circle's members—especially [[sharaf-al-din-yazdi|Sharaf al-Din Yazdi]] through his *Ẓafarnāma*—achieved considerable influence: their works circulated, were copied, were commented upon. By the early 16th century, as Ottoman and Safavid courts consolidated power, the intellectual project inaugurated by the Isfahan Circle had become canonical.",
+      "institutions_related": [
+        "isfahan-judiciary",
+        "timurid-court",
+        "new-brethren-purity"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. *The Occult Court: Magic, Medicine, and Mathematics in the Fourteenth and Fifteenth-Century Isfahan*. Boston: BRILL, 2025.",
+        "Melvin-Koushki, Matthew. *Powers of One: Pythagorean Cosmos in Islamic Context*, pp. 20–50."
+      ],
+      "tags": [
+        "intellectual-network",
+        "timurid",
+        "occult-science",
+        "philosophy"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    }
   ]
 }
