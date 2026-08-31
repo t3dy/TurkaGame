@@ -754,6 +754,72 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "HIGH"
+    },
+    {
+      "source_id": "melvin-koushki-occult-court-2025",
+      "author": "Melvin-Koushki, Matthew",
+      "title": "The Occult Court: Magic, Medicine, and Mathematics in the Fourteenth and Fifteenth-Century Isfahan",
+      "year": 2025,
+      "publisher": "BRILL",
+      "journal": null,
+      "pub_type": "monograph",
+      "relevance": "PRIMARY",
+      "card": "**Matthew Melvin-Koushki, The Occult Court** (BRILL, 2025). Latest major work; contextualizes Ibn Turka within Timurid court politics, medical practice, and imperial administration. Demonstrates that occult science was not marginal to political power but central: talismanic knowledge, astrological timing, and lettrist consultation shaped statecraft. Essential for understanding Isfahan Circle as institutional nexus.",
+      "body": "Melvin-Koushki's newest monograph contextualizes Ibn Turka and the Isfahan Circle within the actual political and administrative structures of the Timurid court. The thesis: occult science was not a marginal pursuit of eccentric scholars but a sophisticated technology of imperial governance. Talismans were created to protect princes, ensure fertility, secure alliances. Astrological timing informed military campaigns. Lettrist consultation shaped policy. By tracing the actual patronage networks, institutional positions, and court roles of Ibn Turka and his circle, Melvin-Koushki shows that occultism was integrated into the machinery of state. This reframes the entire project: Ibn Turka was not an isolated philosopher but a court functionary whose systematization of lettrism served Timurid imperial interests. Essential for understanding Isfahan Circle as operational nexus, not merely intellectual network.",
+      "key_arguments": [
+        "occultism-and-statecraft",
+        "timurid-patronage",
+        "court-politics",
+        "imperial-administration"
+      ],
+      "corpus_file": null,
+      "conversion_status": "EXTERNAL",
+      "page_count": null,
+      "online_url": "https://brill.com/display/title/68583",
+      "access_note": "Recently published; available through BRILL and university libraries",
+      "tags": [
+        "occultism",
+        "statecraft",
+        "timurid",
+        "politics",
+        "medicine"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "HIGH"
+    },
+    {
+      "source_id": "melvin-koushki-being-with-capital-b-2023",
+      "author": "Melvin-Koushki, Matthew",
+      "title": "Being with a Capital B: Islamic Pythagoreanism and Imaginal Ontology in the Thought of Ibn Turka",
+      "year": 2023,
+      "publisher": "BRILL",
+      "journal": null,
+      "pub_type": "monograph",
+      "relevance": "PRIMARY",
+      "card": "**Matthew Melvin-Koushki, Being with a Capital B** (BRILL, 2023). Examines Ibn Turka's metaphysics: how Pythagorean mathematics and imaginal ontology ground a comprehensive philosophy of being. Shows that Ibn Turka's system is not magic but ontological engineering—restructuring human perception and will to align with cosmic structure. Essential theoretical text.",
+      "body": "Melvin-Koushki's most philosophically ambitious work, examining Ibn Turka's metaphysical foundations. Central argument: Ibn Turka's synthesis of Pythagorean mathematics with imaginal ontology (inherited from Suhrawardi and Ibn Arabi via Qunavi) represents a genuine philosophical achievement—a systematic answer to the question of being and causation. By treating letters as ontological primitives (possessing reality independent of human speech), and by grounding all causation in the imaginal realm where letters and divine names operate, Ibn Turka offers an alternative metaphysics rivaling Aristotelian and Neoplatonic systems. The work positions Ibn Turka not as occultist or mystic alone, but as systematic metaphysician. Essential for understanding that Ibn Turka's project is not irrational superstition but coherent philosophy.",
+      "key_arguments": [
+        "metaphysics-of-being",
+        "ontological-engineering",
+        "pythagorean-ontology",
+        "imaginal-reality"
+      ],
+      "corpus_file": null,
+      "conversion_status": "EXTERNAL",
+      "page_count": null,
+      "online_url": "https://brill.com/display/title/59328",
+      "access_note": "Published monograph; widely available",
+      "tags": [
+        "metaphysics",
+        "ontology",
+        "pythagorean",
+        "ibn-turka",
+        "philosophy"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "HIGH"
     }
   ],
   "texts": [
