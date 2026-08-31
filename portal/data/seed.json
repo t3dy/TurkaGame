@@ -1067,6 +1067,35 @@
       "review_status": "DRAFT",
       "confidence": "MEDIUM",
       "title_script": "رسالة البرزخ"
+    },
+    {
+      "slug": "book-of-light",
+      "title": "Book of Light",
+      "title_script": "كتاب النور",
+      "title_translated": "Kitab al-Nur",
+      "author_figure_slug": "ibn-turka",
+      "text_type": "PRIMARY_TREATISE",
+      "language": "Arabic",
+      "date_or_period": "Early 15th century",
+      "card": "**Kitab al-Nur** (Book of Light). Ibn Turka's treatise on cosmological doctrines grounded in lettrist and Pythagorean principles. Expounds how divine light manifests through cosmic levels (intelligible, imaginal, sensible), how letters express this cascading illumination, and how human consciousness participates in cosmic light through lettrist gnosis.",
+      "body": "The Book of Light develops Ibn Turka's cosmological system emphasizing the role of illumination (*nur*) in creation. Drawing on Suhrawardi's Illuminationist philosophy and Ibn Arabi's metaphysics, Ibn Turka presents creation as hierarchical emanation of divine light through progressively dimmer grades. Letters function as vehicles of this light—each letter is a specific frequency of divine illumination. Through [[abjad-numerology|numerical correspondences]] and meditation on letters, consciousness aligns with these cosmic levels and participates in the light-principles governing reality. The Book of Light bridges mystical vision (direct perception of divine light) with systematic cosmology (mathematical and lettrist ordering of creation).",
+      "known_manuscripts": [
+        "Istanbul",
+        "Tehran"
+      ],
+      "modern_editions": [],
+      "literature": [
+        "Melvin-Koushki, Matthew. Being with a Capital B, Ch. 2."
+      ],
+      "tags": [
+        "primary-source",
+        "cosmology",
+        "light",
+        "illumination"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "institutions": [
