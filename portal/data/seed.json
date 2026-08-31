@@ -849,6 +849,71 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "HIGH"
+    },
+    {
+      "source_id": "melvin-koushki-toward-neopythagorean-2020",
+      "author": "Melvin-Koushki, Matthew",
+      "title": "Toward a Neopythagorean Historiography: Rethinking Reason, Revelation, and Philosophy in Islamic Thought",
+      "year": 2020,
+      "publisher": "BRILL",
+      "journal": null,
+      "pub_type": "monograph",
+      "relevance": "PRIMARY",
+      "card": "**Melvin-Koushki, Toward a Neopythagorean Historiography** (BRILL, 2020). Methodological framework for understanding Islamic intellectual history not as decline from classical period but as continuous innovation. Positions Ibn Turka and circle as exemplars of genuine philosophical renewal—Islamic Pythagoreanism as alternative intellectual tradition rivaling European Renaissance. Foundational historiographical text.",
+      "body": "Methodological work establishing how to read 14th-15th century Islamic occult philosophy. Melvin-Koushki argues: conventional narratives treat Islamic intellectual history as decline—loss of Greek philosophical legacy, fragmentation into mysticism and formalism. But this framework blinds us to actual innovation. Ibn Turka's synthesis of lettrism and Pythagoreanism is not preservation of earlier thought but creation of new system. Calling it Neopythagorean positions it in comparative context: just as European Renaissance rediscovered and redeployed Platonic philosophy, Islamic occultists rediscovered and redeployed Pythagorean principles—creating Islamic Neopythagoreanism. This historiographical move revalues the entire intellectual tradition and shows that Ibn Turka participates in global philosophical currents, not provincial Islamic scholarship.",
+      "key_arguments": [
+        "against-decline-thesis",
+        "neopythagoreanism",
+        "intellectual-innovation",
+        "comparative-philosophy"
+      ],
+      "corpus_file": null,
+      "conversion_status": "EXTERNAL",
+      "page_count": 44,
+      "online_url": "https://brill.com/display/title/49341",
+      "access_note": "Published; available through BRILL and universities",
+      "tags": [
+        "historiography",
+        "methodology",
+        "neopythagorean",
+        "philosophy"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "HIGH"
+    },
+    {
+      "source_id": "melvin-koushki-world-as-arabic-text-2020",
+      "author": "Melvin-Koushki, Matthew",
+      "title": "World as (Arabic) Text: Reading Creation through Letters and Names",
+      "year": 2020,
+      "publisher": "BRILL",
+      "journal": null,
+      "pub_type": "monograph",
+      "relevance": "PRIMARY",
+      "card": "**Melvin-Koushki, World as (Arabic) Text** (BRILL, 2020). Explores how Islamic lettrism positions creation as readable text—cosmos constituted through letters and divine names. Treats cosmology, hermeneutics, and ontology as unified: to read letters is to read creation; mastery of letters grants mastery of being. Philosophical and poetic exploration of lettrist gnosis.",
+      "body": "Philosophical exploration of how Islamic lettrism reconstructs the relationship between language, meaning, and reality. Central claim: creation is text—specifically, Arabic text. The universe unfolds through divine speech; divine names generate reality; letters are cosmic entities. If reality is constituted through letters, then knowledge of letters is knowledge of reality itself. Reading—hermeneutics—becomes ontology. The act of reading the divine text (Qur'an, letters, names) is simultaneous act of reading creation. Ibn Turka's system radicalizes this: by treating letters as operative principles, he shows that reading creation is not passive interpretation but active participation—the reader/practitioner becomes co-creator through understanding and deploying lettrist gnosis. This work connects Qur'anic exegesis, medieval Islamic hermeneutics, and Ibn Turka's occultism into unified vision.",
+      "key_arguments": [
+        "creation-as-text",
+        "letters-as-ontology",
+        "hermeneutics-as-ontology",
+        "reading-as-participation"
+      ],
+      "corpus_file": null,
+      "conversion_status": "EXTERNAL",
+      "page_count": 55,
+      "online_url": "https://brill.com/display/title/49343",
+      "access_note": "Published; available through BRILL and universities",
+      "tags": [
+        "cosmology",
+        "lettrism",
+        "hermeneutics",
+        "ontology",
+        "text"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "HIGH"
     }
   ],
   "texts": [
