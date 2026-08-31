@@ -103,6 +103,28 @@ def ingest_bibliography(conn: sqlite3.Connection, bibs: list[dict]) -> int:
     return len(bibs)
 
 
+
+
+def ingest_institutions(conn: sqlite3.Connection, institutions: list[dict]) -> int:
+    c = conn.cursor()
+    for inst in institutions:
+        c.execute("""
+            INSERT OR REPLACE INTO institutions (
+                slug, name, institution_type, period, region, card, body,
+                literature, tags, source_method, review_status, confidence
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            inst['slug'], inst['name'], inst.get('type', 'SCHOLARLY_NETWORK'),
+            inst.get('period'), inst.get('location'),
+            inst.get('card'), inst.get('body'),
+            json.dumps(inst.get('literature', [])),
+            json.dumps(inst.get('tags', [])),
+            inst.get('source_method', 'CORPUS_SYNTHESIS'),
+            inst.get('review_status', 'DRAFT'),
+            inst.get('confidence', 'MEDIUM')
+        ))
+    conn.commit()
+    return len(institutions)
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--seed-file', type=Path, default=SEED_DEFAULT)
@@ -123,9 +145,10 @@ def main() -> int:
     try:
         n_fig = ingest_figures(conn, seed.get('figures', []))
         n_con = ingest_concepts(conn, seed.get('concepts', []))
+        n_inst = ingest_institutions(conn, seed.get('institutions', []))
         n_bib = ingest_bibliography(conn, seed.get('bibliography', []))
 
-        print(f"Ingested {n_fig} figures, {n_con} concepts, {n_bib} bibliography entries.")
+        print(f"Ingested {n_fig} figures, {n_con} concepts, {n_inst} institutions, {n_bib} bibliography entries.")
 
         # Verify
         c = conn.cursor()

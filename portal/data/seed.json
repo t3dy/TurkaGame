@@ -567,7 +567,7 @@
       "location": "Isfahan / Yazd",
       "founded_year": 1395,
       "dissolved_year": 1432,
-      "type": "INTELLECTUAL_NETWORK",
+      "type": "SCHOLARLY_NETWORK",
       "key_figures": [
         "ibn-turka",
         "sharaf-al-din-yazdi",
@@ -592,7 +592,8 @@
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "period": "1395-1432"
     }
   ]
 }
