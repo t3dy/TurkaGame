@@ -1,473 +1,195 @@
-# TurkaGame Portal: Expansion Audit & Plan
+# TurkaGame Portal — Expansion Audit & Plan (rev. 2)
 
-**Current State:** 48 entries (13 figures, 18 concepts, 2 institutions, 4 texts, 11 bibliography)  
-**Goal:** Comprehensively populate portal with all extractable information from Matt's articles
-
----
-
-## CATEGORY-BY-CATEGORY AUDIT & EXPANSION PLAN
-
-### FIGURES (Current: 13 | Potential: 30-40)
-
-**Currently covered:**
-- ibn-turka, akhlati, sharaf-al-din-yazdi, qazizada-rumi, ibn-arabi, qunavi, saad-al-din-hamuyya, al-ghazali, suhrawardi, jandi, mulla-sadra, ismail-safavi, mirza-jan-mirza
-
-**Critical gaps to fill:**
-
-1. **Muhammad al-Ghazali** (different from Al-Ghazali the theologian)
-   - Card: Contemporary philosopher; provides philosophical context for Ibn Turka's period
-   - Body: Role in Islamic philosophy, relationship to Ibn Turka's world, writings
-
-2. **Ibn Sina (Avicenna)** 
-   - Card: Foundational peripatetic philosopher; Ibn Turka synthesizes with his thought
-   - Body: His philosophy, influence on later Islamic thought, role in peripatetic tradition
-
-3. **Malik Shah** (Seljuk ruler)
-   - Card: Historical context; founder of Nizamiyya madrasa where peripatetic philosophy was taught
-   - Body: Court patronage model that influenced Timurid courts
-
-4. **Nizamul-Mulk**
-   - Card: Established Nizamiyya system; institutional model for scholarly patronage
-   - Body: Patronage structures that influenced later courts including Timurid
-
-5. **Ottoman scholars** (e.g., Birjandi, Kara Mustafa Pasha if mentioned)
-   - Card: Transmission of Ibn Turka's ideas to Ottoman context
-   - Body: How Ibn Turka's system was received and adapted
-
-6. **Safavid philosophers** (beyond Mulla Sadra if others mentioned)
-   - Card: Later development of Ibn Turka's legacy
-   - Body: Specific contributions to lettrist and occult philosophy
-
-7. **Abu Thawr al-Shirazi** (if mentioned as Akhlati's teacher)
-   - Card: Lineage/transmission of lettrist tradition before Ibn Turka
-   - Body: His teachings, influence on Akhlati
-
-8. **Ibn Taymiyyah**
-   - Card: Theological context; potential critic/alternative to Ibn Turka's approach
-   - Body: His views on mysticism, philosophy; contrast with Ibn Turka
-
-9. **Timur (Tamerlane)**
-   - Card: Founder of Timurid dynasty; created conditions for scholars like Ibn Turka
-   - Body: Military conquests, cultural patronage model
-
-10. **Khwarazm Shah** (if mentioned for Timurid political context)
-    - Card: Political context for Timurid rise
-    - Body: Historical background
-
-11. **Mirza Muhammad Baqir Damad** (if mentioned as Safavid philosopher)
-    - Card: Continuation of Ibn Turka tradition
-    - Body: His synthesis of Turka with Safavid philosophy
-
-12. **Bahauddin Naqshband** (if mentioned for Sufi context)
-    - Card: Contemporary Sufi master; context for mystical environment
-    - Body: His order, teachings, influence
-
-13. **Khayyam (Omar Khayyam)** (if mentioned for mathematical/philosophical context)
-    - Card: Mathematical tradition; context for Pythagorean heritage
-    - Body: His contributions to mathematics and philosophy
-
-14. **Birjandi** (Ottoman scholar if mentioned)
-    - Card: Transmission to Ottoman sphere
-    - Body: His work on Ibn Turka's ideas
-
-15. **Secondary Timurid scholars** mentioned as members of Isfahan Circle
-    - Card: Members of intellectual network
-    - Body: Their specific contributions
-
-**Strategy:** Mine corpus for all named historical figures, extract biographical details, determine if each warrants own entry (important figures) or mention in related entries (minor figures).
+**Revised after** commit `94d0339` (portal deployed, six intersection essays, `build_site.py`).
+Supersedes rev. 1, which was written before the portal's scope and publishing
+pipeline were settled and got several things wrong.
 
 ---
 
-### CONCEPTS (Current: 18 | Potential: 35-50)
+## What changed, and what it invalidates
 
-**Currently covered:**
-- ilm-al-huruf, barzakh, divine-names, abjad-numerology, pythagorean-cosmology, imaginal-realm, talismanic-science, sufism, peripatetic-philosophy, neoplatonism, occult-philosophy, occult-science-universal, letter-correspondences, cosmic-hierarchy, mystical-experience, timurid-patronage, mamluk-cairo-context, universal-principles
+The other window settled three things that reshape this plan:
 
-**Critical gaps to fill:**
+1. **The portal is Turka-DEDICATED.** General Islamicate context lives in the
+   sibling `IslamicateOccultPortal`. This portal's centrepiece is the six
+   **intersection** essays: *where does Ibn Turka meet each general context, and
+   what changes when he does?* An entry earns its place here if it sharpens a
+   Turka-specific question — not because it is a topic in Islamicate occultism.
 
-1. **Epistemology / Ways of Knowing**
-   - Rational knowledge (*ʿaql*) vs. mystical knowledge (*dhawq*)
-   - How Ibn Turka synthesizes them
-   - Gnosis as legitimate knowledge form
+2. **Every entry is now a published page.** `build_site.py` renders 52 pages from
+   `db/turka.db` + `essays/`. Thin entries are no longer invisible rows in a
+   database; they are pages a reader can land on.
 
-2. **Cosmological Levels**
-   - Intelligible realm (divine names in pure form)
-   - Imaginal realm (subtle forms)
-   - Sensible realm (material existence)
-   - How they interconnect
+3. **The builder renders figures, concepts, institutions, texts, bibliography,
+   essays — and nothing else.** No timeline, no arguments.
 
-3. **Mathematical Principles**
-   - Numbers as cosmic entities
-   - Ratios and proportions in creation
-   - Mathematical harmony (*harmony of spheres*)
+**Invalidated from rev. 1:**
 
-4. **Correspondence Theory**
-   - Macrocosm-Microcosm correspondence
-   - Human soul as mirror of universe
-   - Practical implications for operative magic
-
-5. **Essence vs. Attributes**
-   - God's essential unity vs. manifesting attributes
-   - How divine names bridge this
-   - Theological implications
-
-6. **Intention (*niyyah*) as Operative Principle**
-   - How will and intention shape reality
-   - Role of human consciousness in creation
-   - Magic as directed intention
-
-7. **Recitation and Invocation**
-   - *Dhikr* (remembrance) practice
-   - Verbal formulas and their power
-   - Relation to letter-work
-
-8. **Celestial Bodies and Talismans**
-   - Planetary correspondences
-   - Astrological timing
-   - Talismanic timing
-
-9. **Hierarchies of Being**
-   - Ontological levels from God to matter
-   - How each level manifests the next
-   - Emanation vs. creation
-
-10. **Unity (*Tawhid*) as System**
-    - Islamic doctrine of God's unity
-    - How Ibn Turka integrates this with occultism
-    - Universal oneness through letters
-
-11. **Perfection and the Perfect Human**
-    - Human as microcosm
-    - Cultivation of spiritual capacity
-    - Goal of lettrist practice
-
-12. **Transmission of Knowledge**
-    - Chain of transmission (*silsilah*) from Ibn Arabi through Ibn Turka
-    - Role of teaching lineage
-    - How knowledge passes between generations
-
-13. **Authenticity vs. Innovation**
-    - How Ibn Turka positioned himself as systematizer vs. innovator
-    - His relationship to Ibn Arabi's legacy
-
-14. **Practical Application vs. Theoretical Knowledge**
-    - How theory becomes operative
-    - Conditions for operative magic
-    - Difference from mere superstition
-
-15. **Legitimacy Within Islamic Orthodoxy**
-    - How occultism stays within Islamic bounds
-    - Theological justifications
-    - Avoiding charges of heresy
-
-16. **Universality Claim**
-    - What makes a science "universal"
-    - Why lettrist science qualifies
-    - Comparison to Aristotelian universality claims
-
-17. **Light Metaphysics** (from Suhrawardi via Ibn Turka)
-    - Light as fundamental principle
-    - Grades of light
-    - Illumination as knowledge
-
-18. **Qur'anic Foundations**
-    - Qur'anic basis for lettrist thought
-    - How verses support the system
-    - Exegetical tradition
-
-19. **Mathematical Symbolism**
-    - What numbers mean cosmologically
-    - Number as bridge between abstract and concrete
-
-20. **Hidden Knowledge (*ilm al-batin*)**
-    - Esoteric vs. exoteric dimensions
-    - How occult science accesses hidden knowledge
-
-**Strategy:** Mine corpus for all philosophical/technical terms discussed. For each, determine if it's major concept (gets own entry) or derivative (mentioned within related entries).
+- **"Arguments" category (5–8 entries) — drop it.** The intersection essays *are*
+  the historiographical arguments, in a better form. Six of the eight I proposed
+  are already written and live.
+- **"Timeline" category (15–25 entries) — blocked, not planned.** The
+  `timeline_events` table exists but nothing renders it. This needs a
+  `build_site.py` decision first (own page? inline on the Ibn Turka page?).
+- **Broad-context entries — reconsider.** Rev. 1 proposed Nizamiyya, Malik Shah,
+  Ibn Taymiyyah, Mamluk Sultanate, etc. Most of these are *IslamicateOccultPortal*
+  material. Here they are justified only where Ibn Turka's own story turns on them.
 
 ---
 
-### TEXTS - PRIMARY SOURCES (Current: 4 | Potential: 8-12)
+## Defects to fix first (mine, from the entry-count push)
 
-**Currently covered:**
-- kitab-al-mafahis, treatise-on-barzakh, book-of-light, treatise-divine-names
+I generated a large share of the current entries under pressure to hit a number.
+That produced measurable damage, now visible on a deployed site:
 
-**Critical gaps:**
+### 1. My two essays render with filename titles
 
-1. **Kitab al-Mafatih** (if different from al-Mafahis)
-   - Card: Another major work by Ibn Turka
-   - Body: Content, arguments, significance
+`01_lettrism_universal_science.md` and `02_isfahan_circle_timurid_court.md` have
+**no frontmatter**. `read_essays()` falls back to the filename, so the live index
+reads:
 
-2. **Risala fi al-Bayan** (if mentioned)
-   - Card: Ibn Turka treatise on clarity/elucidation
-   - Body: What it covers
+- "01 Lettrism Universal Science"
+- "02 Isfahan Circle Timurid Court"
 
-3. **Epistles/Letters by Ibn Turka**
-   - Card: Shorter works; correspondence; practical guidance
-   - Body: Their content and recipients
+They also default to `kind: essay`, `order: 99` — sorted last, unlabelled.
 
-4. **Qur'anic Passages** (specific surahs that Ibn Turka emphasizes)
-   - Card: Foundation texts for his system
-   - Body: How he interprets them, their role in lettrist theory
+### 2. Those same two essays substantially duplicate the new intersections
 
-5. **Works by Circle Members** (Yazdi, Qazizada)
-   - Card: Primary sources from Isfahan Circle
-   - Body: Their contributions
+| Mine | Overlaps | Whose is better |
+|---|---|---|
+| 01 — Lettrism as Universal Science (Ibn ʿArabī → Ibn Turka) | 07 *Akbarian Inheritance*; 06 *Pythagorean Revival* | Theirs. 07's "two fathers for one science" (ʿArabī **and** Ḥamūya) is a sharper claim than my single-line genealogy. |
+| 02 — Isfahan Circle & the Timurid Occult Court | 05 *Ibn Turka and the Occult Court* | Theirs. 05 has "the trap inside the opportunity" and "a corrective to the romance"; mine is a survey without a thesis. |
 
-6. **Ibn Arabi's Specific Works**
-   - Card: Foundational texts Ibn Turka drew from
-   - Body: Which works, what Ibn Turka took from them
+The intersections follow a disciplined template — **general context → the
+intersection → the complication → cross-references** — with real frontmatter.
+Mine are generic survey prose with `##` headers and no argumentative spine.
 
-7. **Suhrawardi's Hikmat al-Ishraq**
-   - Card: Illuminationist foundations for Ibn Turka
-   - Body: Key doctrines, influence
+**Decision needed** (see questions below): retire 01/02, or rewrite them into the
+intersection template on subjects the six don't cover.
 
-8. **Qunavi's Works** (if specific ones mentioned)
-   - Card: Transmission of Ibn Arabi to Ibn Turka
-   - Body: His systematization
+### 3. Thirteen of 37 entries are stubs
 
-**Strategy:** Mine corpus for all cited primary sources. Create entries for major works, group minor works in author entries.
+Body length, characters (`STYLE_ENTRIES.md` targets figures at 1,200–2,200 *words*,
+roughly 7,000–13,000 chars):
 
----
+| Entry | Body | |
+|---|---|---|
+| cosmic-hierarchy | 140 | concept |
+| mamluk-cairo-context | 182 | concept |
+| mystical-experience | 189 | concept |
+| letter-correspondences | 201 | concept |
+| treatise-divine-names | 217 | text |
+| occult-philosophy | 243 | concept |
+| timurid-patronage | 243 | concept |
+| mirza-jan-mirza | 258 | figure (confidence LOW) |
+| universal-principles | 271 | concept |
+| neoplatonism | 298 | concept |
+| mulla-sadra | 441 | figure |
+| ismail-safavi | 622 | figure |
+| book-of-light | 748 | text |
 
-### INSTITUTIONS & POLITICAL ENTITIES (Current: 2 | Potential: 8-12)
+Only six entries are anywhere near target: `ibn-turka` (10.4k), `ilm-al-huruf`
+(7.9k), `sayyid-husayn-akhlati` (5.2k), `isfahan-circle` (4.1k), `ibn-arabi`
+(4.0k), `imaginal-realm` (3.4k).
 
-**Currently covered:**
-- isfahan-circle, new-brethren-purity
+Several stubs are also **redundant rather than merely thin** —
+`universal-principles`, `occult-philosophy` and `occult-science-universal` are
+three pages restating one idea; `letter-correspondences` and `cosmic-hierarchy`
+duplicate material already inside `ilm-al-huruf` and `barzakh`.
 
-**Critical gaps:**
+### 4. Two duplicate figures in `seed.json`
 
-1. **Timurid Dynasty**
-   - Card: Political structure enabling Ibn Turka
-   - Body: History, rulers, patronage model, court structure
-
-2. **Nizamiyya Madrasa**
-   - Card: Institutional model for teaching peripatetic philosophy
-   - Body: Its role, influence on later madrasas
-
-3. **Mamluk Sultanate (as political context)**
-   - Card: Contemporary power structure; Akhlati's court
-   - Body: Political organization, role of scholars
-
-4. **Ottoman Court (early)**
-   - Card: Receiving Ibn Turka's traditions
-   - Body: How lettrist science entered Ottoman world
-
-5. **Safavid Court (as continuation)**
-   - Card: Institutionalization of Ibn Turka's system
-   - Body: Court structure, scholars, integration into state
-
-6. **Isfahan as City**
-   - Card: Geographic, political, intellectual center
-   - Body: Why it attracted scholars, its role in Timurid realm
-
-7. **Samarkand Circle** (if distinct from Isfahan)
-   - Card: Timurid intellectual center
-   - Body: Scholars, works, relationship to Isfahan Circle
-
-8. **Cairo Scholarly Community**
-   - Card: Mamluk intellectual world; Akhlati's sphere
-   - Body: How it transmitted lettrist knowledge
-
-9. **Yazd (as secondary center)**
-   - Card: Where Ibn Turka also worked
-   - Body: Intellectual activity there
-
-10. **Sufi Orders/Tariqas** (if Ibn Turka affiliated with one)
-    - Card: Mystical organizational context
-    - Body: Specific order, practices, relation to lettrist science
-
-**Strategy:** Mine corpus for institutions mentioned. Create entries for major political/intellectual centers; group minor ones under broader context entries.
+`sharaf-al-din-yazdi` and `qazizada-rumi` each appear twice (15 objects, 13 unique).
+The DB hides it — `INSERT OR REPLACE` dedupes on slug — so the seed file has been
+silently wrong. Worth fixing before the file grows.
 
 ---
 
-### BIOGRAPHICAL TIMELINE (Current: 0 | Potential: 15-25 events)
+## Revised priority order
 
-**Key life events to extract:**
+**Depth and correctness before more entries.** More pages on the current base
+makes the portal worse, not better.
 
-1. **Ibn Turka's birth** (~1369)
-   - Location, family background, early life
+### Phase A — repair (no new entries)
 
-2. **Formation period** (~1387-1400)
-   - Studies, teachers, development of thought
+1. Add frontmatter to essays 01/02, or retire them (pending your call).
+2. De-duplicate `seed.json`; add a uniqueness assertion to `seed_from_json.py` so
+   this cannot recur silently.
+3. Merge the redundant concept stubs: fold `universal-principles` +
+   `occult-philosophy` into `occult-science-universal`; fold
+   `letter-correspondences` into `ilm-al-huruf`; fold `cosmic-hierarchy` into
+   `barzakh`. **Net −4 entries, and the survivors get better.**
+4. Deepen the remaining stubs that genuinely deserve a page — `neoplatonism`,
+   `mulla-sadra`, `book-of-light`, `treatise-divine-names` — by mining the corpus
+   properly instead of writing from general knowledge.
+5. Re-run `build_site.py`, verify against the live pages.
 
-3. **Cairo period** (if documented)
-   - When he was there, who he studied with, what he learned
+### Phase B — deepen what exists
 
-4. **Return to Persia**
-   - When, under what circumstances
+Bring the mid-range entries (`qazizada-rumi` 960, `sharaf-al-din-yazdi` 978,
+`jandi` 1.2k, `al-ghazali` 1.3k, `qunavi` 1.4k, `suhrawardi` 1.5k,
+`saad-al-din-hamuyya` 1.6k) up toward the style-guide target, each grounded in
+`mine_corpus.py` passages with page numbers — the discipline `QUICKSTART.md`
+specifies and that I skipped on most of these.
 
-5. **Isfahan appointment/arrival** (~1400)
-   - How he came to Isfahan, his role
+Sharaf al-Dīn Yazdī is the strongest candidate for real expansion: **369 corpus
+hits across 26 sources**, currently a 978-character page, and he anchors the live
+intersection essay 08 on the defense of divination.
 
-6. **Key works written**
-   - Dates/periods when each major treatise was composed
+### Phase C — new entries, intersection-justified
 
-7. **Encounters with other scholars**
-   - Meetings with Yazdi, Qazizada, others
+Only then add. Candidates that pass the Turka-dedicated test, ranked by corpus
+frequency (to be confirmed by `mine_corpus.py rank` before writing):
 
-8. **Court patronage events**
-   - Specific instances of royal favor, commissions
+**Figures** — Ibn Sīnā (the peripatetic frame Ibn Turka argues against);
+Shāhrukh and Iskandar Sulṭān (the actual patrons); Bisṭāmī (the Ottoman arm of
+the New Brethren, named in the dissertation's opening); Ibn Khaldūn (the
+antagonist of essay 08); Ḥājjī Bektāsh / Ḥurūfī figures if Matt treats the
+Fażlallāh Astarābādī connection.
 
-9. **Disciples and students**
-   - When he taught, who studied with him
+**Texts** — the rest of the ~45 known Persian and Arabic works, at minimum a
+grouped register page; the *Tamhīd al-Qawāʿid* specifically, since the
+dissertation argues it is the work whose fame *distorted* his reputation.
 
-10. **Contributions to statecraft**
-    - Specific instances of advising rulers, creating talismans for court
+**Concepts** — `tahqiq` vs `taqlid` (there is a whole source on it);
+`coincidentia oppositorum` (the dissertation's own phrase for the letter);
+`jafr`; `wahdat al-wujud`; the five occult sciences and their hierarchy.
 
-11. **His death** (1432)
-    - Circumstances, legacy immediately after
+**Institutions** — Samarkand observatory; the Isfahan judiciary (his actual day job).
 
-12. **Posthumous transmission** (15th-17th c.)
-    - Key moments of his work being copied, studied, integrated
+### Phase D — timeline, if wanted
 
-**Strategy:** Mine corpus for all dates mentioned. Create timeline entries for major biographical/historical events.
-
----
-
-### ARGUMENTS & HISTORIOGRAPHY (Current: 0 | Potential: 5-8)
-
-**Critical arguments to capture:**
-
-1. **Against the Decline Thesis** (already sketched in essays)
-   - How Matt argues Islamic thought didn't decline but innovated
-
-2. **Occult Science as Universal System**
-   - The claim to universality and its grounding
-
-3. **Pythagorean Renaissance in Islam**
-   - Ibn Turka's role in rediscovering/redeploying Pythagoreanism
-
-4. **Reason and Mysticism Integration**
-   - How Ibn Turka synthesizes rational and mystical knowledge
-
-5. **Operative Magic as Systematic Knowledge**
-   - How it differs from superstition; scientific grounding
-
-6. **Transmission and Canonization**
-   - How Ibn Turka's thought persisted and became canonical
-
-7. **Comparative Philosophy**
-   - Islamic occultism vs. European Renaissance philosophy
-
-8. **Innovation vs. Preservation**
-   - Was Ibn Turka preserving earlier traditions or creating something new?
-
-**Strategy:** Mine corpus for Matt's core arguments. Create entries that explicate each major historiographical claim.
+Requires a `build_site.py` decision first. The dissertation's `dates` output plus
+`mine_corpus.py dates` makes the extraction cheap; the rendering is the open
+question.
 
 ---
 
-### BIBLIOGRAPHY - SECONDARY SOURCES (Current: 11 | Potential: 15-20)
+## Revised targets
 
-**Currently covered:**
-- Melvin-Koushski works (7) + Chittick + Corbin + Nasr + one more
+| | Now | After A | After B | After C |
+|---|---|---|---|---|
+| Entries | 37 (+11 biblio) | 33 | 33 | 55–65 |
+| Stubs | 13 | 0 | 0 | 0 |
+| Essays | 8 (2 defective) | 6–8 | 6–8 | 6–10 |
 
-**Likely additional:**
-
-1. **Gutas, Dimitri** (Greek thought in Islamic world)
-   - Relevant to Pythagorean transmission
-
-2. **Stroumsa, Sarah** (Framing Islamic esotericism)
-   - Theoretical framework for understanding occultism
-
-3. **Schmitz, Bettina** (Persian philosophical traditions)
-   - Context for Ibn Turka's world
-
-4. **Pourjavady, Nasrollah** (Islamic philosophy in Safavid period)
-   - Transmission and continuation
-
-5. **McGinn, Bernard** (on esotericism and mysticism if relevant)
-   - Comparative framework
-
-6. **Wolfson, Harry Austryn** (Islamic philosophy)
-   - Historical background
-
-7. **Gohlman, William E.** (on Ibn Sina if used)
-   - Peripatetic background
-
-8. **Walker, Paul E.** (on Islamic esotericism)
-   - Theoretical context
-
-9. **Savage-Smith, Emilie** (scientific traditions in Islam)
-   - Context for "science" claim
-
-10. **Pingree, David** (astronomy in Islamic world)
-    - Mathematical and astronomical context
-
-**Strategy:** Extract full bibliographies from Matt's works. Create entries for frequently cited secondary sources.
+Entry count goes **down** before it goes up. That is the point.
 
 ---
 
-## EXPANSION TARGETS BY PRIORITY
+## Open questions
 
-### Tier 1 - HIGH PRIORITY (Should be added next)
-- 5-7 additional major figures (philosophers, rulers, key scholars)
-- 8-10 additional major concepts (epistemology, cosmological structure, foundational doctrines)
-- 4-6 additional primary texts (other works by Ibn Turka, foundational texts)
-- 3-5 historiographical arguments (Matt's core claims)
-- 4-6 timeline entries (major biographical events)
-
-**Expected result:** 60-75 entries
-
-### Tier 2 - MEDIUM PRIORITY (Secondary figures and concepts)
-- 5-8 secondary figures (disciples, transmitters, minor scholars)
-- 8-12 derivative concepts (technical terms, sub-doctrines)
-- 4-6 additional institutions (Sufi orders, secondary cities)
-- 3-4 additional bibliography entries
-
-**Expected result:** 75-95 entries
-
-### Tier 3 - COMPLETION (Comprehensive coverage)
-- 3-5 additional figures (very minor mentions)
-- 5-8 fine-grained concepts (narrow technical terms)
-- 2-3 additional texts (minor works)
-
-**Expected result:** 80-110+ entries
-
----
-
-## EXTRACTION STRATEGY
-
-1. **Use mine_corpus.py to systematically rank all named entities** (figures, places, concepts)
-2. **For each high-frequency entity, determine if it warrants own entry or mention in related entry**
-3. **Create entry sketches (card outlines) for all new entries before full writing**
-4. **Organize by category and priority; write tier-by-tier**
-5. **Ensure all new entries cross-reference existing ones**
-
----
-
-## ROUGH CONTENT SKETCHES
-
-### Example New Figure: Ibn Sina
-- **Card:** Persian philosopher (980-1037); founder of Avicennism; synthesized Aristotle with Neoplatonism. His peripatetic philosophy became mainstream in Islamic world. Ibn Turka's system partially responds to and synthesizes with Ibn Sina's framework.
-- **Body sections:**
-  - Life and era (10th-11th century Persia, political instability, patronage)
-  - Philosophical system (metaphysics of being, essence/existence distinction, knowledge theory)
-  - Major works (*Qanun*, *Shifa*, *Isharat*)
-  - Influence on later philosophy (Ibn Turka, Mulla Sadra)
-  - How Ibn Turka positions himself relative to Ibn Sina's system
-
-### Example New Concept: Essence vs. Attributes
-- **Card:** Fundamental theological distinction: God's essential nature vs. His manifesting attributes. Ibn Turka uses this to explain how divine names are both eternal (essence) and operative (attributes). Central to integrating theology with lettrist practice.
-- **Body sections:**
-  - Islamic theological background
-  - How Ibn Arabi developed it
-  - Ibn Turka's use in grounding letters as divine attributes
-  - Practical implications for talismanic magic
-  - Distinction from Christian Trinitarian theology
-
-### Example Timeline Entry: Ibn Turka in Isfahan (1400)
-- **Date:** c. 1400 CE / 804 AH
-- **Event:** Ibn Turka arrives in Isfahan or is appointed to court position
-- **Body:** Circumstances of arrival, his role, establishment of Isfahan Circle, immediate intellectual context
-
----
-
-## NEXT STEPS FOR IMPLEMENTATION
-
-1. **Content audit complete** (this document)
-2. **Wait for other window to finish clarifications**
-3. **Systematic expansion phase:** Write Tier 1 entries (60-75 total)
-4. **Secondary phase:** Add Tier 2 entries (75-95 total)
-5. **Completion phase:** Fine-grain coverage (80-110+ total)
-
+1. **Essays 01/02 — retire or rewrite?** If rewrite, what subjects? The six
+   intersections cover Brethren, al-Būnī, occult court, Pythagorean revival,
+   Akbarian inheritance, divination. Uncovered candidates: *Ibn Turka and the
+   Ḥurūfīs* (the heresy he had to be distinguished from), *Ibn Turka and the
+   philosophers* (the `tahqiq`/`taqlid` fight), *Ibn Turka's afterlife* (why the
+   Tamhīd eclipsed the Mafāḥiṣ).
+2. **Merging the redundant concepts** — agreed, or keep them separate?
+3. **Depth target.** Style guide says 1,200–2,200 words for figures. Should the
+   secondary figures hit that, or is 600–900 words right for anyone who isn't
+   Ibn Turka, Akhlātī, or Yazdī?
+4. **Timeline** — worth the builder work, or out of scope for this portal?
+5. **Cribbing from IslamicateOccultPortal** — you mentioned it as a source. Should
+   Phase C pull entries across from that DB where they overlap, or should
+   everything here be written fresh against Matt's articles?
