@@ -381,6 +381,41 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "suhrawardi",
+      "name": "Suhrawardi",
+      "name_full": "Shihab al-Din Yahya ibn Habash al-Suhrawardi",
+      "name_variants": [
+        "Suhrawardi",
+        "Shaykh al-Ishraq"
+      ],
+      "role": "MYSTIC",
+      "lifespan": "1154–1191 / 549–587 AH",
+      "birth_year": 1154,
+      "death_year": 1191,
+      "region": "Anatolia / Syria",
+      "relation_to_turka": "intellectual_ancestor",
+      "card": "**Shihab al-Din Yahya al-Suhrawardi** (1154–1191). Founder of Illuminationist (*Ishraqi*) philosophy. Synthesized Neoplatonic emanationism with Islamic theology, emphasizing direct mystical intuition (*ishraq*; illumination) of divine light and angelic powers. Executed in Aleppo for his teachings. His system profoundly influenced later Islamic philosophers and occultists, including Ibn Turka, who adopted Illuminationist vocabulary and framework to ground lettrist doctrine.",
+      "body": "**Shihab al-Din Yahya al-Suhrawardi** (1154–1191), known as Shaykh al-Ishraq (Master of Illumination), was born in Suhrawardi, Persian Azerbaijan. He became the founder of the Illuminationist (*Ishraqi*) school of Islamic philosophy—a synthesis of Neoplatonic emanationism, Islamic theology, and visionary mysticism. Suhrawardi's key innovation: reality unfolds through levels of light. The divine is pure light (*nur*); creation emanates downward through successively dimmer grades of illumination; each level manifests divine attributes. Crucially, knowledge of these levels is not rational inference but direct mystical intuition (*ishraq*—illumination, sudden gnosis). In Suhrawardi's system, the soul possesses the capacity for immediate perception of intelligible forms, celestial beings, and divine light. This is not imagination but genuine knowledge. Suhrawardi was executed in Aleppo in 1191, likely for heterodox teachings. Yet his influence proved immense: Illuminationism became the dominant philosophical framework for later Islamic thinkers. Ibn Arabi adopted Illuminationist language; Qunavi built on it; Safavid philosophers canonized it. For Ibn Turka, Suhrawardi's framework was essential: the doctrine that reality manifests through levels of light, that the soul can directly perceive intelligible realities, and that mystical intuition is genuine knowledge—all this authorized Ibn Turka's claim that letters are cosmic principles knowable through direct gnosis and operative through talismanic technique.",
+      "key_works": [
+        "hikmat-al-ishraq"
+      ],
+      "affiliations": [
+        "illuminationist-school"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. Powers of One, pp. 50-80."
+      ],
+      "tags": [
+        "mystic",
+        "philosopher",
+        "illuminationist",
+        "neoplatonic"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "concepts": [
@@ -616,6 +651,40 @@
       "page_count": 615,
       "online_url": null,
       "access_note": "Available through Yale ProQuest Dissertations & Theses database."
+    },
+    {
+      "source_id": "melvin-koushki-powers-of-one-2017",
+      "author": "Melvin-Koushki, Matthew",
+      "title": "Powers of One: The Pythagorean Cosmos in Islamic Context",
+      "year": 2017,
+      "publisher": "BRILL",
+      "journal": null,
+      "pub_type": "monograph",
+      "relevance": "PRIMARY",
+      "card": "**Matthew Melvin-Koushki, Powers of One** (BRILL, 2017, 74 pp). Focused study of Ibn Turka's synthesis of Pythagorean mathematics with Islamic lettrism. Argues that Ibn Turka's explicit grounding of lettrism in Pythagorean cosmology represents a revolutionary moment in Islamic intellectual history—positioning occult science as universal system rivaling any philosophical school. Essential for understanding Ibn Turka's mathematical framework.",
+      "body": "**Matthew Melvin-Koushki, Powers of One: The Pythagorean Cosmos in Islamic Context** (Boston: BRILL, 2017, 74 pages). A tightly argued monograph extracted from Melvin-Koushki's larger body of work, focusing specifically on Ibn Turka's adoption and deployment of Pythagorean philosophy. Melvin-Koushki establishes: (1) Pythagorean ideas reached Islamic world through Neoplatonic transmission, Greek texts preserved in Arabic translation, and Byzantine scholarly contact. (2) Earlier Islamic philosophers (al-Kindi, al-Farabi) engaged Pythagoreanism but did not fully synthesize it with Islamic occultism. (3) Ibn Turka was the first to explicitly declare that Islamic lettrism is fundamentally Pythagorean—that letters and their numerical values encode cosmic ratios and mathematical principles governing creation. (4) This move was revolutionary: it gave lettrism mathematical legitimacy, connected it to ancient philosophy (lending historical pedigree), and positioned it as universal science encompassing reason, mysticism, and practice. Powers of One is essential reading for understanding Ibn Turka's intellectual project and the claim that occult philosophy represents genuine scientific advancement, not remnant superstition.",
+      "key_arguments": [
+        "pythagorean-synthesis",
+        "mathematical-legitimacy",
+        "universal-science",
+        "against-decline"
+      ],
+      "corpus_file": null,
+      "conversion_status": "EXTERNAL",
+      "char_count": null,
+      "page_count": 74,
+      "online_url": "https://brill.com/display/title/32633",
+      "access_note": "Published work; available through university libraries and BRILL",
+      "literature": [],
+      "tags": [
+        "pythagorean",
+        "lettrism",
+        "ibn-turka",
+        "occult-science"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "HIGH"
     }
   ],
   "texts": [
