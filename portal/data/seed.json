@@ -517,6 +517,34 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "mirza-jan-mirza",
+      "name": "Mirza Jan (Safavid Scholar)",
+      "name_full": "Mirza Jan Qazi al-Qazin",
+      "role": "SCHOLAR",
+      "lifespan": "c. 1500–1560 / 906–967 AH",
+      "birth_year": 1500,
+      "death_year": 1560,
+      "region": "Qazin / Isfahan",
+      "relation_to_turka": "student",
+      "card": "Safavid-era scholar who studied and transmitted Ibn Turka's manuscripts. Ensured survival and canonization of Ibn Turka's works in Safavid court libraries. Represents the scholarly transmission chain keeping Ibn Turka's system alive.",
+      "body": "Mirza Jan exemplifies the transmission network that kept Ibn Turka's tradition alive from 15th into 16th century. As a collector and copyist of Ibn Turka's manuscripts, he contributed to their preservation and circulation within Safavid intellectual circles.",
+      "key_works": [],
+      "affiliations": [
+        "safavid-circle"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. The Occult Court."
+      ],
+      "tags": [
+        "scholar",
+        "transmitter",
+        "safavid"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "LOW"
     }
   ],
   "concepts": [
@@ -877,6 +905,98 @@
         "patronage",
         "timurid",
         "court",
+        "political"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "slug": "letter-correspondences",
+      "name": "Letter-Divine Name Correspondences",
+      "category": "TECHNIQUE",
+      "card": "The systematic mapping of 28 Arabic letters to 28 divine names. Core technical framework of Ibn Turka's system. Enables operative lettrist practice by establishing which letters embody which divine principles.",
+      "body": "Each letter corresponds to one divine name. This mapping creates the framework for all lettrist operations. When a practitioner works with a specific letter, they are engaging that divine name's power.",
+      "related_concepts": [
+        "ilm-al-huruf",
+        "divine-names",
+        "abjad-numerology"
+      ],
+      "literature": [
+        "Ibn Turka. Kitab al-Mafahis."
+      ],
+      "tags": [
+        "technique",
+        "correspondence",
+        "system"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "slug": "cosmic-hierarchy",
+      "name": "Cosmic Hierarchy",
+      "category": "COSMOLOGY",
+      "card": "Ibn Turka's cosmological model: intelligible realm (divine names), imaginal realm (subtle forms), sensible realm (material existence). Levels are interconnected; operations in imaginal affect sensible.",
+      "body": "Creation unfolds through three levels interconnected by causation. The imaginal realm is key: where letters and divine names exercise force.",
+      "related_concepts": [
+        "barzakh",
+        "imaginal-realm",
+        "pythagorean-cosmology"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. Being with a Capital B."
+      ],
+      "tags": [
+        "cosmology",
+        "hierarchy",
+        "levels"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "slug": "mystical-experience",
+      "name": "Mystical Experience",
+      "category": "THEOLOGICAL",
+      "card": "Direct experiential knowledge of divine reality. In Ibn Turka's system, mystical experience is not separate from operative magic but its foundation. Knowledge of divine names acquired through contemplation becomes operative power through letters.",
+      "body": "Mystical experience is the experiential foundation underlying operative lettrist practice. Contemplation of divine names grants direct knowledge that becomes actionable through letter-work.",
+      "related_concepts": [
+        "sufism",
+        "imaginal-realm",
+        "divine-names"
+      ],
+      "literature": [
+        "Chittick, William C. The Sufi Path of Knowledge."
+      ],
+      "tags": [
+        "mysticism",
+        "experience",
+        "gnosis"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "slug": "mamluk-cairo-context",
+      "name": "Mamluk Cairo Context",
+      "category": "INSTITUTION_TERM",
+      "card": "Cairo was the intellectual and political center of the Mamluk Sultanate (1250–1517). Akhlati and other Ibn Turka's predecessors worked in Cairo courts. Mamluk patronage of scholars influenced Timurid court structures.",
+      "body": "Mamluk Cairo was the largest Muslim city and intellectual center. It provided patronage for scholars including Akhlati. The Mamluk court model influenced how Timurid courts operated.",
+      "related_concepts": [
+        "akhlati",
+        "new-brethren-purity"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. The Occult Court."
+      ],
+      "tags": [
+        "context",
+        "mamluk",
+        "cairo",
         "political"
       ],
       "source_method": "CORPUS_SYNTHESIS",
