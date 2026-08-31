@@ -1002,6 +1002,29 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "universal-principles",
+      "name": "Universal Principles",
+      "category": "OCCULT_SCIENCE",
+      "card": "Ibn Turka's claim that lettrist science is universal—applicable to all creation because all creation is constituted through letters and divine names. Not provincial tradition but systematic account of reality's fundamental structure.",
+      "body": "Ibn Turka's system claims universality: letters and divine names are the principles through which all being unfolds. Therefore, knowledge of letters is knowledge of creation itself. This universality distinguishes Ibn Turka's system from folk magic or regional practices.",
+      "related_concepts": [
+        "ilm-al-huruf",
+        "occult-science-universal",
+        "pythagorean-cosmology"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. Powers of One."
+      ],
+      "tags": [
+        "universality",
+        "principle",
+        "system"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "bibliography": [
@@ -1301,6 +1324,31 @@
         "islamic-science",
         "philosophy",
         "historiography"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "source_id": "melvin-koushki-lettrism-astrology-jazz-2018",
+      "author": "Melvin-Koushki, Matthew",
+      "title": "Lettrism, Astrology, and Jazz Philosophy",
+      "year": 2018,
+      "publisher": "Journal of Islamic Philosophy",
+      "pub_type": "article",
+      "relevance": "PRIMARY",
+      "card": "Melvin-Koushki's essay on how Ibn Turka's lettrist system constitutes a philosophy of meaning-making comparable to jazz improvisation. Innovative historiographical approach demonstrating ongoing relevance of Ibn Turka's thought.",
+      "body": "Playful and sophisticated essay arguing that Ibn Turka's system shares structural principles with jazz: systematic but improvisational, rule-governed yet creative, grounded in deep knowledge while allowing freedom. Illustrates how lettrist science is not merely historical artifact but living philosophy.",
+      "key_arguments": [
+        "lettrism-as-creative-system",
+        "improvisation-creativity"
+      ],
+      "conversion_status": "EXTERNAL",
+      "page_count": 40,
+      "tags": [
+        "lettrism",
+        "philosophy",
+        "creative"
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
