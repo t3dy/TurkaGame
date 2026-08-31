@@ -65,8 +65,13 @@ line about the tension itself — which is truer to the history anyway.
 
 ### 3.1 Replay variety is thin in the late game
 Phases IV–V (9 encounters each, 5–6 nodes) — a single run sees ~80% of the pool.
-**✅ Partially addressed**: +3 new encounters this session (§5). Real depth is ROADMAP
-Slice 4; this audit sets the bar at ≥12/phase before calling variety adequate.
+**✅ RESOLVED (same day, second pass)**: pools now I:14 · II:14 · III:16 · IV:13 · V:13
+(70 total) — every phase at or above the ≥12 bar, with the floor lint-enforced
+(`pool shrank below 11` test). Mined from VN c11–c40 (the Bāysunghur Qurʾan, the
+sensory-theory quarrel with Avicenna, source-crediting, the grimoire commission, exile
+destination, the testament) and *Boon for the Khan*'s operation categories,
+paraphrased per the research note's caution (the suffumigation army-of-smoke, sleeper
+interrogation as bazm comedy, the wake-rite). The comedic register now exists.
 
 ### 3.2 Attested gems still un-mined
 In BIOGRAPHY but absent from play before this session: the **Three Globes of Light**
@@ -131,13 +136,14 @@ companion to the cosmogram. Not started.
 ## 6. Inventory of remaining work (ranked)
 
 1. **Cold human playtest** — the standing gate item; nothing below outranks it.
-2. Pool depth to ≥12/phase for III–V — mine VN c11–c40 + *Boon for the Khan* operations
-   (ENCOUNTER_ATOMS.md batch discipline; comedic bazm register still underweight).
+2. ~~Pool depth to ≥12/phase for III–V~~ **✅ DONE** (see §3.1) — next depth target is
+   Slice 4's ~120+ with two-run overlap <40%.
 3. Citation-grade seal sources (§4.3) — pair with Slice 2 chrome.
 4. Codex / "what you met" educational trophy page (§4.4) — pair with Slice 3 cosmogram.
 5. Demand profiles (§3.4) — Slice 3/4, decide then whether numeric or qualitative.
-6. Phase II visual depth (2 plates) — next registry pass; candidates already in
-   OCCULTIMGDB (Bulhan zodiac folios, geomantic instrument details).
+6. ~~Phase II visual depth~~ **✅ Improved**: +3 registered images (registry 30) — the
+   c.1280 Qazwīnī budūḥ square now plates the mysterious-letters study; Bulhān demons
+   and the Qazwīnī jinn-singer plate the new Phase III encounters.
 7. More `cap:`-based gating so future items/texts can substitute for people (§2.3).
 8. Seven-tier mastery axis — **still blocked** on acquiring "Selenocentrism and
    Heliocentrism"; do not invent (standing rule).

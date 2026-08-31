@@ -7,8 +7,8 @@ import { drawEncounter, evaluateOptions, resolveOption, encounterEligible } from
 import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, exposureTier,
   finalVerdict, settleContracts,
-} from './engine/career.js?v=3';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=3';
+} from './engine/career.js?v=4';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=4';
 import * as ui from './ui.js?v=3';
 
 let state = null;

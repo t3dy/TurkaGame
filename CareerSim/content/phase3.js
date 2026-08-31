@@ -24,7 +24,7 @@ export const NODES = [
   {
     id: 'atelier', name: 'The Kitābkhāna', icon: '🖌',
     hook: 'The book-workshop: calligraphers, painters, illuminators, and your diagrams.',
-    encounters: ['court_calligrapher', 'court_atelier_commission'],
+    encounters: ['court_calligrapher', 'court_quran', 'court_atelier_commission'],
   },
   {
     id: 'observatory', name: 'The Star-Table Room', icon: '🔭',
@@ -34,12 +34,12 @@ export const NODES = [
   {
     id: 'bazm', name: 'The Feast (Bazm)', icon: '🍷',
     hook: 'Wine, poetry, wonders, and politics conducted entirely in jokes.',
-    encounters: ['court_bazm_wonder', 'court_bazm_confession'],
+    encounters: ['court_bazm_wonder', 'court_wonder_night', 'court_bazm_confession'],
   },
   {
     id: 'razm', name: 'The Campaign (Razm)', icon: '⚔',
     hook: 'The other half of Timurid life: armies, auspicious dates, and useful sciences.',
-    encounters: ['court_razm_date', 'court_razm_device'],
+    encounters: ['court_razm_date', 'court_suffumigation', 'court_razm_device'],
   },
   {
     id: 'depart3', name: 'Toward 1420', icon: '📖', departure: true,
@@ -487,6 +487,163 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'success', weight: 1, text: 'You thank him for the correction in front of the court. It disarms him completely and confuses everyone else.',
             chronicle: 'He conceded his rival’s correction publicly, which nobody at that court had seen done before.' },
+        ],
+      },
+    ],
+  },
+
+  court_quran: {
+    id: 'court_quran', phase: 3,
+    rubric: 'THE KIT\u0100BKH\u0100NA \u00b7 THE MONUMENTAL QUR\u02beAN',
+    grounding: 'ATTESTED',
+    source: 'BIOGRAPHY \u2014 B\u0101ysunghur as likely commissioner of the monumental B\u0101ysunghur Qur\u02bean; VN c12',
+    when: ['mem:patron=baysunghur'],
+    affordances: ['manuscripts', 'inscription', 'royal_patronage'],
+    plate: IMG('cs-p3-square-kufic-bismillah.jpg', 'Square Kufic Bismillah page by Ahmed Karahisari, 16th c. (Wikimedia Commons)'),
+    situation:
+      'The kit\u0101bkh\u0101na is preparing the largest Qur\u02bean ever attempted \u2014 pages taller than a man, a monument in ink. ' +
+      'B\u0101ysunghur asks, in the manner of a prince who already suspects the answer, whether the science of letters has ' +
+      'anything to say about how the Word of God should be laid upon a page that size.',
+    options: [
+      {
+        id: 'framework', label: 'Offer a lettrist framework for the layout',
+        detail: 'Your proportions, in the most permanent object this dynasty will make. Glory, in evidence form.',
+        requires: ['limiya>=2'],
+        boosts: ['person:calligrapher'],
+        effects: { meters: { transmission: 2, exposure: 2 }, rep: { imperial: 2 }, memory: { quran_framework: true } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'Your letter-proportions govern the great pages. Centuries from now, anyone who studies the monument studies your mathematics without knowing it \u2014 the deepest anonymous transmission available to a human being.',
+            effects: { meters: { transmission: 1 }, rep: { occult: 1 } },
+            chronicle: 'His letter-proportions entered the monumental Qur\u02bean itself, unsigned and permanent.' },
+          { band: 'ambiguous', weight: 1, text: 'The framework is adopted \u2014 quietly, partially, and with your name kept well away from the colophon. Prudence, the workshop master explains, of a kind you should appreciate.',
+            effects: { meters: { transmission: 1 } },
+            chronicle: 'Part of his framework shaped the great Qur\u02bean, and no record said so.' },
+        ],
+      },
+      {
+        id: 'advise_only', label: 'Advise the calligraphers privately',
+        detail: 'Influence without authorship. Nothing to point at; nothing to indict.',
+        requires: [],
+        effects: { meters: { transmission: 1 }, rep: { imperial: 1 }, memory: { quran_advised: true } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'Evenings at the workshop, questions answered, no documents signed. The pages are better for it and innocent of you.',
+            chronicle: 'He advised the Qur\u02bean workshop by lamplight and signed nothing.' },
+        ],
+      },
+      {
+        id: 'stand_apart', label: 'Keep your science away from Scripture',
+        detail: 'The one place a lettrist should perhaps not practice. Safe, and a renunciation.',
+        requires: [],
+        effects: { rep: { orthodox: 2 }, memory: { quran_declined: true } },
+        outcomes: [
+          { band: 'qualified', weight: 1, text: 'You decline with a formula about the Word needing no improvement. The jurists who hear of it approve. The calligraphers, oddly, seem disappointed.',
+            chronicle: 'Asked to bring his science to the great Qur\u02bean, he declined, and the jurists marked it in his favor.' },
+        ],
+      },
+    ],
+  },
+
+  court_suffumigation: {
+    id: 'court_suffumigation', phase: 3,
+    rubric: 'THE CAMPAIGN \u00b7 AN ARMY THAT IS NOT THERE',
+    grounding: 'INVENTED-COMPATIBLE',
+    source: 'RESEARCH \u2014 later manuals catalogue suffumigation operations producing giant smoke figures, one framed as a trick played on Alexander; the application here is constructed',
+    when: ['mem:patron'],
+    affordances: ['military', 'materials'],
+    plate: IMG('cs-p3-bulhan-demons.jpg', 'Demons, Kit\u0101b al-Bulh\u0101n \u2014 Baghdad, late 14th\u201315th c. (Wikimedia Commons)'),
+    situation:
+      'A commander with a thin garrison and a wide frontier has heard \u2014 from a feast, from a rumor, from somewhere \u2014 ' +
+      'that the old manuals describe smokes that read at distance as giant figures, even armies. The books do describe ' +
+      'them. They also describe men who tried such compounds and produced only a smell. He wants to know if it can be done.',
+    options: [
+      {
+        id: 'attempt_smoke', label: 'Attempt the great suffumigation',
+        detail: 'S\u012bmiy\u0101 at campaign scale: compounds, wind, and an enemy\u2019s imagination.',
+        requires: ['simiya>=1'],
+        boosts: ['kimiya>=1'],
+        effects: { meters: { exposure: 1 }, memory: { smoke_attempted: true } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'At dusk, with the wind agreeing, the ridge grows a wall of towering shapes \u2014 mostly smoke, partly suggestion, entirely sufficient. The raiders decline the frontier. You decline, firmly, to repeat it on demand.',
+            effects: { rep: { imperial: 2, occult: 2 }, meters: { demonstration: 2 } },
+            chronicle: 'On a frontier ridge his smokes stood up like giants at dusk, and the raiders went elsewhere.' },
+          { band: 'qualified', weight: 2, text: 'The compounds behave for one rehearsal in three. You deliver a formal opinion: possible, unreliable, and not to be depended on by men whose lives ride on it. The commander respects the honesty and forgets the caution.',
+            effects: { rep: { imperial: 1 }, meters: { demonstration: 1 } },
+            chronicle: 'His smoke-figures rose once in three attempts, and he said so plainly in his report.' },
+          { band: 'disaster', weight: 1, text: 'Wet weather, bad saltpeter, a shifted wind. The garrison watches a very expensive fog drift sideways. The story of the philosopher\u2019s fog will reach three courts before you do.',
+            effects: { rep: { imperial: -2, scholarly: -1 }, meters: { exposure: 1 } },
+            chronicle: 'His great suffumigation produced an expensive fog, and the story outran him.' },
+        ],
+      },
+      {
+        id: 'debunk_smoke', label: 'Tell him what the books do not say',
+        detail: 'The epistemology option: separate the tested from the wished-for, in writing.',
+        requires: ['meter:synthesis>=3'],
+        effects: { rep: { scholarly: 2 }, memory: { smoke_debunked: true } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'You write him an honest memorandum: which operations reproduce, which are travelers\u2019 tales, and how to tell the difference. It is the least magical document you have ever produced and among the most useful.',
+            effects: { rep: { imperial: 1 } },
+            chronicle: 'He wrote the commander a sober memorandum separating tested operations from tales, and was trusted the more for it.' },
+        ],
+      },
+      {
+        id: 'refuse_smoke', label: 'Decline the whole question',
+        detail: 'War-work again. You have refused it before; refuse it again.',
+        requires: [],
+        effects: { rep: { imperial: -1 }, memory: { refused_war_work: true } },
+        outcomes: [
+          { band: 'qualified', weight: 1, text: 'You decline. The commander finds a cheaper practitioner whose smoke does nothing, which costs him only money.',
+            chronicle: 'He refused the army\u2019s smoke, and a cheaper man sold them fog.' },
+        ],
+      },
+    ],
+  },
+
+  court_wonder_night: {
+    id: 'court_wonder_night', phase: 3,
+    rubric: 'THE FEAST \u00b7 LATE, AND THE VIZIER IS ASLEEP',
+    grounding: 'INVENTED-COMPATIBLE',
+    source: 'RESEARCH \u2014 later manuals describe sleeper-interrogation and wake-rite operations among feast entertainments; this scene is constructed around those categories',
+    when: ['mem:patron'],
+    affordances: ['wine', 'private_audience'],
+    plate: IMG('cs-p3-qazwini-jinn-singer.jpg', 'The Singer Ibr\u0101h\u012bm and the Jinn \u2014 Iran, early modern copy (Wikimedia Commons)'),
+    situation:
+      'Deep in the night-half of the bazm, a junior vizier has fallen asleep sitting upright, and the prince \u2014 delighted, ' +
+      'a little drunk \u2014 remembers a story: that the old manuals teach how to make a sleeping man answer questions truthfully. ' +
+      'Everyone looks at you. The vizier snores. The room is already composing the anecdote.',
+    options: [
+      {
+        id: 'sleeper_show', label: 'Perform it as theater',
+        detail: 'R\u012bmiy\u0101: stage-whisper, planted questions, harmless answers. The room gets its story; the vizier keeps his secrets.',
+        requires: ['rimiya>=1'],
+        effects: { rep: { imperial: 1 }, meters: { demonstration: 1 }, memory: { sleeper_theater: true } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'You conduct a solemn interrogation in which the sleeping vizier \u201cconfesses\u201d to hating the prince\u2019s favorite hound and loving his cook. The room weeps with laughter. The vizier wakes to applause and never learns why \u2014 and the man who keeps the prince\u2019s files watches you very thoughtfully.',
+            effects: { rep: { occult: 1 }, memory: { intelligence_interest: true } },
+            chronicle: 'He made a sleeping vizier confess to loving the cook, and the whole feast wept laughing.' },
+          { band: 'success', weight: 1, text: 'Gentle comedy, no harm done. The prince declares it the best evening of the season.',
+            chronicle: 'His sleeper-comedy at the feast became the season\u2019s favorite story.' },
+        ],
+      },
+      {
+        id: 'sleeper_refuse', label: 'Refuse \u2014 and say why',
+        detail: 'A sleeping man cannot consent to be a demonstration. Kill the joke; keep the principle.',
+        requires: [],
+        effects: { rep: { scholarly: 1, imperial: -1 }, memory: { sleeper_refused: true } },
+        outcomes: [
+          { band: 'qualified', weight: 2, text: 'You say, mildly, that a man\u2019s sleep is not the court\u2019s property. The prince pouts; the vizier, told of it later, becomes the most loyal ally you have at this court.',
+            effects: { memory: { vizier_ally: true } },
+            chronicle: 'He refused to make theater of a sleeping man, and the man became his ally for life.' },
+        ],
+      },
+      {
+        id: 'wake_rite', label: 'Offer the opposite trick instead',
+        detail: 'The wake-rite: keep the whole table alert till dawn. Redirect the room\u2019s appetite.',
+        requires: ['kimiya>=1'],
+        effects: { rep: { imperial: 1 }, memory: { wake_rite_shown: true } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'A preparation from the manuals \u2014 mostly strong ingredients and stronger theater \u2014 and the feast runs to sunrise with nobody asleep to mock. The kitchen bills you personally.',
+            effects: { meters: { demonstration: 1 } },
+            chronicle: 'He kept the prince\u2019s table awake until dawn by art, and let the sleeping man sleep.' },
         ],
       },
     ],

@@ -660,5 +660,85 @@
     "added_date": "2026-08-30",
     "usage_status": "approved",
     "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Ottoman Empire"
+  },
+  {
+    "id": "758b56b0-53dc-408e-af24-f42653498112",
+    "title": "Demons (Devils), Kitāb al-Bulhān",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "late 14th–15th c.",
+    "creator_or_scribe": "Workshop of ʿAbd al-Ḥasan al-Iṣfāhānī (attrib.), with later additions",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Kitab_al-Bulhan_---_demons.jpg",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "cs-p3-bulhan-demons.jpg",
+    "sha256": "b552f469766c5de6146e9eba0133dbaa1ca33478c492823a51c14198bb8d763a",
+    "cited_in": [
+      "occultimgdb:islamicate_deep__bulhan-jinn-red"
+    ],
+    "tags": [
+      "careersim",
+      "phase3",
+      "razm",
+      "suffumigation",
+      "jinn"
+    ],
+    "added_by": "careersim-audit-backlog",
+    "added_date": "2026-08-31",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Baghdad, Iraq"
+  },
+  {
+    "id": "b64b28c4-2e8d-46cc-ba3c-a0c36c8179d8",
+    "title": "The Singer Ibrāhīm and the Jinn",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "early modern manuscript copy",
+    "creator_or_scribe": "Anonymous (Persianate workshop)",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:The_Singer_Ibrahim_and_the_jinn.jpg",
+    "rights_note": "Public domain. Via Wikimedia Commons.",
+    "local_file": "cs-p3-qazwini-jinn-singer.jpg",
+    "sha256": "62b2ffa423fe2e2a4a997434ee0d5e392129dc6f78ecce5f923ad9db95c0671a",
+    "cited_in": [
+      "occultimgdb:islamicate_occult__qazwini-jinn"
+    ],
+    "tags": [
+      "careersim",
+      "phase3",
+      "bazm",
+      "majlis",
+      "jinn"
+    ],
+    "added_by": "careersim-audit-backlog",
+    "added_date": "2026-08-31",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Iran"
+  },
+  {
+    "id": "90b5218f-3976-4b67-8f94-b72c167d68da",
+    "title": "Buduh Magic Square (al-Qazwini, 13th c.)",
+    "institution": "Wikimedia Commons",
+    "shelfmark": null,
+    "folio": null,
+    "date_or_period": "c. 1280",
+    "creator_or_scribe": "various",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File:Buduh_magic_square.jpg",
+    "rights_note": "Public Domain",
+    "local_file": "cs-p2-buduh-square-qazwini.jpg",
+    "sha256": "bc5193afb193f0fc0ac788b30106eaf87b4244b624d440266dcfc3fad1e592f4",
+    "cited_in": [
+      "occultimgdb:islamic_talismans__buduh-magic-square-qazwini"
+    ],
+    "tags": [
+      "careersim",
+      "phase2",
+      "buduh",
+      "letters"
+    ],
+    "added_by": "careersim-audit-backlog",
+    "added_date": "2026-08-31",
+    "usage_status": "approved",
+    "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Persia / Islamic world"
   }
 ]

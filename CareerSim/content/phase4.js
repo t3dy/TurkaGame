@@ -19,7 +19,7 @@ export const NODES = [
   {
     id: 'desk', name: 'The Desk', icon: '✒',
     hook: 'Where the summa is actually written. Nothing else gets it done.',
-    encounters: ['pivot_begin', 'pivot_language', 'pivot_structure', 'pivot_globes'],
+    encounters: ['pivot_begin', 'pivot_language', 'pivot_structure', 'pivot_globes', 'pivot_sensory', 'pivot_sources'],
   },
   {
     id: 'diagram', name: 'The Drawing Board', icon: '◎',
@@ -29,7 +29,7 @@ export const NODES = [
   {
     id: 'brethren', name: 'The Circle', icon: '✳',
     hook: 'Yazdī, students, correspondents — the people who decide whether this survives you.',
-    encounters: ['pivot_yazdi_copy', 'pivot_teach'],
+    encounters: ['pivot_yazdi_copy', 'pivot_teach', 'pivot_grimoire'],
   },
   {
     id: 'samarkand', name: 'The Observatory Rising', icon: '🔭',
@@ -463,6 +463,134 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'qualified', weight: 1, text: 'You turn them away kindly. The system now depends entirely on a book and on whether anyone can read it without you.',
             chronicle: 'He turned his students away, and left the system to fend for itself in a book.' },
+        ],
+      },
+    ],
+  },
+
+  pivot_sensory: {
+    id: 'pivot_sensory', phase: 4,
+    rubric: 'THE DESK \u00b7 AGAINST AVICENNA ON THE SENSES',
+    grounding: 'ATTESTED',
+    source: 'VN c19 \u2014 the sensory-theory innovations against Avicenna\u2019s hierarchy; timing of publication is the open choice',
+    when: ['mem:investigations_begun'],
+    affordances: ['quiet', 'library'],
+    situation:
+      'Buried in the summa is a quarrel you did not go looking for: your account of how the Letter reaches mind through ' +
+      'ear and eye will not fit Avicenna\u2019s hierarchy of the senses, and you are increasingly sure Avicenna is wrong. ' +
+      'Correcting the Master of philosophers is a career event in itself. The only question is when to be seen doing it.',
+    options: [
+      {
+        id: 'publish_early', label: 'Publish the correction now',
+        detail: 'Stake the claim while it is yours. Bold, early, and quotable by every enemy of novelty.',
+        requires: ['meter:synthesis>=6'],
+        effects: { rep: { scholarly: 2, orthodox: -1 }, meters: { exposure: 1 }, memory: { sensory_published: 'early' } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'The argument is airtight and lands like a slap. Half the philosophers are furious, which is how you know they read it. The correction is attached to your name permanently \u2014 in both senses.',
+            effects: { meters: { synthesis: 1 }, rep: { occult: 1 } },
+            chronicle: 'He corrected Avicenna on the senses in print, and the philosophers were furious enough to read him.' },
+          { band: 'ambiguous', weight: 1, text: 'The learned split: the mathematicians find it obvious, the philosophers find it insolent, and \u201cthe man who quarrels with Avicenna\u201d joins your list of epithets.',
+            effects: { rep: { scholarly: 1 } },
+            chronicle: 'His quarrel with Avicenna over the senses divided the learned and named him among the Moderns.' },
+        ],
+      },
+      {
+        id: 'hold_it', label: 'Hold it until your name can absorb the backlash',
+        detail: 'Patience. The argument keeps; the priority may not.',
+        requires: [],
+        effects: { meters: { synthesis: 1 }, memory: { sensory_published: 'held' } },
+        outcomes: [
+          { band: 'qualified', weight: 2, text: 'Into the drawer it goes, dated and sealed. If another man reaches the same conclusion first, the seal will prove nothing to anyone who matters.',
+            chronicle: 'He held his correction of Avicenna in a sealed drawer, against a safer year.' },
+        ],
+      },
+    ],
+  },
+
+  pivot_sources: {
+    id: 'pivot_sources', phase: 4,
+    rubric: 'THE DESK \u00b7 WHOSE NAMES GO IN THE MARGINS',
+    grounding: 'ATTESTED',
+    source: 'VN c25 \u2014 how fully to credit Ibn \u02bfArab\u012b and \u1e24am\u016bya; his generous pairing of the two co-founders is the attested signature',
+    when: ['mem:investigations_begun'],
+    affordances: ['quiet'],
+    situation:
+      'The summa rests on shoulders: Ibn \u02bfArab\u012b, \u1e24am\u016bya, Akhl\u0101\u1e6d\u012b, the Brethren old and new. A book that names ' +
+      'them all is honest and smaller-looking. A book that absorbs them silently is grander \u2014 and every absorbed source ' +
+      'is a witness your enemies can someday call.',
+    options: [
+      {
+        id: 'generous', label: 'Credit the lineage generously',
+        detail: 'Name the co-founders, the master, the circle. Honest \u2014 and less of the credit is yours.',
+        requires: [],
+        boosts: ['mem:lineages_declared=both'],
+        effects: { rep: { scholarly: 2 }, meters: { transmission: 1 }, memory: { sources_credit: 'generous' } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'The genealogy is laid out in full \u2014 Ibn \u02bfArab\u012b and \u1e24am\u016bya as co-founders, the debt to Cairo named. Reviewers who came to find arrogance find scruple instead, and the book is harder to attack for it.',
+            effects: { rep: { orthodox: 1 } },
+            chronicle: 'He credited every shoulder the summa stood on, and his scruple disarmed men who had come to find arrogance.' },
+          { band: 'success', weight: 1, text: 'Full credit, fully given. Some readers now rank you a synthesizer rather than a founder. They are not entirely wrong, and it stings anyway.',
+            chronicle: 'He named his sources in full, and was called a synthesizer by men who had never synthesized anything.' },
+        ],
+      },
+      {
+        id: 'overclaim', label: 'Let your own name carry more than it earned',
+        detail: 'Absorb the lineage. Grander now; evidence later.',
+        requires: [],
+        effects: { rep: { occult: 2, scholarly: 1 }, meters: { exposure: 1 }, memory: { sources_credit: 'overclaimed' } },
+        outcomes: [
+          { band: 'ambiguous', weight: 1, text: 'The book reads like revelation rather than scholarship, which serves it now. Somewhere a careful man is listing every unattributed borrowing, and his list has a future.',
+            chronicle: 'He let the summa read as revelation, and a careful man somewhere began listing its unnamed debts.' },
+        ],
+      },
+    ],
+  },
+
+  pivot_grimoire: {
+    id: 'pivot_grimoire', phase: 4,
+    rubric: 'THE CIRCLE \u00b7 THE POPULAR COMMISSION',
+    grounding: 'PLAUSIBLE-GAP',
+    source: 'VN c24; the Boon-for-the-Khan pattern \u2014 named-operation manuals for broad audiences \u2014 is attested a generation later',
+    when: ['mem:investigations_begun'],
+    affordances: ['manuscripts', 'merchants'],
+    situation:
+      'A bookseller\u2019s consortium makes a proposal with real money in it: not the summa \u2014 nobody can sell the summa \u2014 ' +
+      'but a manual. Named operations, numbered steps, results promised: the vanishing inks, the wake-rites, the ' +
+      'figures in sand. The kind of book that sells in every bazaar and follows its author into every courtroom.',
+    options: [
+      {
+        id: 'accept_grimoire', label: 'Write the practical manual',
+        detail: 'Reach and income. A hundred bazaars; also a hundred witnesses.',
+        requires: ['rimiya>=1'],
+        effects: { meters: { transmission: 3, exposure: 2 }, rep: { occult: 1, scholarly: -1 }, memory: { grimoire: 'wrote' } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'It sells the way serious books dream of selling. Practitioners bless you, scholars wince, and the operations travel to towns that will never hear of the Investigations.',
+            effects: { meters: { transmission: 1 } },
+            chronicle: 'He wrote the sellers their manual of operations, and it reached towns his philosophy never would.' },
+          { band: 'backfire', weight: 1, text: 'It sells \u2014 and within two years a village fraud is working your named operations badly under your name. The complaints address you as his teacher.',
+            effects: { meters: { exposure: 1 } },
+            chronicle: 'His popular manual bred imitators, and their failures came home addressed to him.' },
+        ],
+      },
+      {
+        id: 'elite_version', label: 'Counter-offer the elite commission',
+        detail: 'K\u012bmiy\u0101 standing lets you propose the expensive book instead: fewer buyers, better ones.',
+        requires: ['kimiya>=2'],
+        effects: { meters: { transmission: 1 }, rep: { occult: 2 }, memory: { grimoire: 'elite' } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'A treatise on the noble operations, priced for princes, sold by subscription. Twelve copies, twelve serious owners, and your dignity intact at a profit.',
+            effects: { rep: { imperial: 1 } },
+            chronicle: 'He turned the bazaar commission into an elite treatise, twelve copies for twelve serious men.' },
+        ],
+      },
+      {
+        id: 'decline_grimoire', label: 'Decline the trade entirely',
+        detail: 'The summa is the legacy. Keep the operations out of the bazaar.',
+        requires: [],
+        effects: { rep: { scholarly: 1 }, memory: { grimoire: 'declined' } },
+        outcomes: [
+          { band: 'qualified', weight: 1, text: 'You decline. A generation later, someone else will write exactly this book and grow famous on it \u2014 a fact you will be spared knowing.',
+            chronicle: 'He refused to write the bazaar its manual, and left that fortune for a later man.' },
         ],
       },
     ],

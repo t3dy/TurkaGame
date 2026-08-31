@@ -26,7 +26,7 @@ Run it: serve the repo root (`turkagame-site` launch config) → `/CareerSim/`.
     phase end), the **two-axis ending matrix** (14 personal fates × 9 system fates),
     and `LEGACY_NOTES` — the ~150-entry marginalia table that reads the run's whole
     memory back to the player.
-- **Content** (`content/`) — **62 encounters across 5 phases**, 20+ registry plates,
+- **Content** (`content/`) — **70 encounters across 5 phases** (I:14 II:14 III:16 IV:13 V:13, floor lint-enforced), 24 plates, registry at 30,
   11 people, 6 artifacts. Every encounter grounded (ATTESTED / PLAUSIBLE-GAP /
   INVENTED-COMPATIBLE) + sourced. `people.js` holds the shared cast; `lexicon.js`
   holds the 23-term historical glossary (auto-glossed in situation prose — the
@@ -87,8 +87,10 @@ resolves every open commission at phase end and the colophon reports it.
 3. **Contradictory marginalia can co-fire** (e.g. "taught widely" and "held the
    hardest parts close" both true across different phases). Realistic, but reads
    oddly; consider precedence rules.
-4. **Phase I has 14 encounters, Phases IV–V have 9** — later phases are thinner and
-   a run sees most of them. Pool depth is the cheapest next content work.
+4. ~~Phases IV–V thin at 9~~ **RESOLVED 2026-08-31**: pools now 13–16 per phase, mined
+   from VN c11–c40 and *Boon for the Khan* categories (suffumigation, sleeper-comedy,
+   wake-rite; the Bāysunghur Qurʾan; Avicenna on the senses; the grimoire commission;
+   exile destination; the testament). Next depth target is Slice 4's ~120+.
 5. **Composition workbench and synthesis cosmogram** (ROADMAP Slice 3) not built —
    Phase IV represents composition as choices, not as an assembly UI.
 6. **Chronicle is read-only**; editing + accounts = Slice 2 (do NOT create Supabase

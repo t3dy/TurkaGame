@@ -4,7 +4,7 @@
 // Framework-agnostic; see docs/SYSTEMS.md §3, §8.
 
 import { checkReq, applyEffects } from './state.js?v=3';
-import { meetsExposure } from './career.js?v=3';
+import { meetsExposure } from './career.js?v=4';
 
 export const BANDS = ['triumph', 'success', 'qualified', 'ambiguous', 'backfire', 'disaster'];
 

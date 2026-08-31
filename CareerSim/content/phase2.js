@@ -570,6 +570,7 @@ export const ENCOUNTERS = {
     source: 'BIOGRAPHY — Qurʾanic letter-groups (muqaṭṭaʿāt) in the lettrist tradition; Yazdī’s practice',
     when: ['meter:synthesis>=3'],
     affordances: ['library', 'quiet'],
+    plate: IMG('cs-p2-buduh-square-qazwini.jpg', 'Bud\u016bh magic square, al-Qazw\u012bn\u012b \u2014 Persia, c. 1280 (Wikimedia Commons)'),
     situation:
       'The disconnected letters that open certain sūras — alif lām mīm, ṭā hā — have defeated commentary for eight ' +
       'centuries. Every exegete says they are a divine secret. You are increasingly sure they are a divine *notation*.',

@@ -4,9 +4,9 @@ import assert from 'node:assert/strict';
 
 import { newRun, applyEffects, checkReq } from '../src/engine/state.js?v=3';
 import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict, BANDS } from '../src/engine/engine.js?v=3';
-import { NODES } from '../content/phase1.js?v=2';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=1';
-import { addObligation, chargeObligations, offerContract, tickContracts, exposureTier, finalVerdict, LEGACY_NOTES } from '../src/engine/career.js?v=1';
+import { NODES } from '../content/phase1.js?v=3';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=4';
+import { addObligation, chargeObligations, offerContract, tickContracts, exposureTier, finalVerdict, LEGACY_NOTES } from '../src/engine/career.js?v=4';
 
 test('capability gating: feast wonder locked until rimiya practiced', () => {
   const s = newRun();
@@ -202,6 +202,8 @@ test('all five phases exist with nodes, a departure, and reachable encounters', 
   assert.equal(LAST_PHASE, 5);
   for (const p of PHASES) {
     assert.ok(p.nodes.length >= 4, `phase ${p.id} too few nodes`);
+    const poolSize = p.nodes.reduce((n, node) => n + node.encounters.length, 0);
+    assert.ok(poolSize >= 11, `phase ${p.id} pool shrank below 11 encounters (${poolSize}) — AUDIT.md set the depth floor`);
     assert.ok(p.nodes.some((n) => n.departure), `phase ${p.id} has no departure node`);
     assert.ok(p.time >= 5, `phase ${p.id} time budget too small`);
     for (const n of p.nodes) {
@@ -266,7 +268,7 @@ test('plate images reference files that are in the provenance registry', async (
 });
 
 test('an open contract cannot outlive its phase — settling forces resolution', async () => {
-  const { settleContracts } = await import('../src/engine/career.js?v=2');
+  const { settleContracts } = await import('../src/engine/career.js?v=4');
   const s = newRun();
   offerContract(s, {
     id: 'c3', name: 'Boon', deadline: 9, promise: 'a demonstration',
@@ -403,7 +405,7 @@ test('marginalia precedence: taught_widely + hoarded merge into one line', async
 });
 
 test('lexicon: every term defined is actually used somewhere a player can meet it', async () => {
-  const { LEXICON } = await import('../content/lexicon.js?v=1');
+  const { LEXICON } = await import('../content/lexicon.js?v=2');
   const { readFileSync } = await import('node:fs');
   const { fileURLToPath } = await import('node:url');
   const here = fileURLToPath(new URL('.', import.meta.url));

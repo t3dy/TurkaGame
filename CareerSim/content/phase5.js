@@ -24,12 +24,12 @@ export const NODES = [
   {
     id: 'protection', name: 'The Patron’s Door', icon: '👑',
     hook: 'Protection exists, costs something, and is not infinite.',
-    encounters: ['trial_patron_shield', 'trial_recant_offer'],
+    encounters: ['trial_patron_shield', 'trial_recant_offer', 'trial_destination'],
   },
   {
     id: 'circle5', name: 'The Circle', icon: '✳',
     hook: 'Your people — some of whom are now liabilities, and some of whom are the only thing that outlives you.',
-    encounters: ['trial_qasim_exile', 'trial_letters', 'trial_student_copy', 'trial_rival_book'],
+    encounters: ['trial_qasim_exile', 'trial_letters', 'trial_student_copy', 'trial_rival_book', 'trial_testament'],
   },
   {
     id: 'road5', name: 'The Road', icon: '🐪', departure: true,
@@ -113,7 +113,7 @@ export const ENCOUNTERS = {
         id: 'defend_text', label: 'Defend the passage as written',
         detail: 'Stand on the text. Explain what it means and refuse to disown it.',
         requires: [],
-        boosts: ['meter:synthesis>=6', 'rep:scholarly>=3', 'artifact:investigations'],
+        boosts: ['meter:synthesis>=6', 'rep:scholarly>=3', 'artifact:investigations', 'mem:sources_credit=generous'],
         effects: { meters: { exposure: 1 }, memory: { second_inquisition: 'fought' } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'You take the panel through the passage until the difficulty dissolves into the argument it belongs to. Acquitted, and two of the panel ask for copies afterward.',
@@ -242,6 +242,7 @@ export const ENCOUNTERS = {
         id: 'ask_protection', label: 'Ask outright',
         detail: 'Spend the relationship on your safety. It works; it also ends something.',
         requires: [],
+        boosts: ['mem:vizier_ally'],
         effects: { rep: { imperial: -1 }, memory: { asked_protection: true } },
         outcomes: [
           { band: 'success', weight: 2, text: 'You are granted a hearing and a promise. The promise is real and the price is that you are now, unambiguously, a client.',
@@ -584,6 +585,108 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'qualified', weight: 1, text: 'The letter burns well. So does the bridge \u2014 that court will not write twice.',
             chronicle: 'He burned a court\u2019s discreet commission unanswered, while the tribunals sat.' },
+        ],
+      },
+    ],
+  },
+
+  trial_destination: {
+    id: 'trial_destination', phase: 5,
+    rubric: 'THE PATRON\u2019S DOOR \u00b7 WHERE DOES AN EXILE GO',
+    grounding: 'PLAUSIBLE-GAP',
+    source: 'VN c36 \u2014 the five years of wandering are ATTESTED; the destinations weighed are the gap',
+    when: ['mem:third_inquisition=lost'],
+    affordances: ['private_audience'],
+    situation:
+      'Exile has a geography. West, the Aqquyunlu courts might take a famous scandal on the bet that his enemies\u2019 ' +
+      'enemies are useful. Nowhere in particular, a wandering scholar can go quiet and cheap. And behind you, Isfahan ' +
+      'itself \u2014 where a petition for reconciliation would be either vindication or a public second sentence.',
+    options: [
+      {
+        id: 'rival_court', label: 'Try the rival courts westward',
+        detail: 'Bet that your name outruns the scandal as far as the Aqquyunlu domains.',
+        requires: ['rep:imperial>=1'],
+        effects: { meters: { exposure: 1 }, memory: { exile_destination: 'west' } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'A minor Aqquyunlu court takes you in with the particular warmth reserved for a rival dynasty\u2019s embarrassments. The stipend is small; the questions at dinner are excellent.',
+            effects: { rep: { imperial: 1 }, meters: { transmission: 1 } },
+            chronicle: 'He carried his scandal west to a rival court, which found it charming.' },
+          { band: 'backfire', weight: 1, text: 'The letters of inquiry travel faster than you do. The court that was curious in spring is correct by autumn, and the door closes politely before you reach it.',
+            effects: { rep: { imperial: -1 } },
+            chronicle: 'The rival court weighed his scandal against his uses, and chose neither.' },
+        ],
+      },
+      {
+        id: 'quiet_road', label: 'Go nowhere in particular',
+        detail: 'The wandering itself \u2014 towns, lodges, other men\u2019s libraries. Cheap, free, and formless.',
+        requires: [],
+        effects: { memory: { exile_destination: 'wandering' } },
+        outcomes: [
+          { band: 'qualified', weight: 1, text: 'Five years without an address. It is poverty, and it is also the first time since Cairo that every hour belongs to you.',
+            effects: { meters: { synthesis: 1 } },
+            chronicle: 'He chose no destination at all, and the road gave him back his hours.' },
+        ],
+      },
+      {
+        id: 'petition_home', label: 'Petition Isfahan for reconciliation',
+        detail: 'Ask the city that condemned you to take you back. Vindication, or the sentence read twice.',
+        requires: ['rep:orthodox>=1'],
+        effects: { memory: { exile_destination: 'petitioned' } },
+        outcomes: [
+          { band: 'success', weight: 1, text: 'Astonishingly, a faction at home takes up your cause \u2014 old litigants you once ruled for, remembering. The petition fails, but it fails loudly, and the failure reads like a testimonial.',
+            effects: { rep: { orthodox: 1, scholarly: 1 } },
+            chronicle: 'His petition home failed, but the poor men who signed it turned the failure into a testimonial.' },
+          { band: 'backfire', weight: 2, text: 'The petition is denied in language borrowed from the verdict. You have now been condemned twice for one life.',
+            effects: { rep: { orthodox: -1 }, meters: { exposure: 1 } },
+            chronicle: 'Isfahan refused his petition in the verdict\u2019s own words.' },
+        ],
+      },
+    ],
+  },
+
+  trial_testament: {
+    id: 'trial_testament', phase: 5,
+    rubric: 'THE CIRCLE \u00b7 THE LAST DOCUMENT',
+    grounding: 'INVENTED-COMPATIBLE',
+    source: 'VN c39/c40 \u2014 the manner of his death is unrecorded; the testament is invented within the attested frame (dies 1432, impoverished, in legal limbo)',
+    when: ['mem:first_inquisition'],
+    affordances: ['quiet', 'manuscripts'],
+    situation:
+      'Every scholar of your generation writes one: the testament \u2014 part will, part creed, part account rendered. ' +
+      'Yours has a harder question inside it than most, because the thing you would bequeath is a condemned science ' +
+      'and the people you would bequeath it to are safer without their names in your handwriting.',
+    options: [
+      {
+        id: 'public_testament', label: 'A public statement on the fate of the Investigations',
+        detail: 'Defend the book one last time, in a document designed to be copied.',
+        requires: ['artifact:investigations'],
+        effects: { meters: { transmission: 2, exposure: 1 }, memory: { testament: 'public' } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'You write the apology the tribunals never let you finish \u2014 calm, exact, unrepentant \u2014 and address it to no one, which means everyone. Condemned books with eloquent testaments get copied. That is the entire strategy, and it works.',
+            effects: { meters: { transmission: 1 }, rep: { scholarly: 1 } },
+            chronicle: 'His last public word defended the condemned book so well that men copied the defense, and with it the book.' },
+          { band: 'ambiguous', weight: 1, text: 'The statement circulates. So does the observation that a man in legal limbo is in no position to make statements. Both are true; only one gets copied.',
+            chronicle: 'His final statement traveled further than his standing entitled it to.' },
+        ],
+      },
+      {
+        id: 'quiet_testament', label: 'A quiet transmission to the Brethren alone',
+        detail: 'No statement, no names, no evidence. The circle knows what it holds.',
+        requires: ['meter:transmission>=3'],
+        effects: { meters: { transmission: 1 }, memory: { testament: 'quiet' } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'Small packets, trusted hands, nothing signed. It is exactly as durable as the friendships are \u2014 which, it will turn out, is durable enough.',
+            chronicle: 'His testament went out in small unsigned packets, exactly as durable as his friendships.' },
+        ],
+      },
+      {
+        id: 'no_testament', label: 'Leave no testament at all',
+        detail: 'Let the work argue for itself or not at all. Silence as the last word.',
+        requires: [],
+        effects: { memory: { testament: 'none' } },
+        outcomes: [
+          { band: 'qualified', weight: 1, text: 'You write nothing. Whatever men say you meant, you will not have contradicted them \u2014 the one mercy history grants the silent.',
+            chronicle: 'He left no testament, and let the work stand or fall unaccompanied.' },
         ],
       },
     ],

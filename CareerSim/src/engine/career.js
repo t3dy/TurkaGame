@@ -396,6 +396,30 @@ export const LEGACY_NOTES = {
   'exile_commission=accepted': 'Disgraced in one city, he was still commissioned in another — a cradle-inscription for a prince, receipt and all.',
   'exile_commission=taught': 'A distant court asked for his work; he sent the method instead of the object, and his science traveled without him.',
   'exile_commission=refused': 'While the tribunals sat he burned a court’s discreet commission unanswered.',
+
+  // — pool-depth pass (2026-08-31) —
+  quran_framework: 'His letter-proportions entered the monumental Qurʾan, unsigned — the deepest anonymous transmission a scholar can achieve.',
+  quran_advised: 'He advised the great Qurʾan’s calligraphers by lamplight and left no signature to indict.',
+  quran_declined: 'He kept his science away from Scripture, and the jurists counted it to his credit.',
+  smoke_attempted: 'He raised — or tried to raise — an army of smoke on a frontier ridge. The story survives in three versions.',
+  smoke_debunked: 'Asked for miraculous smoke, he wrote the army an honest memorandum on what reproduces and what does not.',
+  sleeper_theater: 'He once made a sleeping vizier confess to loving the cook, and a whole court wept laughing.',
+  sleeper_refused: 'He refused to make theater of a sleeping man, a small decency that bought a lifelong ally.',
+  vizier_ally: 'A vizier owed him for a joke not made, and remembered it when remembering mattered.',
+  wake_rite_shown: 'He kept a prince’s table awake till dawn by art, and let a tired man sleep in peace.',
+  'sensory_published=early': 'He corrected Avicenna on the senses in print, early, under his own name — a Modern against the Ancients.',
+  'sensory_published=held': 'His correction of Avicenna waited in a sealed drawer for a safer year that never quite came.',
+  'sources_credit=generous': 'He credited every shoulder the summa stood on, and the scruple disarmed his reviewers.',
+  'sources_credit=overclaimed': 'He let the summa read as revelation, and somewhere a careful man kept a list of its unnamed debts.',
+  'grimoire=wrote': 'He wrote the bazaar its manual of named operations, and it reached towns his philosophy never would.',
+  'grimoire=elite': 'He turned the bazaar’s commission into an elite treatise — twelve copies, twelve serious owners.',
+  'grimoire=declined': 'He refused to write the bazaar its grimoire, and left that fortune for a later man.',
+  'exile_destination=west': 'He carried his scandal west to the rival courts, and tested how far a name outruns a verdict.',
+  'exile_destination=wandering': 'He chose no destination in exile, and the empty road gave him back his hours.',
+  'exile_destination=petitioned': 'He petitioned the city that condemned him. The answer was the verdict, read twice.',
+  'testament=public': 'His last document defended the condemned book so well that copying the defense meant copying the book.',
+  'testament=quiet': 'His testament went out in small unsigned packets, exactly as durable as his friendships.',
+  'testament=none': 'He left no testament, and let the work stand or fall unaccompanied.',
 };
 
 function legacyNotes(state) {
