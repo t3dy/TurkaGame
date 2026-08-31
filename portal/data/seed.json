@@ -346,6 +346,41 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "al-ghazali",
+      "name": "Al-Ghazali",
+      "name_full": "Abū Ḥāmid Muḥammad ibn Muḥammad al-Ghazālī",
+      "name_variants": [
+        "Algazel",
+        "Ghazali"
+      ],
+      "role": "SCHOLAR",
+      "lifespan": "1058–1111 / 450–505 AH",
+      "birth_year": 1058,
+      "death_year": 1111,
+      "region": "Khorasan / Baghdad / Damascus",
+      "relation_to_turka": "intellectual_ancestor",
+      "card": "**Abū Ḥāmid al-Ghazālī** (1058–1111). Theologian-philosopher who synthesized Islamic theology with Sufi mysticism and Aristotelian philosophy. His Ihya ulum al-Din became canonical. Established mystical knowledge as legitimate within orthodoxy. Though not an occultist, his framework enabled later practitioners like Ibn Turka to position lettrist-talismanic operations as sophisticated gnosis, not irrational magic.",
+      "body": "**Abū Ḥāmid al-Ghazālī** (1058–1111) was born in Tus, Khorasan. He rose at the Nizamiyya madrasa in Baghdad, premier Islamic seminary, teaching theology before experiencing spiritual crisis that led to mystical retreat. His genius was demonstrating Sufi mysticism and philosophical reason need not conflict. In his Ihya ulum al-Din, he argued: (1) Reason has limits; Aristotelian logic cannot answer deepest questions. (2) Mystical knowledge (*dhawq*; literally \"tasting\") is genuine knowledge. (3) Both are necessary; each corrects the other. (4) Islam encompasses both. Al-Ghazali did not advocate occultism. Yet by establishing that mystical experience is knowledge, that soul has faculties beyond reason, and that divine reality manifests through multiple levels, he created conceptual space in which later occultists could operate. They could claim: if Ibn Arabi's mysticism is valid and Pythagorean mathematics reveals cosmic structure, then Ibn Turka's lettrist-talismanic operations targeting imaginal realm are not irrational but sophisticated application of mystical-philosophical principles. His Ihya became most widely copied text in Islamic history; his synthesis—reason + mysticism + orthodoxy—became dominant framework enabling all later Islamic thinkers, including occultists, to operate within or against.",
+      "key_works": [
+        "ihya-ulum-al-din"
+      ],
+      "affiliations": [
+        "nizamiyya-madrasa",
+        "bagdad-circle"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. Powers of One, pp. 30-45."
+      ],
+      "tags": [
+        "theologian",
+        "mystic",
+        "synthesis"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "concepts": [
@@ -524,6 +559,34 @@
         "ontology",
         "imaginal",
         "ibn-arabi"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "slug": "talismanic-science",
+      "name": "Talismanic Science",
+      "name_arabic": "علم الطلاسم",
+      "name_script": "علم الطلاسم",
+      "literal_meaning": "Science of talismans",
+      "category": "OCCULT_SCIENCE",
+      "card": "**ilm al-Talasim** (Talismanic Science). Operative practice of creating talismans inscribed with letters, numbers, divine names. Based on theory that letters, numerical correspondences, and divine names are cosmic principles that, combined correctly with proper intention, exert force through intermediate realm. Central practical application of Ibn Turka's system.",
+      "body": "**Talismanic science** (ilm al-talasim) is the operative discipline of creating objects—rings, seals, parchments, metals—inscribed with carefully chosen letters, numbers, and divine names to accomplish specific aims. Unlike superstition, talismanic science in Ibn Turka's systematization is grounded in rigorous cosmological theory. A talisman works: (1) Each 28 Arabic letter corresponds to divine name and cosmic power. (2) Combining letters by numerical correspondence (*abjad*) aligns word with specific principle (Venus, al-Alim, etc.). (3) Inscribing this word-object on appropriate matter with proper intention embodies the principle. (4) Through intermediate realm, talismanic object exerts influence—attracting love, granting wisdom, protecting. Creating talisman requires: knowledge of letter values and divine correspondences, understanding of cosmic geometry and celestial timing, appropriate mental state, correct materials, proper ritual. In Ibn Turka's framework, talismanic science is not magic compelling spirits but sophisticated technology of imaginal realm. Talismans work because they express cosmic principles; they align practitioner's will with creation's structure. This gives talismanic practice philosophical and theological legitimacy: not sorcery but gnosis applied to practice.",
+      "hierarchy_note": "Talismanic science is primary practical expression of lettrism; demonstrates operative efficacy.",
+      "related_concepts": [
+        "ilm-al-huruf",
+        "divine-names",
+        "abjad-numerology",
+        "barzakh"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. The Occult Court, Ch. 4."
+      ],
+      "tags": [
+        "operative",
+        "practice",
+        "talisman"
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
