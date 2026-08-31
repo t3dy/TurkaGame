@@ -1,0 +1,136 @@
+/* Yusuf Ascent — shared manuscript theme.
+   Palette is measured from the folio itself (imagelab/data/images.json → palette),
+   not chosen: cream ground, lapis, vermilion, gold. */
+
+:root {
+  --paper:      #f1dac1;
+  --paper-warm: #efc291;
+  --ink:        #2b2723;
+  --ink-soft:   #5d5348;
+  --lapis:      #1e3f7a;
+  --lapis-dim:  #2f5ea8;
+  --turquoise:  #2e8f8f;
+  --vermilion:  #c06523;
+  --vermilion-hi:#e0a255;
+  --gold:       #c99a2e;
+  --gold-bright:#e8c86a;
+  --slate:      #45434c;
+  --rule:       rgba(43,39,35,.22);
+
+  --shadow: 0 2px 10px rgba(43,39,35,.18);
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--slate);
+  color: var(--ink);
+  font-family: var(--serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--lapis); }
+
+/* --- the illuminated frame: a gold rule inside a lapis rule, as on the folio --- */
+.folio-frame {
+  border: 1px solid var(--gold);
+  outline: 3px solid var(--lapis);
+  outline-offset: 3px;
+  background: var(--paper);
+}
+
+/* --- chrome ------------------------------------------------------------- */
+
+.topbar {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: .55rem 1rem;
+  background: #1a1820;
+  color: var(--paper);
+  border-bottom: 1px solid var(--gold);
+  font-family: var(--sans);
+  font-size: .82rem;
+  flex-wrap: wrap;
+}
+.topbar .title { font-family: var(--serif); font-size: 1rem; letter-spacing: .01em; }
+.topbar .spacer { flex: 1 1 auto; }
+.topbar a { color: var(--vermilion-hi); text-decoration: none; }
+.topbar a:hover { text-decoration: underline; }
+.topbar .sep { opacity: .35; }
+
+.btn {
+  font-family: var(--sans);
+  font-size: .78rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: .38rem .8rem;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--paper);
+  cursor: pointer;
+}
+.btn:hover  { background: rgba(201,154,46,.18); }
+.btn.active { background: var(--gold); color: #1a1820; }
+.btn:disabled { opacity: .35; cursor: not-allowed; }
+
+/* --- the card that every element opens ---------------------------------- */
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--gold);
+  box-shadow: var(--shadow);
+  padding: .9rem 1rem 1rem;
+}
+.card h3 {
+  margin: 0 0 .1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.card .eyebrow {
+  font-family: var(--sans);
+  font-size: .64rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--vermilion);
+  margin-bottom: .45rem;
+}
+.card p { margin: .5rem 0 0; font-size: .9rem; line-height: 1.52; }
+.card .thumb {
+  width: 100%;
+  max-height: 190px;
+  object-fit: contain;
+  object-position: center;
+  background: #0002;
+  border: 1px solid var(--rule);
+  margin-top: .6rem;
+}
+
+/* rung chip */
+.rung-chip {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: .6rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: .16rem .5rem;
+  border-radius: 999px;
+}
+
+.note {
+  font-family: var(--sans);
+  font-size: .72rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  border-left: 2px solid var(--vermilion);
+  padding-left: .6rem;
+  margin-top: .8rem;
+}
+
+.hidden { display: none !important; }

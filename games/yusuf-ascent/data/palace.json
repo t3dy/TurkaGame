@@ -1,0 +1,1249 @@
+{
+  "_note": "Canonical decomposition of Bihzad's Yusuf fleeing Zulaykha (Cairo, Adab Farsi 22, f. 52b) into interactable elements. Boxes are generated from imagelab/data/regions.json - edit there, then re-run games/yusuf-ascent/build_palace.py. Rung assignments are this project's interpretation and are labelled as such in the portal.",
+  "source": {
+    "id": "yusuf-fleeing-zulaykha",
+    "title": "Yūsuf fleeing Zulaykha",
+    "artist": "Kamāl al-Dīn Bihzād (attributed)",
+    "manuscript": "Būstān of Saʿdī, made for Sultan Ḥusayn Bāyqarā",
+    "institution": "Egyptian National Library and Archives, Cairo",
+    "shelfmark": "Adab Farsi 22",
+    "folio": "f. 52b",
+    "date": "893/1488",
+    "place": "Herat",
+    "dimensions": [
+      1588,
+      2370
+    ],
+    "rights": "Public domain (PD-Art): faithful photographic reproduction of a two-dimensional public-domain work, via Wikimedia Commons.",
+    "full_image": "assets/folio-full.jpg"
+  },
+  "rungs": [
+    {
+      "id": "mulk",
+      "n": 0,
+      "name": "Mulk",
+      "colour": "#3a4a7a",
+      "gloss": "The kingdom of sense — brick, street, the door onto the road."
+    },
+    {
+      "id": "mithal-asfal",
+      "n": 1,
+      "name": "Threshold",
+      "colour": "#3f7a63",
+      "gloss": "The iwan and its tilework: the sensible world already arranged into pattern."
+    },
+    {
+      "id": "barzakh",
+      "n": 2,
+      "name": "Barzakh",
+      "colour": "#b4622a",
+      "gloss": "The isthmus. Stairs belong to neither storey they join — the picture's clearest structural pun."
+    },
+    {
+      "id": "khayal",
+      "n": 3,
+      "name": "ʿĀlam al-khayāl",
+      "colour": "#2f5ea8",
+      "gloss": "The imaginal: forms held as images. Doors, cartouches, the lapis court."
+    },
+    {
+      "id": "malakut",
+      "n": 4,
+      "name": "Malakūt",
+      "colour": "#8e3f6b",
+      "gloss": "The angelic realm — the parts of the building carried on nothing."
+    },
+    {
+      "id": "jabarut",
+      "n": 5,
+      "name": "Jabarūt",
+      "colour": "#a8452f",
+      "gloss": "The chamber where the flight happens; power, not place."
+    },
+    {
+      "id": "lahut",
+      "n": 6,
+      "name": "Lāhūt",
+      "colour": "#c99a2e",
+      "gloss": "The crown. Finial, cupola, and the flame that is the only light in the picture."
+    }
+  ],
+  "door_chain": [
+    "street-door",
+    "iwan-door",
+    "orange-door-under-stair",
+    "ornate-door-lower",
+    "orange-door-stairhead",
+    "green-door",
+    "orange-door-upper"
+  ],
+  "blind_door": "balcony-doorway",
+  "nodes": [
+    {
+      "id": "folio-full",
+      "title": "The folio entire",
+      "role": "frame",
+      "kind": "scene",
+      "rung": "mulk",
+      "rung_n": 0,
+      "card": "Cairo, Egyptian National Library, Adab Farsi 22, f. 52b. Herat, 893/1488, for Sultan Ḥusayn Bāyqarā. The painting takes the whole written surface and drives its verses into the architecture instead of around it.",
+      "label": "The complete folio",
+      "box": [
+        80,
+        180,
+        1470,
+        2170
+      ],
+      "norm": [
+        0.05038,
+        0.07595,
+        0.87531,
+        0.83966
+      ],
+      "sprite": "assets/regions/folio-full.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "architecture-full",
+      "title": "The palace, whole",
+      "role": "frame",
+      "kind": "architecture",
+      "rung": "barzakh",
+      "rung_n": 2,
+      "card": "Nothing in this building is structurally possible, and every surface is finished to the same degree of attention. That combination is the argument: it is a diagram wearing the costume of a house.",
+      "label": "The impossible palace — the whole structure",
+      "box": [
+        89,
+        196,
+        1464,
+        2154
+      ],
+      "norm": [
+        0.05605,
+        0.0827,
+        0.86587,
+        0.82616
+      ],
+      "sprite": "assets/regions/architecture-full.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "cupola",
+      "title": "The crowning kiosk",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "lahut",
+      "rung_n": 6,
+      "card": "An octagonal kiosk with a finial, on a roof no stair in the picture reaches. It is the terminus of the ascent and the one part of the palace no figure can occupy.",
+      "label": "Crowning octagonal kiosk with finial — the roof above the roof",
+      "box": [
+        762,
+        36,
+        976,
+        226
+      ],
+      "norm": [
+        0.47985,
+        0.01519,
+        0.13476,
+        0.08017
+      ],
+      "sprite": "assets/regions/cupola.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "roof-eaves-band",
+      "title": "The inscribed cornice",
+      "role": "ornament",
+      "kind": "architecture",
+      "rung": "lahut",
+      "rung_n": 6,
+      "card": "A tiled eaves band carrying nastaʿlīq. Epigraphy at the roofline follows the wall plane rather than the page — the text is built into the building, not laid over it.",
+      "label": "Blue-tiled eaves band and inscribed cornice",
+      "box": [
+        660,
+        175,
+        1290,
+        360
+      ],
+      "norm": [
+        0.41562,
+        0.07384,
+        0.39673,
+        0.07806
+      ],
+      "sprite": "assets/regions/roof-eaves-band.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "badgir-kiosk",
+      "title": "The unreachable turret",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "malakut",
+      "rung_n": 4,
+      "card": "A blue-and-white turret at the upper right. No door, stair or landing in the composition connects to it. It is reachable only by looking.",
+      "label": "Blue-and-white turreted kiosk, upper right — a tower reachable from nowhere",
+      "box": [
+        1285,
+        360,
+        1445,
+        625
+      ],
+      "norm": [
+        0.80919,
+        0.1519,
+        0.10076,
+        0.11181
+      ],
+      "sprite": "assets/regions/badgir-kiosk.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "the-chamber",
+      "title": "The upper chamber",
+      "role": "surface",
+      "kind": "scene",
+      "rung": "jabarut",
+      "rung_n": 5,
+      "card": "The one enclosed room in the picture, and the smallest area of actual narrative. Saʿdī's Būstān describes no palace at all; the chamber comes from Jāmī's Yūsuf u Zulaykhā, finished in 1483, five years before this page.",
+      "label": "The upper chamber — the moment of flight",
+      "box": [
+        672,
+        410,
+        1196,
+        1040
+      ],
+      "norm": [
+        0.42317,
+        0.173,
+        0.32997,
+        0.26582
+      ],
+      "sprite": "assets/regions/the-chamber.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "chamber-arch",
+      "title": "The white arch",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "jabarut",
+      "rung_n": 5,
+      "card": "The only large unpatterned surface in the folio. Bihzād reserves blankness for the exact place where the event happens.",
+      "label": "White pointed arch of the upper chamber",
+      "box": [
+        740,
+        415,
+        1125,
+        570
+      ],
+      "norm": [
+        0.46599,
+        0.17511,
+        0.24244,
+        0.0654
+      ],
+      "sprite": "assets/regions/chamber-arch.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "yusuf",
+      "title": "Yūsuf",
+      "role": "figure",
+      "kind": "figure",
+      "rung": "jabarut",
+      "rung_n": 5,
+      "card": "Mid-stride, one arm flung up, moving left and out of the chamber. In Jāmī the doors give way at the touch of his pointing finger; in Qur'an 12:23 Zulaykha has locked them and they open regardless.",
+      "label": "Yusuf in green, flame-haloed, mid-stride",
+      "box": [
+        780,
+        505,
+        995,
+        995
+      ],
+      "norm": [
+        0.49118,
+        0.21308,
+        0.13539,
+        0.20675
+      ],
+      "sprite": "assets/regions/yusuf.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "yusuf-halo",
+      "title": "The flame-halo",
+      "role": "light",
+      "kind": "object",
+      "rung": "lahut",
+      "rung_n": 6,
+      "card": "A gold flame nimbus. It is the only light source in a picture with no modelled light anywhere else: illumination here marks ontological rank, not optics.",
+      "label": "Yusuf's flame-halo — the only light source in the picture",
+      "box": [
+        855,
+        480,
+        1005,
+        610
+      ],
+      "norm": [
+        0.53841,
+        0.20253,
+        0.09446,
+        0.05485
+      ],
+      "sprite": "assets/regions/yusuf-halo.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "zulaykha",
+      "title": "Zulaykha",
+      "role": "figure",
+      "kind": "figure",
+      "rung": "jabarut",
+      "rung_n": 5,
+      "card": "Leaning after him, a hand on his skirt. Jāmī's reading inverts the moral — she is the Sufi lover whose ruinous desire is finally redeemed into union, not simply the temptress of the older telling.",
+      "label": "Zulaykha in orange, reaching after him",
+      "box": [
+        980,
+        720,
+        1140,
+        1020
+      ],
+      "norm": [
+        0.61713,
+        0.3038,
+        0.10076,
+        0.12658
+      ],
+      "sprite": "assets/regions/zulaykha.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "chamber-tile-panel",
+      "title": "Chamber revetment",
+      "role": "ornament",
+      "kind": "ornament",
+      "rung": "khayal",
+      "rung_n": 3,
+      "card": "Dark-ground floral tile on the chamber's left wall. In Jāmī the seven chambers are hung with paintings of Yūsuf and Zulaykha themselves — images of the story inside the story.",
+      "label": "Blue floral tile revetment, chamber's left wall",
+      "box": [
+        672,
+        555,
+        805,
+        935
+      ],
+      "norm": [
+        0.42317,
+        0.23418,
+        0.08375,
+        0.16034
+      ],
+      "sprite": "assets/regions/chamber-tile-panel.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "chamber-carpet",
+      "title": "The floor under the flight",
+      "role": "ornament",
+      "kind": "ornament",
+      "rung": "khayal",
+      "rung_n": 3,
+      "card": "A patterned panel directly beneath Yūsuf's feet, drawn in a projection that disagrees with the walls enclosing it.",
+      "label": "Patterned floor panel under Yusuf's feet",
+      "box": [
+        825,
+        925,
+        1095,
+        1045
+      ],
+      "norm": [
+        0.51952,
+        0.3903,
+        0.17003,
+        0.05063
+      ],
+      "sprite": "assets/regions/chamber-carpet.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "chamber-threshold",
+      "title": "The tasselled sill",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "barzakh",
+      "rung_n": 2,
+      "card": "The chamber's floor ends in a ledge over open air. Whatever Yūsuf is striding toward, the painting gives him no floor to stride onto.",
+      "label": "The chamber sill — tasselled ledge over open air",
+      "box": [
+        640,
+        1035,
+        1185,
+        1125
+      ],
+      "norm": [
+        0.40302,
+        0.43671,
+        0.3432,
+        0.03797
+      ],
+      "sprite": "assets/regions/chamber-threshold.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "red-balcony",
+      "title": "The red balcony",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "malakut",
+      "rung_n": 4,
+      "card": "A cantilevered pavilion at the right, framed in vermilion. It overlaps the chamber's storey but does not share a level with it.",
+      "label": "The red cantilevered balcony",
+      "box": [
+        1120,
+        745,
+        1455,
+        1105
+      ],
+      "norm": [
+        0.70529,
+        0.31435,
+        0.21096,
+        0.1519
+      ],
+      "sprite": "assets/regions/red-balcony.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "balcony-doorway",
+      "title": "The balcony door",
+      "role": "door",
+      "kind": "architecture",
+      "rung": "malakut",
+      "rung_n": 4,
+      "card": "An arched opening in the balcony's back wall, giving onto a plane with no depth behind it.",
+      "label": "Arched doorway in the balcony's back wall",
+      "box": [
+        1288,
+        758,
+        1448,
+        1015
+      ],
+      "norm": [
+        0.81108,
+        0.31983,
+        0.10076,
+        0.10844
+      ],
+      "sprite": "assets/regions/balcony-doorway.jpg",
+      "lock": {
+        "concept": "—",
+        "term": "",
+        "prompt": "This door is painted on a plane with nothing behind it.",
+        "answer": null,
+        "gloss": "A blind. Not every opening in this palace is a passage, and the game will not pretend otherwise."
+      },
+      "chain_index": null,
+      "blind": true
+    },
+    {
+      "id": "muqarnas-eaves",
+      "title": "Muqarnas eaves",
+      "role": "ornament",
+      "kind": "ornament",
+      "rung": "malakut",
+      "rung_n": 4,
+      "card": "Muqarnas is a vault built from subdivided niches — literally a geometry for filling the transition between shapes that do not meet. The picture uses it where two impossible planes need reconciling.",
+      "label": "Muqarnas eaves over the balcony",
+      "box": [
+        1160,
+        612,
+        1455,
+        762
+      ],
+      "norm": [
+        0.73048,
+        0.25823,
+        0.18577,
+        0.06329
+      ],
+      "sprite": "assets/regions/muqarnas-eaves.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "balcony-brackets",
+      "title": "The brackets over nothing",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "malakut",
+      "rung_n": 4,
+      "card": "Struts carrying the balcony's weight down to a point where the wall below has already ended. The most explicit structural impossibility in the folio.",
+      "label": "Cantilever brackets carrying the balcony over nothing",
+      "box": [
+        1145,
+        1045,
+        1455,
+        1270
+      ],
+      "norm": [
+        0.72103,
+        0.44093,
+        0.19521,
+        0.09494
+      ],
+      "sprite": "assets/regions/balcony-brackets.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "tile-roundel",
+      "title": "Roundel panel",
+      "role": "ornament",
+      "kind": "ornament",
+      "rung": "khayal",
+      "rung_n": 3,
+      "card": "Blue-and-gold roundels set into the balcony wall — a self-contained pattern field, complete at any scale.",
+      "label": "Blue-and-gold tile roundel panel",
+      "box": [
+        1148,
+        772,
+        1278,
+        888
+      ],
+      "norm": [
+        0.72292,
+        0.32574,
+        0.08186,
+        0.04895
+      ],
+      "sprite": "assets/regions/tile-roundel.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "blue-tile-court",
+      "title": "The lapis court",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "khayal",
+      "rung_n": 3,
+      "card": "The upper-left court: a lapis ground scattered with flowering sprays. It reads as a wall, a garden and a page of illumination at once, and commits to none of them.",
+      "label": "Upper-left blue tile court with lapis floral ground",
+      "box": [
+        128,
+        398,
+        455,
+        985
+      ],
+      "norm": [
+        0.0806,
+        0.16793,
+        0.20592,
+        0.24768
+      ],
+      "sprite": "assets/regions/blue-tile-court.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "green-door-arch",
+      "title": "The blue niche",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "khayal",
+      "rung_n": 3,
+      "card": "A pointed arch of turquoise and lapis framing the green door — the most architecturally correct passage in the picture, and it opens onto nothing the picture states.",
+      "label": "Blue arched niche framing the green door",
+      "box": [
+        185,
+        525,
+        428,
+        958
+      ],
+      "norm": [
+        0.1165,
+        0.22152,
+        0.15302,
+        0.1827
+      ],
+      "sprite": "assets/regions/green-door-arch.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "green-door",
+      "title": "The green door",
+      "role": "door",
+      "kind": "architecture",
+      "rung": "khayal",
+      "rung_n": 3,
+      "card": "Green double leaves in a blue niche. Green is Yūsuf's colour in this folio, which makes this the door that matches the man.",
+      "label": "The green double door",
+      "box": [
+        252,
+        628,
+        358,
+        935
+      ],
+      "norm": [
+        0.15869,
+        0.26498,
+        0.06675,
+        0.12954
+      ],
+      "sprite": "assets/regions/green-door.jpg",
+      "lock": {
+        "concept": "malakūt",
+        "term": "ملكوت",
+        "prompt": "Show me what is carried on nothing.",
+        "answer": "balcony-brackets",
+        "gloss": "The brackets descend to a point where the wall has already ended. The balcony is held up by the picture, not the building."
+      },
+      "chain_index": 5,
+      "blind": false
+    },
+    {
+      "id": "orange-door-upper",
+      "title": "The upper orange door",
+      "role": "door",
+      "kind": "architecture",
+      "rung": "khayal",
+      "rung_n": 3,
+      "card": "A tall door on the top storey, its threshold level with no floor drawn anywhere near it.",
+      "label": "Tall orange door, upper storey",
+      "box": [
+        488,
+        392,
+        600,
+        592
+      ],
+      "norm": [
+        0.3073,
+        0.1654,
+        0.07053,
+        0.08439
+      ],
+      "sprite": "assets/regions/orange-door-upper.jpg",
+      "lock": {
+        "concept": "nūr",
+        "term": "نور",
+        "prompt": "Show me the only light in a picture with no light.",
+        "answer": "yusuf-halo",
+        "gloss": "There is no modelled light anywhere in the folio. The flame-halo is illumination as rank, not as optics."
+      },
+      "chain_index": 6,
+      "blind": false
+    },
+    {
+      "id": "inscription-tablet",
+      "title": "The small tablet",
+      "role": "text",
+      "kind": "text",
+      "rung": "khayal",
+      "rung_n": 3,
+      "card": "A little epigraphic tablet beside the upper door. Recent work on this folio reads its inscriptions as praise of the painter rather than of the patron — unusual, and part of why the Cairo Būstān matters to the history of artistic signature.",
+      "label": "Small epigraphic tablet beside the orange door",
+      "box": [
+        496,
+        590,
+        572,
+        642
+      ],
+      "norm": [
+        0.31234,
+        0.24895,
+        0.04786,
+        0.02194
+      ],
+      "sprite": "assets/regions/inscription-tablet.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "black-inscription-panel",
+      "title": "The black panel",
+      "role": "text",
+      "kind": "text",
+      "rung": "khayal",
+      "rung_n": 3,
+      "card": "Gold nastaʿlīq on a black ground, set into the wall like a plaque. Here verse is a building material.",
+      "label": "Black-ground gold nastaliq panel",
+      "box": [
+        120,
+        318,
+        505,
+        412
+      ],
+      "norm": [
+        0.07557,
+        0.13418,
+        0.24244,
+        0.03966
+      ],
+      "sprite": "assets/regions/black-inscription-panel.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "staircase-upper",
+      "title": "The upper flight",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "barzakh",
+      "rung_n": 2,
+      "card": "The stair is the barzakh made carpentry: it belongs to neither the storey it leaves nor the one it reaches.",
+      "label": "Upper flight of the orange staircase",
+      "box": [
+        143,
+        1055,
+        458,
+        1335
+      ],
+      "norm": [
+        0.09005,
+        0.44515,
+        0.19836,
+        0.11814
+      ],
+      "sprite": "assets/regions/staircase-upper.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "stair-landing",
+      "title": "The landing",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "barzakh",
+      "rung_n": 2,
+      "card": "A turn in the stair. Read the treads above and below it and they imply two incompatible directions of gravity.",
+      "label": "Stair landing",
+      "box": [
+        328,
+        1135,
+        472,
+        1295
+      ],
+      "norm": [
+        0.20655,
+        0.4789,
+        0.09068,
+        0.06751
+      ],
+      "sprite": "assets/regions/stair-landing.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "staircase-lower",
+      "title": "The lower flight",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "barzakh",
+      "rung_n": 2,
+      "card": "It descends toward the street and arrives beside a door rather than at it.",
+      "label": "Lower flight, turning at an angle no stair turns at",
+      "box": [
+        178,
+        1295,
+        472,
+        1745
+      ],
+      "norm": [
+        0.11209,
+        0.54641,
+        0.18514,
+        0.18987
+      ],
+      "sprite": "assets/regions/staircase-lower.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "orange-door-stairhead",
+      "title": "The stairhead door",
+      "role": "door",
+      "kind": "architecture",
+      "rung": "barzakh",
+      "rung_n": 2,
+      "card": "An orange door at the head of the stair, opening across the line of travel rather than along it.",
+      "label": "Orange door at the stairhead",
+      "box": [
+        345,
+        1142,
+        458,
+        1278
+      ],
+      "norm": [
+        0.21725,
+        0.48186,
+        0.07116,
+        0.05738
+      ],
+      "sprite": "assets/regions/orange-door-stairhead.jpg",
+      "lock": {
+        "concept": "khayāl",
+        "term": "خيال",
+        "prompt": "Show me an image held as an image — a surface that is a wall, a garden and a page at once.",
+        "answer": "blue-tile-court",
+        "gloss": "ʿĀlam al-khayāl is the realm where forms subsist as images. The lapis court refuses to settle into any one reading."
+      },
+      "chain_index": 4,
+      "blind": false
+    },
+    {
+      "id": "verse-cartouche-mid",
+      "title": "The mid cartouche",
+      "role": "text",
+      "kind": "text",
+      "rung": "barzakh",
+      "rung_n": 2,
+      "card": "A gold verse panel laid diagonally on a green ground, following the wall's plane. The text tilts because the building does.",
+      "label": "Gold nastaliq verse cartouche on green ground",
+      "box": [
+        382,
+        1238,
+        545,
+        1412
+      ],
+      "norm": [
+        0.24055,
+        0.52236,
+        0.10264,
+        0.07342
+      ],
+      "sprite": "assets/regions/verse-cartouche-mid.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "ornate-door-lower",
+      "title": "The muqarnas door",
+      "role": "door",
+      "kind": "architecture",
+      "rung": "mithal-asfal",
+      "rung_n": 1,
+      "card": "A small door crowned with muqarnas, beneath the stair. The most heavily ornamented opening in the picture, and the least reachable.",
+      "label": "Muqarnas-crowned ornate door beneath the stair",
+      "box": [
+        292,
+        1488,
+        382,
+        1628
+      ],
+      "norm": [
+        0.18388,
+        0.62785,
+        0.05668,
+        0.05907
+      ],
+      "sprite": "assets/regions/ornate-door-lower.jpg",
+      "lock": {
+        "concept": "muqarnas",
+        "term": "مقرنص",
+        "prompt": "Show me the geometry for filling a transition between shapes that do not meet.",
+        "answer": "muqarnas-eaves",
+        "gloss": "Muqarnas subdivides a corner into niches until the mismatch disappears. It is a technology of transition."
+      },
+      "chain_index": 3,
+      "blind": false
+    },
+    {
+      "id": "orange-door-under-stair",
+      "title": "The door under the stair",
+      "role": "door",
+      "kind": "architecture",
+      "rung": "mithal-asfal",
+      "rung_n": 1,
+      "card": "Orange double leaves tucked under the lower flight, at the point where the stair's own structure would block them.",
+      "label": "Orange double door under the stair",
+      "box": [
+        290,
+        1618,
+        398,
+        1792
+      ],
+      "norm": [
+        0.18262,
+        0.6827,
+        0.06801,
+        0.07342
+      ],
+      "sprite": "assets/regions/orange-door-under-stair.jpg",
+      "lock": {
+        "concept": "barzakh",
+        "term": "برزخ",
+        "prompt": "Show me the isthmus — what belongs to neither of the two things it joins.",
+        "answer": "staircase-lower",
+        "gloss": "Melvin-Koushki renders barzakh as a joining isthmus between the spiritual realm and the body. A stair is that, in wood."
+      },
+      "chain_index": 2,
+      "blind": false
+    },
+    {
+      "id": "lower-portal",
+      "title": "The iwan",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "mithal-asfal",
+      "rung_n": 1,
+      "card": "A vaulted recess open on one side — the standard unit of Persianate monumental architecture, here made the picture's structural hinge.",
+      "label": "The central iwan — lower arched portal with lapis spandrels",
+      "box": [
+        571,
+        1178,
+        1071,
+        1583
+      ],
+      "norm": [
+        0.35957,
+        0.49705,
+        0.31486,
+        0.17089
+      ],
+      "sprite": "assets/regions/lower-portal.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "iwan-door",
+      "title": "The iwan door",
+      "role": "door",
+      "kind": "architecture",
+      "rung": "mithal-asfal",
+      "rung_n": 1,
+      "card": "The door inside the vault, drawn in a projection that puts its floor above the vault's own springing.",
+      "label": "Orange door inside the iwan",
+      "box": [
+        658,
+        1248,
+        835,
+        1475
+      ],
+      "norm": [
+        0.41436,
+        0.52658,
+        0.11146,
+        0.09578
+      ],
+      "sprite": "assets/regions/iwan-door.jpg",
+      "lock": {
+        "concept": "naqsh",
+        "term": "نقش",
+        "prompt": "Show me a pattern with no edge of its own — one the picture had to cut arbitrarily.",
+        "answer": "tile-field-left",
+        "gloss": "Star-and-cross tiling continues by rule, not by boundary. The frame decides where it stops; the pattern does not."
+      },
+      "chain_index": 1,
+      "blind": false
+    },
+    {
+      "id": "iwan-spandrel-tile",
+      "title": "Spandrel band",
+      "role": "ornament",
+      "kind": "ornament",
+      "rung": "mithal-asfal",
+      "rung_n": 1,
+      "card": "An inscribed lapis band across the iwan's head, with tiled spandrels either side.",
+      "label": "Inscribed lapis band and spandrels over the iwan",
+      "box": [
+        571,
+        1178,
+        1071,
+        1262
+      ],
+      "norm": [
+        0.35957,
+        0.49705,
+        0.31486,
+        0.03544
+      ],
+      "sprite": "assets/regions/iwan-spandrel-tile.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "tile-field-left",
+      "title": "Star tile, left",
+      "role": "ornament",
+      "kind": "ornament",
+      "rung": "mithal-asfal",
+      "rung_n": 1,
+      "card": "Green-and-gold star-and-cross tiling: a pattern that continues by rule, not by edge. It could be any size, and the picture cuts it arbitrarily.",
+      "label": "Green-and-gold star tile field, left",
+      "box": [
+        418,
+        1428,
+        572,
+        1722
+      ],
+      "norm": [
+        0.26322,
+        0.60253,
+        0.09698,
+        0.12405
+      ],
+      "sprite": "assets/regions/tile-field-left.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "tile-field-right",
+      "title": "Star tile, right",
+      "role": "ornament",
+      "kind": "ornament",
+      "rung": "mithal-asfal",
+      "rung_n": 1,
+      "card": "The same system on the opposite side, at a different scale, on a plane that cannot be parallel to its twin.",
+      "label": "Green-and-gold star tile field, right",
+      "box": [
+        1048,
+        1148,
+        1242,
+        1562
+      ],
+      "norm": [
+        0.65995,
+        0.48439,
+        0.12217,
+        0.17468
+      ],
+      "sprite": "assets/regions/tile-field-right.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "brick-wall",
+      "title": "The street wall",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "mulk",
+      "rung_n": 0,
+      "card": "Plain grey brick — the only ordinary material in the folio, and the only surface not treated as a field of pattern.",
+      "label": "The grey brick street wall",
+      "box": [
+        430,
+        1642,
+        1362,
+        1902
+      ],
+      "norm": [
+        0.27078,
+        0.69283,
+        0.5869,
+        0.1097
+      ],
+      "sprite": "assets/regions/brick-wall.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "pink-portal",
+      "title": "The street portal",
+      "role": "surface",
+      "kind": "architecture",
+      "rung": "mulk",
+      "rung_n": 0,
+      "card": "A pink frame worked with white arabesque, standing proud of the brick. It is the outermost boundary the story has.",
+      "label": "Pink street portal — the outermost frame",
+      "box": [
+        698,
+        1658,
+        992,
+        2066
+      ],
+      "norm": [
+        0.43955,
+        0.69958,
+        0.18514,
+        0.17215
+      ],
+      "sprite": "assets/regions/pink-portal.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "street-door",
+      "title": "The street door",
+      "role": "door",
+      "kind": "architecture",
+      "rung": "mulk",
+      "rung_n": 0,
+      "card": "Dark leaves with a geometric strapwork panel. In the Qur'anic account the doors are locked from inside; this is the last of them, and the one at which Yūsuf's shirt is torn.",
+      "label": "The street door — the outermost of the doors",
+      "box": [
+        798,
+        1830,
+        950,
+        2064
+      ],
+      "norm": [
+        0.50252,
+        0.77215,
+        0.09572,
+        0.09873
+      ],
+      "sprite": "assets/regions/street-door.jpg",
+      "lock": {
+        "concept": "mulk",
+        "term": "ملك",
+        "prompt": "Locked from within. Show me plain matter — the one surface here that is not pattern.",
+        "answer": "brick-wall",
+        "gloss": "The brick wall is the only ordinary material in the folio. Everything else has been made into a field."
+      },
+      "chain_index": 0,
+      "blind": false
+    },
+    {
+      "id": "blue-dado",
+      "title": "The dado",
+      "role": "ornament",
+      "kind": "ornament",
+      "rung": "mulk",
+      "rung_n": 0,
+      "card": "A deep blue band running the width of the street. It reads as ground, as water and as void, depending on what you take the wall above it to be.",
+      "label": "Dark blue dado band at street level",
+      "box": [
+        398,
+        1852,
+        1302,
+        2066
+      ],
+      "norm": [
+        0.25063,
+        0.78143,
+        0.56927,
+        0.0903
+      ],
+      "sprite": "assets/regions/blue-dado.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "verse-cartouche-top",
+      "title": "The upper verses",
+      "role": "text",
+      "kind": "text",
+      "rung": "lahut",
+      "rung_n": 6,
+      "card": "Verse cartouches set into the roofline, following the wall planes rather than the page — while the page's own margin is left blank.",
+      "label": "Nastaliq verse cartouches across the top",
+      "box": [
+        95,
+        205,
+        1240,
+        340
+      ],
+      "norm": [
+        0.05982,
+        0.0865,
+        0.72103,
+        0.05696
+      ],
+      "sprite": "assets/regions/verse-cartouche-top.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "verse-cartouche-upper-left",
+      "title": "Upper-left verse",
+      "role": "text",
+      "kind": "text",
+      "rung": "khayal",
+      "rung_n": 3,
+      "card": "A cartouche wedged into the corner of the court, angled to the wall it sits on.",
+      "label": "Nastaliq verse cartouche, upper left",
+      "box": [
+        113,
+        321,
+        536,
+        400
+      ],
+      "norm": [
+        0.07116,
+        0.13544,
+        0.26637,
+        0.03333
+      ],
+      "sprite": "assets/regions/verse-cartouche-upper-left.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    },
+    {
+      "id": "verse-cartouche-foot",
+      "title": "The foot verses",
+      "role": "text",
+      "kind": "text",
+      "rung": "mulk",
+      "rung_n": 0,
+      "card": "Two blocks of nastaʿlīq at the base — the only text in the folio still behaving like text on a page.",
+      "label": "Nastaliq verse cartouches along the foot",
+      "box": [
+        118,
+        2072,
+        1338,
+        2200
+      ],
+      "norm": [
+        0.07431,
+        0.87426,
+        0.76826,
+        0.05401
+      ],
+      "sprite": "assets/regions/verse-cartouche-foot.jpg",
+      "lock": null,
+      "chain_index": null,
+      "blind": false
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yūsuf Ascent — a puzzle on Bihzād's impossible palace</title>
+<link rel="stylesheet" href="./shared/theme.css?v=1">
+<style>
+  html, body { background: #201e25; color: var(--paper); }
+  main { max-width: 1080px; margin: 0 auto; padding: 30px 18px 80px; }
+  h1 { font-size: 2.1rem; margin: 0 0 .3rem; line-height: 1.14; }
+  .sub { font-family: var(--sans); font-size: .86rem; color: #9b9490; max-width: 60ch; line-height: 1.6; }
+
+  .split { display: flex; gap: 28px; align-items: flex-start; margin: 26px 0 8px; flex-wrap: wrap; }
+  .split img { width: 240px; border: 1px solid var(--gold); outline: 3px solid var(--lapis); outline-offset: 2px; }
+  .split .lede { flex: 1 1 340px; }
+  .split .lede p { line-height: 1.68; font-size: .95rem; color: #ddd4c9; }
+
+  .protos { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 14px; margin-top: 26px; }
+  .proto {
+    display: block; text-decoration: none; color: inherit;
+    border: 1px solid var(--gold); background: rgba(241,218,193,.05);
+    padding: 14px 16px 16px; transition: background .15s, transform .15s;
+  }
+  .proto:hover { background: rgba(201,154,46,.14); transform: translateY(-2px); }
+  .proto .k {
+    font-family: var(--sans); font-size: .6rem; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--vermilion-hi);
+  }
+  .proto h2 { margin: .25rem 0 .35rem; font-size: 1.14rem; color: var(--paper); }
+  .proto p { margin: 0; font-size: .84rem; line-height: 1.55; color: #b9b0a6; }
+  .proto .dim { font-family: var(--sans); font-size: .66rem; color: #7f7972; margin-top: .6rem; letter-spacing: .06em; }
+
+  .strip { display: flex; gap: 4px; overflow-x: auto; margin: 30px 0 6px; padding-bottom: 6px; }
+  .strip img { height: 78px; border: 1px solid var(--rule); flex: 0 0 auto; }
+
+  .meta { font-family: var(--sans); font-size: .74rem; color: #8d8781; line-height: 1.65; margin-top: 26px;
+          border-top: 1px solid rgba(241,218,193,.15); padding-top: 14px; }
+  .meta a { color: var(--vermilion-hi); }
+  .meta code { color: #cbbfae; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <span class="title">Yūsuf Ascent</span>
+    <span class="spacer"></span>
+    <a href="./portal/index.html">Research portal</a>
+    <span class="sep">·</span>
+    <a href="../../site/index.html">TurkaGame</a>
+  </div>
+
+  <main>
+    <h1>Yūsuf Ascent</h1>
+    <div class="sub">Three prototypes that treat Bihzād's impossible palace as a place you can be in
+    rather than a picture you look at. Standalone; optionally pluggable into the career sim as a dream
+    encounter.</div>
+
+    <div class="split">
+      <img src="./assets/folio-full.jpg" alt="Bihzad, Yusuf fleeing Zulaykha, 1488">
+      <div class="lede">
+        <p>Herat, 1488. The last illustrated page of a <i>Būstān</i> of Saʿdī, made for Sultan Ḥusayn Bāyqarā.
+        Most of the page is a palace that Saʿdī's poem never mentions — it comes from Jāmī's <i>Yūsuf u Zulaykhā</i>,
+        finished in the same city five years earlier, where the building has seven chambers and the doors give way
+        at the touch of Yūsuf's finger.</p>
+        <p>Nothing in it is structurally possible, and everything in it is finished to the same degree of
+        attention. That combination is why it can be read as a diagram of ascent instead of a house — and why
+        it survives being taken apart into <b>43 interactable elements</b> and put back together three
+        different ways.</p>
+      </div>
+    </div>
+
+    <div class="strip" id="strip"></div>
+
+    <div class="protos">
+      <a class="proto" href="./proto-a-doors/index.html">
+        <div class="k">Prototype A · 2D</div>
+        <h2>The Seven Doors</h2>
+        <p>The folio itself as the playfield. Every element returns a research card; seven doors are locked, each
+        inscribed with a term, and each opens only when you find the thing in the picture that embodies it.
+        The eighth door is a blind and stays shut.</p>
+        <div class="dim">hotspot chain · knowledge lock · no engine</div>
+      </a>
+
+      <a class="proto" href="./proto-b-stack/index.html">
+        <div class="k">Prototype B · 3D</div>
+        <h2>The Impossible Stack</h2>
+        <p>Every element becomes a flat quad whose depth is its cosmological rung. Station-point compensation
+        keeps the projection exact, so from one privileged place the exploded stack <i>is</i> the painting —
+        and one degree off, the palace comes apart into seven strata.</p>
+        <div class="dim">three.js · unlit · orbit / climb / station</div>
+      </a>
+
+      <a class="proto" href="./proto-c-ladder/index.html">
+        <div class="k">Prototype C · diagram</div>
+        <h2>The Ladder</h2>
+        <p>The picture handed back as loose tiles. Sort each onto the rung of the ascent it belongs to, then
+        mark yourself against our reading — and argue with it. The disagreements are the exercise.</p>
+        <div class="dim">drag-sort · interpretive · fastest to grasp</div>
+      </a>
+
+      <a class="proto" href="./portal/index.html">
+        <div class="k">Research</div>
+        <h2>The palace that is not a building</h2>
+        <p>The deep dive: provenance (with a shelfmark correction), the three texts behind the picture, how it
+        has been read, what our own 43-source corpus actually supports, every element catalogued, and the
+        open questions.</p>
+        <div class="dim">portal · every claim grounding-tagged</div>
+      </a>
+    </div>
+
+    <div class="meta">
+      <p><b>Run it.</b> No build step. Serve the repo root — <code>.claude/launch.json</code> config
+      <code>turkagame-site</code> (port 7521) — and open
+      <code>/games/yusuf-ascent/index.html</code>. Debug handles:
+      <code>window.__yusufA</code>, <code>__yusufB</code>, <code>__yusufC</code>, <code>__yusufPortal</code>.</p>
+      <p><b>Honesty.</b> The seven-rung ladder and the door chain are this project's interpretation of the
+      painting, not labels it carries — and no source in our corpus connects Bihzād to Ibn Turka at all. The
+      <a href="./portal/index.html">portal</a> tags every claim with how well it is grounded, including that
+      negative result.</p>
+      <p><b>Docs.</b> <a href="./DESIGN.md">DESIGN.md</a> · <a href="./GRAPHICS.md">GRAPHICS.md</a> ·
+      <a href="./INTERFACE.md">INTERFACE.md</a> · <a href="./README.md">README.md</a> ·
+      <a href="../../docs/VISIONARY_ENVIRONMENTS.md">VISIONARY_ENVIRONMENTS.md</a></p>
+    </div>
+  </main>
+
+<script type="module">
+  import { loadPalace, spriteURL } from './shared/data.js?v=1';
+  const p = await loadPalace('.');
+  const strip = document.getElementById('strip');
+  const pick = ['street-door','iwan-door','staircase-lower','green-door','blue-tile-court',
+                'muqarnas-eaves','balcony-brackets','the-chamber','yusuf','yusuf-halo','cupola',
+                'badgir-kiosk','tile-field-left','verse-cartouche-mid','ornate-door-lower'];
+  for (const id of pick) {
+    const n = p.byId[id]; if (!n) continue;
+    const img = document.createElement('img');
+    img.src = spriteURL(p, n); img.alt = n.title; img.title = n.title;
+    strip.appendChild(img);
+  }
+</script>
+</body>
+</html>

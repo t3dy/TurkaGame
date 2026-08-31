@@ -1,0 +1,233 @@
+{
+  "_note": "Deep-dive research record for Bihzād's Yūsuf fleeing Zulaykha, Cairo, Adab Farsi 22, f. 52b. Hand-authored, not generated. Every claim carries a `grounding` tag: ATTESTED (a source states it), CORPUS (found in this project's local Melvin-Koushki corpus, with page ref), FIELD (general art-historical knowledge not verified against a source in hand for this project — treat as a lead, not a citation), INFERENCE (this project's reading), NEGATIVE (a search that found nothing, recorded because the absence matters).",
+  "_generated": "2026-08-31",
+
+  "object": {
+    "title": "Yūsuf fleeing Zulaykha",
+    "alt_titles": ["The Seduction of Yūsuf", "Yūsuf fleeing the advances of Zulaykha", "Zulaykhā's castle"],
+    "artist": "Kamāl al-Dīn Bihzād (c. 1450–1535), attributed",
+    "manuscript": "Būstān (The Orchard) of Saʿdī",
+    "copied_by": "Sulṭān ʿAlī Mashhadī (calligrapher of the manuscript)",
+    "patron": "Sultan Ḥusayn Bāyqarā, Timurid ruler of Herat (r. 1470–1506)",
+    "date": "893–94 / 1488–89",
+    "place": "Herat",
+    "institution": "Egyptian National Library and Archives (Dār al-Kutub), Cairo",
+    "shelfmark": "Adab Farsi 22",
+    "folio": "f. 52b",
+    "manuscript_extent": "55 folios; c. 30.5 × 21.5 cm per folio, written surface c. 21 × 17 cm",
+    "position_in_book": "the last illustrated page of the manuscript",
+    "rights": {
+      "status": "CLEARABLE",
+      "basis": "PD-Art. The painting is from 1488 and long out of copyright; the reproduction used here is hosted on Wikimedia Commons under the Public Domain Mark as a faithful photographic reproduction of a two-dimensional public-domain work.",
+      "action_needed": "Before any shipped release, confirm the Dār al-Kutub's own reproduction terms directly, since national-library policy can differ from Commons' PD-Art position.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Yusuf_fleeing_the_Advances_of_Zulaikha.jpg"
+    },
+    "provenance_correction": {
+      "was": "imagelab/data/images.json recorded this as 'Adab Farsi 908 (attributed)', flagged as the author's own guess from the picture.",
+      "now": "Adab Farsi 22, f. 52b, confirmed against Wikimedia Commons' file record and corroborated by published descriptions of the Cairo Būstān.",
+      "note": "'Adab Farsi 908' is a real Egyptian National Library shelfmark associated with a Sulṭān ʿAlī Mashhadī Būstān of 1488 in at least one reference chain; the two numbers may be catalogue-generation variants for the same book. Adab Farsi 22 is the number the art-historical literature uses.",
+      "grounding": "ATTESTED"
+    }
+  },
+
+  "story": {
+    "qurʾanic": {
+      "locus": "Q 12 (Sūrat Yūsuf), esp. 12:23–25",
+      "summary": "The wife of Yūsuf's Egyptian master bolts the doors and solicits him. He refuses and makes for the door; she tears his shirt from behind as they reach it, and her husband is standing there. The doors, and the torn shirt, are the two physical facts of the episode.",
+      "note_for_design": "The Qurʾan gives locked doors and a chase toward them. It gives no palace, no seven chambers, and no staircase.",
+      "grounding": "ATTESTED"
+    },
+    "saadi": {
+      "locus": "Saʿdī, Būstān (1257)",
+      "summary": "The Būstān treats the episode as a brief exemplary anecdote in a didactic frame. It describes no palace at all.",
+      "significance": "The painting illustrates a book whose text does not contain the building the painting is mostly made of.",
+      "grounding": "ATTESTED"
+    },
+    "jami": {
+      "locus": "ʿAbd al-Raḥmān Jāmī, Yūsuf u Zulaykhā (completed 1483)",
+      "summary": "Jāmī, at Herat, in Sultan Ḥusayn Bāyqarā's own circle, gives Zulaykha a palace built expressly for the seduction: seven chambers, each hung with tapestries and wall paintings — including paintings of Yūsuf and Zulaykha themselves. Yūsuf passes through them; at the last, his pointing finger works as a key and the doors give way.",
+      "significance": "Five years before this folio was painted, and in the same city, the seven-chambered palace enters the story. Bihzād has painted Jāmī's architecture into Saʿdī's text.",
+      "grounding": "ATTESTED"
+    },
+    "sufi_reading": {
+      "summary": "In Jāmī's telling the allegory inverts the older moral. Zulaykha becomes the Sufi lover, whose ruinous desire for an unattainable beloved is finally purified into union; Yūsuf stands in for the divine beloved. The chase is not a morality tale about lust but a figure of the soul's pursuit of God.",
+      "grounding": "ATTESTED"
+    }
+  },
+
+  "readings": [
+    {
+      "id": "escher-labyrinth",
+      "claim": "The architecture is a spatial labyrinth of deliberately incompatible planes — an Escher-like impossibility — readable as a metaphor for the mystic's quest.",
+      "who": "Widely held in the literature on this folio.",
+      "grounding": "ATTESTED",
+      "contested": false
+    },
+    {
+      "id": "inscriptions-praise-the-painter",
+      "claim": "The inscriptions built into the architecture of this folio function as encomiums of the artist rather than as eulogies of the patron — unusual, and part of why the Cairo Būstān is central to arguments about the emergence of the named artist in late Timurid painting.",
+      "who": "Lamia Balafrej's work on the Cairo Būstān and the making of the artist in late Timurid painting.",
+      "grounding": "ATTESTED",
+      "contested": false,
+      "note": "This is the single most consequential recent shift in reading the folio: it moves the picture's self-reference from theology toward authorship, without cancelling the theological reading."
+    },
+    {
+      "id": "allegorical-code",
+      "claim": "Medieval Islamic painting carries a decipherable allegorical code, and Bihzād's Zulaykha's-castle picture is one of its clearest exhibits; the study of that code has lagged a century behind the equivalent work on medieval Western art.",
+      "who": "Michael Barry, Figurative Art in Medieval Islam and the Riddle of Bihzâd of Herât (Flammarion, 2004), whose chapter 'Zulaykhâ's castle' takes this painting as a set piece.",
+      "grounding": "FIELD",
+      "contested": true,
+      "contested_note": "Barry's programme of symbolic decipherment is influential and also strongly contested; a number of specialists regard his readings as over-determined. Cite him as a position, not as a settled result, and read the reviews before leaning on any specific decoding."
+    },
+    {
+      "id": "diagram-not-building",
+      "claim": "Because the building's stairs, planes and openings are mutually contradictory while every surface is finished to the same degree of attention, the picture is better read as a diagram of passage through graded levels than as a depiction of a house.",
+      "who": "This project.",
+      "grounding": "INFERENCE",
+      "contested": false,
+      "note": "The observation about uniform finish is the load-bearing part: incoherent space plus uniform attention is not a failure of perspective, it is a refusal of it."
+    },
+    {
+      "id": "barzakh-compatible",
+      "claim": "Reading the impossible architecture as an ascent through graded levels is directly compatible with the Ibn Turka material, in which the barzakh is the intermediate domain through which forms pass between the intelligible and the sensible.",
+      "who": "This project, using the corpus evidence below.",
+      "grounding": "INFERENCE",
+      "contested": false
+    },
+    {
+      "id": "no-turka-link",
+      "claim": "Neither 'Zulaykha' nor 'Bihzād' appears anywhere in this project's 43-source Melvin-Koushki corpus. The connection between this painting and the Ibn Turka material is thematic and interpretive; it is not a link the scholarship draws.",
+      "who": "This project, via portal/scripts/mine_corpus.py.",
+      "grounding": "NEGATIVE",
+      "contested": false,
+      "note": "Recorded deliberately. The game is built on an analogy, and the analogy should be visible to the player rather than smuggled in."
+    }
+  ],
+
+  "corpus_evidence": [
+    {
+      "term": "barzakh",
+      "paraphrase": "An imaginal likeness necessarily accompanies whatever emerges from the occult into the manifest, and acts as a joining isthmus (barzakh) between the angelic-spiritual realm and its physical body.",
+      "source": "Melvin-Koushki, Occult Ecumenism, 24",
+      "grounding": "CORPUS",
+      "used_for": "The stair. Rung 2 of the ladder, and the lock on the door under the stair."
+    },
+    {
+      "term": "miʿrāj",
+      "paraphrase": "The Qurʾan and hadith make ascent the primary mode of prophecy, with Muḥammad's own flight to the ceiling of being and return with revelation as the exemplar.",
+      "source": "Melvin-Koushki, Mir Damad's On Doffing, 9",
+      "grounding": "CORPUS",
+      "used_for": "The ladder's overall shape, and why the crown is unoccupiable."
+    },
+    {
+      "term": "sensorial ascent",
+      "paraphrase": "Suhrawardī's Illuminationist system valorised sight as the portal of light and demanded a sensorial ascent from touch up to solar mind; Ibn Turka's retort demands a descent (tanzīl) as well, for a total existential system.",
+      "source": "Melvin-Koushki, Ibn Turka's Pythagorean Sensorium, 2",
+      "grounding": "CORPUS",
+      "used_for": "Why the game must let the player descend as well as climb — see DESIGN.md §Descent."
+    },
+    {
+      "term": "talismans as engines of ascent",
+      "paraphrase": "Suhrawardī describes the path as necessarily traumatic — physical and imaginal attacks, seizures, trances — and specifies talismans as engines of ascent.",
+      "source": "Melvin-Koushki, Mir Damad's On Doffing, 14",
+      "grounding": "CORPUS",
+      "used_for": "The door-lock mechanic: a term inscribed on a door, answered by an object in the world."
+    },
+    {
+      "term": "khayāl / sīmiyā",
+      "paraphrase": "Kāshifī defines sīmiyā as the manipulation of imaginal constructs (khayālāt), and rīmiyā as terrestrial sleight.",
+      "source": "Melvin-Koushki, Pseudo-Shaykh Bahāʾī on the Supreme Name, 15",
+      "grounding": "CORPUS",
+      "used_for": "Rung 3. The lapis court as an image held as an image."
+    },
+    {
+      "term": "letters as the atoms of the imaginal",
+      "paraphrase": "Letters, as the most fundamental of images, are the atoms of the imaginal realm.",
+      "source": "Melvin-Koushki, Of Islamic Grammatology, 26 n.97",
+      "grounding": "CORPUS",
+      "used_for": "Why the verse cartouches are treated as architecture in this decomposition, not as captions."
+    },
+    {
+      "term": "doffing the body",
+      "paraphrase": "One who can doff (khalʿ) the body and reject the senses ascends to the supernal realm; on this account one is not a philosopher until able to do so.",
+      "source": "Melvin-Koushki, Mir Damad's On Doffing, 15",
+      "grounding": "CORPUS",
+      "used_for": "The dream-sequence framing: the encounter is an out-of-body ascent, not a dream in the ordinary sense."
+    },
+    {
+      "term": "miʿrāj paintings as frontispieces",
+      "paraphrase": "Paintings of the Prophet's ascent began to appear as manuscript frontispieces within a few years of Ibn Turka's death and became a standard Safavid, Mughal and Ottoman visual idiom.",
+      "source": "Melvin-Koushki, Prologue to a Pythagorean Renaissance, 10",
+      "grounding": "CORPUS",
+      "used_for": "The single strongest bridge in the corpus between Ibn Turka's moment and Persianate visionary painting. It is chronological adjacency, not influence."
+    }
+  ],
+
+  "figures": [
+    { "slug": "bihzad", "name": "Kamāl al-Dīn Bihzād", "dates": "c. 1450–1535",
+      "card": "The master of the Herat atelier under Sultan Ḥusayn Bāyqarā, and later at Safavid Tabriz. Became an almost mythical figure across Islamic Asia; the attribution of paintings 'to Bihzād' quickly outran anything he could have made. The Cairo Būstān is among the securest bodies of work.", "grounding": "FIELD" },
+    { "slug": "husayn-bayqara", "name": "Sultan Ḥusayn Bāyqarā", "dates": "r. 1470–1506",
+      "card": "The last significant Timurid ruler of Herat, and the patron of the manuscript. His court is the high-water mark of Timurid book production, and the setting in which Jāmī, Bihzād and Sulṭān ʿAlī Mashhadī all worked at once.", "grounding": "FIELD" },
+    { "slug": "jami", "name": "ʿAbd al-Raḥmān Jāmī", "dates": "1414–1492",
+      "card": "Naqshbandī Sufi, poet and the dominant literary figure of Bāyqarā's Herat. His Yūsuf u Zulaykhā (1483) supplies the seven-chambered palace and the mystical inversion of the story that this painting appears to depend on.", "grounding": "ATTESTED" },
+    { "slug": "saadi", "name": "Saʿdī of Shiraz", "dates": "c. 1210–1291/2",
+      "card": "Author of the Būstān (1257), the book this folio illustrates and whose text contains no palace.", "grounding": "ATTESTED" },
+    { "slug": "sultan-ali-mashhadi", "name": "Sulṭān ʿAlī Mashhadī", "dates": "c. 1435–1520",
+      "card": "The pre-eminent nastaʿlīq calligrapher of Timurid Herat and the copyist of this manuscript. In this folio his script is not on the page around the painting but inside the building.", "grounding": "FIELD" },
+    { "slug": "ibn-turka", "name": "Ṣāʾin al-Dīn ʿAlī ibn Turka Iṣfahānī", "dates": "1369–1432",
+      "card": "The occult philosopher this whole project is built on, dead 56 years before this folio was painted. He is not connected to the picture by any source; he is connected to it by the cosmology the picture can be read through. See the negative result above.", "grounding": "INFERENCE" }
+  ],
+
+  "concepts": [
+    { "slug": "barzakh", "term": "barzakh", "script": "برزخ",
+      "gloss": "Isthmus. The intermediate domain joining the spiritual and the bodily; the place where a form has an imaginal likeness before it has a body.", "grounding": "CORPUS" },
+    { "slug": "alam-al-khayal", "term": "ʿālam al-khayāl", "script": "عالم الخيال",
+      "gloss": "The imaginal realm: where forms subsist as images, neither abstract nor material. Distinguished in the literature from mere fantasy.", "grounding": "CORPUS" },
+    { "slug": "miraj", "term": "miʿrāj", "script": "معراج",
+      "gloss": "Ascent. The Prophet's night flight, and by extension the model of any philosophical or visionary ascent through the levels of being.", "grounding": "CORPUS" },
+    { "slug": "malakut", "term": "malakūt", "script": "ملكوت",
+      "gloss": "The angelic realm of spirits, above the sensible kingdom (mulk) and below the realm of power (jabarūt).", "grounding": "CORPUS" },
+    { "slug": "khal", "term": "khalʿ", "script": "خلع",
+      "gloss": "Doffing — laying aside the body and its senses, the technique by which the ascent is actually made in the Illuminationist account.", "grounding": "CORPUS" },
+    { "slug": "muqarnas", "term": "muqarnas", "script": "مقرنص",
+      "gloss": "A vault made by subdividing a corner into tiers of niches until two incompatible shapes can meet. Architecture's own solution to transition.", "grounding": "FIELD" },
+    { "slug": "iwan", "term": "iwān", "script": "ايوان",
+      "gloss": "A vaulted hall walled on three sides and open on the fourth: the basic unit of Persianate monumental architecture.", "grounding": "FIELD" }
+  ],
+
+  "bibliography": [
+    { "id": "balafrej-2019", "author": "Lamia Balafrej", "title": "The Making of the Artist in Late Timurid Painting", "year": 2019, "publisher": "Edinburgh University Press", "relevance": "PRIMARY",
+      "note": "The central modern study of the Cairo Būstān, and the source of the reading that this folio's architectural inscriptions praise the painter. Start here.", "status": "NOT_IN_HAND" },
+    { "id": "barry-2004", "author": "Michael Barry", "title": "Figurative Art in Medieval Islam and the Riddle of Bihzâd of Herât (1465–1535)", "year": 2004, "publisher": "Flammarion", "relevance": "DIRECT",
+      "note": "Contains a chapter 'Zulaykhâ's castle' devoted to this painting. Ambitious symbolic decipherment; influential and contested. Read alongside its reviews.", "status": "NOT_IN_HAND" },
+    { "id": "bahari-1996", "author": "Ebadollah Bahari", "title": "Bihzad: Master of Persian Painting", "year": 1996, "publisher": "I.B. Tauris", "relevance": "DIRECT",
+      "note": "The standard monograph; the place to check attribution claims against.", "status": "NOT_IN_HAND" },
+    { "id": "lentz-lowry-1989", "author": "Thomas W. Lentz and Glenn D. Lowry", "title": "Timur and the Princely Vision: Persian Art and Culture in the Fifteenth Century", "year": 1989, "publisher": "Smithsonian / LACMA", "relevance": "CONTEXTUAL",
+      "note": "The standard account of Timurid visual culture, and the bridge between this painting's court and Ibn Turka's.", "status": "NOT_IN_HAND" },
+    { "id": "gruber-mirajnama", "author": "Christiane Gruber", "title": "The Timurid Book of Ascension (Miʿrājnāma): A Study of Text and Image in a Pan-Asian Context", "year": 2008, "relevance": "DIRECT",
+      "note": "The 1436 Herat Miʿrājnāma (BnF Suppl. turc 190), made for Shāh Rukh — the fullest cycle of ascension painting in Islamic art, and made in Ibn Turka's own lifetime and patronage world. The most important comparandum this project has.", "status": "NOT_IN_HAND" },
+    { "id": "roxburgh-2005", "author": "David J. Roxburgh", "title": "The Persian Album, 1400–1600: From Dispersal to Collection", "year": 2005, "publisher": "Yale University Press", "relevance": "CONTEXTUAL",
+      "note": "On the album (muraqqaʿ) and its prefaces — the form Melvin-Koushki says embodies Ibn Turka's ontogrammatology.", "status": "NOT_IN_HAND" },
+    { "id": "necipoglu-1995", "author": "Gülru Necipoğlu", "title": "The Topkapı Scroll: Geometry and Ornament in Islamic Architecture", "year": 1995, "publisher": "Getty", "relevance": "CONTEXTUAL",
+      "note": "On geometric pattern as a working practice with its own theory. Directly relevant to reading the tile fields as systems rather than decoration.", "status": "NOT_IN_HAND" },
+    { "id": "mk-occult-ecumenism", "author": "Matthew Melvin-Koushki", "title": "Occult Ecumenism", "relevance": "PRIMARY",
+      "note": "In this project's corpus. Source of the barzakh-as-isthmus formulation.", "status": "IN_CORPUS" },
+    { "id": "mk-on-doffing", "author": "Matthew Melvin-Koushki", "title": "Mir Damad's On Doffing", "year": 2025, "relevance": "PRIMARY",
+      "note": "In this project's corpus. Ascent, doffing the body, talismans as engines of ascent.", "status": "IN_CORPUS" },
+    { "id": "mk-sensorium", "author": "Matthew Melvin-Koushki", "title": "Ibn Turka's Pythagorean Sensorium", "relevance": "PRIMARY",
+      "note": "In this project's corpus. Ascent and descent as a single system.", "status": "IN_CORPUS" },
+    { "id": "mk-prologue", "author": "Matthew Melvin-Koushki", "title": "Prologue to a Pythagorean Renaissance", "relevance": "PRIMARY",
+      "note": "In this project's corpus. Miʿrāj paintings as frontispieces after Ibn Turka's death.", "status": "IN_CORPUS" },
+    { "id": "commons-file", "author": "Wikimedia Commons", "title": "File:Yusuf fleeing the Advances of Zulaikha.jpg", "relevance": "PRIMARY",
+      "note": "The source of the image used here, and of the confirmed shelfmark and rights position.", "status": "ONLINE",
+      "url": "https://commons.wikimedia.org/wiki/File:Yusuf_fleeing_the_Advances_of_Zulaikha.jpg" }
+  ],
+
+  "open_questions": [
+    "Confirm Adab Farsi 22 versus Adab Farsi 908 against the Dār al-Kutub's own catalogue. Both numbers circulate for a 1488 Sulṭān ʿAlī Mashhadī Būstān.",
+    "Read and transcribe the actual inscriptions in the architecture. Everything this record says about them is second-hand. The verses are the one part of the picture the game currently treats as texture rather than as text.",
+    "Test the Jāmī dependency properly. 'Seven chambers in Jāmī, seven-ish doors in the picture' is suggestive, but nobody here has counted Jāmī's chambers against Bihzād's openings in a source that does the work.",
+    "Establish whether any late-Timurid writing connects painted architecture to cosmological ascent explicitly, rather than leaving the connection to modern readers. If it does, the game's premise upgrades from INFERENCE to ATTESTED.",
+    "Check whether the Cairo Būstān's other folios use the same spatial strategy, or whether f. 52b is exceptional within its own manuscript."
+  ]
+}

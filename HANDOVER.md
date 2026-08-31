@@ -106,6 +106,51 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
   strong, ready-to-use asset source: 136 rights-cleared Islamicate images across 14
   works, including images of al-Buni's own *Shams al-Ma'arif*.
 
+- **Yūsuf Ascent (2026-08-31), standalone and verified in-browser.**
+  `games/yusuf-ascent/` — a puzzle minigame + research portal on one painting,
+  Bihzād's *Yūsuf fleeing Zulaykha*. Built to stand alone; optionally pluggable
+  into the career sim as a dream encounter (framing written up, not wired).
+  - The folio decomposed into **43 interactable elements**; boxes in
+    `imagelab/data/regions.json`, sprites cut by `cut_regions.py`, merged with
+    interpretation by `games/yusuf-ascent/build_palace.py` into `data/palace.json`,
+    which all four surfaces read.
+  - **Prototype A, "The Seven Doors"** — 2D hotspot chain. Verified by a scripted
+    full playthrough: all 7 locks open in order, wrong answers rejected with the
+    right message, the blind 8th door refuses, cards render, restart works.
+  - **Prototype B, "The Impossible Stack"** — three.js. Panels are placed by
+    *cosmological rung* and compensated about a station point, so from one
+    privileged viewpoint the exploded stack projects to the identical image as the
+    flat painting. Verified numerically, not just visually:
+    `__yusufB.checkStationInvariant()` returns worst-case screen drift `1.2e-16`
+    against a `1.5e-3` tolerance across all 41 panels. Two real bugs found and fixed
+    in verification (backdrop plate rendering *in front of* the exploded strata; the
+    rung-colour debug mode permanently destroying panel textures through material
+    aliasing).
+  - **Prototype C, "The Ladder"** — drag-sort into seven strata; reveal/mark verified
+    at 41/41.
+  - **Research portal** — renders from `data/research.json`; verified live with 41
+    gallery entries, all six grounding-tag types, 13 bibliography rows, 5 open
+    questions, and the one contested reading flagged.
+  - **A real provenance correction**: the folio was recorded in
+    `imagelab/data/images.json` as "Adab Farsi 908 (attributed)", flagged there as a
+    guess. It is **Adab Farsi 22, f. 52b**, Egyptian National Library — corrected in
+    `images.json`, with rights moved from NEEDS_VERIFICATION to CLEARABLE (PD-Art via
+    Wikimedia Commons; the Dār al-Kutub's own terms still to be confirmed before a
+    shipped release).
+  - Forward proposals written, not built: `GRAPHICS.md` (routed through the Three.js
+    skill pack — 5 ranked proposals plus an explicit refusal list, since the source
+    has no modelled light and PBR/bloom would be a category error) and
+    `INTERFACE.md` (8 ranked, honest about no onboarding, no journal, and no touch
+    support in Prototype C).
+- **`docs/VISIONARY_ENVIRONMENTS.md`** — research into eight other Persianate
+  visionary traditions (the 1436 Herat *Miʿrājnāma* made for Shāh Rukh; the Freer
+  Jalāyirid *Dīwān*; *Haft Paykar*'s seven planetary pavilions; Siyah Qalam; the
+  *Falnāma*; the *muraqqaʿ*; Qazwīnī's cosmography; the lettrist grid), each with a
+  concrete environment mechanic, a rights lead, and a ranked build order. Also
+  states the discipline for writing Ibn Turka's visionary life honestly: build it as
+  *practice* (miʿrāj, khalʿ, and his own signature demand for **descent**), not as an
+  invented vision narrative.
+
 ## What's NOT done — the important gaps, not hidden
 
 1. **The VN's narrative prose is a real first pass, not final writing.** Every

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototype C — The Ladder</title>
+<link rel="stylesheet" href="../shared/theme.css?v=1">
+<style>
+  body { height: 100vh; display: flex; flex-direction: column; overflow: hidden; background: #232128; }
+  #stage { flex: 1 1 auto; display: flex; min-height: 0; }
+
+  #ladder {
+    flex: 1 1 auto; overflow-y: auto; padding: 10px 12px 40px;
+    display: flex; flex-direction: column-reverse; gap: 12px;
+  }
+  .rung {
+    border-left: 5px solid;
+    background: rgba(241,218,193,.055);
+    padding: 8px 10px 12px;
+    transition: background .12s;
+  }
+  .rung.over { background: rgba(201,154,46,.16); }
+  .rung h4 {
+    margin: 0 0 2px; font-size: .9rem; color: var(--paper); font-weight: 500;
+    display: flex; align-items: baseline; gap: .55rem;
+  }
+  .rung h4 .n {
+    font-family: var(--sans); font-size: .62rem; letter-spacing: .14em;
+    opacity: .55; text-transform: uppercase;
+  }
+  .rung .gloss {
+    font-family: var(--sans); font-size: .68rem; color: #9b9490; line-height: 1.45;
+    margin-bottom: 6px;
+  }
+  .slots { display: flex; flex-wrap: wrap; gap: 5px; min-height: 34px; }
+
+  #tray {
+    flex: 0 0 300px; border-left: 1px solid var(--gold); background: #1c1a21;
+    display: flex; flex-direction: column; min-height: 0;
+  }
+  #tray h3 {
+    margin: 0; padding: 8px 12px; color: var(--paper); font-size: .88rem; font-weight: 500;
+    border-bottom: 1px solid var(--rule);
+  }
+  #tray-items {
+    flex: 1 1 auto; overflow-y: auto; padding: 8px; display: flex; flex-wrap: wrap;
+    gap: 5px; align-content: flex-start;
+  }
+  #tray-items.over { background: rgba(201,154,46,.1); }
+
+  .tile {
+    width: 56px; height: 56px; position: relative; cursor: grab;
+    border: 1px solid var(--rule); background: #000;
+    overflow: hidden; flex: 0 0 auto;
+  }
+  .tile img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+  .tile.dragging { opacity: .35; }
+  .tile.right { outline: 2px solid var(--turquoise); outline-offset: -2px; }
+  .tile.wrong { outline: 2px solid var(--vermilion); outline-offset: -2px; }
+  .tile:hover { border-color: var(--gold); }
+
+  #foot {
+    padding: 8px 12px; border-top: 1px solid var(--rule);
+    display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+    font-family: var(--sans); font-size: .72rem; color: #9b9490;
+  }
+  #score { color: var(--paper); }
+  #cardbox { padding: 8px; border-top: 1px solid var(--rule); }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <span class="title">The Ladder</span>
+    <span class="sep">·</span>
+    <span>Prototype C — sort the palace into its strata</span>
+    <span class="spacer"></span>
+    <a href="../index.html">← all prototypes</a>
+  </div>
+
+  <div id="stage">
+    <div id="ladder"></div>
+    <aside id="tray">
+      <h3>Unplaced elements</h3>
+      <div id="tray-items"></div>
+      <div id="cardbox"><div class="card" id="card"></div></div>
+      <div id="foot">
+        <button class="btn" id="check">Mark</button>
+        <button class="btn" id="reveal">Reveal</button>
+        <button class="btn" id="reset">Reset</button>
+        <span id="score"></span>
+      </div>
+    </aside>
+  </div>
+
+<script type="module" src="./app.js?v=1"></script>
+</body>
+</html>

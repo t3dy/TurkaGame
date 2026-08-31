@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototype A — The Seven Doors</title>
+<link rel="stylesheet" href="../shared/theme.css?v=1">
+<style>
+  body { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+
+  #stage { flex: 1 1 auto; display: flex; min-height: 0; }
+
+  #folio-wrap {
+    flex: 1 1 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at 50% 30%, #55525e 0%, #2f2d36 70%, #232128 100%);
+  }
+  #folio {
+    position: relative;
+    line-height: 0;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 8px 40px rgba(0,0,0,.55);
+  }
+  #folio img {
+    display: block;
+    max-width: 100%;
+    /* topbar (~38px) + wrap padding (24px); viewport units so the height is
+       definite regardless of how the flex chain resolves. */
+    max-height: calc(100vh - 66px);
+    width: auto;
+    height: auto;
+  }
+  @media (max-width: 860px) {
+    #folio img { max-height: calc(54vh - 46px); }
+  }
+
+  .hot {
+    position: absolute;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background .12s, border-color .12s, box-shadow .12s;
+  }
+  .hot:hover { border-color: var(--gold); background: rgba(201,154,46,.18); }
+  .hot.seen  { border-color: rgba(201,154,46,.30); }
+  .hot.door  { border-color: rgba(224,162,85,.55); }
+  .hot.door.locked  { background: rgba(43,39,35,.44); border-color: rgba(224,162,85,.7); }
+  .hot.door.open    { background: rgba(46,143,143,.20); border-color: var(--turquoise); }
+  .hot.door.current {
+    animation: pulse 1.6s ease-in-out infinite;
+    border-color: #fff;
+  }
+  .hot.answer-hit { background: rgba(46,143,143,.5); border-color: var(--turquoise); }
+  .hot.answer-miss { background: rgba(192,101,35,.5); border-color: var(--vermilion); }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 0 rgba(255,255,255,.65); }
+    50%     { box-shadow: 0 0 0 7px rgba(255,255,255,0); }
+  }
+
+  .doorlabel {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: .1em;
+    color: #fff;
+    background: rgba(30,63,122,.85);
+    border: 1px solid var(--gold);
+    padding: 1px 5px;
+    border-radius: 2px;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  /* ---- side panel ---- */
+  #panel {
+    flex: 0 0 340px;
+    background: #211f27;
+    border-left: 1px solid var(--gold);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 12px;
+    gap: 12px;
+  }
+  #panel h2 {
+    margin: 0;
+    font-size: .95rem;
+    color: var(--paper);
+    font-weight: 500;
+  }
+  #chain { display: flex; flex-wrap: wrap; gap: 5px; }
+  .pip {
+    width: 26px; height: 26px;
+    display: grid; place-items: center;
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    font-family: var(--sans); font-size: .7rem;
+    color: var(--paper);
+    background: transparent;
+  }
+  .pip.open    { background: var(--turquoise); color: #10201f; }
+  .pip.current { background: var(--gold); color: #1a1820; }
+
+  #prompt {
+    background: rgba(30,63,122,.35);
+    border: 1px solid var(--lapis-dim);
+    padding: .7rem .8rem;
+    color: var(--paper);
+  }
+  #prompt .term {
+    font-size: 1.5rem;
+    color: var(--gold-bright);
+    display: block;
+    line-height: 1.2;
+  }
+  #prompt .concept {
+    font-family: var(--sans); font-size: .68rem; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--vermilion-hi);
+  }
+  #prompt p { margin: .5rem 0 0; font-size: .88rem; line-height: 1.5; }
+  #feedback { font-family: var(--sans); font-size: .78rem; line-height: 1.5; color: var(--paper); }
+  #feedback.good { color: #7fd4c4; }
+  #feedback.bad  { color: var(--vermilion-hi); }
+
+  #counter { font-family: var(--sans); font-size: .7rem; color: #9b9490; letter-spacing: .06em; }
+
+  #win { text-align: center; }
+  #win h3 { color: var(--gold-bright); }
+
+  @media (max-width: 860px) {
+    #stage { flex-direction: column; }
+    #panel { flex: 0 0 auto; max-height: 46vh; border-left: none; border-top: 1px solid var(--gold); }
+  }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <span class="title">The Seven Doors</span>
+    <span class="sep">·</span>
+    <span>Prototype A — 2D hotspot chain</span>
+    <span class="spacer"></span>
+    <button class="btn" id="toggle-hot">Show all elements</button>
+    <button class="btn" id="restart">Restart</button>
+    <a href="../index.html">← all prototypes</a>
+  </div>
+
+  <div id="stage">
+    <div id="folio-wrap">
+      <div id="folio"><img id="folio-img" alt="Bihzad, Yusuf fleeing Zulaykha"></div>
+    </div>
+
+    <aside id="panel">
+      <h2>Doors opened</h2>
+      <div id="chain"></div>
+      <div id="prompt"></div>
+      <div id="feedback"></div>
+      <div class="card" id="card"></div>
+      <div id="counter"></div>
+      <div class="note" style="color:#9b9490;border-color:var(--vermilion)">
+        The seven-door chain is an interpretation this game proposes, not a label
+        the painting carries. Saʿdī's text has no palace; the seven chambers come
+        from Jāmī. See the <a href="../portal/index.html" style="color:var(--vermilion-hi)">portal</a>.
+      </div>
+    </aside>
+  </div>
+
+<script type="module" src="./app.js?v=1"></script>
+</body>
+</html>

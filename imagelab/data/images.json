@@ -6,7 +6,10 @@
       "file": "Turka white beard with Qazizada Rumi director of the Samarkand Observatory and Yazdi.png",
       "title": "Ibn Turka with Qāḍīzāda Rūmī and Sharaf al-Dīn Yazdī",
       "short_title": "The Three Principals",
-      "dimensions": [1038, 1099],
+      "dimensions": [
+        1038,
+        1099
+      ],
       "provenance": {
         "institution": null,
         "shelfmark": null,
@@ -29,21 +32,64 @@
         "The green cap under the elder's turban is a marker of sayyid or scholarly status in Persianate painting; the gold-crowned turban on the central figure is grander, and the pairing is the picture's one quiet tension."
       ],
       "research": [
-        { "claim": "Yazdī is Ibn Turka's disciple and closest associate, not a colleague — he attended his teacher's majālis, travelled with him to Herat, and looked after his children after his death.", "source": "Melvin-Koushki, The Quest for a Universal Science (Yale diss., 2012), 135–36", "kind": "grounded" },
-        { "claim": "Qāḍīzāda Rūmī directed the Samarkand Observatory, which places the central figure at the junction of the star science and the letter science.", "source": "Melvin-Koushki, Powers of One, 1", "kind": "grounded" },
-        { "claim": "The three men together represent the intellectual programme Melvin-Koushki calls the mathematicalization of the occult sciences: a lettrist, an astronomer-mathematician, and a historian who applied both to the interpretation of empire.", "source": "Melvin-Koushki, Powers of One, 1; Philosopher-Kings as Sultan-Scientists, 599", "kind": "grounded" },
-        { "claim": "A group portrait of these three specific men is iconographically unusual and may be a later commemorative construction rather than a contemporary likeness.", "source": "inference — no supporting citation located", "kind": "inference" }
+        {
+          "claim": "Yazdī is Ibn Turka's disciple and closest associate, not a colleague — he attended his teacher's majālis, travelled with him to Herat, and looked after his children after his death.",
+          "source": "Melvin-Koushki, The Quest for a Universal Science (Yale diss., 2012), 135–36",
+          "kind": "grounded"
+        },
+        {
+          "claim": "Qāḍīzāda Rūmī directed the Samarkand Observatory, which places the central figure at the junction of the star science and the letter science.",
+          "source": "Melvin-Koushki, Powers of One, 1",
+          "kind": "grounded"
+        },
+        {
+          "claim": "The three men together represent the intellectual programme Melvin-Koushki calls the mathematicalization of the occult sciences: a lettrist, an astronomer-mathematician, and a historian who applied both to the interpretation of empire.",
+          "source": "Melvin-Koushki, Powers of One, 1; Philosopher-Kings as Sultan-Scientists, 599",
+          "kind": "grounded"
+        },
+        {
+          "claim": "A group portrait of these three specific men is iconographically unusual and may be a later commemorative construction rather than a contemporary likeness.",
+          "source": "inference — no supporting citation located",
+          "kind": "inference"
+        }
       ],
-      "portal_links": ["ibn-turka", "qazizada-rumi", "sharaf-al-din-yazdi", "isfahan-circle", "ilm-al-huruf"],
-      "palette": { "dominant": ["#b398a2", "#71523b", "#545d4b", "#957853", "#cfc7bf"], "accents": ["#0e4784", "#c28a71", "#5f79a6"], "max_saturation": 0.81 },
-      "game_use": ["Character portraits for all three principals", "Isfahan Circle council scene", "Title/key art — the gesture toward the document"]
+      "portal_links": [
+        "ibn-turka",
+        "qazizada-rumi",
+        "sharaf-al-din-yazdi",
+        "isfahan-circle",
+        "ilm-al-huruf"
+      ],
+      "palette": {
+        "dominant": [
+          "#b398a2",
+          "#71523b",
+          "#545d4b",
+          "#957853",
+          "#cfc7bf"
+        ],
+        "accents": [
+          "#0e4784",
+          "#c28a71",
+          "#5f79a6"
+        ],
+        "max_saturation": 0.81
+      },
+      "game_use": [
+        "Character portraits for all three principals",
+        "Isfahan Circle council scene",
+        "Title/key art — the gesture toward the document"
+      ]
     },
     {
       "id": "akhlati-receiving-gifts",
       "file": "Husayn Akhlati receiving gifts from Barquq - Majalis al-'Ushshaq - BL Or 11837 f 117 Shiraz c 1560.jpeg",
       "title": "Ḥusayn Akhlāṭī receiving gifts from Sultan Barqūq",
       "short_title": "Akhlāṭī and Barqūq",
-      "dimensions": [640, 1067],
+      "dimensions": [
+        640,
+        1067
+      ],
       "provenance": {
         "institution": "British Library",
         "shelfmark": "Or. 11837",
@@ -67,22 +113,70 @@
         "The red tāj caps are Safavid dress, not Mamluk: the painter has costumed a c. 1390 Cairo event in the court fashion of his own 1560s Shiraz. The image documents how the memory was worn, not what the room looked like."
       ],
       "research": [
-        { "claim": "Akhlāṭī was summoned to Cairo to serve as personal physician to Sultan Barqūq — which is precisely the relationship this painting depicts.", "source": "Melvin-Koushki, Imperial Talismanic Love, 70", "kind": "grounded" },
-        { "claim": "Under Akhlāṭī's influence Barqūq developed a keen interest in the occult sciences, as his personal library and his choice of courtiers suggest — and those courtiers included Ibn Turka himself.", "source": "Melvin-Koushki, Imperial Talismanic Love, 70", "kind": "grounded" },
-        { "claim": "Melvin-Koushki asks whether Barqūq was the first Mamluk sultan to aspire to occult-philosopher-kingship, and so an inspiration to Timurid rivals; he answers 'likely so'.", "source": "Melvin-Koushki, Imperial Talismanic Love, 70", "kind": "grounded" },
-        { "claim": "Lettrism's trajectory into this court ran in three stages: the Ibn ʿArabian-Būnian science of the saints (ʿilm al-awliyāʾ) in the 13th century, de-esotericized and adabized through the Mamluk literary-political mainstream in the 14th, then neopythagoreanized by the occultists who would form the Brethren at the turn of the 15th.", "source": "Melvin-Koushki, Imperial Talismanic Love, 70", "kind": "grounded" },
-        { "claim": "Ibn Turka's first major work, the Persian Sharḥ-i Naẓm al-durar, was completed in 1404 toward the end of his Cairo residence, and timuridizes the Mamluk anthology-as-commentary genre.", "source": "Melvin-Koushki, Imperial Talismanic Love, 70", "kind": "grounded" }
+        {
+          "claim": "Akhlāṭī was summoned to Cairo to serve as personal physician to Sultan Barqūq — which is precisely the relationship this painting depicts.",
+          "source": "Melvin-Koushki, Imperial Talismanic Love, 70",
+          "kind": "grounded"
+        },
+        {
+          "claim": "Under Akhlāṭī's influence Barqūq developed a keen interest in the occult sciences, as his personal library and his choice of courtiers suggest — and those courtiers included Ibn Turka himself.",
+          "source": "Melvin-Koushki, Imperial Talismanic Love, 70",
+          "kind": "grounded"
+        },
+        {
+          "claim": "Melvin-Koushki asks whether Barqūq was the first Mamluk sultan to aspire to occult-philosopher-kingship, and so an inspiration to Timurid rivals; he answers 'likely so'.",
+          "source": "Melvin-Koushki, Imperial Talismanic Love, 70",
+          "kind": "grounded"
+        },
+        {
+          "claim": "Lettrism's trajectory into this court ran in three stages: the Ibn ʿArabian-Būnian science of the saints (ʿilm al-awliyāʾ) in the 13th century, de-esotericized and adabized through the Mamluk literary-political mainstream in the 14th, then neopythagoreanized by the occultists who would form the Brethren at the turn of the 15th.",
+          "source": "Melvin-Koushki, Imperial Talismanic Love, 70",
+          "kind": "grounded"
+        },
+        {
+          "claim": "Ibn Turka's first major work, the Persian Sharḥ-i Naẓm al-durar, was completed in 1404 toward the end of his Cairo residence, and timuridizes the Mamluk anthology-as-commentary genre.",
+          "source": "Melvin-Koushki, Imperial Talismanic Love, 70",
+          "kind": "grounded"
+        }
       ],
-      "portal_links": ["sayyid-husayn-akhlati", "ibn-turka", "new-brethren-purity", "walaya", "talismanic-science"],
-      "palette": { "dominant": ["#49452b", "#97683c", "#b68969", "#685b3c", "#caa188"], "accents": ["#b34a0e", "#842b10", "#cf8a37"], "max_saturation": 0.85 },
-      "game_use": ["Akhlāṭī portrait", "Cairo phase establishing scene", "Patronage/contract icon (the gift platter)", "Surveillance and tribunal states (the two outside the wall)"]
+      "portal_links": [
+        "sayyid-husayn-akhlati",
+        "ibn-turka",
+        "new-brethren-purity",
+        "walaya",
+        "talismanic-science"
+      ],
+      "palette": {
+        "dominant": [
+          "#49452b",
+          "#97683c",
+          "#b68969",
+          "#685b3c",
+          "#caa188"
+        ],
+        "accents": [
+          "#b34a0e",
+          "#842b10",
+          "#cf8a37"
+        ],
+        "max_saturation": 0.85
+      },
+      "game_use": [
+        "Akhlāṭī portrait",
+        "Cairo phase establishing scene",
+        "Patronage/contract icon (the gift platter)",
+        "Surveillance and tribunal states (the two outside the wall)"
+      ]
     },
     {
       "id": "samarkand-observatory-mural",
       "file": "mural in the little museum standing by the Samarkand Observatory ruins.jpg",
       "title": "Ulugh Beg at the Samarkand Observatory",
       "short_title": "Ulugh Beg's Observatory (mural)",
-      "dimensions": [1536, 2048],
+      "dimensions": [
+        1536,
+        2048
+      ],
       "provenance": {
         "institution": "Museum at the Ulugh Beg Observatory site, Samarkand",
         "shelfmark": null,
@@ -105,37 +199,86 @@
         "The lit candle under a night sky is the standard visual shorthand for observation carried through the night, and the only warm colour in an otherwise cool picture."
       ],
       "research": [
-        { "claim": "Ulugh Beg was awarded the title al-sulṭān al-faylasūf, the philosopher-sultan.", "source": "Fazlıoğlu, Mathematical-Astronomical School, 41, cited in Melvin-Koushki, Philosopher-Kings as Sultan-Scientists, 3 n.9", "kind": "grounded" },
-        { "claim": "The mathematicalization of the occult sciences in Ilkhanid–Timurid–Aqquyunlu Iran is the immediate intellectual and sociopolitical context for the celebrated mathematization of astronomy by the members of the Samarkand Observatory — processes previously studied in atomistic isolation.", "source": "Melvin-Koushki, Powers of One, 1", "kind": "grounded" },
-        { "claim": "The model established by Iskandar Sulṭān and Ulugh Beg ensured that astronomy-astrology and lettrism in particular would continue to be heavily patronized by subsequent Timurid and Indo-Timurid dynasts, and by their Safavid and Ottoman competitors.", "source": "Melvin-Koushki, Philosopher-Kings as Sultan-Scientists, 599", "kind": "grounded" },
-        { "claim": "Ulugh Beg's star tables were updated two centuries later as the Zīj-i Shāhjahānī, which carries the first preface in the Arabo-Persian astronomical tradition to be explicitly and thoroughgoingly lettrist in tenor.", "source": "Melvin-Koushki, Philosopher-Kings as Sultan-Scientists, 599", "kind": "grounded" },
-        { "claim": "The observatory broke ground in 1420, the same year Ibn Turka completed the Kitāb al-Mafāḥiṣ (823/1420).", "source": "Melvin-Koushki, Of Islamic Grammatology, 66", "kind": "grounded" }
+        {
+          "claim": "Ulugh Beg was awarded the title al-sulṭān al-faylasūf, the philosopher-sultan.",
+          "source": "Fazlıoğlu, Mathematical-Astronomical School, 41, cited in Melvin-Koushki, Philosopher-Kings as Sultan-Scientists, 3 n.9",
+          "kind": "grounded"
+        },
+        {
+          "claim": "The mathematicalization of the occult sciences in Ilkhanid–Timurid–Aqquyunlu Iran is the immediate intellectual and sociopolitical context for the celebrated mathematization of astronomy by the members of the Samarkand Observatory — processes previously studied in atomistic isolation.",
+          "source": "Melvin-Koushki, Powers of One, 1",
+          "kind": "grounded"
+        },
+        {
+          "claim": "The model established by Iskandar Sulṭān and Ulugh Beg ensured that astronomy-astrology and lettrism in particular would continue to be heavily patronized by subsequent Timurid and Indo-Timurid dynasts, and by their Safavid and Ottoman competitors.",
+          "source": "Melvin-Koushki, Philosopher-Kings as Sultan-Scientists, 599",
+          "kind": "grounded"
+        },
+        {
+          "claim": "Ulugh Beg's star tables were updated two centuries later as the Zīj-i Shāhjahānī, which carries the first preface in the Arabo-Persian astronomical tradition to be explicitly and thoroughgoingly lettrist in tenor.",
+          "source": "Melvin-Koushki, Philosopher-Kings as Sultan-Scientists, 599",
+          "kind": "grounded"
+        },
+        {
+          "claim": "The observatory broke ground in 1420, the same year Ibn Turka completed the Kitāb al-Mafāḥiṣ (823/1420).",
+          "source": "Melvin-Koushki, Of Islamic Grammatology, 66",
+          "kind": "grounded"
+        }
       ],
-      "portal_links": ["ulugh-beg", "samarkand-observatory", "qazizada-rumi", "neoplatonism", "pythagorean-cosmology"],
-      "palette": { "dominant": ["#9b8a60", "#acafb0", "#c4ccd8", "#6f8179", "#889c9c"], "accents": ["#eeded0", "#bd9b6d", "#d6c3b0"], "max_saturation": 0.47 },
-      "game_use": ["Ulugh Beg portrait", "Samarkand phase establishing shot", "The apprentice — 'someone else carries it forward'", "Coda: the work outliving the man"]
+      "portal_links": [
+        "ulugh-beg",
+        "samarkand-observatory",
+        "qazizada-rumi",
+        "neoplatonism",
+        "pythagorean-cosmology"
+      ],
+      "palette": {
+        "dominant": [
+          "#9b8a60",
+          "#acafb0",
+          "#c4ccd8",
+          "#6f8179",
+          "#889c9c"
+        ],
+        "accents": [
+          "#eeded0",
+          "#bd9b6d",
+          "#d6c3b0"
+        ],
+        "max_saturation": 0.47
+      },
+      "game_use": [
+        "Ulugh Beg portrait",
+        "Samarkand phase establishing shot",
+        "The apprentice — 'someone else carries it forward'",
+        "Coda: the work outliving the man"
+      ]
     },
     {
       "id": "yusuf-fleeing-zulaykha",
       "file": "Yusuf_fleeing_the_Advances_of_Zulaikha later Timurid but pure Ibn Turkian Yusuf fleeing Potiphars wife as a psychedelic out-of-body philosophy.jpg",
       "title": "Yūsuf fleeing Zulaykha",
       "short_title": "Yūsuf Fleeing Zulaykha",
-      "dimensions": [1588, 2370],
+      "dimensions": [
+        1588,
+        2370
+      ],
       "provenance": {
-        "institution": "National Library of Egypt, Cairo (attributed)",
-        "shelfmark": "Adab Farsi 908 (attributed)",
-        "folio": null,
-        "date": "893/1488 (attributed)",
+        "institution": "Egyptian National Library and Archives (Dar al-Kutub), Cairo",
+        "shelfmark": "Adab Farsi 22",
+        "folio": "f. 52b",
+        "date": "893-94/1488-89",
         "place": "Herat",
-        "artist": "Kamāl al-Dīn Bihzād (attributed)",
-        "work": "Būstān of Saʿdī, made for Sultan Ḥusayn Bayqara",
-        "identified": false,
-        "note": "Attribution is mine from the image, not from a source in this corpus: the composition is the celebrated Bihzād Yūsuf-and-Zulaykha of the Cairo Būstān. It should be confirmed against a specialist reference before the record is treated as fact. Late Timurid Herat, roughly two generations after Ibn Turka's death."
+        "artist": "Kamal al-Din Bihzad (attributed)",
+        "work": "Bustan of Sa'di, made for Sultan Husayn Bayqara; copied by Sultan 'Ali Mashhadi",
+        "identified": true,
+        "note": "CORRECTED 2026-08-31. Previously recorded here as 'Adab Farsi 908 (attributed)', flagged as an inference from the picture. Confirmed as Adab Farsi 22, f. 52b - the last illustrated page of the Cairo Bustan - against the Wikimedia Commons file record and published descriptions of the manuscript. 'Adab Farsi 908' also circulates for a 1488 Sultan 'Ali Mashhadi Bustan in the same library; the two may be catalogue-generation variants. Adab Farsi 22 is the number the art-historical literature uses. Full record: games/yusuf-ascent/data/research.json."
       },
       "rights": {
-        "status": "NEEDS_VERIFICATION",
-        "blocker": "Attribution unconfirmed; holding institution's terms unchecked. A 1488 manuscript is out of copyright, but the photograph of it may not be.",
-        "usable_as": "style reference; shippable once attribution and reproduction terms are confirmed"
+        "status": "CLEARABLE",
+        "blocker": "None known for the reproduction in hand: the Wikimedia Commons file is released under the Public Domain Mark as a faithful photographic reproduction of a 1488 two-dimensional work. Before a shipped release, confirm the Dar al-Kutub's own reproduction terms directly - national-library policy can differ from Commons' PD-Art position.",
+        "usable_as": "prototype use now; shippable once the holding institution's terms are confirmed",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Yusuf_fleeing_the_Advances_of_Zulaikha.jpg"
       },
       "description": "A palace of impossible architecture fills the whole folio: pink and salmon walls, orange staircases that turn at angles no stair turns at, balconies cantilevered over nothing, doors on every storey, each landing tiled in a different pattern of lapis, turquoise, white and gold. Near the top, in a small white-walled chamber, Yūsuf in a green robe strides left with one arm flung upward, a golden flame-halo around his head; Zulaykha in orange leans after him with a hand on his skirt. Gold cartouches of nastaʿlīq verse are set into the architecture at the top, at the middle left and along the foot, following the wall planes rather than the page. The margin is cream flecked with gold. Nothing in the building is structurally possible and every surface is finished to the same degree of attention.",
       "iconography": [
@@ -144,13 +287,59 @@
         "Yūsuf's flame-halo marks prophetic status and is the only light source in a picture with no modelled light — illumination as ontological rank rather than as optics."
       ],
       "research": [
-        { "claim": "Reading the impossible architecture as a cosmological diagram — an ascent through graded levels rather than a room — is directly compatible with the Ibn Turka material: the barzakh is precisely the intermediate domain through which forms pass between the intelligible and the sensible.", "source": "inference, consistent with the portal entries barzakh and imaginal-realm", "kind": "inference" },
-        { "claim": "Ted's note on the file ('pure Ibn Turkian … a psychedelic out-of-body philosophy') reads the picture as an image of the soul's escape from the material. The imaginal realm (ʿālam al-khiyāl) is the technical term for the domain such a passage would occur in.", "source": "curatorial note by Ted Hand; concept per Melvin-Koushki, Being with a Capital B", "kind": "curatorial" },
-        { "claim": "No hits for 'Zulaykha' or 'Bihzād' anywhere in the 43-source corpus — this image's connection to the Ibn Turka material is thematic and interpretive, not one Melvin-Koushki draws.", "source": "mine_corpus rank, 0 hits", "kind": "negative-result" }
+        {
+          "claim": "Reading the impossible architecture as a cosmological diagram — an ascent through graded levels rather than a room — is directly compatible with the Ibn Turka material: the barzakh is precisely the intermediate domain through which forms pass between the intelligible and the sensible.",
+          "source": "inference, consistent with the portal entries barzakh and imaginal-realm",
+          "kind": "inference"
+        },
+        {
+          "claim": "Ted's note on the file ('pure Ibn Turkian … a psychedelic out-of-body philosophy') reads the picture as an image of the soul's escape from the material. The imaginal realm (ʿālam al-khiyāl) is the technical term for the domain such a passage would occur in.",
+          "source": "curatorial note by Ted Hand; concept per Melvin-Koushki, Being with a Capital B",
+          "kind": "curatorial"
+        },
+        {
+          "claim": "No hits for 'Zulaykha' or 'Bihzād' anywhere in the 43-source corpus — this image's connection to the Ibn Turka material is thematic and interpretive, not one Melvin-Koushki draws.",
+          "source": "mine_corpus rank, 0 hits",
+          "kind": "negative-result"
+        },
+        {
+          "claim": "Sa'di's Bustan describes no palace. The seven-chambered building comes from Jami's Yusuf u Zulaykha, completed at Herat in 1483 - five years before this folio and in the same city - where the doors give way at the touch of Yusuf's pointing finger.",
+          "source": "art-historical literature on the Cairo Bustan; see games/yusuf-ascent/data/research.json",
+          "kind": "grounded"
+        },
+        {
+          "claim": "Recent work reads this folio's architectural inscriptions as encomiums of the painter rather than eulogies of the patron, making the Cairo Bustan central to arguments about the emergence of the named artist in late Timurid painting.",
+          "source": "Balafrej, The Making of the Artist in Late Timurid Painting (2019) - not in hand; lead, not citation",
+          "kind": "field-knowledge"
+        }
       ],
-      "portal_links": ["barzakh", "imaginal-realm", "cosmic-hierarchy", "ilm-al-huruf"],
-      "palette": { "dominant": ["#efc291", "#f1dac1", "#e0a255", "#45434c", "#c06523"], "accents": ["#c06523", "#e0a255", "#804d2d"], "max_saturation": 0.72 },
-      "game_use": ["Barzakh / imaginal-realm illustration", "Ascent, vision and out-of-body encounters", "Architecture plates for study and contemplation scenes"]
+      "portal_links": [
+        "barzakh",
+        "imaginal-realm",
+        "cosmic-hierarchy",
+        "ilm-al-huruf"
+      ],
+      "palette": {
+        "dominant": [
+          "#efc291",
+          "#f1dac1",
+          "#e0a255",
+          "#45434c",
+          "#c06523"
+        ],
+        "accents": [
+          "#c06523",
+          "#e0a255",
+          "#804d2d"
+        ],
+        "max_saturation": 0.72
+      },
+      "game_use": [
+        "Barzakh / imaginal-realm illustration",
+        "Ascent, vision and out-of-body encounters",
+        "Architecture plates for study and contemplation scenes",
+        "Yusuf Ascent minigame - 43-element decomposition, three prototypes (games/yusuf-ascent/)"
+      ]
     }
   ]
 }
