@@ -106,7 +106,21 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
   strong, ready-to-use asset source: 136 rights-cleared Islamicate images across 14
   works, including images of al-Buni's own *Shams al-Ma'arif*.
 
-- **Yūsuf Ascent (2026-08-31), standalone and verified in-browser.**
+- **Model-selection guide + resumable batch harness (2026-08-31).**
+  `CONTEXTENGINEERINGGAMEPIPELINES.md` — which model for which job across this repo
+  and the portal, and a five-level ladder for coupling portal research to the game
+  engines. We are between **L1** (the `BIOGRAPHY.md` + `timeline.json` canonical
+  access layer) and **L2** (build-time export from `islamicate.db`); **L2 is the
+  recommended next rung**. `tools/batch/` is the runner: one JSON line per task, the
+  output file is the done-marker, so a rate limit costs one item and re-running the
+  same command resumes. 268 corpus-extraction chunks and 547 image reviews are
+  generated and waiting. Control flow verified with a stub; **the live `claude -p`
+  transport is NOT verified** — it hangs when invoked from inside a Claude Code
+  session, so run sweeps from a normal terminal.
+
+- **Yūsuf Ascent (2026-08-31), standalone, verified in-browser, and LIVE.**
+  Deployed and verified in production 2026-08-31 (commit `4268216`) at
+  **https://t3dy.github.io/TurkaGame/games/yusuf-ascent/index.html** — see § Deployment.
   `games/yusuf-ascent/` — a puzzle minigame + research portal on one painting,
   Bihzād's *Yūsuf fleeing Zulaykha*. Built to stand alone; optionally pluggable
   into the career sim as a dream encounter (framing written up, not wired).
@@ -151,6 +165,36 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
   *practice* (miʿrāj, khalʿ, and his own signature demand for **descent**), not as an
   invented vision narrative.
 
+## Deployment
+
+**Canonical production URL: https://t3dy.github.io/TurkaGame/** — GitHub Pages,
+branch `main`, path `/`. `git push origin main` is the whole deploy. Full record,
+including the checklist and the traps, is in **`DEPLOY_STATE.md`** — read that before
+touching deploy config.
+
+Verified live on 2026-08-31 at commit `4268216` (Pages build commit confirmed to match
+HEAD, not merely "pushed"):
+
+- All four Yūsuf Ascent surfaces load with **zero console errors** in production.
+- Prototype B's numerical self-test run **on the live origin**:
+  `__yusufB.checkStationInvariant()` → `pass: true`, worst-case screen drift
+  `1.24e-16` against a `1.5e-3` tolerance across 41 panels.
+- Prototype A is interactive in production — clicking an element returns its card
+  with sprite and rung tag, and a wrong answer is rejected with the lock's own
+  message ("the blue niche does not answer to mulk").
+- `vendor/three.core.js` (1.44 MB) and `three.module.js` (650 KB) both serve 200.
+- Landing page, career sim, VN, knowledge portal, illustration catalogue, timeline:
+  all 200.
+
+**Two fixes were needed to make this a real deploy, both worth remembering:**
+
+1. **`.nojekyll` at the repo root.** Pages builds this repo with the legacy Jekyll
+   pipeline, which excludes `vendor/` and `_`-prefixed files by default. Without
+   `.nojekyll`, Prototype B's three.js would have 404'd in production while working
+   perfectly on localhost — the exact silent-deploy-failure shape. Don't delete it.
+2. **`site/index.html` nav entry and Play card.** The prototype was otherwise live
+   but unreachable from anywhere on the site.
+
 ## What's NOT done — the important gaps, not hidden
 
 1. **The VN's narrative prose is a real first pass, not final writing.** Every
@@ -173,7 +217,24 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
    alone and never converted** (Roman Egypt Isis figurines, a Renaissance-Scotland
    festschrift, Averroes' Physics, a Deleuze/postcolonial-theory piece) — never
    confirmed with the user whether that guess was right.
-6. **Roguelike has no code**, design doc only (unchanged from kickoff). The
+6. **`claude -p` was never verified end to end.** The batch harness in `tools/batch/`
+   has its control flow fully verified with a stub binary (cwd resolution,
+   checkpointing, resume-skips-done, 4 parallel workers, launch/timeout/no-output
+   error paths), but nested `claude -p` hangs when invoked from inside a running
+   Claude Code session — reproduced with a minimal prompt, sandboxed and not. So no
+   batch task has actually run against a model. **Run the first sweep from a normal
+   terminal with `--limit 5` and read the output** before trusting the rubric or the
+   transport.
+7. **The Yūsuf Ascent verification is not a full playthrough.** In production I
+   confirmed rendering, zero console errors, Prototype B's numerical invariant, and
+   that Prototype A's hotspots return correct cards and reject a wrong answer with
+   the right message. I did **not** re-run the scripted 7-lock playthrough, and did
+   not exercise Prototype C's drag-sort or the blind 8th door in production. A prior
+   session reports those passing locally; that claim is inherited, not re-verified.
+8. **Rights on the Yūsuf folio are CLEARABLE, not cleared.** PD-Art via Wikimedia
+   Commons is the basis; the Dār al-Kutub's own terms still need confirming before a
+   shipped (as opposed to prototype) release.
+9. **Roguelike has no code**, design doc only (unchanged from kickoff). The
    **career sim graduated (2026-08-30) to its own design-complete subproject at
    `CareerSim/`** — full system-file set (CLAUDE.md, DESIGN.md, SYSTEMS,
    UI_STYLE_GUIDE, ENCOUNTER_ATOMS, ROADMAP, DECISIONS, its own HANDOVER.md), but
@@ -181,6 +242,18 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
    engine. New CareerSim sessions start at `CareerSim/HANDOVER.md`.
 
 ## Likely next step
+
+**Note (2026-08-31):** `NEXTSTEPS.md` predates Yūsuf Ascent and the batch harness and
+does not mention either. Its Tier 0 "confirm the live Pages build still works" is now
+done and recorded under § Deployment. Three candidates it doesn't cover:
+
+- **L2 export** (portal `islamicate.db` → `site/data/*.json`) — the recommended next
+  rung per `CONTEXTENGINEERINGGAMEPIPELINES.md`; makes a fix in the portal propagate
+  to the game instead of being made twice.
+- **Run the image sweep.** 547 of 552 portal images are still `DRAFT`. The manifest
+  exists; run `--limit 5` first and read the output before committing to the sweep.
+- **Prototype A's missing pieces** — `INTERFACE.md` is honest that there's no
+  onboarding, no journal, and no touch support in Prototype C.
 
 Read `NEXTSTEPS.md` — it's the current prioritized roadmap and supersedes any older
 "likely next step" note. Tier 0 is verification (confirm the live Pages build still

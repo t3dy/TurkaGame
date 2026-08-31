@@ -300,3 +300,45 @@ The corpus alone is an 6M-character haystack. A research tool that returns resul
 
 The purely-scholarly schema (no game fields) lets the portal stand alone, useful for any future project touching Islamicate occultism or Ibn Turka, while keeping game design work in its proper place (the game folders and design docs).
 
+---
+
+## 2026-08-31 — Deploy Yūsuf Ascent on the existing Pages site; add `.nojekyll`
+
+**Decision.** Yūsuf Ascent ships as part of the existing GitHub Pages site
+(`https://t3dy.github.io/TurkaGame/`, branch `main`, path `/`) rather than getting its
+own host, and a `.nojekyll` file is added at the repo root.
+
+**Rationale.** The prototype is four static surfaces with one vendored dependency; a
+second host would add a deploy path to keep straight for no benefit. The `.nojekyll`
+file is not cosmetic: Pages builds this repo with the legacy Jekyll pipeline, which
+excludes `vendor/` and `_`-prefixed files by default, so `vendor/three.core.js` and
+`three.module.js` would have 404'd in production while working perfectly on localhost.
+
+**Rejected alternatives.** A separate Vercel project for the minigame (an extra deploy
+path to reconcile, and `DEPLOY_STATE.md` already has one plan-vs-reality mismatch to
+track in CareerSim). Inlining three.js into the app bundle to dodge `vendor/` (hides
+the dependency and its licence, and doesn't fix `_`-prefixed files).
+
+**Consequence.** `DEPLOY_STATE.md` is now the canonical record of hosting state, per the
+workspace rule for projects with more than one deploy path.
+
+## 2026-08-31 — Sonnet 5 is the default model; Opus is the considered choice
+
+**Decision.** Model selection is now explicit, recorded in
+`CONTEXTENGINEERINGGAMEPIPELINES.md`: Sonnet 5 for verifiable work (plumbing, SSG,
+schema queries, deploys), Opus 5 where the failure mode is silent (scene prose against
+the WRITING_GUIDE rule, architecture), Haiku 4.5 for bounded per-item rubrics via
+`tools/batch/`. Fable 5 is not adopted.
+
+**Rationale.** Context window binds more often than task difficulty — the largest corpus
+source is ~600K tokens and must never be fed whole. Prose output volume is small enough
+that the Opus/Sonnet price gap is pennies per scene, so the expensive model goes where
+ungrounded-but-fluent output would slip past review, not where cost is highest.
+
+**Rejected alternative.** Fable 5 for long sweeps: this project's expensive failures are
+silent quality failures caught later by inspection, which a stronger model doesn't fix —
+verification structure does.
+
+**Consequence.** Coupling the portal to the games is laddered L0–L4; we are between L1
+and L2, and **L2 (build-time export from `islamicate.db`) is the agreed next rung**.
+

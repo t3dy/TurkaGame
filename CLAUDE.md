@@ -121,6 +121,15 @@ TurkaGame/
 └── site/                    showcase page, currently a placeholder
 ```
 
+## Deploy
+
+**Live: https://t3dy.github.io/TurkaGame/** — GitHub Pages off `main` at the repo root;
+`git push origin main` is the whole deploy. **Read [DEPLOY_STATE.md](DEPLOY_STATE.md)
+before touching deploy config** — it holds the canonical URL map, the verification
+checklist, and the traps (notably: `.nojekyll` is load-bearing, because Jekyll would
+otherwise silently drop `vendor/` and `_`-prefixed files). A green push is not a deploy;
+confirm the Pages build commit matches HEAD and fetch the live URL.
+
 ## Run & verify
 
 No build step. `.claude/launch.json` config `turkagame-site` (port 7521) serves this
