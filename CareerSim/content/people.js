@@ -53,6 +53,12 @@ export const PEOPLE = {
     grants: ['astronomical_apparatus', 'observation'],
     gloss: 'One of Ulugh Beg’s computers. Tables, not talismans — but he will hear you out if the mathematics holds.',
   },
+  ulughbeg: {
+    name: 'Mīrzā Ulugh Beg',
+    grants: ['observatory_access', 'mathematical_legitimacy', 'royal_protection'],
+    gloss: 'The sultan who does the mathematics himself. His patronage would make your science ' +
+           'respectable rather than merely tolerated — which is exactly why it is the hardest to get.',
+  },
   rival: {
     name: 'Your Rival at Court',
     grants: [],

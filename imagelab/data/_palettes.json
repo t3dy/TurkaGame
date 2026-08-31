@@ -1,0 +1,50 @@
+{
+  "turka-triple-portrait": {
+    "dominant": [
+      "#b398a2",
+      "#71523b",
+      "#545d4b",
+      "#957853",
+      "#cfc7bf"
+    ],
+    "accents": [
+      "#0e4784",
+      "#c28a71",
+      "#71523b",
+      "#5f79a6",
+      "#957853"
+    ]
+  },
+  "samarkand-observatory-mural": {
+    "dominant": [
+      "#9b8a60",
+      "#acafb0",
+      "#c4ccd8",
+      "#6f8179",
+      "#889c9c"
+    ],
+    "accents": [
+      "#eeded0",
+      "#bd9b6d",
+      "#d6c3b0",
+      "#896b49",
+      "#9b8a60"
+    ]
+  },
+  "akhlati-receiving-gifts": {
+    "dominant": [
+      "#49452b",
+      "#97683c",
+      "#b68969",
+      "#685b3c",
+      "#caa188"
+    ],
+    "accents": [
+      "#b34a0e",
+      "#842b10",
+      "#cf8a37",
+      "#97683c",
+      "#caa188"
+    ]
+  }
+}

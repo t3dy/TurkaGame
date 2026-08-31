@@ -814,6 +814,214 @@
           "depicts": null
         }
       ]
+    },
+    {
+      "id": "yusuf-fleeing-zulaykha",
+      "file": "Yusuf_fleeing_the_Advances_of_Zulaikha later Timurid but pure Ibn Turkian Yusuf fleeing Potiphars wife as a psychedelic out-of-body philosophy.jpg",
+      "width": 1588,
+      "height": 2370,
+      "short_title": "Yūsuf fleeing Zulaykha",
+      "regions": [
+        {
+          "id": "folio-full",
+          "kind": "scene",
+          "cut": "rect",
+          "box": [
+            80,
+            180,
+            1470,
+            2170
+          ],
+          "label": "The complete folio",
+          "depicts": null
+        },
+        {
+          "id": "the-chamber",
+          "kind": "scene",
+          "cut": "rect",
+          "box": [
+            672,
+            410,
+            1196,
+            1040
+          ],
+          "label": "The upper chamber — the moment of flight",
+          "depicts": null
+        },
+        {
+          "id": "yusuf",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            780,
+            505,
+            995,
+            995
+          ],
+          "label": "Yūsuf in green, flame-haloed, mid-stride",
+          "depicts": null,
+          "seeds": {
+            "fg": [
+              [
+                870,
+                700
+              ],
+              [
+                880,
+                850
+              ],
+              [
+                855,
+                580
+              ]
+            ],
+            "bg": [
+              [
+                790,
+                950
+              ],
+              [
+                985,
+                560
+              ],
+              [
+                990,
+                970
+              ]
+            ]
+          }
+        },
+        {
+          "id": "zulaykha",
+          "kind": "figure",
+          "cut": "matte",
+          "box": [
+            980,
+            720,
+            1140,
+            1020
+          ],
+          "label": "Zulaykha in orange, reaching after him",
+          "depicts": null,
+          "seeds": {
+            "fg": [
+              [
+                1050,
+                820
+              ],
+              [
+                1060,
+                930
+              ]
+            ],
+            "bg": [
+              [
+                988,
+                1010
+              ],
+              [
+                1132,
+                730
+              ],
+              [
+                990,
+                730
+              ]
+            ]
+          }
+        },
+        {
+          "id": "architecture-full",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            89,
+            196,
+            1464,
+            2154
+          ],
+          "label": "The impossible palace — the whole structure",
+          "depicts": null
+        },
+        {
+          "id": "staircase",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            143,
+            1071,
+            500,
+            1726
+          ],
+          "label": "Orange staircase turning at impossible angles",
+          "depicts": null
+        },
+        {
+          "id": "lower-portal",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            571,
+            1178,
+            1071,
+            1583
+          ],
+          "label": "Lower arched portal with lapis spandrels",
+          "depicts": null
+        },
+        {
+          "id": "pink-doorway",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            702,
+            1714,
+            988,
+            2023
+          ],
+          "label": "The pink street doorway — the outermost of the seven",
+          "depicts": null
+        },
+        {
+          "id": "cupola",
+          "kind": "architecture",
+          "cut": "rect",
+          "box": [
+            762,
+            36,
+            976,
+            226
+          ],
+          "label": "Crowning cupola with finial",
+          "depicts": null
+        },
+        {
+          "id": "verse-cartouche",
+          "kind": "text",
+          "cut": "rect",
+          "box": [
+            113,
+            321,
+            536,
+            400
+          ],
+          "label": "Nastaʿlīq verse cartouche, upper left",
+          "depicts": null
+        },
+        {
+          "id": "tile-field",
+          "kind": "ornament",
+          "cut": "rect",
+          "box": [
+            107,
+            417,
+            393,
+            928
+          ],
+          "label": "Lapis and turquoise tile field with blossom",
+          "depicts": null
+        }
+      ]
     }
   ]
 }

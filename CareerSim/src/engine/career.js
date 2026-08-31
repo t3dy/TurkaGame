@@ -305,7 +305,9 @@ export const LEGACY_NOTES = {
   // — The courts —
   'patron=iskandar': 'He was Iskandar Sultan’s man in the years when that was the most interesting and most dangerous thing to be.',
   'patron=baysunghur': 'He served Bāysunghur, and the finest book-workshop in the world served him back.',
-  'patron=samarkand': 'He threw in with Samarkand, where the instruments were and the mathematics was honest.',
+  'patron=samarkand': 'He threw in with Ulugh Beg’s Samarkand, where the instruments were and the mathematics was honest.',
+  'patron=ulughbeg': 'Ulugh Beg took him on — the one patron whose programme was his own programme, and the only one who never had to be argued into it.',
+  samarkand_nearmiss: 'Samarkand received him, heard him, and did not quite take him. The letter he was waiting on had not come when he died.',
   'took_commission=bold': 'He promised a prince a spectacle, in writing, with a season named for it.',
   'took_commission=modest': 'He promised a prince a book rather than a marvel, and was quietly right to.',
   'took_commission=negotiated': 'He negotiated a princely commission into terms he could actually keep.',
