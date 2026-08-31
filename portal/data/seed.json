@@ -453,6 +453,37 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "mulla-sadra",
+      "name": "Mulla Sadra",
+      "name_full": "Muhammad Baqir al-Sabzawari",
+      "role": "SCHOLAR",
+      "lifespan": "1571–1635 / 979–1045 AH",
+      "birth_year": 1571,
+      "death_year": 1635,
+      "region": "Shiraz / Isfahan",
+      "relation_to_turka": "intellectual_successor",
+      "card": "Safavid philosopher (1571–1635) who received and systematized Ibn Turka's tradition. Synthesized Pythagorean occultism with peripatetic philosophy. Founder of Transcendent Theosophy. Demonstrates transmission of Ibn Turka's system into early modern Islamic philosophy.",
+      "body": "Mulla Sadra inherited Ibn Turka's intellectual tradition—Pythagorean mathematics, Illuminationism, systematic occultism—and synthesized it with post-Avicennian philosophy. His Hikmat al-Muta'aliya represents mature development of Ibn Turka's themes: unity of being, mathematics in cosmology, mystical knowledge. Proves Ibn Turka's system was not marginal but generative tradition producing major philosophical achievements into 17th century.",
+      "key_works": [
+        "hikmat-al-mutaliya"
+      ],
+      "affiliations": [
+        "safavid-court"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. Powers of One."
+      ],
+      "tags": [
+        "philosopher",
+        "metaphysics",
+        "safavid",
+        "successor"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "concepts": [
@@ -746,6 +777,29 @@
         "universal-science",
         "occultism",
         "philosophy"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "slug": "neoplatonism",
+      "name": "Neoplatonism",
+      "category": "EPISTEMOLOGY",
+      "card": "Late antique philosophy emphasizing emanation from transcendent source. Reached Islamic world via texts and Byzantine scholarship. Foundational to Suhrawardi and Ibn Turka through Illuminationism.",
+      "body": "Neoplatonism posited emanation from The One through progressively dimmer levels. Knowledge requires mystical intuition, not just reason. When it reached Islamic world, Suhrawardi adopted Illuminationism (hierarchies of light). Through Suhrawardi to Ibn Turka, Neoplatonism shaped Islamic occultism.",
+      "related_concepts": [
+        "suhrawardi",
+        "ilm-al-huruf",
+        "imaginal-realm"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. Being with a Capital B."
+      ],
+      "tags": [
+        "philosophy",
+        "neoplatonic",
+        "emanation"
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
@@ -1092,6 +1146,33 @@
         "cosmology",
         "light",
         "illumination"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "slug": "treatise-divine-names",
+      "title": "Treatise on the Divine Names",
+      "title_script": "رسالة في الاسماء الالهية",
+      "title_translated": "Risalat fi al-Asma al-Ilahiyya",
+      "author_figure_slug": "ibn-turka",
+      "text_type": "PRIMARY_TREATISE",
+      "language": "Arabic",
+      "date_or_period": "Early 15th century",
+      "card": "Ibn Turka's exposition of divine names and their correspondence to 28 letters. Demonstrates integration of Islamic theology with systematic magic.",
+      "body": "Treatise systematically maps divine names to Arabic letters. Each letter expresses a divine attribute; invoking through its letter accesses that attribute's cosmic power. Bridges Islamic theology with operative magic.",
+      "known_manuscripts": [
+        "Istanbul",
+        "Tehran"
+      ],
+      "modern_editions": [],
+      "literature": [
+        "Melvin-Koushki, Matthew. Of Islamic Grammatology."
+      ],
+      "tags": [
+        "primary-source",
+        "divine-names"
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
