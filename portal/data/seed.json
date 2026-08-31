@@ -231,6 +231,121 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "ibn-arabi",
+      "name": "Ibn Arabi",
+      "name_full": "Muḥyī al-Dīn Muḥammad ibn ʿAlī ibn Muḥammad ibn ʿArabī",
+      "name_variants": [
+        "Ibn Arabi",
+        "Muhyi al-Din",
+        "Shaykh al-Akbar"
+      ],
+      "role": "MYSTIC",
+      "lifespan": "1165–1240 / 560–638 AH",
+      "birth_year": 1165,
+      "death_year": 1240,
+      "region": "Andalusia / Cairo / Mecca / Damascus",
+      "relation_to_turka": "spiritual_predecessor",
+      "card": "**Muḥyī al-Dīn Ibn ʿArabī** (1165–1240), Andalusian mystic and philosopher. Founder of the metaphysical school most influential on later Islamic occultism and mysticism. Author of the *Futūḥāt al-Makkīyya* (Meccan Illuminations) and other foundational works. His doctrines of [[divine-names|divine names]], the imaginal realm, and the macrocosm-microcosm correspondence profoundly influenced [[ibn-turka|Ibn Turka's]] theoretical framework. Via the [[qunavi|Qūnavī]]-[[jandi|Jandī]] transmission, Ibn Arabi's philosophy became the philosophical grounding for Ibn Turka's lettrist innovations.",
+      "body": "## Ibn ʿArabī: The Shaykh al-Akbar and His Legacy\n\n**Muḥyī al-Dīn Muḥammad ibn ʿAlī ibn Muḥammad ibn ʿArabī** (1165–1240) was born in Murcia, Andalusia, during the waning years of Islamic rule in medieval Spain. He lived through an era of profound intellectual ferment—the collision of Islamic mysticism, philosophy, and theology in a period of cultural upheaval. By the end of his life, based in Damascus, Ibn Arabi had become the most influential mystical-philosophical voice in the Islamic world, with a legacy that would shape Islamic thought for centuries.\n\n### The Metaphysical System\n\nIbn Arabi's magnum opus, the *Futūḥāt al-Makkīyya* (Meccan Illuminations), presents a comprehensive metaphysical system grounded in several key doctrines:\n\n1. **The Unity of Existence** (*Waḥdat al-Wujūd*): All being is fundamentally one; the apparent multiplicity of creation is manifestation of the single divine reality.\n\n2. **The Divine Names** (*Al-Asmaʾ al-Ilāhīyya*): God is known through 99 (or 28) divine names and attributes. Each name expresses a dimension of the divine. Creation itself unfolds through these names.\n\n3. **The Perfect Human** (*Al-Insān al-Kāmil*): The human being is the microcosm that mirrors the macrocosm. In the perfected human, all divine names are manifest.\n\n4. **The Imaginal Realm** (*Al-Khalīqa al-Mutawassita*): Between pure intellect and material sense exists an intermediate realm of subtle forms—the imaginal world where mystical visions and symbolic knowledge occur.\n\n### Transmission Through Qūnavī and Jandī\n\nIbn Arabi's thought did not reach later occultists directly. Instead, it was systematized and reinterpreted by two crucial transmitters:\n\n- **Ṣadr al-Dīn al-Qūnavī** (d. 1274), Ibn Arabi's leading disciple, who codified and organized his teachings into a more scholastic philosophical framework.\n\n- **ʿAbd al-Razzāq al-Jandī** (fl. 13th century), who further elaborated Qūnavī's synthesis, emphasizing the metaphysical correspondences and the operations of divine names.\n\nThis Qūnavī-Jandī school tradition became the conduit through which Ibn Arabi's metaphysics reached [[ibn-turka|Ibn Turka]] and the later Islamic occult philosophers. When Ibn Turka integrated [[pythagorean-cosmology|Pythagorean mathematics]] with Islamic mysticism, he was building on the Ibn Arabi–Qūnavī–Jandī foundation.\n\n### Ibn Arabi and Ibn Turka: The Philosophical Genealogy\n\nMatthew Melvin-Koushki's historical reconstruction clarifies Ibn Turka's relationship to Ibn Arabi. Scholars had long viewed Ibn Turka primarily as a Sufi-philosopher in the Ibn Arabi tradition—a continuator of mystical-scholastic synthesis. However, this framework obscured Ibn Turka's more radical project. Ibn Turka was not simply synthesizing Ibn Arabi with peripatetic philosophy; he was deploying Ibn Arabi's metaphysics (especially the doctrine of divine names) as the theoretical foundation for a new kind of operative science: [[ilm-al-huruf|lettrist cosmology]].\n\nThe key insight: For Ibn Arabi, the divine names were primarily objects of mystical knowledge and contemplation. For Ibn Turka, they become operative principles encoded in the structure of letters and numbers. This is not a contradiction but a systematic application of Ibn Arabi's principles to the domain of practice and causation.\n\n### Historical Significance\n\nIbn Arabi stands at the head of a tradition that includes mysticism, Sufism, Islamic philosophy, and occultism. He demonstrated that Islamic thought could achieve a synthesis of reason and intuition, philosophy and gnosis, theology and practice. His rehabilitation of the imaginal realm and his systematization of [[divine-names|divine attributes]] created the conceptual apparatus that later occultists like Ibn Turka would weaponize.\n\nIn the history of Islamic occult philosophy, Ibn Arabi is the foundational figure. Every subsequent occultist, from Safavid mystical philosophers to Ottoman talismanic practitioners, operated in the shadow of his legacy—and often in direct dialogue with his texts.",
+      "key_works": [
+        "futuhat-al-makkiyya",
+        "fusus-al-hikam"
+      ],
+      "affiliations": [
+        "andalusian-tradition",
+        "sufi-order",
+        "mystical-philosophy"
+      ],
+      "literature": [
+        "Ibn Arabi. *Futūḥāt al-Makkīyya* (The Meccan Illuminations). Damascus: al-Dar al-Qawwama, 2010.",
+        "Ibn Arabi. *Fuṣūṣ al-Ḥikam* (The Bezels of Wisdom). Translated by Ralph Austin. Oxford: Muhammadi Trust, 1980.",
+        "Chittick, William C. *The Sufi Path of Knowledge: Ibn Arabi's Metaphysics of Imagination*. Albany: SUNY Press, 1989.",
+        "Melvin-Koushki, Matthew. *Powers of One: Pythagorean Cosmos in Islamic Context*, pp. 45–90."
+      ],
+      "tags": [
+        "mystic",
+        "philosopher",
+        "sufi",
+        "metaphysics",
+        "divine-names",
+        "andalusian"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "slug": "qunavi",
+      "name": "Qūnavī",
+      "name_full": "Ṣadr al-Dīn Muḥammad ibn Isḥāq al-Qūnavī",
+      "name_variants": [
+        "Sadr al-Din Qunavi",
+        "Qonawi"
+      ],
+      "role": "SCHOLAR",
+      "lifespan": "1210–1274 / 607–671 AH",
+      "birth_year": 1210,
+      "death_year": 1274,
+      "region": "Anatolia / Konya",
+      "relation_to_turka": "spiritual_ancestor",
+      "card": "**Ṣadr al-Dīn al-Qūnavī** (1210–1274), leading disciple and systematizer of [[ibn-arabi|Ibn Arabi's]] metaphysics. Through his philosophical elaboration of Ibn Arabi's doctrines, Qūnavī created the scholastic framework that transmitted Ibn Arabi's thought to later Islamic philosophers and occultists. His work provided the philosophical grounding for [[ibn-turka|Ibn Turka's]] integration of divine-names doctrine with lettrist and Pythagorean theory. A central figure in the Qūnavī-[[jandi|Jandī]] school tradition.",
+      "body": "**Ṣadr al-Dīn Muḥammad ibn Isḥāq al-Qūnavī** (1210–1274) was the most important early systematizer of [[ibn-arabi|Ibn Arabi's]] metaphysical doctrines. Born in Konya, Anatolia, Qūnavī became Ibn Arabi's foremost disciple and literary executor, tasked with organizing, elaborating, and defending his master's vision. Whereas Ibn Arabi's own writings are voluminous, imaginative, and often enigmatic, Qūnavī's works present Ibn Arabi's metaphysics in a rigorous, scholastic form, amenable to philosophical analysis and teaching. This systematization proved decisive: it was Qūnavī's articulation of Ibn Arabi's thought—not Ibn Arabi's own texts directly—that shaped the transmission of Ibn Arabi's legacy to later philosophers, Sufis, and occultists. Qūnavī's central contributions include: (1) the codification of the doctrine of the [[divine-names|divine names]] as the mechanism of creation; (2) the elaboration of the imaginal realm (*malakūt*) as the intermediate domain where mystical knowledge operates; (3) the establishment of the Perfect Human (*al-insān al-kāmil*) as the microcosm in which all divine attributes are manifest. Through the Qūnavī-[[jandi|Jandī]] school tradition, these doctrines reached Ottoman and Persian philosophers, providing the theoretical foundations that [[ibn-turka|Ibn Turka]] would deploy in systematizing [[ilm-al-huruf|lettrist occultism]] as the operative application of divine-names metaphysics.",
+      "key_works": [
+        "miftah-al-ghayb"
+      ],
+      "affiliations": [
+        "konya-circle",
+        "sufi-order"
+      ],
+      "literature": [
+        "Chittick, William C. *The Sufi Path of Knowledge: Ibn Arabi's Metaphysics of Imagination*. Albany: SUNY Press, 1989.",
+        "Melvin-Koushki, Matthew. *Powers of One: Pythagorean Cosmos in Islamic Context*."
+      ],
+      "tags": [
+        "philosopher",
+        "systematizer",
+        "metaphysics",
+        "divine-names"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
+    },
+    {
+      "slug": "saad-al-din-hamuyya",
+      "name": "Saad al-Din Hamuyya",
+      "name_full": "Saʿd al-Dīn Muḥammad ibn Masʿūd al-Ḥamuwī",
+      "name_variants": [
+        "Saad al-Din Hamuyya",
+        "Sadeddin Hamawi"
+      ],
+      "role": "SCHOLAR",
+      "lifespan": "13th–early 14th century / d. c. 700–750 AH",
+      "birth_year": 1250,
+      "death_year": 1320,
+      "region": "Syria / Anatolia",
+      "relation_to_turka": "precursor",
+      "card": "**Saʿd al-Dīn al-Ḥamuwī** (c. 1250–1320). Syrian-Anatolian scholar who pioneered the application of [[ilm-al-huruf|lettrist]] doctrine to cosmological and metaphysical inquiry. Cited repeatedly by [[ibn-turka|Ibn Turka]] in the *Kitab al-Mafahis* as an authoritative source on the theory and practice of letters. His writings on lettrist technique and the correspondences between divine names and letters established the technical foundations upon which Ibn Turka built his more systematic Pythagorean synthesis.",
+      "body": "**Saʿd al-Dīn Muḥammad ibn Masʿūd al-Ḥamuwī** (c. 1250–1320) was a Syrian scholar active in the late 13th and early 14th centuries, at the intersection of several major intellectual currents: the declining Ayyubid court culture, the Ottoman rise in Anatolia, and the flourishing of Mamluk Cairo. Little is known of his biography, but his writings on [[ilm-al-huruf|lettrism]] and divine cosmology reveal him as a systematizer of lettrist doctrine in its pre-Turka form. Al-Ḥamuwī worked within the framework of [[ibn-arabi|Ibn Arabi's]] metaphysics, particularly the doctrine of divine names (*asmaʾ*), but pushed toward more technical, operative applications. His treatises examined how the 28 letters correspond to the divine names, how [[abjad-numerology|numerical values]] encode cosmic principles, and how knowledge of these correspondences grants the practitioner insight into (and potential influence over) the structure of creation. [[ibn-turka|Ibn Turka]] explicitly cites al-Ḥamuwī's works multiple times in the *Kitab al-Mafahis*, recognizing him as an authoritative predecessor. This public acknowledgment suggests that Ibn Turka saw himself not as an innovator ex nihilo but as the systematizer of a lettrist tradition stretching back through al-Ḥamuwī to earlier sources. The key difference: whereas al-Ḥamuwī's lettrist project remained embedded in mystical-theological discourse, Ibn Turka's [[pythagorean-cosmology|Pythagorean synthesis]] gave it a mathematical-philosophical rigor and a claim to universality that transformed lettrism from marginal gnosis into a systematic science rivaling any philosophical school.",
+      "key_works": [],
+      "affiliations": [
+        "syrian-tradition",
+        "mamluk-context"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. *The Occult Court: Magic, Medicine, and Mathematics*, pp. 200–250.",
+        "Melvin-Koushki, Matthew. *Of Islamic Grammatology*, Ch. 2."
+      ],
+      "tags": [
+        "lettrist",
+        "predecessor",
+        "occult-philosophy"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "concepts": [
