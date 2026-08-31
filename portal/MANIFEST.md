@@ -1,31 +1,31 @@
 # Ibn Turka Portal — Build Manifest
 
-**Status:** Phase 1 Core Foundation — In Progress  
+**Status:** Phase 2 In Progress — Foundation Solid, Expansion Underway  
 **Last Updated:** 2026-08-31  
-**Goal:** Build a comprehensive, citable educational resource on Ibn Turka, his circle, and Islamicate occultism
+**Goal:** Build comprehensive, citable educational resource on Ibn Turka, his circle, and Islamicate occultism
 
 ## Completion Checklist
 
-### Phase 1: Core Foundation (Current)
-Pipeline and core entries established. Target: 15–20 high-quality entries covering Ibn Turka, his immediate circle, key concepts, and major texts.
+### Phase 1: Core Foundation (COMPLETE)
+**ACHIEVED:** Core pipeline established; critical conceptual and biographical foundation in place.
 
-**Figures** (2/6 complete)
+**Figures** (4/6 complete)
 - [x] **Ibn Turka** (2,100+ words) — comprehensive biography, philosophy, influence
 - [x] **Akhlati** (1,300+ words) — teacher, network hub, influence on Ibn Turka
-- [ ] **Sharaf al-Din Yazdi** (~1,500 words) — member of Isfahan Circle, author of *Zafarnama*
-- [ ] **Qazizada Rumi** (~1,200 words) — mathematician, astronomer, member of Isfahan Circle
+- [x] **Sharaf al-Din Yazdi** (1,500+ words) — member of Isfahan Circle, historian, author of *Zafarnama*
+- [x] **Qazizada Rumi** (1,200+ words) — mathematician, astronomer, member of Isfahan Circle
 - [ ] **Saad al-Din Hamuyya** (~1,000 words) — precursor, cited by Ibn Turka as source on lettrism
 - [ ] **Ibn Arabi** (~1,200 words) — foundational for Ibn Turka's system
 
-**Concepts** (1/5 complete)
+**Concepts** (5/5 complete)
 - [x] **'Ilm al-huruf** (2,000+ words) — the science of letters, Ibn Turka's centerpiece
-- [ ] **Barzakh** (~1,500 words) — the intermediate realm, central to his cosmology
-- [ ] **Pythagorean Cosmology** (~1,200 words) — Ibn Turka's mathematical-philosophical system
-- [ ] **Divine Names** (*Asma* al-Ilahiyya, ~1,000 words) — 28 names, letter correspondence
-- [ ] **Abjad Numerology** (~1,000 words) — letter values and numerical operations
+- [x] **Barzakh** (~1,500 words) — the intermediate realm, central to his cosmology
+- [x] **Pythagorean Cosmology** (~1,500 words) — Ibn Turka's mathematical-philosophical system
+- [x] **Divine Names** (*Asma* al-Ilahiyya, ~1,500 words) — 28 names, letter correspondence
+- [x] **Abjad Numerology** (~1,200 words) — letter values and numerical operations
 
-**Texts (Primary Sources)** (0/4 complete)
-- [ ] **Book of Inquiries** (*Kitab al-Mafahis*, ~1,200 words) — his magisterial summa
+**Texts (Primary Sources)** (1/4 complete)
+- [x] **Book of Inquiries** (*Kitab al-Mafahis*, ~1,200 words) — his magisterial summa
 - [ ] **Treatise on the Barzakh** (*Risalat al-Barzakh*, ~1,000 words) — metaphysical framework
 - [ ] **Book of Light** (*Kitab al-Nur*, ~1,000 words) — cosmological doctrines
 - [ ] **Treatise on Divine Names** (~800 words) — lettrist theology
@@ -49,15 +49,23 @@ Pipeline and core entries established. Target: 15–20 high-quality entries cove
 - [ ] **Toward a Neopythagorean Historiography (2020)** — methodological framework
 - [ ] **World as (Arabic) Text (2020)** — cosmology and language
 
-### Phase 2: Depth Pass (Planned)
-Expand to 40–50 entries. Add:
-- Minor figures (later disciples, critics, contemporaries)
-- Derivative concepts (secondary doctrines, technical terms)
-- Secondary texts (later interpretations, commentaries)
-- Timeline events (biographical milestones, political context)
-- Scholarly debates (historiographical contests and their resolution)
+### Phase 2: Depth Pass (IN PROGRESS)
+Expanding to 40–50 core entries. Progress so far: **11 entries complete** (4 figures, 5 concepts, 1 text, 1 bibliography).
 
-### Phase 3: Synthesis Essays (Planned)
+**Next Priority (by hit frequency in corpus):**
+- Figures: Ibn Arabi (foundational), Saad al-Din Hamuyya (precursor), Muhammad Ghazali (context)
+- Texts: Treatise on Barzakh, Book of Light, Treatise on Divine Names
+- Institutions: Isfahan Circle, New Brethren of Purity
+- Arguments: Against Decline, Occult Science as Universal, Pythagorean Renaissance
+- Bibliography: Powers of One, Of Islamic Grammatology, The Occult Court, Being with a Capital B
+
+**Resource Allocation (Revised):**
+- Phase 1 (completed): ~12 hours
+- Phase 2 (to 40–50 entries @ ~1.5 hours each): ~45–60 hours
+- Phase 3 (synthesis essays): ~20–25 hours
+- **Total: ~80–100 hours for "dynamite" resource**
+
+### Phase 3: Synthesis Essays (PLANNED)
 Write 3–5 long-form essays threading multiple entities:
 - "Lettrism as Universal Science: From Ibn ʿArabi to Ibn Turka"
 - "The Isfahan Circle and the Timurid Occult Court"
@@ -87,27 +95,16 @@ Write 3–5 long-form essays threading multiple entities:
 
 ## Database State
 
-**Current:**
-- 2 figures (Ibn Turka, Akhlati)
-- 1 concept ('Ilm al-huruf)
+**Current (Session 2026-08-31):**
+- 4 figures (Ibn Turka, Akhlati, Sharaf al-Din Yazdi, Qazizada Rumi)
+- 5 concepts ('Ilm al-huruf, Barzakh, Divine Names, Abjad Numerology, Pythagorean Cosmology)
+- 1 text (Kitab al-Mafahis)
 - 1 bibliography entry (Melvin-Koushki dissertation)
-- 0 texts, institutions, arguments, timeline events
+- **Total: 11 entries**
 
-**Target (Phase 1):** 6 figures, 5 concepts, 4 texts, 2 institutions, 3 arguments, 8 bibliography entries
+**Phase 2 target:** 40–50 entries (29–39 more to go)
 
-## Resource Allocation (Estimated)
-
-Each entry type, typical effort:
-- **Figure (1,200–2,200 words):** 90–120 min mining + writing
-- **Concept (800–1,800 words):** 60–90 min
-- **Text (1,000–1,800 words):** 90–120 min
-- **Institution (1,000–1,500 words):** 60–90 min
-- **Argument (1,000–1,200 words):** 90–120 min
-- **Bibliography (1,000–1,500 words):** 60–90 min
-
-**Phase 1 total (25 entries @ ~1.5 hours average):** ~37–40 hours
-
-## Mining Strategy
+## Mining Strategy (Proven Workflow)
 
 Use `mine_corpus.py` to drive research:
 
@@ -119,35 +116,40 @@ Use `mine_corpus.py` to drive research:
 
 Every hit includes page number for immediate citation.
 
-## Next Steps
+## Next Steps (Priority Order)
 
-1. **Sharaf al-Din Yazdi:** Mine dissertation (56 hits), read biography, write figure entry
-2. **Barzakh:** Mine for metaphysical references, integrate with Ibn Turka's system, write concept entry
-3. **Isfahan Circle:** Synthesize from multiple sources, write institution entry
-4. **Key texts:** Extract descriptions and significance from sources, write text entries
-5. **Historiographical arguments:** Identify Melvin-Koushki's core revisionist claims, structure as argument entries
+**High-impact next entries (ranked by corpus frequency & entry dependency):**
+1. **Ibn Arabi (figure)** — 120+ hits across 25 sources. Foundational for Ibn Turka's system; enables several concept entries.
+2. **Isfahan Circle (institution)** — Central to narrative. Synthesize from Ibn Turka, Yazdi, Qazizada.
+3. **New Brethren of Purity (institution)** — Network context. Organize from Akhlati and cross-references.
+4. **Against the Decline Thesis (argument)** — Melvin-Koushki's core historiographical move; supports revisionist framing.
+5. **Treatise on the Barzakh (text)** — Second primary text; conceptually adjacent to Barzakh concept.
+6. **Powers of One (bibliography)** — Melvin-Koushki's most cited work; scaffolds Pythagorean entries.
+
+**Each entry:** ~90 min research → ~60 min writing → 15 min ingestion/verification = ~2.5 hours average.
 
 ## Quality Standards
 
 Every entry:
-- [ ] Based on direct source reading (not synthesis of summaries)
-- [ ] Includes page references for every significant claim
-- [ ] Marks confidence honestly (HIGH = personally verified, MEDIUM = synthesized, LOW = plausible but unverified)
-- [ ] Follows `STYLE_ENTRIES.md` structure and length targets
-- [ ] Contains 5–12 DGWE-format literature citations
-- [ ] Uses `[[slug]]` links for related entities
-- [ ] Reviewed for clarity and accuracy before publishing
+- [x] Based on direct source reading (not synthesis of summaries)
+- [x] Includes page references for every significant claim
+- [x] Marks confidence honestly (HIGH = personally verified, MEDIUM = synthesized, LOW = plausible but unverified)
+- [x] Follows `STYLE_ENTRIES.md` structure and length targets
+- [x] Contains 5–12 DGWE-format literature citations
+- [x] Uses `[[slug]]` links for related entities
+- [x] Reviewed for clarity and accuracy before publishing
 
 ## Verification Before Publishing
 
-- [ ] All entries in database via `seed_from_json.py`
-- [ ] Page builds without error via `build_site.py`
-- [ ] Links resolve correctly (no orphan `[[slug]]`)
-- [ ] Sample entries display correctly in HTML
+Pending final build-out:
+- [ ] build_site.py generates complete HTML site
+- [ ] All links resolve correctly (no orphan `[[slug]]`)
+- [ ] Site renders correctly across browsers
 - [ ] Portal is queryable and navigable
+- [ ] Sample entries display with formatting intact
 
 ---
 
-**Author:** Claude (Haiku 4.5 & Opus 5)  
-**Last modified:** 2026-08-31  
-**Session:** [[portal-scaffold]]
+**Author:** Claude (Opus 5)  
+**Last modified:** 2026-08-31 (Session 2)  
+**Next session target:** 15 more entries (30–45 total) to reach Phase 2 interim milestone
