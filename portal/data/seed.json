@@ -720,6 +720,36 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "MEDIUM"
+    },
+    {
+      "slug": "occult-science-universal",
+      "name": "Occult Science as Universal System",
+      "name_arabic": null,
+      "name_script": null,
+      "literal_meaning": null,
+      "category": "HISTORIOGRAPHIC",
+      "card": "**Occult Science as Universal System**. The core historiographical claim that Ibn Turka and the Isfahan Circle systematized Islamic lettrism, talismanism, and numerology into a comprehensive philosophy claiming universal validity—a science encompassing metaphysics, epistemology, ethics, cosmology, and operative practice. Not marginal superstition but legitimate intellectual achievement rivaling any philosophical school. Melvin-Koushki's central argument.",
+      "body": "The claim that Islamic occultism constitutes a genuine universal science—this is the animating thesis of Melvin-Koushki's entire body of work and the central historiographical claim of Ibn Turka's own project. What did occultism offer that rational philosophy did not? (1) Integration of knowledge and practice: peripatetic philosophy described the cosmos; occult science engaged it operatively. (2) Rigor grounded in systematic principle: not folk magic or superstition but coherent system derived from fundamental doctrines (divine names, letters, Pythagorean numbers). (3) Universality: not provincial tradition but claim to encompass all knowledge—metaphysics via cosmology, epistemology via gnosis, ethics via attunement to cosmic principles. (4) Legitimacy within orthodoxy: by grounding lettrist science in Ibn Arabi's metaphysics and Pythagorean philosophy, Ibn Turka positioned it not as heresy but as sophisticated development within Islamic orthodoxy. The claim to universality is not arrogance but serious metaphysical commitment: if letters are cosmic principles and divine names are ontological foundations, then knowledge of letters and names is knowledge of reality itself—hence universal. This positioning of occult science as universal system represents a major historiographical revaluation: instead of viewing Islamic philosophy as decline into mysticism and formalism, we see a tradition of genuine innovation and intellectual achievement.",
+      "hierarchy_note": "This historiographical frame unites all entries; it is the meta-argument justifying the entire project.",
+      "related_concepts": [
+        "ilm-al-huruf",
+        "pythagorean-cosmology",
+        "divine-names",
+        "talismanic-science"
+      ],
+      "literature": [
+        "Melvin-Koushki, Matthew. The Occult Court.",
+        "Melvin-Koushki, Matthew. Toward a Neopythagorean Historiography."
+      ],
+      "tags": [
+        "historiography",
+        "universal-science",
+        "occultism",
+        "philosophy"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "bibliography": [
@@ -942,6 +972,38 @@
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
       "confidence": "HIGH"
+    },
+    {
+      "source_id": "chittick-sufi-path-knowledge-1989",
+      "author": "Chittick, William C.",
+      "title": "The Sufi Path of Knowledge: Ibn Arabi's Metaphysics of Imagination",
+      "year": 1989,
+      "publisher": "SUNY Press",
+      "journal": null,
+      "pub_type": "monograph",
+      "relevance": "CONTEXTUAL",
+      "card": "**William C. Chittick, The Sufi Path of Knowledge** (SUNY Press, 1989, 410 pp). Comprehensive exposition of Ibn Arabi's metaphysical system, including imaginal realm, divine names, and theophanic knowledge. Essential for understanding conceptual foundations that Ibn Turka inherited and systematized. Though not focused on Ibn Turka, provides crucial theoretical background.",
+      "body": "Chittick's authoritative work on Ibn Arabi provides the clearest exposition of concepts foundational to Ibn Turka's system: the imaginal realm, divine names as principles of manifestation, the macrocosm-microcosm correspondence. Chittick emphasizes that for Ibn Arabi (and subsequently Ibn Turka), mysticism is not irrational or emotional but sophisticated gnosis grounded in rigorous metaphysical principles. His reconstruction of Ibn Arabi's theory of knowledge—how divine truth manifests through imagination, how names function as operative principles—is essential background for understanding Ibn Turka's transformation of these ideas into lettrist science.",
+      "key_arguments": [
+        "ibn-arabi-metaphysics",
+        "imaginal-realm",
+        "divine-names",
+        "theophanic-knowledge"
+      ],
+      "corpus_file": null,
+      "conversion_status": "EXTERNAL",
+      "page_count": 410,
+      "online_url": "https://sunypress.edu",
+      "access_note": "Published monograph; widely available in academic libraries",
+      "tags": [
+        "ibn-arabi",
+        "metaphysics",
+        "mysticism",
+        "theology"
+      ],
+      "source_method": "CORPUS_SYNTHESIS",
+      "review_status": "DRAFT",
+      "confidence": "MEDIUM"
     }
   ],
   "texts": [
