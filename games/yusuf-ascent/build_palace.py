@@ -153,6 +153,94 @@ ANN = {
  "Two blocks of nastaʿlīq at the base — the only text in the folio still behaving like text on a page."),
 }
 
+# --- L3: fact-level provenance through to runtime -------------------------
+#
+# CONTEXTENGINEERINGGAMEPIPELINES.md L3: "a scene asserting Ibn Turka's 1432 death
+# should carry the id of the claim that backs it", so that "which lines rest on a
+# LOW-confidence claim?" becomes a query instead of an eyeballing exercise.
+#
+# Here that means: every node carries what it RESTS ON, and the game shows it on
+# the card. Two tiers, because the two kinds of claim have different standing.
+#
+#   rung grounding  - every node inherits its rung's grounding. The rung TERMS are
+#                     corpus-grounded with page references; the ASSIGNMENT of this
+#                     node to that rung is ours, and is marked INTERPRETATION.
+#   node grounding  - a node whose card asserts something specific carries that
+#                     claim's own source.
+#
+# `kind` uses the same tag vocabulary as data/research.json and the portal, so the
+# essay and the running game cite one record.
+
+RUNG_GROUNDS = {
+    "mulk":         ("Melvin-Koushki, Occult Ecumenism, 24", "CORPUS",
+                     "the sensible kingdom, below the angelic realm of spirits"),
+    "mithal-asfal": (None, "INTERPRETATION",
+                     "a staging rung this game invents to separate the street from the stair"),
+    "barzakh":      ("Melvin-Koushki, Occult Ecumenism, 24", "CORPUS",
+                     "barzakh as a joining isthmus between the angelic realm and the body"),
+    "khayal":       ("Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15", "CORPUS",
+                     "simiya as the manipulation of imaginal constructs (khayalat)"),
+    "malakut":      ("Melvin-Koushki, Occult Ecumenism, 24", "CORPUS",
+                     "the angelic realm of spirits (malakut, ruhaniyyat)"),
+    "jabarut":      (None, "FIELD",
+                     "standard in the mulk/malakut/jabarut/lahut series; not attested in this corpus"),
+    "lahut":        (None, "FIELD",
+                     "as above - the top of the series, and the rung no figure occupies here"),
+}
+
+NODE_GROUNDS = {
+    "folio-full": [("Cairo, Egyptian National Library, Adab Farsi 22, f. 52b; Herat 893/1488, "
+                    "for Sultan Husayn Bayqara.",
+                    "Wikimedia Commons file record, corroborated by published descriptions of "
+                    "the Cairo Bustan", "ATTESTED")],
+    "the-chamber": [("Sa'di's Bustan describes no palace; the seven chambers come from Jami's "
+                     "Yusuf u Zulaykha, completed at Herat in 1483.",
+                     "art-historical literature on the Cairo Bustan", "ATTESTED")],
+    "yusuf": [("In Jami the doors give way at the touch of Yusuf's pointing finger; in Q 12:23 "
+               "Zulaykha has locked them and they open regardless.",
+               "Qur'an 12:23-25; Jami, Yusuf u Zulaykha", "ATTESTED")],
+    "zulaykha": [("Jami reframes her as the Sufi lover whose desire is redeemed into union, "
+                  "inverting the moral of the older telling.",
+                  "art-historical literature on Jami's poem", "ATTESTED")],
+    "yusuf-halo": [("Illumination as ontological rank rather than optics: there is no modelled "
+                    "light anywhere else in the folio.",
+                    "this project's observation", "INFERENCE")],
+    "inscription-tablet": [("Recent work reads this folio's architectural inscriptions as "
+                            "encomiums of the painter rather than eulogies of the patron.",
+                            "Balafrej, The Making of the Artist in Late Timurid Painting (2019) "
+                            "- not in hand; a lead, not a citation", "FIELD")],
+    "staircase-lower": [("Barzakh is rendered as a joining isthmus between the angelic realm and "
+                         "the body - which is what a stair is, in wood.",
+                         "Melvin-Koushki, Occult Ecumenism, 24", "CORPUS")],
+    "staircase-upper": [("As the lower flight: the stair belongs to neither storey it joins.",
+                         "Melvin-Koushki, Occult Ecumenism, 24", "CORPUS")],
+    "blue-tile-court": [("'Alam al-khayal is the domain where forms subsist as images.",
+                         "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15", "CORPUS")],
+    "balcony-brackets": [("The brackets reach a wall that has already ended. The most explicit "
+                          "structural impossibility in the folio.",
+                          "this project's observation", "INFERENCE")],
+    "muqarnas-eaves": [("Muqarnas subdivides a corner into tiers of niches until two incompatible "
+                        "shapes can meet: a technology of transition.",
+                        "general architectural history; not in this corpus", "FIELD")],
+    "verse-cartouche-top": [("Letters, as the most fundamental of images, are the atoms of the "
+                             "imaginal realm - which is why the cartouches are treated here as "
+                             "architecture rather than as caption.",
+                             "Melvin-Koushki, Of Islamic Grammatology, 26 n.97", "CORPUS")],
+    "verse-cartouche-mid": [("As the upper verses: letters as the atoms of the imaginal realm.",
+                             "Melvin-Koushki, Of Islamic Grammatology, 26 n.97", "CORPUS")],
+    "verse-cartouche-foot": [("The only text in the folio still behaving like text on a page.",
+                              "this project's observation", "INFERENCE")],
+    "street-door": [("In the Qur'anic account the doors are locked from inside and open anyway; "
+                     "the shirt is torn at the last of them.", "Qur'an 12:23-25", "ATTESTED")],
+    "cupola": [("The terminus of the ascent, and the one part of the palace no figure occupies. "
+                "That reading is ours; the painting does not say so.",
+                "this project's reading", "INFERENCE")],
+    "badgir-kiosk": [("No door, stair or landing in the composition connects to it.",
+                      "this project's observation", "INFERENCE")],
+    "brick-wall": [("The only surface in the folio not treated as a field of pattern.",
+                    "this project's observation", "INFERENCE")],
+}
+
 # The chain of doors, outermost first. Seven, after Jāmī's seven chambers; the
 # eighth opening in the picture is deliberately a blind. See DESIGN.md.
 DOOR_CHAIN = ["street-door", "iwan-door", "orange-door-under-stair", "ornate-door-lower",
@@ -197,6 +285,18 @@ LOCKS = {
 }
 
 
+def grounds_for(rid, rung):
+    """What a node rests on: its own claims, then its rung's, then the choice we made."""
+    rung_id = RUNGS[rung]["id"]
+    src, kind, gloss = RUNG_GROUNDS[rung_id]
+    out = [{"claim": c, "source": s_, "kind": k} for c, s_, k in NODE_GROUNDS.get(rid, [])]
+    out.append({"claim": "The rung term %s: %s." % (RUNGS[rung]["name"], gloss),
+                "source": src, "kind": kind})
+    out.append({"claim": "Placing this element on the %s rung." % RUNGS[rung]["name"],
+                "source": None, "kind": "INTERPRETATION"})
+    return out
+
+
 def main():
     nodes = []
     for r in IM['regions']:
@@ -220,6 +320,8 @@ def main():
             "lock": LOCKS.get(rid),
             "chain_index": DOOR_CHAIN.index(rid) if rid in DOOR_CHAIN else None,
             "blind": rid == BLIND_DOOR,
+            # L3: what this node rests on, carried through to the running game.
+            "grounds": grounds_for(rid, rung),
         })
 
     out = {
@@ -241,6 +343,13 @@ def main():
             "rights": "Public domain (PD-Art): faithful photographic reproduction of a two-dimensional "
                       "public-domain work, via Wikimedia Commons.",
             "full_image": "assets/folio-full.jpg",
+        },
+        "grounding_kinds": {
+            "ATTESTED": "A source states it.",
+            "CORPUS": "Found in this project's local Melvin-Koushki corpus, with a page reference.",
+            "FIELD": "General art-historical knowledge, not verified against a source in hand. A lead.",
+            "INFERENCE": "This project's own reading of the picture.",
+            "INTERPRETATION": "A choice this game made. Not a claim about the painting.",
         },
         "rungs": RUNGS,
         "door_chain": DOOR_CHAIN,

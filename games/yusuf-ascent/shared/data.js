@@ -2,7 +2,7 @@
 // Every prototype builds on `nodes` — there is no per-prototype element list,
 // so "all elements interactable" is a property of the data, not of each build.
 
-const V = 'v=1';
+const V = 'v=2';
 
 export async function loadPalace(base = '..') {
   const res = await fetch(`${base}/data/palace.json?${V}`);
@@ -32,6 +32,27 @@ export function folioURL(palace) {
   return `${palace.base}/${palace.source.full_image}`;
 }
 
+const KIND_COLOUR = {
+  ATTESTED: '#2e8f8f', CORPUS: '#2f5ea8', FIELD: '#7a6f52',
+  INFERENCE: '#c06523', INTERPRETATION: '#5a4a5e',
+};
+
+/** The L3 line: what this element rests on, carried through to the running game.
+ *  Collapsed by default so it informs without shouting. */
+function groundsHTML(palace, node) {
+  if (!node.grounds || !node.grounds.length) return '';
+  const worst = ['INTERPRETATION', 'FIELD', 'INFERENCE', 'CORPUS', 'ATTESTED'];
+  const rank = k => worst.indexOf(k);
+  const weakest = node.grounds.reduce((a, g) => rank(g.kind) < rank(a) ? g.kind : a, 'ATTESTED');
+  const rows = node.grounds.map(g => `
+    <li><span class="gk" style="background:${KIND_COLOUR[g.kind] || '#555'}">${g.kind}</span>
+      ${g.claim}${g.source ? ` <em>— ${g.source}</em>` : ''}</li>`).join('');
+  return `<details class="grounds">
+    <summary>Rests on <span class="gk" style="background:${KIND_COLOUR[weakest]}">${weakest}</span>
+      <span class="dim">${node.grounds.length} claim${node.grounds.length > 1 ? 's' : ''}</span></summary>
+    <ul>${rows}</ul></details>`;
+}
+
 /** Render one element's research card into a container. */
 export function renderCard(palace, node, el, { withThumb = true } = {}) {
   const rung = palace.rungById[node.rung];
@@ -41,7 +62,8 @@ export function renderCard(palace, node, el, { withThumb = true } = {}) {
     <span class="rung-chip" style="background:${rung.colour}">${rung.name}</span>
     ${withThumb ? `<img class="thumb" src="${spriteURL(palace, node)}" alt="${node.label}">` : ''}
     <p>${node.card}</p>
-    <div class="note">${node.label}</div>`;
+    <div class="note">${node.label}</div>
+    ${groundsHTML(palace, node)}`;
 }
 
 /** Frame-rate-independent smoothing factor. */

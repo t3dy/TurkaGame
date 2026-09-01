@@ -1,277 +1,194 @@
-"""build_gallery.py — an image-study site from images.json + regions.json + cut output.
+# -*- coding: utf-8 -*-
+"""build_gallery.py — assemble the committed web assets for games/visionary-gallery.
 
-Builds to imagelab/site/, which is gitignored along with the cutouts: every plate on
-these pages is derived from a source whose rights are unresolved (FOUNDER.md §5), so the
-site is a local research tool until that is settled. Promoting it to site/imagelab/ is a
-one-line change to OUT once the sources are cleared.
+imagelab/output/ and "research inbox/" are both gitignored: they hold full-size
+sources and 60+ MB of intermediates. The gallery has to ship, so this script
+produces the small, web-ready subset that actually goes in the repo, and a single
+gallery.json the site reads.
 
-    python imagelab/scripts/build_gallery.py
+Deliberately NOT copied, because the browser can do better with the raw numbers:
+  * the attention heat map  -> drawn live to canvas from analysis.attention_grid
+  * the region overlay      -> drawn live from analysis.regions
+Copying them would be dead weight and a second source of truth.
+
+    python imagelab/scripts/build_gallery.py [--svg-px 420] [--folio-px 900]
 """
 
 from __future__ import annotations
 
-import html
+import argparse
+import io
 import json
 import shutil
+import sys
 from pathlib import Path
 
+from PIL import Image
+
 BASE = Path(__file__).resolve().parent.parent
-SRC = BASE.parent / "research inbox" / "images"
-CUTS = BASE / "output"
-OUT = BASE / "site"
+ROOT = BASE.parent
+SITE = ROOT / "games" / "visionary-gallery"
+ASSETS = SITE / "assets"
 
-KIND_ORDER = ["scene", "figure", "face", "object", "architecture", "ornament", "text"]
-KIND_LABEL = {"scene": "Scenes", "figure": "Figures", "face": "Heads", "object": "Objects",
-              "architecture": "Architecture", "ornament": "Ornament", "text": "Text"}
-
-RIGHTS_TONE = {"UNKNOWN": "bad", "BLOCKED": "bad", "NEEDS_VERIFICATION": "warn", "CLEARED": "ok"}
-
-CSS = """
-:root{--parchment:#f4ecd9;--deep:#e9dcc0;--ink:#2b2118;--faint:#7a6a56;
-  --lapis:#1f4d8f;--vermillion:#9b2c1f;--gold:#a8842c;--verdigris:#3e6b5a;--line:#c9b992;}
-@media (prefers-color-scheme:dark){:root{--parchment:#171310;--deep:#211b16;--ink:#e8dcc4;
-  --faint:#8f8270;--lapis:#5b8bd0;--vermillion:#d0584a;--gold:#c9a648;--verdigris:#6fa08c;--line:#3a3128;}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--parchment);color:var(--ink);
-  font:16px/1.65 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;}
-a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding:0 28px 96px}
-header.top{border-bottom:1px solid var(--line);margin-bottom:38px;padding:44px 0 26px}
-.kicker{font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.20em;
-  text-transform:uppercase;color:var(--gold);margin-bottom:14px}
-h1{font-size:34px;line-height:1.2;margin:0 0 10px;font-weight:600;letter-spacing:-.01em}
-h2{font-size:15px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--faint);margin:44px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
-.lede{color:var(--faint);max-width:66ch;margin:0}
-.back{font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--faint);text-decoration:none;display:inline-block;margin-bottom:26px}
-.back:hover{color:var(--lapis)}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:26px}
-.card{border:1px solid var(--line);background:var(--deep);text-decoration:none;
-  display:flex;flex-direction:column;overflow:hidden;transition:transform .16s,box-shadow .16s}
-.card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.16)}
-.card .thumb{aspect-ratio:4/5;overflow:hidden;background:var(--parchment)}
-.card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.card .body{padding:16px 18px 20px}
-.card h3{margin:0 0 6px;font-size:18px;font-weight:600;line-height:1.25}
-.card p{margin:0;font-size:13.5px;color:var(--faint);line-height:1.5}
-
-.plate{border:1px solid var(--line);background:var(--deep);padding:14px;margin:0 0 10px;
-  display:flex;justify-content:center}
-/* tall folios (the Akhlati sheet is 640x1067) otherwise fill several screens and push
-   every word of the research below the fold */
-.plate img{max-width:100%;max-height:76vh;width:auto;height:auto;display:block}
-figcaption{font-size:12.5px;color:var(--faint);margin-bottom:34px}
-
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
-@media(max-width:820px){.cols{grid-template-columns:1fr}}
-dl.meta{margin:0;font-size:14px}
-dl.meta div{display:flex;gap:12px;padding:7px 0;border-bottom:1px solid var(--line)}
-dl.meta dt{flex:0 0 116px;color:var(--faint);font:600 11px/1.5 ui-sans-serif,system-ui,sans-serif;
-  letter-spacing:.10em;text-transform:uppercase;padding-top:2px}
-dl.meta dd{margin:0;flex:1}
-
-.rights{border-left:3px solid var(--line);padding:12px 16px;background:var(--deep);font-size:14px}
-.rights.bad{border-left-color:var(--vermillion)}
-.rights.warn{border-left-color:var(--gold)}
-.rights.ok{border-left-color:var(--verdigris)}
-.rights .tag{font:600 10px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.14em;
-  text-transform:uppercase;display:inline-block;margin-bottom:8px}
-.rights.bad .tag{color:var(--vermillion)}
-.rights.warn .tag{color:var(--gold)}
-.rights.ok .tag{color:var(--verdigris)}
-
-ul.icon{margin:0;padding-left:20px}
-ul.icon li{margin-bottom:12px;max-width:70ch}
-
-.claim{border-left:2px solid var(--line);padding:2px 0 2px 16px;margin-bottom:20px;max-width:72ch}
-.claim .src{display:block;margin-top:5px;font-size:12.5px;color:var(--faint);font-style:italic}
-.claim .kind{font:600 9.5px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.13em;
-  text-transform:uppercase;padding:3px 7px;border:1px solid var(--line);margin-right:8px;
-  vertical-align:2px;color:var(--faint)}
-.claim.grounded{border-left-color:var(--verdigris)}
-.claim.inference{border-left-color:var(--gold)}
-.claim.curatorial{border-left-color:var(--lapis)}
-.claim.negative-result{border-left-color:var(--vermillion)}
-
-.swatches{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
-.sw{width:56px}
-.sw i{display:block;height:44px;border:1px solid var(--line)}
-.sw span{font:11px/1.6 ui-monospace,monospace;color:var(--faint)}
-
-.regions{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:14px}
-.rg{border:1px solid var(--line);background:var(--deep);padding:8px}
-.rg img{width:100%;display:block;background:var(--parchment)}
-.rg b{display:block;font-size:12px;font-weight:600;margin-top:7px;line-height:1.35}
-.rg em{display:block;font-size:11px;color:var(--faint);font-style:normal}
-.pill{display:inline-block;font:600 10px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--faint);border:1px solid var(--line);padding:4px 8px;
-  margin:0 6px 6px 0;text-decoration:none}
-.pill:hover{color:var(--lapis);border-color:var(--lapis)}
-footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
-  font-size:12.5px;color:var(--faint)}
-"""
+MANIFEST = BASE / "data" / "visionary.json"
+ANALYSIS = BASE / "data" / "analysis.json"
+PAPER = BASE / "data" / "papercraft.json"
+PAPER_OUT = BASE / "output" / "papercraft"
+VIS_OUT = BASE / "output" / "visionary"
 
 
-def e(s):
-    return html.escape(str(s if s is not None else ""))
+def save_web(src_img, dst, max_px, quality=84):
+    im = src_img.copy()
+    if max(im.size) > max_px:
+        s = max_px / max(im.size)
+        im = im.resize((max(1, int(im.width * s)), max(1, int(im.height * s))), Image.LANCZOS)
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    if dst.suffix == ".png":
+        im.save(dst, optimize=True)
+    else:
+        im.convert("RGB").save(dst, quality=quality, optimize=True)
+    return dst.stat().st_size
 
 
-def page(title, body, depth=0):
-    up = "../" * depth
-    return (f"<!doctype html><html lang=en><head><meta charset=utf-8>"
-            f"<meta name=viewport content='width=device-width,initial-scale=1'>"
-            f"<title>{e(title)}</title><link rel=stylesheet href='{up}style.css'></head>"
-            f"<body><div class=wrap>{body}</div></body></html>")
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--folio-px", type=int, default=900)
+    ap.add_argument("--plate-px", type=int, default=560)
+    ap.add_argument("--thumb-px", type=int, default=380)
+    ap.add_argument("--svg-px", type=int, default=420,
+                    help="max embedded-image width inside the printable SVG")
+    args = ap.parse_args()
 
+    man = json.load(io.open(MANIFEST, encoding="utf-8"))
+    ana = json.load(io.open(ANALYSIS, encoding="utf-8"))
+    pap = json.load(io.open(PAPER, encoding="utf-8"))
+    M = {r["id"]: r for r in man["images"]}
+    A = {r["id"]: r for r in ana["images"]}
+    P = {r["id"]: r for r in pap["sheets"]}
 
-def build():
-    images = json.load(open(BASE / "data" / "images.json", encoding="utf-8"))["images"]
-    regions = {i["id"]: i for i in json.load(open(BASE / "data" / "regions.json", encoding="utf-8"))["images"]}
-    cut_index = json.load(open(CUTS / "index.json", encoding="utf-8")) if (CUTS / "index.json").exists() else []
-    cuts = {}
-    for r in cut_index:
-        cuts.setdefault(r["image"], {})[r["region"]] = r
+    if ASSETS.exists():
+        shutil.rmtree(ASSETS)
+    ASSETS.mkdir(parents=True)
 
-    OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "plates").mkdir(exist_ok=True)
-    (OUT / "style.css").write_text(CSS, encoding="utf-8")
+    # Re-emit the print sheets at a web-committable embed size.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import papercraft as pc
+    pc_data_uri_orig = pc.data_uri
+    pc.data_uri = lambda im, max_w=args.svg_px: pc_data_uri_orig(im, max_w)
 
-    # ---- copy full plates and the cut regions we reference ----
-    for img in images:
-        src = SRC / img["file"]
-        if src.exists():
-            shutil.copy2(src, OUT / "plates" / f"{img['id']}{src.suffix}")
-            img["_plate"] = f"plates/{img['id']}{src.suffix}"
-    if CUTS.exists():
-        dst = OUT / "regions"
-        if dst.exists():
-            shutil.rmtree(dst)
-        shutil.copytree(CUTS, dst, ignore=shutil.ignore_patterns("_*", "index.json", "portraits"))
+    entries, total = [], 0
+    for rec in ana["images"]:
+        cid = rec["id"]
+        m, p = M[cid], P.get(cid)
+        d = ASSETS / cid
+        d.mkdir(parents=True, exist_ok=True)
 
-    # ---- index ----
-    cards = []
-    for img in images:
-        thumb = img.get("_plate", "")
-        cards.append(
-            f"<a class=card href='{img['id']}.html'>"
-            f"<div class=thumb><img loading=lazy src='{e(thumb)}' alt=''></div>"
-            f"<div class=body><h3>{e(img['short_title'])}</h3>"
-            f"<p>{e(img['provenance'].get('date') or '')}"
-            f"{' · ' + e(img['provenance']['institution']) if img['provenance'].get('institution') else ''}</p>"
-            f"</div></a>")
+        src = Image.open(ROOT / m["file"]).convert("RGB")
+        total += save_web(src, d / "folio.jpg", args.folio_px)
+        total += save_web(src, d / "thumb.jpg", args.thumb_px, 80)
 
-    n_reg = sum(len(regions.get(i["id"], {}).get("regions", [])) for i in images)
-    body = (
-        "<header class=top><div class=kicker>TurkaGame · Image Study</div>"
-        "<h1>Four Illustrations</h1>"
-        "<p class=lede>The visual sources for the Ibn Turka game and knowledge portal, "
-        "read closely and checked against the scholarship. Each plate is broken into reusable "
-        "elements; each claim carries its citation or is marked as inference.</p></header>"
-        f"<div class=grid>{''.join(cards)}</div>"
-        f"<footer>{len(images)} plates · {n_reg} catalogued regions · "
-        "palettes measured by k-means over the painting area. "
-        "Rights are unresolved for every source here — see FOUNDER.md §5.</footer>")
-    (OUT / "index.html").write_text(page("Image Study — TurkaGame", body), encoding="utf-8")
+        det = VIS_OUT / cid / "detail.jpg"
+        if det.exists():
+            total += save_web(Image.open(det), d / "detail.jpg", 420, 72)
 
-    # ---- one page per image ----
-    for img in images:
-        p, r = img["provenance"], img["rights"]
+        plates = []
+        if p:
+            for L in p["layers"]:
+                sp = ROOT / L["file"]
+                if not sp.exists():
+                    continue
+                ext = ".png" if sp.suffix == ".png" else ".jpg"
+                out = d / ("plate%d%s" % (L["index"], ext))
+                total += save_web(Image.open(sp), out, args.plate_px)
+                plates.append({"index": L["index"], "file": "assets/%s/%s" % (cid, out.name),
+                               "frac": L.get("frac", [0, 0, 1, 1]),
+                               "occupancy": L["occupancy"], "n_regions": L["n_regions"]})
+            pv = PAPER_OUT / cid / "preview.jpg"
+            if pv.exists():
+                total += save_web(Image.open(pv), d / "preview.jpg", 620, 82)
 
-        meta_rows = [("Title", img["title"])]
-        for k, lbl in (("work", "In"), ("artist", "Artist"), ("date", "Date"), ("place", "Place"),
-                       ("institution", "Institution"), ("shelfmark", "Shelfmark"), ("folio", "Folio")):
-            if p.get(k):
-                meta_rows.append((lbl, p[k]))
-        meta_rows.append(("Dimensions", f"{img['dimensions'][0]} × {img['dimensions'][1]} px"))
-        meta = "".join(f"<div><dt>{e(a)}</dt><dd>{e(b)}</dd></div>" for a, b in meta_rows)
+            # regenerate the sheet at web embed size
+            img = Image.open(ROOT / m["file"]).convert("RGB")
+            if img.width > 1400:
+                img = img.resize((1400, int(img.height * 1400 / img.width)), Image.LANCZOS)
+            w, h = img.size
+            sx, sy = w / rec["work_size"][0], h / rec["work_size"][1]
+            regions = [{**r, "px_box": [int(r["box"][0] * sx), int(r["box"][1] * sy),
+                                        int(r["box"][2] * sx), int(r["box"][3] * sy)]}
+                       for r in rec["regions"]]
+            layers = pc.build_layers(img, regions, ana["n_layers"])
+            prov = m["provenance"]
+            meta = " · ".join(x for x in [prov.get("institution"), prov.get("date"),
+                                          m["rights"].get("licence")] if x)[:150]
+            svg = pc.tunnel_svg(cid, cid.replace("-", " "), layers,
+                                p["card_w_mm"], w / h, meta)
+            (d / "tunnel.svg").write_text(svg, encoding="utf-8")
+            total += (d / "tunnel.svg").stat().st_size
 
-        tone = RIGHTS_TONE.get(r["status"], "warn")
-        rights = (f"<div class='rights {tone}'><span class=tag>Rights · {e(r['status'].replace('_',' '))}</span>"
-                  f"<div>{e(r['blocker'])}</div>"
-                  f"<div style='margin-top:8px;color:var(--faint)'>Usable as: {e(r['usable_as'])}</div></div>")
+        entries.append({
+            "id": cid,
+            "tradition": rec["tradition"],
+            "why_here": m["why_here"],
+            "folio": "assets/%s/folio.jpg" % cid,
+            "thumb": "assets/%s/thumb.jpg" % cid,
+            "detail_map": ("assets/%s/detail.jpg" % cid) if (d / "detail.jpg").exists() else None,
+            "preview": ("assets/%s/preview.jpg" % cid) if (d / "preview.jpg").exists() else None,
+            "sheet": ("assets/%s/tunnel.svg" % cid) if (d / "tunnel.svg").exists() else None,
+            "sheet_kb": round((d / "tunnel.svg").stat().st_size / 1024) if (d / "tunnel.svg").exists() else None,
+            "plates": plates,
+            "work_size": rec["work_size"],
+            "metrics": rec["metrics"],
+            "palette": rec["palette"],
+            "orientation_hist": rec["orientation_hist"],
+            "attention_grid": rec["attention_grid"],
+            "regions": rec["regions"],
+            "provenance": m["provenance"],
+            "rights": m["rights"],
+        })
+        print("  %-24s %2d regions  %2d plates  sheet %s KB" % (
+            cid, len(rec["regions"]), len(plates),
+            entries[-1]["sheet_kb"] if entries[-1]["sheet_kb"] else "--"))
 
-        prov_note = f"<p class=lede style='margin-top:16px'>{e(p['note'])}</p>" if p.get("note") else ""
+    traditions = {
+        "cairo-bustan": ("The Cairo Būstān",
+                         "Herat, 1488, Bihzād, one manuscript. Six folios from the same book as Yūsuf Ascent's — "
+                         "the controlled comparison the portal asked for."),
+        "miraj": ("Ascension",
+                  "The miʿrāj: the ladder stated rather than inferred. Gates, gatekeepers, and a stated limit."),
+        "haft-paykar": ("The Seven Pavilions",
+                        "Nizami's seven domes, coloured for the seven planets that rule the seven climes."),
+        "siyah-qalam": ("Siyah Qalam",
+                        "Beings on blank paper. No ground line, no horizon — the world removed and the bodies kept."),
+        "ajaib": ("Wonders of Creation",
+                  "Qazwīnī's cosmography: a complete world model with an index."),
+        "falnama": ("The Book of Omens",
+                    "Monumental divinatory paintings a fortune-teller improvised from, for a fee."),
+        "jalayirid": ("The Jalāyirid Margin",
+                      "Baghdad and Tabriz, c. 1400 — Ibn Turka's own lifetime. Drawings growing out from under the text."),
+        "mantiq": ("The Conference of the Birds",
+                   "Attar's birds assembling to seek the Simurgh: the ascent as a crowd."),
+    }
 
-        icon = "".join(f"<li>{e(x)}</li>" for x in img.get("iconography", []))
-        claims = "".join(
-            f"<div class='claim {e(c['kind'])}'><span class=kind>{e(c['kind'].replace('-',' '))}</span>"
-            f"{e(c['claim'])}<span class=src>{e(c['source'])}</span></div>"
-            for c in img.get("research", []))
+    payload = {
+        "_note": ("Web assets and data for games/visionary-gallery. Generated by "
+                  "imagelab/scripts/build_gallery.py from visionary.json + analysis.json + "
+                  "papercraft.json. Do not hand-edit; re-run the script."),
+        "generated": man["fetched"],
+        "source": "Wikimedia Commons",
+        "n_layers": ana["n_layers"],
+        "layer_rule": ana["layer_rule"],
+        "metric_notes": ana["metric_notes"],
+        "traditions": traditions,
+        "images": entries,
+    }
+    with io.open(SITE / "data" / "gallery.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
 
-        pal = img.get("palette", {})
-        sw = "".join(f"<div class=sw><i style='background:{e(c)}'></i><span>{e(c)}</span></div>"
-                     for c in pal.get("dominant", []) + pal.get("accents", []))
-        sat = pal.get("max_saturation")
-        sat_note = (f"<p class=lede style='font-size:14px'>Peak saturation "
-                    f"<b>{sat}</b> — measured over the painting area, not the margins.</p>") if sat else ""
-
-        links = "".join(
-            f"<a class=pill href='../../site/portal/{kind}/{s}.html'>{e(s.replace('-',' '))}</a>"
-            for s in img.get("portal_links", [])
-            for kind in [_portal_kind(s)])
-
-        # region gallery, grouped by kind
-        by_kind = {}
-        for rg in regions.get(img["id"], {}).get("regions", []):
-            by_kind.setdefault(rg["kind"], []).append(rg)
-        blocks = []
-        for k in KIND_ORDER:
-            if k not in by_kind:
-                continue
-            tiles = []
-            for rg in by_kind[k]:
-                rec = cuts.get(img["id"], {}).get(rg["id"], {})
-                path = rec.get("matte") or rec.get("rect") or ""
-                note = ""
-                if "matte" in rec:
-                    note = f"cutout · kept {rec.get('matte_kept', 0):.0%}"
-                tiles.append(
-                    f"<div class=rg><img loading=lazy src='regions/{e(path)}' alt=''>"
-                    f"<b>{e(rg['label'])}</b><em>{e(note or rg['kind'])}</em></div>")
-            blocks.append(f"<h2>{e(KIND_LABEL.get(k, k))}</h2><div class=regions>{''.join(tiles)}</div>")
-
-        gu = "".join(f"<li>{e(x)}</li>" for x in img.get("game_use", []))
-
-        body = (
-            "<header class=top><a class=back href='index.html'>← All plates</a>"
-            f"<div class=kicker>{e(p.get('place') or 'Image study')}</div>"
-            f"<h1>{e(img['title'])}</h1></header>"
-            f"<figure class=plate><img src='{e(img.get('_plate',''))}' alt=''></figure>"
-            f"<figcaption>{e(img['file'])}</figcaption>"
-            "<div class=cols>"
-            f"<div><h2>Record</h2><dl class=meta>{meta}</dl>{prov_note}</div>"
-            f"<div><h2>Rights</h2>{rights}"
-            f"<h2>Palette</h2><div class=swatches>{sw}</div>{sat_note}</div>"
-            "</div>"
-            f"<h2>Description</h2><p style='max-width:72ch'>{e(img['description'])}</p>"
-            f"<h2>Iconography</h2><ul class=icon>{icon}</ul>"
-            f"<h2>What the scholarship says</h2>{claims}"
-            f"<h2>Use in the game</h2><ul class=icon>{gu}</ul>"
-            f"<h2>Portal entries</h2><div>{links}</div>"
-            + "".join(blocks) +
-            "<footer>Regions cut by imagelab/scripts/cut_regions.py. "
-            "Cutouts marked with a kept-percentage are GrabCut mattes; low percentages mean the "
-            "algorithm could not separate figure from ground, which is normal for dense "
-            "miniature painting.</footer>")
-        (OUT / f"{img['id']}.html").write_text(page(img["title"], body), encoding="utf-8")
-
-    print(f"gallery: {len(images)} plates, {n_reg} regions -> {OUT}")
+    print("\n%d images, %.1f MB of web assets -> %s"
+          % (len(entries), total / 1e6, ASSETS))
     return 0
 
 
-_FIGURES = {"ibn-turka", "qazizada-rumi", "sharaf-al-din-yazdi", "sayyid-husayn-akhlati", "ulugh-beg"}
-_INSTITUTIONS = {"isfahan-circle", "new-brethren-purity", "samarkand-observatory"}
-
-
-def _portal_kind(slug: str) -> str:
-    if slug in _FIGURES:
-        return "figures"
-    if slug in _INSTITUTIONS:
-        return "institutions"
-    return "concepts"
-
-
 if __name__ == "__main__":
-    raise SystemExit(build())
+    (SITE / "data").mkdir(parents=True, exist_ok=True)
+    sys.exit(main())

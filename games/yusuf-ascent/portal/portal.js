@@ -2,7 +2,7 @@
 // so the essay and the game cannot drift apart: every claim shown here is the same
 // record the puzzle mechanics are built on.
 
-import { loadPalace, loadResearch, spriteURL, folioURL } from '../shared/data.js?v=1';
+import { loadPalace, loadResearch, spriteURL, folioURL } from '../shared/data.js?v=2';
 
 const bodyEl = document.getElementById('body');
 const tocEl = document.getElementById('toc');

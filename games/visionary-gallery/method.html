@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method — Visionary Gallery</title>
+<link rel="stylesheet" href="./shared/gal.css?v=3">
+<style>
+  .wrap { max-width: 900px; }
+  .pipe { font-family: var(--mono); font-size: .72rem; line-height: 1.7; background: var(--bg-2);
+          border: 1px solid var(--rule); padding: .9rem 1rem; overflow-x: auto; white-space: pre; }
+  .ladder { display: grid; gap: 6px; margin: 1rem 0; }
+  .rung { display: grid; grid-template-columns: 46px 1fr; gap: .8rem; align-items: start;
+          border-left: 3px solid var(--rule); padding: .45rem .7rem; background: var(--bg-2); }
+  .rung.here { border-left-color: var(--gold); background: rgba(201,154,46,.10); }
+  .rung .l { font-family: var(--mono); color: var(--gold-hi); font-size: .82rem; }
+  .rung b { font-size: .88rem; }
+  .rung p { margin: .15rem 0 0; font-size: .82rem; }
+  .conf td, .conf th { text-align: center; font-family: var(--mono); font-size: .74rem; }
+  .conf td.z { color: #46424a; }
+  .conf td.hot { background: rgba(201,154,46,.28); color: #fff; }
+  .big { font-family: var(--serif); font-size: 2rem; color: var(--gold-hi); line-height: 1; }
+  .figs { display: flex; gap: 2rem; flex-wrap: wrap; margin: 1rem 0; }
+  .figs div span { display: block; font-family: var(--sans); font-size: .7rem;
+                   color: var(--paper-dim); margin-top: .2rem; max-width: 22ch; }
+</style>
+</head>
+<body>
+  <div id="nav"></div>
+  <div class="wrap">
+    <h1>Method</h1>
+    <p class="lede">How 22 folios got from a Commons file to a playable page, what the
+    numbers mean, where the pipeline sits on this project's coupling ladder — and the
+    two places where measuring things contradicted what we had written.</p>
+
+    <h2>The pipeline</h2>
+    <div class="pipe">Wikimedia Commons API
+  │  licence read from structured data; anything not free is BLOCKED, not downloaded
+  ▼
+imagelab/scripts/fetch_commons.py    →  research inbox/visionary/*.jpg
+                                        imagelab/data/visionary.json      (provenance + rights)
+  ▼
+imagelab/scripts/analyze.py          →  imagelab/data/analysis.json       (metrics, regions, layers)
+  │  fixed k-means seed, no sampling; deterministic
+  ▼
+imagelab/scripts/papercraft.py       →  tunnel.svg + layer plates         (printable)
+  ▼
+imagelab/scripts/build_gallery.py    →  games/visionary-gallery/          (the site you are on)
+  ▲
+imagelab/scripts/compare_hand.py     →  imagelab/data/hand_vs_machine.json
+     the one image that exists hand-made too, used to check the machine</div>
+
+    <h2>What each number is</h2>
+    <table id="metrics"></table>
+
+    <h2 id="disagree">Where the measurement contradicted the essay</h2>
+
+    <div class="callout">
+      <strong>1. "Every surface is finished to the same degree of attention."</strong>
+      <p>That sentence is the load-bearing evidence in the
+      <a href="../yusuf-ascent/portal/index.html">Yūsuf Ascent portal</a> for reading the
+      palace as a diagram rather than a house. Operationalised as
+      <em>attention evenness</em> — one minus the dispersion of detail density over a
+      16×16 grid — <b>it does not single the Yūsuf folio out at all.</b></p>
+      <p id="even-fig"></p>
+      <p><b>Why, and what it is worth.</b> The metric punishes exactly the thing the portal
+      itself praises: Bihzād's large blank white arch. The portal says he "reserves blankness
+      for the exact place where the event happens" — a deliberate, enormous, low-detail
+      region — and gradient density cannot tell a considered void from an unfinished one.
+      So the disagreement locates a confound rather than refuting the claim. The honest
+      statement is that <em>uniformity of treatment</em> and <em>uniformity of detail
+      density</em> are not the same measure, and only the second one is implemented here.
+      That correction is worth more than a confirmation would have been, and it is why the
+      portal's sentence should not be quoted as though it had been tested.</p>
+    </div>
+
+    <div class="callout">
+      <strong>2. "The machine layers agree with the hand-drawn rungs about two thirds of
+      the time."</strong>
+      <p>An earlier draft of this site said that. Nobody had measured it. Then it was
+      measured, on the one folio that exists in both forms — 41 hand-drawn regions argued
+      into seven cosmological rungs, against 27 regions the pipeline proposed with nothing
+      touched.</p>
+      <div class="figs" id="hm-figs"></div>
+      <p id="hm-text"></p>
+      <p><b>What the machine misses.</b> <span id="hm-missed" class="dim"></span></p>
+      <p>So the split verdict is: the heuristic <em>ranks</em> well and <em>finds</em>
+      badly. It reproduces the direction of the ascent on the regions it happens to catch,
+      and it does not catch the figure, the halo, the chamber or the brackets — which is to
+      say, it misses every element the argument is actually made of. An automatic pipeline
+      gets you a corpus; it does not get you a reading.</p>
+    </div>
+
+    <h3>Machine layer against hand rung</h3>
+    <table class="conf" id="conf"></table>
+    <div class="note">Rows are the machine's five layers, deepest at the top. Columns are the
+    seven hand-argued rungs, street at the left. Only the 11 pairs that matched at IoU ≥ 0.2
+    appear. A perfect agreement would fall on a diagonal.</div>
+
+    <h2>Where this sits on the coupling ladder</h2>
+    <p>The repo's <span class="mono">CONTEXTENGINEERINGGAMEPIPELINES.md</span> sets out five
+    levels of coupling between the research and the game. The two things on this site sit at
+    different rungs of it, on purpose.</p>
+    <div class="ladder">
+      <div class="rung"><span class="l">L0</span><div><b>Transcription</b>
+        <p>Read a source, write a scene by hand. No pipeline; correctness lives in the author's head.</p></div></div>
+      <div class="rung here"><span class="l">L1</span><div><b>A canonical research-access layer — Yūsuf Ascent</b>
+        <p>43 elements, seven rungs, eight door-locks, all hand-authored against a small curated
+        layer and each labelled with how well it is grounded. Expensive per image, and it is the
+        only one of the two that produces an argument.</p></div></div>
+      <div class="rung here"><span class="l">L2</span><div><b>Structured DB → build-time export — built 2026-09-01</b>
+        <p><span class="mono">portal/scripts/export_gallery_scholarship.py</span> now exports
+        portal entries into <span class="mono">data/scholarship.json</span>: the entry text,
+        literature and the portal's own confidence/review flags come from
+        <span class="mono">portal/db/turka.db</span> at build time; only the tradition-to-entry
+        <em>links</em> are authored here, and each shows its one-line rationale on the page.
+        Two gaps the export surfaced (no divination entry; no painting-world figures) are
+        recorded in the JSON rather than papered over.</p></div></div>
+      <div class="rung"><span class="l">L3</span><div><b>Fact-level provenance through to runtime</b>
+        <p>Half-built: every image here carries its licence and Commons record through to the page.
+        Text does not yet carry claim ids.</p></div></div>
+      <div class="rung here"><span class="l">L4</span><div><b>Data-driven generation — this gallery</b>
+        <p>Region proposals, layer assignment, papercraft nets and the 3D stack are all
+        <em>generated against measured properties of the source</em>, not authored. 22 folios
+        entered and none needed a writer. The stated failure mode of L4 — content that is
+        individually well-formed and collectively gives a false picture — is exactly what the
+        machine-versus-hand comparison above is for.</p></div></div>
+    </div>
+
+    <h2>Honesty rules this site follows</h2>
+    <ul>
+      <li><b>Nothing whose licence did not parse as free was downloaded.</b> The rights gate is
+      in the fetch script, not in a human's memory. It had a bug on first run — a regex that
+      rejected every plain <span class="mono">pd</span> file — which is recorded in the script's
+      own comments rather than quietly fixed.</li>
+      <li><b>Measurements and heuristics are labelled differently everywhere.</b> The metrics are
+      measurements. The region proposals and the layer assignment are heuristics, and every
+      surface that shows them says so.</li>
+      <li><b>Numbers on this page come from a script.</b> Where a figure appears, it was read
+      from <span class="mono">hand_vs_machine.json</span> or <span class="mono">gallery.json</span>
+      at page load, not typed in.</li>
+      <li><b>Disagreements stay on the page.</b> Both contradictions above could have been
+      removed by deleting a sentence. They are the most useful thing here.</li>
+    </ul>
+
+    <div class="note">
+      Sources: all 22 images from Wikimedia Commons under free licences, listed with their
+      Commons record on each folio's workbench page. Companion prose:
+      <a href="../../docs/VISIONARY_ENVIRONMENTS.md">docs/VISIONARY_ENVIRONMENTS.md</a>.
+    </div>
+  </div>
+
+<script type="module" src="./method.js?v=3"></script>
+</body>
+</html>

@@ -342,3 +342,283 @@ verification structure does.
 **Consequence.** Coupling the portal to the games is laddered L0–L4; we are between L1
 and L2, and **L2 (build-time export from `islamicate.db`) is the agreed next rung**.
 
+---
+
+# 2026-08-31 — Yūsuf Ascent and the Visionary Gallery
+
+The eighth and ninth sessions built two things that look similar and are not: a
+hand-authored minigame on one painting, and an automatic pipeline over twenty-two. The
+decisions below are recorded together because the pair only makes sense as a pair.
+
+Detailed per-project records: [`games/yusuf-ascent/DECISIONS.md`](../games/yusuf-ascent/DECISIONS.md),
+[`games/visionary-gallery/DECISIONS.md`](../games/visionary-gallery/DECISIONS.md).
+Direction changes made mid-flight: [`docs/PIVOTS.md`](PIVOTS.md).
+
+## Three prototypes with three verbs, not one polished game
+
+**Decision.** Yūsuf Ascent ships as three separate prototypes over one decomposition —
+*look* (2D hotspot chain), *move* (3D station-point stack), *argue* (drag-sort ladder) —
+plus a research portal, rather than one finished game.
+
+**Rationale.** The question the build was actually answering is "can this painting be
+made interactable at all, and which verb does it reward?" Three cheap answers to that are
+worth more than one expensive answer to a question nobody had asked yet. They also share
+a single data file, so the marginal cost of the second and third was small.
+
+**Rejected alternative.** Building the 2D one properly and shipping it alone: it would
+have hidden the fact that the *move* reading is the strongest of the three, which was not
+obvious before it existed.
+
+**Consequence.** None of the three is finished. `INTERFACE.md` says so explicitly, with a
+severity table — no onboarding, no journal, no touch support in Prototype C.
+
+## Region boxes live in `imagelab/`, never in a game folder
+
+**Decision.** Every decomposition's boxes are single-sourced in
+`imagelab/data/regions.json`. Each game has a build script that merges those boxes with
+its own interpretation into a `*.json` the runtime reads.
+
+**Rationale.** The boxes and the reading change at different rates and for different
+reasons. Keeping them together means re-cutting sprites whenever the argument moves. They
+were re-cut twice mid-build and this is why that was cheap.
+
+**Rejected alternative.** Boxes in the game folder next to the annotations, which is how
+it started. Abandoned within the hour.
+
+**Consequence.** `games/*/build_palace.py` is now a pattern, not a one-off. The gallery's
+`build_gallery.py` follows it.
+
+## Station-point perspective, not orthographic projection
+
+**Decision.** Prototype B places each element at a depth given by its cosmological rung and
+compensates position and scale about a **station point** by `k = (D − z)/D`, using a
+perspective camera. An orthographic camera was considered and rejected.
+
+**Rationale.** Orthographic makes the recomposition trivially exact from *every* frontal
+position. Perspective-with-compensation makes it exact from exactly **one place to stand** —
+which is the argument the painting makes about ascent, restated as a projection property
+instead of illustrated by one. The harder implementation is the correct one because the
+difficulty is the content.
+
+**Rejected alternative.** Orthographic (loses the privileged viewpoint); baked depth per
+element (not derivable from the reading, and not testable).
+
+**Consequence.** The invariant is checkable, not asserted:
+`__yusufB.checkStationInvariant()` measures worst screen-space drift across all panels and
+returns ~1e-16 against a 1.5e-3 tolerance. The gallery's 3D tab carries the same test.
+
+## No lighting anywhere, and the post-processing stack is refused
+
+**Decision.** Every material in both 3D scenes is `MeshBasicMaterial` with
+`toneMapped: false`. No PBR, no bloom, no GTAO, no tone mapping, no LUT grading, no
+volumetric fog. The single exception is Yūsuf's flame-halo, which is additively blended.
+
+**Rationale.** The source folio has no modelled light anywhere — no cast shadow, no
+falloff, no specular. Adding optics the painting refuses is not enhancement, it is a
+category error about the object. The one light in the picture is *ontological rank
+rendered as gold*, so it is the one additive material in the scene.
+
+**Rejected alternative.** The obvious "make it beautiful" pass. `GRAPHICS.md` carries the
+full refusal table with a reason per item, and five proposals that work *with* the source's
+own logic instead (gold as a view-dependent leaf term; a per-rung paper veil instead of
+camera depth-of-field).
+
+**Consequence.** The no-post baseline *is* the final image, which satisfies the Three.js
+skill pack's acceptance gate trivially and honestly.
+
+## Interpretation is labelled where the judgement happens
+
+**Decision.** Wherever the project asserts something the painting does not say — the
+seven-rung ladder, the door chain, the machine's layer assignment — it is labelled as an
+interpretation **at the point of use**, not in an About page or a footnote.
+
+**Rationale.** A disclaimer the reader meets after forming a belief is decoration. The
+distinction between a research tool and a research-*themed* one is whether the caveat
+arrives while the judgement is being made.
+
+**Consequence.** Prototype A's sidebar, Prototype C's marking dialogue, the portal's
+grounding tags, and the gallery's every mention of "heuristic" all carry it. The negative
+result — that **no source in the 43-source corpus mentions Bihzād or Zulaykha at all** —
+is on the portal page in its own right, not buried.
+
+## L3 grounding: every element carries what it rests on
+
+**Decision.** All 43 Yūsuf Ascent elements carry a `grounds` array (104 claim rows: 5
+ATTESTED, 33 CORPUS, 10 FIELD, 6 INFERENCE, 50 INTERPRETATION), rendered in-game on each
+card under "Rests on".
+
+**Rationale.** `CONTEXTENGINEERINGGAMEPIPELINES.md` L3 asks that a scene asserting a fact
+carry the id of the claim backing it, so "which lines rest on a weak claim?" becomes a
+query. Applied to a picture rather than a scene, that means each element names its source
+and its tier — and the weakest tier is surfaced in the collapsed summary, so the player
+sees *how well grounded* before choosing to read *why*.
+
+**Rejected alternative.** A single confidence score per element. It collapses "a source
+says this" and "we decided this" into one number, which is exactly the distinction worth
+keeping.
+
+**Consequence.** Half of L3 is done — images already carried provenance to runtime; text
+now does too. The remaining half is machine-checkable queries over it.
+
+## The gallery is L4, deliberately built as a counterpart to L1 — not a replacement
+
+**Decision.** `games/visionary-gallery/` generates regions, layers, papercraft nets and
+3D stacks from measured properties, with no per-image authoring. It sits at L4 on the
+coupling ladder; Yūsuf Ascent stays L1. Both ship.
+
+**Rationale.** The open question after Yūsuf Ascent was whether the hand work was
+necessary or merely first. Building the automatic version and **measuring it against the
+hand-made one** is the only way to answer that, and it is now answered:
+`compare_hand.py` finds the machine **ranks** regions much as the argument does
+(Spearman ρ = 0.86, p = 0.0006) and **finds** only 27% of them at IoU ≥ 0.2, missing the
+chamber, Yūsuf, the halo and the brackets — every element the reading is made of.
+
+**Rejected alternative.** Generating the gallery and quietly presenting it as equivalent
+to the hand-made decomposition. L4's stated failure mode is content that is individually
+well-formed and collectively misleading, and that is exactly the shape it would have taken.
+
+**Consequence.** *An automatic pipeline gets you a corpus; it does not get you a reading.*
+That sentence is on the Method page. **L2 remains the agreed next rung** and is now the
+loudest gap: `gallery.json` carries measurements and provenance but no scholarship, and
+`islamicate.db` already holds the scholarship.
+
+## The rights gate lives in the script, not in a human's memory
+
+**Decision.** `imagelab/scripts/fetch_commons.py` reads Wikimedia Commons' *structured*
+licence data and refuses to download anything that does not parse as free. Provenance
+records are built by the script, not asserted by whoever skimmed the page.
+
+**Rationale.** The existing house rule is that no manuscript image enters `assets/`
+without a provenance record. Commons is the only source in reach that exposes licence,
+author, institution and date as queryable fields, which makes the rule enforceable rather
+than aspirational.
+
+**Rejected alternative.** Fetching from the holding institutions directly (better images,
+no machine-readable rights) or trusting a curator's note (the failure mode this project
+has already corrected once — see the Adab Farsi 908 → 22 fix below).
+
+**Consequence.** 22 of 22 cleared, 0 blocked. The gate's first version *over-blocked* 19
+of 22 through a regex anchored on `pd-` that rejected every plain `pd` file. The fix is
+commented in the script rather than quietly applied, because a gate that silently
+over-blocks is one bad edit from silently under-blocking.
+
+## A provenance correction, and where it is recorded
+
+**Decision.** The Bihzād folio is **Cairo, Egyptian National Library, Adab Farsi 22,
+f. 52b** — not "Adab Farsi 908 (attributed)" as `imagelab/data/images.json` recorded, where
+it was flagged as an inference from the picture. Rights moved NEEDS_VERIFICATION →
+CLEARABLE (PD-Art via Commons).
+
+**Rationale.** Confirmed against the Commons file record and corroborated by published
+descriptions of the Cairo Būstān. Both numbers circulate for a 1488 Sulṭān ʿAlī Mashhadī
+Būstān in that library; Adab Farsi 22 is the one the art-historical literature uses.
+
+**Consequence.** Corrected in `images.json` **with the old value and the reasoning kept**,
+and in `games/yusuf-ascent/data/research.json`. Still to do before a shipped release:
+confirm the Dār al-Kutub's own reproduction terms, which can differ from Commons' PD-Art
+position.
+
+## Committed-asset budget: ship the web subset, gitignore the sources
+
+**Decision.** `research inbox/` (57 MB of sources) and `imagelab/output/` (130 MB of
+intermediates) stay gitignored. `build_gallery.py` emits a ~33 MB web-ready subset into
+`games/visionary-gallery/assets/`, which is what is committed and served.
+
+**Rationale.** The intermediates are fully regenerable from four scripts, so committing
+them buys nothing and costs a repo that is unpleasant to clone. The web subset is not
+regenerable by a visitor, so it ships.
+
+**Rejected alternative.** Committing the full-resolution sources "in case" — the existing
+gitignore already establishes that derived cutouts and un-cleared material stay local.
+
+**Consequence.** A fresh clone cannot re-run the analysis without first re-running
+`fetch_commons.py`. That is stated at the top of the gallery README.
+
+## 2026-09-01 — L2 built: the portal DB now feeds the gallery at build time
+
+**Decision.** `portal/scripts/export_gallery_scholarship.py` exports scholarship from
+`portal/db/turka.db` into `games/visionary-gallery/data/scholarship.json`. The gallery's
+workbench pages render the linked entries — the portal's own text, literature, and
+confidence/review flags — under "From the knowledge portal"; the front page shows entry
+chips per tradition. 10 entries, 15 links across all 8 traditions.
+
+**Rationale.** The division of labour is the point of L2, and the export enforces it:
+the **entries** are read from the DB at build time and never copied by hand, so a card
+fixed in the portal propagates to the gallery on re-run — one place, not two. Only the
+**mapping** (tradition → entry, each with a one-line "why") is authored in the script,
+and it is rendered as this project's interpretation at the point of use, per the house
+rule. The portal's `DRAFT`/`MEDIUM` flags are shown, not laundered into confidence the
+entries have not earned.
+
+**Deviation from the recorded plan, flagged.** The 2026-08-31 model-selection entry named
+`islamicate.db` (the sibling IslamicateOccultPortal) as the L2 source. This export reads
+**`portal/db/turka.db`** — this repo's own portal — instead. Three reasons: it is in-repo,
+so the export reproduces on a fresh clone without the sibling project present; it holds
+the Ibn Turka-specific encyclopedia entries the gallery's readings actually invoke
+(including his *Treatise on the Barzakh*, the single strongest link in the mapping); and
+the gallery deploys from this repo, so its build inputs should too. An `islamicate.db`
+export remains open for the broader material (al-Būnī, Brethren of Purity) when a surface
+needs it — this entry narrows the source, it does not close that door.
+
+**What the export refused to do.** Two gaps are recorded *inside the JSON* rather than
+papered over: the portal has no divination entry, so the Falnāma tradition links to
+`talismanic-science` with an explicit mismatch note shown to the reader; and no
+painting-world figures (Bihzād, Jāmī, Saʿdī, Bāyqarā) exist in the DB because the
+portal's scope is Ibn Turka's world — those live in Yūsuf Ascent's hand-authored
+`research.json` instead. The highest-value portal addition this export surfaced is a
+geomancy/divination concept entry.
+
+**Rejected alternatives.** Hand-copying card text into `gallery.json` (re-creates the
+two-sources-of-truth failure L2 exists to end); auto-linking by keyword match against
+card text (produces confident nonsense — the mapping is small enough that fifteen
+authored links with reasons beat any recall a matcher would buy); exporting every entry
+wholesale (the gallery would become a worse mirror of the portal instead of a consumer
+of its relevant slice).
+
+**Consequence.** The ladder now reads: L1 (Yūsuf Ascent, hand-authored) ✓ · **L2 ✓** ·
+L3 half-built (elements carry grounding; queries over it do not exist yet) · L4 (the
+gallery) ✓. The next unbuilt things are, in order of stated value: the divination portal
+entry, machine-checkable queries over the L3 grounding, and the batch annotation sweep
+(still blocked on a real terminal).
+
+## 2026-09-01 — Two sessions closed the divination gap at once; the duplicate was removed, not merged
+
+**What happened.** The L2 export recorded "no divination entry" as its highest-value gap.
+Acting on that, this session mined the corpus and drafted `concepts/ilm-al-raml`, seeded
+it, and re-ran the export — which then **failed loudly**, because a concurrent session had
+meanwhile rewritten `portal/data/seed.json`: it added its own `concepts/geomancy` and
+`concepts/jafr`, and merged away `texts/treatise-on-barzakh` and
+`concepts/timurid-patronage`, both of which this session's L2 mapping referenced.
+
+**Decision.** The concurrent session's `geomancy` survives; this session's `ilm-al-raml`
+was **deleted from the seed and pruned from the DB**. The gallery's Falnāma tradition now
+links to `geomancy` + `jafr`. The distinctive grounded material from the removed draft is
+parked in
+[`portal/docs/NOTE_geomancy_merge_candidate.md`](../portal/docs/NOTE_geomancy_merge_candidate.md)
+for a deliberate merge by whoever owns that entry.
+
+**Rationale.** Theirs is already wiki-linked into the rest of the portal and written in the
+portal's voice; two entries for one science is strictly worse than either alone; and
+editing another session's live entry while it may still be being written is how you get a
+silent overwrite. Parking the extra material costs one file and loses nothing —
+the sand procedure, the popularity ranking (third behind astrology and oneiromancy), the
+Afro-Eurasian spread into *ifa*/*gara*/*sikidy*, and Yazdī's five-move argument including
+the *Nūr* correspondence are all preserved with citations.
+
+**Rejected alternatives.** Shipping both entries (a duplicate, and the export would have
+had to choose one anyway). Editing `geomancy` in place to fold my material in (a
+concurrent-write hazard, and it presumes ownership this session does not have). Reverting
+my seed change and dropping the research (loses grounded work for no gain).
+
+**Consequence, and the thing worth keeping.** `seed_from_json.py` **prunes** DB rows absent
+from the seed file, so an upstream merge silently removes entries a downstream consumer
+depends on. The export's `sys.exit` on a missing slug is what surfaced this within seconds
+instead of shipping a gallery with two dead links — **that fail-loud behaviour stays**.
+Standing rule: **re-run `export_gallery_scholarship.py` after any portal re-seed**, and
+treat `portal/data/seed.json` as a file other sessions write.
+
+**Also surfaced.** Melvin-Koushki twice ranks **oneiromancy — dream divination — *above*
+geomancy** in popularity. The portal has no oneiromancy entry, `mine_corpus.py rank dream`
+returns 25 hits in the Yale dissertation alone, and `docs/VISIONARY_ENVIRONMENTS.md` is
+explicitly about Ibn Turka's dreaming life. That is the next entry to write, and it serves
+the games more directly than geomancy does.

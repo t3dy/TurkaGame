@@ -9,7 +9,7 @@
 // This is the "diagram" reading of the folio taken literally: if the palace is a
 // cosmological ladder rather than a house, then sorting is the correct verb.
 
-import { loadPalace, renderCard, spriteURL } from '../shared/data.js?v=1';
+import { loadPalace, renderCard, spriteURL } from '../shared/data.js?v=2';
 
 const ladderEl = document.getElementById('ladder');
 const trayEl = document.getElementById('tray-items');

@@ -17,6 +17,13 @@
     "rights": "Public domain (PD-Art): faithful photographic reproduction of a two-dimensional public-domain work, via Wikimedia Commons.",
     "full_image": "assets/folio-full.jpg"
   },
+  "grounding_kinds": {
+    "ATTESTED": "A source states it.",
+    "CORPUS": "Found in this project's local Melvin-Koushki corpus, with a page reference.",
+    "FIELD": "General art-historical knowledge, not verified against a source in hand. A lead.",
+    "INFERENCE": "This project's own reading of the picture.",
+    "INTERPRETATION": "A choice this game made. Not a claim about the painting."
+  },
   "rungs": [
     {
       "id": "mulk",
@@ -103,7 +110,24 @@
       "sprite": "assets/regions/folio-full.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "Cairo, Egyptian National Library, Adab Farsi 22, f. 52b; Herat 893/1488, for Sultan Husayn Bayqara.",
+          "source": "Wikimedia Commons file record, corroborated by published descriptions of the Cairo Bustan",
+          "kind": "ATTESTED"
+        },
+        {
+          "claim": "The rung term Mulk: the sensible kingdom, below the angelic realm of spirits.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Mulk rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "architecture-full",
@@ -129,7 +153,19 @@
       "sprite": "assets/regions/architecture-full.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Barzakh: barzakh as a joining isthmus between the angelic realm and the body.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Barzakh rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "cupola",
@@ -155,7 +191,24 @@
       "sprite": "assets/regions/cupola.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The terminus of the ascent, and the one part of the palace no figure occupies. That reading is ours; the painting does not say so.",
+          "source": "this project's reading",
+          "kind": "INFERENCE"
+        },
+        {
+          "claim": "The rung term Lāhūt: as above - the top of the series, and the rung no figure occupies here.",
+          "source": null,
+          "kind": "FIELD"
+        },
+        {
+          "claim": "Placing this element on the Lāhūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "roof-eaves-band",
@@ -181,7 +234,19 @@
       "sprite": "assets/regions/roof-eaves-band.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Lāhūt: as above - the top of the series, and the rung no figure occupies here.",
+          "source": null,
+          "kind": "FIELD"
+        },
+        {
+          "claim": "Placing this element on the Lāhūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "badgir-kiosk",
@@ -207,7 +272,24 @@
       "sprite": "assets/regions/badgir-kiosk.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "No door, stair or landing in the composition connects to it.",
+          "source": "this project's observation",
+          "kind": "INFERENCE"
+        },
+        {
+          "claim": "The rung term Malakūt: the angelic realm of spirits (malakut, ruhaniyyat).",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Malakūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "the-chamber",
@@ -233,7 +315,24 @@
       "sprite": "assets/regions/the-chamber.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "Sa'di's Bustan describes no palace; the seven chambers come from Jami's Yusuf u Zulaykha, completed at Herat in 1483.",
+          "source": "art-historical literature on the Cairo Bustan",
+          "kind": "ATTESTED"
+        },
+        {
+          "claim": "The rung term Jabarūt: standard in the mulk/malakut/jabarut/lahut series; not attested in this corpus.",
+          "source": null,
+          "kind": "FIELD"
+        },
+        {
+          "claim": "Placing this element on the Jabarūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "chamber-arch",
@@ -259,7 +358,19 @@
       "sprite": "assets/regions/chamber-arch.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Jabarūt: standard in the mulk/malakut/jabarut/lahut series; not attested in this corpus.",
+          "source": null,
+          "kind": "FIELD"
+        },
+        {
+          "claim": "Placing this element on the Jabarūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "yusuf",
@@ -285,7 +396,24 @@
       "sprite": "assets/regions/yusuf.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "In Jami the doors give way at the touch of Yusuf's pointing finger; in Q 12:23 Zulaykha has locked them and they open regardless.",
+          "source": "Qur'an 12:23-25; Jami, Yusuf u Zulaykha",
+          "kind": "ATTESTED"
+        },
+        {
+          "claim": "The rung term Jabarūt: standard in the mulk/malakut/jabarut/lahut series; not attested in this corpus.",
+          "source": null,
+          "kind": "FIELD"
+        },
+        {
+          "claim": "Placing this element on the Jabarūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "yusuf-halo",
@@ -311,7 +439,24 @@
       "sprite": "assets/regions/yusuf-halo.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "Illumination as ontological rank rather than optics: there is no modelled light anywhere else in the folio.",
+          "source": "this project's observation",
+          "kind": "INFERENCE"
+        },
+        {
+          "claim": "The rung term Lāhūt: as above - the top of the series, and the rung no figure occupies here.",
+          "source": null,
+          "kind": "FIELD"
+        },
+        {
+          "claim": "Placing this element on the Lāhūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "zulaykha",
@@ -337,7 +482,24 @@
       "sprite": "assets/regions/zulaykha.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "Jami reframes her as the Sufi lover whose desire is redeemed into union, inverting the moral of the older telling.",
+          "source": "art-historical literature on Jami's poem",
+          "kind": "ATTESTED"
+        },
+        {
+          "claim": "The rung term Jabarūt: standard in the mulk/malakut/jabarut/lahut series; not attested in this corpus.",
+          "source": null,
+          "kind": "FIELD"
+        },
+        {
+          "claim": "Placing this element on the Jabarūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "chamber-tile-panel",
@@ -363,7 +525,19 @@
       "sprite": "assets/regions/chamber-tile-panel.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term ʿĀlam al-khayāl: simiya as the manipulation of imaginal constructs (khayalat).",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the ʿĀlam al-khayāl rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "chamber-carpet",
@@ -389,7 +563,19 @@
       "sprite": "assets/regions/chamber-carpet.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term ʿĀlam al-khayāl: simiya as the manipulation of imaginal constructs (khayalat).",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the ʿĀlam al-khayāl rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "chamber-threshold",
@@ -415,7 +601,19 @@
       "sprite": "assets/regions/chamber-threshold.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Barzakh: barzakh as a joining isthmus between the angelic realm and the body.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Barzakh rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "red-balcony",
@@ -441,7 +639,19 @@
       "sprite": "assets/regions/red-balcony.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Malakūt: the angelic realm of spirits (malakut, ruhaniyyat).",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Malakūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "balcony-doorway",
@@ -473,7 +683,19 @@
         "gloss": "A blind. Not every opening in this palace is a passage, and the game will not pretend otherwise."
       },
       "chain_index": null,
-      "blind": true
+      "blind": true,
+      "grounds": [
+        {
+          "claim": "The rung term Malakūt: the angelic realm of spirits (malakut, ruhaniyyat).",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Malakūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "muqarnas-eaves",
@@ -499,7 +721,24 @@
       "sprite": "assets/regions/muqarnas-eaves.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "Muqarnas subdivides a corner into tiers of niches until two incompatible shapes can meet: a technology of transition.",
+          "source": "general architectural history; not in this corpus",
+          "kind": "FIELD"
+        },
+        {
+          "claim": "The rung term Malakūt: the angelic realm of spirits (malakut, ruhaniyyat).",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Malakūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "balcony-brackets",
@@ -525,7 +764,24 @@
       "sprite": "assets/regions/balcony-brackets.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The brackets reach a wall that has already ended. The most explicit structural impossibility in the folio.",
+          "source": "this project's observation",
+          "kind": "INFERENCE"
+        },
+        {
+          "claim": "The rung term Malakūt: the angelic realm of spirits (malakut, ruhaniyyat).",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Malakūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "tile-roundel",
@@ -551,7 +807,19 @@
       "sprite": "assets/regions/tile-roundel.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term ʿĀlam al-khayāl: simiya as the manipulation of imaginal constructs (khayalat).",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the ʿĀlam al-khayāl rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "blue-tile-court",
@@ -577,7 +845,24 @@
       "sprite": "assets/regions/blue-tile-court.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "'Alam al-khayal is the domain where forms subsist as images.",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "The rung term ʿĀlam al-khayāl: simiya as the manipulation of imaginal constructs (khayalat).",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the ʿĀlam al-khayāl rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "green-door-arch",
@@ -603,7 +888,19 @@
       "sprite": "assets/regions/green-door-arch.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term ʿĀlam al-khayāl: simiya as the manipulation of imaginal constructs (khayalat).",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the ʿĀlam al-khayāl rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "green-door",
@@ -635,7 +932,19 @@
         "gloss": "The brackets descend to a point where the wall has already ended. The balcony is held up by the picture, not the building."
       },
       "chain_index": 5,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term ʿĀlam al-khayāl: simiya as the manipulation of imaginal constructs (khayalat).",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the ʿĀlam al-khayāl rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "orange-door-upper",
@@ -667,7 +976,19 @@
         "gloss": "There is no modelled light anywhere in the folio. The flame-halo is illumination as rank, not as optics."
       },
       "chain_index": 6,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term ʿĀlam al-khayāl: simiya as the manipulation of imaginal constructs (khayalat).",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the ʿĀlam al-khayāl rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "inscription-tablet",
@@ -693,7 +1014,24 @@
       "sprite": "assets/regions/inscription-tablet.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "Recent work reads this folio's architectural inscriptions as encomiums of the painter rather than eulogies of the patron.",
+          "source": "Balafrej, The Making of the Artist in Late Timurid Painting (2019) - not in hand; a lead, not a citation",
+          "kind": "FIELD"
+        },
+        {
+          "claim": "The rung term ʿĀlam al-khayāl: simiya as the manipulation of imaginal constructs (khayalat).",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the ʿĀlam al-khayāl rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "black-inscription-panel",
@@ -719,7 +1057,19 @@
       "sprite": "assets/regions/black-inscription-panel.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term ʿĀlam al-khayāl: simiya as the manipulation of imaginal constructs (khayalat).",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the ʿĀlam al-khayāl rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "staircase-upper",
@@ -745,7 +1095,24 @@
       "sprite": "assets/regions/staircase-upper.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "As the lower flight: the stair belongs to neither storey it joins.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "The rung term Barzakh: barzakh as a joining isthmus between the angelic realm and the body.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Barzakh rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "stair-landing",
@@ -771,7 +1138,19 @@
       "sprite": "assets/regions/stair-landing.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Barzakh: barzakh as a joining isthmus between the angelic realm and the body.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Barzakh rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "staircase-lower",
@@ -797,7 +1176,24 @@
       "sprite": "assets/regions/staircase-lower.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "Barzakh is rendered as a joining isthmus between the angelic realm and the body - which is what a stair is, in wood.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "The rung term Barzakh: barzakh as a joining isthmus between the angelic realm and the body.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Barzakh rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "orange-door-stairhead",
@@ -829,7 +1225,19 @@
         "gloss": "ʿĀlam al-khayāl is the realm where forms subsist as images. The lapis court refuses to settle into any one reading."
       },
       "chain_index": 4,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Barzakh: barzakh as a joining isthmus between the angelic realm and the body.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Barzakh rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "verse-cartouche-mid",
@@ -855,7 +1263,24 @@
       "sprite": "assets/regions/verse-cartouche-mid.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "As the upper verses: letters as the atoms of the imaginal realm.",
+          "source": "Melvin-Koushki, Of Islamic Grammatology, 26 n.97",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "The rung term Barzakh: barzakh as a joining isthmus between the angelic realm and the body.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Barzakh rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "ornate-door-lower",
@@ -887,7 +1312,19 @@
         "gloss": "Muqarnas subdivides a corner into niches until the mismatch disappears. It is a technology of transition."
       },
       "chain_index": 3,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Threshold: a staging rung this game invents to separate the street from the stair.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        },
+        {
+          "claim": "Placing this element on the Threshold rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "orange-door-under-stair",
@@ -919,7 +1356,19 @@
         "gloss": "Melvin-Koushki renders barzakh as a joining isthmus between the spiritual realm and the body. A stair is that, in wood."
       },
       "chain_index": 2,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Threshold: a staging rung this game invents to separate the street from the stair.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        },
+        {
+          "claim": "Placing this element on the Threshold rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "lower-portal",
@@ -945,7 +1394,19 @@
       "sprite": "assets/regions/lower-portal.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Threshold: a staging rung this game invents to separate the street from the stair.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        },
+        {
+          "claim": "Placing this element on the Threshold rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "iwan-door",
@@ -977,7 +1438,19 @@
         "gloss": "Star-and-cross tiling continues by rule, not by boundary. The frame decides where it stops; the pattern does not."
       },
       "chain_index": 1,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Threshold: a staging rung this game invents to separate the street from the stair.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        },
+        {
+          "claim": "Placing this element on the Threshold rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "iwan-spandrel-tile",
@@ -1003,7 +1476,19 @@
       "sprite": "assets/regions/iwan-spandrel-tile.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Threshold: a staging rung this game invents to separate the street from the stair.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        },
+        {
+          "claim": "Placing this element on the Threshold rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "tile-field-left",
@@ -1029,7 +1514,19 @@
       "sprite": "assets/regions/tile-field-left.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Threshold: a staging rung this game invents to separate the street from the stair.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        },
+        {
+          "claim": "Placing this element on the Threshold rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "tile-field-right",
@@ -1055,7 +1552,19 @@
       "sprite": "assets/regions/tile-field-right.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Threshold: a staging rung this game invents to separate the street from the stair.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        },
+        {
+          "claim": "Placing this element on the Threshold rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "brick-wall",
@@ -1081,7 +1590,24 @@
       "sprite": "assets/regions/brick-wall.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The only surface in the folio not treated as a field of pattern.",
+          "source": "this project's observation",
+          "kind": "INFERENCE"
+        },
+        {
+          "claim": "The rung term Mulk: the sensible kingdom, below the angelic realm of spirits.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Mulk rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "pink-portal",
@@ -1107,7 +1633,19 @@
       "sprite": "assets/regions/pink-portal.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Mulk: the sensible kingdom, below the angelic realm of spirits.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Mulk rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "street-door",
@@ -1139,7 +1677,24 @@
         "gloss": "The brick wall is the only ordinary material in the folio. Everything else has been made into a field."
       },
       "chain_index": 0,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "In the Qur'anic account the doors are locked from inside and open anyway; the shirt is torn at the last of them.",
+          "source": "Qur'an 12:23-25",
+          "kind": "ATTESTED"
+        },
+        {
+          "claim": "The rung term Mulk: the sensible kingdom, below the angelic realm of spirits.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Mulk rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "blue-dado",
@@ -1165,7 +1720,19 @@
       "sprite": "assets/regions/blue-dado.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term Mulk: the sensible kingdom, below the angelic realm of spirits.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Mulk rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "verse-cartouche-top",
@@ -1191,7 +1758,24 @@
       "sprite": "assets/regions/verse-cartouche-top.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "Letters, as the most fundamental of images, are the atoms of the imaginal realm - which is why the cartouches are treated here as architecture rather than as caption.",
+          "source": "Melvin-Koushki, Of Islamic Grammatology, 26 n.97",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "The rung term Lāhūt: as above - the top of the series, and the rung no figure occupies here.",
+          "source": null,
+          "kind": "FIELD"
+        },
+        {
+          "claim": "Placing this element on the Lāhūt rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "verse-cartouche-upper-left",
@@ -1217,7 +1801,19 @@
       "sprite": "assets/regions/verse-cartouche-upper-left.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The rung term ʿĀlam al-khayāl: simiya as the manipulation of imaginal constructs (khayalat).",
+          "source": "Melvin-Koushki, Pseudo-Shaykh Baha'i on the Supreme Name, 15",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the ʿĀlam al-khayāl rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     },
     {
       "id": "verse-cartouche-foot",
@@ -1243,7 +1839,24 @@
       "sprite": "assets/regions/verse-cartouche-foot.jpg",
       "lock": null,
       "chain_index": null,
-      "blind": false
+      "blind": false,
+      "grounds": [
+        {
+          "claim": "The only text in the folio still behaving like text on a page.",
+          "source": "this project's observation",
+          "kind": "INFERENCE"
+        },
+        {
+          "claim": "The rung term Mulk: the sensible kingdom, below the angelic realm of spirits.",
+          "source": "Melvin-Koushki, Occult Ecumenism, 24",
+          "kind": "CORPUS"
+        },
+        {
+          "claim": "Placing this element on the Mulk rung.",
+          "source": null,
+          "kind": "INTERPRETATION"
+        }
+      ]
     }
   ]
 }

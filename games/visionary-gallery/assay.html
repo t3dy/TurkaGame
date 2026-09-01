@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assay — Visionary Gallery</title>
+<link rel="stylesheet" href="./shared/gal.css?v=3">
+<style>
+  .wrap { max-width: 1000px; }
+  #q { font-size: 1.25rem; margin: 1.2rem 0 .2rem; }
+  #q b { color: var(--gold-hi); }
+  #hint { font-family: var(--sans); font-size: .76rem; color: var(--paper-dim);
+          line-height: 1.55; max-width: 74ch; }
+
+  .duel { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 1.2rem 0; }
+  @media (max-width: 700px) { .duel { grid-template-columns: 1fr; } }
+  .opt { border: 1px solid var(--rule); background: var(--bg-2); cursor: pointer;
+         padding: 0; text-align: left; color: inherit; font: inherit;
+         transition: border-color .12s, transform .12s; overflow: hidden; }
+  .opt:hover:not(:disabled) { border-color: var(--gold); transform: translateY(-2px); }
+  .opt img { width: 100%; height: 300px; object-fit: contain; background: #000; display: block; }
+  .opt .cap { padding: .5rem .65rem .6rem; }
+  .opt .cap b { display: block; font-size: .9rem; }
+  .opt .cap span { font-family: var(--sans); font-size: .64rem; color: var(--paper-dim); }
+  .opt.right { border-color: var(--turquoise); border-width: 2px; }
+  .opt.wrong { border-color: var(--vermilion); border-width: 2px; }
+  .opt .val { font-family: var(--mono); font-size: .8rem; color: var(--gold-hi); }
+  .opt:disabled { cursor: default; }
+
+  #verdict { font-family: var(--sans); font-size: .86rem; line-height: 1.6; min-height: 3.4em;
+             border-left: 2px solid var(--vermilion); padding-left: .7rem; }
+  #scoreline { font-family: var(--mono); font-size: .8rem; color: var(--paper-dim); }
+  #streak { display: flex; gap: 3px; margin: .4rem 0 0; }
+  #streak i { width: 13px; height: 13px; border: 1px solid var(--rule); display: block; }
+  #streak i.y { background: var(--turquoise); }
+  #streak i.n { background: var(--vermilion); }
+</style>
+</head>
+<body>
+  <div id="nav"></div>
+  <div class="wrap">
+    <h1>Assay</h1>
+    <p class="lede">Two folios, one measure. Pick the one that scores higher, then see the
+    numbers. The point is not the score — it is finding out which of these measures your eye
+    already had, and which ones it does not.</p>
+
+    <div id="q">…</div>
+    <div id="hint"></div>
+
+    <div class="duel">
+      <button class="opt" id="opt0"></button>
+      <button class="opt" id="opt1"></button>
+    </div>
+
+    <div id="verdict"></div>
+    <div class="hud" style="display:flex;gap:10px;align-items:center;margin-top:.9rem">
+      <button class="btn" id="next">Next pair</button>
+      <span id="scoreline"></span>
+    </div>
+    <div id="streak"></div>
+
+    <h2>Your record by measure</h2>
+    <table id="record"></table>
+    <div class="note">Pairs are drawn so the two folios differ by at least 25% of the corpus
+    range on the measure being asked about — otherwise the question would be a coin toss
+    dressed up as a question.</div>
+  </div>
+
+<script type="module" src="./assay.js?v=3"></script>
+</body>
+</html>

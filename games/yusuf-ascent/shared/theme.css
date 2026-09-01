@@ -133,4 +133,26 @@ a { color: var(--lapis); }
   margin-top: .8rem;
 }
 
+/* --- L3 grounding block on every card ---------------------------------- */
+.grounds { margin-top: .7rem; border-top: 1px solid var(--rule); padding-top: .5rem; }
+.grounds summary {
+  font-family: var(--sans); font-size: .66rem; letter-spacing: .06em;
+  cursor: pointer; color: var(--ink-soft); list-style: none;
+}
+.grounds summary::-webkit-details-marker { display: none; }
+.grounds summary::before { content: '▸ '; color: var(--vermilion); }
+.grounds[open] summary::before { content: '▾ '; }
+.grounds ul { margin: .45rem 0 0; padding-left: 0; list-style: none; }
+.grounds li {
+  font-family: var(--sans); font-size: .68rem; line-height: 1.5;
+  margin-bottom: .38rem; color: var(--ink-soft);
+}
+.grounds li em { color: var(--ink-soft); opacity: .85; }
+.gk {
+  display: inline-block; font-size: .54rem; letter-spacing: .1em;
+  padding: .05rem .32rem; border-radius: 2px; color: #fff; vertical-align: .1em;
+  margin-right: .3rem;
+}
+.grounds .dim { opacity: .6; }
+
 .hidden { display: none !important; }

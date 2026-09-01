@@ -44,6 +44,7 @@ Debug handles: `window.__yusufA`, `__yusufB`, `__yusufC`, `__yusufPortal`.
 | [`data/research.json`](data/research.json) | The research record. Hand-authored, every claim grounding-tagged. |
 | [`build_palace.py`](build_palace.py) | Regenerates `palace.json`. Annotations live here. |
 | [`DESIGN.md`](DESIGN.md) | Why each prototype is shaped the way it is |
+| [`DECISIONS.md`](DECISIONS.md) | Implementation choices, with rejected alternatives |
 | [`GRAPHICS.md`](GRAPHICS.md) | Graphics proposals, routed through the Three.js skill pack |
 | [`INTERFACE.md`](INTERFACE.md) | Interface proposals |
 
@@ -92,8 +93,16 @@ encounter inside another game:
 - Read completion from the debug handle (`__yusufA.state.done`,
   `__yusufA.state.opened.length`, `__yusufA.state.seen.size`) or add a
   `postMessage` on the win branch in `proto-a-doors/app.js`.
-- Nothing else is shared. There is no cross-game import, per this repo's rule against
+- Nothing else is shared. No *game logic* crosses folders, per this repo's rule against
   reaching between game folders before two prototypes are past a first slice.
+
+  One exception, deliberate and documented: the sibling
+  [Visionary Gallery](../visionary-gallery/README.md) imports **three.js** from this
+  project's `vendor/` rather than keeping a second 2 MB copy. A vendored third-party
+  library is not game logic, and duplicating it to satisfy the letter of that rule would
+  work against its purpose. Reasoning is at the import site and in
+  [`../visionary-gallery/DECISIONS.md`](../visionary-gallery/DECISIONS.md); the deploy
+  consequence is gotcha 3a in [`DEPLOY_STATE.md`](../../DEPLOY_STATE.md).
 
 See [DESIGN.md § As a dream encounter](DESIGN.md#as-a-dream-encounter) for the framing
 that would make it fit the career sim rather than just sit inside it.

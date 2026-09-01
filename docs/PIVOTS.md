@@ -163,6 +163,34 @@ have caught the backdrop bug automatically.
 
 ---
 
+## P6 — From "write the missing entry" to "delete my own and keep theirs"
+
+**Was.** The L2 export named its own highest-value gap: the portal had no divination entry,
+so the Falnāma tradition had nothing honest to link to. The obvious move was to write one,
+and the corpus supports it richly — four Melvin-Koushki geomancy studies, 326 hits in
+*Persianate Geomancy* alone. A full `ilm-al-raml` entry was drafted, seeded and wired in.
+
+**Changed to.** Deleting it, and using the entry a **concurrent session** had written in
+the same hours.
+
+**Why.** Re-running the export after seeding failed immediately: the other session had
+rewritten `portal/data/seed.json`, adding `geomancy` and `jafr` and merging away two
+entries the L2 mapping referenced. Their `geomancy` was already wiki-linked into the rest
+of the portal and written in its voice. Two entries for one science is worse than either
+alone, and editing their live entry to fold mine in is a concurrent-write hazard dressed up
+as helpfulness.
+
+**Cost.** An hour of corpus mining that did not ship as an entry — but did not evaporate
+either: it is in `portal/docs/NOTE_geomancy_merge_candidate.md` with every citation, for a
+deliberate merge by whoever owns `geomancy`.
+
+**Watch for.** Two things. First, **`seed_from_json.py` prunes** — a row removed upstream
+disappears downstream, so anything consuming the portal DB must be re-run after a re-seed
+and must fail loudly on a missing slug rather than skipping it. The export's `sys.exit` is
+what caught this in seconds. Second, and more general: in a repo where other sessions are
+writing the same files, **check whether the gap you are about to fill is still a gap**
+before you fill it. The export told me it was; twenty minutes later it was not.
+
 ## What has not pivoted, and should not without argument
 
 - **Boxes stay in `imagelab/`.** Two builds now depend on this; it is what made re-cutting

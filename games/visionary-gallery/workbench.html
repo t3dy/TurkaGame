@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workbench — Visionary Gallery</title>
+<link rel="stylesheet" href="./shared/gal.css?v=3">
+<style>
+  .wrap { max-width: 1340px; }
+  .head { display: flex; align-items: baseline; gap: .8rem; flex-wrap: wrap; }
+  .head h1 { font-size: 1.5rem; }
+  .tabs { display: flex; gap: 6px; margin: 1rem 0 .9rem; flex-wrap: wrap; }
+
+  .pane { display: none; }
+  .pane.on { display: block; }
+
+  .split { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,1fr); gap: 24px; align-items: start; }
+  @media (max-width: 940px) { .split { grid-template-columns: 1fr; } }
+
+  .folio-box { position: relative; line-height: 0; background: #000;
+               border: 1px solid var(--gold); }
+  .folio-box img { width: 100%; display: block; }
+
+  #stage3d { width: 100%; height: 560px; background: #14131a; border: 1px solid var(--rule); }
+  #stage3d canvas { display: block; width: 100%; height: 100%; }
+  .hud { display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+         font-family: var(--sans); font-size: .72rem; margin-top: .5rem; }
+  .hud input[type=range] { accent-color: var(--gold); width: 150px; }
+
+  /* papercraft peel */
+  #peel { perspective: 1400px; height: 500px; display: grid; place-items: center;
+          background: radial-gradient(ellipse at 50% 40%, #35333d, #1a1920 70%);
+          border: 1px solid var(--rule); overflow: hidden; }
+  #peel-stack { position: relative; transform-style: preserve-3d;
+                transition: transform .25s ease-out; }
+  #peel-stack .plate { position: absolute; left: 50%; top: 50%; transform-origin: center; }
+  #peel-stack .plate img { display: block; }
+
+  .rose-row { display: flex; gap: 18px; align-items: flex-start; flex-wrap: wrap; }
+  .rose-row canvas { background: var(--bg-2); border: 1px solid var(--rule); }
+  #att { image-rendering: pixelated; width: 210px; height: 210px;
+         border: 1px solid var(--rule); }
+
+  .kv { font-family: var(--sans); font-size: .74rem; }
+  .kv dt { color: var(--vermilion-hi); font-size: .6rem; letter-spacing: .1em;
+           text-transform: uppercase; margin-top: .5rem; }
+  .kv dd { margin: .1rem 0 0; color: var(--paper); }
+
+  .regcard { background: var(--bg-2); border: 1px solid var(--rule); padding: .6rem .7rem;
+             font-family: var(--sans); font-size: .74rem; min-height: 60px; }
+  .regcard .sw { display: inline-block; width: 12px; height: 12px; vertical-align: -2px;
+                 border: 1px solid var(--rule); margin-right: .35rem; }
+
+  /* play */
+  #play-folio { position: relative; }
+  #play-folio img { width: 100%; display: block; }
+  #target { position: absolute; pointer-events: none; border: 2px solid var(--turquoise); }
+  #guess  { position: absolute; pointer-events: none; border: 2px dashed var(--vermilion); }
+  #play-plate { max-width: 230px; border: 1px solid var(--gold); background: #2b2933; }
+</style>
+</head>
+<body>
+  <div id="nav"></div>
+  <div class="wrap">
+    <div class="head">
+      <a href="index.html" style="font-family:var(--sans);font-size:.74rem">← gallery</a>
+      <h1 id="title">…</h1>
+      <span class="pill" id="tradpill"></span>
+    </div>
+    <div class="lede" id="why"></div>
+
+    <div class="tabs" id="tabs"></div>
+
+    <!-- FOLIO -->
+    <section class="pane" id="pane-folio">
+      <div class="split">
+        <div>
+          <div class="folio-box" id="folio-box"><img id="folio-img" alt=""></div>
+          <div class="hud">
+            <button class="btn active" id="tg-regions">Regions</button>
+            <button class="btn" id="tg-labels">Labels</button>
+            <button class="btn" id="tg-layers">Colour by layer</button>
+          </div>
+        </div>
+        <div>
+          <div class="regcard" id="regcard">Click a region.</div>
+          <h3>Provenance</h3>
+          <dl class="kv" id="prov"></dl>
+          <div class="note" id="rights"></div>
+          <div id="scholar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANALYSIS -->
+    <section class="pane" id="pane-analysis">
+      <div class="split">
+        <div>
+          <h3>Where this folio sits in the corpus</h3>
+          <div id="bars"></div>
+          <h3>Palette</h3>
+          <div id="pal"></div>
+          <div class="note" id="palnote"></div>
+        </div>
+        <div>
+          <div class="rose-row">
+            <div>
+              <h3 style="margin-top:0">Attention</h3>
+              <canvas id="att" width="16" height="16"></canvas>
+              <div class="dim mono" style="margin-top:.3rem">16×16 detail density</div>
+            </div>
+            <div>
+              <h3 style="margin-top:0">Orientation rose</h3>
+              <canvas id="rose"></canvas>
+              <div class="dim mono" style="margin-top:.3rem">edge angles, page axes marked</div>
+            </div>
+          </div>
+          <img id="detmap" style="width:100%;margin-top:1rem;border:1px solid var(--rule)" alt="">
+          <div class="note">Detail map: local gradient energy. This is the field the
+            attention grid averages, and the one the region proposals are scored against.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPTH -->
+    <section class="pane" id="pane-depth">
+      <div class="split">
+        <div>
+          <div id="stage3d"></div>
+          <div class="hud">
+            <label>Explode <input type="range" id="ex3" min="0" max="100" value="0"></label>
+            <button class="btn active" id="m-station">Station point</button>
+            <button class="btn" id="m-orbit">Orbit</button>
+            <span class="dim" id="inv"></span>
+          </div>
+        </div>
+        <div>
+          <h3 style="margin-top:0">The same rule as Yūsuf Ascent, run on machine layers</h3>
+          <p>Each auto-proposed region becomes a flat quad whose depth is the layer the
+          heuristic gave it. Positions and sizes are compensated about a station point by
+          <span class="mono">k = (D − z)/D</span>, so from one privileged viewpoint the
+          exploded stack projects to the identical image as the flat folio. Move at all and
+          it comes apart.</p>
+          <p>The difference from
+          <a href="../yusuf-ascent/proto-b-stack/index.html">Prototype B</a> is the input:
+          there the 43 elements and their seven rungs were drawn and argued by hand; here
+          nothing was touched. This is the same mechanism with the labour removed, and it is
+          visibly cruder. That comparison is the point.</p>
+          <div class="note" id="layernote"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAPERCRAFT -->
+    <section class="pane" id="pane-paper">
+      <div class="split">
+        <div>
+          <div id="peel"><div id="peel-stack"></div></div>
+          <div class="hud">
+            <label>Separate <input type="range" id="peelr" min="0" max="100" value="45"></label>
+            <label>Turn <input type="range" id="peelrot" min="-55" max="55" value="-24"></label>
+            <a class="btn" id="dl" download>Download the printable sheet</a>
+          </div>
+        </div>
+        <div>
+          <h3 style="margin-top:0">A paper tunnel book</h3>
+          <p>A tunnel book is a stack of cards held apart by concertina side walls, each cut
+          away except for what belongs on its plane. It has exactly the property the 3D view
+          was built to demonstrate — <em>the picture only coheres from the front</em> — and it
+          is about three hundred years older.</p>
+          <p>The sheet is a single self-contained SVG: cards with fold-back tabs, two notched
+          side walls, cut lines in red and folds in dashed blue. Print at 100%, cut, fold,
+          slot together back card first.</p>
+          <dl class="kv" id="paperkv"></dl>
+          <div class="note">Region <em>boxes</em>, not traced silhouettes — a box is what you
+          can cut with a knife and a steel rule on a kitchen table.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAY -->
+    <section class="pane" id="pane-play">
+      <div class="split">
+        <div>
+          <div id="play-folio"><img id="play-img" alt=""></div>
+        </div>
+        <div>
+          <h3 style="margin-top:0">Anatomy</h3>
+          <p>Here is one plate cut out of this folio. Click the spot on the page it was
+          lifted from. Scored by how close the centre of your click lands to the centre of
+          the plate, as a fraction of the page diagonal.</p>
+          <img id="play-plate" alt="">
+          <div class="hud">
+            <button class="btn" id="play-next">New plate</button>
+            <span id="play-score" class="mono"></span>
+          </div>
+          <div class="note" id="play-msg">Click the folio when you have decided.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<script type="module" src="./workbench.js?v=3"></script>
+</body>
+</html>

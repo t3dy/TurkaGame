@@ -1,0 +1,143 @@
+/* Visionary Gallery — shared shell.
+   Palette stays with the TurkaGame house colours (cream / lapis / vermilion /
+   gold) but the type is smaller and denser than the game pages: this is a
+   workbench, not a scene. */
+
+:root {
+  --paper:      #f1dac1;
+  --paper-dim:  #b9b0a6;
+  --ink:        #2b2723;
+  --bg:         #1b1a20;
+  --bg-2:       #232128;
+  --bg-3:       #2b2933;
+  --lapis:      #1e3f7a;
+  --lapis-hi:   #4d7fd6;
+  --turquoise:  #2e8f8f;
+  --vermilion:  #c06523;
+  --vermilion-hi:#e0a255;
+  --gold:       #c99a2e;
+  --gold-hi:    #e8c86a;
+  --rule:       rgba(241,218,193,.16);
+
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --mono: "SF Mono", "Cascadia Mono", Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--paper); font-family: var(--serif); }
+a { color: var(--vermilion-hi); }
+
+/* --- tradition accents: one hue per tradition, used everywhere --- */
+.t-cairo-bustan { --acc: #c06523; }
+.t-miraj        { --acc: #c99a2e; }
+.t-haft-paykar  { --acc: #8e3f6b; }
+.t-siyah-qalam  { --acc: #6f7f8e; }
+.t-ajaib        { --acc: #3f7a63; }
+.t-falnama      { --acc: #a8452f; }
+.t-jalayirid    { --acc: #4d7fd6; }
+.t-mantiq       { --acc: #2e8f8f; }
+
+.topbar {
+  display: flex; align-items: baseline; gap: .9rem; flex-wrap: wrap;
+  padding: .55rem 1rem; background: #141319; border-bottom: 1px solid var(--gold);
+  font-family: var(--sans); font-size: .78rem; position: sticky; top: 0; z-index: 20;
+}
+.topbar .title { font-family: var(--serif); font-size: 1rem; }
+.topbar .spacer { flex: 1 1 auto; }
+.topbar a { text-decoration: none; }
+.topbar a:hover { text-decoration: underline; }
+.topbar .sep { opacity: .3; }
+
+.btn {
+  font-family: var(--sans); font-size: .74rem; letter-spacing: .05em;
+  padding: .34rem .72rem; border: 1px solid var(--gold); border-radius: 2px;
+  background: transparent; color: var(--paper); cursor: pointer;
+}
+.btn:hover { background: rgba(201,154,46,.16); }
+.btn.active { background: var(--gold); color: #16151a; }
+.btn:disabled { opacity: .35; cursor: not-allowed; }
+
+.wrap { max-width: 1280px; margin: 0 auto; padding: 22px 18px 70px; }
+
+h1 { font-size: 1.9rem; margin: 0 0 .25rem; line-height: 1.15; }
+h2 { font-size: 1.1rem; margin: 2rem 0 .6rem; color: var(--gold-hi);
+     border-bottom: 1px solid rgba(201,154,46,.28); padding-bottom: .28rem; }
+h3 { font-size: .95rem; margin: 1.1rem 0 .3rem; }
+p  { line-height: 1.66; font-size: .93rem; color: #ddd4c9; }
+.lede { font-family: var(--sans); font-size: .85rem; color: var(--paper-dim);
+        line-height: 1.62; max-width: 66ch; }
+
+.mono { font-family: var(--mono); font-size: .74rem; }
+.dim  { color: var(--paper-dim); }
+
+/* --- cards --- */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
+.card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--bg-2); border: 1px solid var(--rule);
+  border-top: 3px solid var(--acc, var(--gold));
+  overflow: hidden; transition: transform .14s, border-color .14s, background .14s;
+}
+.card:hover { transform: translateY(-2px); background: var(--bg-3); border-color: var(--gold); }
+.card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; background: #000; }
+.card .body { padding: .5rem .6rem .65rem; }
+.card .name { font-size: .86rem; line-height: 1.25; }
+.card .sub  { font-family: var(--sans); font-size: .62rem; color: var(--paper-dim);
+              letter-spacing: .05em; margin-top: .2rem; }
+
+.pill {
+  display: inline-block; font-family: var(--sans); font-size: .58rem;
+  letter-spacing: .1em; text-transform: uppercase; padding: .12rem .42rem;
+  border-radius: 2px; background: var(--acc, var(--gold)); color: #14131a;
+}
+.pill.ghost { background: transparent; border: 1px solid var(--rule); color: var(--paper-dim); }
+
+/* --- metric bars --- */
+.metrics { display: grid; gap: .35rem; }
+.metric { display: grid; grid-template-columns: 128px 1fr 48px; align-items: center; gap: .5rem;
+          font-family: var(--sans); font-size: .68rem; }
+.metric .bar { height: 7px; background: rgba(241,218,193,.10); position: relative; }
+.metric .bar i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--acc, var(--gold)); }
+.metric .bar u { position: absolute; top: -3px; bottom: -3px; width: 1px;
+                 background: var(--paper-dim); text-decoration: none; }
+.metric .v { text-align: right; font-family: var(--mono); color: var(--paper); }
+.metric .k { color: var(--paper-dim); }
+
+.swatches { display: flex; height: 16px; border: 1px solid var(--rule); }
+.swatches i { display: block; height: 100%; }
+
+.note {
+  font-family: var(--sans); font-size: .72rem; line-height: 1.55; color: var(--paper-dim);
+  border-left: 2px solid var(--vermilion); padding-left: .65rem; margin: .9rem 0;
+}
+.callout { background: rgba(30,63,122,.26); border: 1px solid var(--lapis-hi);
+           padding: .75rem .9rem; margin: 1rem 0; }
+.callout strong { color: var(--gold-hi); }
+.callout p { margin: .3rem 0 0; }
+
+table { width: 100%; border-collapse: collapse; font-size: .8rem; }
+th, td { text-align: left; padding: .35rem .45rem; border-bottom: 1px solid var(--rule);
+         vertical-align: top; }
+th { font-family: var(--sans); font-size: .6rem; letter-spacing: .1em;
+     text-transform: uppercase; color: var(--paper-dim); }
+
+/* --- scholarship entries exported from the portal DB (L2) --------------- */
+.schol { border-left: 3px solid var(--lapis-hi); background: rgba(30,63,122,.14);
+         padding: .55rem .75rem .6rem; margin: .6rem 0; }
+.schol-head { display: flex; justify-content: space-between; gap: .6rem; align-items: baseline;
+              font-size: .9rem; }
+.schol-meta { font-family: var(--sans); font-size: .62rem; letter-spacing: .06em;
+              color: var(--paper-dim); text-transform: uppercase; margin-top: .1rem; }
+.schol-card { font-size: .84rem; line-height: 1.58; color: #ddd4c9; margin-top: .35rem; }
+.schol-why  { font-family: var(--sans); font-size: .7rem; line-height: 1.5;
+              color: var(--vermilion-hi); margin-top: .45rem; }
+.schol-why em { color: var(--paper-dim); }
+.schol-lit  { font-family: var(--sans); font-size: .66rem; color: var(--paper-dim);
+              margin-top: .35rem; border-top: 1px dotted var(--rule); padding-top: .3rem; }
+.schol-chips { display: flex; flex-wrap: wrap; gap: .3rem; margin: .35rem 0 .75rem; }
+.schol-chips span { font-family: var(--sans); font-size: .62rem; letter-spacing: .05em;
+                    border: 1px solid var(--lapis-hi); color: var(--lapis-hi);
+                    padding: .1rem .45rem; border-radius: 999px; cursor: help; }
+
+.hidden { display: none !important; }

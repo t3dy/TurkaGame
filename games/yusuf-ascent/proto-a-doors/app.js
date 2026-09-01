@@ -7,7 +7,7 @@
 //
 // The eighth opening (the balcony door) is a blind and cannot be opened.
 
-import { loadPalace, renderCard, folioURL, clamp } from '../shared/data.js?v=1';
+import { loadPalace, renderCard, folioURL, clamp } from '../shared/data.js?v=2';
 
 const folio   = document.getElementById('folio');
 const img     = document.getElementById('folio-img');
@@ -172,7 +172,10 @@ function onClick(node, el) {
   state = newState();
 
   img.src = folioURL(palace);
-  await img.decode().catch(() => {});
+  // Do NOT await img.decode(). Hotspots are positioned in percentages, so they
+  // never need the decoded dimensions — and decode() does not settle at all in a
+  // hidden or throttled tab, which silently hung the whole boot when this page
+  // was opened in a background tab.
   buildHotspots();
   refresh();
   fbEl.textContent = 'Click anything. Every element in the folio returns a card.';

@@ -186,9 +186,103 @@ def gen_images(args) -> None:
     print("    python tools/batch/run_batch.py --tasks tools/batch/tasks/images.jsonl --limit 5")
 
 
+def gen_visionary(args) -> None:
+    """Per-image annotation for the visionary corpus.
+
+    docs/VISIONARY_ENVIRONMENTS.md says the expensive part of the pipeline is not
+    the code, it is the annotation — and the machine-vs-hand comparison
+    (imagelab/data/hand_vs_machine.json) shows exactly how expensive: the automatic
+    region proposer finds 27% of what a human found, and misses the figure, the
+    halo and the brackets, which is to say every element the argument is made of.
+
+    So this is the missing tier. One image per task, a bounded rubric, and the
+    measured facts handed over in the prompt so the model is naming what is there
+    rather than inventing an interpretation. Haiku's 200K context is ample: each
+    task carries one image and about 2K tokens of its own measurements.
+
+    The output is a proposal for a human to accept, not a fact. Everything it
+    writes lands under review_status DRAFT.
+    """
+    analysis_path = REPO_ROOT / "imagelab" / "data" / "analysis.json"
+    manifest_path = REPO_ROOT / "imagelab" / "data" / "visionary.json"
+    if not analysis_path.exists() or not manifest_path.exists():
+        sys.exit("run imagelab/scripts/fetch_commons.py and analyze.py first")
+
+    ana = json.loads(analysis_path.read_text(encoding="utf-8"))
+    man = {r["id"]: r for r in json.loads(manifest_path.read_text(encoding="utf-8"))["images"]}
+
+    tasks = []
+    for rec in ana["images"]:
+        cid = rec["id"]
+        m = man.get(cid)
+        if not m:
+            continue
+        if args.only and cid not in args.only.split(","):
+            continue
+
+        met = rec["metrics"]
+        prov = m["provenance"]
+        out = f"imagelab/data/annotations/{cid}.json"
+
+        # The measured facts, handed over so the model describes rather than guesses.
+        facts = (
+            f"- tradition: {rec['tradition']}\n"
+            f"- why it is in the corpus: {m['why_here']}\n"
+            f"- artist (from Commons): {prov.get('artist') or 'not stated'}\n"
+            f"- institution (from Commons): {prov.get('institution') or 'not stated'}\n"
+            f"- date (from Commons): {prov.get('date') or 'not stated'}\n"
+            f"- measured mean chroma: {met['chroma_mean']} (corpus runs 0-40; "
+            f"under ~12 is a tinted drawing, over ~28 a full illumination)\n"
+            f"- measured bare-paper share: {met['ground_fraction']:.3f} "
+            f"(over ~0.3 means much of the sheet is unpainted)\n"
+            f"- measured attention evenness: {met['attention_evenness']}\n"
+            f"- measured rectilinearity: {met['rectilinearity']}\n"
+            f"- the pipeline proposed {len(rec['regions'])} regions automatically"
+        )
+
+        prompt = (
+            f"Look at the image `{m['file']}` with the Read tool. Nothing else needs reading.\n\n"
+            "You are writing one annotation record for a research gallery of Persianate "
+            "painting. Here is what has already been measured about this folio; use it, do "
+            "not restate it, and do not contradict it:\n\n"
+            f"{facts}\n\n"
+            "Write JSON to `" + out + "` with exactly these keys:\n"
+            '  "id", "description" (60-110 words: what is actually visible — figures, '
+            'architecture, text blocks, ground; concrete nouns, no adjectives of praise), '
+            '"iconography" (2-3 strings, each naming one specific compositional fact and '
+            'what it does — the kind of observation that could be checked against the '
+            'picture), "elements" (5-10 strings naming the discrete things a player could '
+            'click: a door, a figure, a text panel, a tile field), "game_use" (2-3 strings: '
+            'concrete uses in a game about visionary experience), "confidence" '
+            '"HIGH|MEDIUM|LOW", "uncertainties" (strings: what you could not tell from the '
+            'image alone).\n\n'
+            "Hard rules. Describe only what is in the picture. Do NOT invent a shelfmark, a "
+            "folio number, a patron, an artist, or a date — if the facts above do not state "
+            "one, it is unknown and stays unknown. Do NOT assert what a scene depicts "
+            "narratively unless the image plainly shows it; 'a seated figure receiving a "
+            "kneeling one' is right where 'the sultan receives an ambassador' is a guess. "
+            "Do NOT interpret the picture cosmologically — a separate hand-authored pass "
+            "does that, and it needs your description to be neutral. Use LOW confidence "
+            "freely; every record below HIGH gets human review before it ships."
+        )
+
+        tasks.append({
+            "id": f"vis-{cid}",
+            "prompt": prompt,
+            "output_file": out,
+            "model": args.model,
+            "allowed_tools": "Read Write",
+        })
+
+    write_manifest("visionary", tasks)
+    print("  These are PROPOSALS for human review, not facts. Run five first:")
+    print("    python tools/batch/run_batch.py --tasks tools/batch/tasks/visionary.jsonl --limit 5")
+
+
 GENERATORS = {
     "corpus": (gen_corpus, "chunked claim-extraction over the portal's converted sources"),
     "images": (gen_images, "caption verification for auto-extracted plates in the portal DB"),
+    "visionary": (gen_visionary, "per-image annotation for the visionary gallery corpus"),
 }
 
 
@@ -206,6 +300,10 @@ def main() -> None:
     p = sub.add_parser("images", help=GENERATORS["images"][1])
     p.add_argument("--status", default="DRAFT", help="review_status to select (default: DRAFT)")
     p.add_argument("--limit", type=int, help="cap the number of tasks generated")
+    p.add_argument("--model", default="claude-haiku-4-5")
+
+    p = sub.add_parser("visionary", help=GENERATORS["visionary"][1])
+    p.add_argument("--only", help="comma-separated image ids, default all")
     p.add_argument("--model", default="claude-haiku-4-5")
 
     args = ap.parse_args()

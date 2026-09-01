@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yūsuf Ascent — a puzzle on Bihzād's impossible palace</title>
-<link rel="stylesheet" href="./shared/theme.css?v=1">
+<link rel="stylesheet" href="./shared/theme.css?v=2">
 <style>
   html, body { background: #201e25; color: var(--paper); }
   main { max-width: 1080px; margin: 0 auto; padding: 30px 18px 80px; }
@@ -98,6 +98,16 @@
         <div class="dim">drag-sort · interpretive · fastest to grasp</div>
       </a>
 
+      <a class="proto" href="../visionary-gallery/index.html">
+        <div class="k">Companion · 22 folios</div>
+        <h2>Visionary Gallery</h2>
+        <p>The same pipeline run automatically over 22 more Persianate folios — including
+        six from this very manuscript. Measured, deconstructed, turned into printable paper
+        tunnel books and 3D, and playable. It also measures how much worse the machine is
+        than the hand-drawn decomposition here.</p>
+        <div class="dim">generated · papercraft · corpus metrics</div>
+      </a>
+
       <a class="proto" href="./portal/index.html">
         <div class="k">Research</div>
         <h2>The palace that is not a building</h2>
@@ -113,6 +123,9 @@
       <code>turkagame-site</code> (port 7521) — and open
       <code>/games/yusuf-ascent/index.html</code>. Debug handles:
       <code>window.__yusufA</code>, <code>__yusufB</code>, <code>__yusufC</code>, <code>__yusufPortal</code>.</p>
+      <p><b>Grounding.</b> Every element carries what it rests on — tagged ATTESTED, CORPUS,
+      FIELD, INFERENCE or INTERPRETATION — shown on its card under "Rests on". That is
+      <code>CONTEXTENGINEERINGGAMEPIPELINES.md</code>'s L3 applied to a picture instead of a scene.</p>
       <p><b>Honesty.</b> The seven-rung ladder and the door chain are this project's interpretation of the
       painting, not labels it carries — and no source in our corpus connects Bihzād to Ibn Turka at all. The
       <a href="./portal/index.html">portal</a> tags every claim with how well it is grounded, including that
@@ -124,7 +137,7 @@
   </main>
 
 <script type="module">
-  import { loadPalace, spriteURL } from './shared/data.js?v=1';
+  import { loadPalace, spriteURL } from './shared/data.js?v=2';
   const p = await loadPalace('.');
   const strip = document.getElementById('strip');
   const pick = ['street-door','iwan-door','staircase-lower','green-door','blue-tile-court',

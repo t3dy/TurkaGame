@@ -115,6 +115,8 @@ TurkaGame/
 │   ├── roguelike/              design doc only, see docs/GAME_ROGUELIKE.md
 │   ├── yusuf-ascent/           standalone puzzle minigame + research portal on one
 │   │                             painting — see games/yusuf-ascent/README.md
+│   ├── visionary-gallery/      22 folios fetched, measured, deconstructed, papercrafted,
+│   │                             3D'd and made playable — games/visionary-gallery/README.md
 │   └── career-sim/             pointer only — moved to CareerSim/
 ├── CareerSim/               the career-sim subproject (own CLAUDE.md/DESIGN.md/docs;
 │                             Next.js+Supabase target, deploys separately to Vercel)
@@ -161,6 +163,47 @@ Two house rules it establishes, worth reusing:
   game's seven-rung ascent and door chain are *ours*, not the painting's, and every
   surface that uses them says so at the point of use — including the negative result
   that no source in the 43-source corpus mentions Bihzād or Zulaykha at all.
+
+## Visionary Gallery (added 2026-08-31)
+
+[`games/visionary-gallery/`](games/visionary-gallery/README.md) — the **automatic**
+counterpart to Yūsuf Ascent. 22 Commons folios fetched with structured-licence rights
+checking, measured, auto-decomposed, turned into printable paper tunnel books and 3D
+stacks, and made playable. Pipeline lives in `imagelab/scripts/`:
+`fetch_commons.py` → `analyze.py` → `papercraft.py` → `build_gallery.py`, plus
+`compare_hand.py`, which scores the machine against this repo's one hand-made
+decomposition.
+
+Two house rules it adds:
+
+- **Rights gates belong in the script, not in a human's memory.** `fetch_commons.py`
+  reads Commons' structured licence data and refuses to download anything that does not
+  parse as free. Its first version over-blocked 19 of 22 files through a regex bug; the
+  bug is documented in the script rather than quietly fixed, because a gate that
+  silently over-blocks is one edit from silently under-blocking.
+- **Measure the claims you write.** Two sentences in this project's own prose were
+  contradicted by measuring them, and both stayed on the page with the contradiction
+  (`games/visionary-gallery/method.html`). `imagelab/data/hand_vs_machine.json` is the
+  record: the automatic pipeline **ranks** regions much as the hand does (ρ = 0.86) and
+  **finds** only 27% of them.
+
+Per `CONTEXTENGINEERINGGAMEPIPELINES.md`: Yūsuf Ascent is **L1** (hand-authored access
+layer) and half of **L3** (every element carries what it rests on, shown in-game); the
+gallery is **L4** (data-driven generation); and **L2 was built 2026-09-01** —
+`portal/scripts/export_gallery_scholarship.py` exports portal entries from
+`portal/db/turka.db` into the gallery at build time, entries the portal's and
+regenerable, only the links authored. See `docs/DECISIONS.md` § 2026-09-01, including
+the flagged deviation (source DB is `turka.db`, not the sibling `islamicate.db` the
+earlier entry named).
+
+**Decision records for both.** Project-level entries are appended to
+[`docs/DECISIONS.md`](docs/DECISIONS.md) in the house Decision/Rationale/Rejected/Consequence
+format. Implementation detail lives in
+[`games/yusuf-ascent/DECISIONS.md`](games/yusuf-ascent/DECISIONS.md) and
+[`games/visionary-gallery/DECISIONS.md`](games/visionary-gallery/DECISIONS.md).
+**Direction changes made mid-build — the places where the first approach turned out to be
+wrong — are in [`docs/PIVOTS.md`](docs/PIVOTS.md)**, which is the file to read before
+re-deciding anything here.
 
 Companion research: [`docs/VISIONARY_ENVIRONMENTS.md`](docs/VISIONARY_ENVIRONMENTS.md) —
 eight other Persianate visionary traditions (the Herat *Miʿrājnāma*, the Freer Jalāyirid

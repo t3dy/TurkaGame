@@ -195,6 +195,80 @@ HEAD, not merely "pushed"):
 2. **`site/index.html` nav entry and Play card.** The prototype was otherwise live
    but unreachable from anywhere on the site.
 
+- **Visionary Gallery (2026-08-31), verified in-browser.** `games/visionary-gallery/`
+  — the **automatic** counterpart to Yūsuf Ascent's hand work. 22 Persianate folios
+  fetched, measured, deconstructed, papercrafted, 3D'd and made playable.
+  - **22 images, 0 blocked.** `imagelab/scripts/fetch_commons.py` reads Commons'
+    structured licence data and refuses anything not free. Includes **six folios from
+    the Cairo Būstān itself** — the same manuscript and painter as Yūsuf Ascent's —
+    which is the controlled comparison the portal's open questions asked for.
+  - **Measured, not asserted.** `analyze.py` (fixed seed, deterministic) computes
+    attention evenness, orientation spread, rectilinearity, bare-ground fraction, mean
+    Lab chroma, a k-means palette, 475 auto-proposed regions and a layer assignment.
+    The traditions separate on chroma × bare-ground without being told to: Jalāyirid
+    drawings and Timurid illuminations land in opposite corners of the gallery scatter.
+  - **Papercraft.** `papercraft.py` emits a printable paper tunnel book per folio —
+    cards with fold-back tabs, notched concertina side walls, cut lines red and folds
+    dashed blue, as one self-contained SVG. Verified rendering.
+  - **Playable site.** Gallery + per-folio workbench (Folio / Analysis / Depth 3D /
+    Papercraft / Play) + a corpus game (Assay) + a Method page. All verified live:
+    22 cards, 8 traditions, no broken links, both games scored end to end, the 3D
+    station-point invariant holds at 0 drift across 27 quads.
+  - **Two of this project's own sentences were contradicted by measuring them, and
+    both stayed on the page.** (1) "Every surface is finished to the same degree of
+    attention" ranks the Yūsuf folio 14th of 22 — the metric punishes Bihzād's
+    deliberate blank arch, which locates a confound rather than refuting the claim.
+    (2) An earlier draft of the gallery claimed the machine agreed with the hand
+    "about two thirds of the time"; nobody had measured it. `compare_hand.py` did:
+    the machine **ranks** well (Spearman ρ = 0.86, p = 0.0006) and **finds** badly
+    (27% of hand regions at IoU ≥ 0.2, 7% at 0.3), missing the chamber, Yūsuf, the
+    halo and the brackets — every element the argument is made of.
+  - Two real bugs found this way: the rights regex over-blocked 19 of 22 files, and
+    the layer ordering was inverted so the highest-salience regions were being
+    absorbed into the papercraft ground plate. Both fixed, both documented in the
+    scripts rather than quietly patched.
+- **Yūsuf Ascent v2 — L3 grounding.** Every one of the 43 elements now carries what it
+  rests on (104 claim rows: 5 ATTESTED, 33 CORPUS, 10 FIELD, 6 INFERENCE, 50
+  INTERPRETATION), shown in-game on each card under "Rests on". That is
+  `CONTEXTENGINEERINGGAMEPIPELINES.md`'s L3 applied to a picture instead of a scene.
+  Also fixed a real hang: `await img.decode()` never settles in a hidden or throttled
+  tab and was silently blocking Prototype A's boot.
+- **Decision records written for all of the above.** `docs/DECISIONS.md` gained a dated
+  block in the house format (10 entries); `docs/PIVOTS.md` is new and records the five
+  places the work changed direction mid-build, each with what it cost and what to watch;
+  `games/yusuf-ascent/DECISIONS.md` and `games/visionary-gallery/DECISIONS.md` carry the
+  implementation detail. `DEPLOY_STATE.md` gained the five new served surfaces, a repo-weight
+  table, and a gotcha about the gallery's cross-folder three.js import.
+- **`tools/batch/make_tasks.py visionary`** — a new generator producing 22 bounded
+  per-image annotation tasks (Haiku, `Read Write` only, ~2K tokens of measured facts
+  each, forbidden from inventing shelfmark/folio/patron/date). Manifest generated and
+  validated; **the sweep has NOT been run** — `claude -p` hangs inside a Claude Code
+  session, so it needs a real terminal.
+
+- **L2 built and verified (2026-09-01).** `portal/scripts/export_gallery_scholarship.py`
+  exports 10 encyclopedia entries and 15 tradition links from `portal/db/turka.db` into
+  the Visionary Gallery. Verified live: workbench pages render the entries with the
+  portal's own DRAFT/MEDIUM flags visible, all 8 front-page tradition sections carry
+  entry chips, the Method page's ladder shows L2 as built, clean console. One deviation
+  from the recorded plan flagged in `docs/DECISIONS.md`: the source is this repo's
+  `turka.db`, not the sibling `islamicate.db` the earlier entry named. Two gaps the
+  export surfaced are recorded in the JSON itself (no divination entry; no
+  painting-world figures — the latter is correct scope, the former is the portal's
+  highest-value missing entry).
+
+- **Divination gap closed, by two sessions at once (2026-09-01).** The L2 export's own
+  recorded gap ("no divination entry") drew a `geomancy` + `jafr` pair from a concurrent
+  session and a duplicate `ilm-al-raml` from this one. **The duplicate was deleted, theirs
+  kept**; the Falnāma tradition now links to both of theirs with the link's limits stated.
+  The removed draft's extra grounded material is preserved in
+  `portal/docs/NOTE_geomancy_merge_candidate.md` for a deliberate merge.
+  **Two hazards worth carrying forward:** `seed_from_json.py` PRUNES rows absent from
+  `seed.json`, so re-run `export_gallery_scholarship.py` after any portal re-seed; and the
+  export deliberately `sys.exit`s on a missing slug, which is what caught two
+  merged-away entries within seconds. Next entry to write, per the corpus: **oneiromancy**
+  — Melvin-Koushki ranks dream divination *above* geomancy, the portal has no entry, and it
+  serves `docs/VISIONARY_ENVIRONMENTS.md` directly.
+
 ## What's NOT done — the important gaps, not hidden
 
 1. **The VN's narrative prose is a real first pass, not final writing.** Every

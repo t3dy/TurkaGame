@@ -1,0 +1,559 @@
+{
+  "_note": "Visionary-environments image corpus, fetched from Wikimedia Commons by imagelab/scripts/fetch_commons.py. Rights are read from Commons' structured licence data, not asserted by hand. Anything that did not parse as a free licence is in `blocked` and was not downloaded. Companion prose: docs/VISIONARY_ENVIRONMENTS.md.",
+  "fetched": "2026-08-31",
+  "source": "Wikimedia Commons",
+  "max_width": 2000,
+  "images": [
+    {
+      "id": "bustan-yusuf-zulaykha",
+      "tradition": "cairo-bustan",
+      "why_here": "The folio Yusuf Ascent is built on. Included so the comparison set has its anchor.",
+      "file": "research inbox/visionary/bustan-yusuf-zulaykha.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3AYusuf_and_Zulaykha%2C_from_the_Cairo_Bustan._Herat%2C_December_1488%E2%80%93November_1489._Bihzad._Dar_al-kutub%2C_Adab_farisi_22%2C_folio_52b.jpg"
+      },
+      "provenance": {
+        "artist": "1488 artist, Herat",
+        "institution": null,
+        "date": "1488",
+        "credit": "Balafrej, Lamia. The Making of the Artist in Late Timurid Painting, Edinburgh: Edinburgh University Press, 2019. [1]",
+        "description": "Yusuf and Zulaykha, from the Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 52b",
+        "commons_title": "File:Yusuf and Zulaykha, from the Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 52b.jpg",
+        "original_size": [
+          1174,
+          1760
+        ]
+      },
+      "bytes": 2647528
+    },
+    {
+      "id": "bustan-beggar-mosque",
+      "tradition": "cairo-bustan",
+      "why_here": "Architecture again, but a real mosque courtyard. The control case.",
+      "file": "research inbox/visionary/bustan-beggar-mosque.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3AThe_Beggar_at_the_Mosque%2C_from_the_Cairo_Bustan._Herat%2C_December_1488%E2%80%93November_1489._Bihzad._Dar_al-kutub%2C_Adab_farisi_22%2C_folio_26a.jpg"
+      },
+      "provenance": {
+        "artist": "1488 artist, Herat",
+        "institution": null,
+        "date": "1488",
+        "credit": "Balafrej, Lamia. The Making of the Artist in Late Timurid Painting, Edinburgh: Edinburgh University Press, 2019. [1]",
+        "description": "The Beggar at the Mosque, from the Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 26a The signature of Bihzad appears In ‘The Beggar at the Mosque’ (Plate XI), it can be read in the book that a mosque attendant is studying (Figure 5.2). Reference: Making of the Artist in Late Timurid Painting, Balafrej Lamia Balafrej · 2019, p.184-185",
+        "commons_title": "File:The Beggar at the Mosque, from the Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 26a.jpg",
+        "original_size": [
+          1178,
+          1766
+        ]
+      },
+      "bytes": 2591363
+    },
+    {
+      "id": "bustan-darius-herdsman",
+      "tradition": "cairo-bustan",
+      "why_here": "Landscape, not architecture — how the same painter handles open ground.",
+      "file": "research inbox/visionary/bustan-darius-herdsman.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3ADarius_and_the_Herdsman%2C_from_the_Cairo_Bustan._Herat%2C_December_1488%E2%80%93November_1489._Bihzad._Dar_al-kutub%2C_Adab_farisi_22%2C_folio_10a.jpg"
+      },
+      "provenance": {
+        "artist": "1488 artist, Herat",
+        "institution": null,
+        "date": "1488",
+        "credit": "Balafrej, Lamia. The Making of the Artist in Late Timurid Painting, Edinburgh: Edinburgh University Press, 2019. [1]",
+        "description": "Darius and the Herdsman, from the Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 10a The signature of Bihzad appears in the inscription was woven as a golden thread into the black velvet quiver of the king. Reference: Making of the Artist in Late Timurid Painting, Balafrej Lamia Balafrej · 2019, p.184-185",
+        "commons_title": "File:Darius and the Herdsman, from the Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 10a.jpg",
+        "original_size": [
+          1228,
+          1756
+        ]
+      },
+      "bytes": 2375500
+    },
+    {
+      "id": "bustan-poet-judge",
+      "tradition": "cairo-bustan",
+      "why_here": "An interior with a court in it — and the folio carrying Bihzad's signature.",
+      "file": "research inbox/visionary/bustan-poet-judge.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3AThe_Poet_at_the_Judge%E2%80%99s_Court%2C_from_the_Cairo_Bustan._Herat%2C_December_1488%E2%80%93November_1489._Bihzad._Dar_al-kutub%2C_Adab_farisi_22%2C_folio_30b.jpg"
+      },
+      "provenance": {
+        "artist": "1488 artist, Herat",
+        "institution": null,
+        "date": "1488",
+        "credit": "Balafrej, Lamia. The Making of the Artist in Late Timurid Painting, Edinburgh: Edinburgh University Press, 2019. [1]",
+        "description": "The Poet at the Judge’s Court, from the Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 30b The signature of Bihzad appears In ‘The Poet at the Judge’s Court’ (Plate XII), it appears at the end of the monumental epigraphic inscription running around the vaulted porch (Figure 5.3). Reference: Making of the Artist in Late Timurid Painting, Balafrej Lamia Balafrej · 2019, p.184-186",
+        "commons_title": "File:The Poet at the Judge’s Court, from the Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 30b.jpg",
+        "original_size": [
+          1146,
+          1714
+        ]
+      },
+      "bytes": 2325380
+    },
+    {
+      "id": "bustan-folio-2b",
+      "tradition": "cairo-bustan",
+      "why_here": "Frontispiece half. Where the book states its own terms.",
+      "file": "research inbox/visionary/bustan-folio-2b.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3ACairo_Bustan._Herat%2C_December_1488%E2%80%93November_1489._Bihzad._Dar_al-kutub%2C_Adab_farisi_22%2C_folio_2b.jpg"
+      },
+      "provenance": {
+        "artist": "1488 artist, Herat",
+        "institution": null,
+        "date": "1488",
+        "credit": "Balafrej, Lamia. The Making of the Artist in Late Timurid Painting, Edinburgh: Edinburgh University Press, 2019. [1]",
+        "description": "Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 2b",
+        "commons_title": "File:Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 2b.jpg",
+        "original_size": [
+          580,
+          870
+        ]
+      },
+      "bytes": 760678
+    },
+    {
+      "id": "bustan-folio-4a",
+      "tradition": "cairo-bustan",
+      "why_here": "The other opening folio.",
+      "file": "research inbox/visionary/bustan-folio-4a.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3ACairo_Bustan._Herat%2C_December_1488%E2%80%93November_1489._Bihzad._Dar_al-kutub%2C_Adab_farisi_22%2C_folio_4a.jpg"
+      },
+      "provenance": {
+        "artist": "1488 artist, Herat",
+        "institution": null,
+        "date": "1488",
+        "credit": "Balafrej, Lamia. The Making of the Artist in Late Timurid Painting, Edinburgh: Edinburgh University Press, 2019. [1]",
+        "description": "Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 4a",
+        "commons_title": "File:Cairo Bustan. Herat, December 1488–November 1489. Bihzad. Dar al-kutub, Adab farisi 22, folio 4a.jpg",
+        "original_size": [
+          614,
+          883
+        ]
+      },
+      "bytes": 808410
+    },
+    {
+      "id": "miraj-first-heaven",
+      "tradition": "miraj",
+      "why_here": "A gate between levels, with a gatekeeper. The Seven Heavens environment in one image.",
+      "file": "research inbox/visionary/miraj-first-heaven.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3AThe_Prophet_Muhammad_arrives_at_the_gate_of_the_first_heaven.jpg"
+      },
+      "provenance": {
+        "artist": "Ahmad Musa",
+        "institution": null,
+        "date": "14 th century date QS:P,+1350-00-00T00:00:00Z/7",
+        "credit": "Gruber, Christiane. The Ilkhanid Book of Ascension: A Persian-Sunni Devotional Tale. London: I.B. Tauris, 2010.",
+        "description": "The Prophet Muhammad arrives at the gate of the first heaven, made of emerald, Mi‘rajnama, ca. 1317-35. TSK H. 2154, folio 61r upper.",
+        "commons_title": "File:The Prophet Muhammad arrives at the gate of the first heaven.jpg",
+        "original_size": [
+          1343,
+          1256
+        ]
+      },
+      "bytes": 500164
+    },
+    {
+      "id": "miraj-lote-tree",
+      "tradition": "miraj",
+      "why_here": "The Lote Tree of the Limit — the boundary beyond which the ascent cannot continue.",
+      "file": "research inbox/visionary/miraj-lote-tree.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3ABilal_before_the_Lote_Tree_of_the_Limit.jpg"
+      },
+      "provenance": {
+        "artist": "Ahmad Musa",
+        "institution": null,
+        "date": "14 th century date QS:P,+1350-00-00T00:00:00Z/7",
+        "credit": "Gruber, Christiane. The Ilkhanid Book of Ascension: A Persian-Sunni Devotional Tale. London: I.B. Tauris, 2010.",
+        "description": "Bilal (?), accompanied by houris in a pavilion in Paradise, observes the Lote Tree of the Limit, Miʿrājnāma, ca. 1317–35. TSK H. 2154, fol. 61r (lower register).",
+        "commons_title": "File:Bilal before the Lote Tree of the Limit.jpg",
+        "original_size": [
+          1344,
+          856
+        ]
+      },
+      "bytes": 382174
+    },
+    {
+      "id": "miraj-ilkhanid",
+      "tradition": "miraj",
+      "why_here": "Ilkhanid/Jalayirid ascension painting — the tradition before the Timurid book.",
+      "file": "research inbox/visionary/miraj-ilkhanid.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3AThe_Ilkhanid_or_Jalayerid_miniature_from_a_manuscript_of_the_Miraj-nama.jpg"
+      },
+      "provenance": {
+        "artist": "Ahmad Musa",
+        "institution": null,
+        "date": "14 th century date QS:P,+1350-00-00T00:00:00Z/7",
+        "credit": "Gruber, Christiane. The Ilkhanid Book of Ascension: A Persian-Sunni Devotional Tale. London: I.B. Tauris, 2010.",
+        "description": "The Prophet Muhammad, on Gabriel’s shoulders, flies over the Swollen Sea (a/-bahbr al-masjiir) beyond the seventh heaven, Mi‘rajnama, ca. 1317-35. TSK H. 2154, folio 42v.",
+        "commons_title": "File:The Ilkhanid or Jalayerid miniature from a manuscript of the Miraj-nama.jpg",
+        "original_size": [
+          1344,
+          1830
+        ]
+      },
+      "bytes": 740401
+    },
+    {
+      "id": "haft-black-pavilion",
+      "tradition": "haft-paykar",
+      "why_here": "Saturn's dome, the first of the seven. Colour as cosmology.",
+      "file": "research inbox/visionary/haft-black-pavilion.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3ABahram_Gur_and_the_Indian_Princess_in_the_Black_Pavilion.jpg"
+      },
+      "provenance": {
+        "artist": "Unknown artist Unknown artist",
+        "institution": null,
+        "date": "1584 date QS:P571,+1584-00-00T00:00:00Z/9",
+        "credit": "Harvard Art Museums",
+        "description": "Bahram Gur and the Indian Princess in the Black Pavilion (painting, verso; text, recto), illustrated folio from a manuscript of the Khamsa (Haft Paykar) by Nizami. Safavid period, Shiraz, Iran. Ink, opaque watercolor and gold on paper. 40.2 x 26.2 cm (15 13/16 x 10 5/16 in.). Harvard Art Museums.",
+        "commons_title": "File:Bahram Gur and the Indian Princess in the Black Pavilion.jpg",
+        "original_size": [
+          681,
+          1024
+        ]
+      },
+      "bytes": 173440
+    },
+    {
+      "id": "haft-white-pavilion",
+      "tradition": "haft-paykar",
+      "why_here": "Venus's dome, the last. The arc's end point.",
+      "file": "research inbox/visionary/haft-white-pavilion.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3ABahram_Gur_and_the_Iranian_princess_in_the_white_pavilion._Illustration_to_Haft_Paykar_by_Nizami.jpg"
+      },
+      "provenance": {
+        "artist": "Attributed to Muhammad Muqim",
+        "institution": null,
+        "date": "1671 date QS:P571,+1671-00-00T00:00:00Z/9",
+        "credit": "https://viewer.cbl.ie/viewer/image/Per_276_205/1/LOG_0000/",
+        "description": "Bahram Gur and the Iranian princess in the white pavilion. Illustration (folio) to Seven Portraits (Haft Paykar), in the Five Poems (Khamsa) by Nizami. Attributed to Muhammad Muqim (painter). Calligraphy in Nasta'liq script by Mulla Barqi. Made in Bukhara in 1671. Dimensions: 219mm x 132 mm. Material: Paper, pigment, ink, gold. Chester Beatty Library, Per. 276.205",
+        "commons_title": "File:Bahram Gur and the Iranian princess in the white pavilion. Illustration to Haft Paykar by Nizami.jpg",
+        "original_size": [
+          4229,
+          6974
+        ]
+      },
+      "bytes": 3913357
+    },
+    {
+      "id": "haft-yellow-pavilion",
+      "tradition": "haft-paykar",
+      "why_here": "The Sun's dome. Three of seven is enough to show the system.",
+      "file": "research inbox/visionary/haft-yellow-pavilion.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3ABahram_Gur_in_the_yellow_pavilion.jpg"
+      },
+      "provenance": {
+        "artist": "Unknown Calligrapher",
+        "institution": "This is a faithful photographic reproduction of a two-dimensional, public domain work of art. The work of art itself is in the public domain for the following reason: Public domain Public domain false false This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 70 years or fewer . You must also include a United States public domain tag to indicate why this work is in the public domain in the United States. Note that a few countries have copyright terms longer than 70 years: Mexico has 100 years, Jamaica has 95 years, Colombia has 80 years, and Guatemala and Samoa have 75 years. This image may not be in the public domain in these countries, which moreover do not implement the rule of the shorter term . Honduras has a general copyright term of 75 years, but it does implement the rule of the shorter term. Copyright may extend on works created by French who died for France in World War II ( more information ), Russians who served in the Eastern Front of World War II (known as the Great Patriotic War in Russia) and posthumously rehabilitated victims of Soviet repressions ( more information ). This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights. https://creativecommons.org/publicdomain/mark/1.0/ PDM Creative Commons Public Domain Mark 1.0 false false The official position taken by the Wikimedia Foundation is that \" faithful reproductions of two-dimensional public domain works of art are public domain \". This photographic reproduction is therefore also considered to be in the public domain in the United States. In other jurisdictions, re-use of this content may be restricted; see Reuse of PD-Art photographs for details. {{PD-Art}} template without license parameter: please specify why the underlying work is public domain in both the source country and the United States ( Usage: {{PD-Art|1=|deathyear=''year of author's death''|country=''source country''}} , where parameter 1= can be PD-old-auto , PD-old-auto-expired , PD-old-auto-1996 , PD-old-100 or similar. See Commons:Multi-license copyright tags for more information. )",
+        "date": "16 th century date QS:P,+1550-00-00T00:00:00Z/7",
+        "credit": "Library of Congress",
+        "description": "This text describes an episode from the \"Haft Paykar\" (Seven Thrones) of Nizami (d. 614/1218), the fourth book from his \"Khamsah\" (Quintet). In this romantic allegory of love and frustration, the Sassanian ruler Bahram Gur (r. 420-438) visits seven pavilions on each of the seven days of the week.",
+        "commons_title": "File:Bahram Gur in the yellow pavilion.jpg",
+        "original_size": [
+          2550,
+          3938
+        ]
+      },
+      "bytes": 5467708
+    },
+    {
+      "id": "siyah-demons",
+      "tradition": "siyah-qalam",
+      "why_here": "Beings on blank paper. The 'ground that isn't' environment.",
+      "file": "research inbox/visionary/siyah-demons.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3ASiyah_Qalam_Demons1.jpg"
+      },
+      "provenance": {
+        "artist": "Unknown author Unknown author",
+        "institution": null,
+        "date": "Late 14th / early 15th",
+        "credit": "https://fourcaptivedemons.wordpress.com/2015/05/06/an-aberration-in-the-islamicate-pictorial-tradition-2/",
+        "description": "Siyah Qalam: Demons",
+        "commons_title": "File:Siyah Qalam Demons1.jpg",
+        "original_size": [
+          550,
+          265
+        ]
+      },
+      "bytes": 63554
+    },
+    {
+      "id": "siyah-angels-demons",
+      "tradition": "siyah-qalam",
+      "why_here": "Two orders of being in one frame, and no floor for either.",
+      "file": "research inbox/visionary/siyah-angels-demons.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3AAngels_banishing_Demons.jpg"
+      },
+      "provenance": {
+        "artist": "The author's name is unknown, his work is estiamted to have been done in 15th Century.",
+        "institution": null,
+        "date": "1478",
+        "credit": "Michael Barry: Figurative Art in Medieval Islam and the Riddle of Bihzād of Herāt (1465–1535).",
+        "description": "Angels chaining the demonic lower passions.",
+        "commons_title": "File:Angels banishing Demons.jpg",
+        "original_size": [
+          2048,
+          1536
+        ]
+      },
+      "bytes": 315589
+    },
+    {
+      "id": "qazwini-israfil",
+      "tradition": "ajaib",
+      "why_here": "Israfil, the angel of the trumpet. The top of the cosmography's hierarchy.",
+      "file": "research inbox/visionary/qazwini-israfil.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3AIsrafel%2C_from_a_manuscript%2C_Aja-ib_al-Makhluqat_%28Wonders_of_Creation%29_by_al-Qazvini.jpg"
+      },
+      "provenance": {
+        "artist": "anonymous",
+        "institution": null,
+        "date": "early 15 th century date QS:P571,+1450-00-00T00:00:00Z/7,P4241,Q40719727",
+        "credit": "https://music.si.edu/object-day/venus-plays-arab-lute# In the collection of the Smithsonian, National Museum of Asian Art Original from Folio from a Aja-ib al-Makhluqat (Wonders of Creation) by al-Qazvini",
+        "description": "Israfel, from a manuscript, Aja-ib al-Makhluqat (Wonders of Creation) by al-Qazvini. In the collection of the Smithsonian. Accession number F1954.51",
+        "commons_title": "File:Israfel, from a manuscript, Aja-ib al-Makhluqat (Wonders of Creation) by al-Qazvini.jpg",
+        "original_size": [
+          2569,
+          3709
+        ]
+      },
+      "bytes": 10501444
+    },
+    {
+      "id": "qazwini-tortoise",
+      "tradition": "ajaib",
+      "why_here": "One entry from the index, complete with its text block. The unit of the bestiary crawl.",
+      "file": "research inbox/visionary/qazwini-tortoise.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: CC0. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "CC0",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3A%22The_Tortoise%22%2C_Folio_from_an_%60Aja%27ib_al-Makhluqat_%28Wonders_of_Creation%29_of_Qazwini_MET_136888.jpg"
+      },
+      "provenance": {
+        "artist": "Zakariya al-Qazwini",
+        "institution": "This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication . The person who associated a work with this deed has dedicated the work to the public domain by waiving all of their rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. http://creativecommons.org/publicdomain/zero/1.0/deed.en CC0 Creative Commons Zero, Public Domain Dedication false false",
+        "date": "second half 16th century",
+        "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+        "description": "Folio from an illustrated manuscript; Codices",
+        "commons_title": "File:\"The Tortoise\", Folio from an `Aja'ib al-Makhluqat (Wonders of Creation) of Qazwini MET 136888.jpg",
+        "original_size": [
+          3647,
+          3711
+        ]
+      },
+      "bytes": 3717174
+    },
+    {
+      "id": "falnama-joseph",
+      "tradition": "falnama",
+      "why_here": "Yusuf again, a century later, as an omen rather than a story.",
+      "file": "research inbox/visionary/falnama-joseph.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3ASafavid_Dynasty%2C_Joseph_Enthroned_from_a_Falnama_%28Book_of_Omens%29%2C_circa_1550_AD.jpg"
+      },
+      "provenance": {
+        "artist": "Unknown artist Unknown artist",
+        "institution": null,
+        "date": "Mid 1550s-early 1560s",
+        "credit": "Google Arts Culture — folio-from-a-falnama-book-of-omens-recto-joseph-enthroned-verso-text/fQFTHc1nEnA1xw",
+        "description": "Joseph Enthroned from a Falnama (Book of Omens), the Iranian Safavid Dynasty, circa 1550 AD, housed in the Freer Gallery of Art, Smithsonian, Washington D.C.",
+        "commons_title": "File:Safavid Dynasty, Joseph Enthroned from a Falnama (Book of Omens), circa 1550 AD.jpg",
+        "original_size": [
+          2730,
+          3600
+        ]
+      },
+      "bytes": 5049964
+    },
+    {
+      "id": "falnama-seven-sleepers",
+      "tradition": "falnama",
+      "why_here": "Monumental scale, saturated colour, a scene a fortune-teller improvises from.",
+      "file": "research inbox/visionary/falnama-seven-sleepers.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: CC0. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "CC0",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3A%22The_Seven_Sleepers_of_Ephesus_Discovered_by_Alexander_the_Great%22%2C_Folio_from_a_Falnama_%28Book_of_Omens%29_MET_121050.jpg"
+      },
+      "provenance": {
+        "artist": null,
+        "institution": "This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication . The person who associated a work with this deed has dedicated the work to the public domain by waiving all of their rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. http://creativecommons.org/publicdomain/zero/1.0/deed.en CC0 Creative Commons Zero, Public Domain Dedication false false",
+        "date": "1550s date QS:P571,+1550-00-00T00:00:00Z/8",
+        "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+        "description": "Folio from an illustrated manuscript; Codices",
+        "commons_title": "File:\"The Seven Sleepers of Ephesus Discovered by Alexander the Great\", Folio from a Falnama (Book of Omens) MET 121050.jpg",
+        "original_size": [
+          4000,
+          3168
+        ]
+      },
+      "bytes": 2126798
+    },
+    {
+      "id": "jalayir-angels-clouds",
+      "tradition": "jalayirid",
+      "why_here": "Marginal drawing, c. 1400 — within Ibn Turka's own lifetime.",
+      "file": "research inbox/visionary/jalayir-angels-clouds.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3AFolio_from_a_Divan_%28collected_poems%29_by_Sultan_Ahmad_Jalayir%3B_Angels_Amidst_Clouds_-_Google_Art_Project.jpg"
+      },
+      "provenance": {
+        "artist": "Unknown author Unknown author",
+        "institution": null,
+        "date": "circa 1400",
+        "credit": "JAGa9a2OIgtvew at Google Cultural Institute maximum zoom level",
+        "description": null,
+        "commons_title": "File:Folio from a Divan (collected poems) by Sultan Ahmad Jalayir; Angels Amidst Clouds - Google Art Project.jpg",
+        "original_size": [
+          3484,
+          4901
+        ]
+      },
+      "bytes": 5192317
+    },
+    {
+      "id": "jalayir-pastoral",
+      "tradition": "jalayirid",
+      "why_here": "Drawing growing out from under the calligraphy. 'The Margin' environment.",
+      "file": "research inbox/visionary/jalayir-pastoral.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3AFolio_from_a_Divan_%28collected_poems%29_by_Sultan_Ahmad_Jalayir%3B_Pastoral_scene_-_Google_Art_Project.jpg"
+      },
+      "provenance": {
+        "artist": "Unknown author Unknown author",
+        "institution": null,
+        "date": "circa 1400",
+        "credit": "1AFmBD3l1BwPgA at Google Cultural Institute maximum zoom level",
+        "description": null,
+        "commons_title": "File:Folio from a Divan (collected poems) by Sultan Ahmad Jalayir; Pastoral scene - Google Art Project.jpg",
+        "original_size": [
+          3351,
+          4901
+        ]
+      },
+      "bytes": 4889166
+    },
+    {
+      "id": "jalayir-yurts",
+      "tradition": "jalayirid",
+      "why_here": "Baghdad, 1400–03. Tinted line drawing, no frame, no ground.",
+      "file": "research inbox/visionary/jalayir-yurts.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: Public domain. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "Public domain",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3ADrawing_of_pastoral_scene_with_yurts._Possibly_made_by_Sultan_Ahmad%2C_1400-1403%2C_Baghdad.jpg"
+      },
+      "provenance": {
+        "artist": "1400-1403 artist",
+        "institution": null,
+        "date": "1400-1403",
+        "credit": "(1 January 2002) Peerless Images: Persian Painting and Its Sources , Yale University Press, p. 255 ISBN : 978-0-300-09038-3 .",
+        "description": "Drawing of pastoral scene with yurts. Possibly made by Sultan Ahmad, 1400-1403, Baghdad",
+        "commons_title": "File:Drawing of pastoral scene with yurts. Possibly made by Sultan Ahmad, 1400-1403, Baghdad.jpg",
+        "original_size": [
+          1555,
+          810
+        ]
+      },
+      "bytes": 1281387
+    },
+    {
+      "id": "mantiq-concourse",
+      "tradition": "mantiq",
+      "why_here": "Attar's birds assembling to seek the Simurgh — the ascent as a crowd, not an individual.",
+      "file": "research inbox/visionary/mantiq-concourse.jpg",
+      "rights": {
+        "status": "CLEARABLE",
+        "basis": "Commons licence: CC0. Free for reuse; a pre-1700 painting is out of copyright, and Commons treats a faithful 2-D reproduction as carrying no new copyright. Confirm the holding institution's own terms before a shipped release.",
+        "licence": "CC0",
+        "commons_page": "https://commons.wikimedia.org/wiki/File%3A%22The_Concourse_of_the_Birds%22%2C_Folio_11r_from_a_Mantiq_al-tair_%28Language_of_the_Birds%29_MET_DT227734.jpg"
+      },
+      "provenance": {
+        "artist": "Habiballah Savaji",
+        "institution": "This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication . The person who associated a work with this deed has dedicated the work to the public domain by waiving all of their rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. http://creativecommons.org/publicdomain/zero/1.0/deed.en CC0 Creative Commons Zero, Public Domain Dedication false false",
+        "date": "circa 1600 date QS:P571,+1600-00-00T00:00:00Z/9,P1480,Q5727902",
+        "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+        "description": "Folio from an illustrated manuscript; Codices",
+        "commons_title": "File:\"The Concourse of the Birds\", Folio 11r from a Mantiq al-tair (Language of the Birds) MET DT227734.jpg",
+        "original_size": [
+          2695,
+          3819
+        ]
+      },
+      "bytes": 3711446
+    }
+  ],
+  "blocked": []
+}

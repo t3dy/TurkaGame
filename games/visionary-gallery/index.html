@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visionary Gallery — 22 folios, measured and taken apart</title>
+<link rel="stylesheet" href="./shared/gal.css?v=3">
+<style>
+  .hero { display: grid; grid-template-columns: minmax(0,1fr) 420px; gap: 30px; align-items: start; }
+  @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } }
+
+  #scatter { width: 100%; height: 330px; display: block;
+             background: var(--bg-2); border: 1px solid var(--rule); }
+  .legend { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .5rem; }
+  .legend span { font-family: var(--sans); font-size: .6rem; letter-spacing: .06em;
+                 padding: .1rem .4rem; cursor: pointer; border: 1px solid transparent; }
+  .legend span.off { opacity: .3; }
+
+  .trad { margin-top: 2.2rem; }
+  .trad h2 { display: flex; align-items: baseline; gap: .6rem; }
+  .trad h2 em { font-family: var(--sans); font-size: .62rem; font-style: normal;
+                letter-spacing: .1em; text-transform: uppercase; color: var(--paper-dim); }
+  .trad .blurb { font-family: var(--sans); font-size: .76rem; color: var(--paper-dim);
+                 line-height: 1.55; max-width: 76ch; margin: -.2rem 0 .8rem; }
+
+  .stat { display: flex; gap: 1.6rem; flex-wrap: wrap; font-family: var(--sans);
+          font-size: .72rem; color: var(--paper-dim); margin: .8rem 0 0; }
+  .stat b { display: block; font-family: var(--serif); font-size: 1.5rem; color: var(--gold-hi); }
+</style>
+</head>
+<body>
+  <div id="nav"></div>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Visionary Gallery</h1>
+        <p class="lede">Twenty-two Persianate folios — ascension cycles, planetary pavilions,
+        demons on bare paper, a book of omens, and six folios from the same manuscript as
+        Bihzād's impossible palace — downloaded with their licences, measured, cut into
+        parts, turned into printable paper tunnel books and into 3D, and made playable.</p>
+
+        <div class="stat" id="stat"></div>
+
+        <div class="callout">
+          <strong>What the measuring is for.</strong>
+          <p>The <a href="../yusuf-ascent/portal/index.html">Yūsuf Ascent portal</a> argues that
+          Bihzād's palace is a diagram rather than a house, and the evidence offered is that
+          "every surface is finished to the same degree of attention." That is not a metaphor —
+          it is a claim about how detail is distributed across a page, and it can be tested.
+          So it was. <b>The measurement disagrees</b>; the
+          <a href="method.html">Method</a> page says why, and why the disagreement is more
+          useful than a confirmation would have been.</p>
+        </div>
+      </div>
+
+      <div>
+        <canvas id="scatter"></canvas>
+        <div class="legend" id="legend"></div>
+        <div class="note" id="scatter-note"></div>
+      </div>
+    </div>
+
+    <div id="groups"></div>
+
+    <div class="note" style="margin-top:2.5rem">
+      All 22 images come from Wikimedia Commons with a free licence read from Commons'
+      structured data by <span class="mono">imagelab/scripts/fetch_commons.py</span> — nothing
+      whose licence did not parse as free was downloaded. Every number on this site is produced
+      by <span class="mono">imagelab/scripts/analyze.py</span> with a fixed seed. Region
+      proposals and layer assignment are <em>heuristics, not readings</em>, and are labelled as
+      such wherever they appear.
+    </div>
+  </div>
+
+<script type="module" src="./index.js?v=3"></script>
+</body>
+</html>

@@ -29,7 +29,7 @@
 // Determinism: no Math.random anywhere. Per-panel drift comes from hash32(id).
 
 import * as THREE from '../vendor/three.module.js';
-import { loadPalace, renderCard, spriteURL, easeOut, clamp } from '../shared/data.js?v=1';
+import { loadPalace, renderCard, spriteURL, easeOut, clamp } from '../shared/data.js?v=2';
 
 /* ------------------------------------------------------------ constants ---- */
 

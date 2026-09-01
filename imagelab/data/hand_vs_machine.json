@@ -1,0 +1,303 @@
+{
+  "_note": "Machine-proposed regions vs the hand-drawn Yusuf Ascent decomposition. Produced by imagelab/scripts/compare_hand.py. This is the only image in the corpus that exists in both forms, so it is the only honest test of what the automatic pipeline is worth.",
+  "image": "bustan-yusuf-zulaykha",
+  "hand_regions": 41,
+  "machine_regions": 27,
+  "coverage": {
+    "iou>=0.1": {
+      "matched_hand_regions": 18,
+      "of_hand_total": 41,
+      "share": 0.439
+    },
+    "iou>=0.2": {
+      "matched_hand_regions": 11,
+      "of_hand_total": 41,
+      "share": 0.268
+    },
+    "iou>=0.3": {
+      "matched_hand_regions": 3,
+      "of_hand_total": 41,
+      "share": 0.073
+    },
+    "iou>=0.5": {
+      "matched_hand_regions": 1,
+      "of_hand_total": 41,
+      "share": 0.024
+    }
+  },
+  "ordering": {
+    "n_pairs": 11,
+    "spearman_rho": 0.8639,
+    "p_value": 0.0006075,
+    "expected_sign": "positive — layer_score and rung both rise from the street to the crown"
+  },
+  "confusion_layer_by_rung": [
+    [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ]
+  ],
+  "rung_names": [
+    "Mulk",
+    "Threshold",
+    "Barzakh",
+    "ʿĀlam al-khayāl",
+    "Malakūt",
+    "Jabarūt",
+    "Lāhūt"
+  ],
+  "missed_by_machine": [
+    "The upper chamber",
+    "Yūsuf",
+    "The flame-halo",
+    "The balcony door",
+    "Muqarnas eaves",
+    "The brackets over nothing",
+    "Roundel panel",
+    "The lapis court",
+    "The green door",
+    "The upper orange door",
+    "The small tablet",
+    "The black panel",
+    "The landing",
+    "The stairhead door",
+    "The mid cartouche",
+    "The muqarnas door",
+    "The door under the stair",
+    "Spandrel band",
+    "Star tile, right",
+    "Upper-left verse"
+  ],
+  "matched": [
+    {
+      "iou": 0.6215,
+      "hand_id": "zulaykha",
+      "hand_title": "Zulaykha",
+      "hand_rung": 5,
+      "machine_id": "r23",
+      "machine_layer": 2,
+      "machine_score": 0.5416
+    },
+    {
+      "iou": 0.4589,
+      "hand_id": "chamber-arch",
+      "hand_title": "The white arch",
+      "hand_rung": 5,
+      "machine_id": "r16",
+      "machine_layer": 3,
+      "machine_score": 0.7066
+    },
+    {
+      "iou": 0.4055,
+      "hand_id": "staircase-lower",
+      "hand_title": "The lower flight",
+      "hand_rung": 2,
+      "machine_id": "r12",
+      "machine_layer": 2,
+      "machine_score": 0.4253
+    },
+    {
+      "iou": 0.2951,
+      "hand_id": "brick-wall",
+      "hand_title": "The street wall",
+      "hand_rung": 0,
+      "machine_id": "r03",
+      "machine_layer": 0,
+      "machine_score": 0.2805
+    },
+    {
+      "iou": 0.2713,
+      "hand_id": "roof-eaves-band",
+      "hand_title": "The inscribed cornice",
+      "hand_rung": 6,
+      "machine_id": "r17",
+      "machine_layer": 4,
+      "machine_score": 0.814
+    },
+    {
+      "iou": 0.2705,
+      "hand_id": "blue-dado",
+      "hand_title": "The dado",
+      "hand_rung": 0,
+      "machine_id": "r02",
+      "machine_layer": 0,
+      "machine_score": 0.1859
+    },
+    {
+      "iou": 0.2523,
+      "hand_id": "pink-portal",
+      "hand_title": "The street portal",
+      "hand_rung": 0,
+      "machine_id": "r11",
+      "machine_layer": 0,
+      "machine_score": 0.2603
+    },
+    {
+      "iou": 0.2486,
+      "hand_id": "lower-portal",
+      "hand_title": "The iwan",
+      "hand_rung": 1,
+      "machine_id": "r20",
+      "machine_layer": 2,
+      "machine_score": 0.5129
+    },
+    {
+      "iou": 0.227,
+      "hand_id": "chamber-tile-panel",
+      "hand_title": "Chamber revetment",
+      "hand_rung": 3,
+      "machine_id": "r13",
+      "machine_layer": 4,
+      "machine_score": 0.7282
+    },
+    {
+      "iou": 0.2036,
+      "hand_id": "chamber-threshold",
+      "hand_title": "The tasselled sill",
+      "hand_rung": 2,
+      "machine_id": "r21",
+      "machine_layer": 3,
+      "machine_score": 0.5814
+    },
+    {
+      "iou": 0.2017,
+      "hand_id": "cupola",
+      "hand_title": "The crowning kiosk",
+      "hand_rung": 6,
+      "machine_id": "r01",
+      "machine_layer": 3,
+      "machine_score": 0.6658
+    },
+    {
+      "iou": 0.1972,
+      "hand_id": "green-door-arch",
+      "hand_title": "The blue niche",
+      "hand_rung": 3,
+      "machine_id": "r25",
+      "machine_layer": 4,
+      "machine_score": 0.7434
+    },
+    {
+      "iou": 0.1957,
+      "hand_id": "street-door",
+      "hand_title": "The street door",
+      "hand_rung": 0,
+      "machine_id": "r15",
+      "machine_layer": 1,
+      "machine_score": 0.3339
+    },
+    {
+      "iou": 0.1578,
+      "hand_id": "iwan-door",
+      "hand_title": "The iwan door",
+      "hand_rung": 1,
+      "machine_id": "r10",
+      "machine_layer": 3,
+      "machine_score": 0.5504
+    },
+    {
+      "iou": 0.1467,
+      "hand_id": "verse-cartouche-foot",
+      "hand_title": "The foot verses",
+      "hand_rung": 0,
+      "machine_id": "r06",
+      "machine_layer": 1,
+      "machine_score": 0.3343
+    },
+    {
+      "iou": 0.1297,
+      "hand_id": "chamber-carpet",
+      "hand_title": "The floor under the flight",
+      "hand_rung": 3,
+      "machine_id": "r18",
+      "machine_layer": 2,
+      "machine_score": 0.5264
+    },
+    {
+      "iou": 0.1193,
+      "hand_id": "staircase-upper",
+      "hand_title": "The upper flight",
+      "hand_rung": 2,
+      "machine_id": "r22",
+      "machine_layer": 2,
+      "machine_score": 0.5455
+    },
+    {
+      "iou": 0.1092,
+      "hand_id": "red-balcony",
+      "hand_title": "The red balcony",
+      "hand_rung": 4,
+      "machine_id": "r00",
+      "machine_layer": 2,
+      "machine_score": 0.4635
+    },
+    {
+      "iou": 0.0809,
+      "hand_id": "verse-cartouche-top",
+      "hand_title": "The upper verses",
+      "hand_rung": 6,
+      "machine_id": "r05",
+      "machine_layer": 3,
+      "machine_score": 0.6608
+    },
+    {
+      "iou": 0.0172,
+      "hand_id": "tile-field-left",
+      "hand_title": "Star tile, left",
+      "hand_rung": 1,
+      "machine_id": "r26",
+      "machine_layer": 1,
+      "machine_score": 0.4245
+    },
+    {
+      "iou": 0.0145,
+      "hand_id": "badgir-kiosk",
+      "hand_title": "The unreachable turret",
+      "hand_rung": 4,
+      "machine_id": "r04",
+      "machine_layer": 3,
+      "machine_score": 0.6643
+    }
+  ]
+}
