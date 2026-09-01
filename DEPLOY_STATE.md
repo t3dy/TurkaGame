@@ -4,7 +4,10 @@
 > this project has more than one hosting path, so the canonical state lives here rather
 > than being re-derived each session.
 
-Last verified: **2026-08-31**, commit `4268216`.
+Last verified: **2026-08-31**, commit `0c98a85` (CareerSim eighth session: loop repairs,
+pressure ladder, witness editor). Verified by fetching the live artifact: `/CareerSim/`
+serves `main.js?v=11`, loads 73 encounters including `content/pressure.js`, zero console
+errors; witness service `turka-witness.vercel.app` verified separately the same day.
 
 ## Canonical production URL
 
@@ -42,11 +45,37 @@ Everything is one Pages site off the repo root. There is no separate host for an
 | Yūsuf Ascent (hub) | `/games/yusuf-ascent/index.html` |
 | Yūsuf Ascent prototypes | `/games/yusuf-ascent/proto-{a-doors,b-stack,c-ladder}/index.html` |
 | Yūsuf research portal | `/games/yusuf-ascent/portal/index.html` |
+| Visionary Gallery (hub) | `/games/visionary-gallery/index.html` |
+| Visionary workbench | `/games/visionary-gallery/workbench.html?id=<folio-id>` |
+| Visionary Assay / Method | `/games/visionary-gallery/{assay,method}.html` |
+| Printable papercraft sheets | `/games/visionary-gallery/assets/<folio-id>/tunnel.svg` |
 | Knowledge portal | `/site/portal/index.html` |
 | Illustration catalogue | `/site/plates/index.html` |
 | Timeline | `/site/timeline.html` |
 
 `/` (repo root `index.html`) is a 300-byte redirect stub into `/site/`.
+
+## Repo weight (added 2026-08-31)
+
+The Visionary Gallery adds **~33 MB** of committed web assets under
+`games/visionary-gallery/assets/` — 22 folios, their papercraft plates, and 22 printable
+SVG sheets with their images embedded as data URIs.
+
+What is deliberately **not** committed, and why it matters if you clone fresh:
+
+| Path | Size | Status |
+|---|---|---|
+| `research inbox/` | ~57 MB | gitignored — full-size Commons sources |
+| `imagelab/output/` | ~130 MB | gitignored — cut sprites, debug maps, full-size papercraft |
+| `games/visionary-gallery/assets/` | ~33 MB | **committed** — the web-ready subset |
+
+A fresh clone can serve the site but **cannot re-run the analysis** until
+`python imagelab/scripts/fetch_commons.py` re-downloads the sources. That is by design:
+the intermediates are fully regenerable from four scripts, so committing them buys nothing.
+
+If the committed weight ever needs to come down, `build_gallery.py` takes
+`--svg-px`, `--folio-px` and `--plate-px`; the current build uses `340 / 820 / 480`. The
+SVG sheets are about 13 MB of the 33 and are the first place to cut.
 
 ## Gotchas
 
@@ -69,6 +98,12 @@ repo's GitHub Pages". That is the *plan*, not the current state: `CareerSim/inde
 in this repo and live at `/CareerSim/index.html` (verified 200). When the Vercel deploy
 actually happens, update this file and the landing-page link in `site/index.html` in the
 same change, or the two will disagree silently.
+
+**3a. The Visionary Gallery imports three.js from Yūsuf Ascent's `vendor/`.**
+`games/visionary-gallery/workbench.js` imports
+`../yusuf-ascent/vendor/three.module.js` rather than keeping a second 2 MB copy — so the
+gallery's 3D tab depends on `.nojekyll` too (gotcha 1). If `vendor/` ever moves, both
+surfaces break, and only one of them will be the obvious suspect.
 
 **3. Browser cache will lie to you during verification.**
 Verifying a change locally on `localhost:7521` served a stale `site/index.html` until a
