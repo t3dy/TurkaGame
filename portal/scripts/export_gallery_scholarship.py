@@ -46,19 +46,12 @@ OUT = ROOT / "games" / "visionary-gallery" / "data" / "scholarship.json"
 
 MAP = {
     "cairo-bustan": [
-        ("texts", "treatise-on-barzakh",
-         "Ibn Turka wrote a dedicated treatise on the barzakh — the very domain the "
-         "Yūsuf Ascent project reads this manuscript's famous folio through."),
         ("concepts", "barzakh",
-         "The isthmus between spirit and body: the reading applied to the impossible "
-         "stair in f. 52b."),
+         "The isthmus between spirit and body: the reading Yūsuf Ascent applies to the "
+         "impossible stair in f. 52b."),
         ("concepts", "imaginal-realm",
          "The ontological layer where forms subsist as images — the realm the "
          "'diagram, not building' reading places Bihzād's palace in."),
-        ("concepts", "timurid-patronage",
-         "The court-patronage system that produced princely manuscripts. The entry "
-         "treats Ibn Turka's patrons two generations before Bāyqarā's Herat; the "
-         "institution is the same, the personnel are not."),
     ],
     "miraj": [
         ("figures", "suhrawardi",
@@ -67,6 +60,10 @@ MAP = {
         ("concepts", "imaginal-realm",
          "The domain where mystical visions occur: where an ascent narrative locates "
          "what its images depict."),
+        ("concepts", "oneiromancy",
+         "Dream divination ranked second only to astrology across this world — ahead of "
+         "geomancy and lettrism. An ascension cycle is the prestige case of the thing it "
+         "reads: cognition continuing while the body is unconscious."),
     ],
     "haft-paykar": [
         ("concepts", "pythagorean-cosmology",
@@ -90,10 +87,14 @@ MAP = {
          "angels to minerals — the emanationist frame made into an index."),
     ],
     "falnama": [
-        ("concepts", "talismanic-science",
-         "The nearest operative-science entry the portal holds. It is not a match: "
-         "the Falnāma is divination, not talismanry, and the portal has no "
-         "divination entry yet — recorded below as a gap, not papered over."),
+        ("concepts", "geomancy",
+         "The divinatory science standing behind Islamicate omen-books. Ibn Turka's "
+         "closest associate Yazdī wrote its defense against Ibn Khaldūn, so divination "
+         "sits inside this circle's metaphysics rather than beside it. The Falnāma is "
+         "bibliomancy on pictures and a century later: a link of kind, not lineage."),
+        ("concepts", "jafr",
+         "Letter divination — the political edge of lettrism, and the nearest thing in "
+         "the portal to reading a fixed image for what it discloses."),
     ],
     "jalayirid": [
         ("figures", "sayyid-husayn-akhlati",
@@ -111,9 +112,22 @@ MAP = {
 }
 
 GAPS = [
-    "The portal has no entry for divination or bibliomancy, so the Falnāma tradition "
-    "links only to talismanic-science with an explicit mismatch note. A geomancy/"
-    "divination concept entry is the highest-value addition this export surfaced.",
+    "CLOSED 2026-09-01, and not by this session. The export originally had no divination "
+    "entry to link the Falnama to and recorded that here as its highest-value gap. A "
+    "concurrent session independently wrote `geomancy` and `jafr` into the portal; the "
+    "Falnama now links to both. A duplicate `ilm-al-raml` entry drafted here was removed "
+    "rather than shipped alongside theirs - see docs/DECISIONS.md 2026-09-01. Additional "
+    "grounded material from that draft (the sand procedure, the popularity ranking, the "
+    "Afro-Eurasian spread, Yazdi's five-point argument and the Nur correspondence) is "
+    "parked in portal/docs/NOTE_geomancy_merge_candidate.md for a deliberate merge by "
+    "whoever owns that entry. Still true beneath all of it: the Falnama is bibliomancy on "
+    "pictures and post-dates Ibn Turka by a century, so the link is one of kind, not "
+    "lineage, and the mapping says so.",
+    "The upstream seed file is edited by other sessions and `seed_from_json.py` PRUNES "
+    "database rows absent from it. Two entries this mapping originally referenced "
+    "(`treatise-on-barzakh`, `timurid-patronage`) were merged away upstream mid-build and "
+    "the export failed loudly rather than silently dropping them - which is the behaviour "
+    "to keep. Re-run this export after any portal re-seed.",
     "No figure entry exists for Bihzād, Jāmī, Saʿdī, Sulṭān Ḥusayn Bāyqarā or Sultan "
     "Aḥmad Jalāyir — the portal's scope is Ibn Turka's world, not Persian painting. "
     "Art-historical figures live in games/yusuf-ascent/data/research.json instead.",
