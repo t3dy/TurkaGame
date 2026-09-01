@@ -51,7 +51,10 @@ export default async function handler(req, res) {
       attested: Array.isArray(body.attested) ? body.attested : [],
       log: Array.isArray(body.log) ? body.log : [],
 
-      // ---- editorial layers: only /api/edit writes these ----
+      // ---- editorial layers ----
+      // Seeded empty and never written here again: /api/edit appends each correction as
+      // its own immutable blob and readers fold them back on. Only `preface.orig` is
+      // meaningful in this document — the preface as the game gave it.
       keys: { player: hash(playerKey), scholar: hash(scholarKey) },
       revisions: [],
       annotations: [],
@@ -59,6 +62,9 @@ export default async function handler(req, res) {
       preface: { orig: '', current: '', hand: null },
     };
 
+    // This document is written once and never rewritten — corrections live in their own
+    // blobs under edits/<id>/ and are folded on read (see lib/edits-store.mjs). Because
+    // it is immutable, caching it hard is correct rather than dangerous.
     await put(`witnesses/${id}.json`, JSON.stringify(witness), {
       access: 'public', contentType: 'application/json', addRandomSuffix: false,
     });

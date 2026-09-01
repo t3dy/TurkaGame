@@ -51,11 +51,79 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;font-weight:600
 .plate{border:1px solid var(--gold);padding:8px;background:var(--parchment);max-width:22rem;margin:.6rem auto}
 .plate img{max-width:100%;display:block;margin:0 auto}
 .plate figcaption{font-size:.74rem;color:var(--faint);font-style:italic;text-align:center;padding-top:.4rem}
-.hand{text-align:center;color:var(--vermillion);font-variant:small-caps;letter-spacing:.08em;font-size:.84rem;margin-bottom:1rem}
 .colophon{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--faint);
           font-size:.8rem;font-style:italic;text-align:center}
 .loading,.err{text-align:center;color:var(--faint);font-style:italic;padding:4rem 0}
 @media (max-width:640px){.verdicts{grid-template-columns:1fr}}
+
+/* ─────────── the editor: the hand that corrects the record ─────────── */
+/* Colour follows the style guide (scholar vermillion, player lapis) but never carries
+   meaning alone — every hand also names itself in words. */
+.desk{position:sticky;top:0;z-index:9;background:var(--deep);border:1px solid var(--line);
+      border-radius:3px;padding:.6rem .9rem;margin-bottom:1.4rem;font-size:.82rem;
+      display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .9rem}
+.desk .who{font-variant:small-caps;letter-spacing:.1em}
+.desk .who.scholar{color:var(--vermillion)}
+.desk .who.player{color:var(--lapis)}
+.desk input{font-family:inherit;font-size:.82rem;background:var(--parchment);color:var(--ink);
+            border:1px solid var(--line);border-radius:2px;padding:.2rem .45rem;width:11rem}
+.desk .hint{color:var(--faint);font-style:italic;flex:1 1 14rem;min-width:0}
+
+button{font-family:inherit;color:inherit;cursor:pointer}
+.quill,.revmark,.addnote{background:none;border:none;padding:0 .15rem;font-size:.8rem;line-height:1;
+        color:var(--faint);opacity:.6;transition:opacity .12s,color .12s}
+.quill:hover,.revmark:hover,.addnote:hover{opacity:1;color:var(--lapis)}
+/* The glyphs are deliberately small so they do not fight the text, so the hit area is
+   grown past them rather than the glyph being enlarged — a 10px tap target is not one. */
+.quill,.revmark{position:relative}
+.quill::after,.revmark::after{content:'';position:absolute;inset:-11px -7px}
+.addnote{font-variant:small-caps;letter-spacing:.08em;opacity:.75}
+.ed.revised{border-bottom:1px dashed var(--gold)}
+.revmark{color:var(--gold);opacity:.9}
+.chain{background:var(--deep);border-left:2px solid var(--gold);padding:.5rem .8rem;margin:.4rem 0;font-size:.82rem;font-style:normal}
+.chain .row{margin-bottom:.35rem}
+.chain .row:last-child{margin-bottom:0}
+.chain .was{color:var(--faint);font-style:italic}
+.chain .by{font-variant:small-caps;letter-spacing:.08em;font-size:.72rem}
+.by.scholar{color:var(--vermillion)}.by.player{color:var(--lapis)}
+
+.editform{background:var(--deep);border:1px solid var(--lapis);border-radius:3px;padding:.6rem .7rem;margin:.4rem 0;font-style:normal}
+.editform textarea{width:100%;min-height:5.5rem;font-family:inherit;font-size:.95rem;line-height:1.55;
+        background:var(--parchment);color:var(--ink);border:1px solid var(--line);border-radius:2px;padding:.45rem .55rem;resize:vertical}
+.editform .bar{display:flex;align-items:center;gap:.6rem;margin-top:.5rem;font-size:.8rem;flex-wrap:wrap}
+.editform .warn{color:var(--faint);font-style:italic;flex:1 1 12rem}
+.btn{background:var(--parchment);border:1px solid var(--line);border-radius:2px;padding:.22rem .8rem;font-size:.82rem;
+     font-variant:small-caps;letter-spacing:.08em}
+.btn.primary{border-color:var(--lapis);color:var(--lapis)}
+.btn:hover{background:var(--deep)}
+.editform .msg{color:var(--vermillion);flex-basis:100%}
+
+/* margin notes — a real margin on a wide page, inline beneath the entry on a narrow one */
+body.annotated .sheet{max-width:63rem}
+body.annotated .head,body.annotated .verdicts,body.annotated .rubric,
+body.annotated .folio,body.annotated .colophon,body.annotated .desk,
+body.annotated .preface{max-width:44rem}
+body.annotated .entry{display:grid;grid-template-columns:minmax(0,44rem) 15rem;column-gap:1.6rem;align-items:start}
+.entry-body{min-width:0}
+.entry-margin{font-size:.8rem;line-height:1.5}
+.mar{border-left:2px solid var(--line);padding:.15rem 0 .15rem .6rem;margin-bottom:.7rem;color:var(--ink)}
+.mar.scholar{border-left-color:var(--vermillion)}
+.mar.player{border-left-color:var(--lapis)}
+.mar .cite{display:block;font-variant:small-caps;letter-spacing:.07em;font-size:.68rem;color:var(--faint);margin-top:.2rem}
+.mar .cite b.scholar{color:var(--vermillion)}
+.mar .cite b.player{color:var(--lapis)}
+.marnum{font-size:.68rem;vertical-align:super;color:var(--faint);font-style:normal}
+.mar .marnum{vertical-align:baseline;margin-right:.25rem}
+@media (max-width:900px){
+  body.annotated .sheet{max-width:46rem}
+  body.annotated .entry{display:block}
+  body.annotated .head,body.annotated .verdicts,body.annotated .rubric,
+  body.annotated .folio,body.annotated .colophon,body.annotated .desk,
+  body.annotated .preface{max-width:none}
+  .entry-margin:not(:empty){border-top:1px dotted var(--line);margin-top:.8rem;padding-top:.6rem}
+}
+.preface{background:var(--deep);border:1px solid var(--line);border-radius:3px;padding:1rem 1.2rem;margin-bottom:1.4rem;font-style:italic}
+.preface .cite{display:block;font-style:normal;font-variant:small-caps;letter-spacing:.08em;font-size:.7rem;color:var(--faint);margin-top:.5rem;text-align:right}
 </style>
 </head>
 <body>
@@ -64,61 +132,215 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;font-weight:600
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const p = new URLSearchParams(location.search);
-const id = p.get('id'), k = p.get('k');
+const ID = p.get('id'), KEY = p.get('k');
 const SEAL = { 'ATTESTED': ['⬤','Attested: the sources record this directly.'],
                'PLAUSIBLE-GAP': ['◐','Plausible: fits the record; the record itself is silent here.'],
                'INVENTED-COMPATIBLE': ['○','Imagined for play, built to fit the world the sources describe.'] };
+const HANDNAME = { scholar: 'the scholar’s hand', player: 'the player’s hand' };
 
-if (!id) { $('#sheet').innerHTML = '<p class="err">No chronicle named.</p>'; }
-else {
-  const qs = new URLSearchParams({ id }); if (k) qs.set('k', k);
-  fetch(`/api/witness?${qs}`).then(r => r.json()).then(({ witness: w, hand, error }) => {
-    if (error) { $('#sheet').innerHTML = `<p class="err">${esc(error)}</p>`; return; }
-    const when = new Date(w.createdAt).toLocaleDateString(undefined, { year:'numeric', month:'long', day:'numeric' });
-    const v = (w.meta && w.meta.verdict) || {};
+let W = null, HAND = null;
+let author = localStorage.getItem('witness-author') || '';
+const openChains = new Set();   // "i|field" whose revision history is showing
+let editing = null;             // { kind:'revise'|'annotate'|'preface', i, field, msg }
 
-    const entries = (w.log || []).map((e) => {
-      const [glyph, gloss] = SEAL[e.grounding] || ['·', ''];
-      const opts = (e.options || []).map((o) => {
-        const why = o.chosen && o.unlockedBy?.length ? `open because of ${o.unlockedBy.join(', ')}`
-                  : o.locked && o.lockedBy?.length ? `locked: ${o.lockedBy.join(' · ')}` : '';
-        return `<li class="opt ${o.chosen ? 'chosen' : ''} ${o.locked ? 'locked' : ''}">
-          <span class="lbl">${o.chosen ? '▸ ' : ''}${esc(o.label)}</span>
-          ${o.detail ? ` — ${esc(o.detail)}` : ''}
-          ${why ? `<span class="why">${esc(why)}</span>` : ''}</li>`;
-      }).join('');
-      return `<div class="entry">
-        <div class="entry-rubric">${esc(e.rubric)}</div>
-        ${e.plate ? `<figure class="plate"><img src="${esc(e.plate.src)}" alt=""><figcaption>${esc(e.plate.caption)}</figcaption></figure>` : ''}
-        <p class="situation">${esc(e.situation)}
-          <span class="seal" title="${esc(gloss)}${e.source ? ' — ' + esc(e.source) : ''}">${glyph} ${esc((e.grounding||'').split('-')[0].toLowerCase())}</span></p>
-        <ul class="opts">${opts}</ul>
-        <p class="outcome"><span class="band band-${esc(e.band)}">${esc(e.band)}</span> ${esc(e.outcomeText)}</p>
-        ${e.chronicle ? `<p class="chron">${esc(e.chronicle.current || e.chronicle.orig)}</p>` : ''}
-      </div>`;
+// ── the revision chain: appended, never merged, so array order is chronological ──
+const chainFor = (i, f) => (W.revisions || []).filter((r) => r.anchor && r.anchor.entryIndex === i && r.anchor.field === f);
+const curText = (i, f, orig) => { const c = chainFor(i, f); return c.length ? String(c[c.length - 1].new) : orig; };
+const notesFor = (i) => (W.annotations || []).filter((a) => a.anchor && a.anchor.entryIndex === i);
+const when = (ts) => { const d = new Date(ts); return isNaN(d) ? '' : d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }); };
+
+// One editable passage: the text as it now stands, a marker if it has been corrected,
+// a quill if you hold a key. The original is never overwritten — it is under the ✳.
+function ed(i, field, orig, tag) {
+  const t = tag || 'span';
+  const c = chainFor(i, field);
+  const key = i + '|' + field;
+  const nums = notesFor(i).map((a, n) => [a, n + 1]).filter(([a]) => a.anchor.field === field).map(([, n]) => n);
+  const sup = nums.length ? `<sup class="marnum">${nums.join(',')}</sup>` : '';
+  const mark = c.length ? `<button class="revmark" data-chain="${key}" title="corrected ${c.length}× — show the original">✳</button>` : '';
+  const quill = HAND ? `<button class="quill" data-edit="${key}" title="Correct this passage" aria-label="Correct this passage">✎</button>` : '';
+  const open = openChains.has(key) ? chainPanel(i, field, orig) : '';
+  const form = (editing && editing.kind === 'revise' && editing.i === i && editing.field === field)
+    ? editForm(curText(i, field, orig)) : '';
+  return `<${t} class="ed${c.length ? ' revised' : ''}">${esc(curText(i, field, orig))}</${t}>${sup}${mark}${quill}${open}${form}`;
+}
+
+function chainPanel(i, field, orig) {
+  const c = chainFor(i, field);
+  return `<div class="chain"><div class="row"><span class="was">as the game gave it: “${esc(orig)}”</span></div>
+    ${c.map((r) => `<div class="row">“${esc(r.new)}”
+      <span class="by ${esc(r.hand)}">— ${esc(r.author)}, ${esc(HANDNAME[r.hand] || r.hand)}, ${esc(when(r.ts))}</span></div>`).join('')}</div>`;
+}
+
+function editForm(value) {
+  const warn = editing.kind === 'annotate'
+    ? 'A note is signed and dated. It never alters the record.'
+    : 'The original stays recoverable. If two people edit at once, the last save wins.';
+  return `<div class="editform">
+    <textarea id="edit-text" spellcheck="true">${esc(value)}</textarea>
+    <div class="bar">
+      <button class="btn primary" data-save="1">Save</button>
+      <button class="btn" data-cancel="1">Cancel</button>
+      <span class="warn">${warn}</span>
+      ${editing.msg ? `<span class="msg">${esc(editing.msg)}</span>` : ''}
+    </div></div>`;
+}
+
+// ────────────────────────────── render ──────────────────────────────
+function render() {
+  const w = W;
+  const created = new Date(w.createdAt).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+  const v = (w.meta && w.meta.verdict) || {};
+  document.body.classList.toggle('annotated', (w.annotations || []).length > 0 || !!HAND);
+
+  const entries = (w.log || []).map((e, i) => {
+    const seal = SEAL[e.grounding] || ['·', ''];
+    const opts = (e.options || []).map((o, n) => {
+      const why = o.chosen && o.unlockedBy && o.unlockedBy.length ? `open because of ${o.unlockedBy.join(', ')}`
+                : o.locked && o.lockedBy && o.lockedBy.length ? `locked: ${o.lockedBy.join(' · ')}` : '';
+      return `<li class="opt ${o.chosen ? 'chosen' : ''} ${o.locked ? 'locked' : ''}">
+        <span class="lbl">${o.chosen ? '▸ ' : ''}${ed(i, 'optionLabel:' + n, o.label)}</span>
+        ${o.detail ? ' — ' + ed(i, 'optionDetail:' + n, o.detail) : ''}
+        ${why ? `<span class="why">${esc(why)}</span>` : ''}</li>`;
     }).join('');
+    const notes = notesFor(i);
+    const margin = `<div class="entry-margin">
+      ${notes.map((a, n) => `<div class="mar ${esc(a.hand)}"><span class="marnum">${n + 1}</span>${esc(a.text)}
+        <span class="cite"><b class="${esc(a.hand)}">${esc(a.author)}</b> · ${esc(HANDNAME[a.hand] || a.hand)} · ${esc(when(a.ts))}</span></div>`).join('')}
+      ${HAND ? `<button class="addnote" data-note="${i}">✒ add a note</button>` : ''}
+      ${editing && editing.kind === 'annotate' && editing.i === i ? editForm('') : ''}
+    </div>`;
+    return `<div class="entry"><div class="entry-body">
+      <div class="entry-rubric">${esc(e.rubric)}</div>
+      ${e.plate ? `<figure class="plate"><img src="${esc(e.plate.src)}" alt=""><figcaption>${esc(e.plate.caption)}</figcaption></figure>` : ''}
+      <p class="situation">${ed(i, 'situation', e.situation)}
+        <span class="seal" title="${esc(seal[1])}${e.source ? ' — ' + esc(e.source) : ''}">${seal[0]} ${esc((e.grounding || '').split('-')[0].toLowerCase())}</span></p>
+      <ul class="opts">${opts}</ul>
+      <p class="outcome"><span class="band band-${esc(e.band)}">${esc(e.band)}</span> ${ed(i, 'outcomeText', e.outcomeText)}</p>
+      ${e.chronicle ? `<p class="chron">${ed(i, 'chronicle', e.chronicle.orig !== undefined ? e.chronicle.orig : e.chronicle.current)}</p>` : ''}
+      </div>${margin}</div>`;
+  }).join('');
 
-    $('#sheet').innerHTML = `
-      ${hand ? `<p class="hand">You hold the ${esc(hand)}’s key — the editor arrives in the next build</p>` : ''}
-      <div class="head">
-        <h1>${esc(w.title)}</h1>
-        <p class="sub">${esc(w.origin === 'simulated' ? 'a simulated life' : 'a played life')} · ${esc(when)} · ${(w.log||[]).length} recorded decisions</p>
-      </div>
-      <div class="verdicts">
-        <div class="folio"><div class="page-head">THE MAN</div>
-          <div class="vtitle">${esc(v.manTitle||'—')}</div><p class="vtext">${esc(v.manText||'')}</p></div>
-        <div class="folio"><div class="page-head">THE SYSTEM</div>
-          <div class="vtitle">${esc(v.systemTitle||'—')}</div><p class="vtext">${esc(v.systemText||'')}</p></div>
-      </div>
-      ${w.attested?.length ? `<div class="rubric">THE ATTESTED LIFE</div><div class="folio">
-        ${w.attested.map(a => `<p class="att"><b>${esc(a.hist)}</b> — ${esc(a.yours)}</p>`).join('')}</div>` : ''}
-      ${w.legacyNotes?.length ? `<div class="rubric">MARGINALIA</div><div class="folio">
-        ${w.legacyNotes.map(n => `<p class="note">· ${esc(n)}</p>`).join('')}</div>` : ''}
-      <div class="rubric">THE FULL RECORD</div>
-      ${entries || '<p class="note">No decisions were recorded.</p>'}
-      <p class="colophon">Ibn Turka: The Occult Court · witness ${esc(w.id)} ·
-        the text stands as the game gave it · built on the research of Matthew Melvin-Koushki</p>`;
-    document.title = `${w.title} — a chronicle`;
+  const nRev = (w.revisions || []).length, nAnn = (w.annotations || []).length;
+  const pref = w.preface || {};
+  const prefaceBlock = (pref.current || HAND)
+    ? `<div class="preface">${pref.current ? esc(pref.current) : '<span class="note">No preface yet.</span>'}
+        ${HAND ? `<button class="quill" data-edit="preface" title="Write the preface" aria-label="Write the preface">✎</button>` : ''}
+        ${pref.current && pref.author ? `<span class="cite">${esc(pref.author)} · ${esc(HANDNAME[pref.hand] || '')}</span>` : ''}
+        ${editing && editing.kind === 'preface' ? editForm(pref.current || '') : ''}</div>`
+    : '';
+
+  $('#sheet').innerHTML = `
+    ${HAND ? `<div class="desk">
+      <span class="who ${esc(HAND)}">You hold ${esc(HANDNAME[HAND])}</span>
+      <label>signed as <input id="author" value="${esc(author)}" placeholder="your name" autocomplete="name"></label>
+      <span class="hint">✎ corrects a passage · ✒ leaves a margin note. The game’s own record — outcomes, bands, what was locked and why — cannot be edited by anyone.</span>
+    </div>` : ''}
+    <div class="head">
+      <h1>${esc(w.title)}</h1>
+      <p class="sub">${esc(w.origin === 'simulated' ? 'a simulated life' : 'a played life')} · ${esc(created)} · ${(w.log || []).length} recorded decisions</p>
+    </div>
+    ${prefaceBlock}
+    <div class="verdicts">
+      <div class="folio"><div class="page-head">THE MAN</div>
+        <div class="vtitle">${esc(v.manTitle || '—')}</div><p class="vtext">${esc(v.manText || '')}</p></div>
+      <div class="folio"><div class="page-head">THE SYSTEM</div>
+        <div class="vtitle">${esc(v.systemTitle || '—')}</div><p class="vtext">${esc(v.systemText || '')}</p></div>
+    </div>
+    ${w.attested && w.attested.length ? `<div class="rubric">THE ATTESTED LIFE</div><div class="folio">
+      ${w.attested.map((a) => `<p class="att"><b>${esc(a.hist)}</b> — ${esc(a.yours)}</p>`).join('')}</div>` : ''}
+    ${w.legacyNotes && w.legacyNotes.length ? `<div class="rubric">MARGINALIA</div><div class="folio">
+      ${w.legacyNotes.map((n) => `<p class="note">· ${esc(n)}</p>`).join('')}</div>` : ''}
+    <div class="rubric">THE FULL RECORD</div>
+    ${entries || '<p class="note">No decisions were recorded.</p>'}
+    <p class="colophon">Ibn Turka: The Occult Court · witness ${esc(w.id)} ·
+      ${nRev || nAnn
+        ? `the game’s record stands as it was played; the text has since been corrected ${nRev}× and annotated ${nAnn}× by hand, and every original is still in the record`
+        : 'the text stands as the game gave it'} ·
+      built on the research of Matthew Melvin-Koushki</p>`;
+  document.title = `${w.title} — a chronicle`;
+
+  const ta = document.getElementById('edit-text');
+  if (ta) { ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); ta.scrollIntoView({ block: 'center' }); }
+}
+
+// ────────────────────────────── editing ──────────────────────────────
+async function post(body) {
+  const r = await fetch('/api/edit', {
+    method: 'POST', headers: { 'content-type': 'application/json' },
+    body: JSON.stringify(Object.assign({ id: ID, key: KEY, author }, body)),
+  });
+  const j = await r.json().catch(() => ({ error: 'the service did not answer in JSON' }));
+  if (!r.ok) throw new Error(j.error || ('error ' + r.status));
+  return j;
+}
+
+async function save() {
+  const ta = document.getElementById('edit-text');
+  if (!ta) return;
+  const text = ta.value;
+  const btn = document.querySelector('[data-save]');
+  if (btn) { btn.disabled = true; btn.textContent = 'Saving…'; }
+  try {
+    if (editing.kind === 'revise') {
+      const { record } = await post({ op: 'revise', anchor: { entryIndex: editing.i, field: editing.field }, new: text });
+      W.revisions.push(record);
+    } else if (editing.kind === 'annotate') {
+      const { record } = await post({ op: 'annotate', anchor: { entryIndex: editing.i, field: null }, text });
+      W.annotations.push(record);
+    } else {
+      const { record } = await post({ op: 'preface', text });
+      W.preface = record;
+    }
+    editing = null;
+  } catch (err) {
+    editing.msg = err.message;
+  }
+  render();
+}
+
+document.addEventListener('click', (e) => {
+  const chain = e.target.closest('[data-chain]');
+  if (chain) {
+    const k = chain.dataset.chain;
+    if (openChains.has(k)) openChains.delete(k); else openChains.add(k);
+    return render();
+  }
+  const edit = e.target.closest('[data-edit]');
+  if (edit) {
+    const k = edit.dataset.edit;
+    if (k === 'preface') editing = { kind: 'preface' };
+    else {
+      const bar = k.indexOf('|');
+      editing = { kind: 'revise', i: Number(k.slice(0, bar)), field: k.slice(bar + 1) };
+    }
+    return render();
+  }
+  const note = e.target.closest('[data-note]');
+  if (note) { editing = { kind: 'annotate', i: Number(note.dataset.note) }; return render(); }
+  if (e.target.closest('[data-cancel]')) { editing = null; return render(); }
+  if (e.target.closest('[data-save]')) { save(); }
+});
+document.addEventListener('input', (e) => {
+  if (e.target.id === 'author') { author = e.target.value; try { localStorage.setItem('witness-author', author); } catch {} }
+});
+document.addEventListener('keydown', (e) => {
+  if (!editing) return;
+  if (e.key === 'Escape') { editing = null; render(); }
+  if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); save(); }
+});
+
+// ────────────────────────────── boot ──────────────────────────────
+if (!ID) { $('#sheet').innerHTML = '<p class="err">No chronicle named.</p>'; }
+else {
+  const qs = new URLSearchParams({ id: ID }); if (KEY) qs.set('k', KEY);
+  fetch('/api/witness?' + qs).then((r) => r.json()).then(({ witness, hand, error }) => {
+    if (error) { $('#sheet').innerHTML = `<p class="err">${esc(error)}</p>`; return; }
+    W = witness; HAND = hand;
+    if (!W.revisions) W.revisions = [];
+    if (!W.annotations) W.annotations = [];
+    if (!W.preface) W.preface = { orig: '', current: '', hand: null };
+    render();
   }).catch((e) => { $('#sheet').innerHTML = `<p class="err">Could not read the chronicle. ${esc(e.message)}</p>`; });
 }
 </script>

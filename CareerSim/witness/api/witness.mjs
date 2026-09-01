@@ -2,9 +2,16 @@
 // Key hashes are stripped before the document leaves the server; a valid key is
 // answered with which hand it belongs to, which is what the editor uses to enable
 // editing and to stamp later corrections.
+//
+// The frozen record comes from the witness blob (written once at publish); the
+// editorial layers are folded from the immutable per-op blobs under edits/<id>/.
+// Nothing here is read from a mutable object, which is what keeps a correction made a
+// second ago from being invisible to the next reader.
 
 import { head } from '@vercel/blob';
 import { createHash } from 'node:crypto';
+import { foldEdits } from '../lib/edit-core.mjs';
+import { loadEdits } from '../lib/edits-store.mjs';
 
 const hash = (s) => createHash('sha256').update(s).digest('hex');
 
@@ -22,7 +29,7 @@ export default async function handler(req, res) {
     const meta = await head(`witnesses/${id}.json`).catch(() => null);
     if (!meta) return res.status(404).json({ error: 'no such witness' });
 
-    const doc = await fetch(meta.url, { cache: 'no-store' }).then((r) => r.json());
+    const doc = await fetch(meta.url).then((r) => r.json());
 
     let hand = null;
     const k = req.query.k ? String(req.query.k) : '';
@@ -33,9 +40,11 @@ export default async function handler(req, res) {
     }
 
     delete doc.keys; // never leaves the server
+    foldEdits(doc, await loadEdits(id));
+
     res.setHeader('Cache-Control', 'no-store');
     return res.status(200).json({ witness: doc, hand });
   } catch (err) {
-    return res.status(500).json({ error: 'read failed', detail: String(err && err.message || err) });
+    return res.status(500).json({ error: 'read failed', detail: String((err && err.message) || err) });
   }
 }
