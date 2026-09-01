@@ -8,6 +8,12 @@
 
 **[t3dy.github.io/TurkaGame](https://t3dy.github.io/TurkaGame/)** — the front page.
 
+> 📖 **[The Knowledge Portal](https://t3dy.github.io/TurkaGame/site/portal/)** — 61 pages on Ibn Turka:
+> figures, concepts, primary texts and institutions, six Intersection essays, a dated
+> [chronology](https://t3dy.github.io/TurkaGame/site/portal/chronology.html), and
+> [section-by-section summaries](https://t3dy.github.io/TurkaGame/site/portal/scholarship.html)
+> of every article and dissertation it draws on.
+>
 > 🖼 **[The Illustration Catalogue](https://t3dy.github.io/TurkaGame/site/plates/)** — every one of
 > the 70 choice pages in the career sim, paired with the period illustration it uses or an art brief
 > and candidate archive sources for the plate it still needs. Design-phase working document.
@@ -21,7 +27,7 @@
 ### Read
 | | |
 |---|---|
-| **[The Ibn Turka Knowledge Portal](https://t3dy.github.io/TurkaGame/site/portal/)** | 52 pages. Six **Intersection** articles on where Ibn Turka meets the wider Islamicate occult world — the Brethren of Purity, al-Būnī, the occult court, the Pythagorean revival, the Akbarian inheritance, the defense of divination — plus entries on figures, concepts, texts, institutions. |
+| **[The Ibn Turka Knowledge Portal](https://t3dy.github.io/TurkaGame/site/portal/)** | 61 pages, including a [**chronology**](https://t3dy.github.io/TurkaGame/site/portal/chronology.html) of 30 dated events and [**section-by-section summaries**](https://t3dy.github.io/TurkaGame/site/portal/scholarship.html) of the scholarship it is built on. Six **Intersection** articles on where Ibn Turka meets the wider Islamicate occult world — the Brethren of Purity, al-Būnī, the occult court, the Pythagorean revival, the Akbarian inheritance, the defense of divination — plus entries on figures, concepts, texts, institutions. |
 | **[The Timeline](https://t3dy.github.io/TurkaGame/site/timeline.html)** | 50 dated events, 950–2025, each tagged for how firmly it is grounded. |
 | **[The Visual Novel: full pitch](https://t3dy.github.io/TurkaGame/site/features.html)** | What the VN is and where its research comes from. |
 | **[The Illustration Catalogue](https://t3dy.github.io/TurkaGame/site/plates/)** | 70 choice pages, 24 plated and 46 briefed, against 78 candidate sources in 8 researched archives. Rights are not cleared — the catalogue records repository, shelfmark and licence so they can be sought later. |

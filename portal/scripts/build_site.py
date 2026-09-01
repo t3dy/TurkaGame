@@ -14,6 +14,7 @@ Run:  python portal/scripts/build_site.py
 """
 
 import html
+import json
 import re
 import sqlite3
 from pathlib import Path
@@ -31,6 +32,7 @@ NAV = [
     ("Concepts", "concepts/index.html"),
     ("Texts", "texts/index.html"),
     ("Institutions", "institutions/index.html"),
+    ("Chronology", "chronology.html"),
     ("Scholarship", "scholarship.html"),
 ]
 
@@ -76,6 +78,13 @@ blockquote{border-left:3px solid var(--gold);padding-left:1rem;margin:0 0 .9rem;
 code{background:rgba(0,0,0,.06);padding:0 .25rem;border-radius:2px;font-size:.9em}
 .tag{display:inline-block;font-size:.72rem;font-variant:small-caps;letter-spacing:.06em;
      border:1px solid var(--line);border-radius:2px;padding:0 .45rem;margin:0 .25rem .25rem 0;color:var(--faint)}
+.sections{margin:18px 0 0;border-left:2px solid var(--line);padding-left:18px}
+.sec-lead{font:600 10.5px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+.sec{margin-bottom:16px}
+.sec h4{font-size:15px;font-weight:600;margin:0 0 5px}
+.tl-year{font:600 12px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.tl-event{border-left:2px solid var(--line);padding-left:16px}
+.tl-links .tag{font-size:11px;margin-right:6px}
 .back{font-size:.85rem}
 footer.site{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);
             color:var(--faint);font-size:.8rem;font-style:italic;text-align:center}
@@ -250,6 +259,7 @@ def main():
     texts = rows(conn, "texts")
     institutions = rows(conn, "institutions")
     biblio = rows(conn, "bibliography")
+    timeline = rows(conn, "timeline_events")
     conn.close()
     essays = read_essays()
     intersections = [e for e in essays if e.get("kind") == "intersection"]
@@ -288,6 +298,7 @@ around him fill in the rest.</p>
 {card("concepts/index.html", "Concepts", "Lettrism, the divine names, the imaginal realm, the Quintet.", f"{len(concepts)} entries")}
 {card("texts/index.html", "Texts", "The Investigations and the works around it.", f"{len(texts)} entries")}
 {card("institutions/index.html", "Institutions", "The circles and courts he moved through.", f"{len(institutions)} entries")}
+{card("chronology.html", "Chronology", "Ibn Turka’s life and its context, dated — from Melvin-Koushki’s own chronology of the sources.", f"{len(timeline)} events")}
 {card("scholarship.html", "Scholarship", "The secondary literature this portal is built on.", f"{len(biblio)} sources")}
 </div>
 <div class="rubric">SYNTHESIS ESSAYS</div>
@@ -339,17 +350,64 @@ what the sources will not tell us.</p>
         for i in items:
             write(f"{kind}/{i['slug']}.html", entry_page(kind, i, name_key, depth=1))
 
+
+    # ---- chronology -------------------------------------------------------
+    def yr(ev):
+        y1, y2 = ev.get("year_start"), ev.get("year_end")
+        ce = f"{y1}–{y2}" if y2 and y2 != y1 else str(y1 or "")
+        h = ev.get("hijri_date")
+        return f"{h}/{ce}" if h else ce
+
+    tl = sorted(timeline, key=lambda e: (e.get("year_start") or 0, e.get("title") or ""))
+    events_html = ""
+    for ev in tl:
+        figs = json.loads(ev.get("figures_involved") or "[]")
+        links = " ".join(f'<a class="tag" href="figures/{E(f)}.html">{E(f.replace("-"," "))}</a>'
+                         for f in figs)
+        events_html += f"""<div class="entry tl-event">
+<p class="tl-year">{E(yr(ev))}{f' · {E(ev.get("place"))}' if ev.get("place") else ''}</p>
+<h3>{E(ev.get("title"))}</h3>
+<p class="sub">{E(ev.get("category"))} · {E(ev.get("grounding"))} · {E(ev.get("date_precision"))}</p>
+{md(ev.get("card") or "")}
+{f'<p class="tl-links">{links}</p>' if links else ''}
+</div>"""
+
+    write("chronology.html", page("Chronology", f"""
+<h1>Chronology</h1>
+<p class="sub lede">{len(tl)} dated events in Ibn Turka’s life and its immediate
+context, taken from the chronology Melvin-Koushki assembles in the addenda to
+<em>The Quest for a Universal Science</em> (33–36). He notes there that, given the
+sparseness of the record, some dates are conjectured or approximate; most rest on the
+colophons of MS Majlis 10196 and on the two collections of letters, the
+<em>Munshaʾāt-i Turka</em> and the <em>Munshaʾāt-i Yazdī</em>.</p>
+{events_html}
+""", depth=0))
+
     # ---- scholarship ------------------------------------------------------
+    def sections_html(b):
+        try:
+            secs = json.loads(b.get("sections") or "[]")
+        except Exception:
+            secs = []
+        if not secs:
+            return ""
+        items = "".join(f'<div class="sec"><h4>{E(x.get("heading"))}</h4>{md(x.get("summary") or "")}</div>'
+                        for x in secs)
+        return f'<div class="sections"><p class="sec-lead">Section by section</p>{items}</div>'
+
     lit = "".join(f"""<div class="entry">
 <h3>{E(b.get('title'))}</h3>
 <p class="sub">{E(b.get('author'))}{f" · {E(b.get('year'))}" if b.get('year') else ""}
-{f" · {E(b.get('pub_type'))}" if b.get('pub_type') else ""}</p>
-{md(b.get('key_arguments') or b.get('body') or b.get('card') or '')}
+{f" · {E(b.get('pub_type'))}" if b.get('pub_type') else ""}
+{f" · {E(b.get('page_count'))} pp." if b.get('page_count') else ""}</p>
+{md(b.get('card') or '')}
+{md(b.get('body') or '')}
+{sections_html(b)}
 {f'<p class="back"><a href="{E(b.get("online_url"))}">source →</a></p>' if b.get('online_url') else ''}
 </div>""" for b in biblio)
     write("scholarship.html", page("Scholarship", f"""
 <h1>Scholarship</h1>
-<p class="sub lede">This portal is a reading of other people's research — above all
+<p class="sub lede">Section-by-section summaries of the scholarship this portal is built on. This is a reading of other people's research — above all
 Matthew Melvin-Koushki's, quoted and paraphrased with permission. Nothing here
 supersedes the sources; it organizes them around one figure.</p>
 {lit}
@@ -357,7 +415,7 @@ supersedes the sources; it organizes them around one figure.</p>
 
     pages = len(list(OUT.rglob("*.html")))
     print(f"Ibn Turka portal built: {pages} pages -> {OUT}")
-    print(f"  {len(intersections)} intersections, {len(syntheses)} synthesis essays, {counts}")
+    print(f"  {len(intersections)} intersections, {len(syntheses)} synthesis essays, {len(timeline)} chronology events, {counts}")
 
 
 if __name__ == "__main__":

@@ -38,7 +38,8 @@ def assert_unique(seed: dict[str, Any]) -> None:
     problems = []
     for table, key in (('figures', 'slug'), ('concepts', 'slug'),
                        ('institutions', 'slug'), ('texts', 'slug'),
-                       ('arguments', 'slug'), ('bibliography', 'source_id')):
+                       ('arguments', 'slug'), ('timeline_events', 'slug'),
+                       ('bibliography', 'source_id')):
         seen: set[str] = set()
         for item in seed.get(table, []):
             ident = item.get(key)
@@ -109,8 +110,8 @@ def ingest_bibliography(conn: sqlite3.Connection, bibs: list[dict]) -> int:
             INSERT OR REPLACE INTO bibliography (
                 source_id, author, title, year, publisher, journal, pub_type,
                 relevance, card, body, key_arguments, corpus_file,
-                conversion_status, char_count, page_count, online_url, access_note
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                conversion_status, char_count, page_count, online_url, access_note, sections
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             bib['source_id'], bib['author'], bib['title'],
             bib.get('year'), bib.get('publisher'), bib.get('journal'),
@@ -120,7 +121,8 @@ def ingest_bibliography(conn: sqlite3.Connection, bibs: list[dict]) -> int:
             bib.get('corpus_file'),
             bib.get('conversion_status', 'CONVERTED'),
             bib.get('char_count'), bib.get('page_count'),
-            bib.get('online_url'), bib.get('access_note')
+            bib.get('online_url'), bib.get('access_note'),
+            json.dumps(bib.get('sections', []))
         ))
     conn.commit()
     return len(bibs)
@@ -194,6 +196,31 @@ def ingest_arguments(conn: sqlite3.Connection, arguments: list[dict]) -> int:
         ))
     conn.commit()
     return len(arguments)
+def ingest_timeline(conn: sqlite3.Connection, events: list[dict]) -> int:
+    c = conn.cursor()
+    for ev in events:
+        c.execute("""
+            INSERT OR REPLACE INTO timeline_events (
+                slug, title, year_start, year_end, date_precision, hijri_date, place,
+                category, grounding, card, body, figures_involved, texts_involved,
+                tags, source_method, review_status, confidence
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            ev['slug'], ev['title'], ev.get('year_start'), ev.get('year_end'),
+            ev.get('date_precision'), ev.get('hijri_date'), ev.get('place'),
+            ev['category'], ev.get('grounding', 'ATTESTED'),
+            ev['card'], ev.get('body'),
+            json.dumps(ev.get('figures_involved', [])),
+            json.dumps(ev.get('texts_involved', [])),
+            json.dumps(ev.get('tags', [])),
+            ev.get('source_method', 'CORPUS_SYNTHESIS'),
+            ev.get('review_status', 'DRAFT'),
+            ev.get('confidence', 'MEDIUM'),
+        ))
+    conn.commit()
+    return len(events)
+
+
 def prune(conn: sqlite3.Connection, seed: dict[str, Any]) -> int:
     """Delete rows whose entry is no longer in seed.json.
 
@@ -206,7 +233,8 @@ def prune(conn: sqlite3.Connection, seed: dict[str, Any]) -> int:
     c = conn.cursor()
     for table, key in (('figures', 'slug'), ('concepts', 'slug'),
                        ('institutions', 'slug'), ('texts', 'slug'),
-                       ('arguments', 'slug'), ('bibliography', 'source_id')):
+                       ('arguments', 'slug'), ('timeline_events', 'slug'),
+                       ('bibliography', 'source_id')):
         try:
             live = {i.get(key) for i in seed.get(table, [])}
             have = {r[0] for r in c.execute(f"SELECT {key} FROM {table}")}
@@ -247,8 +275,9 @@ def main() -> int:
         n_txt = ingest_texts(conn, seed.get('texts', []))
         n_arg = ingest_arguments(conn, seed.get('arguments', []))
         n_bib = ingest_bibliography(conn, seed.get('bibliography', []))
+        n_tl = ingest_timeline(conn, seed.get('timeline_events', []))
 
-        print(f"Ingested {n_fig} figures, {n_con} concepts, {n_inst} institutions, {n_txt} texts, {n_arg} arguments, {n_bib} bibliography entries.")
+        print(f"Ingested {n_fig} figures, {n_con} concepts, {n_inst} institutions, {n_txt} texts, {n_arg} arguments, {n_bib} bibliography entries, {n_tl} timeline events.")
 
         if not args.no_prune:
             n_pruned = prune(conn, seed)

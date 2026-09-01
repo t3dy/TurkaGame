@@ -40,6 +40,13 @@ blockquote{border-left:3px solid var(--gold);padding-left:1rem;margin:0 0 .9rem;
 code{background:rgba(0,0,0,.06);padding:0 .25rem;border-radius:2px;font-size:.9em}
 .tag{display:inline-block;font-size:.72rem;font-variant:small-caps;letter-spacing:.06em;
      border:1px solid var(--line);border-radius:2px;padding:0 .45rem;margin:0 .25rem .25rem 0;color:var(--faint)}
+.sections{margin:18px 0 0;border-left:2px solid var(--line);padding-left:18px}
+.sec-lead{font:600 10.5px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+.sec{margin-bottom:16px}
+.sec h4{font-size:15px;font-weight:600;margin:0 0 5px}
+.tl-year{font:600 12px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.tl-event{border-left:2px solid var(--line);padding-left:16px}
+.tl-links .tag{font-size:11px;margin-right:6px}
 .back{font-size:.85rem}
 footer.site{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);
             color:var(--faint);font-size:.8rem;font-style:italic;text-align:center}
