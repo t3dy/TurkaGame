@@ -82,6 +82,9 @@ code{background:rgba(0,0,0,.06);padding:0 .25rem;border-radius:2px;font-size:.9e
 .sec-lead{font:600 10.5px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
 .sec{margin-bottom:16px}
 .sec h4{font-size:15px;font-weight:600;margin:0 0 5px}
+.tl-more{margin:12px 0}
+.tl-more summary{cursor:pointer;font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--lapis);padding:6px 0}
+.tl-more[open] summary{margin-bottom:10px}
 .tl-year{font:600 12px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
 .tl-event{border-left:2px solid var(--line);padding-left:16px}
 .tl-links .tag{font-size:11px;margin-right:6px}
@@ -369,6 +372,7 @@ what the sources will not tell us.</p>
 <h3>{E(ev.get("title"))}</h3>
 <p class="sub">{E(ev.get("category"))} · {E(ev.get("grounding"))} · {E(ev.get("date_precision"))}</p>
 {md(ev.get("card") or "")}
+{f'<details class="tl-more"><summary>Full account</summary>{md(ev.get("body"))}</details>' if ev.get("body") else ''}
 {f'<p class="tl-links">{links}</p>' if links else ''}
 </div>"""
 
