@@ -172,14 +172,22 @@ comedy; the *bazm* material added last session is the only comic register in the
 
 Do not call any of this done on the strength of a diff. Run both harnesses:
 
-- [x] `analyze-content.mjs reach` reports **0 unreachable gates** *(2026-08-31, and lint-enforced)*
-- [ ] No encounter fires in <10% of runs — *4 remain (was 11): razm_date, deputy, circle_naming, yazdi_copy*
-- [ ] Run-to-run overlap **<40%** — *51% (was 57%)*
-- [ ] `third_inquisition` is set in **>80%** of runs — *~60% (was 31%); the rest is exposure economy*
-- [ ] Encounters with no gated option: **<10 of 73** — *unchanged, 24*
-- [ ] Options with a single outcome band that also carry `requires`/`boosts`: **0** — *not started*
-- [ ] Contracts opened per run **≥2** — *0.61 (was 0.32)*; expectation read by ≥3 gates — *0*
-- [ ] Cross-phase memory read sites **≥25** — *12 (was 9): pressure flags now read at the trials*
+- [x] `analyze-content.mjs reach` reports **0 unreachable gates** *(2026-08-31, lint-enforced)*
+- [ ] No encounter fires in <10% of runs — *~3 remain (was 11)*
+- [ ] Run-to-run overlap **<40%** — *52% (was 57%). Honest assessment: this needs pool depth
+  (Slice 4), not more tuning — every cheap lever has been pulled*
+- [ ] `third_inquisition` is set in **>80%** of runs — *~60–66% by mode (was 31%)*
+- [x] Encounters with no gated option: **<10 of 73** — *9, via 15 conversions (2026-09-01)*
+- [x] Options with a single outcome band that also carry `requires`/`boosts`: **0** *(2026-09-01;
+  26 new bands, several exposure-conditional via the new `min_exposure` band gate)*
+- [ ] Contracts opened per run **≥2** — *0.62; two contract sources exist (commission, grimoire).
+  Needs the per-phase contract authoring in §4, unstarted*
+- [x] Cross-phase memory read sites **≥25** — *25 sites, 23 flags (2026-09-01)*
+- [x] Expectation read by ≥3 gates — *3 boosts (grimoire counter-offer, patron's door, negotiation)*
+- [x] No single system fate >~30% under random play — *scholarly 33%, source_code 23% (was 67%)*
+- [x] The Ibn Turka problem holds under skilled play — *greedy: source_code 47% while 60% of
+  those runs end personally broken/informer/recanted/fugitive — maximal success is maximally
+  dangerous to the man, per DESIGN.md*
 
 Each is one command. A claim in this file that is not backed by one of them should be
 treated as a guess.

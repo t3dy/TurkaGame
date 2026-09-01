@@ -4,6 +4,14 @@
 and the Quintet ranks. [SYSTEMS.md](SYSTEMS.md) §1 defines *what* they mean;
 this file is *how big they should be*, measured against how big they currently are.
 
+> **Status 2026-09-01:** §§1 and 3 describe the world as *found* and are kept as the
+> record the fixes cite. The §2(a) rescale, the §3 injection ladder and tier-conditional
+> bands, and the §5 time pressure (judgeship cost 2, Phase IV at 8 seasons) are all
+> implemented; §7's checklist carries the current measured values. Not yet done from this
+> file: §2(b) spendable meters (Slice 3), the §5 per-phase obligations beyond the
+> judgeship, `opt.time` uses, and §6's full rank economy (grants exist through Phase IV;
+> the Phase V hīmiyā-under-interrogation grant is still an idea).
+
 Regenerate every figure:
 
 ```bash
@@ -172,16 +180,23 @@ also gives Transmission a source that is not just "more students".
 
 ## 7. What to measure after any change
 
-Re-run both harnesses and check:
+Re-run both harnesses and check (measured values as of 2026-09-01 in brackets):
 
-- No meter has a median at its cap before the end of Phase V.
-- Demonstration's end-of-run median is ≥4.
+- No meter has a median at its cap before the end of Phase V. *[met: synthesis median 8
+  after P4, 9 at end — the +2/+3 grants were demoted and several P4 sites converted to
+  demonstration/transmission]*
+- Demonstration's end-of-run median is ≥4. *[NOT met: median 1, mean 1.6 — sites now exist
+  in every phase and tribunal wins pay it, but random play scatters; revisit after a
+  human playtest shows how directed play actually accumulates it]*
 - Exposure's median enters Denounced (7) during Phase V, and Summoned (9) is reached by
-  the top quartile.
-- No single system fate exceeds ~30% of runs; the attested ending is reachable in the low
-  tens of percent under a coherent strategy.
-- Run-to-run overlap is under 40%.
-- No Quintet gate is unreachable.
+  the top quartile. *[met: median 8 at end, p75 = 10]*
+- No single system fate exceeds ~30% of runs *[met within rounding: scholarly 33%,
+  source_code 23% — down from 67%]*; the attested ending is reachable *[partially:
+  exiled 3.5% random; `broken` raised to exposure≥9 so losing the third at ordinary
+  exposure now lands on the attested shape]*.
+- Run-to-run overlap is under 40%. *[NOT met: 52%. Every cheap lever is pulled; this
+  is Slice 4 pool depth]*
+- No Quintet gate is unreachable. *[met, lint-enforced]*
 
 These are the acceptance gates for the retune. They are all one command away, so there is
 no excuse for tuning by feel.

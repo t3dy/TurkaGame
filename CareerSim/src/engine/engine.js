@@ -4,7 +4,7 @@
 // Framework-agnostic; see docs/SYSTEMS.md §3, §8.
 
 import { checkReq, applyEffects } from './state.js?v=3';
-import { meetsExposure } from './career.js?v=5';
+import { meetsExposure } from './career.js?v=7';
 
 export const BANDS = ['triumph', 'success', 'qualified', 'ambiguous', 'backfire', 'disaster'];
 
@@ -102,10 +102,19 @@ export function evaluateOptions(state, enc, people, artifacts) {
 
 // Weighted pick over the option's outcome bands. Met boosts double the weight of
 // the two best bands present — preparation tilts the ladder, it never coin-flips.
+//
+// A band may carry `min_exposure`: it joins the ladder only once the world is paying
+// that much attention. This is how the same choice gets a bottom rung it did not have
+// at "Unremarked" — the missing disasters (docs/MECHANICSISSUES.md §2) are authored as
+// what Denounced makes possible, not as random cruelty. A band the state filters out
+// costs nothing to the weights of the rest.
 export function resolveOption(state, enc, evaluated, rng) {
   const { opt, favoredBy } = evaluated;
   const roll = rng || Math.random;
-  const outcomes = opt.outcomes.slice();
+  let outcomes = opt.outcomes.filter(
+    (o) => o.min_exposure == null || state.meters.exposure >= o.min_exposure
+  );
+  if (!outcomes.length) outcomes = opt.outcomes.slice();
   const order = (o) => BANDS.indexOf(o.band);
   outcomes.sort((a, b) => order(a) - order(b));
 

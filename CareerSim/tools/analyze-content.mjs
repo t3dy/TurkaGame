@@ -11,9 +11,9 @@
 //
 // Nothing here plays the game — see tools/simulate-runs.mjs for that.
 
-import { ENCOUNTERS, PHASES, PEOPLE, ARTIFACTS } from '../content/index.js?v=6';
+import { ENCOUNTERS, PHASES, PEOPLE, ARTIFACTS } from '../content/index.js?v=7';
 import { LEXICON } from '../content/lexicon.js?v=2';
-import { LEGACY_NOTES } from '../src/engine/career.js?v=6';
+import { LEGACY_NOTES } from '../src/engine/career.js?v=7';
 import { readFileSync } from 'node:fs';
 
 const encs = Object.values(ENCOUNTERS);
@@ -143,6 +143,9 @@ run('memory', () => {
     for (const o of e.options) {
       for (const f of Object.keys((o.effects || {}).memory || {})) rec(f);
       for (const b of o.outcomes || []) for (const f of Object.keys((b.effects || {}).memory || {})) rec(f);
+      // Contract settlement writes memory too (career.js applies reward/failure effects).
+      if (o.contract) for (const fx of [o.contract.reward, o.contract.failure])
+        for (const f of Object.keys((fx || {}).memory || {})) rec(f);
     }
   }
   const reads = new Set();

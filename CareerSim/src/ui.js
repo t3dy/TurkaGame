@@ -5,7 +5,7 @@
 
 import { QUINTET } from './engine/state.js?v=3';
 import { LEXICON } from '../content/lexicon.js?v=2';
-import { attestedRows } from './engine/career.js?v=6';
+import { attestedRows } from './engine/career.js?v=7';
 
 const $ = (sel) => document.querySelector(sel);
 export const app = () => $('#app');

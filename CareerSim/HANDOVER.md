@@ -1,6 +1,6 @@
 # Handover — CareerSim
 
-## State (2026-08-31, eighth session: **the loop repairs and the pressure ladder**)
+## State (2026-09-01, ninth session: **the economy retune and the gradient pass**)
 
 The Career Sim plays end to end as a static site, a finished run can be **published to a
 permanent URL**, and — new this session — whoever holds the scholar's or player's key can
@@ -132,14 +132,15 @@ nobody has *looked* at the editor on a wide screen. Worth thirty seconds next se
 2. **Nobody has looked at the editor on screen.** Verified by DOM assertion and API
    response against the live service, and measured for overflow at two widths — but the
    Browser pane was hidden all session, so no human or screenshot has seen it rendered.
-3. **The worst loop defects are fixed and re-measured; the economy retune is not.**
-   Same-day second pass on [docs/MECHANICSISSUES.md](docs/MECHANICSISSUES.md): 0 dead
-   Quintet gates (was 9, lint-enforced now), random draw + injections (third inquisition
-   resolves in ~60% of runs, was 31%; a three-rung exposure pressure ladder is live in
-   `content/pressure.js`), glossary reach 41%→63%, Phase V prose anchored. **Still open:**
-   the meter rescale (synthesis still saturates, so `source_code` is still the modal
-   ending at ~62%), expectation still read by nothing, overlap 51% vs the <40% target,
-   the §2 gradient pass. 73 encounters, 48 tests passing.
+3. **The measured-defect queue is now substantially cleared** (2026-09-01, third pass):
+   0 dead gates · gradient rule holds (0 gated single-outcome options, 26 new bands,
+   `min_exposure` bottom rungs) · meter rescale done (synthesis unpinned, `source_code`
+   67%→23% and no longer modal, `scholarly` the honest modal at 33%) · expectation read
+   by 3 boosts · 25 cross-phase memory sites · no-gate encounters 24→9 · the Ibn Turka
+   problem measurably holds under greedy play (the system wins while 60% of the men are
+   broken, informers, or recanters). **Still open, honestly:** overlap 52% vs <40%
+   (Slice 4 pool depth, not tuning), demonstration median 1 vs target 4, contracts
+   0.62/run vs ≥2 (the §4 authoring pass), ~3 rare encounters. 73 encounters, 49 tests.
 4. **No researcher's desk.** And note the change: `index/{id}.json` no longer carries
    editorial counters (it was a mutable-blob read-modify-write, the same trap that ate
    the first editor). The desk must derive editorial state from a

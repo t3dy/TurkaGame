@@ -3,10 +3,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import { newRun, applyEffects, checkReq } from '../src/engine/state.js?v=3';
-import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict, BANDS } from '../src/engine/engine.js?v=5';
+import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict, BANDS } from '../src/engine/engine.js?v=6';
 import { NODES } from '../content/phase1.js?v=4';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=6';
-import { addObligation, chargeObligations, offerContract, tickContracts, exposureTier, finalVerdict, LEGACY_NOTES } from '../src/engine/career.js?v=6';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=7';
+import { addObligation, chargeObligations, offerContract, tickContracts, exposureTier, finalVerdict, LEGACY_NOTES } from '../src/engine/career.js?v=7';
 
 test('capability gating: feast wonder locked until rimiya practiced', () => {
   const s = newRun();
@@ -275,7 +275,7 @@ test('plate images reference files that are in the provenance registry', async (
 });
 
 test('an open contract cannot outlive its phase — settling forces resolution', async () => {
-  const { settleContracts } = await import('../src/engine/career.js?v=6');
+  const { settleContracts } = await import('../src/engine/career.js?v=7');
   const s = newRun();
   offerContract(s, {
     id: 'c3', name: 'Boon', deadline: 9, promise: 'a demonstration',
@@ -513,4 +513,25 @@ test('the published payload carries the whole scholarly log and empty editorial 
 
 test('a new run starts with an empty run log', () => {
   assert.deepEqual(newRun().runLog, []);
+});
+
+test('exposure-conditional bands: the bottom rung appears only when watched', () => {
+  const s = newRun();
+  const enc = { id: 'x', options: [] };
+  const opt = {
+    id: 'risky', label: 'Risky', requires: [],
+    outcomes: [
+      { band: 'success', weight: 1, text: 'ok' },
+      { band: 'disaster', weight: 100, min_exposure: 7, text: 'ruin' },
+    ],
+  };
+  const ev = { opt, favoredBy: [], available: true, unlockedBy: [], lockedBy: [] };
+  // Unremarked: the disaster band is filtered out entirely — rng pinned to its slot.
+  let r = resolveOption(s, { ...enc, options: [opt] }, ev, () => 0.99);
+  assert.equal(r.band, 'success', 'disaster unreachable while unwatched');
+  // Denounced: the same choice now carries its bottom rung.
+  const s2 = newRun();
+  s2.meters.exposure = 8;
+  r = resolveOption(s2, { ...enc, options: [opt] }, ev, () => 0.99);
+  assert.equal(r.band, 'disaster', 'at Denounced the bottom rung is in the ladder');
 });

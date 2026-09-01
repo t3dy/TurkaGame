@@ -14,11 +14,11 @@
 // numbers quietly stop describing the game.
 
 import { newRun } from '../src/engine/state.js?v=3';
-import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from '../src/engine/engine.js?v=5';
+import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from '../src/engine/engine.js?v=6';
 import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, settleContracts, finalVerdict,
-} from '../src/engine/career.js?v=6';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=6';
+} from '../src/engine/career.js?v=7';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=7';
 
 const N = parseInt(process.argv[2] || '2000', 10);
 const MODE = process.argv[3] || 'random';
@@ -130,7 +130,7 @@ console.log(`  locked share of options shown: ${(100 * lockedShare / N).toFixed(
 
 console.log('\nCAREER SYSTEMS');
 console.log(`  contracts opened per run: ${(contracts / N).toFixed(2)}`);
-console.log(`  patron expectation at end: ${JSON.stringify(q(expectations))}  (nothing in content reads it)`);
+console.log(`  patron expectation at end: ${JSON.stringify(q(expectations))}  (read by 3 boosts since 2026-09-01)`);
 
 console.log('\nOUTCOME BANDS AS PLAYED:', pctOf(bands, Object.values(bands).reduce((a, b) => a + b, 0)).join(' · '));
 console.log('THIRD INQUISITION:', pctOf(third, N).join(' · '));

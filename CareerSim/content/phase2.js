@@ -145,11 +145,15 @@ export const ENCOUNTERS = {
       {
         id: 'mediate', label: 'Force a settlement instead',
         detail: 'Both sides walk away irritated and intact. No enemy, no precedent.',
-        requires: [],
+        // Settlement is the bench’s subtle craft — managing parties, not ruling them.
+        requires: ['himiya>=1'],
         effects: { memory: { mediated_case: true } },
         outcomes: [
           { band: 'qualified', weight: 2, text: 'Water is shared, faces are saved, nobody is satisfied. The smallholder gets less than the law owed him.',
             chronicle: 'He brokered a settlement where the law would have given a clearer verdict.' },
+          { band: 'success', weight: 1, text: 'The parties leave with a working arrangement and, oddly, more respect for the bench than a verdict would have bought. The powerful man never learns how close he came to losing.',
+            effects: { rep: { orthodox: 1 } },
+            chronicle: 'He settled where he could have ruled, and both parties came back to his court willingly.' },
         ],
       },
       {
@@ -240,12 +244,12 @@ export const ENCOUNTERS = {
       {
         id: 'recruit', label: 'Tell them the truth and ask for the library',
         detail: 'Make the family an asset instead of an audience. Risky; they vote.',
-        requires: [],
-        boosts: ['rep:scholarly>=2'],
+        requires: ['rep:scholarly>=2'],
+        boosts: [],
         effects: { memory: { family_told: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'An uncle turns out to have wondered the same things for thirty years. The library, and a modest allowance, are yours.',
-            effects: { meters: { synthesis: 2 }, access: ['family_library'] },
+            effects: { meters: { synthesis: 1 }, access: ['family_library'] },
             chronicle: 'He told his kin what he had actually studied, and found an ally where he expected a lecture.' },
           { band: 'backfire', weight: 2, text: 'The word "lettrist" lands badly at a family dinner. Doors do not slam; they simply stop opening.',
             effects: { rep: { orthodox: -1 } },
@@ -306,7 +310,8 @@ export const ENCOUNTERS = {
       {
         id: 'commission_copies', label: 'Commission copies of your notes',
         detail: 'Transmission begins with a second copy existing at all.',
-        requires: [],
+        // You need notes worth a copyist’s fee.
+        requires: ['meter:synthesis>=2'],
         effects: { people: ['copyist'], meters: { transmission: 1 }, memory: { copyist_engaged: true } },
         outcomes: [
           { band: 'success', weight: 2, text: 'Two clean copies inside a month. One stays with you; one goes into a chest at your uncle’s.',
@@ -392,7 +397,8 @@ export const ENCOUNTERS = {
       {
         id: 'circulate_scholars', label: 'Circulate it among scholars only',
         detail: 'Send it where it will be argued with properly. Narrow, slow, sturdy.',
-        requires: [],
+        // A scholarly readership must already know your name.
+        requires: ['rep:scholarly>=1'],
         effects: { meters: { transmission: 1 }, rep: { scholarly: 2 }, memory: { first_treatise: 'scholarly' } },
         outcomes: [
           { band: 'success', weight: 2, text: 'Three replies within the year, two of them useful, one furious. That is what a discipline feels like.',
@@ -446,7 +452,7 @@ export const ENCOUNTERS = {
         effects: { meters: { exposure: 2 } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'You distinguish theoretical lettrism from street magic so cleanly that the preacher concedes the distinction publicly. It is quoted for years.',
-            effects: { rep: { orthodox: 1, scholarly: 2, occult: 1 }, memory: { public_defense_won: true } },
+            effects: { rep: { orthodox: 1, scholarly: 2, occult: 1 }, meters: { demonstration: 1 }, memory: { public_defense_won: true } },
             chronicle: 'He answered the Friday preacher on the mosque floor and won the distinction he needed in public.' },
           { band: 'ambiguous', weight: 2, text: 'You argue well. He argues loudly. The congregation splits along lines it did not know it had.',
             effects: { rep: { scholarly: 1, orthodox: -1 }, memory: { public_defense_drawn: true } },
@@ -460,7 +466,7 @@ export const ENCOUNTERS = {
         id: 'private_word', label: 'Seek him privately afterward',
         detail: 'Persuade one man instead of a hall. Quiet, slow, sometimes it works.',
         requires: [],
-        boosts: ['himiya>=1'],
+        boosts: ['himiya>=1', 'mem:dervish_exposed'],
         effects: {},
         outcomes: [
           { band: 'success', weight: 2, text: 'Over tea he turns out to be objecting to charlatans, not to you. Next Friday the sermon is subtly narrower.',
@@ -549,7 +555,7 @@ export const ENCOUNTERS = {
         detail: 'Seasons of arithmetic to prove or kill the connection.',
         requires: [],
         boosts: ['person:yazdi', 'access:family_library', 'artifact:letter_grid_ms'],
-        effects: { meters: { synthesis: 2 } },
+        effects: { meters: { synthesis: 1 } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'It holds. Letters, ratios, the harmonic intervals — one architecture, and you can show the working.',
             effects: { meters: { synthesis: 1 }, memory: { harmonic_link: true } },
@@ -591,7 +597,7 @@ export const ENCOUNTERS = {
         // you studied and becomes something you practise. Was `limiya>=2`, which no run
         // could reach (docs/MECHANICSISSUES.md §1).
         requires: ['limiya>=1'],
-        effects: { quintet: { limiya: 1 }, meters: { synthesis: 2, exposure: 1 }, rep: { occult: 1 }, memory: { muqattaat_system: true } },
+        effects: { quintet: { limiya: 1 }, meters: { synthesis: 1, exposure: 1 }, rep: { occult: 1 }, memory: { muqattaat_system: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'The letter-groups resolve into a key. What was a mystery in every commentary becomes, in your notebook, a working part.',
             effects: { meters: { synthesis: 1 } },
@@ -628,7 +634,7 @@ export const ENCOUNTERS = {
       {
         id: 'send_verses', label: 'Send him the doctrine in verse',
         detail: 'Let it travel by voice. Enormous reach; no control at all.',
-        requires: [],
+        requires: ['cap:poetry'],
         effects: { meters: { transmission: 2, exposure: 1 }, rep: { occult: 1 }, memory: { taught_widely: true, qasim_carries: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Within a year your cosmology is being sung in lodges from Tabriz to Herat by people who have never read a word of yours.',
@@ -701,6 +707,8 @@ export const ENCOUNTERS = {
           { band: 'triumph', weight: 1, text: 'You do not arrive at court. A small intellectual operation arrives at court, and you are its head.',
             effects: { meters: { synthesis: 1 } },
             chronicle: 'He came to the prince’s court not as a scholar but as the head of a working circle.' },
+          { band: 'success', weight: 1, text: 'Not everyone comes. The ones who do are the ones who matter, though the leaving is raggeder than you planned and someone’s goodbye is still owed.',
+            chronicle: 'He left for court with most of his circle, and the gaps showed.' },
         ],
       },
     ],

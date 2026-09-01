@@ -85,10 +85,10 @@ export const ENCOUNTERS = {
         effects: { rep: { orthodox: 2 }, memory: { first_inquisition: 'creed', wrote_creed: true } },
         outcomes: [
           { band: 'success', weight: 2, text: 'You write out a creed no jurist can fault, affirming everything required and abandoning nothing essential. The panel is satisfied and slightly disappointed.',
-            effects: { memory: { first_inquisition: 'won' } },
+            effects: { meters: { demonstration: 1 }, memory: { first_inquisition: 'won' } },
             chronicle: 'He answered the first inquisition with a creed that satisfied the panel and conceded nothing that mattered.' },
           { band: 'qualified', weight: 1, text: 'It works. It also becomes the document against which everything you write afterward will be measured.',
-            effects: { memory: { first_inquisition: 'won' } },
+            effects: { meters: { demonstration: 1 }, memory: { first_inquisition: 'won' } },
             chronicle: 'His creed cleared him, and became the measure his later work was held against.' },
         ],
       },
@@ -101,6 +101,10 @@ export const ENCOUNTERS = {
           { band: 'success', weight: 1, text: 'You demonstrate that your accusers are rivals with motives, and the panel dismisses. You have won, and you have taught them to build a better case next time.',
             effects: { rep: { scholarly: 1, orthodox: -1 } },
             chronicle: 'He broke the first indictment by exposing his accusers’ motives, and taught them to prepare better.' },
+          { band: 'qualified', weight: 1, min_exposure: 6,
+            text: 'The dismissal holds — barely. A file at your thickness makes even a clean procedural win read like an escape, and the panel’s chairman says so, off the record, to everyone.',
+            effects: { meters: { exposure: 1 } },
+            chronicle: 'His procedural victory at the first tribunal was retold, everywhere, as a lucky exit.' },
         ],
       },
     ],
@@ -126,7 +130,7 @@ export const ENCOUNTERS = {
         effects: { meters: { exposure: 1 }, memory: { second_inquisition: 'fought' } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'You take the panel through the passage until the difficulty dissolves into the argument it belongs to. Acquitted, and two of the panel ask for copies afterward.',
-            effects: { rep: { scholarly: 2, occult: 1 }, meters: { transmission: 1 }, memory: { second_inquisition: 'won' } },
+            effects: { rep: { scholarly: 2, occult: 1 }, meters: { transmission: 1, demonstration: 1 }, memory: { second_inquisition: 'won' } },
             chronicle: 'At the second tribunal he defended the disputed passage until his judges asked for copies of it.' },
           { band: 'qualified', weight: 2, text: 'Acquitted. The passage stands, your standing does not improve, and a third file is opened before you leave the building.',
             effects: { meters: { exposure: 1 }, memory: { second_inquisition: 'won' } },
@@ -180,11 +184,11 @@ export const ENCOUNTERS = {
         id: 'hold_firm', label: 'Hold firm and refuse to bend',
         detail: 'The historically attested answer. It costs everything and concedes nothing.',
         requires: [],
-        boosts: ['rep:scholarly>=4', 'mem:public_defense_won', 'person:yazdi', 'artifact:tahawi_circle'],
+        boosts: ['rep:scholarly>=4', 'mem:public_defense_won', 'person:yazdi', 'artifact:tahawi_circle', 'mem:defended_weak'],
         effects: { meters: { exposure: 1 }, memory: { third_stance: 'firm' } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Against every expectation the panel splits, and a split panel cannot condemn. You walk out — ruined at court, unbroken in doctrine, and alive.',
-            effects: { rep: { scholarly: 2, occult: 2, imperial: -2 }, memory: { third_inquisition: 'survived' } },
+            effects: { rep: { scholarly: 2, occult: 2, imperial: -2 }, meters: { demonstration: 2 }, memory: { third_inquisition: 'survived' } },
             chronicle: 'He refused to bend at the third tribunal, and against all expectation the panel divided and could not condemn him.' },
           { band: 'backfire', weight: 3, text: 'They condemn. The sentence is not death — it is worse arranged than that: removal, disgrace, and the road.',
             effects: { rep: { imperial: -3, orthodox: -2 }, memory: { third_inquisition: 'lost' } },
@@ -218,6 +222,10 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'ambiguous', weight: 1, text: 'The panel takes the name and lets you go. Qāsim-i Anvār is exiled within the year. Nobody in your circle ever mentions it, and everybody knows.',
             chronicle: 'He gave the tribunal a friend’s name and walked out of it, and Qāsim-i Anvār was exiled inside the year.' },
+          { band: 'disaster', weight: 1, min_exposure: 8,
+            text: 'The panel takes the name — and keeps you anyway. At your degree of notoriety a cooperative witness is too useful to release, and now they know you will trade.',
+            effects: { meters: { exposure: 1 }, rep: { scholarly: -1, occult: -2 } },
+            chronicle: 'He gave the tribunal a name, and learned that a man who trades once is asked twice.' },
         ],
       },
       {
@@ -267,12 +275,15 @@ export const ENCOUNTERS = {
         id: 'offer_service', label: 'Offer something first',
         detail: 'Arrive with a gift, not a request. A horoscope, a dedication, a useful method.',
         requires: ['meter:demonstration>=3'],
-        boosts: ['artifact:horoscope'],
+        // Kept promises are the collateral here — expectation is a ledger with two sides.
+        boosts: ['expectation>=1', 'mem:boon_delivered'],
         effects: { rep: { imperial: 1 }, memory: { asked_protection: true, has_protection: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'You come with work in hand and leave with protection that does not feel like charity. Both of you prefer it this way.',
             effects: { meters: { exposure: -1 } },
             chronicle: 'He brought his patron work rather than a plea, and got protection that cost him no dignity.' },
+          { band: 'success', weight: 1, text: 'The work is accepted and weighed, visibly, against the risk of you. Protection follows — measured to the ounce.',
+            chronicle: 'He bought his shelter with work, and was told exactly what it weighed.' },
         ],
       },
       {
@@ -326,6 +337,8 @@ export const ENCOUNTERS = {
       {
         id: 'counter_offer', label: 'Offer a narrower statement of your own drafting',
         detail: 'Concede vocabulary, keep the doctrine. The apologist’s craft.',
+        // The man who once burned his own fair copy knows how to narrow a claim — P2.
+        boosts: ['mem:withheld_treatise'],
         requires: ['rep:scholarly>=3'],
         effects: { rep: { orthodox: 1 }, meters: { exposure: -1 }, memory: { drafted_own_statement: true, wrote_creed: true } },
         outcomes: [
@@ -370,7 +383,8 @@ export const ENCOUNTERS = {
       {
         id: 'help_quietly', label: 'Help him quietly',
         detail: 'Money, letters of introduction, a name in Herat. Nothing anyone can photograph.',
-        requires: [],
+        // Quiet help under watch is political operation, the bench’s old lesson.
+        requires: ['himiya>=1'],
         effects: { meters: { exposure: 1 }, memory: { qasim_defended: true, helped_quietly: true } },
         outcomes: [
           { band: 'success', weight: 2, text: 'Silver, two letters, and a night visit. He arrives east with somewhere to go, and nobody can prove you had anything to do with it.',
@@ -431,6 +445,8 @@ export const ENCOUNTERS = {
           { band: 'triumph', weight: 1, text: 'He takes it all to Samarkand without comment. He will outlive you by twenty-two years and he does not lose things.',
             effects: { meters: { transmission: 1 } },
             chronicle: 'He sent the whole archive to Yazdī, who outlived him by twenty-two years and lost nothing.' },
+          { band: 'success', weight: 1, text: 'The crates go east with a merchant caravan. For three months you know nothing; then one line in his hand: received, and read twice.',
+            chronicle: 'He sent the whole archive to Yazdī and lived on one line of acknowledgment for a season.' },
         ],
       },
       {
@@ -472,7 +488,7 @@ export const ENCOUNTERS = {
       {
         id: 'correct_and_bless', label: 'Correct the errors and endorse the rest',
         detail: 'Accept that reach costs precision. Fix what matters; let the rest go.',
-        requires: [],
+        requires: ['meter:synthesis>=6'],
         effects: {
           meters: { transmission: 3 }, rep: { occult: 1 },
           memory: { blessed_popularizer: true, taught_widely: true },
@@ -565,6 +581,7 @@ export const ENCOUNTERS = {
       {
         id: 'accept_inscription', label: 'Compose the inscription',
         detail: 'L\u012bmiy\u0101, paid in silver and silence. Useful money; documentary evidence.',
+        boosts: ['mem:muqattaat_system'],
         requires: ['limiya>=2'],
         effects: { meters: { exposure: 1 }, memory: { exile_commission: 'accepted' } },
         outcomes: [
@@ -705,11 +722,16 @@ export const ENCOUNTERS = {
       {
         id: 'quiet_testament', label: 'A quiet transmission to the Brethren alone',
         detail: 'No statement, no names, no evidence. The circle knows what it holds.',
+        // You have practiced sending nothing a tribunal could read — P2, the Qāsim letters.
+        boosts: ['mem:qasim_kept_clear'],
         requires: ['meter:transmission>=3'],
         effects: { meters: { transmission: 1 }, memory: { testament: 'quiet' } },
         outcomes: [
           { band: 'success', weight: 2, text: 'Small packets, trusted hands, nothing signed. It is exactly as durable as the friendships are \u2014 which, it will turn out, is durable enough.',
             chronicle: 'His testament went out in small unsigned packets, exactly as durable as his friendships.' },
+          { band: 'qualified', weight: 1, text: 'Two packets arrive. One does not, and you will never learn which stretch of road has it, or who is reading it there.',
+            effects: { meters: { exposure: 1 } },
+            chronicle: 'Of the quiet packets he sent the Brethren, one went missing on the road and stayed missing.' },
         ],
       },
       {
@@ -740,6 +762,7 @@ export const ENCOUNTERS = {
       {
         id: 'teach_on_road', label: 'Teach wherever they let you stop',
         detail: 'Turn exile into transmission. No security, maximum spread.',
+        boosts: ['mem:taught_widely'],
         requires: [],
         effects: {
           meters: { transmission: 3 }, rep: { occult: 1 },
@@ -758,7 +781,7 @@ export const ENCOUNTERS = {
         id: 'finish_work', label: 'Finish the work',
         detail: 'Complete the system, alone, whether or not anyone is left to read it.',
         requires: [],
-        effects: { meters: { synthesis: 3 }, memory: { finished_work: true } },
+        effects: { meters: { synthesis: 2 }, memory: { finished_work: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'The last revisions are the best of them. Nobody sees the manuscript for four hundred years, and when they do it is complete.',
             effects: { meters: { transmission: 1 } },
@@ -789,6 +812,8 @@ export const ENCOUNTERS = {
           { band: 'triumph', weight: 1, text: 'You give it to the people who will carry it and you stop pushing. It keeps moving anyway — which is the only proof that ever mattered.',
             effects: { meters: { transmission: 1 } },
             chronicle: 'He handed the whole project to his circle and stopped pushing, and it kept moving without him.' },
+          { band: 'success', weight: 1, text: 'You give it to the people who will carry it. The stopping is harder than the giving, and takes longer.',
+            chronicle: 'He handed the work to his circle and taught himself, slowly, to stop.' },
         ],
       },
     ],

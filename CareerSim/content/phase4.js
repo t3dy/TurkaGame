@@ -72,7 +72,7 @@ export const ENCOUNTERS = {
         detail: 'The whole architecture, argued from first principles. Slow, enormous, and unprecedented.',
         requires: ['meter:synthesis>=5'],
         effects: {
-          artifacts: ['investigations'], meters: { synthesis: 2 },
+          artifacts: ['investigations'], meters: { synthesis: 1 },
           memory: { investigations_begun: true, investigations_scope: 'systematic' },
         },
         outcomes: [
@@ -100,7 +100,7 @@ export const ENCOUNTERS = {
         id: 'defer_summa', label: 'Not yet — spend the year deepening instead',
         detail: 'Refuse to publish prematurely. The system gets better; the years do not come back.',
         requires: [],
-        effects: { meters: { synthesis: 3 }, memory: { deferred_summa: true } },
+        effects: { meters: { synthesis: 2 }, memory: { deferred_summa: true } },
         outcomes: [
           { band: 'qualified', weight: 1, text: 'A year of pure work and no book. The system is genuinely stronger. Nobody outside this room knows that.',
             chronicle: 'He spent the pivot year deepening the system instead of writing it down.' },
@@ -166,6 +166,9 @@ export const ENCOUNTERS = {
           { band: 'triumph', weight: 1, text: 'The monument and the door beside it. Scholars get the architecture; princes get the argument; you get the exhausting privilege of maintaining both.',
             effects: { meters: { synthesis: 1, exposure: 1 } },
             chronicle: 'He wrote the summa in Arabic and its door in Persian, and served the learned and the powerful at once.' },
+          { band: 'qualified', weight: 1, text: 'Two books means two sets of errors and half the checking time for each. The Persian is looser than you like, and the looseness is what people will quote.',
+            effects: { meters: { transmission: 1 } },
+            chronicle: 'He wrote the system twice, and the quicker, looser version traveled first.' },
         ],
       },
     ],
@@ -200,11 +203,15 @@ export const ENCOUNTERS = {
       {
         id: 'conceal_core', label: 'Explain the frame, conceal the operative core',
         detail: 'The classic compromise: teachable philosophy, guarded practice.',
-        requires: [],
+        // Concealment-in-plain-sight is misdirection’s craft.
+        requires: ['simiya>=1'],
         effects: { rep: { occult: 2 }, meters: { transmission: 1 }, memory: { concealed_core: true } },
         outcomes: [
           { band: 'success', weight: 2, text: 'Readers get a system they can admire and an operative layer they must come to you for. It is prudent, and it makes the book depend on your being alive.',
             chronicle: 'He explained the architecture and hid the working parts, and made the book depend on him.' },
+          { band: 'qualified', weight: 1, text: 'The concealment is noticed. A careful reader writes to ask, precisely, about the gap — and careful readers talk to each other.',
+            effects: { meters: { exposure: 1 } },
+            chronicle: 'The hole he left in the book was exactly the shape of what he was hiding, and readers saw the shape.' },
         ],
       },
       {
@@ -283,7 +290,7 @@ export const ENCOUNTERS = {
           // Rank 3: the diagram IS the mastery. Reachable now that Phase II's
           // muqaṭṭaʿāt work grants rank 2.
           quintet: { limiya: 1 },
-          artifacts: ['tahawi_circle'], meters: { synthesis: 2, demonstration: 1 },
+          artifacts: ['tahawi_circle'], meters: { demonstration: 2 },
           memory: { tahawi_circle: true },
         },
         outcomes: [
@@ -337,7 +344,7 @@ export const ENCOUNTERS = {
       {
         id: 'write_hierarchy', label: 'Write it, apex and all',
         detail: 'Put lettrism at the top in plain Persian. Clarifying, and permanently quotable against you.',
-        requires: [],
+        requires: ['limiya>=2'],
         effects: {
           artifacts: ['splitting_moon'], meters: { transmission: 2, exposure: 2 }, rep: { occult: 2, orthodox: -2 },
           memory: { wrote_hierarchy: true },
@@ -407,13 +414,15 @@ export const ENCOUNTERS = {
         detail: 'Not just a copy — a transfer. Slow, and it makes him a co-author of the transmission.',
         requires: ['mem:yazdi_bond=equal'],
         effects: {
-          meters: { transmission: 3, synthesis: 2 },
+          meters: { transmission: 3, synthesis: 1 },
           memory: { yazdi_copied: true, yazdi_coauthor: true },
         },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Six weeks at one desk. He corrects your mathematics twice and you rebuild a whole section around his objection. What leaves the room is better than what entered it, and two men understand it completely.',
             effects: { rep: { scholarly: 2 } },
             chronicle: 'He and Yazdī worked through the whole summa at one desk, and what came out of that room neither of them could have written alone.' },
+          { band: 'success', weight: 1, text: 'Six weeks at one desk, and you disagree about the seventh chapter to the end. His copy carries his marginal objection, which is to say: the argument itself survives.',
+            chronicle: 'Yazdī copied the work with his own objection in the margin, and both crossed the desert together.' },
         ],
       },
       {
@@ -445,6 +454,8 @@ export const ENCOUNTERS = {
       {
         id: 'teach_openly', label: 'Teach anyone who comes',
         detail: 'Maximum transmission. You will lose control of the doctrine and gain a movement.',
+        // Qāsim’s verses made you a name among people no treatise reaches — P2.
+        boosts: ['mem:qasim_carries'],
         requires: [],
         effects: {
           people: ['student'], meters: { transmission: 3, exposure: 2 }, rep: { occult: 1 },
@@ -462,12 +473,16 @@ export const ENCOUNTERS = {
       {
         id: 'select_few', label: 'Take a handful of qualified students only',
         detail: 'Depth over reach. A real school, small enough to control.',
-        requires: [],
+        // Qualified students come to the man scholars already read — cross-phase, P2.
+        requires: ['mem:first_treatise=scholarly'],
         effects: { people: ['student'], meters: { transmission: 2 }, rep: { scholarly: 1 }, memory: { selective_school: true } },
         outcomes: [
           { band: 'success', weight: 2, text: 'Five students, properly trained, who understand the operative layer and can be trusted with it. Fewer than a movement; more than a secret.',
             effects: { meters: { synthesis: 1 } },
             chronicle: 'He took five students and taught them everything, which was more than a secret and less than a movement.' },
+          { band: 'qualified', weight: 1, text: 'Four are excellent. The fifth is diligent, loyal, and slightly wrong about the core in a way you cannot teach out of him — and he will outlive the others.',
+            effects: { meters: { transmission: 1 } },
+            chronicle: 'Of his five chosen students, the most durable was the one who understood least.' },
         ],
       },
       {
@@ -590,12 +605,25 @@ export const ENCOUNTERS = {
       {
         id: 'elite_version', label: 'Counter-offer the elite commission',
         detail: 'K\u012bmiy\u0101 standing lets you propose the expensive book instead: fewer buyers, better ones.',
+        contract: {
+          id: 'grimoire_subscription', name: 'The Subscription Treatise', deadline: 3,
+          promise: 'Twelve fair copies of the noble-operations treatise, for named subscribers.',
+          requires: ['meter:transmission>=6'],
+          reward: { meters: { transmission: 2 }, rep: { imperial: 1, occult: 1 }, memory: { boon_delivered: true } },
+          failure: { rep: { imperial: -1, scholarly: -1 }, memory: { boon_failed: true } },
+          expectation_delta: 1,
+        },
+        // A patron who has watched you deliver once takes a counter-offer seriously.
+        boosts: ['expectation>=1'],
         requires: ['kimiya>=2'],
         effects: { meters: { transmission: 1 }, rep: { occult: 2 }, memory: { grimoire: 'elite' } },
         outcomes: [
           { band: 'success', weight: 2, text: 'A treatise on the noble operations, priced for princes, sold by subscription. Twelve copies, twelve serious owners, and your dignity intact at a profit.',
             effects: { rep: { imperial: 1 } },
             chronicle: 'He turned the bazaar commission into an elite treatise, twelve copies for twelve serious men.' },
+          { band: 'qualified', weight: 1, text: 'Eight subscribers, not twelve, and one of them asks — politely, in writing — for the operations you left out. You now know exactly which reader to watch.',
+            effects: { meters: { exposure: 1 } },
+            chronicle: 'His subscription treatise found fewer buyers than hoped, and one too curious.' },
         ],
       },
       {
@@ -628,7 +656,9 @@ export const ENCOUNTERS = {
         detail: 'Work on the tables. Anonymous, rigorous, and it ties your name to real science.',
         requires: ['access:astronomy'],
         boosts: ['person:yazdi', 'person:astronomer'],
-        effects: { meters: { synthesis: 1 }, rep: { scholarly: 2 }, memory: { observatory_work: true } },
+        // Working the tables puts you back in Yazdī's orbit — the correspondence is attested,
+        // and his copy of the autograph is the route by which the work historically survived.
+        effects: { people: ['yazdi'], meters: { demonstration: 1 }, rep: { scholarly: 2 }, memory: { observatory_work: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Your computations go into the great tables unsigned. Centuries from now men in other countries will use numbers you checked, without ever hearing your name — which is a form of survival.',
             effects: { meters: { synthesis: 1, transmission: 1 } },
@@ -645,7 +675,7 @@ export const ENCOUNTERS = {
         effects: { meters: { exposure: 1 } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Some of them see it. Not all, not officially — but the observatory’s own historian is on your side, and historians decide what a century was about.',
-            effects: { meters: { synthesis: 2, transmission: 1 }, rep: { scholarly: 1, occult: 2 }, memory: { observatory_work: true, union_argued: true } },
+            effects: { meters: { demonstration: 1, transmission: 1 }, rep: { scholarly: 1, occult: 2 }, memory: { observatory_work: true, union_argued: true } },
             chronicle: 'At the rising observatory he argued that the science of stars and the science of letters were one enterprise, and some of the astronomers agreed.' },
           { band: 'ambiguous', weight: 2, text: 'Polite interest, no converts. They go back to their instruments; you go back to your tables; both of you are measuring the same sky.',
             effects: { rep: { scholarly: 1 } },
@@ -656,7 +686,7 @@ export const ENCOUNTERS = {
         id: 'stay_away', label: 'Stay at your desk',
         detail: 'Samarkand is a distraction. The summa will not write itself.',
         requires: [],
-        effects: { meters: { synthesis: 2 } },
+        effects: { meters: { synthesis: 1 } },
         outcomes: [
           { band: 'qualified', weight: 1, text: 'You keep working. The greatest observatory in the world goes up without you, and your book gets better.',
             chronicle: 'He stayed at his desk while the observatory rose without him.' },
@@ -694,6 +724,9 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'success', weight: 1, text: 'Word goes to the household that pays you. Protection is a real thing; it is also a debt, and debts are collected.',
             chronicle: 'Summoned, he sent first to his patron and then to his books.' },
+          { band: 'qualified', weight: 1, text: 'The household answers slowly, and the answer names a price you were not asked to discuss. The shelter is real. So is the roof’s weight.',
+            effects: { rep: { imperial: 1 }, meters: { exposure: 1 } },
+            chronicle: 'He asked his patron for shelter before the storm, and the shelter arrived with terms.' },
         ],
       },
       {

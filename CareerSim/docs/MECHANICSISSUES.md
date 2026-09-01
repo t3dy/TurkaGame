@@ -17,6 +17,16 @@ inquisition resolves in ~60% of runs, was 31%). §2, §6, §8, §9 open — §8 
 since retuning fates before the §ECONOMY meter pass would tune against saturated inputs.
 The exposure ladder (ECONOMY §3 fix 1) now exists as `content/pressure.js`.
 
+**Status 2026-09-01 (third pass):** §2 ✅ (0 gated single-outcome options; `min_exposure`
+band gates let the same choice grow a bottom rung when watched). §5 ✅ mostly (expectation
+read by 3 boosts; grimoire contract added; contracts/run 0.62 — the §4 authoring pass in
+ENCOUNTERSNEXTSTEP remains). §6 ⚠ improved (demonstration mean 0.94→1.6, sites in every
+phase, tribunal wins pay it; median still 1 under random play). §8 ✅ (source_code needs
+transmission≥9, synthesis≥8, imperial≥1: 23% random, no longer modal; `broken` raised to
+exposure≥9 so the attested exile survives among losers). §9 ✅ (25 cross-phase sites).
+§10's no-gate rule ✅ (24→9 via conversions). Open: §4 overlap (52%, needs Slice 4 pool
+depth), the remaining ~3 rare encounters, deeper contract authoring.
+
 A note on why these survived two prior audits: **every one of them passes the existing
 lints.** The lints check that a thing is *referenced* (a science is gated somewhere, a
 memory flag is read somewhere), never that the reference can be *reached*. A test that

@@ -253,3 +253,38 @@ pass; figures from `tools/simulate-runs.mjs 2000`.
 - **Deliberately not done**: the ECONOMY §2 meter rescale (a full content pass; fate
   distribution is left modal-`source_code` until inputs stop saturating), expectation
   reads, and the §2 gradient pass. Recorded in NEXTSTEPS.
+
+## The economy retune and the gradient pass (2026-09-01, ninth session)
+
+The remaining MECHANICSISSUES queue, executed and measured (`simulate-runs.mjs 2000`,
+both modes; 49 tests pass).
+
+- **Synthesis demoted mechanically, converted deliberately.** All +2/+3 synthesis grants
+  dropped one step (14 sites, one regex — the key only exists in meters objects); then
+  P4's showing-and-moving moments (the Ṭahawī Circle, the observatory arguments) hand-
+  converted to Demonstration/Transmission, and the argued tribunal wins now pay
+  Demonstration. Median synthesis 10→9 at run's end, unpinned at p25 7.
+- **`min_exposure` on outcome bands** (engine): a band can join the ladder only once the
+  world is watching. The missing disasters are authored as what Denounced makes possible
+  — the same procedural dodge that works quietly at Unremarked becomes the rival's
+  favorite story at Watched. Tested red-green.
+- **Fate retune, after the inputs stopped saturating** (the order ECONOMY.md §7 insisted
+  on): `source_code` now requires transmission≥9, synthesis≥8 **and imperial≥1** — a
+  cosmology cannot become imperial without the empire — falling 67%→23% and losing modal
+  status to `scholarly` (33%), which is the honest default fate of a scholar's work.
+  `broken` raised to exposure≥9 because the pressure ladder pushed the *median* run to 8,
+  and the attested wandering-exile fate was being swallowed by it.
+- **The Ibn Turka problem now measurably holds.** Under greedy (skilled-proxy) play the
+  system triumphs (`source_code` 47%) while 60% of those runs end with the man broken,
+  an informer, a recanter, or a fugitive. Maximal success is maximally dangerous — to
+  him, not to it. This is DESIGN.md's thesis, observed in simulation for the first time.
+- **15 free options gated** (no-gate encounters 24→9), preferring cross-phase memory —
+  the atelier reads the warrāq years, the cipher service reads the ink chemistry, the
+  qualified students read the scholarly treatise. Cross-phase read sites 9→25, hitting
+  the ENCOUNTERSNEXTSTEP target, and every conversion kept ≥1 free option (lint).
+- **The analyzers learned about contract memory** — `contract.reward/failure.memory`
+  writes were invisible to the memory lints, which surfaced as a false "read but never
+  written" on `boon_delivered`. The measurement was wrong, not the content; both fixed.
+- **Explicitly stopped tuning overlap.** 52% vs the <40% target after every cheap lever:
+  the remaining distance is Slice 4 pool depth, and further tuning would be motion
+  without progress. Recorded in NEXTSTEPS so nobody re-tunes it.

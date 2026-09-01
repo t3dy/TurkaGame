@@ -141,7 +141,11 @@ const MAN_FATES = [
     test: (s) => s.memory.third_inquisition === 'lost' && s.memory.book_condemned,
     text: 'The judgment named the work as well as the man. He goes into exile knowing they understood exactly what they were burying.' },
   { key: 'broken', title: 'Broken by the State',
-    test: (s) => s.memory.third_inquisition === 'lost' && s.meters.exposure >= 8,
+    // Raised 8 -> 9 (2026-09-01): with the pressure ladder live, the MEDIAN run ends at
+    // exposure 8, so this fate was swallowing the attested one — losing the third
+    // tribunal and wandering ("exiled") is the historical shape and must stay common
+    // among losers; "broken" is reserved for losing with the file at its thickest.
+    test: (s) => s.memory.third_inquisition === 'lost' && s.meters.exposure >= 9,
     text: 'He lost the third inquisition with nothing left to spend — no patron, no standing, and a file thick enough to bury anyone.' },
   { key: 'fugitive', title: 'The Fugitive',
     test: (s) => s.memory.fled,
@@ -187,10 +191,14 @@ const MAN_FATES = [
 
 const SYSTEM_FATES = [
   { key: 'source_code', title: 'Source Code of Empire',
-    test: (s) => s.meters.transmission >= 8 && s.meters.synthesis >= 7,
+    // Retuned 2026-09-01 after the meter rescale: this was the MODAL ending (51-67% of
+    // random runs) while DESIGN.md requires that maximal success not be the default.
+    // The imperial-standing clause is not just tuning — a cosmology cannot become
+    // "the default imperial cosmology" without standing contact with the courts.
+    test: (s) => s.meters.transmission >= 9 && s.meters.synthesis >= 8 && s.rep.imperial >= 1,
     text: 'The astrological-lettrist platform becomes the default imperial cosmology — Timurid, Aqquyunlu, Safavid, Uzbek, Ottoman, Mughal. Courts he never saw will run on his mathematics for centuries.' },
   { key: 'scholarly', title: 'Carried by the Learned',
-    test: (s) => s.meters.transmission >= 6 && s.rep.scholarly >= 3,
+    test: (s) => s.meters.transmission >= 8 && s.rep.scholarly >= 3,
     text: 'The system survives where it was built to survive: in scholars’ hands, copied, argued over, taught. Not an empire’s cosmology — a discipline’s.' },
   { key: 'escaped', title: 'A Movement Beyond Him',
     test: (s) => s.meters.transmission >= 6,

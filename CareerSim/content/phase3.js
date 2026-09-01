@@ -100,6 +100,8 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Yazdī gets you into rooms where men compute the positions of stars for a living. The letter science and the star science are, it turns out, hungry for each other.',
             chronicle: 'With Yazdī he went to Samarkand, where the star science and the letter science met over the same tables.' },
+          { band: 'success', weight: 1, text: 'The rooms open more slowly than Yazdī promised. But they open, and the men inside them check their tables twice, which is its own kind of welcome.',
+            chronicle: 'He followed Yazdī to Samarkand and earned the tables the slow way.' },
         ],
       },
     ],
@@ -155,6 +157,8 @@ export const ENCOUNTERS = {
       {
         id: 'negotiate', label: 'Negotiate the terms down',
         detail: 'Longer deadline, smaller reward. The professional’s answer.',
+        // A patron who has never been dazzled by you accepts a modest promise gracefully.
+        boosts: ['expectation<=0'],
         requires: ['rep:scholarly>=2'],
         contract: {
           id: 'negotiated_boon', name: 'The Negotiated Boon', deadline: 6,
@@ -168,6 +172,9 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'success', weight: 1, text: 'You talk him from four seasons to six and from a spectacle to a treatise. He respects it, slightly against his will.',
             chronicle: 'He negotiated the prince’s commission into terms he could actually keep.' },
+          { band: 'qualified', weight: 1, text: 'He agrees, and remembers agreeing. A prince who has been talked down keeps the ledger open somewhere you cannot read it.',
+            effects: { rep: { imperial: -1 } },
+            chronicle: 'He bargained a prince’s commission down, and the bargaining was itself remembered.' },
         ],
       },
       {
@@ -253,6 +260,8 @@ export const ENCOUNTERS = {
       {
         id: 'name_reading', label: 'Read it from the ruler’s name',
         detail: 'Lettrist prognostication — your own method, on the highest possible stakes.',
+        // You read names for a fee in Isfahan; the practice is old in your hands — P2.
+        boosts: ['mem:name_reading'],
         requires: ['limiya>=2'],
         effects: { artifacts: ['horoscope'], meters: { exposure: 2, demonstration: 1 }, memory: { dynastic_prognosis: true } },
         outcomes: [
@@ -273,6 +282,10 @@ export const ENCOUNTERS = {
           { band: 'success', weight: 2, text: 'A competent conjunctional reading, delivered with the appropriate hedges. The court astrologers nod; nobody is startled.',
             effects: { rep: { imperial: 1 } },
             chronicle: 'He answered the dynastic question from the conjunctions, in the manner the court expected.' },
+          { band: 'backfire', weight: 1, min_exposure: 5,
+            text: 'Someone repeats your number without your conditions. By the time it reaches a rival court it is a prophecy, and it is yours.',
+            effects: { meters: { exposure: 1 } },
+            chronicle: 'His careful conjunctional reading traveled without its hedges, and hardened into a prophecy on the road.' },
         ],
       },
       {
@@ -303,7 +316,7 @@ export const ENCOUNTERS = {
       {
         id: 'collaborate', label: 'Work it out with her',
         detail: 'Take an artisan seriously as a colleague. Gains a capability, not a compliment.',
-        requires: [],
+        requires: ['limiya>=1'],
         effects: { people: ['calligrapher'], meters: { synthesis: 1 }, memory: { calligrapher_ally: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Three evenings of grids and arithmetic. She has found something, and she now knows how to look for more of it — and how to draw it so others can see.',
@@ -317,7 +330,7 @@ export const ENCOUNTERS = {
         id: 'appropriate', label: 'Take the observation and thank her',
         detail: 'It is a real finding. It can be yours. She is an artisan; nobody will ask.',
         requires: [],
-        effects: { meters: { synthesis: 2 }, rep: { scholarly: 1 }, memory: { took_credit: true } },
+        effects: { meters: { synthesis: 1 }, rep: { scholarly: 1 }, memory: { took_credit: true } },
         outcomes: [
           { band: 'ambiguous', weight: 1, text: 'The finding is genuinely useful. The workshop is a small world, and workshops talk to each other.',
             effects: { rep: { imperial: -1 } },
@@ -369,12 +382,16 @@ export const ENCOUNTERS = {
       {
         id: 'plain_teaching', label: 'Insist on a plain, teachable version',
         detail: 'Simple, explained, reproducible by any copyist. Designed for uptake, not for princes.',
-        requires: [],
+        // The warrāq years taught you what survives copying — cross-phase read, P2.
+        requires: ['mem:copyist_engaged'],
         effects: { meters: { transmission: 1 }, rep: { scholarly: 1 }, memory: { plain_diagram: true, taught_widely: true } },
         outcomes: [
           { band: 'success', weight: 2, text: 'The illuminators are baffled and slightly offended. The result can be copied by anyone with a reed pen, which is the entire point.',
             effects: { meters: { transmission: 1 } },
             chronicle: 'He insisted his diagram be made plain enough for any copyist, against the atelier’s better taste.' },
+          { band: 'qualified', weight: 1, text: 'The atelier obeys and quietly disapproves, and the plain version circulates beside a gorgeous unauthorized one that gets three details wrong.',
+            effects: { meters: { transmission: 1 } },
+            chronicle: 'His plain diagram traveled beside a beautiful corrupted one, and he could not call back either.' },
         ],
       },
       {
@@ -408,7 +425,7 @@ export const ENCOUNTERS = {
         effects: { people: ['astronomer'], memory: { astronomer_engaged: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'He checks it for a week and comes back with two corrections and a proposal for joint work. This is worth more than a prince’s applause.',
-            effects: { meters: { synthesis: 2 }, rep: { scholarly: 2 }, memory: { observatory_work: true } },
+            effects: { meters: { synthesis: 1 }, rep: { scholarly: 2 }, memory: { observatory_work: true } },
             chronicle: 'He gave his method to a Samarkand computer to check, and got back corrections and a collaborator.' },
           { band: 'qualified', weight: 2, text: 'He finds one real error. It is a small error and it is yours, and you will fix it, and he will remain politely unconvinced.',
             effects: { meters: { synthesis: 1 }, rep: { scholarly: 1 } },
@@ -480,6 +497,10 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'qualified', weight: 1, text: 'The procedural point lands and the challenge collapses. Everyone present understands you did not answer the question.',
             chronicle: 'He met a mathematical challenge with a jurist’s procedural objection, and the room drew its own conclusions.' },
+          { band: 'backfire', weight: 1, min_exposure: 5,
+            text: 'At your level of visibility, dodging reads as confession. He tells the story of your non-answer for a year, and tells it well.',
+            effects: { meters: { exposure: 1 }, rep: { scholarly: -1 } },
+            chronicle: 'His procedural dodge of a mathematical challenge became the rival’s favorite story.' },
         ],
       },
       {
@@ -586,6 +607,9 @@ export const ENCOUNTERS = {
           { band: 'success', weight: 2, text: 'You write him an honest memorandum: which operations reproduce, which are travelers\u2019 tales, and how to tell the difference. It is the least magical document you have ever produced and among the most useful.',
             effects: { rep: { imperial: 1 } },
             chronicle: 'He wrote the commander a sober memorandum separating tested operations from tales, and was trusted the more for it.' },
+          { band: 'triumph', weight: 1, text: 'The commander files the memorandum and — more valuable — tells other commanders who wrote it. Sober expertise turns out to be the rarest commodity in a war camp.',
+            effects: { rep: { imperial: 1 }, meters: { demonstration: 1 } },
+            chronicle: 'His sober memorandum on the operations circulated among commanders under his own name.' },
         ],
       },
       {
@@ -641,12 +665,15 @@ export const ENCOUNTERS = {
       {
         id: 'wake_rite', label: 'Offer the opposite trick instead',
         detail: 'The wake-rite: keep the whole table alert till dawn. Redirect the room\u2019s appetite.',
+        boosts: ['kimiya>=1', 'mem:feast_performed'],
         requires: ['kimiya>=1'],
         effects: { rep: { imperial: 1 }, memory: { wake_rite_shown: true } },
         outcomes: [
           { band: 'success', weight: 2, text: 'A preparation from the manuals \u2014 mostly strong ingredients and stronger theater \u2014 and the feast runs to sunrise with nobody asleep to mock. The kitchen bills you personally.',
             effects: { meters: { demonstration: 1 } },
             chronicle: 'He kept the prince\u2019s table awake until dawn by art, and let the sleeping man sleep.' },
+          { band: 'qualified', weight: 1, text: 'The preparation half-works; theater carries the rest. You know exactly which half the kitchen will gossip about.',
+            chronicle: 'His waking-draught worked mostly by performance, and he knew it.' },
         ],
       },
     ],
@@ -760,7 +787,7 @@ export const ENCOUNTERS = {
     rubric: 'THE CAMPAIGN · AN AUSPICIOUS DATE FOR THE ARMY',
     grounding: 'ATTESTED',
     source: 'RESEARCH — election astrology as imperial technology; the astrological-lettrist platform as political science',
-    when: ['mem:patron', 'meter:demonstration>=2'],
+    when: ['mem:patron', 'meter:demonstration>=1'],
     affordances: ['royal_patronage', 'astronomical_data', 'military'],
     situation:
       'The army moves in the spring and the prince wants a date. This is not a parlor question: men will march on your ' +
@@ -842,11 +869,16 @@ export const ENCOUNTERS = {
       {
         id: 'sell_service', label: 'Offer the service, not the method',
         detail: 'Keep the secret; do the work yourself. Indispensable, and permanently on call.',
-        requires: [],
+        // You can only sell the service if you once compounded the ink yourself — P2.
+        requires: ['mem:inks_solved'],
         effects: { rep: { imperial: 1 }, meters: { exposure: 1 }, memory: { hoarded: true, military_application: true } },
         outcomes: [
           { band: 'success', weight: 2, text: 'You become the man who prepares the important letters. It is influence, and it is a leash.',
             chronicle: 'He kept the method and sold the service, and became the man the prince’s letters went through.' },
+          { band: 'qualified', weight: 1, min_exposure: 5,
+            text: 'You prepare the letters. Then someone asks, in a friendly way, who else you prepare letters for — and writes down the answer.',
+            effects: { meters: { exposure: 1 } },
+            chronicle: 'His cipher work made him indispensable, and being indispensable made him watched.' },
         ],
       },
       {
@@ -878,7 +910,7 @@ export const ENCOUNTERS = {
         id: 'take_the_work', label: 'Leave with the work, and nothing else',
         detail: 'Books, tables, diagrams. Let the politics go on without you.',
         requires: [],
-        effects: { meters: { synthesis: 2 }, memory: { court_exit: 'work' } },
+        effects: { meters: { synthesis: 1 }, memory: { court_exit: 'work' } },
         outcomes: [
           { band: 'success', weight: 1, text: 'You go with chests of paper and no faction. It is the least dangerous way to leave a court that has just eaten a prince.',
             chronicle: 'When the court broke up he left with his papers and no allegiances.' },
@@ -905,6 +937,8 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Four people follow you out of a collapsing court because the work is more interesting than the wreckage. That is what an intellectual movement looks like at the beginning.',
             chronicle: 'When the court fell apart he left with his collaborators, and what followed him was no longer only a man.' },
+          { band: 'success', weight: 1, text: 'Two follow at once, one writes to say he will come later, and one stays behind to keep your letters. It is enough.',
+            chronicle: 'He left the falling court with part of his circle, and the rest kept faith by letter.' },
         ],
       },
     ],

@@ -3,15 +3,15 @@
 // Engine stays pure; this file owns flow, time, obligations, contracts, saves.
 
 import { newRun, save, load, clearSave } from './engine/state.js?v=3';
-import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from './engine/engine.js?v=5';
+import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from './engine/engine.js?v=6';
 import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, exposureTier,
   finalVerdict, settleContracts,
-} from './engine/career.js?v=6';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=6';
-import { logEntry, buildChroniclePayload } from './engine/export.js?v=4';
+} from './engine/career.js?v=7';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=7';
+import { logEntry, buildChroniclePayload } from './engine/export.js?v=5';
 import { publishWitness } from './witness-client.js?v=1';
-import * as ui from './ui.js?v=6';
+import * as ui from './ui.js?v=7';
 
 let state = null;
 let current = null;

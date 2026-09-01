@@ -119,7 +119,7 @@ export const ENCOUNTERS = {
         effects: {},
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Your argument is clean and the visitor concedes the point. The hall remembers you.',
-            effects: { rep: { scholarly: 2, orthodox: 1 } },
+            effects: { rep: { scholarly: 2, orthodox: 1 }, meters: { demonstration: 1 } },
             chronicle: 'In open disputation he bested a visiting jurist with the jurists’ own tools.' },
           { band: 'success', weight: 2, text: 'A solid showing. The professors nod; nothing is risked.',
             effects: { rep: { scholarly: 1 } },
@@ -275,9 +275,10 @@ export const ENCOUNTERS = {
       {
         id: 'both', label: 'Insist the two are co-founders',
         detail: 'The synthesis no one else will make. Pleases neither faction — yet.',
-        requires: [],
-        boosts: ['meter:synthesis>=2'],
-        effects: { meters: { synthesis: 2 }, memory: { lineages_declared: 'both' } },
+        // The signature synthesis move — you need synthesis to make it.
+        requires: ['meter:synthesis>=2'],
+        boosts: [],
+        effects: { meters: { synthesis: 1 }, memory: { lineages_declared: 'both' } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'You argue the two lines as one river. Akhlāṭī says nothing — and pours your tea himself.',
             effects: { rep: { occult: 1, scholarly: 1 } },
@@ -477,8 +478,9 @@ export const ENCOUNTERS = {
       {
         id: 'apprentice', label: 'Assist him through a season',
         detail: 'Learn the astrolabe and the tables — licensed mathematics, unimpeachable.',
-        requires: [],
-        boosts: ['mem:madrasa_trained'],
+        // A season at the muwaqqit’s tables needs the madrasa’s mathematics first.
+        requires: ['mem:madrasa_trained'],
+        boosts: [],
         effects: { access: ['astronomy'], meters: { synthesis: 1 }, rep: { orthodox: 1 }, memory: { studied_timekeeping: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Your madrasa logic and his instruments fit like gear-teeth. By season’s end he lets you compute the month alone.',
@@ -577,6 +579,9 @@ export const ENCOUNTERS = {
           { band: 'ambiguous', weight: 2, text: 'You give the salon an hour of metaphysics. Everyone leaves impressed; no one leaves sure of anything, including you.',
             effects: { rep: { scholarly: 1 }, memory: { dervish_open: true } },
             chronicle: 'Asked to judge a wonder, he answered with a question about place itself, and the salon went home dizzy.' },
+          { band: 'success', weight: 1, text: 'One listener — the quiet man near the door — follows the argument all the way down and asks, afterward, where you studied. The salon forgets the dervish before it forgets the question.',
+            effects: { rep: { scholarly: 1 } },
+            chronicle: 'His answer about place itself outlived the wonder it was meant to judge.' },
         ],
       },
       {
@@ -687,6 +692,9 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'success', weight: 1, text: 'You speak at the gathering as one of his own. Men you have never met will now write to you for years.',
             chronicle: 'When Akhlāṭī died, he stood forth as the master’s student, and let the inheritance be seen.' },
+          { band: 'qualified', weight: 1, text: 'You speak at the gathering as one of his own — before men who write letters, and before men who keep lists.',
+            effects: { meters: { exposure: 1 } },
+            chronicle: 'He stood forth as Akhlāṭī’s student before witnesses of every kind.' },
         ],
       },
       {
@@ -725,6 +733,8 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'triumph', weight: 1, text: 'A month of desert stages spent building the thing between you: letters and numbers braided into one science, argued from Cairo to the Iranian plateau.',
             chronicle: 'He and Yazdī took the eastern road together, and the long collaboration was sealed between way-stations.' },
+          { band: 'success', weight: 1, text: 'The stages are long and the arguments longer. Not every knot unties between Cairo and the plateau, but the habit of working them together is set now, and it will hold for thirty years.',
+            chronicle: 'He took the eastern road with Yazdī, arguing the whole way.' },
         ],
       },
     ],

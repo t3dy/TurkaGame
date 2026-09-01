@@ -17,7 +17,7 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { ENCOUNTERS, PHASES } from '../content/index.js?v=6';
+import { ENCOUNTERS, PHASES } from '../content/index.js?v=7';
 import { LEXICON } from '../content/lexicon.js?v=2';
 
 const SCI = ['kimiya', 'limiya', 'himiya', 'simiya', 'rimiya'];
@@ -103,6 +103,9 @@ test('no encounter is stranded behind a memory flag nothing writes', () => {
     for (const o of e.options) {
       for (const f of Object.keys((o.effects || {}).memory || {})) written.add(f);
       for (const b of o.outcomes || []) for (const f of Object.keys((b.effects || {}).memory || {})) written.add(f);
+      // Contract settlement writes memory too (career.js applies reward/failure effects).
+      if (o.contract) for (const fx of [o.contract.reward, o.contract.failure])
+        for (const f of Object.keys((fx || {}).memory || {})) written.add(f);
     }
   }
   const stranded = [];

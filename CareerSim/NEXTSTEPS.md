@@ -51,9 +51,13 @@ Audited 2026-08-31 with two new harnesses (`tools/analyze-content.mjs`,
 (0 dead gates + reachability lints; random draw + Phase IV split; tribunals and a new
 three-rung pressure ladder injected — `content/pressure.js`). Item 4 is **partial**
 (judgeship cost 2, commission injected, contracts 0.61/run; `expectation` still unread,
-`opt.time` still unused). What remains of this section, in order: **the ECONOMY §2 meter
-rescale** (until synthesis stops saturating, the ending matrix cannot be tuned), the §2
-gradient pass on gated options, expectation reads, overlap 51%→<40%.
+`opt.time` still unused). **Second update (2026-09-01, ninth session):** the meter rescale, the gradient pass
+(with `min_exposure` bottom rungs), expectation reads, the fate retune (`source_code`
+23%, `broken`→exposure≥9 so the attested exile survives), 25 cross-phase reads, and the
+no-gate conversions (24→9) are all done and measured. What genuinely remains: **overlap
+52%→<40% needs Slice 4 pool depth** (every tuning lever is exhausted — stop re-tuning
+and author encounters when that target matters), demonstration median 1→4 (revisit after
+a human playtest), contracts ≥2/run (the §4 authoring pass in ENCOUNTERSNEXTSTEP).
 
 The four that mattered, as found:
 
