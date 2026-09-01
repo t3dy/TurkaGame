@@ -23,6 +23,11 @@ in the repo, scenes reveal the real world.
 | Writing encounter/situation prose | [../games/visual-novel/WRITING_GUIDE.md](../games/visual-novel/WRITING_GUIDE.md) (applies here too) + grounding rules in [docs/ENCOUNTER_ATOMS.md](docs/ENCOUNTER_ATOMS.md) |
 | Authoring/converting content | [docs/ENCOUNTER_ATOMS.md](docs/ENCOUNTER_ATOMS.md) |
 | What to build next | [docs/ROADMAP.md](docs/ROADMAP.md) — slices with hard gates, in order |
+| How the loop actually behaves | [docs/GAMELOOP.md](docs/GAMELOOP.md) — the as-built loop, measured (SYSTEMS.md is the spec; this is the reality) |
+| Balance, tuning, meter/exposure numbers | [docs/ECONOMY.md](docs/ECONOMY.md) |
+| Known defects and their evidence | [docs/MECHANICSISSUES.md](docs/MECHANICSISSUES.md) — ranked, with repro commands |
+| What content to author next | [docs/ENCOUNTERSNEXTSTEP.md](docs/ENCOUNTERSNEXTSTEP.md) |
+| Prose quality, voice, the glossary | [docs/WRITINGAUDIT.md](docs/WRITINGAUDIT.md) |
 | Why a decision was made | [docs/DECISIONS.md](docs/DECISIONS.md), then DESIGN_CONVERSATION.md by section |
 | Research facts | [../docs/BIOGRAPHY.md](../docs/BIOGRAPHY.md) + [../site/data/timeline.json](../site/data/timeline.json) (canonical), portal corpus for depth |
 
@@ -38,6 +43,10 @@ in the repo, scenes reveal the real world.
   reset.
 - **Grounding tags on every encounter** — ATTESTED needs a source pointer; the UI
   surfaces them as seals.
+- **A gate that cannot be reached is worse than no gate.** The existing lints check that a
+  science/flag is *referenced* somewhere, never that the reference can be *satisfied* — and
+  9 Quintet gates were bricked shut for months while every test passed. Before adding a
+  requirement above tier 1, run `node tools/analyze-content.mjs reach`.
 - **Two-voice UI writing**: Chronicle voice for world text, Gloss voice (marginalia)
   for mechanics — see UI_STYLE_GUIDE §3. Never mix them in one string.
 - **Engine stays framework-agnostic**: `src/engine/` has no React/Next imports and is
@@ -62,8 +71,24 @@ CareerSim/
 
 ## Run & verify
 
-No code yet (docs-only kickoff state). Once Slice 0 lands: `npm run dev` via a
-`.claude/launch.json` entry (preview_start, per workspace convention — don't run dev
-servers through raw Bash), Node test runner for `src/engine/`, and Vercel for deploys
-from Slice 2. The parent repo's GitHub Pages site is NOT this game's host — this
-subproject deploys separately to Vercel (see docs/DECISIONS.md).
+The game is a static site served from the repo root — serve the root and open
+`/CareerSim/`. It is live on the parent repo's GitHub Pages at
+https://t3dy.github.io/TurkaGame/CareerSim/ ; only the **witness service** deploys to
+Vercel (`CareerSim/witness/`, project `turka-witness`, `vercel deploy --prod --yes`).
+Use `preview_start` per workspace convention — don't run dev servers through raw Bash.
+
+Tests: `node --test tools/test-engine.mjs` (engine + content lints) and
+`node --test witness/test-edit.mjs` (the editor's rules and fold).
+
+**Measure before claiming anything about balance or content.** Two harnesses:
+`node tools/analyze-content.mjs [shape|gates|reach|invariants|economy|memory|prose|lexicon]`
+(static) and `node tools/simulate-runs.mjs 2000 [random|greedy]` (plays complete runs
+through the real engine). Every figure in GAMELOOP/ECONOMY/MECHANICSISSUES/
+ENCOUNTERSNEXTSTEP/WRITINGAUDIT comes from these — regenerate rather than trusting a
+number in a doc. If you change `src/main.js`'s turn loop, mirror it in
+`tools/simulate-runs.mjs` or the numbers quietly stop describing the game.
+
+To work on the witness editor without deploying, `.claude/launch.json` config
+`witness-editor-dev` (port 7533) runs `witness/devserver.mjs`, which serves
+`witness/public/` and stands in for the blob endpoints in memory, mirroring production's
+storage shape.

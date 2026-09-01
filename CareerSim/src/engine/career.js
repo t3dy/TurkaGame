@@ -302,6 +302,18 @@ export const LEGACY_NOTES = {
   'court_entry=careful': 'He arrived at court as a jurist, and let them discover the rest at his own pace.',
   'court_entry=circle': 'He arrived at court at the head of a working circle rather than alone.',
 
+  // — The pressure ladder (content/pressure.js) —
+  rumor_corrected: 'He corrected his own legend in a bookshop, and the legend outran the correction anyway.',
+  rumor_let_run: 'He let a distorted version of his doctrine travel nameless, and it made better time than the true one.',
+  rumor_traced: 'He traced a rumor to its teller the way he traced a verdict to a witness. The bench had taught him more than law.',
+  copy_sent: 'He mailed his work to names he could not place, because a scholar who will not be read is not a scholar.',
+  copy_in_dossier: 'One of the copies he sent to strangers was read back to him, years later, in a formal voice.',
+  copy_purged: 'He kept a purged copy for strangers — every page defensible, every page missing something.',
+  copy_declined: 'He declined a stranger’s request for his work, and the refusal was filed as carefully as a copy would have been.',
+  denunciation_answered: 'He answered an unsigned denunciation in writing, and so rehearsed his defense years before it was demanded.',
+  denunciation_ignored: 'A written denunciation circulated, and he met it with silence. Both documents survived.',
+  denunciation_traced: 'He knew which colleague had drafted the charge against him, and never once said so aloud.',
+
   // — The courts —
   'patron=iskandar': 'He was Iskandar Sultan’s man in the years when that was the most interesting and most dangerous thing to be.',
   'patron=baysunghur': 'He served Bāysunghur, and the finest book-workshop in the world served him back.',

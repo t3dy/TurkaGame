@@ -4,7 +4,7 @@
 // Framework-agnostic; see docs/SYSTEMS.md §3, §8.
 
 import { checkReq, applyEffects } from './state.js?v=3';
-import { meetsExposure } from './career.js?v=4';
+import { meetsExposure } from './career.js?v=5';
 
 export const BANDS = ['triumph', 'success', 'qualified', 'ambiguous', 'backfire', 'disaster'];
 
@@ -19,13 +19,54 @@ export function encounterEligible(state, enc) {
   return true;
 }
 
-// Draw the first eligible encounter from a node's pool.
-export function drawEncounter(state, node, encounters) {
+// Draw an encounter from a node's pool.
+//
+// This used to return the FIRST eligible encounter in the node's array, which made a node
+// an ordered queue rather than a pool. Two measured consequences (docs/MECHANICSISSUES.md
+// §3, §4): anything past position ~3 in a node could not fire inside a phase's season
+// budget — `pivot_globes`, the Three Globes of Light, fired in 4.3% of runs and
+// `pivot_sources` in 0.0% — and successive runs overlapped 57% of their content against a
+// <40% target, because the same encounters always led.
+//
+// Now: uniformly random among the eligible.
+//
+// No priority field, deliberately. Every sequence in the corpus is already expressed as a
+// `when` predicate — `circle_discipleship` needs `mem:circle_member`, the three
+// inquisitions chain on `first_inquisition=won` → `second_inquisition=won` — so ordering
+// never depended on array position for correctness, only by accident. Adding a priority
+// lever that no content used would be one more of the dead mechanisms this project keeps
+// finding (`opt.time`, `state.expectation`). If two simultaneously-eligible encounters
+// ever genuinely need an order, express it with a `when`, or add priority then.
+export function drawEncounter(state, node, encounters, rng) {
+  const eligible = [];
   for (const id of node.encounters) {
     const enc = encounters[id];
-    if (enc && encounterEligible(state, enc)) return enc;
+    if (enc && encounterEligible(state, enc)) eligible.push(enc);
   }
-  return null;
+  if (!eligible.length) return null;
+  return eligible[Math.floor((rng || Math.random)() * eligible.length)];
+}
+
+// Pressure the world applies to you, as opposed to opportunities you go looking for.
+//
+// A phase may declare `injections: [encounterId, ...]`. If one of them is eligible when
+// the player enters ANY node, it pre-empts that node's own draw. This is what makes
+// Exposure the rebel fleet rather than a number: at "Denounced" the tribunal comes to you.
+//
+// It exists because the designed climax was opt-in. The three inquisitions sat at
+// positions 1–3 of a single node, so reaching the third meant choosing that node three
+// separate times, and 68.7% of measured runs never resolved the third inquisition at all —
+// the ending matrix keys off it. The player's agency belongs in how they answer, not in
+// whether they are ever charged.
+export function drawInjection(state, phase, encounters, rng) {
+  const pool = (phase && phase.injections) || [];
+  const eligible = [];
+  for (const id of pool) {
+    const enc = encounters[id];
+    if (enc && encounterEligible(state, enc)) eligible.push(enc);
+  }
+  if (!eligible.length) return null;
+  return eligible[Math.floor((rng || Math.random)() * eligible.length)];
 }
 
 // Evaluate every option of an encounter against current state.

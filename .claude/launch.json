@@ -10,6 +10,25 @@
         "7521"
       ],
       "port": 7521
+    },
+    {
+      "name": "witness-editor-dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "devserver.mjs"
+      ],
+      "cwd": "CareerSim/witness",
+      "port": 7533
+    },
+    {
+      "name": "careersim-dev",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "7529"
+      ],
+      "port": 7529
     }
   ]
 }

@@ -3,10 +3,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import { newRun, applyEffects, checkReq } from '../src/engine/state.js?v=3';
-import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict, BANDS } from '../src/engine/engine.js?v=3';
-import { NODES } from '../content/phase1.js?v=3';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=4';
-import { addObligation, chargeObligations, offerContract, tickContracts, exposureTier, finalVerdict, LEGACY_NOTES } from '../src/engine/career.js?v=4';
+import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict, BANDS } from '../src/engine/engine.js?v=5';
+import { NODES } from '../content/phase1.js?v=4';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=6';
+import { addObligation, chargeObligations, offerContract, tickContracts, exposureTier, finalVerdict, LEGACY_NOTES } from '../src/engine/career.js?v=6';
 
 test('capability gating: feast wonder locked until rimiya practiced', () => {
   const s = newRun();
@@ -41,8 +41,15 @@ test('memory chain: circle encounters unlock in sequence', () => {
   assert.equal(s.quintet.limiya, 1);
   assert.ok(s.people.includes('akhlati'));
 
+  // The draw is now random among the eligible (engine.js:drawEncounter), so the
+  // second visit yields EITHER member-gated encounter — the sequence that matters
+  // (entry before everything else, naming only after lineages) is enforced by the
+  // `when` predicates, and that is what this asserts.
   enc = drawEncounter(s, node, ENCOUNTERS);
-  assert.equal(enc.id, 'circle_discipleship');
+  assert.ok(['circle_discipleship', 'circle_lineages'].includes(enc.id),
+    'second circle visit draws a member-gated encounter, got ' + enc.id);
+  assert.ok(!encounterEligible(s, ENCOUNTERS.circle_naming),
+    'circle_naming stays locked until lineages are declared');
 });
 
 test('gradient resolution: rng=0 gives best band, rng→1 gives worst', () => {
@@ -268,7 +275,7 @@ test('plate images reference files that are in the provenance registry', async (
 });
 
 test('an open contract cannot outlive its phase — settling forces resolution', async () => {
-  const { settleContracts } = await import('../src/engine/career.js?v=4');
+  const { settleContracts } = await import('../src/engine/career.js?v=6');
   const s = newRun();
   offerContract(s, {
     id: 'c3', name: 'Boon', deadline: 9, promise: 'a demonstration',

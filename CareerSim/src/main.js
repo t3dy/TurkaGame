@@ -3,15 +3,15 @@
 // Engine stays pure; this file owns flow, time, obligations, contracts, saves.
 
 import { newRun, save, load, clearSave } from './engine/state.js?v=3';
-import { drawEncounter, evaluateOptions, resolveOption, encounterEligible } from './engine/engine.js?v=3';
+import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from './engine/engine.js?v=5';
 import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, exposureTier,
   finalVerdict, settleContracts,
-} from './engine/career.js?v=4';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=4';
-import { logEntry, buildChroniclePayload } from './engine/export.js?v=3';
+} from './engine/career.js?v=6';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=6';
+import { logEntry, buildChroniclePayload } from './engine/export.js?v=4';
 import { publishWitness } from './witness-client.js?v=1';
-import * as ui from './ui.js?v=4';
+import * as ui from './ui.js?v=6';
 
 let state = null;
 let current = null;
@@ -46,7 +46,11 @@ function toMap() {
 }
 
 function enterNode(node) {
-  const enc = drawEncounter(state, node, ENCOUNTERS);
+  // The world gets first refusal on your season. If a phase-level injection is eligible
+  // — a tribunal that has decided you are its business — it pre-empts whatever door you
+  // opened. See engine.js:drawInjection for why this exists.
+  const injected = node.departure ? null : drawInjection(state, phase(), ENCOUNTERS);
+  const enc = injected || drawEncounter(state, node, ENCOUNTERS);
   if (!enc) { toMap(); return; }
 
   const turnReport = { obligations: [], contracts: [] };

@@ -5,7 +5,7 @@
 
 import { QUINTET } from './engine/state.js?v=3';
 import { LEXICON } from '../content/lexicon.js?v=2';
-import { attestedRows } from './engine/career.js?v=5';
+import { attestedRows } from './engine/career.js?v=6';
 
 const $ = (sel) => document.querySelector(sel);
 export const app = () => $('#app');
@@ -28,6 +28,10 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 // The educational layer: wrap the first occurrence of each lexicon term in a
 // glossed span (dotted underline, definition on hover/tap). Input must already be
 // escaped. Longest terms first so "Ṭahawī Circle" wins over "Tetractys" nesting.
+// Applied to situations, phase intros, option details and outcome text. It used to run on
+// situations and intros only, which meant 59% of the glossary's occurrences in the game
+// reached the player as bare unexplained words — including qāḍī, wafq and the Ṭahawī
+// Circle itself (docs/WRITINGAUDIT.md §3).
 const LEX_TERMS = Object.keys(LEXICON).sort((a, b) => b.length - a.length);
 function glossify(escaped) {
   let out = escaped;
@@ -184,14 +188,14 @@ export function renderEncounter(state, enc, evaluated, people, artifacts, firstE
       return `
       <button class="option" data-opt="${i}">
         <span class="opt-label"><b class="opt-key">${i + 1}</b> ${esc(o.label)}</span>
-        <span class="opt-detail">${esc(o.detail)}</span>
+        <span class="opt-detail">${glossify(esc(o.detail))}</span>
         ${unlocked}${favored}
       </button>`;
     }
     return `
     <div class="option locked">
       <span class="opt-label">${esc(o.label)}</span>
-      <span class="opt-detail">${esc(o.detail)}</span>
+      <span class="opt-detail">${glossify(esc(o.detail))}</span>
       <span class="lockedby">🔒 ${esc(ev.lockedBy.join(' · '))}</span>
     </div>`;
   }).join('');
@@ -230,7 +234,7 @@ export function renderResolution(state, enc, result, people, artifacts, firstRes
     <main class="play-area">
       <div class="folio resolution">
         <div class="seal band-${result.band}">${BAND_LABEL[result.band]}</div>
-        <p class="outcome-text">${esc(result.text)}</p>
+        <p class="outcome-text">${glossify(esc(result.text))}</p>
         <div class="delta-chips">${chips}</div>
         ${mem}
         ${firstRes ? `<p class="marginalia" data-note="res">The seal is the outcome's rank on a six-step ladder — your preparation tilted the odds. The italic line below joins your chronicle. <button class="dismiss" data-dismiss="res">understood</button></p>` : ''}

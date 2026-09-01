@@ -11,6 +11,15 @@ export const PHASE = {
     'Everything that made you useful has made you visible, and visibility is the whole indictment. Three tribunals ' +
     'stand between you and an old age. Rivals engineered them; patrons may or may not spend themselves on you; and ' +
     'the only question the record will finally ask is what survived — you, or the system, or neither, or both.',
+  // The world comes to you. These pre-empt whatever node you enter, the moment their
+  // `when` chain and exposure threshold are both satisfied (engine.js:drawInjection).
+  //
+  // They used to sit at positions 2 and 3 of the tribunal node, so reaching the third
+  // inquisition meant electing that node three separate times — and 68.7% of measured runs
+  // never resolved the third inquisition at all, while the entire ending matrix keys off
+  // it (docs/MECHANICSISSUES.md §7). A tribunal is not an opportunity you go looking for.
+  // They stay listed in the tribunal node too, so walking in deliberately still works.
+  injections: ['trial_second', 'trial_third', 'pressure_denunciation'],
 };
 
 const IMG = (file, caption) => ({ src: '../assets/manuscripts/' + file, caption });
@@ -55,7 +64,7 @@ export const ENCOUNTERS = {
         id: 'distinguish', label: 'Distinguish theoretical lettrism from sorcery',
         detail: 'The core legal argument: a mathematics of letters is not an operation on spirits.',
         requires: [],
-        boosts: ['access:judiciary', 'rep:orthodox>=1', 'mem:public_defense_won'],
+        boosts: ['access:judiciary', 'rep:orthodox>=1', 'mem:public_defense_won', 'mem:denunciation_answered'],
         effects: { memory: { first_inquisition: 'fought' } },
         outcomes: [
           { band: 'triumph', weight: 2, text: 'You hold the distinction for three hours and the panel accepts it. Acquitted — and every word of your defense is now a public document your enemies can study.',
@@ -236,7 +245,8 @@ export const ENCOUNTERS = {
     affordances: ['royal_patronage', 'private_audience'],
     situation:
       'The household that has paid you for a decade can make a tribunal go away, and knows it. The steward makes you ' +
-      'wait, which is the message. Protection is available. It is not free, and it is not unlimited.',
+      'wait, which is the message. The men who engineered the charge are colleagues, and some of them dine at this ' +
+      'same door. Protection is available. It is not free, and it is not unlimited.',
     options: [
       {
         id: 'ask_protection', label: 'Ask outright',
@@ -287,7 +297,8 @@ export const ENCOUNTERS = {
     affordances: ['private_audience'],
     situation:
       'An intermediary suggests, over excellent tea, that all of this could end permanently. A short written statement ' +
-      'withdrawing the more adventurous claims. No trial, no record, no exile. He is being kind. He is also entirely serious.',
+      'withdrawing the more adventurous claims. No trial, no record, no exile. This is the year they drove Qāsim-i ' +
+      'Anvār out of Herat for less. He is being kind. He is also entirely serious.',
     options: [
       {
         id: 'take_deal', label: 'Sign the statement',
@@ -391,13 +402,15 @@ export const ENCOUNTERS = {
     affordances: ['manuscripts', 'private_audience'],
     situation:
       'If the third tribunal goes badly, everything in this room becomes evidence. Your student is willing to carry ' +
-      'copies out tonight; your instinct is to keep the autograph where you can defend it. Paper survives men, but ' +
-      'only if it is somewhere else.',
+      'copies out tonight; your instinct is to keep the autograph where you can defend it. Yazdī made his own copy ' +
+      'years ago, in his own hand; everything else is in this room. Paper survives men, but only if it is somewhere else.',
     options: [
       {
         id: 'disperse', label: 'Disperse copies to four cities',
         detail: 'No single seizure can end the work. Control lost, survival bought.',
         requires: ['meter:transmission>=3'],
+        // If a copy already went abroad in the watched years, the route is proven.
+        boosts: ['mem:copy_sent'],
         effects: {
           meters: { transmission: 3 }, memory: { manuscripts_dispersed: true, taught_widely: true },
         },
@@ -672,7 +685,9 @@ export const ENCOUNTERS = {
     situation:
       'Every scholar of your generation writes one: the testament \u2014 part will, part creed, part account rendered. ' +
       'Yours has a harder question inside it than most, because the thing you would bequeath is a condemned science ' +
-      'and the people you would bequeath it to are safer without their names in your handwriting.',
+      'and the people you would bequeath it to are safer without their names in your handwriting. And if the sentence ' +
+      'is exile — five wandering years and a contested estate are what such sentences run to — this page may be the ' +
+      'only property that reaches anyone.',
     options: [
       {
         id: 'public_testament', label: 'A public statement on the fate of the Investigations',

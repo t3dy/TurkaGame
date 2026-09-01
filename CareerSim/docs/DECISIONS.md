@@ -187,3 +187,69 @@ The Career Sim now publishes finished runs as permanent scholarly witnesses.
   `annotations`, `illustrations`, `preface` are reserved in the payload and start
   empty; when `api/edit.mjs` is built it must reject writes touching `meta` or
   anything mechanical. Enforce server-side.
+
+## The editor (2026-08-31, seventh session)
+
+The scholar's hand can now correct a published witness. What was reserved in the payload
+last session is a working endpoint (`witness/api/edit.mjs`) and an editing UI in
+`witness/public/w.html`.
+
+- **The allow-list, not a denylist, is the invariant's enforcement.** Only `situation`,
+  `outcomeText`, `chronicle`, `optionLabel:<n>` and `optionDetail:<n>` can be revised.
+  Bands, grounding tags, sources, meters, verdicts, plates and lock reasons are the
+  simulation's testimony and are refused with a 400 that says why. `FORBIDDEN_FIELDS` is
+  named explicitly beside the allow-list so the protected surface is legible rather than
+  inferred, and both are covered by a test that walks every forbidden field.
+- **Editorial ops are separate immutable blobs, folded on read** — `edits/<id>/<ts>-<rand>.json`.
+  The witness document written at publish is never rewritten. This replaces the obvious
+  design (editorial arrays living on the witness document, rewritten per edit), which was
+  built, deployed, and lost every edit it was given. See [PIVOTS.md](../../docs/PIVOTS.md)
+  P-CS1 for the evidence.
+- **Both hands get the same powers.** A player can revise and annotate exactly as the
+  scholar can; only attribution and priority differ, per last session's decision. The
+  hand is derived from *which* key hash matched, never from a client claim.
+- **Concurrency is stated, not solved.** Two people editing one passage both persist, in
+  timestamp order, and the later reading stands. Nothing is destroyed, so "last write
+  wins" here costs a reader one extra click, not an edit. The edit form says so.
+- **The `index/{id}.json` summary rows no longer carry editorial counts.** They are
+  written once at publish and describe immutable facts only. The researcher's desk should
+  derive "has a scholar touched this" from a `list({ prefix: 'edits/' })`, which is
+  always correct — an incrementally-updated counter on a mutable blob is the same trap
+  the fold was built to escape.
+
+## The loop repairs and the pressure ladder (2026-08-31, eighth session)
+
+Measured defects from MECHANICSISSUES.md, fixed and re-measured same day. All 48 tests
+pass; figures from `tools/simulate-runs.mjs 2000`.
+
+- **The draw is random-among-eligible, with no priority field.** Every sequence the
+  content needs is already a `when` predicate, so a priority lever would have joined
+  `opt.time` and `state.expectation` as implemented-and-unused. If an ordering ever needs
+  authoring, add the field then. One test asserted the old first-eligible order and was
+  rewritten to assert the `when` chain instead — the thing the design actually guarantees.
+- **Injections: the world gets first refusal on a season.** A phase may declare
+  `injections`; an eligible one pre-empts the node draw (`engine.js:drawInjection`).
+  The tribunals (P5) and the patron's commission (P3) are injected, and a new phase-less
+  **pressure ladder** (`content/pressure.js`: rumor at exposure 3, copy-request at 5,
+  written denunciation at 7) fires in whatever phase the threshold is crossed. This is
+  ECONOMY.md §3's "injection, not eligibility" — exposure now *does* something in every
+  phase, and the third inquisition resolves in ~60% of runs instead of 31%.
+- **Quintet ranks now climb through the run**: bench grants hīmiyā 1 (the judgeship as
+  the school of political operation), ink-work grants kīmiyā 2, the muqaṭṭaʿāt study
+  grants līmiyā 2, the Ṭahawī Circle grants līmiyā 3. Gates rescaled to reachable tiers
+  where the fiction allowed (`isfahan_study_two` asks rank 1 and *grants* rank 2 — the
+  insight is the promotion). Zero dead gates, lint-enforced.
+- **Reachability lints** (`tools/test-reachability.mjs`): every capability gate must be
+  satisfiable by a legal run; every glossary term must appear where a gloss can fire.
+  Verified red-green by reintroducing the hīmiyā bug and watching it fail.
+- **Glossing extended** to option detail and outcome text (was situations/intros only):
+  glossary reach 41%→63%, and muqaṭṭaʿāt/qāḍī/samāʿ/majlis/Ṭahawī-Circle now appear in
+  glossable prose. Two lexicon terms remain defined-but-thin; the lint holds the floor.
+- **Phase V anchoring pass** (WRITINGAUDIT §4): the recant offer names Qāsim-i Anvār's
+  1427 expulsion, the student-copy scene names Yazdī's autograph copy, the testament
+  names the five wandering years, the patron's door names the colleagues who engineered
+  the charge. INVENTED-COMPATIBLE scenes now nest inside attested framing, per the
+  WRITING_GUIDE's own rule.
+- **Deliberately not done**: the ECONOMY §2 meter rescale (a full content pass; fate
+  distribution is left modal-`source_code` until inputs stop saturating), expectation
+  reads, and the §2 gradient pass. Recorded in NEXTSTEPS.

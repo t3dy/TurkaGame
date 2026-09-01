@@ -6,20 +6,32 @@ export const PHASE = {
   id: 4,
   name: 'THE PIVOT — 1420',
   dateline: 'c. 1419–1422',
-  time: 6,
+  // Raised 6 -> 8 (docs/ECONOMY.md §5): at six seasons this phase saw 35% of its pool,
+  // the worst in the game, while carrying the most ATTESTED material.
+  time: 8,
   intro:
     'Everything converges in one year. Ulugh Beg breaks ground on the Samarkand observatory. Yazdī is becoming the ' +
     'historian who writes empires into the stars. And you have, at last, the whole thing in view — the summa that ' +
-    'will be called Investigations, if you can build it. Six seasons. This is the year the system gets made, or does not.',
+    'will be called Investigations, if you can build it. Eight seasons. This is the year the system gets made, or does not.',
+  // By now the ladder can reach its top rungs — see content/pressure.js.
+  injections: ['pressure_rumor', 'pressure_copy_request', 'pressure_denunciation'],
 };
 
 const IMG = (file, caption) => ({ src: '../assets/manuscripts/' + file, caption });
 
 export const NODES = [
   {
+    // Was one six-encounter node. Nothing past position ~3 of a node could fire inside
+    // the phase's budget: pivot_sources fired in 0.0% of runs and pivot_globes — the
+    // Three Globes of Light, ATTESTED — in 4.3% (docs/MECHANICSISSUES.md §3).
     id: 'desk', name: 'The Desk', icon: '✒',
     hook: 'Where the summa is actually written. Nothing else gets it done.',
-    encounters: ['pivot_begin', 'pivot_language', 'pivot_structure', 'pivot_globes', 'pivot_sensory', 'pivot_sources'],
+    encounters: ['pivot_begin', 'pivot_language', 'pivot_structure'],
+  },
+  {
+    id: 'argument', name: 'The Argument', icon: '✒',
+    hook: 'What the book claims, whom it contradicts, and whose names go in the margins.',
+    encounters: ['pivot_globes', 'pivot_sensory', 'pivot_sources'],
   },
   {
     id: 'diagram', name: 'The Drawing Board', icon: '◎',
@@ -258,7 +270,7 @@ export const ENCOUNTERS = {
     affordances: ['quiet', 'inscription'],
     plate: IMG('cs-p4-persian-wafq-6x6.jpg', 'Persian wafq — a 6×6 magic square with instructions, 16th c. (Wikimedia Commons)'),
     situation:
-      'The system needs one image that holds it all: the Pythagorean Tetractys, rebuilt in letters. Get this right and ' +
+      'The system needs one image that holds it all: the Ṭahawī Circle — the Pythagorean Tetractys rebuilt in letters. Get this right and ' +
       'a reader grasps in one glance what the prose takes four hundred pages to argue. Get it wrong and the whole ' +
       'edifice looks like decoration.',
     options: [
@@ -268,6 +280,9 @@ export const ENCOUNTERS = {
         requires: ['limiya>=2'],
         boosts: ['person:calligrapher', 'mem:designed_for_uptake'],
         effects: {
+          // Rank 3: the diagram IS the mastery. Reachable now that Phase II's
+          // muqaṭṭaʿāt work grants rank 2.
+          quintet: { limiya: 1 },
           artifacts: ['tahawi_circle'], meters: { synthesis: 2, demonstration: 1 },
           memory: { tahawi_circle: true },
         },

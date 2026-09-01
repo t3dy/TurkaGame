@@ -377,7 +377,7 @@ export const ENCOUNTERS = {
     affordances: ['sufi_gathering', 'music'],
     plate: IMG('c14-sufi-fixed-stars.jpg', 'Ursa Major, from al-Ṣūfī’s Book of Fixed Stars (Wikimedia Commons)'),
     situation:
-      'After the audition Qāsim keeps a smaller company back and turns the talk from ecstasy to letters: could a verse ' +
+      'After the samāʿ Qāsim keeps a smaller company back and turns the talk from ecstasy to letters: could a verse ' +
       'be built on number the way a talisman is? He is asking you, specifically, in front of men who will repeat your answer.',
     options: [
       {
@@ -551,7 +551,7 @@ export const ENCOUNTERS = {
     affordances: ['public_audience', 'wine'],
     plate: IMG('c36-falnama-omen.jpg', 'The Seven Sleepers of Ephesus, folio from a Falnāma — Book of Omens (Wikimedia Commons)'),
     situation:
-      'A traveling dervish holds the salon rapt: he claims he can be in Cairo and Damascus in the same night, and has ' +
+      'A traveling dervish holds the majlis rapt: he claims he can be in Cairo and Damascus in the same night, and has ' +
       'witnesses. The merchant, your host, turns to you — the studious one — and asks, smiling, whether it can be true.',
     options: [
       {

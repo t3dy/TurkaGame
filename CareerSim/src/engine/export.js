@@ -3,7 +3,7 @@
 // stays an immutable witness even as game content is later revised — which is the
 // property a scholarly correction workflow needs. Framework-agnostic.
 
-import { attestedRows } from './career.js?v=5';
+import { attestedRows } from './career.js?v=6';
 
 export const PAYLOAD_V = 1;
 

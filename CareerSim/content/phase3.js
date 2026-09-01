@@ -11,6 +11,9 @@ export const PHASE = {
     'Timurid court culture runs on two poles — bazm and razm, the feast and the war — and occult science is welcome ' +
     'at both. A prince’s patronage is money, protection, an atelier, and an audience. It is also a set of expectations ' +
     'that only grow. Nine seasons at court, and the shape of your career is decided here.',
+  // A commission arrives; you do not go shopping for one. Contracts are the only patron
+  // pressure in the game and half of runs never met one (docs/MECHANICSISSUES.md §5).
+  injections: ['court_commission', 'pressure_rumor', 'pressure_copy_request'],
 };
 
 const IMG = (file, caption) => ({ src: '../assets/manuscripts/' + file, caption });
@@ -808,17 +811,22 @@ export const ENCOUNTERS = {
     rubric: 'THE CAMPAIGN · A SOLDIER WANTS THE TRICK',
     grounding: 'ATTESTED',
     source: 'RESEARCH — later manuals catalogue illusionist/trickster operations with explicit military and intelligence applications',
-    when: ['mem:showed_vanishing_ink'],
+    // Was `when: ['mem:showed_vanishing_ink']` — a flag written only behind `rimiya>=2`,
+    // itself reachable only by spending both Phase I grants on rīmiyā. The conjunction
+    // fired in 0.0% of 2000 runs (docs/MECHANICSISSUES.md §3). The ink is now the
+    // specific version of the scene rather than its precondition.
+    when: ['mem:patron'],
     affordances: ['military', 'private_audience'],
     situation:
-      'An officer who saw the feast-night ink has thought about it for a month. He does not want a wonder. He wants ' +
-      'dispatches that cannot be read if intercepted, and he is prepared to pay for a method, not a marvel.',
+      'An officer has heard what you can do with ink, and has thought about it for a month. He does not want a ' +
+      'wonder. He wants dispatches that cannot be read if intercepted, and he is prepared to pay for a method, ' +
+      'not a marvel.',
     options: [
       {
         id: 'give_method', label: 'Give him the working method',
         detail: 'Your party trick becomes state apparatus. That is what usefulness means.',
         requires: [],
-        boosts: ['kimiya>=1'],
+        boosts: ['kimiya>=1', 'mem:showed_vanishing_ink'],
         effects: {
           rep: { imperial: 2 }, meters: { exposure: 1, transmission: 1 },
           memory: { military_application: true },

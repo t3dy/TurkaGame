@@ -11,6 +11,8 @@ export const PHASE = {
     'Home. The Turka family has held judicial office in Isfahan for generations, and the office is waiting for you — ' +
     'a career with a salary, a bench, and no hours left over. Everything you learned in Cairo is now a private matter, ' +
     'unless you decide otherwise. Eight seasons before the courts of the princes start sending for men like you.',
+  // The exposure ladder starts reaching you here — see content/pressure.js.
+  injections: ['pressure_rumor'],
 };
 
 const IMG = (file, caption) => ({ src: '../assets/manuscripts/' + file, caption });
@@ -57,19 +59,24 @@ export const ENCOUNTERS = {
     affordances: ['legal_authority', 'public_office'],
     situation:
       'The bench your father sat on is open, and the city expects a Turka on it. The office pays, protects, and ' +
-      'confers the one credential no accusation slides off easily: you would be a judge, not merely a man with opinions.',
+      'confers the one credential no accusation slides off easily: you would be qāḍī of Isfahan, not merely a man ' +
+      'with opinions.',
     options: [
       {
         id: 'accept', label: 'Take the judgeship',
         detail: 'Salary, standing, and a permanent claim on your hours.',
         requires: [],
         effects: {
+          // hīmiyā — "influence, protection, political operation, defence under
+          // interrogation" — had no source anywhere in the game and three gates asking for
+          // it (docs/MECHANICSISSUES.md §1). The bench is where a man learns it.
+          quintet: { himiya: 1 },
           rep: { orthodox: 2, scholarly: 1 }, access: ['judiciary'],
           memory: { kept_judgeship: true, took_judgeship: true },
         },
         grantsObligation: {
-          id: 'judgeship', name: 'The Judgeship', cost: 1,
-          gloss: 'The tribunal sits whether or not you are writing. One season in every action.',
+          id: 'judgeship', name: 'The Judgeship', cost: 2,
+          gloss: 'The tribunal sits whether or not you are writing. Two seasons in every action.',
           neglect: { rep: { orthodox: -1 }, memory: { neglected_bench: true } },
         },
         outcomes: [
@@ -338,7 +345,8 @@ export const ENCOUNTERS = {
         id: 'compound', label: 'Compound a stable ink yourself',
         detail: 'Kīmiyā at its least glamorous: gall, vitriol, gum, and exact proportion.',
         requires: ['kimiya>=1'],
-        effects: { meters: { demonstration: 1 }, memory: { inks_solved: true } },
+        // Rank 1 opens the door; doing the work is what makes you practised.
+        effects: { quintet: { kimiya: 1 }, meters: { demonstration: 1 }, memory: { inks_solved: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Three batches, one that holds. The warrāq watches you work the proportions like a recipe and revises his opinion of Cairo entirely. Your copies will outlive their rivals’ — literally.',
             effects: { meters: { transmission: 1 }, rep: { occult: 1 } },
@@ -572,14 +580,18 @@ export const ENCOUNTERS = {
     affordances: ['library', 'quiet'],
     plate: IMG('cs-p2-buduh-square-qazwini.jpg', 'Bud\u016bh magic square, al-Qazw\u012bn\u012b \u2014 Persia, c. 1280 (Wikimedia Commons)'),
     situation:
-      'The disconnected letters that open certain sūras — alif lām mīm, ṭā hā — have defeated commentary for eight ' +
-      'centuries. Every exegete says they are a divine secret. You are increasingly sure they are a divine *notation*.',
+      'The muqaṭṭaʿāt — the disconnected letters that open certain sūras, alif lām mīm, ṭā hā — have defeated ' +
+      'commentary for eight centuries. Every exegete says they are a divine secret. You are increasingly sure they ' +
+      'are a divine *notation*.',
     options: [
       {
         id: 'systematize', label: 'Treat them as notation and build the system on them',
         detail: 'The boldest move available: make the unexplained letters your foundation stone.',
-        requires: ['limiya>=2'],
-        effects: { meters: { synthesis: 2, exposure: 1 }, rep: { occult: 1 }, memory: { muqattaat_system: true } },
+        // Gated at rank 1 and GRANTS rank 2 — this is where lettrism stops being something
+        // you studied and becomes something you practise. Was `limiya>=2`, which no run
+        // could reach (docs/MECHANICSISSUES.md §1).
+        requires: ['limiya>=1'],
+        effects: { quintet: { limiya: 1 }, meters: { synthesis: 2, exposure: 1 }, rep: { occult: 1 }, memory: { muqattaat_system: true } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'The letter-groups resolve into a key. What was a mystery in every commentary becomes, in your notebook, a working part.',
             effects: { meters: { synthesis: 1 } },
