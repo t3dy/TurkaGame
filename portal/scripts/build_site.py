@@ -141,10 +141,11 @@ def md(text):
     line break in the source still renders (it did not, before this pass).
     """
     joined, buf = [], []
+    buf_prefix = ""   # non-empty while the buffer is continuing a list item or quote
 
     def flush():
         if buf:
-            joined.append(" ".join(buf))
+            joined.append(buf_prefix + " ".join(buf))
             buf.clear()
 
     for raw in text.split("\n"):
@@ -152,10 +153,20 @@ def md(text):
         stripped = line.lstrip()
         if not stripped:
             flush()
+            buf_prefix = ""
             joined.append("")
-        elif line.startswith("#") or stripped.startswith(("- ", "* ", "> ")):
+        elif line.startswith("#"):
             flush()
+            buf_prefix = ""
             joined.append(line)
+        elif stripped.startswith(("- ", "* ", "> ")):
+            # A new list item or quote. Start buffering it so that its own wrapped
+            # continuation lines join onto it — previously they were flushed as a
+            # separate paragraph, which split any **emphasis** spanning the break and
+            # left raw asterisks on the page.
+            flush()
+            buf_prefix = stripped[:2]
+            buf.append(stripped[2:])
         else:
             buf.append(stripped)
     flush()
