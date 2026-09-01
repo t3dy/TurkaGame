@@ -55,6 +55,22 @@ Everything is one Pages site off the repo root. There is no separate host for an
 
 `/` (repo root `index.html`) is a 300-byte redirect stub into `/site/`.
 
+## Verified live 2026-09-01 (commit `33ffb7a`)
+
+Pages build status `built`, commit matching `git rev-parse HEAD`. Checked with real
+requests, not assumed:
+
+| Surface | Result |
+|---|---|
+| `/site/index.html`, `/site/features.html` | 200; Visionary Gallery in nav, design record renders 10 docs |
+| `/games/visionary-gallery/{index,workbench,assay,method}.html` | 200; 22 cards, 8 traditions, 15 scholarship chips, scatter painted |
+| Workbench Depth tab, live | three.js loaded, 27 quads, station-point invariant **4.6e-16** |
+| `/games/yusuf-ascent/proto-a-doors/` | 41 hotspots, L3 "Rests on" block renders |
+| `/games/yusuf-ascent/vendor/three.core.js` | 200 — the `.nojekyll` gotcha still held |
+| `/games/visionary-gallery/assets/*/tunnel.svg` | 200 (printable sheet, self-contained) |
+| `/site/portal/concepts/oneiromancy.html` | 200 |
+| 10 design-doc links on features.html | all 200 on github.com/blob/main |
+
 ## Repo weight (added 2026-08-31)
 
 The Visionary Gallery adds **~33 MB** of committed web assets under
