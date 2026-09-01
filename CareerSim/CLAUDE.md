@@ -28,6 +28,7 @@ in the repo, scenes reveal the real world.
 | Known defects and their evidence | [docs/MECHANICSISSUES.md](docs/MECHANICSISSUES.md) — ranked, with repro commands |
 | What content to author next | [docs/ENCOUNTERSNEXTSTEP.md](docs/ENCOUNTERSNEXTSTEP.md) |
 | Prose quality, voice, the glossary | [docs/WRITINGAUDIT.md](docs/WRITINGAUDIT.md) |
+| The ending system: fate matrix, marginalia, Attested Life, tuning history | [docs/ENDINGS.md](docs/ENDINGS.md) |
 | Why a decision was made | [docs/DECISIONS.md](docs/DECISIONS.md), then DESIGN_CONVERSATION.md by section |
 | Research facts | [../docs/BIOGRAPHY.md](../docs/BIOGRAPHY.md) + [../site/data/timeline.json](../site/data/timeline.json) (canonical), portal corpus for depth |
 
