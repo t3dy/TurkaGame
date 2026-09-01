@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Chronicle — Ibn Turka: The Occult Court</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--parchment:#f4ecd9;--deep:#e9dcc0;--ink:#2b2118;--faint:#7a6a56;
+      --lapis:#1f4d8f;--vermillion:#9b2c1f;--gold:#a8842c;--verdigris:#3e6b5a;--line:#c9b992;}
+@media (prefers-color-scheme:dark){:root{--parchment:#171310;--deep:#211b16;--ink:#e8dcc4;
+      --faint:#8f8270;--lapis:#5b8bd0;--vermillion:#d0584a;--gold:#c9a648;--verdigris:#6fa08c;--line:#3a3128;}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--parchment);color:var(--ink);font-family:'EB Garamond',Georgia,serif;line-height:1.65;font-size:18px}
+.sheet{max-width:46rem;margin:0 auto;padding:2.6rem 1.3rem 6rem}
+a{color:var(--lapis)}
+.head{text-align:center;margin-bottom:2rem}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;font-weight:600;line-height:1.2}
+.sub{color:var(--faint);font-style:italic;font-size:.95rem;margin-top:.3rem}
+.rubric{display:flex;align-items:center;gap:.8rem;color:var(--vermillion);font-variant:small-caps;
+        letter-spacing:.14em;font-size:.78rem;margin:2.4rem 0 1.1rem}
+.rubric::before,.rubric::after{content:'';flex:1;border-top:1px solid var(--line)}
+.verdicts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.4rem}
+.folio{background:var(--deep);border:1px solid var(--line);border-radius:3px;padding:1.2rem 1.4rem}
+.page-head{font-variant:small-caps;letter-spacing:.18em;font-size:.74rem;color:var(--vermillion);text-align:center;margin-bottom:.5rem}
+.vtitle{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.35rem;text-align:center;margin-bottom:.4rem}
+.vtext{font-size:.95rem;text-align:center}
+.entry{border-top:1px solid var(--line);padding-top:1.3rem;margin-top:1.3rem}
+.entry-rubric{font-variant:small-caps;letter-spacing:.1em;font-size:.76rem;color:var(--vermillion)}
+.seal{font-size:.72rem;color:var(--faint);border-bottom:1px dotted var(--faint);cursor:help}
+.situation{margin:.5rem 0 .8rem}
+.opts{list-style:none;margin:0 0 .7rem;padding:0}
+.opt{padding:.3rem 0 .3rem .9rem;border-left:2px solid var(--line);margin-bottom:.35rem;font-size:.93rem}
+.opt.chosen{border-left-color:var(--lapis);background:rgba(31,77,143,.05)}
+.opt.locked{opacity:.55}
+.opt .lbl{font-weight:600}
+.opt.chosen .lbl{color:var(--lapis)}
+.opt .why{display:block;font-size:.8rem;color:var(--faint);font-style:italic}
+.band{display:inline-block;font-variant:small-caps;letter-spacing:.12em;font-size:.74rem;
+      border:1px solid currentColor;border-radius:2px;padding:0 .45rem}
+.band-triumph{color:var(--gold)}.band-success{color:var(--verdigris)}
+.band-qualified,.band-ambiguous{color:var(--faint)}
+.band-backfire,.band-disaster{color:var(--vermillion)}
+.outcome{font-size:.95rem;margin:.4rem 0}
+.chron{font-style:italic;border-top:1px solid var(--line);padding-top:.5rem;margin-top:.5rem}
+.att{margin-bottom:.5rem;font-size:.93rem}
+.att b{color:var(--ink)}
+.note{color:var(--faint);font-style:italic;font-size:.92rem;margin-bottom:.4rem}
+.plate{border:1px solid var(--gold);padding:8px;background:var(--parchment);max-width:22rem;margin:.6rem auto}
+.plate img{max-width:100%;display:block;margin:0 auto}
+.plate figcaption{font-size:.74rem;color:var(--faint);font-style:italic;text-align:center;padding-top:.4rem}
+.hand{text-align:center;color:var(--vermillion);font-variant:small-caps;letter-spacing:.08em;font-size:.84rem;margin-bottom:1rem}
+.colophon{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--faint);
+          font-size:.8rem;font-style:italic;text-align:center}
+.loading,.err{text-align:center;color:var(--faint);font-style:italic;padding:4rem 0}
+@media (max-width:640px){.verdicts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sheet" id="sheet"><p class="loading">Fetching the chronicle…</p></div>
+<script type="module">
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const p = new URLSearchParams(location.search);
+const id = p.get('id'), k = p.get('k');
+const SEAL = { 'ATTESTED': ['⬤','Attested: the sources record this directly.'],
+               'PLAUSIBLE-GAP': ['◐','Plausible: fits the record; the record itself is silent here.'],
+               'INVENTED-COMPATIBLE': ['○','Imagined for play, built to fit the world the sources describe.'] };
+
+if (!id) { $('#sheet').innerHTML = '<p class="err">No chronicle named.</p>'; }
+else {
+  const qs = new URLSearchParams({ id }); if (k) qs.set('k', k);
+  fetch(`/api/witness?${qs}`).then(r => r.json()).then(({ witness: w, hand, error }) => {
+    if (error) { $('#sheet').innerHTML = `<p class="err">${esc(error)}</p>`; return; }
+    const when = new Date(w.createdAt).toLocaleDateString(undefined, { year:'numeric', month:'long', day:'numeric' });
+    const v = (w.meta && w.meta.verdict) || {};
+
+    const entries = (w.log || []).map((e) => {
+      const [glyph, gloss] = SEAL[e.grounding] || ['·', ''];
+      const opts = (e.options || []).map((o) => {
+        const why = o.chosen && o.unlockedBy?.length ? `open because of ${o.unlockedBy.join(', ')}`
+                  : o.locked && o.lockedBy?.length ? `locked: ${o.lockedBy.join(' · ')}` : '';
+        return `<li class="opt ${o.chosen ? 'chosen' : ''} ${o.locked ? 'locked' : ''}">
+          <span class="lbl">${o.chosen ? '▸ ' : ''}${esc(o.label)}</span>
+          ${o.detail ? ` — ${esc(o.detail)}` : ''}
+          ${why ? `<span class="why">${esc(why)}</span>` : ''}</li>`;
+      }).join('');
+      return `<div class="entry">
+        <div class="entry-rubric">${esc(e.rubric)}</div>
+        ${e.plate ? `<figure class="plate"><img src="${esc(e.plate.src)}" alt=""><figcaption>${esc(e.plate.caption)}</figcaption></figure>` : ''}
+        <p class="situation">${esc(e.situation)}
+          <span class="seal" title="${esc(gloss)}${e.source ? ' — ' + esc(e.source) : ''}">${glyph} ${esc((e.grounding||'').split('-')[0].toLowerCase())}</span></p>
+        <ul class="opts">${opts}</ul>
+        <p class="outcome"><span class="band band-${esc(e.band)}">${esc(e.band)}</span> ${esc(e.outcomeText)}</p>
+        ${e.chronicle ? `<p class="chron">${esc(e.chronicle.current || e.chronicle.orig)}</p>` : ''}
+      </div>`;
+    }).join('');
+
+    $('#sheet').innerHTML = `
+      ${hand ? `<p class="hand">You hold the ${esc(hand)}’s key — the editor arrives in the next build</p>` : ''}
+      <div class="head">
+        <h1>${esc(w.title)}</h1>
+        <p class="sub">${esc(w.origin === 'simulated' ? 'a simulated life' : 'a played life')} · ${esc(when)} · ${(w.log||[]).length} recorded decisions</p>
+      </div>
+      <div class="verdicts">
+        <div class="folio"><div class="page-head">THE MAN</div>
+          <div class="vtitle">${esc(v.manTitle||'—')}</div><p class="vtext">${esc(v.manText||'')}</p></div>
+        <div class="folio"><div class="page-head">THE SYSTEM</div>
+          <div class="vtitle">${esc(v.systemTitle||'—')}</div><p class="vtext">${esc(v.systemText||'')}</p></div>
+      </div>
+      ${w.attested?.length ? `<div class="rubric">THE ATTESTED LIFE</div><div class="folio">
+        ${w.attested.map(a => `<p class="att"><b>${esc(a.hist)}</b> — ${esc(a.yours)}</p>`).join('')}</div>` : ''}
+      ${w.legacyNotes?.length ? `<div class="rubric">MARGINALIA</div><div class="folio">
+        ${w.legacyNotes.map(n => `<p class="note">· ${esc(n)}</p>`).join('')}</div>` : ''}
+      <div class="rubric">THE FULL RECORD</div>
+      ${entries || '<p class="note">No decisions were recorded.</p>'}
+      <p class="colophon">Ibn Turka: The Occult Court · witness ${esc(w.id)} ·
+        the text stands as the game gave it · built on the research of Matthew Melvin-Koushki</p>`;
+    document.title = `${w.title} — a chronicle`;
+  }).catch((e) => { $('#sheet').innerHTML = `<p class="err">Could not read the chronicle. ${esc(e.message)}</p>`; });
+}
+</script>
+</body>
+</html>

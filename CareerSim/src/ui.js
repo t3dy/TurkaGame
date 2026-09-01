@@ -248,7 +248,7 @@ function chip(dir, text, extra) {
   return `<span class="chip ${dir} ${extra || ''}">${glyph} ${esc(text)}</span>`;
 }
 
-export function renderEnding(state, verdict, people, phases) {
+export function renderEnding(state, verdict, people, phases, payload) {
   const byPhase = (phases || []).map((p) => {
     const lines = state.chronicle.filter((l) => l.phase === p.id);
     if (!lines.length) return '';
@@ -290,6 +290,15 @@ export function renderEnding(state, verdict, people, phases) {
       <div class="rubric">THE CHRONICLE OF ʿALĪ IBN TURKA</div>
       ${byPhase || '<p class="codex-line">— the pages are blank —</p>'}
       <p class="codex-note">In a later build this chronicle becomes yours to keep and emend, as its historian.</p>
+    </div>
+    <div class="folio publish-folio" id="publish-folio">
+      <div class="page-head">SEND THIS CHRONICLE OUT</div>
+      <p class="verdict-note publish-blurb">
+        Publish this life as a permanent scholarly witness: a page anyone can read,
+        plus a private link that lets a reader correct the text and write in the
+        margins. Nothing you publish can change the run that produced it.
+      </p>
+      <button class="publish-btn">Publish this chronicle &rarr;</button>
     </div>
     <button class="toc-line center" data-act="restart"><span>Begin another life</span></button>
   </div>`;
@@ -354,6 +363,45 @@ function attestedComparison(state) {
   return attestedRows(state)
     .map((r) => `<p class="verdict-note"><b class="att-hist">${esc(r.hist)}</b> — ${esc(r.yours)}</p>`)
     .join('');
+}
+
+export function renderWitnessLinks(out) {
+  const folio = $('#publish-folio');
+  if (!folio) return;
+  const row = (label, url, note) => `
+    <div class="witness-link">
+      <div class="witness-label">${esc(label)}</div>
+      <a href="${esc(url)}" target="_blank" rel="noopener">${esc(url)}</a>
+      <button class="copy-btn" data-copy="${esc(url)}">copy</button>
+      ${note ? `<div class="witness-note">${esc(note)}</div>` : ''}
+    </div>`;
+  folio.innerHTML = `
+    <div class="page-head">THE CHRONICLE IS COPIED OUT</div>
+    ${row('The public witness — anyone may read it', out.publicUrl)}
+    ${row('Your own hand — keep this one', out.playerEditUrl,
+          'Corrections you make are attributed to the player’s hand.')}
+    ${row('The scholar’s hand — send this to a reviewer', out.scholarEditUrl,
+          'Whoever holds this link edits as the scholar’s hand, and their corrections are raised for attention.')}`;
+  folio.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-copy]');
+    if (!b) return;
+    navigator.clipboard?.writeText(b.getAttribute('data-copy'));
+    b.textContent = 'copied';
+  });
+}
+
+export function renderPublishError(message) {
+  const folio = $('#publish-folio');
+  if (!folio) return;
+  const btn = folio.querySelector('.publish-btn');
+  if (btn) { btn.disabled = false; btn.textContent = 'Try publishing again \u2192'; }
+  let note = folio.querySelector('.publish-error');
+  if (!note) {
+    note = document.createElement('p');
+    note.className = 'publish-error';
+    folio.appendChild(note);
+  }
+  note.textContent = message;
 }
 
 // ---- flourishes -------------------------------------------------------------

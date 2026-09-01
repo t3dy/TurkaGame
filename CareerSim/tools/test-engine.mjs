@@ -459,3 +459,51 @@ test('log illustrations: an unknown role degrades to player rather than throwing
   assert.equal(rec.by.role, 'player');
   assert.equal(rec.notify, false, 'an unknown role must never trigger a notification');
 });
+
+// ---- the witness system: capture and payload --------------------------------
+
+test('the run log captures an encounter as the game presented it', async () => {
+  const X = await import('../src/engine/export.js?v=3');
+  const s = newRun();
+  applyEffects(s, { quintet: { rimiya: 1 } }, 'test');
+  const enc = ENCOUNTERS.majlis_feast;
+  const evs = evaluateOptions(s, enc, PEOPLE, ARTIFACTS);
+  const chosen = evs.findIndex((e) => e.opt.id === 'wonder');
+  const result = resolveOption(s, enc, evs[chosen], () => 0);
+
+  const entry = X.logEntry(s, enc, evs, chosen, result);
+  assert.equal(entry.encounterId, 'majlis_feast');
+  assert.equal(entry.grounding, enc.grounding);
+  assert.ok(entry.source, 'source pointer travels with the entry');
+  assert.equal(entry.situation, enc.situation, 'situation frozen verbatim');
+  assert.equal(entry.options.length, enc.options.length, 'every option offered is recorded, not just the chosen one');
+  assert.equal(entry.options[chosen].chosen, true);
+  assert.ok(entry.options.some((o) => o.locked), 'locked options and their reasons are part of the record');
+  assert.ok(entry.chronicle.orig, 'the original chronicle line is kept for recovery');
+  assert.equal(entry.chronicle.orig, entry.chronicle.current, 'current starts equal to original');
+});
+
+test('the published payload carries the whole scholarly log and empty editorial layers', async () => {
+  const X = await import('../src/engine/export.js?v=3');
+  const s = newRun();
+  applyEffects(s, {
+    meters: { transmission: 7, synthesis: 7 },
+    memory: { third_inquisition: 'lost', yazdi_copied: true, circle_member: true },
+  }, 'test');
+  s.runLog = [{ i: 0, encounterId: 'circle_entry' }];
+
+  const payload = X.buildChroniclePayload(s, finalVerdict(s), PHASES);
+  assert.equal(payload.v, X.PAYLOAD_V);
+  assert.equal(payload.log.length, 1, 'the run log travels');
+  assert.ok(payload.meta.verdict.manTitle && payload.meta.verdict.systemTitle, 'both axes recorded');
+  assert.ok(payload.attested.length >= 5, 'the attested-life comparison travels with the witness');
+  assert.ok(payload.legacyNotes.length >= 1);
+  assert.deepEqual(payload.revisions, [], 'editorial layers start empty');
+  assert.deepEqual(payload.annotations, []);
+  assert.deepEqual(payload.illustrations, []);
+  assert.equal(payload.preface.orig, '', 'preface is editable but starts blank');
+});
+
+test('a new run starts with an empty run log', () => {
+  assert.deepEqual(newRun().runLog, []);
+});

@@ -22,6 +22,7 @@ export function newRun() {
     memory: {},      // flag -> value (CourtMemory flags)
     memLog: [],      // { flag, value, source } — append-only "why" log
     chronicle: [],   // { text, band, encounterId, phase }
+    runLog: [],      // full scholarly log — one entry per resolved encounter (export.js)
     visits: {},      // nodeId -> count
     seen: [],        // encounter ids resolved
     obligations: [], // standing duties draining time each turn (career.js)

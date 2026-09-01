@@ -1,0 +1,8 @@
+{
+  "name": "turka-witness",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Witness service for Ibn Turka: The Occult Court — publishes a finished run to a permanent URL.",
+  "dependencies": { "@vercel/blob": "^0.27.0" }
+}

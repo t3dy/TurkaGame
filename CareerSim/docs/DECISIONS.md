@@ -156,3 +156,34 @@ executed the same session:
   version now bumps with its file; verified by re-testing the artifact boost live.
 - **Deferred, recorded in AUDIT.md**: demand profiles (SYSTEMS §6), citation-grade seal
   sources, the Codex trophy page, people cap-tag coverage.
+
+## The witness system (2026-08-31, sixth session)
+
+The Career Sim now publishes finished runs as permanent scholarly witnesses.
+
+- **The game stays on GitHub Pages; only the service is on Vercel.** The alternative
+  — deploying a second copy of the game to Vercel so publishing is same-origin — was
+  rejected because two copies of the game drift. `witness-client.js` posts
+  cross-origin and the service sets CORS. One game build, one service.
+- **Vercel Blob, not a database**, per `PLAYTHROUGH_WITNESS_ARCHITECTURE.md`. One JSON
+  document per witness plus a small `index/{id}.json` summary row written at publish
+  time specifically so a future researcher's desk can list thousands of witnesses
+  without fetching full payloads.
+- **Two keys per witness, hashes only.** Publishing mints a player key and a scholar
+  key; the service stores `sha256` of each and derives the *hand* from which hash a
+  supplied key matches. Players get the same editing powers as the scholar — the
+  distinction is attribution and priority, not permission — which is what makes a
+  scholar-hand correction sortable into a review queue later.
+- **Prose is frozen at publish, not regenerated.** The witness snapshots the situation
+  text, every option, and the chronicle line, keeping `orig` beside `current`. A later
+  content revision must never silently rewrite a document a scholar has annotated.
+  This is the one place the DungeonAB house habit (regenerate narration from
+  `seed + choices`) is deliberately *not* followed, and the reason is recorded here so
+  it is not "fixed" by a future session.
+- **The record includes what was *not* chosen.** Locked options travel with their
+  requirements, so a reviewer can see the road not taken and correct the design, not
+  just the prose.
+- **Editorial layers are append-only and mechanically inert.** `revisions`,
+  `annotations`, `illustrations`, `preface` are reserved in the payload and start
+  empty; when `api/edit.mjs` is built it must reject writes touching `meta` or
+  anything mechanical. Enforce server-side.

@@ -9,7 +9,9 @@ import {
   finalVerdict, settleContracts,
 } from './engine/career.js?v=4';
 import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=4';
-import * as ui from './ui.js?v=3';
+import { logEntry, buildChroniclePayload } from './engine/export.js?v=3';
+import { publishWitness } from './witness-client.js?v=1';
+import * as ui from './ui.js?v=4';
 
 let state = null;
 let current = null;
@@ -70,6 +72,11 @@ function choose(idx) {
   if (opt.dropsObligation) { dropObligation(state, opt.dropsObligation); result.obligationDropped = opt.dropsObligation; }
   if (opt.contract) { offerContract(state, opt.contract); result.contractOpened = opt.contract; }
 
+  // The scholarly log: capture the encounter as the game actually presented it —
+  // situation, every option offered with its provenance, what was chosen, how it
+  // resolved. Frozen here so a published witness stays true even if content changes.
+  (state.runLog ||= []).push(logEntry(state, current.enc, current.evaluated, idx, result));
+
   save(state);
   const first = !onboard.res; onboard.res = true;
   ui.renderResolution(state, current.enc, result, PEOPLE, ARTIFACTS, first, exposureTier(state));
@@ -85,13 +92,26 @@ function afterResolution() {
       state.over = true;
       state.verdict = finalVerdict(state);
       clearSave();
-      ui.renderEnding(state, state.verdict, PEOPLE, PHASES);
+      ui.renderEnding(state, state.verdict, PEOPLE, PHASES,
+        buildChroniclePayload(state, state.verdict, PHASES));
     } else {
       ui.renderColophon(state, phase(), settled);
     }
     return;
   }
   toMap();
+}
+
+async function doPublish(btn) {
+  btn.disabled = true;
+  btn.textContent = 'copying the chronicle out…';
+  try {
+    const payload = buildChroniclePayload(state, state.verdict, PHASES);
+    const out = await publishWitness(payload);
+    ui.renderWitnessLinks(out);
+  } catch (err) {
+    ui.renderPublishError(err.message);
+  }
 }
 
 function advancePhase() {
@@ -109,6 +129,7 @@ document.body.addEventListener('click', (e) => {
   const dismiss = e.target.closest('[data-dismiss]');
   if (dismiss) { dismiss.closest('.marginalia').remove(); return; }
 
+  if (e.target.closest('.publish-btn')) { doPublish(e.target.closest('.publish-btn')); return; }
   if (e.target.closest('.continue-btn')) { afterResolution(); return; }
   if (e.target.closest('.next-phase-btn')) { advancePhase(); return; }
   if (e.target.closest('.begin-phase-btn')) { toMap(); return; }

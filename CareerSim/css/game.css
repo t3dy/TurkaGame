@@ -288,3 +288,22 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .mrow.work span { color: var(--verdigris); }
 .attested-life .att-hist { font-weight: 600; color: var(--ink); }
 .attested-intro { margin-bottom: 0.7rem; }
+
+/* ---- publishing a witness (ending screen) ---- */
+.publish-folio { text-align: center; }
+.publish-blurb { max-width: 34rem; margin: 0 auto 1rem; }
+.publish-btn {
+  font: inherit; font-size: 1.02rem; color: var(--lapis); cursor: pointer;
+  background: none; border: 1px solid var(--lapis); border-radius: 2px; padding: .4rem 1.1rem;
+}
+.publish-btn:hover:not(:disabled) { background: var(--parchment); }
+.publish-btn:disabled { opacity: .6; cursor: default; }
+.publish-error { color: var(--vermillion); font-style: italic; font-size: .9rem; margin-top: .7rem; }
+.witness-link { text-align: left; max-width: 40rem; margin: 0 auto 1rem; }
+.witness-label { font-variant: small-caps; letter-spacing: .08em; font-size: .78rem; color: var(--vermillion); }
+.witness-link a { word-break: break-all; font-size: .88rem; }
+.witness-note { font-size: .78rem; color: var(--ink-faint); font-style: italic; }
+.copy-btn {
+  font: inherit; font-size: .72rem; cursor: pointer; margin-left: .4rem; color: var(--ink-faint);
+  background: none; border: 1px solid var(--line); border-radius: 2px; padding: 0 .4rem;
+}
