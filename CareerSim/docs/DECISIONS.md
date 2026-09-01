@@ -288,3 +288,23 @@ both modes; 49 tests pass).
 - **Explicitly stopped tuning overlap.** 52% vs the <40% target after every cheap lever:
   the remaining distance is Slice 4 pool depth, and further tuning would be motion
   without progress. Recorded in NEXTSTEPS so nobody re-tunes it.
+
+## The acquitted road and the cautious probe (2026-09-01, tenth session)
+
+Both items came out of writing ENDINGS.md — the doc audit found them, the same session
+closed them.
+
+- **`trial_third` gained "Put the household between you and the panel"** — survival by
+  patronage (`third_stance: 'patron'`), the road the `acquitted` fate's own text
+  promised and no content had written. Requires imperial ≥ 2, boosted by kept promises
+  (`expectation`, `boon_delivered`); its disaster band (`min_exposure: 9`) is the
+  household declining at full notoriety. Fires in 5.8% of random runs.
+- **`cautious` simulation mode** (lowest-expected-exposure play) settled ENDINGS §8's
+  open question and found the better fact: cautious play holds exposure at median 0 and
+  its modal fate is `recanted` at 74% — the careful player wins the first tribunal, is
+  offered the quiet arrangement, and signs. Recorded in ENDINGS.md as a property to
+  preserve: caution costs recantation, not obscurity.
+- **Two more commissions** (the Qurʾan layout for Bāysunghur, the inscription
+  commissioned mid-trials — both attested patterns) with full contract shape.
+  Contracts/run 0.62→0.66; the ≥2 gate honestly needs contracts on unconditional
+  paths, recorded in the gates list.

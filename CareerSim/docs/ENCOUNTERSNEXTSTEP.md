@@ -180,8 +180,9 @@ Do not call any of this done on the strength of a diff. Run both harnesses:
 - [x] Encounters with no gated option: **<10 of 73** — *9, via 15 conversions (2026-09-01)*
 - [x] Options with a single outcome band that also carry `requires`/`boosts`: **0** *(2026-09-01;
   26 new bands, several exposure-conditional via the new `min_exposure` band gate)*
-- [ ] Contracts opened per run **≥2** — *0.62; two contract sources exist (commission, grimoire).
-  Needs the per-phase contract authoring in §4, unstarted*
+- [ ] Contracts opened per run **≥2** — *0.66; four contract sources now (commission,
+  grimoire, Qurʾan layout, trial inscription). The gap to 2 needs contracts on
+  unconditional paths, not more conditional ones — §4 remains the real work*
 - [x] Cross-phase memory read sites **≥25** — *25 sites, 23 flags (2026-09-01)*
 - [x] Expectation read by ≥3 gates — *3 boosts (grimoire counter-offer, patron's door, negotiation)*
 - [x] No single system fate >~30% under random play — *scholarly 33%, source_code 23% (was 67%)*

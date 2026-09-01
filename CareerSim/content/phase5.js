@@ -229,6 +229,29 @@ export const ENCOUNTERS = {
         ],
       },
       {
+        // The road ENDINGS.md §8 found missing: `acquitted` ("by patronage, by whatever
+        // came to hand") was dead code because every survival wrote a flag an earlier
+        // fate claimed first. This writes third_stance: 'patron' — not firm, not betrayal
+        // — so the fall-through finally reaches the fate written for it.
+        id: 'spend_patron', label: 'Put the household between you and the panel',
+        detail: 'Everything a decade of service is owed, spent in one afternoon.',
+        requires: ['rep:imperial>=2'],
+        boosts: ['expectation>=1', 'mem:boon_delivered'],
+        effects: { memory: { third_stance: 'patron' } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'The panel does not dissolve; it postpones, twice, and then discovers a procedural defect nobody had noticed in two years. You are not acquitted so much as released — and the household lets you know the account is closed.',
+            effects: { rep: { imperial: -2 }, memory: { third_inquisition: 'survived', patron_spent: true } },
+            chronicle: 'The third tribunal was made to find a defect in its own paperwork, and the price was every favor he was owed.' },
+          { band: 'qualified', weight: 1, text: 'The intervention works, and is visible working. You leave the hall alive and owned, and every man on the panel knows exactly what saved you.',
+            effects: { rep: { imperial: -1, scholarly: -1 }, meters: { exposure: 1 }, memory: { third_inquisition: 'survived', patron_spent: true } },
+            chronicle: 'A patron’s hand lifted him out of the third tribunal in front of everyone.' },
+          { band: 'disaster', weight: 1, min_exposure: 9,
+            text: 'At your notoriety the household does its arithmetic in front of you, and declines. The panel convenes on schedule — and now they know you asked.',
+            effects: { rep: { imperial: -2 }, memory: { third_inquisition: 'lost' } },
+            chronicle: 'He asked his patron to stop the third tribunal, and the patron counted the cost and stepped aside.' },
+        ],
+      },
+      {
         id: 'flee', label: 'Do not appear',
         detail: 'Take the road before the verdict. Condemned in absentia; free, and finished here.',
         requires: [],
@@ -581,6 +604,14 @@ export const ENCOUNTERS = {
       {
         id: 'accept_inscription', label: 'Compose the inscription',
         detail: 'L\u012bmiy\u0101, paid in silver and silence. Useful money; documentary evidence.',
+        contract: {
+          id: 'trial_inscription', name: 'The Commissioned Inscription', deadline: 2,
+          promise: 'The talismanic inscription, composed and delivered while the tribunals are still sitting.',
+          requires: ['limiya>=2'],
+          reward: { meters: { transmission: 1 }, rep: { orthodox: 1 }, memory: { boon_delivered: true } },
+          failure: { rep: { orthodox: -1 }, memory: { boon_failed: true } },
+          expectation_delta: 1,
+        },
         boosts: ['mem:muqattaat_system'],
         requires: ['limiya>=2'],
         effects: { meters: { exposure: 1 }, memory: { exile_commission: 'accepted' } },

@@ -79,7 +79,7 @@ Read in four blocks, top to bottom:
 | 5 | `informer` | The Man Who Gave a Name | traded a friend's name at the tribunal | 6.0% |
 | 6 | `recanted` | The Man Who Bent | signed the recantation | 19.4% |
 | 7 | `vindicated` | Vindicated in Open Court | survived the third, stance held firm | 3.1% |
-| 8 | `acquitted` | Thrice Tried, Thrice Standing | survived the third by any other road | **0% — dead code, see §8** |
+| 8 | `acquitted` | Thrice Tried, Thrice Standing | survived the third by any other road (patronage) | 5.8% — see §8 |
 | 9 | `harried` | Harried to the End | won an earlier tribunal; the third never resolved | 31.7% |
 | — | | **Block 3: the tribunals never came — judged on career shape** | | |
 | 10 | `eminent` | Eminence Without Incident | imperial ≥ 3 and exposure ≤ 6 | 1.8% |
@@ -198,23 +198,25 @@ that high system-fates still co-occur with bad man-fates.
   tribunal, third never resolved." Defensible (a life of waiting is a real shape, and
   the text is good), but it absorbs a wide range of runs. If injections push
   third-resolution above ~75%, revisit whether it should split into two fates.
-- **`acquitted` is dead code — verified, not suspected.** Checked 2026-09-01:
-  `third_inquisition = 'survived'` is written at exactly two sites in `trial_third`,
-  and both co-write a flag that an *earlier* matrix entry claims first (`third_stance:
-  'firm'` → `vindicated`; `betrayed_friend` → `informer`). No run can reach entry #8,
-  and its title — "Thrice Tried, Thrice Standing… by argument, by patronage, by
-  whatever came to hand" — describes a survival route the content never wrote: winning
-  the third tribunal through patronage or maneuver rather than defiance or betrayal.
-  The fix is content, not matrix: give `trial_patron_shield` (or a spent-patron option
-  on the trial itself) a band that writes `third_inquisition: 'survived'` with a
-  non-firm stance. Until then this is §2's warning made flesh — a fate buried by the
-  entries above it, sitting in the file looking reachable.
-- **`judge`, `unremarked`, `obscure` fire in under 0.5%** — near-unreachable under the
-  pressure ladder, since staying at exposure ≤ 2 now requires refusing most of the
-  game. Arguably correct (safety *should* cost the whole game), but the text of
-  `unremarked` — "it is a kind of victory, and it tastes like one" — deserves to be
-  seen occasionally. A deliberate low-profile strategy sim would settle whether it is
-  reachable by intent rather than luck.
+- **`acquitted` was dead code — found by this doc, fixed the same day.** As written,
+  `third_inquisition = 'survived'` was set at exactly two sites in `trial_third`, both
+  co-writing a flag an *earlier* matrix entry claims first (`firm` → `vindicated`;
+  `betrayed_friend` → `informer`) — §2's warning made flesh. The fix was content, not
+  matrix: `trial_third` now carries a fifth option, **"Put the household between you
+  and the panel"** (requires imperial ≥ 2, boosted by kept promises), which survives by
+  patronage with `third_stance: 'patron'` — the exact road the fate's own text promised
+  ("by argument, by patronage, by whatever came to hand"). Measured after: **5.8%** of
+  random runs. Its `min_exposure: 9` disaster band is the period truth that at full
+  notoriety even the household does its arithmetic and steps aside.
+- **The quiet fates, probed (2026-09-01).** `simulate-runs.mjs` now has a `cautious`
+  mode — always take the lowest-expected-exposure option — precisely to settle whether
+  `unremarked`/`judge`/`eminent` are reachable by intent. Answer: yes, but barely
+  (2.3% combined, exposure held at median **0**), and the probe found something better
+  than the answer: **the modal fate of perfectly cautious play is `recanted`, at 74%.**
+  The careful player wins the first tribunal, is offered the quiet arrangement, and —
+  being careful — signs it. Caution's true face in this game is not obscurity; it is
+  bending. That is thematically exact and should be preserved: any future safety tuning
+  must keep "The Man Who Bent" as what carefulness costs.
 - **The exiled/broken boundary is exposure 9** — retuned once already; if the exposure
   economy moves again, this boundary moves with it. The invariant to preserve: *losing
   the third tribunal at typical exposure lands on the attested fate.*

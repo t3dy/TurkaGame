@@ -8,7 +8,7 @@ import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, exposureTier,
   finalVerdict, settleContracts,
 } from './engine/career.js?v=7';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=7';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=8';
 import { logEntry, buildChroniclePayload } from './engine/export.js?v=5';
 import { publishWitness } from './witness-client.js?v=1';
 import * as ui from './ui.js?v=7';

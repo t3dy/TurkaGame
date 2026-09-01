@@ -532,6 +532,14 @@ export const ENCOUNTERS = {
       {
         id: 'framework', label: 'Offer a lettrist framework for the layout',
         detail: 'Your proportions, in the most permanent object this dynasty will make. Glory, in evidence form.',
+        contract: {
+          id: 'quran_layout', name: 'The Qurʾan Layout', deadline: 3,
+          promise: 'A complete lettrist proportion-scheme for the royal Qurʾan, delivered to the kitābkhāna.',
+          requires: ['meter:synthesis>=5'],
+          reward: { meters: { transmission: 2 }, rep: { imperial: 1, orthodox: 1 }, memory: { boon_delivered: true } },
+          failure: { rep: { imperial: -1, orthodox: -1 }, memory: { boon_failed: true } },
+          expectation_delta: 1,
+        },
         requires: ['limiya>=2'],
         boosts: ['person:calligrapher'],
         effects: { meters: { transmission: 2, exposure: 2 }, rep: { imperial: 2 }, memory: { quran_framework: true } },

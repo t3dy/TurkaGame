@@ -2,12 +2,18 @@
 // the loop actually produces: meter curves, ending distribution, which encounters ever
 // fire, and how much two runs overlap.
 //
-//   node tools/simulate-runs.mjs [n=2000] [random|greedy]
+//   node tools/simulate-runs.mjs [n=2000] [random|greedy|cautious]
 //
 // `random` picks uniformly among available options — the floor, what a player who
 // understands nothing would get. `greedy` prefers options whose requirements are met
 // (i.e. rewards preparation) — a rough proxy for skilled play. If a balance claim only
 // holds under one of them, it is not a balance claim.
+//
+// `cautious` always takes the option with the lowest expected exposure gain — the
+// deliberate low-profile strategy. It exists to answer ENDINGS.md §8's question: are the
+// quiet fates (`unremarked`, `judge`, `eminent`) reachable by INTENT, or only by luck?
+// If cautious play cannot reach them, "safety costs the whole game" is not a design,
+// it is a fiction.
 //
 // The flow below mirrors src/main.js exactly (time spend, obligations, contract ticks,
 // departure node, phase advance). If main.js's loop changes, change it here too, or the
@@ -18,7 +24,7 @@ import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounter
 import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, settleContracts, finalVerdict,
 } from '../src/engine/career.js?v=7';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=7';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=8';
 
 const N = parseInt(process.argv[2] || '2000', 10);
 const MODE = process.argv[3] || 'random';
@@ -59,7 +65,21 @@ function playRun() {
       const avail = evaluated.filter((ev) => ev.available);
       if (!avail.length) break;
       const prepared = avail.filter((ev) => ev.unlockedBy.length);
-      const chosen = MODE === 'greedy' && prepared.length ? pick(prepared) : pick(avail);
+      let chosen;
+      if (MODE === 'greedy' && prepared.length) chosen = pick(prepared);
+      else if (MODE === 'cautious') {
+        // expected exposure delta: option base effects plus the weight-averaged bands
+        const expCost = (ev) => {
+          const base = ((ev.opt.effects || {}).meters || {}).exposure || 0;
+          const bands = ev.opt.outcomes || [];
+          const tw = bands.reduce((a, b) => a + b.weight, 0) || 1;
+          const avg = bands.reduce((a, b) => a + b.weight * ((((b.effects || {}).meters || {}).exposure) || 0), 0) / tw;
+          return base + avg;
+        };
+        const scored = avail.map((ev) => ({ ev, c: expCost(ev) }));
+        const min = Math.min(...scored.map((x) => x.c));
+        chosen = pick(scored.filter((x) => x.c === min).map((x) => x.ev));
+      } else chosen = pick(avail);
       resolveOption(state, enc, chosen);
       seen.push(enc.id);
       const o = chosen.opt;

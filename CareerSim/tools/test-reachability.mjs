@@ -17,7 +17,7 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { ENCOUNTERS, PHASES } from '../content/index.js?v=7';
+import { ENCOUNTERS, PHASES } from '../content/index.js?v=8';
 import { LEXICON } from '../content/lexicon.js?v=2';
 
 const SCI = ['kimiya', 'limiya', 'himiya', 'simiya', 'rimiya'];

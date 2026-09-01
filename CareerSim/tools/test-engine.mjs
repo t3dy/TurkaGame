@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { newRun, applyEffects, checkReq } from '../src/engine/state.js?v=3';
 import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict, BANDS } from '../src/engine/engine.js?v=6';
 import { NODES } from '../content/phase1.js?v=4';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=7';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=8';
 import { addObligation, chargeObligations, offerContract, tickContracts, exposureTier, finalVerdict, LEGACY_NOTES } from '../src/engine/career.js?v=7';
 
 test('capability gating: feast wonder locked until rimiya practiced', () => {
