@@ -4,7 +4,7 @@
 > this project has more than one hosting path, so the canonical state lives here rather
 > than being re-derived each session.
 
-Last verified: **2026-08-31**, commit `0c98a85` (CareerSim eighth session: loop repairs,
+Last verified: **2026-09-01**, commit `ee596fa` — the Visionary Gallery deploy, exercised end to end (see below). Commits after it are verified for Pages build status only.
 pressure ladder, witness editor). Verified by fetching the live artifact: `/CareerSim/`
 serves `main.js?v=11`, loads 73 encounters including `content/pressure.js`, zero console
 errors; witness service `turka-witness.vercel.app` verified separately the same day.
@@ -55,10 +55,13 @@ Everything is one Pages site off the repo root. There is no separate host for an
 
 `/` (repo root `index.html`) is a 300-byte redirect stub into `/site/`.
 
-## Verified live 2026-09-01 (commit `33ffb7a`)
+## Verified live 2026-09-01 (commit `ee596fa`)
 
-Pages build status `built`, commit matching `git rev-parse HEAD`. Checked with real
-requests, not assumed:
+Pages build status `built`, commit matching HEAD **at the time of the check**.
+A concurrent session pushed `33ffb7a` moments later, so this table is the state of
+`ee596fa` specifically — that is the commit whose behaviour was actually exercised,
+and naming a commit nobody tested would defeat the point of this file. Checked with
+real requests, not assumed:
 
 | Surface | Result |
 |---|---|
