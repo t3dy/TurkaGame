@@ -194,9 +194,38 @@ def ingest_arguments(conn: sqlite3.Connection, arguments: list[dict]) -> int:
         ))
     conn.commit()
     return len(arguments)
+def prune(conn: sqlite3.Connection, seed: dict[str, Any]) -> int:
+    """Delete rows whose entry is no longer in seed.json.
+
+    INSERT OR REPLACE only ever adds or overwrites, so an entry removed from the seed
+    file lingered in the database forever and build_site.py went on publishing a page
+    for it. That is how five merged concept stubs stayed live after being merged away.
+    seed.json is the source of truth; the database should not outlive it.
+    """
+    removed = 0
+    c = conn.cursor()
+    for table, key in (('figures', 'slug'), ('concepts', 'slug'),
+                       ('institutions', 'slug'), ('texts', 'slug'),
+                       ('arguments', 'slug'), ('bibliography', 'source_id')):
+        try:
+            live = {i.get(key) for i in seed.get(table, [])}
+            have = {r[0] for r in c.execute(f"SELECT {key} FROM {table}")}
+        except sqlite3.OperationalError:
+            continue  # table not in this schema version
+        stale = have - live
+        for ident in stale:
+            c.execute(f"DELETE FROM {table} WHERE {key} = ?", (ident,))
+            print(f"  pruned {table}: {ident}")
+        removed += len(stale)
+    conn.commit()
+    return removed
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--seed-file', type=Path, default=SEED_DEFAULT)
+    ap.add_argument('--no-prune', action='store_true',
+                    help='keep database rows that are no longer in the seed file')
     args = ap.parse_args()
 
     if not args.seed_file.exists():
@@ -220,6 +249,11 @@ def main() -> int:
         n_bib = ingest_bibliography(conn, seed.get('bibliography', []))
 
         print(f"Ingested {n_fig} figures, {n_con} concepts, {n_inst} institutions, {n_txt} texts, {n_arg} arguments, {n_bib} bibliography entries.")
+
+        if not args.no_prune:
+            n_pruned = prune(conn, seed)
+            if n_pruned:
+                print(f"Pruned {n_pruned} row(s) no longer present in the seed file.")
 
         # Verify
         c = conn.cursor()
