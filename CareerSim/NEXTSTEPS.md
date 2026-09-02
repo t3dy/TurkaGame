@@ -162,9 +162,9 @@ whether the workbench genuinely beats it before building it.
 - **Illustration UI.** `addIllustration`/`reviewQueue`/`notifyCount` are built and
   tested with nothing calling them — a reader attaching the manuscript a scene
   describes is a strong feature and the data layer is done.
-- **Citation-grade seal sources.** Seals currently show repo-relative strings
-  (`BIOGRAPHY — Formation (Cairo)`), meaningless to a live-site reader. Resolve to
-  a real citation, ideally linking the site timeline.
+- ~~**Citation-grade seal sources.**~~ **Done 2026-09-02**: `content/citations.js`
+  resolves each pointer to the real papers in the seal tooltip, and `sourceCite`
+  travels in the witness payload so off-site chronicles keep their scholarship.
 - **Consolidate the two witness services** if a third game needs one. Two is fine.
 - **Encounter pool depth** is currently 13–16 per phase (floor lint-enforced at 11).
   Slice 4's target is ~120 total with <40% overlap between successive runs — but measure
