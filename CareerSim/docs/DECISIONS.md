@@ -308,3 +308,30 @@ closed them.
   commissioned mid-trials — both attested patterns) with full contract shape.
   Contracts/run 0.62→0.66; the ≥2 gate honestly needs contracts on unconditional
   paths, recorded in the gates list.
+
+## The career-pressure pass (2026-09-01, eleventh session)
+
+The loop's identity item — "serve the office, the patron, the book, the students, or
+the network?" — finally has teeth in every phase. Measured before/after with
+`simulate-runs.mjs 2000`.
+
+- **Standing obligations III–V**: the patron's retainer (granted with the patron,
+  dropped at the court's end — a retainer cannot outlive its court), the summa itself
+  (granted when the book begins, dropped when the first summons ends the Pivot — the
+  book is finished in 1420), and the summonses (granted at the first tribunal). Each
+  with a neglect consequence and a marginale.
+- **`opt.time` finally used** at three long-work sites (Yazdī line-by-line, the
+  muqaṭṭaʿāt foundation, writing the summa twice), each +2 seasons, with a vermillion
+  cost marker on the option button — a hidden cost would break UI guarantee #1.
+- **The spine nearly broke, and the fix is recorded**: with the summonses billing every
+  action, `trial_first` — an ordinary node draw — often never fired in the shortened
+  phase, and third-resolution fell 60%→44%. `trial_first` joined the injections (the
+  departure node was already named "The First Summons"; a summons is not an errand you
+  elect) and Phase V went to 8 seasons. Third-resolution now **74%**, the best measured.
+- **Fate spread after pressure**: no man-fate above 25% (harried 22%, down from 56% at
+  audit); `exiled` at 5.5%; under greedy play the modal skilled fate is now `acquitted`
+  at 29% — survival by patronage, owned. The thesis shifted from all-ruin to
+  ruin-or-ownership, recorded in ENDINGS.md §7 as the property to preserve.
+- **Contracts 0.66→0.85/run** (merchant's nativity in P2 — a recorded deviation from
+  "III+ only", the fiction demanded it; the observatory tables in P4). The ≥2 gate
+  likely needs offer-injection, not more sites; noted in the gates list.

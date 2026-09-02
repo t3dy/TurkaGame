@@ -5,7 +5,7 @@
 
 import { QUINTET } from './engine/state.js?v=3';
 import { LEXICON } from '../content/lexicon.js?v=2';
-import { attestedRows } from './engine/career.js?v=7';
+import { attestedRows } from './engine/career.js?v=8';
 
 const $ = (sel) => document.querySelector(sel);
 export const app = () => $('#app');
@@ -185,11 +185,13 @@ export function renderEncounter(state, enc, evaluated, people, artifacts, firstE
         ? `<span class="unlockedby">— open to you because of ${esc(ev.unlockedBy.join(', '))}</span>` : '';
       const favored = ev.favoredBy.length
         ? `<span class="favoredby">favored by ${esc(ev.favoredBy.join(', '))}</span>` : '';
+      const cost = o.time
+        ? `<span class="opt-cost" data-gloss="This is long work: it consumes ${o.time} extra season${o.time > 1 ? 's' : ''} beyond the visit itself.">⏳ +${o.time} season${o.time > 1 ? 's' : ''}</span>` : '';
       return `
       <button class="option" data-opt="${i}">
         <span class="opt-label"><b class="opt-key">${i + 1}</b> ${esc(o.label)}</span>
         <span class="opt-detail">${glossify(esc(o.detail))}</span>
-        ${unlocked}${favored}
+        ${cost}${unlocked}${favored}
       </button>`;
     }
     return `

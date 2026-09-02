@@ -3,10 +3,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import { newRun, applyEffects, checkReq } from '../src/engine/state.js?v=3';
-import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict, BANDS } from '../src/engine/engine.js?v=6';
+import { drawEncounter, evaluateOptions, resolveOption, encounterEligible, cairoVerdict, BANDS } from '../src/engine/engine.js?v=7';
 import { NODES } from '../content/phase1.js?v=4';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=8';
-import { addObligation, chargeObligations, offerContract, tickContracts, exposureTier, finalVerdict, LEGACY_NOTES } from '../src/engine/career.js?v=7';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, LAST_PHASE } from '../content/index.js?v=9';
+import { addObligation, chargeObligations, offerContract, tickContracts, exposureTier, finalVerdict, LEGACY_NOTES } from '../src/engine/career.js?v=8';
 
 test('capability gating: feast wonder locked until rimiya practiced', () => {
   const s = newRun();
@@ -275,7 +275,7 @@ test('plate images reference files that are in the provenance registry', async (
 });
 
 test('an open contract cannot outlive its phase — settling forces resolution', async () => {
-  const { settleContracts } = await import('../src/engine/career.js?v=7');
+  const { settleContracts } = await import('../src/engine/career.js?v=8');
   const s = newRun();
   offerContract(s, {
     id: 'c3', name: 'Boon', deadline: 9, promise: 'a demonstration',

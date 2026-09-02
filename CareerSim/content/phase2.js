@@ -504,6 +504,14 @@ export const ENCOUNTERS = {
       {
         id: 'cast_it', label: 'Cast the nativity properly',
         detail: 'Real computation, honest reading, fair fee.',
+        contract: {
+          id: 'merchant_nativity', name: 'The Merchant’s Nativity', deadline: 2,
+          promise: 'A full nativity for the merchant’s son, computed and delivered in writing.',
+          requires: ['meter:synthesis>=2'],
+          reward: { rep: { occult: 1 }, meters: { demonstration: 1 }, memory: { boon_delivered: true } },
+          failure: { rep: { occult: -1 }, memory: { boon_failed: true } },
+          expectation_delta: 1,
+        },
         requires: ['access:astronomy'],
         effects: { meters: { demonstration: 1 }, rep: { occult: 1 }, memory: { casts_nativities: true } },
         outcomes: [
@@ -593,6 +601,8 @@ export const ENCOUNTERS = {
       {
         id: 'systematize', label: 'Treat them as notation and build the system on them',
         detail: 'The boldest move available: make the unexplained letters your foundation stone.',
+        // The foundation stone is a year of work, not an afternoon’s.
+        time: 2,
         // Gated at rank 1 and GRANTS rank 2 — this is where lettrism stops being something
         // you studied and becomes something you practise. Was `limiya>=2`, which no run
         // could reach (docs/MECHANICSISSUES.md §1).

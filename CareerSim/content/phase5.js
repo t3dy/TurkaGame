@@ -6,7 +6,7 @@ export const PHASE = {
   id: 5,
   name: 'THE TRIALS',
   dateline: 'c. 1422–1432',
-  time: 7,
+  time: 8,
   intro:
     'Everything that made you useful has made you visible, and visibility is the whole indictment. Three tribunals ' +
     'stand between you and an old age. Rivals engineered them; patrons may or may not spend themselves on you; and ' +
@@ -19,7 +19,10 @@ export const PHASE = {
   // never resolved the third inquisition at all, while the entire ending matrix keys off
   // it (docs/MECHANICSISSUES.md §7). A tribunal is not an opportunity you go looking for.
   // They stay listed in the tribunal node too, so walking in deliberately still works.
-  injections: ['trial_second', 'trial_third', 'pressure_denunciation'],
+  // trial_first joined the injection list 2026-09-01: once the standing obligations
+  // shortened the phase, leaving the FIRST tribunal as an ordinary node draw meant the
+  // whole chain often never started — and a summons is not an errand you elect to run.
+  injections: ['trial_first', 'trial_second', 'trial_third', 'pressure_denunciation'],
 };
 
 const IMG = (file, caption) => ({ src: '../assets/manuscripts/' + file, caption });
@@ -63,6 +66,11 @@ export const ENCOUNTERS = {
       {
         id: 'distinguish', label: 'Distinguish theoretical lettrism from sorcery',
         detail: 'The core legal argument: a mathematics of letters is not an operation on spirits.',
+        grantsObligation: {
+          id: 'summonses', name: 'The Summonses', cost: 1,
+          gloss: 'Filings, appearances, answers in writing: once the tribunal system has your name, it bills every action.',
+          neglect: { rep: { orthodox: -1 }, memory: { summons_neglected: true } },
+        },
         requires: [],
         boosts: ['access:judiciary', 'rep:orthodox>=1', 'mem:public_defense_won', 'mem:denunciation_answered'],
         effects: { memory: { first_inquisition: 'fought' } },
@@ -81,6 +89,11 @@ export const ENCOUNTERS = {
       {
         id: 'creed', label: 'Answer with a creedal statement',
         detail: 'Give them orthodoxy in your own words — the apology as a genre.',
+        grantsObligation: {
+          id: 'summonses', name: 'The Summonses', cost: 1,
+          gloss: 'Filings, appearances, answers in writing: once the tribunal system has your name, it bills every action.',
+          neglect: { rep: { orthodox: -1 }, memory: { summons_neglected: true } },
+        },
         requires: [],
         effects: { rep: { orthodox: 2 }, memory: { first_inquisition: 'creed', wrote_creed: true } },
         outcomes: [
@@ -95,6 +108,11 @@ export const ENCOUNTERS = {
       {
         id: 'counterattack', label: 'Attack the accusers’ standing',
         detail: 'Name the jealousy. Aggressive, satisfying, and it escalates.',
+        grantsObligation: {
+          id: 'summonses', name: 'The Summonses', cost: 1,
+          gloss: 'Filings, appearances, answers in writing: once the tribunal system has your name, it bills every action.',
+          neglect: { rep: { orthodox: -1 }, memory: { summons_neglected: true } },
+        },
         requires: ['access:judiciary'],
         effects: { meters: { exposure: 2 }, memory: { first_inquisition: 'won', counterattacked: true } },
         outcomes: [
@@ -309,7 +327,23 @@ export const ENCOUNTERS = {
             chronicle: 'He bought his shelter with work, and was told exactly what it weighed.' },
         ],
       },
-      {
+            {
+        // The plan's expectation>=2 gate (ENCOUNTERSNEXTSTEP §4): a patron who has taken
+        // TWO deliveries owes protection as a matter of standing, not charity.
+        id: 'claim_owed', label: 'Claim what you are owed',
+        detail: 'Two promises kept, in writing, with dates. Present the ledger, not a petition.',
+        requires: ['expectation>=2'],
+        effects: { memory: { patron_ledger_claimed: true } },
+        outcomes: [
+          { band: 'triumph', weight: 2, text: 'The steward reads the record of what you have delivered and stops making you wait. Protection arrives as bookkeeping, which is the most durable form it takes.',
+            effects: { rep: { imperial: 1 }, meters: { exposure: -1 } },
+            chronicle: 'He claimed protection as a debt, with the ledger open, and the household paid it as one.' },
+          { band: 'qualified', weight: 1, text: 'The household honors the ledger and closes it. You are protected, and you are also finished being owed.',
+            effects: { meters: { exposure: -1 } },
+            chronicle: 'His patron paid the protection owed and let him know the account now stood at zero.' },
+        ],
+      },
+{
         id: 'no_patron', label: 'Do not ask',
         detail: 'Face the tribunals on your own standing. Clean, and much harder.',
         requires: [],

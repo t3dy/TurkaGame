@@ -180,9 +180,16 @@ Do not call any of this done on the strength of a diff. Run both harnesses:
 - [x] Encounters with no gated option: **<10 of 73** — *9, via 15 conversions (2026-09-01)*
 - [x] Options with a single outcome band that also carry `requires`/`boosts`: **0** *(2026-09-01;
   26 new bands, several exposure-conditional via the new `min_exposure` band gate)*
-- [ ] Contracts opened per run **≥2** — *0.66; four contract sources now (commission,
-  grimoire, Qurʾan layout, trial inscription). The gap to 2 needs contracts on
-  unconditional paths, not more conditional ones — §4 remains the real work*
+- [ ] Contracts opened per run **≥2** — *0.85; six sources (commission, grimoire, Qurʾan
+  layout, trial inscription, merchant's nativity, observatory tables). Honest note: the
+  remaining gap is structural — contracts ride options players may not pick — and closing
+  it fully may need offer-style injection rather than more sites*
+- [ ] `third_inquisition` resolution — *74% (was 31% at audit): trial_first joined the
+  injections once the summonses shortened the phase*
+- [x] Standing obligation per phase III–V *(2026-09-01: the retainer — dropped at the
+  court's end; the book — dropped when the summons comes; the summonses)*
+- [x] `opt.time` in use — *3 long-work options at +2 seasons, with a UI cost marker*
+- [x] An `expectation>=2` gate exists — *"Claim what you are owed" at the patron's door*
 - [x] Cross-phase memory read sites **≥25** — *25 sites, 23 flags (2026-09-01)*
 - [x] Expectation read by ≥3 gates — *3 boosts (grimoire counter-offer, patron's door, negotiation)*
 - [x] No single system fate >~30% under random play — *scholarly 33%, source_code 23% (was 67%)*

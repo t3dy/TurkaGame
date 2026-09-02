@@ -310,6 +310,12 @@ export const LEGACY_NOTES = {
   'court_entry=careful': 'He arrived at court as a jurist, and let them discover the rest at his own pace.',
   'court_entry=circle': 'He arrived at court at the head of a working circle rather than alone.',
 
+  // — The career's standing costs (obligations & the patron's ledger) —
+  retainer_neglected: 'There were seasons he did not answer the household that paid him, and the household kept count.',
+  book_neglected: 'There were seasons the summa sat untouched, and the book remembers them in its unevenness.',
+  summons_neglected: 'He let tribunal filings lapse while he worked, and every lapse was entered in someone’s margin.',
+  patron_ledger_claimed: 'He once claimed protection as a debt owed for work delivered, and was paid like a creditor.',
+
   // — The pressure ladder (content/pressure.js) —
   rumor_corrected: 'He corrected his own legend in a bookshop, and the legend outran the correction anyway.',
   rumor_let_run: 'He let a distorted version of his doctrine travel nameless, and it made better time than the true one.',

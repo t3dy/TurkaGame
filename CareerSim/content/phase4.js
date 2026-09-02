@@ -70,6 +70,11 @@ export const ENCOUNTERS = {
       {
         id: 'systematic', label: 'Build it as a complete philosophical system',
         detail: 'The whole architecture, argued from first principles. Slow, enormous, and unprecedented.',
+        grantsObligation: {
+          id: 'the_book', name: 'The Summa Itself', cost: 1,
+          gloss: 'Once begun, the Investigations claims a season of every action. Composing is not a visit; it is a life.',
+          neglect: { memory: { book_neglected: true } },
+        },
         requires: ['meter:synthesis>=5'],
         effects: {
           artifacts: ['investigations'], meters: { synthesis: 1 },
@@ -86,6 +91,11 @@ export const ENCOUNTERS = {
       {
         id: 'practical', label: 'Build it as a usable handbook',
         detail: 'Method first, philosophy implicit. Less glory, far more uptake.',
+        grantsObligation: {
+          id: 'the_book', name: 'The Summa Itself', cost: 1,
+          gloss: 'Once begun, the Investigations claims a season of every action. Composing is not a visit; it is a life.',
+          neglect: { memory: { book_neglected: true } },
+        },
         requires: [],
         effects: {
           artifacts: ['investigations'], meters: { transmission: 2, synthesis: 1 },
@@ -157,6 +167,8 @@ export const ENCOUNTERS = {
       {
         id: 'both_languages', label: 'Both: the summa in Arabic, a Persian exposition beside it',
         detail: 'Two books, two audiences, twice the work. The historically Turkian answer.',
+        // Writing it twice costs what writing it twice costs.
+        time: 2,
         requires: ['meter:synthesis>=6'],
         effects: {
           artifacts: ['persian_primer'], meters: { transmission: 2 }, rep: { scholarly: 2 },
@@ -412,6 +424,8 @@ export const ENCOUNTERS = {
       {
         id: 'copy_together', label: 'Work through it with him, line by line',
         detail: 'Not just a copy — a transfer. Slow, and it makes him a co-author of the transmission.',
+        // Six weeks at one desk is not a visit; it is a season and more.
+        time: 2,
         requires: ['mem:yazdi_bond=equal'],
         effects: {
           meters: { transmission: 3, synthesis: 1 },
@@ -654,6 +668,14 @@ export const ENCOUNTERS = {
       {
         id: 'contribute', label: 'Put your mathematics at their disposal',
         detail: 'Work on the tables. Anonymous, rigorous, and it ties your name to real science.',
+        contract: {
+          id: 'zij_contribution', name: 'The Observatory Tables', deadline: 3,
+          promise: 'Your computed contributions to the new tables, delivered to Samarkand while the instrument is young.',
+          requires: ['meter:demonstration>=2'],
+          reward: { rep: { scholarly: 2 }, meters: { transmission: 1 }, memory: { boon_delivered: true } },
+          failure: { rep: { scholarly: -1 }, memory: { boon_failed: true } },
+          expectation_delta: 1,
+        },
         requires: ['access:astronomy'],
         boosts: ['person:yazdi', 'person:astronomer'],
         // Working the tables puts you back in Yazdī's orbit — the correspondence is attested,
@@ -709,6 +731,7 @@ export const ENCOUNTERS = {
       {
         id: 'go_prepared', label: 'Go, and prepare a full defense',
         detail: 'Answer the summons on its own terms, with everything you have.',
+        dropsObligation: 'the_book',
         requires: [],
         effects: { memory: { trial_stance: 'defend' } },
         outcomes: [
@@ -719,6 +742,7 @@ export const ENCOUNTERS = {
       {
         id: 'go_patron', label: 'Go, but send to your patron first',
         detail: 'Spend political protection before spending arguments.',
+        dropsObligation: 'the_book',
         requires: ['rep:imperial>=2'],
         effects: { memory: { trial_stance: 'patron' } },
         outcomes: [
@@ -732,6 +756,7 @@ export const ENCOUNTERS = {
       {
         id: 'go_quiet', label: 'Go quietly, and concede whatever is cheap',
         detail: 'Give them small things early. Survive the first one; think about the rest later.',
+        dropsObligation: 'the_book',
         requires: [],
         effects: { rep: { orthodox: 1 }, memory: { trial_stance: 'concede' } },
         outcomes: [

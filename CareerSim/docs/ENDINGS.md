@@ -62,7 +62,10 @@ Three consequences of first-match-wins, worth knowing before editing:
 ## 3. The matrix as built — 14 man-fates × 9 system-fates
 
 126 nominal cells; in practice the axes correlate through exposure and transmission, so
-the populated region is smaller. Frequencies are 2000-run random play, 2026-09-01 build.
+the populated region is smaller. Frequencies are 2000-run random play, **morning
+2026-09-01 build** — the same day's career-pressure pass (standing obligations, injected
+trial_first, patron roads) moved them again; regenerate rather than citing this table.
+Current headline: third-inquisition resolution 74%, no man-fate above 25%, `exiled` 5.5%.
 
 ### 3a. The man (personal fate)
 
@@ -179,18 +182,22 @@ The design's acceptance test was never "nice spread" — it was the **Ibn Turka 
 maximal success must be maximally dangerous *to the man, not to the work*. Under greedy
 play (the skilled proxy, which prefers prepared options):
 
-- the system triumphs: `source_code` 46.5%, `scholarly` 34.5% — skilled play reliably
-  makes the science immortal;
-- while **~60% of those same runs end the man badly**: `informer` 26.7%, `broken`
-  13.6%, `recanted` 13.4%, `fugitive` 5.8%;
+- the system triumphs: `source_code` + `scholarly` ≈ 70% — skilled play reliably makes
+  the science immortal;
+- while the man pays one of two prices. **Re-measured 2026-09-01 after the career-
+  pressure pass:** ~46% of skilled runs end in ruin (`informer` 24%, `broken` 8%,
+  `recanted` 8%, `fugitive` 5%) and another **29% end `acquitted` — alive by
+  patronage, and owned**, the ledger closed, every man on the panel knowing what saved
+  him. Clean vindication stays under 2%;
 - and the *safe* personal fates (`eminent`, `judge`, `unremarked`) stay under 3%
-  combined, in both modes.
+  combined, in every mode.
 
-Playing well makes the work survive and makes the man's survival expensive. That is the
-first time the game's central claim has been observed in simulation rather than
-asserted, and it is the property any future retune must preserve. **Add it to your
-checks:** after touching anything in this file's domain, run greedy mode and confirm
-that high system-fates still co-occur with bad man-fates.
+The patron roads (added the same day) shifted the danger from pure destruction toward
+compromise — survival is purchasable, and the purchase shows. That is arguably truer to
+the period than the earlier all-ruin version, and it is still the thesis: playing well
+makes the work survive and makes the man's survival *expensive*, in coin or in kind.
+**Add it to your checks:** after touching anything in this file's domain, run greedy
+mode and confirm that high system-fates still co-occur with costly man-fates.
 
 ## 8. Known softness — what a future session should watch
 

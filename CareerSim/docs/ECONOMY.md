@@ -7,10 +7,12 @@ this file is *how big they should be*, measured against how big they currently a
 > **Status 2026-09-01:** §§1 and 3 describe the world as *found* and are kept as the
 > record the fixes cite. The §2(a) rescale, the §3 injection ladder and tier-conditional
 > bands, and the §5 time pressure (judgeship cost 2, Phase IV at 8 seasons) are all
-> implemented; §7's checklist carries the current measured values. Not yet done from this
-> file: §2(b) spendable meters (Slice 3), the §5 per-phase obligations beyond the
-> judgeship, `opt.time` uses, and §6's full rank economy (grants exist through Phase IV;
-> the Phase V hīmiyā-under-interrogation grant is still an idea).
+> implemented; §7's checklist carries the current measured values. Later the same day the §5
+> per-phase obligations landed too (retainer / the book / the summonses, with Phase V at
+> 8 seasons and `trial_first` injected to keep the spine alive under the new pressure),
+> along with three `opt.time: 2` long-work options and their UI cost marker. Still open
+> from this file: §2(b) spendable meters (Slice 3), and §6's Phase V
+> hīmiyā-under-interrogation grant.
 
 Regenerate every figure:
 

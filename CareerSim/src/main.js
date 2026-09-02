@@ -3,15 +3,15 @@
 // Engine stays pure; this file owns flow, time, obligations, contracts, saves.
 
 import { newRun, save, load, clearSave } from './engine/state.js?v=3';
-import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from './engine/engine.js?v=6';
+import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from './engine/engine.js?v=7';
 import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, exposureTier,
   finalVerdict, settleContracts,
-} from './engine/career.js?v=7';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=8';
-import { logEntry, buildChroniclePayload } from './engine/export.js?v=5';
+} from './engine/career.js?v=8';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=9';
+import { logEntry, buildChroniclePayload } from './engine/export.js?v=6';
 import { publishWitness } from './witness-client.js?v=1';
-import * as ui from './ui.js?v=7';
+import * as ui from './ui.js?v=8';
 
 let state = null;
 let current = null;
@@ -20,10 +20,14 @@ const onboard = { map: false, enc: false, res: false };
 const phase = () => phaseById(state.phase);
 
 function nodeStatus() {
+  // A pending injection holds every door open: the tribunal that has decided you are
+  // its business does not care that a node's own pool is spent. Without this, a run
+  // could exhaust its nodes with a summons still waiting and never receive it.
+  const injected = !!drawInjection(state, phase(), ENCOUNTERS);
   const st = {};
   for (const n of phase().nodes) {
     if (n.departure) { st[n.id] = 'open'; continue; }
-    const any = n.encounters.some((id) => ENCOUNTERS[id] && encounterEligible(state, ENCOUNTERS[id]));
+    const any = injected || n.encounters.some((id) => ENCOUNTERS[id] && encounterEligible(state, ENCOUNTERS[id]));
     st[n.id] = any ? 'open' : 'spent';
   }
   return st;

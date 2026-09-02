@@ -66,6 +66,11 @@ export const ENCOUNTERS = {
       {
         id: 'iskandar', label: 'Take service with Iskandar Sultan',
         detail: 'The experimental court: everything permitted, nothing guaranteed.',
+        grantsObligation: {
+          id: 'retainer', name: 'The Patron’s Retainer', cost: 1,
+          gloss: 'Attendance, correspondence, availability: the household that pays you owns a season of every action.',
+          neglect: { rep: { imperial: -1 }, memory: { retainer_neglected: true } },
+        },
         requires: [],
         effects: {
           people: ['iskandar'], access: ['atelier', 'astronomy'], rep: { imperial: 2, occult: 1 },
@@ -79,6 +84,11 @@ export const ENCOUNTERS = {
       {
         id: 'baysunghur', label: 'Take service with Bāysunghur',
         detail: 'The manuscript machine, and the safer branch of the dynasty.',
+        grantsObligation: {
+          id: 'retainer', name: 'The Patron’s Retainer', cost: 1,
+          gloss: 'Attendance, correspondence, availability: the household that pays you owns a season of every action.',
+          neglect: { rep: { imperial: -1 }, memory: { retainer_neglected: true } },
+        },
         requires: [],
         effects: {
           people: ['baysunghur'], access: ['atelier'], rep: { imperial: 2, orthodox: 1 },
@@ -92,6 +102,11 @@ export const ENCOUNTERS = {
       {
         id: 'samarkand', label: 'Go to Samarkand with Yazdī',
         detail: 'Mathematics, instruments, and the observatory rising. Requires your brother in God.',
+        grantsObligation: {
+          id: 'retainer', name: 'The Patron’s Retainer', cost: 1,
+          gloss: 'Attendance, correspondence, availability: the household that pays you owns a season of every action.',
+          neglect: { rep: { imperial: -1 }, memory: { retainer_neglected: true } },
+        },
         requires: ['person:yazdi'],
         effects: {
           access: ['observatory', 'astronomy'], rep: { scholarly: 2, imperial: 1 },
@@ -917,6 +932,7 @@ export const ENCOUNTERS = {
       {
         id: 'take_the_work', label: 'Leave with the work, and nothing else',
         detail: 'Books, tables, diagrams. Let the politics go on without you.',
+        dropsObligation: 'retainer',
         requires: [],
         effects: { meters: { synthesis: 1 }, memory: { court_exit: 'work' } },
         outcomes: [
@@ -927,6 +943,7 @@ export const ENCOUNTERS = {
       {
         id: 'keep_patron', label: 'Attach yourself to the surviving house',
         detail: 'Bāysunghur’s establishment endures. Continuity of protection, at the price of visible loyalty.',
+        dropsObligation: 'retainer',
         requires: [],
         effects: { rep: { imperial: 2 }, meters: { exposure: 1 }, memory: { court_exit: 'patron', kept_patron: true } },
         outcomes: [
@@ -940,6 +957,7 @@ export const ENCOUNTERS = {
       {
         id: 'take_the_circle', label: 'Leave with your people',
         detail: 'Calligrapher, astronomer, student, friend — whoever will come. The circle over the career.',
+        dropsObligation: 'retainer',
         requires: ['meter:transmission>=3'],
         effects: { meters: { transmission: 2, synthesis: 1 }, memory: { court_exit: 'circle' } },
         outcomes: [

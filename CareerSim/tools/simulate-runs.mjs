@@ -20,11 +20,11 @@
 // numbers quietly stop describing the game.
 
 import { newRun } from '../src/engine/state.js?v=3';
-import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from '../src/engine/engine.js?v=6';
+import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from '../src/engine/engine.js?v=7';
 import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, settleContracts, finalVerdict,
-} from '../src/engine/career.js?v=7';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=8';
+} from '../src/engine/career.js?v=8';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=9';
 
 const N = parseInt(process.argv[2] || '2000', 10);
 const MODE = process.argv[3] || 'random';
@@ -46,8 +46,9 @@ function playRun() {
       if (state.time <= 0) {
         if (dep && !state.seen.includes(dep.encounters[0])) node = dep; else break;
       } else {
+        const injectedPending = !!drawInjection(state, P, ENCOUNTERS);
         const open = P.nodes.filter((n) => !n.departure &&
-          n.encounters.some((id) => ENCOUNTERS[id] && encounterEligible(state, ENCOUNTERS[id])));
+          (injectedPending || n.encounters.some((id) => ENCOUNTERS[id] && encounterEligible(state, ENCOUNTERS[id]))));
         if (!open.length) { if (dep && !state.seen.includes(dep.encounters[0])) node = dep; else break; }
         else node = pick(open);
       }
