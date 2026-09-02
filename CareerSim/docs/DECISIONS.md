@@ -359,3 +359,15 @@ says) before touching anything.
 - **Situations checked and left alone**: the eight shortest all set stakes cleanly
   ("men will march on your arithmetic"; "Silence is also an answer"). No rewrites for
   rewriting's sake.
+
+## Citation-grade seals (2026-09-02, same session)
+
+AUDIT.md §4.3, deferred twice since the first audit, closed. `content/citations.js`
+resolves each seal's repo-internal source pointer to a real citation (the papers from
+`research/notes/` frontmatter: "Prologue to Pythagorean Renaissance" — Intellectual
+History of the Islamicate World, 2025; "The Occult Court" — Al-Masāq, 2025). The
+pointer stays for the reviewing scholar; the citation joins it in the seal tooltip;
+and `logEntry` now writes `sourceCite` into the witness payload, so a chronicle read
+years from now, off this site, still says whose scholarship each seal stood on.
+Also: the hīmiyā-under-interrogation grant (ECONOMY §6's last open note) — walking
+unbroken out of the third tribunal awards the rank, in the one room that can.

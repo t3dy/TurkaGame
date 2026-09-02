@@ -214,7 +214,7 @@ function render() {
       <div class="entry-rubric">${esc(e.rubric)}</div>
       ${e.plate ? `<figure class="plate"><img src="${esc(e.plate.src)}" alt=""><figcaption>${esc(e.plate.caption)}</figcaption></figure>` : ''}
       <p class="situation">${ed(i, 'situation', e.situation)}
-        <span class="seal" title="${esc(seal[1])}${e.source ? ' — ' + esc(e.source) : ''}">${seal[0]} ${esc((e.grounding || '').split('-')[0].toLowerCase())}</span></p>
+        <span class="seal" title="${esc(seal[1])}${e.source ? ' — ' + esc(e.source) : ''}${e.sourceCite ? '. ' + esc(e.sourceCite) : ''}">${seal[0]} ${esc((e.grounding || '').split('-')[0].toLowerCase())}</span></p>
       <ul class="opts">${opts}</ul>
       <p class="outcome"><span class="band band-${esc(e.band)}">${esc(e.band)}</span> ${ed(i, 'outcomeText', e.outcomeText)}</p>
       ${e.chronicle ? `<p class="chron">${ed(i, 'chronicle', e.chronicle.orig !== undefined ? e.chronicle.orig : e.chronicle.current)}</p>` : ''}

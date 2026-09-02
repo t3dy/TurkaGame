@@ -4,6 +4,7 @@
 // property a scholarly correction workflow needs. Framework-agnostic.
 
 import { attestedRows } from './career.js?v=8';
+import { resolveSource } from '../../content/citations.js?v=1';
 
 export const PAYLOAD_V = 1;
 
@@ -19,6 +20,9 @@ export function logEntry(state, enc, evaluated, chosenIdx, result) {
     rubric: enc.rubric,
     grounding: enc.grounding,
     source: enc.source,
+    // The real citation travels with the record: a witness read years from now, off
+    // this site, still says whose scholarship each seal stood on (AUDIT.md §4.3).
+    sourceCite: resolveSource(enc.source).cite,
     situation: enc.situation,
     plate: enc.plate ? { src: enc.plate.src, caption: enc.plate.caption } : null,
     options: evaluated.map((ev, idx) => ({

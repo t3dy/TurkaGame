@@ -5,6 +5,7 @@
 
 import { QUINTET, checkReq } from './engine/state.js?v=3';
 import { LEXICON } from '../content/lexicon.js?v=2';
+import { resolveSource } from '../content/citations.js?v=1';
 import { attestedRows } from './engine/career.js?v=8';
 
 const $ = (sel) => document.querySelector(sel);
@@ -225,7 +226,7 @@ export function renderEncounter(state, enc, evaluated, people, artifacts, firstE
         <div class="rubric">${esc(enc.rubric)}</div>
         ${enc.plate ? `<figure class="plate-frame"><img src="${esc(enc.plate.src)}" alt=""><figcaption>${esc(enc.plate.caption)}</figcaption></figure>` : ''}
         <p class="situation">${glossify(esc(enc.situation))}
-          <button class="ground-seal" data-gloss="${esc(g.gloss)} Source: ${esc(enc.source)}">${g.seal} ${enc.grounding.split('-')[0].toLowerCase()}</button>
+          <button class="ground-seal" data-gloss="${esc(g.gloss)} Source: ${esc(enc.source)}. ${esc(resolveSource(enc.source).cite)}">${g.seal} ${enc.grounding.split('-')[0].toLowerCase()}</button>
         </p>
         ${firstEnc ? `<p class="marginalia" data-note="enc">Open choices show <i>why</i> you have them; locked ones show what they'd need. What you study and whom you befriend decides which doors exist. <button class="dismiss" data-dismiss="enc">understood</button></p>` : ''}
         <div class="options">${opts}</div>

@@ -206,7 +206,9 @@ export const ENCOUNTERS = {
         effects: { meters: { exposure: 1 }, memory: { third_stance: 'firm' } },
         outcomes: [
           { band: 'triumph', weight: 1, text: 'Against every expectation the panel splits, and a split panel cannot condemn. You walk out — ruined at court, unbroken in doctrine, and alive.',
-            effects: { rep: { scholarly: 2, occult: 2, imperial: -2 }, meters: { demonstration: 2 }, memory: { third_inquisition: 'survived' } },
+            // hīmiyā is 'defense under interrogation'; walking unbroken out of the third
+            // tribunal is the rank, earned in the one room that can award it (ECONOMY §6).
+            effects: { quintet: { himiya: 1 }, rep: { scholarly: 2, occult: 2, imperial: -2 }, meters: { demonstration: 2 }, memory: { third_inquisition: 'survived' } },
             chronicle: 'He refused to bend at the third tribunal, and against all expectation the panel divided and could not condemn him.' },
           { band: 'backfire', weight: 3, text: 'They condemn. The sentence is not death — it is worse arranged than that: removal, disgrace, and the road.',
             effects: { rep: { imperial: -3, orthodox: -2 }, memory: { third_inquisition: 'lost' } },
