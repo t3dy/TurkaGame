@@ -269,6 +269,17 @@ HEAD, not merely "pushed"):
   — Melvin-Koushki ranks dream divination *above* geomancy, the portal has no entry, and it
   serves `docs/VISIONARY_ENVIRONMENTS.md` directly.
 
+- **House rules are now enforced in code (2026-09-02).** `tools/check_repo_rules.py`
+  + a tracked `tools/hooks/pre-commit`. **Run `python tools/install_hooks.py` once per
+  clone** — `core.hooksPath` is local config and does not travel by itself. Verified three
+  ways: clean on the current tree (621 files, 30/30 checksums), **44 violations when run
+  against the historical bad state**, and a real `.pdf` commit blocked end to end.
+- **The PDF history purge is prepared but NOT done.** See
+  `docs/RUNBOOK_purge_pdfs_from_history.md`. It is destructive (rewrites every SHA, breaks
+  every clone, needs a force-push) and is the repo owner's call. The runbook argues both
+  sides — 0 forks and 0 stars make the residual risk small, but also make *now* the
+  cheapest possible moment to act, since forks are what no rewrite can reach.
+
 ## What's NOT done — the important gaps, not hidden
 
 1. **The VN's narrative prose is a real first pass, not final writing.** Every

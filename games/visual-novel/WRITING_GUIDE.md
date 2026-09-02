@@ -21,11 +21,11 @@ canonical, already-synthesized index, not `docs/RESEARCH_BRIEF.md`'s looser pros
 (still useful for texture, but BIOGRAPHY.md and the timeline supersede it as the
 authoritative reference):
 
-1. **[`docs/BIOGRAPHY.md`](../docs/BIOGRAPHY.md)** — the full biography, organized
+1. **[`docs/BIOGRAPHY.md`](../../docs/BIOGRAPHY.md)** — the full biography, organized
    chronologically and thematically, every claim tagged ATTESTED / COMPARATIVE /
    CONTEXT. Its "For game design" section names concrete NPCs, entities, and open
    gaps.
-2. **[`site/data/timeline.json`](../site/data/timeline.json)** — 50 dated events,
+2. **[`site/data/timeline.json`](../../site/data/timeline.json)** — 50 dated events,
    each with a `category`, `grounding` tag, and `source` citation. Filter by
    `category: "texts"` for concrete named works/manuscripts/diagrams to reference;
    `category: "biography"` for people and relationships; `category: "historiography"`

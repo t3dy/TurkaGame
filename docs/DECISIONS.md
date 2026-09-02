@@ -594,7 +594,7 @@ meanwhile rewritten `portal/data/seed.json`: it added its own `concepts/geomancy
 was **deleted from the seed and pruned from the DB**. The gallery's Falnāma tradition now
 links to `geomancy` + `jafr`. The distinctive grounded material from the removed draft is
 parked in
-[`portal/docs/NOTE_geomancy_merge_candidate.md`](../portal/docs/NOTE_geomancy_merge_candidate.md)
+`portal/docs/NOTE_geomancy_merge_candidate.md` (since **merged into `concepts/geomancy` and deleted**, per the note's own instructions — see commit `33ffb7a`)
 for a deliberate merge by whoever owns that entry.
 
 **Rationale.** Theirs is already wiki-linked into the rest of the portal and written in the
@@ -686,3 +686,62 @@ If builds error again, that correlation is the first thing to re-test.
 
 **Consequence.** The live site is current. `DEPLOY_STATE.md` records `ee596fa` as the
 commit whose behaviour was exercised in detail and `65b382f` as the current built HEAD.
+
+## 2026-09-02 — House rules move from prose into a pre-commit gate
+
+**Decision.** `tools/check_repo_rules.py` enforces five house rules as code, wired to a
+tracked `tools/hooks/pre-commit` via `core.hooksPath` (installed by
+`python tools/install_hooks.py`).
+
+| Rule | What it enforces |
+|---|---|
+| R1 | No tracked PDF/EPUB/DJVU/MOBI/AZW — *"Never commit a PDF."* |
+| R2 | Every image in `assets/manuscripts/` has a `registry.json` record |
+| R3 | Every registry record points at a file that exists (`--sha256` also verifies checksums) |
+| R4 | Every registry record carries a `rights_note` — the field that gates shipping |
+| R5 | Local-only trees (`research inbox/`, `research/library/`, `portal/corpus/sources/`, `imagelab/output/`) are not tracked |
+
+**Rationale.** The PDF incident was not a rule failure; the rule was correct and had been
+written down the whole time. It was an *enforcement* failure. The one place this repo got
+it right is `fetch_commons.py`, which refuses non-free licences in code — which is why the
+image corpus has no equivalent problem. This generalises that.
+
+**Verified, not assumed.** Two checks, because a linter that only ever prints OK is worse
+than none:
+
+- Against the current tree: **clean, 621 files, all 30 registry checksums verify** — so the
+  asset-provenance discipline has actually held since kickoff.
+- Against the file list at `ee596fa`, the last commit that *had* the PDFs: **44 violations
+  (43 × R1, 1 × R5)**. The checker would have blocked the commit that introduced them.
+- End to end: staging a real `.pdf` and running `git commit` was **blocked by the hook**,
+  then cleaned up.
+
+**Rejected alternatives.** A CI-only check (catches it after it is already pushed to a
+public repo, which is the whole problem). `.git/hooks` directly (untracked, so it does not
+survive a clone and every collaborator silently has no gate). A blanket "no binaries" rule
+(would fight the 30 legitimate manuscript JPEGs and the 33 MB gallery, and a rule people
+have to bypass routinely stops being a rule).
+
+**Consequence.** `core.hooksPath` is per-clone local config, so **each clone must run
+`python tools/install_hooks.py` once**. That is now stated in CLAUDE.md next to the rule.
+`git commit --no-verify` is the deliberate bypass.
+
+## 2026-09-02 — The history purge is prepared, not performed
+
+**Decision.** `docs/RUNBOOK_purge_pdfs_from_history.md` documents the `git filter-repo`
+rewrite that would remove the PDFs from history, and it is **not executed**.
+
+**Rationale.** The ongoing publication is already stopped — blob view, raw URL and API all
+404. What remains is that SHA-pinned URLs still resolve. Closing that rewrites every commit
+SHA, breaks every existing clone, needs a force-push to `main`, and had a concurrent
+session actively committing at the time. That is the repo owner's decision, not a
+mid-session cleanup.
+
+**The runbook states the case both ways**, including the argument for *not* doing it: 0
+forks, 0 stars, a low-traffic repo, and GitHub cannot guarantee purging every cached object
+anyway. It also notes the one thing that argues for acting sooner — **0 forks today**, and
+forks are the part no rewrite can reach.
+
+**Consequence.** If the answer is "not worth the disruption", that is defensible and should
+be *recorded* in this file rather than left to lapse silently. The runbook also flags that
+`DEPLOY_STATE.md` cites SHAs that a rewrite would destroy.

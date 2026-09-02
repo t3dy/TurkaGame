@@ -76,6 +76,11 @@ they're general research, not TurkaGame-specific game design.
   which are the canonical research-access layer, not `docs/RESEARCH_BRIEF.md`'s
   looser prose. This is a house rule, not a suggestion — it's the difference
   between this project and a fantasy VN with the serial numbers filed off.
+- **No copyrighted source PDFs in the repo. This is now enforced in code, not prose** —
+  `tools/hooks/pre-commit` runs `tools/check_repo_rules.py --staged` and blocks the commit.
+  Install it once per clone with `python tools/install_hooks.py`. It exists because 43
+  copyrighted papers sat tracked on this public repo for weeks *while this rule was written
+  here*, so treat any rule that lives only in this file as unenforced until it has a check.
 - **No copyrighted source PDFs in the repo.** The scholarly articles this project is built
   on (Melvin-Koushki's papers) stay in `research/library/`, which is gitignored. Only
   original, paraphrased synthesis (with citations) goes into tracked files. Never commit a

@@ -240,7 +240,7 @@ exists"; a concurrent session then wrote `geomancy` and `jafr`, and the Falnāma
 to both with the link's limits stated (bibliomancy on pictures, a century later — a link of
 kind, not lineage). A duplicate entry drafted here was **removed rather than shipped
 alongside theirs**; its extra grounded material is parked in
-[`portal/docs/NOTE_geomancy_merge_candidate.md`](../../portal/docs/NOTE_geomancy_merge_candidate.md).
+`portal/docs/NOTE_geomancy_merge_candidate.md` (since **merged and deleted**, per the note's own instructions — commit `33ffb7a`).
 
 **The export fails loudly on a missing slug, and that is deliberate.** `seed_from_json.py`
 prunes DB rows absent from the seed file, so an upstream merge can remove an entry this
