@@ -35,6 +35,7 @@ NAV = [
     ("Institutions", "institutions/index.html"),
     ("Arguments", "arguments.html"),
     ("Chronology", "chronology.html"),
+    ("Glossary", "glossary.html"),
     ("Scholarship", "scholarship.html"),
 ]
 
@@ -84,6 +85,19 @@ code{background:rgba(0,0,0,.06);padding:0 .25rem;border-radius:2px;font-size:.9e
 .sec-lead{font:600 10.5px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
 .sec{margin-bottom:16px}
 .sec h4{font-size:15px;font-weight:600;margin:0 0 5px}
+.glosslist{margin:0}
+.gloss{display:grid;grid-template-columns:13rem 1fr;gap:.3rem 1.2rem;padding:.7rem 0;border-bottom:1px solid var(--line)}
+.gloss dt{font-weight:600;color:var(--vermillion)}
+.gloss dd{margin:0;font-size:.95rem}
+.gloss-go{text-decoration:none;color:var(--faint)}
+@media(max-width:640px){.gloss{grid-template-columns:1fr}}
+.backlinks{margin-top:1.4rem;border-top:1px solid var(--line);padding-top:.9rem}
+.backlinks h4{font-size:.78rem;font-variant:small-caps;letter-spacing:.12em;color:var(--faint);margin:0 0 .5rem}
+.backlinks .tag{color:var(--lapis);border-color:var(--line)}
+figure.plate{margin:0 0 1.6rem;border:1px solid var(--line);background:var(--deep);padding:.7rem}
+figure.plate img{width:100%;max-height:26rem;object-fit:contain;display:block;background:var(--parchment)}
+figure.plate figcaption{font-size:.86rem;color:var(--ink);margin-top:.6rem;line-height:1.5}
+figure.plate .credit{display:block;margin-top:.35rem;font-size:.74rem;color:var(--faint);font-style:italic}
 .arg-part{margin:14px 0}
 .arg-part h4{font-size:.82rem;font-variant:small-caps;letter-spacing:.1em;color:var(--faint);margin:0 0 .2rem}
 .arg-part p{margin-bottom:.4rem}
@@ -256,6 +270,49 @@ def write(rel, content):
     path.write_text(content, encoding="utf-8")
 
 
+def plate_html(item, depth=2):
+    """Period plate from the cleared asset registry, with its credit and rights."""
+    raw = item.get("plate")
+    if not raw:
+        return ""
+    p = json.loads(raw) if isinstance(raw, str) else raw
+    up = "../" * (depth + 2)
+    return (f'<figure class="plate">'
+            f'<img loading="lazy" src="{up}assets/manuscripts/{E(p["file"])}" alt="">'
+            f'<figcaption>{inline(p.get("caption"))}'
+            f'<span class="credit">{E(p.get("credit"))}'
+            f'{" · " + E(p.get("rights")) if p.get("rights") else ""}</span>'
+            f'</figcaption></figure>')
+
+
+BACKLINKS = {}
+
+
+def build_backlinks(groups):
+    """Who points at whom. Links were one-way: nothing on walaya told you the entries
+    that cite it."""
+    titles = {}
+    for kind, items, name_key in groups:
+        for i in items:
+            titles[i["slug"]] = (kind, i.get(name_key) or i["slug"])
+    for kind, items, name_key in groups:
+        for i in items:
+            src = (kind, i["slug"], i.get(name_key) or i["slug"])
+            for tgt in set(re.findall(r"\[\[([a-z0-9-]+)(?:\|[^\]]*)?\]\]",
+                                      (i.get("body") or "") + (i.get("card") or ""))):
+                if tgt in titles and tgt != i["slug"]:
+                    BACKLINKS.setdefault(tgt, set()).add(src)
+
+
+def backlinks_html(slug, depth=2):
+    refs = sorted(BACKLINKS.get(slug, ()), key=lambda r: r[2].lower())
+    if not refs:
+        return ""
+    up = "../" * depth
+    links = " ".join(f'<a class=tag href="{up}{k}/{E(sl)}.html">{E(t)}</a>' for k, sl, t in refs)
+    return (f'<div class="backlinks"><h4>Referenced by</h4>{links}</div>')
+
+
 def entry_page(kind, item, name_key, depth=2):
     title = item.get(name_key) or item.get("slug")
     skip = {"body", "card", "slug", name_key, "id"}
@@ -274,7 +331,9 @@ def entry_page(kind, item, name_key, depth=2):
 <h1>{E(title)}</h1>
 {f'<p class="sub">{inline(item.get("card"))}</p>' if item.get("card") else ""}
 {tags}
+{plate_html(item, depth)}
 <div class="entry">{md(item.get("body") or "*No entry body yet.*")}</div>
+{backlinks_html(item["slug"], depth)}
 {f'<dl class="field">{fields}</dl>' if fields else ""}
 """
     return page(title, body, depth=depth)
@@ -334,6 +393,7 @@ around him fill in the rest.</p>
 {card("texts/index.html", "Texts", "The Investigations and the works around it.", f"{len(texts)} entries")}
 {card("institutions/index.html", "Institutions", "The circles and courts he moved through.", f"{len(institutions)} entries")}
 {card("arguments.html", "Arguments", "The historiographical claims the portal is organised around — stated, sourced, and marked where contested.", f"{len(arguments)} arguments")}
+{card("glossary.html", "Glossary", "The technical vocabulary these pages run on, defined and linked.", "22 terms")}
 {card("chronology.html", "Chronology", "Ibn Turka’s life and its context, dated — from Melvin-Koushki’s own chronology of the sources.", f"{len(timeline)} events")}
 {card("scholarship.html", "Scholarship", "The secondary literature this portal is built on.", f"{len(biblio)} sources")}
 </div>
@@ -366,6 +426,8 @@ what the sources will not tell us.</p>
 """, depth=1))
 
     # ---- entity sections --------------------------------------------------
+    build_backlinks([("figures", figures, "name"), ("concepts", concepts, "name"),
+                     ("texts", texts, "title"), ("institutions", institutions, "name")])
     for kind, items, name_key, blurbkey in [
         ("figures", figures, "name", "role"),
         ("concepts", concepts, "name", "literal_meaning"),
@@ -453,6 +515,44 @@ argued <em>against</em>, the evidence, and why it matters. Some are Melvin-Koush
 Ibn Turka's own. Those marked <em>contested</em> are positions actively being argued, not
 settled consensus.</p>
 {''.join(arg_block(a) for a in arguments)}
+""", depth=0))
+
+
+    # ---- glossary ---------------------------------------------------------
+    GLOSS = [
+        ("ʿilm al-ḥurūf", "The science of letters. Ibn Turka's discipline, and on his account the only truly universal science.", "concepts/ilm-al-huruf.html"),
+        ("abjad", "The assignment of numerical values to the twenty-eight Arabic letters, so that any word has a sum.", "concepts/abjad-numerology.html"),
+        ("walāya", "Sainthood; the authority that comes of proximity to God. The occult sciences were reclassified as sciences of walāya.", "concepts/walaya.html"),
+        ("barzakh", "The isthmus. The intermediate realm between spirit and matter, and where causation is held to operate.", "concepts/barzakh.html"),
+        ("ʿālam al-khayāl", "The imaginal realm — a domain that is real and perceived, not imagined in the modern sense.", "concepts/imaginal-realm.html"),
+        ("muqaṭṭaʿāt", "The fourteen isolated letters opening twenty-nine Sūras — exactly half the alphabet, and the light (nūrānī) letters.", "concepts/ilm-al-huruf.html"),
+        ("nūrānī / ẓulmānī", "Light and dark letters. B is first of the dark ones and fountainhead of duality.", "texts/risala-baiyya.html"),
+        ("iḥṣāʾī / kitābī / kalāmī", "The letter as counted, written and spoken — three of the four registers of the Mafāḥiṣ's analysis.", "texts/kitab-al-mafahis.html"),
+        ("fī anfusi-hā", "The letters 'as they are in themselves' — the fourth register, and where the claim to universality lives.", "texts/kitab-al-mafahis.html"),
+        ("jafr", "Letter divination, and the political branch of lettrism. Its inventor is held to be ʿAlī.", "concepts/jafr.html"),
+        ("ʿilm al-raml", "Geomancy, the science of sand: sixteen figures generated from random marks and read by rule.", "concepts/geomancy.html"),
+        ("ʿulūm gharība", "The 'strange sciences' — the occult sciences, and a term that began as a marker of novelty.", "concepts/occult-science-universal.html"),
+        ("taḥqīq / taqlīd", "Verification against imitation: working a question to its ground, or accepting it on authority.", "concepts/tahqiq-taqlid.html"),
+        ("awfāq", "Magic squares; letter-and-number grids arranged so that every line sums alike.", "concepts/talismanic-science.html"),
+        ("iʿjāz", "The miraculous inimitability of the Qur'an — the orthodox doctrine Ibn Turka's science claims to demonstrate.", "concepts/ilm-al-huruf.html"),
+        ("dhawq", "'Tasting' — direct experiential knowledge, admitted as genuine knowledge by Ghazālī.", "concepts/sufism.html"),
+        ("yasa", "Mongol customary law, abrogated by Shāhrukh in 813/1411 in favour of the sharīʿa.", "chronology.html"),
+        ("qāḍī", "Judge. Ibn Turka was Shāfiʿī chief judge of Isfahan and Yazd, a hereditary family office.", "figures/ibn-turka.html"),
+        ("majlis", "A session or assembly — a teaching circle, a court audience, or a literary gathering.", "institutions/isfahan-circle.html"),
+        ("munshaʾāt", "A collected correspondence. Ibn Turka's is the richest biographical source for him.", "texts/munshaat-i-turka.html"),
+        ("kitābkhāna", "A book-workshop: calligraphers, illuminators, painters and binders under one roof.", "figures/baysunghur.html"),
+        ("zīj", "A set of astronomical tables. Ulugh Beg's remained the world's most accurate for two centuries.", "institutions/samarkand-observatory.html"),
+    ]
+    rows_html = "".join(
+        f'<div class="gloss"><dt>{inline(term)}</dt>'
+        f'<dd>{inline(defn)} <a class="gloss-go" href="{E(href)}">&rarr;</a></dd></div>'
+        for term, defn, href in GLOSS)
+    write("glossary.html", page("Glossary", f"""
+<h1>Glossary</h1>
+<p class="sub lede">The technical vocabulary these pages run on, in one place. Each term
+links to the entry that treats it properly. Terms are given as the sources give them —
+transliterated Arabic and Persian, with the diacritics that distinguish them.</p>
+<dl class="glosslist">{rows_html}</dl>
 """, depth=0))
 
     # ---- scholarship ------------------------------------------------------

@@ -84,7 +84,14 @@
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "c38-khalili-mss-0300-buni.jpg",
+        "caption": "A page from an al-Būnī magic manuscript. Akhlāṭī was the conscious heir of both al-Būnī and Ibn ʿArabī.",
+        "credit": "Al-Buni Magic Manuscript, Khalili mss 0300 (fol. 108b–109a) · Wikimedia Commons",
+        "rights": "CC BY-SA 3.0 IGO",
+        "url": "https://commons.wikimedia.org/wiki/File:Khalili_Collection_Islamic_Art_mss_0300_fol_108b-109a.jpg"
+      }
     },
     {
       "slug": "sharaf-al-din-yazdi",
@@ -158,7 +165,14 @@
       ],
       "source_method": "CORPUS_READ",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "c14-sufi-fixed-stars.jpg",
+        "caption": "Ursa Major from al-Ṣūfī's Book of Fixed Stars — the observational tradition Qāḍīzāda directed at Samarkand.",
+        "credit": "Ursa Major, al-Ṣūfī's Book of Fixed Stars · Wikimedia Commons",
+        "rights": "Public domain. Via Wikimedia Commons.",
+        "url": "https://commons.wikimedia.org/wiki/File:Al_Sufi_-_Book_of_Fixed_Stars_-_Ursa_Major_(The_Great_Bear)_-_Bodleian_Library_-_Marsh_144.jpg"
+      }
     },
     {
       "slug": "ibn-arabi",
@@ -496,7 +510,14 @@
       ],
       "source_method": "CORPUS_READ",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "act2-persian-astrolabe.jpg",
+        "caption": "A Persian brass astrolabe. Ulugh Beg is depicted holding one; he was styled *al-sulṭān al-faylasūf*, and he computed.",
+        "credit": "Persian Astrolabe (brass) · Wikimedia Commons",
+        "rights": "Public domain (CC0, Huntington Museum of Art). Via Wikimedia Commons.",
+        "url": "https://commons.wikimedia.org/wiki/File:Astrolabe,_Iran,_undated,_brass_-_Huntington_Museum_of_Art_-_DSC04900.JPG"
+      }
     },
     {
       "slug": "iskandar-sultan",
@@ -779,7 +800,14 @@
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "plate": {
+        "file": "cs-p4-persian-wafq-6x6.jpg",
+        "caption": "A Persian 6×6 magic square with its working instructions: letter-values arranged so every line sums alike.",
+        "credit": "Persian Wafq — a 6×6 Magic Square with Instructions · Wikimedia Commons",
+        "rights": "Public domain. Via Wikimedia Commons.",
+        "url": "https://commons.wikimedia.org/wiki/File:16th_century_arabic_magic_square.jpg"
+      }
     },
     {
       "slug": "barzakh",
@@ -807,7 +835,14 @@
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "plate": {
+        "file": "cs-p3-zodiac-lunar-mansions.jpg",
+        "caption": "Zodiac and lunar mansions: the graded celestial order through which, on this cosmology, causation descends.",
+        "credit": "Celestial Map: Zodiac and Lunar Mansions · Wikimedia Commons",
+        "rights": "Public domain. Via Wikimedia Commons.",
+        "url": "https://commons.wikimedia.org/wiki/File:Celestial_map,_signs_of_the_Zodiac_and_lunar_mansions..JPG"
+      }
     },
     {
       "slug": "divine-names",
@@ -836,7 +871,14 @@
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "plate": {
+        "file": "cs-p3-square-kufic-bismillah.jpg",
+        "caption": "A square-Kufic bismillāh: the same letters treated as geometry, which is the *kitābī* register of the fourfold analysis.",
+        "credit": "Square Kufic Bismillah Page by Ahmed Karahisari · Wikimedia Commons",
+        "rights": "Public domain. Via Wikimedia Commons.",
+        "url": "https://commons.wikimedia.org/wiki/File:Karahisari.jpg"
+      }
     },
     {
       "slug": "geomancy",
@@ -875,7 +917,14 @@
       ],
       "source_method": "CORPUS_READ",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "c28-bm-instrument-full-1241.jpg",
+        "caption": "A geomantic instrument, Egypt or Syria, 1241/42 — the sixteen figures mechanised into brass.",
+        "credit": "Geomantic Instrument — Egypt or Syria, 1241/42 CE (Full View) · Wikimedia Commons",
+        "rights": "Public domain. Photographed at the British Museum by User:PHGCOM, 2009.",
+        "url": "https://commons.wikimedia.org/wiki/File:Geomantic_instrument_Egypt_or_Syria_1241_1242_CE_Muhammad_ibn_Khutlukh_al_Mawsuli.jpg"
+      }
     },
     {
       "slug": "hurufism",
@@ -906,7 +955,14 @@
       ],
       "source_method": "CORPUS_READ",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "cs-p5-harut-marut.jpg",
+        "caption": "Hārūt and Mārūt suspended at Babel. Qur'an 2:102, the angels who taught men magic — the verse the prosecution built the first tribunal on.",
+        "credit": "The Fallen Angels Hārūt and Mārūt · Wikimedia Commons",
+        "rights": "Public domain. Via Wikimedia Commons.",
+        "url": "https://commons.wikimedia.org/wiki/File:FallenAngelsHarutandMarut.jpg"
+      }
     },
     {
       "slug": "ilm-al-huruf",
@@ -939,7 +995,14 @@
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "c20-letter-word-wafq-table-c030.jpg",
+        "caption": "A letter-word operations grid of the kind the science runs on — Quranic names set into a table for combination.",
+        "credit": "Large Letter-Word Wafq Table — Quranic Name Operations Grid (f. 14r) · Princeton University Library",
+        "rights": "Public Domain. Princeton University Library.",
+        "url": "https://dpul.princeton.edu/islamicmss/catalog/dc4q77g332q"
+      }
     },
     {
       "slug": "imaginal-realm",
@@ -969,7 +1032,14 @@
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "plate": {
+        "file": "c19-qazwini-angel.jpg",
+        "caption": "Winged beings from al-Qazwīnī's ʿAjāʾib al-makhlūqāt — forms of the kind the imaginal realm was held to contain.",
+        "credit": "Winged Angels (and Winged Feline and Cow), al-Qazwīnī's ʿAjāʾib al-makhlūqāt · Wikimedia Commons",
+        "rights": "Public domain. Via Wikimedia Commons.",
+        "url": "https://commons.wikimedia.org/wiki/File:A)_Winged_Feline_and_Cow;_b)_Two_Winged_Angels,_Folio_from_a_Manuscript_of_Al-Qazwini%27s_Ajaib_Al-Makhluqat_LACMA_M.88.213.8a-b.jpg"
+      }
     },
     {
       "slug": "imamophilism",
@@ -1034,7 +1104,14 @@
       ],
       "source_method": "CORPUS_READ",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "c31-5x5-jafar-wafq-sultan-testimony-c055.jpg",
+        "caption": "A 5×5 numeric jafr square attributed to Imam Jaʿfar, with a testimony of its efficacy at a sultan's court.",
+        "credit": "5×5 Numeric Jafr Wafq — Imam Jafar Sultan-Court Efficacy Testimony (f. 26b) · Princeton University Library",
+        "rights": "Public Domain. Princeton University Library.",
+        "url": "https://dpul.princeton.edu/islamicmss/catalog/dc3t946275p"
+      }
     },
     {
       "slug": "neoplatonism",
@@ -1154,7 +1231,14 @@
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "plate": {
+        "file": "act8-printed-teardrop-cosmogram-p256.jpg",
+        "caption": "A teardrop cosmological diagram from the Shams al-Maʿārif: the cosmos set out as a figure to be read.",
+        "credit": "Teardrop Cosmological Diagram — Shams al-Ma'arif (p. 256) · Wikimedia Commons",
+        "rights": "Public Domain — printed edition over 100 years old. Scan: McGill University Libraries.",
+        "url": "https://commons.wikimedia.org/wiki/File:Shams_al-Ma%27arif.jpg"
+      }
     },
     {
       "slug": "sufism",
@@ -1210,7 +1294,14 @@
       ],
       "source_method": "CORPUS_SYNTHESIS",
       "review_status": "DRAFT",
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "plate": {
+        "file": "cs-p3-shahnama-caesar-talisman.jpg",
+        "caption": "'Caesar Makes a Talisman', from a Shāhnāma — talismanic practice as a scene of statecraft rather than of sorcery.",
+        "credit": "'Caesar Makes a Talisman', Shahnama Folio (MET, CC0) · Wikimedia Commons",
+        "rights": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:%22Caesar_Makes_a_Talisman%22%2C_Folio_from_a_Shahnama_%28Book_of_Kings%29_MET_DP223864.jpg"
+      }
     },
     {
       "slug": "walaya",
@@ -1314,7 +1405,14 @@
       ],
       "source_method": "CORPUS_READ",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "c36-falnama-omen.jpg",
+        "caption": "A folio from a Falnāma, a Book of Omens — the monumental divinatory image a fortune-teller improvised from.",
+        "credit": "The Seven Sleepers of Ephesus, Folio from a Falnāma (Book of Omens) · Wikimedia Commons",
+        "rights": "Public domain (CC0, Metropolitan Museum of Art). Via Wikimedia Commons.",
+        "url": "https://commons.wikimedia.org/wiki/File:%22The_Seven_Sleepers_of_Ephesus_Discovered_by_Alexander_the_Great%22,_Folio_from_a_Falnama_(Book_of_Omens)_MET_121050.jpg"
+      }
     }
   ],
   "bibliography": [
@@ -2741,7 +2839,14 @@
       ],
       "source_method": "CORPUS_READ",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "act1-ms-17c-opening.jpg",
+        "caption": "A manuscript opening from the Shams al-Maʿārif tradition. Not Ibn Turka's text — the operative literature his summa was written to systematise.",
+        "credit": "Shams al-Ma'arif — Manuscript Opening, Early 17th Century · Wikimedia Commons",
+        "rights": "CC BY-SA 3.0 / GFDL. Photograph by Danieliness, cropped by User:User-duck.",
+        "url": "https://commons.wikimedia.org/wiki/File:Shams_al-Ma%27arif.jpg"
+      }
     },
     {
       "slug": "ms-majlis-10196",
@@ -3033,7 +3138,14 @@
       ],
       "source_method": "CORPUS_READ",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "c16-printed-khatim-diamond-p56.jpg",
+        "caption": "A khātim diamond talisman. The Bāʾiyya asks why scripture opens on B, first of the dark letters, rather than on A.",
+        "credit": "Khatim Diamond Talisman — Shams al-Ma'arif (Cairo Edition, p. 56) · Wikimedia Commons",
+        "rights": "Public Domain — printed edition over 100 years old (Mustafa al-Babi al-Halabi). Scan: McGill University Libraries, Islamic Studies Library (educational use).",
+        "url": "https://commons.wikimedia.org/wiki/File:Shams_al-Ma%27arif.jpg"
+      }
     }
   ],
   "institutions": [
@@ -3122,7 +3234,14 @@
       ],
       "source_method": "CORPUS_READ",
       "review_status": "DRAFT",
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "plate": {
+        "file": "c11-celestial-globe.jpg",
+        "caption": "A silvered-brass celestial globe, Mughal India — the instrument class the Samarkand tables were compiled to correct.",
+        "credit": "Celestial Globe (silvered brass), Mughal India · Wikimedia Commons",
+        "rights": "Public domain. Via Wikimedia Commons.",
+        "url": "https://commons.wikimedia.org/wiki/File:Celestial_globe,_India,_Moghul_period,_18th_century_AD,_silvered_brass_-_Linden-Museum_-_Stuttgart,_Germany_-_DSC03849.jpg"
+      }
     }
   ],
   "arguments": [
