@@ -622,3 +622,67 @@ geomancy** in popularity. The portal has no oneiromancy entry, `mine_corpus.py r
 returns 25 hits in the Yale dissertation alone, and `docs/VISIONARY_ENVIRONMENTS.md` is
 explicitly about Ibn Turka's dreaming life. That is the next entry to write, and it serves
 the games more directly than geomancy does.
+
+## 2026-09-01 — 43 copyrighted PDFs were tracked on a public repo; untracked, history still to purge
+
+**What was found.** While diagnosing a Pages build failure, `git ls-tree` showed **43 of
+Melvin-Koushki's papers (55.3 MB) tracked on `main`** in `research inbox/`. The repo is
+**public**. A real request to `raw.githubusercontent.com` returned **200 and 456 KB** —
+they were downloadable by anyone.
+
+This violates the project's own rule, stated in `CLAUDE.md` in those words: *"No
+copyrighted source PDFs in the repo … Never commit a PDF."*
+
+**How it happened.** They entered in `08a2864` ("CareerSim Slice 1"), **before**
+`research inbox/` was added to `.gitignore`. Gitignore does not untrack files that are
+already tracked, so adding the rule later looked like a fix and was not one. Nothing
+afterwards would have caught it: the rule lived in prose, and no check enforced it.
+
+**Decision.** `git rm --cached` on all 43 (commit `65b382f`). Local copies untouched;
+`.gitignore` line 23 already prevents recurrence. Verified afterwards: 0 PDFs in
+`origin/main`, the GitHub API returns 404 for the directory, the user-facing blob view
+returns 404, and `raw.githubusercontent` returned 404 once its 5-minute CDN cache expired.
+
+The corpus workflow is unaffected — `mine_corpus.py` reads the converted text in
+`portal/corpus/sources/`, which is separately gitignored and lives on disk.
+
+**Rejected alternative.** Rewriting history immediately with `git filter-repo` and a
+force-push. It is the complete fix and it is destructive: it breaks every existing clone,
+and a concurrent session was actively committing to this repo at the time. Doing that
+unilaterally, without the repo owner's decision, is not a call to make mid-session.
+
+**STILL OPEN — needs a human decision.** The PDFs remain in **git history**, so a
+SHA-pinned URL still resolves. Closing that requires:
+
+1. `git filter-repo --path "research inbox/" --invert-paths` (or BFG),
+2. a coordinated force-push with every other session paused,
+3. asking GitHub Support to purge cached views, since old blobs can stay reachable,
+4. accepting that any existing clone or fork keeps its copy.
+
+Until that happens the exposure is reduced, not eliminated.
+
+**Consequence worth generalising.** A house rule that only exists in prose is not enforced.
+The rights gate in `imagelab/scripts/fetch_commons.py` is the counter-example — it refuses
+non-free licences in code, which is why the image corpus has no equivalent problem. **A
+pre-commit hook rejecting `*.pdf` would have prevented this**, and is the obvious next fix.
+
+## 2026-09-01 — Pages had been failing for four commits; removing the PDFs recovered it
+
+**What happened.** `gh api .../pages/builds/latest` showed `errored` with duration 0 and no
+message for `33ffb7a`, `93787e5`, `c39a9ac` and `06928b1b`. `ee596fa` had built. A forced
+rebuild errored identically, so it was not transient.
+
+Ruled out by inspection: `.nojekyll` present in both trees (an early check of mine
+wrongly reported it missing — the `git cat-file` invocation was faulty, and
+`git ls-tree` corrected it); repo size 150 MB against a 1 GB limit; no symlinks, no
+non-regular modes, no hostile filenames, no Liquid syntax in tracked files.
+
+The next commit — untracking the 43 PDFs, `65b382f` — **built successfully**, and the site
+verified live end to end.
+
+**Honest limit on that claim.** The recovery is *correlated* with dropping 55.3 MB of PDFs
+from the build input; GitHub's API gave no error detail, so this is not proven causation.
+If builds error again, that correlation is the first thing to re-test.
+
+**Consequence.** The live site is current. `DEPLOY_STATE.md` records `ee596fa` as the
+commit whose behaviour was exercised in detail and `65b382f` as the current built HEAD.

@@ -74,6 +74,12 @@ real requests, not assumed:
 | `/site/portal/concepts/oneiromancy.html` | 200 |
 | 10 design-doc links on features.html | all 200 on github.com/blob/main |
 
+## Current built HEAD
+
+`65b382f` — built and verified live 2026-09-01. Pages had errored on the four commits
+before it (`33ffb7a`, `93787e5`, `c39a9ac`, `06928b1b`) with duration 0 and no message;
+untracking 55.3 MB of PDFs coincided with recovery. See `docs/DECISIONS.md` 2026-09-01.
+
 ## Repo weight (added 2026-08-31)
 
 The Visionary Gallery adds **~33 MB** of committed web assets under
@@ -123,6 +129,13 @@ same change, or the two will disagree silently.
 `../yusuf-ascent/vendor/three.module.js` rather than keeping a second 2 MB copy — so the
 gallery's 3D tab depends on `.nojekyll` too (gotcha 1). If `vendor/` ever moves, both
 surfaces break, and only one of them will be the obvious suspect.
+
+**2a. Never commit a PDF, and note that `.gitignore` will not save you retroactively.**
+43 copyrighted papers sat tracked on this public repo for weeks because they were committed
+*before* `research inbox/` was gitignored, and gitignore does not untrack what is already
+tracked. Removed 2026-09-01 (`65b382f`); **still present in git history**, which needs a
+filter-repo rewrite and a coordinated force-push. A pre-commit hook rejecting `*.pdf` is
+the fix that would actually hold.
 
 **3. Browser cache will lie to you during verification.**
 Verifying a change locally on `localhost:7521` served a stale `site/index.html` until a
