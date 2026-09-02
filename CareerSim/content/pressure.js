@@ -133,7 +133,7 @@ export const ENCOUNTERS = {
     options: [
       {
         id: 'answer', label: 'Answer it, point by point, in writing',
-        detail: 'Meet the document with a document. Rehearse the defense before it is demanded.',
+        detail: 'Rehearse the whole defense early — at the price of making it a correspondence.',
         requires: [],
         effects: { rep: { scholarly: 1 }, meters: { exposure: 1 }, memory: { denunciation_answered: true } },
         outcomes: [

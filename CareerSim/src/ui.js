@@ -3,7 +3,7 @@
 // Two-voice rule: world text arrives from content (Chronicle voice); everything
 // authored here is Gloss voice — plain, ≤2 sentences, one question answered.
 
-import { QUINTET } from './engine/state.js?v=3';
+import { QUINTET, checkReq } from './engine/state.js?v=3';
 import { LEXICON } from '../content/lexicon.js?v=2';
 import { attestedRows } from './engine/career.js?v=8';
 
@@ -185,13 +185,29 @@ export function renderEncounter(state, enc, evaluated, people, artifacts, firstE
         ? `<span class="unlockedby">— open to you because of ${esc(ev.unlockedBy.join(', '))}</span>` : '';
       const favored = ev.favoredBy.length
         ? `<span class="favoredby">favored by ${esc(ev.favoredBy.join(', '))}</span>` : '';
-      const cost = o.time
-        ? `<span class="opt-cost" data-gloss="This is long work: it consumes ${o.time} extra season${o.time > 1 ? 's' : ''} beyond the visit itself.">⏳ +${o.time} season${o.time > 1 ? 's' : ''}</span>` : '';
+      // Every mechanical commitment is stated on the button itself (UI guarantee #1:
+      // nothing binding happens without being named at the point of use). The prose
+      // carries the drama; these lines carry the ledger.
+      const commits = [];
+      if (o.time) commits.push(`<span class="opt-cost" data-gloss="This is long work: it consumes ${o.time} extra season${o.time > 1 ? 's' : ''} beyond the visit itself.">⏳ +${o.time} season${o.time > 1 ? 's' : ''}</span>`);
+      if (o.grantsObligation) {
+        const ob = o.grantsObligation;
+        commits.push(`<span class="opt-commit" data-gloss="${esc(ob.gloss || '')}">⚖ takes on: ${esc(ob.name)} — ⏳${ob.cost} of every action, until set down</span>`);
+      }
+      if (o.dropsObligation) {
+        const held = state.obligations.find((x) => x.id === o.dropsObligation);
+        if (held) commits.push(`<span class="opt-commit" data-gloss="The standing duty ends here; its claim on your seasons ends with it.">⚖ sets down: ${esc(held.name)}</span>`);
+      }
+      if (o.contract) {
+        const c = o.contract;
+        const needs = (c.requires || []).map((r) => checkReq(state, r, people, artifacts).text).join(', ');
+        commits.push(`<span class="opt-commit" data-gloss="${esc(c.promise || '')} Fail the deadline and the failure is also remembered.">📜 a promise: ${esc(c.name)} — due in ${c.deadline} season${c.deadline > 1 ? 's' : ''}${needs ? `, needs ${esc(needs)}` : ''}</span>`);
+      }
       return `
       <button class="option" data-opt="${i}">
         <span class="opt-label"><b class="opt-key">${i + 1}</b> ${esc(o.label)}</span>
         <span class="opt-detail">${glossify(esc(o.detail))}</span>
-        ${cost}${unlocked}${favored}
+        ${commits.join('')}${unlocked}${favored}
       </button>`;
     }
     return `
@@ -231,6 +247,13 @@ export function renderResolution(state, enc, result, people, artifacts, firstRes
   }).join('');
   const mem = result.memWrites.length
     ? `<p class="mem-note">✎ This will be remembered${result.memWrites.length > 1 ? ` (${result.memWrites.length} things noted)` : ''}.</p>` : '';
+  // Confirm every commitment the choice just made — the pre-choice button named it,
+  // the resolution states that it is now real. Symmetry is what makes the ledger honest.
+  const commits = [];
+  if (result.obligationAdded) commits.push(`⚖ Standing now: <b>${esc(result.obligationAdded.name)}</b> — ⏳${result.obligationAdded.cost} of every action, until set down.`);
+  if (result.obligationDropped) commits.push(`⚖ Set down: the duty of <b>${esc(String(result.obligationDropped).replace(/_/g, ' '))}</b> no longer claims your seasons.`);
+  if (result.contractOpened) commits.push(`📜 The promise is made: <b>${esc(result.contractOpened.name)}</b>, due in ${result.contractOpened.deadline} season${result.contractOpened.deadline > 1 ? 's' : ''}. It now sits in your margin, counting.`);
+  const commitBlock = commits.length ? `<div class="commit-note">${commits.map((c) => `<p>${c}</p>`).join('')}</div>` : '';
   app().innerHTML = `
   <div class="screen with-margin">
     <main class="play-area">
@@ -238,7 +261,7 @@ export function renderResolution(state, enc, result, people, artifacts, firstRes
         <div class="seal band-${result.band}">${BAND_LABEL[result.band]}</div>
         <p class="outcome-text">${glossify(esc(result.text))}</p>
         <div class="delta-chips">${chips}</div>
-        ${mem}
+        ${commitBlock}${mem}
         ${firstRes ? `<p class="marginalia" data-note="res">The seal is the outcome's rank on a six-step ladder — your preparation tilted the odds. The italic line below joins your chronicle. <button class="dismiss" data-dismiss="res">understood</button></p>` : ''}
         ${result.chronicleLine ? `<p class="chron-line" id="chron-ink"></p>` : ''}
         <button class="continue-btn">continue ⤳</button>

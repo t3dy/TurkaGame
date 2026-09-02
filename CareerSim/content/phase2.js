@@ -503,7 +503,7 @@ export const ENCOUNTERS = {
     options: [
       {
         id: 'cast_it', label: 'Cast the nativity properly',
-        detail: 'Real computation, honest reading, fair fee.',
+        detail: 'Real computation, honest fee — and a practice, which is a paper trail.',
         contract: {
           id: 'merchant_nativity', name: 'The Merchant’s Nativity', deadline: 2,
           promise: 'A full nativity for the merchant’s son, computed and delivered in writing.',

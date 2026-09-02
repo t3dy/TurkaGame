@@ -149,7 +149,7 @@ export const ENCOUNTERS = {
       },
       {
         id: 'persian', label: 'Persian, for warlords and administrators',
-        detail: 'Reach. Turn princes into philosophers by making the philosophy readable.',
+        detail: 'Turn princes into philosophers by making it readable — to accusers too.',
         requires: [],
         effects: {
           meters: { transmission: 3, exposure: 1 }, rep: { imperial: 1, occult: 1 },

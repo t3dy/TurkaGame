@@ -335,3 +335,27 @@ the network?" — finally has teeth in every phase. Measured before/after with
 - **Contracts 0.66→0.85/run** (merchant's nativity in P2 — a recorded deviation from
   "III+ only", the fiction demanded it; the observatory tables in P4). The ≥2 gate
   likely needs offer-injection, not more sites; noted in the gates list.
+
+## The stakes-legibility pass (2026-09-02, twelfth session)
+
+Prompted by the standing question: does the player understand what is at stake in every
+choice? Audited all 212 options mechanically (dominant consequence vs. what the text
+says) before touching anything.
+
+- **The prose was largely acquitted.** The audit's risk-word heuristic flagged 32
+  options; on reading, most flags were false — the details do signal ("a house that
+  could burn", "Glory, in evidence", "quotable without your hedges"… now). Four details
+  genuinely undersold their consequence and were sharpened to name it: the nativity is
+  *a practice, which is a paper trail*; answering the denunciation *makes it a
+  correspondence*; Persian makes the book readable *to accusers too*; the astrological
+  answer is *quotable without your hedges*.
+- **The real gap was mechanical commitments, and the fix is systematic, not prose.**
+  Obligations and contracts rode options with no disclosure — the patron options never
+  said a retainer came with them. Now every binding commitment is stated on the button
+  (⚖ takes on / ⚖ sets down / 📜 a promise with its deadline *and* requirement, via
+  `checkReq`'s human text) and confirmed on the resolution screen. Symmetry — warned
+  before, confirmed after — is what makes the ledger honest, and it means a player can
+  see they are about to promise `demonstration 3` while holding 1.
+- **Situations checked and left alone**: the eight shortest all set stakes cleanly
+  ("men will march on your arithmetic"; "Silence is also an answer"). No rewrites for
+  rewriting's sake.

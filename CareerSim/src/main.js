@@ -8,10 +8,10 @@ import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, exposureTier,
   finalVerdict, settleContracts,
 } from './engine/career.js?v=8';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=9';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=10';
 import { logEntry, buildChroniclePayload } from './engine/export.js?v=6';
 import { publishWitness } from './witness-client.js?v=1';
-import * as ui from './ui.js?v=8';
+import * as ui from './ui.js?v=9';
 
 let state = null;
 let current = null;

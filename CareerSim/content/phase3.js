@@ -290,7 +290,7 @@ export const ENCOUNTERS = {
       },
       {
         id: 'stars_answer', label: 'Give the astrological answer',
-        detail: 'Conjunctions and cycles — the conventional, respectable prediction.',
+        detail: 'Conjunctions and cycles — respectable, conventional, and quotable without your hedges.',
         requires: ['access:astronomy'],
         effects: { artifacts: ['horoscope'], meters: { exposure: 1 }, memory: { dynastic_prognosis: true } },
         outcomes: [

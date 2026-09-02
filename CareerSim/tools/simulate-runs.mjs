@@ -24,7 +24,7 @@ import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounter
 import {
   addObligation, dropObligation, chargeObligations, offerContract, tickContracts, settleContracts, finalVerdict,
 } from '../src/engine/career.js?v=8';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=9';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=10';
 
 const N = parseInt(process.argv[2] || '2000', 10);
 const MODE = process.argv[3] || 'random';
