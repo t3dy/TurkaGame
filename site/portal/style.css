@@ -44,6 +44,18 @@ code{background:rgba(0,0,0,.06);padding:0 .25rem;border-radius:2px;font-size:.9e
 .sec-lead{font:600 10.5px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
 .sec{margin-bottom:16px}
 .sec h4{font-size:15px;font-weight:600;margin:0 0 5px}
+.arg-part{margin:14px 0}
+.arg-part h4{font-size:.82rem;font-variant:small-caps;letter-spacing:.1em;color:var(--faint);margin:0 0 .2rem}
+.arg-part p{margin-bottom:.4rem}
+.arg-note{font-size:.85rem;color:var(--faint);font-style:italic;border-left:2px solid var(--gold);padding-left:.8rem}
+.arg-lit{font-size:.82rem;color:var(--faint);margin-top:.8rem}
+.tag.contested{color:var(--vermillion);border-color:var(--vermillion)}
+.hero{display:block;border:1px solid var(--gold);background:var(--deep);padding:26px 30px;margin:0 0 30px;text-decoration:none}
+.hero:hover{border-color:var(--lapis)}
+.hero .kicker{font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.hero h2{margin:10px 0 8px;font-size:27px;border:0;padding:0;color:var(--ink);text-transform:none;letter-spacing:-.01em}
+.hero p{margin:0 0 12px;color:var(--faint);font-size:16px}
+.hero .go{font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--lapis)}
 .tl-more{margin:12px 0}
 .tl-more summary{cursor:pointer;font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--lapis);padding:6px 0}
 .tl-more[open] summary{margin-bottom:10px}

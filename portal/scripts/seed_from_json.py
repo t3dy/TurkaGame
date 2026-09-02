@@ -183,11 +183,16 @@ def ingest_arguments(conn: sqlite3.Connection, arguments: list[dict]) -> int:
     for arg in arguments:
         c.execute("""
             INSERT OR REPLACE INTO arguments (
-                slug, title, card, body, literature, tags,
+                slug, title, proponent_slug, claim, against, evidence, stakes, scope,
+                contested, contested_note, card, body, related_concepts, literature, tags,
                 source_method, review_status, confidence
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
-            arg['slug'], arg['title'], arg.get('card'), arg.get('body'),
+            arg['slug'], arg['title'], arg.get('proponent_slug'),
+            arg['claim'], arg.get('against'), arg.get('evidence'), arg.get('stakes'),
+            arg.get('scope'), int(arg.get('contested', 0)), arg.get('contested_note'),
+            arg['card'], arg.get('body'),
+            json.dumps(arg.get('related_concepts', [])),
             json.dumps(arg.get('literature', [])),
             json.dumps(arg.get('tags', [])),
             arg.get('source_method', 'CORPUS_SYNTHESIS'),
@@ -196,6 +201,8 @@ def ingest_arguments(conn: sqlite3.Connection, arguments: list[dict]) -> int:
         ))
     conn.commit()
     return len(arguments)
+
+
 def ingest_timeline(conn: sqlite3.Connection, events: list[dict]) -> int:
     c = conn.cursor()
     for ev in events:

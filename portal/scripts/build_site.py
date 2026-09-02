@@ -27,11 +27,13 @@ OUT = REPO / "site" / "portal"
 
 NAV = [
     ("Portal home", "index.html"),
+    ("Start here", "intersections/start-here.html"),
     ("Intersections", "intersections/index.html"),
     ("Figures", "figures/index.html"),
     ("Concepts", "concepts/index.html"),
     ("Texts", "texts/index.html"),
     ("Institutions", "institutions/index.html"),
+    ("Arguments", "arguments.html"),
     ("Chronology", "chronology.html"),
     ("Scholarship", "scholarship.html"),
 ]
@@ -82,6 +84,18 @@ code{background:rgba(0,0,0,.06);padding:0 .25rem;border-radius:2px;font-size:.9e
 .sec-lead{font:600 10.5px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
 .sec{margin-bottom:16px}
 .sec h4{font-size:15px;font-weight:600;margin:0 0 5px}
+.arg-part{margin:14px 0}
+.arg-part h4{font-size:.82rem;font-variant:small-caps;letter-spacing:.1em;color:var(--faint);margin:0 0 .2rem}
+.arg-part p{margin-bottom:.4rem}
+.arg-note{font-size:.85rem;color:var(--faint);font-style:italic;border-left:2px solid var(--gold);padding-left:.8rem}
+.arg-lit{font-size:.82rem;color:var(--faint);margin-top:.8rem}
+.tag.contested{color:var(--vermillion);border-color:var(--vermillion)}
+.hero{display:block;border:1px solid var(--gold);background:var(--deep);padding:26px 30px;margin:0 0 30px;text-decoration:none}
+.hero:hover{border-color:var(--lapis)}
+.hero .kicker{font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.hero h2{margin:10px 0 8px;font-size:27px;border:0;padding:0;color:var(--ink);text-transform:none;letter-spacing:-.01em}
+.hero p{margin:0 0 12px;color:var(--faint);font-size:16px}
+.hero .go{font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--lapis)}
 .tl-more{margin:12px 0}
 .tl-more summary{cursor:pointer;font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--lapis);padding:6px 0}
 .tl-more[open] summary{margin-bottom:10px}
@@ -274,10 +288,12 @@ def main():
     institutions = rows(conn, "institutions")
     biblio = rows(conn, "bibliography")
     timeline = rows(conn, "timeline_events")
+    arguments = rows(conn, "arguments")
     conn.close()
     essays = read_essays()
+    intro = next((e for e in essays if e.get("kind") == "introduction"), None)
     intersections = [e for e in essays if e.get("kind") == "intersection"]
-    syntheses = [e for e in essays if e.get("kind") != "intersection"]
+    syntheses = [e for e in essays if e.get("kind") not in ("intersection", "introduction")]
     intersections.sort(key=lambda e: int(e.get("order", 99)))
 
     if OUT.exists():
@@ -304,6 +320,11 @@ world of Islamicate occult science, and what changes when he does?</em> The
 <strong>Intersections</strong> below are its centre — each takes a general context and
 follows Ibn Turka into it. Entries for the figures, concepts, texts and institutions
 around him fill in the rest.</p>
+{(f'<a class="hero" href="intersections/{intro["slug"]}.html">'
+    f'<span class=kicker>New here? Start with this</span>'
+    f'<h2>{E(intro["title"])}</h2>'
+    f'<p>{E(intro.get("subtitle",""))}</p>'
+    f'<span class=go>Read the introduction &rarr;</span></a>') if intro else ""}
 <div class="rubric">INTERSECTIONS</div>
 <div class="cards">{top}</div>
 <div class="rubric">THE ENTRIES</div>
@@ -312,6 +333,7 @@ around him fill in the rest.</p>
 {card("concepts/index.html", "Concepts", "Lettrism, the divine names, the imaginal realm, the Quintet.", f"{len(concepts)} entries")}
 {card("texts/index.html", "Texts", "The Investigations and the works around it.", f"{len(texts)} entries")}
 {card("institutions/index.html", "Institutions", "The circles and courts he moved through.", f"{len(institutions)} entries")}
+{card("arguments.html", "Arguments", "The historiographical claims the portal is organised around — stated, sourced, and marked where contested.", f"{len(arguments)} arguments")}
 {card("chronology.html", "Chronology", "Ibn Turka’s life and its context, dated — from Melvin-Koushki’s own chronology of the sources.", f"{len(timeline)} events")}
 {card("scholarship.html", "Scholarship", "The secondary literature this portal is built on.", f"{len(biblio)} sources")}
 </div>
@@ -398,6 +420,41 @@ colophons of MS Majlis 10196 and on the two collections of letters, the
 {events_html}
 """, depth=0))
 
+
+    # ---- arguments --------------------------------------------------------
+    def arg_block(a):
+        parts = []
+        for label, key in (("The claim", "claim"), ("Against", "against"),
+                           ("Evidence", "evidence"), ("Why it matters", "stakes")):
+            if a.get(key):
+                parts.append(f'<div class=arg-part><h4>{E(label)}</h4>{md(a[key])}</div>')
+        rel = json.loads(a.get("related_concepts") or "[]")
+        links = " ".join(f'<a class=tag href="concepts/{E(r)}.html">{E(r.replace("-"," "))}</a>'
+                         for r in rel)
+        lit = json.loads(a.get("literature") or "[]")
+        litl = "".join(f"<li>{inline(x)}</li>" for x in lit)
+        contested = ('<span class="tag contested">contested</span>' if a.get("contested") else "")
+        note = f'<p class=arg-note>{inline(a.get("contested_note"))}</p>' if a.get("contested_note") else ""
+        return f"""<div class="entry arg" id="{E(a['slug'])}">
+<h3>{E(a.get('title'))}</h3>
+<p class="sub">{E(a.get('scope') or '')} {contested}</p>
+{md(a.get('card') or '')}
+{''.join(parts)}
+{note}
+{f'<p class=tl-links>{links}</p>' if links else ''}
+{f'<ul class=arg-lit>{litl}</ul>' if litl else ''}
+</div>"""
+
+    write("arguments.html", page("Arguments", f"""
+<h1>Arguments</h1>
+<p class="sub lede">The historiographical claims this portal is organised around, stated as
+claims rather than left implicit in the entries. Each gives what is being argued, what it is
+argued <em>against</em>, the evidence, and why it matters. Some are Melvin-Koushki's; one is
+Ibn Turka's own. Those marked <em>contested</em> are positions actively being argued, not
+settled consensus.</p>
+{''.join(arg_block(a) for a in arguments)}
+""", depth=0))
+
     # ---- scholarship ------------------------------------------------------
     def sections_html(b):
         try:
@@ -430,7 +487,7 @@ supersedes the sources; it organizes them around one figure.</p>
 
     pages = len(list(OUT.rglob("*.html")))
     print(f"Ibn Turka portal built: {pages} pages -> {OUT}")
-    print(f"  {len(intersections)} intersections, {len(syntheses)} synthesis essays, {len(timeline)} chronology events, {counts}")
+    print(f"  {len(arguments)} arguments, {len(intersections)} intersections, {len(syntheses)} synthesis essays, {len(timeline)} chronology events, {counts}")
 
 
 if __name__ == "__main__":
