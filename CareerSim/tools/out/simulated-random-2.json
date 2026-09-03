@@ -1,0 +1,1831 @@
+{
+ "v": 1,
+ "game": "ibn-turka-occult-court",
+ "createdAt": "2026-09-03T01:03:13.187Z",
+ "title": "The Chronicle of ʿAlī ibn Turka",
+ "preface": {
+  "orig": "",
+  "current": ""
+ },
+ "meta": {
+  "verdict": {
+   "manTitle": "Broken by the State",
+   "manText": "He lost the third inquisition with nothing left to spend — no patron, no standing, and a file thick enough to bury anyone.",
+   "systemTitle": "Complete, and Unread",
+   "systemText": "He finished it. The system is whole, rigorous, and sits in a box that nobody opens for four hundred years — which is not the same as dying, but it is not much better."
+  },
+  "meters": {
+   "synthesis": 8,
+   "demonstration": 1,
+   "transmission": 0,
+   "exposure": 9
+  },
+  "rep": {
+   "orthodox": 4,
+   "occult": 4,
+   "imperial": -4,
+   "scholarly": 4
+  },
+  "quintet": {
+   "kimiya": 0,
+   "limiya": 2,
+   "himiya": 0,
+   "simiya": 0,
+   "rimiya": 0
+  },
+  "companions": 3,
+  "phases": [
+   {
+    "id": 1,
+    "name": "CAIRO — THE EXPERIMENTAL COSMOPOLIS",
+    "dateline": "c. 1385–1397"
+   },
+   {
+    "id": 2,
+    "name": "ISFAHAN — THE JUDGE’S CITY",
+    "dateline": "c. 1397–1409"
+   },
+   {
+    "id": 3,
+    "name": "THE COURTS",
+    "dateline": "c. 1409–1419"
+   },
+   {
+    "id": 4,
+    "name": "THE PIVOT — 1420",
+    "dateline": "c. 1419–1422"
+   },
+   {
+    "id": 5,
+    "name": "THE TRIALS",
+    "dateline": "c. 1422–1432"
+   }
+  ]
+ },
+ "legacyNotes": [
+  "Qāsim-i Anvār counted him a brother, and that ledger stayed open for life.",
+  "He let a doubtful miracle stand, and was counted among its witnesses.",
+  "The madrasa credential was real, and it was worth exactly what it cost him at the tribunals.",
+  "He built on the Qurʾan’s mysterious letters as notation rather than mystery. Nothing was safe after that.",
+  "He was of Akhlātī’s circle, whatever he later said about it.",
+  "His kin died believing the Cairo years had been an ordinary education.",
+  "He read nativities for money in Isfahan — a practice, and a paper trail.",
+  "He read men by the letters of their names, publicly, for a fee. It was unmistakable and unforgettable.",
+  "He arrived at court as a jurist, and let them discover the rest at his own pace.",
+  "There were seasons he did not answer the household that paid him, and the household kept count.",
+  "He let tribunal filings lapse while he worked, and every lapse was entered in someone’s margin.",
+  "He corrected his own legend in a bookshop, and the legend outran the correction anyway.",
+  "He mailed his work to names he could not place, because a scholar who will not be read is not a scholar.",
+  "One of the copies he sent to strangers was read back to him, years later, in a formal voice.",
+  "A written denunciation circulated, and he met it with silence. Both documents survived.",
+  "He served Bāysunghur, and the finest book-workshop in the world served him back.",
+  "He promised a prince a spectacle, in writing, with a season named for it.",
+  "He missed a patron’s deadline. Courts remember misses far longer than successes.",
+  "He once conceded a correction in open court, which nobody at that court had seen done.",
+  "He refused to put his science into the army’s hands, more than once.",
+  "When the court broke up he left with his papers and no allegiances.",
+  "He spent the pivot year deepening rather than writing, and the year did not come back.",
+  "He met the first summons with a defense prepared in full.",
+  "He won the first inquisition.",
+  "He won the second inquisition too. Two acquittals is not the same thing as safety.",
+  "He disowned one passage to save the rest. His students heard before he got home.",
+  "He did not appear at the third tribunal, and the sentence was read to an empty chair.",
+  "He took the road before the verdict, and was condemned in his absence.",
+  "He spent his last years petitioning his way back to respectability, with the work shut in a cupboard.",
+  "He held the hardest parts close, and the qualified few were fewer than he had hoped.",
+  "He let Qāsim-i Anvār go into exile alone. Safer; never forgotten by either of them.",
+  "He held judicial standing to the end, in name if not always in fact.",
+  "He bought his books through the eastern gate with the money his exile was to live on.",
+  "He refused to make theater of a sleeping man, a small decency that bought a lifelong ally.",
+  "A vizier owed him for a joke not made, and remembered it when remembering mattered."
+ ],
+ "attested": [
+  {
+   "hist": "He studied in Cairo under Sayyid Ḥusayn Akhlāṭī, lettrist, alchemist and geomancer.",
+   "yours": "so did you."
+  },
+  {
+   "hist": "He served as Chief Judge of Isfahan, famous for defending the weak against the powerful.",
+   "yours": "you refused the bench he was defined by."
+  },
+  {
+   "hist": "In 1420 he completed Investigations — the first systematic summa of Islamic lettrism — as Ulugh Beg broke ground on the Samarkand observatory.",
+   "yours": "your summa was never written — the counterfactual is total."
+  },
+  {
+   "hist": "His central diagram, the Ṭahawī Circle, survives in his own handwriting (Tehran, Majlis Library MS 10196, f. 63a).",
+   "yours": "you never drew the Circle; your system has no surviving image."
+  },
+  {
+   "hist": "He faced three state inquisitions engineered by rival colleagues: he won the first two and lost the third, c. 1427.",
+   "yours": "the same road, ending the same way."
+  },
+  {
+   "hist": "Qāsim-i Anvār, his Cairo companion, was exiled in 1427 over the same lettrist associations.",
+   "yours": "you let him go alone."
+  },
+  {
+   "hist": "He died in 1432, impoverished and in legal limbo, after five years of wandering exile; Yazdī — who copied his autograph — outlived him by twenty-two years, and the platform they built became imperial cosmology across six court cultures.",
+   "yours": "your Yazdī never copied the work — history’s own transmission route, closed."
+  }
+ ],
+ "log": [
+  {
+   "i": 0,
+   "phase": 1,
+   "encounterId": "khanqah_qasim",
+   "rubric": "AT THE KHĀNQĀH · A POET IN FULL FLIGHT",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — Formation: Qāsim-i Anvār a close Cairo companion (VN c04)",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "Qāsim-i Anvār recites and the whole khānqāh forgets to breathe. Afterward he finds you, laughing, quoting your own question back at you improved. Men like this either become your brother or your epitaph. Sometimes both.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Let the friendship go deep",
+     "detail": "Brotherhood with the most magnetic — and least careful — man in Cairo.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Keep a warm distance",
+     "detail": "Enjoy the verses; skip the entanglement. Poets attract weather.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "By month’s end you share manuscripts, jokes, and enemies. Mostly jokes, so far.",
+   "chronicle": {
+    "orig": "In Cairo he bound himself in friendship to Qāsim-i Anvār, and counted the risk well spent.",
+    "current": "In Cairo he bound himself in friendship to Qāsim-i Anvār, and counted the risk well spent."
+   }
+  },
+  {
+   "i": 1,
+   "phase": 1,
+   "encounterId": "majlis_feast",
+   "rubric": "THE MERCHANT’S MAJLIS · THE HOST WANTS A WONDER",
+   "grounding": "INVENTED-COMPATIBLE",
+   "source": "Bazm culture per The Occult Court; the request type attested in later manuals",
+   "sourceCite": "Invented for play — the seal’s grounding tag says exactly how far the sources reach. The world around it follows Matthew Melvin-Koushki’s scholarship on Ibn Turka.",
+   "situation": "The wine has gone round twice and the merchant claps for entertainment — and looks at you. “Our scholar! Show us something the preachers wouldn’t like.” The room laughs. Whatever happens in the next ten minutes will be retold.",
+   "plate": {
+    "src": "../assets/manuscripts/c19-qazwini-angel.jpg",
+    "caption": "Winged angels, al-Qazwīnī’s Wonders of Creation (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Perform a real wonder, properly",
+     "detail": "Rīmiyā, done with craft: astonish them, and control exactly what they saw.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs rīmiyā ● (studied)"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Give them Qāsim’s verses instead",
+     "detail": "Borrow your friend’s thunder — a performance no preacher can indict.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [
+      "poetry"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Attempt sleight-of-hand untrained",
+     "detail": "You have watched it done. How hard can a vanishing coin be?",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Decline, with a jurist’s smile",
+     "detail": "Disappoint the room; reassure the careful. Nothing retold, nothing risked.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "You recite, crediting Qāsim by name. The room melts; the poet, told of it later, is delighted.",
+   "chronicle": {
+    "orig": "Asked for a wonder, he gave them Qāsim-i Anvār’s verses instead, and lost nothing by the trade.",
+    "current": "Asked for a wonder, he gave them Qāsim-i Anvār’s verses instead, and lost nothing by the trade."
+   }
+  },
+  {
+   "i": 2,
+   "phase": 1,
+   "encounterId": "khanqah_sama",
+   "rubric": "AT THE KHĀNQĀH · SAMĀʿ, AND WHAT FOLLOWS IT",
+   "grounding": "INVENTED-COMPATIBLE",
+   "source": "BIOGRAPHY — Formation; samāʿ practice standard in the lodges",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "After the samāʿ Qāsim keeps a smaller company back and turns the talk from ecstasy to letters: could a verse be built on number the way a talisman is? He is asking you, specifically, in front of men who will repeat your answer.",
+   "plate": {
+    "src": "../assets/manuscripts/c14-sufi-fixed-stars.jpg",
+    "caption": "Ursa Major, from al-Ṣūfī’s Book of Fixed Stars (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Sketch the letter-number art for them",
+     "detail": "Give the poets a real taste of līmiyā. Verses travel; so will this.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs līmiyā ● (studied)"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Turn the question into a jest",
+     "detail": "Charm the room, reveal nothing. Qāsim will see through it, fondly.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "Laughter, and the moment passes. Qāsim murmurs: one day you will have to answer somebody.",
+   "chronicle": {
+    "orig": "Asked to unveil his science before the poets, he answered with a joke and kept the veil.",
+    "current": "Asked to unveil his science before the poets, he answered with a joke and kept the veil."
+   }
+  },
+  {
+   "i": 3,
+   "phase": 1,
+   "encounterId": "majlis_dervish",
+   "rubric": "THE MERCHANT’S MAJLIS · A WANDERER’S IMPOSSIBLE CLAIM",
+   "grounding": "INVENTED-COMPATIBLE",
+   "source": "Design conversation, Node 11 — credulity vs. demonstration; later manuals attest the type",
+   "sourceCite": "Invented for play — the seal’s grounding tag says exactly how far the sources reach. The world around it follows Matthew Melvin-Koushki’s scholarship on Ibn Turka.",
+   "situation": "A traveling dervish holds the majlis rapt: he claims he can be in Cairo and Damascus in the same night, and has witnesses. The merchant, your host, turns to you — the studious one — and asks, smiling, whether it can be true.",
+   "plate": {
+    "src": "../assets/manuscripts/c36-falnama-omen.jpg",
+    "caption": "The Seven Sleepers of Ephesus, folio from a Falnāma — Book of Omens (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Examine the claim like an apparatus",
+     "detail": "It takes a trickster’s eye to catch one. Ask what, exactly, the witnesses saw.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs rīmiyā ● (studied)"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Reframe it philosophically",
+     "detail": "Neither endorse nor expose: ask what “being in a place” means. Scholars love it.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs synthesis 1"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Let the wonder stand",
+     "detail": "Say nothing against it. The room wants marvels; the dervish needs dinner.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "The story swells with your silence inside it. Later you hear your name cited among those who “did not deny it.”",
+   "chronicle": {
+    "orig": "He let a doubtful wonder pass unchallenged, and was counted among its witnesses.",
+    "current": "He let a doubtful wonder pass unchallenged, and was counted among its witnesses."
+   }
+  },
+  {
+   "i": 4,
+   "phase": 1,
+   "encounterId": "madrasa_training",
+   "rubric": "AT THE MADRASA · MORNING LESSONS",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — Formation (Cairo); VN c01",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "The law professors teach what Cairo certifies: jurisprudence, disputation, the instruments of a judge’s career. It is slow, orthodox, and respected — and it is the credential your family’s judicial line expects of you.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Commit to rigorous scholastic training",
+     "detail": "The long path: law, logic, credentials no inquisitor can question.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Attend only enough to pass unremarked",
+     "detail": "Keep the seat warm; spend your real hours elsewhere in the city.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "The professors mark you as serious. The credential begins to exist.",
+   "chronicle": {
+    "orig": "In Cairo he sat before the jurists and learned the law’s long patience.",
+    "current": "In Cairo he sat before the jurists and learned the law’s long patience."
+   }
+  },
+  {
+   "i": 5,
+   "phase": 1,
+   "encounterId": "circle_entry",
+   "rubric": "A COURTYARD OFF THE COPPERSMITHS’ STREET · AFTER DARK",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — Formation (Cairo): studied under Akhlāṭī",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "Sayyid Ḥusayn Akhlāṭī receives students the madrasa would never admit to envying. On his table: letter-tables, a geomancer’s brass instrument, a crucible still warm. He asks one question — what do you want to learn first?",
+   "plate": {
+    "src": "../assets/manuscripts/c28-bm-instrument-full-1241.jpg",
+    "caption": "Geomantic instrument, Egypt or Syria, 1241/42 CE — British Museum (via Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "The science of letters",
+     "detail": "Līmiyā: talismans, letter-grids, the mathematics hiding inside the alphabet.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "The work of the furnace",
+     "detail": "Kīmiyā: substances, operations, the elite and expensive art.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "The figures in the sand",
+     "detail": "Geomancy — Akhlāṭī’s own third art, quick to learn, easy to sneer at, oddly reliable.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "He sets a letter-grid before you and begins with the value of the alif. The door is open.",
+   "chronicle": {
+    "orig": "He came to Akhlāṭī’s courtyard and began with the letters, as the tradition begins.",
+    "current": "He came to Akhlāṭī’s courtyard and began with the letters, as the tradition begins."
+   }
+  },
+  {
+   "i": 6,
+   "phase": 1,
+   "encounterId": "muwaqqit_lesson",
+   "rubric": "THE TIMEKEEPER’S POST · INSTRUMENTS AND HOURS",
+   "grounding": "PLAUSIBLE-GAP",
+   "source": "BIOGRAPHY — Formation; the muwaqqit’s office was Cairo’s licensed astronomy",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "The mosque’s muwaqqit — the timekeeper — computes the prayer hours with astrolabe and tables, the one occult-adjacent mathematics no jurist can object to. He needs an assistant with steady hands and will teach what the position teaches.",
+   "plate": {
+    "src": "../assets/manuscripts/act2-persian-astrolabe.jpg",
+    "caption": "Persian astrolabe, brass (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Assist him through a season",
+     "detail": "Learn the astrolabe and the tables — licensed mathematics, unimpeachable.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [
+      "remembered: madrasa trained"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Watch a single night’s working",
+     "detail": "One evening’s glimpse of the craft — cheap, shallow, enough to know what’s there.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "One night at the dials. You leave knowing exactly how much you do not know.",
+   "chronicle": {
+    "orig": "He watched the timekeeper work one night, and marked the science for later.",
+    "current": "He watched the timekeeper work one night, and marked the science for later."
+   }
+  },
+  {
+   "i": 7,
+   "phase": 1,
+   "encounterId": "road_home",
+   "rubric": "THE ROAD HOME · CAIRO ENDS",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — Formation: Akhlāṭī dies 1397; the return to Iran follows",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "Word runs through the quarter like cold water: Sayyid Ḥusayn Akhlāṭī is dead. The circle stands in his courtyard not knowing where to put its hands. Cairo is finished for you — the question is only what you carry to Isfahan, and how.",
+   "plate": {
+    "src": "../assets/manuscripts/act8-printed-teardrop-cosmogram-p256.jpg",
+    "caption": "Teardrop cosmological diagram — Shams al-Maʿārif, p. 256 (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Leave as his acknowledged student",
+     "detail": "Claim the inheritance aloud. The name will reach Isfahan before you do.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs remembered: akhlati public"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Carry the Brethren’s letters east",
+     "detail": "Leave as the network’s courier: introductions from Cairo to all Iran.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs remembered: new brethren"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Return as a jurist, nothing more",
+     "detail": "Fold the Cairo years away. Arrive in Isfahan clean, credentialed, unremarked.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": [
+      "orthodox standing +1"
+     ]
+    },
+    {
+     "label": "Travel in company with Yazdī",
+     "detail": "Share the road with your brother in God. The system’s first two carriers, together.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs remembered: yazdi bond — equal"
+     ],
+     "favoredBy": []
+    }
+   ],
+   "band": "ambiguous",
+   "outcomeText": "Clean arrival — but a letter from Cairo, unsigned, reaches Isfahan anyway. Someone talked. They always do.",
+   "chronicle": {
+    "orig": "He came home quietly, though Cairo’s rumors traveled faster than his caravan.",
+    "current": "He came home quietly, though Cairo’s rumors traveled faster than his caravan."
+   }
+  },
+  {
+   "i": 8,
+   "phase": 2,
+   "encounterId": "isfahan_inheritance",
+   "rubric": "THE FAMILY HOUSE · WHAT THE HOUSE EXPECTS",
+   "grounding": "PLAUSIBLE-GAP",
+   "source": "BIOGRAPHY — the Turka family judicial line; the domestic scene is constructed",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "Your kin want to know what Cairo was for. There is a family library of law and hadith, a family reputation, and a family assumption that the strange years abroad are now concluded.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Tell them what they want to hear",
+     "detail": "Cairo was training. Nothing more. The house relaxes.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Tell them the truth and ask for the library",
+     "detail": "Make the family an asset instead of an audience. Risky; they vote.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs scholarly standing +2"
+     ],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "The house is satisfied and the doors of Isfahan’s respectable society stay open.",
+   "chronicle": {
+    "orig": "He let his family believe the Cairo years had been an ordinary education.",
+    "current": "He let his family believe the Cairo years had been an ordinary education."
+   }
+  },
+  {
+   "i": 9,
+   "phase": 2,
+   "encounterId": "isfahan_preacher",
+   "rubric": "THE FRIDAY MOSQUE · A SERMON AGAINST THE LETTER-MEN",
+   "grounding": "PLAUSIBLE-GAP",
+   "source": "BIOGRAPHY — the orthodoxy/lettrism tension; this sermon is constructed",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "The Friday preacher spends a quarter of an hour on men who claim the letters of the Qurʾan hide a mathematics. He does not name you. He does not need to; two rows of heads have already half-turned.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Answer him after the prayer, in front of everyone",
+     "detail": "Meet it head-on as a jurist. High risk, high clarity.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [
+      "orthodox standing +1"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Seek him privately afterward",
+     "detail": "Persuade one man instead of a hall. Quiet, slow, sometimes it works.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Sit through it",
+     "detail": "Say nothing. Be seen saying nothing. Perfectly safe, and everyone notices.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "He is polite, immovable, and now knows your face and your interest.",
+   "chronicle": {
+    "orig": "His private approach to the preacher changed nothing except that the preacher now knew him.",
+    "current": "His private approach to the preacher changed nothing except that the preacher now knew him."
+   }
+  },
+  {
+   "i": 10,
+   "phase": 2,
+   "encounterId": "pressure_rumor",
+   "rubric": "THE BOOKSELLERS’ ROW · YOUR ARGUMENT COMES BACK",
+   "grounding": "PLAUSIBLE-GAP",
+   "source": "RESEARCH — unattributed circulation and distortion of occult doctrine; reputation travels ahead of texts",
+   "sourceCite": "From the project’s research brief, grounded in the same scholarship — principally “The Occult Court” (Al-Masāq, 2025), which translates ʿAlī Ṣafī’s Boon for the Khan, the period manual behind the feast-and-war material.",
+   "situation": "A bookseller, not knowing your face, offers to sell you your own argument. It has grown in the telling: what you framed as the mathematics of the alphabet is now the tale of a qāḍī who can read a man’s death in his name. He wants a good price for it. Your name is not on it, and that is exactly the problem.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Correct it, there in the shop",
+     "detail": "Give the real argument to a man whose trade is repeating things.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Let the story travel",
+     "detail": "Distortion is a kind of circulation. Anonymity is a kind of armor.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Trace it to whoever is telling it",
+     "detail": "The bench taught you how stories are moved. Find the mover.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs hīmiyā ● (studied)"
+     ],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "He listens the way booksellers listen — for what will sell. The true version is drier and travels slower, but it travels under your name now.",
+   "chronicle": {
+    "orig": "He corrected his own legend in a bookshop, knowing the correction would never travel as far as the legend.",
+    "current": "He corrected his own legend in a bookshop, knowing the correction would never travel as far as the legend."
+   }
+  },
+  {
+   "i": 11,
+   "phase": 2,
+   "encounterId": "isfahan_study_one",
+   "rubric": "YOUR OWN STUDY · THE LETTERS AND THE NUMBERS",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — mathematization of the cosmos; lettrism as universal science",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "A long night with the tables. The correspondence between letter-values and the ratios in a musical interval is either the deepest thing you have ever noticed or an artifact of your own arithmetic. There is one way to find out.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Work it through to the end",
+     "detail": "Seasons of arithmetic to prove or kill the connection.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Note it and move on",
+     "detail": "The docket will not wait. Write it down for a better decade.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "Into the notebook it goes, with a marginal note you will find again in 1420.",
+   "chronicle": {
+    "orig": "He noted the harmonic correspondence and set it aside for a freer year.",
+    "current": "He noted the harmonic correspondence and set it aside for a freer year."
+   }
+  },
+  {
+   "i": 12,
+   "phase": 2,
+   "encounterId": "isfahan_nativity",
+   "rubric": "ISFAHAN · A MERCHANT WANTS HIS SON’S NATIVITY READ",
+   "grounding": "PLAUSIBLE-GAP",
+   "source": "BIOGRAPHY — astrological practice; this client is constructed",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "A wealthy merchant wants to know whether his son should be sent into trade or into the law. He is offering good money for a nativity. He is also, without meaning to, offering you your first paying client as a practitioner.",
+   "plate": {
+    "src": "../assets/manuscripts/cs-p2-mawalid-nativity.jpg",
+    "caption": "Astrological figure from a Book of Nativities, after Abū Maʿshar al-Balkhī (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Cast the nativity properly",
+     "detail": "Real computation, honest fee — and a practice, which is a paper trail.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs access to astronomy"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Read the boy’s name, not his stars",
+     "detail": "Lettrism instead of astrology — your own method, on a stranger, for money.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [
+      "līmiyā ● (studied)"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Advise him as a judge, and take nothing",
+     "detail": "Give the boy sound counsel with no stars in it. No fee, no practice, no exposure.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "You take the letters of the boy’s name apart in front of his father, who has never seen anything like it and says so, everywhere.",
+   "chronicle": {
+    "orig": "He read a merchant’s son by the letters of his name, and Isfahan began to talk about the method.",
+    "current": "He read a merchant’s son by the letters of his name, and Isfahan began to talk about the method."
+   }
+  },
+  {
+   "i": 13,
+   "phase": 2,
+   "encounterId": "isfahan_copyists",
+   "rubric": "THE WARRĀQ’S SHOP · A MAN WHO COPIES ANYTHING",
+   "grounding": "PLAUSIBLE-GAP",
+   "source": "BIOGRAPHY — manuscript culture; this copyist is constructed",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "The warrāq works fast, charges fairly, and has never once asked what a text is for. Everything you have written so far exists in exactly one copy, in your own hand, in a house that could burn.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Commission copies of your notes",
+     "detail": "Transmission begins with a second copy existing at all.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [
+      "synthesis 2"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Copy everything in your own hand",
+     "detail": "Slower, safer, and no stranger has read a line of it.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "Seasons of copying. The work is exact, secure, and read by precisely one person.",
+   "chronicle": {
+    "orig": "He copied his own work in his own hand, and let no stranger read a line of it.",
+    "current": "He copied his own work in his own hand, and let no stranger read a line of it."
+   }
+  },
+  {
+   "i": 14,
+   "phase": 2,
+   "encounterId": "isfahan_study_two",
+   "rubric": "YOUR OWN STUDY · THE MYSTERIOUS LETTERS",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — Qurʾanic letter-groups (muqaṭṭaʿāt) in the lettrist tradition; Yazdī’s practice",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "The muqaṭṭaʿāt — the disconnected letters that open certain sūras, alif lām mīm, ṭā hā — have defeated commentary for eight centuries. Every exegete says they are a divine secret. You are increasingly sure they are a divine *notation*.",
+   "plate": {
+    "src": "../assets/manuscripts/cs-p2-buduh-square-qazwini.jpg",
+    "caption": "Budūh magic square, al-Qazwīnī — Persia, c. 1280 (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Treat them as notation and build the system on them",
+     "detail": "The boldest move available: make the unexplained letters your foundation stone.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [
+      "līmiyā ● (studied)"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Handle them reverently and stay inside commentary",
+     "detail": "Say what the tradition says. Lose the foundation stone; keep the peace.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "ambiguous",
+   "outcomeText": "You have a system that works and an argument that will horrify every traditionist who hears it stated plainly.",
+   "chronicle": {
+    "orig": "His treatment of the mysterious letters was elegant, functional, and certain to enrage the literalists.",
+    "current": "His treatment of the mysterious letters was elegant, functional, and certain to enrage the literalists."
+   }
+  },
+  {
+   "i": 15,
+   "phase": 2,
+   "encounterId": "isfahan_departure",
+   "rubric": "THE SUMMONS · A PRINCE SENDS FOR YOU",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — attachment to Iskandar Sultan’s court c. 1409",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "A courier in Timurid livery, a sealed letter, and an invitation that is not really one: Iskandar Sultan, prince and governor of Fars, has heard there is a judge in Isfahan who reads more than law. The Isfahan years end here.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Go, and bring the whole apparatus",
+     "detail": "Books, tables, instruments, ambitions. Arrive as what you actually are.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Go as a jurist, and let them discover the rest",
+     "detail": "Arrive credentialed and unremarkable. Reveal the work when the room is right.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Go, and bring your people",
+     "detail": "A copyist, a correspondent, a friend. Arrive as a circle, not a man.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs transmission 2"
+     ],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "You arrive as a judge of good family. What else you are can wait for a better evening.",
+   "chronicle": {
+    "orig": "He came to the prince’s court as a jurist, and kept his other science in the baggage.",
+    "current": "He came to the prince’s court as a jurist, and kept his other science in the baggage."
+   }
+  },
+  {
+   "i": 16,
+   "phase": 3,
+   "encounterId": "pressure_copy_request",
+   "rubric": "A LETTER FROM NO ONE · THE REQUEST FOR A COPY",
+   "grounding": "PLAUSIBLE-GAP",
+   "source": "RESEARCH — manuscript request culture; a request for a copy was also the standard instrument of surveillance",
+   "sourceCite": "From the project’s research brief, grounded in the same scholarship — principally “The Occult Court” (Al-Masāq, 2025), which translates ʿAlī Ṣafī’s Boon for the Khan, the period manual behind the feast-and-war material.",
+   "situation": "The letter is faultless: correct honorifics, good paper, a respectful request for a copy of your letter-work “for study,” signed by a name you cannot place in a city where you have no correspondent. Scholars ask each other for copies constantly. So do the men who keep files. The letter is written so that you cannot tell which.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Send the work entire",
+     "detail": "A scholar who will not be read is not a scholar. Post it and be one.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Send a purged copy",
+     "detail": "By now you know exactly which pages can travel and which cannot.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [
+      "synthesis 5"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Decline, courteously",
+     "detail": "A refusal is also an answer, and it will also be filed.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "backfire",
+   "outcomeText": "Nothing comes back. Nothing ever comes back. Years from now you will recognize your own sentences, read aloud in a formal voice, and know at last who wrote the letter.",
+   "chronicle": {
+    "orig": "One of the copies he sent to strangers went into a file, and waited there for him.",
+    "current": "One of the copies he sent to strangers went into a file, and waited there for him."
+   }
+  },
+  {
+   "i": 17,
+   "phase": 3,
+   "encounterId": "court_rival_astrologer",
+   "rubric": "THE STAR-TABLE ROOM · A RIVAL CHALLENGES YOUR CALCULATION",
+   "grounding": "INVENTED-COMPATIBLE",
+   "source": "Design conversation, \"rival astrologer challenge\"; court rivalry attested generally",
+   "sourceCite": "Invented for play — the seal’s grounding tag says exactly how far the sources reach. The world around it follows Matthew Melvin-Koushki’s scholarship on Ibn Turka.",
+   "situation": "The court’s senior astrologer has found — or manufactured — an error in your last reading, and has chosen the audience hall to mention it. He is competent, he is threatened, and he has been at this court longer than you.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Answer with the numbers, publicly",
+     "detail": "Work it through in front of everyone. Wins or loses on the mathematics.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [
+      "synthesis 4"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Offer him joint work instead",
+     "detail": "Convert an enemy into a collaborator. Costs pride; buys peace.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs hīmiyā ● (studied)"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Answer as a jurist: question his standing to accuse",
+     "detail": "Use the bench, not the tables. Effective, and it looks like evasion.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs access to judiciary"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Concede the point and correct the record",
+     "detail": "He is right. Say so. Cheap in pride, expensive in nothing else.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "You thank him for the correction in front of the court. It disarms him completely and confuses everyone else.",
+   "chronicle": {
+    "orig": "He conceded his rival’s correction publicly, which nobody at that court had seen done before.",
+    "current": "He conceded his rival’s correction publicly, which nobody at that court had seen done before."
+   }
+  },
+  {
+   "i": 18,
+   "phase": 3,
+   "encounterId": "court_calligrapher",
+   "rubric": "THE KITĀBKHĀNA · THE CALLIGRAPHER HAS FOUND A PATTERN",
+   "grounding": "PLAUSIBLE-GAP",
+   "source": "BIOGRAPHY — Bāysunghur’s atelier and calligraphic culture; this calligrapher is constructed",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "The court calligrapher has been laying out a square Kufic panel and has noticed that the letters, forced into a grid, generate the same proportions in three different verses. She wants to know whether she has found something or merely made something. It is, exactly, your question.",
+   "plate": {
+    "src": "../assets/manuscripts/cs-p3-square-kufic-bismillah.jpg",
+    "caption": "Square Kufic Bismillah page by Ahmed Karahisari, 16th c. (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Work it out with her",
+     "detail": "Take an artisan seriously as a colleague. Gains a capability, not a compliment.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [
+      "līmiyā ● (studied)"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Take the observation and thank her",
+     "detail": "It is a real finding. It can be yours. She is an artisan; nobody will ask.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Tell her it is an artifact of the grid",
+     "detail": "Probably true. Definitely discouraging. Costs you nothing and closes a door.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "She accepts it, thanks you, and does not bring you the next one.",
+   "chronicle": {
+    "orig": "He dismissed the calligrapher’s pattern as an accident of the grid, and was not shown another.",
+    "current": "He dismissed the calligrapher’s pattern as an accident of the grid, and was not shown another."
+   }
+  },
+  {
+   "i": 19,
+   "phase": 3,
+   "encounterId": "court_patron_choice",
+   "rubric": "THE AUDIENCE HALL · WHOSE MAN WILL YOU BE",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — Iskandar Sultan (c.1409–1415), then Bāysunghur (from c.1416)",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "Two houses want you, and a third possibility exists. Iskandar Sultan’s court at Shiraz fuses star science, poetry and painting — brilliant and politically exposed. Bāysunghur, Shāh Rukh’s son, offers the finest book-workshop in the world and a father who is currently winning. Samarkand offers mathematics and Ulugh Beg.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Take service with Iskandar Sultan",
+     "detail": "The experimental court: everything permitted, nothing guaranteed.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Take service with Bāysunghur",
+     "detail": "The manuscript machine, and the safer branch of the dynasty.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Go to Samarkand with Yazdī",
+     "detail": "Mathematics, instruments, and the observatory rising. Requires your brother in God.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs Sharaf al-Dīn ʿAlī Yazdī"
+     ],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "Bāysunghur, who is himself a calligrapher of the first rank, asks what your diagrams would look like properly made. Nobody has ever asked you that.",
+   "chronicle": {
+    "orig": "He took service with Bāysunghur, a prince who cared how a page was made.",
+    "current": "He took service with Bāysunghur, a prince who cared how a page was made."
+   }
+  },
+  {
+   "i": 20,
+   "phase": 3,
+   "encounterId": "court_commission",
+   "rubric": "THE AUDIENCE HALL · THE PATRON WANTS SOMETHING USEFUL",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — works commissioned as royal \"boons\"; patronage was transactional and explicit",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "The commission is put plainly, which is how commissions are put: something demonstrable, by a named season, in exchange for money and standing. The prince does not want a philosophy. He wants a result he can show people.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Promise a public demonstration",
+     "detail": "The big claim. Big reward if you land it — and a promise a court can measure.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Promise a written exposition instead",
+     "detail": "Smaller claim, likelier delivery. Patrons remember who does not miss.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Negotiate the terms down",
+     "detail": "Longer deadline, smaller reward. The professional’s answer.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [
+      "scholarly standing +2"
+     ],
+     "lockedBy": [],
+     "favoredBy": [
+      "patron expectation 0"
+     ]
+    },
+    {
+     "label": "Decline the commission",
+     "detail": "Take no money and make no promise. Costs standing; costs nothing else.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "Agreed, witnessed, and written into the household accounts. You have four seasons and a promise with your name on it.",
+   "chronicle": {
+    "orig": "He promised the prince a public demonstration of his science, with a season named for it.",
+    "current": "He promised the prince a public demonstration of his science, with a season named for it."
+   }
+  },
+  {
+   "i": 21,
+   "phase": 3,
+   "encounterId": "court_razm_date",
+   "rubric": "THE CAMPAIGN · AN AUSPICIOUS DATE FOR THE ARMY",
+   "grounding": "ATTESTED",
+   "source": "RESEARCH — election astrology as imperial technology; the astrological-lettrist platform as political science",
+   "sourceCite": "From the project’s research brief, grounded in the same scholarship — principally “The Occult Court” (Al-Masāq, 2025), which translates ʿAlī Ṣafī’s Boon for the Khan, the period manual behind the feast-and-war material.",
+   "situation": "The army moves in the spring and the prince wants a date. This is not a parlor question: men will march on your arithmetic, and if the campaign goes badly, the record will show who chose the day.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Compute the election honestly",
+     "detail": "Do the real work and name the day the method gives you.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs access to astronomy"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Give a window, not a day",
+     "detail": "Technically better practice, politically weaker, and much harder to hang you with.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Refuse to date a war",
+     "detail": "Decline to put your science behind men getting killed on a schedule.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "You decline. Someone else provides a date within the hour, and the prince notes which of you was useful.",
+   "chronicle": {
+    "orig": "He refused to set a date for a campaign, and another man did it before evening.",
+    "current": "He refused to set a date for a campaign, and another man did it before evening."
+   }
+  },
+  {
+   "i": 22,
+   "phase": 3,
+   "encounterId": "court_wonder_night",
+   "rubric": "THE FEAST · LATE, AND THE VIZIER IS ASLEEP",
+   "grounding": "INVENTED-COMPATIBLE",
+   "source": "RESEARCH — later manuals describe sleeper-interrogation and wake-rite operations among feast entertainments; this scene is constructed around those categories",
+   "sourceCite": "From the project’s research brief, grounded in the same scholarship — principally “The Occult Court” (Al-Masāq, 2025), which translates ʿAlī Ṣafī’s Boon for the Khan, the period manual behind the feast-and-war material.",
+   "situation": "Deep in the night-half of the bazm, a junior vizier has fallen asleep sitting upright, and the prince — delighted, a little drunk — remembers a story: that the old manuals teach how to make a sleeping man answer questions truthfully. Everyone looks at you. The vizier snores. The room is already composing the anecdote.",
+   "plate": {
+    "src": "../assets/manuscripts/cs-p3-qazwini-jinn-singer.jpg",
+    "caption": "The Singer Ibrāhīm and the Jinn — Iran, early modern copy (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Perform it as theater",
+     "detail": "Rīmiyā: stage-whisper, planted questions, harmless answers. The room gets its story; the vizier keeps his secrets.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs rīmiyā ● (studied)"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Refuse — and say why",
+     "detail": "A sleeping man cannot consent to be a demonstration. Kill the joke; keep the principle.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Offer the opposite trick instead",
+     "detail": "The wake-rite: keep the whole table alert till dawn. Redirect the room’s appetite.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs kīmiyā ● (studied)"
+     ],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "You say, mildly, that a man’s sleep is not the court’s property. The prince pouts; the vizier, told of it later, becomes the most loyal ally you have at this court.",
+   "chronicle": {
+    "orig": "He refused to make theater of a sleeping man, and the man became his ally for life.",
+    "current": "He refused to make theater of a sleeping man, and the man became his ally for life."
+   }
+  },
+  {
+   "i": 23,
+   "phase": 3,
+   "encounterId": "court_departure",
+   "rubric": "TOWARD 1420 · THE COURT YEARS END",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — Iskandar Sultan defeated, blinded and executed 1415; patronage shifts to Bāysunghur c.1416",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "Courts end. Iskandar Sultan overreached his uncle Shāh Rukh and paid for it in the way Timurid princes do; the workshops disperse, the patronage reshuffles, and men who were somebody last spring are looking for a house. What you take out of these years is the material the summa will be built from.",
+   "plate": {
+    "src": "../assets/manuscripts/cs-p3-shahnama-caesar-talisman.jpg",
+    "caption": "\"Caesar Makes a Talisman\", folio from a Shahnama, Iran c. 1330–40 — MET (CC0)"
+   },
+   "options": [
+    {
+     "label": "Leave with the work, and nothing else",
+     "detail": "Books, tables, diagrams. Let the politics go on without you.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Attach yourself to the surviving house",
+     "detail": "Bāysunghur’s establishment endures. Continuity of protection, at the price of visible loyalty.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Leave with your people",
+     "detail": "Calligrapher, astronomer, student, friend — whoever will come. The circle over the career.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs transmission 3"
+     ],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "You go with chests of paper and no faction. It is the least dangerous way to leave a court that has just eaten a prince.",
+   "chronicle": {
+    "orig": "When the court broke up he left with his papers and no allegiances.",
+    "current": "When the court broke up he left with his papers and no allegiances."
+   }
+  },
+  {
+   "i": 24,
+   "phase": 4,
+   "encounterId": "pressure_denunciation",
+   "rubric": "BEFORE ANY TRIBUNAL · THE ACCUSATION, IN WRITING",
+   "grounding": "PLAUSIBLE-GAP",
+   "source": "BIOGRAPHY — the tribunals were engineered by rival colleagues; the circulating written charge is the documented instrument of pressure short of trial",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "A friend brings it to you unsigned and already copied: a formal denunciation, naming no tribunal yet, listing your associations in order — Akhlāṭī’s circle, the letters, the nativities — like a man laying out tools. It is competently written. Whoever composed it has read you carefully, and means to be read in turn.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Answer it, point by point, in writing",
+     "detail": "Rehearse the whole defense early — at the price of making it a correspondence.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Say nothing",
+     "detail": "An unsigned page deserves an unwritten reply.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Find out who wrote it",
+     "detail": "A patron’s household can learn who paid the copyists.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs imperial standing +2"
+     ],
+     "favoredBy": []
+    }
+   ],
+   "band": "ambiguous",
+   "outcomeText": "Silence reads as confidence to your friends and as guilt to your enemies, and you do not get to choose which reading travels.",
+   "chronicle": {
+    "orig": "A written denunciation circulated, and he met it with silence. Both survived.",
+    "current": "A written denunciation circulated, and he met it with silence. Both survived."
+   }
+  },
+  {
+   "i": 25,
+   "phase": 4,
+   "encounterId": "pivot_observatory",
+   "rubric": "THE OBSERVATORY RISING · ULUGH BEG BREAKS GROUND",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — 1420: Ulugh Beg begins the Samarkand observatory; star science and letter science boom together",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "In Samarkand they are laying the foundations of the largest astronomical instrument on earth. The tables it produces will still be in use in London four centuries from now. Nobody there is thinking about lettrism — but the man building it wants exact knowledge of the heavens, and so, in your own way, do you.",
+   "plate": {
+    "src": "../assets/manuscripts/act2-persian-astrolabe.jpg",
+    "caption": "Persian astrolabe, brass (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Put your mathematics at their disposal",
+     "detail": "Work on the tables. Anonymous, rigorous, and it ties your name to real science.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs access to astronomy"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Argue that star science and letter science are one enterprise",
+     "detail": "Make the case to the astronomers themselves. If it lands, it is the whole thesis vindicated.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [
+      "synthesis 6"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Stay at your desk",
+     "detail": "Samarkand is a distraction. The summa will not write itself.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "ambiguous",
+   "outcomeText": "Polite interest, no converts. They go back to their instruments; you go back to your tables; both of you are measuring the same sky.",
+   "chronicle": {
+    "orig": "The astronomers heard his case for one science and returned, politely, to their instruments.",
+    "current": "The astronomers heard his case for one science and returned, politely, to their instruments."
+   }
+  },
+  {
+   "i": 26,
+   "phase": 4,
+   "encounterId": "pivot_begin",
+   "rubric": "THE DESK · BEGINNING THE SUMMA",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — 1420: completes Investigations (Kitāb al-Mafāḥiṣ), the first systematic summa of Islamic lettrism",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "Twenty years of notes, and the shape of the thing is finally visible: not a commentary, not a manual, but a systematic philosophy in which letter, number, and cosmos are one science. It has never been done. The only question is what kind of book it will be.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Build it as a complete philosophical system",
+     "detail": "The whole architecture, argued from first principles. Slow, enormous, and unprecedented.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [
+      "synthesis 5"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Build it as a usable handbook",
+     "detail": "Method first, philosophy implicit. Less glory, far more uptake.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Not yet — spend the year deepening instead",
+     "detail": "Refuse to publish prematurely. The system gets better; the years do not come back.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "A year of pure work and no book. The system is genuinely stronger. Nobody outside this room knows that.",
+   "chronicle": {
+    "orig": "He spent the pivot year deepening the system instead of writing it down.",
+    "current": "He spent the pivot year deepening the system instead of writing it down."
+   }
+  },
+  {
+   "i": 27,
+   "phase": 4,
+   "encounterId": "pivot_departure",
+   "rubric": "THE FIRST SUMMONS · A TRIBUNAL SENDS FOR YOU",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — three state inquisitions, engineered by jealous rival colleagues, from the 1420s",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "It arrives with a seal and a date: you are required to answer questions concerning your doctrine. It is not, yet, a trial. It has been engineered by colleagues — men who know exactly what to quote, because you wrote it down and let it circulate. The rest of your life begins with this letter.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Go, and prepare a full defense",
+     "detail": "Answer the summons on its own terms, with everything you have.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Go, but send to your patron first",
+     "detail": "Spend political protection before spending arguments.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs imperial standing +2"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Go quietly, and concede whatever is cheap",
+     "detail": "Give them small things early. Survive the first one; think about the rest later.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "You spend the last free season assembling authorities, precedents, and creeds. Whatever else happens, they will have to argue with you.",
+   "chronicle": {
+    "orig": "He answered the first summons with a defense prepared in full.",
+    "current": "He answered the first summons with a defense prepared in full."
+   }
+  },
+  {
+   "i": 28,
+   "phase": 5,
+   "encounterId": "trial_first",
+   "rubric": "THE TRIBUNAL · THE FIRST INQUISITION",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — three state inquisitions engineered by rival colleagues; he wins the first two",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "The charge is framed around Qurʾan 2:102 and the angels at Babel who taught men magic: whatever you call your ʿilm al-ḥurūf, the prosecution says, this is what it descends from. Your accusers are colleagues. They have read you closely, which is the problem.",
+   "plate": {
+    "src": "../assets/manuscripts/cs-p5-harut-marut.jpg",
+    "caption": "The fallen angels Hārūt and Mārūt, suspended at Babel — Iran, 16th–17th c. (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Distinguish theoretical lettrism from sorcery",
+     "detail": "The core legal argument: a mathematics of letters is not an operation on spirits.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": [
+      "orthodox standing +1"
+     ]
+    },
+    {
+     "label": "Answer with a creedal statement",
+     "detail": "Give them orthodoxy in your own words — the apology as a genre.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Attack the accusers’ standing",
+     "detail": "Name the jealousy. Aggressive, satisfying, and it escalates.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs access to judiciary"
+     ],
+     "favoredBy": []
+    }
+   ],
+   "band": "triumph",
+   "outcomeText": "You hold the distinction for three hours and the panel accepts it. Acquitted — and every word of your defense is now a public document your enemies can study.",
+   "chronicle": {
+    "orig": "At the first tribunal he separated the science of letters from sorcery, and was acquitted.",
+    "current": "At the first tribunal he separated the science of letters from sorcery, and was acquitted."
+   }
+  },
+  {
+   "i": 29,
+   "phase": 5,
+   "encounterId": "trial_second",
+   "rubric": "THE TRIBUNAL · THE SECOND INQUISITION",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — he wins the first two inquisitions; exact years not established in sources in hand",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "They have learned. This time the charge quotes your own circulated work back at you, in context, with the difficult passage on the board. There is no procedural escape from a quotation you actually wrote.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Defend the passage as written",
+     "detail": "Stand on the text. Explain what it means and refuse to disown it.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": [
+      "synthesis 6",
+      "scholarly standing +3"
+     ]
+    },
+    {
+     "label": "Let your patron end it",
+     "detail": "Political protection instead of argument. Fast, humiliating, and it spends real capital.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs imperial standing +2"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Disown the passage",
+     "detail": "Sacrifice one formulation to save the whole. Survivable. Corrosive.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "You withdraw the passage in writing and the case collapses. Your students hear about it before you get home.",
+   "chronicle": {
+    "orig": "He disowned the disputed passage in writing, and his students heard of it before he reached his door.",
+    "current": "He disowned the disputed passage in writing, and his students heard of it before he reached his door."
+   }
+  },
+  {
+   "i": 30,
+   "phase": 5,
+   "encounterId": "trial_third",
+   "rubric": "THE TRIBUNAL · THE THIRD INQUISITION",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — he loses the third, datable to c. 1427; five years of wandering exile follow, death 1432",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "The third is different. The panel is chosen, not assembled; the charge is broad enough to cover a life; and the question underneath every question is simply whether a man may build a science the state has not authorized. This is the one the record says he loses. The record was not written by you.",
+   "plate": {
+    "src": "../assets/manuscripts/cs-p5-hilya-creed.jpg",
+    "caption": "Hilye-i Şerif — calligraphic description of the Prophet, Ottoman (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Hold firm and refuse to bend",
+     "detail": "The historically attested answer. It costs everything and concedes nothing.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": [
+      "scholarly standing +4"
+     ]
+    },
+    {
+     "label": "Recant",
+     "detail": "Say the words. Keep the life, the post, and nothing else.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Give them a name",
+     "detail": "They will settle for a bigger heretic than you. Qāsim is already suspect.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [
+      "Qāsim-i Anvār"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Put the household between you and the panel",
+     "detail": "Everything a decade of service is owed, spent in one afternoon.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs imperial standing +2"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Do not appear",
+     "detail": "Take the road before the verdict. Condemned in absentia; free, and finished here.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "ambiguous",
+   "outcomeText": "You are three days east when they convene without you. The sentence is read to an empty chair, which is the only kind of hearing you were going to get.",
+   "chronicle": {
+    "orig": "He did not appear at the third tribunal, and the sentence was read to an empty chair.",
+    "current": "He did not appear at the third tribunal, and the sentence was read to an empty chair."
+   }
+  },
+  {
+   "i": 31,
+   "phase": 5,
+   "encounterId": "trial_checkpoint",
+   "rubric": "THE EASTERN GATE · A CHECKPOINT WITH YOUR NAME AT IT",
+   "grounding": "INVENTED-COMPATIBLE",
+   "source": "The sīmiyā signature moment (VN PROPOSAL: escape by misdirection); the five-year exile itself is ATTESTED",
+   "sourceCite": "The escape is imagined; the five-year exile it begins is attested — see Melvin-Koushki, “Prologue to Pythagorean Renaissance” (2025).",
+   "situation": "The sentence entitles you to leave; a clerk’s addendum entitles the governor to everything you carry. At the eastern gate the soldiers have a list, and your baggage — books, tables, the years of paper — is exactly what the list is for. The exile may pass. The archive may not.",
+   "plate": null,
+   "options": [
+    {
+     "label": "Let them seize the wrong chest",
+     "detail": "Sīmiyā at last: a decoy chest, a staged reluctance, and every eye drawn where you want it.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs sīmiyā ● (studied)"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Pay what the soldiers ask",
+     "detail": "Coin instead of craft. It empties the purse that was meant to last five years.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Let them take the chests",
+     "detail": "The work is in other hands or it is nowhere. Walk out with a staff and a cloak.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "Expensive, effective, unremarkable. The books pass as “personal effects.” Poverty arrives a year early.",
+   "chronicle": {
+    "orig": "He bought his archive through the eastern gate, and began his exile poorer than the sentence required.",
+    "current": "He bought his archive through the eastern gate, and began his exile poorer than the sentence required."
+   }
+  },
+  {
+   "i": 32,
+   "phase": 5,
+   "encounterId": "trial_qasim_exile",
+   "rubric": "THE CIRCLE · QĀSIM-I ANVĀR IS EXILED",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — Qāsim-i Anvār exiled in 1427 over lettrist associations, the same year as the third inquisition",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "The order comes down: Qāsim-i Anvār is expelled, over exactly the associations you share. Everyone who has ever given you advice gives you the same advice now. He is leaving in four days and has not asked you for anything.",
+   "plate": null,
+   "options": [
+    {
+     "label": "See him off publicly",
+     "detail": "Be seen at the gate. Costs you exactly what everyone says it will cost.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Help him quietly",
+     "detail": "Money, letters of introduction, a name in Herat. Nothing anyone can photograph.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs hīmiyā ● (studied)"
+     ],
+     "favoredBy": []
+    },
+    {
+     "label": "Let him go",
+     "detail": "Say nothing, send nothing, be elsewhere. It is the survivable choice.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    }
+   ],
+   "band": "qualified",
+   "outcomeText": "He leaves. You are demonstrably elsewhere. Nothing whatever happens to you, which is the point, and you think about it for the rest of your life.",
+   "chronicle": {
+    "orig": "He was demonstrably elsewhere when Qāsim-i Anvār went into exile.",
+    "current": "He was demonstrably elsewhere when Qāsim-i Anvār went into exile."
+   }
+  },
+  {
+   "i": 33,
+   "phase": 5,
+   "encounterId": "trial_end",
+   "rubric": "THE ROAD · WHAT IS LEFT",
+   "grounding": "ATTESTED",
+   "source": "BIOGRAPHY — five years of wandering exile after the third inquisition; death 1432, impoverished, in legal limbo",
+   "sourceCite": "From the project’s synthesized biography of Ibn Turka, grounded in Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025). The full dated record is on the site timeline.",
+   "situation": "However the tribunals fell out, the years after them are the ones that decide what this life was. There is a road, a diminishing amount of money, and a body of work that is either travelling without you or sitting in a box. What you do with the last of it is the last decision you get.",
+   "plate": {
+    "src": "../assets/manuscripts/act8-printed-teardrop-cosmogram-p256.jpg",
+    "caption": "Teardrop cosmological diagram — Shams al-Maʿārif, p. 256 (Wikimedia Commons)"
+   },
+   "options": [
+    {
+     "label": "Teach wherever they let you stop",
+     "detail": "Turn exile into transmission. No security, maximum spread.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Finish the work",
+     "detail": "Complete the system, alone, whether or not anyone is left to read it.",
+     "chosen": false,
+     "locked": false,
+     "unlockedBy": [],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Petition, negotiate, rebuild",
+     "detail": "Spend the last years trying to get the standing back. It sometimes works.",
+     "chosen": true,
+     "locked": false,
+     "unlockedBy": [
+      "orthodox standing +1"
+     ],
+     "lockedBy": [],
+     "favoredBy": []
+    },
+    {
+     "label": "Entrust everything to the circle and stop",
+     "detail": "Hand it over. Let the movement be the movement; be an old man.",
+     "chosen": false,
+     "locked": true,
+     "unlockedBy": [],
+     "lockedBy": [
+      "needs transmission 5"
+     ],
+     "favoredBy": []
+    }
+   ],
+   "band": "success",
+   "outcomeText": "Petitions, intermediaries, and eventually a modest restoration. You die respectable, in a city, with the work in a cupboard.",
+   "chronicle": {
+    "orig": "He spent his last years petitioning his way back to respectability, with the work shut in a cupboard.",
+    "current": "He spent his last years petitioning his way back to respectability, with the work shut in a cupboard."
+   }
+  }
+ ],
+ "annotations": [],
+ "revisions": [],
+ "illustrations": [],
+ "origin": "simulated"
+}

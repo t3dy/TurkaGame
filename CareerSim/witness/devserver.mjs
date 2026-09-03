@@ -66,6 +66,34 @@ createServer(async (req, res) => {
     return send(res, 200, { ok: true, hand, op: r.op, record: r.record,
       revisions: working.revisions.length, annotations: working.annotations.length });
   }
+  if (u.pathname === '/api/desk') {
+    // Dev stub: key 'devkey', data folded from the in-memory doc + EDITS, so desk.html
+    // can be iterated locally with the same shapes production serves.
+    if (u.searchParams.get('key') !== 'devkey') return send(res, 403, { error: 'the desk is private' });
+    const ops = EDITS.map((e) => ({ witnessId: doc.id, op: e.op, record: e.record }));
+    const revisions = ops.filter((o) => o.op === 'revise').length;
+    const annotations = ops.filter((o) => o.op === 'annotate').length;
+    const groups = new Map();
+    for (const o of ops) {
+      if (o.op === 'preface') continue;
+      const k = o.record.encounterId || '(no encounter)';
+      if (!groups.has(k)) groups.set(k, { encounterId: k, items: [] });
+      groups.get(k).items.push({ witnessId: doc.id, witnessTitle: doc.title, op: o.op, ts: o.record.ts,
+        hand: o.record.hand, author: o.record.author, field: (o.record.anchor || {}).field || null,
+        text: o.op === 'annotate' ? o.record.text : null,
+        old: o.op === 'revise' ? o.record.old : null, new: o.op === 'revise' ? o.record.new : null });
+    }
+    const queue = [...groups.values()];
+    for (const g of queue) { g.items.sort((a, b) => String(b.ts).localeCompare(String(a.ts))); g.scholar = g.items.some((i) => i.hand === 'scholar'); g.latest = g.items[0].ts; }
+    return send(res, 200, {
+      totals: { witnesses: 1, played: 1, simulated: 0, revisions, annotations, scholarTouched: ops.some((o) => o.record.hand === 'scholar') ? 1 : 0 },
+      witnesses: [{ id: doc.id, title: doc.title, game: doc.game, origin: doc.origin, createdAt: doc.createdAt,
+        verdict: doc.meta.verdict ? { manTitle: doc.meta.verdict.manTitle, systemTitle: doc.meta.verdict.systemTitle } : null,
+        entries: doc.log.length, revisions, annotations,
+        scholarTouched: ops.some((o) => o.record.hand === 'scholar'), lastEditedAt: ops.map((o) => o.record.ts).sort().pop() || null }],
+      queue,
+    });
+  }
   const file = u.pathname === '/' ? '/w.html' : u.pathname;
   try {
     const buf = await readFile('public' + file);

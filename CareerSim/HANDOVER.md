@@ -141,10 +141,12 @@ nobody has *looked* at the editor on a wide screen. Worth thirty seconds next se
    broken, informers, or recanters). **Still open, honestly:** overlap 52% vs <40%
    (Slice 4 pool depth, not tuning), demonstration median 1 vs target 4, contracts
    0.62/run vs ≥2 (the §4 authoring pass), ~3 rare encounters. 73 encounters, 49 tests.
-4. **No researcher's desk.** And note the change: `index/{id}.json` no longer carries
-   editorial counters (it was a mutable-blob read-modify-write, the same trap that ate
-   the first editor). The desk must derive editorial state from a
-   `list({ prefix: 'edits/' })`.
+4. ~~**No researcher's desk.**~~ **Built 2026-09-02**: `witness/api/desk.mjs` +
+   `desk.html` — every witness, filterable, with the scholar-priority queue grouped by
+   the encounter it touches; editorial state derived from `list({ prefix: 'edits/' })`,
+   never counters. Simulated witnesses publishable via `tools/publish-simulated.mjs`;
+   three random-play lives are on the desk already. Remaining nicety: delete/archive
+   controls for the `TEST —` records the desk now makes visible.
 5. **The illustration layer has no UI.** `addIllustration`/`reviewQueue`/`notifyCount`
    are implemented and tested; nothing calls them.
 6. **No cold human playtest.** Still. Agent playthroughs are not a cold reader.
@@ -189,7 +191,16 @@ CareerSim/
 Nothing routine. It was created with `vercel link --project turka-witness` and
 `vercel blob create-store turka-witnesses --access public --yes`, which provisioned
 `BLOB_READ_WRITE_TOKEN` into the project automatically — no secret was ever copied by
-hand, and none is in the repo. Redeploy after changing `witness/`:
+hand, and none is in the repo. The **researcher's desk** is `/desk.html?key=…` — admin-only. The key is the local
+gitignored file `witness/.admin-key` (never committed, never pasted anywhere); the
+service holds it as the `DESK_KEY` Vercel env var, piped in via
+`Get-Content .admin-key -Raw | vercel env add DESK_KEY production`. Note the defensive
+`.trim()` on both sides of the comparison in `api/desk.mjs` — PowerShell's pipeline
+appends a newline to values it pipes into native commands, and that newline cost one
+deploy cycle to find. Simulated witnesses come from
+`node tools/publish-simulated.mjs [n] [random|greedy|cautious] [--dry]`.
+
+Redeploy after changing `witness/`:
 
 ```bash
 cd CareerSim/witness && vercel deploy --prod --yes

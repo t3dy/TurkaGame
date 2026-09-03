@@ -371,3 +371,26 @@ and `logEntry` now writes `sourceCite` into the witness payload, so a chronicle 
 years from now, off this site, still says whose scholarship each seal stood on.
 Also: the hīmiyā-under-interrogation grant (ECONOMY §6's last open note) — walking
 unbroken out of the third tribunal awards the rank, in the one room that can.
+
+## The researcher's desk and simulated witnesses (2026-09-02, thirteenth session)
+
+NEXTSTEPS items 4 and 5, built as the pair they were designed to be.
+
+- **`witness/api/desk.mjs` + `desk.html`** — admin-only (DESK_KEY env var; the key
+  lives only in the gitignored `witness/.admin-key` and was piped into `vercel env`
+  without touching a chat or a commit). Editorial state is derived from the immutable
+  `edits/` blobs on every request, never from counters — the P6 lesson applied where
+  it was about to be needed. The headline view is the scholar-priority queue: every
+  revision and marginale across all witnesses, grouped by the encounter it corrects,
+  scholar hand first. One screen answers "what has the scholar objected to, and where?"
+- **`tools/publish-simulated.mjs`** — plays complete runs through the real loop
+  (mirroring main.js including injections and the node-open-while-summons-pending
+  rule), captures the full scholarly log via the same `logEntry` the game uses, and
+  publishes with `origin: 'simulated'`. `--dry` writes payloads to files. Three
+  random-play witnesses published; the desk lists nine total.
+- **One deploy cycle lost to a newline**: PowerShell's pipeline appends `\n` when
+  piping into a native command, so DESK_KEY arrived with a trailing newline and the
+  right key was refused. Fixed with a documented `.trim()` on both sides of the
+  comparison — a newline must never be the difference between authorized and not.
+- **The desk exposed its own first chore**: the three `TEST —` editor-verification
+  records now sit in plain view. Delete/archive controls are the recorded next nicety.

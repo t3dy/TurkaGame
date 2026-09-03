@@ -118,6 +118,11 @@ corrects, newest first.
 **Done when.** You can answer "what has Matt objected to, and in which encounters?" in
 one screen.
 
+**Done 2026-09-02.** `api/desk.mjs` + `desk.html`, behind `DESK_KEY` (key in the local
+gitignored `witness/.admin-key`). The priority queue groups every revision and marginale
+by the encounter it touches, scholar hand first. Verified live against production with
+real and simulated witnesses; a wrong key gets a 403.
+
 ---
 
 ## 5. Simulated witnesses at scale
@@ -126,6 +131,11 @@ one screen.
 that plays N runs and publishes them turns the desk into a balance instrument: which
 endings are unreachable, which encounters never fire, which options nobody can afford.
 Pairs naturally with `tools/batch/` in the repo root.
+
+**Done 2026-09-02.** `tools/publish-simulated.mjs [n] [random|greedy|cautious] [--dry]`
+plays complete runs through the real loop (full scholarly log, citations and all) and
+publishes them as `origin: "simulated"`. Three random-play witnesses are live and listed
+on the desk. Publish sparingly — every witness is permanent.
 
 ---
 
