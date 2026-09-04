@@ -5,6 +5,12 @@ description: Each of the five frozen games measured against the nine questions t
 
 # Auditing v1 against the v2 vision
 
+> **Two audits, two questions.** This one asks whether each v1 game *taught the
+> metaphysics*. Its companion,
+> [`AUDIT_V1_PORTABILITY.md`](AUDIT_V1_PORTABILITY.md), asks whether the v2 engine
+> can **run** each v1 design — which turns out to be a much more useful question,
+> because most of what looks unbuilt is nearly free.
+
 The brief asks that the existing games not be treated as sacred, and gives nine questions
 to put to each. Here they are put. The verdicts are about **design**, not quality — several
 of these are the best things in the project and still fail the specific test of whether

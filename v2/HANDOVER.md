@@ -134,7 +134,13 @@ primitive to fill one is the thing this project does not do.
 
 1. This file.
 2. [`README.md`](README.md) — the architecture and why each commitment is there.
-3. [`AUDIT_V1.md`](AUDIT_V1.md) — the five frozen games measured against v2's aims.
-4. The app READMEs, each of which ends with its own honest known-gaps list.
-5. `../docs/DECISIONS.md` — chronological, with the rejected options and the faults
+3. [`AUDIT_V1.md`](AUDIT_V1.md) — the five frozen games measured against v2's aims
+   (*does it teach the metaphysics?*).
+4. [`AUDIT_V1_PORTABILITY.md`](AUDIT_V1_PORTABILITY.md) — every v1 design measured
+   against what the engine can actually **run**, with the four things that cannot be
+   ported, the three that come across better, and a ranked list of engine additions.
+   Read this before proposing new work: most of what looks unbuilt is already
+   cheap.
+5. The app READMEs, each of which ends with its own honest known-gaps list.
+6. `../docs/DECISIONS.md` — chronological, with the rejected options and the faults
    found by testing. The most useful file in the repo for not repeating a mistake.
