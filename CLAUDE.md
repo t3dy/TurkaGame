@@ -179,6 +179,20 @@ House rules it adds:
 
 Audit of the five v1 games against this vision: [`v2/AUDIT_V1.md`](v2/AUDIT_V1.md).
 
+**Games on the engine.** The Scriptorium is a workbench; a game needs a verb that is
+not writing. [`v2/apps/pushing-floor/`](v2/apps/pushing-floor/README.md) is the first:
+you walk and shove stones, and write a letter when shoving cannot do it (BIND makes two
+stones one body, so a stone you can never get behind moves when you push the one you
+can). **Levels are checked three ways** — solvable, *not* solvable without the letters,
+and, where a level claims a choice matters, that a wrong choice exists. The second check
+is the one that matters: v1's Impossible Architect was solvable *and* solvable for the
+wrong reason.
+
+**The engine is alphabet-agnostic, and that was tested.** `../GoldenDawnBlocks/` vendors
+the four engine modules byte-identical and runs them on the 22 Hebrew letters with the
+Sefer Yetsirah's 3/7/12 division. The vendoring found three real couplings to Arabic, all
+fixed upstream. A claim of reusability is worth what its second consumer says it is.
+
 ## Deploy
 
 **Live: https://t3dy.github.io/TurkaGame/** — GitHub Pages off `main` at the repo root;

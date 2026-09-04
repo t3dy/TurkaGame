@@ -1,0 +1,414 @@
+{
+  "_note": "Levels for The Pushing Floor. Every one must pass verify_levels.mjs, which asks TWO questions: is it solvable, and is it solvable WITHOUT the letters. A level that passes the first and fails the second is a level where the letters are decoration. Coordinates are [x, y, z]; y is 0 throughout — this is a floor.",
+  "how_it_works": {
+    "walk": "The scribe steps north/south/east/west and shoves what is in front. A bonded body moves as a whole or not at all.",
+    "inscribe": "A letter from the hand is written into any empty cell the scribe can reach, and stays there. It is spent.",
+    "bind": "A closed letter joins the two cells across the writing line — for the default westward line, the cells one step north and one step south of it. Those two become one body.",
+    "axis": "A letter that holds a frame will not be shoved, and nothing bonded to it will be either."
+  },
+  "levels": [
+    {
+      "id": "the-yoke",
+      "name": "The Yoke",
+      "arabic": "النير",
+      "brief": "Both stones must reach the far marks. One of them cannot be pushed at all.",
+      "teaches": "A closed letter binds what lies across the line, and a bound pair moves as one body. So a stone you can never get behind can still be moved — by pushing the one you can.",
+      "needs": "BIND",
+      "ruleset": "workshop",
+      "hand": [
+        "ه"
+      ],
+      "scribe": [
+        1,
+        0,
+        1
+      ],
+      "targets": [
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          3
+        ]
+      ],
+      "max_depth": 10,
+      "cells": [
+        {
+          "x": 0,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 1,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 2,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 3,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 4,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 5,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 6,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "z": 1,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 6,
+          "z": 1,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "z": 2,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 4,
+          "z": 2,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 6,
+          "z": 2,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "z": 3,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 2,
+          "z": 3,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 6,
+          "z": 3,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 1,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 2,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 3,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 4,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 5,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 6,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 3,
+          "z": 1,
+          "material": "stone",
+          "value": 3
+        },
+        {
+          "x": 3,
+          "z": 3,
+          "material": "stone",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "the-decoy",
+      "name": "The Decoy",
+      "arabic": "الشرك",
+      "brief": "Three stones, two marks, and only one letter. Bind the wrong pair and you have spent it.",
+      "teaches": "The letter is a resource, not a button. Binding is irreversible here — the workshop lets you undo a world, but it will not give you the letter back — so the question is which two stones are the pair that matters.",
+      "needs": "BIND",
+      "ruleset": "workshop",
+      "hand": [
+        "ه"
+      ],
+      "scribe": [
+        1,
+        0,
+        2
+      ],
+      "targets": [
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          3
+        ]
+      ],
+      "max_depth": 12,
+      "cells": [
+        {
+          "x": 0,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 1,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 2,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 3,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 4,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 5,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 6,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "z": 1,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 6,
+          "z": 1,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "z": 2,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 4,
+          "z": 2,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 6,
+          "z": 2,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "z": 3,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 2,
+          "z": 3,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 6,
+          "z": 3,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 1,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 2,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 3,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 4,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 5,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 6,
+          "z": 4,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 3,
+          "z": 1,
+          "material": "stone",
+          "value": 3
+        },
+        {
+          "x": 3,
+          "z": 3,
+          "material": "stone",
+          "value": 3
+        },
+        {
+          "x": 1,
+          "z": 1,
+          "material": "stone",
+          "value": 3
+        }
+      ],
+      "claims_choice": true
+    }
+  ]
+}

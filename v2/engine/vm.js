@@ -35,17 +35,39 @@
 
 import { World, KEY, UNKEY, MATERIALS } from './world.js?v=1';
 
-/** The abjad series. RAISE and LOWER move along THIS, not by ±n. */
+// ALPHABET-AGNOSTIC BY CONSTRUCTION
+// ---------------------------------
+// Three things used to tie this engine to Arabic: the field name `abjad`, a
+// hardcoded abjad series, and a power rule that asked whether a letter's class
+// was 'nurani'. All three are now supplied by the data, because the claim that
+// this engine can be vendored for another alphabet should be true rather than
+// nearly true. It is vendored into GoldenDawnBlocks with Hebrew letters and
+// gematria, which is the actual test of it.
+
+/** A letter's number, whatever the alphabet calls it. */
+export const num = l => (l && (l.value !== undefined ? l.value : l.abjad)) || 0;
+
+/** The Arabic abjad series — the DEFAULT ladder, not the only one. In both
+ *  alphabets the letters ARE the ladder, so compile() derives it from the letters
+ *  it was given and this is only the fallback. */
 export const LADDER = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 60, 70, 80,
                        90, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
 
-export function ladderStep(value, n) {
+/** Move `value` n places along a ladder of numbers. */
+export function ladderStep(value, n, ladder = LADDER) {
   if (n === 0) return value;
-  let i = LADDER.findIndex(v => v >= value);
-  if (i < 0) i = LADDER.length - 1;
-  const exact = LADDER[i] === value;
+  let i = ladder.findIndex(v => v >= value);
+  if (i < 0) i = ladder.length - 1;
+  const exact = ladder[i] === value;
   i = exact ? i + n : (n > 0 ? i + n - 1 : i + n);
-  return LADDER[Math.max(0, Math.min(LADDER.length - 1, i))];
+  return ladder[Math.max(0, Math.min(ladder.length - 1, i))];
+}
+
+/** The ladder an alphabet makes: its own numbers, ascending, deduplicated. */
+export function ladderOf(letters) {
+  const seen = new Set();
+  return letters.map(num).filter(v => v > 0 && !seen.has(v) && seen.add(v))
+                .sort((a, b) => a - b);
 }
 
 const gcd = (a, b) => (b ? gcd(b, a % b) : a);
@@ -77,6 +99,7 @@ export function compile(program, { letters, ruleset }) {
     seq.push({ ...step, repeat: 1, geminated: false });
   }
 
+  const ladder = ladderOf(letters);
   const power = computePower(seq, { letters, ruleset, byGlyph });
 
   const instructions = [];
@@ -109,7 +132,7 @@ export function compile(program, { letters, ruleset }) {
   if (power.value === 0) {
     diagnostics.push({ level: 'error', why: power.why });
   }
-  return { instructions, diagnostics, power };
+  return { instructions, diagnostics, power, ladder };
 }
 
 /** Does this letter break the word here? Granted by orthography, refusable by a
@@ -139,7 +162,7 @@ export function computePower(seq, { ruleset, byGlyph }) {
   if (p.rule === 'proportion') {
     // Adjacent abjad values in small-integer ratio are consonant. This is the
     // Pythagorean claim used literally: strength IS proportionality.
-    const vals = seq.map(s => byGlyph[s.glyph]?.abjad).filter(Boolean);
+    const vals = seq.map(s => num(byGlyph[s.glyph])).filter(Boolean);
     if (vals.length < 2) return { value: p.floor ?? 0.25, rule: p.rule, why: 'A single letter stands in no ratio to anything.' };
     let consonant = 0;
     const pairs = [];
@@ -156,8 +179,10 @@ export function computePower(seq, { ruleset, byGlyph }) {
   }
 
   if (p.rule === 'luminosity') {
+    // Which class counts as luminous is the ruleset's to say, not the engine's.
+    const cls = p.counts_class || 'nurani';
     const ls = seq.map(s => byGlyph[s.glyph]).filter(Boolean);
-    const light = ls.filter(l => l.class === 'nurani').length;
+    const light = ls.filter(l => l.class === cls).length;
     const frac = ls.length ? light / ls.length : 0;
     const value = (p.floor ?? 0.4) + (1 - (p.floor ?? 0.4)) * frac;
     const reach = Math.max(...seq.map(s => p.register_reach?.[s.register] ?? 0), 0);
@@ -183,6 +208,7 @@ export function run(world, compiled, { cursor = [0, 0, 0], dir = [-1, 0, 0], app
   const w = apply ? world : world.clone();
   const effects = [], warnings = [];
   const { instructions, power } = compiled;
+  const ladder = compiled.ladder || LADDER;
   if (power.value === 0) {
     warnings.push(power.why);
     return { effects, world: w, warnings, power };
@@ -205,13 +231,17 @@ export function run(world, compiled, { cursor = [0, 0, 0], dir = [-1, 0, 0], app
       ins.blocked = true;
       continue;
     }
-    const c = w.set(x, y, z, { material: 'letter', value: ins.letter.abjad, glyph: ins.glyph });
+    const c = w.set(x, y, z, { material: 'letter', value: num(ins.letter), glyph: ins.glyph });
     // Whether this letter joins what follows travels WITH the cell, so a letter
     // standing in the world answers the question the same way later.
     c.connects = !ins.ops.some(o => o.op === 'SEVER');
+    // A letter that holds a frame holds it against being SHOVED too, which is
+    // what makes AXIS a pin on a pushing floor. The flag travels with the cell so
+    // the agent never has to ask the ruleset again.
+    c.axis = ins.ops.some(o => o.op === 'AXIS');
     inscribed.add(KEY(x, y, z));
     effects.push({ kind: 'inscribe', op: null, glyph: ins.glyph, at: [x, y, z],
-                   detail: `${ins.glyph} ${ins.letter.name}, ${ins.letter.abjad}` });
+                   detail: `${ins.glyph} ${ins.letter.name}, ${num(ins.letter)}` });
   }
 
   // A WRITTEN WORD IS ONE BODY, AND THE SIX NON-CONNECTING LETTERS ARE WHERE IT
@@ -264,7 +294,7 @@ export function run(world, compiled, { cursor = [0, 0, 0], dir = [-1, 0, 0], app
     const [x, y, z] = cellOf(ins.index);
     for (let rep = 0; rep < ins.repeat; rep++) {
       for (const op of ins.ops) {
-        const e = fire(w, op, ins, [x, y, z], dir, perp, power, anchored, instructions, cellOf);
+        const e = fire(w, op, ins, [x, y, z], dir, perp, power, anchored, instructions, cellOf, ladder);
         if (e) effects.push({ ...e, glyph: ins.glyph, op: op.op, from: op.from,
                               repeated: ins.repeat > 1 ? rep + 1 : undefined });
       }
@@ -289,7 +319,7 @@ export function run(world, compiled, { cursor = [0, 0, 0], dir = [-1, 0, 0], app
   return { effects, world: w, warnings, power };
 }
 
-function fire(w, op, ins, [x, y, z], dir, perp, power, anchored, instructions, cellOf) {
+function fire(w, op, ins, [x, y, z], dir, perp, power, anchored, instructions, cellOf, ladder = LADDER) {
   const n = Math.max(1, Math.round((op.n || 1) * power.value));
   // BIND works ACROSS the writing line; the line itself holds the other letters.
   const side = [x + perp[0], y + perp[1], z + perp[2]];
@@ -306,7 +336,7 @@ function fire(w, op, ins, [x, y, z], dir, perp, power, anchored, instructions, c
     const c = w.get(tx, ty, tz);
     if (!c || c.glyph) return null;
     const was = c.value;
-    c.value = ladderStep(was, op.op === 'RAISE' ? n : -n);
+    c.value = ladderStep(was, op.op === 'RAISE' ? n : -n, ladder);
     return { kind: op.op.toLowerCase(), at: [tx, ty, tz], from_value: was, to_value: c.value,
              detail: `${was} → ${c.value}` };
   }
@@ -339,8 +369,8 @@ function fire(w, op, ins, [x, y, z], dir, perp, power, anchored, instructions, c
     const c = w.get(...prevCell);
     if (!c || c.protected) return null;
     const was = c.value;
-    if (was === ins.letter.abjad) return null;
-    c.value = ins.letter.abjad;
+    if (was === num(ins.letter)) return null;
+    c.value = num(ins.letter);
     c.assimilated = ins.glyph;
     return { kind: 'assimilate', at: prevCell, from_value: was, to_value: c.value,
              detail: `${prev.glyph} takes the value of ${ins.glyph}: ${was} → ${c.value}` };
@@ -388,7 +418,7 @@ export function describeLetter(glyph, { letters, ruleset, registers }) {
     else granted.push(p);
   }
   return {
-    glyph, name: l.name, translit: l.translit, abjad: l.abjad,
+    glyph, name: l.name, translit: l.translit, abjad: num(l), value: num(l),
     form: l.form, grammar: l.grammar, class: l.class,
     registers: (registers ? Object.keys(registers) : []).map(r => ({ id: r, allowed: ruleset.registers.includes(r) })),
     granted, refused,

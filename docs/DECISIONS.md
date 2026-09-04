@@ -1097,3 +1097,59 @@ while never exercising the path the task exists to protect.
 prediction recorded BEFORE execution, which preview-is-execution makes interesting only
 across rulesets ("this holds under Sufi and falls under intellectual" is a real bet; "I
 predict what the preview just showed me" is not).
+
+## 2026-09-04 (later still) -- games on the engine, and proving the engine portable
+
+**Decision.** Two things, on Ted's steer that the project needed puzzle MODES rather than
+another workbench.
+
+**1. The first game: The Pushing Floor** (`v2/apps/pushing-floor/`). A block-pusher where
+the moment-to-moment verb is walking and shoving, and the letters are the tools you reach
+for when a stone cannot be pushed at all. `v2/engine/agent.js` adds a scribe who walks and
+shoves; a bonded body moves as a whole or not at all, and a body containing an AXIS letter
+will not be shoved.
+
+**Rationale.** The Scriptorium has exactly one verb, which makes a fine workbench and a
+poor puzzle. Giving the game an ordinary, free, constant verb (walking) is what makes the
+letters scarce and special: each is spent when written and stays on the floor as a block,
+which is the written register behaving as it does everywhere else. Nothing was added to the
+engine to make pushing work -- BIND, SEVER, AXIS and POUR already meant these things.
+
+**Levels are checked THREE ways, and the second is the point.** Solvable at all; **not**
+solvable without the letters; and, where a level claims a choice matters, that a wrong
+choice actually exists. v1's Impossible Architect was solvable *and* solvable for the wrong
+reason -- winnable without opening a door -- and a check asking only "can it be won" passed
+it. The third check measured the wrong thing at first: it enumerated only the cells the
+scribe could reach on turn one and reported "2 of 2 placements are dead ends" for a level
+whose winning placement was two steps away. True, and useless. It now enumerates the floor.
+
+**A finding recorded rather than papered over.** AXIS does not fit a step-wise pusher --
+you never overshoot, so an unpassable stop is rarely needed -- and POUR wants a stacker,
+since this floor is one level of y. Both are left unused and said so, rather than given a
+contrived level each.
+
+**2. The engine is alphabet-agnostic, and that is now tested rather than asserted.**
+`C:/Dev/GoldenDawnBlocks/` vendors the four engine modules byte-identical and drives them
+with the 22 Hebrew letters. The vendoring found **three real couplings to Arabic** -- the
+field name `abjad`, a hardcoded abjad ladder for RAISE/LOWER, and a power rule asking
+whether a letter's class was `nurani` -- all fixed upstream here rather than worked around
+there, because "vendorable" should be true rather than nearly true.
+
+**The Hebrew ground is better than a correspondence table.** The Sefer Yetsirah divides the
+alphabet 3 mothers / 7 doubles / 12 simples, which is the text's own structure and is
+checkable arithmetic (3+7+12=22). Four primitives fall out, and the best of them is one we
+would not have invented: the SY diagram tradition says a simple letter can do "neither cure
+nor harm on its own" but acts when letters gather together -- so **twelve of the
+twenty-two letters are inert in isolation**, the opposite of the Arabic build where every
+letter always did at least its sun/moon operation. Paraphrased from Segol's translation
+(Palgrave, 2012, ff. 17b-18a); the book is not redistributed, only the synthesis with its
+citation.
+
+Which planet belongs to which double and which sign to which simple is deliberately ABSENT
+from the letter table -- that is exactly what the traditions disagree about, so it belongs
+in rulesets. The disagreement is already in Ted's own data: `crowleydb`'s thelemic_tree.json
+carries an `is_swapped` flag on exactly two paths for Crowley's "Tzaddi is not the Star".
+
+**Consequence.** GoldenDawnBlocks is parked with no app and no glyph artwork -- the
+elemental/planetary/zodiacal graphics remain the largest unstarted piece. Next for the
+modes: a stacker, which is where POUR and gravity-as-a-rule finally have a game.

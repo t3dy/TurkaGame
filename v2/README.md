@@ -190,9 +190,12 @@ v2/
 ├── engine/vm.js              compile → effects → preview | execute; describeLetter()
 ├── engine/reader.js          the other direction: read the world back as text
 ├── engine/ledger.js          what the player has actually witnessed
+├── engine/agent.js           a scribe who walks and shoves; the mode-level solver
 ├── apps/scriptorium/         the IDE: palette → program → preview → inscribe
 │   ├── src/iso.js            the consequence renderer (reusable by any v2 app)
 │   └── tasks.json            four tasks, each self-tested through the real UI path
+├── apps/pushing-floor/       the first GAME: shove stones, write letters when
+│                               shoving is not enough. Levels checked three ways.
 └── tests/engine.test.mjs     34 tests
 ```
 
@@ -220,6 +223,34 @@ manipulating rules rather than blocks. Turning gravity on is a deliberate act in
 fiction, and it is how *The Chain of Being* is judged: the task asks what **would** stand
 if you turned it on, so the player can see the consequence before accepting it.
 
+## Games on the engine
+
+The Scriptorium is a workbench: one verb, no opposition, no failure. A game needs
+a moment-to-moment verb that is **not** writing, so that writing stays scarce and
+special. [`apps/pushing-floor/`](apps/pushing-floor/README.md) is the first:
+
+- You **walk and shove**, like any block-pusher. Ordinary, constant, free.
+- You **write** rarely — each letter is spent when written, and it stays on the
+  floor as a block, exactly as the written register behaves everywhere else.
+- The letters change what a *stone* is: **BIND** makes two stones one body, so a
+  stone you can never get behind moves when you push the one you can.
+
+Nothing was added to the engine to make this work. `agent.js` reads the bonds the
+VM already sets and the `axis` flag it already writes; the primitives already meant
+these things.
+
+**Levels are checked three ways** (`verify_levels.mjs`): solvable at all; **not**
+solvable without the letters; and, where a level claims a choice matters, that a
+wrong choice actually exists. The second is the one that earns its keep — v1's
+Impossible Architect was solvable *and* solvable for the wrong reason, and a check
+asking only "can it be won" passed it.
+
+**A finding recorded rather than papered over:** AXIS does not fit a step-wise
+pusher (you never overshoot, so an unpassable stop is rarely needed) and POUR wants
+a stacker (this floor is one level of `y`). Two of four floor-relevant primitives
+carry the mode; the other two are left unused and said so, rather than given a
+contrived level each.
+
 ## Known gaps — this is a first slice
 
 - **No person has played it.** Every claim above is from `engine.test.mjs`, from
@@ -237,8 +268,13 @@ if you turned it on, so the player can see the consequence before accepting it.
 - **Only 8 primitives.** The brief lists many more (attract, repel, heat, cool, modify
   time, modify probability). Each new one needs an observable fact to derive it from, and
   that is the constraint, not imagination.
-- **The Golden Dawn ruleset is not here** — by decision it ships from its own project, so
-  the engine has to prove it is vendorable. It has not yet been vendored anywhere.
+- **The engine is now genuinely alphabet-agnostic, and that was tested rather than
+  asserted.** `../../GoldenDawnBlocks/` vendors these four modules byte-identical and
+  drives them with the 22 Hebrew letters and the Sefer Yetsirah's 3/7/12 division. The
+  vendoring found three real couplings to Arabic — the field name `abjad`, a hardcoded
+  abjad ladder, and a power rule asking for `class === 'nurani'` — all fixed here rather
+  than worked around there. That project is a parked first slice: engine vendored, letter
+  table built and verified, no app and no glyph artwork yet.
 - **`?v=` cache-busting must match across modules.** `vm.js` importing `./world.js` while
   the app imported `./world.js?v=1` loaded the module twice. Harmless here, fatal the
   moment anything uses `instanceof`.

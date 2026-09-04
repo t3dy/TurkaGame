@@ -33,6 +33,8 @@ import { KEY } from './world.js?v=1';
  *               wrong direction gives the letters in the wrong order, which is a
  *               true fact about it rather than an error.
  * @returns { words: [{ glyphs, text, cells, abjad, contiguous }] }
+ *          `abjad` is the sum of the cells' numbers, whatever the alphabet
+ *          calls its numbering — gematria in the Hebrew build.
  */
 export function readWorld(world, { dir = [-1, 0, 0] } = {}) {
   const letterCells = world.list().filter(c => c.glyph);
