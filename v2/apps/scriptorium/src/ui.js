@@ -6,11 +6,11 @@
 // in ../../data/letters.json, and the doctrine in ../../rulesets/rulesets.json.
 // This file is not allowed to know what ب does — it asks.
 
-import { World } from '../../../engine/world.js?v=5';
-import { compile, preview, execute, describeLetter, severs } from '../../../engine/vm.js?v=5';
-import { readWorld, worldReads } from '../../../engine/reader.js?v=5';
-import { Ledger } from '../../../engine/ledger.js?v=5';
-import { Iso, PALETTE } from './iso.js?v=5';
+import { World } from '../../../engine/world.js?v=6';
+import { compile, preview, execute, describeLetter, severs } from '../../../engine/vm.js?v=6';
+import { readWorld, worldReads } from '../../../engine/reader.js?v=6';
+import { Ledger } from '../../../engine/ledger.js?v=6';
+import { Iso, PALETTE } from './iso.js?v=6';
 
 const V = 'v=1';
 const $ = id => document.getElementById(id);
@@ -367,6 +367,8 @@ function paintRegisters() {
   for (const b of $('tasks').querySelectorAll('.btn')) b.onclick = () => loadTask(b.dataset.id);
 
   iso = new Iso($('cv'));
+  iso.onStyle = () => { if (world) refresh(); };
+  iso.bindStyleToggle($('style'));
   const resize = () => { iso.resize(); if (world) refresh(); };
   addEventListener('resize', resize);
 

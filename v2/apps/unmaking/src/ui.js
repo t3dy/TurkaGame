@@ -12,10 +12,10 @@
 // same target and tabulates what each did, so they can be compared on one screen
 // instead of remembered across sessions.
 
-import { World } from '../../../engine/world.js?v=5';
-import { compile, execute } from '../../../engine/vm.js?v=5';
-import { isolate, utter, throwStone, standing, highest, ROUTES } from '../../../engine/unmaking.js?v=5';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=5';
+import { World } from '../../../engine/world.js?v=6';
+import { compile, execute } from '../../../engine/vm.js?v=6';
+import { isolate, utter, throwStone, standing, highest, ROUTES } from '../../../engine/unmaking.js?v=6';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=6';
 
 const V = 'v=4';
 const $ = id => document.getElementById(id);
@@ -204,6 +204,8 @@ function compare() {
   }
 
   iso = new Iso($('cv'));
+  iso.onStyle = () => { if (world) draw(); };
+  iso.bindStyleToggle($('style'));
   addEventListener('resize', () => { iso.resize(); if (world) draw(); });
   $('cv').addEventListener('click', ev => {
     if (done) return say('Already done — rebuild to try another route.', 'bad');
@@ -217,11 +219,16 @@ function compare() {
     if (best && bestD < 40) { target = best; say(`aiming at ${world.get(...best).glyph}`); draw(); }
   });
 
-  $('do').onclick = () => {
+  $('do').onclick = async () => {
     if (done) return say('Rebuild first.', 'bad');
     const before = standing(world, line());
+    const snap = world.clone();
     const res = runRoute(route, world, { apply: true });
     done = true;
+    await iso.animateSettle(snap, res.moved || [], {
+      stepMs: 160,
+      draw: (w, fx) => { iso.frame(w, [[0, line(), 0]]); iso.draw(w, fx, {}); },
+    });
     const after = standing(world, line());
     say(`${ROUTES[route].name}: ${res.why} — ${before - after} came down`, before > after ? 'good' : 'bad');
     draw();

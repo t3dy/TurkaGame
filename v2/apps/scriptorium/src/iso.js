@@ -1,4 +1,4 @@
-// iso.js — the consequence renderer.
+// iso.js — the consequence renderer, in two hands.
 //
 // Draws a World on an isometric canvas, and draws an EFFECT LIST over it. It is
 // deliberately separate from the app: the effect list is the engine's own output
@@ -6,27 +6,80 @@
 // handing this the same array, and no app can invent a consequence the engine did
 // not produce.
 //
+// TWO STYLES, SWITCHABLE, BOTH SHIPPED
+// ------------------------------------
+// The first build of this renderer drew flat-shaded boxes on a dark ground with a
+// system font, and the four elements were Unicode triangles with a note apologising
+// for them. That is legible and it is not what this project is for. Ted's brief asks
+// for graphics grounded in medieval and Renaissance depiction — woodcut, manuscript,
+// the engraved page — and the letters ARE the game, so they should be the most
+// considered thing on screen. Rather than pick, both hands are here and a toggle in
+// every app switches them, so the choice can be made by looking:
+//
+//   LAPIS   the original: dark ground, lapis and gold, flat shade. Reads like a
+//           night table. Kept unchanged so nothing is lost.
+//   INK     paper ground, ink outline, HATCHED shading on the walls of each block
+//           the way an engraver turns a form, a naskh-weight letter in ink, and the
+//           four elements drawn as the alchemical triangles they actually are —
+//           bar and all — rather than substituted with solid-against-hollow.
+//
+// The preference persists in localStorage under `turka.v2.style`. Every mark in the
+// preview language (outline · arrow · tie · break) is defined in both palettes, so
+// switching never changes what a mark MEANS, only how it is drawn.
+//
 // THE VISUAL LANGUAGE FOR PREDICTED CONSEQUENCE
 // ---------------------------------------------
-// The brief asks for a language rather than a pile of highlights, and warns
-// against overwhelming the screen. Four marks, and nothing else:
+// Four marks, and nothing else:
 //
-//   OUTLINE   gold      a cell the program will occupy or change
-//   ARROW     gold      something moves: from → to (pour, fall)
-//   TIE       lapis     two cells become one body (join, bind)
-//   BREAK     vermilion a bond refused or cut, drawn as a gap with a slash
+//   OUTLINE   a cell the program will occupy or change
+//   ARROW     something moves: from → to (pour, fall)
+//   TIE       two cells become one body (join, bind)
+//   BREAK     a bond refused or cut, drawn as a gap with a slash
 //
-// Everything a preview needs to say is one of: it appears here, it moves there,
-// these become one, this comes apart. A fifth mark would mean the model grew a
-// concept, and that is the moment to reconsider the model rather than the legend.
+// A fifth mark would mean the model grew a concept, and that is the moment to
+// reconsider the model rather than the legend.
 
+export const STYLES = {
+  lapis: {
+    id: 'lapis', name: 'Lapis', blurb: 'the night table — dark ground, lapis and gold',
+    bg: '#171620', grid: 'rgba(241,218,193,.10)', ink: 'rgba(0,0,0,.35)',
+    outline: '#e8c86a', move: '#e8c86a', tie: '#4d7fd6', brk: '#c06523', cursor: '#2e8f8f',
+    label: '#e8c86a',
+    material: {
+      stone: '#8d8577', earth: '#6d5b43', water: '#3f6fa8',
+      fire: '#c0522a', air: '#b8a24a', letter: '#d8c49a',
+    },
+    letterInk: '#241c10', letterFont: '"Segoe UI","Noto Naskh Arabic",serif',
+    hatch: false, vignette: false,
+  },
+  ink: {
+    id: 'ink', name: 'Ink', blurb: 'the engraved page — paper, ink line, hatched shade',
+    bg: '#efe4cf', grid: 'rgba(43,33,22,.10)', ink: '#2b2116',
+    outline: '#8c2f1b', move: '#8c2f1b', tie: '#1f3d6b', brk: '#8c2f1b', cursor: '#2e6b5f',
+    label: '#2b2116',
+    material: {
+      stone: '#d9cdb4', earth: '#b8a17c', water: '#b9c8d2',
+      fire: '#e0b08f', air: '#e6dcbf', letter: '#f4ecd8',
+    },
+    letterInk: '#1a130c', letterFont: '"Amiri","Scheherazade New","Noto Naskh Arabic","Times New Roman",serif',
+    hatch: true, vignette: true,
+  },
+};
+
+const STYLE_KEY = 'turka.v2.style';
+export function currentStyle() {
+  try { const s = localStorage.getItem(STYLE_KEY); if (s && STYLES[s]) return s; } catch { /* fine */ }
+  return 'lapis';
+}
+export function setStyle(id) {
+  try { localStorage.setItem(STYLE_KEY, id); } catch { /* fine */ }
+}
+
+/** Kept for callers that import it; it is the LAPIS palette, unchanged. */
 export const PALETTE = {
   gold: '#e8c86a', lapis: '#4d7fd6', verm: '#c06523', turq: '#2e8f8f',
   paper: '#f1dac1', dim: '#8b8378', bg: '#171620',
-  material: {
-    stone:  '#8d8577', earth: '#6d5b43', water: '#3f6fa8',
-    fire:   '#c0522a', air:   '#b8a24a', letter: '#d8c49a',
-  },
+  material: STYLES.lapis.material,
 };
 
 const TW = 34, TH = 18, TZ = 26;   // tile width, tile depth, cube height
@@ -37,6 +90,34 @@ export class Iso {
     this.ctx = canvas.getContext('2d');
     this.origin = { x: 0, y: 0 };
     this.scale = 1;
+    this.styleId = currentStyle();
+    this.onStyle = null;
+  }
+
+  get S() { return STYLES[this.styleId]; }
+
+  /** Switch hands. Persists, and calls `onStyle` so the app can redraw and relabel. */
+  setStyle(id) {
+    if (!STYLES[id]) return;
+    this.styleId = id;
+    setStyle(id);
+    if (this.onStyle) this.onStyle(id);
+  }
+  toggleStyle() { this.setStyle(this.styleId === 'ink' ? 'lapis' : 'ink'); }
+
+  /** Wire a button: it shows the OTHER hand's name, and switches on click. */
+  bindStyleToggle(button) {
+    if (!button) return;
+    const paint = () => {
+      const other = STYLES[this.styleId === 'ink' ? 'lapis' : 'ink'];
+      button.textContent = `Draw in ${other.name}`;
+      button.title = other.blurb;
+      document.documentElement.dataset.hand = this.styleId;
+    };
+    button.onclick = () => { this.toggleStyle(); paint(); };
+    const prev = this.onStyle;
+    this.onStyle = id => { paint(); if (prev) prev(id); };
+    paint();
   }
 
   resize() {
@@ -77,7 +158,10 @@ export class Iso {
     }
     const sx = (this.w - 40) / Math.max(1, maxX - minX);
     const sy = (this.h - 40) / Math.max(1, maxY - minY);
-    this.scale = Math.max(0.45, Math.min(1.35, Math.min(sx, sy)));
+    // The floor was 0.45 and the ceiling 1.35; small boards sat as a thumbnail in
+    // the middle of a wide stage. A higher ceiling lets a six-cell puzzle fill the
+    // frame, which is the only way its letters can be read as letters.
+    this.scale = Math.max(0.45, Math.min(2.4, Math.min(sx, sy)));
     this.origin = {
       x: this.w / 2 - ((minX + maxX) / 2) * this.scale,
       y: this.h / 2 - ((minY + maxY) / 2) * this.scale,
@@ -85,15 +169,25 @@ export class Iso {
   }
 
   clear() {
-    const g = this.ctx;
-    g.fillStyle = PALETTE.bg;
+    const g = this.ctx, S = this.S;
+    g.fillStyle = S.bg;
     g.fillRect(0, 0, this.w, this.h);
+    if (S.vignette) {
+      // Paper is never one flat tone; a faint darkening toward the edges reads as
+      // a page rather than a colour.
+      const v = g.createRadialGradient(this.w / 2, this.h / 2, Math.min(this.w, this.h) * 0.25,
+                                       this.w / 2, this.h / 2, Math.max(this.w, this.h) * 0.75);
+      v.addColorStop(0, 'rgba(0,0,0,0)');
+      v.addColorStop(1, 'rgba(60,40,20,.16)');
+      g.fillStyle = v;
+      g.fillRect(0, 0, this.w, this.h);
+    }
   }
 
   /** A faint ground lattice, so an empty world is still a place. */
   grid(radius = 5) {
     const g = this.ctx;
-    g.strokeStyle = 'rgba(241,218,193,.10)';
+    g.strokeStyle = this.S.grid;
     g.lineWidth = 1;
     for (let i = -radius; i <= radius; i++) {
       const a = this.project(i, 0, -radius), b = this.project(i, 0, radius);
@@ -103,36 +197,73 @@ export class Iso {
     }
   }
 
-  cube(x, y, z, { fill, glyph = null, value = null, alpha = 1, outline = null, dashed = false }) {
-    const g = this.ctx;
+  /* --------------------------------------------------------------- cubes -- */
+
+  _face(pts, fill, hatchAngle = null, density = 1) {
+    const g = this.ctx, S = this.S;
+    g.beginPath();
+    g.moveTo(pts[0][0], pts[0][1]);
+    for (let i = 1; i < pts.length; i++) g.lineTo(pts[i][0], pts[i][1]);
+    g.closePath();
+    g.fillStyle = fill;
+    g.fill();
+    if (S.hatch && hatchAngle !== null) {
+      // Engraver's shading: parallel strokes clipped to the face. Denser on the
+      // wall that faces away from the light, sparser on the one that faces it.
+      g.save();
+      g.clip();
+      g.strokeStyle = 'rgba(43,33,22,.55)';
+      g.lineWidth = 0.8;
+      const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+      const cx = (Math.min(...xs) + Math.max(...xs)) / 2, cy = (Math.min(...ys) + Math.max(...ys)) / 2;
+      const span = Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys)) * 1.6;
+      const step = Math.max(2.2, 3.4 / density) * this.scale;
+      const ca = Math.cos(hatchAngle), sa = Math.sin(hatchAngle);
+      for (let d = -span; d <= span; d += step) {
+        // a line at distance d from centre, perpendicular to (ca, sa)
+        const ox = cx + (-sa) * d, oy = cy + ca * d;
+        g.beginPath();
+        g.moveTo(ox - ca * span, oy - sa * span);
+        g.lineTo(ox + ca * span, oy + sa * span);
+        g.stroke();
+      }
+      g.restore();
+    }
+    g.strokeStyle = S.ink;
+    g.lineWidth = S.hatch ? 1.1 : 1;
+    g.stroke();
+  }
+
+  cube(x, y, z, { fill, glyph = null, value = null, element = null, alpha = 1, outline = null, dashed = false }) {
+    const g = this.ctx, S = this.S;
     const s = this.scale, hw = (TW / 2) * s, hh = (TH / 2) * s, zh = TZ * s;
     const p = this.project(x, y, z);
     const top = [[p.x, p.y - hh], [p.x + hw, p.y], [p.x, p.y + hh], [p.x - hw, p.y]];
     g.globalAlpha = alpha;
 
-    const face = (pts, shade) => {
-      g.beginPath();
-      g.moveTo(pts[0][0], pts[0][1]);
-      for (let i = 1; i < pts.length; i++) g.lineTo(pts[i][0], pts[i][1]);
-      g.closePath();
-      g.fillStyle = shade;
-      g.fill();
-      g.strokeStyle = 'rgba(0,0,0,.35)';
-      g.lineWidth = 1;
-      g.stroke();
-    };
-    // left and right walls, then the top — painter's order within one cube
-    face([[p.x - hw, p.y], [p.x, p.y + hh], [p.x, p.y + hh + zh], [p.x - hw, p.y + zh]], shade(fill, -0.28));
-    face([[p.x + hw, p.y], [p.x, p.y + hh], [p.x, p.y + hh + zh], [p.x + hw, p.y + zh]], shade(fill, -0.14));
-    face(top, fill);
+    // left wall (away from the light: dense hatch), right wall (toward: sparse), top
+    this._face([[p.x - hw, p.y], [p.x, p.y + hh], [p.x, p.y + hh + zh], [p.x - hw, p.y + zh]],
+               S.hatch ? fill : shade(fill, -0.28), S.hatch ? Math.PI / 3.2 : null, 1.4);
+    this._face([[p.x + hw, p.y], [p.x, p.y + hh], [p.x, p.y + hh + zh], [p.x + hw, p.y + zh]],
+               S.hatch ? fill : shade(fill, -0.14), S.hatch ? -Math.PI / 3.2 : null, 0.7);
+    this._face(top, S.hatch ? lighten(fill, 0.08) : fill, null);
 
     if (glyph) {
-      g.fillStyle = '#241c10';
-      g.font = `${Math.round(20 * s)}px "Segoe UI","Noto Naskh Arabic",serif`;
+      // The letter is the game; it gets the whole top face and a real serif.
+      g.fillStyle = S.letterInk;
+      g.font = `${Math.round((S.hatch ? 22 : 20) * s)}px ${S.letterFont}`;
       g.textAlign = 'center'; g.textBaseline = 'middle';
       g.fillText(glyph, p.x, p.y + 1);
+    } else if (element) {
+      this._elementGlyph(element, p.x, p.y, 9 * s);
+      if (value !== null) {
+        g.fillStyle = S.hatch ? S.ink : 'rgba(0,0,0,.6)';
+        g.font = `${Math.round(8.5 * s)}px Consolas,monospace`;
+        g.textAlign = 'center'; g.textBaseline = 'middle';
+        g.fillText(String(value), p.x, p.y + hh * 0.58);
+      }
     } else if (value !== null) {
-      g.fillStyle = 'rgba(0,0,0,.6)';
+      g.fillStyle = S.hatch ? S.ink : 'rgba(0,0,0,.6)';
       g.font = `${Math.round(10 * s)}px Consolas,monospace`;
       g.textAlign = 'center'; g.textBaseline = 'middle';
       g.fillText(String(value), p.x, p.y + 1);
@@ -151,6 +282,41 @@ export class Iso {
     }
     g.globalAlpha = 1;
   }
+
+  /**
+   * The four elements drawn as what they are: the alchemical triangles. Fire and
+   * air point up, water and earth down, and the second of each pair carries the
+   * bar across it. Drawn as paths, so they need no font and never render as a box
+   * — which is what the Unicode substitutes did, and why the first build replaced
+   * the bar with solid-against-hollow and left a note apologising.
+   */
+  _elementGlyph(element, cx, cy, r) {
+    const g = this.ctx, S = this.S;
+    const up = element === 'fire' || element === 'air';
+    const barred = element === 'air' || element === 'earth';
+    const yTop = up ? cy - r : cy + r, yBase = up ? cy + r * 0.75 : cy - r * 0.75;
+    g.save();
+    g.strokeStyle = S.hatch ? S.ink : 'rgba(0,0,0,.72)';
+    g.fillStyle = S.hatch ? 'rgba(43,33,22,.06)' : 'rgba(255,255,255,.18)';
+    g.lineWidth = Math.max(1, 1.3 * (r / 9));
+    g.lineJoin = 'round';
+    g.beginPath();
+    g.moveTo(cx, yTop);
+    g.lineTo(cx + r * 0.95, yBase);
+    g.lineTo(cx - r * 0.95, yBase);
+    g.closePath();
+    g.fill(); g.stroke();
+    if (barred) {
+      const by = up ? cy + r * 0.15 : cy - r * 0.15;
+      const half = r * 0.95 * (up ? (by - yTop) / (yBase - yTop) : (yTop - by) / (yTop - yBase)) + r * 0.18;
+      g.beginPath();
+      g.moveTo(cx - half, by); g.lineTo(cx + half, by);
+      g.stroke();
+    }
+    g.restore();
+  }
+
+  /* --------------------------------------------------------------- marks -- */
 
   /** OUTLINE: a cell the program will occupy or change, drawn as a hovering frame. */
   markCell(x, y, z, colour, label = null) {
@@ -210,6 +376,7 @@ export class Iso {
    * `effects` is vm.run(...).effects — the engine's own list.
    */
   draw(world, effects = null, { cursor = null, ghostWorld = null } = {}) {
+    const S = this.S;
     this.clear();
     this.grid();
 
@@ -226,34 +393,55 @@ export class Iso {
     }
     const cells = [...shown.values()].sort((a, b) => (a.x + a.z + a.y) - (b.x + b.z + b.y));
     for (const c of cells) {
+      const isElement = !c.glyph && ['fire', 'air', 'water', 'earth'].includes(c.material);
       this.cube(c.x, c.y, c.z, {
-        fill: PALETTE.material[c.material] || PALETTE.material.stone,
+        fill: S.material[c.material] || S.material.stone,
         glyph: c.glyph, value: c.glyph ? null : c.value,
+        element: isElement ? c.material : null,
         alpha: c.ghost ? 0.42 : 1,
-        outline: c.ghost ? PALETTE.gold : (c.protected ? PALETTE.turq : null),
+        outline: c.ghost ? S.outline : (c.protected ? S.cursor : null),
         dashed: !!c.ghost,
       });
     }
 
-    if (cursor) this.markCell(cursor[0], cursor[1], cursor[2], PALETTE.turq, 'cursor');
+    if (cursor) this.markCell(cursor[0], cursor[1], cursor[2], S.cursor, 'cursor');
 
     for (const e of effects || []) {
       switch (e.kind) {
-        case 'inscribe':   this.markCell(...e.at, PALETTE.gold); break;
-        case 'raise':      this.markCell(...e.at, PALETTE.gold, `↑${e.to_value}`); break;
-        case 'lower':      this.markCell(...e.at, PALETTE.gold, `↓${e.to_value}`); break;
-        case 'assimilate': this.markCell(...e.at, PALETTE.lapis, `→${e.to_value}`); break;
-        case 'distinguish':this.markCell(...e.at, PALETTE.turq, 'kept'); break;
+        case 'inscribe':   this.markCell(...e.at, S.outline); break;
+        case 'raise':      this.markCell(...e.at, S.outline, `↑${e.to_value}`); break;
+        case 'lower':      this.markCell(...e.at, S.outline, `↓${e.to_value}`); break;
+        case 'assimilate': this.markCell(...e.at, S.tie, `→${e.to_value}`); break;
+        case 'distinguish':this.markCell(...e.at, S.cursor, 'kept'); break;
         case 'pour':
-        case 'fall':       this.markMove(e.at, e.to, PALETTE.gold); break;
+        case 'fall':       this.markMove(e.at, e.to, S.move); break;
         case 'join':
-        case 'bind':       this.markTie(e.at, e.to, PALETTE.lapis); break;
+        case 'bind':       this.markTie(e.at, e.to, S.tie); break;
         case 'sever':
-        case 'refused':    if (e.to) this.markBreak(e.at, e.to, PALETTE.verm);
-                           else this.markCell(...e.at, PALETTE.verm, '×');
+        case 'refused':    if (e.to) this.markBreak(e.at, e.to, S.brk);
+                           else this.markCell(...e.at, S.brk, '×');
                            break;
         default: break;
       }
+    }
+  }
+
+  /**
+   * Play a settle out in time. `moves` is world.settle()'s list, each tagged with
+   * the step it happened on; `before` is a clone of the world from before it. The
+   * frames are drawn by re-applying the moves step by step to that clone, so what
+   * you watch is the same fall the engine computed, not an animation of it.
+   * Resolves when done. `draw` is called per frame with the intermediate world.
+   */
+  async animateSettle(before, moves, { stepMs = 140, draw } = {}) {
+    if (!moves.length) { if (draw) draw(before); return; }
+    const w = before.clone();
+    const steps = Math.max(...moves.map(m => m.step ?? 0)) + 1;
+    for (let s = 0; s < steps; s++) {
+      const now = moves.filter(m => (m.step ?? 0) === s);
+      for (const m of now) w.move(m.from, m.to);
+      if (draw) draw(w, now.map(m => ({ kind: 'fall', at: m.from.split(',').map(Number), to: m.to.split(',').map(Number) })));
+      await new Promise(r => setTimeout(r, stepMs));
     }
   }
 }
@@ -263,3 +451,4 @@ function shade(hex, amt) {
   const f = c => Math.max(0, Math.min(255, Math.round(c + 255 * amt)));
   return `rgb(${f((n >> 16) & 255)},${f((n >> 8) & 255)},${f(n & 255)})`;
 }
+function lighten(hex, amt) { return shade(hex, amt); }

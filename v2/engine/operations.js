@@ -20,9 +20,9 @@
 //
 // All three are pure unless `apply` is set, like everything else in this engine.
 
-import { KEY, UNKEY } from './world.js?v=5';
-import { readWorld } from './reader.js?v=5';
-import { isolate } from './unmaking.js?v=5';
+import { KEY, UNKEY } from './world.js?v=6';
+import { readWorld } from './reader.js?v=6';
+import { isolate } from './unmaking.js?v=6';
 
 /* ------------------------------------------------------- invoke the name --- */
 
@@ -107,7 +107,7 @@ export function reckon(world, target, opts = {}) {
   }
   const moved = w.settle();
   for (const m of moved) effects.push({ kind: 'fall', at: UNKEY(m.from), to: UNKEY(m.to), detail: 'fell' });
-  return { ok: runs.length > 0, runs, effects, world: w,
+  return { ok: runs.length > 0, runs, effects, moved, world: w,
            why: runs.length
              ? `${runs.length} run${runs.length === 1 ? '' : 's'} summed to ${target} and came apart`
              : `nothing sums to ${target}` };
@@ -134,17 +134,22 @@ export function extract(world, glyph, { apply = false, order = null } = {}) {
       return cell && cell.glyph === glyph;
     });
   }
-  const effects = [];
-  let done = 0;
+  const effects = [], moved = [];
+  let done = 0, stepBase = 0;
   for (const cell of cells) {
     const here = w.get(...cell);
     if (!here || here.glyph !== glyph) continue;     // it may have fallen already
     const r = isolate(w, cell, { apply: true });
     effects.push(...r.effects);
+    // Each isolation's fall is its own little settle; offset the step tags so a
+    // replay plays them in sequence rather than on top of each other.
+    const steps = r.moved.length ? Math.max(...r.moved.map(m => m.step ?? 0)) + 1 : 0;
+    for (const m of r.moved) moved.push({ ...m, step: (m.step ?? 0) + stepBase });
+    stepBase += steps;
     done++;
   }
   const left = w.list().filter(c => c.glyph === glyph);
-  return { ok: true, isolated: done, remaining: left.length, effects, world: w,
+  return { ok: true, isolated: done, remaining: left.length, effects, moved, world: w,
            why: `${done} × ${glyph} isolated; ${left.length} still standing somewhere` };
 }
 

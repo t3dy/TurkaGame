@@ -9,10 +9,10 @@
 // The renderer is the Scriptorium's, imported across apps, which is the claim
 // that it is reusable being cashed rather than repeated.
 
-import { World } from '../../../engine/world.js?v=5';
-import { compile, execute, describeLetter } from '../../../engine/vm.js?v=5';
-import { Scribe, DIRS, targetsCovered } from '../../../engine/agent.js?v=5';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=5';
+import { World } from '../../../engine/world.js?v=6';
+import { compile, execute, describeLetter } from '../../../engine/vm.js?v=6';
+import { Scribe, DIRS, targetsCovered } from '../../../engine/agent.js?v=6';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=6';
 
 const V = 'v=1';
 const $ = id => document.getElementById(id);
@@ -159,6 +159,8 @@ function loadLevel(id) {
   for (const b of $('levels').querySelectorAll('.btn')) b.onclick = () => loadLevel(b.dataset.id);
 
   iso = new Iso($('cv'));
+  iso.onStyle = () => { if (world) draw(); };
+  iso.bindStyleToggle($('style'));
   const resize = () => { iso.resize(); if (world) draw(); };
   addEventListener('resize', resize);
 

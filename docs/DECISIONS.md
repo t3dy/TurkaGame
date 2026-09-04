@@ -1336,3 +1336,55 @@ from what is refused; being wrong about which world you are in is what ruins you
 CareerSim that is not a mechanic bolted onto the subject -- it is the portal's
 `ottoman-asymmetry` finding ("same teacher, same science, opposite outcomes... the variable
 is the polity, not the doctrine") made playable.
+
+## 2026-09-04 (small hours) -- two hands, drawn elements, and a fall you can watch
+
+**Decision.** Given a free hand on creative choices, with the instruction to build both
+versions wherever I would otherwise have asked. Three improvements, one of them a pair.
+
+**1. Two renderers, both shipped, toggled in every app's topbar.** The first renderer
+drew flat-shaded boxes on a dark ground with a system font. Legible, and not what the
+project is for: the brief asks for graphics grounded in medieval and Renaissance
+depiction, and the letters ARE the game. Rather than choose, `iso.js` now has two hands:
+
+- **Lapis** -- the original, unchanged, so nothing that worked is lost.
+- **Ink** -- paper ground with a vignette, ink outline, HATCHED shading on each block's
+  walls the way an engraver turns a form (dense away from the light, sparse toward it), a
+  naskh-weight letter, and a page chrome (`apps/shared/hand.css`) that turns with the
+  canvas so Ink is a page rather than a dark app with a light window in it.
+
+This is exactly the case for "build both": I have a preference and it is not the point.
+The choice is Ted's to make by looking, and neither hand is the real one until he does.
+
+**2. The four elements drawn as what they are.** The Unicode triangles rendered as boxes
+in fonts that lacked them, so v1 substituted solid-against-hollow for the bar and left a
+note apologising. They are now drawn as paths -- fire and air pointing up, water and earth
+down, the second of each pair BARRED -- so the alchemical notation is correct, needs no
+font, and never renders as a box. A three-slice-old apology retired.
+
+**3. The fall plays out in time, and it is the engine's fall.** Every collapse resolved
+instantly and was reported as a number in a panel. `settle()` now tags each move with its
+step; `Iso.animateSettle()` re-applies those moves to a clone from before, frame by frame.
+What you watch IS the collapse that was computed, not an animation resembling it -- and a
+test asserts the replay ends on the same world hash the engine ended on. The preview
+promise, extended to motion. Every settling operation (isolate, utter, throwStone, reckon,
+extract) now hands back its step-tagged moves for this.
+
+**Faults found on the way.**
+
+- The bump script and R6 covered `.js?v=` only. `hand.css` was linked at a token the
+  script did not rewrite, so a stylesheet could go stale alone and repaint the page in the
+  wrong palette under a correctly drawn canvas. Both now cover `.css?v=`.
+- The framing ceiling was 1.35x, which left a six-cell puzzle as a thumbnail in a wide
+  stage. Raised to 2.4x, because the letters have to be readable AS LETTERS.
+- This session's browser pane cannot take screenshots (every attempt times out), so the
+  two hands were verified by SAMPLING CANVAS PIXELS -- `#171620` under Lapis, `#d6cbb6`
+  (paper, vignetted) under Ink -- and by reading the panel's computed background. That is
+  a stronger proof than a screenshot anyway, but it means Ted has to look for himself, and
+  the live URL with the toggle is the deliverable.
+
+**Consequence.** The first thing this project would actually vendor as artwork is now a
+FONT: the Ink hand asks for Amiri / Scheherazade New / Noto Naskh Arabic and falls back to
+the system serif, so its letters are correct everywhere and calligraphic only where those
+are installed. Next after that: the drawn planetary and zodiacal glyphs, which the Ink hand
+now has a place for.

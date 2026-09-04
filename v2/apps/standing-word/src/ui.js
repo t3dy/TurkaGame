@@ -13,9 +13,9 @@
 // the commit makes, run against a copy. The preview cannot be wrong about the
 // collapse because it IS the collapse, thrown away.
 
-import { World } from '../../../engine/world.js?v=5';
-import { compile, execute, describeLetter } from '../../../engine/vm.js?v=5';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=5';
+import { World } from '../../../engine/world.js?v=6';
+import { compile, execute, describeLetter } from '../../../engine/vm.js?v=6';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=6';
 
 const V = 'v=1';
 const $ = id => document.getElementById(id);
@@ -157,12 +157,22 @@ function writeAt(cell) {
   draw();
 }
 
-function letGravityIn() {
+async function letGravityIn() {
   if (settled) return;
   snapshot();
+  const before = world.clone();
   world.rules.gravity = true;
   const moved = world.settle();
   settled = true;
+  // Play the fall out in time. The frames re-apply the engine's own step-tagged
+  // moves to a copy of the world from before, so what you watch IS the collapse
+  // that was computed — not an animation that resembles it. Nothing here can
+  // show a block landing somewhere the engine did not put it.
+  $('gravity').disabled = true;
+  await iso.animateSettle(before, moved, {
+    stepMs: 160,
+    draw: (w, fx) => { iso.frame(w, level.targets); iso.draw(w, fx, {}); },
+  });
   say(moved.length ? `${moved.length} cell-moves as it came down` : 'nothing moved', moved.length ? 'bad' : 'good');
   draw();
 }
@@ -201,6 +211,8 @@ function loadLevel(id) {
   for (const b of $('levels').querySelectorAll('.btn')) b.onclick = () => loadLevel(b.dataset.id);
 
   iso = new Iso($('cv'));
+  iso.onStyle = () => { if (world) draw(); };
+  iso.bindStyleToggle($('style'));
   addEventListener('resize', () => { iso.resize(); if (world) draw(); });
   $('cv').addEventListener('click', ev => {
     const r = $('cv').getBoundingClientRect();

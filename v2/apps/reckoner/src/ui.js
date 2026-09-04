@@ -12,12 +12,12 @@
 // Yūsuf Ascent's perspective puzzle rebuilt out of language, because the original
 // needed a camera moving through continuous space and this engine has none.
 
-import { World, KEY } from '../../../engine/world.js?v=5';
-import { compile, execute } from '../../../engine/vm.js?v=5';
-import { extract, extracted, reckon, findRuns, readsFrom, DIRECTIONS } from '../../../engine/operations.js?v=5';
-import { standing } from '../../../engine/unmaking.js?v=5';
-import { Ledger } from '../../../engine/ledger.js?v=5';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=5';
+import { World, KEY } from '../../../engine/world.js?v=6';
+import { compile, execute } from '../../../engine/vm.js?v=6';
+import { extract, extracted, reckon, findRuns, readsFrom, DIRECTIONS } from '../../../engine/operations.js?v=6';
+import { standing } from '../../../engine/unmaking.js?v=6';
+import { Ledger } from '../../../engine/ledger.js?v=6';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=6';
 
 const V = 'v=4';
 const $ = id => document.getElementById(id);
@@ -186,19 +186,30 @@ function writeAt(cell) {
   draw();
 }
 
-function doExtract() {
+async function playFall(before, moved) {
+  await iso.animateSettle(before, moved, {
+    stepMs: 160,
+    draw: (w, fx) => { iso.frame(w, [[0, level.line ?? 0, 0]]); iso.draw(w, fx, {}); },
+  });
+}
+
+async function doExtract() {
+  const before = world.clone();
   const r = extract(world, level.letter, { apply: true });
   done = true;
+  await playFall(before, r.moved);
   say(r.why, 'good');
   draw();
 }
 
-function doReckon() {
+async function doReckon() {
   const n = parseInt($('number').value, 10);
   const runs = findRuns(world, n);
   if (!runs.length) { say(`nothing sums to ${n}`, 'bad'); return; }
+  const before = world.clone();
   const r = reckon(world, n, { apply: true });
   done = true;
+  await playFall(before, r.moved);
   say(r.why, 'good');
   draw();
 }
@@ -256,6 +267,8 @@ function load(id) {
   for (const b of $('levels').querySelectorAll('.btn')) b.onclick = () => load(b.dataset.id);
 
   iso = new Iso($('cv'));
+  iso.onStyle = () => { if (world) draw(); };
+  iso.bindStyleToggle($('style'));
   addEventListener('resize', () => { iso.resize(); if (world) draw(); });
   $('cv').addEventListener('click', ev => {
     if (level.type !== 'extract') return;

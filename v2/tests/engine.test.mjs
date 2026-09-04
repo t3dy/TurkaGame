@@ -654,4 +654,56 @@ test('the ledger records naming the metaphysics, right or wrong', () => {
   assert.equal(L.identify('sufi', true).first, false, 'naming it twice is not a second discovery');
 });
 
+/* ------------------------------- watching the fall, not a picture of it ---- */
+
+test('settle() tags every move with the step it happened on', () => {
+  const w = new World({ rules: { gravity: true } });
+  w.set(0, 3, 0, { material: 'stone', value: 1 });
+  const moved = w.settle();
+  assert.equal(moved.length, 3, 'three one-cell drops');
+  assert.deepEqual(moved.map(m => m.step), [0, 1, 2], 'one per step, in order');
+});
+
+test('re-applying the tagged moves to a clone reproduces the settled world exactly', () => {
+  // This is what the renderer’s animateSettle does frame by frame. If it did not
+  // land on the same hash, the animation would be showing a fall the engine did
+  // not compute — the exact thing the preview promise forbids.
+  const w = new World({ rules: { gravity: false } });
+  w.set(0, 0, 0, { material: 'earth', value: 1, fixed: true });
+  w.set(0, 1, 0, { material: 'earth', value: 1, fixed: true });
+  execute(w, compile(prog('مرم'), { letters, ruleset: RS('workshop') }), { cursor: [2, 2, 0] });
+  const before = w.clone();
+  w.rules.gravity = true;
+  const moved = w.settle();
+  assert.ok(moved.length > 0, 'the broken word drops something');
+
+  const replay = before.clone();
+  replay.rules.gravity = true;                       // rules are part of the hash
+  const steps = Math.max(...moved.map(m => m.step)) + 1;
+  for (let s = 0; s < steps; s++) for (const m of moved.filter(x => x.step === s)) replay.move(m.from, m.to);
+  assert.equal(replay.hash(), w.hash(), 'the replay ends where the engine ended');
+});
+
+test('every settling operation hands back its step-tagged moves', () => {
+  const mk = () => {
+    const w = new World({ rules: { gravity: true } });
+    w.set(0, 0, 0, { material: 'earth', value: 1, fixed: true });
+    w.set(0, 1, 0, { material: 'earth', value: 1, fixed: true });
+    execute(w, compile(prog('مهن'), { letters, ruleset: RS('workshop') }), { cursor: [2, 2, 0] });
+    return w;
+  };
+  const a = isolate(mk(), [1, 2, 0], { apply: true });
+  assert.ok(Array.isArray(a.moved) && a.moved.length > 0 && 'step' in a.moved[0], 'isolate');
+  const b = utter(mk(), { apply: true });
+  assert.ok(Array.isArray(b.moved) && b.moved.length > 0, 'utter');
+  const c = throwStone(mk(), [2, 2, 0], { apply: true });
+  assert.ok(Array.isArray(c.moved), 'throwStone');
+  const w = mk();
+  const pair = w.get(1, 2, 0).value + w.get(0, 2, 0).value;
+  const d = reckon(w, pair, { apply: true });
+  assert.ok(Array.isArray(d.moved) && d.moved.length > 0 && 'step' in d.moved[0], 'reckon');
+  const e = extract(mk(), 'ن', { apply: true });
+  assert.ok(Array.isArray(e.moved), 'extract');
+});
+
 console.log(`${n} tests passed`);

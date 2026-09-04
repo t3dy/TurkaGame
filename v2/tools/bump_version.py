@@ -38,7 +38,9 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 V2 = ROOT / "v2"
 ENGINE = V2 / "engine"
 STAMP = ENGINE / "VERSION.json"
-TOKEN_RE = re.compile(r"(\.js\?v=)(\d+)")
+# Scripts AND stylesheets: a hand.css cached at an old token repaints the page
+# in the wrong palette while the canvas draws in the right one.
+TOKEN_RE = re.compile(r"(\.(?:js|css)\?v=)(\d+)")
 
 
 def engine_hash() -> str:
@@ -52,7 +54,7 @@ def engine_hash() -> str:
 
 def files_with_tokens():
     for p in sorted(V2.rglob("*")):
-        if p.suffix not in (".js", ".html") or not p.is_file():
+        if p.suffix not in (".js", ".html", ".css") or not p.is_file():
             continue
         text = p.read_text(encoding="utf-8")
         if TOKEN_RE.search(text):

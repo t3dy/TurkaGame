@@ -70,21 +70,12 @@ each hand to exactly the number of cells needed made every placement matter:
 
 ## What is not here, and why
 
-**There is no demolition mode**, and that is a finding rather than an omission.
-"Knock it down" needs a way to break an existing bond, and **v2 has none**. SEVER
-is a *parsing* rule — it decides whether a newly written letter joins forward — not
-a tool that cuts a bond already made. POUR displaces a cell but `move()` carries
-its bonds with it, so a bonded body is distorted rather than broken.
-
-So a demolition level would need one of:
-
-- a genuine cut, derived from some observable fact this project does not yet have;
-- a letter that changes a world *rule* (the brief's Level 5 — turning gravity on
-  from inside the fiction), which no primitive currently does; or
-- momentum, so that a shove can dislodge rather than translate.
-
-Inventing a primitive to fill the gap is exactly what this project does not do. The
-gap is written down instead.
+**There is no demolition level in this app.** "Knock it down" needs a way to break an
+existing bond, which this stacker's own primitives do not have — SEVER is a *parsing*
+rule about whether a new letter joins forward, and POUR carries a cell's bonds with
+it. The three candidate answers are built and measured side by side in
+[`../unmaking/`](../unmaking/README.md), and the choice between them is Ted's and
+still open. Until it is made, this app builds and does not unbuild.
 
 ## Known gaps
 
@@ -94,5 +85,13 @@ gap is written down instead.
 - **The click-to-cell mapping picks the nearest of several candidate heights**,
   which is a guess about intent and will occasionally choose wrong. A proper fix is
   a height selector.
+- **The fall now plays out in time**, and it is not an animation *of* the collapse:
+  the frames re-apply the engine's own step-tagged moves to a copy of the world from
+  before, so what you watch is the collapse that was computed. A test asserts the
+  replay ends on the same world hash the engine ended on.
+- **Two hands, switchable in the topbar**: *Lapis* (the original dark table) and
+  *Ink* (paper, ink line, hatched shading, the elements drawn as the barred
+  alchemical triangles they are). Both are kept; the choice is yours to make by
+  looking. The preference persists across every v2 app.
 - **No person has played it.** Both levels are solver-verified and replayed through
   the real input path by `__standing.selfTest()`.

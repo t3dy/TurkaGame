@@ -70,8 +70,10 @@ unenforced.** The ones with teeth:
 
 - `tools/check_repo_rules.py` **R1–R5** — no source PDFs, manuscript provenance,
   local-only trees. Runs in the pre-commit hook.
-- **R6 — the module cache-busting token.** Two halves, because the first was not
-  enough. (a) Every `?v=N` under `v2/` must be the same N. (b) The token must have
+- **R6 — the module cache-busting token**, now covering `.css?v=` as well as
+  `.js?v=` (a stylesheet cached at an old token repaints the page in the wrong
+  palette while the canvas draws in the right one). Two halves, because the first
+  was not enough. (a) Every `?v=N` under `v2/` must be the same N. (b) The token must have
   **moved whenever `v2/engine/` moved** — checked against a hash recorded in
   `v2/engine/VERSION.json`. Run `python v2/tools/bump_version.py` after any engine
   change. Both halves were tested by deliberately breaking them.
@@ -113,6 +115,15 @@ proof the deployed code is running.** The full check:
 3. **Ask the running engine what it contains** before believing what it does, e.g.
    `/c\.fixed \|\| c\.axis/.test(String(new World({}).settle))`.
 4. Then run the app's `selfTest()`.
+
+## Two hands
+
+Every app's topbar has **Draw in Ink / Draw in Lapis**. Both renderers are kept on
+purpose: the choice between the dark table and the engraved page is Ted's to make by
+looking, and neither is the "real" one until he does. `apps/scriptorium/src/iso.js`
+holds both; `apps/shared/hand.css` turns the page chrome with the canvas. If one is
+eventually chosen, delete the other from `STYLES` and the CSS — do not leave a dead
+toggle.
 
 ## What is deliberately absent
 

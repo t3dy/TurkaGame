@@ -33,7 +33,7 @@
 // STAY — so the structure you build and the program you wrote are the same object.
 // That is the fusion the brief asks for between a level editor and a language.
 
-import { World, KEY, UNKEY, MATERIALS } from './world.js?v=5';
+import { World, KEY, UNKEY, MATERIALS } from './world.js?v=6';
 
 // ALPHABET-AGNOSTIC BY CONSTRUCTION
 // ---------------------------------

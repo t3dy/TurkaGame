@@ -118,12 +118,12 @@ def check(files: list[str], do_sha: bool) -> Report:
     # all together. That turns a silent cache bug into a failed check.
     tokens = {}
     for f in files:
-        if not f.startswith("v2/") or Path(f).suffix not in (".js", ".html"):
+        if not f.startswith("v2/") or Path(f).suffix not in (".js", ".html", ".css"):
             continue
         fp = ROOT / f
         if not fp.exists():
             continue
-        for m in re.finditer(r"\.js\?v=(\d+)", fp.read_text(encoding="utf-8")):
+        for m in re.finditer(r"\.(?:js|css)\?v=(\d+)", fp.read_text(encoding="utf-8")):
             tokens.setdefault(m.group(1), []).append(f)
     if len(tokens) > 1:
         summary = ", ".join("v=%s in %d file(s)" % (k, len(set(v))) for k, v in sorted(tokens.items()))

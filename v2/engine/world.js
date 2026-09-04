@@ -142,7 +142,10 @@ export class World {
         // ourselves on the way.
         for (const c of cells.sort((a, b) => a.y - b.y)) {
           const from = KEY(c.x, c.y, c.z), to = KEY(c.x, c.y - 1, c.z);
-          if (this.move(from, to)) moved.push({ from, to });
+          // Tagged with the settle step so a renderer can play the fall out in time
+          // by re-applying these to a clone — watching the same collapse the engine
+          // computed, rather than an animation that merely resembles it.
+          if (this.move(from, to)) moved.push({ from, to, step });
         }
         fell = true;
       }

@@ -32,7 +32,7 @@
 // draws them, and all three are pure unless `apply` is set — the preview of a
 // demolition is the demolition, run against a copy.
 
-import { KEY, UNKEY } from './world.js?v=5';
+import { KEY, UNKEY } from './world.js?v=6';
 
 /** Highest cell in the world, or -Infinity when it is empty. */
 export function highest(world, { glyphOnly = false } = {}) {
@@ -89,8 +89,9 @@ export function isolate(world, cell, { apply = false } = {}) {
     from: 'a letter written in its isolated form joins nothing on either side',
     detail: `${c.glyph} stands alone — the word breaks here`,
   }));
-  effects.push(...fallEffects(w.settle()));
-  return { ok: true, cut, effects, world: w,
+  const moved = w.settle();
+  effects.push(...fallEffects(moved));
+  return { ok: true, cut, effects, moved, world: w,
            why: cut ? `${c.glyph} isolated; ${cut} bond${cut === 1 ? '' : 's'} cut` : `${c.glyph} was already joined to nothing` };
 }
 
@@ -112,7 +113,7 @@ export function utter(world, { apply = false } = {}) {
   w.rules.bondsHold = was;
   const after = w.settle();
   return {
-    ok: true, effects: fallEffects([...moved, ...after]), world: w,
+    ok: true, effects: fallEffects([...moved, ...after]), moved: [...moved, ...after], world: w,
     why: moved.length
       ? 'for the length of the utterance nothing was one thing; what was carried, fell'
       : 'nothing was standing only by its bonds',
@@ -152,8 +153,9 @@ export function throwStone(world, cell, { dir = [1, 0, 0], force = 2, apply = fa
     }
     shifted++;
   }
-  effects.push(...fallEffects(w.settle()));
-  return { ok: true, shifted, effects, world: w,
+  const moved = w.settle();
+  effects.push(...fallEffects(moved));
+  return { ok: true, shifted, effects, moved, world: w,
            why: shifted ? `shoved ${shifted} cell${shifted === 1 ? '' : 's'}` : 'it would not move' };
 }
 

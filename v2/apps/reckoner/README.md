@@ -122,5 +122,8 @@ share of the range won. That is what it measures now.
   [`../../APPLICATIONS.md`](../../APPLICATIONS.md), where that is the roguelike's spine.
 - **`invokeName` is implemented and tested but has no level.** It wants a mode
   where acting on every instance at once is a real choice against acting on one.
+- **Extraction and Reckoning now play their falls out in time**, by replaying the
+  engine's step-tagged moves — see The Standing Word's README for why that is a
+  guarantee rather than an effect.
 - **No person has played it.** Every claim is from `verify_levels.mjs` or
   `__reckoner.selfTest()`.

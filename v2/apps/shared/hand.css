@@ -1,0 +1,92 @@
+/* hand.css — the page follows the renderer's hand.
+ *
+ * The isometric canvas can be drawn in LAPIS (dark ground) or INK (paper). A paper
+ * board sitting inside a dark interface reads as a screenshot pasted onto a
+ * console; the whole page has to turn with it. iso.js stamps `data-hand` on the
+ * root when the style changes, and this sheet repaints the chrome that every app
+ * shares — panels, frames, buttons, letter tiles — so that the ink hand is a
+ * page rather than a dark app with a light window in it.
+ *
+ * Only the ink overrides live here. The lapis look is each app's own stylesheet,
+ * unchanged, so nothing that already worked is touched.
+ */
+
+html[data-hand="ink"] {
+  --paper: #1f170e;      /* text becomes ink */
+  --dim: #6b5d4a;
+  --bg: #efe4cf;         /* paper */
+  --bg2: #e6d9c0;        /* the panel, a slightly toned sheet */
+  --bg3: #ddcfb3;
+  --gold: #8c6a2b;       /* rules and buttons: a warm brown ink */
+  --gold-hi: #6b4a15;
+  --lapis: #1f3d6b;
+  --verm: #8c2f1b;       /* red ochre, the rubricator's colour */
+  --turq: #2e6b5f;
+  --rule: rgba(43, 33, 22, .22);
+}
+
+html[data-hand="ink"] body { background: var(--bg); color: var(--paper); }
+
+html[data-hand="ink"] .topbar,
+html[data-hand="ink"] .bar,
+html[data-hand="ink"] #bar,
+html[data-hand="ink"] #legend {
+  background: #e2d4b8;
+  border-color: var(--gold);
+  color: var(--paper);
+}
+
+html[data-hand="ink"] #panel,
+html[data-hand="ink"] #left,
+html[data-hand="ink"] #right {
+  background: var(--bg2);
+  border-color: var(--gold);
+}
+
+html[data-hand="ink"] .frame { background: rgba(255, 250, 240, .55); }
+html[data-hand="ink"] .frame p,
+html[data-hand="ink"] .frame .fact { color: #2b2116; }
+
+html[data-hand="ink"] .btn { color: var(--paper); border-color: var(--gold); }
+html[data-hand="ink"] .btn:hover { background: rgba(140, 106, 43, .14); }
+html[data-hand="ink"] .btn.active { background: var(--gold); color: #f6ecd8; }
+html[data-hand="ink"] .btn.big { border-color: var(--verm); color: var(--verm); }
+
+html[data-hand="ink"] .lt,
+html[data-hand="ink"] .pg,
+html[data-hand="ink"] .blk.letter {
+  background: linear-gradient(#fbf4e4, #ecdfc4);
+  color: #1a130c;
+  border-color: #8c6a2b;
+}
+html[data-hand="ink"] .lt.dark,
+html[data-hand="ink"] .pg.dark,
+html[data-hand="ink"] .blk.letter.dark {
+  /* the fourteen dark letters: a toned sheet rather than a night sky */
+  background: linear-gradient(#d8c8a8, #c4b08a);
+  color: #1a130c;
+  border-color: #5e4a22;
+}
+html[data-hand="ink"] .lt.sel { outline-color: var(--verm); }
+
+html[data-hand="ink"] #say.good,
+html[data-hand="ink"] #verdict.win { background: rgba(140, 106, 43, .16); border-color: var(--gold); color: var(--gold-hi); }
+html[data-hand="ink"] #say.bad,
+html[data-hand="ink"] #verdict.fell,
+html[data-hand="ink"] #verdict.lose { background: rgba(140, 47, 27, .10); border-color: var(--verm); color: var(--verm); }
+
+html[data-hand="ink"] select,
+html[data-hand="ink"] input[type=number] { background: #fbf4e4; color: var(--paper); border-color: var(--rule); }
+
+html[data-hand="ink"] .pill { background: rgba(43, 33, 22, .12); color: var(--paper); }
+html[data-hand="ink"] .pill.PORTAL { background: var(--turq); color: #f6ecd8; }
+html[data-hand="ink"] .pill.CORPUS { background: var(--lapis); color: #f6ecd8; }
+html[data-hand="ink"] .pill.REPORTED { background: #7a4a1a; color: #f6ecd8; }
+html[data-hand="ink"] .pill.INTERPRETATION { background: #5a5468; color: #f6ecd8; }
+html[data-hand="ink"] .pill.GAME_FICTION { background: var(--verm); color: #f6ecd8; }
+html[data-hand="ink"] .pill.PLAIN { background: #6b6560; color: #f6ecd8; }
+
+html[data-hand="ink"] #effects li,
+html[data-hand="ink"] #runlog li,
+html[data-hand="ink"] #findings li { color: #2b2116; }
+html[data-hand="ink"] .learned { background: rgba(251, 244, 228, .96); border-color: var(--gold); color: var(--paper); }

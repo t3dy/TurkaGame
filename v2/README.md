@@ -135,6 +135,31 @@ renders it with four marks and no more:
 A fifth mark would mean the model has grown a concept, and that is the moment to
 reconsider the model rather than the legend.
 
+**Two hands, both shipped.** The first renderer drew flat-shaded boxes on a dark
+ground with a system font, and drew the four elements as Unicode triangles with a
+note apologising for them. Ted's brief asks for graphics grounded in medieval and
+Renaissance depiction, and the letters *are* the game — so rather than pick, the
+renderer now has two hands and every app has a toggle in its topbar:
+
+- **Lapis** — the original, unchanged. Dark ground, lapis and gold, flat shade.
+- **Ink** — paper ground with a faint vignette, ink outline, **hatched shading** on
+  the walls of each block the way an engraver turns a form (dense on the wall away
+  from the light, sparse toward it), a naskh-weight letter in ink, and the four
+  elements drawn as paths: the alchemical triangles **with their bars**, which the
+  Unicode substitutes could not carry.
+
+The page's chrome follows the hand (`apps/shared/hand.css`), so Ink is a page
+rather than a dark app with a light window in it. Every mark in the preview
+language is defined in both palettes, so switching never changes what a mark
+*means*. The preference persists under `turka.v2.style`.
+
+**The fall plays out in time, and it is the engine's fall.** `settle()` now tags
+every move with the step it happened on. `Iso.animateSettle()` re-applies those
+moves to a clone of the world from before, frame by frame, so what you watch is the
+collapse that was computed rather than an animation that resembles it. A test
+asserts that the replay ends on exactly the hash the engine ended on — the
+preview promise, extended to motion.
+
 ### 5. Reading the world — the principle made mechanical
 
 `vm.js` writes: a program becomes a structure. [`reader.js`](engine/reader.js) is the other
@@ -321,6 +346,11 @@ totals hide. **The choice between them is Ted's and has not been made.**
   abjad ladder, and a power rule asking for `class === 'nurani'` — all fixed here rather
   than worked around there. That project is a parked first slice: engine vendored, letter
   table built and verified, no app and no glyph artwork yet.
+- **The Ink hand's letter face depends on fonts the viewer may not have.** It asks
+  for Amiri, then Scheherazade New, then Noto Naskh Arabic, then falls back to the
+  system serif. On a machine with none of the first three, the letters are still
+  correct but less calligraphic than intended. Shipping a font is the fix, and it
+  is the first piece of "artwork" this project would actually vendor.
 - **`?v=` cache-busting is now enforced, after it bit.** Two separate faults. First,
   `vm.js` importing `./world.js` while the app imported it with a token loaded the module
   twice under two URLs. Then the worse one: `world.js` was **changed without bumping its
