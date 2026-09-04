@@ -985,3 +985,57 @@ in this repo; `correspondences.json` names them as absent instead.
 different operations** (brief §23) rather than seven of the same check — the best-built
 board here, made replayable, with no new art or data. Then an animated run for the
 machine, which is the biggest thing wrong with it as a toy.
+
+## 2026-09-04 -- v2: lettrism as a programming language, and v1 frozen
+
+**Decision.** `games/` becomes **v1 and is frozen** at its current URLs; all new work goes
+in `v2/`, which imports no v1 code. v2 rebuilds the foundation: eight primitives derived
+from observable facts about the letters, five historical rulesets that genuinely disagree,
+the Mafahis's three registers as the execution model, and preview-is-execution as an
+engine guarantee. Four questions were put to Ted before starting and all four
+recommendations were taken (freeze in place; Golden Dawn ships from its own project so the
+engine must prove vendorable; artwork from PD scans plus procedural glyphs; gravity as a
+rule letters can change).
+
+**Rationale for freezing rather than evolving.** v2 changes what the games *claim*, not
+just how they play. The Impossible Architect's argument is that every rule traces to a card
+in `palace.json`; retrofitting a swappable rule engine would have made that sentence false
+without anyone noticing. v1 keeps its claims and its evidence; v2 makes its own.
+
+**The three ideas that carry it.**
+
+1. **The instruction set is a consequence of the alphabet.** Every primitive is granted by
+   something checkable against a grammar -- and the best of them is the plainest: the six
+   letters that never join what follows are why an Arabic word looks like several pieces, so
+   here **a written word is one rigid body and those six letters are where it breaks**.
+2. **Traditions differ by MOTIVE, not date** -- the portal's own `three-lettrisms` finding.
+   That is why Sufi lettrism refuses SEVER, and why the word marked m-r-m is one body there
+   and two under intellectual lettrism. Historical disagreement became load-bearing rather
+   than decorative.
+3. **The execution model is the source's.** Ibn Turka's three Globes of Light (mental /
+   written / spoken) map onto plan / run-once / persist, so "compilation" arises from the
+   material instead of being imposed on it. Gemination -- a doubled letter -- gives the loop
+   without importing one.
+
+**Rejected -- one universal table of letter meanings.** The thing v1 did, and the thing the
+brief warns hardest against. Also rejected: inventing an Ibn Arabi or Katib Celebi
+temperament table to populate a ruleset. Those sources are not in this repo, so no ruleset
+here claims to be theirs.
+
+**Two faults found by failing tests, both recorded in code.**
+
+1. **BIND and SEVER were aimed along the writing line, where the other letters stand.** A
+   test that could not pass revealed that BIND could only ever bind a letter to a letter.
+   BIND now works *across* the line; SEVER stopped being a world operation and became a
+   *parsing* one -- which is more faithful, since non-connecting letters break words, not
+   bonds between stones. The better mechanic came out of the failure.
+2. **`?v=` cache-busting must match across modules.** `vm.js` importing `./world.js` while
+   the app imported `./world.js?v=1` loaded the module twice under two URLs. Harmless here;
+   fatal the moment anything uses `instanceof`.
+
+**Consequence.** Next by value: the seven doors as seven *operations* as a v2 app reading
+the same `palace.json`; the diagram-as-executable-surface prototype (CrowleyDB's
+`treeLayouts.ts` already separates graph from geometry -- and Arabic lettrism suggests its
+own surfaces, the 28-by-lunar-mansion grid and the wafq); a v2 notebook recording
+predictions before execution; and the graphics pipeline, which has no artwork behind it yet
+at all.

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Scriptorium — writing the world in letters</title>
+<style>
+  :root {
+    --paper:#f1dac1; --dim:#b9b0a6; --bg:#171620; --bg2:#211f2b; --bg3:#2b2836;
+    --gold:#c99a2e; --gold-hi:#e8c86a; --lapis:#4d7fd6; --verm:#c06523;
+    --turq:#2e8f8f; --rule:rgba(241,218,193,.16);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:"Inter","Segoe UI",system-ui,sans-serif;
+    --mono:"Cascadia Mono",Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--paper);
+    font-family:var(--serif);overflow:hidden}
+  a{color:var(--verm)}
+
+  .topbar{display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;padding:.5rem 1rem;
+    background:#100f16;border-bottom:1px solid var(--gold);font-family:var(--sans);font-size:.76rem}
+  .topbar .title{font-family:var(--serif);font-size:1rem}
+  .topbar .ar{font-size:1.05rem;color:var(--gold-hi)}
+  .topbar .spacer{flex:1}
+  .topbar a{text-decoration:none}.topbar a:hover{text-decoration:underline}
+
+  #wrap{display:flex;height:calc(100% - 34px)}
+  #left{width:340px;flex:0 0 340px;background:var(--bg2);border-right:1px solid var(--gold);
+    display:flex;flex-direction:column;overflow-y:auto;padding:10px;gap:11px}
+  #mid{flex:1;min-width:0;display:flex;flex-direction:column}
+  #stage{flex:1;position:relative;min-height:0}
+  #stage canvas{display:block;width:100%;height:100%}
+  #right{width:330px;flex:0 0 330px;background:var(--bg2);border-left:1px solid var(--gold);
+    display:flex;flex-direction:column;overflow-y:auto;padding:10px;gap:11px}
+
+  .btn{font-family:var(--sans);font-size:.72rem;letter-spacing:.03em;padding:.34rem .6rem;
+    border:1px solid var(--gold);border-radius:2px;background:transparent;color:var(--paper);cursor:pointer}
+  .btn:hover{background:rgba(201,154,46,.16)}
+  .btn.active{background:var(--gold);color:#16151a}
+  .btn:disabled{opacity:.3;cursor:default}
+  .btn.wide{width:100%;text-align:left}
+  .btn small{opacity:.62;font-family:var(--mono)}
+  .row{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+  .lab{font-family:var(--sans);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--dim);margin-bottom:.25rem}
+  .hidden{display:none!important}
+
+  /* provenance pills — the same vocabulary as v1, so a reader moving between
+     versions is not learning a second colour code */
+  .pill{font-family:var(--sans);font-size:.55rem;letter-spacing:.09em;padding:.08rem .4rem;
+    border-radius:2px;background:var(--rule);color:var(--paper);white-space:nowrap}
+  .pill.PORTAL{background:var(--turq);color:#06201f}
+  .pill.CORPUS{background:var(--lapis);color:#fff}
+  .pill.REPORTED{background:#7a4a1a;color:#fff}
+  .pill.INTERPRETATION{background:#5a5468;color:#fff}
+  .pill.GAME_FICTION{background:var(--verm);color:#fff}
+
+  /* the letter palette */
+  #palette{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+  .lt{position:relative;aspect-ratio:1;border-radius:2px;cursor:pointer;border:1px solid #7d6338;
+    background:linear-gradient(#efe0c2,#dcc79f);color:#2a2113;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+  .lt.dark{background:linear-gradient(#4d4870,#3b3757);color:#e6dcf3;border-color:#221f38}
+  .lt.sel{outline:2px solid var(--gold-hi);outline-offset:1px}
+  .lt.mute{opacity:.34}
+  .lt .g{font-size:1.25rem}
+  .lt .v{font-family:var(--mono);font-size:.5rem;opacity:.7}
+  .lt .ops{position:absolute;top:1px;right:2px;font-family:var(--mono);font-size:.42rem;opacity:.8}
+
+  /* the program strip */
+  #program{display:flex;gap:4px;flex-wrap:wrap;min-height:46px;padding:5px;
+    background:var(--bg3);border:1px solid var(--rule);border-radius:2px}
+  .pg{position:relative;width:38px;height:38px;border-radius:2px;border:1px solid #7d6338;
+    background:linear-gradient(#efe0c2,#dcc79f);color:#2a2113;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+  .pg.dark{background:linear-gradient(#4d4870,#3b3757);color:#e6dcf3;border-color:#221f38}
+  .pg .n{position:absolute;bottom:0;right:2px;font-family:var(--mono);font-size:.5rem;opacity:.65}
+  .pg.gem{box-shadow:0 0 0 2px var(--gold-hi) inset}
+  #program .empty{font-family:var(--sans);font-size:.7rem;color:var(--dim);padding:.5rem}
+
+  /* frames — the boxed information areas */
+  .frame{border:1px solid var(--rule);border-left:2px solid var(--gold);border-radius:2px;
+    padding:.5rem .6rem;background:rgba(0,0,0,.16)}
+  .frame h4{margin:0 0 .3rem;font-size:.74rem;font-weight:500;color:var(--gold-hi);
+    font-family:var(--sans);letter-spacing:.06em;text-transform:uppercase}
+  .frame .kv{display:grid;grid-template-columns:auto 1fr;gap:.1rem .5rem;
+    font-family:var(--sans);font-size:.7rem;line-height:1.45}
+  .frame .kv dt{color:var(--dim)}
+  .frame .kv dd{margin:0;color:var(--paper)}
+  .frame p{margin:.3rem 0 0;font-family:var(--sans);font-size:.7rem;line-height:1.5;color:#ddd4c9}
+  .frame.hist{border-left-color:var(--turq)}
+  .frame.ours{border-left-color:#5a5468}
+  .frame.warn{border-left-color:var(--verm)}
+
+  #letterhead{display:flex;align-items:center;gap:.6rem}
+  #letterhead .big{font-size:2.6rem;line-height:1}
+  #letterhead .meta{font-family:var(--sans);font-size:.72rem;color:var(--dim)}
+  .oplist{list-style:none;margin:.3rem 0 0;padding:0;font-family:var(--sans);font-size:.7rem}
+  .oplist li{padding:.22rem 0;border-top:1px solid var(--rule);line-height:1.45}
+  .oplist li b{color:var(--gold-hi)}
+  .oplist li.no{color:var(--dim)}
+  .oplist li.no b{color:var(--verm);text-decoration:line-through}
+  .oplist .from{color:var(--dim);font-style:italic}
+
+  #effects{list-style:none;margin:0;padding:0;font-family:var(--sans);font-size:.68rem;line-height:1.5}
+  #effects li{padding:.2rem 0 .2rem .5rem;border-left:2px solid var(--rule);margin-bottom:.2rem;color:#ddd4c9}
+  #effects li .op{font-family:var(--mono);font-size:.62rem;color:var(--gold-hi)}
+  #effects li.bad{border-left-color:var(--verm);color:#f0b98a}
+  #effects li.tie{border-left-color:var(--lapis)}
+
+  #legend{display:flex;gap:.7rem;flex-wrap:wrap;font-family:var(--sans);font-size:.6rem;color:var(--dim);
+    padding:.35rem .6rem;background:#100f16;border-top:1px solid var(--rule)}
+  #legend b{font-weight:500}
+  #legend .sw{display:inline-block;width:12px;height:0;border-top:2px dashed var(--gold);
+    vertical-align:middle;margin-right:.25rem}
+  #legend .sw.tie{border-top:3px solid var(--lapis)}
+  #legend .sw.brk{border-top:2px dashed var(--verm)}
+  #legend .sw.mv{border-top:2px dashed var(--gold)}
+
+  #bar{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap;padding:.45rem .6rem;
+    background:#100f16;border-bottom:1px solid var(--rule)}
+  #power{font-family:var(--mono);font-size:.68rem;color:var(--gold-hi)}
+  #task{font-family:var(--sans);font-size:.72rem;color:var(--paper);
+    border-left:2px solid var(--verm);padding-left:.5rem;line-height:1.45}
+  #verdict{font-family:var(--sans);font-size:.75rem;padding:.35rem .55rem;border-radius:2px}
+  #verdict.win{background:rgba(201,154,46,.2);border:1px solid var(--gold);color:var(--gold-hi)}
+  #verdict.lose{background:rgba(192,101,35,.14);border:1px solid var(--verm);color:#f0b98a}
+
+  @media (max-width:1200px){
+    #left,#right{width:290px;flex-basis:290px}
+    #palette{grid-template-columns:repeat(6,1fr)}
+  }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <span class="title">The Scriptorium</span>
+    <span class="ar">دار الكتابة</span>
+    <span style="opacity:.35">·</span>
+    <span>writing the world in letters</span>
+    <span class="spacer"></span>
+    <a href="../../README.md">v2 architecture</a>
+    <a href="../../../site/index.html">TurkaGame</a>
+  </div>
+
+  <div id="wrap">
+    <!-- ================================================ the letter palette -->
+    <aside id="left">
+      <div>
+        <div class="lab">Metaphysics — the ruleset in force</div>
+        <div id="rulesets"></div>
+      </div>
+
+      <div class="frame hist" id="ruleset-frame"></div>
+
+      <div>
+        <div class="lab">Register — how far the letter reaches into the world</div>
+        <div class="row" id="registers"></div>
+      </div>
+
+      <div>
+        <div class="lab">The twenty-eight — click to append</div>
+        <div id="palette"></div>
+      </div>
+
+      <div class="frame">
+        <h4>The eight primitives</h4>
+        <div id="primitives" class="kv"></div>
+        <p>Each is granted by a fact about the letter&rsquo;s own body or its grammar, so the
+        instruction set is a consequence of the alphabet rather than a table someone chose.</p>
+      </div>
+    </aside>
+
+    <!-- ============================================================ the world -->
+    <div id="mid">
+      <div id="bar">
+        <button class="btn" id="run">Preview</button>
+        <button class="btn" id="commit">Inscribe <small>⏎</small></button>
+        <button class="btn" id="undo">Undo</button>
+        <button class="btn" id="clear-prog">Clear program</button>
+        <button class="btn" id="reset">Reset world</button>
+        <span class="spacer" style="flex:1"></span>
+        <span id="power"></span>
+      </div>
+      <div id="stage"><canvas id="cv"></canvas></div>
+      <div id="legend">
+        <span><span class="sw"></span><b>outline</b> occupied or changed</span>
+        <span><span class="sw mv"></span><b>arrow</b> moves from → to</span>
+        <span><span class="sw tie"></span><b>tie</b> becomes one body</span>
+        <span><span class="sw brk"></span><b>break</b> bond cut or refused</span>
+        <span style="margin-left:auto">click the ground to move the cursor</span>
+      </div>
+    </div>
+
+    <!-- ============================================= program, frames, effects -->
+    <aside id="right">
+      <div>
+        <div class="lab">Task</div>
+        <div class="row" id="tasks" style="margin-bottom:.4rem"></div>
+        <div id="task"></div>
+        <div id="verdict"></div>
+      </div>
+
+      <div>
+        <div class="lab">Program — written right to left, as the line is read</div>
+        <div id="program"></div>
+      </div>
+
+      <div class="frame" id="letter-frame"></div>
+
+      <div>
+        <div class="lab">What will happen</div>
+        <ul id="effects"></ul>
+      </div>
+
+      <div class="frame warn hidden" id="diagnostics"></div>
+    </aside>
+  </div>
+
+<script type="module" src="./src/ui.js?v=1"></script>
+</body>
+</html>

@@ -329,6 +329,14 @@ HEAD, not merely "pushed"):
   the ground. Extraction's target letter is now ranked by load, with a named tier.
   The machine's element glyphs are triangles, not emoji.
 
+- **v2 begun, v1 frozen (2026-09-04)** -- `games/` is closed (`games/FROZEN.md`); new work
+  is in `v2/`. Engine: 8 primitives derived from observable letter facts, 5 rulesets that
+  differ by motive and genuinely disagree, the Mafahis's three registers as the execution
+  model, preview-is-execution. App: the Scriptorium (`v2/apps/scriptorium/`), a letter IDE
+  with Letter Property Frames, provenance pills and 3 self-testing tasks. Verified: 24 Node
+  tests, `build_letters.py --verify`, and all 3 tasks solved through the real UI path in the
+  browser. Read `v2/README.md` then `v2/AUDIT_V1.md`.
+
 ## What's NOT done — the important gaps, not hidden
 
 1. **The VN's narrative prose is a real first pass, not final writing.** Every

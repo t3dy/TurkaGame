@@ -134,6 +134,40 @@ TurkaGame/
 └── site/                    showcase page, currently a placeholder
 ```
 
+## v2 -- the lettrist engine (added 2026-09-04)
+
+**`games/` is now v1 and is FROZEN** ([`games/FROZEN.md`](games/FROZEN.md)): closed to
+change, staying at its current URLs. All new work is in [`v2/`](v2/README.md), which does
+not import v1 code.
+
+v2 turns lettrism into a programming language for the world:
+
+- **Eight primitives derived from observable facts**, not assigned -- closed forms bind,
+  tailed forms pour, dots raise or lower, upright strokes hold an axis, and the six
+  non-connecting letters (ا د ذ ر ز و) SEVER, so **a written word is one rigid body and
+  those six letters are where it breaks**. Four *independent* divisions of the alphabet are
+  in play (abjad, light/dark, sun/moon, connecting) and `build_letters.py --verify` proves
+  they are independent rather than one fact told four times.
+- **Historical traditions are swappable rulesets differing by MOTIVE**, per the portal's own
+  `three-lettrisms` entry. Sufi lettrism refuses SEVER ("the chain of being is not cut"), so
+  مرم is one body there and two elsewhere -- a difference you can stand a building on.
+- **The execution model is the Mafahis's three registers** (mental / spoken / written =
+  plan / run-once / persist), so "letters compile into world operations" comes from the
+  source's own structure rather than from computing. Gemination gives the loop.
+- **Preview IS execution** -- one function, run against a clone. Tested cell-for-cell under
+  all five rulesets.
+
+House rules it adds:
+
+- **Evidence and doctrine live in different files.** `v2/data/letters.json` holds only what
+  is on the page; `v2/rulesets/rulesets.json` holds who claimed what. Swap the ruleset and
+  the letters behave differently, because one is interpretation and the other is evidence.
+- **A ruleset must say what in it is ours.** Every pack carries an `interpretation_note`
+  and a test fails without one; `PORTAL` packs must cite sources, `GAME_FICTION` packs must
+  cite none.
+
+Audit of the five v1 games against this vision: [`v2/AUDIT_V1.md`](v2/AUDIT_V1.md).
+
 ## Deploy
 
 **Live: https://t3dy.github.io/TurkaGame/** — GitHub Pages off `main` at the repo root;

@@ -1,0 +1,157 @@
+{
+  "_note": "Metaphysical rulesets — the 'physics engines' of v2. Each is a way of answering the question 'why do letters have effects at all?', and each answers it differently, so the same program builds under one and collapses under another. The five are not five dates: they are separated by MOTIVE, which is the portal's own finding (entry `three-lettrisms`: 'Three lettrisms, not one. Gnostic-messianic, Sufi and intellectual... the difference is motive rather than method'). Adding a sixth means adding an object here, not touching engine code.",
+
+  "schema": {
+    "id": "stable key",
+    "name": "shown to the player",
+    "motive": "the one-line answer to 'why do letters work?' — the thing that separates this ruleset from the others",
+    "kind": "PORTAL | CORPUS | REPORTED | INTERPRETATION | GAME_FICTION — the strongest grounding any part of this pack has",
+    "period": "when and where, as plainly as the sources allow; null where we will not guess",
+    "sources": "portal slugs and corpus citations, each with what it actually supports",
+    "grants": "which of the eight derived primitives this ruleset recognises",
+    "denies": "which it refuses, and why — this is where rulesets visibly disagree",
+    "registers": "which of mental/spoken/written may be used",
+    "power": "how the strength of an operation is computed. The signature mechanic.",
+    "reversible": "whether the world can be stepped back",
+    "interpretation_note": "what in this pack is OURS rather than the sources'"
+  },
+
+  "primitives": {
+    "AXIS":        { "arabic": "محور", "gloss": "hold a frame of reference; anchor a column against change" },
+    "RAISE":       { "arabic": "رفع",  "gloss": "lift n rungs of the abjad ladder — elevate, heat, expand" },
+    "LOWER":       { "arabic": "خفض",  "gloss": "drop n rungs — cool, contract, settle" },
+    "BIND":        { "arabic": "جمع",  "gloss": "join what stands either side into one body" },
+    "POUR":        { "arabic": "صبّ",  "gloss": "let what is above pass down through" },
+    "SEVER":       { "arabic": "قطع",  "gloss": "break a bond; end a chain where the letter will not join" },
+    "ASSIMILATE":  { "arabic": "إدغام", "gloss": "take on the nature of what precedes, as the article's lām becomes a sun letter" },
+    "DISTINGUISH": { "arabic": "إظهار", "gloss": "keep your own nature and mark a boundary, as before a moon letter" }
+  },
+
+  "registers": {
+    "_grounding": "PORTAL, via research/notes/02-prologue-to-pythagorean-renaissance.md: Ibn Turka builds the Mafāḥiṣ as three 'Globes of Light' corresponding to the Mental, Written and Spoken registers of the Letter, organised as an ascent, a descent, and an ascent again. The engine uses the three as its execution model. That the three registers map onto plan / run-once / persist is OURS.",
+    "mental":  { "order": 1, "cost": 0, "persists": false, "touches_world": false },
+    "spoken":  { "order": 2, "cost": 1, "persists": false, "touches_world": true },
+    "written": { "order": 3, "cost": 3, "persists": true,  "touches_world": true }
+  },
+
+  "rulesets": [
+    {
+      "id": "intellectual",
+      "name": "The Intellectual Lettrism",
+      "arabic": "علم الحروف البرهاني",
+      "motive": "Letters work because number is the structure of the real, and a proportion can be demonstrated.",
+      "kind": "PORTAL",
+      "period": "Timurid Iran and its network, late 14th–15th century",
+      "sources": [
+        { "slug": "lettrism-universal", "supports": "That Ibn Turka's claim is not a place among the sciences but that lettrism SUPERSEDES philosophy on philosophy's own ground, because only the letter is the coincidentia oppositorum." },
+        { "slug": "pythagorean-cosmology", "supports": "That he grounded lettrism explicitly in Pythagorean mathematics — letters and their numerical values encode cosmic principles." },
+        { "slug": "new-brethren-purity", "supports": "That this was a self-conscious movement to establish occultism as a legitimate, rational universal science." },
+        { "slug": "mathematicalization", "supports": "That the occult sciences were deliberately moved into the MATHEMATICAL sciences. Mathematics answers the philosophers." },
+        { "slug": "three-lettrisms", "supports": "That 'intellectual' is one of three distinct lettrisms, separated by motive." }
+      ],
+      "grants": ["AXIS", "RAISE", "LOWER", "BIND", "POUR", "SEVER", "ASSIMILATE", "DISTINGUISH"],
+      "denies": {},
+      "registers": ["mental", "spoken", "written"],
+      "power": {
+        "rule": "proportion",
+        "detail": "An operation is strong exactly insofar as the abjad values of adjacent letters in the program stand in small-integer ratio. 2:1 and 3:2 are full strength; a ratio needing large terms is weak. Demonstration, not intensity.",
+        "max_term": 4,
+        "floor": 0.25
+      },
+      "reversible": true,
+      "interpretation_note": "That letters act BY PROPORTION is the sources' own claim. That proportion should be computed between ADJACENT letters of a program, with terms of 4 or less counting as consonant, is ours."
+    },
+    {
+      "id": "sufi",
+      "name": "The Sufi Lettrism",
+      "arabic": "علم الحروف الولائي",
+      "motive": "Letters work because they are the divine names, and a name reaches as far as the sanctity of the one who utters it.",
+      "kind": "PORTAL",
+      "period": "the Ibn ʿArabī line, 13th century onward, as received in the 15th",
+      "sources": [
+        { "slug": "ilm-al-huruf", "supports": "The 28 letters corresponding to the 28 divine names, and the light/dark division of the alphabet." },
+        { "slug": "divine-names", "supports": "That the names are the operative reality, not labels for it." },
+        { "slug": "barzakh", "supports": "The intermediate realm through which effect passes — the reason nothing here is severed." },
+        { "slug": "mathematicalization", "supports": "That the sciences were simultaneously recast as sciences of walāya. Sanctity answers the court." },
+        { "slug": "three-lettrisms", "supports": "That Sufi lettrism is a distinct one of the three." }
+      ],
+      "grants": ["AXIS", "RAISE", "LOWER", "BIND", "POUR", "ASSIMILATE", "DISTINGUISH"],
+      "denies": {
+        "SEVER": "The chain of being is not cut. What appears separate is joined through the barzakh, so this ruleset has no operation for breaking a bond — a program that relies on severing will not run here."
+      },
+      "registers": ["mental", "spoken", "written"],
+      "power": {
+        "rule": "luminosity",
+        "detail": "Strength rises with the proportion of light (nūrānī) letters in the program, and reach extends with the register: what is merely spoken acts near, what is inscribed acts far.",
+        "floor": 0.4,
+        "register_reach": { "mental": 0, "spoken": 1, "written": 3 }
+      },
+      "reversible": true,
+      "interpretation_note": "The 28↔28 correspondence and the 14/14 light/dark split are the sources'. Reading luminosity as OPERATIVE STRENGTH, and register as physical REACH, is ours."
+    },
+    {
+      "id": "gnostic-messianic",
+      "name": "The Gnostic-Messianic Lettrism",
+      "arabic": "الحروفية",
+      "motive": "Letters work because the world is already written, and to speak one is to proclaim what it says. A proclamation cannot be unsaid.",
+      "kind": "PORTAL",
+      "period": "the Ḥurūfī movement of Fażl Allāh Astarābādī (d. 796/1394) and after",
+      "sources": [
+        { "slug": "hurufism", "supports": "The messianic letter-movement that read the letters as announcing a new dispensation — and that the distinction from the other lettrisms is MOTIVE, not technique." },
+        { "slug": "three-lettrisms", "supports": "That the Ḥurūfī movement is an INSTANCE of gnostic-messianic lettrism, not a definition of the field." }
+      ],
+      "grants": ["RAISE", "LOWER", "BIND", "POUR", "ASSIMILATE", "DISTINGUISH"],
+      "denies": {
+        "AXIS": "There is no neutral frame to hold. Everything is already inscribed with meaning, so nothing can be set aside as mere reference.",
+        "SEVER": "What has been proclaimed cannot be taken back."
+      },
+      "registers": ["written"],
+      "power": {
+        "rule": "absolute",
+        "detail": "Every operation runs at full strength. Nothing is graded, because a proclamation admits no degrees.",
+        "value": 1.0
+      },
+      "reversible": false,
+      "interpretation_note": "That the movement's distinguishing mark is proclamation of a new dispensation is the portal's. Turning that into IRREVERSIBILITY, a single permitted register, and the loss of AXIS and SEVER, is entirely ours — and it is the ruleset a player should be most careful with, because a world built under it cannot be stepped back."
+    },
+    {
+      "id": "ottoman-operative",
+      "name": "The Ottoman Operative Lettrism",
+      "arabic": "الجفر العملي",
+      "motive": "Letters work because the procedure works. Follow the manual completely and the result is guaranteed; follow it partly and nothing happens at all.",
+      "kind": "PORTAL",
+      "period": "Ottoman, 15th–16th century, Bisṭāmī's jafr manual as dynastic handbook",
+      "sources": [
+        { "slug": "jafr", "supports": "Letter divination as a technique with a foundational text and an operative literature; its political use." },
+        { "slug": "ottoman-asymmetry", "supports": "That Bisṭāmī's jafr manual became Ottoman STATE EQUIPMENT while Ibn Turka was tried three times — same teacher, same science, opposite outcomes; the variable is the polity." },
+        { "slug": "talismanic-science", "supports": "Procedures with materials and timings, descending from the Shams al-Maʿārif tradition." }
+      ],
+      "grants": ["AXIS", "RAISE", "LOWER", "BIND", "POUR", "SEVER", "ASSIMILATE", "DISTINGUISH"],
+      "denies": {},
+      "registers": ["mental", "written"],
+      "power": {
+        "rule": "procedure",
+        "detail": "Full strength, exactly repeatable — but only when the program is at least as long as the procedure requires. A short program does nothing whatever. There is no partial credit in a manual.",
+        "min_length": 3,
+        "value": 1.0
+      },
+      "reversible": true,
+      "interpretation_note": "That this tradition is procedural, textual and institutionally backed is the portal's. The MINIMUM PROGRAM LENGTH, and the refusal of the spoken register in favour of the written manual, are ours."
+    },
+    {
+      "id": "workshop",
+      "name": "The Workshop",
+      "arabic": "الورشة",
+      "motive": "Nothing. This ruleset makes no historical claim at all: it is the sandbox, where every primitive is granted so that a builder can find out what the engine does.",
+      "kind": "GAME_FICTION",
+      "period": null,
+      "sources": [],
+      "grants": ["AXIS", "RAISE", "LOWER", "BIND", "POUR", "SEVER", "ASSIMILATE", "DISTINGUISH"],
+      "denies": {},
+      "registers": ["mental", "spoken", "written"],
+      "power": { "rule": "absolute", "detail": "Everything at full strength, always.", "value": 1.0 },
+      "reversible": true,
+      "interpretation_note": "Entirely ours, and labelled GAME_FICTION wherever it appears. It exists so that the historical rulesets have something with no claim behind it to be measured against — the same job Strike does among Abjad Tower's six operations."
+    }
+  ]
+}
