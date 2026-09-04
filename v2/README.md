@@ -196,6 +196,7 @@ v2/
 │   └── tasks.json            four tasks, each self-tested through the real UI path
 ├── apps/pushing-floor/       the first GAME: shove stones, write letters when
 │                               shoving is not enough. Levels checked three ways.
+├── apps/standing-word/       the stacker: build with gravity off, then let it in
 └── tests/engine.test.mjs     34 tests
 ```
 
@@ -250,6 +251,36 @@ pusher (you never overshoot, so an unpassable stop is rarely needed) and POUR wa
 a stacker (this floor is one level of `y`). Two of four floor-relevant primitives
 carry the mode; the other two are left unused and said so, rather than given a
 contrived level each.
+
+[`apps/standing-word/`](apps/standing-word/README.md) is the second, and it is
+where AXIS gets the job it always meant. You build with gravity **off** and then
+let it in; what stands is decided by which letters join to which. Put a rāʾ at the
+outboard end of a run and it is joined to nothing, so it goes; put the same rāʾ
+inboard, resting on the pier, and it carries everything hanging west of it. **The
+letter is not good or bad — its position is.** And alif, the one single upright
+stroke, holds a frame, so it stands on nothing and carries what is bonded to it:
+v1's balcony-bracket rule arrived at from the letter's own body rather than from a
+painting.
+
+Its **forecast** is the preview promise cashed hardest. Dashed arrows show every
+cell that *would* fall, computed by cloning the world, switching gravity on and
+settling — the identical call the commit makes, thrown away. Measured: the verified
+solution forecasts 0 falls; the same two letters in the wrong order forecasts 1,
+and then loses.
+
+**Its level check asks a different second question**, because writing is the only
+verb here and "solvable without the letters" is vacuous. It asks *does it matter
+which letter you use* — and **both levels failed it on the first pass**, because
+their hands had spare letters, so no opening could doom you. Tightening each hand
+to exactly the cells needed made every placement matter: 13 of 14 and 23 of 24
+openings now lose.
+
+**There is still no demolition mode, and that is a finding.** Knocking a structure
+down needs a way to break an existing bond, and v2 has none — SEVER is a *parsing*
+rule about whether a new letter joins forward, and POUR carries a cell's bonds with
+it. A demolition level would need a genuine cut derived from some observable fact
+this project does not have, or a letter that changes a world rule, or momentum.
+Inventing a primitive to fill the gap is the thing this project does not do.
 
 ## Known gaps — this is a first slice
 

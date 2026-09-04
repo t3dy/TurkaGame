@@ -411,4 +411,26 @@ test('the ledger survives a store that throws', () => {
   assert.equal(L.knowsPrimitive('POUR'), true);
 });
 
+test('an AXIS letter holds against gravity, and carries what is bonded to it', () => {
+  // Written in mid-air with nothing under it. Alif is the only letter that is a
+  // single upright stroke, so it is the only one that can do this.
+  const w = new World({ rules: { gravity: true } });
+  execute(w, compile(prog('ا'), { letters, ruleset: RS('workshop') }), { cursor: [0, 4, 0] });
+  assert.equal(w.get(0, 4, 0)?.glyph, 'ا', 'the alif stays in the air');
+
+  // A letter that is NOT an axis, written the same way, falls.
+  const w2 = new World({ rules: { gravity: true } });
+  execute(w2, compile(prog('م'), { letters, ruleset: RS('workshop') }), { cursor: [0, 4, 0] });
+  assert.equal(w2.get(0, 4, 0), null, 'mīm has nothing to stand on');
+  assert.equal(w2.get(0, 0, 0)?.glyph, 'م', 'it fell to the ground');
+
+  // And it carries a bonded neighbour: ام written together is one body only if
+  // alif connects forward -- which it does NOT, so this is also the SEVER test.
+  const w3 = new World({ rules: { gravity: true } });
+  execute(w3, compile(prog('ما'), { letters, ruleset: RS('workshop') }), { cursor: [0, 4, 0] });
+  // م at (0,4,0) joins forward to ا at (-1,4,0); the alif holds the pair up.
+  assert.equal(w3.get(0, 4, 0)?.glyph, 'م', 'the mīm is carried by the alif it joins');
+  assert.equal(w3.get(-1, 4, 0)?.glyph, 'ا');
+});
+
 console.log(`${n} tests passed`);

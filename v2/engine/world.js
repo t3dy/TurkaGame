@@ -125,7 +125,12 @@ export class World {
         if (done.has(body)) continue;
         done.add(body);
         const cells = [...body].map(m => this.cells.get(m)).filter(Boolean);
-        if (!cells.length || cells.some(c => c.fixed)) continue;
+        // A letter that HOLDS A FRAME holds it against gravity too, and carries
+        // whatever is bonded to it. That is what AXIS has meant since the first
+        // build; a stacker is simply where it finally matters. It is also v1's
+        // balcony-bracket rule — "carried on nothing" — arrived at from the
+        // letter's own form rather than from a painting.
+        if (!cells.length || cells.some(c => c.fixed || c.axis)) continue;
         if (!cells.every(c => MATERIALS[c.material]?.falls)) continue;
         const supported = cells.some(c => {
           if (c.y <= groundY) return true;

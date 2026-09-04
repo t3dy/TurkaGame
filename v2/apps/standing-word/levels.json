@@ -1,0 +1,107 @@
+{
+  "_note": "Levels for The Standing Word. You build with gravity off, then let it in. What holds is decided by the same two rules that decide everything else in v2: a written word is one body, and the six non-connecting letters are where it breaks — so which letter you put at the outboard end decides whether it stays up. Checked by verify_levels.mjs before anyone sees them.",
+  "how_it_works": {
+    "write": "Click an empty cell that is on the ground or beside something already there, and the selected letter is written into it. It is spent.",
+    "bond": "Adjacent letters join into one body along the writing line — westward — unless the eastern one is a letter that never joins what follows (ا د ذ ر ز و).",
+    "hold": "A body stands if any cell of it rests on something. An ALIF stands on nothing at all, and carries whatever is bonded to it: it is a single upright stroke, and holding a frame is what that means.",
+    "gravity": "Off while you build. Letting it in is the move that ends the level."
+  },
+  "levels": [
+    {
+      "id": "the-outboard-letter",
+      "name": "The Outboard Letter",
+      "arabic": "الحرف الطرفي",
+      "brief": "Two letters, two marks, and gravity waiting. One of them joins nothing after it — so only one order stands.",
+      "teaches": "A written word is one body, and the six letters that never join what follows are where it breaks. Rāʾ can sit INSIDE a word quite happily — what it cannot do is carry anything hanging off its far side. Put it at the outboard end and it is joined to nothing.",
+      "needs": "the word-is-one-body rule",
+      "ruleset": "workshop",
+      "hand": [
+        "م",
+        "ر"
+      ],
+      "targets": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      "max_depth": 2,
+      "claims_choice": true,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        }
+      ]
+    },
+    {
+      "id": "the-upright-stroke",
+      "name": "The Upright Stroke",
+      "arabic": "الألف",
+      "brief": "Three marks, and the pier reaches only the first. Nothing in your hand joins far enough.",
+      "teaches": "Alif is a single upright stroke and the only letter that holds a frame — so it is the only one that stands on nothing. It also joins nothing after it, which is why it cannot simply be added to the end of a word: it holds itself, and whatever is bonded to it.",
+      "needs": "AXIS",
+      "ruleset": "workshop",
+      "hand": [
+        "م",
+        "ر",
+        "ا"
+      ],
+      "targets": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "max_depth": 3,
+      "claims_choice": true,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        }
+      ]
+    }
+  ]
+}

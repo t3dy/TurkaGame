@@ -1153,3 +1153,48 @@ carries an `is_swapped` flag on exactly two paths for Crowley's "Tzaddi is not t
 **Consequence.** GoldenDawnBlocks is parked with no app and no glyph artwork -- the
 elemental/planetary/zodiacal graphics remain the largest unstarted piece. Next for the
 modes: a stacker, which is where POUR and gravity-as-a-rule finally have a game.
+
+## 2026-09-04 (evening) -- The Standing Word, and the demolition that could not be built
+
+**Decision.** The stacker Ted asked for: `v2/apps/standing-word/`. You build with gravity
+OFF and then let it in, and what holds is decided by the two rules the alphabet already
+had -- a written word is one body, and the six non-connecting letters are where it breaks.
+
+**AXIS finally has a job.** `world.settle()` now treats a cell with `axis` as unfallable,
+so an alif -- the one single upright stroke in the alphabet, and therefore the one letter
+granting AXIS -- stands on nothing and carries whatever is bonded to it. That is v1's
+balcony-bracket rule ("carried on nothing"), arrived at from the letter's own body rather
+than from a painting, which is the whole method working as intended: the primitive was
+defined months of work earlier and the game that needed it turned up later.
+
+**The best thing in it is that a letter is not good or bad -- its position is.** Rāʾ at the
+outboard end of a run is joined to nothing and falls; the same rāʾ inboard, resting on the
+pier, carries everything hanging west of it. One rule, read from the page, with opposite
+consequences depending on where you put it.
+
+**The forecast is preview-is-execution cashed hardest.** Dashed arrows show every cell that
+WOULD fall, computed by cloning the world, switching gravity on and settling it -- the
+identical call the commit makes. Measured in the browser: the verified solution forecasts 0
+falls; the wrong order forecasts 1, and then loses.
+
+**The level check had to ask a different question, and it caught a real fault.** On the
+Pushing Floor the useful second question was "is it solvable WITHOUT the letters", because
+walking was a competing verb. Here writing is the only verb, so that is vacuous. The
+question that bites is *does it matter which letter you use* -- and **both levels failed it
+on the first pass**, because their hands had spare letters and no opening could doom you.
+They were solvable and taught nothing. Tightening each hand to exactly the number of cells
+needed made every placement matter: 13 of 14 and 23 of 24 openings now lose.
+
+**Rejected -- a demolition mode, and the reason is a real gap.** "Knock it down" needs a
+way to break an existing bond and v2 has none. SEVER is a PARSING rule about whether a
+newly written letter joins forward, not a cut; POUR displaces a cell but `move()` carries
+its bonds along. A demolition level would need a genuine cut derived from some observable
+fact this project does not have, or a letter that changes a world rule (the brief's Level
+5, which no primitive does), or momentum so a shove can dislodge rather than translate.
+Inventing a primitive to fill the gap is exactly what this project does not do, so the gap
+is written down in three places instead.
+
+**Consequence.** Three v2 surfaces now: the Scriptorium (workbench), the Pushing Floor
+(pusher), the Standing Word (stacker). POUR still has no level. The
+elemental/planetary/zodiacal glyph artwork remains the largest unstarted piece, and it
+blocks GoldenDawnBlocks from being anything but data.

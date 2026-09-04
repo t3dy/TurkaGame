@@ -188,6 +188,15 @@ and, where a level claims a choice matters, that a wrong choice exists. The seco
 is the one that matters: v1's Impossible Architect was solvable *and* solvable for the
 wrong reason.
 
+[`v2/apps/standing-word/`](v2/apps/standing-word/README.md) is the stacker: build with
+gravity off, then let it in. **AXIS finally has its job** — alif is the one single upright
+stroke, so it stands on nothing and carries what is bonded to it, which is v1's
+balcony-bracket rule derived from the letter instead of from a painting. Its level check
+asks *does it matter which letter you use*, and **both levels failed that on the first
+pass** because their hands had spare letters. There is still **no demolition mode**: that
+needs a way to cut an existing bond, which v2 does not have, and the gap is written down
+rather than filled with an invented primitive.
+
 **The engine is alphabet-agnostic, and that was tested.** `../GoldenDawnBlocks/` vendors
 the four engine modules byte-identical and runs them on the 22 Hebrew letters with the
 Sefer Yetsirah's 3/7/12 division. The vendoring found three real couplings to Arabic, all
