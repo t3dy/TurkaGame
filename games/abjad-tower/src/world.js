@@ -435,6 +435,152 @@ export class World {
     }
   }
 
+  /* ---------------------------------------------------- placement preview -- */
+  // Dropping was blind: you clicked, a body appeared somewhere above, and you
+  // found out where it went by watching it arrive. Three things are drawn now,
+  // all of them answers to "where does this enter and where does it land":
+  //   the GHOST     a translucent box at the entry point, in the piece's own size
+  //   the FALL LINE from the ghost straight down to the surface it will meet
+  //   the FOOTPRINT a ring on that surface, gold where it will rest, vermilion
+  //                 where it will not — over the void, or inside something fixed
+  // Nothing here simulates: the landing surface is found by casting down through
+  // the bodies that exist, which is exact for a vertical drop and honest about
+  // being only that. A piece that topples on arrival still topples.
+
+  _ensureGhost() {
+    if (this.ghost) return this.ghost;
+    const g = {};
+    g.box = new THREE.Mesh(
+      new THREE.BoxGeometry(1, 1, 1),
+      new THREE.MeshBasicMaterial({ color: 0xe8c86a, transparent: true, opacity: 0.3, depthWrite: false }));
+    g.edges = new THREE.LineSegments(
+      new THREE.EdgesGeometry(new THREE.BoxGeometry(1, 1, 1)),
+      new THREE.LineBasicMaterial({ color: 0xe8c86a, transparent: true, opacity: 0.9 }));
+    g.line = new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]),
+      new THREE.LineDashedMaterial({ color: 0xe8c86a, dashSize: 0.18, gapSize: 0.12, transparent: true, opacity: 0.85 }));
+    g.ring = new THREE.Mesh(
+      new THREE.RingGeometry(0.5, 0.62, 32),
+      new THREE.MeshBasicMaterial({ color: 0xe8c86a, transparent: true, opacity: 0.75,
+                                    side: THREE.DoubleSide, depthWrite: false }));
+    g.ring.rotation.x = -Math.PI / 2;
+    for (const k of ['box', 'edges', 'line', 'ring']) { g[k].visible = false; g[k].renderOrder = 5; this.scene.add(g[k]); }
+    return (this.ghost = g);
+  }
+
+  /** The height at which a box of this footprint, dropped at (x, z), comes to
+   *  rest: the top of the highest thing under it, or the ground. */
+  landingY(x, z, hw, hd, skip = null) {
+    let top = GROUND_Y;
+    const cand = [...this.liveBlocks().map(b => b.body), ...this.statics.map(s => s.body)];
+    for (const body of cand) {
+      if (body === skip) continue;
+      body.updateAABB();
+      const a = body.aabb;
+      if (a.upperBound.x < x - hw || a.lowerBound.x > x + hw) continue;
+      if (a.upperBound.z < z - hd || a.lowerBound.z > z + hd) continue;
+      top = Math.max(top, a.upperBound.y);
+    }
+    return top;
+  }
+
+  /** Show the preview. `ok:false` colours it as a refusal. */
+  showGhost({ x, y, z, w, h, d, rotY = 0, ok = true, land = null, fixed = false }) {
+    const g = this._ensureGhost();
+    const col = ok ? 0xe8c86a : 0xc06523;
+    g.box.scale.set(w, h, d); g.box.position.set(x, y, z); g.box.rotation.y = rotY;
+    g.edges.scale.set(w, h, d); g.edges.position.set(x, y, z); g.edges.rotation.y = rotY;
+    g.box.material.color.setHex(col); g.edges.material.color.setHex(col);
+    g.box.material.opacity = fixed ? 0.42 : 0.28;
+
+    const landY = land === null ? y : land;
+    const drop = Math.max(0, y - h / 2 - landY);
+    // A fixed body does not fall, so it gets no fall line — which is itself the
+    // thing worth seeing about a bracket.
+    g.line.visible = !fixed && drop > 0.06;
+    if (g.line.visible) {
+      g.line.geometry.setFromPoints([new THREE.Vector3(x, y - h / 2, z), new THREE.Vector3(x, landY, z)]);
+      g.line.computeLineDistances();
+      g.line.material.color.setHex(col);
+    }
+    g.ring.visible = !fixed;
+    if (g.ring.visible) {
+      g.ring.position.set(x, landY + 0.02, z);
+      g.ring.scale.setScalar(Math.max(w, d) * 1.05);
+      g.ring.material.color.setHex(col);
+    }
+    g.box.visible = g.edges.visible = true;
+  }
+
+  hideGhost() {
+    if (!this.ghost) return;
+    for (const k of ['box', 'edges', 'line', 'ring']) this.ghost[k].visible = false;
+  }
+
+  /** A brief mark where a piece entered, so the eye can follow it in. */
+  markEntry(x, y, z, color = 0xe8c86a) {
+    const m = new THREE.Mesh(
+      new THREE.RingGeometry(0.24, 0.34, 24),
+      new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.95, side: THREE.DoubleSide, depthWrite: false }));
+    m.position.set(x, y, z);
+    m.rotation.x = -Math.PI / 2;
+    m.renderOrder = 6;
+    this.scene.add(m);
+    this.pending.push({ at: this.time + 0.75, run: () => this.scene.remove(m) });
+    this.entryMarks = this.entryMarks || [];
+    this.entryMarks.push({ mesh: m, until: this.time + 0.75 });
+  }
+
+  /** Contact graph over live blocks AND fixed bodies (brackets, the turret), by
+   *  AABB overlap. Nodes are keyed 'b<i>' / 's<i>'. Used by the Brackets mode to
+   *  ask whether a structure actually REACHES somewhere, rather than whether two
+   *  things happen to be adjacent. */
+  contactGraph(tol = 0.06) {
+    const live = this.liveBlocks();
+    const nodes = [
+      ...live.map((b, i) => ({ key: 'b' + i, body: b.body, block: b })),
+      ...this.statics.map((s, i) => ({ key: 's' + i, body: s.body, static: s })),
+    ];
+    for (const n of nodes) n.body.updateAABB();
+    const adj = new Map(nodes.map(n => [n.key, []]));
+    for (let i = 0; i < nodes.length; i++) for (let j = i + 1; j < nodes.length; j++) {
+      const A = nodes[i].body.aabb, B = nodes[j].body.aabb;
+      if (A.lowerBound.x - tol > B.upperBound.x || B.lowerBound.x - tol > A.upperBound.x) continue;
+      if (A.lowerBound.y - tol > B.upperBound.y || B.lowerBound.y - tol > A.upperBound.y) continue;
+      if (A.lowerBound.z - tol > B.upperBound.z || B.lowerBound.z - tol > A.upperBound.z) continue;
+      adj.get(nodes[i].key).push(nodes[j].key);
+      adj.get(nodes[j].key).push(nodes[i].key);
+    }
+    return { nodes, adj, byKey: Object.fromEntries(nodes.map(n => [n.key, n])) };
+  }
+
+  /**
+   * Is `target` (a fixed body) reached by a chain of contact that starts on the
+   * GROUND? Brackets may be links in that chain — they are carried on nothing, as
+   * the painting's are — but they may not be its origin, because the balcony they
+   * carry projects from a building that stands on the earth. A bracket fixed
+   * beside the turret with one brick on it therefore reaches nothing.
+   */
+  reachesFromGround(target) {
+    const g = this.contactGraph();
+    const targetKey = g.nodes.find(n => n.static === target)?.key;
+    if (!targetKey) return false;
+    const roots = g.nodes.filter(n => {
+      if (!n.block) return false;                       // a static is never a root
+      n.body.updateAABB();
+      const p = n.body.position;
+      return n.body.aabb.lowerBound.y < 0.12 &&         // sitting on the ground
+             (this.padRadius === null || Math.hypot(p.x, p.z) <= this.padRadius + 0.3);
+    }).map(n => n.key);
+    const seen = new Set(roots), queue = [...roots];
+    while (queue.length) {
+      const k = queue.shift();
+      if (k === targetKey) return true;
+      for (const n of g.adj.get(k)) if (!seen.has(n)) { seen.add(n); queue.push(n); }
+    }
+    return false;
+  }
+
   /** The live block whose top is highest directly under (x, z), or null. */
   blockUnder(x, z) {
     let best = null, top = -Infinity;
@@ -513,6 +659,15 @@ export class World {
       if (this.time >= this.pending[i].at) { this.pending[i].run(); this.pending.splice(i, 1); }
     }
 
+    if (this.entryMarks && this.entryMarks.length) {
+      this.entryMarks = this.entryMarks.filter(e => {
+        const left = e.until - this.time;
+        if (left <= 0) { this.scene.remove(e.mesh); return false; }
+        e.mesh.scale.setScalar(1 + (0.75 - left) * 2.6);
+        e.mesh.material.opacity = Math.max(0, left / 0.75) * 0.95;
+        return true;
+      });
+    }
     this._temperForces();
     this.world.step(1 / 60, dt, 3);
 

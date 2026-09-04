@@ -6,9 +6,9 @@
 // tower Strike could not is worth a lot. The Tome is the record of what you have
 // learned, and it is the actual progression.
 
-import { World, BLOCK, TEMPER } from './world.js?v=6';
-import * as OPS from './ops.js?v=6';
-import { Notebook } from './notebook.js?v=6';
+import { World, BLOCK, TEMPER } from './world.js?v=8';
+import * as OPS from './ops.js?v=8';
+import { Notebook } from './notebook.js?v=8';
 
 const V = 'v=2';
 const $ = id => document.getElementById(id);
@@ -157,13 +157,42 @@ const MODES = {
       buildTower(s.seed, 7);
       world.setTargetLine(2.6);
       s.budget = 6;
-      // Name a letter that actually appears more than once.
-      const counts = {};
-      for (const b of world.liveBlocks()) counts[b.letter.glyph] = (counts[b.letter.glyph] || 0) + 1;
-      const cands = Object.keys(counts).filter(g => counts[g] >= 2);
-      s.targetGlyph = cands.length ? cands[Math.floor(Math.random() * cands.length)]
-                                   : world.liveBlocks()[0].letter.glyph;
-      s.instruction = `Remove every ${s.targetGlyph} and keep the rest above the ring.`;
+      // Which letter to name. The first version picked at random among those
+      // appearing twice or more, so one round could ask for two blocks off the top
+      // and the next for the whole foundation, with nothing to tell you which. Now
+      // the target is chosen by how much of the tower LEANS ON IT — the mass
+      // standing above each instance — and the round names the tier it picked, so a
+      // complaint about difficulty has a number and a seed behind it.
+      const counts = {}, load = {};
+      for (const b of world.liveBlocks()) {
+        const g = b.letter.glyph;
+        counts[g] = (counts[g] || 0) + 1;
+        // Mass resting above this block, in its own column footprint.
+        let above = 0;
+        for (const o of world.liveBlocks()) {
+          if (o === b) continue;
+          const dy = o.body.position.y - b.body.position.y;
+          if (dy > 0.2 && Math.hypot(o.body.position.x - b.body.position.x,
+                                     o.body.position.z - b.body.position.z) < BLOCK.w) above += o.body.mass;
+        }
+        load[g] = (load[g] || 0) + above;
+      }
+      const cands = Object.keys(counts).filter(g => counts[g] >= 2)
+        .sort((a, b) => load[a] - load[b]);
+      if (!cands.length) {
+        s.targetGlyph = world.liveBlocks()[0].letter.glyph;
+        s.tier = 'only one candidate';
+      } else {
+        // The seed picks a TIER, not a letter: light (least load-bearing), middling,
+        // or heavy. Same seed, same tier, same tower.
+        const rnd = mulberry(s.seed ^ 0x5eed);
+        const tiers = ['light', 'middling', 'load-bearing'];
+        const t = Math.floor(rnd() * Math.min(3, cands.length));
+        s.tier = tiers[t];
+        s.targetGlyph = cands[Math.floor(t * (cands.length - 1) / Math.max(1, Math.min(3, cands.length) - 1))];
+      }
+      s.instruction = `Remove every ${s.targetGlyph} and keep the rest above the ring. ` +
+                      `This one is ${s.tier}: ${(load[s.targetGlyph] || 0).toFixed(1)} of mass stands on it.`;
     },
     check(s) {
       if (!world.isSettled()) return null;
@@ -336,25 +365,34 @@ MODES.kawabil = {
     s.placing = true;
     s.tool = 'piece';
     s.holdFrom = null;
-    s.instruction = `Reach the turret over the void. ${KW.brackets} brackets may be fixed in empty air; ` +
-                    `every other piece must be carried. Click to drop a piece; switch to Bracket to fix one.`;
+    s.instruction = `Reach the turret over the void — an unbroken chain of contact from the ` +
+                    `pad out to it. ${KW.brackets} brackets may be fixed in empty air and may be links ` +
+                    `in that chain, but never its beginning. Click to drop a piece; switch to Bracket to fix one.`;
   },
   check(s) {
     if (!s.turret) return null;
     // "Rests against the turret": the gap between the block's box and the turret's
     // box is nearly zero. (An earlier test used distance-to-centre < 1.35, which a
     // 1.5-wide block beside a 1.6-wide turret can never satisfy.)
+    // Touching the turret is not reaching it. The structure has to arrive from the
+    // GROUND: a bracket fixed beside the turret with one brick on it touches
+    // everything and reaches nothing. (The first version of this mode could be won
+    // that way in two moves — my own README said so, which is how it got fixed.)
     const near = world.liveBlocks().filter(b => boxGap(b.body, s.turret.body) < 0.12);
-    if (near.length && world.isSettled()) {
+    const reached = near.length > 0 && world.reachesFromGround(s.turret);
+    s.reached = reached;
+    if (reached && world.isSettled()) {
       if (s.holdFrom === null) s.holdFrom = world.time;
       s.hold = world.time - s.holdFrom;
       if (s.hold >= 2.5) {
         return { win: true, score: 150 + s.bracketsLeft * 60 + s.deck.length * 8,
-                 why: `A piece rests against the turret and holds. ${KW.brackets - s.bracketsLeft} bracket(s) used.` };
+                 why: `A chain of contact runs from the pad out to the turret and holds. ${KW.brackets - s.bracketsLeft} bracket(s) used.` };
       }
     } else { s.holdFrom = null; s.hold = 0; }
-    if (!s.deck.length && world.isSettled() && !near.length) {
-      return { win: false, why: 'Every piece spent, and the turret is still only reachable by looking.' };
+    if (!s.deck.length && world.isSettled() && !reached) {
+      return { win: false, why: near.length
+        ? 'A piece touches the turret, but nothing carries it back to the ground.'
+        : 'Every piece spent, and the turret is still only reachable by looking.' };
     }
     return null;
   },
@@ -379,33 +417,91 @@ function spawnBlocked(x, y, hw = BLOCK.w / 2, hh = BLOCK.h / 2) {
   });
 }
 
-function placeFolio(ev) {
+/**
+ * Where is the pointer aiming, and what would happen there? One function, used by
+ * both the preview and the click, so the ghost can never promise something the
+ * placement does not do.
+ */
+function folioAim(ev) {
   const s = state;
   const dir = world.aimRay(ev.clientX, ev.clientY);
   const cam = world.camera.position;
   // Build in the x-y plane at z = 0: intersect the aim ray with that plane.
-  if (Math.abs(dir.z) < 1e-4) return;
+  if (Math.abs(dir.z) < 1e-4) return null;
   const t = (0 - cam.z) / dir.z;
   const px = cam.x + dir.x * t, py = cam.y + dir.y * t;
-  if (t < 0 || px < -3 || px > 8 || py < 0 || py > 8) { toast('Aim into the build space.', 'bad'); return; }
+  if (t < 0 || px < -3 || px > 8 || py < 0 || py > 8) return { why: 'Aim into the build space.' };
 
   if (s.tool === 'bracket') {
-    if (s.bracketsLeft <= 0) { toast('No brackets left. Everything else must be carried.', 'bad'); return; }
-    if (spawnBlocked(px, Math.max(0.3, py), 0.75, 0.11)) { toast('A bracket cannot be fixed inside something already fixed.', 'bad'); return; }
-    world.addStatic(`${YA}/assets/regions/balcony-brackets.jpg`, px, Math.max(0.3, py), 0);
+    const y = Math.max(0.3, py);
+    if (s.bracketsLeft <= 0) return { x: px, y, ok: false, fixed: true, w: 1.5, h: 0.22, d: 0.7,
+      why: 'No brackets left. Everything else must be carried.' };
+    if (spawnBlocked(px, y, 0.75, 0.11)) return { x: px, y, ok: false, fixed: true, w: 1.5, h: 0.22, d: 0.7,
+      why: 'A bracket cannot be fixed inside something already fixed.' };
+    return { x: px, y, ok: true, fixed: true, w: 1.5, h: 0.22, d: 0.7,
+      why: `Fixed in empty air at (${px.toFixed(1)}, ${y.toFixed(1)}) — carried on nothing.` };
+  }
+
+  const piece = s.deck[0];
+  if (!piece) return { why: 'No pieces left.' };
+  const dropY = Math.max(py, 1.2) + 0.9;
+  const land = world.landingY(px, 0, BLOCK.w / 2, BLOCK.d / 2);
+  // Beyond the pad there is no ground, and a piece that comes to rest out there is
+  // removed. Say so BEFORE the drop, not after.
+  const overVoid = world.padRadius !== null && Math.abs(px) > world.padRadius + 0.2 && land <= 0.001;
+  if (spawnBlocked(px, dropY)) return { x: px, y: dropY, land, ok: false, w: BLOCK.w, h: BLOCK.h, d: BLOCK.d,
+    why: 'That would spawn inside something fixed. Drop it beside, not into.' };
+  return { x: px, y: dropY, land, ok: !overVoid, piece, w: BLOCK.w, h: BLOCK.h, d: BLOCK.d,
+    why: overVoid ? `${piece.title} would fall into the void — nothing is under it.`
+                  : `${piece.title} — weight ${piece.mass}, falling to ${land.toFixed(2)} m.` };
+}
+
+function placeFolio(ev) {
+  const s = state;
+  const a = folioAim(ev);
+  if (!a) return;
+  if (a.x === undefined || !a.ok) { toast(a.why, 'bad'); return; }
+
+  if (a.fixed) {
+    world.addStatic(`${YA}/assets/regions/balcony-brackets.jpg`, a.x, a.y, 0);
+    world.markEntry(a.x, a.y, 0, 0xe8c86a);
     s.bracketsLeft--;
     record('folio:bracket', 'a bracket fixed in empty air', 20);
-    toast(`Bracket fixed at (${px.toFixed(1)}, ${py.toFixed(1)}) — carried on nothing.`, 'good');
+    toast(a.why, 'good');
   } else {
-    if (!s.deck.length) { toast('No pieces left.', 'bad'); return; }
-    const dropY = Math.max(py, 1.2) + 0.9;
-    if (spawnBlocked(px, dropY)) { toast('That would spawn inside something fixed. Drop it beside, not into.', 'bad'); return; }
     const p = s.deck.shift();
-    world.addImageBlock(p, `${YA}/${p.sprite}`, px, dropY, 0, { mass: p.mass });
+    world.addImageBlock(p, `${YA}/${p.sprite}`, a.x, a.y, 0, { mass: p.mass });
+    world.markEntry(a.x, a.y, 0, 0xe8c86a);
     record('folio:' + p.id, p.title, 5);
-    toast(`${p.title} — weight ${p.mass} (its share of the page).`);
+    toast(a.why);
   }
+  world.hideGhost();
   paintHud();
+}
+
+/**
+ * The preview. Runs on every pointer move that is not a camera drag, asks the same
+ * aim function the click will ask, and draws the answer: a ghost at the entry
+ * point, a dashed line down to the surface it will meet, and a ring on that
+ * surface — vermilion if the drop would be refused or would fall into the void.
+ */
+function preview(ev) {
+  if (!state || state.done) return world.hideGhost();
+  let a = null;
+  if (state.mode === 'kawabil') a = folioAim(ev);
+  else if (state.placing) a = blockAim(ev);
+  else { world.hideGhost(); $('aim').textContent = ''; return; }
+
+  if (!a || a.x === undefined) {
+    world.hideGhost();
+    $('aim').textContent = a && a.why ? a.why : '';
+    $('aim').className = 'aim bad';
+    return;
+  }
+  world.showGhost({ x: a.x, y: a.y, z: a.z ?? 0, w: a.w, h: a.h, d: a.d,
+                    rotY: a.rot || 0, ok: a.ok, land: a.land ?? null, fixed: !!a.fixed });
+  $('aim').textContent = a.why;
+  $('aim').className = 'aim ' + (a.ok ? 'good' : 'bad');
 }
 
 /* ---------------------------------------------------------------- actions -- */
@@ -494,8 +590,9 @@ function doOp(ev) {
 
 /* --------------------------------------------------------------- placing -- */
 
-function placeBlock(ev) {
-  if (state.toPlace <= 0) { toast('No blocks left.', 'bad'); return; }
+/** Where a dropped letter would enter and land. Shared by preview and click. */
+function blockAim(ev) {
+  if (state.toPlace <= 0) return { why: 'No blocks left.' };
   const dir = world.aimRay(ev.clientX, ev.clientY);
   const cam = world.camera.position;
 
@@ -503,36 +600,55 @@ function placeBlock(ev) {
   // pointing at. An earlier version solved for y = 8 instead, which is the plane
   // the block is dropped FROM, not the one being aimed at — so blocks landed
   // far out and it read as broken aiming.
-  if (dir.y >= -1e-4) { toast('Aim at the ground, not the sky.', 'bad'); return; }
+  if (dir.y >= -1e-4) return { why: 'Aim at the ground, not the sky.' };
   const t = (0 - cam.y) / dir.y;
   const gx = cam.x + dir.x * t, gz = cam.z + dir.z * t;
-  if (Math.hypot(gx, gz) > 5.5) { toast('Too far out — build near the centre.', 'bad'); return; }
+  if (Math.hypot(gx, gz) > 5.5) return { why: 'Too far out — build near the centre.' };
 
-  // Drop from just above whatever is already there, so a stack builds rather
-  // than a block falling five metres onto its neighbours and scattering them.
-  const dropY = Math.max(1.4, world.highestY() + 1.1);
   const mizaj = state.mode === 'mizaj';
   let letter, handIdx = -1;
   if (mizaj) {
     handIdx = parseInt($('place-glyph').value, 10);
     letter = state.hand[handIdx];
-    if (!letter) { toast('That letter is already placed.', 'bad'); return; }
+    if (!letter) return { why: 'That letter is already placed.' };
   } else {
     letter = letterByGlyph($('place-glyph').value) || LETTERS[0];
   }
+  const isAlif = letter.glyph === 'ا';
+  const upright = mizaj && isAlif;
+  const rot = (state.toPlace % 2) ? Math.PI / 2 : 0;
+  const w = upright ? BLOCK.d : BLOCK.w, h = upright ? BLOCK.w : BLOCK.h;
+  const hw = rot ? BLOCK.d / 2 : w / 2, hd = rot ? w / 2 : BLOCK.d / 2;
+  const land = world.landingY(gx, gz, hw, hd);
+  // Drop from just above whatever is already there, so a stack builds rather
+  // than a block falling five metres onto its neighbours and scattering them.
+  const dropY = Math.max(1.4, world.highestY() + 1.1);
+
   // Alif is singular: the one letter that stands on end, and it takes no alif on
   // it — two alifs make a line, not two. (data/correspondences.json, alif-singular)
-  const isAlif = letter.glyph === 'ا';
-  if (mizaj && isAlif) {
+  if (upright) {
     const under = world.blockUnder(gx, gz);
     if (under && under.letter.glyph === 'ا') {
-      toast('An alif takes no alif. Two alifs do not make two.', 'bad'); return;
+      return { x: gx, z: gz, y: dropY, land, ok: false, w, h, d: BLOCK.d, rot,
+               why: 'An alif takes no alif. Two alifs do not make two.' };
     }
   }
-  // Alternate orientation each placement, as a real course would.
-  const rot = (state.toPlace % 2) ? Math.PI / 2 : 0;
+  return { x: gx, z: gz, y: dropY, land, ok: true, letter, handIdx, upright, rot,
+           w, h, d: BLOCK.d,
+           why: `${letter.glyph} ${letter.name} · mass ${letter.mass} — falling to ${land.toFixed(2)} m` +
+                (upright ? ', standing on end' : '') };
+}
+
+function placeBlock(ev) {
+  const a = blockAim(ev);
+  if (a.x === undefined || !a.ok) { toast(a.why, 'bad'); return; }
+  const { letter, handIdx, upright: isAlif, rot } = a;
+  const mizaj = state.mode === 'mizaj';
+  const gx = a.x, gz = a.z, dropY = a.y;
   world.addBlock(letter, gx, dropY, gz, rot,
     mizaj ? { temper: state.temperMap[letter.glyph], upright: isAlif } : {});
+  world.markEntry(gx, dropY, gz, 0xe8c86a);
+  world.hideGhost();
   if (mizaj) {
     state.hand[handIdx] = null;
     $('place-glyph').innerHTML = state.hand.map((l, i) => l ?
@@ -714,12 +830,14 @@ function startMode(mode, seed) {
   let drag = false, moved = 0, lx = 0, ly = 0;
   cv.addEventListener('pointerdown', e => { drag = true; moved = 0; lx = e.clientX; ly = e.clientY; });
   cv.addEventListener('pointermove', e => {
-    if (!drag) return;
+    if (!drag) { preview(e); return; }
     const dx = e.clientX - lx, dy = e.clientY - ly; lx = e.clientX; ly = e.clientY;
     moved += Math.abs(dx) + Math.abs(dy);
     world.camOrbit.yaw -= dx * 0.005;
     world.camOrbit.pitch = Math.max(-0.15, Math.min(1.2, world.camOrbit.pitch - dy * 0.004));
+    world.hideGhost();
   });
+  cv.addEventListener('pointerleave', () => { world.hideGhost(); $('aim').textContent = ''; });
   cv.addEventListener('pointerup', e => {
     drag = false;
     if (moved > 6) return;

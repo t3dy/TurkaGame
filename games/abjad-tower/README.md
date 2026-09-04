@@ -137,6 +137,26 @@ to 0.78 (spread 6.59). That is a scripted result, not a human one.
 the real table arrives. The 14/14 light/dark split the third scheme reads from is portal
 fact; the reading is ours.
 
+## Seeing where a piece enters and lands
+
+Dropping used to be blind: you clicked, a body appeared somewhere overhead, and you found
+out where it went by watching it arrive. Every placing mode now previews the drop as the
+pointer moves, using **the same aim function the click uses**, so the preview cannot
+promise something the placement does not do:
+
+- a **ghost** at the entry point, in the piece's own size and orientation — an upright
+  alif previews upright;
+- a **dashed fall line** from it down to the surface it will meet, found by casting down
+  through the bodies that exist;
+- a **ring** on that surface, gold where the piece will rest and vermilion where it will
+  not: over the void in Brackets, or inside a fixed body;
+- a **readout** naming the piece, its weight and the height it will fall to, and a
+  **ring at the entry point** when it goes, so the eye can follow it in.
+
+The one thing the preview does not claim is what happens *after* landing. A piece that
+arrives cleanly and then topples still topples; the ring says where it will first touch,
+not where it will end.
+
 ## Where the game bends its source
 
 **One place, stated everywhere it matters** — in the generator, in the data file, and in

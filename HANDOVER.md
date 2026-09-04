@@ -318,6 +318,17 @@ HEAD, not merely "pushed"):
   and `__abjad.selfTestMizaj()`. Two physics lessons in DECISIONS: friction alone did not
   discriminate; sleeping bodies report no contacts.
 
+- **The Letter Machine (2026-09-03)** — `games/letter-machine/`, slice 3. Letters are
+  instructions, matter is data, and the instruction is DERIVED FROM THE GLYPH'S FORM
+  (closed binds, tail pours, dots raise or lower, upright holds an axis; dāl and kāf are
+  inert). Transposition is judged by the same hidden schemes as Abjad Tower's Temperament,
+  and both games write one notebook — verified live, a scheme disproved in the tower
+  arrives already CONFIRMED in the machine. 15 engine tests, 5 solver-verified puzzles.
+- **Three fixes from re-reading (2026-09-03)** — Brackets could be won in two moves by
+  touching the turret with a bracket-borne brick; the win is now a chain of contact from
+  the ground. Extraction's target letter is now ranked by load, with a named tier.
+  The machine's element glyphs are triangles, not emoji.
+
 ## What's NOT done — the important gaps, not hidden
 
 1. **The VN's narrative prose is a real first pass, not final writing.** Every

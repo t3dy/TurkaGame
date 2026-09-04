@@ -47,6 +47,10 @@
   .stats b{color:var(--gold-hi);font-family:var(--mono);font-weight:400}
   #instruction{font-family:var(--sans);font-size:.74rem;line-height:1.5;color:var(--paper);
     border-left:2px solid var(--verm);padding-left:.55rem}
+  .aim{font-family:var(--mono);font-size:.68rem;line-height:1.45;min-height:1.1rem;
+    padding:.25rem .4rem;border-radius:2px;color:var(--dim)}
+  .aim.good{color:#e8c86a;background:rgba(201,154,46,.12)}
+  .aim.bad{color:#f0b98a;background:rgba(192,101,35,.14)}
   #log{list-style:none;margin:.2rem 0 0;padding:0;font-family:var(--sans);font-size:.68rem;line-height:1.45}
   #log li{margin-bottom:.35rem;color:var(--dim)}
 
@@ -177,6 +181,7 @@
       </div>
 
       <div id="instruction"></div>
+      <div id="aim" class="aim"></div>
 
       <div class="stats">
         <span class="lab">Mode</span><b id="mode-name">—</b>
@@ -241,6 +246,6 @@
     </aside>
   </div>
 
-<script type="module" src="./src/game.js?v=6"></script>
+<script type="module" src="./src/game.js?v=8"></script>
 </body>
 </html>

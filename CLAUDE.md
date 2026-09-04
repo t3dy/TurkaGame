@@ -126,6 +126,8 @@ TurkaGame/
 │   │                             mass is abjad value — games/abjad-tower/README.md
 │   ├── impossible-architect/   route-builder on the Bihzād folio: each cut element is a
 │   │                             piece whose rule is its own logic — games/impossible-architect/README.md
+│   ├── letter-machine/         grid puzzle where the letters are the INSTRUCTIONS and the
+│   │                             matter is the data — games/letter-machine/README.md
 │   └── career-sim/             pointer only — moved to CareerSim/
 ├── CareerSim/               the career-sim subproject (own CLAUDE.md/DESIGN.md/docs;
 │                             Next.js+Supabase target, deploys separately to Vercel)
@@ -199,6 +201,28 @@ the game's rules cannot silently drift from the portal's entries.
 House rule it reinforces: **state where the game bends its source, everywhere it matters.**
 Mass is `log10(abjad)` because the raw 1..1000 series is unstackable; that is said in the
 generator, in the data file, and in the in-game Tome.
+
+## The Letter Machine (added 2026-09-03)
+
+[`games/letter-machine/`](games/letter-machine/README.md) — the brief in
+[`docs/PUZZLE_GAME_IDEAS.md`](docs/PUZZLE_GAME_IDEAS.md) made playable: **the letters are
+the instructions and the alchemical matter is the data.** The mechanic that keeps it out
+of RPG-tooltip territory is that a letter's operation is **derived from its written form**
+— closed forms bind, tailed forms pour, dots above raise and below lower, an upright
+stroke holds an axis — so there is one rule with five clauses instead of twenty-eight
+facts, and two letters (dāl, kāf) are inert because nothing is true of them.
+
+Two house rules it adds:
+
+- **A shared save is a schema, not a library.** `src/notebook.js` lives in `abjad-tower/`
+  and is imported across folders, against this file's own no-shared-code rule. The
+  exception is deliberate and stated in both READMEs: two copies of one state machine over
+  one `localStorage` key is how two games come to disagree about whether a claim is
+  confirmed. Data is shared; the schema of that data travels with it.
+- **The same hidden scheme decides both games.** Whether letters hold each other up in
+  Abjad Tower and what a letter transposes into here are the *same question*, and the
+  notebook scores them together. That is the design's whole payoff and it is checkable:
+  disprove a scheme by stacking, and the machine already knows.
 
 ## Visionary Gallery (added 2026-08-31)
 

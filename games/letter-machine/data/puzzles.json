@@ -1,0 +1,194 @@
+{
+  "_note": "Puzzles for The Letter Machine. Every one is checked by verify_puzzles.mjs before it ships — solvable within its depth, and never winnable in one move or none. That gate exists because The Impossible Architect's first board was won in fifteen moves without opening a door (docs/DECISIONS.md, 2026-09-02). `scheme` names which temperament scheme is operative and is NOT shown to the player; puzzles are authored so that the goal is reachable under any of them, and what the scheme decides is what you LEARN, not whether you win.",
+  "elements": {
+    "fire": "▲",
+    "air": "△",
+    "water": "▽",
+    "earth": "▼"
+  },
+  "puzzles": [
+    {
+      "id": "the-pipeline",
+      "name": "The Pipeline",
+      "arabic": "المسيل",
+      "teaches": "A letter with dots above RAISES what stands over it; a letter with a descending tail POURS it through. Put them in a column and the substance ratchets down it, gaining a rung at each.",
+      "rows": 5,
+      "cols": 3,
+      "blocks": [
+        {
+          "r": 0,
+          "c": 1,
+          "element": "fire",
+          "value": 5
+        }
+      ],
+      "hand": [
+        "ز",
+        "خ",
+        "د"
+      ],
+      "goal": {
+        "type": "produce",
+        "value": 7
+      },
+      "scheme": "mizaj-cyclic",
+      "dot_moves": 0,
+      "transposes": 0,
+      "max_depth": 3
+    },
+    {
+      "id": "reckoning",
+      "name": "Reckoning",
+      "arabic": "حساب",
+      "teaches": "A closed letter BINDS what stands either side of it, and the sum gathers leftward — the way the line is read. So does the run: right to left. Which bind happens first is decided by that, not by you.",
+      "rows": 3,
+      "cols": 5,
+      "blocks": [
+        {
+          "r": 1,
+          "c": 0,
+          "element": "fire",
+          "value": 3
+        },
+        {
+          "r": 1,
+          "c": 2,
+          "element": "fire",
+          "value": 4
+        },
+        {
+          "r": 1,
+          "c": 4,
+          "element": "fire",
+          "value": 5
+        }
+      ],
+      "hand": [
+        "ه",
+        "ط",
+        "د"
+      ],
+      "goal": {
+        "type": "produce",
+        "value": 12,
+        "element": "fire"
+      },
+      "scheme": "mizaj-cyclic",
+      "dot_moves": 0,
+      "transposes": 0,
+      "max_depth": 3
+    },
+    {
+      "id": "the-dot",
+      "name": "The Dot",
+      "arabic": "النقطة",
+      "teaches": "The dot is a piece. Where it sits decides what the letter does — above it raises, below it lowers, and taken away the letter does nothing at all. Form, position, function.",
+      "rows": 3,
+      "cols": 3,
+      "blocks": [
+        {
+          "r": 2,
+          "c": 1,
+          "element": "water",
+          "value": 40
+        }
+      ],
+      "hand": [
+        "ش",
+        "ب",
+        "د"
+      ],
+      "goal": {
+        "type": "produce",
+        "value": 10,
+        "element": "water"
+      },
+      "scheme": "mizaj-cyclic",
+      "dot_moves": 1,
+      "transposes": 0,
+      "max_depth": 3
+    },
+    {
+      "id": "transposition",
+      "name": "Transposition",
+      "arabic": "نقل",
+      "teaches": "Nothing is created. A letter read as matter is the same relation in another representation — and WHICH element it turns out to be is the operative scheme's answer, not yours. The goal does not name an element, so you win either way. What you learn is in the Notebook.",
+      "rows": 3,
+      "cols": 3,
+      "blocks": [
+        {
+          "r": 0,
+          "c": 1,
+          "glyph": "ح"
+        }
+      ],
+      "hand": [
+        "ت",
+        "د"
+      ],
+      "goal": {
+        "type": "produce",
+        "value": 10
+      },
+      "scheme": "mizaj-cyclic",
+      "dot_moves": 0,
+      "transposes": 1,
+      "max_depth": 3
+    },
+    {
+      "id": "wafq",
+      "name": "The Square",
+      "arabic": "وفق",
+      "teaches": "A magic square asks that every line come to the same number, and here the cells are glyphs, so the number is hidden until you can read abjad. Three rows, one sum.",
+      "rows": 5,
+      "cols": 3,
+      "blocks": [
+        {
+          "r": 0,
+          "c": 0,
+          "element": "earth",
+          "value": 3
+        },
+        {
+          "r": 0,
+          "c": 2,
+          "element": "earth",
+          "value": 3
+        },
+        {
+          "r": 2,
+          "c": 1,
+          "element": "air",
+          "value": 7
+        },
+        {
+          "r": 4,
+          "c": 0,
+          "element": "fire",
+          "value": 4
+        },
+        {
+          "r": 4,
+          "c": 2,
+          "element": "fire",
+          "value": 4
+        }
+      ],
+      "hand": [
+        "ذ",
+        "ذ",
+        "ذ",
+        "د"
+      ],
+      "goal": {
+        "type": "rows-alike",
+        "min_rows": 3
+      },
+      "scheme": "mizaj-cyclic",
+      "dot_moves": 0,
+      "transposes": 0,
+      "max_depth": 4
+    }
+  ],
+  "_elements_note": "The four elements as triangles, which is the alchemical notation: fire and air point up, water and earth point down. The tradition distinguishes the pairs by a bar across the triangle; we use solid against hollow instead, because a barred triangle is not a character every font has and a block that renders as a box teaches nothing. Colour carries the element too."
+}

@@ -251,10 +251,58 @@ on its own.
 |---|---|---|---|
 | 1 | **Data**: letter forms + registers in `letters.json`; `correspondences.json` with rival schemes; the shared notebook module. **Built 2026-09-03.** | `abjad-tower/` | `build_letters.py --verify` extended; `tests/data.test.mjs`, 12 tests pass. |
 | 2 | **Abjad Tower mode 5 — Temperament (mizāj)**: hidden scheme per seed; an opposed support pushes its burden off; alif stands on end and takes no alif on it; the notebook records what was witnessed. **Built 2026-09-03.** | `abjad-tower/` | `__abjad.selfTestMizaj()`: complementary 2.74 / same 2.75 stand, opposed shears to 0.78. Friction-only was measured not to discriminate and replaced. |
-| 3 | **The Letter Machine** — a new grid game: element/planet/principle glyphs from the sibling alchemy projects' set; **letters as operators** (combine, separate, invert, transfer, propagate) by adjacency; **Transpose**; wafq targets; taksīr permutation puzzles; the notebook. Pure engine module, thin DOM shell. | `games/letter-machine/` | Node tests on the engine; solver-verified puzzle set. |
+| 3 | **The Letter Machine** — grid game: **letters as operators**, and the operator is *derived from the letter's written form* rather than assigned; the movable dot; **Transpose** against the hidden scheme; a wafq goal. **Built 2026-09-03.** | `games/letter-machine/` | `tests/engine.test.mjs` 15 pass; `verify_puzzles.mjs` — all 5 solvable, none trivial; all 5 replayed to a win in the browser. |
 | 4 | **Seven Doors as seven operations** overlay for Yūsuf Ascent A / Architect. | `yusuf-ascent/` | existing solver re-run. |
 | 5 | **Jafr floor** for the roguelike; **Station Point** from the Bihzād list. | new | — |
 
 What "verified" will mean, per `CLAUDE.md`: the live URL fetched, the specific thing
 present, the tests run with their output in the commit. What it will not mean: fun,
 balance, or anyone but a script having played it.
+
+---
+
+# Part III — Rethinking what was already built (2026-09-03)
+
+Three faults found by re-reading the built games against Part II rather than against
+their own intentions. All three are fixed; the first was a real design fault.
+
+### The Weight of Brackets had the wrong win condition
+
+It asked that a piece **touch** the turret. A bracket may be fixed anywhere in empty air,
+so a bracket beside the turret plus one brick won in two moves — which the README stated
+as a known gap and which therefore sat there being true. Touching is not reaching. The
+replacement rule comes from the painting: brackets are carried on nothing, but the balcony
+they carry **projects from a building that stands on the earth**. The win is now an
+unbroken chain of contact from the pad to the turret, brackets permitted as links and
+never as the origin (`world.reachesFromGround`). Measured: cheat touches, reaches nothing;
+grounded column plus three bridging brackets reaches; brackets alone do not.
+
+**The general lesson**, which is the one worth keeping: *a known gap written in a README is
+not a mitigation.* It had been recorded honestly and left in place, and recording it is
+what made it findable later — but the recording is not the fix.
+
+### Extraction named its letter at random
+
+One round asked for two blocks off the top and the next for the whole foundation, with
+nothing to tell the player which. The target is now chosen by **how much of the tower
+leans on it** — the mass standing above each instance — and the seed picks a *tier*
+(light, middling, load-bearing) rather than a letter. The round says which tier it drew
+and how much mass is on it, so a complaint about difficulty has a number and a seed.
+
+### The Letter Machine's elements were emoji
+
+They rendered as empty boxes in fonts that lack them, which teaches nothing. Now the
+alchemical triangles, with solid against hollow standing in for the barred pair — stated
+in the data file, because it is a small bend of the notation.
+
+## What to rethink next, not yet done
+
+- **The Impossible Architect's seven doors are seven of the same check** — "is the lock's
+  answer standing?" The brief (§23) proposes they be **seven different operations**: count,
+  divide, combine, transform between registers, correspond, permute, witness. That would
+  turn the best-built board in the project into something worth replaying, and it needs no
+  new art and no new data.
+- **Its difficulty is measured by a greedy solver that plans nothing** (1 win in 8 seeds).
+  A one-ply lookahead would say something much more useful about the board.
+- **The Letter Machine does not animate its run.** The single biggest thing wrong with it
+  as a toy: you cannot watch the machine work, only read what it did.

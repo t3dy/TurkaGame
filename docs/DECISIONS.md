@@ -934,3 +934,54 @@ claim here has needed a number before it was true.
 operators over the sibling alchemy projects' glyph set, Transpose, wafq targets, taksīr —
 the first *second* consumer of the notebook, which is what makes it shared data rather than
 one game's save file.
+
+## 2026-09-03 (later) — The Letter Machine, and three faults found by re-reading
+
+**Decision.** Slice 3 of the lettrist programme is built:
+[`games/letter-machine/`](../games/letter-machine/README.md), a grid puzzle in which the
+letters are **instructions** and the alchemical matter is **data**. The design rule that
+carries it: **a letter's operation is derived from its written form** — closed binds,
+tail pours, dots above raise, dots below lower, an upright stroke holds an axis — so the
+game teaches one rule with five clauses rather than twenty-eight facts.
+
+**Rationale.** The brief's explicit warning is against "a giant RPG-style fixed tooltip"
+per letter, on the grounds that the traditions are too heterogeneous to support one. A
+derived rule answers that: it is generative, it is checkable against the glyph in front of
+you, and it produces results the designer did not choose — including that **dāl and kāf
+are inert**, because nothing is true of them. Two dead letters out of twenty-eight is what
+makes the rule feel like a discovery rather than a list.
+
+**The architectural point.** Transposition is decided by the *same three hidden schemes*
+that decide which letters hold each other up in Abjad Tower's Temperament mode, and both
+games write one notebook. Disproving a scheme by stacking a tower means the machine
+already knows it. This is the brief's "these aren't separate systems, they are different
+views of one system" made true in the save file rather than asserted in prose. Confirmed
+live: a browser session that disproved `mizaj-light` in the tower opened the machine with
+`mizaj-cyclic` already CONFIRMED.
+
+**Rejected — assigning each letter an operation.** The obvious build, and the one the
+brief argues against. Also rejected: **inventing a fourth "historical" temperament table**
+to fill the gap where Ibn ʿArabī's and Kâtib Çelebi's actual tables would go. They are not
+in this repo; `correspondences.json` names them as absent instead.
+
+**Three faults found by re-reading the built games** (full account in
+`docs/PUZZLE_GAME_IDEAS.md` Part III):
+
+1. **The Weight of Brackets could be won in two moves.** Its win condition asked that a
+   piece *touch* the turret, and a bracket may be fixed anywhere in empty air. The README
+   said so as a known gap — which is how it was found, and is also the lesson: **a gap
+   recorded in a README is not a gap mitigated.** The new rule is the painting's own: a
+   bracket is carried on nothing, but the balcony it carries projects from a building that
+   stands on the earth, so the win is an unbroken chain of contact from the pad, with
+   brackets as links and never as the origin.
+2. **Extraction picked its target letter at random**, so difficulty swung wildly with
+   nothing to tell the player which round they were in. Now ranked by the mass standing
+   above each candidate, with the seed picking a tier and the round naming it.
+3. **The Letter Machine's elements were emoji** and rendered as boxes without the font.
+   Now the alchemical triangles, solid against hollow for the barred pair, stated as a
+   bend in the data file.
+
+**Consequence.** Next by value: the Impossible Architect's seven doors as **seven
+different operations** (brief §23) rather than seven of the same check — the best-built
+board here, made replayable, with no new art or data. Then an animated run for the
+machine, which is the biggest thing wrong with it as a toy.

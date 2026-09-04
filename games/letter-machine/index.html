@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Letter Machine — lettrism as the language the matter runs on</title>
+<style>
+  :root {
+    --paper:#f1dac1; --dim:#b9b0a6; --bg:#171620; --bg2:#211f2b; --bg3:#2b2836;
+    --gold:#c99a2e; --gold-hi:#e8c86a; --lapis:#4d7fd6; --verm:#c06523;
+    --turq:#2e8f8f; --rule:rgba(241,218,193,.16);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:"Inter","Segoe UI",system-ui,sans-serif;
+    --mono:"Cascadia Mono",Consolas,monospace;
+    --fire:#c0522a; --air:#b8a24a; --water:#3f6fa8; --earth:#6d5b43;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%;background:var(--bg);color:var(--paper);font-family:var(--serif)}
+  a{color:var(--verm)}
+
+  .topbar{display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;padding:.5rem 1rem;
+    background:#100f16;border-bottom:1px solid var(--gold);font-family:var(--sans);font-size:.76rem}
+  .topbar .title{font-family:var(--serif);font-size:1rem}
+  .topbar .ar{font-size:1.05rem;color:var(--gold-hi)}
+  .topbar .spacer{flex:1}
+  .topbar a{text-decoration:none}.topbar a:hover{text-decoration:underline}
+
+  #wrap{display:flex;gap:0;align-items:stretch;min-height:calc(100vh - 34px)}
+  #stage{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;
+    justify-content:flex-start;padding:18px;gap:14px}
+  #panel{width:330px;flex:0 0 330px;background:var(--bg2);border-left:1px solid var(--gold);
+    display:flex;flex-direction:column;overflow-y:auto;padding:10px;gap:10px}
+
+  .btn{font-family:var(--sans);font-size:.72rem;letter-spacing:.03em;padding:.34rem .6rem;
+    border:1px solid var(--gold);border-radius:2px;background:transparent;color:var(--paper);cursor:pointer}
+  .btn:hover{background:rgba(201,154,46,.16)}
+  .btn.active{background:var(--gold);color:#16151a}
+  .btn:disabled{opacity:.35;cursor:default}
+  .btn small{opacity:.6;font-family:var(--mono)}
+  .row{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+  .lab{font-family:var(--sans);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+  .hidden{display:none!important}
+
+  /* --- the board --- */
+  #board{display:grid;gap:6px;background:var(--bg3);padding:10px;border:1px solid var(--rule);border-radius:3px}
+  .cell{width:78px;height:78px;border:1px dashed var(--rule);border-radius:2px;position:relative;
+    display:flex;align-items:center;justify-content:center;cursor:pointer;background:rgba(0,0,0,.18)}
+  .cell:hover{border-color:var(--gold)}
+  .cell.held{box-shadow:inset 0 0 0 1px var(--gold-hi)}
+  .blk{position:absolute;inset:3px;border-radius:2px;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;line-height:1}
+  .blk.letter{background:linear-gradient(#efe0c2,#dcc79f);color:#2a2113;border:1px solid #7d6338}
+  .blk.letter.dark{background:linear-gradient(#4d4870,#3b3757);color:#e6dcf3;border-color:#221f38}
+  .blk .g{font-size:2.1rem}
+  .blk .v{font-family:var(--mono);font-size:.6rem;opacity:.75}
+  .blk.sub{color:#fff;border:1px solid rgba(0,0,0,.4)}
+  .blk.sub .g{font-size:1.5rem}
+  .blk.sub .v{font-size:1rem;font-family:var(--mono);opacity:1}
+  .e-fire{background:var(--fire)} .e-air{background:var(--air);color:#2a2510}
+  .e-water{background:var(--water)} .e-earth{background:var(--earth)}
+  /* form marks: what the glyph observably IS, so the rule can be derived by looking */
+  .marks{position:absolute;top:2px;right:3px;font-family:var(--mono);font-size:.58rem;opacity:.85}
+  .marks .below{position:absolute;top:auto}
+  .fmark{position:absolute;font-family:var(--mono);font-size:.62rem;letter-spacing:-1px}
+  .fmark.above{top:2px;left:50%;transform:translateX(-50%)}
+  .fmark.below{bottom:2px;left:50%;transform:translateX(-50%)}
+  .fmark.closed{top:2px;left:4px}
+  .fmark.tail{bottom:2px;right:4px}
+
+  #hand{display:flex;gap:6px;flex-wrap:wrap}
+  .tile{width:56px;height:56px;border-radius:2px;position:relative;cursor:pointer;
+    background:linear-gradient(#efe0c2,#dcc79f);color:#2a2113;border:1px solid #7d6338;
+    display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .tile.dark{background:linear-gradient(#4d4870,#3b3757);color:#e6dcf3;border-color:#221f38}
+  .tile.sel{outline:2px solid var(--gold-hi);outline-offset:2px}
+  .tile .g{font-size:1.6rem}
+  .tile .v{font-family:var(--mono);font-size:.55rem;opacity:.75}
+
+  #teaches{font-family:var(--sans);font-size:.74rem;line-height:1.5;color:var(--paper);
+    border-left:2px solid var(--verm);padding-left:.55rem}
+  #goal{font-family:var(--sans);font-size:.8rem;color:var(--gold-hi)}
+  #runlog{list-style:none;margin:.2rem 0 0;padding:0;font-family:var(--sans);font-size:.68rem;line-height:1.5}
+  #runlog li{margin-bottom:.3rem;color:var(--dim);border-left:1px solid var(--rule);padding-left:.45rem}
+  #runlog li b{color:var(--gold-hi);font-family:var(--serif);font-size:.95rem}
+  .verdict{font-family:var(--sans);font-size:.85rem;padding:.4rem .6rem;border-radius:2px;margin-top:.3rem}
+  .verdict.win{background:rgba(201,154,46,.2);border:1px solid var(--gold)}
+  .verdict.lose{background:rgba(192,101,35,.16);border:1px solid var(--verm)}
+
+  .note{font-family:var(--sans);font-size:.72rem;line-height:1.55;color:var(--dim);
+    border-left:2px solid var(--verm);padding-left:.6rem;margin:.6rem 0}
+  table.rules{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:.7rem}
+  table.rules td{padding:.22rem .3rem;border-top:1px solid var(--rule);vertical-align:top}
+  table.rules td:first-child{color:var(--gold-hi);white-space:nowrap;font-family:var(--mono)}
+
+  /* --- the Tome overlay (same shape as Abjad Tower's) --- */
+  #tome{position:fixed;inset:0;background:rgba(16,15,22,.97);overflow-y:auto;padding:22px;display:none;z-index:9}
+  #tome.open{display:block}
+  #tome .inner{max-width:760px;margin:0 auto}
+  #tome h2{margin:1.2rem 0 .1rem;font-size:1.4rem}
+  #tome h2:first-child{margin-top:0}
+  .pill{font-family:var(--sans);font-size:.55rem;letter-spacing:.1em;padding:.08rem .4rem;
+    border-radius:2px;background:var(--rule);color:var(--paper)}
+  .pill.CORPUS{background:var(--lapis);color:#fff}
+  .pill.PORTAL{background:var(--turq);color:#06201f}
+  .pill.REPORTED{background:#7a4a1a;color:#fff}
+  .pill.INTERPRETATION{background:#5a5468;color:#fff}
+  .pill.HYPOTHESIS{background:transparent;border:1px solid var(--dim);color:var(--dim)}
+  .pill.EXPERIMENT{background:#3d4a6b;color:#fff}
+  .pill.OBSERVED{background:var(--lapis);color:#fff}
+  .pill.CONFIRMED{background:var(--gold);color:#16151a}
+  .pill.DISPROVEN{background:var(--verm);color:#fff}
+  .nb-q{margin:.6rem 0 .9rem}
+  .nb-claim{padding:.35rem 0;border-top:1px solid var(--rule);font-size:.82rem}
+  .nb-claim .why{font-family:var(--sans);font-size:.7rem;color:var(--dim);margin-top:.2rem}
+  #nb-xp{font-family:var(--mono);font-size:.74rem;color:var(--gold-hi)}
+  #tome p{font-family:var(--sans);font-size:.8rem;line-height:1.6;color:#ddd4c9}
+
+  @media (max-width:860px){
+    #wrap{flex-direction:column}
+    #panel{width:auto;flex:0 0 auto;border-left:none;border-top:1px solid var(--gold)}
+    .cell{width:58px;height:58px}
+  }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <span class="title">The Letter Machine</span>
+    <span class="ar">آلة الحروف</span>
+    <span style="opacity:.35">·</span>
+    <span>lettrism as the language the matter runs on</span>
+    <span class="spacer"></span>
+    <button class="btn" id="tome-toggle">The Tome</button>
+    <a href="../../site/index.html">TurkaGame</a>
+  </div>
+
+  <div id="wrap">
+    <div id="stage">
+      <div id="board"></div>
+      <div style="width:100%;max-width:520px">
+        <div class="lab">Your hand — click a letter, then a cell</div>
+        <div id="hand"></div>
+      </div>
+      <div id="result"></div>
+    </div>
+
+    <aside id="panel">
+      <div>
+        <div class="lab">Puzzle</div>
+        <div class="row" id="puzzles"></div>
+      </div>
+      <div id="goal"></div>
+      <div id="teaches"></div>
+
+      <div>
+        <div class="lab">Moves</div>
+        <div class="row">
+          <button class="btn" id="run">Run <small>▶</small></button>
+          <button class="btn" id="reset">Reset</button>
+        </div>
+        <div class="row" style="margin-top:5px">
+          <button class="btn" id="tool-dot">Move a dot <small id="dot-left">0</small></button>
+          <button class="btn" id="tool-transpose">Transpose <small id="tr-left">0</small></button>
+        </div>
+      </div>
+
+      <div>
+        <div class="lab">What the machine did</div>
+        <ul id="runlog"></ul>
+      </div>
+
+      <div>
+        <div class="lab">The five rules</div>
+        <table class="rules" id="rules"></table>
+        <div class="note">Every rule reads the letter&rsquo;s own body, so there is nothing to
+        memorise: look at the glyph. The marks on each tile show what is there &mdash; dots and
+        which side they sit, whether the form closes, whether it drops below the line.</div>
+      </div>
+    </aside>
+  </div>
+
+  <div id="tome">
+    <div class="inner">
+      <h2>The Letter Machine</h2>
+      <p>A letter here is a <b>verb</b>, and which verb is written in the letter&rsquo;s own
+      body rather than in a table. That is the whole design: nine letters bind because they
+      enclose, seventeen pour because they drop below the line, twelve raise and three lower
+      according to which side their dots sit, two hold an axis because they are a single
+      upright stroke &mdash; and two, <b>dāl</b> and <b>kāf</b>, do nothing at all, because
+      nothing is true of them. Finding the rule is the game; the rule covers the alphabet.</p>
+
+      <h2>Where this comes from, and where it does not</h2>
+      <p><span class="pill PORTAL">PORTAL</span> The abjad values and the ladder they form
+      &mdash; 1 to 10, then tens, then hundreds &mdash; are the series as the tradition
+      numbers it (portal entry <code>abjad-numerology</code>). <b>Raise</b> and <b>lower</b>
+      move a value one <i>rung of that series</i>, not by one unit, because the series is the
+      thing being asserted.</p>
+      <p><span class="pill INTERPRETATION">INTERPRETATION</span> The form facts on each tile
+      are observable properties of the written glyph, generated and checked in
+      <code>games/abjad-tower/build_letters.py</code>. But <b>what each form does</b> &mdash;
+      closed binds, tail pours &mdash; is ours. The idea that a letter&rsquo;s <i>shakl</i>
+      synthesises its properties is <span class="pill REPORTED">REPORTED</span> from al-Būnī
+      in this project&rsquo;s design brief, citing a source not held in this repository. So
+      no rule here claims to be his.</p>
+      <p><span class="pill PORTAL">PORTAL</span> That <b>alif is singular</b> &mdash; a line
+      rather than an ingredient, taking no alif beside it &mdash; rests on alif = 1 and on
+      its standing as the avatar of divine Oneness.</p>
+
+      <h2>Transposition</h2>
+      <p>Nothing is created. A letter read as matter is the same relation in another
+      representation, and <b>which element it turns out to be is decided by a scheme that is
+      hidden from you</b> &mdash; the same three rival schemes that decide which letters hold
+      each other up in <a href="../abjad-tower/index.html?mode=mizaj">Abjad Tower</a>. So a
+      transposition here and a tower there are two experiments on one question, and they
+      share the notebook below. A transposition that <i>fails</i> is as informative as one
+      that succeeds.</p>
+
+      <h2>The Notebook</h2>
+      <div id="nb-xp"></div>
+      <p><b>Taḥqīq, not taqlīd.</b> A correspondence you have read is held on authority; one
+      you have put to the test is verified. A claim is <span class="pill CONFIRMED">CONFIRMED</span>
+      only when a rival on the same question is <span class="pill DISPROVEN">DISPROVEN</span>.
+      Shared with every other game in this project.</p>
+      <div id="tome-notebook"></div>
+      <div class="row" style="margin-top:.8rem">
+        <button class="btn" id="tome-close">Close</button>
+        <button class="btn" id="reset-notebook">Erase the notebook</button>
+      </div>
+    </div>
+  </div>
+
+<script type="module" src="./src/ui.js?v=1"></script>
+</body>
+</html>

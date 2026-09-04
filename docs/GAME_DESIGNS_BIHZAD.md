@@ -122,6 +122,16 @@ structure out over a void to reach the turret, using as few brackets as the leve
 scoring pattern. This is a second block set for it — the folio's parts instead of the
 letters — with one new rule (the bracket exemption). Half a day.
 
+**Revised 2026-09-03 — the first win condition was wrong.** It asked only that some piece
+*touch* the turret, which a single bracket fixed beside it and one brick could satisfy in
+two moves; the README said as much and it stood for a day. The rule that replaced it is
+the painting's own: a bracket is carried on nothing, **but the balcony it carries projects
+from a building that stands on the earth.** So the win is now an unbroken chain of contact
+from the pad out to the turret, in which brackets may be links but never the origin.
+Verified in the browser: the old cheat touches the turret and reaches nothing; a grounded
+column plus three bridging brackets reaches it; the same three brackets without the column
+reach nothing.
+
 ## 6. Cartouche — text as load-bearing wall
 
 **Genre.** Wall-completion puzzle.
