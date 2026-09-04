@@ -130,8 +130,9 @@ resolution, no asset pipeline, crisp at any zoom.
 
 - **The Tome persists in `localStorage` only.** Wrapped in try/catch so a private window
   degrades rather than breaks, but progress does not follow you between browsers.
-- **Raising is hard**, possibly too hard: 14 blocks to reach 4.4 m means near-perfect
-  stacking. Untuned — it wants playtesting rather than another guess.
+- **Raising was retuned once** (18 blocks to a 3.6 m ring, from 14 to 4.4) and has not been
+  playtested by a person since. `?mode=bina&seed=N` reproduces a round exactly, so a
+  complaint can name its tower.
 - **No touch support.** Orbit and click are pointer-events, which covers touch, but nothing
   has been tested on a phone and the panel layout is cramped below 820 px.
 - **`three.js` is imported from a copy in this folder.** That is now the third surface in
