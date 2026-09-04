@@ -6,13 +6,16 @@
 // tower Strike could not is worth a lot. The Tome is the record of what you have
 // learned, and it is the actual progression.
 
-import { World, BLOCK } from './world.js';
-import * as OPS from './ops.js';
+import { World, BLOCK, TEMPER } from './world.js?v=6';
+import * as OPS from './ops.js?v=6';
+import { Notebook } from './notebook.js?v=6';
 
-const V = 'v=1';
+const V = 'v=2';
 const $ = id => document.getElementById(id);
 
 let LETTERS = [], OPDATA = null, world = null;
+let CORR = null;                   // data/correspondences.json — the rival schemes
+let notebook = null;               // the shared tajriba notebook (src/notebook.js)
 let PALACE = null;                 // the Bihzad folio's cut pieces (cross-folder data)
 const YA = '../yusuf-ascent';
 let state = null, tome = null, raf = 0, last = 0;
@@ -173,6 +176,127 @@ const MODES = {
       if (s.budget <= 0 && left > 0) return { win: false, why: `${left} × ${s.targetGlyph} still standing.` };
       return null;
     },
+  },
+};
+
+/* -------------------------------------------------------------- mizāj ---- */
+// Temperament. Every letter has a nature — fire, air, water, earth — but WHICH
+// letter has which is exactly what the tradition does not agree on, so the game
+// ships three rival schemes (data/correspondences.json) and picks one per seed
+// without saying which. The physics is that scheme: complementary natures hold,
+// opposed natures slide. The player builds, watches what stands, and records the
+// result against every scheme in the notebook. A scheme is CONFIRMED only when a
+// rival is DISPROVEN — which means finding the tower on which they disagree.
+
+const MZ = { ring: 2.6, hand: 14, hold: 4 };
+
+function temperSchemes() { return CORR.schemes.filter(s => s.domain === 'temperament'); }
+
+function proposeClaims() {
+  for (const s of CORR.schemes) {
+    notebook.propose(s.id, { question: s.domain, text: s.name, kind: s.kind, source: s.source });
+  }
+}
+
+/** What each scheme PREDICTS about the tower now, from its contacts, and what the
+ *  tower actually did. Returns per-scheme verdicts; records nothing itself. */
+function judgeTower(actual) {
+  const pairs = world.contactPairs();
+  const verdicts = [];
+  if (pairs.length === 0) return { pairs: 0, verdicts };
+  for (const s of temperSchemes()) {
+    const comp = pairs.filter(([a, b]) => TEMPER.relation(s.map[a.letter.glyph], s.map[b.letter.glyph]) !== 'opposed').length;
+    const predicted = comp / pairs.length >= 0.5 ? 'stands' : 'falls';
+    verdicts.push({ id: s.id, name: s.name, predicted, agrees: predicted === actual, detail: `${comp}/${pairs.length} contacts not opposed` });
+  }
+  // The two efficacy rules are rivals on a different question: WHY letters hold.
+  const mix = CORR.schemes.find(s => s.id === 'efficacy-mixture');
+  const prop = CORR.schemes.find(s => s.id === 'efficacy-proportion');
+  if (mix && prop) {
+    const live = temperSchemes().find(s => s.id === state.schemeId);
+    const compLive = pairs.filter(([a, b]) => TEMPER.relation(live.map[a.letter.glyph], live.map[b.letter.glyph]) !== 'opposed').length;
+    const pm = compLive / pairs.length >= 0.5 ? 'stands' : 'falls';
+    verdicts.push({ id: mix.id, name: mix.name, predicted: pm, agrees: pm === actual, detail: `${compLive}/${pairs.length} contacts complementary under the operative scheme` });
+    const small = pairs.filter(([a, b]) => smallRatio(a.letter.abjad, b.letter.abjad, prop.max_term)).length;
+    const pp = small / pairs.length >= 0.5 ? 'stands' : 'falls';
+    verdicts.push({ id: prop.id, name: prop.name, predicted: pp, agrees: pp === actual, detail: `${small}/${pairs.length} contacts in small-integer ratio` });
+  }
+  return { pairs: pairs.length, verdicts };
+}
+
+function gcd(a, b) { return b ? gcd(b, a % b) : a; }
+function smallRatio(a, b, maxTerm) { const g = gcd(a, b); return a / g <= maxTerm && b / g <= maxTerm; }
+
+/** The act of tajriba: look at the settled tower, record it against every claim. */
+function recordExperiment(actual, why) {
+  const s = state;
+  if (!world.isSettled()) { toast('Wait for the tower to settle — an experiment needs a result.', 'bad'); return null; }
+  const j = judgeTower(actual);
+  if (j.pairs === 0) { toast('Nothing is touching anything. Build first.', 'bad'); return null; }
+  const lines = [];
+  let gained = 0;
+  for (const v of j.verdicts) {
+    const r = notebook.observe(v.id, { result: v.agrees ? 'agrees' : 'contradicts',
+                                       where: { game: 'abjad-tower', mode: 'mizaj', seed: s.seed }, detail: v.detail });
+    gained += r.xp;
+    lines.push(`${v.name}: predicted <b>${v.predicted}</b>, it <b>${actual}</b> — ${v.agrees ? 'agrees' : 'contradicts'}${r.changed ? ` → ${r.after}` : ''}`);
+  }
+  s.log.unshift(`<b>${why}</b> (${j.pairs} contacts) · ` + lines.join(' · '));
+  s.log = s.log.slice(0, 6);
+  s.experiments = (s.experiments || 0) + 1;
+  s.nbGained = (s.nbGained || 0) + gained;
+  if (gained) toast(`Notebook: +${gained}`, 'good');
+  paintLog(); paintNotebook(); paintHud();
+  return j;
+}
+
+MODES.mizaj = {
+  setup(s) {
+    world.setTargetLine(MZ.ring);
+    s.budget = null;
+    s.placing = true;
+    s.peak = 0; s.holdFrom = null; s.experiments = 0; s.nbGained = 0;
+    const rnd = mulberry(s.seed);
+    // The operative scheme, hidden. Same seed, same scheme, same hand.
+    const ts = temperSchemes();
+    s.schemeId = ts[Math.floor(rnd() * ts.length)].id;
+    s.temperMap = ts.find(t => t.id === s.schemeId).map;
+    // A hand of letters, dealt by seed, always with at least one alif.
+    const pool = LETTERS.slice();
+    s.hand = [LETTERS[0]];
+    while (s.hand.length < MZ.hand) s.hand.push(pool[Math.floor(rnd() * pool.length)]);
+    s.toPlace = s.hand.length;
+    s.instruction = `The letters have natures, and the natures are hidden. Build to the ring from the hand you were dealt, then record what stands. Alif alone may stand on end, and takes no alif on it.`;
+    world.camOrbit.target.set(0, 2.0, 0);
+    world.camOrbit.dist = 13;
+    world.camOrbit.pitch = 0.18;
+    proposeClaims();
+    $('place-glyph').innerHTML = s.hand.map((l, i) =>
+      `<option value="${i}">${l.glyph} · ${l.name} · ${l.abjad}</option>`).join('');
+  },
+  check(s) {
+    const high = world.highestY();
+    s.peak = Math.max(s.peak, high);
+    // A collapse: the tower had risen, and is now settled well below its peak.
+    if (world.isSettled() && s.peak >= 1.6 && high < s.peak - 1.2 && !s.collapsed) {
+      s.collapsed = true;
+      recordExperiment('falls', 'It fell');
+      return { win: false, why: 'The tower fell. The notebook has the result.' };
+    }
+    if (high >= MZ.ring && world.isSettled()) {
+      if (s.holdFrom === null) s.holdFrom = world.time;
+      s.hold = world.time - s.holdFrom;
+      if (s.hold >= MZ.hold) {
+        recordExperiment('stands', 'It stood');
+        return { win: true, score: 100 + s.toPlace * 10 + (s.nbGained || 0),
+                 why: `It reached the ring and held. ${s.experiments} experiment${s.experiments === 1 ? '' : 's'} recorded.` };
+      }
+    } else if (high < MZ.ring) { s.holdFrom = null; s.hold = 0; }
+    if (s.toPlace <= 0 && world.isSettled() && high < MZ.ring && !s.collapsed) {
+      recordExperiment('stands', 'Out of letters; it stands short');
+      return { win: false, why: 'Out of letters, and short of the ring. What stood is recorded.' };
+    }
+    return null;
   },
 };
 
@@ -387,10 +511,34 @@ function placeBlock(ev) {
   // Drop from just above whatever is already there, so a stack builds rather
   // than a block falling five metres onto its neighbours and scattering them.
   const dropY = Math.max(1.4, world.highestY() + 1.1);
-  const letter = letterByGlyph($('place-glyph').value) || LETTERS[0];
+  const mizaj = state.mode === 'mizaj';
+  let letter, handIdx = -1;
+  if (mizaj) {
+    handIdx = parseInt($('place-glyph').value, 10);
+    letter = state.hand[handIdx];
+    if (!letter) { toast('That letter is already placed.', 'bad'); return; }
+  } else {
+    letter = letterByGlyph($('place-glyph').value) || LETTERS[0];
+  }
+  // Alif is singular: the one letter that stands on end, and it takes no alif on
+  // it — two alifs make a line, not two. (data/correspondences.json, alif-singular)
+  const isAlif = letter.glyph === 'ا';
+  if (mizaj && isAlif) {
+    const under = world.blockUnder(gx, gz);
+    if (under && under.letter.glyph === 'ا') {
+      toast('An alif takes no alif. Two alifs do not make two.', 'bad'); return;
+    }
+  }
   // Alternate orientation each placement, as a real course would.
   const rot = (state.toPlace % 2) ? Math.PI / 2 : 0;
-  world.addBlock(letter, gx, dropY, gz, rot);
+  world.addBlock(letter, gx, dropY, gz, rot,
+    mizaj ? { temper: state.temperMap[letter.glyph], upright: isAlif } : {});
+  if (mizaj) {
+    state.hand[handIdx] = null;
+    $('place-glyph').innerHTML = state.hand.map((l, i) => l ?
+      `<option value="${i}">${l.glyph} · ${l.name} · ${l.abjad}</option>` : '').join('');
+    if (isAlif) record('mizaj:alif-upright', 'an alif standing on end', 10);
+  }
   state.toPlace--;
   record('letter:' + letter.glyph, `the letter ${letter.glyph}`, 5);
   paintHud();
@@ -412,7 +560,7 @@ function paintHud() {
   $('budget').textContent = state.mode === 'kawabil'
     ? `${state.deck ? state.deck.length : 0} pieces · ${state.bracketsLeft ?? 0} brackets`
     : state.budget === null
-      ? (state.toPlace !== undefined ? `${state.toPlace} blocks` : '—')
+      ? (state.toPlace !== undefined ? `${state.toPlace} ${state.mode === 'mizaj' ? 'letters' : 'blocks'}` : '—')
       : `${state.budget} ops`;
   $('height').textContent = world.highestY().toFixed(2) + ' m';
   $('rank').textContent = `${rankFor(tome.xp)} · ${tome.xp} XP`;
@@ -438,7 +586,26 @@ function paintTome() {
     </div>`;
   }).join('');
   $('tome-ops').innerHTML = ops;
+  paintNotebook();
   $('tome-xp').textContent = `${rankFor(tome.xp)} — ${tome.xp} XP, ${tome.discoveries.length} discoveries`;
+}
+
+function paintNotebook() {
+  if (!notebook || !$('tome-notebook')) return;
+  const sum = notebook.summary();
+  const qs = Object.keys(sum);
+  if (!qs.length) {
+    $('tome-notebook').innerHTML = '<p class="dim">Empty. Play Temperament and record an experiment.</p>';
+    return;
+  }
+  const TITLES = { temperament: 'Which letter has which nature?', efficacy: 'Why do letters hold?', rule: 'Rules' };
+  $('tome-notebook').innerHTML = qs.map(q => `
+    <div class="nb-q"><div class="lab">${TITLES[q] || q}</div>
+    ${sum[q].map(c => `<div class="nb-claim"><span class="pill ${c.state}">${c.state}</span>
+       <b>${c.text}</b> <span class="pill ${c.kind}">${c.kind}</span>
+       <span class="dim">${c.observations.length} observation${c.observations.length === 1 ? '' : 's'}</span>
+       <div class="why">${c.source || ''}</div></div>`).join('')}</div>`).join('');
+  $('nb-xp').textContent = `${notebook.xp} XP in the notebook`;
 }
 
 /* ----------------------------------------------------------------- loop --- */
@@ -486,7 +653,12 @@ function startMode(mode, seed) {
   $('verdict').className = '';
   $('place-row').classList.toggle('hidden', !state.placing || mode === 'kawabil');
   $('tool-row').classList.toggle('hidden', mode !== 'kawabil');
-  $('ops-block').classList.toggle('hidden', mode === 'kawabil');
+  $('mizaj-row').classList.toggle('hidden', mode !== 'mizaj');
+  $('ops-block').classList.toggle('hidden', mode === 'kawabil' || mode === 'mizaj');
+  if (mode !== 'mizaj') {
+    $('place-glyph').innerHTML = LETTERS.map(l =>
+      `<option value="${l.glyph}">${l.glyph} · ${l.name} · ${l.abjad}</option>`).join('');
+  }
   for (const b of document.querySelectorAll('#modes .btn'))
     b.classList.toggle('active', b.dataset.mode === mode);
   paintHud(); paintLog();
@@ -494,15 +666,18 @@ function startMode(mode, seed) {
 }
 
 (async function main() {
-  const [lj, oj, pj] = await Promise.all([
+  const [lj, oj, pj, cj] = await Promise.all([
     fetch(`./data/letters.json?${V}`).then(r => r.json()),
     fetch(`./data/operations.json?${V}`).then(r => r.json()),
     fetch(`${YA}/data/palace.json?${V}`).then(r => r.json()).catch(() => null),
+    fetch(`./data/correspondences.json?${V}`).then(r => r.json()),
   ]);
   LETTERS = lj.letters;
   OPDATA = oj;
   PALACE = pj;
+  CORR = cj;
   tome = loadTome();
+  notebook = new Notebook();
 
   world = new World($('stage'));
   addEventListener('resize', () => world.resize());
@@ -565,6 +740,12 @@ function startMode(mode, seed) {
         : 'Piece: dropped where you click, and it falls unless something carries it.');
     };
   }
+  // By hand: whatever is settled now, stands. (A fall is recorded by the mode itself.)
+  $('test-tower').onclick = () => recordExperiment('stands', 'Recorded by hand');
+  $('reset-notebook').onclick = () => {
+    if (!confirm('Erase the notebook — every claim and observation, in every game?')) return;
+    notebook.erase(); proposeClaims(); paintNotebook();
+  };
   $('tome-toggle').onclick = () => $('tome').classList.toggle('open');
   $('tome-close').onclick = () => $('tome').classList.remove('open');
   $('reset-tome').onclick = () => {
@@ -581,5 +762,36 @@ function startMode(mode, seed) {
   raf = requestAnimationFrame(frame);
 
   window.__abjad = { world, OPS, get state() { return state; }, get tome() { return tome; },
-                     LETTERS, startMode, findRuns: t => OPS.findRuns(world, t) };
+                     get notebook() { return notebook; }, CORR, TEMPER, judgeTower, recordExperiment,
+                     LETTERS, startMode, findRuns: t => OPS.findRuns(world, t), selfTestMizaj };
+})();
+
+/* ------------------------------------------------------------- self-test -- */
+// The temperament mechanic, checked numerically — the Yūsuf Ascent pattern of a
+// self-test on the debug handle. Steps the world itself (rAF is throttled while
+// a tool call is in flight, so wall-clock waits under-simulate; DECISIONS.md
+// 2026-09-02). Builds three six-block columns under the operative scheme —
+// complementary, opposed, same-natured — and reports what stood. Expected: the
+// complementary and same columns stand at ~2.74; the opposed column shears
+// itself apart. Restarts the current round afterwards. Measured 2026-09-03:
+//   comp high 2.74 spread 0.01 · same 2.75 / 0.00 · opposed 0.78 / 6.59.
+function selfTestMizaj() {
+  const scheme = temperSchemes().find(s => s.id === (state && state.schemeId)) || temperSchemes()[0];
+  const live = scheme.map;
+  const L = LETTERS.filter(l => l.glyph !== 'ا');
+  const pair = rel => { for (const a of L) for (const b of L) if (a !== b && TEMPER.relation(live[a.glyph], live[b.glyph]) === rel) return [a, b]; };
+  const build = p => { world.clear(); for (let i = 0; i < 6; i++) { const l = p[i % 2]; world.addBlock(l, 0, 0.26 + i * 0.52, 0, (i % 2) ? Math.PI / 2 : 0, { temper: live[l.glyph] }); } };
+  const measure = () => { const xs = world.liveBlocks().map(b => b.body.position.x); return { high: +world.highestY().toFixed(2), spread: +(Math.max(...xs) - Math.min(...xs)).toFixed(2), contacts: world.contactPairs().length, settled: world.isSettled() }; };
+  const out = { scheme: scheme.id };
+  for (const [k, p] of [['complementary', pair('complementary')], ['opposed', pair('opposed')], ['same', [L[3], L[3]]]]) {
+    out[k] = { pair: p.map(l => `${l.glyph}:${live[l.glyph]}`).join(' ') };
+    build(p); for (let i = 0; i < 600; i++) world.step(1 / 60);
+    Object.assign(out[k], measure());
+  }
+  out.pass = out.complementary.high > 2.5 && out.same.high > 2.5 && out.opposed.high < 1.5
+          && out.complementary.contacts >= 5;
+  if (state) startMode(state.mode, state.seed);
+  return out;
+}
+(function noop() {
 })();

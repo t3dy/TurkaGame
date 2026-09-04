@@ -95,6 +95,17 @@
   .pill.CORPUS{background:var(--lapis);color:#fff}
   .pill.PORTAL{background:var(--turq);color:#06201f}
   .pill.PLAIN{background:#5a5468;color:#fff}
+  .pill.REPORTED{background:#7a4a1a;color:#fff}
+  .pill.INTERPRETATION{background:#5a5468;color:#fff}
+  .pill.HYPOTHESIS{background:transparent;border:1px solid var(--dim);color:var(--dim)}
+  .pill.EXPERIMENT{background:#3d4a6b;color:#fff}
+  .pill.OBSERVED{background:var(--lapis);color:#fff}
+  .pill.CONFIRMED{background:var(--gold);color:#16151a}
+  .pill.DISPROVEN{background:var(--verm);color:#fff}
+  .nb-q{margin:.6rem 0 .9rem}
+  .nb-claim{padding:.35rem 0;border-top:1px solid var(--rule);font-size:.82rem}
+  .nb-claim .why{font-family:var(--sans);font-size:.7rem;color:var(--dim);margin-top:.2rem}
+  #nb-xp{font-family:var(--mono);font-size:.74rem;color:var(--gold-hi)}
   .note{font-family:var(--sans);font-size:.72rem;line-height:1.55;color:var(--dim);
     border-left:2px solid var(--verm);padding-left:.6rem;margin:1rem 0}
 
@@ -129,6 +140,20 @@
             first time you perform it, with the passage it rests on.
           </p>
           <div id="tome-ops"></div>
+
+          <h2 style="margin-top:1.4rem">The Notebook</h2>
+          <div id="nb-xp"></div>
+          <p style="font-family:var(--sans);font-size:.8rem;line-height:1.6;color:#ddd4c9">
+            <b>Taḥqīq, not taqlīd.</b> A correspondence you have read is held on authority; one you
+            have put to the test is verified. The notebook pays only for the second. Each claim
+            below is a scheme the tradition — or this game — proposes; a claim is
+            <span class="pill CONFIRMED">CONFIRMED</span> only when a rival on the same question is
+            <span class="pill DISPROVEN">DISPROVEN</span>, so the play is finding the tower on which
+            the schemes disagree. Shared across every game in this project.
+          </p>
+          <div id="tome-notebook"></div>
+          <div class="row" style="margin-top:.5rem"><button class="btn" id="reset-notebook">Erase the notebook</button></div>
+
           <div class="note">
             <b>Where the game bends its source.</b> A letter's mass is its abjad value, but
             compressed: the raw series runs 1 to 1000, three orders of magnitude, which no
@@ -178,6 +203,16 @@
         its share of the page.</div>
       </div>
 
+      <div id="mizaj-row" class="hidden">
+        <div class="lab">Tajriba — put the tower to the test</div>
+        <div class="row"><button class="btn" id="test-tower">Record what stands</button></div>
+        <div class="note" style="margin-top:.5rem">Every letter here has a nature &mdash; fire, air,
+        water, earth &mdash; and complementary natures hold where opposed ones slide. <b>Which letter
+        has which nature is hidden</b>, because the tradition does not agree; three rival schemes
+        are in play and one of them is the physics. Build, watch, record. Each record is scored
+        against every scheme in the Notebook.</div>
+      </div>
+
       <div id="ism-row" class="hidden">
         <div class="lab">Name which letter</div>
         <select id="ism-glyph"></select>
@@ -206,6 +241,6 @@
     </aside>
   </div>
 
-<script type="module" src="./src/game.js?v=4"></script>
+<script type="module" src="./src/game.js?v=6"></script>
 </body>
 </html>

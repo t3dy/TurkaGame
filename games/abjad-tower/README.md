@@ -96,6 +96,47 @@ comes to rest beyond the pad falls. Win: a piece rests against the turret and ho
 Design #5 of [`docs/GAME_DESIGNS_BIHZAD.md`](../../docs/GAME_DESIGNS_BIHZAD.md); the
 cheapest to build because the solver, the settle test and the scoring already existed.
 
+## Temperament (fifth mode) and the Notebook
+
+The first slice of the lettrist programme in
+[`docs/PUZZLE_GAME_IDEAS.md`](../../docs/PUZZLE_GAME_IDEAS.md). Every letter has a nature —
+fire, air, water, earth — and **which letter has which is hidden**, because the tradition
+does not agree. `data/correspondences.json` ships three rival schemes, each labelled with
+what it rests on (one `PORTAL`-grounded split read our way, two that are plainly ours), and
+a seed picks one of them to *be* the physics. The player is dealt a hand of fourteen
+letters, builds to the ring, and **records what stands** — by hand, or automatically on a
+win or a collapse — against every scheme at once in the **Notebook**.
+
+The Notebook is the progression, and it is *taḥqīq* (portal entry `tahqiq-taqlid`): a
+claim moves HYPOTHESIS → EXPERIMENT → OBSERVED on consistent results, is DISPROVEN by one
+contradiction, and is **CONFIRMED only when a rival on the same question is DISPROVEN** —
+three towers that stand under "the cycle" prove nothing if they also stand under "by
+form". The play is finding the tower the schemes disagree on. `tests/data.test.mjs`
+proves such a pair of letters exists for every scheme pair. The Notebook lives in one
+`localStorage` key for the whole project (`turka.notebook.v1`, `src/notebook.js`) so that
+what is tested here is already known to the next game.
+
+**Alif is singular**: the only letter that stands on end, and it takes no alif on it.
+
+### What was measured, including the non-result
+
+Friction was the first translation — complementary contacts 0.5, opposed 0.10 — and it
+**did not discriminate**: six-block columns of complementary and of opposed letters
+toppled alike under the same shove. And cannon-es reports **no contacts for a sleeping
+tower**, so a contact test read from the solver at the one moment an experiment is
+recorded (settled) always saw zero. Both are recorded in `src/world.js` at the code, and
+in `docs/DECISIONS.md`. What shipped: contacts by AABB overlap, and an opposed support
+that **pushes its burden sideways at a quarter of g** — above what friction 0.10 holds,
+below what 0.5 holds. `window.__abjad.selfTestMizaj()` rebuilds the three columns and
+reports: complementary stands at 2.74 (spread 0.01), same-natured at 2.75, opposed shears
+to 0.78 (spread 6.59). That is a scripted result, not a human one.
+
+**Grounding, honestly.** That letters have elemental natures at all is *reported* in
+`PUZZLERIDEAS.txt` from sources (Ibn ʿArabī; Kâtib Çelebi via an Oxford study) that are
+**not in this repo**; no scheme here claims to be theirs, and the file says what to do when
+the real table arrives. The 14/14 light/dark split the third scheme reads from is portal
+fact; the reading is ours.
+
 ## Where the game bends its source
 
 **One place, stated everywhere it matters** — in the generator, in the data file, and in
@@ -141,5 +182,9 @@ resolution, no asset pipeline, crisp at any zoom.
 - **No audio.** A demolition game probably wants some.
 - **Brackets mode is verified by a scripted build, not by a human hand.** One bracket beside
   the turret and one piece is enough to win; four brackets is generous. Untuned.
+- **Temperament is verified by `selfTestMizaj()` and a scripted notebook run, not by a
+  person.** The collapse detector (settled ≥ 1.2 m below the round's peak) has been
+  exercised only by the self-test's opposed column. A hand of fourteen may not contain a
+  discriminating pair for every scheme; nothing yet tells the player that.
 - The Extraction mode picks its target letter at random among those appearing twice or
   more, so some rounds are far easier than others. No difficulty curve yet.

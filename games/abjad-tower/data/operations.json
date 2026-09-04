@@ -117,6 +117,15 @@
       "goal": "Bring any piece to rest against the turret, using as few brackets as you can.",
       "budget": null,
       "source": "games/yusuf-ascent/data/palace.json — balcony-brackets: 'carried on nothing'; badgir-kiosk: 'reachable only by looking'"
+    },
+    {
+      "id": "mizaj",
+      "name": "Temperament",
+      "arabic": "مزاج",
+      "blurb": "Every letter has a nature, and which letter has which is hidden — three rival schemes, one of them the physics. Build from the hand you were dealt, record what stands, and let the notebook tell the schemes apart.",
+      "goal": "Reach the ring and hold it four seconds. Every experiment recorded against the schemes scores in the notebook.",
+      "budget": null,
+      "source": "data/correspondences.json — the schemes and what each rests on; portal entry `tahqiq-taqlid` for the notebook's frame. That letters have elemental natures at all is REPORTED in PUZZLERIDEAS.txt from sources not in this repo; the assignments here are labelled as ours."
     }
   ]
 }

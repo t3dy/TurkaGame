@@ -9,7 +9,7 @@
 // use, not in an About page.
 
 import * as CANNON from '../vendor/cannon-es.js';
-import { BLOCK } from './world.js';
+import { BLOCK } from './world.js?v=6';
 
 const V = (x, y, z) => new CANNON.Vec3(x, y, z);
 

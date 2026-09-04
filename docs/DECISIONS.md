@@ -889,3 +889,48 @@ under 0.12**, i.e. resting against it.
 
 **Consequence.** Four of the six Bihzād designs remain: Station Point, Doors That Give,
 Muqarnas, Cartouche. Station Point is next by teaching value.
+
+## 2026-09-03 — The lettrist programme: rival schemes, a notebook, and a mechanic that had to be measured twice
+
+**Decision.** `PUZZLERIDEAS.txt` (the brief for making Ibn Turka's lettrism into mechanics)
+is distilled in `docs/PUZZLE_GAME_IDEAS.md`, which also catalogues every puzzle idea so far
+with a grounding tag. Two slices built in Abjad Tower: (1) a **data layer** —
+`letters.json` gains observable *form* facts and the three *registers*; a new
+`correspondences.json` ships **rival schemes, not a table**, each labelled PORTAL / CORPUS /
+REPORTED / INTERPRETATION; a shared **Notebook** (`src/notebook.js`, one localStorage key
+for the project) with states HYPOTHESIS → EXPERIMENT → OBSERVED → CONFIRMED / DISPROVEN;
+(2) a fifth mode, **Temperament (mizāj)**, in which a seed secretly picks which scheme is
+the physics and the player records what stands against all of them.
+
+**Rationale.** The brief's central caution is that there is no single medieval meaning of
+the alphabet, and its central idea is that the ambiguity should be the puzzle. Rival
+schemes with a hidden operative one is that idea made literal. The notebook's frame is the
+portal's own `tahqiq-taqlid` entry: a correspondence you have read is held on authority; one
+you have tested is verified. So CONFIRMED requires a rival DISPROVEN — three towers standing
+under "the cycle" prove nothing if they also stand under "by form"; the player must find the
+tower on which the schemes disagree, and `tests/data.test.mjs` proves such letter pairs exist.
+
+**Honesty about grounding.** The hot/cold/dry/moist and four-ṭabāʾiʿ traditions the brief
+draws on are cited there from sources *not in this repo's corpus*. Rather than print an
+invented "Ibn ʿArabī" table, `correspondences.json` carries a `reported_but_absent` list and
+ships schemes that say they are ours. Tagged everywhere: `.pill.REPORTED`.
+
+**Rejected — friction as temperament, after measuring it.** The first translation was
+contact friction (complementary 0.5, opposed 0.10). Stepped-physics probes showed six-block
+columns of complementary and opposed letters toppling alike under the same shove and the
+same lean; friction did not discriminate. Replaced by an active rule: a block carried by an
+**opposed** support is pushed sideways at a quarter of g — above what μ 0.10 holds, below
+what 0.5 holds — so the friction table still decides, but something now tests it. Self-test:
+complementary column stands at 2.74, same-natured 2.75, opposed shears to 0.78. The
+measured non-result stays in the code comment, per the house rule.
+
+**Rejected — contacts from the solver.** cannon-es skips the narrowphase for sleeping pairs,
+so `world.contacts` is empty for a settled tower — the one moment an experiment is recorded.
+A six-block column, settled at 2.74, reported zero. Contacts are now an AABB-overlap test.
+Third entry in this file about physics verification; the pattern is that every physics
+claim here has needed a number before it was true.
+
+**Consequence.** Slice 3 is the Letter Machine (`games/letter-machine/`): letters as
+operators over the sibling alchemy projects' glyph set, Transpose, wafq targets, taksīr —
+the first *second* consumer of the notebook, which is what makes it shared data rather than
+one game's save file.

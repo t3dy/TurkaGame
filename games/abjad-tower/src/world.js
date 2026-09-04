@@ -28,6 +28,22 @@ import * as CANNON from '../vendor/cannon-es.js';
 // 1.0 x 0.6 and the footprint came out a narrow cross — every tower tipped itself
 // over while settling, which reads as a physics bug and is really a geometry one.
 export const BLOCK = { w: 1.5, h: 0.5, d: 0.5 };
+
+// The four natures and how two of them relate. Complementary pairs share one
+// quality (fire and air are both hot; water and earth both cold); opposed pairs
+// share none. This is the 'efficacy-mixture' rule in data/correspondences.json,
+// made physical as friction. The scheme that says WHICH letter has WHICH nature
+// is a separate, hidden choice — see game.js.
+export const TEMPER = {
+  elements: ['air', 'earth', 'fire', 'water'],
+  complement: { fire: 'air', air: 'fire', water: 'earth', earth: 'water' },
+  relation(a, b) {
+    if (a === b) return 'same';
+    return TEMPER.complement[a] === b ? 'complementary' : 'opposed';
+  },
+  friction: { complementary: 0.5, same: 0.3, opposed: 0.10 },
+  push: 2.5,   // m/s² sideways on a block carried by an opposed support; see _temperForces
+};
 const GROUND_Y = 0;
 
 export class World {
@@ -209,6 +225,31 @@ export class World {
       contactEquationStiffness: 1e7, contactEquationRelaxation: 4,
     }));
 
+    // Temperament (mizāj) materials. A block placed under a temperament scheme
+    // gets the material of its element, and the friction between two blocks is
+    // set by whether their natures are complementary (fire–air, water–earth
+    // share a quality), the same, or opposed (fire–water, air–earth). The
+    // numbers are the translation, and they are stated here:
+    //   complementary  0.5   as stone on stone — the normal block contact
+    //   same           0.3   like-with-like is brittle
+    //   opposed        0.10  opposites will not hold each other
+    // Which block has which nature is the scheme's business (game.js), and the
+    // scheme is hidden from the player: the physics IS the operative scheme.
+    this.temperMats = {};
+    for (const e of TEMPER.elements) this.temperMats[e] = new CANNON.Material('t:' + e);
+    for (const a of TEMPER.elements) for (const b of TEMPER.elements) {
+      if (a > b) continue;
+      this.world.addContactMaterial(new CANNON.ContactMaterial(this.temperMats[a], this.temperMats[b], {
+        friction: TEMPER.friction[TEMPER.relation(a, b)], restitution: 0.05,
+        contactEquationStiffness: 1e7, contactEquationRelaxation: 4,
+      }));
+      // Against plain stone and the ground: the normal contact.
+      this.world.addContactMaterial(new CANNON.ContactMaterial(this.temperMats[a], this.mat, {
+        friction: 0.5, restitution: 0.05,
+        contactEquationStiffness: 1e7, contactEquationRelaxation: 4,
+      }));
+    }
+
     const ground = new CANNON.Body({
       type: CANNON.Body.STATIC, shape: new CANNON.Plane(), material: this.mat,
     });
@@ -256,8 +297,12 @@ export class World {
     return t;
   }
 
-  addBlock(letter, x, y, z, rotY = 0) {
-    const geo = new THREE.BoxGeometry(BLOCK.w, BLOCK.h, BLOCK.d);
+  addBlock(letter, x, y, z, rotY = 0, { temper = null, upright = false } = {}) {
+    // Upright: the block stands on end, d x w x d. Only alif is allowed to — the
+    // straight, undivided letter is the one that can be an axis (game.js decides
+    // who may; this only knows how).
+    const dims = upright ? [BLOCK.d, BLOCK.w, BLOCK.d] : [BLOCK.w, BLOCK.h, BLOCK.d];
+    const geo = new THREE.BoxGeometry(...dims);
     const face = new THREE.MeshStandardMaterial({
       map: this._glyphTexture(letter), roughness: 0.6, metalness: 0.05,
     });
@@ -269,8 +314,8 @@ export class World {
 
     const body = new CANNON.Body({
       mass: letter.mass,
-      shape: new CANNON.Box(new CANNON.Vec3(BLOCK.w / 2, BLOCK.h / 2, BLOCK.d / 2)),
-      material: this.mat,
+      shape: new CANNON.Box(new CANNON.Vec3(dims[0] / 2, dims[1] / 2, dims[2] / 2)),
+      material: temper ? this.temperMats[temper] : this.mat,
       position: new CANNON.Vec3(x, y, z),
       sleepSpeedLimit: 0.12,
       sleepTimeLimit: 0.4,
@@ -280,7 +325,7 @@ export class World {
 
     const b = {
       body, mesh, letter, alive: true, ghostUntil: 0,
-      baseMass: letter.mass, massUntil: 0,
+      baseMass: letter.mass, massUntil: 0, temper, upright,
     };
     body.userData = b;
     mesh.userData = b;
@@ -343,6 +388,66 @@ export class World {
   /* --------------------------------------------------------------- queries -- */
 
   liveBlocks() { return this.blocks.filter(b => b.alive); }
+
+  /** Unique pairs of live blocks touching each other, by AABB overlap with a
+   *  small tolerance. NOT from the solver's contact list: cannon-es skips the
+   *  narrowphase for sleeping pairs, so a settled tower — the one moment an
+   *  experiment is recorded — reports zero contacts there. Measured 2026-09-03:
+   *  a six-block column, settled, high 2.74, `world.contacts` empty. Blocks here
+   *  are only ever yawed by 0 or 90 degrees, so the AABB is the box. */
+  contactPairs(tol = 0.04) {
+    const live = this.liveBlocks();
+    for (const b of live) b.body.updateAABB();
+    const out = [];
+    for (let i = 0; i < live.length; i++) for (let j = i + 1; j < live.length; j++) {
+      const A = live[i].body.aabb, B = live[j].body.aabb;
+      if (A.lowerBound.x - tol > B.upperBound.x || B.lowerBound.x - tol > A.upperBound.x) continue;
+      if (A.lowerBound.y - tol > B.upperBound.y || B.lowerBound.y - tol > A.upperBound.y) continue;
+      if (A.lowerBound.z - tol > B.upperBound.z || B.lowerBound.z - tol > A.upperBound.z) continue;
+      out.push([live[i], live[j]]);
+    }
+    return out;
+  }
+
+  /** Temperament as force. Friction alone was tried first and measured not to
+   *  discriminate: with contact friction 0.5 against 0.1, six-block columns of
+   *  complementary and of opposed letters toppled alike under the same shove
+   *  (2026-09-03, DECISIONS.md). So the rule is made active: a block resting on
+   *  a support of OPPOSED nature is pushed sideways off it, at a quarter of g —
+   *  above what friction 0.1 can hold (μg ≈ 0.98 m/s²), well below what 0.5
+   *  can (≈ 4.9). Complementary and same-natured supports push nothing and the
+   *  friction table decides. "An opposed nature will not carry you." */
+  _temperForces() {
+    if (!this.blocks.some(b => b.alive && b.temper)) return;
+    for (const [a, b] of this.contactPairs()) {
+      if (!a.temper || !b.temper) continue;
+      if (TEMPER.relation(a.temper, b.temper) !== 'opposed') continue;
+      const dy = a.body.position.y - b.body.position.y;
+      if (Math.abs(dy) < 0.3) continue;                   // side by side: no burden
+      const upper = dy > 0 ? a : b, lower = dy > 0 ? b : a;
+      let dx = upper.body.position.x - lower.body.position.x;
+      let dz = upper.body.position.z - lower.body.position.z;
+      const r = Math.hypot(dx, dz);
+      if (r < 1e-3) { dx = 1; dz = 0; } else { dx /= r; dz /= r; }
+      const f = TEMPER.push * upper.body.mass;
+      upper.body.applyForce(new CANNON.Vec3(dx * f, 0, dz * f), upper.body.position);
+      upper.body.wakeUp();
+    }
+  }
+
+  /** The live block whose top is highest directly under (x, z), or null. */
+  blockUnder(x, z) {
+    let best = null, top = -Infinity;
+    for (const b of this.liveBlocks()) {
+      const h = b.body.shapes[0].halfExtents, p = b.body.position;
+      // Footprint in world axes; a 90-degree rotation swaps x and z extents.
+      const e = new CANNON.Vec3(); b.body.quaternion.toEuler(e);   // fills e; returns nothing
+      const turned = Math.abs(Math.sin(e.y)) > 0.7;                  // yawed ~90°: x and z swap
+      const ex = turned ? h.z : h.x, ez = turned ? h.x : h.z;
+      if (Math.abs(x - p.x) <= ex && Math.abs(z - p.z) <= ez && p.y + h.y > top) { top = p.y + h.y; best = b; }
+    }
+    return best;
+  }
 
   highestY() {
     let y = 0;
@@ -408,6 +513,7 @@ export class World {
       if (this.time >= this.pending[i].at) { this.pending[i].run(); this.pending.splice(i, 1); }
     }
 
+    this._temperForces();
     this.world.step(1 / 60, dt, 3);
 
     for (let i = this.projectiles.length - 1; i >= 0; i--) {

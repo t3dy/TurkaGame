@@ -310,6 +310,14 @@ HEAD, not merely "pushed"):
   during tool calls, so **physics must be stepped manually to test it**; and a piece that
   "slid off a ledge" had spawned inside the turret — **guard spawns against fixed bodies**.
 
+- **The lettrist programme, slices 1–2 (2026-09-03)** — `docs/PUZZLE_GAME_IDEAS.md` is
+  the catalogue and the plan. Abjad Tower now carries the shared data layer
+  (`letters.json` form facts + registers, `correspondences.json` rival schemes, the
+  project-wide Notebook in `src/notebook.js`) and a fifth mode, Temperament, with a hidden
+  operative scheme and taḥqīq-style recording. Verified by `tests/data.test.mjs` (12 pass)
+  and `__abjad.selfTestMizaj()`. Two physics lessons in DECISIONS: friction alone did not
+  discriminate; sleeping bodies report no contacts.
+
 ## What's NOT done — the important gaps, not hidden
 
 1. **The VN's narrative prose is a real first pass, not final writing.** Every
