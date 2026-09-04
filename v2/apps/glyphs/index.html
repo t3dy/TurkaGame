@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="../shared/hand.css?v=7">
+<title>The Glyphs — every correspondence sign, drawn</title>
+<style>
+  :root {
+    --paper:#f1dac1; --dim:#b9b0a6; --bg:#171620; --bg2:#211f2b; --bg3:#2b2836;
+    --gold:#c99a2e; --gold-hi:#e8c86a; --lapis:#4d7fd6; --verm:#c06523;
+    --turq:#2e8f8f; --rule:rgba(241,218,193,.16);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:"Inter","Segoe UI",system-ui,sans-serif;
+    --mono:"Cascadia Mono",Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--serif);line-height:1.5}
+  a{color:var(--verm)}
+  .topbar{display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;padding:.5rem 1rem;
+    background:#100f16;border-bottom:1px solid var(--gold);font-family:var(--sans);font-size:.76rem}
+  .topbar .title{font-family:var(--serif);font-size:1rem}
+  .topbar .ar{font-size:1.05rem;color:var(--gold-hi)}
+  .topbar .spacer{flex:1}
+  .topbar a{text-decoration:none}.topbar a:hover{text-decoration:underline}
+  .btn{font-family:var(--sans);font-size:.72rem;padding:.3rem .55rem;border:1px solid var(--gold);
+    border-radius:2px;background:transparent;color:var(--paper);cursor:pointer}
+  .btn:hover{background:rgba(201,154,46,.16)}
+  main{max-width:1100px;margin:0 auto;padding:1.4rem 1.2rem 4rem}
+  h1{font-size:1.5rem;margin:.2rem 0 .3rem}
+  .lede{font-family:var(--sans);font-size:.86rem;color:#ddd4c9;max-width:68ch}
+  h2{font-size:1.05rem;margin:1.8rem 0 .2rem;color:var(--gold-hi);font-weight:500}
+  .sub{font-family:var(--sans);font-size:.76rem;color:var(--dim);margin-bottom:.7rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .tile{border:1px solid var(--rule);border-radius:3px;padding:.6rem .5rem .5rem;background:rgba(0,0,0,.18);text-align:center}
+  .tile canvas{display:block;margin:0 auto .35rem;width:96px;height:96px}
+  .tile .n{font-size:.86rem}
+  .tile .a{font-family:"Amiri","Scheherazade New","Noto Naskh Arabic","Arabic Typesetting",serif;font-size:1.05rem;color:var(--gold-hi)}
+  .tile .id{font-family:var(--mono);font-size:.62rem;color:var(--dim)}
+  .row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin:.6rem 0}
+  .note{font-family:var(--sans);font-size:.76rem;color:var(--dim);border-left:2px solid var(--verm);
+    padding-left:.7rem;margin:1.2rem 0;max-width:70ch}
+  #sizes canvas{margin-right:10px;vertical-align:middle}
+  html[data-hand="ink"] .tile{background:rgba(255,250,240,.5)}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <span class="title">The Glyphs</span>
+    <span class="ar">الرموز</span>
+    <span style="opacity:.35">·</span>
+    <span>every correspondence sign, drawn as a path</span>
+    <span class="spacer"></span>
+    <button class="btn" id="style">Draw in Ink</button>
+    <a href="../../index.html">All prototypes</a>
+  </div>
+
+  <main>
+    <h1>Twenty-six signs, no font</h1>
+    <p class="lede">
+      Until this page, every symbol in the project was a Unicode character, which renders as an
+      empty box wherever the viewer&rsquo;s font lacks it &mdash; and the alchemical block does. Each
+      of these is drawn as a <b>path</b>: it needs no font, never renders as a box, scales to any
+      size, and takes the hand it is drawn in. Toggle the hand above to see the same forms cut on a
+      dark table and on an engraved page.
+    </p>
+
+    <div class="row" id="sizes"><span class="sub" style="margin:0">One sign at every size the games use:</span></div>
+
+    <div id="families"></div>
+
+    <div class="note">
+      <b>What these are.</b> The standard forms &mdash; the barred triangles, the planetary signs as
+      early modern printers cut them, the tria prima, the twelve sigils &mdash; drawn in a
+      single-weight line the way an engraver would. They are <b>my drawings of those forms</b>, not
+      reproductions of any particular manuscript or plate; the forms are centuries old and belong to
+      nobody. The public-domain manuscript and woodcut <i>grounds</i> they are meant to sit on
+      &mdash; creatures, zodiac animals, the elements in motion &mdash; are the half of the artwork
+      not yet made, and would come through this repo&rsquo;s rights-gated Commons pipeline.
+    </div>
+  </main>
+
+<script type="module">
+  import { GLYPHS, FAMILIES, drawGlyph } from '../shared/glyphs.js?v=7';
+  import { STYLES, currentStyle, setStyle } from '../scriptorium/src/iso.js?v=7';
+
+  const $ = id => document.getElementById(id);
+  let hand = currentStyle();
+
+  function styleFor() {
+    const S = STYLES[hand];
+    return { ink: S.hatch ? S.ink : '#e8c86a', fill: S.hatch ? 'rgba(43,33,22,.06)' : 'rgba(232,200,106,.10)', weight: 1.5 };
+  }
+
+  function paint() {
+    document.documentElement.dataset.hand = hand;
+    $('style').textContent = `Draw in ${hand === 'ink' ? 'Lapis' : 'Ink'}`;
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    const st = styleFor();
+    for (const c of document.querySelectorAll('canvas[data-id]')) {
+      const r = +c.dataset.r, size = r * 2 + 12;
+      c.width = size * dpr; c.height = size * dpr;
+      c.style.width = size + 'px'; c.style.height = size + 'px';
+      const g = c.getContext('2d');
+      g.setTransform(dpr, 0, 0, dpr, 0, 0);
+      g.clearRect(0, 0, size, size);
+      drawGlyph(g, c.dataset.id, size / 2, size / 2, r, st);
+    }
+  }
+
+  // one sign at the sizes the games actually draw at
+  for (const r of [6, 9, 14, 24, 40]) {
+    const c = document.createElement('canvas'); c.dataset.id = 'air'; c.dataset.r = r;
+    $('sizes').appendChild(c);
+  }
+
+  const groups = {};
+  for (const g of GLYPHS) (groups[g.family] ||= []).push(g);
+  $('families').innerHTML = Object.entries(FAMILIES).map(([fid, f]) => `
+    <h2>${f.name}</h2><div class="sub">${f.note}</div>
+    <div class="grid">${(groups[fid] || []).map(g => `
+      <div class="tile"><canvas data-id="${g.id}" data-r="40"></canvas>
+        <div class="n">${g.name}</div><div class="a">${g.arabic}</div><div class="id">${g.id}</div></div>`).join('')}</div>`).join('');
+
+  $('style').onclick = () => { hand = hand === 'ink' ? 'lapis' : 'ink'; setStyle(hand); paint(); };
+  paint();
+  window.__glyphs = { GLYPHS, FAMILIES, paint, get hand() { return hand; } };
+</script>
+</body>
+</html>

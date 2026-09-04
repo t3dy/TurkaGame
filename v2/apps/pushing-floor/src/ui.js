@@ -9,10 +9,10 @@
 // The renderer is the Scriptorium's, imported across apps, which is the claim
 // that it is reusable being cashed rather than repeated.
 
-import { World } from '../../../engine/world.js?v=6';
-import { compile, execute, describeLetter } from '../../../engine/vm.js?v=6';
-import { Scribe, DIRS, targetsCovered } from '../../../engine/agent.js?v=6';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=6';
+import { World } from '../../../engine/world.js?v=7';
+import { compile, execute, describeLetter } from '../../../engine/vm.js?v=7';
+import { Scribe, DIRS, targetsCovered } from '../../../engine/agent.js?v=7';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=7';
 
 const V = 'v=1';
 const $ = id => document.getElementById(id);

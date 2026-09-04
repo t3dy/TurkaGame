@@ -1388,3 +1388,35 @@ FONT: the Ink hand asks for Amiri / Scheherazade New / Noto Naskh Arabic and fal
 the system serif, so its letters are correct everywhere and calligraphic only where those
 are installed. Next after that: the drawn planetary and zodiacal glyphs, which the Ink hand
 now has a place for.
+
+## 2026-09-04 — The signs are drawn, and the face is fetched
+
+**Decision.** Every correspondence sign in v2 — the four elements, the three
+principles, the seven planets, the twelve zodiacal signs — is a **canvas path** in one
+shared module, `v2/apps/shared/glyphs.js`, with a sheet at `v2/apps/glyphs/`. The
+renderer's element faces now go through it. No app draws a sign as a Unicode
+character.
+
+**Rationale.** The alchemical block is a font gamble the viewer usually loses; a
+path is not. One drawing per sign in one place is also the only way v2 and
+GoldenDawnBlocks can share artwork without sharing code (the module is data-shaped:
+`(ctx, x, y, r, style) → marks`). The sheet is labelled at the point of viewing as
+my drawings of the standard forms, not reproductions — the same rule Yūsuf Ascent set
+for interpretation.
+
+**Rejected.** Vendoring the Amiri font files. It is the right eventual move (offline
+correctness) but it is a *download*, which is Ted's call, not mine; instead every v2
+page links Amiri from Google Fonts so the viewer's browser fetches it under the OFL
+at runtime, and the stack falls back through the naskh faces Windows ships to the
+system serif. Also rejected: drawing the 22 Hebrew letters as paths now — that is a
+different order of work (letterforms, not sigils) and should wait for
+GoldenDawnBlocks to need them.
+
+**Consequence.** Two faults surfaced by checking rather than looking: Aries' horns
+left the circle (caught by a Node test with a recording context), and Cancer was
+drawn as two detached commas (caught by rendering a contact sheet in the browser —
+the pane's screenshots fail at any scroll offset, so the sheet is pinned at the top
+of the page). Both redrawn. Half the artwork brief is still open: the public-domain
+*grounds* these signs belong on are not fetched, and would go through
+`imagelab/scripts/fetch_commons.py`'s rights gate.
+

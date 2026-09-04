@@ -20,9 +20,9 @@
 //
 // All three are pure unless `apply` is set, like everything else in this engine.
 
-import { KEY, UNKEY } from './world.js?v=6';
-import { readWorld } from './reader.js?v=6';
-import { isolate } from './unmaking.js?v=6';
+import { KEY, UNKEY } from './world.js?v=7';
+import { readWorld } from './reader.js?v=7';
+import { isolate } from './unmaking.js?v=7';
 
 /* ------------------------------------------------------- invoke the name --- */
 

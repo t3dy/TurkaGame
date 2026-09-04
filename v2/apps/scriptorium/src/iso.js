@@ -39,6 +39,8 @@
 // A fifth mark would mean the model grew a concept, and that is the moment to
 // reconsider the model rather than the legend.
 
+import { drawGlyph } from '../../shared/glyphs.js';
+
 export const STYLES = {
   lapis: {
     id: 'lapis', name: 'Lapis', blurb: 'the night table — dark ground, lapis and gold',
@@ -61,7 +63,11 @@ export const STYLES = {
       stone: '#d9cdb4', earth: '#b8a17c', water: '#b9c8d2',
       fire: '#e0b08f', air: '#e6dcbf', letter: '#f4ecd8',
     },
-    letterInk: '#1a130c', letterFont: '"Amiri","Scheherazade New","Noto Naskh Arabic","Times New Roman",serif',
+    // Amiri (SIL OFL) is fetched at runtime from Google Fonts by the viewer's own
+    // browser -- nothing is vendored -- then the naskh faces Windows already ships,
+    // then whatever serif the machine has. Correct everywhere, calligraphic where
+    // it can be. Vendoring the font is the offline-proof upgrade and is a download.
+    letterInk: '#1a130c', letterFont: '"Amiri","Scheherazade New","Noto Naskh Arabic","Arabic Typesetting","Traditional Arabic","Times New Roman",serif',
     hatch: true, vignette: true,
   },
 };
@@ -284,36 +290,18 @@ export class Iso {
   }
 
   /**
-   * The four elements drawn as what they are: the alchemical triangles. Fire and
-   * air point up, water and earth down, and the second of each pair carries the
-   * bar across it. Drawn as paths, so they need no font and never render as a box
-   * — which is what the Unicode substitutes did, and why the first build replaced
-   * the bar with solid-against-hollow and left a note apologising.
+   * The four elements drawn as what they are: the alchemical triangles, from the
+   * shared glyph module (../../shared/glyphs.js), where the planets and the signs
+   * also live. One drawing of each sign, in one place, drawn as paths so it needs
+   * no font and never renders as a box.
    */
   _elementGlyph(element, cx, cy, r) {
-    const g = this.ctx, S = this.S;
-    const up = element === 'fire' || element === 'air';
-    const barred = element === 'air' || element === 'earth';
-    const yTop = up ? cy - r : cy + r, yBase = up ? cy + r * 0.75 : cy - r * 0.75;
-    g.save();
-    g.strokeStyle = S.hatch ? S.ink : 'rgba(0,0,0,.72)';
-    g.fillStyle = S.hatch ? 'rgba(43,33,22,.06)' : 'rgba(255,255,255,.18)';
-    g.lineWidth = Math.max(1, 1.3 * (r / 9));
-    g.lineJoin = 'round';
-    g.beginPath();
-    g.moveTo(cx, yTop);
-    g.lineTo(cx + r * 0.95, yBase);
-    g.lineTo(cx - r * 0.95, yBase);
-    g.closePath();
-    g.fill(); g.stroke();
-    if (barred) {
-      const by = up ? cy + r * 0.15 : cy - r * 0.15;
-      const half = r * 0.95 * (up ? (by - yTop) / (yBase - yTop) : (yTop - by) / (yTop - yBase)) + r * 0.18;
-      g.beginPath();
-      g.moveTo(cx - half, by); g.lineTo(cx + half, by);
-      g.stroke();
-    }
-    g.restore();
+    const S = this.S;
+    drawGlyph(this.ctx, element, cx, cy, r, {
+      ink: S.hatch ? S.ink : 'rgba(0,0,0,.72)',
+      fill: S.hatch ? 'rgba(43,33,22,.06)' : 'rgba(255,255,255,.18)',
+      weight: 1.5,
+    });
   }
 
   /* --------------------------------------------------------------- marks -- */

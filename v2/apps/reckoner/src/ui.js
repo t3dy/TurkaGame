@@ -12,12 +12,12 @@
 // Yūsuf Ascent's perspective puzzle rebuilt out of language, because the original
 // needed a camera moving through continuous space and this engine has none.
 
-import { World, KEY } from '../../../engine/world.js?v=6';
-import { compile, execute } from '../../../engine/vm.js?v=6';
-import { extract, extracted, reckon, findRuns, readsFrom, DIRECTIONS } from '../../../engine/operations.js?v=6';
-import { standing } from '../../../engine/unmaking.js?v=6';
-import { Ledger } from '../../../engine/ledger.js?v=6';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=6';
+import { World, KEY } from '../../../engine/world.js?v=7';
+import { compile, execute } from '../../../engine/vm.js?v=7';
+import { extract, extracted, reckon, findRuns, readsFrom, DIRECTIONS } from '../../../engine/operations.js?v=7';
+import { standing } from '../../../engine/unmaking.js?v=7';
+import { Ledger } from '../../../engine/ledger.js?v=7';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=7';
 
 const V = 'v=4';
 const $ = id => document.getElementById(id);

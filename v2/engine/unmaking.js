@@ -32,7 +32,7 @@
 // draws them, and all three are pure unless `apply` is set — the preview of a
 // demolition is the demolition, run against a copy.
 
-import { KEY, UNKEY } from './world.js?v=6';
+import { KEY, UNKEY } from './world.js?v=7';
 
 /** Highest cell in the world, or -Infinity when it is empty. */
 export function highest(world, { glyphOnly = false } = {}) {

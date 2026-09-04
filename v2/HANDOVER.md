@@ -125,6 +125,15 @@ holds both; `apps/shared/hand.css` turns the page chrome with the canvas. If one
 eventually chosen, delete the other from `STYLES` and the CSS — do not leave a dead
 toggle.
 
+**Signs are paths, not characters.** `apps/shared/glyphs.js` draws the 26
+correspondence signs (elements, principles, planets, zodiac); `iso.js` draws its
+element faces through it, and `apps/glyphs/index.html` is the sheet. Add a sign
+there, never as a Unicode character in an app — `tests/glyphs.test.mjs` checks each
+one draws, stays inside its circle and scales. The Ink letter face is Amiri fetched
+at runtime from Google Fonts (linked in every v2 page's `<head>`); nothing is
+vendored, so an offline viewer gets the system serif. Vendoring is a download and
+waits for Ted.
+
 ## What is deliberately absent
 
 Nothing below is an oversight. Each is a gap with a reason, and inventing a

@@ -216,8 +216,11 @@ v2/
 ├── engine/reader.js          the other direction: read the world back as text
 ├── engine/ledger.js          what the player has actually witnessed
 ├── engine/agent.js           a scribe who walks and shoves; the mode-level solver
+├── apps/shared/glyphs.js     26 correspondence signs drawn as paths, both hands
+├── apps/shared/hand.css      turns the page chrome with the canvas (Lapis / Ink)
+├── apps/glyphs/              the sheet: every sign at every size the games use
 ├── apps/scriptorium/         the IDE: palette → program → preview → inscribe
-│   ├── src/iso.js            the consequence renderer (reusable by any v2 app)
+│   ├── src/iso.js            the consequence renderer, two hands (any v2 app)
 │   └── tasks.json            four tasks, each self-tested through the real UI path
 ├── apps/pushing-floor/       the first GAME: shove stones, write letters when
 │                               shoving is not enough. Levels checked three ways.
@@ -225,7 +228,8 @@ v2/
 ├── apps/unmaking/            three candidate demolition routes, measured side by side
 ├── engine/unmaking.js        those three routes, as pure functions
 ├── index.html                the hub: every prototype in one place
-└── tests/engine.test.mjs     34 tests
+├── tests/engine.test.mjs     52 tests
+└── tests/glyphs.test.mjs     8 tests: every sign draws, stays in bounds, scales
 ```
 
 ## Provenance, and how it is shown
@@ -346,11 +350,18 @@ totals hide. **The choice between them is Ted's and has not been made.**
   abjad ladder, and a power rule asking for `class === 'nurani'` — all fixed here rather
   than worked around there. That project is a parked first slice: engine vendored, letter
   table built and verified, no app and no glyph artwork yet.
-- **The Ink hand's letter face depends on fonts the viewer may not have.** It asks
-  for Amiri, then Scheherazade New, then Noto Naskh Arabic, then falls back to the
-  system serif. On a machine with none of the first three, the letters are still
-  correct but less calligraphic than intended. Shipping a font is the fix, and it
-  is the first piece of "artwork" this project would actually vendor.
+- **The Ink hand's letter face is fetched, not vendored.** Every v2 page links
+  Amiri (SIL OFL) from Google Fonts, so the viewer's own browser fetches it at
+  runtime; behind it the stack asks for Scheherazade New, Noto Naskh Arabic, the
+  two naskh faces Windows ships, then the system serif. Online, the letters are
+  calligraphic everywhere; offline, they are correct but plainer. Vendoring the
+  font files under `v2/vendor/fonts/` with their licence is the offline-proof
+  upgrade, and it is a download, so it waits for Ted's word.
+- **The signs are drawn; the grounds are not.** `apps/shared/glyphs.js` draws the
+  four elements, three principles, seven planets and twelve zodiacal signs as
+  paths, in both hands, and `apps/glyphs/` is the sheet. They are my drawings of
+  the standard forms, labelled as such. The public-domain manuscript and woodcut
+  images they should sit on have not been fetched.
 - **`?v=` cache-busting is now enforced, after it bit.** Two separate faults. First,
   `vm.js` importing `./world.js` while the app imported it with a token loaded the module
   twice under two URLs. Then the worse one: `world.js` was **changed without bumping its
