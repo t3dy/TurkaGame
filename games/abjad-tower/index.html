@@ -161,9 +161,21 @@
         <span class="lab">Rank</span><b id="rank">—</b>
       </div>
 
-      <div>
+      <div id="ops-block">
         <div class="lab">Operation</div>
         <div class="row" id="ops"></div>
+      </div>
+
+      <div id="tool-row" class="hidden">
+        <div class="lab">Tool — the weight of brackets</div>
+        <div class="row">
+          <button class="btn active" data-tool="piece">Piece</button>
+          <button class="btn" data-tool="bracket">Bracket <small>fixed in air</small></button>
+        </div>
+        <div class="note" style="margin-top:.5rem">The balcony brackets in the painting are
+        carried on nothing, so here they are the only bodies that may be fixed in empty air.
+        Every other piece of the folio is dropped and must be carried. A piece&rsquo;s weight is
+        its share of the page.</div>
       </div>
 
       <div id="ism-row" class="hidden">
@@ -194,6 +206,6 @@
     </aside>
   </div>
 
-<script type="module" src="./src/game.js?v=2"></script>
+<script type="module" src="./src/game.js?v=4"></script>
 </body>
 </html>

@@ -856,3 +856,36 @@ offer "Same tower", so a playtest complaint can name the exact tower it happened
 Gallery's comparison, this). The file has earned its keep as a data layer. The Weight of
 Brackets — the folio's parts as an Abjad Tower block set — is the cheapest next design,
 because the engine, settle detection and scoring already exist.
+
+## 2026-09-02 — The Weight of Brackets, and two ways a physics test lies
+
+**Decision.** Design #5 built as Abjad Tower's fourth mode: the folio's cut elements as a
+block set, a pad instead of a floor, a fixed turret over the void, and **the balcony
+brackets as the only bodies that may be fixed in empty air** — the painting's "carried on
+nothing" as a rule. Weight is a piece's share of the page: derivable, deterministic,
+sayable. Verified deterministically to a 450-point win.
+
+**Rationale.** It was ranked cheapest-next because the solver, settle detection and scoring
+already existed; it cost the predicted half day and one new engine feature (static bodies).
+
+**Two lessons about verifying physics, both learned by being wrong.**
+
+1. **Wall-clock waits are not simulated time.** The first void test "passed" the wrong way
+   — a piece dropped over the void survived — because this browser pane throttles
+   `requestAnimationFrame` hard while a tool call is in flight: 3.2 real seconds advanced
+   the world by 0.18 s, so the piece was still mid-air when checked. Every earlier physics
+   verification in this project that used `await sleep()` was quietly under-simulated.
+   **Rule: step the world yourself (`world.step(1/60)` in a loop) and assert on the state
+   after N steps.** All Abjad Tower checks now do.
+2. **A piece that "slides off a ledge" was spawned inside the turret.** A trace showed it
+   already moving at 4.7 m/s on its first frame — the solver hurling it out of an
+   interpenetration, not friction failing. Spawn geometry, not physics. **Rule: refuse a
+   spawn that overlaps a fixed body** (`spawnBlocked`), and treat any first-frame velocity
+   as a geometry error until proven otherwise.
+
+Also: the win test went from "within 1.35 of the turret's centre" — which a 1.5-wide brick
+beside a 1.6-wide turret can never satisfy — to **the AABB gap between brick and turret
+under 0.12**, i.e. resting against it.
+
+**Consequence.** Four of the six Bihzād designs remain: Station Point, Doors That Give,
+Muqarnas, Cartouche. Station Point is next by teaching value.

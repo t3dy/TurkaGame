@@ -38,6 +38,9 @@ export class World {
     this.projectiles = [];
     this.pending = [];         // delayed effects, e.g. the talisman's arrival
     this.time = 0;
+    this.padRadius = null;     // when set, ground exists only inside this radius
+    this.statics = [];         // fixed bodies: brackets, the turret
+    this.texLoader = null;
     this._initThree();
     this._initPhysics();
   }
@@ -112,6 +115,84 @@ export class World {
   setTargetLine(y) {
     this.targetY = y;
     this.lineMesh.position.y = y;
+  }
+
+  /** Shrink the world to a pad. Beyond it is the void: the physics plane still
+   *  exists (so nothing falls forever) but anything resting out there is removed.
+   *  This is what makes a cantilever necessary rather than a tower sufficient. */
+  setPad(radius) {
+    this.padRadius = radius;
+    if (!this.padMesh) {
+      this.padMesh = new THREE.Mesh(
+        new THREE.CylinderGeometry(1, 1, 0.6, 48),
+        new THREE.MeshStandardMaterial({ color: 0x5a4a3a, roughness: 0.9 }));
+      this.padMesh.receiveShadow = true;
+      this.padMesh.position.y = -0.3;
+      this.scene.add(this.padMesh);
+    }
+    this.padMesh.visible = radius !== null;
+    if (radius !== null) this.padMesh.scale.set(radius, 1, radius);
+    // dim the wide floor so the pad reads as the only ground
+    this.scene.children.forEach(m => {
+      if (m.geometry && m.geometry.type === 'CylinderGeometry' && m !== this.padMesh) {
+        m.material.opacity = radius === null ? 1 : 0.12;
+        m.material.transparent = radius !== null;
+      }
+    });
+  }
+
+  /** A block textured with an image (a cut piece of the folio) rather than a glyph. */
+  addImageBlock(piece, url, x, y, z, { w = BLOCK.w, h = BLOCK.h, d = BLOCK.d, mass = 2, rotY = 0 } = {}) {
+    this.texLoader = this.texLoader || new THREE.TextureLoader();
+    const tex = this.texLoader.load(url);
+    tex.colorSpace = THREE.SRGBColorSpace;
+    tex.anisotropy = this.renderer.capabilities.getMaxAnisotropy();
+    const face = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.65, metalness: 0.05 });
+    const side = new THREE.MeshStandardMaterial({ color: 0xcdb58e, roughness: 0.8, metalness: 0 });
+    const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), [side, side, side, side, face, face]);
+    mesh.castShadow = mesh.receiveShadow = true;
+    this.scene.add(mesh);
+    const body = new CANNON.Body({
+      mass, shape: new CANNON.Box(new CANNON.Vec3(w / 2, h / 2, d / 2)),
+      material: this.mat, position: new CANNON.Vec3(x, y, z),
+      sleepSpeedLimit: 0.12, sleepTimeLimit: 0.4,
+    });
+    body.quaternion.setFromEuler(0, rotY, 0);
+    this.world.addBody(body);
+    // `letter` keeps the shape the rest of the engine expects; a folio piece is a
+    // letter with a title instead of a glyph.
+    const letter = { glyph: piece.title, name: piece.id, abjad: 0, class: 'zulmani', mass };
+    const b = { body, mesh, letter, piece, alive: true, ghostUntil: 0, baseMass: mass, massUntil: 0 };
+    body.userData = b; mesh.userData = b;
+    this.blocks.push(b);
+    return b;
+  }
+
+  /** A fixed body in empty air: the brackets' exemption, and the turret. */
+  addStatic(url, x, y, z, { w = 1.5, h = 0.22, d = 0.7, tint = 0xc06523 } = {}) {
+    this.texLoader = this.texLoader || new THREE.TextureLoader();
+    const mats = [];
+    const side = new THREE.MeshStandardMaterial({ color: tint, roughness: 0.75 });
+    if (url) {
+      const tex = this.texLoader.load(url);
+      tex.colorSpace = THREE.SRGBColorSpace;
+      const face = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.7 });
+      mats.push(side, side, side, side, face, face);
+    }
+    const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), url ? mats : side);
+    mesh.castShadow = mesh.receiveShadow = true;
+    mesh.position.set(x, y, z);
+    this.scene.add(mesh);
+    const body = new CANNON.Body({
+      type: CANNON.Body.STATIC, material: this.mat,
+      shape: new CANNON.Box(new CANNON.Vec3(w / 2, h / 2, d / 2)),
+      position: new CANNON.Vec3(x, y, z),
+    });
+    this.world.addBody(body);
+    const s = { body, mesh };
+    this.statics.push(s);
+    for (const b of this.liveBlocks()) b.body.wakeUp();
+    return s;
   }
 
   /* -------------------------------------------------------------- physics -- */
@@ -254,6 +335,9 @@ export class World {
     for (const p of this.projectiles) { this.scene.remove(p.mesh); this.world.removeBody(p.body); }
     this.projectiles.length = 0;
     this.pending.length = 0;
+    for (const s of this.statics) { this.scene.remove(s.mesh); this.world.removeBody(s.body); }
+    this.statics.length = 0;
+    this.setPad(null);
   }
 
   /* --------------------------------------------------------------- queries -- */
@@ -341,6 +425,12 @@ export class World {
       b.mesh.quaternion.copy(b.body.quaternion);
       // A block that falls off the world is gone, not tracked forever.
       if (b.body.position.y < -8) this.removeBlock(b, { burst: false });
+      // On a pad, anything that comes to rest on the plane OUTSIDE the pad has
+      // fallen into the void. (The plane is kept so nothing falls forever.)
+      if (this.padRadius !== null && b.body.position.y < 0.6 &&
+          Math.hypot(b.body.position.x, b.body.position.z) > this.padRadius + 0.2) {
+        this.removeBlock(b, { burst: true });
+      }
     }
 
     for (let i = this.debris.length - 1; i >= 0; i--) {

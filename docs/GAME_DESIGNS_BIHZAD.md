@@ -109,7 +109,7 @@ meet. Spend them well and the wall rises; spend them badly and it shears.
 **Grounding.** Muqarnas is literally a vault built from subdivided niches so that shapes
 which do not meet can. The game is the definition, with a clock on it.
 
-## 5. The Weight of Brackets — a physics build
+## 5. The Weight of Brackets — *built* · Abjad Tower's fourth mode
 
 **Genre.** Structural engineering puzzle using Abjad Tower's physics engine.
 
@@ -149,7 +149,7 @@ the doctrine applied to the page. Here it is applied to the wall.
 ## Build order
 
 1. **The Impossible Architect** — built, see below. Most pieces, most logic, most reuse.
-2. **The Weight of Brackets** — cheapest next step; a block set for an engine that exists.
+2. **The Weight of Brackets** — built, as Abjad Tower's fourth mode. Half a day, as predicted.
 3. **Station Point** — the strongest teaching; a demo already carries its core.
 4. **Doors That Give** — needs pathfinding on irregular regions; a real slice of work.
 5. **Muqarnas**, **Cartouche** — good ideas needing more design before code.

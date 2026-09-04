@@ -108,6 +108,15 @@
       "blurb": "Take every instance of one letter out of the tower and leave the rest standing.",
       "goal": "Remove all blocks of the named letter without the tower falling below the line.",
       "budget": 6
+    },
+    {
+      "id": "kawabil",
+      "name": "Brackets",
+      "arabic": "كوابيل",
+      "blurb": "The Weight of Brackets. The folio's own parts as blocks: build out over the void to reach the turret. Only the brackets may be fixed in empty air.",
+      "goal": "Bring any piece to rest against the turret, using as few brackets as you can.",
+      "budget": null,
+      "source": "games/yusuf-ascent/data/palace.json — balcony-brackets: 'carried on nothing'; badgir-kiosk: 'reachable only by looking'"
     }
   ]
 }

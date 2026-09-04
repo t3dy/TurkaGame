@@ -13,6 +13,8 @@ const V = 'v=1';
 const $ = id => document.getElementById(id);
 
 let LETTERS = [], OPDATA = null, world = null;
+let PALACE = null;                 // the Bihzad folio's cut pieces (cross-folder data)
+const YA = '../yusuf-ascent';
 let state = null, tome = null, raf = 0, last = 0;
 
 /* --------------------------------------------------------------- the Tome -- */
@@ -174,6 +176,114 @@ const MODES = {
   },
 };
 
+/* ------------------------------------------------- the weight of brackets -- */
+// The folio's parts as a block set. The balcony brackets are the only bodies that
+// may be fixed in empty air, because in the painting they are carried on nothing.
+// Everything else obeys gravity honestly. Reach the turret — which the painting
+// makes reachable only by looking — by building out over the void.
+
+const KW = { pad: 2.4, turret: { x: 5.6, y: 3.2 }, brackets: 4, pieces: 16 };
+
+function folioPieces() {
+  if (!PALACE) return [];
+  const skip = new Set(['folio-full', 'architecture-full', 'balcony-brackets', 'badgir-kiosk', 'cupola']);
+  const ps = PALACE.nodes.filter(n => !skip.has(n.id) && n.role !== 'figure');
+  const maxA = Math.max(...ps.map(p => p.norm[2] * p.norm[3]));
+  // A piece's weight is its share of the page: derivable, deterministic, sayable.
+  return ps.map(p => ({ ...p, mass: +(1 + 5 * (p.norm[2] * p.norm[3]) / maxA).toFixed(2) }));
+}
+
+MODES.kawabil = {
+  setup(s) {
+    if (!PALACE) { s.instruction = 'The folio data did not load; this mode needs ../yusuf-ascent/.'; return; }
+    world.camOrbit.target.set(2.4, 1.8, 0);
+    world.camOrbit.dist = 13; world.camOrbit.pitch = 0.12; world.camOrbit.yaw = 0.02;
+    world.setPad(KW.pad);
+    world.setTargetLine(KW.turret.y);
+    // the turret: fixed, off over the void, the painting's "reachable only by looking"
+    s.turret = world.addStatic(`${YA}/assets/regions/badgir-kiosk.jpg`, KW.turret.x, KW.turret.y, 0,
+      { w: 1.6, h: 1.4, d: 0.9, tint: 0x2e5f8f });
+    const rnd = mulberry(s.seed);
+    const deck = folioPieces();
+    for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; }
+    s.deck = deck.slice(0, KW.pieces);
+    s.bracketsLeft = KW.brackets;
+    s.budget = null;
+    s.placing = true;
+    s.tool = 'piece';
+    s.holdFrom = null;
+    s.instruction = `Reach the turret over the void. ${KW.brackets} brackets may be fixed in empty air; ` +
+                    `every other piece must be carried. Click to drop a piece; switch to Bracket to fix one.`;
+  },
+  check(s) {
+    if (!s.turret) return null;
+    // "Rests against the turret": the gap between the block's box and the turret's
+    // box is nearly zero. (An earlier test used distance-to-centre < 1.35, which a
+    // 1.5-wide block beside a 1.6-wide turret can never satisfy.)
+    const near = world.liveBlocks().filter(b => boxGap(b.body, s.turret.body) < 0.12);
+    if (near.length && world.isSettled()) {
+      if (s.holdFrom === null) s.holdFrom = world.time;
+      s.hold = world.time - s.holdFrom;
+      if (s.hold >= 2.5) {
+        return { win: true, score: 150 + s.bracketsLeft * 60 + s.deck.length * 8,
+                 why: `A piece rests against the turret and holds. ${KW.brackets - s.bracketsLeft} bracket(s) used.` };
+      }
+    } else { s.holdFrom = null; s.hold = 0; }
+    if (!s.deck.length && world.isSettled() && !near.length) {
+      return { win: false, why: 'Every piece spent, and the turret is still only reachable by looking.' };
+    }
+    return null;
+  },
+};
+
+/** Gap between two axis-aligned boxes (0 when touching or overlapping). */
+function boxGap(a, b) {
+  const ha = a.shapes[0].halfExtents, hb = b.shapes[0].halfExtents;
+  const dx = Math.max(0, Math.abs(a.position.x - b.position.x) - (ha.x + hb.x));
+  const dy = Math.max(0, Math.abs(a.position.y - b.position.y) - (ha.y + hb.y));
+  const dz = Math.max(0, Math.abs(a.position.z - b.position.z) - (ha.z + hb.z));
+  return Math.hypot(dx, dy, dz);
+}
+
+/** Would a brick spawned at (x, y) overlap any fixed body? Spawning inside one
+ *  makes the solver hurl the brick out at several m/s, which reads as a bug and is
+ *  really a level-geometry error. Found by tracing a "sliding" piece. */
+function spawnBlocked(x, y, hw = BLOCK.w / 2, hh = BLOCK.h / 2) {
+  return world.statics.some(st => {
+    const h = st.body.shapes[0].halfExtents, q = st.body.position;
+    return Math.abs(x - q.x) < hw + h.x + 0.02 && Math.abs(y - q.y) < hh + h.y + 0.02;
+  });
+}
+
+function placeFolio(ev) {
+  const s = state;
+  const dir = world.aimRay(ev.clientX, ev.clientY);
+  const cam = world.camera.position;
+  // Build in the x-y plane at z = 0: intersect the aim ray with that plane.
+  if (Math.abs(dir.z) < 1e-4) return;
+  const t = (0 - cam.z) / dir.z;
+  const px = cam.x + dir.x * t, py = cam.y + dir.y * t;
+  if (t < 0 || px < -3 || px > 8 || py < 0 || py > 8) { toast('Aim into the build space.', 'bad'); return; }
+
+  if (s.tool === 'bracket') {
+    if (s.bracketsLeft <= 0) { toast('No brackets left. Everything else must be carried.', 'bad'); return; }
+    if (spawnBlocked(px, Math.max(0.3, py), 0.75, 0.11)) { toast('A bracket cannot be fixed inside something already fixed.', 'bad'); return; }
+    world.addStatic(`${YA}/assets/regions/balcony-brackets.jpg`, px, Math.max(0.3, py), 0);
+    s.bracketsLeft--;
+    record('folio:bracket', 'a bracket fixed in empty air', 20);
+    toast(`Bracket fixed at (${px.toFixed(1)}, ${py.toFixed(1)}) — carried on nothing.`, 'good');
+  } else {
+    if (!s.deck.length) { toast('No pieces left.', 'bad'); return; }
+    const dropY = Math.max(py, 1.2) + 0.9;
+    if (spawnBlocked(px, dropY)) { toast('That would spawn inside something fixed. Drop it beside, not into.', 'bad'); return; }
+    const p = s.deck.shift();
+    world.addImageBlock(p, `${YA}/${p.sprite}`, px, dropY, 0, { mass: p.mass });
+    record('folio:' + p.id, p.title, 5);
+    toast(`${p.title} — weight ${p.mass} (its share of the page).`);
+  }
+  paintHud();
+}
+
 /* ---------------------------------------------------------------- actions -- */
 
 let armed = 'darb';        // the operation the next click performs
@@ -299,9 +409,11 @@ function toast(msg, kind = '') {
 function paintHud() {
   $('mode-name').textContent = state.modeName;
   $('instruction').textContent = state.instruction;
-  $('budget').textContent = state.budget === null
-    ? (state.toPlace !== undefined ? `${state.toPlace} blocks` : '—')
-    : `${state.budget} ops`;
+  $('budget').textContent = state.mode === 'kawabil'
+    ? `${state.deck ? state.deck.length : 0} pieces · ${state.bracketsLeft ?? 0} brackets`
+    : state.budget === null
+      ? (state.toPlace !== undefined ? `${state.toPlace} blocks` : '—')
+      : `${state.budget} ops`;
   $('height').textContent = world.highestY().toFixed(2) + ' m';
   $('rank').textContent = `${rankFor(tome.xp)} · ${tome.xp} XP`;
   const hold = state.hold ? ` · holding ${state.hold.toFixed(1)}s` : '';
@@ -372,7 +484,9 @@ function startMode(mode, seed) {
   history.replaceState(null, '', `?mode=${mode}&seed=${seed}`);
   MODES[mode].setup(state);
   $('verdict').className = '';
-  $('place-row').classList.toggle('hidden', !state.placing);
+  $('place-row').classList.toggle('hidden', !state.placing || mode === 'kawabil');
+  $('tool-row').classList.toggle('hidden', mode !== 'kawabil');
+  $('ops-block').classList.toggle('hidden', mode === 'kawabil');
   for (const b of document.querySelectorAll('#modes .btn'))
     b.classList.toggle('active', b.dataset.mode === mode);
   paintHud(); paintLog();
@@ -380,12 +494,14 @@ function startMode(mode, seed) {
 }
 
 (async function main() {
-  const [lj, oj] = await Promise.all([
+  const [lj, oj, pj] = await Promise.all([
     fetch(`./data/letters.json?${V}`).then(r => r.json()),
     fetch(`./data/operations.json?${V}`).then(r => r.json()),
+    fetch(`${YA}/data/palace.json?${V}`).then(r => r.json()).catch(() => null),
   ]);
   LETTERS = lj.letters;
   OPDATA = oj;
+  PALACE = pj;
   tome = loadTome();
 
   world = new World($('stage'));
@@ -432,13 +548,23 @@ function startMode(mode, seed) {
   cv.addEventListener('pointerup', e => {
     drag = false;
     if (moved > 6) return;
-    if (state.placing) placeBlock(e); else doOp(e);
+    if (state.mode === 'kawabil') placeFolio(e);
+    else if (state.placing) placeBlock(e); else doOp(e);
   });
   cv.addEventListener('wheel', e => {
     e.preventDefault();
     world.camOrbit.dist = Math.max(7, Math.min(34, world.camOrbit.dist + e.deltaY * 0.012));
   }, { passive: false });
 
+  for (const b of document.querySelectorAll('#tool-row .btn')) {
+    b.onclick = () => {
+      state.tool = b.dataset.tool;
+      for (const x of document.querySelectorAll('#tool-row .btn')) x.classList.toggle('active', x === b);
+      toast(state.tool === 'bracket'
+        ? 'Bracket: fixed in empty air. The only thing here that is carried on nothing.'
+        : 'Piece: dropped where you click, and it falls unless something carries it.');
+    };
+  }
   $('tome-toggle').onclick = () => $('tome').classList.toggle('open');
   $('tome-close').onclick = () => $('tome').classList.remove('open');
   $('reset-tome').onclick = () => {

@@ -304,6 +304,12 @@ HEAD, not merely "pushed"):
 - **A destructive slip recorded in DECISIONS:** a patch script truncated two `index.html`
   files by opening for write before reading. One restored from git; the other rewritten.
 
+- **The Weight of Brackets (2026-09-02)** — Abjad Tower's fourth mode; the folio's parts as
+  blocks over a void, brackets the only bodies fixable in air. Verified deterministically
+  (450-point win). Two verification lessons recorded in DECISIONS: this pane throttles rAF
+  during tool calls, so **physics must be stepped manually to test it**; and a piece that
+  "slid off a ledge" had spawned inside the turret — **guard spawns against fixed bodies**.
+
 ## What's NOT done — the important gaps, not hidden
 
 1. **The VN's narrative prose is a real first pass, not final writing.** Every

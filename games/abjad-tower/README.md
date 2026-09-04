@@ -81,6 +81,21 @@ The two most interesting in play:
 - **Extraction** (استخراج) — remove every instance of one named letter and leave the rest
   standing.
 
+## The Weight of Brackets (fourth mode)
+
+The Bihzād folio's cut elements as a block set, read across folders from
+`../yusuf-ascent/data/palace.json` — data and assets, not code. The ground is a pad; beyond
+it is the void. The turret (*bādgīr*), which the painting makes "reachable only by
+looking", sits fixed over that void. Build out to it.
+
+One rule, from the painting: **the balcony brackets are carried on nothing, so they are
+the only bodies that may be fixed in empty air** — four of them. Every other piece is
+dropped and must be carried, and a piece's weight is its share of the page. Anything that
+comes to rest beyond the pad falls. Win: a piece rests against the turret and holds.
+
+Design #5 of [`docs/GAME_DESIGNS_BIHZAD.md`](../../docs/GAME_DESIGNS_BIHZAD.md); the
+cheapest to build because the solver, the settle test and the scoring already existed.
+
 ## Where the game bends its source
 
 **One place, stated everywhere it matters** — in the generator, in the data file, and in
@@ -123,5 +138,7 @@ resolution, no asset pipeline, crisp at any zoom.
   the repo carrying its own three.js; per `games/yusuf-ascent/DECISIONS.md` the move to a
   repo-level `vendor/` is due, and this build is the trigger for it rather than the doer.
 - **No audio.** A demolition game probably wants some.
+- **Brackets mode is verified by a scripted build, not by a human hand.** One bracket beside
+  the turret and one piece is enough to win; four brackets is generous. Untuned.
 - The Extraction mode picks its target letter at random among those appearing twice or
   more, so some rounds are far easier than others. No difficulty curve yet.
