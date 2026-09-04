@@ -1,6 +1,5 @@
 {
   "_note": "Tasks for the Scriptorium. Each is a case where letters are genuinely executable world instructions rather than puzzle tokens — the world state is checked, not a stored answer. `solution` is the sequence the self-test plays through the real UI path, so a task that stops being solvable fails a check rather than a playtest.",
-
   "tasks": [
     {
       "id": "the-raising",
@@ -9,17 +8,60 @@
       "brief": "Bring the water above the cursor to 7, without touching it.",
       "teaches": "A letter with dots above RAISES what stands over it, and it raises by RUNGS OF THE ABJAD LADDER — 5 to 7 is two rungs, not two units. The number of dots is the number of rungs.",
       "ruleset": "workshop",
-      "cursor": [2, 0, 0],
-      "world": [
-        { "x": 2, "y": 1, "z": 0, "material": "water", "value": 5 },
-        { "x": 0, "y": 0, "z": 0, "material": "earth", "value": 1, "fixed": true },
-        { "x": 1, "y": 0, "z": 0, "material": "earth", "value": 1, "fixed": true },
-        { "x": 2, "y": 0, "z": -1, "material": "earth", "value": 1, "fixed": true }
+      "cursor": [
+        2,
+        0,
+        0
       ],
-      "goal": { "type": "value-at", "at": [2, 1, 0], "value": 7 },
-      "solution": [{ "write": "ت", "register": "written" }]
+      "world": [
+        {
+          "x": 2,
+          "y": 1,
+          "z": 0,
+          "material": "water",
+          "value": 5
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "z": -1,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        }
+      ],
+      "goal": {
+        "type": "value-at",
+        "at": [
+          2,
+          1,
+          0
+        ],
+        "value": 7
+      },
+      "solution": [
+        {
+          "write": "ت",
+          "register": "written"
+        }
+      ]
     },
-
     {
       "id": "one-body",
       "name": "One Body",
@@ -27,12 +69,23 @@
       "brief": "Write a word of three letters that holds together as a single body.",
       "teaches": "A written word IS one body here, and the six letters that never join what follows — ا د ذ ر ز و — are where it breaks. That is not doctrine: it is why an Arabic word can look like several pieces on the page. Choose letters that connect.",
       "ruleset": "intellectual",
-      "cursor": [2, 0, 0],
+      "cursor": [
+        2,
+        0,
+        0
+      ],
       "world": [],
-      "goal": { "type": "one-body", "min_letters": 3 },
-      "solution": [{ "write": "مله", "register": "written" }]
+      "goal": {
+        "type": "one-body",
+        "min_letters": 3
+      },
+      "solution": [
+        {
+          "write": "مله",
+          "register": "written"
+        }
+      ]
     },
-
     {
       "id": "the-chain",
       "name": "The Chain of Being",
@@ -40,12 +93,98 @@
       "brief": "Three letters must still be standing over the single pier when gravity is turned on. Under the metaphysics you are starting in, this cannot be done.",
       "teaches": "The same three letters are two bodies under one metaphysics and one body under another. Sufi lettrism refuses to SEVER at all — 'the chain of being is not cut' — so a word bonds straight through the break that orthography puts in it. Change the ruleset, not the program.",
       "ruleset": "intellectual",
-      "cursor": [2, 1, 0],
-      "world": [
-        { "x": 2, "y": 0, "z": 0, "material": "earth", "value": 1, "fixed": true }
+      "cursor": [
+        2,
+        1,
+        0
       ],
-      "goal": { "type": "survives-gravity", "above": 1, "count": 3 },
-      "solution": [{ "write": "مرم", "register": "written", "ruleset": "sufi" }]
+      "world": [
+        {
+          "x": 2,
+          "y": 0,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        }
+      ],
+      "goal": {
+        "type": "survives-gravity",
+        "above": 1,
+        "count": 3
+      },
+      "solution": [
+        {
+          "write": "مرم",
+          "register": "written",
+          "ruleset": "sufi"
+        }
+      ]
+    },
+    {
+      "id": "the-pen",
+      "name": "The Pen",
+      "arabic": "القلم",
+      "brief": "Something is already standing here. Finish it, then read the world.",
+      "teaches": "You have been writing the world all along. It can also be READ — including the parts you did not write. Two letters of a word are standing in front of you; write the third into the gap and the structure resolves into قلم, the Pen. Sūra 68 is named for it, and opens on the letter nūn.",
+      "ruleset": "workshop",
+      "cursor": [
+        1,
+        1,
+        0
+      ],
+      "world": [
+        {
+          "x": 2,
+          "y": 0,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "material": "earth",
+          "value": 1,
+          "fixed": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "z": 0,
+          "material": "letter",
+          "value": 100,
+          "glyph": "ق"
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "material": "letter",
+          "value": 40,
+          "glyph": "م"
+        }
+      ],
+      "goal": {
+        "type": "read",
+        "text": "قلم"
+      },
+      "solution": [
+        {
+          "write": "ل",
+          "register": "written"
+        }
+      ]
     }
   ]
 }

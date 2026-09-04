@@ -136,6 +136,17 @@ TurkaGame/
 
 ## v2 -- the lettrist engine (added 2026-09-04)
 
+**The overarching design principle, and everything in v2 is answerable to it:**
+
+> The player should gradually discover that the Arabic alphabet is not merely the subject of
+> the game. It is the language in which the game world is written.
+
+Both halves are load-bearing. *The world is written in letters* is a claim about the engine
+(`v2/engine/reader.js` reads any structure back as text, including what the player did not
+write). *Gradually discover* is a claim about the interface, and it is the one easy to fail:
+**evidence is always shown, the rule is earned** (`v2/engine/ledger.js`) -- you learn that
+dots-above means RAISE by watching a dotted letter raise something, never from a panel.
+
 **`games/` is now v1 and is FROZEN** ([`games/FROZEN.md`](games/FROZEN.md)): closed to
 change, staying at its current URLs. All new work is in [`v2/`](v2/README.md), which does
 not import v1 code.

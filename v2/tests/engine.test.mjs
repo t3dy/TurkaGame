@@ -11,6 +11,8 @@ import { dirname, join } from 'node:path';
 import assert from 'node:assert/strict';
 import { World, KEY } from '../engine/world.js';
 import { compile, run, preview, execute, describeLetter, ladderStep, LADDER } from '../engine/vm.js';
+import { readWorld, worldReads } from '../engine/reader.js';
+import { Ledger, memoryStore } from '../engine/ledger.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const DATA = JSON.parse(readFileSync(join(here, '..', 'data', 'letters.json'), 'utf8'));
@@ -302,6 +304,111 @@ test('and that difference is structural: under gravity the broken word falls apa
   // the second م is on the far side of the break and has nothing under it.
   assert.equal(standing(RS('workshop')), 2, 'the word broke at the rāʾ and half of it fell');
   assert.equal(standing(RS('sufi')), 3, 'bonded straight through, the whole word is carried');
+});
+
+/* ------------------------------------ reading the world back as text ------ */
+// The overarching principle: the alphabet is not the subject of the game, it is
+// the language the world is written in. These are the tests that make that a
+// claim about the code rather than about the prose.
+
+test('round trip: what the VM writes, the reader reads back', () => {
+  const w = new World();
+  execute(w, compile(prog('\u0645\u0644\u0647'), { letters, ruleset: RS('workshop') }), { cursor: [0, 0, 0] });
+  const { words } = readWorld(w);
+  assert.equal(words.length, 1);
+  assert.equal(words[0].text, '\u0645\u0644\u0647', 'read back in writing order, not reversed');
+  assert.equal(words[0].contiguous, true);
+  // NOT 40+30+5. ل is a sun letter, so it assimilated the م before it and that
+  // cell now carries 30 — the glyphs read back as written, but the VALUES record
+  // what happened to them. The world keeps its own history.
+  assert.equal(words[0].abjad, 30 + 30 + 5, 'the mīm was assimilated to the lām');
+});
+
+test('a word broken by a non-connecting letter reads as TWO words', () => {
+  const w = new World();
+  execute(w, compile(prog('\u0645\u0631\u0645'), { letters, ruleset: RS('workshop') }), { cursor: [0, 0, 0] });
+  const { words } = readWorld(w);
+  assert.equal(words.length, 2, 'the r\u0101\u02be ends the first word');
+  assert.deepEqual(words.map(x => x.text), ['\u0645\u0631', '\u0645']);
+});
+
+test('and under Sufi lettrism the same letters read as ONE word', () => {
+  // The reader groups by bonds, and Sufi lettrism refuses to sever, so the
+  // reading changes with the metaphysics. The world is written differently
+  // depending on who is reading it, and that is not a metaphor here.
+  const w = new World();
+  execute(w, compile(prog('\u0645\u0631\u0645'), { letters, ruleset: RS('sufi') }), { cursor: [0, 0, 0] });
+  const { words } = readWorld(w);
+  assert.equal(words.length, 1);
+  assert.equal(words[0].text, '\u0645\u0631\u0645');
+});
+
+test('the reader never guesses: a structure that is not a line says so', () => {
+  const w = new World();
+  w.set(0, 0, 0, { material: 'letter', value: 40, glyph: '\u0645' });
+  w.set(0, 3, 0, { material: 'letter', value: 30, glyph: '\u0644' });
+  w.bond(KEY(0, 0, 0), KEY(0, 3, 0));
+  const { words } = readWorld(w);
+  assert.equal(words.length, 1);
+  assert.equal(words[0].contiguous, false, 'bonded but not adjacent');
+});
+
+test('worldReads finds a word the player did not write', () => {
+  // A structure standing in the world before anyone touched it.
+  const w = new World();
+  const qalam = [['\u0642', 100], ['\u0644', 30], ['\u0645', 40]];
+  qalam.forEach(([g, v], i) => w.set(2 - i, 1, 0, { material: 'letter', value: v, glyph: g }));
+  for (let i = 0; i + 1 < 3; i++) w.bond(KEY(2 - i, 1, 0), KEY(1 - i, 1, 0));
+  const r = worldReads(w, '\u0642\u0644\u0645');
+  assert.equal(r.found, true);
+  assert.equal(r.word.abjad, 170);
+  assert.equal(r.word.contiguous, true);
+});
+
+/* ------------------------------------------------ the discovery ledger ---- */
+
+test('a primitive is unknown until it has been seen doing something', () => {
+  const L = new Ledger(memoryStore());
+  assert.equal(L.knowsPrimitive('RAISE'), false);
+  const learned = L.witness({ op: 'RAISE', glyph: '\u062a', ruleset: 'workshop' });
+  assert.equal(L.knowsPrimitive('RAISE'), true);
+  assert.equal(learned.filter(x => x.kind === 'primitive').length, 1);
+  // Seeing it again teaches nothing new.
+  assert.equal(L.witness({ op: 'RAISE', glyph: '\u062a', ruleset: 'workshop' }).length, 0);
+});
+
+test('witnessEffects learns exactly what the engine actually did', () => {
+  const w = new World();
+  w.set(0, 1, 0, { material: 'water', value: 5 });
+  const r = execute(w, compile(prog('\u062a'), { letters, ruleset: RS('workshop') }), { cursor: [0, 0, 0] });
+  const L = new Ledger(memoryStore());
+  L.witnessEffects(r.effects, 'workshop');
+  assert.equal(L.knowsPrimitive('RAISE'), true, 'it raised, so RAISE is known');
+  assert.equal(L.knowsPrimitive('BIND'), false, 'nothing bound, so BIND is not');
+  assert.equal(L.knowsPrimitive('POUR'), false);
+});
+
+test('the ledger tracks how much of the language is known', () => {
+  const ops = Object.keys(PACK.primitives);
+  const L = new Ledger(memoryStore());
+  assert.equal(L.progress(ops).fraction, 0);
+  L.revealAll(ops, letters.map(l => l.glyph));
+  assert.equal(L.progress(ops).fraction, 1);
+  assert.equal(L.progress(ops).unknown.length, 0);
+});
+
+test('a reading is recorded once and pays once', () => {
+  const L = new Ledger(memoryStore());
+  assert.equal(L.read('\u0642\u0644\u0645'), true);
+  assert.equal(L.read('\u0642\u0644\u0645'), false, 'reading it twice is not a second discovery');
+  assert.deepEqual(L.readings, ['\u0642\u0644\u0645']);
+});
+
+test('the ledger survives a store that throws', () => {
+  const bad = { getItem() { throw new Error('no'); }, setItem() { throw new Error('no'); } };
+  const L = new Ledger(bad);
+  L.witness({ op: 'POUR', glyph: '\u062d', ruleset: 'workshop' });
+  assert.equal(L.knowsPrimitive('POUR'), true);
 });
 
 console.log(`${n} tests passed`);

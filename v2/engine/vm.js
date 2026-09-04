@@ -112,6 +112,16 @@ export function compile(program, { letters, ruleset }) {
   return { instructions, diagnostics, power };
 }
 
+/** Does this letter break the word here? Granted by orthography, refusable by a
+ *  ruleset (Sufi lettrism denies SEVER outright). Exported because the app needs
+ *  the same answer when it places pre-existing letters into a world. */
+export function severs(letter, ruleset) {
+  if (!letter) return false;
+  if (!letter.primitives.some(p => p.op === 'SEVER')) return false;
+  if (ruleset.denies && ruleset.denies.SEVER) return false;
+  return ruleset.grants.includes('SEVER');
+}
+
 /** The signature mechanic of each ruleset: what makes an operation strong. */
 export function computePower(seq, { ruleset, byGlyph }) {
   const p = ruleset.power;
@@ -184,6 +194,7 @@ export function run(world, compiled, { cursor = [0, 0, 0], dir = [-1, 0, 0], app
   // the program are standing.
   const perp = [-dir[2], 0, dir[0]];
   const anchored = new Set();
+  const inscribed = new Set();
 
   // The letters take their places first. In every register they occupy the world
   // while the program runs; only `written` leaves them there afterwards.
@@ -194,7 +205,11 @@ export function run(world, compiled, { cursor = [0, 0, 0], dir = [-1, 0, 0], app
       ins.blocked = true;
       continue;
     }
-    w.set(x, y, z, { material: 'letter', value: ins.letter.abjad, glyph: ins.glyph });
+    const c = w.set(x, y, z, { material: 'letter', value: ins.letter.abjad, glyph: ins.glyph });
+    // Whether this letter joins what follows travels WITH the cell, so a letter
+    // standing in the world answers the question the same way later.
+    c.connects = !ins.ops.some(o => o.op === 'SEVER');
+    inscribed.add(KEY(x, y, z));
     effects.push({ kind: 'inscribe', op: null, glyph: ins.glyph, at: [x, y, z],
                    detail: `${ins.glyph} ${ins.letter.name}, ${ins.letter.abjad}` });
   }
@@ -202,26 +217,35 @@ export function run(world, compiled, { cursor = [0, 0, 0], dir = [-1, 0, 0], app
   // A WRITTEN WORD IS ONE BODY, AND THE SIX NON-CONNECTING LETTERS ARE WHERE IT
   // BREAKS. This is the plainest fact in Arabic orthography doing structural work:
   // ا د ذ ر ز و never join what follows, which is why an Arabic word can look like
-  // several pieces. Here that is literal — consecutive letters bond into one rigid
-  // body, and a letter carrying SEVER ends it. So a long structure needs letters
-  // that connect, and a rāʾ in the middle guarantees a fracture.
+  // several pieces. Here that is literal — adjacent letters bond into one rigid
+  // body, and a letter that does not connect ends it. So a long structure needs
+  // letters that join, and a rāʾ in the middle guarantees a fracture.
   //
   // A ruleset that DENIES SEVER (Sufi lettrism: "the chain of being is not cut")
-  // therefore bonds straight through the break, and the same word is one body
-  // there and two bodies elsewhere.
-  for (let i = 0; i + 1 < instructions.length; i++) {
-    const a = instructions[i], b = instructions[i + 1];
-    if (a.blocked || b.blocked) continue;
-    const severs = a.ops.some(o => o.op === 'SEVER');
-    if (severs) {
-      effects.push({ kind: 'sever', op: 'SEVER', glyph: a.glyph, at: cellOf(a.index), to: cellOf(b.index),
-                     from: a.letter.primitives.find(p => p.op === 'SEVER')?.from,
-                     detail: `${a.glyph} joins nothing after it — the word breaks here` });
+  // bonds straight through the break, and the same word is one body there and two
+  // bodies elsewhere.
+  //
+  // The pass runs over EVERY adjacent pair of letters in the world, not only the
+  // ones in this program, because writing beside a letter that is already standing
+  // joins the word — which is what writing does on a page. Only pairs this run
+  // touched are reported, or the log would repeat itself every time.
+  for (const c of w.list()) {
+    if (!c.glyph) continue;
+    const nk = [c.x + dir[0], c.y + dir[1], c.z + dir[2]];
+    const nb = w.get(...nk);
+    if (!nb || !nb.glyph) continue;
+    const here = KEY(c.x, c.y, c.z), there = KEY(...nk);
+    const touched = inscribed.has(here) || inscribed.has(there);
+    if (c.connects === false) {
+      if (touched) effects.push({ kind: 'sever', op: 'SEVER', glyph: c.glyph,
+        at: [c.x, c.y, c.z], to: nk,
+        from: 'a letter that never joins what follows',
+        detail: `${c.glyph} joins nothing after it — the word breaks here` });
       continue;
     }
-    w.bond(KEY(...cellOf(a.index)), KEY(...cellOf(b.index)));
-    effects.push({ kind: 'join', glyph: a.glyph, at: cellOf(a.index), to: cellOf(b.index),
-                   detail: `${a.glyph} joins ${b.glyph}: one body` });
+    w.bond(here, there);
+    if (touched) effects.push({ kind: 'join', glyph: c.glyph, at: [c.x, c.y, c.z], to: nk,
+      detail: `${c.glyph} joins ${nb.glyph}: one body` });
   }
 
   // AXIS is a pre-pass: a column is held for the whole run or not at all.

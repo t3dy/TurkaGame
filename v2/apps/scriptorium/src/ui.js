@@ -7,7 +7,9 @@
 // This file is not allowed to know what ب does — it asks.
 
 import { World } from '../../../engine/world.js?v=1';
-import { compile, preview, execute, describeLetter } from '../../../engine/vm.js?v=1';
+import { compile, preview, execute, describeLetter, severs } from '../../../engine/vm.js?v=1';
+import { readWorld, worldReads } from '../../../engine/reader.js?v=1';
+import { Ledger } from '../../../engine/ledger.js?v=1';
 import { Iso, PALETTE } from './iso.js?v=1';
 
 const V = 'v=1';
@@ -19,13 +21,36 @@ let program = [];              // [{ glyph, register }]
 let world = null, undoStack = [];
 let cursor = [2, 0, 0];
 let selected = null;           // glyph shown in the letter frame
-let iso = null, lastPreview = null, task = null;
+let iso = null, lastPreview = null, task = null, ledger = null;
+
+// THE OVERARCHING PRINCIPLE, IN ONE FUNCTION.
+//   "The player should gradually discover that the Arabic alphabet is not merely
+//    the subject of the game. It is the language in which the game world is
+//    written."
+// The first build of this app failed the "gradually discover" half outright: it
+// listed all eight primitives and badged every letter with its operations, which
+// is an IDE with the manual open. What is shown now splits on taḥqīq/taqlīd —
+// EVIDENCE (the dots, the tail, whether the form closes, whether it joins
+// forward) is always visible, because it is on the page in front of you and
+// hiding it would make the rule unguessable rather than derivable. The RULE is
+// earned: you learn that dots above mean RAISE by watching a dotted letter raise
+// something. Look, hypothesise, test.
+const known = op => ledger && ledger.knowsPrimitive(op);
 
 /* --------------------------------------------------------------- the world -- */
 
 function freshWorld() {
   const w = new World({ rules: { gravity: false } });
-  if (task && task.world) for (const c of task.world) w.set(c.x, c.y, c.z, c);
+  if (task && task.world) for (const c of task.world) {
+    const cell = w.set(c.x, c.y, c.z, c);
+    // A letter already standing in the world has to answer the "do you join what
+    // follows?" question the same way one the player writes does — and the answer
+    // depends on the ruleset, because Sufi lettrism refuses to sever at all.
+    if (cell.glyph) {
+      const l = LETTERS.find(x => x.glyph === cell.glyph);
+      cell.connects = !severs(l, ruleset);
+    }
+  }
   return w;
 }
 
@@ -64,9 +89,12 @@ function paintPalette() {
   $('palette').innerHTML = LETTERS.map(l => {
     const granted = l.primitives.filter(p =>
       ruleset.grants.includes(p.op) && !(ruleset.denies && ruleset.denies[p.op]));
+    // Only what you have witnessed is badged. The glyph itself is always there to
+    // be read, which is the point.
+    const shown = granted.filter(p => known(p.op));
     return `<div class="lt${l.class === 'zulmani' ? ' dark' : ''}${selected === l.glyph ? ' sel' : ''}${granted.length ? '' : ' mute'}"
       data-g="${l.glyph}" title="${l.name} · ${l.abjad}">
-      <span class="ops">${opBadge(granted)}</span>
+      <span class="ops">${opBadge(shown)}</span>
       <span class="g">${l.glyph}</span><span class="v">${l.abjad}</span></div>`;
   }).join('');
   for (const el of $('palette').querySelectorAll('.lt')) {
@@ -144,8 +172,10 @@ function selectLetter(glyph) {
 
     <h4>Under ${d.ruleset.name} <span class="pill ${d.ruleset.kind}">${d.ruleset.kind}</span></h4>
     <ul class="oplist">
-      ${d.granted.map(p => `<li><b>${p.op}</b>${p.n > 1 ? ` ×${p.n}` : ''} —
-        <span class="from">${p.from}</span></li>`).join('')}
+      ${d.granted.map(p => known(p.op)
+        ? `<li><b>${p.op}</b>${p.n > 1 ? ` ×${p.n}` : ''} — <span class="from">${p.from}</span></li>`
+        : `<li class="unknown">an operation you have not yet witnessed —
+             <span class="from">granted by ${p.from}</span></li>`).join('')}
       ${d.refused.map(p => `<li class="no"><b>${p.op}</b> — ${p.why}</li>`).join('')}
       ${!d.granted.length && !d.refused.length ? '<li class="no">nothing</li>' : ''}
     </ul>
@@ -181,8 +211,59 @@ function paintRulesetFrame() {
 }
 
 function paintPrimitives() {
-  $('primitives').innerHTML = Object.entries(PACK.primitives).map(([op, p]) =>
-    `<dt>${op}</dt><dd>${p.gloss}</dd>`).join('');
+  const ops = Object.keys(PACK.primitives);
+  const prog = ledger.progress(ops);
+  $('primitives').innerHTML = ops.map(op => {
+    const p = PACK.primitives[op];
+    return known(op)
+      ? `<dt>${op}</dt><dd>${p.gloss}</dd>`
+      : `<dt class="unknown">·····</dt><dd class="unknown">not yet witnessed</dd>`;
+  }).join('');
+  $('discovered').textContent =
+    `${prog.known.length} of ${ops.length} operations witnessed · ${ledger.readings.length} reading${ledger.readings.length === 1 ? '' : 's'} · ${ledger.xp} XP`;
+}
+
+/** Learn from what actually happened, and say so at the moment it happens. */
+function learnFrom(effects) {
+  const learned = ledger.witnessEffects(effects, ruleset.id);
+  if (learned.length) {
+    const ops = learned.filter(l => l.kind === 'primitive');
+    if (ops.length) {
+      $('learned').className = 'learned show';
+      $('learned').innerHTML = ops.map(l =>
+        `<b>${l.op}</b> — you have now seen ${l.glyph} do this. ${PACK.primitives[l.op].gloss}`).join('<br>');
+      clearTimeout(learnFrom._t);
+      learnFrom._t = setTimeout(() => ($('learned').className = 'learned'), 7000);
+    }
+    paintPrimitives();
+    paintPalette();
+    if (selected) selectLetter(selected);
+  }
+}
+
+/** Read the world back as text. The other direction, and the whole point. */
+function readTheWorld() {
+  const { words } = readWorld(world);
+  const box = $('reading');
+  if (!words.length) {
+    box.innerHTML = '<span style="color:var(--dim)">Nothing standing here is a letter.</span>';
+    return;
+  }
+  const fresh = [];
+  for (const w of words) if (w.text.length > 1 && ledger.read(w.text)) fresh.push(w.text);
+  box.innerHTML = words.map(w =>
+    `<div class="word"><span class="ar">${w.text}</span>
+      <span class="meta">${w.glyphs.length} letter${w.glyphs.length === 1 ? '' : 's'} ·
+      abjad ${w.abjad}${w.contiguous ? '' : ' · not a single line'}</span></div>`).join('');
+  if (fresh.length) {
+    $('learned').className = 'learned show';
+    $('learned').innerHTML = `The world reads: <b class="ar">${fresh.join(' ')}</b><br>` +
+      `You did not write all of this.`;
+    clearTimeout(learnFrom._t);
+    learnFrom._t = setTimeout(() => ($('learned').className = 'learned'), 9000);
+  }
+  paintPrimitives();
+  paintTaskVerdict();
 }
 
 /* ------------------------------------------------------------------- tasks -- */
@@ -208,6 +289,12 @@ function checkTask(w) {
     const body = w.body(`${glyphs[0].x},${glyphs[0].y},${glyphs[0].z}`);
     const all = glyphs.every(c => body.has(`${c.x},${c.y},${c.z}`));
     return { win: all, detail: all ? `all ${glyphs.length} letters are one body` : `${body.size} of ${glyphs.length} letters are joined` };
+  }
+  if (g.type === 'read') {
+    const r = worldReads(w, g.text);
+    return { win: r.found, detail: r.found
+      ? `the world reads ${g.text}`
+      : (r.all.length ? `the world reads ${r.all.join(', ')} — not yet ${g.text}` : 'nothing here reads as a word') };
   }
   if (g.type === 'survives-gravity') {
     const test = w.clone();
@@ -297,10 +384,16 @@ function paintRegisters() {
 
   $('run').onclick = refresh;
   $('commit').onclick = commit;
+  $('read').onclick = readTheWorld;
+  $('reset-ledger').onclick = () => {
+    if (!confirm('Erase everything you have discovered?')) return;
+    ledger.erase(); paintPrimitives(); paintPalette(); if (selected) selectLetter(selected);
+  };
   $('clear-prog').onclick = () => { program = []; refresh(); };
   $('undo').onclick = () => { if (undoStack.length) { world = undoStack.pop(); refresh(); } };
   $('reset').onclick = () => { world = freshWorld(); undoStack = []; refresh(); };
 
+  ledger = new Ledger();
   paintPrimitives();
   setRuleset(PACK.rulesets[0].id, { keepTask: true });
   selectLetter('ب');
@@ -309,7 +402,8 @@ function paintRegisters() {
 
   window.__scriptorium = {
     get world() { return world; }, get program() { return program; }, get ruleset() { return ruleset; },
-    LETTERS, PACK, TASKS, iso,
+    get ledger() { return ledger; },
+    LETTERS, PACK, TASKS, iso, readTheWorld, readWorld,
     setRuleset, loadTask, refresh, checkTask,
     write(str, reg = register) { program = [...str].map(g => ({ glyph: g, register: reg })); refresh(); return current(); },
     commit,
@@ -322,6 +416,10 @@ function paintRegisters() {
         program = [...step.write].map(g => ({ glyph: g, register: step.register }));
         commit();
       }
+      // A reading task is not finished by building the thing: it is finished by
+      // READING it. Exercise the same path the player uses, or the self-test
+      // would pass while the discovery it exists to protect was broken.
+      if (t.goal.type === 'read') readTheWorld();
       return { task: t.id, ...checkTask(world) };
     },
   };
@@ -333,6 +431,8 @@ function commit() {
   pushUndo();
   const r = execute(world, c, { cursor });
   program = [];
+  // You learn from what the world DID, never from what the panel says.
+  learnFrom(r.effects);
   refresh();
   paintEffects(c, r);
 }

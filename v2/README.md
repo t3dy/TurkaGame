@@ -9,6 +9,18 @@ description: A data-driven engine in which Arabic letters are instructions, hist
 stay at their current URLs; see [`games/FROZEN.md`](../games/FROZEN.md). Everything here
 is new work, and it does not import v1 code.
 
+## The overarching design principle
+
+> **The player should gradually discover that the Arabic alphabet is not merely the subject
+> of the game. It is the language in which the game world is written.**
+
+Everything below is answerable to that sentence, and it has two halves that pull in
+different directions. *The world is written in letters* is a claim about the engine. *The
+player should gradually discover it* is a claim about the interface, and the first build of
+v2 failed it outright — it listed all eight operations in a panel and badged every letter,
+which is an IDE with the manual open. Both halves are now built; see **Discovery** and
+**Reading the world** below.
+
 > *Not that lettrism deserves a place among the sciences, but that it supersedes philosophy
 > on philosophy's own ground, because only the letter is the* coincidentia oppositorum.
 > — portal entry `lettrism-universal`, on Ibn Turka's own claim
@@ -123,6 +135,50 @@ renders it with four marks and no more:
 A fifth mark would mean the model has grown a concept, and that is the moment to
 reconsider the model rather than the legend.
 
+### 5. Reading the world — the principle made mechanical
+
+`vm.js` writes: a program becomes a structure. [`reader.js`](engine/reader.js) is the other
+direction, and it is the direction that carries the principle. If a written word is a body
+of letter-cells standing in the world — which is what the written register makes true — then
+**any body of letter-cells can be read**, including the parts of the world the player did
+not write.
+
+The reader groups letter-cells by their bonds, orders each body along the writing direction
+and reports what it finds. It never guesses: a structure that reads as nothing reads as
+nothing, and a structure that is bonded but not in a line is reported as not being in a
+line.
+
+Two consequences worth stating:
+
+- **The reading changes with the metaphysics.** The reader groups by bonds, and Sufi
+  lettrism refuses to sever — so مرم reads as two words there and one word elsewhere. Who
+  is reading determines what the world says, and that is not a metaphor here.
+- **The world keeps its own history.** Read back a word you wrote and the glyphs are as you
+  wrote them, but the *values* record what happened — a sun letter will have assimilated its
+  neighbour, and the abjad total says so.
+
+The task **The Pen** is the moment this is meant to land: two letters are already standing
+when you arrive, you write the third into the gap, and the structure resolves into قلم — the
+Pen, for which Sūra 68 is named, and which opens on the letter nūn.
+
+### 6. Discovery — evidence is shown, the rule is earned
+
+The split is the portal's own `tahqiq-taqlid`: what you have *read* is held on authority;
+what you have *seen* is verified.
+
+- **Evidence is always visible.** The dots and where they sit, whether the form closes,
+  whether it has a tail, whether it joins forward, sun or moon, its abjad value. All of it is
+  on the page in front of you, and hiding it would make the rule unguessable rather than
+  derivable.
+- **The rule is earned.** That dots-above means RAISE appears only after you have watched a
+  dotted letter raise something. Until then the letter's frame says *an operation you have
+  not yet witnessed — granted by dots above*, which tells you where to look without telling
+  you the answer.
+
+[`ledger.js`](engine/ledger.js) records only what the engine actually did — it is fed the
+effect list, so you cannot learn an operation from a panel, only from the world. A fresh
+player knows 0 of 8; playing the four tasks through teaches 4.
+
 ## Where things live
 
 ```
@@ -132,10 +188,12 @@ v2/
 ├── rulesets/rulesets.json    doctrine only: who claimed what, and on whose authority
 ├── engine/world.js           cells, bonds, materials, and the world's rules as data
 ├── engine/vm.js              compile → effects → preview | execute; describeLetter()
+├── engine/reader.js          the other direction: read the world back as text
+├── engine/ledger.js          what the player has actually witnessed
 ├── apps/scriptorium/         the IDE: palette → program → preview → inscribe
 │   ├── src/iso.js            the consequence renderer (reusable by any v2 app)
-│   └── tasks.json            three tasks, each self-tested through the real UI path
-└── tests/engine.test.mjs     24 tests
+│   └── tasks.json            four tasks, each self-tested through the real UI path
+└── tests/engine.test.mjs     34 tests
 ```
 
 ## Provenance, and how it is shown
@@ -167,9 +225,11 @@ if you turned it on, so the player can see the consequence before accepting it.
 - **No person has played it.** Every claim above is from `engine.test.mjs`, from
   `--verify`, or from `selfTest()` run in the browser. Nothing is claimed to be fun.
 - **Three tasks is a demonstration, not a game.** No progression, no generator.
-- **The notebook is not carried over.** v1's tajriba notebook is frozen with v1; v2 needs
-  its own, on its own key, and the discovery/debugging layer the brief describes
-  (hypothesis → prediction → observed → confidence) is not built yet.
+- **The ledger is not yet a debugger.** It records what was witnessed and what was read,
+  which is the discovery half. The brief's full loop — a stated hypothesis and a *prediction
+  recorded before execution*, then scored — is not built. Preview-is-execution makes the
+  interesting version of it cross-ruleset: "I predict this holds under Sufi and falls under
+  intellectual" is a real bet; "I predict what the preview just showed me" is not.
 - **No diagrammatic programming surface yet.** The brief's §10 — a cosmological diagram as
   an executable circuit — is designed for but unbuilt. See [`AUDIT_V1.md`](AUDIT_V1.md).
 - **The world is isometric 2D**, not the 3D voxel builder the "Minecraft/Lego" fantasy

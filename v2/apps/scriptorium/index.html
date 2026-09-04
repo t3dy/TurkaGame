@@ -102,6 +102,20 @@
   .oplist li.no{color:var(--dim)}
   .oplist li.no b{color:var(--verm);text-decoration:line-through}
   .oplist .from{color:var(--dim);font-style:italic}
+  .oplist li.unknown{color:var(--dim);font-style:italic}
+  .kv .unknown{color:var(--dim);font-family:var(--mono);letter-spacing:-1px}
+  #discovered{font-family:var(--mono);font-size:.66rem;color:var(--gold-hi)}
+  #reading{display:flex;gap:.5rem;flex-wrap:wrap}
+  #reading .word{border:1px solid var(--gold);border-radius:2px;padding:.3rem .5rem;
+    background:rgba(201,154,46,.1)}
+  #reading .ar{font-size:1.5rem;color:var(--gold-hi);display:block;direction:rtl}
+  #reading .meta{font-family:var(--sans);font-size:.6rem;color:var(--dim)}
+  .learned{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);
+    background:rgba(16,15,22,.96);border:1px solid var(--gold);color:var(--paper);
+    font-family:var(--sans);font-size:.78rem;line-height:1.5;padding:.5rem .9rem;border-radius:3px;
+    opacity:0;transition:opacity .3s;pointer-events:none;max-width:80%;text-align:center}
+  .learned.show{opacity:1}
+  .learned .ar{font-size:1.4rem;color:var(--gold-hi)}
 
   #effects{list-style:none;margin:0;padding:0;font-family:var(--sans);font-size:.68rem;line-height:1.5}
   #effects li{padding:.2rem 0 .2rem .5rem;border-left:2px solid var(--rule);margin-bottom:.2rem;color:#ddd4c9}
@@ -165,10 +179,15 @@
       </div>
 
       <div class="frame">
-        <h4>The eight primitives</h4>
-        <div id="primitives" class="kv"></div>
-        <p>Each is granted by a fact about the letter&rsquo;s own body or its grammar, so the
-        instruction set is a consequence of the alphabet rather than a table someone chose.</p>
+        <h4>What you have discovered</h4>
+        <div id="discovered" class="meta"></div>
+        <div id="primitives" class="kv" style="margin-top:.4rem"></div>
+        <p>Each operation is granted by a fact about the letter&rsquo;s own body or its grammar,
+        so the instruction set is a consequence of the alphabet rather than a table someone
+        chose. <b>The facts are always shown; the rule is earned.</b> You learn what an
+        operation is by watching a letter do it &mdash; read the glyph, form a hypothesis,
+        test it.</p>
+        <div class="row"><button class="btn" id="reset-ledger">Erase discoveries</button></div>
       </div>
     </aside>
 
@@ -180,10 +199,11 @@
         <button class="btn" id="undo">Undo</button>
         <button class="btn" id="clear-prog">Clear program</button>
         <button class="btn" id="reset">Reset world</button>
+        <button class="btn" id="read">Read the world</button>
         <span class="spacer" style="flex:1"></span>
         <span id="power"></span>
       </div>
-      <div id="stage"><canvas id="cv"></canvas></div>
+      <div id="stage"><canvas id="cv"></canvas><div id="learned" class="learned"></div></div>
       <div id="legend">
         <span><span class="sw"></span><b>outline</b> occupied or changed</span>
         <span><span class="sw mv"></span><b>arrow</b> moves from → to</span>
@@ -210,6 +230,11 @@
       <div class="frame" id="letter-frame"></div>
 
       <div>
+        <div class="lab">What the world reads as</div>
+        <div id="reading"><span style="color:var(--dim)">Not read yet.</span></div>
+      </div>
+
+      <div>
         <div class="lab">What will happen</div>
         <ul id="effects"></ul>
       </div>
@@ -218,6 +243,6 @@
     </aside>
   </div>
 
-<script type="module" src="./src/ui.js?v=1"></script>
+<script type="module" src="./src/ui.js?v=3"></script>
 </body>
 </html>

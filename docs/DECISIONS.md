@@ -1039,3 +1039,61 @@ the same `palace.json`; the diagram-as-executable-surface prototype (CrowleyDB's
 own surfaces, the 28-by-lunar-mansion grid and the wafq); a v2 notebook recording
 predictions before execution; and the graphics pipeline, which has no artwork behind it yet
 at all.
+
+## 2026-09-04 (later) -- the overarching principle, and the half of it v2 was failing
+
+**The principle**, supplied by Ted after the first v2 push closed the brief's truncated
+last sentence:
+
+> The player should gradually discover that the Arabic alphabet is not merely the subject of
+> the game. It is the language in which the game world is written.
+
+**Decision.** Treat it as a test rather than a mission statement, apply it to what had just
+been built, and report the result honestly. v2 passed the first half and failed the second.
+
+**The failure.** The Scriptorium listed all eight primitives in a panel, badged every letter
+in the palette with its operations, and spelled out each derivation in the letter frame. That
+is an IDE with the manual open -- there was no discovery in it at all. v1's Temperament mode
+was actually better on this axis, because it hid which scheme was operative.
+
+**The fix, and why it is not just obscurity.** The split comes from the portal's own
+`tahqiq-taqlid` entry: what you have READ is held on authority, what you have SEEN is
+verified. So EVIDENCE is always shown -- the dots and where they sit, the tail, whether the
+form closes, whether it joins forward -- because it is on the page in front of you and
+hiding it would make the rule unguessable rather than derivable. The RULE is earned: a
+primitive appears only after the player has watched a letter perform it. `ledger.js` is fed
+the engine's effect list, so an operation cannot be learned from a panel, only from the
+world. A fresh player knows 0 of 8; playing the four tasks teaches 4.
+
+**The other half, which needed building too.** The engine could write the world but not read
+it. `reader.js` groups letter-cells by their bonds, orders each body along the writing
+direction, and reports what it finds -- never guessing. Two consequences fell out that were
+not designed for:
+
+1. **The reading changes with the metaphysics.** The reader groups by bonds and Sufi
+   lettrism refuses to sever, so the same three letters read as two words under one
+   metaphysics and one word under another. Who is reading determines what the world says.
+2. **The world keeps its own history.** A round-tripped word returns the glyphs as written
+   but the VALUES record what happened to them -- a sun letter will have assimilated its
+   neighbour. Found by a test whose naive expectation (40+30+5) was wrong and whose engine
+   was right (30+30+5).
+
+**The task that carries it: The Pen.** Two letters are standing when the player arrives;
+they write the third into the gap and read the structure back as قلم -- the Pen, for which
+Sura 68 is named, and which opens on the letter nun (already noted in `letters.json`, PORTAL).
+The discovery is not that they built a word; it is that the world was already half of one.
+
+**A fault the principle exposed.** Writing beside a letter already standing did not join the
+word -- the first version bonded only letters within a single program, so you could never
+complete a word the world already had part of. Bonding now runs over every adjacent pair of
+letters in the world, which is simply what writing does on a page. Found by trying to build
+the task that carries the whole principle, which is the useful kind of discovery: the design
+target broke the implementation rather than the other way round.
+
+**Also.** The self-test for a reading task now calls the reader, because it was passing
+while never exercising the path the task exists to protect.
+
+**Consequence.** 34 tests, four tasks, all verified live. Still unbuilt and now clearer:
+prediction recorded BEFORE execution, which preview-is-execution makes interesting only
+across rulesets ("this holds under Sufi and falls under intellectual" is a real bet; "I
+predict what the preview just showed me" is not).
