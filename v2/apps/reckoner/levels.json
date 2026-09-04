@@ -1,0 +1,82 @@
+{
+  "_note": "Four recovered or new mechanics, one per level type. `extract` and `reckon` come back from v1's Abjad Tower with better grounding than they had; `assay` is the thing v1 did better than v2 and is being taken back; `station` is Yūsuf Ascent's Station Point rebuilt out of language instead of optics. Checked by verify_levels.mjs, which asks a different question of each type.",
+
+  "levels": [
+    {
+      "id": "the-doomed-letter",
+      "type": "extract",
+      "name": "The Doomed Letter",
+      "arabic": "الحرف المحكوم",
+      "brief": "Write all three letters, then every nūn is taken out of the word. Two must still be standing afterwards.",
+      "teaches": "Isolating a letter DETACHES it; it does not delete it. So a letter resting on the pier can never be extracted at all — it just sits there joined to nothing — and a letter the word is carrying falls, and takes whatever hung on it. Put the nūn where it carries nothing.",
+      "letter": "ن",
+      "hand": ["ن", "م", "ه"],
+      "line": 2,
+      "survivors": 2,
+      "cells": [
+        { "x": 0, "y": 0, "z": 0, "material": "earth", "value": 1, "fixed": true },
+        { "x": 0, "y": 1, "z": 0, "material": "earth", "value": 1, "fixed": true }
+      ]
+    },
+
+    {
+      "id": "name-the-number",
+      "type": "reckon",
+      "name": "Name the Number",
+      "arabic": "سمِّ العدد",
+      "brief": "One number will bring this span down. Read the values and find it.",
+      "teaches": "Composing words whose abjad sum equals a chosen number is the technique; here the run that sums to the number you name comes apart, and gravity does the rest. Read the values off the blocks — and remember that a sun letter has already changed the one before it.",
+      "line": 2,
+      "leave_at_most": 1,
+      "build": { "word": "مهن", "cursor": [2, 2, 0] },
+      "cells": [
+        { "x": 0, "y": 0, "z": 0, "material": "earth", "value": 1, "fixed": true },
+        { "x": 0, "y": 1, "z": 0, "material": "earth", "value": 1, "fixed": true }
+      ]
+    },
+
+    {
+      "id": "the-assay",
+      "type": "assay",
+      "name": "The Assay",
+      "arabic": "الامتحان",
+      "brief": "You are standing in one of the five metaphysics and you are not told which. Run the probes, read what happened, and name it.",
+      "teaches": "v1 hid which scheme was operative and made you discover it by building. v2 put the ruleset in a panel, which is right for a workbench and wrong for a puzzle. This takes it back: the rulesets genuinely disagree, so their disagreements are evidence.",
+      "seed": 7
+    },
+
+    {
+      "id": "the-station",
+      "type": "station",
+      "name": "The Station",
+      "arabic": "المقام",
+      "brief": "These letters are one body. From which direction do they read as القلم — the Pen?",
+      "teaches": "Yūsuf Ascent asked you to find the one viewpoint from which scattered fragments compose a picture. That needs a camera moving through space. This is the same puzzle made of writing: a body is ordered by projection onto the reading direction, so the same structure genuinely spells different things read different ways.",
+      "target": "قلم",
+      "cells": [
+        { "x": 0, "y": 0, "z": 0, "material": "letter", "value": 100, "glyph": "ق" },
+        { "x": 1, "y": 1, "z": 0, "material": "letter", "value": 30, "glyph": "ل" },
+        { "x": 2, "y": 2, "z": 0, "material": "letter", "value": 40, "glyph": "م" }
+      ],
+      "bonds": [[[0, 0, 0], [1, 1, 0]], [[1, 1, 0], [2, 2, 0]]]
+    }
+  ],
+
+  "probes": [
+    { "id": "sever",    "label": "Write رم — does the word break at the rāʾ?",
+      "write": "رم", "register": "written",
+      "reads": "whether SEVER is granted" },
+    { "id": "spoken",   "label": "Speak م — is the spoken register admitted at all?",
+      "write": "م", "register": "spoken",
+      "reads": "which registers the ruleset permits" },
+    { "id": "short",    "label": "Write مه — does a two-letter program do anything?",
+      "write": "مه", "register": "written",
+      "reads": "whether a minimum procedure length is demanded" },
+    { "id": "light",    "label": "Write الم — three luminous letters. How strong?",
+      "write": "الم", "register": "written",
+      "reads": "whether strength follows luminosity" },
+    { "id": "ratio",    "label": "Write اب — abjad 1 and 2, a perfect ratio. How strong?",
+      "write": "اب", "register": "written",
+      "reads": "whether strength follows numerical proportion" }
+  ]
+}

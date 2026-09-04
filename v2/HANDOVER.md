@@ -46,6 +46,9 @@ rule **evidence is always shown, the rule is earned**.
 | **The Scriptorium** (workbench) | `apps/scriptorium/` | 4 tasks via `__scriptorium.selfTest()` |
 | **The Pushing Floor** (block-pusher) | `apps/pushing-floor/` | `verify_levels.mjs` + `__floor.selfTest()` |
 | **The Standing Word** (stacker) | `apps/standing-word/` | `verify_levels.mjs` + `__standing.selfTest()` |
+| **The Unmaking** (3 demolition routes) | `apps/unmaking/` | `__unmaking.matrix()` |
+| **The Reckoner** (4 recovered mechanics) | `apps/reckoner/` | `verify_levels.mjs` + `__reckoner.selfTest()` |
+| Operations on standing structures | `engine/operations.js` | `node v2/tests/engine.test.mjs` |
 
 **Run every check:**
 
@@ -54,6 +57,7 @@ python v2/data/build_letters.py --verify
 node v2/tests/engine.test.mjs
 node v2/apps/pushing-floor/verify_levels.mjs
 node v2/apps/standing-word/verify_levels.mjs
+node v2/apps/reckoner/verify_levels.mjs
 python tools/check_repo_rules.py
 ```
 
@@ -66,9 +70,17 @@ unenforced.** The ones with teeth:
 
 - `tools/check_repo_rules.py` **R1–R5** — no source PDFs, manuscript provenance,
   local-only trees. Runs in the pre-commit hook.
-- **R6 — every `?v=N` under `v2/` must be the same N.** Bump them together whenever
-  an engine file changes, or browsers run a mix of old and new modules. This was
-  tested by deliberately breaking it.
+- **R6 — the module cache-busting token.** Two halves, because the first was not
+  enough. (a) Every `?v=N` under `v2/` must be the same N. (b) The token must have
+  **moved whenever `v2/engine/` moved** — checked against a hash recorded in
+  `v2/engine/VERSION.json`. Run `python v2/tools/bump_version.py` after any engine
+  change. Both halves were tested by deliberately breaking them.
+
+  This exists because the same bug shipped **twice**: an engine file changed, the
+  token did not, and every browser that had been here before kept running the old
+  module. The deployed file was correct and the running code was not, and every
+  local test passed. R6(a) did not catch the second one, because the tokens all
+  agreed — at the stale value.
 - `build_letters.py --verify` — the four alphabet divisions are the sizes claimed
   **and are independent of each other**.
 - Each app's `verify_levels.mjs` — a level must be solvable, and must **not** be
@@ -85,6 +97,10 @@ asks a second question suited to what it is about:
 |---|---|
 | Pushing Floor | Is it solvable **without the letters**? If yes, the letters are decoration. |
 | Standing Word | Does it matter **which letter** you use? (Both levels failed this on the first pass.) |
+| Reckoner `extract` | Solvable, **and** not solvable wherever you put the doomed letter |
+| Reckoner `reckon` | A winner exists, and only a small share of the range wins |
+| Reckoner `assay` | Do the probes **distinguish** the hidden ruleset from all the others? |
+| Reckoner `station` | At least one direction reads the target, and not all of them do |
 | Any, optional | If it claims a choice matters, **does a wrong choice exist**? |
 
 ## Verifying against the live site
@@ -141,6 +157,10 @@ primitive to fill one is the thing this project does not do.
    ported, the three that come across better, and a ranked list of engine additions.
    Read this before proposing new work: most of what looks unbuilt is already
    cheap.
+5. [`APPLICATIONS.md`](APPLICATIONS.md) — the mechanics taken across every design,
+   including the ones that are still only documents. Its main finding: **the Assay
+   is the spine both the roguelike and CareerSim were missing**, and in CareerSim's
+   case it is not a mechanic bolted onto the subject, it *is* the subject.
 5. The app READMEs, each of which ends with its own honest known-gaps list.
 6. `../docs/DECISIONS.md` — chronological, with the rejected options and the faults
    found by testing. The most useful file in the repo for not repeating a mistake.

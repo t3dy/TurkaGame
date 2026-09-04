@@ -204,6 +204,20 @@ do. The measured result is worth keeping: **on an unpinned structure the route w
 claim behind it (a thrown stone) wins**, and the only thing that stops it is an alif.
 The decision between the routes is Ted's and is open.
 
+[`v2/apps/reckoner/`](v2/apps/reckoner/README.md) recovers four mechanics from the
+portability audit: **Extraction** (a letter resting on the ground cannot be extracted at
+all — it must be carried by the word), **Reckoning** (name a number; runs summing to it
+come apart), **The Assay** (name which of the five metaphysics you are in, without being
+told — the thing v1 did better than v2, taken back), and **The Station** (Yūsuf Ascent's
+perspective puzzle rebuilt out of language, since a bonded body is ordered by projection
+onto the reading direction).
+
+[`v2/APPLICATIONS.md`](v2/APPLICATIONS.md) takes those across every design in the project.
+Its finding: **the Assay is the spine both `docs/GAME_ROGUELIKE.md` and `CareerSim/` were
+missing** — floors and courts that each run a different, unnamed metaphysics, which is the
+portal's own `ottoman-asymmetry` finding ("the variable is the polity, not the doctrine")
+turned into a mechanic.
+
 [`v2/index.html`](v2/index.html) is the hub — every prototype, v1 and v2, in one place.
 
 **The engine is alphabet-agnostic, and that was tested.** `../GoldenDawnBlocks/` vendors

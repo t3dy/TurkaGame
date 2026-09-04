@@ -1282,3 +1282,57 @@ stale-cache bug), and the standing caveats that must not be quietly dropped.
 needs no new grounding. B opens the brief's Level 5 (letters manipulating rules) but is
 admitted fiction inside a project whose discipline is not inventing history. C stays as the
 control either way, precisely because it currently wins.
+
+## 2026-09-04 (night, later) -- four mechanics recovered, and R6 closed properly
+
+**Decision.** Built the four things the portability audit ranked highest, as
+`v2/apps/reckoner/` on `v2/engine/operations.js`:
+
+- **Extraction** and **Reckoning**, recovered from v1's Abjad Tower. In v1 these
+  ANNIHILATED blocks -- letters simply vanished, which is a thing nothing in the sources
+  does. Here they work by ISOLATION, which is plain orthography, and gravity decides.
+- **The Assay** -- name which of the five metaphysics you are standing in. This is the
+  thing v1 did better than v2: Temperament hid the operative scheme and made you discover
+  it; v2 put it in a panel with a switcher.
+- **The Station** -- Yusuf Ascent's perspective puzzle rebuilt out of language, needing no
+  new code, because a bonded body is ordered by projection onto the reading direction.
+
+**A constraint nobody designed, which became the best of the four.** Isolation detaches; it
+does not delete. So **a letter resting on the ground cannot be extracted at all** -- it
+just sits there joined to nothing. To be removable it must be CARRIED BY THE WORD. That
+turns Extraction from a removal puzzle into a building one, and it fell out of the
+grounding rather than being invented for the game.
+
+**Two of my own test premises were wrong, both caught by the tests.**
+
+1. I asserted that the ORDER of isolation matters in Extraction. It does not: isolating
+   every instance cuts the same bonds whichever way round, so the final graph is identical.
+   Where the letter SITS is what matters, which is the better game.
+2. I computed Reckoning's sums from the letters' abjad values on paper. Wrong: a sun letter
+   has already assimilated the one before it, so the standing word does not sum to what its
+   letters are worth. The tests now read values out of the world, and that trap is now the
+   level's teaching point.
+
+**And one of my own CHECKS was wrong.** The `reckon` verifier demanded EXACTLY ONE winning
+number and failed the level for having three. A cantilever can be cut in more than one
+place; several right answers is not a guessing game. It now measures the share of the range
+that wins (3 of 140 -- 2%).
+
+**R6 was not enough, and the same bug shipped twice.** R6 checked that the `?v=` tokens
+AGREE. They did -- at the stale value. `ledger.js` gained `identify()` and the live page
+threw "not a function" against a file that plainly had it, exactly as `world.js` had gained
+the axis rule and been ignored. So R6 now has a second half: **the token must have moved
+whenever `v2/engine/` moved**, checked against a hash recorded in `v2/engine/VERSION.json`
+and maintained by `v2/tools/bump_version.py`. Tested by deliberately changing an engine
+file without bumping, and confirming the commit fails.
+
+The general lesson, now paid for three times: **a rule that only compares things to each
+other cannot catch them being uniformly stale.** The check needs an anchor outside the set.
+
+**APPLICATIONS.md** takes the five mechanics across every design in the project. The
+finding worth acting on: **the Assay is the spine both the roguelike and CareerSim were
+missing.** Each floor, or each court, runs a different unnamed metaphysics; you infer it
+from what is refused; being wrong about which world you are in is what ruins you. For
+CareerSim that is not a mechanic bolted onto the subject -- it is the portal's
+`ottoman-asymmetry` finding ("same teacher, same science, opposite outcomes... the variable
+is the polity, not the doctrine") made playable.

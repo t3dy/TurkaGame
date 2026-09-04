@@ -14,6 +14,7 @@ import { compile, run, preview, execute, describeLetter, ladderStep, LADDER } fr
 import { readWorld, worldReads } from '../engine/reader.js';
 import { Ledger, memoryStore } from '../engine/ledger.js';
 import { isolate, utter, throwStone, standing, ROUTES } from '../engine/unmaking.js';
+import { invokeName, findRuns, reckon, extract, extracted, readsFrom, DIRECTIONS } from '../engine/operations.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const DATA = JSON.parse(readFileSync(join(here, '..', 'data', 'letters.json'), 'utf8'));
@@ -517,6 +518,140 @@ test('every route is preview-safe and declares its grounding honestly', () => {
   }
   assert.equal(ROUTES.stone.kind, 'PLAIN', 'the control case makes no claim');
   assert.equal(ROUTES.utter.kind, 'GAME_FICTION', 'the invented one says so');
+});
+
+/* ------------------------- operations on a structure already standing ------ */
+
+test('Invoke the Name reaches every instance of a letter at once', () => {
+  const w = new World();
+  execute(w, compile(prog('مهم'), { letters, ruleset: RS('workshop') }), { cursor: [2, 0, 0] });
+  const r = invokeName(w, 'م');
+  assert.equal(r.count, 2, 'both mīms answered');
+  assert.equal(invokeName(w, 'غ').count, 0, 'and a letter that is not there answers not at all');
+  assert.ok(r.effects.every(e => e.op === 'INVOKE'));
+});
+
+test('Reckoning finds runs by abjad sum, and refuses single letters', () => {
+  const w = new World();
+  execute(w, compile(prog('مهن'), { letters, ruleset: RS('workshop') }), { cursor: [2, 0, 0] });
+  // Read the values OUT of the world rather than assuming the letters' abjad
+  // values: nūn is a sun letter, so it assimilated the hāʾ before it and that
+  // cell no longer carries 5. Reckoning is arithmetic on what is standing there,
+  // not on what was written — which is the point, and an earlier version of this
+  // test got it wrong by doing the sum on paper.
+  const v = (x) => w.get(x, 0, 0).value;
+  const [a, b, c] = [v(2), v(1), v(0)];
+  assert.notEqual(b, 5, 'the hāʾ was assimilated by the nūn that follows it');
+  assert.equal(findRuns(w, a + b).length, 1, 'the inboard pair');
+  assert.equal(findRuns(w, b + c).length, 1, 'the outboard pair');
+  assert.equal(findRuns(w, a + b + c).length, 1, 'the whole word');
+  assert.equal(findRuns(w, a).length, 0, 'a single letter is not a run — the source speaks of composing WORDS');
+  assert.equal(findRuns(w, 7).length, 0, 'nothing sums to 7');
+});
+
+test('Reckoning comes apart rather than annihilating, and gravity does the rest', () => {
+  const w = new World({ rules: { gravity: true } });
+  w.set(0, 0, 0, { material: 'earth', value: 1, fixed: true });
+  w.set(0, 1, 0, { material: 'earth', value: 1, fixed: true });
+  execute(w, compile(prog('مهن'), { letters, ruleset: RS('workshop') }), { cursor: [2, 2, 0] });
+  assert.equal(standing(w, 2), 3, 'a span of three carried by the pier');
+  // The outboard pair; naming its sum detaches them and they fall. Read the sum
+  // from the world, for the same reason as above.
+  const pair = w.get(1, 2, 0).value + w.get(0, 2, 0).value;
+  const before = w.hash();
+  reckon(w, pair);
+  assert.equal(w.hash(), before, 'preview did not touch the world');
+  const r = reckon(w, pair, { apply: true });
+  assert.equal(r.runs.length, 1);
+  assert.ok(standing(w, 2) < 3, 'what came apart came down');
+  assert.ok(r.effects.some(e => e.kind === 'sever') && r.effects.some(e => e.kind === 'fall'));
+});
+
+test('Extraction costs what the letter was carrying — so WHERE you put it is the puzzle', () => {
+  // An earlier version of this test asserted that the ORDER of isolation matters.
+  // It does not: isolating every instance cuts the same set of bonds whichever way
+  // round you do it, so the final graph is the same. What actually matters is
+  // where the doomed letter SITS — which makes Extraction a building puzzle rather
+  // than an ordering one, and that is the better game.
+  const span = (word) => {
+    const w = new World({ rules: { gravity: true } });
+    w.set(0, 0, 0, { material: 'earth', value: 1, fixed: true });
+    w.set(0, 1, 0, { material: 'earth', value: 1, fixed: true });
+    execute(w, compile(prog(word), { letters, ruleset: RS('workshop') }), { cursor: [2, 2, 0] });
+    return w;
+  };
+  // ن outboard (written first, so furthest from the pier) vs ن inboard (on the pier).
+  const outboard = span('نمه');     // ن at x=2, pier under x=0
+  const inboard  = span('مهن');     // ن at x=0, on the pier
+  assert.equal(standing(outboard, 2), 3);
+  assert.equal(standing(inboard, 2), 3);
+
+  extract(outboard, 'ن', { apply: true });
+  extract(inboard, 'ن', { apply: true });
+  assert.ok(standing(outboard, 2) > standing(inboard, 2),
+    'losing the outboard letter costs one; losing the one on the pier costs the word');
+  assert.equal(standing(outboard, 2), 2, 'the ن fell and took nothing with it');
+  assert.equal(standing(inboard, 2), 1, 'the word fell, and the ن itself stayed');
+
+  // AND THE SECOND HALF OF THAT, which is the constraint the whole mode turns on:
+  // isolating a letter DETACHES it, it does not delete it. A letter resting on the
+  // ground therefore cannot be extracted at all — it simply sits there, joined to
+  // nothing. To be removable, a letter must be CARRIED BY THE WORD rather than by
+  // the pier.
+  assert.equal(extracted(outboard, 'ن', 2), true, 'the carried ن could be taken out');
+  assert.equal(extracted(inboard, 'ن', 2), false, 'the one on the pier cannot be, ever');
+});
+
+test('extracted() asks the question the v1 mode asked', () => {
+  const w = new World({ rules: { gravity: true } });
+  // The pier goes under the MĪM, so the nūn hangs off the word and is carried by it.
+  // Put the pier under the nūn instead and it can never be extracted at all, which
+  // the test above is about.
+  w.set(1, 0, 0, { material: 'earth', value: 1, fixed: true });
+  execute(w, compile(prog('من'), { letters, ruleset: RS('workshop') }), { cursor: [1, 1, 0] });
+  assert.equal(extracted(w, 'ن', 1), false, 'the nūn is still up there');
+  extract(w, 'ن', { apply: true });
+  assert.equal(extracted(w, 'ن', 1), true, 'and now it is not');
+});
+
+/* --------------------------- Station Point, rebuilt out of language -------- */
+
+test('the same structure spells different things read from different directions', () => {
+  // Not in a straight line along any one axis — bonded diagonally, so the
+  // ordering genuinely depends on which way you read.
+  const w = new World();
+  const put = (g, v, x, y) => w.set(x, y, 0, { material: 'letter', value: v, glyph: g });
+  put('ق', 100, 0, 0); put('ل', 30, 1, 1); put('م', 40, 2, 2);
+  w.bond(KEY(0, 0, 0), KEY(1, 1, 0));
+  w.bond(KEY(1, 1, 0), KEY(2, 2, 0));
+
+  const rs = readsFrom(w, 'قلم');
+  const yes = rs.filter(r => r.found).map(r => r.id).sort();
+  const no = rs.filter(r => !r.found).map(r => r.id).sort();
+  assert.deepEqual(yes, ['east', 'up'], 'it reads as the Pen from two directions');
+  assert.deepEqual(no, ['down', 'west'], 'and as its reverse from the other two');
+  assert.equal(rs.find(r => r.id === 'west').reads[0], 'ملق');
+  assert.equal(Object.keys(DIRECTIONS).length, 4);
+});
+
+test('a structure that reads as nothing reads as nothing, from any direction', () => {
+  const w = new World();
+  w.set(0, 0, 0, { material: 'letter', value: 40, glyph: 'م' });
+  assert.equal(readsFrom(w, 'قلم').filter(r => r.found).length, 0);
+});
+
+test('the ledger records naming the metaphysics, right or wrong', () => {
+  const L = new Ledger(memoryStore());
+  assert.equal(L.knowsRuleset('sufi'), false);
+  const wrong = L.identify('sufi', false);
+  assert.equal(wrong.first, false);
+  assert.equal(wrong.attempts, 1);
+  assert.equal(L.knowsRuleset('sufi'), false, 'a wrong naming is recorded but names nothing');
+  const right = L.identify('sufi', true);
+  assert.equal(right.first, true);
+  assert.equal(right.attempts, 2, 'the failed attempt is still on the record');
+  assert.equal(L.knowsRuleset('sufi'), true);
+  assert.equal(L.identify('sufi', true).first, false, 'naming it twice is not a second discovery');
 });
 
 console.log(`${n} tests passed`);

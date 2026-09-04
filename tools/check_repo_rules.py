@@ -128,9 +128,37 @@ def check(files: list[str], do_sha: bool) -> Report:
     if len(tokens) > 1:
         summary = ", ".join("v=%s in %d file(s)" % (k, len(set(v))) for k, v in sorted(tokens.items()))
         r.fail("R6", "v2 module cache-busting tokens disagree: %s" % summary)
-        r.note("R6 fix: make every `?v=N` under v2/ the same number, and bump them "
-               "all whenever an engine file changes. Mismatched tokens mean a "
-               "browser can run a mix of old and new modules.")
+        r.note("R6 fix: run `python v2/tools/bump_version.py` to set them all to one number.")
+
+    # R6b: and the token must have MOVED whenever the engine did. Agreeing tokens
+    # were not enough — twice an engine file changed while every token stayed put,
+    # and both times the deployed file was correct while the running code was not.
+    # A browser that had been here before kept its cached module and every local
+    # test passed. So the engine is hashed, the hash is recorded next to the token,
+    # and a change to one without the other fails the commit.
+    stamp = ROOT / "v2" / "engine" / "VERSION.json"
+    engine_dir = ROOT / "v2" / "engine"
+    if stamp.exists() and engine_dir.exists():
+        try:
+            rec = json.loads(stamp.read_text(encoding="utf-8"))
+            h = hashlib.sha256()
+            for p in sorted(engine_dir.glob("*.js")):
+                h.update(p.name.encode("utf-8"))
+                h.update(p.read_bytes())
+            live = h.hexdigest()
+            if live != rec.get("engine_sha256"):
+                r.fail("R6", "v2/engine has changed but the cache-busting token has not "
+                             "(recorded v=%s)" % rec.get("token"))
+                r.note("R6 fix: run `python v2/tools/bump_version.py`. Without it, a browser "
+                       "that has visited an earlier build keeps running the OLD engine — the "
+                       "deployed file is right, the running code is wrong, and every local "
+                       "test passes. That has now happened twice.")
+            elif tokens and str(rec.get("token")) not in tokens:
+                r.fail("R6", "the recorded token v=%s is not the one in the files (%s)"
+                       % (rec.get("token"), ", ".join(sorted(tokens))))
+                r.note("R6 fix: run `python v2/tools/bump_version.py --record`.")
+        except Exception as exc:                       # noqa: BLE001 - report, do not crash
+            r.note("R6: could not read %s (%s)" % (stamp.relative_to(ROOT), exc))
 
     # --- R5: local-only trees must not be tracked ------------------------
     for pref in LOCAL_ONLY_PREFIXES:

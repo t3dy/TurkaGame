@@ -32,7 +32,7 @@ export class Ledger {
   }
 
   _load() {
-    const empty = { primitives: {}, letters: {}, rulesets: {}, readings: [], xp: 0 };
+    const empty = { primitives: {}, letters: {}, rulesets: {}, identified: {}, readings: [], xp: 0 };
     try {
       const raw = this.store.getItem(KEY);
       return raw ? { ...empty, ...JSON.parse(raw) } : empty;
@@ -79,6 +79,26 @@ export class Ledger {
     return learned;
   }
 
+  /**
+   * Record an attempt to NAME the metaphysics you are standing in — the Assay.
+   * A different kind of discovery from witnessing a primitive: not "what does this
+   * letter do" but "whose rules am I under", which is the question v1's Temperament
+   * mode asked and v2 had stopped asking. A wrong naming is recorded too, because
+   * being wrong about which world you are in is worth knowing you were.
+   */
+  identify(rulesetId, correct) {
+    this.data.identified ||= {};
+    const rec = (this.data.identified[rulesetId] ||= { attempts: 0, named: false });
+    rec.attempts++;
+    const first = correct && !rec.named;
+    if (correct) rec.named = true;
+    if (first) this.data.xp += 50;
+    this._save();
+    return { first, attempts: rec.attempts, named: rec.named };
+  }
+
+  knowsRuleset(id) { return !!(this.data.identified && this.data.identified[id]?.named); }
+
   /** Record that a structure in the world was read back as text. */
   read(text, { where = null } = {}) {
     if (!text) return false;
@@ -101,7 +121,7 @@ export class Ledger {
              fraction: allOps.length ? known.length / allOps.length : 0 };
   }
 
-  erase() { this.data = { primitives: {}, letters: {}, rulesets: {}, readings: [], xp: 0 }; this._save(); }
+  erase() { this.data = { primitives: {}, letters: {}, rulesets: {}, identified: {}, readings: [], xp: 0 }; this._save(); }
 
   /** Reveal everything — for tests, and for a reader who wants the reference. */
   revealAll(allOps, glyphs) {
