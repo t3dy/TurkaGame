@@ -280,6 +280,18 @@ HEAD, not merely "pushed"):
   sides — 0 forks and 0 stars make the residual risk small, but also make *now* the
   cheapest possible moment to act, since forks are what no rewrite can reach.
 
+- **Abjad Tower (2026-09-02), playable and verified in-browser.** `games/abjad-tower/` —
+  a physics stacking/knock-down game where blocks are the 28 Arabic letters and mass is
+  abjad value. Six operations, five grounded in portal entries or corpus passages plus one
+  deliberately plain control (a thrown stone). Three modes: Demolition, Raising,
+  Extraction. Physics is vendored cannon-es 0.20.0 (MIT).
+  Verified by playing it: 21-block tower settles at 3.25 m, all six operations exercised,
+  Reckoning finds 55 composite abjad targets in a fresh tower, a full Demolition round won
+  at 275 points, Tome records discoveries and ranks up. Two bugs found and fixed in the
+  process, both geometry rather than physics — non-square block proportions that tipped
+  every tower over, and placement aiming solved against the wrong plane.
+  `build_letters.py --verify` checks the roster against `portal/db/turka.db`.
+
 ## What's NOT done — the important gaps, not hidden
 
 1. **The VN's narrative prose is a real first pass, not final writing.** Every

@@ -745,3 +745,64 @@ forks are the part no rewrite can reach.
 **Consequence.** If the answer is "not worth the disruption", that is defensible and should
 be *recorded* in this file rather than left to lapse silently. The runbook also flags that
 `DEPLOY_STATE.md` cites SHAs that a rewrite would destroy.
+
+## 2026-09-02 — Abjad Tower: the correspondence table as physics
+
+**Decision.** A *Boom Blox*-style stacking/demolition game (`games/abjad-tower/`) in which
+blocks are the **28 Arabic letters**, a block's **mass is its abjad value**, and the six
+operations are techniques the sources describe rather than invented spells.
+
+**Rationale.** The sibling alchemy-blocks projects in this workspace
+(`AlchemyBlockInvaders`, `AlchemyBalanceTetris`) all share one pattern: blocks carry an
+**ontological identity**, reactivity is the mechanic, and a Tome teaches correspondences
+through play. Applied here, the natural block identity is not the four elements but the
+letters — because the portal's own `ilm-al-huruf` entry supplies a 28-row correspondence
+table, and `abjad-numerology` attaches a **number** to every row. A correspondence table
+with a number per row is already a game. Making that number the mass turns the table from
+a lookup into physics.
+
+**Why these six operations.** Five are grounded (portal entries `talismanic-science`,
+`ilm-al-huruf`, `abjad-numerology`; corpus passages on *khalʿ* and the light/dark letters).
+The sixth, **Strike**, is deliberately a plain thrown stone with no occult claim — it is
+the **control case**, so every other operation has to earn its place against simply hitting
+the tower, and the scoring says whether it did.
+
+The sharpest is **Reckoning**: name a number, and any vertical run of touching letters
+summing exactly to it comes apart. Runs must be at least two letters, because the source
+speaks of *composing words* and because a one-letter run would be trivial when every block
+prints its own value. It forces the player to read the tower as an arithmetic object, which
+is precisely the claim lettrism makes about the world.
+
+**The one place the source is bent, and it is stated three times.** Mass is
+`log10(abjad)`, not abjad. The raw series spans 1..1000 and no rigid-body solver stacks
+three orders of magnitude without exploding. The compression preserves the **order** the
+tradition asserts and makes the **ratio** ours. Said in `build_letters.py`, in
+`data/letters.json`, and in the in-game Tome — not buried in a constant.
+
+**Rejected alternatives.** Four-element blocks (would have duplicated the existing alchemy
+games and ignored the material this project actually holds). Invented spell names
+(the whole point of the house rules is not doing that). Raw abjad mass (physically
+unstackable — tested, not assumed). A hand-rolled physics solver (stacking quality is a
+multi-day problem; **cannon-es 0.20.0 MIT** is vendored with its licence instead).
+
+**Naming.** The directory was briefly `kaaba-blocks`. Renamed before anything was built:
+the Kaaba is a sacred site and a game about knocking it over would be straightforwardly
+offensive. `abjad-tower` is descriptive and grounded in the letter-number system the game
+actually runs on.
+
+**Verified in browser, not assumed.** A tower of 21 letter-blocks builds and settles at
+3.25 m; all six operations were exercised and produce their stated effects; Reckoning finds
+55 valid composite targets in a fresh tower (e.g. ا+ط = 10, ف+ج = 83); a full Demolition
+round was played to a win verdict of 275 points; the Tome records discoveries and ranks up;
+all three modes set up correctly.
+
+**Two real bugs found by playing it, both geometry rather than physics.** Blocks were
+1.0 × 0.6, so three side by side made a narrow cross rather than a square and every tower
+tipped itself over while settling — fixed to Jenga proportions (width = 3 × depth). And
+block placement solved the aim ray against `y = 8`, the plane blocks drop *from*, instead
+of the ground the player is pointing at — so blocks landed far from the cursor.
+
+**Consequence.** This is the third surface in the repo carrying its own copy of three.js.
+`games/yusuf-ascent/DECISIONS.md` says the move to a repo-level `vendor/` is due when a
+third arrives. It has arrived; this build is the trigger, not the doer, and the README
+says so.

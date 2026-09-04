@@ -1,0 +1,113 @@
+{
+  "_note": "The six ways a player acts on the tower. Every operation except the first is a technique the sources describe, and each carries the portal entry or corpus passage it rests on — shown in the Tome at the point of use, per the house rule established in Yusuf Ascent. The physical effect is our translation; the technique is not invented.",
+  "grounding_kinds": {
+    "CORPUS": "Found in this project's Melvin-Koushki corpus, with a page reference.",
+    "PORTAL": "Drawn from an entry in portal/db/turka.db.",
+    "PLAIN": "No occult claim made. Included as the control case."
+  },
+  "operations": [
+    {
+      "id": "darb",
+      "name": "Strike",
+      "arabic": "ضرب",
+      "translit": "ḍarb",
+      "cost": 1,
+      "kind": "PLAIN",
+      "source": null,
+      "blurb": "Throw a stone. No correspondence, no intention, no name — just mass and velocity.",
+      "why": "The control case, and the reason the others are interesting. Every occult operation in this game has to earn its place against simply hitting the tower, and the scoring says whether it did.",
+      "effect": "Launches a projectile from the camera along the aim ray."
+    },
+    {
+      "id": "tilasm",
+      "name": "Talisman",
+      "arabic": "طلسم",
+      "translit": "ṭilasm",
+      "cost": 2,
+      "kind": "PORTAL",
+      "source": "portal entry `talismanic-science`",
+      "quote": "letters, numerical correspondences, and divine names are cosmic principles that, combined correctly with proper intention, exert force through intermediate realm",
+      "blurb": "Inscribe a block. After a beat — intention needs time — force arrives through the intermediate realm.",
+      "why": "The entry says the force is exerted THROUGH the barzakh, not applied directly. So the talisman has a delay you must plan around, and the impulse arrives from inside the structure rather than from your side of it.",
+      "effect": "After 1.2 s, applies a large outward impulse at the inscribed block's centre."
+    },
+    {
+      "id": "ism",
+      "name": "Invoke the Name",
+      "arabic": "اسم",
+      "translit": "ism",
+      "cost": 3,
+      "kind": "PORTAL",
+      "source": "portal entry `ilm-al-huruf`",
+      "quote": "The 28 letters of the Arabic alphabet correspond to the 28 divine names recognized in Islamic theology",
+      "blurb": "Name one letter. Every block bearing it, anywhere in the tower, is lifted toward weightlessness.",
+      "why": "If the letter IS the name, then acting on the name acts on every instance of the letter at once — that is what a correspondence means. The interesting play is choosing a letter that is load-bearing rather than merely common.",
+      "effect": "All blocks of the chosen letter drop to 5% mass for 6 s, then return."
+    },
+    {
+      "id": "hisab",
+      "name": "Reckoning",
+      "arabic": "حساب",
+      "translit": "ḥisāb al-jumal",
+      "cost": 2,
+      "kind": "PORTAL",
+      "source": "portal entry `abjad-numerology`",
+      "quote": "By selecting or composing words whose abjad sum equals a specific number ... one creates a linguistic-mathematical object that resonates with that principle",
+      "blurb": "Name a number. Any stacked run of letters summing exactly to it comes apart.",
+      "why": "The sharpest of the six, because it is the correspondence operating literally rather than as metaphor. You have to read the tower as an arithmetic object — which is precisely the claim lettrism makes about the world.",
+      "effect": "Finds vertical runs of touching blocks whose abjad values sum to the target; annihilates them."
+    },
+    {
+      "id": "khal",
+      "name": "Doffing",
+      "arabic": "خلع",
+      "translit": "khalʿ",
+      "cost": 2,
+      "kind": "CORPUS",
+      "source": "Melvin-Koushki, Mir Damad's On Doffing, 15",
+      "quote": "one who can doff (khalʿ) his body and reject his senses ascends to the supernal realm",
+      "blurb": "A block doffs its body. For three seconds it is there and not there, and whatever rested on it does not.",
+      "why": "The technique is described as a real operation with a real cost, not a metaphor — so it is a real operation here. Note what happens when the body returns and something else is occupying the space.",
+      "effect": "Target block stops colliding for 3 s, then re-solidifies — violently if overlapped."
+    },
+    {
+      "id": "inversion",
+      "name": "Inversion",
+      "arabic": "نور و ظلمة",
+      "translit": "nūr wa-ẓulma",
+      "cost": 3,
+      "kind": "CORPUS",
+      "source": "Melvin-Koushki, Being with a Capital B, 2; portal entry `ilm-al-huruf`",
+      "quote": "the fourteen isolated letters ... exactly half the alphabet, naturally a primary matrix of lettrism",
+      "blurb": "Trade the weights of light and dark. Fourteen letters against fourteen; every load-bearing assumption reverses.",
+      "why": "The muqattaat being exactly half the alphabet is the strongest internal evidence the tradition has, and a 14/14 split is a switch. A tower built to stand on its heavy letters falls the instant heaviness moves.",
+      "effect": "Swaps the mass of every light letter with the mean mass of the dark, and vice versa, for 8 s."
+    }
+  ],
+  "modes": [
+    {
+      "id": "hadm",
+      "name": "Demolition",
+      "arabic": "هدم",
+      "blurb": "Bring the tower below the line. You have a fixed budget of operations, and every one you do not spend is scored.",
+      "goal": "Get the highest remaining block below the target height.",
+      "budget": 8
+    },
+    {
+      "id": "bina",
+      "name": "Raising",
+      "arabic": "بناء",
+      "blurb": "Build upward to the line and hold it steady. Heavy letters make a foundation; light ones let you reach.",
+      "goal": "Stack to the target height and keep it there for five seconds.",
+      "budget": null
+    },
+    {
+      "id": "istikhraj",
+      "name": "Extraction",
+      "arabic": "استخراج",
+      "blurb": "Take every instance of one letter out of the tower and leave the rest standing.",
+      "goal": "Remove all blocks of the named letter without the tower falling below the line.",
+      "budget": 6
+    }
+  ]
+}
