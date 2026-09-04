@@ -38,6 +38,7 @@ import argparse
 import hashlib
 import io
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -103,6 +104,33 @@ def check(files: list[str], do_sha: bool) -> Report:
                "publishing it. Note that adding a .gitignore rule does NOT untrack a "
                "file that is already tracked — that is exactly how 43 PDFs stayed on "
                "this public repo for weeks.")
+
+    # --- R6: v2 module cache-busting tokens must all agree ---------------
+    # Earned the hard way. v2's engine files are imported as `world.js?v=1`, and
+    # world.js was changed WITHOUT bumping that token — so every browser that had
+    # visited an earlier build kept running the old engine. The deployed file was
+    # correct and the running code was not, which is the worst shape a bug can
+    # take: the fix was already live and invisible. A stale alif fell through a
+    # floor it was supposed to hold.
+    #
+    # There is no build step to hash filenames, so the invariant is simply that
+    # every `?v=N` in v2 is the SAME N, and changing the engine means bumping them
+    # all together. That turns a silent cache bug into a failed check.
+    tokens = {}
+    for f in files:
+        if not f.startswith("v2/") or Path(f).suffix not in (".js", ".html"):
+            continue
+        fp = ROOT / f
+        if not fp.exists():
+            continue
+        for m in re.finditer(r"\.js\?v=(\d+)", fp.read_text(encoding="utf-8")):
+            tokens.setdefault(m.group(1), []).append(f)
+    if len(tokens) > 1:
+        summary = ", ".join("v=%s in %d file(s)" % (k, len(set(v))) for k, v in sorted(tokens.items()))
+        r.fail("R6", "v2 module cache-busting tokens disagree: %s" % summary)
+        r.note("R6 fix: make every `?v=N` under v2/ the same number, and bump them "
+               "all whenever an engine file changes. Mismatched tokens mean a "
+               "browser can run a mix of old and new modules.")
 
     # --- R5: local-only trees must not be tracked ------------------------
     for pref in LOCAL_ONLY_PREFIXES:

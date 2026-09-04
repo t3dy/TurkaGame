@@ -306,6 +306,11 @@ Inventing a primitive to fill the gap is the thing this project does not do.
   abjad ladder, and a power rule asking for `class === 'nurani'` — all fixed here rather
   than worked around there. That project is a parked first slice: engine vendored, letter
   table built and verified, no app and no glyph artwork yet.
-- **`?v=` cache-busting must match across modules.** `vm.js` importing `./world.js` while
-  the app imported `./world.js?v=1` loaded the module twice. Harmless here, fatal the
-  moment anything uses `instanceof`.
+- **`?v=` cache-busting is now enforced, after it bit.** Two separate faults. First,
+  `vm.js` importing `./world.js` while the app imported it with a token loaded the module
+  twice under two URLs. Then the worse one: `world.js` was **changed without bumping its
+  token**, so every browser that had visited an earlier build kept running the old engine —
+  the deployed file was correct and the running code was not, and an alif that should have
+  held against gravity fell through the floor on the live site while passing every test
+  locally. All tokens under `v2/` are now the same number, bumped together, and
+  `tools/check_repo_rules.py` **R6 fails the commit if they disagree**.

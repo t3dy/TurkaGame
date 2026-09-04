@@ -13,9 +13,9 @@
 // the commit makes, run against a copy. The preview cannot be wrong about the
 // collapse because it IS the collapse, thrown away.
 
-import { World } from '../../../engine/world.js?v=1';
-import { compile, execute, describeLetter } from '../../../engine/vm.js?v=1';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=1';
+import { World } from '../../../engine/world.js?v=4';
+import { compile, execute, describeLetter } from '../../../engine/vm.js?v=4';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=4';
 
 const V = 'v=1';
 const $ = id => document.getElementById(id);

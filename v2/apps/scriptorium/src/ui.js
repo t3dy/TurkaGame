@@ -6,11 +6,11 @@
 // in ../../data/letters.json, and the doctrine in ../../rulesets/rulesets.json.
 // This file is not allowed to know what ب does — it asks.
 
-import { World } from '../../../engine/world.js?v=1';
-import { compile, preview, execute, describeLetter, severs } from '../../../engine/vm.js?v=1';
-import { readWorld, worldReads } from '../../../engine/reader.js?v=1';
-import { Ledger } from '../../../engine/ledger.js?v=1';
-import { Iso, PALETTE } from './iso.js?v=1';
+import { World } from '../../../engine/world.js?v=4';
+import { compile, preview, execute, describeLetter, severs } from '../../../engine/vm.js?v=4';
+import { readWorld, worldReads } from '../../../engine/reader.js?v=4';
+import { Ledger } from '../../../engine/ledger.js?v=4';
+import { Iso, PALETTE } from './iso.js?v=4';
 
 const V = 'v=1';
 const $ = id => document.getElementById(id);

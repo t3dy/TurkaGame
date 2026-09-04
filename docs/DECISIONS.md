@@ -1198,3 +1198,39 @@ is written down in three places instead.
 (pusher), the Standing Word (stacker). POUR still has no level. The
 elemental/planetary/zodiacal glyph artwork remains the largest unstarted piece, and it
 blocks GoldenDawnBlocks from being anything but data.
+
+## 2026-09-04 (night) -- the stale-cache bug, and R6
+
+**What happened.** The Standing Word's second level passed every local check and **failed
+on the live site**: the alif that is supposed to stand on nothing fell through the floor.
+The deployed `world.js` was correct -- I fetched it and read the axis check in it -- but
+the running code was not. `String(world.settle)` in the live page contained no axis check
+at all.
+
+**Cause.** v2's modules are imported with a `?v=N` cache-busting token, and I changed
+`world.js` without bumping it. Every browser that had visited an earlier v2 build kept
+serving the old engine from cache. The fix was live and invisible.
+
+**Why it is the worst shape a bug can take here.** Every one of this project's habits --
+step the physics manually, verify against the live URL, replay the solution through the
+real input path -- assumes the code being tested is the code that shipped. A stale module
+breaks that assumption underneath all of them at once. My earlier "verified live" claims
+for the Scriptorium and the Pushing Floor were made in a browser session that may also have
+been running a mix of old and new modules; neither depends on the axis behaviour so their
+results still stand, but the verification was weaker than I described it as.
+
+**Fix.** All `?v=` tokens under `v2/` set to the same number and bumped together, plus a
+new rule in `tools/check_repo_rules.py`:
+
+> **R6** -- every `?v=N` under `v2/` must be the same N. Mismatched tokens mean a browser
+> can run a mix of old and new modules.
+
+R6 runs in the pre-commit hook with the other rules, and **was tested by deliberately
+introducing a mismatch and confirming it fails**. A check that never fires is worse than no
+check, which is a lesson this project has already paid for once.
+
+**The general rule, which is the point.** There is no build step to hash filenames, so the
+invariant has to be enforced somewhere. Prose in a README is not enforcement: 43
+copyrighted PDFs sat tracked on this public repo for weeks *while the rule against them was
+written in CLAUDE.md*. Treat any rule that lives only in prose as unenforced until it has a
+check.

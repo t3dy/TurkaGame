@@ -23,7 +23,7 @@
 // None of that needed a new primitive. The four already meant these things; a
 // pushing floor is just a place where meaning them is useful.
 
-import { KEY, UNKEY, MATERIALS } from './world.js?v=1';
+import { KEY, UNKEY, MATERIALS } from './world.js?v=4';
 
 export const DIRS = {
   north: [0, 0, -1], south: [0, 0, 1], west: [-1, 0, 0], east: [1, 0, 0],
