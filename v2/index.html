@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TurkaGame v2 — the prototypes</title>
+<style>
+  :root {
+    --paper:#f1dac1; --dim:#b9b0a6; --bg:#171620; --bg2:#211f2b;
+    --gold:#c99a2e; --gold-hi:#e8c86a; --lapis:#4d7fd6; --verm:#c06523;
+    --turq:#2e8f8f; --rule:rgba(241,218,193,.16);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:"Inter","Segoe UI",system-ui,sans-serif;
+    --mono:"Cascadia Mono",Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--serif);line-height:1.6}
+  a{color:var(--verm)}
+  .bar{padding:.6rem 1.2rem;background:#100f16;border-bottom:1px solid var(--gold);
+    font-family:var(--sans);font-size:.78rem;display:flex;gap:1rem;align-items:baseline;flex-wrap:wrap}
+  .bar .t{font-family:var(--serif);font-size:1.05rem}
+  .bar .ar{color:var(--gold-hi);font-size:1.05rem}
+  .bar .sp{flex:1}
+  main{max-width:1080px;margin:0 auto;padding:1.6rem 1.2rem 4rem}
+  h1{font-size:1.7rem;margin:.2rem 0 .4rem}
+  .lede{font-family:var(--sans);font-size:.92rem;color:#ddd4c9;max-width:64ch}
+  .lede b{color:var(--gold-hi)}
+  h2{font-size:1.1rem;margin:2.2rem 0 .2rem;color:var(--gold-hi);font-weight:500}
+  .sub{font-family:var(--sans);font-size:.78rem;color:var(--dim);margin-bottom:.9rem;max-width:70ch}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+  .card{border:1px solid var(--rule);border-left:2px solid var(--gold);border-radius:3px;
+    padding:.8rem .9rem;background:rgba(0,0,0,.18)}
+  .card h3{margin:0 0 .1rem;font-size:1rem;font-weight:500}
+  .card h3 a{text-decoration:none;color:var(--paper)}
+  .card h3 a:hover{color:var(--gold-hi)}
+  .card .kind{font-family:var(--sans);font-size:.66rem;color:var(--dim);margin-bottom:.45rem}
+  .card p{font-family:var(--sans);font-size:.78rem;margin:0;color:#ddd4c9}
+  .card .how{font-family:var(--sans);font-size:.72rem;color:var(--dim);margin-top:.5rem;
+    border-top:1px solid var(--rule);padding-top:.4rem}
+  .card.q{border-left-color:var(--verm)}
+  .card.frozen{border-left-color:#5a5468;opacity:.85}
+  .pill{font-family:var(--sans);font-size:.56rem;letter-spacing:.09em;padding:.1rem .4rem;
+    border-radius:2px;background:var(--rule);color:var(--paper)}
+  .pill.ok{background:var(--turq);color:#06201f}
+  .pill.open{background:var(--verm);color:#fff}
+  .note{font-family:var(--sans);font-size:.78rem;color:var(--dim);border-left:2px solid var(--verm);
+    padding-left:.7rem;margin:1.4rem 0;max-width:70ch}
+  code{font-family:var(--mono);font-size:.86em;color:var(--gold-hi)}
+</style>
+</head>
+<body>
+  <div class="bar">
+    <span class="t">TurkaGame</span><span class="ar">v2</span>
+    <span style="opacity:.35">·</span><span>lettrism as the language the world is written in</span>
+    <span class="sp"></span>
+    <a href="../site/index.html">Project site</a>
+    <a href="HANDOVER.md">Handover</a>
+    <a href="README.md">Architecture</a>
+  </div>
+
+  <main>
+    <h1>The prototypes</h1>
+    <p class="lede">
+      Everything here runs on <b>one engine</b>. Eight instructions are derived from facts you can
+      check against an Arabic grammar &mdash; closed forms bind, tailed forms pour, dots raise or
+      lower, an upright stroke holds a frame, and the six letters that never join what follows are
+      where a word breaks. Five historical rulesets <b>genuinely disagree</b> about which of those a
+      letter may use. Preview and execution are the same function, so nothing here can show you a
+      consequence it will not then deliver.
+    </p>
+
+    <h2>Games</h2>
+    <p class="sub">Each has a moment-to-moment verb that is <i>not</i> writing, so that writing stays
+      scarce. Every level is solver-checked before a person sees it, and checked a second way for
+      whether the letters actually matter.</p>
+    <div class="cards">
+      <div class="card">
+        <h3><a href="apps/pushing-floor/index.html">The Pushing Floor</a></h3>
+        <div class="kind">block-pusher &middot; 2 floors &middot; <span class="pill ok">solver-checked</span></div>
+        <p>Walk and shove stones onto marks &mdash; until you meet a stone you can never get behind,
+          and have to write a letter to change what &ldquo;one stone&rdquo; means. A closed letter binds two
+          stones into one body.</p>
+        <div class="how">Arrow keys or WASD to walk &middot; click a letter, then a cell beside you.
+          Verified: neither floor is solvable without its letter.</div>
+      </div>
+
+      <div class="card">
+        <h3><a href="apps/standing-word/index.html">The Standing Word</a></h3>
+        <div class="kind">stacker &middot; 2 levels &middot; <span class="pill ok">solver-checked</span></div>
+        <p>Build with gravity switched off, then let it in. A rāʾ at the outboard end is joined to
+          nothing and goes; the same rāʾ inboard carries everything hanging off it. The letter is not
+          good or bad &mdash; its position is.</p>
+        <div class="how">Click a letter, then a cell on the ground or beside something standing.
+          Dashed arrows show exactly what <i>would</i> fall.</div>
+      </div>
+
+      <div class="card q">
+        <h3><a href="apps/unmaking/index.html">The Unmaking</a></h3>
+        <div class="kind">comparison &middot; 3 routes &middot; <span class="pill open">open question</span></div>
+        <p>v2 could build and could not unbuild. Rather than invent a primitive to close that gap,
+          here are <b>three candidates on the same structure</b> &mdash; one tightly sourced, one
+          admitted fiction, and one with no claim at all, which the other two have to beat.</p>
+        <div class="how">Click a letter to aim, pick a route, or press <b>Try all three</b>.
+          <b>This one wants your judgement</b>, not just your attention.</div>
+      </div>
+    </div>
+
+    <h2>Workbench</h2>
+    <div class="cards">
+      <div class="card">
+        <h3><a href="apps/scriptorium/index.html">The Scriptorium</a></h3>
+        <div class="kind">letter IDE &middot; 4 tasks &middot; five metaphysics</div>
+        <p>Compose a program of letters and watch what it does to the world. Switch the ruleset and
+          the same letters behave differently: Sufi lettrism refuses to sever at all, so مرم is one
+          body there and two elsewhere. The world can also be <b>read back</b> &mdash; including the
+          parts you did not write.</p>
+        <div class="how">Evidence is always shown; the rule is earned. You learn what an operation is
+          by watching a letter do it, never from a panel.</div>
+      </div>
+    </div>
+
+    <h2>Frozen — version 1</h2>
+    <p class="sub">Five finished games, closed to change and staying at their own URLs. See
+      <a href="../games/FROZEN.md">FROZEN.md</a> for why they were frozen rather than evolved.</p>
+    <div class="cards">
+      <div class="card frozen"><h3><a href="../games/abjad-tower/index.html">Abjad Tower</a></h3>
+        <div class="kind">physics stacker &middot; five modes</div>
+        <p>Blocks are the 28 letters and mass is abjad value.</p></div>
+      <div class="card frozen"><h3><a href="../games/letter-machine/index.html">The Letter Machine</a></h3>
+        <div class="kind">grid puzzle</div>
+        <p>The letters are the instructions and the matter is the data.</p></div>
+      <div class="card frozen"><h3><a href="../games/impossible-architect/index.html">The Impossible Architect</a></h3>
+        <div class="kind">route-builder</div>
+        <p>Each cut element of the Bihzād folio is a piece whose rule is its own painted logic.</p></div>
+      <div class="card frozen"><h3><a href="../games/yusuf-ascent/index.html">Yūsuf Ascent</a></h3>
+        <div class="kind">one folio, three prototypes</div>
+        <p>43 cut elements rebuilt three ways.</p></div>
+      <div class="card frozen"><h3><a href="../games/visionary-gallery/index.html">The Visionary Gallery</a></h3>
+        <div class="kind">22 folios, measured and playable</div>
+        <p>Fetched with a rights gate, decomposed, and scored against a hand-made reading.</p></div>
+    </div>
+
+    <div class="note">
+      <b>What none of this claims.</b> No person has played any of it. Every number in every README
+      comes from a solver, a <code>--verify</code>, or a scripted replay through the real input path.
+      Nothing here is asserted to be fun, balanced or well-paced &mdash; and two levels per mode is a
+      demonstration of a mechanic, not a game with a curve.
+    </div>
+  </main>
+</body>
+</html>

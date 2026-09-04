@@ -1234,3 +1234,51 @@ invariant has to be enforced somewhere. Prose in a README is not enforcement: 43
 copyrighted PDFs sat tracked on this public repo for weeks *while the rule against them was
 written in CLAUDE.md*. Treat any rule that lives only in prose as unenforced until it has a
 check.
+
+## 2026-09-04 (late) -- three routes out of the demolition gap, and a hub
+
+**Decision.** Ted asked to try every option and be able to test them. So instead of
+picking a demolition mechanic, all three candidates are built and measured side by side in
+`v2/apps/unmaking/`, and the choice is left open.
+
+| | Route | Kind | The fact it rests on |
+|---|---|---|---|
+| A | The Isolated Form | INTERPRETATION | Every Arabic letter has isolated/initial/medial/final forms, and the isolated form joins nothing on either side. Plain orthography. |
+| B | The Utterance | GAME_FICTION | The three registers are the Mafahis's; that a SPOKEN letter suspends a world law is entirely invented. |
+| C | The Thrown Stone | PLAIN | None. Mass and speed. The control, as Strike was in Abjad Tower. |
+
+**The measured result, which should not be smoothed over.** Scored at best aim on three
+structures: on an unpinned structure **the thrown stone wins outright** (4 of 4), beating
+both the sourced route and the invented one (3 of 4 each). The only thing that stops it is
+an **alif** -- on the pinned span it drops nothing, because an axis holds a frame and mass
+does not move an axis.
+
+So the system already has a shape nobody designed: **brute force is the strongest attack,
+and the builder's counter to it is the letter that holds.** That fell out of primitives
+defined several slices earlier, which is the derived-instruction-set method paying off.
+
+**A and B differ in kind, not degree.** Both reach 3, but A only does so when aimed well
+(3, 2, 1, 1 depending where you cut) while B is 3 everywhere and cannot be aimed. A scalpel
+and a hammer that happen to score alike here. If the deciding question is which makes a
+better puzzle, that difference matters more than the totals.
+
+**A fault the comparison itself had.** The first version aimed each targeted route at its
+DEFAULT target -- the outermost letter, which carries nothing -- and reported only that.
+It flattered the hammer and libelled the scalpel, showing route A dropping 1 when its best
+cut drops 3. The table now reports both "as aimed" and "best possible", and a route that
+cannot be aimed says so.
+
+**A fault the matrix caught.** The Tower structure's shelf was never bonded to its column,
+so it collapsed on build and every route scored 0 against it. A structure that no route can
+affect is not a test; `matrix()` made that obvious immediately.
+
+**Also.** `v2/index.html` is now a hub listing every prototype, v1 and v2, with how to
+drive each. And `v2/HANDOVER.md` is the new pickup document for the whole of v2 -- what
+exists, what verifies it, which rules are enforced in code rather than prose, how to verify
+against the live site (including asking the running engine what it contains, after the
+stale-cache bug), and the standing caveats that must not be quietly dropped.
+
+**Open, and Ted's to settle:** which route, if any. A gives aiming puzzles immediately and
+needs no new grounding. B opens the brief's Level 5 (letters manipulating rules) but is
+admitted fiction inside a project whose discipline is not inventing history. C stays as the
+control either way, precisely because it currently wins.

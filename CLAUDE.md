@@ -197,6 +197,15 @@ pass** because their hands had spare letters. There is still **no demolition mod
 needs a way to cut an existing bond, which v2 does not have, and the gap is written down
 rather than filled with an invented primitive.
 
+[`v2/apps/unmaking/`](v2/apps/unmaking/README.md) is a **comparison, not a game**: three
+candidate demolition routes on the same structures, because v2 could build and not
+unbuild and inventing a primitive to close that gap is the thing this project does not
+do. The measured result is worth keeping: **on an unpinned structure the route with no
+claim behind it (a thrown stone) wins**, and the only thing that stops it is an alif.
+The decision between the routes is Ted's and is open.
+
+[`v2/index.html`](v2/index.html) is the hub — every prototype, v1 and v2, in one place.
+
 **The engine is alphabet-agnostic, and that was tested.** `../GoldenDawnBlocks/` vendors
 the four engine modules byte-identical and runs them on the 22 Hebrew letters with the
 Sefer Yetsirah's 3/7/12 division. The vendoring found three real couplings to Arabic, all

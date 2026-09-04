@@ -13,6 +13,7 @@ import { World, KEY } from '../engine/world.js';
 import { compile, run, preview, execute, describeLetter, ladderStep, LADDER } from '../engine/vm.js';
 import { readWorld, worldReads } from '../engine/reader.js';
 import { Ledger, memoryStore } from '../engine/ledger.js';
+import { isolate, utter, throwStone, standing, ROUTES } from '../engine/unmaking.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const DATA = JSON.parse(readFileSync(join(here, '..', 'data', 'letters.json'), 'utf8'));
@@ -431,6 +432,91 @@ test('an AXIS letter holds against gravity, and carries what is bonded to it', (
   // م at (0,4,0) joins forward to ا at (-1,4,0); the alif holds the pair up.
   assert.equal(w3.get(0, 4, 0)?.glyph, 'م', 'the mīm is carried by the alif it joins');
   assert.equal(w3.get(-1, 4, 0)?.glyph, 'ا');
+});
+
+/* ------------------------------------- three routes out of the demolition gap */
+// A span held up at one end only, so everything past the pier is standing purely
+// because it is bonded. Each route is asked the same question: how much comes down?
+
+function span() {
+  const w = new World({ rules: { gravity: false } });
+  w.set(0, 0, 0, { material: 'earth', value: 1, fixed: true });
+  w.set(0, 1, 0, { material: 'earth', value: 1, fixed: true });
+  // مهنب -- four letters that all join forward, so the run is ONE body carried
+  // by the single cell resting on the pier. Chosen carefully: no two adjacent
+  // letters are identical (that would geminate into one instruction), and none is
+  // vertical (ا and ل grant AXIS, which would hold the span up by itself and make
+  // the whole test meaningless).
+  execute(w, compile(prog('مهنب'), { letters, ruleset: RS('workshop') }), { cursor: [3, 2, 0], dir: [-1, 0, 0] });
+  w.rules.gravity = true;
+  w.settle();
+  return w;
+}
+
+test('the span is a real cantilever: it stands only because it is one body', () => {
+  const w = span();
+  assert.equal(standing(w, 2), 4, 'four letters at the top');
+  // Sanity: if bodies did not hold, three of them have nothing under them.
+  const t = w.clone(); t.rules.bondsHold = false; t.settle();
+  assert.ok(standing(t, 2) < 4, 'without bonds it would not stand');
+});
+
+test('A — isolating a letter cuts both its bonds and drops what hung on it', () => {
+  const w = span();
+  const before = standing(w, 2);
+  const r = isolate(w, [2, 2, 0], { apply: true });
+  assert.equal(r.ok, true);
+  assert.equal(r.cut, 2, 'a letter in the middle of a word has two bonds');
+  assert.ok(standing(w, 2) < before, 'the outboard part came down');
+  assert.ok(r.effects.some(e => e.kind === 'sever'));
+  assert.ok(r.effects.some(e => e.kind === 'fall'));
+});
+
+test('A is a scalpel: WHERE you cut decides how much comes down', () => {
+  // The first version of this test asserted that isolating the outermost letter
+  // drops nothing. Wrong: the outermost letter is the one being CARRIED, so
+  // isolating it drops itself. What route A actually gives is a graded result,
+  // which is the property worth having and the one that distinguishes it from B.
+  const at = x => { const w = span(); isolate(w, [x, 2, 0], { apply: true }); return standing(w, 2); };
+  const results = [3, 2, 1, 0].map(at);
+  assert.deepEqual(results, [3, 2, 1, 1],
+    'cutting further inboard brings more down: 1, 2, 3, 3 letters lost');
+  assert.ok(new Set(results).size > 1, 'the choice of cell must matter');
+});
+
+test('B — the utterance suspends bodies, so everything carried comes down at once', () => {
+  const w = span();
+  const r = utter(w, { apply: true });
+  assert.equal(standing(w, 2), 1, 'only the cell resting on the pier survives');
+  assert.equal(w.rules.bondsHold, true, 'the rule comes back after the utterance');
+  assert.ok(r.effects.length > 0);
+});
+
+test('C — the thrown stone displaces, and is stopped by an axis', () => {
+  const w = span();
+  const r = throwStone(w, [3, 2, 0], { dir: [1, 0, 0], force: 2, apply: true });
+  assert.ok(r.shifted > 0 || r.effects.length > 0, 'it moved or something fell');
+
+  // An alif anywhere in the body pins it: mass and speed do not move an axis.
+  const w2 = new World({ rules: { gravity: false } });
+  w2.set(0, 0, 0, { material: 'earth', value: 1, fixed: true });
+  execute(w2, compile(prog('ما'), { letters, ruleset: RS('workshop') }), { cursor: [1, 1, 0] });
+  const r2 = throwStone(w2, [1, 1, 0], { dir: [1, 0, 0], force: 2, apply: true });
+  assert.equal(r2.shifted, 0, 'the alif in the body holds it against the stone');
+});
+
+test('every route is preview-safe and declares its grounding honestly', () => {
+  const w = span();
+  const h = w.hash();
+  isolate(w, [2, 2, 0]); utter(w); throwStone(w, [3, 2, 0]);
+  assert.equal(w.hash(), h, 'none of them touched the world without apply');
+
+  for (const r of Object.values(ROUTES)) {
+    assert.ok(['INTERPRETATION', 'GAME_FICTION', 'PLAIN'].includes(r.kind), r.id);
+    assert.ok(r.fact && r.reading, r.id + ' must state both its fact and its reading');
+  }
+  assert.equal(ROUTES.stone.kind, 'PLAIN', 'the control case makes no claim');
+  assert.equal(ROUTES.utter.kind, 'GAME_FICTION', 'the invented one says so');
 });
 
 console.log(`${n} tests passed`);

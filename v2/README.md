@@ -197,6 +197,9 @@ v2/
 ├── apps/pushing-floor/       the first GAME: shove stones, write letters when
 │                               shoving is not enough. Levels checked three ways.
 ├── apps/standing-word/       the stacker: build with gravity off, then let it in
+├── apps/unmaking/            three candidate demolition routes, measured side by side
+├── engine/unmaking.js        those three routes, as pure functions
+├── index.html                the hub: every prototype in one place
 └── tests/engine.test.mjs     34 tests
 ```
 
@@ -275,12 +278,24 @@ their hands had spare letters, so no opening could doom you. Tightening each han
 to exactly the cells needed made every placement matter: 13 of 14 and 23 of 24
 openings now lose.
 
-**There is still no demolition mode, and that is a finding.** Knocking a structure
-down needs a way to break an existing bond, and v2 has none — SEVER is a *parsing*
-rule about whether a new letter joins forward, and POUR carries a cell's bonds with
-it. A demolition level would need a genuine cut derived from some observable fact
-this project does not have, or a letter that changes a world rule, or momentum.
-Inventing a primitive to fill the gap is the thing this project does not do.
+**Demolition: three routes built, none chosen.** Knocking a structure down needs a
+way to break an existing bond, and v2 had none — SEVER is a *parsing* rule about
+whether a new letter joins forward, and POUR carries a cell's bonds with it. Rather
+than invent a primitive, [`apps/unmaking/`](apps/unmaking/README.md) implements all
+three candidates on the same structures: **the isolated form** (`INTERPRETATION` —
+every letter has an isolated form that joins nothing on either side, which is plain
+orthography), **the utterance** (`GAME_FICTION` — a spoken letter suspends a world
+law, entirely invented and labelled so), and **the thrown stone** (`PLAIN` — no
+claim at all, the control).
+
+Measured at best aim across three structures, the result is one to sit with rather
+than smooth over: **on an unpinned structure the thrown stone wins**, and the only
+thing that stops it is an **alif** — an axis holds a frame, and mass does not move
+an axis. So the system already has a shape nobody designed: brute force is the
+strongest attack and the builder's counter is the letter that holds. The sourced
+route and the invented one both reach 3 of 4, but only the sourced one *rewards
+aiming* (3, 2, 1, 1 depending where you cut), which is a difference in kind that the
+totals hide. **The choice between them is Ted's and has not been made.**
 
 ## Known gaps — this is a first slice
 
