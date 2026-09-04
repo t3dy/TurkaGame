@@ -114,9 +114,9 @@ const MODES = {
 
   bina: {
     setup(s) {
-      world.setTargetLine(4.4);
+      world.setTargetLine(3.6);
       s.budget = null;
-      s.toPlace = 14;
+      s.toPlace = 18;
       s.holdFrom = null;
       s.instruction = 'Click above the ground to drop a block. Reach the ring and hold it 5 s.';
       s.placing = true;
@@ -127,18 +127,18 @@ const MODES = {
     },
     check(s) {
       const high = world.highestY();
-      if (high >= 4.4 && world.isSettled()) {
+      if (high >= 3.6 && world.isSettled()) {
         if (s.holdFrom === null) s.holdFrom = world.time;
         const held = world.time - s.holdFrom;
         s.hold = held;
         if (held >= 5) {
-          return { win: true, score: 150 + Math.max(0, (14 - (14 - s.toPlace))) * 10,
+          return { win: true, score: 150 + s.toPlace * 10,
                    why: 'It reached the ring and held.' };
         }
-      } else if (high < 4.4) {
+      } else if (high < 3.6) {
         s.holdFrom = null; s.hold = 0;
       }
-      if (s.toPlace <= 0 && world.isSettled() && high < 4.4) {
+      if (s.toPlace <= 0 && world.isSettled() && high < 3.6) {
         return { win: false, why: 'Out of blocks, and short of the ring.' };
       }
       return null;
@@ -349,8 +349,11 @@ function frame(now) {
       $('verdict').className = 'show ' + (r.win ? 'win' : 'lose');
       $('verdict').innerHTML = `<h2>${r.win ? 'Complete' : 'Failed'}</h2>
         <p>${r.why}</p>${r.win ? `<p class="score">${s} points</p>` : ''}
-        <button class="btn" id="again">Again</button>`;
+        <button class="btn" id="again">Again</button>
+        <button class="btn" id="same">Same tower</button>
+        <p class="dim" style="font-family:var(--mono);font-size:.7rem">seed ${state.seed}</p>`;
       $('again').onclick = () => startMode(state.mode);
+    $('same').onclick = () => startMode(state.mode, state.seed);
     }
   }
   raf = requestAnimationFrame(frame);
@@ -358,13 +361,15 @@ function frame(now) {
 
 /* ----------------------------------------------------------------- boot --- */
 
-function startMode(mode) {
+function startMode(mode, seed) {
   world.clear();
   const md = OPDATA.modes.find(m => m.id === mode);
+  if (seed === undefined) seed = (Math.random() * 1e9) | 0;
   state = {
     mode, modeName: md.name, log: [], done: false, hold: 0, placing: false,
-    seed: (Math.random() * 1e9) | 0, snapshotHigh: 0,
+    seed, snapshotHigh: 0,
   };
+  history.replaceState(null, '', `?mode=${mode}&seed=${seed}`);
   MODES[mode].setup(state);
   $('verdict').className = '';
   $('place-row').classList.toggle('hidden', !state.placing);
@@ -443,7 +448,9 @@ function startMode(mode) {
   };
 
   paintTome();
-  startMode('hadm');
+  const q = new URLSearchParams(location.search);
+  const m0 = OPDATA.modes.some(m => m.id === q.get('mode')) ? q.get('mode') : 'hadm';
+  startMode(m0, q.get('seed') ? parseInt(q.get('seed'), 10) : undefined);
   last = performance.now();
   raf = requestAnimationFrame(frame);
 

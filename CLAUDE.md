@@ -124,6 +124,8 @@ TurkaGame/
 │   │                             3D'd and made playable — games/visionary-gallery/README.md
 │   ├── abjad-tower/            physics stacking/demolition game: blocks are the 28 letters,
 │   │                             mass is abjad value — games/abjad-tower/README.md
+│   ├── impossible-architect/   route-builder on the Bihzād folio: each cut element is a
+│   │                             piece whose rule is its own logic — games/impossible-architect/README.md
 │   └── career-sim/             pointer only — moved to CareerSim/
 ├── CareerSim/               the career-sim subproject (own CLAUDE.md/DESIGN.md/docs;
 │                             Next.js+Supabase target, deploys separately to Vercel)
@@ -170,6 +172,16 @@ Two house rules it establishes, worth reusing:
   game's seven-rung ascent and door chain are *ours*, not the painting's, and every
   surface that uses them says so at the point of use — including the negative result
   that no source in the 43-source corpus mentions Bihzād or Zulaykha at all.
+
+## The Impossible Architect (added 2026-09-02)
+
+[`games/impossible-architect/`](games/impossible-architect/README.md) — a tile-laying
+route-builder where the 41 cut elements of the Bihzād folio are pieces and **each piece's
+rule is the logic its `palace.json` card already states**. Reads `../yusuf-ascent/data/`
+and sprites across folders — data and assets, not code. Five sibling designs in
+[`docs/GAME_DESIGNS_BIHZAD.md`](docs/GAME_DESIGNS_BIHZAD.md). House rule it adds: **check
+a route puzzle with a solver before a person** — the first version was won in fifteen
+moves without opening a door.
 
 ## Abjad Tower (added 2026-09-02)
 

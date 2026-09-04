@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Impossible Architect — build a route through Bihzād's palace</title>
+<style>
+  :root{
+    --paper:#f1dac1;--dim:#b9b0a6;--bg:#1b1a20;--bg2:#232128;--bg3:#2b2836;
+    --gold:#c99a2e;--gold-hi:#e8c86a;--lapis:#4d7fd6;--verm:#c06523;--turq:#2e8f8f;
+    --rule:rgba(241,218,193,.16);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:"Inter","Segoe UI",system-ui,sans-serif;--mono:"Cascadia Mono",Consolas,monospace;
+    --cell:92px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--paper);font-family:var(--serif);overflow:hidden}
+  a{color:var(--verm)}
+  .topbar{display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;padding:.5rem 1rem;
+    background:#100f16;border-bottom:1px solid var(--gold);font-family:var(--sans);font-size:.76rem}
+  .topbar .title{font-family:var(--serif);font-size:1rem}
+  .topbar .spacer{flex:1}.topbar a{text-decoration:none}.topbar a:hover{text-decoration:underline}
+
+  #wrap{display:flex;height:calc(100% - 34px)}
+  #boardwrap{flex:1;display:grid;place-items:center;min-width:0;overflow:auto;padding:14px;position:relative;
+    background:radial-gradient(ellipse at 50% 40%,#2a2735 0%,#1b1a20 70%)}
+
+  /* the board: 5 columns, 7 rows, bottom row = rung 0 */
+  #board{display:grid;grid-template-columns:repeat(5,var(--cell));grid-auto-rows:var(--cell);gap:4px;
+    padding:6px;background:#141319;border:1px solid var(--gold);outline:3px solid #1e3f7a;outline-offset:3px}
+  .cell{position:relative;background:#211f2b;border:1px solid rgba(241,218,193,.07);cursor:pointer;
+    overflow:hidden;transition:box-shadow .12s}
+  .cell:hover{box-shadow:inset 0 0 0 2px var(--gold)}
+  .cell.ok{box-shadow:inset 0 0 0 2px var(--turq)}
+  .cell.bad{box-shadow:inset 0 0 0 2px var(--verm);cursor:not-allowed}
+  .cell .rung{position:absolute;left:3px;top:2px;font:9px/1 var(--sans);letter-spacing:.08em;
+    color:rgba(241,218,193,.35);text-transform:uppercase;pointer-events:none}
+  .cell img{width:100%;height:100%;object-fit:cover;display:block}
+  .cell.placed{border-color:rgba(201,154,46,.5)}
+  .cell.connected::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 3px var(--turq);pointer-events:none}
+  .cell.fixed::before{content:"fixed";position:absolute;right:3px;top:2px;font:9px/1 var(--sans);
+    color:var(--gold-hi);letter-spacing:.08em;text-transform:uppercase;z-index:2}
+  .cell.locked::after{content:"🔒";position:absolute;right:4px;bottom:3px;font-size:14px;z-index:2}
+  .cell.open::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 3px var(--turq)}
+  .cell.goal img{outline:2px solid var(--gold-hi);outline-offset:-2px}
+
+  #panel{width:330px;flex:0 0 330px;background:var(--bg2);border-left:1px solid var(--gold);
+    display:flex;flex-direction:column;overflow-y:auto;padding:10px;gap:10px}
+  .lab{font-family:var(--sans);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+  .btn{font-family:var(--sans);font-size:.72rem;padding:.34rem .6rem;border:1px solid var(--gold);
+    border-radius:2px;background:transparent;color:var(--paper);cursor:pointer}
+  .btn:hover{background:rgba(201,154,46,.16)}.btn.active{background:var(--gold);color:#16151a}
+  .row{display:flex;gap:5px;flex-wrap:wrap}
+
+  #hand{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+  .hp{position:relative;aspect-ratio:1;background:#000;border:1px solid var(--rule);cursor:grab;overflow:hidden}
+  .hp img{width:100%;height:100%;object-fit:cover;display:block}
+  .hp.sel{outline:2px solid var(--gold);outline-offset:-2px}
+  .hp .r{position:absolute;left:0;right:0;bottom:0;background:rgba(16,15,22,.8);
+    font:9px/1.3 var(--sans);color:var(--paper);padding:2px 3px;text-align:center;letter-spacing:.04em}
+
+  .stats{display:grid;grid-template-columns:auto 1fr;gap:.15rem .6rem;font-family:var(--sans);font-size:.72rem}
+  .stats b{color:var(--gold-hi);font-family:var(--mono);font-weight:400}
+  #instruction{font-family:var(--sans);font-size:.74rem;line-height:1.5;border-left:2px solid var(--verm);padding-left:.55rem}
+
+  .card{background:var(--paper);color:#2b2723;border:1px solid var(--gold);padding:.7rem .8rem;min-height:70px}
+  .card h3{margin:0 0 .15rem;font-size:.98rem}
+  .card .eyebrow{font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--verm)}
+  .card p{margin:.4rem 0 0;font-size:.82rem;line-height:1.5}
+  .card .rule{font-family:var(--sans);font-size:.7rem;color:#5d5348;border-left:2px solid var(--lapis);
+    padding-left:.5rem;margin-top:.5rem;line-height:1.45}
+  .card .rule b{color:#1e3f7a}
+  .card .lock{font-family:var(--sans);font-size:.7rem;margin-top:.4rem;color:#7a3d10}
+
+  #doors{font-family:var(--sans);font-size:.7rem;line-height:1.6}
+  #doors span{display:inline-block;margin:0 .35rem .2rem 0;padding:.05rem .4rem;border:1px solid var(--rule);border-radius:999px}
+  #doors span.open{border-color:var(--turq);color:#9fe6d8}
+
+  #toast{position:absolute;left:50%;top:14px;transform:translateX(-50%);background:rgba(16,15,22,.94);
+    border:1px solid var(--rule);color:var(--paper);font-family:var(--sans);font-size:.75rem;padding:.4rem .8rem;
+    border-radius:3px;opacity:0;transition:opacity .2s;pointer-events:none;max-width:70%;z-index:5}
+  #toast.show{opacity:1}#toast.good{border-color:var(--turq);color:#9fe6d8}#toast.bad{border-color:var(--verm);color:#f0b98a}
+
+  #verdict{position:absolute;inset:0;display:none;place-items:center;background:rgba(16,15,22,.86);z-index:6}
+  #verdict.show{display:grid}#verdict>div{text-align:center;max-width:46ch}
+  #verdict h2{margin:0 0 .3rem;font-size:1.7rem}#verdict.win h2{color:var(--gold-hi)}#verdict.lose h2{color:var(--verm)}
+  #verdict p{font-family:var(--sans);font-size:.85rem;color:var(--dim);line-height:1.55}
+  .note{font-family:var(--sans);font-size:.7rem;line-height:1.5;color:var(--dim);border-left:2px solid var(--verm);padding-left:.55rem}
+
+  @media (max-width:900px){:root{--cell:64px}#wrap{flex-direction:column}
+    #panel{width:auto;flex:0 0 auto;max-height:48vh;border-left:none;border-top:1px solid var(--gold)}}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <span class="title">The Impossible Architect</span>
+    <span style="opacity:.35">·</span>
+    <span>build a route through Bihzād's palace by the palace's own rules</span>
+    <span class="spacer"></span>
+    <a href="../yusuf-ascent/index.html">Yūsuf Ascent</a>
+    <span style="opacity:.35">·</span>
+    <a href="../../site/index.html">TurkaGame</a>
+  </div>
+  <div id="wrap">
+    <div id="boardwrap">
+      <div id="toast"></div>
+      <div id="verdict"></div>
+      <div id="board"></div>
+    </div>
+    <aside id="panel">
+      <div id="instruction"></div>
+      <div class="stats">
+        <span class="lab">Deck</span><b id="deck">—</b>
+        <span class="lab">Placed</span><b id="placed">—</b>
+        <span class="lab">Reached</span><b id="reach">—</b>
+        <span class="lab">Seed</span><b id="seed">—</b>
+      </div>
+      <div>
+        <div class="lab">Your hand — click a piece, then a cell</div>
+        <div id="hand"></div>
+      </div>
+      <div>
+        <div class="lab">The seven doors</div>
+        <div id="doors"></div>
+      </div>
+      <div class="card" id="card">Hover or select a piece to read what it is and what it does.</div>
+      <div class="row">
+        <button class="btn" id="discard">Discard hand (−1)</button>
+        <button class="btn" id="restart">New palace</button>
+        <button class="btn" id="same">Same seed</button>
+      </div>
+      <div class="note">
+        The rows are the seven rungs of the Yūsuf ladder — ours, not the painting's. Each
+        piece's rule is the logic the painting already gives it: the stair reaches any storey
+        because it belongs to none; the brackets stand on nothing; the cupola cannot be reached
+        because no stair in the picture reaches it. The street door is where you stand, so it
+        admits you; every other door is locked from within until the right thing is built.
+      </div>
+    </aside>
+  </div>
+<script type="module" src="./game.js?v=4"></script>
+</body>
+</html>

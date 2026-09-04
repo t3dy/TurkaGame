@@ -292,6 +292,18 @@ HEAD, not merely "pushed"):
   every tower over, and placement aiming solved against the wrong plane.
   `build_letters.py --verify` checks the roster against `portal/db/turka.db`.
 
+- **The Impossible Architect (2026-09-02), playable and verified.** `games/impossible-architect/`
+  — a route-builder where each of the folio's 41 cut elements is a piece whose rule is
+  its card's logic. Reuses Yūsuf Ascent's `palace.json`, sprites and seven locks unchanged.
+  Verified by a legal-moves-only solver: the first version was trivially winnable (15
+  moves, no door opened); two rules from the painting fixed it and the solver re-confirmed
+  winnability. Five more designs specified in `docs/GAME_DESIGNS_BIHZAD.md`, ranked, with
+  The Weight of Brackets the cheapest next (an Abjad Tower block set).
+- **Abjad Tower tuned:** Raising is 18 blocks to 3.6 m; `?mode=&seed=` URLs and "Same
+  tower" replay for reproducible playtesting.
+- **A destructive slip recorded in DECISIONS:** a patch script truncated two `index.html`
+  files by opening for write before reading. One restored from git; the other rewritten.
+
 ## What's NOT done — the important gaps, not hidden
 
 1. **The VN's narrative prose is a real first pass, not final writing.** Every

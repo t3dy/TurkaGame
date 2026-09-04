@@ -806,3 +806,53 @@ of the ground the player is pointing at — so blocks landed far from the cursor
 `games/yusuf-ascent/DECISIONS.md` says the move to a repo-level `vendor/` is due when a
 third arrives. It has arrived; this build is the trigger, not the doer, and the README
 says so.
+
+## 2026-09-02 — The Impossible Architect: the folio's parts as rules, and six designs
+
+**Decision.** A second game on the Bihzād folio, `games/impossible-architect/`: a
+tile-laying route-builder in which each of the 41 cut elements is a piece and **each
+piece's rule is the logic its `palace.json` card already gives it** — the stair connects
+to any storey because it belongs to none, the brackets stand on nothing, the cupola cannot
+be reached, the doors open only when their lock's answer is standing in the structure.
+Five more designs specified to buildability in
+[`docs/GAME_DESIGNS_BIHZAD.md`](GAME_DESIGNS_BIHZAD.md).
+
+**Rationale.** The request was for a game using the folio's imagery *with the logic of the
+parts as mechanics*. The cards written for Yūsuf Ascent already state that logic in one
+sentence per part. Turning each sentence into a rule is the most literal possible reading
+of the brief, and it tests whether `palace.json` is a real game-data layer: this game
+reads it and the region sprites across folders — data and assets, not code — and needed
+no new art and no new research.
+
+**Rejected alternatives.** Inventing piece abilities for gameplay's sake (the cards would
+then be decoration); an engine (a grid with connectivity rules needs none); building the
+strongest *teaching* design first (Station Point) — it was ranked, but the route-builder
+uses more of the pieces and more of the reuse.
+
+**Found by a solver, not by eye — twice.** The first version was trivially winnable: a
+straight column of surfaces walked into the chamber with no door opened, and a twenty-line
+legal-moves-only solver won in fifteen placements. The fix ("doors in the centre column;
+the chamber only through a door") broke it the other way: the solver filled the board,
+opened six of seven locks, and lost, because a *surface* had taken the one cell under the
+chamber that could admit it. The rule that survived both rounds is the painting's own —
+**the centre column is the chain: doors only, and doors nowhere else.** Re-run on eight seeds, a
+naive greedy solver — which also drops the blind door into the chain — won one (seed 99,
+25 placements, no discards). So: winnable, bypass closed by construction, hard for a plan-free
+strategy. **Human difficulty is not measured.** That number is here so the next tuning pass
+starts from a figure rather than a feeling. **A route puzzle should be checked by a solver
+before it is checked by a person, and checked again after every rule change.**
+
+**A destructive slip, recorded.** A patch script opened `index.html` for writing before
+reading it, truncating two game shells to zero bytes. One was in git and came back with
+`git checkout`; the other had never been committed and had to be rewritten from the
+session. The check that caught it was a page that loaded with no title and no scripts.
+Rule taken from it: **read, then open for write — never `open(p,'w').write(open(p).read())`**.
+
+**Abjad Tower, same session.** Raising was untuned and too hard (the README said so):
+18 blocks to a 3.6 m ring instead of 14 to 4.4. Towers now honour `?mode=&seed=` and
+offer "Same tower", so a playtest complaint can name the exact tower it happened on.
+
+**Consequence.** Three surfaces now consume `palace.json` (Yūsuf Ascent, the Visionary
+Gallery's comparison, this). The file has earned its keep as a data layer. The Weight of
+Brackets — the folio's parts as an Abjad Tower block set — is the cheapest next design,
+because the engine, settle detection and scoring already exist.
