@@ -31,6 +31,7 @@ in the repo, scenes reveal the real world.
 | The ending system: fate matrix, marginalia, Attested Life, tuning history | [docs/ENDINGS.md](docs/ENDINGS.md) |
 | Why a decision was made | [docs/DECISIONS.md](docs/DECISIONS.md), then DESIGN_CONVERSATION.md by section |
 | Research facts | [../docs/BIOGRAPHY.md](../docs/BIOGRAPHY.md) + [../site/data/timeline.json](../site/data/timeline.json) (canonical), portal corpus for depth |
+| MK historiography, design readings, the memory system | [../grimoire/INDEX.md](../grimoire/INDEX.md) — themes + NARRATIVEDESIGNER readings; add pages as you work (conventions: ../grimoire/GRIMOIRE.md) |
 
 ## Ground rules specific to this subproject
 

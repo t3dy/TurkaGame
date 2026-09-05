@@ -38,6 +38,18 @@ What existed at project init:
   [docs/GAME_CAREER_SIM.md](docs/GAME_CAREER_SIM.md)).
 - A placeholder showcase page ([site/index.html](site/index.html)).
 
+## The grimoire — the project's memory system (added 2026-09-02)
+
+[`grimoire/`](grimoire/GRIMOIRE.md) is the standing memory: a karpathy wiki + a
+grimoire + a game design bible in one. **Sessions doing design or research work here
+are expected to keep it growing** — research findings become `grimoire/themes/`
+pages, design readings become `grimoire/readings/NARRATIVEDESIGNERREADSXXX.md` in the
+persona of [`grimoire/NARRATIVEDESIGNER.md`](grimoire/NARRATIVEDESIGNER.md), every
+page gets an INDEX line and a LOG entry, and honesty labels (what was actually read
+vs. ⚠ general knowledge) are mandatory. Load `grimoire/INDEX.md` before design work;
+never leave a finding only in chat. Full conventions in
+[`grimoire/GRIMOIRE.md`](grimoire/GRIMOIRE.md).
+
 ## Broader research: IslamicateOccultPortal
 
 `../IslamicateOccultPortal/` (sibling project, added 2026-08-30) is the broader
