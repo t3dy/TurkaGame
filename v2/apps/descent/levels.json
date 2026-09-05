@@ -1,0 +1,56 @@
+{
+  "_note": "Floors for The Descent. FOUND BY SEARCH, not sketched: design_search.mjs enumerated piers, hands and target sets and kept only floors that are fair under all four historical rulesets and on which every pair of rulesets has a different set of winning placements. All four here also have NO universal placement -- no structure stands under all four metaphysics -- so on each of them you have to know where you are. One geometry, four hands: the world is the same; only the metaphysics is hidden. verify_run.mjs is the gate and re-checks every floor and twenty-five dealt runs.",
+  "how_it_works": {
+    "write": "Compose a word from the hand, then click the cell its first letter goes in; the word runs westward. A word is legal when every cell is empty and at least one cell touches something already built. The bare ground is never enough.",
+    "stand": "Let gravity in, once. A mark is held when a letter sits on it after everything settles. Hold every mark and you descend.",
+    "the low mark": "The mark on the ground two cells out touches nothing, so nothing can be written on it. A letter reaches it by FALLING there, or by a chain along the ground from the pier's foot -- and which of those is open to you depends on whose rules run here.",
+    "hide": "Below the surface the ruleset is not shown. What it refuses is shown the moment it is refused."
+  },
+  "run": { "lives": 3, "candles": 3 },
+  "floors": [
+    {
+      "id": "the-wanted-fall",
+      "name": "The Wanted Fall",
+      "arabic": "السقوط المراد",
+      "brief": "A mark on the pier, and a mark on the bare ground two cells out that nothing can be written on. Something has to get there.",
+      "teaches": "A letter that joins nothing after it, written at the outboard end, falls -- and here that is the point. Where the word will not break, the ground has to be reached another way.",
+      "cells": [{ "x": 0, "y": 0 }, { "x": 0, "y": 1 }],
+      "targets": [[0, 2], [2, 0]],
+      "hand": ["ر", "ا", "ل"],
+      "found": { "template": "pier2", "minDistinct": 0.40, "universals": 0, "solutions": { "intellectual": 10, "sufi": 6, "gnostic-messianic": 12, "ottoman-operative": 2 } }
+    },
+    {
+      "id": "the-same-world",
+      "name": "The Same World",
+      "arabic": "العالم نفسه",
+      "brief": "The same pier, the same two marks. A different hand. Whose rules run here is the only thing that changed.",
+      "teaches": "Mīm joins what follows; rāʾ does not; alif holds a column -- except where it does not. Three letters, and the answer is decided by which of those facts this floor honours.",
+      "cells": [{ "x": 0, "y": 0 }, { "x": 0, "y": 1 }],
+      "targets": [[0, 2], [2, 0]],
+      "hand": ["م", "ر", "ا"],
+      "found": { "template": "pier2", "minDistinct": 0.33, "universals": 0, "solutions": { "intellectual": 12, "sufi": 8, "gnostic-messianic": 12, "ottoman-operative": 3 } }
+    },
+    {
+      "id": "the-two-breakers",
+      "name": "The Two Breakers",
+      "arabic": "الحرفان المنفصلان",
+      "brief": "Two rāʾs and an alif. Nothing in this hand joins what follows.",
+      "teaches": "With no connecting letter at all, a word cannot carry anything -- unless the floor refuses to let it break. And there is exactly one way to do this as a single word.",
+      "cells": [{ "x": 0, "y": 0 }, { "x": 0, "y": 1 }],
+      "targets": [[0, 2], [2, 0]],
+      "hand": ["ر", "ر", "ا"],
+      "found": { "template": "pier2", "minDistinct": 0.33, "universals": 0, "solutions": { "intellectual": 7, "sufi": 4, "gnostic-messianic": 6, "ottoman-operative": 1 } }
+    },
+    {
+      "id": "the-dal",
+      "name": "The Dāl",
+      "arabic": "الدال",
+      "brief": "Rāʾ, alif, dāl: two letters that never join forward, and one that holds a frame. Or does not.",
+      "teaches": "Dāl and rāʾ break a word the same way; the alif is the letter whose meaning changes most between floors. Watch what it does before you lean on it.",
+      "cells": [{ "x": 0, "y": 0 }, { "x": 0, "y": 1 }],
+      "targets": [[0, 2], [2, 0]],
+      "hand": ["ر", "ا", "د"],
+      "found": { "template": "pier2", "minDistinct": 0.33, "universals": 0, "solutions": { "intellectual": 14, "sufi": 8, "gnostic-messianic": 12, "ottoman-operative": 4 } }
+    }
+  ]
+}

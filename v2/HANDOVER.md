@@ -48,6 +48,7 @@ rule **evidence is always shown, the rule is earned**.
 | **The Standing Word** (stacker) | `apps/standing-word/` | `verify_levels.mjs` + `__standing.selfTest()` |
 | **The Unmaking** (3 demolition routes) | `apps/unmaking/` | `__unmaking.matrix()` |
 | **The Reckoner** (4 recovered mechanics) | `apps/reckoner/` | `verify_levels.mjs` + `__reckoner.selfTest()` |
+| **The Descent** (roguelike: the metaphysics varies) | `apps/descent/` | `verify_run.mjs` + `tests/descent.test.mjs` + `__descent.selfTest(seed)` |
 | Operations on standing structures | `engine/operations.js` | `node v2/tests/engine.test.mjs` |
 
 **Run every check:**
@@ -58,6 +59,9 @@ node v2/tests/engine.test.mjs
 node v2/apps/pushing-floor/verify_levels.mjs
 node v2/apps/standing-word/verify_levels.mjs
 node v2/apps/reckoner/verify_levels.mjs
+node v2/apps/descent/verify_run.mjs
+node v2/tests/descent.test.mjs
+node v2/tests/glyphs.test.mjs
 python tools/check_repo_rules.py
 ```
 
@@ -103,6 +107,7 @@ asks a second question suited to what it is about:
 | Reckoner `reckon` | A winner exists, and only a small share of the range wins |
 | Reckoner `assay` | Do the probes **distinguish** the hidden ruleset from all the others? |
 | Reckoner `station` | At least one direction reads the target, and not all of them do |
+| Descent | **Fair under every metaphysics, and trapping**: for every ordered pair of rulesets a solution carried from one fails under the other. Floors are *searched for*, not sketched (`design_search.mjs`), and the gate **prints** how many universal placements remain rather than hiding them. |
 | Any, optional | If it claims a choice matters, **does a wrong choice exist**? |
 
 ## Verifying against the live site

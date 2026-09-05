@@ -226,10 +226,13 @@ v2/
 │                               shoving is not enough. Levels checked three ways.
 ├── apps/standing-word/       the stacker: build with gravity off, then let it in
 ├── apps/unmaking/            three candidate demolition routes, measured side by side
+├── apps/reckoner/            extract · reckon · assay · station, each checked its own way
+├── apps/descent/             the roguelike: five floors, the metaphysics dealt and hidden
 ├── engine/unmaking.js        those three routes, as pure functions
 ├── index.html                the hub: every prototype in one place
 ├── tests/engine.test.mjs     52 tests
-└── tests/glyphs.test.mjs     8 tests: every sign draws, stays in bounds, scales
+├── tests/glyphs.test.mjs     8 tests: every sign draws, stays in bounds, scales
+└── tests/descent.test.mjs    8 tests: legal writes, standing, the solver, the deal
 ```
 
 ## Provenance, and how it is shown
@@ -325,6 +328,25 @@ strongest attack and the builder's counter is the letter that holds. The sourced
 route and the invented one both reach 3 of 4, but only the sourced one *rewards
 aiming* (3, 2, 1, 1 depending where you cut), which is a difference in kind that the
 totals hide. **The choice between them is Ted's and has not been made.**
+
+### The Descent — the roguelike, where what varies is the metaphysics
+
+[`apps/descent/`](apps/descent/README.md) is the shell `APPLICATIONS.md` said was
+missing. A run is five floors: the Workshop, named openly, then the four
+historical lettrisms dealt in a seeded order and **never named**. Each floor is a
+building task on the Standing Word's rules; the ruleset changes what stands, and
+every telling refusal is written into an evidence list as it happens. Name the
+metaphysics for a candle, spend candles on the Reckoner's probes, lose a life to a
+collapse and keep the evidence.
+
+**The floors were searched for, not sketched.** Every level I drew by hand had a
+placement that won everywhere, because Sufi lettrism joins everything and so wins
+wherever the intellectual does. `design_search.mjs` enumerates small piers, hands
+and target sets and computes the full winning-placement set under each ruleset;
+`verify_run.mjs` keeps a floor only if it is **fair** (solvable under all four)
+and **trapping** (for every ordered pair, a solution carried from one fails under
+the other), and *prints* how many universal placements remain — the honest measure
+of how much the floor needs you to know where you are.
 
 ## Known gaps — this is a first slice
 

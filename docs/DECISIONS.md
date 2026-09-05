@@ -1420,3 +1420,33 @@ of the page). Both redrawn. Half the artwork brief is still open: the public-dom
 *grounds* these signs belong on are not fetched, and would go through
 `imagelab/scripts/fetch_commons.py`'s rights gate.
 
+## 2026-09-04 — The Descent: the roguelike's floors are searched for, not sketched
+
+**Decision.** The roguelike shell (`v2/apps/descent/`) makes **the metaphysics** the
+thing that varies between runs: five floors, the Workshop named and then the four
+historical lettrisms dealt by seed and hidden. And its floors are **found by
+search** (`design_search.mjs`) and **gated on the property the game claims**
+(`verify_run.mjs`): fair under every ruleset, and *trapping* — for every ordered
+pair of rulesets, some solution that wins under one loses under the other.
+
+**Rationale.** APPLICATIONS.md's finding was that the Assay is the spine the
+roguelike lacked; this is that finding built. The search is not a flourish: every
+floor I sketched by hand had a placement that won under all four metaphysics,
+because Sufi lettrism joins everything and so wins wherever the intellectual does.
+"Check with a solver before a person" was not strong enough here — the check has to
+be run *over the design space*, not just over the design.
+
+**Rejected.** (1) Requiring *no universal placement at all* as a hard gate. With
+three-letter hands the search found none that also stayed fair, so the gate
+*prints* the universal count per floor instead of pretending. (2) Using the Occult
+Quintet (kīmiyā … rīmiyā) as the floor sequence: those are sciences, this build
+varies metaphysics; the two are compatible and the quintet is left for the roguelike
+proper. (3) Random stats as run variance — the usual roguelike answer and the wrong
+one for this project.
+
+**Consequence.** The Standing Word's rules gain one clause for the Descent —
+*nothing is written on bare ground* — so a fall can be a wanted outcome, and the
+Reckoner's five probes are reused as data (fetched from its `levels.json`), not
+copied. The seeded deal is replayable (`?seed=N`), and `__descent.selfTest(seed)`
+plays a whole run through the real input path using the gate's own solver.
+

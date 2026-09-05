@@ -218,6 +218,15 @@ missing** — floors and courts that each run a different, unnamed metaphysics, 
 portal's own `ottoman-asymmetry` finding ("the variable is the polity, not the doctrine")
 turned into a mechanic.
 
+[`v2/apps/descent/`](v2/apps/descent/README.md) builds that spine: **the roguelike
+where what varies between runs is the metaphysics.** Five floors — the Workshop
+named, then the four historical lettrisms dealt by seed and hidden — each a
+building task whose answer depends on whose rules run there. House rule it adds:
+**when a level's property is "the answer depends on X", search for the level and
+gate it on that property** (`design_search.mjs` → `levels.json` → `verify_run.mjs`:
+fair under every ruleset, trapping for every ordered pair, universal placements
+*printed*, not hidden). Hand-sketched floors all had a universal answer.
+
 [`v2/index.html`](v2/index.html) is the hub — every prototype, v1 and v2, in one place.
 
 **The engine is alphabet-agnostic, and that was tested.** `../GoldenDawnBlocks/` vendors
