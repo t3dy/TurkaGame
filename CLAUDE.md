@@ -251,6 +251,17 @@ gate it on that property** (`design_search.mjs` → `levels.json` → `verify_ru
 fair under every ruleset, trapping for every ordered pair, universal placements
 *printed*, not hidden). Hand-sketched floors all had a universal answer.
 
+[`v2/apps/introduction/`](v2/apps/introduction/README.md) is **the front door**: the
+guided course Ted asked for — a history lesson with the period diagrams
+reconstructed from the texts (the real folios wait on a rights-checked fetch,
+`FETCHLIST.md`), then a sage who walks and writes: the eight Arabic powers one per
+lesson, the Hebrew letters as bricks with the *Sefer Yetsirah*'s division on them
+(`data/build_hebrew.py` → `data/hebrew.json`, finals as SEVER, stated as ours), a
+floor whose metaphysics changes what the same letters do, and a golem built and
+unmade with `reader.js` and `extract`. House rule it adds: **every lesson carries a
+scripted solution and `tests/introduction.test.mjs` proves it finishes the task**,
+so no lesson can strand the player.
+
 [`v2/POWERSOFTHELETTERS.md`](v2/POWERSOFTHELETTERS.md) is the sourced reference
 for what each Arabic and Hebrew letter was held to do — number, nature, planet,
 mansion, name, faculty — and how each becomes, or could become, a player ability.

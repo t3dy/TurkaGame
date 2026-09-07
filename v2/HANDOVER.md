@@ -49,6 +49,8 @@ rule **evidence is always shown, the rule is earned**.
 | **The Unmaking** (3 demolition routes) | `apps/unmaking/` | `__unmaking.matrix()` |
 | **The Reckoner** (4 recovered mechanics) | `apps/reckoner/` | `verify_levels.mjs` + `__reckoner.selfTest()` |
 | **The Descent** (roguelike: the metaphysics varies) | `apps/descent/` | `verify_run.mjs` + `tests/descent.test.mjs` + `__descent.selfTest(seed)` |
+| **The Introduction** (guided course, the sage, the golem) | `apps/introduction/` | `tests/introduction.test.mjs` (every lesson's solution finishes its task) + `__intro.selfTest()` |
+| Hebrew letter table (22 + 5 finals) | `data/build_hebrew.py` → `data/hebrew.json` | `python v2/data/build_hebrew.py --verify` |
 | Operations on standing structures | `engine/operations.js` | `node v2/tests/engine.test.mjs` |
 
 **Run every check:**
@@ -62,6 +64,8 @@ node v2/apps/reckoner/verify_levels.mjs
 node v2/apps/descent/verify_run.mjs
 node v2/tests/descent.test.mjs
 node v2/tests/glyphs.test.mjs
+node v2/tests/introduction.test.mjs
+python v2/data/build_hebrew.py --verify
 python tools/check_repo_rules.py
 ```
 

@@ -1450,3 +1450,37 @@ Reckoner's five probes are reused as data (fetched from its `levels.json`), not
 copied. The seeded deal is replayable (`?seed=N`), and `__descent.selfTest(seed)`
 plays a whole run through the real input path using the gate's own solver.
 
+## 2026-09-07 — Full instructions, a camera, the powers sourced, and the Introduction
+
+**Decision.** Four things, from one instruction of Ted's ("the controls are really
+opaque… I want full instructions… camera… cursor… previews… POWERSOFTHELETTERS.md…
+an Introduction mode"). (1) A house rule in `CLAUDE.md`: instructions to the player
+err on the side of too much; every prototype carries a How-to-play panel
+(`v2/apps/shared/howto.js`). (2) A camera in the shared renderer (quarter turns,
+zoom, pan, a compass) and hover previews that perform the pending write on a copy.
+(3) `v2/POWERSOFTHELETTERS.md`, the traditions' attributions for every Arabic and
+Hebrew letter beside the engine's derived primitives, every claim labelled. (4)
+`v2/apps/introduction/`, a sixteen-lesson course with a sage, ending in a golem.
+
+**Rationale.** The games were verified by solvers and self-tests, which proved they
+worked and said nothing about whether a person could tell what to do. Ted could
+not. The panel text is the long version on purpose; he will cut it.
+
+**Rejected.** (a) Fetching the period images now — the Introduction wants the SY
+wheels, al-Būnī's tables, Ibn Turka's autograph — because every image needs a
+provenance record and the fetch is a download; the candidates are listed in
+`FETCHLIST.md` and the lessons show labelled reconstructions drawn from the texts
+until then. (b) Giving the Hebrew letters powers as blocks: nothing in the held
+sources derives them from form the way the Arabic ones are; the table carries the
+SY's division as evidence and adds only that final forms SEVER, stated as ours.
+(c) Changing POUR to stop at the ground: the Introduction's RAISE lesson found
+that nūn also pours and poured its block to y = −1, but an engine test deliberately
+models a world below the floor, so the lesson uses tāʾ instead and the ground
+question is left as an open engine decision.
+
+**Consequence.** Every lesson has a scripted solution and a test that runs it
+through the same rules module the page uses; the browser self-test walks all
+sixteen. The one recursion bug in the camera (a getter reading itself after a
+mechanical rename) was caught by the page failing to load, and is why the console
+is checked after every change.
+

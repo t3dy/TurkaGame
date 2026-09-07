@@ -1,0 +1,1001 @@
+{
+ "_note": "The Hebrew letters as an engine letter table: 22 letters and their five final forms. EVIDENCE carried from ../GoldenDawnBlocks/data/letters.json (the Sefer Yetsirah's 3/7/12 division, the mothers' elements, the doubles' two aspects, the simples' faculties, gematria). ADDED here, and ours: every ordinary letter joins forward (a written word is one body), and the five final forms SEVER (a body ends where a final form stands -- Hebrew's visible word-end; GoldenDawnBlocks calls it SEAL). No other primitive is given to a Hebrew letter: what these letters do as blocks is not yet derived.",
+ "sources": [
+  {
+   "kind": "CORPUS",
+   "cite": "Marla Segol, Word and Image in Medieval Kabbalah (Palgrave Macmillan, 2012), translating a Sefer Yetsirah diagram manuscript, ff. 17b–18a",
+   "supports": "The list of the twelve simples and their faculties; that each of the seven doubles has two aspects; and that a simple letter can do 'neither cure nor harm on its own' but acts when letters gather together."
+  },
+  {
+   "kind": "SOURCE",
+   "cite": "Sefer Yetsirah, the 3/7/12 division and the mothers' elements",
+   "supports": "That the alphabet divides into three mothers, seven doubles and twelve simples, and that Aleph, Mem and Shin are given air, water and fire."
+  }
+ ],
+ "divisions": {
+  "three_seven_twelve": "The Sefer Yetsirah's own division of the alphabet: three mothers, seven doubles, twelve simples. 3+7+12=22 exactly, which is arithmetic rather than assertion.",
+  "finals": "The five letters that take a different form at the end of a word. Plain orthography.",
+  "gematria": "1..400 across the 22; the finals extend the series to 900 in some usages."
+ },
+ "interpretation": {
+  "connects_forward": "INTERPRETATION: Hebrew script does not join on the page; the bodies here follow the SY's \"combined one with another\", not the ductus.",
+  "finals_sever": "INTERPRETATION: the final form is the word-end made visible, so it ends a body. Derived from the page, like the Arabic non-connecting letters; the mapping to SEVER is ours."
+ },
+ "letters": [
+  {
+   "glyph": "א",
+   "name": "Aleph",
+   "translit": "ʾ",
+   "abjad": 1,
+   "value": 1,
+   "class": "mother",
+   "kind": "mother",
+   "sy": {
+    "element": "air",
+    "aspects": null,
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": true,
+    "double": false,
+    "simple": false,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Aleph",
+    "spoken": "ʾ",
+    "written": "א"
+   },
+   "primitives": [],
+   "note": "Aleph, gematria 1, a mother letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ב",
+   "name": "Beth",
+   "translit": "b",
+   "abjad": 2,
+   "value": 2,
+   "class": "double",
+   "kind": "double",
+   "sy": {
+    "element": null,
+    "aspects": [
+     "wisdom",
+     "folly"
+    ],
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": true,
+    "simple": false,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Beth",
+    "spoken": "b",
+    "written": "ב"
+   },
+   "primitives": [],
+   "note": "Beth, gematria 2, a double letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ג",
+   "name": "Gimel",
+   "translit": "g",
+   "abjad": 3,
+   "value": 3,
+   "class": "double",
+   "kind": "double",
+   "sy": {
+    "element": null,
+    "aspects": [
+     "wealth",
+     "poverty"
+    ],
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": true,
+    "simple": false,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Gimel",
+    "spoken": "g",
+    "written": "ג"
+   },
+   "primitives": [],
+   "note": "Gimel, gematria 3, a double letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ד",
+   "name": "Daleth",
+   "translit": "d",
+   "abjad": 4,
+   "value": 4,
+   "class": "double",
+   "kind": "double",
+   "sy": {
+    "element": null,
+    "aspects": [
+     "fertility",
+     "desolation"
+    ],
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": true,
+    "simple": false,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Daleth",
+    "spoken": "d",
+    "written": "ד"
+   },
+   "primitives": [],
+   "note": "Daleth, gematria 4, a double letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ה",
+   "name": "Heh",
+   "translit": "h",
+   "abjad": 5,
+   "value": 5,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "seeing",
+    "simple_index": 0
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Heh",
+    "spoken": "h",
+    "written": "ה"
+   },
+   "primitives": [],
+   "note": "Heh, gematria 5, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ו",
+   "name": "Vav",
+   "translit": "v",
+   "abjad": 6,
+   "value": 6,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "hearing",
+    "simple_index": 1
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Vav",
+    "spoken": "v",
+    "written": "ו"
+   },
+   "primitives": [],
+   "note": "Vav, gematria 6, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ז",
+   "name": "Zayin",
+   "translit": "z",
+   "abjad": 7,
+   "value": 7,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "smelling",
+    "simple_index": 2
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Zayin",
+    "spoken": "z",
+    "written": "ז"
+   },
+   "primitives": [],
+   "note": "Zayin, gematria 7, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ח",
+   "name": "Cheth",
+   "translit": "ḥ",
+   "abjad": 8,
+   "value": 8,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "talking",
+    "simple_index": 3
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Cheth",
+    "spoken": "ḥ",
+    "written": "ח"
+   },
+   "primitives": [],
+   "note": "Cheth, gematria 8, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ט",
+   "name": "Teth",
+   "translit": "ṭ",
+   "abjad": 9,
+   "value": 9,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "eating",
+    "simple_index": 4
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Teth",
+    "spoken": "ṭ",
+    "written": "ט"
+   },
+   "primitives": [],
+   "note": "Teth, gematria 9, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "י",
+   "name": "Yod",
+   "translit": "y",
+   "abjad": 10,
+   "value": 10,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "coition",
+    "simple_index": 5
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Yod",
+    "spoken": "y",
+    "written": "י"
+   },
+   "primitives": [],
+   "note": "Yod, gematria 10, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "כ",
+   "name": "Kaph",
+   "translit": "k",
+   "abjad": 20,
+   "value": 20,
+   "class": "double",
+   "kind": "double",
+   "sy": {
+    "element": null,
+    "aspects": [
+     "life",
+     "death"
+    ],
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": true,
+    "simple": false,
+    "final": false,
+    "has_final": true,
+    "final_form": "ך"
+   },
+   "registers": {
+    "mental": "Kaph",
+    "spoken": "k",
+    "written": "כ"
+   },
+   "primitives": [],
+   "note": "Kaph, gematria 20, a double letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ך",
+   "name": "Kaph (final)",
+   "translit": "k",
+   "abjad": 20,
+   "value": 20,
+   "class": "double",
+   "kind": "double",
+   "sy": {
+    "element": null,
+    "aspects": [
+     "life",
+     "death"
+    ],
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": false,
+    "final_of": "כ"
+   },
+   "facts": {
+    "mother": false,
+    "double": true,
+    "simple": false,
+    "final": true,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Kaph",
+    "spoken": "k",
+    "written": "ך"
+   },
+   "primitives": [
+    {
+     "op": "SEVER",
+     "n": true,
+     "from": "a final form: the letter that ends a word on the page"
+    }
+   ],
+   "note": "The final form of Kaph: written at the end of a word, and only there. A body of letters ends where it stands."
+  },
+  {
+   "glyph": "ל",
+   "name": "Lamed",
+   "translit": "l",
+   "abjad": 30,
+   "value": 30,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "action",
+    "simple_index": 6
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Lamed",
+    "spoken": "l",
+    "written": "ל"
+   },
+   "primitives": [],
+   "note": "Lamed, gematria 30, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "מ",
+   "name": "Mem",
+   "translit": "m",
+   "abjad": 40,
+   "value": 40,
+   "class": "mother",
+   "kind": "mother",
+   "sy": {
+    "element": "water",
+    "aspects": null,
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": true,
+    "double": false,
+    "simple": false,
+    "final": false,
+    "has_final": true,
+    "final_form": "ם"
+   },
+   "registers": {
+    "mental": "Mem",
+    "spoken": "m",
+    "written": "מ"
+   },
+   "primitives": [],
+   "note": "Mem, gematria 40, a mother letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ם",
+   "name": "Mem (final)",
+   "translit": "m",
+   "abjad": 40,
+   "value": 40,
+   "class": "mother",
+   "kind": "mother",
+   "sy": {
+    "element": "water",
+    "aspects": null,
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": false,
+    "final_of": "מ"
+   },
+   "facts": {
+    "mother": true,
+    "double": false,
+    "simple": false,
+    "final": true,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Mem",
+    "spoken": "m",
+    "written": "ם"
+   },
+   "primitives": [
+    {
+     "op": "SEVER",
+     "n": true,
+     "from": "a final form: the letter that ends a word on the page"
+    }
+   ],
+   "note": "The final form of Mem: written at the end of a word, and only there. A body of letters ends where it stands."
+  },
+  {
+   "glyph": "נ",
+   "name": "Nun",
+   "translit": "n",
+   "abjad": 50,
+   "value": 50,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "walking",
+    "simple_index": 7
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": true,
+    "final_form": "ן"
+   },
+   "registers": {
+    "mental": "Nun",
+    "spoken": "n",
+    "written": "נ"
+   },
+   "primitives": [],
+   "note": "Nun, gematria 50, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ן",
+   "name": "Nun (final)",
+   "translit": "n",
+   "abjad": 50,
+   "value": 50,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "walking",
+    "simple_index": 7
+   },
+   "grammar": {
+    "connects_forward": false,
+    "final_of": "נ"
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": true,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Nun",
+    "spoken": "n",
+    "written": "ן"
+   },
+   "primitives": [
+    {
+     "op": "SEVER",
+     "n": true,
+     "from": "a final form: the letter that ends a word on the page"
+    }
+   ],
+   "note": "The final form of Nun: written at the end of a word, and only there. A body of letters ends where it stands."
+  },
+  {
+   "glyph": "ס",
+   "name": "Samekh",
+   "translit": "s",
+   "abjad": 60,
+   "value": 60,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "anger",
+    "simple_index": 8
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Samekh",
+    "spoken": "s",
+    "written": "ס"
+   },
+   "primitives": [],
+   "note": "Samekh, gematria 60, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ע",
+   "name": "Ayin",
+   "translit": "ʿ",
+   "abjad": 70,
+   "value": 70,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "laughter",
+    "simple_index": 9
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Ayin",
+    "spoken": "ʿ",
+    "written": "ע"
+   },
+   "primitives": [],
+   "note": "Ayin, gematria 70, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "פ",
+   "name": "Peh",
+   "translit": "p",
+   "abjad": 80,
+   "value": 80,
+   "class": "double",
+   "kind": "double",
+   "sy": {
+    "element": null,
+    "aspects": [
+     "dominion",
+     "slavery"
+    ],
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": true,
+    "simple": false,
+    "final": false,
+    "has_final": true,
+    "final_form": "ף"
+   },
+   "registers": {
+    "mental": "Peh",
+    "spoken": "p",
+    "written": "פ"
+   },
+   "primitives": [],
+   "note": "Peh, gematria 80, a double letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ף",
+   "name": "Peh (final)",
+   "translit": "p",
+   "abjad": 80,
+   "value": 80,
+   "class": "double",
+   "kind": "double",
+   "sy": {
+    "element": null,
+    "aspects": [
+     "dominion",
+     "slavery"
+    ],
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": false,
+    "final_of": "פ"
+   },
+   "facts": {
+    "mother": false,
+    "double": true,
+    "simple": false,
+    "final": true,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Peh",
+    "spoken": "p",
+    "written": "ף"
+   },
+   "primitives": [
+    {
+     "op": "SEVER",
+     "n": true,
+     "from": "a final form: the letter that ends a word on the page"
+    }
+   ],
+   "note": "The final form of Peh: written at the end of a word, and only there. A body of letters ends where it stands."
+  },
+  {
+   "glyph": "צ",
+   "name": "Tzaddi",
+   "translit": "ṣ",
+   "abjad": 90,
+   "value": 90,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "thought",
+    "simple_index": 10
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": true,
+    "final_form": "ץ"
+   },
+   "registers": {
+    "mental": "Tzaddi",
+    "spoken": "ṣ",
+    "written": "צ"
+   },
+   "primitives": [],
+   "note": "Tzaddi, gematria 90, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ץ",
+   "name": "Tzaddi (final)",
+   "translit": "ṣ",
+   "abjad": 90,
+   "value": 90,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "thought",
+    "simple_index": 10
+   },
+   "grammar": {
+    "connects_forward": false,
+    "final_of": "צ"
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": true,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Tzaddi",
+    "spoken": "ṣ",
+    "written": "ץ"
+   },
+   "primitives": [
+    {
+     "op": "SEVER",
+     "n": true,
+     "from": "a final form: the letter that ends a word on the page"
+    }
+   ],
+   "note": "The final form of Tzaddi: written at the end of a word, and only there. A body of letters ends where it stands."
+  },
+  {
+   "glyph": "ק",
+   "name": "Qoph",
+   "translit": "q",
+   "abjad": 100,
+   "value": 100,
+   "class": "simple",
+   "kind": "simple",
+   "sy": {
+    "element": null,
+    "aspects": null,
+    "faculty": "sleep",
+    "simple_index": 11
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": false,
+    "simple": true,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Qoph",
+    "spoken": "q",
+    "written": "ק"
+   },
+   "primitives": [],
+   "note": "Qoph, gematria 100, a simple letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ר",
+   "name": "Resh",
+   "translit": "r",
+   "abjad": 200,
+   "value": 200,
+   "class": "double",
+   "kind": "double",
+   "sy": {
+    "element": null,
+    "aspects": [
+     "peace",
+     "war"
+    ],
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": true,
+    "simple": false,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Resh",
+    "spoken": "r",
+    "written": "ר"
+   },
+   "primitives": [],
+   "note": "Resh, gematria 200, a double letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ש",
+   "name": "Shin",
+   "translit": "š",
+   "abjad": 300,
+   "value": 300,
+   "class": "mother",
+   "kind": "mother",
+   "sy": {
+    "element": "fire",
+    "aspects": null,
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": true,
+    "double": false,
+    "simple": false,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Shin",
+    "spoken": "š",
+    "written": "ש"
+   },
+   "primitives": [],
+   "note": "Shin, gematria 300, a mother letter of the Sefer Yetsirah."
+  },
+  {
+   "glyph": "ת",
+   "name": "Tav",
+   "translit": "t",
+   "abjad": 400,
+   "value": 400,
+   "class": "double",
+   "kind": "double",
+   "sy": {
+    "element": null,
+    "aspects": [
+     "grace",
+     "ugliness"
+    ],
+    "faculty": null,
+    "simple_index": null
+   },
+   "grammar": {
+    "connects_forward": true,
+    "final_of": null
+   },
+   "facts": {
+    "mother": false,
+    "double": true,
+    "simple": false,
+    "final": false,
+    "has_final": false,
+    "final_form": null
+   },
+   "registers": {
+    "mental": "Tav",
+    "spoken": "t",
+    "written": "ת"
+   },
+   "primitives": [],
+   "note": "Tav, gematria 400, a double letter of the Sefer Yetsirah."
+  }
+ ]
+}

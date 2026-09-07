@@ -348,6 +348,16 @@ and **trapping** (for every ordered pair, a solution carried from one fails unde
 the other), and *prints* how many universal placements remain — the honest measure
 of how much the floor needs you to know where you are.
 
+### The Introduction — the front door
+
+[`apps/introduction/`](apps/introduction/README.md) is where a new player starts:
+sixteen lessons that teach the history (the *Sefer Yetsirah*, the Brethren of
+Purity, al-Būnī, Ibn Turka, the Ḥurūfīs, Ottoman jafr) with the period diagrams
+reconstructed live from the texts, and then hand over a sage who walks and writes.
+One lesson per power, the Hebrew letters as bricks, a Sufi floor where the same two
+letters refuse to break, and a golem built and unmade. Every lesson has a scripted
+solution and a test proves it finishes the task.
+
 ### The powers of the letters, sourced
 
 [`POWERSOFTHELETTERS.md`](POWERSOFTHELETTERS.md) lays the traditions' attributions

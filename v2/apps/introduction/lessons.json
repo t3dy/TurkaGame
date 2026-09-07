@@ -1,0 +1,1029 @@
+{
+  "_note": "The lessons of the Introduction to Lettrism Reality Building with Blocks. Each lesson: text (full sentences, with the sources named where the player is reading), an optional reconstructed diagram, a starting world, a palette of letters, a TASK that must be satisfied before Next unlocks, and a SOLUTION script that tests/introduction.test.mjs runs to prove the task can be done. Sources are those of POWERSOFTHELETTERS.md; the labels are the project's honesty labels.",
+  "lessons": [
+    {
+      "id": "the-material",
+      "title": "The alphabet is the material",
+      "figure": "abjadLadder",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "Welcome. This is a building game, and its bricks are letters. Before you build anything, here is the claim the whole thing rests on, and where it comes from.",
+        "Two traditions, one from Hebrew and one from Arabic, say that creation is <b>linguistic</b>: the world was made by combining letters, and a person who learns how the letters combine can do a little of the same. The Hebrew one is the <i>Sefer Yetsirah</i>, the Book of Formation, a short text of six chapters in which God carves out ten <i>sefirot</i> and twenty-two letters and combines the letters to make the universe, the year, and the soul; most versions end with Abraham, who \"looked, saw, understood, probed, engraved and carved\" and \"was successful in creation\" (CORPUS: Segol, <i>Word and Image in Medieval Kabbalah</i>, 2012, pp. 22–23). The Arabic one is <i>ʿilm al-ḥurūf</i>, the science of letters, in which the twenty-eight letters are \"the building blocks of manifest reality\" and \"all created things are composed of these corporeal, elemental letters\" (CORPUS: Gardiner, <i>Stars and Saints</i>, 2017, p. 57, reporting al-Būnī's <i>Laṭāʾif al-ishārāt</i>). Ibn Turka of Isfahan, whose life the rest of this project is about, made that science into a whole philosophy: the alphabet as the source code of the cosmos, so that working with letters is at once mathematics, physics and worship (CORPUS: Melvin-Koushki, <i>Prologue to Pythagorean Renaissance</i>).",
+        "In this game those claims are taken literally. A block is a letter. A wall is a word. What a letter can do to the world is derived from what you can see in its written shape, and the traditions' own attributions — its number, its nature, its planet, its lunar mansion — are laid on top. Everything you will be told here is labelled by how well we know it: SOURCE for a primary text, CORPUS for scholarship we have read, INTERPRETATION for our own reading, and a warning sign for anything we have not checked.",
+        "You play a <b>sage</b>: the small figure outlined in red on the board. Walk with the arrow keys or W A S D. Your first task is only to walk: reach the mark on the floor."
+      ],
+      "sources": [
+        "Segol 2012, pp. 22–23",
+        "Gardiner 2017, p. 57",
+        "Melvin-Koushki, Prologue; grimoire/themes/LETTRISM.md"
+      ],
+      "palette": [],
+      "world": {
+        "gravity": true,
+        "sage": [
+          0,
+          0,
+          0
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "walk-to",
+        "at": [
+          3,
+          0
+        ],
+        "say": "Walk the sage to the mark three cells to the east (press the right arrow or D three times)."
+      },
+      "solution": [
+        {
+          "walk": "east"
+        },
+        {
+          "walk": "east"
+        },
+        {
+          "walk": "east"
+        }
+      ]
+    },
+    {
+      "id": "letters-are-numbers",
+      "title": "Letters are numbers",
+      "figure": "abjadLadder",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "Every Arabic letter has a number: alif is 1, bāʾ 2, jīm 3, on up through 10, 20, 30, 100, 200, to ghayn at 1000. This is the <b>abjad</b> order, the old order of the alphabet, and it is not decoration: in lettrism, calculation on a word is calculation on the world. Melvin-Koushki's translation shows Ibn Turka's own examples: <i>ṣawāb</i> (truth) sums to 99, the number of the divine names; <i>ʿaṭā</i> (gift) sums to 80, the same as <i>aʿdād</i> (numbers); and the name ʿAlī sums to 110, the same as the letter-name <i>alif</i> written out (CORPUS: <i>Prologue</i>; see grimoire/themes/GEMATRIA.md). The Hebrew twin of this is <b>gematria</b>, and the two are, in Melvin-Koushki's phrase, pan-Mediterranean twin sisters of one late-ancient descent.",
+        "The figure shows the twenty-eight values as a staircase, on a logarithmic scale because the raw series climbs from 1 to 1000. Green bars are the fourteen <i>luminous</i> letters and red bars the fourteen <i>dark</i> ones — a second division we will come to.",
+        "In this game the number is the letter's <b>mass</b>. When you write a letter it becomes a block, and the block carries its value; in the Abjad Tower and the Reckoner, the value is what falls and what adds up. Here, just write. Pick any letter from the palette on the right by clicking it, then click an empty cell next to the sage. The cell under your mouse is outlined and labelled \"cursor\", and the box in the corner of the board tells you whether you can write there. Write three letters and look at the numbers on them."
+      ],
+      "sources": [
+        "Melvin-Koushki, Prologue (ṣawāb = 99, ʿaṭā = 80, ʿAlī = 110)",
+        "grimoire/themes/GEMATRIA.md"
+      ],
+      "palette": "arabic-all",
+      "world": {
+        "gravity": true,
+        "sage": [
+          0,
+          0,
+          0
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "write-any",
+        "n": 3,
+        "say": "Write any three letters beside the sage. Their abjad values appear on the blocks."
+      },
+      "solution": [
+        {
+          "write": [
+            "ا",
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ب",
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ج",
+            [
+              0,
+              0,
+              -1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sefer-yetsirah",
+      "title": "The Sefer Yetsirah divides the twenty-two",
+      "figure": "wheel3712",
+      "alphabet": "hebrew",
+      "ruleset": "workshop",
+      "text": [
+        "The <i>Sefer Yetsirah</i> divides the Hebrew alphabet into three groups, and everything the later tradition does with the letters starts from this division. The <b>three mothers</b> are Aleph, Mem and Shin; the text gives them the three elements — air, water and fire — and there is no earth element at all (CORPUS: Segol 2012, p. 23). The <b>seven doubles</b> are Bet, Gimel, Dalet, Kaf, Peh, Resh and Tav, the letters whose sound can be hardened; each is given a pair of opposites — wisdom and folly, wealth and poverty, life and death, peace and war — and one of the seven planets: \"He made Bet rule, and bound it to a crown, and combined one with another and formed with it Saturn in the universe, the Sabbath in the year, and mouth in mankind\" (SOURCE, the text as quoted at Segol p. 41). The <b>twelve simples</b> are the rest; each is given one of twelve human actions — \"sight, hearing, smell, speech, taste, coition, action, motion, anger, laughter, thought, and sleep\" — and one of the twelve constellations and one of the months (Segol p. 41).",
+        "The figure is our reconstruction of that division as three rings, with the labels taken from a diagram manuscript that Marla Segol translates (ff. 17b–18a). Medieval readers drew wheels like this in the margins of the text; Segol's book is a study of those drawings and of what they were for — learning, thinking, and, as we will see at the end, making.",
+        "The Hebrew letters are on your palette now. In this game they are bricks with numbers, and the SY's classes are shown on each brick; what each Hebrew letter <i>does</i> to a block is not yet derived from its shape the way the Arabic letters' powers are, and this game says so rather than invent it. Write the three mothers — א, מ and ש — anywhere beside the sage."
+      ],
+      "sources": [
+        "Segol 2012, pp. 23, 41",
+        "Sefer Yetsirah ch. 1–5",
+        "GoldenDawnBlocks/data/letters.json (the evidence layer)"
+      ],
+      "palette": "hebrew-all",
+      "world": {
+        "gravity": true,
+        "sage": [
+          0,
+          0,
+          0
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "write-glyphs",
+        "glyphs": [
+          "א",
+          "מ",
+          "ש"
+        ],
+        "say": "Write the three mothers: Aleph (air), Mem (water) and Shin (fire)."
+      },
+      "solution": [
+        {
+          "write": [
+            "א",
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "מ",
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ש",
+            [
+              0,
+              0,
+              -1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-231-gates",
+      "title": "Combination: the wheel of 231 gates",
+      "figure": "gates231",
+      "alphabet": "hebrew",
+      "ruleset": "workshop",
+      "text": [
+        "\"Twenty-two letters of foundation, fixed on a wheel with 231 gates. The wheel rotates forward and backward.\" That is the <i>Sefer Yetsirah</i>'s eighteenth paragraph as Segol quotes it (p. 51), and 231 is the number of ways to pair two different letters out of twenty-two. The wheel in the figure draws every one of those pairs as a chord: it is the commentators' picture of <b>letter combination</b> as such, and Shabbetai Donnolo's tenth-century commentary already reads it as an instruction — set your mind to the letters for good or for ill and the wheel answers (Segol pp. 51–52).",
+        "In this game combination is the plainest thing there is: letters written next to each other along the writing line become <b>one body</b>, and a body can be <b>read back</b> as a word. The reading direction is the one the compass on the floor shows — words run westward, right to left, as both alphabets are written. So a letter you write to the east of another is read <i>first</i>.",
+        "Write Aleph and then Bet so that they stand side by side on the writing line, Aleph to the east. The task checks that the world reads \"אב\". Watch the message line: when the second letter joins the first it says so, and that join is the 231-gate wheel doing its work on two blocks."
+      ],
+      "sources": [
+        "Segol 2012, pp. 51–52 (SY §18; Shabbetai Donnolo)"
+      ],
+      "palette": [
+        "א",
+        "ב",
+        "ג",
+        "ד"
+      ],
+      "world": {
+        "gravity": true,
+        "sage": [
+          0,
+          0,
+          1
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "reads",
+        "text": "אב",
+        "say": "Write Aleph, then Bet one cell to the west of it, so the world reads אב."
+      },
+      "solution": [
+        {
+          "write": [
+            "א",
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ב",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "twenty-eight",
+      "title": "Twenty-eight: mansions, body parts, and the dots",
+      "figure": "mansions28",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "The Arabic alphabet has twenty-eight letters, and twenty-eight is a perfect number — the sum of its own divisors. The Brethren of Purity, the tenth-century encyclopaedists of Basra, took that as a sign and tied together the twenty-eight mansions of the Moon, the twenty-eight parts of the human body, and the twenty-eight letters (CORPUS: de Callataÿ, <i>Ikhwan al-Safaʾ</i>, 2005, pp. 24–25). Two centuries later Aḥmad al-Būnī, whose <i>Shams al-maʿārif</i> became the great grimoire of the Islamic world, gave each letter its mansion in abjad order — alif is <i>al-naṭḥ</i>, the first mansion, hot and dry, red, under Mars — and used the pairing to say when each kind of talisman should be made (SOURCE in translation: <i>Shams al-maʿārif</i> fol. 4r, in Varisco, <i>Arabica</i> 64, 2017, pp. 501–502).",
+        "Then al-Būnī says something about the very marks you are looking at: \"fifteen letters have diacritical points and thirteen are without… those without diacritical points being auspicious mansions and those with diacritical points being inauspicious mansions… those with three diacritical points are the most inauspicious, such as the shīn and the thāʾ.\" Our letter table has exactly fifteen dotted and thirteen undotted letters, which is a small check that we and al-Būnī are counting the same alphabet. The figure is our reconstruction of the ring: green for undotted, red for dotted, larger with more dots.",
+        "The dots matter twice in this game. The engine reads a dot above as RAISE and a dot below as LOWER — a power derived from the shape. Al-Būnī reads the same dot as an ill omen. Both are true of the same mark, and a later game will make you pay the omen when you use the power. For now: write one undotted letter and one dotted one. Try ḥāʾ (ح, undotted, luminous) and bāʾ (ب, one dot below, dark)."
+      ],
+      "sources": [
+        "de Callataÿ 2005, pp. 24–25",
+        "Varisco 2017, pp. 501–502 (Shams al-maʿārif fol. 4r)",
+        "POWERSOFTHELETTERS.md §2.1"
+      ],
+      "palette": "arabic-all",
+      "world": {
+        "gravity": true,
+        "sage": [
+          0,
+          0,
+          0
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "write-glyphs",
+        "glyphs": [
+          "ح",
+          "ب"
+        ],
+        "say": "Write ḥāʾ (no dots) and bāʾ (one dot below)."
+      },
+      "solution": [
+        {
+          "write": [
+            "ح",
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ب",
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "four-natures",
+      "title": "Seven hot, seven cold, seven wet, seven dry",
+      "figure": "natures4x7",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "\"The sages have said that all Arabic letters have a nature and a property. Thus, their set is composed of the four natures. They are twenty-eight letters: seven hot, seven cold, seven wet, and seven dry. Alif is hot, bāʾ is cold, jīm is wet, dāl is dry…\" That is the <i>Kitāb Sharāsīm al-Hindiyya</i>, a medieval Arabic book of natural magic, in Jean-Charles Coulon's translation (CORPUS: Saif et al., <i>Islamicate Occult Sciences in Theory and Practice</i>, 2021, pp. 346–347, quoting fols. 322b–323a). The list simply cycles hot, cold, wet, dry down the abjad order, and the chapter notes that it matches the Jābirian alchemists' \"balance of the letters\" with wet and dry swapped. Al-Būnī has his own version: four groups, \"seven degrees for each quality marked by individual letters\" (Gardiner 2017, p. 57).",
+        "The figure is the Sharāsīm's table. Notice that because the natures cycle, any two letters next to each other in the abjad order always have different natures. That is a rule about <i>sequence</i>, and a program of letters is a sequence — which is why this table is the first thing we would build next: a hot letter written under water would dry it toward earth, a wet letter under earth would soften it toward water. That mechanic is PROPOSED, not built, and the game says so.",
+        "For now, write a hot letter and a wet letter: alif (ا, hot) and jīm (ج, wet)."
+      ],
+      "sources": [
+        "Coulon in Saif et al. 2021, pp. 346–347",
+        "Gardiner 2017, p. 57",
+        "POWERSOFTHELETTERS.md §2.3"
+      ],
+      "palette": "arabic-all",
+      "world": {
+        "gravity": true,
+        "sage": [
+          0,
+          0,
+          0
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "write-glyphs",
+        "glyphs": [
+          "ا",
+          "ج"
+        ],
+        "say": "Write alif (hot) and jīm (wet)."
+      },
+      "solution": [
+        {
+          "write": [
+            "ا",
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ج",
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "axis",
+      "title": "AXIS: the upright stroke stands on nothing",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "Now the powers, one at a time. Each is derived from something you can see in the letter's shape, and each is a real thing you can do to the world. The first is the plainest: the alif is a single upright stroke, and a single upright stroke <b>holds a frame</b>. In the engine that means an alif does not fall, and it carries whatever is joined to it. In the tradition the alif is the letter of the One and of the beginning of creation, abjad 1; Melvin-Koushki's <i>Prologue</i> shows Ibn Turka reading ʿAlī's name (110) as the name of the letter alif (110) — the letter of unity (CORPUS).",
+        "Gravity is switched off on this floor while you build. There is a two-high pillar of stone. Write an alif in the air beside the top of the pillar — the cell at column 2, height 1 — and then write a mīm beside the alif, to its east, at column 3, height 1. The mīm joins what follows (it is a connecting letter) so it becomes one body with the alif. Then press \"Let gravity in\". The alif stands on nothing, and the mīm hangs from it.",
+        "If you want to see the contrast, start the lesson over and use a dāl or a rāʾ instead of the alif: neither holds a frame, and both fall. The message line and the dashed arrows will tell you before you commit — hover over a cell and the corner box says what would fall."
+      ],
+      "sources": [
+        "Melvin-Koushki, Prologue (ʿAlī = 110 = alif)",
+        "v2/README.md §1 (the derivation)"
+      ],
+      "palette": [
+        "ا",
+        "م",
+        "د",
+        "ر",
+        "ل"
+      ],
+      "world": {
+        "gravity": false,
+        "sage": [
+          2,
+          0,
+          1
+        ],
+        "cells": [
+          {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "fixed": true
+          },
+          {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "fixed": true
+          }
+        ]
+      },
+      "task": {
+        "kind": "stands",
+        "targets": [
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ]
+        ],
+        "say": "Write ا at column 2 height 1 and م at column 3 height 1, then let gravity in. Both must still be there after the fall."
+      },
+      "solution": [
+        {
+          "write": [
+            "ا",
+            [
+              2,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "walk": "east"
+        },
+        {
+          "write": [
+            "م",
+            [
+              3,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "gravity": true
+        }
+      ]
+    },
+    {
+      "id": "bind",
+      "title": "BIND: the closed loop makes one body",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "A letter with a closed loop — hāʾ, mīm, wāw, ṣād, ṭāʾ, fāʾ, qāf and the rest — <b>binds</b>. In the engine, a closed letter written between two cells that lie across the writing line makes those two cells one rigid body: from then on they move together, stand together and fall together. The Brethren of Purity's pairing of the twenty-eight letters with the twenty-eight parts of a body (de Callataÿ 2005, pp. 24–25) is the tradition's own hint that binding is how a body is made, and the last lesson of this Introduction builds one.",
+        "There are two loose stones on the floor, one to the north and one to the south of the cell in front of the sage. Write a hāʾ (ه) in the cell between them — column 1, row 0. The dashed tie that appears is the engine's own report: the two stones are now one body. The task checks that at least two stones move as one. (Walk into either stone afterwards and both move: that is the Pushing Floor's whole trick.)"
+      ],
+      "sources": [
+        "de Callataÿ 2005, pp. 24–25",
+        "v2/apps/pushing-floor/README.md"
+      ],
+      "palette": [
+        "ه",
+        "م",
+        "ا",
+        "د"
+      ],
+      "world": {
+        "gravity": true,
+        "sage": [
+          0,
+          0,
+          0
+        ],
+        "cells": [
+          {
+            "x": 1,
+            "y": 0,
+            "z": -1,
+            "material": "stone",
+            "fixed": false
+          },
+          {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "material": "stone",
+            "fixed": false
+          }
+        ]
+      },
+      "task": {
+        "kind": "bonded",
+        "n": 2,
+        "say": "Write ه between the two stones (column 1, row 0) so they become one body."
+      },
+      "solution": [
+        {
+          "write": [
+            "ه",
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pour",
+      "title": "POUR: the tail lets matter fall through",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "A letter with a tail — the long descending stroke of mīm, nūn, jīm, ʿayn, qāf and others — <b>pours</b>: whatever sits above it that is not a letter falls down through it to the first empty cell below. The tradition's nearest word for this is the letters' <i>wet</i> nature — jīm, zāy, kāf, sīn, qāf, thāʾ and ẓāʾ are the seven wet letters of the Sharāsīm table — and the proposal in POWERSOFTHELETTERS.md is that a wet letter should one day pour <i>toward water</i>, transmuting as well as moving. Here it moves.",
+        "A block of earth hangs in the air at column 2, height 2, beside a pillar; gravity is off, so it stays. The cell under it, at ground level, is empty. Write a mīm at column 2, height 1 — directly under the block, touching the pillar. The mīm pours: the block passes through the letter and lands on the ground below it. The task checks that the ground cell at column 2 is now earth."
+      ],
+      "sources": [
+        "Coulon in Saif et al. 2021, pp. 346–347 (the wet letters)",
+        "POWERSOFTHELETTERS.md §4"
+      ],
+      "palette": [
+        "م",
+        "ن",
+        "ه",
+        "ا"
+      ],
+      "world": {
+        "gravity": false,
+        "sage": [
+          3,
+          0,
+          0
+        ],
+        "cells": [
+          {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "fixed": true
+          },
+          {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "fixed": true
+          },
+          {
+            "x": 2,
+            "y": 2,
+            "z": 0,
+            "material": "earth",
+            "fixed": false
+          }
+        ]
+      },
+      "task": {
+        "kind": "poured",
+        "at": [
+          2,
+          0,
+          0
+        ],
+        "say": "Write م at column 2, height 1, under the hanging earth block. The block should pour through it to the ground."
+      },
+      "solution": [
+        {
+          "write": [
+            "م",
+            [
+              2,
+              1,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "raise-lower",
+      "title": "RAISE and LOWER: the dots",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "A dot above a letter <b>raises</b> the value of the block above it one step up the abjad ladder (1 → 2 → 3 … 10 → 20 …); a dot below <b>lowers</b> the block below it one step down. Two dots raise twice; three, three times. The value is the block's mass and, in the Reckoner, what it sums to. Remember from the mansions lesson what al-Būnī says about the same dots: they are the marks of the inauspicious mansions, in degrees. The power and the omen are one mark read two ways.",
+        "A block of earth with value 1 hangs at column 2, height 1 (gravity is off). Write a tāʾ (ت, two dots above) at column 2, ground level, directly under it. Two dots raise twice, so the block's value should go from 1 to 3. Then, if you like, start over and try thāʾ (ث, three dots): the block goes to 4. Why not nūn, which also has a dot above? Because nūn has a tail as well, and a tail pours: it would raise the block and then pour it down through itself in the same act. One letter, two powers, both from its shape — that is normal, and the hover box tells you everything a letter would do before you click."
+      ],
+      "sources": [
+        "Varisco 2017, p. 502 (the omen scale)",
+        "v2/README.md §1"
+      ],
+      "palette": [
+        "ت",
+        "ث",
+        "ن",
+        "ب",
+        "ه"
+      ],
+      "world": {
+        "gravity": false,
+        "sage": [
+          3,
+          0,
+          0
+        ],
+        "cells": [
+          {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "fixed": true
+          },
+          {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "material": "earth",
+            "value": 1,
+            "fixed": false
+          }
+        ]
+      },
+      "task": {
+        "kind": "value-changed",
+        "at": [
+          2,
+          1,
+          0
+        ],
+        "from": 1,
+        "say": "Write ت at column 2, ground level, under the block. Its value should rise from 1 (two dots: to 3)."
+      },
+      "solution": [
+        {
+          "write": [
+            "ت",
+            [
+              2,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sever",
+      "title": "SEVER: the six that never join",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "Six letters — ا د ذ ر ز و — never join the letter that follows them on the page. That is why an Arabic word can look like several pieces. In the engine that is literal: a word written with a rāʾ in it <b>breaks</b> after the rāʾ, and the two pieces are two bodies. Everything the Standing Word and the Descent do stands on this one fact.",
+        "Write a mīm at column 1, and then a rāʾ one cell to the east of it, at column 2. Reading runs east to west, so the rāʾ comes first: the word is رم. The rāʾ joins nothing after it, so the mīm is not joined to it, and the world reads two separate bodies, \"ر\" and \"م\". The message line will say \"the word breaks\". The task checks that both stand alone.",
+        "Now keep this floor in mind. On the next one you will write the very same two letters, and they will not break — because a different metaphysics will be running."
+      ],
+      "sources": [
+        "v2/README.md §1",
+        "v2/apps/standing-word/README.md"
+      ],
+      "palette": [
+        "م",
+        "ر",
+        "د",
+        "ه"
+      ],
+      "world": {
+        "gravity": true,
+        "sage": [
+          1,
+          0,
+          1
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "reads-separate",
+        "a": "ر",
+        "b": "م",
+        "say": "Write م at column 1 and ر at column 2. They should stay two bodies: the word breaks at the rāʾ."
+      },
+      "solution": [
+        {
+          "write": [
+            "م",
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ر",
+            [
+              2,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "whose-rules",
+      "title": "Whose rules run: the Sufi refuses to cut",
+      "alphabet": "arabic",
+      "ruleset": "sufi",
+      "text": [
+        "The traditions disagree about what a letter may do, and they disagree by <b>motive</b>. That is the portal's finding (its <code>three-lettrisms</code> entry): there is an intellectual lettrism, Ibn Turka's, where a letter acts by <i>proportion</i> and the proof is mathematical; a Sufi lettrism, in the line of Ibn ʿArabī, where a letter acts as a divine name and reaches as far as the sanctity of the one who utters it; a gnostic-messianic lettrism, the Ḥurūfīs', where to speak a letter is to proclaim what is already written and cannot be unsaid; and an Ottoman operative lettrism, Bisṭāmī's jafr as a state manual, where the procedure works if followed completely and does nothing if followed in part (CORPUS: portal entries <code>three-lettrisms</code>, <code>ilm-al-huruf</code>, <code>hurufism</code>, <code>jafr</code>; Melvin-Koushki, <i>The Occult Court</i>).",
+        "This floor runs the <b>Sufi</b> ruleset. Its motive is that \"the chain of being is not cut\": what appears separate is joined through the <i>barzakh</i>, the intermediate realm, so this ruleset has no operation for breaking a bond. Write the same two letters as before — mīm at column 1, rāʾ at column 2. This time the rāʾ joins the mīm, the message line reports that a letter which never joins forward was joined anyway, and the world reads one body: \"رم\". Nothing about the letters changed. Only the metaphysics did.",
+        "Every ruleset in the game carries an <i>interpretation note</i> saying what in it is the sources' and what is ours. For the Sufi one: the 28-to-28 correspondence with the divine names and the light/dark split are the sources'; reading luminosity as operative strength, and register as physical reach, is ours. The Descent is the game where you are not told which of these floors you are standing on."
+      ],
+      "sources": [
+        "portal: three-lettrisms, ilm-al-huruf, barzakh",
+        "v2/rulesets/rulesets.json (interpretation_note)",
+        "Melvin-Koushki, The Occult Court"
+      ],
+      "palette": [
+        "م",
+        "ر",
+        "د",
+        "ه"
+      ],
+      "world": {
+        "gravity": true,
+        "sage": [
+          1,
+          0,
+          1
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "reads",
+        "text": "رم",
+        "say": "Write م at column 1 and ر at column 2 again. Under the Sufi rules they join, and the world reads رم."
+      },
+      "solution": [
+        {
+          "write": [
+            "م",
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ر",
+            [
+              2,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-and-moon",
+      "title": "ASSIMILATE and DISTINGUISH: sun and moon letters",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "Two more powers come from grammar rather than shape, and you can hear them: the article <i>al-</i> before a <b>sun letter</b> assimilates — <i>al-shams</i> is said <i>ash-shams</i> — and before a <b>moon letter</b> it stays itself — <i>al-qamar</i>. In the engine a sun letter ASSIMILATES the letter written before it in the same word (that letter takes the sun letter's value), and a moon letter DISTINGUISHES it (that letter is protected from being assimilated afterwards). These act inside a written word of two or more letters, and this Introduction writes one letter at a time, so there is no task here; the Scriptorium is where to try them, with the preview showing the value change before you commit.",
+        "The lesson in this lesson is that the engine's eight powers come from four <i>independent</i> divisions of the alphabet — abjad value, luminous/dark, sun/moon, joining/non-joining — and the letter table's build script proves they are independent rather than one fact told four times. That is what makes the alphabet a language for the world rather than a set of twenty-eight arbitrary tokens: the same letter answers several questions at once, and the answers do not line up."
+      ],
+      "sources": [
+        "v2/data/build_letters.py --verify",
+        "v2/README.md §1"
+      ],
+      "palette": [],
+      "world": {
+        "gravity": true,
+        "sage": [
+          0,
+          0,
+          0
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "none",
+        "say": "Nothing to do on this floor. Read, then press Next."
+      },
+      "solution": []
+    },
+    {
+      "id": "the-final-form",
+      "title": "The Hebrew bricks, and the final form that seals",
+      "alphabet": "hebrew",
+      "ruleset": "workshop",
+      "text": [
+        "Back to Hebrew, with the powers in mind. Hebrew letters do not join on the page as Arabic ones do, so the Arabic rule about the six non-joining letters has no direct twin. But Hebrew has something the eye can see just as plainly: five letters — Kaf, Mem, Nun, Peh, Tzaddi — change shape at the <b>end of a word</b>, into ך ם ן ף ץ. A final form is the word-boundary made visible. Our reading (INTERPRETATION, and the letter table says so) is that this is Hebrew's SEVER: a body of letters ends where a final form stands. The Golden Dawn project that shares this engine calls the primitive SEAL.",
+        "In this game every ordinary Hebrew letter joins forward — a written word is one body, as the <i>Sefer Yetsirah</i> says the letters were \"combined one with another\" — and a final form does not. Your palette has both forms of the five letters. Write ש at column 2, ל at column 1 and the <b>final</b> mem ם at column 0, so the world reads שלם (<i>shalem</i>, whole). Then write ט at column −1, to the west of the final mem. The ם seals: ט stays a separate body, and the task checks that the world reads שלם and, separately, ט. Start over and use the ordinary מ instead, and the four letters become one body."
+      ],
+      "sources": [
+        "v2/data/build_hebrew.py (the interpretation, stated)",
+        "Segol 2012, p. 24 (\"combined one with another\")"
+      ],
+      "palette": [
+        "ש",
+        "ל",
+        "מ",
+        "ם",
+        "ט",
+        "ו",
+        "ב"
+      ],
+      "world": {
+        "gravity": true,
+        "sage": [
+          1,
+          0,
+          1
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "reads-separate",
+        "a": "שלם",
+        "b": "ט",
+        "say": "Write ש, ל, then the final ם running west, then ט further west. The final mem should seal the word."
+      },
+      "solution": [
+        {
+          "write": [
+            "ש",
+            [
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ל",
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ם",
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "walk": "west"
+        },
+        {
+          "write": [
+            "ט",
+            [
+              -1,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-golem",
+      "title": "The golem: a body of letters, and the letter that undoes it",
+      "alphabet": "hebrew",
+      "ruleset": "workshop",
+      "text": [
+        "The recipes for making a golem come from twelfth- to fourteenth-century commentaries on the <i>Sefer Yetsirah</i> — Eleazar of Worms's <i>Sefer Tagi</i>, the Pseudo-Saadya, Abulafia's <i>Ḥayyei Olam ha-Ba</i> — and Moshe Idel showed that they share two steps: \"the material employed to create the golem is dust, eventually kneaded with water, and the pronunciation of combinations of letters over the shaped body, in order to animate it\" (CORPUS: Segol 2012, pp. 105–106, quoting Idel). The combinations are of the tetragrammaton or of all twenty-two letters, recited while circling the body a fixed number of times; the divine names are \"the souls of the other letters\" (p. 106). Segol's point is that the medieval golem is not a servant but an instrument \"used to effect metaphysical changes, including the resurrection of the dead and the reconstruction of the cosmos\" (p. 105), and that many of the diagrams in her book \"provide instructions for the ritual of letter combination to animate a golem\" (p. 8). On the Arabic side the Brethren of Purity's pairing of the twenty-eight letters with the twenty-eight parts of the body is the same thought.",
+        "The detail everyone knows — <i>emet</i>, truth, אמת, written on the forehead, and the golem stopped by erasing the alef so it reads <i>met</i>, dead, מת — belongs to the later legend and is not in the passages we read (⚠ unverified in our sources). This lesson uses it as legend, and says so, because it is the one story in the whole tradition where the mechanic of this game is the plot: a word that stands, and a letter whose removal changes what the word says.",
+        "The body is already shaped: earth kneaded with water, standing in front of the sage. Write אמת across its brow — א at column 1, height 2; מ at column 0, height 2; ת at column −1, height 2 — so that the world reads אמת. Then press \"Erase the alef\": every alef is taken out of the word (the Reckoner's Extract) and then rubbed out of the world, and what is left reads מת. The ledger records both readings. Nothing in this sequence was invented for the lesson."
+      ],
+      "sources": [
+        "Segol 2012, pp. 8, 105–106 (Idel)",
+        "de Callataÿ 2005, pp. 24–25",
+        "v2/engine/reader.js, v2/engine/operations.js"
+      ],
+      "palette": [
+        "א",
+        "מ",
+        "ת",
+        "ש",
+        "ה"
+      ],
+      "world": {
+        "gravity": false,
+        "sage": [
+          0,
+          0,
+          1
+        ],
+        "cells": [
+          {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "material": "earth",
+            "fixed": true
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "material": "water",
+            "fixed": true
+          },
+          {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "material": "earth",
+            "fixed": true
+          },
+          {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "material": "earth",
+            "fixed": true
+          },
+          {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "material": "earth",
+            "fixed": true
+          },
+          {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "material": "earth",
+            "fixed": true
+          },
+          {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "material": "earth",
+            "fixed": true
+          },
+          {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "material": "earth",
+            "fixed": true
+          }
+        ]
+      },
+      "task": {
+        "kind": "golem",
+        "word": "אמת",
+        "erase": "א",
+        "after": "מת",
+        "say": "Write אמת across the brow (columns 1, 0, −1 at height 2), then press \"Erase the alef\". The body should then read מת."
+      },
+      "solution": [
+        {
+          "write": [
+            "א",
+            [
+              1,
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "מ",
+            [
+              0,
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "write": [
+            "ת",
+            [
+              -1,
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "erase": "א"
+        }
+      ]
+    },
+    {
+      "id": "go-and-play",
+      "title": "Where to go from here",
+      "alphabet": "arabic",
+      "ruleset": "workshop",
+      "text": [
+        "You have now used every power the engine derives from the Arabic letters, seen the Hebrew letters as bricks with the <i>Sefer Yetsirah</i>'s division on them, and built and unmade a golem. The prototypes take each of these further, and every one of them has a How to play button that explains itself in full.",
+        "<b>The Scriptorium</b> is the workbench: compose whole words, switch rulesets, and watch the preview. <b>The Pushing Floor</b> is BIND and AXIS as a block-pushing puzzle. <b>The Standing Word</b> is SEVER and AXIS as a stacker. <b>The Reckoner</b> is extraction, reckoning by number, the assay, and reading a body from a direction. <b>The Descent</b> is the roguelike: five floors, four metaphysics, none of them named, and you must work out which rules run before you let gravity in.",
+        "What this Introduction does not yet have is the period images themselves: the manuscript wheels and tables that Segol studies, al-Būnī's diagrams, Ibn Turka's own autograph pages. Every image in this project needs a provenance record and a rights check before it is shown, and fetching them is a download that waits for Ted's word. The list of candidates, with where each would come from, is in FETCHLIST.md beside this page. Until then, the diagrams you saw are our reconstructions from the texts, and they say so."
+      ],
+      "sources": [
+        "v2/index.html — the hub",
+        "v2/apps/introduction/FETCHLIST.md"
+      ],
+      "palette": [],
+      "world": {
+        "gravity": true,
+        "sage": [
+          0,
+          0,
+          0
+        ],
+        "cells": []
+      },
+      "task": {
+        "kind": "none",
+        "say": "That is the whole Introduction. Press Next to return to the hub, or Back to replay a lesson."
+      },
+      "solution": []
+    }
+  ]
+}
