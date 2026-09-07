@@ -107,7 +107,7 @@ asks a second question suited to what it is about:
 | Reckoner `reckon` | A winner exists, and only a small share of the range wins |
 | Reckoner `assay` | Do the probes **distinguish** the hidden ruleset from all the others? |
 | Reckoner `station` | At least one direction reads the target, and not all of them do |
-| Descent | **Fair under every metaphysics, and trapping**: for every ordered pair of rulesets a solution carried from one fails under the other. Floors are *searched for*, not sketched (`design_search.mjs`), and the gate **prints** how many universal placements remain rather than hiding them. |
+| Descent | **Fair under every metaphysics, and distinct**: every pair of rulesets has a different set of winning placements on the floor (not *in every direction* — the Ottoman floor's solutions are a subset of the intellectual's by construction, the gnostic's of the Sufi's). Floors are *searched for*, not sketched (`design_search.mjs`), and the gate **prints** how many universal placements remain rather than hiding them; every shipped floor has zero. |
 | Any, optional | If it claims a choice matters, **does a wrong choice exist**? |
 
 ## Verifying against the live site

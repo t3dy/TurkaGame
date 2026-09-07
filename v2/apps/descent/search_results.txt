@@ -202,3 +202,47 @@ pier2      hand ملد  targets 0,2 1,0 2,0  minDistinct 0.11  universals 0  siz
      sufi               د@1,0 ل@2,0 م@0,2 | د@2,0 ل@1,0 م@0,2 | د@1,0 ل@0,2 م@2,0 | د@1,1 ل@0,2 م@2,1 | د@2,0 ل@0,2 م@1,0 | د@2,1 ل@0,2 م@1,1 | د@0,2 ل@1,0 م@2,0 | د@0,2 ل@2,0 م@1,0
      gnostic-messianic  د@1,0 ل@2,0 م@0,2 | د@1,1 ل@2,1 م@0,2 | د@2,0 ل@1,0 م@0,2 | د@2,1 ل@1,1 م@0,2 | د@1,0 ل@0,2 م@2,0 | د@1,1 ل@0,2 م@2,1 | د@2,0 ل@0,2 م@1,0 | د@2,1 ل@0,2 م@1,1 | د@0,2 ل@1,0 م@2,0 | د@0,2 ل@1,1 م@2,1 | د@0,2 ل@2,0 م@1,0 | د@0,2 ل@2,1 م@1,1
      ottoman-operative  د@1,2 ل@0,2 م@2,2
+
+
+# design_search.mjs --skip pier2, three-letter hands, 720 s budget, 2026-09-04. Reached only the pier2step template. Headers only; the placements are regenerable.
+tried 3346 candidates in 720s; 222 fair; 59 fair with every pair distinct; 44 of those with NO universal placement
+pier2step  hand راد  targets 0,2 1,0 2,0  minDistinct 0.33  universals 0  sizes 18/12/18/2
+pier2step  hand رلد  targets 0,2 1,0 2,0  minDistinct 0.33  universals 0  sizes 18/12/18/2
+pier2step  hand راا  targets 0,2 1,0  minDistinct 0.24  universals 0  sizes 51/39/60/1
+pier2step  hand ااد  targets 0,2 1,0  minDistinct 0.24  universals 0  sizes 51/39/60/1
+pier2step  hand رال  targets 0,2 1,0  minDistinct 0.22  universals 0  sizes 100/78/120/3
+pier2step  hand الد  targets 0,2 1,0  minDistinct 0.22  universals 0  sizes 100/78/120/3
+pier2step  hand مرا  targets 0,2 1,0 2,0  minDistinct 0.20  universals 0  sizes 15/12/18/1
+pier2step  hand مرل  targets 0,2 1,0 2,0  minDistinct 0.20  universals 0  sizes 15/12/18/1
+pier2step  hand ماد  targets 0,2 1,0 2,0  minDistinct 0.20  universals 0  sizes 15/12/18/1
+pier2step  hand ملد  targets 0,2 1,0 2,0  minDistinct 0.20  universals 0  sizes 15/12/18/1
+pier2step  hand راه  targets 0,2 1,0 2,0  minDistinct 0.20  universals 0  sizes 15/12/18/1
+pier2step  hand رله  targets 0,2 1,0 2,0  minDistinct 0.20  universals 0  sizes 15/12/18/1
+pier2step  hand اده  targets 0,2 1,0 2,0  minDistinct 0.20  universals 0  sizes 15/12/18/1
+pier2step  hand لده  targets 0,2 1,0 2,0  minDistinct 0.20  universals 0  sizes 15/12/18/1
+pier2step  hand ررل  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 70/49/60/1
+pier2step  hand لدد  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 70/49/60/1
+pier2step  hand ررا  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 72/49/60/1
+pier2step  hand ادد  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 72/49/60/1
+pier2step  hand مرا  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 122/98/120/4
+pier2step  hand ماد  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 122/98/120/4
+pier2step  hand راه  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 122/98/120/4
+pier2step  hand اده  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 122/98/120/4
+pier2step  hand رلد  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 140/98/120/6
+pier2step  hand راد  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 144/98/120/8
+pier2step  hand مرل  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 119/98/120/3
+pier2step  hand ملد  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 119/98/120/3
+pier2step  hand رله  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 119/98/120/3
+pier2step  hand لده  targets 0,2 1,0  minDistinct 0.18  universals 0  sizes 119/98/120/3
+pier2step  hand رال  targets 0,2 2,0  minDistinct 0.07  universals 0  sizes 71/66/72/2
+pier2step  hand الد  targets 0,2 2,0  minDistinct 0.07  universals 0  sizes 71/66/72/2
+pier2step  hand ررل  targets 0,2 2,0  minDistinct 0.06  universals 0  sizes 38/34/36/1
+pier2step  hand لدد  targets 0,2 2,0  minDistinct 0.06  universals 0  sizes 38/34/36/1
+pier2step  hand ررا  targets 0,2 2,0  minDistinct 0.06  universals 0  sizes 39/34/36/1
+pier2step  hand ادد  targets 0,2 2,0  minDistinct 0.06  universals 0  sizes 39/34/36/1
+pier2step  hand مرل  targets 0,2 2,0  minDistinct 0.06  universals 0  sizes 73/68/72/3
+pier2step  hand ملد  targets 0,2 2,0  minDistinct 0.06  universals 0  sizes 73/68/72/3
+pier2step  hand رله  targets 0,2 2,0  minDistinct 0.06  universals 0  sizes 73/68/72/3
+pier2step  hand لده  targets 0,2 2,0  minDistinct 0.06  universals 0  sizes 73/68/72/3
+pier2step  hand مرا  targets 0,2 2,0  minDistinct 0.06  universals 0  sizes 75/68/72/3
+pier2step  hand ماد  targets 0,2 2,0  minDistinct 0.06  universals 0  sizes 75/68/72/3

@@ -19,7 +19,7 @@
 import { compile } from '../../../engine/vm.js?v=7';
 import { Ledger } from '../../../engine/ledger.js?v=7';
 import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=7';
-import { startWorld, settled, held, write, legalCells, minWord, rng, shuffle, solutions } from './rules.js?v=7';
+import { startWorld, settled, held, write, legalCells, minWord, deal, solutions } from './rules.js?v=7';
 
 const V = 'v=7';
 const $ = id => document.getElementById(id);
@@ -33,14 +33,10 @@ let run = null;    // { seed, floors:[{level, ruleset, named, done}], at, lives,
 let world = null, hand = [], word = [], undoStack = [], over = false, evidence = [], fast = false;
 
 function newRun(seed = (Date.now() % 100000)) {
-  const rand = rng(seed);
-  const dealt = shuffle(PORTAL, rand);
-  const pool = DATA.floors;
-  const floors = [];
-  // The surface is the workshop, named openly: the one floor where you are told
-  // where you are, so the letters can be met before they start lying.
-  floors.push({ level: pool[0], ruleset: WORKSHOP, told: true, named: true, done: false });
-  dealt.forEach((rs, i) => floors.push({ level: pool[(i + 1) % pool.length], ruleset: rs, told: false, named: false, done: false }));
+  // One seed deals both the order of the metaphysics and the floors they are
+  // played on. The surface is the workshop, named openly: the one floor where
+  // you are told where you are, so the letters can be met before they start lying.
+  const floors = deal(seed, { rulesets: PORTAL, workshop: WORKSHOP, pool: DATA.floors });
   run = { seed, floors, at: 0, lives: DATA.run.lives, candles: DATA.run.candles, log: [] };
   over = false;
   history.replaceState(null, '', `?seed=${seed}`);

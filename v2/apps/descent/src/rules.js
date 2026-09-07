@@ -182,3 +182,19 @@ export function shuffle(list, rand) {
   for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
   return a;
 }
+
+/**
+ * The deal. One seed decides both the order of the four historical rulesets
+ * and which four floor designs they are played on. The surface is always the
+ * first floor in the pool, under the workshop, told. Used by the game and by
+ * verify_run.mjs, so the gate checks the runs the game actually deals.
+ */
+export function deal(seed, { rulesets, workshop, pool }) {
+  const rand = rng(seed);
+  const rs = shuffle(rulesets, rand);
+  const rest = shuffle(pool.slice(1), rand);
+  const floors = [{ level: pool[0], ruleset: workshop, told: true, named: true, done: false }];
+  rs.forEach((ruleset, i) => floors.push({ level: rest[i % rest.length], ruleset, told: false, named: false, done: false }));
+  return floors;
+}
+

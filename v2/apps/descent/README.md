@@ -102,10 +102,25 @@ floor pool, differing by hand:
 | The Two Breakers | ر ر ا | 7 · 4 · 6 · 1 | 0.33 | 0 |
 | The Dāl | ر ا د | 14 · 8 · 12 · 4 | 0.33 | 0 |
 
+A second search, skipping that template, reached the next one — a pier with a
+step three cells out — and found 44 more universal-free floors there. The best of
+them have **three marks**, the pier top and two on the ground between pier and
+step, and the Ottoman and intellectual floors reach them with one word and *two
+wanted falls*: both breaking letters dropped off the alif's end land on the
+ground marks at once. Three of those join the pool:
+
+| Floor | Hand | Winning placements (int · sufi · gnostic · ottoman) | Least-distinct pair | Universal |
+|---|---|---|---|---|
+| The Two Falls | ر ا د | 18 · 12 · 18 · 2 | 0.33 | 0 |
+| The Lām | ر ل د | 18 · 12 · 18 · 2 | 0.33 | 0 |
+| The One Word | م ر ا | 15 · 12 · 18 · 1 | 0.20 | 0 |
+
 `verify_run.mjs` confirms all of that from `levels.json`, and deals twenty-five
-seeds through the game's shuffle: every floor of every run is solvable under the
-ruleset it was dealt. The search explored only the first pier template in its
-budget; the other geometries are being searched for a wider pool.
+seeds through the game's own `deal()`: every floor of every run is solvable under
+the ruleset it was dealt. One seed decides both the order of the metaphysics and
+which four of the seven designs they are played on; the surface is always the
+first. The remaining templates (two piers, a three-high pier, a lintel) are
+unsearched.
 
 **Two faults the checks caught on the way.** The gate as first written demanded a
 trap *in every direction* and found nothing in 9,579 candidates — impossible by
@@ -118,10 +133,11 @@ judged on the compiled cells, with a test.
 
 ## Known gaps
 
-- **One geometry.** All four floors share the pier and the two marks; only the
-  hand differs. That is thematically right — *the world is the same; only the
-  metaphysics is hidden* — but a player will notice. The search is written to be
-  run over the other templates (`--skip pier2`) and with `--hand-size 4`.
+- **Two geometries.** Seven floors on a bare pier or a stepped one; within a
+  geometry only the hand differs. Thematically right — *the world is the same;
+  only the metaphysics is hidden* — but a player will notice. Three templates are
+  still unsearched (`--skip pier2,pier2step`), and four-letter hands found no
+  universal-free floor in their budget.
 - **Universal placements** are zero on every shipped floor, and the gate prints
   the count rather than assuming it, so a future floor with one cannot slip in
   unlabelled.

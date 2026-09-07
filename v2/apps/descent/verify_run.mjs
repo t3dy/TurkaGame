@@ -58,18 +58,19 @@ for (const lv of DATA.floors) {
   }
 }
 
-// The run itself: every seed deals four floors; confirm each dealt (floor, ruleset)
-// pairing is solvable, for a spread of seeds, through the same deal the game uses.
-import { rng, shuffle } from './src/rules.js';
+// The run itself: deal twenty-five seeds through the SAME function the game
+// uses, and confirm every (floor, ruleset) pairing dealt is solvable.
+import { deal } from './src/rules.js';
 let dealsBad = 0;
+const geometries = new Set();
 for (let seed = 1; seed <= 25; seed++) {
-  const dealt = shuffle(PORTAL, rng(seed));
-  dealt.forEach((rs, i) => {
-    const lv = DATA.floors[(i + 1) % DATA.floors.length];
-    if (!solutions(lv, rs, { letters }).size) { dealsBad++; console.log(`  FAIL seed ${seed}: floor ${i + 1} (${lv.id}) unsolvable under ${rs.id}`); }
+  const floors = deal(seed, { rulesets: PORTAL, workshop: WORKSHOP, pool: DATA.floors });
+  floors.forEach((f, i) => {
+    geometries.add(f.level.cells.map(c => c.x + ',' + c.y).join(';'));
+    if (!solutions(f.level, f.ruleset, { letters }).size) { dealsBad++; console.log(`  FAIL seed ${seed}: floor ${i} (${f.level.id}) unsolvable under ${f.ruleset.id}`); }
   });
 }
-if (!dealsBad) console.log(`  ok   25 seeds dealt; every floor of every run is solvable under the ruleset it was dealt`);
+if (!dealsBad) console.log(`  ok   25 seeds dealt through deal(); every floor of every run is solvable under the ruleset it was dealt; ${geometries.size} geometries in play`);
 
 const uni = DATA.floors.filter(lv => assess(lv, PORTAL, { letters }).universals.length);
 console.log(bad || dealsBad

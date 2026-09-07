@@ -10,7 +10,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import assert from 'node:assert/strict';
-import { legalCells, startWorld, write, won, solutions, assess, minWord, rng, shuffle, placementKey } from '../apps/descent/src/rules.js';
+import { legalCells, startWorld, write, won, solutions, assess, minWord, rng, shuffle, placementKey, deal } from '../apps/descent/src/rules.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const letters = JSON.parse(readFileSync(join(here, '..', 'data', 'letters.json'), 'utf8')).letters;
@@ -112,6 +112,21 @@ test('the deal is seeded and replayable, and every seed deals all four', () => {
   const orders = new Set();
   for (let s = 1; s <= 40; s++) orders.add(shuffle(PORTAL, rng(s)).map(r => r.id).join('>'));
   assert.ok(orders.size >= 8, 'forty seeds give at least eight distinct deals');
+});
+
+test('deal() is replayable, always opens on the surface, and deals four hidden floors from the rest', () => {
+  const DATA = JSON.parse(readFileSync(join(here, '..', 'apps', 'descent', 'levels.json'), 'utf8'));
+  const W = RS('workshop');
+  const a = deal(7, { rulesets: PORTAL, workshop: W, pool: DATA.floors });
+  const b = deal(7, { rulesets: PORTAL, workshop: W, pool: DATA.floors });
+  assert.deepEqual(a.map(f => f.level.id + '/' + f.ruleset.id), b.map(f => f.level.id + '/' + f.ruleset.id));
+  assert.equal(a.length, 5);
+  assert.equal(a[0].level.id, DATA.floors[0].id); assert.equal(a[0].ruleset.id, 'workshop'); assert.equal(a[0].told, true);
+  assert.deepEqual(a.slice(1).map(f => f.ruleset.id).sort(), PORTAL.map(r => r.id).sort());
+  for (const f of a.slice(1)) assert.notEqual(f.level.id, DATA.floors[0].id, 'the surface floor is not dealt again');
+  const geoms = new Set();
+  for (let s = 1; s <= 30; s++) for (const f of deal(s, { rulesets: PORTAL, workshop: W, pool: DATA.floors }).slice(1)) geoms.add(f.level.cells.length);
+  assert.ok(geoms.size >= 2, 'thirty seeds reach both geometries');
 });
 
 test('every shipped floor passes the gate the verifier applies', () => {
