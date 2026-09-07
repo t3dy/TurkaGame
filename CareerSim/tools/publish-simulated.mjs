@@ -17,10 +17,10 @@
 // changes, change this and simulate-runs.mjs together.
 
 import { newRun } from '../src/engine/state.js?v=3';
-import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from '../src/engine/engine.js?v=7';
-import { addObligation, dropObligation, chargeObligations, offerContract, tickContracts, settleContracts, finalVerdict } from '../src/engine/career.js?v=8';
-import { logEntry, buildChroniclePayload } from '../src/engine/export.js?v=7';
-import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=11';
+import { drawEncounter, drawInjection, evaluateOptions, resolveOption, encounterEligible } from '../src/engine/engine.js?v=8';
+import { addObligation, dropObligation, chargeObligations, offerContract, tickContracts, settleContracts, finalVerdict } from '../src/engine/career.js?v=9';
+import { logEntry, buildChroniclePayload } from '../src/engine/export.js?v=8';
+import { PEOPLE, ARTIFACTS, ENCOUNTERS, PHASES, phaseById, LAST_PHASE } from '../content/index.js?v=12';
 import { writeFileSync, mkdirSync } from 'node:fs';
 
 const N = parseInt(process.argv[2] || '3', 10);

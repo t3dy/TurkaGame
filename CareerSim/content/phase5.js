@@ -36,7 +36,7 @@ export const NODES = [
   {
     id: 'protection', name: 'The Patron’s Door', icon: '👑',
     hook: 'Protection exists, costs something, and is not infinite.',
-    encounters: ['trial_patron_shield', 'trial_recant_offer', 'trial_destination'],
+    encounters: ['trial_patron_shield', 'trial_recant_offer', 'trial_destination', 'sand_in_exile'],
   },
   {
     id: 'circle5', name: 'The Circle', icon: '✳',
@@ -246,6 +246,29 @@ export const ENCOUNTERS = {
             text: 'The panel takes the name — and keeps you anyway. At your degree of notoriety a cooperative witness is too useful to release, and now they know you will trade.',
             effects: { meters: { exposure: 1 }, rep: { scholarly: -1, occult: -2 } },
             chronicle: 'He gave the tribunal a name, and learned that a man who trades once is asked twice.' },
+        ],
+      },
+      {
+        // The Circle as monad (grimoire readings, NARRATIVEDESIGNERREADSDEE.md D5):
+        // the sigil-summary's Dee-parallel function. The most compressed proof is
+        // also the most portable exhibit — triumph is quieter than oration, disaster
+        // hands the panel the diagram itself.
+        id: 'one_figure', label: 'Answer the panel with one figure',
+        detail: 'Lay the Ṭahawī Circle on the table: the whole system, one drawn object, no oration.',
+        requires: ['artifact:tahawi_circle', 'meter:synthesis>=7'],
+        boosts: ['meter:demonstration>=3'],
+        effects: { memory: { third_stance: 'firm', answered_with_the_figure: true } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'You say almost nothing. The figure says it: Tetractys, letters, the whole architecture in a hand’s span. Two of the panel lean in despite themselves, and a split panel cannot condemn.',
+            effects: { rep: { scholarly: 2, occult: 2 }, meters: { demonstration: 2 }, memory: { third_inquisition: 'survived' } },
+            chronicle: 'At the third tribunal he answered with a single figure, and the panel divided over a drawing it could not stop studying.' },
+          { band: 'backfire', weight: 2, text: 'The panel studies the figure with real attention — as evidence. What an hour of oration could have hedged, the diagram states plainly, in your own hand.',
+            effects: { rep: { imperial: -2, orthodox: -2 }, memory: { third_inquisition: 'lost' } },
+            chronicle: 'He gave the tribunal his Circle to read, and the tribunal read it as a confession in geometry.' },
+          { band: 'disaster', weight: 1, min_exposure: 8,
+            text: 'They condemn — and enter the figure itself into the judgment. Your most compressed proof becomes the record’s most portable exhibit.',
+            effects: { rep: { imperial: -3, orthodox: -2 }, meters: { transmission: -1 }, memory: { third_inquisition: 'lost', book_condemned: true } },
+            chronicle: 'The third tribunal condemned him with his own diagram appended to the sentence.' },
         ],
       },
       {
@@ -642,6 +665,7 @@ export const ENCOUNTERS = {
         detail: 'L\u012bmiy\u0101, paid in silver and silence. Useful money; documentary evidence.',
         contract: {
           id: 'trial_inscription', name: 'The Commissioned Inscription', deadline: 2,
+          cipher_level: 'encoded', proof_standard: 'reproducible',
           promise: 'The talismanic inscription, composed and delivered while the tribunals are still sitting.',
           requires: ['limiya>=2'],
           reward: { meters: { transmission: 1 }, rep: { orthodox: 1 }, memory: { boon_delivered: true } },
@@ -682,6 +706,61 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'qualified', weight: 1, text: 'The letter burns well. So does the bridge \u2014 that court will not write twice.',
             chronicle: 'He burned a court\u2019s discreet commission unanswered, while the tribunals sat.' },
+        ],
+      },
+    ],
+  },
+
+  sand_in_exile: {
+    // The exile science (grimoire readings, NARRATIVEDESIGNERREADSQUINTET.md D3):
+    // geomancy is demand-mismatched at every court and the one science that
+    // functions when bench, library and patron are gone. This is the Akhlāṭī
+    // inheritance (lettrist-alchemist-GEOMANCER) paying off at the far end.
+    id: 'sand_in_exile', phase: 5,
+    rubric: 'THE ROAD · THE SIXTEEN FIGURES',
+    grounding: 'PLAUSIBLE-GAP',
+    source: 'RESEARCH — ʿilm al-raml as the portable divinatory science; Yazdī defended it in print against Ibn Khaldūn; Akhlāṭī practiced it',
+    when: ['mem:third_inquisition=lost'],
+    affordances: ['road', 'strangers'],
+    situation:
+      'A caravan camp between nowhere and nowhere. No bench, no library, no patron — but sand there is everywhere, ' +
+      'and a caravaner who has heard what you were asks, shyly, whether the learned one reads the figures. Sixteen ' +
+      'shapes, made with a stick. The one science that never needed an observatory.',
+    options: [
+      {
+        id: 'cast', label: 'Cast the figures for them',
+        detail: 'The poor scholar’s observatory. Akhlāṭī’s third art, kept all these years.',
+        requires: ['cap:geomancy'],
+        effects: { meters: { transmission: 1 }, memory: { sand_read_on_the_road: true } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'You smooth the sand and make the marks, and for an hour the camp is a lecture hall. They pay in bread and firewood, which is what payment is now, and listen the way courts never did.',
+            chronicle: 'In exile he cast the sand figures for caravaners, and was listened to as courts had never listened.' },
+          { band: 'qualified', weight: 1, text: 'The figures say what figures say; the caravaner hears what he needs. You are not sure, tonight, which of you the reading served.',
+            chronicle: 'He read the sand for travelers and let the sand be kind, once, in a way the law never was.' },
+        ],
+      },
+      {
+        id: 'teach_figures', label: 'Teach them the figures instead',
+        detail: 'Not a reading — the method. Sixteen shapes anyone can carry.',
+        requires: [],
+        boosts: ['cap:geomancy', 'mem:taught_widely'],
+        effects: { meters: { transmission: 1 }, memory: { figures_taught: true } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'By the third evening two drovers can raise the Mothers and derive the Daughters. It is the simplest thing you have ever taught, and it will travel farther than your summa.',
+            effects: { meters: { transmission: 1 } },
+            chronicle: 'He taught the sand figures to drovers, and the sixteen shapes went where no manuscript of his would go.' },
+          { band: 'ambiguous', weight: 1, text: 'They learn the shapes and not the science. In a year every well between here and Yazd will be dug by half-remembered geomancy — with your teaching somewhere at the bottom of it.',
+            chronicle: 'What he taught on the road traveled as habit, not as science, and traveled all the faster for it.' },
+        ],
+      },
+      {
+        id: 'put_away', label: 'Say the learned one is dead',
+        detail: 'Whatever you were, tonight you are a traveler who wants no notice.',
+        requires: [],
+        effects: { memory: { sand_refused: true } },
+        outcomes: [
+          { band: 'ambiguous', weight: 1, text: 'You say it kindly and mean it more than you expected. The caravaner nods, and the camp lets the stranger be a stranger.',
+            chronicle: 'On the road he let the learned man be dead a while, and traveled lighter for it.' },
         ],
       },
     ],

@@ -506,6 +506,7 @@ export const ENCOUNTERS = {
         detail: 'Real computation, honest fee — and a practice, which is a paper trail.',
         contract: {
           id: 'merchant_nativity', name: 'The Merchant’s Nativity', deadline: 2,
+          cipher_level: 'plain', proof_standard: 'reproducible',
           promise: 'A full nativity for the merchant’s son, computed and delivered in writing.',
           requires: ['meter:synthesis>=2'],
           reward: { rep: { occult: 1 }, meters: { demonstration: 1 }, memory: { boon_delivered: true } },

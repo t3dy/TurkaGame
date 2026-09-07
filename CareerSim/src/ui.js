@@ -6,7 +6,7 @@
 import { QUINTET, checkReq } from './engine/state.js?v=3';
 import { LEXICON } from '../content/lexicon.js?v=2';
 import { resolveSource } from '../content/citations.js?v=1';
-import { attestedRows } from './engine/career.js?v=8';
+import { attestedRows, laterRecord } from './engine/career.js?v=9';
 
 const $ = (sel) => document.querySelector(sel);
 export const app = () => $('#app');
@@ -202,7 +202,10 @@ export function renderEncounter(state, enc, evaluated, people, artifacts, firstE
       if (o.contract) {
         const c = o.contract;
         const needs = (c.requires || []).map((r) => checkReq(state, r, people, artifacts).text).join(', ');
-        commits.push(`<span class="opt-commit" data-gloss="${esc(c.promise || '')} Fail the deadline and the failure is also remembered.">📜 a promise: ${esc(c.name)} — due in ${c.deadline} season${c.deadline > 1 ? 's' : ''}${needs ? `, needs ${esc(needs)}` : ''}</span>`);
+        // Contract epistemology (grimoire PATRONAGE reading D1): the commission
+        // specifies HOW, not just what — the Durmish Khān clause on every button.
+        const how = [c.cipher_level ? `${esc(c.cipher_level)}` : '', c.proof_standard ? `proof: ${esc(c.proof_standard)}` : ''].filter(Boolean).join(' · ');
+        commits.push(`<span class="opt-commit" data-gloss="${esc(c.promise || '')} The patron sets the cipher and the standard of proof — the Durmish Khān clause. Fail the deadline and the failure is also remembered.">📜 a promise: ${esc(c.name)} — due in ${c.deadline} season${c.deadline > 1 ? 's' : ''}${needs ? `, needs ${esc(needs)}` : ''}${how ? ` — ${how}` : ''}</span>`);
       }
       return `
       <button class="option" data-opt="${i}">
@@ -311,6 +314,11 @@ export function renderEnding(state, verdict, people, phases, payload) {
       </div>
     </div>
     ${notes ? `<div class="folio verdict-margin"><div class="page-head">MARGINALIA</div>${notes}</div>` : ''}
+    <div class="folio verdict-margin later-record">
+      <div class="page-head">THE LATER RECORD</div>
+      <p class="verdict-note attested-intro">In another hand, centuries on — what the libraries will make of it:</p>
+      ${laterRecord(state).map((l) => `<p class="verdict-note">· ${esc(l)}</p>`).join('')}
+    </div>
     <div class="folio verdict-margin attested-life">
       <div class="page-head">THE ATTESTED LIFE</div>
       <p class="verdict-note attested-intro">What the record says of the historical Ṣāʾin al-Dīn ʿAlī ibn Turka (1369–1432) — beside the life you led:</p>

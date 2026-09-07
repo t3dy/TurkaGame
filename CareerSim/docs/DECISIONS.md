@@ -394,3 +394,15 @@ NEXTSTEPS items 4 and 5, built as the pair they were designed to be.
   comparison — a newline must never be the difference between authorized and not.
 - **The desk exposed its own first chore**: the three `TEST —` editor-verification
   records now sit in plain view. Delete/archive controls are the recorded next nicety.
+
+## The ranked ten, first execution pass (2026-09-07, from the grimoire readings)
+
+Implemented straight from grimoire/readings/ (specs there, not re-derived here):
+the third answer with its prognosis lint, the Dee-inversion invariant test, the
+Later Record ending layer (also in witness payloads), the one-figure trial option,
+sand_in_exile, the taksīr demonstration with arithmetic printed, and contract
+epistemology (cipher_level/proof_standard on every contract, disclosed on the
+button). Remaining reading decisions queued in grimoire/LOG.md. One tooling
+lesson recorded in tools/test-thesis.mjs itself: the shell heredoc ate regex
+backslashes twice, so the invariant's regexes use [0-9] classes and a NaN guard —
+a test that silently matches nothing is a rubber stamp.

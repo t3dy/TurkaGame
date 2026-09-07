@@ -249,6 +249,55 @@ export function attestedRows(state) {
   return rows;
 }
 
+// The Later Record — the second erasure, given its own voice (grimoire readings,
+// NARRATIVEDESIGNERREADSDEE.md D2). The Attested Life sets the run against the
+// tribunals' century; these lines set it against the libraries' — what the shelves
+// will say of him, centuries on, in the classification the modern archive actually
+// used (themes/OCCULTOPHOBIA.md). One line of hope is licensed by the record itself:
+// a dissertation, five centuries later, was "the first study to point out the
+// utterly obvious" (Prologue n.7).
+export function laterRecord(state) {
+  const v = SYSTEM_FATES.find((f) => f.test(state));
+  const lines = [];
+  const push = (t) => lines.push(t);
+  switch (v && v.key) {
+    case 'source_code':
+      push('Six court cultures will run on his mathematics, and their chancelleries will not need to name him to use him.');
+      push('Then the cataloguers of another empire will arrive, and file the whole platform under superstition — never science.');
+      break;
+    case 'scholarly':
+      push('The copyists keep him alive for four centuries: taught, argued over, corrected in the margins.');
+      push('The libraries that inherit those copies will shelve them as devotional curiosities, and the arguing will stop.');
+      break;
+    case 'escaped':
+      push('What travels under his name grows stranger and more popular by the decade, and needs him less each year.');
+      push('When the modern collectors come, they will keep the marvels and discard the mathematics that made them mean anything.');
+      break;
+    case 'one_hand':
+      push('Yazdī’s copy survives him by centuries, passing hand to hand until it reaches an archive.');
+      push('The archive will label it mysticism. The mathematics inside will wait, correctly shelved and completely unread.');
+      break;
+    case 'indexed':
+      push('Condemned by a tribunal in his own century; filed as devotional literature in ours. Two verdicts, one silence.');
+      break;
+    case 'appropriated':
+      push('The prognostics stay in service for generations, efficient and orphaned; no one who uses them can say whose philosophy they amputated.');
+      break;
+    case 'underground':
+      push('The quiet copying never entirely stops — which means the work enters the modern archives from the wrong doors, uncatalogued and unclaimed.');
+      break;
+    case 'unread':
+      push('The box that holds the finished system will be opened, once a century, by someone looking for something else.');
+      break;
+    default:
+      push('Where nothing of the work survives, the later record has nothing to misfile — the one erasure that needed no help.');
+  }
+  if (v && v.key !== 'died') {
+    push('Five centuries on, a dissertation will point out the utterly obvious, and the shelves will begin, slowly, to be relabeled.');
+  }
+  return lines;
+}
+
 export function finalVerdict(state) {
   const man = MAN_FATES.find((f) => f.test(state));
   const system = SYSTEM_FATES.find((f) => f.test(state));
@@ -315,6 +364,15 @@ export const LEGACY_NOTES = {
   book_neglected: 'There were seasons the summa sat untouched, and the book remembers them in its unevenness.',
   summons_neglected: 'He let tribunal filings lapse while he worked, and every lapse was entered in someone’s margin.',
   patron_ledger_claimed: 'He once claimed protection as a debt owed for work delivered, and was paid like a creditor.',
+
+  // — The grimoire readings' additions (2026-09-07) —
+  taught_the_king_number: 'Asked for a date, he gave a prince the structure of time instead — and was asked to keep teaching it.',
+  gave_the_window: 'He gave the army a window instead of a day, and the mathematics of the window held.',
+  answered_with_the_figure: 'Before the third tribunal he answered with a single figure — the whole system in one drawn object.',
+  sand_read_on_the_road: 'In exile, stripped of bench and library, he cast the sixteen figures for caravaners — the poor scholar’s observatory.',
+  figures_taught: 'He taught the sand figures to people who would never see an observatory, and that teaching kept traveling.',
+  sand_refused: 'Once, on the road, he let the learned man be dead a while — and remembered the lightness of it.',
+  taksir_shown: 'He answered a challenge by taksīr with the arithmetic shown, and the room checked his sums and found them sound.',
 
   // — The pressure ladder (content/pressure.js) —
   rumor_corrected: 'He corrected his own legend in a bookshop, and the legend outran the correction anyway.',

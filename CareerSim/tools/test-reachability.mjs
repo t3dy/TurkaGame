@@ -17,7 +17,7 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { ENCOUNTERS, PHASES } from '../content/index.js?v=11';
+import { ENCOUNTERS, PHASES } from '../content/index.js?v=12';
 import { LEXICON } from '../content/lexicon.js?v=2';
 
 const SCI = ['kimiya', 'limiya', 'himiya', 'simiya', 'rimiya'];
@@ -118,6 +118,27 @@ test('no encounter is stranded behind a memory flag nothing writes', () => {
     }
   }
   assert.deepEqual(stranded, [], stranded.join('\n  '));
+});
+
+// A prognosis encounter must carry three roads: the number, the refusal, and the
+// New-Brethren reframe (grimoire/readings/NARRATIVEDESIGNERREADSGEOPOLITICS.md D1).
+// The reframe is the attested position (Prologue n.51) and the one road that names
+// no falsifiable date; an encounter that demands prophecy without offering it is
+// writing Ibn Turka out of his own signature move.
+test('every prognosis encounter offers the number, the refusal, and the reframe', () => {
+  const flagged = encs.filter((e) => e.prognosis);
+  assert.ok(flagged.length >= 2, 'prognosis encounters exist and are marked');
+  const bad = [];
+  for (const e of flagged) {
+    const ids = e.options.map((o) => o.id);
+    const hasNumber = e.options.some((o) => /name_reading|stars|elect|hedge|nativity|date/.test(o.id));
+    const hasRefusal = ids.some((id) => /refuse/.test(id));
+    const hasReframe = ids.some((id) => /structural/.test(id));
+    if (!hasNumber) bad.push(e.id + ': no committal road');
+    if (!hasRefusal) bad.push(e.id + ': no refusal road');
+    if (!hasReframe) bad.push(e.id + ': no reframe road (the third answer)');
+  }
+  assert.deepEqual(bad, [], bad.join('; '));
 });
 
 // --- delivery, not just presence -------------------------------------------------

@@ -3,7 +3,7 @@
 // stays an immutable witness even as game content is later revised — which is the
 // property a scholarly correction workflow needs. Framework-agnostic.
 
-import { attestedRows } from './career.js?v=8';
+import { attestedRows, laterRecord } from './career.js?v=9';
 import { resolveSource } from '../../content/citations.js?v=1';
 
 export const PAYLOAD_V = 1;
@@ -60,6 +60,7 @@ export function buildChroniclePayload(state, verdict, phases) {
     },
     legacyNotes: verdict.notes || [],
     attested: attestedRows(state),
+    laterRecord: laterRecord(state),
     log: state.runLog || [],
     annotations: [],
     revisions: [],

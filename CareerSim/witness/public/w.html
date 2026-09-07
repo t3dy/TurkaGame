@@ -251,6 +251,8 @@ function render() {
       ${w.attested.map((a) => `<p class="att"><b>${esc(a.hist)}</b> — ${esc(a.yours)}</p>`).join('')}</div>` : ''}
     ${w.legacyNotes && w.legacyNotes.length ? `<div class="rubric">MARGINALIA</div><div class="folio">
       ${w.legacyNotes.map((n) => `<p class="note">· ${esc(n)}</p>`).join('')}</div>` : ''}
+    ${w.laterRecord && w.laterRecord.length ? `<div class="rubric">THE LATER RECORD</div><div class="folio">
+      ${w.laterRecord.map((n) => `<p class="note">· ${esc(n)}</p>`).join('')}</div>` : ''}
     <div class="rubric">THE FULL RECORD</div>
     ${entries || '<p class="note">No decisions were recorded.</p>'}
     <p class="colophon">Ibn Turka: The Occult Court · witness ${esc(w.id)} ·

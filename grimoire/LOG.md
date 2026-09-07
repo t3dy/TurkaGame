@@ -22,3 +22,24 @@
   REEDITIONS, MANUALINDEX, LATERRECORD, CONFESSIONALTRANSITION, PROGNOSTICON,
   APOCALYPTICRIVALS, SELENOCENTRISM, TAKSIRPUZZLE, KHALDUN, BISTAMI (promoted),
   CREEDS (promoted).
+
+## [2026-09-07] implementation | The ranked ten, first execution pass
+- Shipped from the readings: #1 the third answer (`structural_answer` on court_dynasty,
+  `structural_window` on court_razm_date, `prognosis: true` markers + a lint that every
+  prognosis encounter offers the number, the refusal, and the reframe); #10 the
+  Dee-inversion invariant (`tools/test-thesis.mjs`, 800 greedy runs, NaN-guarded after
+  the harness itself was twice corrupted by shell backslash-mangling); #3 the Later
+  Record (career.js `laterRecord()` keyed to system fates, rendered in the ending and
+  carried into witness payloads); DEE D5 the monad option (`one_figure` at trial_third);
+  #9 `sand_in_exile` (geomancy's exile payoff, 3 options); #6 the taksīr demonstration
+  (`taksir_answer` on court_rival_astrologer, ʿAlī=110=alif with the sums printed);
+  #2 contract epistemology (`cipher_level`/`proof_standard` on all 8 contracts, spoken
+  on the promise button — the Durmish Khān clause).
+- Queued, recorded here so nobody re-derives: PATRONAGE D2 (three retainers) / D3
+  (exit verb) / D4 (vizier_countermagic); GEO D2 (state artifacts) / D3 (refusal as
+  reputation event) / D4 (student_asks_the_future); DEE D3 (cataloguer_misfiles) /
+  D4 (frankish_visitor); QUINTET D1 (systematized foreclosures) / D4 (limiya ladder
+  rungs 1 and 4); capstone #5 (Bisṭāmī joins the cast).
+- Measured after: 0 unreachable gates (33 quintet gates now), thesis test green,
+  fate spread intact (no man-fate >27%, vindicated 4.0%), sand_in_exile fires 3.9%
+  (exile-road capstone; acceptable, noted).

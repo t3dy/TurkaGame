@@ -139,6 +139,7 @@ export const ENCOUNTERS = {
         requires: [],
         contract: {
           id: 'demonstration_boon', name: 'The Demonstration Boon', deadline: 4,
+          cipher_level: 'plain', proof_standard: 'spectacle',
           promise: 'A public demonstration of the science before the court',
           requires: ['meter:demonstration>=3'],
           reward: { rep: { imperial: 2, occult: 1 }, meters: { exposure: 1 }, memory: { boon_delivered: true } },
@@ -157,6 +158,7 @@ export const ENCOUNTERS = {
         requires: [],
         contract: {
           id: 'exposition_boon', name: 'The Written Boon', deadline: 4,
+          cipher_level: 'allusive', proof_standard: 'mathematical',
           promise: 'A written exposition of the science for the prince',
           requires: ['meter:synthesis>=4'],
           reward: { rep: { imperial: 1, scholarly: 1 }, meters: { transmission: 1 }, memory: { boon_delivered: true } },
@@ -177,6 +179,7 @@ export const ENCOUNTERS = {
         requires: ['rep:scholarly>=2'],
         contract: {
           id: 'negotiated_boon', name: 'The Negotiated Boon', deadline: 6,
+          cipher_level: 'plain', proof_standard: 'reproducible',
           promise: 'An exposition of the science, on generous terms',
           requires: ['meter:synthesis>=3'],
           reward: { rep: { imperial: 1 }, meters: { transmission: 1 }, memory: { boon_delivered: true } },
@@ -262,6 +265,9 @@ export const ENCOUNTERS = {
 
   court_dynasty: {
     id: 'court_dynasty', phase: 3,
+    // A prognosis encounter must carry three roads: the number, the refusal, the
+    // reframe (lint in tools/test-reachability.mjs; grimoire GEOPOLITICS reading D1).
+    prognosis: true,
     rubric: 'THE AUDIENCE HALL · HOW LONG WILL MY HOUSE LAST?',
     grounding: 'ATTESTED',
     source: 'BIOGRAPHY / RESEARCH — Ibn Turka prognosticated from Shāh Rukh’s name that the Timurid state would endure the ninth Islamic century',
@@ -301,6 +307,24 @@ export const ENCOUNTERS = {
             text: 'Someone repeats your number without your conditions. By the time it reaches a rival court it is a prophecy, and it is yours.',
             effects: { meters: { exposure: 1 } },
             chronicle: 'His careful conjunctional reading traveled without its hedges, and hardened into a prophecy on the road.' },
+        ],
+      },
+      {
+        // The third answer (grimoire/readings/NARRATIVEDESIGNERREADSGEOPOLITICS.md D1):
+        // the attested New Brethren position — apocalypse as ontology, not schedule
+        // (Prologue n.51). It names no date, so it alone cannot be disproved; only a
+        // synthesist can walk this road, which makes specialization audible as voice.
+        id: 'structural_answer', label: 'Answer with the structure, not a date',
+        detail: 'The ending is structural, sire — your house’s question is its mathematics, not its terminus.',
+        requires: ['meter:synthesis>=6'],
+        effects: { rep: { scholarly: 1 }, memory: { taught_the_king_number: true } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'You tell him the world is always already ending, because the Horn that is Number sounds forever — and that a house endures by keeping its mathematics in order, not by knowing its hour. He is silent a long moment, and then asks you to teach him the mathematics.',
+            effects: { rep: { imperial: 2 }, meters: { transmission: 1 } },
+            chronicle: 'Asked how long his house would last, he taught the prince number instead of naming an hour — and was asked to go on teaching.' },
+          { band: 'qualified', weight: 1, text: 'A serious answer for a serious man — but tonight the prince is only frightened, and hears evasion dressed in geometry. He thanks you with visible disappointment.',
+            effects: { rep: { imperial: -1 } },
+            chronicle: 'His structural answer to the dynastic question was heard, that night, as a philosopher’s way of refusing.' },
         ],
       },
       {
@@ -504,7 +528,25 @@ export const ENCOUNTERS = {
             chronicle: 'He bought his rival’s public civility, and got nothing more.' },
         ],
       },
-      {
+            {
+        // Taksīr with the work shown (grimoire readings, NARRATIVEDESIGNERREADSQUINTET.md
+        // D2): the attested algorithm, arithmetic printed so the player can check the
+        // game's math by hand — GEMATRIA.md's rule made into content.
+        id: 'taksir_answer', label: 'Answer by taksīr, work shown',
+        detail: 'Split the disputed word, expand the letternames, let the sums argue.',
+        requires: ['limiya>=2'],
+        boosts: ['mem:muqattaat_system'],
+        effects: { meters: { demonstration: 1, exposure: 1 }, memory: { taksir_shown: true } },
+        outcomes: [
+          { band: 'triumph', weight: 1, text: 'You take the word he challenged, write each lettername in full, strike the repeats, and split zubur from bayyināt on the slate: ʿAlī is ʿ-L-Y, 70+30+10 = 110 — and alif, A-L-F, 1+30+80 = 110. The name and the first letter are one number. He checks it twice. The room checks it with him.',
+            effects: { rep: { scholarly: 2, occult: 1 }, meters: { demonstration: 1 } },
+            chronicle: 'He answered a mathematician’s challenge by taksīr with every sum shown, and the challenger did the arithmetic himself and sat down.' },
+          { band: 'qualified', weight: 2, text: 'The arithmetic is impeccable and he says so — then asks, evenly, why identical sums should bind the world. You have won the calculation and opened the harder question.',
+            effects: { rep: { scholarly: 1 } },
+            chronicle: 'His taksīr was checked and held; the quarrel moved from his sums to his premises, which is where he wanted it.' },
+        ],
+      },
+{
         id: 'legal_answer', label: 'Answer as a jurist: question his standing to accuse',
         detail: 'Use the bench, not the tables. Effective, and it looks like evasion.',
         requires: ['access:judiciary'],
@@ -549,6 +591,7 @@ export const ENCOUNTERS = {
         detail: 'Your proportions, in the most permanent object this dynasty will make. Glory, in evidence form.',
         contract: {
           id: 'quran_layout', name: 'The Qurʾan Layout', deadline: 3,
+          cipher_level: 'plain', proof_standard: 'mathematical',
           promise: 'A complete lettrist proportion-scheme for the royal Qurʾan, delivered to the kitābkhāna.',
           requires: ['meter:synthesis>=5'],
           reward: { meters: { transmission: 2 }, rep: { imperial: 1, orthodox: 1 }, memory: { boon_delivered: true } },
@@ -807,6 +850,7 @@ export const ENCOUNTERS = {
 
   court_razm_date: {
     id: 'court_razm_date', phase: 3,
+    prognosis: true,
     rubric: 'THE CAMPAIGN · AN AUSPICIOUS DATE FOR THE ARMY',
     grounding: 'ATTESTED',
     source: 'RESEARCH — election astrology as imperial technology; the astrological-lettrist platform as political science',
@@ -841,6 +885,22 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'success', weight: 2, text: 'You give a fortnight and the reasoning behind it. The commanders are irritated; the commanders are also unable to blame you precisely.',
             chronicle: 'Asked for a day, he gave the army a fortnight and his reasons.' },
+        ],
+      },
+      {
+        // The window, not the day (GEOPOLITICS reading D1 applied to war): campaign
+        // windows from the mansions of the Moon — mathematics the army can use, no
+        // single date the record can hang you with.
+        id: 'structural_window', label: 'Give him the window, not the day',
+        detail: 'Ten days when the mansions favor marching. Which day is the commander’s craft, not the sky’s.',
+        requires: ['meter:synthesis>=6'],
+        effects: { rep: { imperial: 1, scholarly: 1 }, meters: { demonstration: 1 }, memory: { gave_the_window: true } },
+        outcomes: [
+          { band: 'success', weight: 2, text: 'You mark the window on his own campaign map — the mansions, the moon’s run, the arithmetic in the margin. He likes it better than a date: a window respects his weather and his scouts.',
+            chronicle: 'He gave the army a window read from the mansions of the Moon, and left the choosing of the day to the men who march.' },
+          { band: 'qualified', weight: 1, text: 'The prince wanted an oracle and got an instrument. He uses it — and remembers that you declined to be an oracle.',
+            effects: { rep: { imperial: -1 } },
+            chronicle: 'His window held where a date would have broken; the prince used the mathematics and missed the magic.' },
         ],
       },
       {

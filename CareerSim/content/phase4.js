@@ -621,6 +621,7 @@ export const ENCOUNTERS = {
         detail: 'K\u012bmiy\u0101 standing lets you propose the expensive book instead: fewer buyers, better ones.',
         contract: {
           id: 'grimoire_subscription', name: 'The Subscription Treatise', deadline: 3,
+          cipher_level: 'encoded', proof_standard: 'reproducible',
           promise: 'Twelve fair copies of the noble-operations treatise, for named subscribers.',
           requires: ['meter:transmission>=6'],
           reward: { meters: { transmission: 2 }, rep: { imperial: 1, occult: 1 }, memory: { boon_delivered: true } },
@@ -670,6 +671,7 @@ export const ENCOUNTERS = {
         detail: 'Work on the tables. Anonymous, rigorous, and it ties your name to real science.',
         contract: {
           id: 'zij_contribution', name: 'The Observatory Tables', deadline: 3,
+          cipher_level: 'plain', proof_standard: 'mathematical',
           promise: 'Your computed contributions to the new tables, delivered to Samarkand while the instrument is young.',
           requires: ['meter:demonstration>=2'],
           reward: { rep: { scholarly: 2 }, meters: { transmission: 1 }, memory: { boon_delivered: true } },
