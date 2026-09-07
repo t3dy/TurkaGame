@@ -186,6 +186,19 @@ CareerSim/
 └── tools/           test-engine.mjs (31 tests)
 ```
 
+## Security note (2026-09-07): key hashes touched a public commit
+
+A blob-store backup (`witness/witness-backup/`, made locally by another session) was
+accidentally committed and pushed; its witness documents include the sha256 hashes of
+every witness's player/scholar edit keys. Removed and gitignored the same hour, but
+**the hashes remain in git history**. Assessment: the keys are 24 random bytes (192
+bits), so the hashes are not practically invertible — the edit keys are not considered
+compromised. Options if you want belt-and-braces anyway: (a) rewrite history
+(git-filter-repo) and force-push — disruptive, coordinate with other sessions first;
+(b) treat the three TEST witnesses as burnable and simply never rely on their keys;
+(c) accept the assessment. The real runs' scholar keys were only ever displayed at
+publish time and are unaffected by the hash exposure either way. Decide and log it.
+
 ## Operating the witness service
 
 Nothing routine. It was created with `vercel link --project turka-witness` and
