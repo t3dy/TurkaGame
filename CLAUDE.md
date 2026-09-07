@@ -79,6 +79,18 @@ they're general research, not TurkaGame-specific game design.
 
 ## Ground rules for this project specifically
 
+- **Instructions to the player err on the side of too much.** Ted's words
+  (2026-09-07): "the controls are really opaque and the goals of the game are
+  really confusing. You have a bad habit of writing really short and cryptic hints
+  or clues when I want full instructions." So: every prototype carries a **How to
+  play** panel that states, in full sentences, (1) what the goal of the mode is and
+  how you know you have won or lost, (2) every control — mouse, keyboard, and
+  button — with what it does, (3) what the cursor is and where the next action will
+  land, (4) how to preview a move before committing it, and (5) how to rotate,
+  zoom, and reset the camera. A one-line legend in the corner is *in addition to*
+  that panel, never instead of it. Write the long version; Ted will cut it down if
+  he wants to. The same goes for READMEs and in-game briefs: a reader who has never
+  seen the project should be able to play from the text alone. Ted cannot.
 - **Scenes reveal the real world, not generic occult-fantasy atmosphere.** Before
   writing or revising any VN scene text, read
   [games/visual-novel/WRITING_GUIDE.md](games/visual-novel/WRITING_GUIDE.md) —
@@ -238,6 +250,12 @@ building task whose answer depends on whose rules run there. House rule it adds:
 gate it on that property** (`design_search.mjs` → `levels.json` → `verify_run.mjs`:
 fair under every ruleset, trapping for every ordered pair, universal placements
 *printed*, not hidden). Hand-sketched floors all had a universal answer.
+
+[`v2/POWERSOFTHELETTERS.md`](v2/POWERSOFTHELETTERS.md) is the sourced reference
+for what each Arabic and Hebrew letter was held to do — number, nature, planet,
+mansion, name, faculty — and how each becomes, or could become, a player ability.
+Read it before adding a ruleset or a lesson; it says what is attested and what is
+ours.
 
 [`v2/index.html`](v2/index.html) is the hub — every prototype, v1 and v2, in one place.
 

@@ -348,6 +348,16 @@ and **trapping** (for every ordered pair, a solution carried from one fails unde
 the other), and *prints* how many universal placements remain — the honest measure
 of how much the floor needs you to know where you are.
 
+### The powers of the letters, sourced
+
+[`POWERSOFTHELETTERS.md`](POWERSOFTHELETTERS.md) lays the traditions' attributions
+(abjad, the four natures, luminous and dark, the twenty-eight lunar mansions, the
+divine names, the Ikhwān's body parts; the *Sefer Yetsirah*'s mothers, doubles and
+simples, planets, signs, the 231 gates, the golem) beside the engine's own
+form-derived primitives, letter by letter for both alphabets, with every claim
+labelled by what was actually read. It is the reference for the Introduction mode
+and for any new ruleset.
+
 ## Known gaps — this is a first slice
 
 - **No person has played it.** Every claim above is from `engine.test.mjs`, from
