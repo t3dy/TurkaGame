@@ -39,7 +39,12 @@ One line per page. Update on every add/delete; never put content here.
 
 ## Readings (the narrative designer at work)
 
-*(none yet — the first batch is being commissioned; see NARRATIVEDESIGNER.md for the format)*
+- [readings/NARRATIVEDESIGNERREADSPATRONAGE.md](readings/NARRATIVEDESIGNERREADSPATRONAGE.md) — contract epistemology, three retainers, exit as a verb, the occult-democracy family
+- [readings/NARRATIVEDESIGNERREADSGRIMOIRESASCOURTLYMANUALS.md](readings/NARRATIVEDESIGNERREADSGRIMOIRESASCOURTLYMANUALS.md) — cipher/index composition axes, keys as entities, re-editions, dual-use tags
+- [readings/NARRATIVEDESIGNERREADSDEE.md](readings/NARRATIVEDESIGNERREADSDEE.md) — the inversion thesis as automated invariant; the Later Record; cataloguer and Frankish visitor
+- [readings/NARRATIVEDESIGNERREADSGEOPOLITICS.md](readings/NARRATIVEDESIGNERREADSGEOPOLITICS.md) — the third answer to prophecy, state-scale artifacts, refusal as event, the succession license
+- [readings/NARRATIVEDESIGNERREADSQUINTET.md](readings/NARRATIVEDESIGNERREADSQUINTET.md) — specialization foreclosures, taksīr with work shown, the exile science, limiya's ladder
+- [readings/NARRATIVEDESIGNERREADSCAREERSIM.md](readings/NARRATIVEDESIGNERREADSCAREERSIM.md) — the capstone choice-space brief: missing cast, mentor/student arcs, the ranked ten
 
 ## Pages marked wanted by links
 
