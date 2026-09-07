@@ -103,7 +103,10 @@ export function natures4x7(g, w, h, arabic, style) {
   const cols = ['hot', 'cold', 'wet', 'dry'];
   const colour = { hot: style.fire, cold: style.water, wet: style.water, dry: style.earth };
   const byNature = { hot: [], cold: [], wet: [], dry: [] };
-  arabic.forEach((l, i) => byNature[cols[i % 4]].push(l));
+  // Read the nature from the letter table's ATTESTED layer, which build_letters.py
+  // generates from the Sharāsīm's list and checks (seven of each, neighbours always
+  // differing). Recomputing the cycle here would let the figure and the data drift.
+  arabic.forEach((l, i) => byNature[(l.attested && l.attested.nature) || cols[i % 4]].push(l));
   const left = w * 0.08, top = h * 0.12, cw = (w * 0.84) / 4, rh = (h * 0.7) / 7;
   g.font = `${Math.round(rh * 0.5)}px "Inter","Segoe UI",system-ui,sans-serif`;
   cols.forEach((c, ci) => {
@@ -132,7 +135,10 @@ export function mansions28(g, w, h, arabic, style) {
   ring(g, cx, cy, R, style); ring(g, cx, cy, R * 0.72, style);
   arabic.forEach((l, i) => {
     const a = -Math.PI / 2 + i * TAU / 28;
-    const dots = l.facts.dots_above + l.facts.dots_below;
+    // The omen is the attested layer's, from al-Būnī's own scale on Shams f. 4r;
+    // the dot count behind it is the form layer's, and build_letters.py --verify
+    // asserts the two agree with his letter lists.
+    const dots = l.attested ? l.attested.omen_degree : (l.facts.dots_above + l.facts.dots_below);
     const x = cx + R * 0.86 * Math.cos(a), y = cy + R * 0.86 * Math.sin(a);
     g.fillStyle = dots ? style.brk : style.ok;
     g.beginPath(); g.arc(x, y, R * 0.06 + dots * 1.2, 0, TAU); g.fill();

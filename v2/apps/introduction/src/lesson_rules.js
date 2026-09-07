@@ -8,11 +8,11 @@
 // running the solution through exactly this module. The page runs the same
 // module, so the browser and the test cannot disagree about what counts.
 
-import { World, KEY } from '../../../engine/world.js?v=8';
-import { compile, execute } from '../../../engine/vm.js?v=8';
-import { Scribe, DIRS } from '../../../engine/agent.js?v=8';
-import { readWorld, worldReads } from '../../../engine/reader.js?v=8';
-import { extract } from '../../../engine/operations.js?v=8';
+import { World, KEY } from '../../../engine/world.js?v=9';
+import { compile, execute } from '../../../engine/vm.js?v=9';
+import { Scribe, DIRS } from '../../../engine/agent.js?v=9';
+import { readWorld, worldReads } from '../../../engine/reader.js?v=9';
+import { extract } from '../../../engine/operations.js?v=9';
 
 /** Build the lesson's starting world and sage. */
 export function start(lesson) {

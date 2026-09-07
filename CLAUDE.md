@@ -117,6 +117,15 @@ they're general research, not TurkaGame-specific game design.
 - **Games are separate, independently runnable folders** under `games/`, one per prototype.
   Don't reach across game folders for shared code until at least two prototypes are past
   their first slice — premature sharing here has bitten other projects in this workspace.
+- **The research is digested; do not re-read the corpus to build.**
+  [LETTRISMRESEARCH.md](LETTRISMRESEARCH.md) is the source-by-source digest — what
+  Melvin-Koushki, Segol, Gardiner, Varisco, Coulon and de Callataÿ each establish,
+  with page and folio citations, what they do *not* say, and an extraction table of
+  every research fact marked **built / ready / refused**. Go there before opening a
+  PDF. [PIPELINE.md](PIPELINE.md) is the orchestration rule that keeps it that way:
+  five roles (reader → distiller → designer → builder → verifier), each defined by
+  the artifact it hands the next, with the handoff contracts and context budgets.
+  Its one-line version: **sources never enter a build session's context; artifacts do.**
 - **Pick the model deliberately; Sonnet 5 is the default, not Opus.** Which model for
   which job, how much corpus belongs in a context, and the resumable batch harness for
   per-item sweeps are all in

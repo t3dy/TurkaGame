@@ -143,6 +143,24 @@ at runtime from Google Fonts (linked in every v2 page's `<head>`); nothing is
 vendored, so an offline viewer gets the system serif. Vendoring is a download and
 waits for Ted.
 
+## The `?v=` token protects sub-resources, not the page itself
+
+Learned 2026-09-07, after ten minutes of confusion. `bump_version.py` rewrites every
+`?v=N` **inside** the HTML, so a bumped token makes the browser fetch fresh JS and
+CSS. It cannot make the browser re-fetch **the HTML document that carries the
+token**. A page whose own `index.html` is cached keeps loading the old token and so
+the old modules, and the symptom is a debug handle that is missing a property you
+just added.
+
+- **In the browser pane:** navigate with a throwaway query (`?cachebust=1`), or open
+  a fresh tab.
+- **Reading the console after a change:** the pane's error buffer is **cumulative
+  per tab and survives navigation**. An error naming an old token is history, not a
+  live fault. Confirm in a new tab before chasing it.
+- **On GitHub Pages** this is not an issue in practice — Pages serves HTML with a
+  short cache — but confirm the served file, not the local one, when a live check
+  disagrees with a local one.
+
 ## Controls, instructions, and the camera (added 2026-09-07)
 
 Ted: "the controls are really opaque and the goals of the game are really

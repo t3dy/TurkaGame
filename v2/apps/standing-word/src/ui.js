@@ -13,10 +13,10 @@
 // the commit makes, run against a copy. The preview cannot be wrong about the
 // collapse because it IS the collapse, thrown away.
 
-import { World } from '../../../engine/world.js?v=8';
-import { compile, execute, describeLetter } from '../../../engine/vm.js?v=8';
-import { mountHowTo } from '../../shared/howto.js?v=8';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=8';
+import { World } from '../../../engine/world.js?v=9';
+import { compile, execute, describeLetter } from '../../../engine/vm.js?v=9';
+import { mountHowTo } from '../../shared/howto.js?v=9';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=9';
 
 
 const HOWTO = {

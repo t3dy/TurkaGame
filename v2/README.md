@@ -360,6 +360,8 @@ solution and a test proves it finishes the task.
 
 ### The powers of the letters, sourced
 
+[`../LETTRISMRESEARCH.md`](../LETTRISMRESEARCH.md) is the source-by-source digest behind
+all of this (who established what, on which page, and what is still unbuilt);
 [`POWERSOFTHELETTERS.md`](POWERSOFTHELETTERS.md) lays the traditions' attributions
 (abjad, the four natures, luminous and dark, the twenty-eight lunar mansions, the
 divine names, the Ikhwān's body parts; the *Sefer Yetsirah*'s mothers, doubles and

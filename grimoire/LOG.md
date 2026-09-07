@@ -43,3 +43,31 @@
 - Measured after: 0 unreachable gates (33 quintet gates now), thesis test green,
   fate spread intact (no man-fate >27%, vindicated 4.0%), sand_in_exile fires 3.9%
   (exile-road capstone; acceptable, noted).
+
+## [2026-09-07] add | themes/TWINSISTERS.md — kabbalah and lettrism as one structure, twice
+
+- Written while distilling the letter-powers reference. Reading al-Būnī (via Gardiner
+  pp. 56–57) and the Sefer Yetsirah (via Segol pp. 41, 72, 91) side by side surfaced
+  three structural parallels neither source states as a parallel, because neither is
+  comparative: **twelve letters are twelve human faculties in both** (al-Būnī's
+  Avicennan sensorium vs the SY's actions-and-passions); **both mediate through a
+  middle tier of twelve** between a seven above and the letters below; and **both
+  partition space exhaustively** — the SY as a cube of six directions plus a centre
+  (SY15–16, SY38), al-Būnī as a wheel of 28 mansions with 14 above the horizon and 14
+  below at any moment.
+- Differences kept, not smoothed: the SY has **no earth element**; the Ikhwān assert
+  correspondences where Ibn Turka demonstrates them; the medieval golem is a cosmic
+  instrument while *Boon for the Khan*'s chimera is a material with tabulated
+  properties.
+- Checked, not asserted: al-Būnī's "fifteen letters have diacritical points and
+  thirteen are without" (Varisco p. 502) matches `v2/data/letters.json` letter for
+  letter.
+- Operative payoff recorded on the page: the twelve-faculty middle tier as a
+  dependency graph (unbuilt, strongest available); seven doubles = six faces + centre
+  (directly implementable in a cubic-cell engine); the rotating half-alphabet as the
+  turn scheduler the roguelike and CareerSim both lack. Anti-pattern named: do not
+  merge the two traditions into one syncretic system — ship them as two rulesets on
+  one engine, which is what the GoldenDawnBlocks vendoring already is.
+- Companions written the same day: [../LETTRISMRESEARCH.md](../LETTRISMRESEARCH.md)
+  (source-by-source digest with the extraction table) and [../PIPELINE.md](../PIPELINE.md)
+  (the five roles and their handoff contracts).

@@ -11,12 +11,12 @@
 // them (a Minecraft-ish reach); gravity, erasure and reading are the engine's
 // own settle(), extract() and readWorld(). Nothing here is a new mechanic.
 
-import { Ledger } from '../../../engine/ledger.js?v=8';
-import { describeLetter } from '../../../engine/vm.js?v=8';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=8';
-import { mountHowTo } from '../../shared/howto.js?v=8';
-import { drawFigure } from './diagrams.js?v=8';
-import { start, canWrite, writeLetter, letGravityIn, erase, taskDone, readWorld, DIRS, runSolution } from './lesson_rules.js?v=8';
+import { Ledger } from '../../../engine/ledger.js?v=9';
+import { describeLetter } from '../../../engine/vm.js?v=9';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=9';
+import { mountHowTo } from '../../shared/howto.js?v=9';
+import { drawFigure } from './diagrams.js?v=9';
+import { start, canWrite, writeLetter, letGravityIn, erase, taskDone, readWorld, DIRS, runSolution } from './lesson_rules.js?v=9';
 
 const V = 'v=8';
 const $ = id => document.getElementById(id);
@@ -306,6 +306,7 @@ function eraseAlef() {
 
   window.__intro = {
     get lesson() { return lesson; }, get world() { return world; }, get sage() { return sage; }, get done() { return done; }, get at() { return at; },
+    get iso() { return iso; }, get hover() { return hover; },
     LESSONS, load, walk, writeAt, gravity, eraseAlef, select: g => { sel = g; paintPalette(); },
     /** Play every lesson's solution through the real input path, in order. */
     async selfTest() {

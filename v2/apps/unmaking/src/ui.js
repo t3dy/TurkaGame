@@ -12,11 +12,11 @@
 // same target and tabulates what each did, so they can be compared on one screen
 // instead of remembered across sessions.
 
-import { World } from '../../../engine/world.js?v=8';
-import { compile, execute } from '../../../engine/vm.js?v=8';
-import { isolate, utter, throwStone, standing, highest, ROUTES } from '../../../engine/unmaking.js?v=8';
-import { mountHowTo } from '../../shared/howto.js?v=8';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=8';
+import { World } from '../../../engine/world.js?v=9';
+import { compile, execute } from '../../../engine/vm.js?v=9';
+import { isolate, utter, throwStone, standing, highest, ROUTES } from '../../../engine/unmaking.js?v=9';
+import { mountHowTo } from '../../shared/howto.js?v=9';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=9';
 
 
 const HOWTO = {

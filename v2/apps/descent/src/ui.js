@@ -16,11 +16,11 @@
 // list the moment it happens. The name of the metaphysics is never shown until
 // you name it yourself or the run ends.
 
-import { compile } from '../../../engine/vm.js?v=8';
-import { Ledger } from '../../../engine/ledger.js?v=8';
-import { mountHowTo } from '../../shared/howto.js?v=8';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=8';
-import { startWorld, settled, held, write, legalCells, minWord, deal, solutions } from './rules.js?v=8';
+import { compile } from '../../../engine/vm.js?v=9';
+import { Ledger } from '../../../engine/ledger.js?v=9';
+import { mountHowTo } from '../../shared/howto.js?v=9';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=9';
+import { startWorld, settled, held, write, legalCells, minWord, deal, solutions } from './rules.js?v=9';
 
 
 const HOWTO = {

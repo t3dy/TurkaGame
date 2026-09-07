@@ -112,6 +112,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "hot",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 1,
+        "mansion_name": "al-nath",
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": "Avatar of divine Oneness and of the beginning of creation. Lightest of all: abjad 1."
     },
     {
@@ -159,6 +169,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "cold",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 2,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 1,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": "First of the dark letters and the fountainhead of all duality. The Qur'an and the Torah both open on it rather than on alif — the conundrum the Risāla al-Bāʾiyya was written to solve."
     },
     {
@@ -211,6 +231,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "wet",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 3,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 1,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -258,6 +288,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "dry",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 4,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -305,6 +345,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "hot",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 5,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -362,6 +412,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "cold",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 6,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -419,6 +479,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "wet",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 7,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 1,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -466,6 +536,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "dry",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 8,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -513,6 +593,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "hot",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 9,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -565,6 +655,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "cold",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 10,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 2,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -607,6 +707,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "wet",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 11,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -659,6 +769,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "dry",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 12,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -711,6 +831,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "hot",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 13,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -763,6 +893,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "cold",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 14,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 1,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": "Opens Sūra 68, which is named for it. A light letter carrying a middling weight."
     },
     {
@@ -810,6 +950,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "wet",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 15,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -857,6 +1007,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "dry",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 16,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -909,6 +1069,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "hot",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 17,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 1,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -961,6 +1131,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "cold",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 18,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": "Opens Sūra 38, which is named for it."
     },
     {
@@ -1018,6 +1198,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "wet",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 19,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 2,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": "Opens Sūra 50, which is named for it."
     },
     {
@@ -1070,6 +1260,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "dry",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 20,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "auspicious",
+        "omen_degree": 0,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -1122,6 +1322,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "hot",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 21,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 3,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -1169,6 +1379,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "cold",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 22,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 2,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -1216,6 +1436,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "wet",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 23,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 3,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -1268,6 +1498,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "dry",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 24,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 1,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -1320,6 +1560,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "hot",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 25,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 1,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -1377,6 +1627,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "cold",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 26,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 1,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -1429,6 +1689,16 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "attested": {
+        "nature": "wet",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 27,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 1,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": null
     },
     {
@@ -1481,6 +1751,16 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "attested": {
+        "nature": "dry",
+        "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
+        "mansion": 28,
+        "mansion_name": null,
+        "mansion_source": "Shams al-ma'arif, Suleymaniye B89 f. 4r, tr. Varisco, Arabica 64 (2017), pp. 501-502",
+        "omen": "inauspicious",
+        "omen_degree": 1,
+        "omen_source": "same folio: undotted mansions auspicious, dotted inauspicious, three dots most of all"
+      },
       "note": "Closes the series at 1000. Nothing in the tower is heavier."
     }
   ]

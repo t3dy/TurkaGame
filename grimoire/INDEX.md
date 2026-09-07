@@ -35,6 +35,7 @@ One line per page. Update on every add/delete; never put content here.
 - [themes/SCIENTIFICREVOLUTION.md](themes/SCIENTIFICREVOLUTION.md) — the Occult-Scientific Revolution; 1420 as opening anthem
 - [themes/DISENCHANTMENT.md](themes/DISENCHANTMENT.md) — modernity as stage-magical; AI as occult machine; the envelope rule
 - [themes/MILLENNIALSOVEREIGNTY.md](themes/MILLENNIALSOVEREIGNTY.md) — saint-prophet-kings on millennial time; the New Brethren's anti-apocalypticism
+- [themes/TWINSISTERS.md](themes/TWINSISTERS.md) — kabbalah and lettrism as one structure twice: twelve faculties in both, the cube and the wheel, where they truly differ
 - [themes/HISTORIOGRAPHY.md](themes/HISTORIOGRAPHY.md) — astrolettrist history-writing, and MK's own performing prose
 
 ## Readings (the narrative designer at work)
@@ -48,5 +49,5 @@ One line per page. Update on every add/delete; never put content here.
 
 ## Pages marked wanted by links
 
-OCCULTDEMOCRACY.md · TERMINOLOGYLINT.md · CROSSOVERDESIGN.md · QASIM.md · BISTAMI.md
+SEFERYETSIRAH.md · GOLEM.md · OCCULTDEMOCRACY.md · TERMINOLOGYLINT.md · CROSSOVERDESIGN.md · QASIM.md · BISTAMI.md
 · CREEDS.md · NARRATIVEDESIGNERREADSGUNTHERPIELOW.md

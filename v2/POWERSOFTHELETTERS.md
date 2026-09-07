@@ -84,7 +84,12 @@ fact told four times:
 | **Sun / moon** | whether the article's lām assimilates before the letter | **SOURCE** Arabic grammar; observable on any page |
 | **Connecting / non-connecting** | ا د ذ ر ز و never join the letter that follows | **SOURCE** Arabic orthography; observable on any page |
 
-Two more divisions come from the sources and are **not yet in the engine**:
+Two more divisions come from the sources. As of 2026-09-07 they are **in the
+letter table's `attested` layer** — carried as evidence with their citations
+attached to every letter, and checked by `build_letters.py --verify` — but **no
+engine code acts on them**. That separation is deliberate: what is on the page
+lives in `data/letters.json`, what someone claimed lives in a ruleset, and a
+ruleset that uses these will have to cite them.
 
 | Division | What it is | Label and source |
 |---|---|---|
@@ -105,6 +110,13 @@ The engine derives RAISE and LOWER from dots above and below. Al-Būnī reads th
 same dots as a scale of ill omen. The two readings do not contradict each other;
 they are different questions asked of the same mark, and §4 says what to do with
 that.
+
+**And the two counts are now checked against each other.** `build_letters.py
+--verify` compares our dotted and undotted letters against al-Būnī's own two
+lists on that folio, and fails if they differ. They do not differ: fifteen and
+thirteen, letter for letter. A thirteenth-century grimoire and this repo's data
+file are counting the same alphabet, which is the strongest evidence we have that
+the attested layer is attached to the right letters.
 
 ### 2.2 The table
 
