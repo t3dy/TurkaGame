@@ -13,9 +13,33 @@
 // the commit makes, run against a copy. The preview cannot be wrong about the
 // collapse because it IS the collapse, thrown away.
 
-import { World } from '../../../engine/world.js?v=7';
-import { compile, execute, describeLetter } from '../../../engine/vm.js?v=7';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=7';
+import { World } from '../../../engine/world.js?v=8';
+import { compile, execute, describeLetter } from '../../../engine/vm.js?v=8';
+import { mountHowTo } from '../../shared/howto.js?v=8';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=8';
+
+
+const HOWTO = {
+  id: 'standing-word',
+  title: 'How to play The Standing Word',
+  goal: [
+    'You are building with gravity switched off, and then you will let it in. The level gives you a pier of stone blocks, some MARKS (dashed turquoise diamonds, usually hanging in the air beside the pier) and a HAND of Arabic letters. Write the letters into the world so that every mark is covered by a letter, then press "Let gravity in". Whatever is not held up falls. You win if every mark still has a letter on it after the fall; you lose if any mark is empty.',
+    'What holds a letter up is decided by two facts about Arabic writing. First: letters written next to each other along the writing line join into one rigid body, so a body stands if ANY part of it rests on something. Second: six letters (ا د ذ ر ز و) never join the letter that follows them, so a word breaks after them. And one letter, the alif, holds a frame: it stands on nothing and carries whatever is joined to it. Choosing which letter goes where is the whole puzzle.',
+  ],
+  sections: [
+    { h: 'Controls, one by one', items: [
+      'Choose a level with the buttons at the top of the panel. The brief box says what the level is about; "What this one is about" at the bottom explains the rule it teaches.',
+      'IN HAND: click a letter to select it (it gets a gold outline). The box below describes the selected letter: whether it joins what follows, and whether it holds a frame.',
+      'Move the mouse over the board: the cell under it is outlined and labelled "cursor". A translucent ghost of the selected letter is drawn there, and the corner box tells you whether writing there is allowed, what it would join to, and how many cells would fall if gravity came in after that write.',
+      'Click a cell to write the selected letter there. You may write on the ground, or in any empty cell beside something already standing (left, right, above or below). The letter leaves your hand.',
+      '"Let gravity in" ([[Enter]]) ends the level. "Undo" ([[Z]]) takes back the last write. "Start over" resets the level.',
+      'IF GRAVITY CAME IN NOW is the live forecast for the whole board: the dashed arrows show every cell that would fall and where it would land.',
+    ]},
+    { h: 'Winning and losing', items: [
+      'The verdict box counts covered marks while gravity is out, and after gravity is in says "It stands" (every mark held) or "It came down" (at least one empty). There are no lives here; start over as often as you like.',
+    ]},
+  ],
+};
 
 const V = 'v=1';
 const $ = id => document.getElementById(id);
@@ -23,6 +47,7 @@ const $ = id => document.getElementById(id);
 let LETTERS = [], PACK = null, LEVELS = null;
 let level = null, ruleset = null, world = null, hand = [], sel = -1;
 let iso = null, undoStack = [], settled = false;
+let hover = null;   // { cell, ghost, effects, text } for the cell under the mouse
 
 /* ------------------------------------------------------------------ setup -- */
 
@@ -76,7 +101,9 @@ function forecast() {
 function draw() {
   const f = settled ? null : forecast();
   iso.frame(world, level.targets);
-  iso.draw(world, f ? f.effects : null, {});
+  // Hover preview: the ghost of the selected letter under the mouse, and the fall
+  // forecast AFTER that write, computed on a copy. Same physics as the commit.
+  iso.draw(world, (hover && hover.effects) || (f ? f.effects : null), { cursor: hover ? hover.cell : null, ghostWorld: hover ? hover.ghost : null });
   for (const t of level.targets) {
     const held = world.get(...t);
     const ok = held && held.glyph;
@@ -150,6 +177,7 @@ function writeAt(cell) {
   const r = execute(world, c, { cursor: [x, y, 0], dir: [-1, 0, 0] });
   hand.splice(sel, 1);
   sel = hand.length ? 0 : -1;
+  hover = null; $('hover').innerHTML = '';
   const joins = r.effects.filter(e => e.kind === 'join').length;
   const breaks = r.effects.filter(e => e.kind === 'sever').length;
   say(`${glyph} written` + (joins ? ` · joined ${joins}` : '') + (breaks ? ` · the word breaks here` : ''),
@@ -213,6 +241,8 @@ function loadLevel(id) {
   iso = new Iso($('cv'));
   iso.onStyle = () => { if (world) draw(); };
   iso.bindStyleToggle($('style'));
+  iso.bindCamera($('camera'), () => { if (world) draw(); });
+  mountHowTo($('howto-btn'), HOWTO);
   addEventListener('resize', () => { iso.resize(); if (world) draw(); });
   $('cv').addEventListener('click', ev => {
     const r = $('cv').getBoundingClientRect();
@@ -227,6 +257,51 @@ function loadLevel(id) {
     }
     if (best) writeAt(best);
   });
+  const cellUnder = ev => {
+    const r = $('cv').getBoundingClientRect();
+    const y = level.targets[0][1];
+    let best = null, bestD = 1e9;
+    for (let yy = 0; yy <= y + 2; yy++) {
+      const c = iso.unproject(ev.clientX - r.left, ev.clientY - r.top, yy);
+      const p = iso.project(c[0], yy, 0);
+      const d = Math.hypot(p.x - (ev.clientX - r.left), p.y - (ev.clientY - r.top));
+      if (d < bestD) { bestD = d; best = [c[0], yy]; }
+    }
+    return best;
+  };
+  $('cv').addEventListener('mousemove', ev => {
+    if (settled) return;
+    const cell = cellUnder(ev);
+    if (!cell) return;
+    const [x, y] = cell;
+    let text = `Cursor at column ${x}, height ${y}.`;
+    let ghost = null, effects = null;
+    if (sel < 0 || !hand[sel]) text += ' <span class="bad">Nothing left in hand.</span>';
+    else if (world.has(x, y, 0)) text += ' <span class="bad">Something is already there.</span>';
+    else if (!legal(x, y)) text += ' <span class="bad">Not allowed:</span> write on the ground, or beside something standing.';
+    else {
+      const glyph = hand[sel];
+      const c = compile([{ glyph, register: 'written' }], { letters: LETTERS, ruleset });
+      if (c.power.value === 0) text += ` <span class="bad">${c.power.why}</span>`;
+      else {
+        const w = world.clone();
+        const r = execute(w, c, { cursor: [x, y, 0], dir: [-1, 0, 0] });
+        ghost = w;
+        const joins = r.effects.filter(e => e.kind === 'join').length, breaks = r.effects.filter(e => e.kind === 'sever').length;
+        const ww = w.clone(); ww.rules.gravity = true; const moved = ww.settle();
+        const ends = new Map();
+        for (const m of moved) { const from = m.from.split(',').map(Number); const origin = ends.has(m.from) ? ends.get(m.from) : from; ends.delete(m.from); ends.set(m.to, origin); }
+        effects = [];
+        for (const [toKey, from] of ends) { const to = toKey.split(',').map(Number); if (from[0] === to[0] && from[1] === to[1] && from[2] === to[2]) continue; effects.push({ kind: 'fall', at: from, to, detail: 'would fall' }); }
+        const heldN = level.targets.filter(t => { const cc = ww.get(...t); return cc && cc.glyph; }).length;
+        text += ` If you write <b>${glyph}</b> here: ${joins ? 'it joins the letter west of it into one body' : 'it joins nothing'}${breaks ? ' and the word breaks here' : ''}. Then if gravity came in, <b>${effects.length}</b> cell${effects.length === 1 ? '' : 's'} would fall and <b>${heldN} of ${level.targets.length}</b> marks would be held.`;
+      }
+    }
+    hover = { cell: [x, y, 0], ghost, effects, text };
+    $('hover').innerHTML = text;
+    draw();
+  });
+  $('cv').addEventListener('mouseleave', () => { hover = null; $('hover').innerHTML = ''; if (!settled) draw(); });
   $('gravity').onclick = letGravityIn;
   $('undo').onclick = undo;
   $('reset').onclick = () => { build(); say(''); draw(); };

@@ -15,6 +15,10 @@ named**. Your letters behave slightly differently than they did upstairs. You mu
 work out whose rules run here before you commit a structure to gravity, or commit
 on a guess and read the collapse.
 
+## Controls
+
+Press **How to play** in the topbar (or `?`) for the full instructions: the goal and how a floor is won or lost, every button in the panel, how a word is composed and where it goes, the hover preview (a ghost of the pending word plus what would join, break and fall), and the camera (Q/E turn, +/− zoom, right-drag pan, R reset). The compass on the floor shows which way words run. The panel opens by itself on first visit.
+
 ## Run it
 
 Serve the repo root and open [`index.html`](index.html), optionally with

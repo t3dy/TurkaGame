@@ -6,11 +6,34 @@
 // in ../../data/letters.json, and the doctrine in ../../rulesets/rulesets.json.
 // This file is not allowed to know what ب does — it asks.
 
-import { World } from '../../../engine/world.js?v=7';
-import { compile, preview, execute, describeLetter, severs } from '../../../engine/vm.js?v=7';
-import { readWorld, worldReads } from '../../../engine/reader.js?v=7';
-import { Ledger } from '../../../engine/ledger.js?v=7';
-import { Iso, PALETTE } from './iso.js?v=7';
+import { World } from '../../../engine/world.js?v=8';
+import { compile, preview, execute, describeLetter, severs } from '../../../engine/vm.js?v=8';
+import { readWorld, worldReads } from '../../../engine/reader.js?v=8';
+import { Ledger } from '../../../engine/ledger.js?v=8';
+import { mountHowTo } from '../../shared/howto.js?v=8';
+import { Iso, PALETTE } from './iso.js?v=8';
+
+
+const HOWTO = {
+  id: 'scriptorium',
+  title: 'How to use The Scriptorium',
+  goal: [
+    'The Scriptorium is the workbench, not a game: it is where you find out what the letters do. You compose a PROGRAM of letters, choose a REGISTER (mental, spoken, written) and a RULESET (one of the five metaphysics), and see exactly what that program would do to the world before you run it. Four tasks in the panel give you goals to try; each has a "check" that tells you when you have done it.',
+    'Every operation a letter performs is derived from something visible in its written form: an upright stroke holds a frame (AXIS), dots above RAISE the value of the cell above and dots below LOWER the cell below, a closed loop BINDS the two cells across the writing line, a tail POURS what is above down through the letter, and the six letters that never join what follows SEVER a word there. Sun letters ASSIMILATE the letter before them; moon letters DISTINGUISH it. The ruleset decides which of these are permitted and how strongly they act.',
+  ],
+  sections: [
+    { h: 'Controls, one by one', items: [
+      'THE PALETTE on the right lists the twenty-eight letters. Click one to add it to the program. Click a letter in the program to remove it. Writing the same letter twice in a row doubles it (a shadda), which repeats its operation.',
+      'REGISTER: mental letters only plan (they touch nothing); spoken letters act once and vanish; written letters act and stay in the world as blocks.',
+      'RULESET: choose whose rules run. The same program behaves differently under each; the panel tells you what each ruleset refuses and why.',
+      'THE CURSOR is the turquoise outlined cell on the board, labelled "cursor". Click any cell to move it. The program is written starting at the cursor and running westward (the compass arrow shows the direction). Press [[PageUp]] and [[PageDown]] to raise or lower the cursor a level.',
+      'PREVIEW is automatic: as soon as you have a program and a cursor, the board shows a translucent ghost of every letter where it would land and dashed marks for every effect (outline = a cell that changes; arrow = something moves; tie = two cells become one body; break = a bond refused or cut). The effects list in the panel says the same in words.',
+      '"Inscribe" runs the program for real. "Read" reads the world back as text. "Clear" empties the world.',
+      'The LEARNED panel is your ledger: a primitive is recorded there the first time you actually see it happen, never before. That is how the game teaches: evidence is shown, the rule is earned.',
+    ]},
+  ],
+  noCursor: true,
+};
 
 const V = 'v=1';
 const $ = id => document.getElementById(id);
@@ -369,6 +392,8 @@ function paintRegisters() {
   iso = new Iso($('cv'));
   iso.onStyle = () => { if (world) refresh(); };
   iso.bindStyleToggle($('style'));
+  iso.bindCamera($('camera'), () => { if (world) refresh(); });
+  mountHowTo($('howto-btn'), HOWTO);
   const resize = () => { iso.resize(); if (world) refresh(); };
   addEventListener('resize', resize);
 

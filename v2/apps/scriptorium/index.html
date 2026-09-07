@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap">
 <title>The Scriptorium — writing the world in letters</title>
-<link rel="stylesheet" href="../shared/hand.css?v=7">
+<link rel="stylesheet" href="../shared/hand.css?v=8">
 <style>
   :root {
     --paper:#f1dac1; --dim:#b9b0a6; --bg:#171620; --bg2:#211f2b; --bg3:#2b2836;
@@ -156,6 +156,7 @@
     <span style="opacity:.35">·</span>
     <span>writing the world in letters</span>
     <span class="spacer"></span>
+    <button class="btn" id="howto-btn" style="padding:.2rem .5rem;border-color:var(--turq)">How to play</button>
     <button class="btn" id="style" style="padding:.2rem .5rem">Draw in Ink</button>
     <a href="../../README.md">v2 architecture</a>
     <a href="../../../site/index.html">TurkaGame</a>
@@ -206,7 +207,7 @@
         <span class="spacer" style="flex:1"></span>
         <span id="power"></span>
       </div>
-      <div id="stage"><canvas id="cv"></canvas><div id="learned" class="learned"></div></div>
+      <div id="stage"><canvas id="cv"></canvas><div id="camera"></div><div id="hover"></div><div id="learned" class="learned"></div></div>
       <div id="legend">
         <span><span class="sw"></span><b>outline</b> occupied or changed</span>
         <span><span class="sw mv"></span><b>arrow</b> moves from → to</span>
@@ -246,6 +247,6 @@
     </aside>
   </div>
 
-<script type="module" src="./src/ui.js?v=7"></script>
+<script type="module" src="./src/ui.js?v=8"></script>
 </body>
 </html>

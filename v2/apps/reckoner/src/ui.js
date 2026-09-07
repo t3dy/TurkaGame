@@ -12,12 +12,36 @@
 // Yūsuf Ascent's perspective puzzle rebuilt out of language, because the original
 // needed a camera moving through continuous space and this engine has none.
 
-import { World, KEY } from '../../../engine/world.js?v=7';
-import { compile, execute } from '../../../engine/vm.js?v=7';
-import { extract, extracted, reckon, findRuns, readsFrom, DIRECTIONS } from '../../../engine/operations.js?v=7';
-import { standing } from '../../../engine/unmaking.js?v=7';
-import { Ledger } from '../../../engine/ledger.js?v=7';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=7';
+import { World, KEY } from '../../../engine/world.js?v=8';
+import { compile, execute } from '../../../engine/vm.js?v=8';
+import { extract, extracted, reckon, findRuns, readsFrom, DIRECTIONS } from '../../../engine/operations.js?v=8';
+import { standing } from '../../../engine/unmaking.js?v=8';
+import { Ledger } from '../../../engine/ledger.js?v=8';
+import { mountHowTo } from '../../shared/howto.js?v=8';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=8';
+
+
+const HOWTO = {
+  id: 'reckoner',
+  title: 'How to play The Reckoner',
+  goal: [
+    'The Reckoner is four small puzzles about acting on a structure that ALREADY stands, rather than building one. Choose a level with the buttons at the top of the panel; each has its own goal, stated in its brief box, and its own verdict line telling you whether you have met it.',
+    'THE DOOMED LETTER: a letter is forbidden. Write the letters in your hand so that the structure covers the marks, then EXTRACT the doomed letter — every copy of it is taken out at once — and the marks must still be held. A letter resting on the ground cannot be extracted at all; it has to be carried by the word.',
+    'NAME THE NUMBER: the structure is given. Type a number and press Reckon: every run of adjacent letters whose values sum to that number comes apart and falls. The goal is to bring down exactly what the brief says, and only a few numbers in the range will do it.',
+    'THE ASSAY: the world is the same as always, but the ruleset is hidden. Run the probes (each writes a test word under the hidden rules and reports strength and refusals) and then name the metaphysics you are in. Right or wrong, the ledger records it.',
+    'THE STATION: a body of letters stands in the world. From which direction does it read as the target word? Choose a direction; the reader reads the structure along it and the verdict tells you whether it spelled the word.',
+  ],
+  sections: [
+    { h: 'Controls, one by one', items: [
+      'Level buttons at the top choose the puzzle. The brief box and the teach box explain the level.',
+      'IN HAND (extract level): click a letter to select it, then click an empty cell on or beside the structure to write it. A ghost shows where it would go.',
+      'The Extract button, the number box with Reckon, the probe buttons with the naming buttons, and the direction buttons appear only on the level that uses them.',
+      'The dashed arrows on the board are always the engine\'s own forecast of what would fall.',
+      'The message line under the verdict explains every action in a sentence, including why something was refused.',
+    ]},
+  ],
+  noCursor: true,
+};
 
 const V = 'v=4';
 const $ = id => document.getElementById(id);
@@ -269,6 +293,8 @@ function load(id) {
   iso = new Iso($('cv'));
   iso.onStyle = () => { if (world) draw(); };
   iso.bindStyleToggle($('style'));
+  iso.bindCamera($('camera'), () => { if (world) draw(); });
+  mountHowTo($('howto-btn'), HOWTO);
   addEventListener('resize', () => { iso.resize(); if (world) draw(); });
   $('cv').addEventListener('click', ev => {
     if (level.type !== 'extract') return;

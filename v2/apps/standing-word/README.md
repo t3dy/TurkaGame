@@ -9,6 +9,10 @@ The second game on the v2 engine, and the one that gives **AXIS** the job it has
 always meant. You build with gravity off, then let it in. What stands is decided
 by the rules the alphabet already had.
 
+## Controls
+
+Press **How to play** in the topbar (or `?`) for the full instructions: the goal, every control, the hover preview (a ghost of the selected letter under the mouse, with what it would join and what would fall), and the camera (Q/E turn, +/− zoom, right-drag pan, R reset). The compass on the floor shows which way words run.
+
 ## Run it
 
 Serve the repo root and open [`index.html`](index.html). Click a letter, then an

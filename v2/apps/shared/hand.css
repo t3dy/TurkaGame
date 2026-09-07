@@ -90,3 +90,18 @@ html[data-hand="ink"] #effects li,
 html[data-hand="ink"] #runlog li,
 html[data-hand="ink"] #findings li { color: #2b2116; }
 html[data-hand="ink"] .learned { background: rgba(251, 244, 228, .96); border-color: var(--gold); color: var(--paper); }
+
+/* ---- the camera toolbar (iso.bindCamera) and the How-to-play button: shared by every app ---- */
+#camera{position:absolute;left:10px;top:8px;display:flex;gap:4px;align-items:center;z-index:5;
+  font-family:"Inter","Segoe UI",system-ui,sans-serif;font-size:.68rem}
+#camera .btn.cam{padding:.2rem .5rem;min-width:28px;font-size:.8rem;line-height:1.1;background:rgba(16,15,22,.75)}
+#camera .cam-view{color:var(--dim);margin-left:.3rem}
+html[data-hand="ink"] #camera .btn.cam{background:rgba(243,233,214,.85)}
+#hover{position:absolute;right:10px;top:8px;max-width:46%;font-family:"Inter","Segoe UI",system-ui,sans-serif;
+  font-size:.7rem;line-height:1.45;color:var(--paper);background:rgba(16,15,22,.82);border:1px solid var(--rule);
+  border-left:2px solid var(--turq);border-radius:2px;padding:.35rem .6rem;z-index:5;pointer-events:none}
+#hover:empty{display:none}
+#hover b{color:var(--gold-hi)}
+#hover .bad{color:#f0b98a}
+html[data-hand="ink"] #hover{background:rgba(243,233,214,.92);color:#2b2116}
+html[data-hand="ink"] #hover b{color:#6b4a15}

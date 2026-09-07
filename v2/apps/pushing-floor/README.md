@@ -9,6 +9,10 @@ The first **game** on the v2 engine, as opposed to the Scriptorium, which is a
 workbench. You walk, you shove stones onto marks, and when a stone turns out to be
 unpushable you write a letter to change what "one stone" means.
 
+## Controls
+
+Press **How to play** in the topbar (or `?`) for the full instructions: walking (arrows or WASD), writing beside the scribe, what the two letters do, the cursor outline and the corner box that says whether you can write there, and the camera (Q/E turn, +/− zoom, right-drag pan, R reset).
+
 ## Run it
 
 Serve the repo root and open [`index.html`](index.html). Arrow keys or WASD to

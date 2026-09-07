@@ -12,10 +12,28 @@
 // same target and tabulates what each did, so they can be compared on one screen
 // instead of remembered across sessions.
 
-import { World } from '../../../engine/world.js?v=7';
-import { compile, execute } from '../../../engine/vm.js?v=7';
-import { isolate, utter, throwStone, standing, highest, ROUTES } from '../../../engine/unmaking.js?v=7';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=7';
+import { World } from '../../../engine/world.js?v=8';
+import { compile, execute } from '../../../engine/vm.js?v=8';
+import { isolate, utter, throwStone, standing, highest, ROUTES } from '../../../engine/unmaking.js?v=8';
+import { mountHowTo } from '../../shared/howto.js?v=8';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=8';
+
+
+const HOWTO = {
+  id: 'unmaking',
+  title: 'How to use The Unmaking',
+  goal: [
+    'The Unmaking is a comparison, not a game. v2 could build and could not unbuild, and rather than invent a demolition mechanic this page puts three candidate routes side by side on the same structures so their results can be measured: ISOLATE (take a letter out of its word), UTTER (speak a letter against the structure), and THROW A STONE (a plain physical hit with no claim behind it). The question the page answers is which route brings down what, and the answer is in the table at the bottom.',
+  ],
+  sections: [
+    { h: 'Controls, one by one', items: [
+      'Choose a structure with the buttons at the top. Click a letter on the board to AIM at it: the aimed letter is outlined.',
+      'Choose a route and press its button, or press "Try all three" to run each in turn and fill the comparison table. The dashed marks on the board show what the chosen route WOULD do before it is applied.',
+      '"Reset" restores the structure. The table records, for each route, how many cells came down and whether anything is left standing.',
+    ]},
+  ],
+  noCursor: true,
+};
 
 const V = 'v=4';
 const $ = id => document.getElementById(id);
@@ -206,6 +224,8 @@ function compare() {
   iso = new Iso($('cv'));
   iso.onStyle = () => { if (world) draw(); };
   iso.bindStyleToggle($('style'));
+  iso.bindCamera($('camera'), () => draw());
+  mountHowTo($('howto-btn'), HOWTO);
   addEventListener('resize', () => { iso.resize(); if (world) draw(); });
   $('cv').addEventListener('click', ev => {
     if (done) return say('Already done — rebuild to try another route.', 'bad');

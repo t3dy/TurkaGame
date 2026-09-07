@@ -9,10 +9,35 @@
 // The renderer is the Scriptorium's, imported across apps, which is the claim
 // that it is reusable being cashed rather than repeated.
 
-import { World } from '../../../engine/world.js?v=7';
-import { compile, execute, describeLetter } from '../../../engine/vm.js?v=7';
-import { Scribe, DIRS, targetsCovered } from '../../../engine/agent.js?v=7';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=7';
+import { World } from '../../../engine/world.js?v=8';
+import { compile, execute, describeLetter } from '../../../engine/vm.js?v=8';
+import { Scribe, DIRS, targetsCovered } from '../../../engine/agent.js?v=8';
+import { mountHowTo } from '../../shared/howto.js?v=8';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=8';
+
+
+const HOWTO = {
+  id: 'pushing-floor',
+  title: 'How to play The Pushing Floor',
+  goal: [
+    'You are a scribe on a stone floor. There are loose stones, and MARKS (dashed turquoise diamonds) that the stones must be pushed onto. You win when every mark has a stone on it. There is no losing state, but you can push a stone into a position it can never leave, in which case press "Start over".',
+    'You can push a stone by walking into it. You cannot pull. So a stone against a wall, or a stone you can never get behind, cannot be moved by pushing alone. That is what the letters are for: write a closed letter beside two stones and they become one body that moves together, so pushing the stone you CAN reach moves the one you cannot. Write an upright letter and it pins its column so nothing can shove it. Every level has been checked to be impossible without its letters.',
+  ],
+  sections: [
+    { h: 'Controls, one by one', items: [
+      'Walk with the arrow keys or [[W]] [[A]] [[S]] [[D]]. The scribe is the small figure on the board. Walking into a stone pushes it one cell if the cell beyond it is free.',
+      'IN HAND: click a letter to select it. Then click an empty cell next to the scribe (not diagonal) to write it there. The letter is spent.',
+      'Move the mouse over the board: the cell under it is outlined and labelled "cursor". The corner box says whether you can write there from where you stand.',
+      '"Start over" resets the level. "Undo" ([[Z]]) takes back the last move or write.',
+      'The panel explains what each selected letter does, and the message line reports every push and every write in a sentence.',
+    ]},
+    { h: 'What the letters do here', items: [
+      'A CLOSED letter (one with a loop, like ه or م) written between two stones on the writing line BINDS the stones across it into one body.',
+      'An UPRIGHT letter (ا or ل) holds its column: nothing in that column can be pushed. Use it to make a wall where there was none.',
+      'The dashed marks and arrows that appear after a write are the engine\'s own report of what the letter did.',
+    ]},
+  ],
+};
 
 const V = 'v=1';
 const $ = id => document.getElementById(id);
@@ -20,6 +45,7 @@ const $ = id => document.getElementById(id);
 let LETTERS = [], PACK = null, LEVELS = null;
 let level = null, ruleset = null, world = null, scribe = null, hand = [];
 let iso = null, sel = -1, undoStack = [];
+let hoverCell = null;   // the cell under the mouse, outlined as the cursor
 
 /* ------------------------------------------------------------------ setup -- */
 
@@ -60,7 +86,7 @@ function draw() {
   // The engine's own effect vocabulary is reused for the board furniture: a
   // target is an outline, the scribe is an outline in another colour.
   const marks = [];
-  iso.draw(world, null, {});
+  iso.draw(world, null, { cursor: hoverCell });
   for (const t of level.targets) {
     const held = world.get(...t);
     iso.markCell(t[0], t[1], t[2], held && !held.fixed ? PALETTE.gold : PALETTE.turq,
@@ -161,6 +187,8 @@ function loadLevel(id) {
   iso = new Iso($('cv'));
   iso.onStyle = () => { if (world) draw(); };
   iso.bindStyleToggle($('style'));
+  iso.bindCamera($('camera'), () => { if (world) draw(); });
+  mountHowTo($('howto-btn'), HOWTO);
   const resize = () => { iso.resize(); if (world) draw(); };
   addEventListener('resize', resize);
 
@@ -174,6 +202,20 @@ function loadLevel(id) {
     if (ev.key === 'z') undo();
   });
 
+  $('cv').addEventListener('mousemove', ev => {
+    const r = $('cv').getBoundingClientRect();
+    const c = iso.unproject(ev.clientX - r.left, ev.clientY - r.top, 0);
+    hoverCell = c;
+    const [x, , z] = c;
+    const sc = scribe ? scribe.pos : null;
+    const adjacent = sc && Math.abs(sc[0] - x) + Math.abs(sc[2] - z) === 1;
+    const empty = world && !world.has(x, 0, z);
+    $('hover').innerHTML = `Cursor at column ${x}, row ${z}. ` + (sel < 0 || !hand[sel] ? '<span class="bad">No letter selected.</span>' :
+      !empty ? '<span class="bad">Something is already there.</span>' :
+      adjacent ? `Click to write <b>${hand[sel]}</b> here (it is beside the scribe).` : '<span class="bad">Too far:</span> the scribe can only write in a cell next to where they stand. Walk closer.');
+    draw();
+  });
+  $('cv').addEventListener('mouseleave', () => { hoverCell = null; $('hover').innerHTML = ''; draw(); });
   $('cv').addEventListener('click', ev => {
     const r = $('cv').getBoundingClientRect();
     inscribeAt(iso.unproject(ev.clientX - r.left, ev.clientY - r.top, 0));

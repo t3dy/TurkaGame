@@ -98,6 +98,104 @@ export class Iso {
     this.scale = 1;
     this.styleId = currentStyle();
     this.onStyle = null;
+    // THE CAMERA. Ted's words: "I want a lot more controls for rotating the camera
+    // and understanding where the cursor is." So: a quarter-turn rotation (four
+    // views of the same world), a zoom on top of the automatic framing, and a pan.
+    // All three are applied in project() and undone in unproject(), so every app's
+    // click-to-cell mapping keeps working without knowing the camera moved.
+    this.turn = 0;               // 0..3 quarter turns, counter-clockwise seen from above
+    this.zoom = 1;               // multiplies the framed scale
+    this.pan = { x: 0, y: 0 };   // screen pixels
+    this.onCamera = null;        // called after any camera change, so the app redraws
+  }
+
+  /** World (x, z) → rotated (x', z') for the current quarter turn. */
+  _rot(x, z) {
+    switch (this.turn & 3) {
+      case 1: return [-z, x];
+      case 2: return [-x, -z];
+      case 3: return [z, -x];
+      default: return [x, z];
+    }
+  }
+  /** Rotated (x', z') → world (x, z). */
+  _unrot(rx, rz) {
+    switch (this.turn & 3) {
+      case 1: return [rz, -rx];
+      case 2: return [-rx, -rz];
+      case 3: return [-rz, rx];
+      default: return [rx, rz];
+    }
+  }
+  get k() { return this.scale * this.zoom; }
+
+  rotate(quarterTurns) { this.turn = (this.turn + quarterTurns + 4) & 3; this._camera(); }
+  zoomBy(f) { this.zoom = Math.max(0.35, Math.min(4, this.zoom * f)); this._camera(); }
+  panBy(dx, dy) { this.pan.x += dx; this.pan.y += dy; this._camera(); }
+  resetCamera() { this.turn = 0; this.zoom = 1; this.pan = { x: 0, y: 0 }; this._camera(); }
+  _camera() { if (this.onCamera) this.onCamera(); }
+
+  /**
+   * Wire a camera toolbar into `el` and the keyboard/wheel/drag onto the canvas.
+   * Every control is also written out in words in the How-to-play panel that
+   * each app carries (CLAUDE.md house rule): this is the mechanism, not the
+   * explanation.
+   *
+   *   buttons   ⟲ ⟳ turn a quarter   + − zoom   ⌂ reset
+   *   keys      Q / E turn   + / − (or = / -) zoom   arrows pan   R reset camera
+   *   mouse     wheel zooms   right-drag (or shift-drag) pans
+   */
+  bindCamera(el, onCamera) {
+    if (onCamera) this.onCamera = onCamera;
+    if (el) {
+      el.innerHTML = [
+        ['turn-l', '⟲', 'Turn the world a quarter to the left (Q)'],
+        ['turn-r', '⟳', 'Turn the world a quarter to the right (E)'],
+        ['zoom-in', '+', 'Zoom in (+ or =)'],
+        ['zoom-out', '−', 'Zoom out (−)'],
+        ['reset', '⌂', 'Reset the camera (R)'],
+      ].map(([id, t, title]) => `<button class="btn cam" data-cam="${id}" title="${title}">${t}</button>`).join('')
+        + `<span class="cam-view" id="cam-view"></span>`;
+      for (const b of el.querySelectorAll('[data-cam]')) b.onclick = () => this._cam(b.dataset.cam);
+      const prev = this.onCamera;
+      this.onCamera = () => { this._paintView(el); if (prev) prev(); };
+      this._paintView(el);
+    }
+    const cv = this.cv;
+    cv.addEventListener('wheel', ev => { ev.preventDefault(); this.zoomBy(ev.deltaY < 0 ? 1.12 : 1 / 1.12); }, { passive: false });
+    let drag = null;
+    cv.addEventListener('mousedown', ev => { if (ev.button === 2 || ev.shiftKey) { drag = { x: ev.clientX, y: ev.clientY }; ev.preventDefault(); } });
+    addEventListener('mousemove', ev => { if (!drag) return; this.panBy(ev.clientX - drag.x, ev.clientY - drag.y); drag = { x: ev.clientX, y: ev.clientY }; });
+    addEventListener('mouseup', () => { drag = null; });
+    cv.addEventListener('contextmenu', ev => ev.preventDefault());
+    addEventListener('keydown', ev => {
+      if (ev.target && /INPUT|SELECT|TEXTAREA/.test(ev.target.tagName)) return;
+      const k = ev.key;
+      if (k === 'q' || k === 'Q') this.rotate(1);
+      else if (k === 'e' || k === 'E') this.rotate(-1);
+      else if (k === '+' || k === '=') this.zoomBy(1.15);
+      else if (k === '-' || k === '_') this.zoomBy(1 / 1.15);
+      else if (k === 'r' || k === 'R') this.resetCamera();
+      else if (k === 'ArrowLeft') this.panBy(40, 0);
+      else if (k === 'ArrowRight') this.panBy(-40, 0);
+      else if (k === 'ArrowUp') this.panBy(0, 40);
+      else if (k === 'ArrowDown') this.panBy(0, -40);
+      else return;
+      ev.preventDefault();
+    });
+  }
+  _cam(id) {
+    if (id === 'turn-l') this.rotate(1);
+    else if (id === 'turn-r') this.rotate(-1);
+    else if (id === 'zoom-in') this.zoomBy(1.15);
+    else if (id === 'zoom-out') this.zoomBy(1 / 1.15);
+    else if (id === 'reset') this.resetCamera();
+  }
+  _paintView(el) {
+    const v = el.querySelector('#cam-view');
+    if (!v) return;
+    const names = ['from the south-east', 'from the south-west', 'from the north-west', 'from the north-east'];
+    v.textContent = `${names[this.turn & 3]} · ${Math.round(this.zoom * 100)}%`;
   }
 
   get S() { return STYLES[this.styleId]; }
@@ -135,20 +233,32 @@ export class Iso {
     this.w = r.width; this.h = r.height;
   }
 
-  /** World coordinates → screen. */
+  /** World coordinates → screen, through the camera (turn, zoom, pan). */
   project(x, y, z) {
+    const [rx, rz] = this._rot(x, z);
+    const k = this.k;
     return {
-      x: this.origin.x + (x - z) * (TW / 2) * this.scale,
-      y: this.origin.y + (x + z) * (TH / 2) * this.scale - y * TZ * this.scale,
+      x: this.origin.x + this.pan.x + (rx - rz) * (TW / 2) * k,
+      y: this.origin.y + this.pan.y + (rx + rz) * (TH / 2) * k - y * TZ * k,
     };
   }
 
-  /** Screen → the world cell on the ground plane (y = 0) under the pointer. */
+  /** Screen → the world cell at height y under the pointer, through the camera. */
   unproject(sx, sy, y = 0) {
-    const px = (sx - this.origin.x) / this.scale;
-    const py = (sy - this.origin.y + y * TZ * this.scale) / this.scale;
+    const k = this.k;
+    const px = (sx - this.origin.x - this.pan.x) / k;
+    const py = (sy - this.origin.y - this.pan.y + y * TZ * k) / k;
     const a = px / (TW / 2), b = py / (TH / 2);
-    return [Math.round((a + b) / 2), y, Math.round((b - a) / 2)];
+    const rx = Math.round((a + b) / 2), rz = Math.round((b - a) / 2);
+    const [x, z] = this._unrot(rx, rz);
+    return [x, y, z];
+  }
+
+  /** The screen-space direction in which words run (westward, −x), for the compass. */
+  writingDirection() {
+    const o = this.project(0, 0, 0), w = this.project(-1, 0, 0);
+    const dx = w.x - o.x, dy = w.y - o.y, n = Math.hypot(dx, dy) || 1;
+    return { dx: dx / n, dy: dy / n };
   }
 
   /** Frame the world so its occupied cells sit in the middle of the canvas. */
@@ -156,7 +266,10 @@ export class Iso {
     const pts = [...world.list().map(c => [c.x, c.y, c.z]), ...extra];
     if (!pts.length) pts.push([0, 0, 0]);
     let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-    this.origin = { x: 0, y: 0 }; this.scale = 1;
+    // Fit at zoom 1 with no pan; the camera's zoom and pan are applied on top of
+    // this fit in project(), so turning the world re-fits it and zooming does not.
+    const zoom = this.zoom, pan = this.pan;
+    this.origin = { x: 0, y: 0 }; this.scale = 1; this.zoom = 1; this.pan = { x: 0, y: 0 };
     for (const [x, y, z] of pts) {
       const p = this.project(x, y, z);
       minX = Math.min(minX, p.x - TW); maxX = Math.max(maxX, p.x + TW);
@@ -172,6 +285,7 @@ export class Iso {
       x: this.w / 2 - ((minX + maxX) / 2) * this.scale,
       y: this.h / 2 - ((minY + maxY) / 2) * this.scale,
     };
+    this.zoom = zoom; this.pan = pan;
   }
 
   clear() {
@@ -201,6 +315,35 @@ export class Iso {
       g.beginPath(); g.moveTo(a.x, a.y); g.lineTo(b.x, b.y); g.stroke();
       g.beginPath(); g.moveTo(c.x, c.y); g.lineTo(d.x, d.y); g.stroke();
     }
+    this.compass(radius);
+  }
+
+  /**
+   * THE COMPASS. Words run westward (-x): a program written at a cursor lays its
+   * letters out in that direction, and bonds form along it. When the camera turns
+   * the arrow turns with the world, so the player always knows which way a word
+   * will go. Drawn on the floor at the near corner of the grid.
+   */
+  compass(radius = 5) {
+    const g = this.ctx, S = this.S, k = this.k;
+    const at = this.project(radius + 0.5, 0, radius + 0.5);
+    const { dx, dy } = this.writingDirection();
+    const L = 34 * Math.max(0.6, Math.min(1.6, k));
+    const x0 = at.x, y0 = at.y, x1 = x0 + dx * L, y1 = y0 + dy * L;
+    g.save();
+    g.strokeStyle = S.cursor; g.fillStyle = S.cursor; g.lineWidth = 2; g.lineCap = 'round';
+    g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.stroke();
+    // arrowhead
+    const ang = Math.atan2(dy, dx);
+    g.beginPath();
+    g.moveTo(x1, y1);
+    g.lineTo(x1 - 9 * Math.cos(ang - 0.45), y1 - 9 * Math.sin(ang - 0.45));
+    g.lineTo(x1 - 9 * Math.cos(ang + 0.45), y1 - 9 * Math.sin(ang + 0.45));
+    g.closePath(); g.fill();
+    g.font = '10px "Inter","Segoe UI",system-ui,sans-serif';
+    g.textAlign = 'center'; g.textBaseline = 'top';
+    g.fillText('words run this way', (x0 + x1) / 2, Math.max(y0, y1) + 6);
+    g.restore();
   }
 
   /* --------------------------------------------------------------- cubes -- */
@@ -223,7 +366,7 @@ export class Iso {
       const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
       const cx = (Math.min(...xs) + Math.max(...xs)) / 2, cy = (Math.min(...ys) + Math.max(...ys)) / 2;
       const span = Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys)) * 1.6;
-      const step = Math.max(2.2, 3.4 / density) * this.scale;
+      const step = Math.max(2.2, 3.4 / density) * this.k;
       const ca = Math.cos(hatchAngle), sa = Math.sin(hatchAngle);
       for (let d = -span; d <= span; d += step) {
         // a line at distance d from centre, perpendicular to (ca, sa)
@@ -242,7 +385,7 @@ export class Iso {
 
   cube(x, y, z, { fill, glyph = null, value = null, element = null, alpha = 1, outline = null, dashed = false }) {
     const g = this.ctx, S = this.S;
-    const s = this.scale, hw = (TW / 2) * s, hh = (TH / 2) * s, zh = TZ * s;
+    const s = this.k, hw = (TW / 2) * s, hh = (TH / 2) * s, zh = TZ * s;
     const p = this.project(x, y, z);
     const top = [[p.x, p.y - hh], [p.x + hw, p.y], [p.x, p.y + hh], [p.x - hw, p.y]];
     g.globalAlpha = alpha;
@@ -308,7 +451,7 @@ export class Iso {
 
   /** OUTLINE: a cell the program will occupy or change, drawn as a hovering frame. */
   markCell(x, y, z, colour, label = null) {
-    const g = this.ctx, s = this.scale, hw = (TW / 2) * s, hh = (TH / 2) * s;
+    const g = this.ctx, s = this.k, hw = (TW / 2) * s, hh = (TH / 2) * s;
     const p = this.project(x, y, z);
     g.strokeStyle = colour; g.lineWidth = 2; g.setLineDash([5, 4]);
     g.beginPath();
@@ -329,7 +472,7 @@ export class Iso {
     const a = this.project(...from), b = this.project(...to);
     g.strokeStyle = colour; g.lineWidth = 2; g.setLineDash([4, 3]);
     g.beginPath(); g.moveTo(a.x, a.y); g.lineTo(b.x, b.y); g.stroke(); g.setLineDash([]);
-    const ang = Math.atan2(b.y - a.y, b.x - a.x), h = 7 * this.scale;
+    const ang = Math.atan2(b.y - a.y, b.x - a.x), h = 7 * this.k;
     g.fillStyle = colour;
     g.beginPath();
     g.moveTo(b.x, b.y);
@@ -379,7 +522,8 @@ export class Iso {
         if (!real.has(k)) shown.set(k, { ...c, ghost: true });
       }
     }
-    const cells = [...shown.values()].sort((a, b) => (a.x + a.z + a.y) - (b.x + b.z + b.y));
+    const depth = c => { const [rx, rz] = this._rot(c.x, c.z); return rx + rz + c.y; };
+    const cells = [...shown.values()].sort((a, b) => depth(a) - depth(b));
     for (const c of cells) {
       const isElement = !c.glyph && ['fire', 'air', 'water', 'earth'].includes(c.material);
       this.cube(c.x, c.y, c.z, {

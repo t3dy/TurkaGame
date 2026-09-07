@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap">
 <title>The Descent — five floors, four metaphysics, none of them named</title>
-<link rel="stylesheet" href="../shared/hand.css?v=7">
+<link rel="stylesheet" href="../shared/hand.css?v=8">
 <style>
   :root {
     --paper:#f1dac1; --dim:#b9b0a6; --bg:#171620; --bg2:#211f2b; --bg3:#2b2836;
@@ -115,6 +115,7 @@
     <span style="opacity:.35">·</span>
     <span>five floors, four metaphysics, none of them named</span>
     <span class="spacer"></span>
+    <button class="btn" id="howto-btn" style="padding:.2rem .5rem;border-color:var(--turq)">How to play</button>
     <button class="btn" id="style" style="padding:.2rem .5rem">Draw in Ink</button>
     <a href="../standing-word/index.html">The Standing Word</a>
     <a href="../reckoner/index.html">The Reckoner</a>
@@ -124,6 +125,8 @@
   <div id="wrap">
     <div id="stage">
       <canvas id="cv"></canvas>
+      <div id="camera"></div>
+      <div id="hover"></div>
       <div id="legend">compose a word from your hand, then click where its <b>first</b> letter goes &mdash;
         it runs westward from there &middot; dashed arrows are what <b>would</b> fall</div>
       <div id="over"><div class="card" id="overcard"></div></div>
@@ -178,6 +181,6 @@
     </aside>
   </div>
 
-<script type="module" src="./src/ui.js?v=7"></script>
+<script type="module" src="./src/ui.js?v=8"></script>
 </body>
 </html>

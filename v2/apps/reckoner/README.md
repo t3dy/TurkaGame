@@ -7,6 +7,10 @@ description: Four ways of acting on a structure that already stands — two reco
 
 v2 grew up building. These four are the other half.
 
+## Controls
+
+Press **How to play** in the topbar (or `?`) for the full instructions for all four levels, and the camera (Q/E turn, +/− zoom, right-drag pan, R reset).
+
 ## Run it
 
 Serve the repo root and open [`index.html`](index.html). `?level=the-assay` loads

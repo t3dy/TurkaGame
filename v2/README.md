@@ -358,6 +358,18 @@ form-derived primitives, letter by letter for both alphabets, with every claim
 labelled by what was actually read. It is the reference for the Introduction mode
 and for any new ruleset.
 
+### Controls: the camera, the cursor, and the How-to-play panel
+
+Every app has a **How to play** button (and `?`) opening a panel that explains,
+in full sentences, the goal, how you win or lose, every control, what the cursor
+is, how to preview a move, and how to work the camera — the house rule is to
+explain too much. The camera turns in quarters (Q/E or ⟲ ⟳), zooms (+/− or the
+wheel), pans (right-drag or the arrows) and resets (R or ⌂); a compass on the
+floor shows which way words run. In the building games, moving the mouse over
+the board draws a ghost of the pending write and the box in the corner reports
+what it would join, where it would break, and what would then fall — computed by
+performing the write on a copy of the world.
+
 ## Known gaps — this is a first slice
 
 - **No person has played it.** Every claim above is from `engine.test.mjs`, from

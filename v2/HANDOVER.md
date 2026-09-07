@@ -139,7 +139,31 @@ at runtime from Google Fonts (linked in every v2 page's `<head>`); nothing is
 vendored, so an offline viewer gets the system serif. Vendoring is a download and
 waits for Ted.
 
-## What is deliberately absent
+## Controls, instructions, and the camera (added 2026-09-07)
+
+Ted: "the controls are really opaque and the goals of the game are really
+confusing… I want full instructions." Two shared modules answer that and every
+app uses both:
+
+- **`apps/shared/howto.js`** — `mountHowTo(button, spec)` mounts the **How to
+  play** panel: goal and win/lose conditions, every control, the cursor, the
+  preview, the camera, in full sentences. It opens on first visit (remembered per
+  app in localStorage), on the topbar button, and on `?`. Each app's `spec` lives
+  at the top of its `ui.js` as `HOWTO`. The camera and cursor sections are shared
+  text appended automatically. **When you add a control, add its sentence here
+  first**; the corner legend is in addition, never instead (CLAUDE.md).
+- **The camera in `iso.js`** — `turn` (quarter turns), `zoom`, `pan`, applied in
+  `project()` and undone in `unproject()`, so click-to-cell keeps working after a
+  turn. `iso.bindCamera(el, redraw)` mounts the ⟲ ⟳ + − ⌂ toolbar and wires
+  Q/E, +/−, arrows, R, the wheel and right-drag. `grid()` draws a **compass** on
+  the floor: "words run this way", turning with the world.
+- **Hover previews** — the Descent and the Standing Word draw a translucent ghost
+  of the pending write under the mouse and report, in the `#hover` box, whether it
+  is allowed, what it joins or breaks, and how many cells would fall afterwards —
+  computed by performing the write on a copy. The Pushing Floor outlines the
+  cursor and says whether the scribe can write there.
+
+
 
 Nothing below is an oversight. Each is a gap with a reason, and inventing a
 primitive to fill one is the thing this project does not do.

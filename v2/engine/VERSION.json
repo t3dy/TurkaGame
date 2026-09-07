@@ -1,7 +1,7 @@
 {
   "_note": "The v2 module cache-busting token, and a hash of the engine files it covers. check_repo_rules.py R6 fails the commit if the engine hash has moved without the token moving with it — because a stale module is a bug that passes every local test and breaks only in a browser that has been here before.",
-  "token": 7,
-  "engine_sha256": "504cf1a7fe7e3fa4d099de21357d1fb3e2b3cd3e9188351f1dea0ff671ac577c",
+  "token": 8,
+  "engine_sha256": "ea311440042f36eb1e2eef1f761d714eee5619c0b9c3ba76b74c80b0ea35ebb0",
   "engine_files": [
     "agent.js",
     "ledger.js",

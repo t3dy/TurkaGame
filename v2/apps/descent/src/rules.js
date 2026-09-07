@@ -17,8 +17,8 @@
 //   HIDE    the ruleset is not shown. What it refuses is shown the moment it is
 //           refused — that is the evidence; the name is yours to earn.
 
-import { World } from '../../../engine/world.js?v=7';
-import { compile, execute } from '../../../engine/vm.js?v=7';
+import { World } from '../../../engine/world.js?v=8';
+import { compile, execute } from '../../../engine/vm.js?v=8';
 
 /** Empty, and touching something built — the ground alone is not enough. */
 export function legalCells(world, cells) {

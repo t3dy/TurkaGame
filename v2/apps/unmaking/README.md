@@ -12,6 +12,10 @@ so at the point of use.
 
 **This app wants a judgement, not just attention.** Pick one, or say none of them.
 
+## Controls
+
+Press **How to play** in the topbar (or `?`) for the full instructions: aiming, the three routes, the comparison table, and the camera (Q/E turn, +/− zoom, right-drag pan, R reset).
+
 ## Run it
 
 Serve the repo root and open [`index.html`](index.html). Click a letter to aim,

@@ -16,10 +16,46 @@
 // list the moment it happens. The name of the metaphysics is never shown until
 // you name it yourself or the run ends.
 
-import { compile } from '../../../engine/vm.js?v=7';
-import { Ledger } from '../../../engine/ledger.js?v=7';
-import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=7';
-import { startWorld, settled, held, write, legalCells, minWord, deal, solutions } from './rules.js?v=7';
+import { compile } from '../../../engine/vm.js?v=8';
+import { Ledger } from '../../../engine/ledger.js?v=8';
+import { mountHowTo } from '../../shared/howto.js?v=8';
+import { Iso, PALETTE } from '../../scriptorium/src/iso.js?v=8';
+import { startWorld, settled, held, write, legalCells, minWord, deal, solutions } from './rules.js?v=8';
+
+
+const HOWTO = {
+  id: 'descent',
+  title: 'How to play The Descent',
+  goal: [
+    'The Descent is a run of five floors. On every floor there is a small stone pier (the brown blocks), a few MARKS drawn on the floor or in the air as dashed turquoise diamonds, and a HAND of Arabic letters in the panel on the right. Your job on each floor is to write those letters into the world so that, when you let gravity in, a letter is sitting on every mark. If every mark is held, the floor stands and you descend to the next one. If any mark is empty after the fall, the floor came down: you lose one of your three lives, the floor is cleared, and you try again with the same letters.',
+    'The catch, and the whole point of the game: below the surface, every floor runs under a different historical METAPHYSICS of the letters, and you are not told which. On some floors a letter that normally joins nothing joins anyway. On some the alif holds nothing up. On one, a word shorter than three letters does nothing at all. The floor shows you evidence of its rules every time you write; the name of the metaphysics is yours to work out. You win the run by reaching the bottom of the fifth floor; you lose it by running out of lives.',
+  ],
+  sections: [
+    { h: 'The panel on the right, top to bottom', items: [
+      'The strip of numbered boxes shows the five floors; the highlighted box is where you are, a gold box is a floor you have already stood, and a box with a turquoise underline is one whose metaphysics you named correctly. Beside it are your LIVES (filled dots) and your CANDLES (a number). "New run" deals a fresh run with a new seed; the seed is in the page address, so you can send a run to someone or replay it.',
+      'The brief box tells you what this floor is called and what it is about. On floor 0, the surface, it also tells you which ruleset you are in: that is the one floor where you are told, so you can learn the letters before they start behaving differently.',
+      'The verdict line counts how many marks are currently covered. The line under it in monospace is the message line: every refused or successful action is explained there in a sentence.',
+      'IN HAND shows the letters you can still write. Click a letter to add it to THE WORD; click it again, or click it inside the word, to take it back. The word is written right to left, as Arabic is: the first letter you click is the first letter of the word.',
+      '"Let gravity in" ends the floor: everything that is not held falls, and the marks are checked. "Undo" takes back your last write ([[Z]] also does this). "Clear the floor" removes everything you wrote and gives the hand back; it does not cost a life.',
+      'IF GRAVITY CAME IN NOW is a live forecast: it says how many cells would fall if you let gravity in this instant, and the dashed arrows on the board show which ones and where they would land. This forecast is not an estimate: it is the same physics the commit uses, run on a copy.',
+      'WHAT THIS FLOOR HAS SHOWN YOU is the evidence list. Every time the floor refuses something, or joins letters that should have broken, or lets an alif fall, a line is added here in plain words. Read it before you name the metaphysics.',
+      'NAME THE METAPHYSICS: four buttons, one per historical ruleset. A correct name earns a candle and marks the floor; a wrong name burns a candle. Naming is never required — you can descend without ever naming — but it is how you score.',
+      'ASK THE FLOOR A QUESTION: five probes, each costing one candle. A probe writes a small test word under the hidden rules and reports what happened (its strength, what was refused). They are the same evidence you would get by writing, bought without spending letters.',
+    ]},
+    { h: 'Writing a word: the cursor, and where the word goes', items: [
+      'First compose a word from the hand (click letters in order). Then move the mouse over the board. The cell under the mouse is outlined in turquoise and labelled "cursor": that is where the FIRST letter of your word will go. The rest of the word runs westward from there, one cell per letter, in the direction the compass arrow on the floor points. As you move the mouse, a translucent GHOST of the whole word is drawn where it would land, so you can see the shape before you commit.',
+      'While the ghost is showing, the box in the top-right corner of the board tells you what would happen if you clicked: whether the write is allowed, which letters would join into one body and where the word would break, and how many cells would then fall if gravity came in. Nothing here is a guess: the game actually performs the write on a copy of the world and reports the result.',
+      'A write is allowed only if every cell of the word is empty and at least one cell of the word touches something already built (the pier, or a letter). The bare ground is never enough: nothing in the Descent rests on the floor of the abyss. If the ghost is red and the corner box says why, click somewhere else.',
+      'Click to write. The letters leave your hand, join or break according to the floor\'s rules, and the message line reports what joined and what broke. Then let gravity in, or keep writing.',
+      'Some floors demand a whole word at once: if a floor refuses a one-letter word, the message says so, and that refusal is itself evidence about where you are.',
+    ]},
+    { h: 'How a floor is won or lost, exactly', items: [
+      'Won: after "Let gravity in", every mark has a letter on it. Marks turn gold as they are covered. The floor is marked done and you descend automatically.',
+      'Lost: after "Let gravity in", at least one mark is empty. You lose a life; the floor is cleared but the evidence list is kept, because the collapse taught you something. With no lives left, the run ends and the metaphysics of every floor is revealed.',
+      'Between floors nothing carries over except your lives, your candles, and what you have learned.',
+    ]},
+  ],
+};
 
 const V = 'v=7';
 const $ = id => document.getElementById(id);
@@ -31,6 +67,7 @@ let PORTAL = [], WORKSHOP = null;
 
 let run = null;    // { seed, floors:[{level, ruleset, named, done}], at, lives, candles, log }
 let world = null, hand = [], word = [], undoStack = [], over = false, evidence = [], fast = false;
+let hover = null;   // { cell, ghost, effects, text } for the cell under the mouse
 
 function newRun(seed = (Date.now() % 100000)) {
   // One seed deals both the order of the metaphysics and the floors they are
@@ -51,7 +88,7 @@ function enterFloor() {
   world = startWorld(f.level);
   hand = f.level.hand.slice();
   word = []; undoStack = []; evidence = [];
-  over = false;
+  over = false; hover = null; $('hover').innerHTML = '';
   $('over').classList.remove('show');
   say('');
   paintAll();
@@ -82,7 +119,10 @@ function draw(fx = null) {
   const targets3 = f.level.targets.map(t => [t[0], t[1], 0]);
   const fc = over ? null : forecast();
   iso.frame(world, targets3);
-  iso.draw(world, fx || (fc ? fc.effects : null), {});
+  // The hover preview: the ghost of the pending word where the mouse is, and the
+  // forecast of what would fall AFTER that write. Same physics, on a copy.
+  const fxShown = fx || (hover && hover.effects) || (fc ? fc.effects : null);
+  iso.draw(world, fxShown, { cursor: hover ? hover.cell : null, ghostWorld: hover ? hover.ghost : null });
   for (const t of targets3) {
     const c = world.get(...t);
     const ok = c && c.glyph;
@@ -217,6 +257,7 @@ function writeWordAt(cell) {
   world = r.world;
   hand = hand.filter((_, i) => !word.includes(i));
   word = [];
+  hover = null; $('hover').innerHTML = '';
   witness(r, glyphs);
   const joins = r.effects.filter(e => e.kind === 'join').length, breaks = r.effects.filter(e => e.kind === 'sever').length;
   say(`${glyphs.join('')} written` + (joins ? ` · joined ${joins}` : '') + (breaks ? ` · the word breaks` : ''), breaks ? 'bad' : joins ? 'good' : '');
@@ -330,6 +371,8 @@ function undo() {
   iso = new Iso($('cv'));
   iso.onStyle = () => { if (world) draw(); };
   iso.bindStyleToggle($('style'));
+  iso.bindCamera($('camera'), () => { if (world) draw(); });
+  mountHowTo($('howto-btn'), HOWTO);
   addEventListener('resize', () => { iso.resize(); if (world) draw(); });
   $('cv').addEventListener('click', ev => {
     const r = $('cv').getBoundingClientRect();
@@ -343,6 +386,48 @@ function undo() {
     }
     if (best) writeWordAt(best);
   });
+  // Hover: where would the word land, and what would happen if it did.
+  const cellUnder = ev => {
+    const r = $('cv').getBoundingClientRect();
+    const top = Math.max(...floor().level.targets.map(t => t[1])) + 2;
+    let best = null, bestD = 1e9;
+    for (let yy = 0; yy <= top; yy++) {
+      const c = iso.unproject(ev.clientX - r.left, ev.clientY - r.top, yy);
+      const p = iso.project(c[0], yy, 0);
+      const d = Math.hypot(p.x - (ev.clientX - r.left), p.y - (ev.clientY - r.top));
+      if (d < bestD) { bestD = d; best = [c[0], yy]; }
+    }
+    return best;
+  };
+  $('cv').addEventListener('mousemove', ev => {
+    if (over) return;
+    const cell = cellUnder(ev);
+    if (!cell) return;
+    const glyphs = word.map(i => hand[i]);
+    let text = `Cursor at column ${cell[0]}, height ${cell[1]}.`;
+    let ghost = null, effects = null;
+    if (!glyphs.length) {
+      text += ' <span class="bad">Compose a word from the hand first</span>; then this is where its first letter would go, and the word would run westward from here.';
+    } else {
+      const r = write(world, glyphs, cell, { letters: LETTERS, ruleset: ruleset() });
+      if (r.refused) text += ` Writing <b>${glyphs.join('')}</b> here is <span class="bad">not allowed</span>: ${r.why}`;
+      else {
+        ghost = r.world;
+        const joins = r.effects.filter(e => e.kind === 'join').length, breaks = r.effects.filter(e => e.kind === 'sever').length;
+        const s = settled(r.world);
+        const h = held(s.world, floor().level).length, n = floor().level.targets.length;
+        const ends = new Map();
+        for (const m of s.moved) { const from = m.from.split(',').map(Number); const origin = ends.has(m.from) ? ends.get(m.from) : from; ends.delete(m.from); ends.set(m.to, origin); }
+        effects = [];
+        for (const [toKey, from] of ends) { const to = toKey.split(',').map(Number); if (from[0] === to[0] && from[1] === to[1] && from[2] === to[2]) continue; effects.push({ kind: 'fall', at: from, to, detail: 'would fall' }); }
+        text += ` If you write <b>${glyphs.join('')}</b> here: ${joins ? joins + ' join' + (joins > 1 ? 's' : '') : 'no joins'}${breaks ? ', the word breaks' : ''}. Then if gravity came in, <b>${effects.length}</b> cell${effects.length === 1 ? '' : 's'} would fall and <b>${h} of ${n}</b> marks would be held.`;
+      }
+    }
+    hover = { cell: [cell[0], cell[1], 0], ghost, effects, text };
+    $('hover').innerHTML = text;
+    draw();
+  });
+  $('cv').addEventListener('mouseleave', () => { hover = null; $('hover').innerHTML = ''; if (!over) draw(); });
   $('gravity').onclick = letGravityIn;
   $('undo').onclick = undo;
   $('reset').onclick = () => { if (over) return; world = startWorld(floor().level); hand = floor().level.hand.slice(); word = []; undoStack = []; say(''); paintHand(); paintWord(); paintVerdict(); draw(); };
@@ -355,6 +440,7 @@ function undo() {
 
   window.__descent = {
     get run() { return run; }, get world() { return world; }, get hand() { return hand; }, get evidence() { return evidence; },
+    get iso() { return iso; }, get hover() { return hover; },
     LETTERS, PACK, DATA, newRun, writeWordAt, letGravityIn, nameIt, probe,
     minWord: () => minWord(ruleset()), legal: cells => legalCells(world, cells),
     /**
