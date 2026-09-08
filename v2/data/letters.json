@@ -112,6 +112,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "الف",
+      "zubur": "ا",
+      "bayyinat": "لف",
       "attested": {
         "nature": "hot",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -169,6 +172,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "با",
+      "zubur": "ب",
+      "bayyinat": "ا",
       "attested": {
         "nature": "cold",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -231,6 +237,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "جيم",
+      "zubur": "ج",
+      "bayyinat": "يم",
       "attested": {
         "nature": "wet",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -288,6 +297,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "دال",
+      "zubur": "د",
+      "bayyinat": "ال",
       "attested": {
         "nature": "dry",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -345,6 +357,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "ها",
+      "zubur": "ه",
+      "bayyinat": "ا",
       "attested": {
         "nature": "hot",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -412,6 +427,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "واو",
+      "zubur": "و",
+      "bayyinat": "او",
       "attested": {
         "nature": "cold",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -479,6 +497,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "زاي",
+      "zubur": "ز",
+      "bayyinat": "اي",
       "attested": {
         "nature": "wet",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -536,6 +557,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "حا",
+      "zubur": "ح",
+      "bayyinat": "ا",
       "attested": {
         "nature": "dry",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -593,6 +617,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "طا",
+      "zubur": "ط",
+      "bayyinat": "ا",
       "attested": {
         "nature": "hot",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -655,6 +682,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "يا",
+      "zubur": "ي",
+      "bayyinat": "ا",
       "attested": {
         "nature": "cold",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -707,6 +737,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "كاف",
+      "zubur": "ك",
+      "bayyinat": "اف",
       "attested": {
         "nature": "wet",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -769,6 +802,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "لام",
+      "zubur": "ل",
+      "bayyinat": "ام",
       "attested": {
         "nature": "dry",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -831,6 +867,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "ميم",
+      "zubur": "م",
+      "bayyinat": "يم",
       "attested": {
         "nature": "hot",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -893,6 +932,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "نون",
+      "zubur": "ن",
+      "bayyinat": "ون",
       "attested": {
         "nature": "cold",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -950,6 +992,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "سين",
+      "zubur": "س",
+      "bayyinat": "ين",
       "attested": {
         "nature": "wet",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1007,6 +1052,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "عين",
+      "zubur": "ع",
+      "bayyinat": "ين",
       "attested": {
         "nature": "dry",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1069,6 +1117,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "فا",
+      "zubur": "ف",
+      "bayyinat": "ا",
       "attested": {
         "nature": "hot",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1131,6 +1182,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "صاد",
+      "zubur": "ص",
+      "bayyinat": "اد",
       "attested": {
         "nature": "cold",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1198,6 +1252,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "قاف",
+      "zubur": "ق",
+      "bayyinat": "اف",
       "attested": {
         "nature": "wet",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1260,6 +1317,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "را",
+      "zubur": "ر",
+      "bayyinat": "ا",
       "attested": {
         "nature": "dry",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1322,6 +1382,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "شين",
+      "zubur": "ش",
+      "bayyinat": "ين",
       "attested": {
         "nature": "hot",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1379,6 +1442,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "تا",
+      "zubur": "ت",
+      "bayyinat": "ا",
       "attested": {
         "nature": "cold",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1436,6 +1502,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "ثا",
+      "zubur": "ث",
+      "bayyinat": "ا",
       "attested": {
         "nature": "wet",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1498,6 +1567,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "خا",
+      "zubur": "خ",
+      "bayyinat": "ا",
       "attested": {
         "nature": "dry",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1560,6 +1632,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "ذال",
+      "zubur": "ذ",
+      "bayyinat": "ال",
       "attested": {
         "nature": "hot",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1627,6 +1702,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "ضاد",
+      "zubur": "ض",
+      "bayyinat": "اد",
       "attested": {
         "nature": "cold",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1689,6 +1767,9 @@
           "from": "a sun letter: the article's lām becomes it"
         }
       ],
+      "lettername": "ظا",
+      "zubur": "ظ",
+      "bayyinat": "ا",
       "attested": {
         "nature": "wet",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -1751,6 +1832,9 @@
           "from": "a moon letter: the article's lām stays itself"
         }
       ],
+      "lettername": "غين",
+      "zubur": "غ",
+      "bayyinat": "ين",
       "attested": {
         "nature": "dry",
         "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",

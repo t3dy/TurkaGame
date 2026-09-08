@@ -1484,3 +1484,44 @@ sixteen. The one recursion bug in the camera (a getter reading itself after a
 mechanical rename) was caught by the page failing to load, and is why the console
 is checked after every change.
 
+## 2026-09-07 — Taksīr, the Tribunal, and two directions from Ted about who is speaking
+
+**Decision.** Four things, three of them answers to questions put to Ted directly.
+
+1. **The player's identity is a property of the MODE.** He picked "Ibn Turka
+   himself" and immediately bounded it: "let's have them be particular game modes,
+   we are building a lot of game ideas and I don't want them all to be subsumed into
+   Turka's biography or the anon sage sim." So `apps/tribunal/` is his biography and
+   nothing else is retrofitted.
+2. **Register is the player's choice**, not the designer's: "I'd like to have all
+   these types of writing and the player can select the tone from a menu."
+   `apps/shared/voice.js` ships four voices with a picker.
+3. **Failure gets both teeth he chose** — denunciation and a corrupted notebook.
+   The Tribunal has standing, convictions, and a record of every break that the
+   third court reads back.
+4. **Taksīr is built** (`engine/taksir.js`), the project's only letter-creating
+   operation.
+
+**Rationale.** The rulesets-no-verdict position (his answer to the first question,
+unchanged) means the game cannot say which metaphysics is true. What it *can* do is
+put a person in a room where the metaphysics is someone else's and the consequences
+are real. That is what the Tribunal is, and it is why refusal had to be a first-class
+outcome rather than a soft loss: the one thing the record actually establishes about
+his conduct is that he "would refuse to bend the knee during his three inquisitions,
+despite the danger and punishing consequences."
+
+**Rejected.** (a) Randomising the courts. The Descent already deals hidden
+metaphysics; the Tribunal asks a different question and fixed courts let each trial
+be designed. (b) Inventing the charges without saying so — the sources record that
+the trials happened and how they came out, not what was argued, so every trial
+carries a GAME FICTION label on its own face and the verifier fails without one.
+(c) Letting a voice paraphrase away a citation: `voiceLint()` treats that as a bug.
+
+**Consequence.** The gate caught the design's real flaw: two of three trials were
+**not court-bound** — their demanded words were made only of connecting letters, so
+every court gave the same verdict and the doctrine was decoration. Redesigning
+around the check produced a mirror pair (الم must be seen coming apart, نور must
+stand whole) that is a better mode than the one first written. The letternames
+needed for taksīr introduced two stated choices — the dropped hamza and the ALF
+spelling — and a structural check that every lettername begins with its own letter.
+

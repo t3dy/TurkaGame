@@ -50,6 +50,9 @@ rule **evidence is always shown, the rule is earned**.
 | **The Reckoner** (4 recovered mechanics) | `apps/reckoner/` | `verify_levels.mjs` + `__reckoner.selfTest()` |
 | **The Descent** (roguelike: the metaphysics varies) | `apps/descent/` | `verify_run.mjs` + `tests/descent.test.mjs` + `__descent.selfTest(seed)` |
 | **The Introduction** (guided course, the sage, the golem) | `apps/introduction/` | `tests/introduction.test.mjs` (every lesson's solution finishes its task) + `__intro.selfTest()` |
+| **The Tribunal** (three inquisitions; you are Ibn Turka) | `apps/tribunal/` | `verify_trials.mjs` + `__tribunal.selfTest()` / `.refuseEverything()` |
+| Taksīr: breaking a word into its hidden letters | `engine/taksir.js` | `node v2/tests/taksir.test.mjs` (pinned to the source's own ALF example) |
+| The voice selector (four registers) | `apps/shared/voice.js` | `node v2/tests/voice.test.mjs` (all four present; no voice drops a citation) |
 | Hebrew letter table (22 + 5 finals) | `data/build_hebrew.py` → `data/hebrew.json` | `python v2/data/build_hebrew.py --verify` |
 | Operations on standing structures | `engine/operations.js` | `node v2/tests/engine.test.mjs` |
 
@@ -65,6 +68,9 @@ node v2/apps/descent/verify_run.mjs
 node v2/tests/descent.test.mjs
 node v2/tests/glyphs.test.mjs
 node v2/tests/introduction.test.mjs
+node v2/tests/taksir.test.mjs
+node v2/tests/voice.test.mjs
+node v2/apps/tribunal/verify_trials.mjs
 python v2/data/build_hebrew.py --verify
 python tools/check_repo_rules.py
 ```
@@ -112,6 +118,8 @@ asks a second question suited to what it is about:
 | Reckoner `assay` | Do the probes **distinguish** the hidden ruleset from all the others? |
 | Reckoner `station` | At least one direction reads the target, and not all of them do |
 | Descent | **Fair under every metaphysics, and distinct**: every pair of rulesets has a different set of winning placements on the floor (not *in every direction* — the Ottoman floor's solutions are a subset of the intellectual's by construction, the gnostic's of the Sufi's). Floors are *searched for*, not sketched (`design_search.mjs`), and the gate **prints** how many universal placements remain rather than hiding them; every shipped floor has zero. |
+| Tribunal | **Answerable** in its own court, **earned** (not answerable without breaking), and **court-bound** (the court's own doctrine changes the verdict). Two of three trials failed court-bound on the first pass. |
+| Any voiced text | All four voices present, and no voice drops a citation the austere one carries. |
 | Any, optional | If it claims a choice matters, **does a wrong choice exist**? |
 
 ## Verifying against the live site
@@ -207,6 +215,27 @@ primitive to fill one is the thing this project does not do.
 - **Glyph artwork** — elemental, planetary, zodiacal. None exists anywhere in the
   workspace. This is the largest unstarted piece and it blocks
   `../../GoldenDawnBlocks/` from being anything but data.
+
+## Who the player is, and the voice they hear it in (decided 2026-09-07)
+
+Two directions from Ted that govern all future writing:
+
+- **The player's identity belongs to the MODE, not the project.** He chose "Ibn
+  Turka himself" *and* said: "let's have them be particular game modes, we are
+  building a lot of game ideas and I don't want them all to be subsumed into
+  Turka's biography or the anon sage sim." So `apps/tribunal/` is his biography and
+  says so; the Introduction has an unnamed sage; the block games have no one at
+  all. Do not retrofit a protagonist onto a mode that does not want one.
+- **Register is the player's choice.** `apps/shared/voice.js` gives four voices —
+  austere, baroque (the register the scholarship is actually written in), uncanny,
+  warm — and a picker in the topbar. Text in data may be a plain string or a bundle
+  with one version per voice. **The rule: a voice changes how something is said and
+  never what is claimed**; `voiceLint()` fails any voice that drops a citation or
+  honesty label the austere text carries, and `tests/voice.test.mjs` enforces it.
+  When you write new player-facing prose, write all four or write a plain string.
+- **Failure has two teeth**, also his call: denunciation (social) and a corrupted
+  notebook (epistemic). The Tribunal has both in first form — standing, convictions,
+  and a record of every break that the third court reads back.
 
 ## Standing caveats — say these, do not quietly drop them
 

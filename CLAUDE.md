@@ -277,6 +277,20 @@ mansion, name, faculty — and how each becomes, or could become, a player abili
 Read it before adding a ruleset or a lesson; it says what is attested and what is
 ours.
 
+[`v2/apps/tribunal/`](v2/apps/tribunal/README.md) is **three inquisitions, and you
+are Ibn Turka** — the first mode with a named protagonist, because Ted's call is that
+**the player's identity belongs to the mode, not the project** (the block games stay
+about the letters). It ships the project's one letter-CREATING operation,
+**taksīr** ([`v2/engine/taksir.js`](v2/engine/taksir.js)): a letter's name written
+out in full releases everything after the first letter, so alif (الف) conceals a lām
+and a fāʾ — bounded to eight letters across the whole alphabet, which is what makes
+it a puzzle. Two more house rules it adds: **a court's doctrine must decide its
+verdict** (two of three trials failed that check on the first pass), and **refusing
+is not a worse kind of losing** — it leaves the charge unproven and is what the man
+actually did. Register is now the player's choice too:
+[`v2/apps/shared/voice.js`](v2/apps/shared/voice.js) gives four voices and a lint
+that fails any voice which drops a citation the austere one carries.
+
 [`v2/index.html`](v2/index.html) is the hub — every prototype, v1 and v2, in one place.
 
 **The engine is alphabet-agnostic, and that was tested.** `../GoldenDawnBlocks/` vendors

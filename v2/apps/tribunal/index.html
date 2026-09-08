@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap">
+<title>The Tribunal — three inquisitions, and you are Ibn Turka</title>
+<link rel="stylesheet" href="../shared/hand.css?v=10">
+<style>
+  :root {
+    --paper:#f1dac1; --dim:#b9b0a6; --bg:#171620; --bg2:#211f2b; --bg3:#2b2836;
+    --gold:#c99a2e; --gold-hi:#e8c86a; --lapis:#4d7fd6; --verm:#c06523;
+    --turq:#2e8f8f; --rule:rgba(241,218,193,.16);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:"Inter","Segoe UI",system-ui,sans-serif;
+    --mono:"Cascadia Mono",Consolas,monospace;
+    --naskh:"Amiri","Scheherazade New","Noto Naskh Arabic","Arabic Typesetting",serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--paper);font-family:var(--serif);overflow:hidden}
+  a{color:var(--verm)}
+  .topbar{display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;padding:.5rem 1rem;
+    background:#100f16;border-bottom:1px solid var(--gold);font-family:var(--sans);font-size:.76rem}
+  .topbar .title{font-family:var(--serif);font-size:1rem}
+  .topbar .ar{font-size:1.05rem;color:var(--gold-hi)}
+  .topbar .spacer{flex:1}
+  .topbar a{text-decoration:none}.topbar a:hover{text-decoration:underline}
+  .voice-lab{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-right:.3rem}
+  .voice-sel{font-family:var(--sans);font-size:.72rem;background:transparent;color:var(--paper);
+    border:1px solid var(--gold);border-radius:2px;padding:.2rem .3rem}
+  html[data-hand="ink"] .voice-sel{background:#fbf4e4;color:#2b2116;border-color:#8c6a2b}
+
+  #wrap{display:flex;height:calc(100% - 34px)}
+  #stage{flex:1;position:relative;min-width:0}
+  #stage canvas{display:block;width:100%;height:100%}
+  #panel{width:440px;flex:0 0 440px;background:var(--bg2);border-left:1px solid var(--gold);
+    display:flex;flex-direction:column;overflow-y:auto;padding:10px 12px;gap:10px}
+
+  .btn{font-family:var(--sans);font-size:.72rem;padding:.34rem .6rem;border:1px solid var(--gold);
+    border-radius:2px;background:transparent;color:var(--paper);cursor:pointer}
+  .btn:hover{background:rgba(201,154,46,.16)}
+  .btn:disabled{opacity:.3;cursor:default}
+  .btn.big{padding:.45rem .8rem;font-size:.78rem}
+  .btn.answer{border-color:var(--gold-hi);color:var(--gold-hi)}
+  .btn.refuse{border-color:var(--verm);color:#f0b98a}
+  .row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .lab{font-family:var(--sans);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:.25rem}
+
+  #standing{display:flex;gap:10px;align-items:center;font-family:var(--sans);font-size:.72rem}
+  #trials{display:flex;gap:4px}
+  .tr{width:22px;height:22px;border:1px solid var(--rule);border-radius:2px;display:flex;align-items:center;
+    justify-content:center;font-family:var(--mono);font-size:.62rem;color:var(--dim)}
+  .tr.won{background:rgba(201,154,46,.28);border-color:var(--gold);color:var(--gold-hi)}
+  .tr.lost{background:rgba(192,101,35,.24);border-color:var(--verm);color:#f0b98a}
+  .tr.refused{border-color:var(--turq);color:#8fd3cf}
+  .tr.here{box-shadow:0 0 0 1px var(--gold-hi) inset;color:var(--paper)}
+
+  h2{font-size:1.15rem;font-weight:500;margin:.2rem 0 .1rem;color:var(--gold-hi)}
+  h2 .ar{font-family:var(--naskh);font-size:1rem;color:var(--dim);margin-left:.4rem}
+  .trial-no{font-family:var(--sans);font-size:.66rem;color:var(--dim);letter-spacing:.08em;text-transform:uppercase}
+  .frame{border:1px solid var(--rule);border-left:2px solid var(--gold);border-radius:2px;
+    padding:.55rem .7rem;background:rgba(0,0,0,.16);font-family:var(--sans);font-size:.78rem;line-height:1.6}
+  .frame h4{margin:0 0 .3rem;font-size:.66rem;font-weight:600;color:var(--gold-hi);letter-spacing:.08em;text-transform:uppercase}
+  .frame.court{border-left-color:var(--lapis)}
+  .frame.teach{border-left-color:var(--turq)}
+  .frame.demand{border-left-color:var(--gold-hi);background:rgba(201,154,46,.1)}
+  .frame b{color:var(--gold-hi)}
+  .frame .ar{font-family:var(--naskh);font-size:1.15em}
+  #sources{font-family:var(--sans);font-size:.64rem;color:var(--dim);border-left:2px solid var(--rule);padding-left:.6rem;line-height:1.5}
+
+  #hand,#answer{display:flex;gap:5px;flex-wrap:wrap;min-height:52px}
+  #answer{direction:rtl;border:1px dashed var(--rule);border-radius:2px;padding:.3rem;align-items:center}
+  #answer .empty{direction:ltr;font-family:var(--sans);font-size:.68rem;color:var(--dim)}
+  .lt{width:46px;height:52px;border-radius:2px;cursor:pointer;border:1px solid #7d6338;
+    background:linear-gradient(#efe0c2,#dcc79f);color:#2a2113;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;line-height:1}
+  .lt.dark{background:linear-gradient(#4d4870,#3b3757);color:#e6dcf3;border-color:#221f38}
+  .lt.sel{outline:2px solid var(--gold-hi);outline-offset:2px}
+  .lt.new{box-shadow:0 0 0 2px var(--turq)}
+  .lt .g{font-size:1.45rem;font-family:var(--naskh)}
+  .lt .v{font-family:var(--mono);font-size:.5rem;opacity:.7}
+
+  #working{font-family:var(--sans);font-size:.7rem;line-height:1.5;color:#ddd4c9}
+  #working ol{margin:.2rem 0;padding-left:1.1rem}
+  #working li{margin:.12rem 0}
+  #working .ar{font-family:var(--naskh);font-size:1.15em;color:var(--gold-hi)}
+  #record{font-family:var(--sans);font-size:.7rem;line-height:1.5;margin:0;padding-left:1.1rem;max-height:110px;overflow-y:auto}
+  #record li{margin:.15rem 0;color:#ddd4c9}
+  #record .ar{font-family:var(--naskh);font-size:1.1em;color:var(--gold-hi)}
+  #say{font-family:var(--mono);font-size:.68rem;min-height:1.2rem;padding:.25rem .4rem;border-radius:2px;color:var(--dim)}
+  #say.bad{color:#f0b98a;background:rgba(192,101,35,.14)}
+  #say.good{color:var(--gold-hi);background:rgba(201,154,46,.12)}
+
+  #legend{position:absolute;left:10px;bottom:8px;font-family:var(--sans);font-size:.62rem;color:var(--dim);
+    background:rgba(16,15,22,.8);padding:.3rem .5rem;border-radius:2px;max-width:60%}
+  #reads{position:absolute;right:10px;bottom:8px;font-family:var(--sans);font-size:.66rem;color:var(--paper);
+    background:rgba(16,15,22,.8);padding:.3rem .5rem;border-radius:2px;max-width:40%}
+  #reads b{color:var(--gold-hi);font-family:var(--naskh);font-size:1.1rem}
+  #over{position:absolute;inset:0;display:none;align-items:center;justify-content:center;
+    background:rgba(16,15,22,.85);font-family:var(--sans);padding:2rem;overflow-y:auto}
+  #over.show{display:flex}
+  #over .card{max-width:520px;border:1px solid var(--gold);background:var(--bg2);padding:1.2rem 1.4rem;
+    border-radius:3px;font-size:.84rem;line-height:1.62}
+  #over h3{margin:0 0 .5rem;font-family:var(--serif);font-weight:500;font-size:1.3rem;color:var(--gold-hi)}
+  html[data-hand="ink"] #reads,html[data-hand="ink"] #legend{background:rgba(243,233,214,.9);color:#2b2116}
+  html[data-hand="ink"] #working,html[data-hand="ink"] #record li{color:#2b2116}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <span class="title">The Tribunal</span>
+    <span class="ar">المحاكمة</span>
+    <span style="opacity:.35">·</span>
+    <span>three inquisitions, and you are Ibn Turka</span>
+    <span class="spacer"></span>
+    <span id="voice"></span>
+    <button class="btn" id="howto-btn" style="padding:.2rem .5rem;border-color:var(--turq)">How to play</button>
+    <button class="btn" id="style" style="padding:.2rem .5rem">Draw in Ink</button>
+    <a href="../../index.html">v2</a>
+  </div>
+
+  <div id="wrap">
+    <div id="stage">
+      <canvas id="cv"></canvas>
+      <div id="camera"></div>
+      <div id="hover"></div>
+      <div id="legend">the stand is before the court &middot; break a letter to release what is hidden in its name &middot;
+        press <b>?</b> for the full instructions</div>
+      <div id="reads"></div>
+      <div id="over"><div class="card" id="overcard"></div></div>
+    </div>
+
+    <aside id="panel">
+      <div id="standing">
+        <div id="trials"></div>
+        <span id="standing-n"></span>
+        <span style="flex:1"></span>
+        <button class="btn" id="newrun" style="font-size:.64rem">New run</button>
+      </div>
+
+      <div>
+        <div class="trial-no" id="trialno"></div>
+        <h2 id="title"></h2>
+      </div>
+
+      <div class="frame court"><h4>The court</h4><div id="court"></div></div>
+      <div class="frame"><h4>The charge</h4><div id="charge"></div></div>
+      <div class="frame demand"><h4>What the court demands</h4><div id="demand"></div></div>
+      <div class="frame teach"><h4>How it can be done</h4><div id="teaches"></div></div>
+
+      <div>
+        <div class="lab">In hand &mdash; click to add to your answer</div>
+        <div id="hand"></div>
+      </div>
+      <div>
+        <div class="lab">Your answer &mdash; click a letter to take it back</div>
+        <div id="answer"></div>
+      </div>
+
+      <div class="row">
+        <button class="btn big" id="break">Break the selected letter</button>
+        <button class="btn big answer" id="submit">Answer the court</button>
+        <button class="btn big refuse" id="refuse">Refuse to answer</button>
+      </div>
+      <div id="say"></div>
+
+      <div class="frame"><h4>The working</h4><div id="working">Nothing broken yet.</div></div>
+      <div class="frame"><h4>The record &mdash; every break is a claim</h4><ul id="record"></ul></div>
+      <div id="sources"></div>
+    </aside>
+  </div>
+
+<script type="module" src="./src/ui.js?v=10"></script>
+</body>
+</html>

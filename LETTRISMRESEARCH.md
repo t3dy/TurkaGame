@@ -121,8 +121,10 @@ A translation-with-commentary of the prologue to Ibn Turka's *Mafāḥiṣ*
   (e.g., the A in ALF) and *bayyināt* to the remaining letters (LF in ALF)—so by
   definition the occult code behind every manifest word, and therefore the world
   itself." He also notes taksīr is **cognate to Hebrew *temurah***.
-  **→ Not built. This is the single most build-ready unbuilt mechanic we have:
-  a deterministic string algorithm with a period name and a stated purpose.**
+  **→ BUILT 2026-09-07 as `engine/taksir.js`, and played in the Tribunal. The
+  bound that makes it a game: across all twenty-eight names the bayyināt draw on
+  only eight distinct letters (ا د ف ل م ن و ي), so twenty letters can never be
+  obtained by breaking anything.**
 - **CORPUS, worked alphanumerics** (the examples are checkable with our own
   `data/letters.json`): ṢWAB = 99, keyed to the 99 divine names; ʿaṭā (gift)
   = 80 = aʿdād (numbers), "that this 'gift' is ontologically 'Numbers' is
@@ -551,7 +553,7 @@ the source is held, the claim is cited, and the rule is deterministic.
 | **Four natures, seven each** | Coulon pp. 346–347 | **carried as data** (`letters.json` → `attested.nature`, verified 7/7/7/7); the mechanic is still **ready** — a transmutation rule: a letter's nature moves the material under it along earth↔water↔fire↔air |
 | **28 mansions, one per letter, 14 up / 14 down** | Varisco pp. 501–502 | **carried as data** (`attested.mansion`, 1..28 verified); the mechanic is still **ready** — a turn scheduler; one letter is "in its mansion" per turn |
 | **Dots as an omen scale (1 < 2 < 3)** | Varisco p. 502 | **carried as data** (`attested.omen`, and `--verify` checks our dotted/undotted letters against al-Būnī's own lists — they match); the mechanic is still **ready** — the cost of RAISE/LOWER |
-| **taksīr / zubur / bayyināt** | *Prologue* n. 35 | **ready** — a string algorithm: expand letternames, drop repeats, split |
+| **taksīr / zubur / bayyināt** | *Prologue* n. 35 | **built** — `engine/taksir.js`, pinned to the source's own ALF example; the letternames live in `build_letters.py` with the dropped hamza stated; bounded to eight releasable letters. Played in `apps/tribunal/` |
 | **Seven doubles = six faces + centre** | Segol p. 72 (SY38) | **ready** — the strongest unbuilt spatial rule; a cell and its six neighbours |
 | **231 gates with an intention flag** | Segol p. 51 (SY18, Donnolo) | **ready** — combination plus a for-good/for-ill switch |
 | **Seven luciform → twelve faculties → 28 corporeal** | Gardiner pp. 56–57 | **ready** — a three-tier dependency; power reaches matter only through a faculty |

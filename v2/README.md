@@ -228,11 +228,17 @@ v2/
 ├── apps/unmaking/            three candidate demolition routes, measured side by side
 ├── apps/reckoner/            extract · reckon · assay · station, each checked its own way
 ├── apps/descent/             the roguelike: five floors, the metaphysics dealt and hidden
+├── apps/tribunal/            three inquisitions; you are Ibn Turka; taksīr and refusal
+├── apps/introduction/        the guided course: history, the sage, the golem
+├── engine/taksir.js          breaking a word into the letters hidden in its names
+├── apps/shared/voice.js      the four registers, and the rule that keeps them honest
 ├── engine/unmaking.js        those three routes, as pure functions
 ├── index.html                the hub: every prototype in one place
 ├── tests/engine.test.mjs     52 tests
 ├── tests/glyphs.test.mjs     8 tests: every sign draws, stays in bounds, scales
-└── tests/descent.test.mjs    8 tests: legal writes, standing, the solver, the deal
+├── tests/descent.test.mjs    10 tests: legal writes, standing, the solver, the deal
+├── tests/taksir.test.mjs     11 tests: the source's ALF example, and the eight-letter bound
+└── tests/voice.test.mjs      8 tests: four voices, and no voice drops a citation
 ```
 
 ## Provenance, and how it is shown
@@ -357,6 +363,27 @@ reconstructed live from the texts, and then hand over a sage who walks and write
 One lesson per power, the Hebrew letters as bricks, a Sufi floor where the same two
 letters refuse to break, and a golem built and unmade. Every lesson has a scripted
 solution and a test proves it finishes the task.
+
+### The Tribunal — three inquisitions, and you are Ibn Turka
+
+[`apps/tribunal/`](apps/tribunal/README.md) is the first mode with a named
+protagonist, and that is deliberate: the player's identity belongs to the mode, so
+the block games stay free to be about the letters. Three courts, each named and
+each running its own metaphysics, demand a demonstration you have not been given
+the letters for. **Taksīr** ([`engine/taksir.js`](engine/taksir.js)) is how you get
+them: write a letter's name out in full and take everything after the first — the
+name of alif is الف, so an alif conceals a lām and a fāʾ. Only eight letters in the
+whole alphabet can ever be released that way, which is what makes it a puzzle.
+
+The first court demands that الم be seen **coming apart**; the third demands that
+نور stand **whole**, which it can only do where nothing severs. They are mirrors,
+and the gate checks it. You may also **refuse to answer**, which leaves the charge
+unproven and costs standing — and is what the historical man did, three times.
+
+**Every register is available.** [`apps/shared/voice.js`](apps/shared/voice.js) puts
+a Voice menu in the topbar: austere, baroque, uncanny, warm. A voice changes how a
+thing is said and never what it claims, and a test fails any voice that drops a
+citation the austere one carries.
 
 ### The powers of the letters, sourced
 

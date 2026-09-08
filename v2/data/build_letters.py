@@ -141,6 +141,65 @@ FACT_OPS = {
 }
 
 
+# --- the letternames, for taksir --------------------------------------------
+#
+# Taksir (cognate to Hebrew temurah) is described by Melvin-Koushki, Prologue to
+# Pythagorean Renaissance, n. 35: it "involves the muqatta'at- and
+# Moonsplitting-inspired separation of the letters of a name or word and the
+# writing out of the letternames in full, then the elimination of repeated
+# letters, the term zubur refers to the first letters in the full letternames
+# (e.g., the A in ALF) and bayyinat to the remaining letters (LF in ALF) -- so by
+# definition the occult code behind every manifest word, and therefore the world
+# itself."
+#
+# To run that as an algorithm the game needs each letter's NAME SPELLED IN THE
+# ALPHABET. These are the ordinary Arabic spellings, and two things about them are
+# ours and are said here rather than buried:
+#
+#   1. HAMZA IS DROPPED. Sixteen names end in -a' and are ordinarily written with
+#      a final hamza (ba' as BAA'). Hamza is not one of the twenty-eight, and
+#      taksir operates on the twenty-eight, so the names are spelled without it
+#      (BA). This matches MK's own worked example, which gives alif as ALF -- three
+#      letters, no hamza. INTERPRETATION, ours.
+#   2. SPELLINGS VARY IN THE TRADITION. Alif is written ALF here, after MK; other
+#      lettrists write it ALYF, and the choice changes what a taksir yields. A
+#      ruleset that wants the other convention should say so and cite it.
+#
+# --verify checks the structural fact that makes these checkable at all: EVERY
+# LETTERNAME BEGINS WITH ITS OWN LETTER, and every letter used inside any name is
+# one of the twenty-eight. If a name were mistyped, one of those two almost
+# certainly breaks.
+LETTERNAMES = {
+    "\u0627": "\u0627\u0644\u0641",              # alif  ALF
+    "\u0628": "\u0628\u0627",                    # ba    BA
+    "\u062c": "\u062c\u064a\u0645",              # jim   JYM
+    "\u062f": "\u062f\u0627\u0644",              # dal   DAL
+    "\u0647": "\u0647\u0627",                    # ha    HA
+    "\u0648": "\u0648\u0627\u0648",              # waw   WAW
+    "\u0632": "\u0632\u0627\u064a",              # zay   ZAY
+    "\u062d": "\u062d\u0627",                    # ha'   HA
+    "\u0637": "\u0637\u0627",                    # ta'   TA
+    "\u064a": "\u064a\u0627",                    # ya'   YA
+    "\u0643": "\u0643\u0627\u0641",              # kaf   KAF
+    "\u0644": "\u0644\u0627\u0645",              # lam   LAM
+    "\u0645": "\u0645\u064a\u0645",              # mim   MYM
+    "\u0646": "\u0646\u0648\u0646",              # nun   NWN
+    "\u0633": "\u0633\u064a\u0646",              # sin   SYN
+    "\u0639": "\u0639\u064a\u0646",              # 'ayn  'YN
+    "\u0641": "\u0641\u0627",                    # fa'   FA
+    "\u0635": "\u0635\u0627\u062f",              # sad   SAD
+    "\u0642": "\u0642\u0627\u0641",              # qaf   QAF
+    "\u0631": "\u0631\u0627",                    # ra'   RA
+    "\u0634": "\u0634\u064a\u0646",              # shin  SHYN
+    "\u062a": "\u062a\u0627",                    # ta'   TA
+    "\u062b": "\u062b\u0627",                    # tha'  THA
+    "\u062e": "\u062e\u0627",                    # kha'  KHA
+    "\u0630": "\u0630\u0627\u0644",              # dhal  DHAL
+    "\u0636": "\u0636\u0627\u062f",              # dad   DAD
+    "\u0638": "\u0638\u0627",                    # za'   ZA
+    "\u063a": "\u063a\u064a\u0646",              # ghayn GHYN
+}
+
 # --- the attested layer: what particular texts say, with citations -----------
 
 # Kitab Sharasim al-Hindiyya, fols. 322b-323a (Coulon in Saif et al. 2021,
@@ -208,6 +267,10 @@ def build():
             # --- the attested layer: what particular texts SAY (see the docstring
             #     and LETTRISMRESEARCH.md §3). Evidence with citations, not doctrine;
             #     no engine code reads this yet, and a ruleset that wants it must cite.
+            # --- the lettername, spelled in the alphabet, for taksir (engine/taksir.js) ---
+            "lettername": LETTERNAMES[g],
+            "zubur": LETTERNAMES[g][0],
+            "bayyinat": LETTERNAMES[g][1:],
             "attested": {
                 "nature": NATURE_CYCLE[i % 4],
                 "nature_source": "Kitab Sharasim al-Hindiyya ff. 322b-323a, tr. Coulon in Saif et al. 2021, pp. 346-347",
@@ -274,6 +337,30 @@ def verify(letters) -> int:
     if inert:
         problems.append("v2 letters should all carry at least their sun/moon primitive; inert: %s" % "".join(inert))
 
+    # --- the letternames: every name begins with its own letter, and uses only
+    #     letters of the alphabet. That is what makes a typo detectable at all. ---
+    alphabet = set(l["glyph"] for l in letters)
+    if len(LETTERNAMES) != 28:
+        problems.append("expected 28 letternames, have %d" % len(LETTERNAMES))
+    for l in letters:
+        name = l["lettername"]
+        if not name:
+            problems.append("%s has no lettername" % l["glyph"])
+            continue
+        if name[0] != l["glyph"]:
+            problems.append("the name of %s should begin with %s, got %s" % (l["glyph"], l["glyph"], name[0]))
+        stray = set(name) - alphabet
+        if stray:
+            problems.append("the name of %s uses %s, not in the alphabet" % (l["glyph"], "".join(stray)))
+        if l["bayyinat"] != name[1:]:
+            problems.append("%s: bayyinat should be the name minus its first letter" % l["glyph"])
+    # taksir is only interesting if names introduce letters the word did not have
+    introduced = set()
+    for l in letters:
+        introduced |= set(l["bayyinat"])
+    if len(introduced) < 5:
+        problems.append("the letternames introduce only %d distinct letters; taksir would be inert" % len(introduced))
+
     # --- the attested layer: the texts' own counts must come out ---
     natures = {}
     for l in letters:
@@ -319,6 +406,9 @@ def verify(letters) -> int:
     print("verify: OK — 28 letters; 14 sun / 14 moon, 14 light / 14 dark overlapping on "
           "%d (two divisions, not one); 6 non-connecting; abjad ascending; "
           "instruction census %s" % (overlap, census))
+    print("verify: letternames OK — 28 names, each beginning with its own letter, "
+          "each spelled only in the alphabet; their bayyinat draw on %d distinct letters (%s)"
+          % (len(introduced), "".join(sorted(introduced))))
     print("verify: attested layer OK — natures 7/7/7/7 cycling so neighbours differ; "
           "mansions 1..28; and our %d dotted / %d undotted letters match al-Buni's own "
           "lists on Shams al-ma'arif f. 4r, letter for letter"

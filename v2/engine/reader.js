@@ -22,7 +22,7 @@
 // when what it finds is not a word. It never guesses. A structure that reads as
 // nothing reads as nothing.
 
-import { KEY } from './world.js?v=9';
+import { KEY } from './world.js?v=10';
 
 /**
  * Read every body of letter-cells in the world as a word.

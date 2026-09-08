@@ -1,0 +1,227 @@
+{
+  "_note": "The Tribunal: three trials, and you are Ibn Turka. WHAT IS ATTESTED (docs/BIOGRAPHY.md, from Melvin-Koushki): he was a judge known for defending the weak against the powerful; he was subjected to three separate state inquisitions engineered by jealous rival colleagues; he won the first two and lost the third, datable to about 1427; five years of wandering exile followed and he died in 1432, impoverished and in legal limbo; his Cairo companion Qasim-i Anvar was exiled the same year over the same lettrist associations; and per the Prologue he 'would refuse to bend the knee during his three inquisitions, despite the danger and punishing consequences'. WHAT IS NOT ATTESTED, and is therefore ours: the CONTENT of the charges, the courts' identities, the demands, and every word anyone says. The sources record that the trials happened and how they came out, not what was argued. Each trial says so on its own face. Exact years for the first two inquisitions are an open research gap and no year is given for them here.",
+  "how_it_works": {
+    "you": "You are Ibn Turka. This mode is his biography; the other modes are not, and the hub says which is which.",
+    "the demand": "Each court demands a demonstration: that a particular word stand written before it, as one body. You are never given the letters to do it.",
+    "taksir": "Breaking is how you get them. Write out a letter's name in full and the letters after the first are its bayyinat -- the letters hidden inside it. Every break is entered in the record.",
+    "the court": "Each court runs its own metaphysics, and it is named openly here: the Tribunal is not the Descent, and the question is not which rules apply but what you will say under them.",
+    "the record": "Every break you perform is a claim about how letters conceal one another. A later court may cite your record back at you, and then you must stand by it or recant.",
+    "refusal": "You may always refuse to answer. The charge is then unproven -- you are neither convicted nor cleared -- and it costs standing. It is also what he actually did."
+  },
+  "run": {
+    "standing": 3,
+    "convictions_to_exile": 3
+  },
+  "trials": [
+    {
+      "id": "the-rivals-court",
+      "name": "The Rival's Court",
+      "arabic": "محكمة الخصم",
+      "court": "intellectual",
+      "court_note": "The court hears you under intellectual lettrism -- letters act by demonstrable proportion, and a word breaks where the alphabet says it breaks. That is your own position, which is what makes this court the dangerous one: you will be judged by your own standard.",
+      "charge": {
+        "austere": "The charge is that your science of letters is prophecy wearing the dress of scholarship. A colleague of equal rank has laid it. The court does not want a defence — anything you could say, a prophet could say. It wants an <b>analysis</b>: put the cut-up letters <b>الم</b> before this bench and show that they are, in fact, cut. The court must read <b>ا</b> and <b>لم</b> standing apart.",
+        "baroque": "Here it is, the charge every letterman dreads and every rival relishes: that your science is <i>prophecy in a scholar's gown</i>. Not error — error is forgivable — but <b>imposture</b>. And the court is too clever to let you argue, because anything you can say a prophet can also say. So it asks for the one thing prophecy cannot do: <b>take something apart in public</b>. Set the cut-up letters <b>الم</b> — the wellspring of the whole science, the mystery that opens the second sūra — before this bench, and let the room see them come apart into <b>ا</b> and <b>لم</b>, exactly where the alphabet says they must.",
+        "uncanny": "A colleague of your own rank has said the word. Prophecy. The court will not hear a defence; a defence is sentences, and a prophet has those too. It wants the cut-up letters <b>الم</b> put in front of it and it wants to watch them come apart — <b>ا</b> here, <b>لم</b> there — because a thing that comes apart was made, not received.",
+        "warm": "Here is your first trial. Someone of your own rank has accused you of dressing prophecy up as scholarship, and that is nearly unanswerable in words: whatever you say in your defence, a prophet could say too. So the court asks for something a prophet cannot do — it asks you to take something <b>apart</b>. Specifically: put the letters <b>الم</b> before it (these are <i>muqaṭṭaʿāt</i>, the mysterious cut-up letters that open the second sūra of the Qur'an) and let the court see them separate into <b>ا</b> and <b>لم</b>. They separate because alif never joins the letter after it — that is a fact about the alphabet anyone in the room can check, which is exactly the point."
+      },
+      "teaches": {
+        "austere": "You are not given the lām. It is inside the alif: the name of alif is written ALF (الف), so its bayyināt — everything after the first letter — are lām and fāʾ. Break the alif to release the lām, then write الم. It will come apart on its own, because alif does not join what follows.",
+        "baroque": "And here is the joke the universe has arranged: you have no <b>ل</b>. You have an <b>ا</b>, the letter of the One, the first thing there is. Break it — write its name out in full, ALF, and take everything after the A — and out fall a lām and a fāʾ. <b>You split unity to spell the mystery, and then the mystery splits itself</b>, because alif joins nothing after it. Ibn Turka would have called that the whole science in one gesture, and he would have been showing off, and he would have been right.",
+        "uncanny": "You have no lām. There is one inside the alif; its name is written الف and everything after the first letter was always in there. Break it open. Then write الم and step back: it comes apart by itself. Alif holds nothing after it. It never did.",
+        "warm": "Look at your hand: you have ا and م, and you need ا ل م. The lām is missing and nobody will give it to you — but it is not really missing. It is inside the alif. The name of the letter alif, spelled out, is <b>الف</b> (A-L-F); the letters after the first one, <b>ل</b> and <b>ف</b>, are its <i>bayyināt</i>, its hidden letters. Select the alif, press Break, and the lām comes out. Then inscribe الم. You do not have to do anything to make it come apart — alif never joins the letter after it, so the court will see ا standing alone and لم beside it."
+      },
+      "demand": {
+        "kind": "reads-separate",
+        "parts": [
+          "ا",
+          "لم"
+        ],
+        "text": "الم",
+        "gloss": "ALM — the cut-up letters opening surat al-Baqara, shown coming apart"
+      },
+      "hand": [
+        "ا",
+        "م"
+      ],
+      "stand": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        }
+      ],
+      "verdict": {
+        "won": {
+          "austere": "The alif opened, the lām came out of it, and the word came apart where the alphabet says it must. Every step was one the bench could repeat. The charge of prophecy fails, because prophecy cannot be taken apart and this could be.",
+          "baroque": "They watched you crack the One open, take a lām out of it, write the great mystery of the second sūra, and then watched the mystery fall obediently into two pieces because that is what alif does. Not one man on that bench could call it revelation, because every one of them could have done it. You won by the most dangerous method available: you let them check.",
+          "uncanny": "The alif opened. The lām had been inside it. The word came apart at the place the alphabet had always put the break. Nothing was revealed. Everything was shown.",
+          "warm": "You have won this one, and it is worth seeing why. The charge was that your science is prophecy — something only you can do and nobody can verify. You answered by doing something anyone on that bench could repeat: writing out a letter's name, taking what was inside it, and letting the alphabet's own rule about alif do the rest in plain view. That is what a demonstration is, and it is Ibn Turka's whole claim for lettrism."
+        },
+        "lost": {
+          "austere": "The court did not see ا and لم standing apart. What could not be shown could not be checked, and what cannot be checked is precisely the charge. A conviction is recorded.",
+          "baroque": "The bench saw nothing come apart. And in a room convened precisely to ask whether you can show your working, showing nothing is not a neutral outcome — it is the charge, performed, by you, in front of witnesses. Conviction recorded, and your rival never had to speak twice.",
+          "uncanny": "The court looked at the place where the demonstration was to be and did not see one.",
+          "warm": "The demonstration did not come out. The court asked to see ا and لم standing apart and it did not, so from the bench's point of view nothing distinguished you from the accusation — that is a conviction. Start the trial over: break the alif first, then inscribe الم."
+        }
+      },
+      "sources": [
+        "docs/BIOGRAPHY.md — three inquisitions, engineered by rival colleagues; he won the first two",
+        "Melvin-Koushki, Prologue n. 35 — taksīr, zubur and bayyināt; n. 25 — the muqaṭṭaʿāt as 'the wellspring of lettrism'",
+        "GAME FICTION: the charge, the court and the demand are ours; the sources record that the trials happened, not what was argued"
+      ]
+    },
+    {
+      "id": "the-court-of-the-manual",
+      "name": "The Court of the Manual",
+      "arabic": "محكمة الدستور",
+      "court": "ottoman-operative",
+      "court_note": "This court runs the operative lettrism of the manuals — the jafr tradition that became Ottoman state equipment. Its rule is procedural: a procedure followed completely works, and a procedure followed in part does nothing whatever. There is no partial credit here, and a short answer is not a weak answer but no answer at all.",
+      "charge": {
+        "austere": "The charge is incompleteness: that you publish half a procedure and keep the other half, and that a science taught in fragments is not a science but a trade in prestige. The court demands the word <b>قلم</b> — <i>qalam</i>, the pen — whole, and will not accept an answer shorter than the procedure requires.",
+        "baroque": "Now a different accusation entirely, and a shrewder one: not that you are a fraud but that you are a <b>hoarder</b>. That you publish half the operation and pocket the rest; that your famous density is not depth but a lock. This is the court of the manual-writers, remember, the men whose jafr handbooks became state equipment, and their creed is brutally simple: <i>do the whole thing or you have done nothing</i>. They want <b>قلم</b>, the pen. All of it. A short answer will not be judged harshly — it will not be judged at all.",
+        "uncanny": "The charge is that you keep half. This court does not punish a partial procedure; it does not notice one. Give it the whole word — <b>قلم</b>, the pen — or give it nothing, which is the same.",
+        "warm": "This trial is a different kind of accusation. Nobody here thinks you are a fraud. They think you are a hoarder: that you teach half a procedure and keep the rest, so that your knowledge stays scarce and valuable. This is the court of the manual-writers, whose whole tradition holds that a procedure works only if you complete it — follow it partly and literally nothing happens. So there is a hard rule in this room: <b>an answer of fewer than three letters does nothing at all</b>. It will not even be weighed. The word they want is قلم (<i>qalam</i>, the pen), and it is three letters, which is not a coincidence."
+      },
+      "teaches": {
+        "austere": "Two breaks are needed. Qāf's name is QAF (قاف), whose bayyināt are alif and fāʾ; the alif's are lām and fāʾ. The lām is two breaks deep.",
+        "baroque": "You will need to go down two floors for this one. Break the <b>ق</b> — its name is QAF — and out come an alif and a fāʾ. Now break <i>that</i> alif, and there is your lām. The pen is hiding inside the qāf, two doors in, which is either a lovely piece of design by God or a lovely piece of design by whoever settled the letternames, and Ibn Turka would tell you those are the same question.",
+        "uncanny": "The lām is two breaks away. Break the qāf; an alif comes out. Break the alif; the lām comes out of that. Nothing was added. It was all inside the qāf.",
+        "warm": "You have ق and م, and you need ق ل م — the lām again, and this time it takes two steps. First break the qāf: its name is <b>قاف</b> (Q-A-F), so its hidden letters are alif and fāʾ. That gives you an alif. Then break that alif, exactly as you did in the first trial, and it gives you the lām. Two breaks, and then you can write the word."
+      },
+      "demand": {
+        "kind": "reads",
+        "text": "قلم",
+        "gloss": "qalam — the pen",
+        "min_length_note": "this court refuses any inscription shorter than three letters"
+      },
+      "hand": [
+        "ق",
+        "م"
+      ],
+      "stand": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        }
+      ],
+      "verdict": {
+        "won": {
+          "austere": "Three letters, produced by two breaks, both of which the court could follow. The procedure was completed, and this court recognises nothing else. The charge of hoarding fails.",
+          "baroque": "Two breaks, three letters, the whole thing done in the open with the working visible — and the manual-men have no complaint left, because completeness is the only virtue they recognise and you have just performed it in front of them. The pen stands. So do you.",
+          "uncanny": "The procedure was completed. This court has no way to describe an incomplete one, so there is nothing further to say.",
+          "warm": "You completed the procedure and the court accepts it. Notice what actually satisfied them: not that the answer was clever, but that it was <i>whole</i>. That is the operative tradition's entire standard, and it is why this ruleset in the game refuses short programs outright rather than weakening them."
+        },
+        "lost": {
+          "austere": "The procedure was not completed. Under this court that is not a poor answer; it is silence, and silence to a charge of hoarding confirms it. A conviction is recorded.",
+          "baroque": "Incomplete. And in this room incomplete does not mean <i>nearly</i> — it means <i>nothing occurred</i>. You have answered a charge of keeping things back by keeping something back. Conviction recorded.",
+          "uncanny": "Nothing was completed, so nothing happened, so the court saw what it expected to see.",
+          "warm": "The procedure was not finished, and this court treats an unfinished procedure as no procedure. That is a conviction. Try again — the two breaks are qāf first, then the alif that comes out of it."
+        }
+      },
+      "sources": [
+        "portal: jafr, ottoman-asymmetry — Bisṭāmī's manual as Ottoman state equipment",
+        "Melvin-Koushki, The Occult Court — the operative tradition's completeness standard",
+        "docs/BIOGRAPHY.md — the hoard-prestige vs teach-for-reach axis is in the record (Ibn Turka's density against Kāshifī's Everyman simplifications)",
+        "GAME FICTION: the charge and the court are ours"
+      ]
+    },
+    {
+      "id": "the-court-that-cites-you",
+      "name": "The Court of Light",
+      "arabic": "محكمة النور",
+      "court": "sufi",
+      "court_note": "This court hears you under Sufi lettrism. Its strength rule is luminosity -- an operation is as strong as the proportion of letters of light in it -- and its refusal is absolute: the chain of being is not cut, so nothing severs here. A word that would come apart anywhere else stays whole in this room. That is a gentler physics and a harsher court.",
+      "charge": {
+        "austere": "The third charge is built from your own record. Every letter you have broken in this tribunal is a claim that a thing contains what it does not declare, and this court has them all. It asks now for <b>نور</b> — <i>nūr</i>, light — to stand whole before it. Note what that requires: نور contains a wāw, which joins nothing after it, so the word comes apart in every court but this one.",
+        "baroque": "And now the trap that was always coming. They have your record — every break, every claim, every time you stood in a room and showed that a letter contains something it does not declare. Two trials of that. And this bench, which cuts nothing and permits nothing to be cut, says: very well. <b>نور</b>. <i>Light</i>. Show us that one — you who have been so eloquent about hidden interiors. And notice, because they have: نور carries a wāw in its belly, and wāw joins nothing after it. That word falls into pieces in every court in the world except this one.",
+        "uncanny": "They have the record. Every break is in it: this conceals that, that conceals the other. Two trials of a man explaining that things are not what they declare. Now they ask for <b>نور</b>. Light. It has a wāw in it, and a wāw lets go of whatever comes next — so the word breaks everywhere. Everywhere but here.",
+        "warm": "This third trial works differently. The court is not bringing new evidence; it is bringing <i>yours</i>. Every break you made was recorded, and each is a claim that one letter conceals another. Now it asks for the word <b>نور</b> (<i>nūr</i>, light) standing whole. Here is the thing to notice: نور contains a wāw, and wāw is one of the six letters that never join what follows — so in any other court this word would come apart into نو and ر. This court denies severing outright, on the principle that the chain of being is not cut. So the word holds here, and only here."
+      },
+      "teaches": {
+        "austere": "The wāw is inside the nūn: NWN (نون), whose bayyināt are wāw and nūn. One break. The word then holds because this court refuses to sever, and for no other reason.",
+        "baroque": "One break, and an elegant one: the wāw is sitting inside the <b>ن</b>, whose name is NWN. Crack the nūn, take the wāw, write <b>نور</b> — and then simply trust the room. In any other court that word is already in two pieces on the floor. Here the chain of being is not cut, so light holds together. You are being asked to rely on the court's own metaphysics to make your answer true, which is either a great mercy or a very elegant trap, depending on what happens next.",
+        "uncanny": "The wāw is in the nūn. Its name is نون; the letters after the first were always inside. Take the wāw, write نور, and let the room hold it together. Something else is holding it, not you.",
+        "warm": "The mechanics are simple: you hold ن and ر, and you need ن و ر. The wāw is inside the nūn — the name of nūn is <b>نون</b> (N-W-N), so its hidden letters are wāw and nūn. One break gives you the wāw. Then inscribe نور. The reason it will stand as one word is not anything you did: it is that this court refuses to sever. Try the same inscription in the first court and it falls into two pieces."
+      },
+      "demand": {
+        "kind": "reads",
+        "text": "نور",
+        "gloss": "nūr — light; whole only where nothing is severed"
+      },
+      "hand": [
+        "ن",
+        "ر"
+      ],
+      "stand": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        }
+      ],
+      "cites_record": true,
+      "verdict": {
+        "won": {
+          "austere": "The word stands whole, held together by the court's own refusal to sever. Your record and your demonstration agree: you have claimed throughout that things contain what they do not declare, and you have shown it again, checkably, in the open.",
+          "baroque": "It stands — light, entire, held together by nothing but this room's refusal to cut anything. And the record they meant to hang you with turns out to describe precisely what you have just done in daylight, twice checked, which is the whole difference between a secret and a method. You were not consistent by luck.",
+          "uncanny": "The word stands whole because nothing here can be cut. Your record stands too, for the same reason.",
+          "warm": "You answered it, and the answer holds because your record and your demonstration say the same thing. That consistency is what defeats this charge: a man concealing something behaves differently in the third trial than in the first. You did not — and the word itself only held because this court refuses to sever, which is worth remembering the next time you are somewhere that does."
+        },
+        "lost": {
+          "austere": "The word did not stand, and the record remains — a list of claims about hidden interiors with no demonstration beside it to make them a method. A conviction is recorded.",
+          "baroque": "Nothing stood. And the record is still there, still full of a man explaining that things conceal things, now with nothing next to it to make that a method rather than a confession. Conviction recorded.",
+          "uncanny": "The word did not stand. The record did.",
+          "warm": "The word did not come out, and this is the trial where that costs the most, because the court is reading your earlier record and there is now nothing beside it to show those breaks were a method rather than an admission. That is a conviction."
+        }
+      },
+      "sources": [
+        "docs/BIOGRAPHY.md — the third inquisition is the one he loses, c. 1427",
+        "portal: barzakh, three-lettrisms — the Sufi refusal to cut; rulesets.json — luminosity as the Sufi strength rule",
+        "GAME FICTION: the charge, this court's identity and the citation of the record are ours"
+      ]
+    }
+  ],
+  "refusal": {
+    "austere": "You decline to answer. The charge is not disproved and you are not cleared; it stands unproven, and standing is spent to hold that line. This is what he actually did: per Melvin-Koushki, Ibn Turka \"would refuse to bend the knee during his three inquisitions, despite the danger and punishing consequences.\"",
+    "baroque": "You decline. Not cleared, not convicted — the charge simply stands there unproven while you spend your standing to keep it from becoming anything else. And before you decide that was cowardice: this is precisely what the man did. He <i>would refuse to bend the knee during his three inquisitions, despite the danger and punishing consequences</i>. Three times. It cost him everything and he did it anyway.",
+    "uncanny": "You do not answer. The charge does not go away. It waits, unproven, and something is spent to keep it waiting. He did this too, all three times.",
+    "warm": "You have chosen not to answer, and it is worth being clear about what that means here. The charge is not disproved — you are not cleared — but neither are you convicted. It stays unproven, and you spend standing to keep it that way. This is not a cop-out in the fiction: Melvin-Koushki records that Ibn Turka \"would refuse to bend the knee during his three inquisitions, despite the danger and punishing consequences.\""
+  },
+  "endings": {
+    "cleared": {
+      "austere": "Three charges answered. What is attested is that he won the first two inquisitions and lost the third, in about 1427; five years of wandering exile followed, and he died in 1432, impoverished and in legal limbo. The same year as the third inquisition, his Cairo companion Qāsim-i Anvār was exiled over the same lettrist associations. You have done better than the record. The record is the record.",
+      "baroque": "Three for three — and now the part the game cannot let you keep. He won the first two. He lost the third, around 1427, and it took everything: five years of wandering exile, death in 1432, impoverished, in legal limbo, his masterpiece effectively on the Index for centuries. In the same year his companion Qāsim-i Anvār was exiled for the same associations, which tells you it was never really about the argument. You beat the record. The record still stands.",
+      "uncanny": "All three answered. He answered two. The third went the other way, around 1427, and then five years of wandering, and then 1432. His companion was exiled the same year for the same reason. You did better. It changed nothing.",
+      "warm": "You answered all three, which is better than what happened. Here is the actual record, so you know what you were playing against: Ibn Turka won the first two inquisitions and lost the third, around 1427. Five years of wandering exile followed and he died in 1432, impoverished and in legal limbo; his major work went largely unread for centuries. In the same year as that third inquisition, his companion Qāsim-i Anvār was exiled over the same lettrist associations — which suggests the trials were about the network, not the arguments."
+    },
+    "exiled": {
+      "austere": "The charges hold. Exile follows: five years of wandering, and death in 1432, impoverished and in legal limbo. That is what happened after the third inquisition of about 1427, and it is what happens here.",
+      "baroque": "They hold. And so the thing unfolds as it actually unfolded: exile, five years of wandering, and in 1432 a death in poverty and legal limbo — with the <i>Mafāḥiṣ</i>, the most philosophically systematic formulation of lettrism ever penned, going quietly onto the shelf for the next several centuries. Rivals: one. Isfahan: nil.",
+      "uncanny": "The charges hold. Then exile, five years of it, and 1432. The book was not read again for a very long time.",
+      "warm": "The charges have held and this run ends in exile, which is also how the history ends: after losing the third inquisition around 1427, Ibn Turka spent five years wandering and died in 1432, impoverished and in legal limbo. You can start again — and it is worth trying the refusal at least once, because refusing is what he actually did."
+    }
+  }
+}
