@@ -22,6 +22,8 @@ bottom and the conversation that follows.
 
 ## Act I — Cairo & Formation
 
+**[Corrected 2026-09-27: the formation was Isfahan-born, then Samarkand from 1387, then Cairo from c. 1393 (abroad c. 1393–1408). The frozen game's Act I is Cairo-only; see `ERRATA.md`.]**
+
 **1. Which teacher to seek out first.** ATTESTED — Ibn Turka "travel[ed] far and wide
 and seek[ing] out many authorities" before Cairo. *Choice: pursue rigorous scholastic
 training in an established madrasa first, or go looking for unconventional teachers
@@ -41,7 +43,7 @@ subordinate — matters later when he's the one entrusted with the surviving
 manuscripts.
 
 **4. How close to stand with Qasim-i Anvar.** ATTESTED — a Cairo companion, later
-exiled in 1427 for the same lettrist associations. *Choice: bond deeply as
+exiled in 1427 for the same lettrist associations. **[Corrected 2026-09-27: "Cairo companion" is Melvin-Koushki's, resting on Niʿmatullahi hagiography (dissertation pdf 32, 68, hedged; stated flatly in *The Occult Court*), so keep it as one tradition's claim. What is wrong is the timing: he was expelled from Herat in the 1427 purge (the *third* trial on our reading), not a second one.]** *Choice: bond deeply as
 fellow-travelers, or keep him a respected acquaintance at a safe distance.* A choice
 whose cost isn't visible until Act VII.
 
@@ -54,7 +56,7 @@ choice) at the cost of pleasing neither camp's partisans.*
 ## Act II — First Patron: Iskandar Sultan
 
 **6. Accept patronage at all.** ATTESTED — Iskandar Sultan is documented as the first
-of three Timurid sovereigns Ibn Turka sought to cultivate. *Choice: accept the
+of three Timurid sovereigns Ibn Turka sought to cultivate. **[Corrected 2026-09-27: the later papers' label; the dissertation has Pīr-Muḥammad of Shiraz (c. 1408–9) first, then Iskandar Mīrzā (1409–14).]** *Choice: accept the
 court appointment, or remain an independent, unaffiliated scholar living more
 precariously but more freely.*
 
@@ -76,18 +78,20 @@ cautiously, letting it spread by reputation rather than declaration.*
 **10. Loyalty through political risk.** PLAUSIBLE-GAP — Timurid succession politics
 were genuinely volatile in this period. *Choice: stay loyal to Iskandar Sultan
 through a downturn in his fortunes, or quietly begin cultivating the next patron
-early.*
+early.* **[Corrected 2026-09-27: Iskandar's fall was 1414 (captured, blinded, later executed). Ibn Turka's own recorded response in 1414 was a letter to Shāhrukh, sent through Niʿmat Allāh Valī, and then an attempted retirement (c. 1414–22), not a move to a next patron.]**
 
 ## Act III — Second Patron: Baysunghur
 
+**[Corrected 2026-09-27: no source dates a Bāysunghur patronage; "second patron from c. 1416" is unsupported. Bāysunghur is addressee and commissioner from 1426 (*Suʾl al-Mulūk*; *Nafsat II* c. 1429–32); 1414–c. 1422 is an attempted retirement. The letters show a close relationship, undated.]**
+
 **11. How to present himself anew at Baysunghur's court.** ATTESTED — both patrons
-are documented; the transition itself is not detailed in the sources in hand.
+are documented; the transition itself is not detailed in the sources in hand. **[Corrected 2026-09-27: the dissertation is now held and dates no such transition.]**
 *Choice: lead with the calligraphic/manuscript-arts affinity (Baysunghur was himself
 an accomplished calligrapher), or lead with astronomical/mathematical prestige
 (Samarkand was rising in the same years).*
 
 **12. Whether to work on the Baysunghur Qur'an.** ATTESTED — Baysunghur was likely
-its commissioner. *Choice: offer a lettrist framing for the calligraphy program
+its commissioner. **[Corrected 2026-09-27: that is CONTEXT about Bāysunghur; no source connects Ibn Turka to the Qurʾan project.]** *Choice: offer a lettrist framing for the calligraphy program
 (numerology of the sacred text made visible), or stay deliberately separate from a
 project that risky theological scrutiny could attach to.*
 
@@ -126,7 +130,7 @@ early to stake the claim, risking scandal before his reputation can absorb it, o
 hold it back for years until his position is secure.*
 
 **20. When to finalize and circulate Investigations' core diagram.** ATTESTED —
-composed 1420, the same year Samarkand Observatory construction began. *Choice: rush
+composed 1420, the same year Samarkand Observatory construction began. **[Corrected 2026-09-27: 1420 is the *Mafāḥiṣ*'s colophon date, which a marginal correction says refers to copying; it was revised and expanded in 1425. The observatory is context.]** *Choice: rush
 to publish alongside the observatory's own prestige moment, or take the years needed
 to refine the Ṭahawī Circle privately first.*
 
@@ -143,7 +147,7 @@ model implies a bounded circle) — *Choice: actively recruit and train students
 broadly, or keep the New Brethren small, trusted, and hard to infiltrate.*
 
 **23. Write vernacular popularizations alongside the Arabic masterwork.** PLAUSIBLE-
-GAP, modeled on the real *Boon for the Khan* popularizing move a generation later.
+GAP, modeled on the real *Boon for the Khan* popularizing move a generation later. **[Corrected 2026-09-27: *Boon for the Khan* is ʿAlī Ṣafī's 1522 manual, about a century later, and is not evidence about Ibn Turka's own court life.]**
 *Choice: produce simplified Persian versions for wider court/military reach, or
 refuse — the ideas stand or fall in their full difficulty.*
 
@@ -157,6 +161,8 @@ tradition he draws on, or claim more originality than is strictly true — a cho
 with real consequences for how rivals can attack him later.*
 
 ## Act VI — The Bench: Judge of Isfahan
+
+**[Corrected 2026-09-27: the Isfahan qadiship was a family office (from Ṣadr al-Dīn's appointment at Samarkand); the Yazd judgeship was granted c. 1422 at his own request after the first Herat proceeding. "Chief Judge of Isfahan" is the later papers' label.]**
 
 **26. Accept the Chief Judge appointment at all.** ATTESTED — his actual, documented
 day job. *Choice: take the post (the historical choice) and gain legal standing and
@@ -181,6 +187,8 @@ his powers, letting judicial duties slide.*
 
 ## Act VII — Three Inquisitions
 
+**[Corrected 2026-09-27: on our reading of Melvin-Koushki's "three trials" (fn. 99; he never lists them together): c. 1422 (accused of *ṣūfīgarī* at Herat), 1426 (Yazd delegation; a youthful verse praising ʿAlī), 1427 (the purge after Aḥmad-i Lur's attempt on Shāhrukh). The years are no longer "not established".]**
+
 **31. First inquisition: mode of defense.** ATTESTED — he won the first two. *Choice:
 mount a rigorous legal/rhetorical defense, call in patron favor, or attempt both at
 once (riskier to coordinate, stronger if it works).*
@@ -190,14 +198,14 @@ partial, face-saving recantation to placate accusers, or hold every position wit
 concession.*
 
 **33. Second inquisition: distance from associates, or not.** ATTESTED (context) —
-Qasim-i Anvar was exiled in 1427 for the same associations. *Choice: preemptively
+Qasim-i Anvar was exiled in 1427 for the same associations. **[Corrected 2026-09-27: 1427 is the *third* trial's purge, not the second; the game places it at the second.]** *Choice: preemptively
 distance himself from Qasim-i Anvar and others to protect his own position, or
 refuse to abandon anyone, accepting the shared risk.* This is where Act I's choice
 \#4 pays off or costs the most.
 
 **34. Third inquisition: bend the knee.** ATTESTED — the single most dramatic
 documented fact of his life: he "would refuse to bend the knee during his three
-inquisitions, despite the danger and punishing consequences." *Choice: bend — survive
+inquisitions, despite the danger and punishing consequences." **[Corrected 2026-09-27: that is the *Prologue*'s uncited remark, to be recorded as Melvin-Koushki's remark, not a finding. The dissertation shows defensive apologies to Shāhrukh (1426) and Bāysunghur (c. 1429–32), written under duress; in 1427 he was stripped, tortured and imprisoned before exile. The historical choice is not established as "hold firm".]** *Choice: bend — survive
 compromised, publicly diminished, his system publicly renounced in whole or part — or
 hold firm, as the historical Ibn Turka did, and lose everything.* This is the
 game's central dramatic hinge; a VN honest to its source material should make holding
@@ -209,7 +217,7 @@ elsewhere), or stand and face the tribunal directly.*
 
 ## Act VIII — Exile & Legacy
 
-**36. Destination in exile.** ATTESTED that five years of wandering exile happened;
+**36. Destination in exile.** ATTESTED that a period of wandering exile happened ("much of the next five years", 1427–32);
 PLAUSIBLE-GAP on where. *Choice: seek a new patron at a rival court (Aqquyunlu?
 further east?), retreat into pure private scholarship with no court at all, or
 attempt reconciliation and return.*
@@ -219,7 +227,7 @@ teaching in exile, vulnerable but productive, or go silent to protect what remai
 of the work and his safety.*
 
 **38. Entrust the manuscripts to Yazdi.** ATTESTED (strongly implied) — Yazdi likely
-copied the surviving autograph collection (Tehran, Majlis Library MS 10196).
+copied the surviving autograph collection (Tehran, Majlis Library MS 10196). **[Corrected 2026-09-27: Melvin-Koushki's own texts differ: the *Prologue* says the hand of ff. 52a–56a is "almost certainly" Yazdī's; the dissertation has autograph sections (ff. 52a and 118b, incipit and explicit) and a note that Yazdī checked the copy and attended teaching on the work (f. 119a; Beinecke Landberg 146 f. 179b). Unresolved. Only the incipit and explicit are established as autograph.]**
 *Choice: formally entrust his life's papers to Yazdi for safekeeping and eventual
 transmission, or keep them close and risk them being lost with him.* Pays off (or
 doesn't) Act I's choice \#3.
@@ -242,3 +250,10 @@ survival of the work itself, one last time.*
 This report deliberately stops short of specifying mechanics — skill tree structure,
 inventory, reputation tracking, branching topology. That's the next design
 conversation, not this document's job.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source:
+`TurkaVita/docs/CORRECTIONS_BRIEF.md`; ledger entry `docs/DECISIONS.md` 2026-09-27). This document describes the **frozen v1
+game** (`games/FROZEN.md`); the bracketed notes above mark each premise the corrected biography revises, and
+`ERRATA.md` (this folder) lists them by choice id. The game (`choices.json`, `js/`) was **not** changed.

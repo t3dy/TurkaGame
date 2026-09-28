@@ -193,3 +193,9 @@ Entry count goes **down** before it goes up. That is the point.
 5. **Cribbing from IslamicateOccultPortal** — you mentioned it as a source. Should
    Phase C pull entries across from that DB where they overlap, or should
    everything here be written fresh against Matt's articles?
+
+---
+
+## Corrections (2026-09-27)
+
+This is a dated planning document; its statements about the builder are superseded. `build_site.py` now also renders the **chronology** (`timeline_events`, 50 events, dated from Melvin-Koushki's 2012 dissertation chronology and the page-cited artifacts in `TurkaGame/TurkaVita/`) and the **arguments** (8), and the whole portal is 69 pages, not 52. The corpus is 43 Melvin-Koushki texts converted to markdown (`corpus/`, gitignored), including the dissertation, *Of Islamic Grammatology* and *Selenocentrism and Heliocentrism*: nothing here is "not held". The reconciliation of the older biography against the dissertation is `TurkaGame/TurkaVita/docs/TURKA_AUDIT.md`. Seed and pipeline note: `scripts/seed_from_json.py` now also writes each entry's `plate` and each bibliography entry's `sections`, which it silently dropped before, so `init_db.py` -> `seed_from_json.py` -> `build_site.py` reproduces the committed site exactly.

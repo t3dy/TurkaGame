@@ -28,8 +28,9 @@ graduated to its own full subproject at [CareerSim/](CareerSim/CLAUDE.md)**
 not via this repo's GitHub Pages.
 
 What existed at project init:
-- A real research brief synthesized from the three source papers currently in hand
-  ([docs/RESEARCH_BRIEF.md](docs/RESEARCH_BRIEF.md)).
+- A real research brief synthesized from the three source papers then in hand
+  ([docs/RESEARCH_BRIEF.md](docs/RESEARCH_BRIEF.md)); *corrected 2026-09-27* against the 2012
+  dissertation, and the whole Melvin-Koushki corpus (43 texts) is now held, not three.
 - A working, dependency-free asset-provenance pipeline
   ([research/scripts/register_asset.py](research/scripts/register_asset.py)).
 - Design docs for all three game concepts, most detailed for the visual novel since it's
@@ -286,8 +287,9 @@ out in full releases everything after the first letter, so alif (الف) conceal
 and a fāʾ — bounded to eight letters across the whole alphabet, which is what makes
 it a puzzle. Two more house rules it adds: **a court's doctrine must decide its
 verdict** (two of three trials failed that check on the first pass), and **refusing
-is not a worse kind of losing** — it leaves the charge unproven and is what the man
-actually did. Register is now the player's choice too:
+is not a worse kind of losing** — it leaves the charge unproven and, on the *Prologue*'s
+uncited remark (the dissertation shows defensive apologies under duress), is what the man
+is said to have done. Register is now the player's choice too:
 [`v2/apps/shared/voice.js`](v2/apps/shared/voice.js) gives four voices and a lint
 that fails any voice which drops a citation the austere one carries.
 
@@ -304,8 +306,12 @@ fixed upstream. A claim of reusability is worth what its second consumer says it
 (courts, trials, works), then the unnamed copyist of MS Majlis 10196, then the historian who must say who he was. **Forked pipeline,
 no shared code**: corpus DB, typed artifacts (evidence/claim/event/work/institution/hypothesis), provenance graph, narrative linter,
 Python↔JS engine parity. Its spine source is Melvin-Koushki's **2012 dissertation** (`research inbox/`, ingested page by page), which
-`docs/BIOGRAPHY.md` was never built from: **`TurkaVita/docs/TURKA_AUDIT.md` lists where the older docs differ** (Samarkand 1387–93 before Cairo;
-"Bāysunghur from c. 1416" has no source; the seven-tier hierarchy gap is closed; the trials are dated c. 1422/1426/1427 by our reading of MK).
+`docs/BIOGRAPHY.md` was first built without. **The older prose documents were corrected to it on 2026-09-27** (Ted's standing rule: always
+correct older documents to the most current information; see `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `docs/DECISIONS.md`, and each document's
+"Corrections (2026-09-27)" section): Samarkand 1387–93 before Cairo c. 1393–1408; "Bāysunghur from c. 1416" removed (no source dates a patronage);
+the seven-tier hierarchy gap is closed; the trials are dated c. 1422/1426/1427 by our reading of MK. **`TurkaVita/docs/TURKA_AUDIT.md` remains the
+reconciliation.** The frozen v1 visual novel was *not* changed; its premises that the corrected biography revises are listed in
+`games/visual-novel/ERRATA.md`.
 House rule it adds: **the duress rule** — only what he wrote freely (letters, colophons, autograph, early work, the works) can support a
 claim about what he *held*; his apologies were written to the rulers judging him. Entry: `TurkaVita/HANDOVER.md`. Plan: `docs/PLAN_TURKA_VITA_GAME.md`.
 Serve with the `turkavita` launch config (port 7560). **Live: https://t3dy.github.io/TurkaGame/TurkaVita/game/**.
@@ -445,3 +451,11 @@ Companion research: [`docs/VISIONARY_ENVIRONMENTS.md`](docs/VISIONARY_ENVIRONMEN
 eight other Persianate visionary traditions (the Herat *Miʿrājnāma*, the Freer Jalāyirid
 *Dīwān*, *Haft Paykar*, Siyah Qalam, the *Falnāma*, the *muraqqaʿ*, Qazwīnī, the lettrist
 grid) assessed as game environments, with a ranked build order.
+
+## Corrections (2026-09-27)
+
+- "Three source papers currently in hand" (Status section) reworded: the dissertation and the whole Melvin-Koushki corpus are held (CORRECTIONS_BRIEF row 7).
+- The TurkaVita section no longer says `docs/BIOGRAPHY.md` "was never built from" the dissertation: the older docs are now corrected (see above).
+- The Tribunal paragraph's "is what the man actually did" (refusal) is now attributed to the *Prologue*'s uncited remark; the dissertation shows defensive apologies to Shāhrukh (1426) and Bāysunghur (c. 1429–32), written under duress (CORRECTIONS_BRIEF rows 11, 12). The design point (refusal is not a worse loss) stands.
+- Not changed: the portal paragraph's "TurkaGame's own 3 papers" (a statement about `research/library/`'s original three, still true of that folder).
+- No other life-fact in this file was wrong.

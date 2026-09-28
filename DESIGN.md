@@ -13,8 +13,8 @@ rather than invented fantasy dressing. Full grounding in
 
 Melvin-Koushki's scholarship hands over structure that would otherwise have to be
 invented:
-- A **documented three-act biography** (Cairo apprenticeship → two survived court
-  inquisitions → a third, fatal one) that needs dramatization, not invention.
+- A **documented three-act biography** (abroad in Samarkand and Cairo c. 1387–1408 → two survived
+  trials, c. 1422 and 1426 → a third, fatal one in 1427; the years are our reading of "three trials") that needs dramatization, not invention.
 - A **pre-built five-branch hierarchy** of occult sciences (kīmiyā, līmiyā, hīmiyā,
   sīmiyā, rīmiyā) already ordered by prestige, cost, and difficulty — a skill tree that
   didn't need designing from scratch.
@@ -62,3 +62,12 @@ approach is locked in (see [docs/GAME_VISUAL_NOVEL.md](docs/GAME_VISUAL_NOVEL.md
 `site/` is a placeholder for now — a public-facing page that will eventually show off
 the research pipeline and link out to whichever prototypes are playable. Not a design
 priority until at least one prototype has something to show.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, rows 1, 5): the "Cairo apprenticeship"
+opening of the three-act biography is replaced by Samarkand 1387 then Cairo from c. 1393; "inquisitions" kept but
+dated as our reading of Melvin-Koushki's "three trials". "Commissioned 'boons'" (the patronage-economy bullet)
+is language from *The Occult Court* about ʿAlī Ṣafī's 1522 *Boon for the Khan*, not Ibn Turka's own court life.
+The "*Mafāḥiṣ* autograph" in the manuscript-targets bullet is narrowed: in MS Majlis 10196 only ff. 52a and 118b
+(incipit and explicit) are established as autograph (row 9); the Ṭahawī Circle is on ff. 63a–65a.

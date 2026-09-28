@@ -192,11 +192,20 @@ whether the workbench genuinely beats it before building it.
   Vercel, and they talk over CORS. Two copies of the game would drift.
 - **Rewriting encounter prose wholesale.** It has been audited twice. Change it in
   response to a scholar's correction or a playtest, not on general principle.
-- **The seven-tier epistemic hierarchy.** Still blocked on acquiring Melvin-Koushki's
-  "Selenocentrism and Heliocentrism". Do not invent the missing tiers.
+- **The seven-tier epistemic hierarchy: no longer blocked (corrected 2026-09-27).** All seven tiers are known and
+  encounters may use them, citing dissertation pdf 332 / translated 471–479 (claims CL-0500..0525): (1) jurists and traditionists, who know only the outward form; (2) dialectical theologians; (3) peripatetic philosophers; (4) illuminationists; (5) verifying mystics of the Ibn ʿArabī school; (6) lettrists; (7) ʿAlī and the Imams — with level seven "not entirely what it seems" (peculiar to the present time, marked by a conjunction; Melvin-Koushki's reading is that it is not simply the Imams).
+  `pivot_wafq` already states them; "Selenocentrism and Heliocentrism" is held in `../TurkaVita/db/corpus.db`.
 - **Moving the editorial layers back onto the witness document**, however much tidier one
   JSON file looks. Read `docs/PIVOTS.md` P6 first: it was built that way, deployed, and
   lost every edit it was given while returning 200 OK.
 - **Conflict resolution for simultaneous editors.** Both edits persist in timestamp order
   and the later reading stands; nothing is destroyed. The cost of a collision is one
   extra click on the ✳ chain, which is not worth a locking scheme.
+
+## Corrections (2026-09-27)
+
+See README.md, Corrections (2026-09-27), for the life-date corrections (Samarkand 1387, Cairo c. 1393-1408, Bāysunghur as
+addressee not dated patron, trials c. 1422/1426/1427, the c. 1420 summa). Here: the seven-tier "blocked" item above is
+closed; content authoring may now use the tiers. Open for Ted: whether to stage the Samarkand years (1387-c. 1393) as
+scenes, and whether trial_first/second should be re-written around the sourced charges (Sufi bias, 1422; heresy and
+Shiʿi proclivities from youthful writings, 1426) instead of Q 2:102 and a quoted passage.

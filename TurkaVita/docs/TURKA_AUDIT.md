@@ -1,11 +1,11 @@
 ---
 title: TURKA_AUDIT — the dissertation and the later papers against our older documents
-description: A reconciliation, not a correction. Nothing outside TurkaVita has been changed; Ted decides what is corrected and where.
+description: The reconciliation of the dissertation and the later papers against our older documents. The older documents were corrected to it on 2026-09-28 (see the end of this file).
 ---
 
 # TURKA_AUDIT
 
-**Status: for Ted's review (DECISIONS 5). No older document has been edited.**
+**Status: applied.** When this audit was written (2026-09-27) it held the corrections for Ted's review (DECISIONS 5). Ted then set a standing rule, *always correct older documents to match the most current information* (DECISIONS 14), and the corrections were made on 2026-09-28: see "F. What was corrected" at the end. Sections A and B below describe the state **before** those corrections.
 
 Two questions. (1) Where does the older biography (`../docs/BIOGRAPHY.md`, `../site/data/timeline.json`,
 `../LETTRISMRESEARCH.md`, the VN's `CHOICES.md`) differ from Melvin-Koushki's 2012 dissertation, the spine
@@ -72,6 +72,25 @@ pages opened plus name searches, not a proof of absence.
 
 1. Correct `../docs/BIOGRAPHY.md`, `../site/data/timeline.json` (and the portal's copy of it), `../LETTRISMRESEARCH.md` §8 and
    `../docs/PLAN_TURKA_VITA_GAME.md` §0/§4 with pointers to this audit.
-2. Whether the VN (`../games/visual-novel/`, 40 choices) and CareerSim (70 encounters) should carry the Samarkand years
+2. Whether the VN (`../games/visual-novel/`, 40 choices) and CareerSim (71 encounters) should carry the Samarkand years
    and drop "Bāysunghur from c. 1416". They were built on the older picture.
 3. Whether to read the 2025 papers' claim that Iskandar commissioned the *Mafāḥiṣ* against the dissertation's silence.
+
+## F. What was corrected (2026-09-28), and what was not
+
+Corrections follow `CORRECTIONS_BRIEF.md`; each corrected document carries a "Corrections (2026-09-27)" section (or a dated entry, for append-only ledgers) with the source of each change.
+
+| where | what |
+|---|---|
+| `TurkaGame/docs/BIOGRAPHY.md` | rewritten in the wrong sections (Samarkand 1387, abroad c. 1393-1408, Pīr-Muḥammad then Iskandar, the retirement, Bāysunghur as addressee from 1426, the *Mafāḥiṣ* and *Shaqq-i Qamar* separated, all seven tiers, the three trials as our reading of MK, sources and gaps) |
+| `TurkaGame/docs/`, `README.md`, `CLAUDE.md`, `HANDOVER*.md`, `NEXTSTEPS.md`, `FOUNDER.md`, `LETTRISMRESEARCH.md`, `DESIGN.md`, `v2/` READMEs, `grimoire/`, `research/notes/02-03` | wrong life-facts and the "three papers / not held" source situation corrected; `docs/DECISIONS.md` appended (old entries untouched) |
+| `TurkaGame/site/data/timeline.json` (59 events, with page citations), `site/timeline.html`, `site/index.html`, `site/features.html`, `site/archive.html`, `site/portal/`, `site/plates/` (regenerated) | data and pages brought to the dissertation |
+| `TurkaGame/portal/` (seed, essays, README) and `IslamicateOccultPortal/` (seed, CLAUDE.md, corpus/INDEX.md) | corrected and rebuilt; `portal/scripts/seed_from_json.py` fixed to write plates and bibliography sections (it silently dropped them) |
+| `TurkaGame/CareerSim/` (content, engine strings, UI, README, docs) | phase datelines, patron/Bāysunghur text, the "pivot" phase, trial source strings, the seven tiers, the Attested Life rows corrected; ids, effects and gates unchanged; 32 engine tests, reachability and thesis tests pass. Encounter count corrected to 71 |
+| `TurkaGame/v2/apps/tribunal/` (`trials.json`, `ui.js` comment) and `v2/index.html` | "won the first two, lost the third" given its dates; "refusing is what he actually did" replaced by the disagreement (the *Prologue*'s uncited remark against the dissertation's two apologies) |
+| `TurkaGame/games/visual-novel/*.md` | documents corrected; **`ERRATA.md` added** |
+| workspace: `C:\Dev\CLAUDE.md`, `wiki/` (TurkaGame page rewritten; TurkaVita and PLOTINUSGAME pages added; registry, index, live sites, log), `research-artifacts/INDEX.md`, `ecosystem/`, `PLOTINUSGAME/CLAUDE.md` | brought to the current state |
+
+**Not changed, on purpose:** the **frozen games** under `games/` (game code and data: `games/FROZEN.md`; the visual novel's premises are listed in `games/visual-novel/ERRATA.md`); the archived visual-novel snapshots `-v1/-v2/-v3`; the raw conversation transcripts (`CONVO*.md`, `CareerSim/docs/DESIGN_CONVERSATION.md`); already-published CareerSim witnesses (they keep the text of the day they were published); generated `tools/out/` files; `assets/manuscripts/registry.json` (image provenance notes that name the frozen game's acts).
+
+**Still open for Ted:** (1) whether the frozen visual novel's scenes (`games/visual-novel/ERRATA.md`, 18 rows) may be corrected despite `games/FROZEN.md`; (2) whether CareerSim should stage the Samarkand years and rebuild `trial_first`/`trial_second` around the sourced charges (recorded in `CareerSim/NEXTSTEPS.md`); (3) whether already-published CareerSim witnesses should be regenerated.

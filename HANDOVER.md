@@ -21,7 +21,7 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
 
 ## What's actually built and verified
 
-- Research brief + 3-paper synthesis: `docs/RESEARCH_BRIEF.md`, `research/notes/`.
+- Research brief + 3-paper synthesis (first-pass; corrected 2026-09-27 against the dissertation): `docs/RESEARCH_BRIEF.md`, `research/notes/`.
 - Working asset-provenance CLI: `research/scripts/register_asset.py` (smoke-tested).
   8 real manuscript images now registered in `assets/manuscripts/registry.json`,
   sourced from OCCULTIMGDB with full public-domain provenance.
@@ -79,8 +79,10 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
 - Narrative-design docs: `GAMELOOP.md` (how the play loop actually works, beat by
   beat, and where it's thinner than the design deserves) and `NEXTSTEPS.md`
   (prioritized roadmap in 4 tiers). `README.md` rewritten with the live link at top.
-- **`docs/BIOGRAPHY.md`** — the canonical, citation-grounded biography (formation
-  in Cairo → two patrons → the 1420 pivot year → three inquisitions → exile/death),
+- **`docs/BIOGRAPHY.md`** — the canonical, citation-grounded biography (as first written:
+  formation in Cairo → two patrons → the 1420 pivot year → three inquisitions → exile/death;
+  **corrected 2026-09-27**: Samarkand 1387, Cairo c. 1393–1408, the princes of Fars, retirement, Yazd, three trials
+  c. 1422/1426/1427 by our reading, exile, Herat 1432 — see the Corrections section),
   written to be the single source future choices/events/encounters draw from. Ends
   with an explicit "for game design" section naming open research gaps not to
   invent past.
@@ -91,8 +93,8 @@ Two linked projects, both from the same kickoff conversation (2026-08-29/30):
   himself draws, explicitly not claims of direct contact). Every event tagged
   ATTESTED/COMPARATIVE/CONTEXT/HISTORIOGRAPHY, with ~5 historiography entries
   honestly flagged low-confidence (drawn from general field knowledge, not a
-  source document this project has in hand — e.g. Melvin-Koushki's dissertation
-  year). The same 50 events were also loaded into
+  source document this project had in hand *at the time* — e.g. Melvin-Koushki's dissertation
+  year, which is 2012 and is now held; see the Corrections section). The same 50 events were also loaded into
   **IslamicateOccultPortal's real SQLite pipeline** (`timeline_events` table,
   replacing its previous 4-event placeholder) — `init_db.py` →
   `seed_from_json.py` → `build_site.py` all re-run and verified clean. Verified
@@ -353,8 +355,9 @@ HEAD, not merely "pushed"):
 3. **3 corpus PDFs are unreadable scans** (`al-buni-shams-al-maarif` — the highest
    priority, al-Buni's own primary grimoire — plus 2 others) — zero OCR text layer,
    `tesseract` binary not installed in this environment.
-4. **Only 3 of an expected 4 Ibn Turka source PDFs were ever found** in Downloads at
-   kickoff — never resolved whether a 4th exists.
+4. ~~Only 3 of an expected 4 Ibn Turka source PDFs were ever found in Downloads at
+   kickoff — never resolved whether a 4th exists.~~ **Superseded 2026-09-27:** the whole Melvin-Koushki corpus
+   (43 texts, including the dissertation) is held; see the Corrections section.
 5. **4 files in `E:\pdf\Islamicate Chill Pills\` were flagged off-topic by title
    alone and never converted** (Roman Egypt Isis figurines, a Renaissance-Scotland
    festschrift, Averroes' Physics, a Deleuze/postcolonial-theory piece) — never
@@ -419,3 +422,16 @@ not next" section for why a second full prose rewrite isn't the right next move 
   continuation, which this file and `DECISIONS.md` already cover.
 - If a new major phase of work starts, create `CONVO3.md` and update this file's
   pointers — don't append indefinitely to either existing file.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source:
+`TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TurkaVita/docs/TURKA_AUDIT.md`; ledger entry in `docs/DECISIONS.md`, 2026-09-27):
+
+- `docs/BIOGRAPHY.md` and `docs/RESEARCH_BRIEF.md` were rewritten to the 2012 dissertation. The one-line description of
+  the biography above (Cairo formation, two patrons, the 1420 pivot year) is the *old* shape, kept as history.
+- Gap 4 ("a 4th source PDF") is closed, and the "open research gaps" the biography names (seven-tier hierarchy, years of the
+  first two inquisitions, birthplace) are closed or reframed (see `docs/BIOGRAPHY.md` § Open research gaps).
+- "Named the dissertation year from field knowledge": now 2012, from the held source.
+- The v3 VN (`games/visual-novel/`) is frozen and still carries the older premises; they are listed in
+  `games/visual-novel/ERRATA.md`. The current biography-driven game is `TurkaVita/`.

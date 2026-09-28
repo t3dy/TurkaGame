@@ -123,7 +123,7 @@ export function renderTitle(hasSave) {
     </div>
     <h1 class="game-title">Ibn Turka<span class="title-sep">·</span>The Occult Court</h1>
     <p class="title-thesis">A career roguelike about making a universal science real</p>
-    <p class="title-sub">A life in five phases · Cairo 1385 — exile 1432</p>
+    <p class="title-sub">A life in five phases · Samarkand 1387, Cairo from c. 1393 — exile 1427–1432</p>
     <nav class="toc">
       <button class="toc-line" data-act="new"><span>Begin a Life</span><i class="toc-dots"></i><span class="toc-n">I</span></button>
       ${hasSave ? '<button class="toc-line" data-act="resume"><span>Continue</span><i class="toc-dots"></i><span class="toc-n">II</span></button>' : ''}
@@ -142,7 +142,7 @@ export function renderManual() {
       <p class="manual-p"><b>The seals and the words.</b> Every situation carries a seal — ⬤ attested, ◐ plausible, ○ imagined — click it for the source. Historical terms in the text (<span class="lex">muwaqqit</span>, <span class="lex">bazm</span>, <span class="lex">wafq</span>…) carry a dotted underline: hover or tap for what they really meant.</p>
     </div>
     <div class="folio">
-      <p class="manual-p"><b>The life.</b> Five phases — Cairo, Isfahan, the courts, the pivot year, the trials. Each is a map of places to invest attention, and each visit costs one season. You will never see everything in a phase; that is the design, not a fault.</p>
+      <p class="manual-p"><b>The life.</b> Five phases — Cairo and the road, Isfahan, the courts, the years of the summa (c. 1420), the trials. Each is a map of places to invest attention, and each visit costs one season. You will never see everything in a phase; that is the design, not a fault.</p>
       <p class="manual-p"><b>Obligations and promises.</b> An office (the judgeship) takes its season whether or not you are writing. A patron's commission has a deadline and a reward — and every commission you deliver raises what the next patron will demand.</p>
       <p class="manual-p"><b>The folio.</b> Each situation offers choices. Beneath every open choice you'll see <i>why you have it</i> — the teacher, science, or friendship that unlocked it. Locked choices stay visible with what they would need. Your preparation is always credited.</p>
       <p class="manual-p"><b>The seal.</b> Outcomes land on a ladder — triumph to disaster — tilted by what you bring, never a coin-flip. Every change is shown; nothing moves silently.</p>

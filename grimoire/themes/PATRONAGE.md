@@ -18,7 +18,7 @@ of empires."
 
 ## The evidence in hand
 
-- **Ibn Turka's own three-patron arc** (BIOGRAPHY; *Prologue* n.34): Iskandar Sulṭān's
+- **Ibn Turka's own three-patron arc** **[as the *Prologue* n.34 frames it; see the note below for what the dissertation dates]** (BIOGRAPHY; *Prologue* n.34): Iskandar Sulṭān's
   atelier "celebrated to this day for combining star science, poetry and book
   painting"; Bāysunghur "an accomplished calligrapher in his own right" and likely
   commissioner of the monumental Bāysunghur Qurʾan; Ulugh Beg, whose observatory and
@@ -44,7 +44,7 @@ of empires."
 
 Günther & Pielow's response (portal corpus, read in head only) pushes back on how far
 "science" should stretch; the patronage thesis itself is less contested than the
-epistemic one. ⚠ MK's fullest patronage statements are in works not held locally:
+epistemic one. ⚠ MK's fullest patronage statements are in works **[held since 2026-09-27, except the forthcoming book]**:
 "Powers of One" (IHIW 2017), "How to Rule the World" (JPS 2018), "Early Modern
 Islamicate Empire" (Wiley-Blackwell 2018), *The Occult Science of Empire in
 Aqquyunlu-Safavid Iran* (forthcoming). Citations exact (from bibliographies in held
@@ -71,3 +71,13 @@ Melvin-Koushki, "Imperial Talismanic Love: Ibn Turka's *Debate of Feast and Figh
 *Rulers as Authors in the Islamic World* (Brill, 2024) · Subtelny, "Kāshifī's
 *Asrār-i qāsimī*," in *Islamicate Occult Sciences in Theory and Practice* (Brill,
 2021), 267–313.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`; dissertation `SRC-610EE1D6BA`, pdf = printed + 17):
+
+- **Patrons, dated**: Pīr-Muḥammad (Shiraz, c. 1408–9) then Iskandar Mīrzā (from 1409; fall 1414). No source dates a Bāysunghur patronage; he is addressee and commissioner from 1426
+  (*Suʾl al-Mulūk*, *Nafsat II*; his son ʿAlāʾ al-Dīn is dedicatee of the *Tuḥfa-yi ʿAlāʾī*, 1428), and 1414–c. 1422 was an attempted retirement (rows 2, 3). Ulugh Beg is a recipient, and "would-be
+  third patron" is MK's phrase (audit § B).
+- **"Commission as instrument"**: the *Boon for the Khan* commission belongs to ʿAlī Ṣafī (1522), not to Ibn Turka's own court life (row 10); the page's use of it as a general model of patronage stands.
+- **"MK's fullest patronage statements in works not held"**: "Powers of One", "How to Rule the World" and "Early Modern Islamicate Empire" are held (the source situation, row 7); the forthcoming *The Occult Science of Empire* is not.

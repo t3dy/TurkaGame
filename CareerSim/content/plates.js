@@ -78,7 +78,7 @@ export const PLATE_BRIEFS = {
      { repo: 'chester-beatty', work: 'Illustrated Persian dīvāns', verified: false }]),
 
   muwaqqit_yazdi: B(1, 'THE TIMEKEEPER’S POST · ANOTHER PERSIAN AT THE DIALS',
-    'Two men at an instrument — astrolabe or sundial — one demonstrating, one checking. The first meeting of Ibn Turka and Yazdī. They should look like equals who have just recognised each other.',
+    'Two men at an instrument — astrolabe or sundial — one demonstrating, one checking. Ibn Turka and Yazdī at work together (Yazdī accompanied him from Samarkand, dissertation pdf 51, so this is a collaboration, not a first meeting). They should look like equals.',
     'Both hands on or near the instrument. The instrument is the third character.',
     ['astrolabe astronomers manuscript miniature', 'muwaqqit timekeeper Islamic', 'two scholars instrument Persian painting'],
     [{ repo: 'met', work: 'Persian/Mamluk astrolabes and astronomical scenes', verified: false },

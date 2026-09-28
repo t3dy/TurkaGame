@@ -45,7 +45,7 @@ Six research claims are the game's load-bearing walls. Each maps to a system:
    + Qasim-i Anvar + Akhlati's students, spanning Cairo to Samarkand. → **The player
    builds a movement**, and the movement can outlive — or escape — the player.
 
-6. **Success itself is the danger.** Three inquisitions; two survived, the third lost;
+6. **Success itself is the danger.** Three trials (MK's phrase; c. 1422, 1426, 1427 on his timeline, the mapping ours); favour won twice, the third lost;
    exile; death in legal limbo. → **The pressure curve is compounding Exposure**: every
    success changes the political conditions of the next encounter.
 
@@ -90,10 +90,10 @@ intellectual history. **The historical trajectory is playable but never optimal.
 
 | Phase | Sector | Flavor | Dominant pressure |
 |---|---|---|---|
-| I | **Cairo — The Experimental Cosmopolis** | Akhlati's circle, Qasim-i Anvar, first synthesis | Whose student are you? |
+| I | **Cairo and the road (c. 1393–1408) — The Experimental Cosmopolis** | Akhlati's circle, Qasim-i Anvar, first synthesis | Whose student are you? |
 | II | **Isfahan — The Judge's City** | Judgeship day job, legal encounters, family seat | Time: office vs. project |
-| III | **The Courts** (branch: Iskandar's Dangerous Atelier / Baysunghur's Manuscript Machine / Samarkand — The Observatory) | Patronage, commissions, demonstration | Demand & contracts |
-| IV | **The 1420 Pivot** | Composing *Investigations* while the Observatory rises | Composition choices |
+| III | **The Courts** (branch: Iskandar's Dangerous Atelier / Baysunghur's Manuscript Machine (a game choice: the sources make him addressee and commissioner from 1426, no dated patronage) / Samarkand — The Observatory) | Patronage, commissions, demonstration | Demand & contracts |
+| IV | **The Summa, c. 1420** (ids keep `pivot_`) | Composing *Investigations* (dated 823/1420; the Observatory is context) | Composition choices |
 | V | **The Trials** | Inquisitions, exile risk, consolidation or collapse | Exposure comes due |
 
 Each phase is a node map (6–10 nodes); nodes are institutions and opportunities, not
@@ -137,3 +137,13 @@ narrative.
   (kimiya = material demonstration, limiya = talismanic construction, himiya =
   influence/protection, simiya = misdirection/spectacle, rimiya = wonder/trickery),
   never +N to anything.
+
+## Corrections (2026-09-27)
+
+Per TurkaVita/docs/CORRECTIONS_BRIEF.md (dissertation pdf page = printed + 17): Phase I is "Cairo and the road,
+c. 1393-1408" (Samarkand from 1387, Cairo from c. 1393, about fifteen years abroad; Akhlāṭī died 1397 during them),
+not "Cairo c. 1385-1397" (pdf 51-52); Phase IV is the summa years, c. 1420, not a "1420 pivot year" (the Mafāḥiṣ is
+dated 823/1420, a colophon date; the Shaqq-i Qamar is 829/1426; the observatory is context) (pdf 52, 126-128);
+Bāysunghur is a board court because he is an addressee/commissioner (1426, 1429-32), not a patron with a dated start
+(pdf 52, 69-70, 74); the trials are c. 1422, 1426, 1427 on MK's timeline, "three trials" being his phrase (pdf 52-53,
+70-75). Full list: README.md, Corrections (2026-09-27).

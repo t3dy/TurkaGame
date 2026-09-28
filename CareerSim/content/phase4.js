@@ -1,18 +1,22 @@
-// phase4.js — Phase IV: The 1420 Pivot (c. 1419–1422).
+// phase4.js — Phase IV: The Summa, c. 1420 (c. 1419–1422).  (Encounter ids keep the old "pivot_" prefix.)
+// CORRECTED 2026-09-27 (TurkaVita/docs/CORRECTIONS_BRIEF.md #4, #5, #6, #9): "the 1420 pivot year" was our label. The Mafāḥiṣ is dated
+// 823/1420 (a colophon date that may record copying; place "Isfahan or Yazd?"; revised and expanded 1425 with Yazdī); the Shaqq-i Qamar
+// is 829/1426 (dissertation pdf 52, 126–128, 332), not 1420; Ulugh Beg's observatory is context, not an event of his life; the three
+// trials are dated by MK's timeline c. 1422, 1426, 1427 ("three trials" is his phrase; the mapping is the project's reading).
 // Composition as gameplay. The book is a technology with design parameters, and
 // the choices made here decide who can use the system — and who will indict it.
 
 export const PHASE = {
   id: 4,
-  name: 'THE PIVOT — 1420',
+  name: 'THE SUMMA — c. 1420',
   dateline: 'c. 1419–1422',
   // Raised 6 -> 8 (docs/ECONOMY.md §5): at six seasons this phase saw 35% of its pool,
   // the worst in the game, while carrying the most ATTESTED material.
   time: 8,
   intro:
-    'Everything converges in one year. Ulugh Beg breaks ground on the Samarkand observatory. Yazdī is becoming the ' +
+    'The Investigations carries the date 823/1420 in its colophon, and the years around it are where the summa gets made. Ulugh Beg’s Samarkand observatory is rising in the distance, a context rather than a cause. Yazdī is becoming the ' +
     'historian who writes empires into the stars. And you have, at last, the whole thing in view — the summa that ' +
-    'will be called Investigations, if you can build it. Eight seasons. This is the year the system gets made, or does not.',
+    'will be called Investigations, if you can build it. Eight seasons. This is the stretch of years in which the system gets made, or does not.',
   // By now the ladder can reach its top rungs — see content/pressure.js.
   injections: ['pressure_rumor', 'pressure_copy_request', 'pressure_denunciation'],
 };
@@ -60,7 +64,7 @@ export const ENCOUNTERS = {
     id: 'pivot_begin', phase: 4,
     rubric: 'THE DESK · BEGINNING THE SUMMA',
     grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — 1420: completes Investigations (Kitāb al-Mafāḥiṣ), the first systematic summa of Islamic lettrism',
+    source: 'Dissertation pdf 52, 99 (timeline): K. al-Mafāḥiṣ is dated 823/1420 (in Isfahan or Yazd?; the date may record copying; the day is disputed), revised and expanded 1425 in company with Yazdī. No patron is named for it in the dissertation (later papers say Iskandar; see TURKA_AUDIT §B)',
     affordances: ['quiet', 'library'],
     situation:
       'Twenty years of notes, and the shape of the thing is finally visible: not a commentary, not a manual, but a ' +
@@ -113,7 +117,7 @@ export const ENCOUNTERS = {
         effects: { meters: { synthesis: 2 }, memory: { deferred_summa: true } },
         outcomes: [
           { band: 'qualified', weight: 1, text: 'A year of pure work and no book. The system is genuinely stronger. Nobody outside this room knows that.',
-            chronicle: 'He spent the pivot year deepening the system instead of writing it down.' },
+            chronicle: 'He spent the year deepening the system instead of writing it down.' },
         ],
       },
     ],
@@ -345,17 +349,19 @@ export const ENCOUNTERS = {
     id: 'pivot_wafq', phase: 4,
     rubric: 'THE DRAWING BOARD · THE SEVEN TIERS',
     grounding: 'PLAUSIBLE-GAP',
-    source: 'BIOGRAPHY — On the Splitting of the Moon and the Last Hour proposes a seven-tier epistemic hierarchy; only the endpoints and three middle tiers are documented — the full breakdown is an open research gap and is deliberately not invented here',
+    source: 'Dissertation pdf 332–334, translated 471–479 (claims CL-0500..0525): R. Shaqq-i Qamar u Bayān-i Sāʿat, on Q 54:1, dated 829/1426 (a terminus before 28 Jan 1426, perhaps a copy date; the placement in this phase is the game’s), gives the whole seven-tier hierarchy. Corrected 2026-09-27: the "open research gap" is closed',
     when: ['mem:investigations_begun'],
     affordances: ['quiet'],
     situation:
-      'A second, shorter Persian treatise wants to be written: a ranking of the ways of knowing, from the traditionists ' +
-      'who read only the surface at the bottom, up through theologians, philosophers and Sufis, to lettrism at the apex ' +
-      'of human perfection. It is the most useful thing you could write. It is also a list of everyone you are ranking below yourself.',
+      'A second, shorter Persian treatise wants to be written: a ranking of the ways of knowing, as seven readings of one verse, the moon split. ' +
+      'Jurists and traditionists, who know only the outward letter, are first; dialectical theologians second; peripatetic philosophers third; ' +
+      'illuminationists fourth; the verifying mystics of Ibn ʿArabī’s school fifth; the lettrists sixth; and seventh ʿAlī and the Imams — though ' +
+      'that seventh level is not entirely what it seems, and is tied to a conjunction of the present age. It is the most useful thing you could write. ' +
+      'It is also a list of everyone you are ranking below yourself.',
     options: [
       {
-        id: 'write_hierarchy', label: 'Write it, apex and all',
-        detail: 'Put lettrism at the top in plain Persian. Clarifying, and permanently quotable against you.',
+        id: 'write_hierarchy', label: 'Write it, all seven tiers',
+        detail: 'Put lettrism on the sixth rung, and the riddling seventh above it, in plain Persian. Clarifying, and permanently quotable against you.',
         requires: ['limiya>=2'],
         effects: {
           artifacts: ['splitting_moon'], meters: { transmission: 2, exposure: 2 }, rep: { occult: 2, orthodox: -2 },
@@ -364,7 +370,7 @@ export const ENCOUNTERS = {
         outcomes: [
           { band: 'triumph', weight: 1, text: 'It is lucid, ordered, and devastating. Students will find their bearings in it for generations — and every man you ranked beneath yourself can now read exactly where you put him.',
             effects: { meters: { transmission: 1 }, rep: { scholarly: 1 } },
-            chronicle: 'He set out the ways of knowing in order, with lettrism at their summit, and let every ranked man read his place.' },
+            chronicle: 'He set out the ways of knowing in seven tiers, lettrism sixth and a riddle at the seventh, and let every ranked man read his place.' },
           { band: 'backfire', weight: 1, text: 'Within a year the treatise is circulating among precisely the traditionists it places at the bottom, who are reading it aloud to each other.',
             effects: { meters: { exposure: 2 } },
             chronicle: 'His hierarchy of knowing reached the traditionists it ranked lowest, and they read it aloud to one another.' },
@@ -396,8 +402,8 @@ export const ENCOUNTERS = {
   pivot_yazdi_copy: {
     id: 'pivot_yazdi_copy', phase: 4,
     rubric: 'THE CIRCLE · YAZDĪ ASKS FOR THE AUTOGRAPH',
-    grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — Yazdī likely copies Ibn Turka’s own autograph, ff. 52a–56a of Tehran Majlis MS 10196, c. 1420–25',
+    grounding: 'PLAUSIBLE-GAP',
+    source: 'Dissertation pdf 95, 97, 116: ff. 52a and 118b of Tehran Majlis MS 10196 are autograph (incipit and explicit of the Mafāḥiṣ); the earliest copies carry a note that Yazdī checked the copy and attended teaching on the work (f. 119a; Beinecke Landberg 146 f. 179b). MK’s Prologue calls the hand of ff. 52a–56a "almost certainly" Yazdī’s: his own texts differ, unresolved. Corrected 2026-09-27 from "likely copies the autograph"',
     when: ['person:yazdi', 'mem:investigations_begun'],
     affordances: ['manuscripts', 'private_audience'],
     situation:
@@ -658,7 +664,7 @@ export const ENCOUNTERS = {
     id: 'pivot_observatory', phase: 4,
     rubric: 'THE OBSERVATORY RISING · ULUGH BEG BREAKS GROUND',
     grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — 1420: Ulugh Beg begins the Samarkand observatory; star science and letter science boom together',
+    source: 'Context, not an event of Ibn Turka’s life (dissertation pdf 52, 332; CORRECTIONS_BRIEF #4): Ulugh Beg’s Samarkand observatory (c. 1420) is the astronomical backdrop; Ibn Turka sent Ulugh Beg and Qāżīzāda Rūmī copies of the Sharḥ al-Basmala in 1426, so Ulugh Beg is a recipient, not a patron (TURKA_AUDIT §B)',
     affordances: ['astronomical_data', 'instruments'],
     plate: IMG('act2-persian-astrolabe.jpg', 'Persian astrolabe, brass (Wikimedia Commons)'),
     situation:
@@ -723,7 +729,7 @@ export const ENCOUNTERS = {
     id: 'pivot_departure', phase: 4,
     rubric: 'THE FIRST SUMMONS · A TRIBUNAL SENDS FOR YOU',
     grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — three state inquisitions, engineered by jealous rival colleagues, from the 1420s',
+    source: 'Dissertation pdf 52–53, 70–75 (timeline): the accusations begin c. 825/1422 (Isfahan enemies accuse him of Sufi bias at Shāhrukh’s court in Herat); MK writes of "three trials" (fn. 99) without listing them; the mapping onto c. 1422, 1426, 1427 is this project’s reading',
     affordances: ['legal_authority'],
     situation:
       'It arrives with a seal and a date: you are required to answer questions concerning your doctrine. It is not, ' +

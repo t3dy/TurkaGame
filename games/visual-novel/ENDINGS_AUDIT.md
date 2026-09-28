@@ -73,12 +73,12 @@ sequencing reasoning stands.
 used to frame Iskandar Sultan's decline abstractly — *"his star... has begun to
 dim... everyone at court is doing the math on when to leave."* The actual
 historical event behind that framing is much starker: Iskandar Sultan was
-**defeated, blinded, and executed in 1415 on the order of his own uncle, Shah
+**defeated, blinded, and later executed in 1414 [corrected 2026-09-27; one CE conversion prints 1415] on the order of his own uncle, Shah
 Rukh** (in `site/data/timeline.json` as `1415-iskandar-sultan-fall`, tagged
 `CONTEXT` since it's standard Timurid political history rather than something
 Melvin-Koushki's papers state directly — but it's the necessary, real
 explanation for why Ibn Turka's patronage shifts to Baysunghur, Shah Rukh's own
-son).
+son) **[corrected 2026-09-27: no source dates a shift to Bāysunghur; after Iskandar's fall Ibn Turka attempted to retire (c. 1414–22), and Bāysunghur is addressee and commissioner from 1426. The dissertation's own reading is that the attachment to Iskandar became a liability.]**.
 
 **Why this is a genuine counterfactual, not just missing flavor:** Melvin-Koushki's
 own method (used explicitly in "Dr Dee's Ottoman Adventure") is to take a real
@@ -95,7 +95,7 @@ choice between `c10` and `c11`, something like *"After Iskandar Sultan's fall:
 petition Shah Rukh directly, or wait to be received through Baysunghur alone."*
 Petitioning directly is the higher-variance, more "counterfactual" branch —
 attested political access to Shah Rukh is not directly documented for Ibn Turka
-in the sources currently in hand, making this `PLAUSIBLE-GAP` at best, but it's
+in the sources in hand at the time, making this `PLAUSIBLE-GAP` at best [update 2026-09-27: the dissertation records a 1414 letter to Shāhrukh sent through Niʿmat Allāh Valī, and later direct dealings with Shāhrukh: 1422 at Herat, 1426, 1427], but it's
 a structurally real fork (does a scholar tainted by association with an executed
 prince try to clear his name at the top, or work his way back in through the
 safer, lower-stakes channel of the son's court?) that the historical record's
@@ -122,3 +122,10 @@ it can get proper attention rather than being squeezed in here.
 - ~~The Aqquyunlu... never made it into the shipped option text~~ **Done:**
   `c36`'s `new_patron` option (label, detail, scene text, consequence text) all
   name the Aqquyunlu specifically now.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, rows 2, 3): Iskandar's fall is 1414 (the timeline id
+`1415-iskandar-sultan-fall` is the older conversion); the claim that Ibn Turka's patronage "shifts to Baysunghur" after it has no
+source; and the "no attested access to Shah Rukh" sentence is superseded (bracketed above). The audit's mechanical findings and
+the implemented endings are unaffected (the game is frozen).

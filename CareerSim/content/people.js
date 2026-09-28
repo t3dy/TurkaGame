@@ -34,14 +34,15 @@ export const PEOPLE = {
 
   // ---- The courts ----
   iskandar: {
+    // 2026-09-27: 'Iskandar Sultan' is kept as an accepted alias; the dissertation writes Iskandar Mīrzā (Timurid prince, b. Fars line).
     name: 'Iskandar Sultan',
     grants: ['royal_patronage', 'atelier_access', 'experimental_court'],
-    gloss: 'Timurid prince of Fars: star science, poetry and painting in one workshop. Brilliant, ambitious, and on a collision course with his uncle.',
+    gloss: 'Timurid prince (Iskandar Mīrzā in the dissertation): ruler of Fars from 1409, with a court at Isfahan c. 1412–14. Star science, poetry and painting in one workshop. Brilliant, ambitious, and on a collision course with his uncle.',
   },
   baysunghur: {
     name: 'Bāysunghur',
     grants: ['royal_patronage', 'atelier_access', 'calligraphic_authority'],
-    gloss: 'Shāh Rukh’s son, a fine calligrapher in his own right. The stable patron — and the one who cares how a thing looks on the page.',
+    gloss: 'Shāh Rukh’s son, a fine calligrapher in his own right; governor of Mazandaran and western Khurasan from 1415. In the sources he is the addressee and commissioner of Ibn Turka’s works from 1426, not a patron with a dated start. The one who cares how a thing looks on the page.',
   },
   calligrapher: {
     name: 'The Court Calligrapher',

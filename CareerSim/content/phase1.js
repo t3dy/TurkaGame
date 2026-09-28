@@ -1,15 +1,20 @@
-// phase1.js — Phase I: Cairo, The Experimental Cosmopolis (c. 1385–1397).
+// phase1.js — Phase I: Cairo and the road, The Experimental Cosmopolis (c. 1393–1408).
+// CORRECTED 2026-09-27 (TurkaVita/docs/CORRECTIONS_BRIEF.md #1): this phase was labelled "Cairo c. 1385–1397". Per
+// Melvin-Koushki's dissertation (pdf 51–52) Ibn Turka was taken to Temür's court at Samarkand in 1387, left c. 1393
+// (conjectured) for Mecca and Cairo, and stayed abroad about fifteen years, c. 1393–1408; Akhlāṭī died in 1397 DURING
+// those years, not at their end. The phase keeps its encounters and ids; the game still plays only the Cairo scenes.
 // Content data only — no logic. Grounding per encounter: ATTESTED / PLAUSIBLE-GAP /
 // INVENTED-COMPATIBLE, sources point at docs/BIOGRAPHY.md (canonical research layer).
 // Authoring rules: docs/ENCOUNTER_ATOMS.md lint rules; prose per the VN WRITING_GUIDE.
 
 export const PHASE = {
   id: 1,
-  name: 'CAIRO — THE EXPERIMENTAL COSMOPOLIS',
-  dateline: 'c. 1385–1397',
+  name: 'CAIRO AND THE ROAD — THE EXPERIMENTAL COSMOPOLIS',
+  dateline: 'c. 1393–1408',
   time: 7,
   intro:
-    'You are ʿAlī ibn Turka of Isfahan, young, far from home, in the largest city of the Islamic world. ' +
+    'You are ʿAlī ibn Turka of Isfahan, in your twenties, far from home, in the largest city of the Islamic world. ' +
+    'Temür took Isfahan when you were eighteen and carried your family to Samarkand; about 1393 you left, at your brother’s insistence, for Mecca and Cairo, and you will be abroad some fifteen years. ' +
     'Somewhere in Mamluk Cairo, Sayyid Ḥusayn Akhlāṭī — lettrist, alchemist, geomancer — teaches a circle ' +
     'that will one day call itself the New Brethren of Purity. You have seven seasons before the road home. ' +
     'Where you spend them decides who arrives in Isfahan.',
@@ -508,12 +513,12 @@ export const ENCOUNTERS = {
     phase: 1,
     rubric: 'THE TIMEKEEPER’S POST · ANOTHER PERSIAN AT THE DIALS',
     grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — Formation: the Yazdī friendship (VN c03); meeting-place is PLAUSIBLE-GAP',
+    source: 'Dissertation pdf 51 (timeline): Yazdī accompanies Ibn Turka from Samarkand to Mecca and Cairo, c. 1393; the scene at the muwaqqit’s post is ours (PLAUSIBLE-GAP). Premise corrected 2026-09-27: they did not first meet at the dials',
     when: ['mem:studied_timekeeping'],
     affordances: ['instruments', 'astronomical_data'],
     situation:
-      'Another Persian keeps turning up at the tables: Sharaf al-Dīn ʿAlī of Yazd, who checks the muwaqqit’s arithmetic ' +
-      'for pleasure and talks about history the way you talk about letters. He has noticed you noticing him.',
+      'Your companion on the road from Samarkand, Sharaf al-Dīn ʿAlī of Yazd, keeps turning up at the tables, where he checks the muwaqqit’s arithmetic ' +
+      'for pleasure and talks about history the way you talk about letters. You have travelled together; you have not yet worked together.',
     options: [
       {
         id: 'equal', label: 'Meet him as an equal — trade everything',
@@ -521,9 +526,9 @@ export const ENCOUNTERS = {
         requires: [],
         effects: { people: ['yazdi'], meters: { synthesis: 1 }, memory: { yazdi_bond: 'equal' } },
         outcomes: [
-          { band: 'triumph', weight: 1, text: 'Within a month you are finishing each other’s calculations. “My brother in God,” you will one day write. It starts here.',
+          { band: 'triumph', weight: 1, text: 'Within a month you are finishing each other’s calculations. “My brother in God,” you will one day write. The road made you companions; the tables make you colleagues.',
             effects: { meters: { synthesis: 1 } },
-            chronicle: 'At the timekeeper’s post he met ʿAlī of Yazd, and the two began trading sciences as brothers.' },
+            chronicle: 'At the timekeeper’s post he and ʿAlī of Yazd, his companion from the road, began trading sciences as brothers.' },
           { band: 'success', weight: 1, text: 'The trade begins cautiously — his tables for your grids — and holds.',
             chronicle: 'He and Yazdī began the long exchange of number for letter.' },
         ],
@@ -677,12 +682,13 @@ export const ENCOUNTERS = {
     phase: 1,
     rubric: 'THE ROAD HOME · CAIRO ENDS',
     grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — Formation: Akhlāṭī dies 1397; the return to Iran follows',
+    source: 'Dissertation pdf 51–52 (timeline): Akhlāṭī dies 1397, mid-sojourn; the return to Isfahan is c. 1408 (perhaps 1408–9). The scene compresses the last years abroad into one departure (premise marked, 2026-09-27)',
     affordances: [],
     plate: IMG('act8-printed-teardrop-cosmogram-p256.jpg', 'Teardrop cosmological diagram — Shams al-Maʿārif, p. 256 (Wikimedia Commons)'),
     situation:
-      'Word runs through the quarter like cold water: Sayyid Ḥusayn Akhlāṭī is dead. The circle stands in his courtyard ' +
-      'not knowing where to put its hands. Cairo is finished for you — the question is only what you carry to Isfahan, and how.',
+      'Word runs through the quarter like cold water: Sayyid Ḥusayn Akhlāṭī is dead (the sources date it 1397, well before your return). The circle stands in his courtyard ' +
+      'not knowing where to put its hands. The game folds your last years abroad into this one departure — the sources place the road home about 1408, ' +
+      'some ten years on — and the question is only what you carry to Isfahan, and how.',
     options: [
       {
         id: 'heir_public', label: 'Leave as his acknowledged student',

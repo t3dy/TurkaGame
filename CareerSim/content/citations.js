@@ -7,12 +7,16 @@
 // section); the citation joins it, so a reader learns whose scholarship the seal is
 // standing on without leaving the page.
 //
-// Bibliographic data from research/notes/*.md frontmatter — the three papers in hand.
+// Bibliographic data from research/notes/*.md frontmatter. CORRECTED 2026-09-27: this was "the three papers in hand";
+// the project now holds 43 Melvin-Koushki texts (TurkaVita/db/corpus.db), and the dated spine is his 2012 Yale
+// dissertation, which the BIOGRAPHY citation now names.
 
 const PAPERS =
   'Matthew Melvin-Koushki: “Prologue to Pythagorean Renaissance: Ibn Turka’s Investigations (1420) as ' +
   'Opening Anthem of the Scientific Revolution” (Intellectual History of the Islamicate World, 2025) ' +
-  'and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025)';
+  'and “The Occult Court” (Al-Masāq: Journal of the Medieval Mediterranean, 2025), and, for the dated life, his dissertation ' +
+  '“The Quest for a Universal Science: The Occult Philosophy of Ṣāʾin al-Dīn Turka Iṣfahānī (1369–1432) and Intellectual ' +
+  'Millenarianism in Early Timurid Iran” (Yale, 2012; addenda, timeline)';
 
 // Longest-matching prefix wins. Order here is the match order.
 const CITATIONS = [

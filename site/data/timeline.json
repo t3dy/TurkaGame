@@ -43,18 +43,28 @@
   "year_start": 1369,
   "category": "biography",
   "grounding": "ATTESTED",
-  "summary": "Sa'in al-Din 'Ali ibn Turka Isfahani is born. He becomes Chief Judge of Isfahan and, per Melvin-Koushki, the foremost occult philosopher of Timurid Iran.",
-  "source": "Melvin-Koushki 2025, \"Prologue to Pythagorean Renaissance\""
+  "summary": "Sa'in al-Din 'Ali ibn Turka Isfahani is born, almost certainly in Isfahan, in 770/1369, into a family of scholars, philosophers and qadis. The year is derived: Melvin-Koushki works it back from Ibn Turka's own stated age (59) in the Nafsat al-Masdur I, written in 829/1426. He becomes Chief Judge of Isfahan and, per Melvin-Koushki, the foremost occult philosopher of Timurid Iran.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.51-55 / printed p.34-38; birth year derived from his stated age in Nafsat I; \"Prologue to Pythagorean Renaissance\" (2025)"
  },
  {
-  "slug": "c1390s-cairo-formation",
-  "title": "Formation years in Cairo",
-  "year_start": 1390,
-  "year_end": 1397,
+  "slug": "1387-temur-takes-isfahan-samarkand",
+  "title": "Temur takes Isfahan; the Turka family goes to Samarkand",
+  "year_start": 1387,
+  "year_end": 1393,
   "category": "biography",
   "grounding": "ATTESTED",
-  "summary": "Ibn Turka studies in Cairo under Sayyid Husayn Akhlati, a lettrist, alchemist, and geomancer who is the hub of a network the circle calls the \"New Brethren of Purity,\" consciously invoking the medieval Ikhwan al-Safa'.",
-  "source": "Melvin-Koushki 2025"
+  "summary": "Temur takes Isfahan in 789/1387 and massacres most of its inhabitants, but spares the Turka family and takes them to his court at Samarkand. The elder brother Sadr al-Din is appointed qadi there and the judgeship becomes a Turka family office; Ibn Turka, a teenager, continues his studies under his brother, alongside Qazizada Rumi, until he leaves c. 1393. So his formation begins in Samarkand, not Cairo. None of the later papers mentions these years.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.51-63 / printed p.34-46; the later papers are silent on Samarkand (claim CL-0712)"
+ },
+ {
+  "slug": "c1393-abroad-mecca-cairo",
+  "title": "Fifteen years abroad: Mecca and Cairo",
+  "year_start": 1393,
+  "year_end": 1408,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "At his brother's insistence, and because conditions in Iran were too strait to carry on the family's philosophical and mystical legacy, Ibn Turka leaves Samarkand c. 1393 (Sharaf al-Din Yazdi is said to go with him) on some fifteen years of study abroad, c. 1393-1408; the dates are Melvin-Koushki's conjecture. He is reported in Mecca and Baghdad, but Cairo leaves the deepest imprint: he studies hadith under Siraj al-Din al-Bulqini (d. 1403) and becomes a disciple of Sayyid Husayn Akhlati, a lettrist, alchemist and geomancer at the court of Sultan Barquq who is the hub of a network the circle calls the \"New Brethren of Purity,\" consciously invoking the medieval Ikhwan al-Safa'. (An earlier version of this timeline put his formation in Cairo 'c. 1390-1397'; the dissertation places the Cairo years inside a c. 1393-1408 absence and his youth in Samarkand.)",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.51-68 / printed p.34-51; departure and Yazdi's company are conjectured"
  },
  {
   "slug": "1397-akhlati-death",
@@ -62,8 +72,8 @@
   "year_start": 1397,
   "category": "biography",
   "grounding": "ATTESTED",
-  "summary": "Ibn Turka's mentor dies. Akhlati's network had radiated from Cairo to Iran, India, and Anatolia -- the connective tissue of Ibn Turka's entire later intellectual world.",
-  "source": "Melvin-Koushki 2025"
+  "summary": "Ibn Turka's Cairo master dies in 799/1397, about four years into Ibn Turka's c. 1393-1408 absence -- so the two overlapped for at most about four years, not the decade a Cairo formation 'c. 1385-1397' would imply. Akhlati's network had radiated from Cairo to Iran, India, and Anatolia -- the connective tissue of Ibn Turka's later intellectual world.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.51-54 / printed p.34-37"
  },
  {
   "slug": "1405-timur-death",
@@ -71,54 +81,74 @@
   "year_start": 1405,
   "category": "biography",
   "grounding": "CONTEXT",
-  "summary": "Timur dies during a campaign against Ming China. A succession struggle among his sons and grandsons follows -- the Timurid princely rivalries (Iskandar Sultan, Baysunghur, Shah Rukh) that structure Ibn Turka's patronage career all trace back to this moment.",
-  "source": "Standard Timurid-era chronology"
+  "summary": "Timur (Temur) dies at Utrar in 807/1405; Ibn Turka learns of it while still abroad. A succession struggle among his sons and grandsons follows -- the Timurid princely rivalries (Pir-Muhammad, Iskandar, Shah Rukh, Baysunghur) that form the setting of Ibn Turka's return to Iran.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.51-69 / printed p.34-52; Timeline A.1"
  },
  {
-  "slug": "c1409-iskandar-sultan-patronage",
-  "title": "Ibn Turka enters Iskandar Sultan's court",
+  "slug": "c1408-returns-to-isfahan",
+  "title": "Returns to Isfahan",
+  "year_start": 1408,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "After about fifteen years abroad Ibn Turka returns to Isfahan, perhaps in 1408-9 ('perhaps two or three years' after Temur's death), and takes up teaching, intending a retired life of contemplation. The date is Melvin-Koushki's conjecture.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.51-69 / printed p.34-52; return date conjectured"
+ },
+ {
+  "slug": "c1408-pir-muhammad-summons",
+  "title": "Summoned to Pir-Muhammad's court at Shiraz",
+  "year_start": 1408,
+  "year_end": 1409,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Pir-Muhammad b. 'Umar-Shaykh summons Ibn Turka to Shiraz and makes him a member of his court -- the first Timurid attachment in the record -- until Pir-Muhammad is murdered in 812/1409 and his brother Iskandar rises in Fars. The dates are conjectured.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.51-69 / printed p.34-52; summons dates conjectured; the murder is context"
+ },
+ {
+  "slug": "c1409-iskandar-sultan-court",
+  "title": "Ibn Turka joins Iskandar Mirza's court",
   "year_start": 1409,
   "year_end": 1414,
   "category": "biography",
   "grounding": "ATTESTED",
-  "summary": "Ibn Turka becomes attached to the court of Iskandar Sultan, a Timurid prince and governor of Fars whose atelier fused star science, poetry, and manuscript painting -- his first major patron.",
-  "source": "Melvin-Koushki 2025; RESEARCH_BRIEF.md"
+  "summary": "After Pir-Muhammad's murder (1409) his brother Iskandar Mirza rules Fars, and Melvin-Koushki has Ibn Turka a member of Iskandar's court c. 1409-12, 'presumably' with a teaching post and the judgeship. In 1412-14 Iskandar takes Isfahan and holds a brilliant court there; Ibn Turka, attached to it, moves back to Shiraz because of harassment by envious rivals and proposes a protege as qadi in his place (an inference). Iskandar's atelier fused star science, poetry and manuscript painting; later papers call him Ibn Turka's first patron. The dissertation's own ranges for the court differ (812-15 AH and 815-17 AH).",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.51-69 / printed p.34-52; court dates conjectured; MK '(?)' on the qadi post"
  },
  {
-  "slug": "1415-iskandar-sultan-fall",
+  "slug": "1414-iskandar-sultan-fall",
   "title": "Fall of Iskandar Sultan",
-  "year_start": 1415,
+  "year_start": 1414,
   "category": "biography",
   "grounding": "CONTEXT",
-  "summary": "Iskandar Sultan is defeated, blinded, and executed on the order of his uncle Shah Rukh after a failed bid for wider power. Ibn Turka's first great patron is gone, forcing a transition to a new court.",
-  "source": "Standard Timurid-era chronology (context for the Iskandar Sultan -> Baysunghur transition Melvin-Koushki's biography implies)"
+  "summary": "Shah Rukh marches against his nephew Iskandar in 817/1414; Iskandar flees, is captured, blinded and later executed, and his brother Ibrahim Sultan replaces him. Ibn Turka's earlier attachment to Iskandar becomes a liability. (One CE conversion gives 1415 for the same event; the dissertation's timeline gives 817/1414.)",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.52-69 / printed p.35-52; Timeline A.1"
  },
  {
-  "slug": "c1416-baysunghur-patronage",
-  "title": "Ibn Turka enters Baysunghur's court",
-  "year_start": 1416,
+  "slug": "c1414-attempted-retirement",
+  "title": "Attempted retirement from public life",
+  "year_start": 1414,
+  "year_end": 1422,
   "category": "biography",
   "grounding": "ATTESTED",
-  "summary": "Ibn Turka becomes attached to Baysunghur, Shah Rukh's son, an accomplished calligrapher and the likely commissioner of the monumental Baysunghur Qur'an -- his second and longer-lasting patron.",
-  "source": "Melvin-Koushki 2025"
+  "summary": "After Iskandar's fall Ibn Turka tries to withdraw from public life for some eight years; he writes the R. Huruf in Shiraz in 1414, 'perhaps for Iskandar' (Melvin-Koushki's own query; a later paper says flatly 'for Iskandar'), and completes a corrected Sharh Fusus al-Hikam in 1415. The span is conjectured.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.52-70 / printed p.35-53; span conjectured; R. Huruf recipient queried by MK"
  },
  {
   "slug": "1420-investigations-composed",
-  "title": "Investigations (Kitab al-Mafahis) composed",
+  "title": "Investigations (Kitab al-Mafahis) dated 1420",
   "year_start": 1420,
   "category": "texts",
   "grounding": "ATTESTED",
-  "summary": "Ibn Turka completes his masterwork, described by Melvin-Koushki as the first fully systematic summa of Islamic lettrism ('ilm al-huruf) -- a mathematical-theurgic philosophy challenging the dominant Aristotelian-Avicennan system of his day.",
-  "source": "Melvin-Koushki 2025"
+  "summary": "The master-work, described by Melvin-Koushki as the first fully systematic summa of Islamic lettrism ('ilm al-huruf) -- a mathematical-theurgic philosophy challenging the dominant Aristotelian-Avicennan system of his day -- is dated 823/1420 in its colophon. The date may record copying (taswid) rather than composition: a marginal correction to the autograph colophon in MS Majlis 10196 says so, the day is disputed (1 Sha'ban vs 19 Dhu l-Hijja 823), and the place is given as 'Isfahan or Yazd?'. It was revised and expanded in 828/1425 in the company of Yazdi. The dissertation names no patron; later papers say Iskandar commissioned it, though Iskandar was dead by 1414.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.52 / printed p.35 (Timeline A.1); pdf p.99 / printed p.82 (entry and colophon note); later papers name Iskandar as commissioner (see TurkaVita/docs/TURKA_AUDIT.md section B)"
  },
  {
   "slug": "1420-samarkand-observatory",
-  "title": "Samarkand Observatory construction begins",
+  "title": "Samarkand Observatory founded (later papers' dating)",
   "year_start": 1420,
   "category": "texts",
-  "grounding": "ATTESTED",
-  "summary": "Ulugh Beg begins building his observatory in Samarkand the same year Ibn Turka composes Investigations. Melvin-Koushki treats the coincidence as more than decorative: star science and letter science boomed together in this milieu.",
-  "source": "Melvin-Koushki 2025; RESEARCH_BRIEF.md"
+  "grounding": "CONTEXT",
+  "summary": "Ulugh Beg founds his observatory in Samarkand. Four later Melvin-Koushki papers (the Prologue, Sensorium, New Brethren and Timurid-Mughal chapters) date the founding to 1420 and link it to the Mafahis, treating the coincidence as more than decorative: star science and letter science boomed together in this milieu. The dissertation does not date the founding or draw the parallel; it mentions the observatory through Qazizada Rumi as director and through Yazdi's later invitation. It is context for the life, not an event of it.",
+  "source": "Melvin-Koushki, \"Prologue to Pythagorean Renaissance\" (2025) and three later papers; the dissertation (Yale 2012) is silent on the date (TurkaVita claim CL-0731)"
  },
  {
   "slug": "c1420-tahawi-circle",
@@ -126,27 +156,18 @@
   "year_start": 1420,
   "category": "texts",
   "grounding": "ATTESTED",
-  "summary": "Investigations's central diagram -- called the first \"modern\" lettrist reworking of the Pythagorean Tetractys -- survives in Ibn Turka's own autograph (Tehran, Majlis Library MS 10196, f. 63a). The single strongest candidate for a curated manuscript image of his actual work.",
-  "source": "Melvin-Koushki 2021, 2025"
+  "summary": "The Mafahis's central diagram -- called the first \"modern\" lettrist reworking of the Pythagorean Tetractys -- is a master diagram of the work, which survives in MS Majlis 10196 (the manuscript with Ibn Turka's own hand at ff. 52a and 118b). The single strongest candidate for a curated manuscript image of his actual work.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.353 (the Tahawi Circle as master diagram); Melvin-Koushki 2021, 2025"
  },
  {
-  "slug": "1420-25-yazdi-copies-mafahis",
-  "title": "Yazdi copies the Mafahis autograph",
+  "slug": "1420-25-yazdi-and-the-mafahis",
+  "title": "Yazdi and the Mafahis manuscript",
   "year_start": 1420,
   "year_end": 1425,
   "category": "texts",
   "grounding": "ATTESTED",
-  "summary": "Sharaf al-Din 'Ali Yazdi -- Ibn Turka's best friend and foremost student, later a Timurid imperial historian at the Samarkand Observatory -- likely copies Ibn Turka's own autograph manuscript (Tehran, Majlis Library MS 10196, ff. 52a-56a).",
-  "source": "Melvin-Koushki 2025"
- },
- {
-  "slug": "c1420-splitting-of-the-moon",
-  "title": "On the Splitting of the Moon and the Last Hour",
-  "year_start": 1420,
-  "category": "texts",
-  "grounding": "ATTESTED",
-  "summary": "Ibn Turka's Persian treatise laying out a seven-tier epistemic hierarchy, from traditionist literalism at the bottom to lettrism at the apex of human perfection. Only the two endpoints plus three intermediate tiers (theologians, philosophers, Sufis) are confirmed in sources currently in hand.",
-  "source": "Melvin-Koushki 2025; the full seven-tier breakdown is an open research gap, cited onward to Melvin-Koushki's \"Selenocentrism and Heliocentrism\" (not yet acquired)"
+  "summary": "Sharaf al-Din 'Ali Yazdi -- Ibn Turka's best friend and foremost student, later a Timurid imperial historian at the Samarkand Observatory -- is tied to the earliest copy of Ibn Turka's masterwork (Tehran, Majlis Library MS 10196). Ff. 52a and 118b are in Ibn Turka's own hand (incipit and explicit); the earliest copies carry a note that Yazdi checked the copy and attended teaching on the work (f. 119a; Beinecke Landberg 146 f. 179b). The Prologue says the hand of ff. 52a-56a is 'almost certainly' Yazdi's; the dissertation does not say so, and Melvin-Koushki's own texts differ on this point (unresolved).",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.95, 97, 99, 116; \"Prologue to Pythagorean Renaissance\" (2025) for the 'almost certainly' attribution"
  },
  {
   "slug": "c1420s-baysunghur-quran",
@@ -159,41 +180,107 @@
   "source": "RESEARCH_BRIEF.md, \"Courts and political economy\""
  },
  {
-  "slug": "c1420s-first-two-inquisitions",
-  "title": "First two state inquisitions",
-  "year_start": 1420,
-  "year_end": 1427,
+  "slug": "c1422-first-trial",
+  "title": "First trial: accused of Sufi bias",
+  "year_start": 1422,
   "category": "biography",
   "grounding": "ATTESTED",
-  "summary": "Ibn Turka is subjected to two state inquisitions engineered by jealous, rival colleagues -- and wins both. Exact years are not established in the sources currently in hand; placed here only as approximate, pre-1427 events.",
-  "source": "Melvin-Koushki 2025 (dates not given in source)"
+  "summary": "Melvin-Koushki writes of \"three trials\" but never lists them in one place; his timeline and text date them c. 1422, 1426 and 1427. The first: c. 825/1422 Isfahan enemies accuse Ibn Turka at Shah Rukh's court of sufigari (Sufi bias); he travels to Herat, wins Shah Rukh's favour, is offered Isfahan but chooses Yazd, and is given the judgeship there (the account is his own, in Nafsat I, written under duress). Mapping 'the three' onto these dates is this project's reading.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.52-70 / printed p.35-53; the c. 1422 date is conjectured"
+ },
+ {
+  "slug": "c1422-yazd-judgeship",
+  "title": "Judge at Yazd",
+  "year_start": 1422,
+  "year_end": 1426,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka's years in Yazd, where he holds the judgeship, are productive: students flock to him, by his own report from as far as Shiraz, Samarkand, Anatolia and India, he writes many lettrist works, and the Mafahis is revised and expanded in 1425 with Sharaf al-Din Yazdi. His Yazd enemies' grievance, by 1426, is that he applies the Shari'a impartially.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.52-72 / printed p.35-55; span conjectured; the students are his own report in Nafsat II"
+ },
+ {
+  "slug": "1426-baysunghur-addressee",
+  "title": "Baysunghur: addressee and commissioner from 1426",
+  "year_start": 1426,
+  "year_end": 1432,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "No source dates the start of any patronage by Baysunghur, Shah Rukh's son and a calligrapher-prince (an earlier version of this timeline had 'Ibn Turka enters Baysunghur's court c. 1416', which nothing supports). Baysunghur is appointed governor of Mazandaran and western Khurasan in 1415, while 1414-c. 1422 is an attempted retirement for Ibn Turka. The firm links are later: the R. Su'al al-Muluk, written 'at his request' before 829/1426; the Nafsat al-Masdur II and R. I'tiqadiyya addressed to him c. 1429-32; and his son 'Ala' al-Din as dedicatee of the R. Tuhfa-yi 'Ala'i (1428). Later papers call him Ibn Turka's 'second patron' without a start date.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.52-74 / printed p.35-57; \"second patron\" is the later papers' label, without a date"
+ },
+ {
+  "slug": "1426-splitting-of-the-moon",
+  "title": "On the Splitting of the Moon and the Last Hour",
+  "year_start": 1426,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka's Persian treatise (R. Shaqq-i Qamar), dated 829/1426 -- a terminus 'before 28 January 1426' (another listing prints 27 February), possibly a copy date -- reads Q 54:1 through a seven-tier hierarchy of knowers: (1) jurists and traditionists, (2) dialectical theologians, (3) peripatetic philosophers, (4) illuminationists, (5) verifying mystics of the Ibn 'Arabi school, (6) lettrists, and (7) 'Ali and the Imams -- though, Melvin-Koushki argues, level seven is 'not entirely what it seems': it is peculiar to the present time and marked by a conjunction, and is not simply the Imams. A three-tier hierarchy (philosophers, Sufis, lettrists) appears in the Sharh-i Nazm al-Durr. Other later papers compress the ladder differently (lettrism at the top; two lettrist levels).",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.332-334 (text), pdf p.471-479 (translation), pdf p.126-128 (date)"
+ },
+ {
+  "slug": "1426-yazd-delegation-second-trial",
+  "title": "Second trial: the Yazd delegation",
+  "year_start": 1426,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "In 829/1426 Yazd elite, angered by his impartial application of the Shari'a, send a delegation to Herat and cite a youthful verse praising 'Ali; Shah Rukh summons him, and Ibn Turka answers with the Nafsat al-Masdur I and a creed tract (R. I'tiqadat), regaining Shah Rukh's favour. Melvin-Koushki writes of 'three trials'; taking this as the second is the project's reading.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.52-75 / printed p.35-58"
+ },
+ {
+  "slug": "1426-nafsat-i-apology",
+  "title": "The Nafsat al-Masdur I: an apology under duress",
+  "year_start": 1426,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka's defensive apology to Shah Rukh, written 16 May 1426, which is also our source for his stated age (59) and for much of his own account of his career. Melvin-Koushki stresses that the apologies were 'produced under great duress' and are hardly reflective of Ibn Turka's primary concerns: they show what he told a ruler, not necessarily what he held. (The Prologue's remark that he 'refused to bend the knee' at his trials is uncited; the dissertation shows apologies to Shah Rukh in 1426 and to Baysunghur c. 1429-32.)",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.25 (duress), pdf p.55, 72-75 / printed p.38, 55-58; the 16 May date per TurkaVita notes R1/R8"
  },
  {
   "slug": "1427-qasim-i-anvar-exile",
-  "title": "Qasim-i Anvar exiled for lettrist associations",
+  "title": "Qasim-i Anvar expelled from Herat",
   "year_start": 1427,
   "category": "biography",
   "grounding": "ATTESTED",
-  "summary": "Ibn Turka's Cairo companion, the Sufi poet Qasim-i Anvar, is exiled over the same lettrist associations that will soon threaten Ibn Turka himself -- a parallel persecution and an early warning sign.",
-  "source": "Melvin-Koushki 2025"
+  "summary": "The Sufi poet Qasim-i Anvar -- described in a Melvin-Koushki footnote (citing Virani) as Ibn Turka's 'charismatic associate from his Cairo days', and placed with him on a visit to Akhlati by Ni'matullahi hagiography (a low-confidence report) -- is arrested and expelled from Herat in the same 830/1427 purge of suspected Hurufis that catches Ibn Turka, on the strength of a putative Hurufi link.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.73 / printed p.56 and pdf p.53 / printed p.36 (the purge); pdf p.456 / printed p.439, n.16 (Qasim-i Anvar); pdf p.68 / printed p.51 (hagiography)"
  },
  {
-  "slug": "c1427-third-inquisition",
-  "title": "The third inquisition -- and defeat",
+  "slug": "1427-third-trial-and-exile",
+  "title": "Third trial: the Hurufi purge and exile",
   "year_start": 1427,
   "category": "biography",
   "grounding": "ATTESTED",
-  "summary": "Ibn Turka faces a third state inquisition and, this time, loses. Five years of wandering exile follow before his death in 1432, which places this event at approximately 1427.",
-  "source": "Melvin-Koushki 2025 (year inferred: death in 1432 minus five years of exile)"
+  "summary": "In 830/1427 the Hurufi Ahmad-i Lur attempts to kill Shah Rukh outside the congregational mosque in Herat and is killed; those with suspected Hurufi sympathies are arrested or exiled. Recalled to Herat, Ibn Turka is stripped of position and property, tortured and imprisoned, writes to Amir Firuzshah seeking redress, and is then exiled (1427-c. 1430, 'much of the next five years'). Whether this is 'the third' of the trials is the project's reading of Melvin-Koushki's phrase.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.53-73 / printed p.36-56"
+ },
+ {
+  "slug": "c1429-simnan-natanz-sain-qala",
+  "title": "Simnan, Natanz and Sa'in Qal'a",
+  "year_start": 1429,
+  "year_end": 1430,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "In exile Ibn Turka makes a fruitless attempt to obtain a hearing with Shah Rukh at Simnan (c. 1429 in the timeline, 1430 in the text), winters in Natanz, sends for his family and writes the K. al-Manahij for his son Muhammad, then obtains a hearing at Shah Rukh's camp at Sa'in Qal'a and a promise of reinstatement (1430). The dates are conjectured.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.53-74 / printed p.36-57; Simnan dated c. 1429 in the timeline, 1430 in the text"
+ },
+ {
+  "slug": "1431-nine-months-at-herat",
+  "title": "Nine months at Herat",
+  "year_start": 1431,
+  "year_end": 1432,
+  "category": "biography",
+  "grounding": "ATTESTED",
+  "summary": "Ibn Turka travels to Herat and for nine months attends court weekly, awaiting review of his case; he writes the Nafsat al-Masdur II and the R. I'tiqadiyya for Baysunghur. The promised review never comes.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.53-74 / printed p.36-57"
  },
  {
   "slug": "1432-ibn-turka-death",
-  "title": "Ibn Turka dies in exile",
+  "title": "Ibn Turka dies at Herat",
   "year_start": 1432,
   "category": "biography",
   "grounding": "ATTESTED",
-  "summary": "After losing his third inquisition and five years of wandering exile, Ibn Turka dies impoverished and in legal limbo. His Mafahis, per Melvin-Koushki, remains understudied -- \"on the Index\" -- for centuries afterward.",
-  "source": "Melvin-Koushki 2025"
+  "summary": "After nine months of weekly attendance at court awaiting review of his case, Ibn Turka dies in Herat on Monday 14 Dhu l-Hijja 835 / 12 August 1432, frustrated, impoverished and in limbo. Melvin-Koushki gives his age as 63, though his own dates imply about 65 (a flagged inconsistency). His Mafahis, per Melvin-Koushki, remains understudied -- \"on the Index\" -- for centuries afterward.",
+  "source": "Melvin-Koushki, dissertation (Yale 2012), pdf p.53-74 / printed p.36-57"
  },
  {
   "slug": "1433-ficino-born",
@@ -251,15 +338,6 @@
   "source": "Standard Renaissance-Hermeticism historiography (see Yates 1964, below)"
  },
  {
-  "slug": "boon-for-the-khan",
-  "title": "'Ali Safi, Boon for the Khan",
-  "year_start": 1470,
-  "category": "texts",
-  "grounding": "ATTESTED",
-  "summary": "A Persian manual of illusionism and trickery, dedicated as a \"royal boon\" to a specific Safavid Qizilbash patron, cataloguing concrete named operations: putrefactions, suffumigations, sleeper interrogation, treasure dowsing, instant agriculture. Real period spellbook texture, translated in full in Melvin-Koushki's \"The Occult Court.\"",
-  "source": "Melvin-Koushki, \"The Occult Court\"; year is an approximate placement within 'Ali Safi's working lifetime, not independently confirmed"
- },
- {
   "slug": "1486-pico-oration",
   "title": "Pico della Mirandola, Oration on the Dignity of Man",
   "year_start": 1486,
@@ -276,6 +354,15 @@
   "grounding": "CONTEXT",
   "summary": "Pope Innocent VIII condemns several of Pico's 900 Theses and blocks the public Rome disputation Pico had planned. A structural echo of Ibn Turka's own inquisitions: a syncretic occult-philosophical system provoking institutional persecution, in a European context roughly contemporary with Ibn Turka's own reception history.",
   "source": "Standard Renaissance chronology; the structural parallel to Ibn Turka's inquisitions is this project's own observation, not a claim from the sources in hand"
+ },
+ {
+  "slug": "boon-for-the-khan",
+  "title": "'Ali Safi, Boon for the Khan",
+  "year_start": 1522,
+  "category": "texts",
+  "grounding": "ATTESTED",
+  "summary": "A Persian manual of illusionism and trickery (Tuhfa-yi khani) written in 1522 for Durmish Khan Shamlu, the Qizilbash governor of Khurasan -- the 'royal boon' commission language of Melvin-Koushki's The Occult Court belongs to this book, not to Ibn Turka's life -- cataloguing concrete named operations: putrefactions, suffumigations, sleeper interrogation, treasure dowsing, instant agriculture. Real period spellbook texture, translated in full in the paper.",
+  "source": "Melvin-Koushki, \"The Occult Court\" (2025), pdf p.3 (a 1522 manual commissioned by a Qizilbash governor)"
  },
  {
   "slug": "1527-dee-born",
@@ -419,8 +506,8 @@
   "year_start": 2012,
   "category": "historiography",
   "grounding": "HISTORIOGRAPHY",
-  "summary": "Matthew Melvin-Koushki completes his Yale doctoral dissertation on Ibn Turka's occult philosophy -- the modern scholarly rediscovery this entire project's research ultimately traces back to. Title and year recalled from general knowledge of the field, not yet verified against a source document in this project's own corpus.",
-  "source": "General knowledge of the field -- LOW confidence, flagged for verification"
+  "summary": "Matthew Melvin-Koushki completes his Yale doctoral dissertation, The Quest for a Universal Science, on Ibn Turka's occult philosophy -- the modern scholarly rediscovery this project's research traces back to, and its spine source for the biography (Timeline A.1 and Chapter 1), read page by page. Its dates are the ones the biographical events above rest on.",
+  "source": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012), held and ingested in TurkaVita (corpus id SRC-610EE1D6BA)"
  },
  {
   "slug": "2016-melvin-koushki-astrology-lettrism-geomancy",

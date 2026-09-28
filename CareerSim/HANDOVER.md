@@ -28,7 +28,7 @@ any port works — the game is static.)
 ## What exists
 
 ### The game
-Five life-phases, **70 encounters**, all grounding-tagged (ATTESTED / PLAUSIBLE-GAP /
+Five life-phases, **71 encounters** (the shape table of `node tools/analyze-content.mjs`: 14+14+16+13+14; earlier notes said 70), all grounding-tagged (ATTESTED / PLAUSIBLE-GAP /
 INVENTED-COMPATIBLE) and sourced. Career systems: obligations (the judgeship taxes
 every action), patron contracts (deadline, reward, expectation inflation, settled at
 phase end), compounding exposure that gates the inquisitions. The ending is a
@@ -174,7 +174,7 @@ nobody has *looked* at the editor on a wide screen. Worth thirty seconds next se
 CareerSim/
 ├── CLAUDE.md · DESIGN.md · AUDIT.md · HANDOVER.md · NEXTSTEPS.md
 ├── docs/            SYSTEMS · UI_STYLE_GUIDE · ENCOUNTER_ATOMS · ROADMAP · DECISIONS
-├── content/         phase1–5.js (70 encounters) · people.js · lexicon.js · index.js
+├── content/         phase1–5.js (71 encounters) · people.js · lexicon.js · index.js
 ├── src/engine/      state · engine · career · export      (framework-agnostic, tested)
 ├── src/             main.js · ui.js · witness-client.js
 ├── witness/         the Vercel service
@@ -220,3 +220,21 @@ cd CareerSim/witness && vercel deploy --prod --yes
 ```
 
 The game itself deploys with the repo via GitHub Pages on push to `main`.
+
+## Corrections (2026-09-27)
+
+A corrector pass brought the game's history into line with TurkaVita/docs/CORRECTIONS_BRIEF.md (dissertation pdf page = printed + 17).
+Nothing structural changed; run `node --test tools/test-engine.mjs` (32 pass), `node --test tools/test-reachability.mjs` (7),
+`node --test tools/test-thesis.mjs` (1), `node --test witness/test-edit.mjs` (11). Changes, each with its source:
+
+- Phase I is "Cairo and the road, c. 1393-1408" (Samarkand from 1387; Cairo from c. 1393; Akhlāṭī d. 1397 mid-sojourn; return c. 1408): pdf 51-52. `road_home` says the game folds the last years abroad into one departure; `muwaqqit_yazdi` no longer stages a first meeting (Yazdī came from Samarkand).
+- Phase II dateline "c. 1408-1412"; Iskandar Mīrzā rules Fars 1409, court at Isfahan 1412-14, falls 1414; "Iskandar Sultan" kept as an alias: pdf 51-52, 69.
+- Bāysunghur is a labelled game choice, not a dated patron (addressee/commissioner from 1426; governor 1415): pdf 52, 69-70, 74. `court_departure` no longer says patronage shifts to him c. 1416.
+- Phase IV is "The Summa, c. 1420"; ids keep `pivot_`. Mafāḥiṣ 823/1420 (colophon date), Shaqq-i Qamar 829/1426, observatory as context: pdf 52, 99, 126-128.
+- Trials dated c. 1422, 1426, 1427 (MK's "three trials" is his phrase; the mapping is ours): pdf 52-53, 70-75. `phase5.js` and `career.js` no longer say "exact years not established" or "won the first two and lost the third, c. 1427" without the dates.
+- Seven tiers all known (pdf 332-334, 471-479); `pivot_wafq` states them. NEXTSTEPS/ENCOUNTERSNEXTSTEP/AUDIT updated.
+- Grounding tags lowered to PLAUSIBLE-GAP: `trial_first`, `trial_second`, `pivot_yazdi_copy`, `court_commission`.
+- Title screen: "Samarkand 1387, Cairo from c. 1393 - exile 1427-1432".
+
+**Needs Ted.** (1) Stage the Samarkand years? (2) Rewrite trial_first/second around the sourced charges? (3) Already-published witnesses (`witness/`)
+carry the old Attested Life text and are not regenerated. Full list: README.md, Corrections (2026-09-27).

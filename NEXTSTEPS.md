@@ -61,7 +61,8 @@ These improve the 40 choices already built, rather than adding new scope.
 5. ~~**Name Shah Rukh's violence explicitly in `c10`'s scene text.**~~ **Done
    (2026-08-30):** `c10`'s scene and consequence text now name Shah Rukh's
    blinding and execution of Iskandar Sultan directly, and that Bāysunghur (Ibn
-   Turka's next patron) is Shah Rukh's own son. The larger proposal (a new choice
+   Turka's next patron [**corrected 2026-09-27**: no source dates a Bāysunghur patronage; he is addressee and commissioner
+   from 1426]) is Shah Rukh's own son. The larger proposal (a new choice
    about petitioning Shah Rukh directly) remains unimplemented — see
    `ENDINGS_AUDIT.md` for why.
 6. ~~**Name the Aqquyunlu explicitly in `c36`'s "new_patron" option.**~~ **Done
@@ -117,7 +118,9 @@ and [REFLECTION.md](games/visual-novel/REFLECTION.md). Ranked by severity.
    OCCULTIMGDB's already-cleared Shams al-Ma'arif images (6+13+2 = 21 available) to
    pull genuinely new diagram material distinct from what's already in
    `assets/manuscripts/`.
-2. **Write the missing biographical texture.** The 7-tier epistemic hierarchy
+2. ~~**Write the missing biographical texture.**~~ **[Superseded 2026-09-27: the seven tiers are sourced (all seven are on the page of
+   the *Shaqq-i Qamar*, dissertation pdf 332–334, 471–479) and both "Selenocentrism and Heliocentrism" and the dissertation are
+   held; see `docs/BIOGRAPHY.md`.]** The 7-tier epistemic hierarchy
    (traditionist literalism → lettrism) referenced in `docs/RESEARCH_BRIEF.md` is
    still only partially sourced — acquiring Melvin-Koushki's "Selenocentrism and
    Heliocentrism" would let choice #16–20 (the sciences act) reference a real
@@ -126,16 +129,17 @@ and [REFLECTION.md](games/visual-novel/REFLECTION.md). Ranked by severity.
    in `endings.js` adds a personalized paragraph reactive to c39/c40 under every
    ending.
 4. **Verify the 5 LOW-confidence historiography dates** in
-   `site/data/timeline.json` (Melvin-Koushki's dissertation year, Yates 1964,
+   `site/data/timeline.json` (Melvin-Koushki's dissertation year [now verified: 2012, Yale], Yates 1964,
    Kristeller 1943, Sabra 1987, Saliba 2007) against an actual bibliographic
    record rather than general field knowledge — flagged honestly as unverified
    when added (2026-08-30), not a blocker for the timeline shipping, but worth
    closing before citing these dates anywhere more load-bearing than the tab.
 5. **Mine `docs/BIOGRAPHY.md`'s "for game design" section for new choices.** It
-   names concrete gaps (7-tier hierarchy, undated first two inquisitions,
-   pre-Cairo life) the VN currently works around — closing any of them (e.g. via
-   Melvin-Koushki's "Selenocentrism and Heliocentrism," same acquisition target as
-   item 2 above) could unlock new choice material, not just texture.
+   named concrete gaps (7-tier hierarchy, undated first two inquisitions,
+   pre-Cairo life) the VN currently works around. **All three are now closed (2026-09-27)**: the tiers are sourced; the first two
+   trials are c. 1422 and 1426 (our reading of "three trials"); the pre-Cairo life is Isfahan 1369 and Samarkand from 1387. The VN
+   itself is frozen (`games/FROZEN.md`); the new material went to `TurkaVita/`. What the VN says that the corrected biography
+   revises is in `games/visual-novel/ERRATA.md`.
 
 ## Tier 3 — the other two prototypes
 
@@ -148,8 +152,8 @@ VN's core loop has had real playtesting:
   precedent (`docs/GAME_ROGUELIKE.md`). The VN's `choices.json`/gate-checking
   approach may itself be a useful pattern to reuse for the roguelike's own branching
   encounter system.
-- **Career sim** — blocked on the same missing 7-tier hierarchy source as Tier 2
-  item 2 above; the Occult Quintet skill-tree code in `state.js` is directly
+- **Career sim** — *was* blocked on the missing 7-tier hierarchy source (Tier 2
+  item 2 above; unblocked 2026-09-27, and since built as `CareerSim/`); the Occult Quintet skill-tree code in `state.js` is directly
   reusable as a starting point once that design unblocks.
 
 ## Tier 4 — polish that isn't urgent yet
@@ -178,3 +182,11 @@ VN's core loop has had real playtesting:
   invented character portraits specifically; broadening beyond manuscripts/diagrams
   into other real image types (architecture, maps, objects) is worth doing before
   commissioning anything new.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`; bracketed edits above mark the changed statements):
+the 7-tier hierarchy "blocker" and the "undated first two inquisitions / pre-Cairo life" gaps are closed; the Bāysunghur
+"next patron" claim is corrected; the dissertation year is verified (2012). The text of the tiers that this file says were
+"only partially sourced" is in `docs/RESEARCH_BRIEF.md`. Items marked as Done above are historical records of the
+2026-08 sessions and were left as written.

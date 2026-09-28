@@ -18,7 +18,7 @@ One line per page. Update on every add/delete; never put content here.
 - [themes/GEOPOLITICS.md](themes/GEOPOLITICS.md) — one platform, rival polities; Cairo as alembic; bazm u razm as war-tech
 - [themes/DEE.md](themes/DEE.md) — the charter analogy: Timurid Dr. Dee / Elizabethan Dr. Littleturk
 - [themes/EMPIRE.md](themes/EMPIRE.md) — empire as occult artifact: prognosticon-computer, talismanic capitals, chancery as Book
-- [themes/TIMURID.md](themes/TIMURID.md) — the construction years; 1420 hinge; the patron trio as apparatus spectrum
+- [themes/TIMURID.md](themes/TIMURID.md) — the construction years; 1420 hinge (a possible copy date, see the page); the patron trio as apparatus spectrum (Bāysunghur's patronage undated)
 - [themes/SAFAVID.md](themes/SAFAVID.md) — the inheritance institutionalized; Mīr Dāmād; Isfahan as the diagram built
 - [themes/OTTOMAN.md](themes/OTTOMAN.md) — inside the continuum: the palace library, Kemālpaşazāde, Murad III, Bedreddīn
 - [themes/MUGHAL.md](themes/MUGHAL.md) — Indo-Timurid apotheosis; the Tāj as illegible machine; the Deccan bridge
@@ -27,7 +27,7 @@ One line per page. Update on every add/delete; never put content here.
 - [themes/LETTRISM.md](themes/LETTRISM.md) — ʿilm al-ḥurūf: muqaṭṭaʿāt wellspring, paired co-founders, taksīr mechanics
 - [themes/GEMATRIA.md](themes/GEMATRIA.md) — abjad with the work shown: 99, 110, 80, the root-trinity engine
 - [themes/PYTHAGOREANISM.md](themes/PYTHAGOREANISM.md) — mathesis under the Pythagorean banner; ʿAlī as Pythagoras; Bruno resonance
-- [themes/ASTROLOGY.md](themes/ASTROLOGY.md) — star science in tandem; Selenocentrism; the blocked seven-tier source
+- [themes/ASTROLOGY.md](themes/ASTROLOGY.md) — star science in tandem; Selenocentrism; the seven-tier source (now held, see the page's Corrections)
 - [themes/GEOMANCY.md](themes/GEOMANCY.md) — raml defended by Yazdī against Ibn Khaldūn; the science you can do in exile
 - [themes/TALISMANS.md](themes/TALISMANS.md) — līmiyā's scaling series: ring → book → body → city
 - [themes/SUFISM.md](themes/SUFISM.md) — adjacent, entangled, not identical; the misreading the project exists to overturn
@@ -51,3 +51,8 @@ One line per page. Update on every add/delete; never put content here.
 
 SEFERYETSIRAH.md · GOLEM.md · OCCULTDEMOCRACY.md · TERMINOLOGYLINT.md · CROSSOVERDESIGN.md · QASIM.md · BISTAMI.md
 · CREEDS.md · NARRATIVEDESIGNERREADSGUNTHERPIELOW.md
+
+## Corrections (2026-09-27)
+
+Two annotations to lines above (row 6 and rows 2, 4 of `TurkaVita/docs/CORRECTIONS_BRIEF.md`); the pages named carry their own Corrections sections. Pages that state a Melvin-Koushki title is "not held" now carry a
+source-situation note (the whole corpus of 43 texts is held).

@@ -71,3 +71,14 @@
 - Companions written the same day: [../LETTRISMRESEARCH.md](../LETTRISMRESEARCH.md)
   (source-by-source digest with the extraction table) and [../PIPELINE.md](../PIPELINE.md)
   (the five roles and their handoff contracts).
+
+## [2026-09-27] correction | Life-facts and the source situation corrected to the dissertation
+- Per Ted's standing rule (always correct older documents to the most current information), the pages that stated Ibn Turka's life or the source
+  situation wrongly were corrected against `TurkaVita/docs/CORRECTIONS_BRIEF.md` / `TURKA_AUDIT.md` (Melvin-Koushki's 2012 Yale dissertation, `SRC-610EE1D6BA`).
+  Each page carries a `## Corrections (2026-09-27)` section; nothing was rewritten silently.
+- Pages: themes/TIMURID (1420 as a possible copy date; the patron trio: Bāysunghur undated, Ulugh Beg a recipient), PATRONAGE (dated patrons; *Boon for the Khan* is ʿAlī Ṣafī's),
+  SCIENTIFICREVOLUTION (1420), HISTORIOGRAPHY (Yazdī's hand: MK's own texts differ), ASTROLOGY and readings/QUINTET (the seven-tier hierarchy is sourced; Selenocentrism is held),
+  LETTRISM/PSYCHEDELIC/PYTHAGOREANISM/PERSIANATE/SAFAVID/EMPIRE (a Melvin-Koushki title marked "not held" is now held), INDEX (two lines).
+- The LOG header of 2026-09-02 ("the four locally held MK papers") is left as history: those four were what `research/library/` held; the whole corpus (43 texts) is held.
+- Not changed: readings other than QUINTET (their design content stands; they inherit the patron trio and should be read with PATRONAGE's note).
+

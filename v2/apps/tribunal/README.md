@@ -86,11 +86,12 @@ that alif conceals the lām.
 You may always decline. The charge stands **unproven** — you are neither convicted
 nor cleared — your record stays clean, and it costs one standing.
 
-This is not a worse kind of losing, and the reason is historical. Melvin-Koushki
-records that Ibn Turka "would refuse to bend the knee during his three
-inquisitions, despite the danger and punishing consequences." A game about him in
-which refusal is merely defeat would be lying about the one thing we actually know
-he chose. Refusing all three ends the run in exile with **zero convictions**, which
+This is not a worse kind of losing, and the reason is historical, with a caveat.
+Melvin-Koushki's *Prologue* remarks that Ibn Turka "would refuse to bend the knee during his three
+inquisitions, despite the danger and punishing consequences" — **an uncited remark, to be read as his
+remark and not a finding**: the dissertation shows *defensive apologies* to Shāhrukh (1426) and Bāysunghur
+(c. 1429–32), written under duress. The design rests on the weaker and safer point that a game in which
+refusal is merely defeat would misrepresent a man his own biographer presents as unbending. Refusing all three ends the run in exile with **zero convictions**, which
 is a different ending from losing all three, and the game says which is which.
 
 ## The record
@@ -102,17 +103,18 @@ picked alongside denunciation — being wrong, or being consistent, follows you.
 ## What is attested and what is ours
 
 **Attested** (`docs/BIOGRAPHY.md`, from Melvin-Koushki): he was a judge known for
-defending the weak against the powerful; three separate state inquisitions,
-engineered by jealous rival colleagues; he **won the first two and lost the
-third**, datable to about **1427**; five years of wandering exile; death in
-**1432**, impoverished and in legal limbo; his companion **Qāsim-i Anvār exiled the
-same year** over the same lettrist associations; and the refusal to bend the knee.
+defending the weak against the powerful; "three trials" (his phrase) engineered by jealous rival
+colleagues; he **won the first two and lost the third**, the third being the purge of **1427** after the Ḥurūfī
+attempt on Shāhrukh; exile; death in Herat in **1432**, impoverished and in legal limbo; his friend **Qāsim-i
+Anvār expelled from Herat in the same purge** over the same suspected Ḥurūfī associations. The *Prologue*'s
+"refuse to bend the knee" is an uncited remark, and the apologies are duress documents.
 
 **Ours, and labelled GAME FICTION on every trial's own face**: the *content* of
 the charges, the courts' identities, the demands, and every word anyone says. The
 sources record that the trials happened and how they came out — not what was
-argued. The exact years of the first two inquisitions are an open research gap and
-no year is given for them here.
+argued. The years of the first two trials are no longer an open gap (Melvin-Koushki's
+timeline and text give c. 1422 and 1426; he never lists "the three" together, so the mapping is this project's reading),
+but the three courts here are **game fiction with no year**, and no year is given for them.
 
 ## How a trial is allowed to ship
 
@@ -144,3 +146,15 @@ that bite:
   and the two should eventually meet.
 - **No person has played it.** Both paths are self-tested through the real input
   path; the winning run takes four breaks and ends with standing intact.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, rows 5, 8, 11, 12):
+
+- "Exact years of the first two inquisitions are an open research gap": closed as above (c. 1422, 1426; 1427 for the third),
+  marked as our reading. The game's courts still carry no year, by design.
+- "Five years of wandering exile" and "datable to about 1427" replaced by the dated purge and the source's own wording.
+- The refusal quotation is the *Prologue*'s uncited remark (row 11); the design point that refusal is not a worse loss is unchanged.
+- "Companion Qāsim-i Anvār exiled the same year": expelled from Herat in the same purge (a friend and correspondent; "Cairo companion" is a hagiographic
+  tradition in Melvin-Koushki's note, kept hedged).
+- The game itself (`app.js`, trial data) was not touched.

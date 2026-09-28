@@ -48,3 +48,8 @@ modern Persianate imperial cultural continuum" (*OC*).
 
 Zarakol, *Before the West* (2022) · Lentz & Lowry, *Timur and the Princely Vision*
 (1989) · Emami, *Isfahan* (2024) — all cited in held texts.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`; dissertation `SRC-610EE1D6BA`, pdf = printed + 17) (row 7, source situation only): "Early Modern Islamicate Empire" (⚠ not held) is now held (`SRC-90A1B459C9`); the whole Melvin-Koushki corpus is held (43 texts). The page's claims are unchanged; they were grounded on the texts then held.
+The forthcoming *The Occult Science of Empire in Aqquyunlu-Safavid Iran* (where cited) is not held. This page states no biography fact that the corrections revise.

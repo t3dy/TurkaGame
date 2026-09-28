@@ -48,3 +48,11 @@ No-build vanilla JS/canvas, following EmblemRoguelike/DungeonAB conventions. See
 - Whether floors map 1:1 to the five sciences or the five sciences are cross-cutting
   systems (like EmblemRoguelike's furnace ops) layered onto a differently-structured
   descent.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`): this design sketch states no life-fact that
+the corrections revise. Two notes: the Occult Quintet is documented in the Kāshifī / ʿAlī Ṣafī tradition (*The Occult
+Court*) that Ibn Turka's circle fed into, so "Ibn Turka's own Quintet" should be read that way; and the *Boon for
+the Khan* material is ʿAlī Ṣafī's 1522 manual, not a description of Ibn Turka's court life. The roguelike's spine
+has since been built as `v2/apps/descent/` (see `v2/APPLICATIONS.md`).

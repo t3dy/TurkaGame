@@ -15,11 +15,11 @@ define Persianate imperial cosmology for the next several centuries."
 
 ## Fixed points (held)
 
-- **1420 as hinge year** (*Prologue*, BIOGRAPHY): *Investigations* completed; the
+- **1420 as hinge year** (*Prologue*, BIOGRAPHY) **[read with the note below: 1420 is the *Mafāḥiṣ*'s colophon date, which may record copying]**: *Investigations* completed; the
   Samarkand Observatory begun; its tables "so unprecedentedly mathematically precise
   they were used everywhere from the Strait of Malacca to London to the nineteenth
   century."
-- **The patron trio as institutional spectrum** — Iskandar Sulṭān (atelier
+- **The patron trio as institutional spectrum** **[Bāysunghur and Ulugh Beg are not patrons on a dated record; see the note below]** — Iskandar Sulṭān (atelier
   experimentalism: "star science, poetry and book painting"), Bāysunghur (the
   kitābkhāna; the monumental Bāysunghur Qurʾan, fragments still selling "for
   eyewatering sums (up to £500,000)"), Ulugh Beg (the observatory) — one science,
@@ -42,3 +42,14 @@ define Persianate imperial cosmology for the next several centuries."
 
 Subtelny, *Timurids in Transition* (Brill, 2007) · Melville, ed., *The Timurid
 Century* (2020) — cited in held texts.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`; dissertation `SRC-610EE1D6BA`, pdf = printed + 17):
+
+- **The 1420 hinge**: the *Mafāḥiṣ*'s 823/1420 is a colophon date that a marginal correction in MS Majlis 10196 says refers to copying; the work was revised and expanded in
+  828/1425, and the 2025 papers place its start earlier (after *On Letters*, 1414). The *Shaqq-i Qamar* is 829/1426, not 1420. Ulugh Beg's observatory is context, not an event of
+  Ibn Turka's life (rows 4). MK's "coincidence" reading of the observatory and the summa stands as his reading.
+- **The trio**: Iskandar Mīrzā (Iskandar Sulṭān) is a patron (after Pīr-Muḥammad of Shiraz, c. 1408–9; fall 1414). No source dates a Bāysunghur patronage: addressee and commissioner from 1426.
+  On the pages read, no letter is addressed to Ulugh Beg himself (the link is a marginal dedication on the *Sharḥ al-Basmala* and a copy sent to Qāżīzāda Rūmī); "would-be third patron"
+  is MK's phrase (rows 2, 3; audit § B).

@@ -1,7 +1,7 @@
 # SCIENTIFICREVOLUTION.md — The Occult-Scientific Revolution
 
 **Grimoire page, 2026-09-02.** Grounded in *Prologue* (whose subtitle is the claim)
-and *Meanings*. ⚠ not held: "An Islamic Scientific Revolution? Early Modern Occult
+and *Meanings*. ⚠ not held **[held since 2026-09-27: "An Islamic Scientific Revolution?" is `SRC-B6397D685D`]**: "An Islamic Scientific Revolution? Early Modern Occult
 Science, Cosmic Philology and the Weird," *History of Science* 61/2 (2023): 166–72 —
 citation exact from both held bibliographies.
 
@@ -55,3 +55,11 @@ consensus — the game's seals give us the machinery to do exactly that.
 
 Newman, *Newton the Alchemist* (2019) · Hallyn (1990) · Bönker-Vallon on Bruno's
 mathematics — all cited in *Prologue*.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`; dissertation `SRC-610EE1D6BA`, pdf = printed + 17):
+
+- "*Investigations* (1420)" and "the *Mafāḥiṣ* coincided exactly with the construction of the Samarkand Observatory (1420)" are the *Prologue*'s. 1420 is the colophon date and may record
+  copying; the work was revised and expanded in 1425 (row 4). The observatory is context, not an event of Ibn Turka's life. The framing of "theory and instrument in the same year" is MK's, and stands as his.
+- "An Islamic Scientific Revolution?" is now held (row 7).

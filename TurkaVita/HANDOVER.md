@@ -19,12 +19,9 @@
 
 ## What needs Ted (in order)
 
-1. **Read `docs/TURKA_AUDIT.md`.** It lists twelve places where the older BIOGRAPHY.md / timeline.json / LETTRISMRESEARCH.md / the plan differ
-   from the dissertation, and nine where Melvin-Koushki's own papers disagree. **Nothing outside `TurkaVita/` has been corrected** (DECISIONS 5), except
-   this game's own plan doc, which carries a correction banner. The VN (40 choices) and CareerSim (70 encounters) were built on the older picture
-   (Cairo from 1385, Bāysunghur "from c. 1416"): decide whether they should be brought into line.
+1. **The older documents are corrected** (2026-09-28, Ted's standing rule *always correct older documents to match the most current information*, DECISIONS 14). `docs/TURKA_AUDIT.md` lists twelve places where the older BIOGRAPHY.md / timeline.json / LETTRISMRESEARCH.md / the plan differed from the dissertation and nine where Melvin-Koushki's own papers disagree; its section F says what was corrected (TurkaGame docs, site and timeline data, portal and the Islamicate portal, CareerSim, the Tribunal, the wiki and workspace files) and what was left on purpose (the frozen games under `games/`, archived snapshots, raw transcripts). **The frozen visual novel still teaches the old picture in its scenes**: `games/visual-novel/ERRATA.md` lists 18 premises; changing them means overriding `games/FROZEN.md`, which is your call.
 2. **The four assumed calls** (DECISIONS 3–6): slice-3-first (moot now: all acts are built), Act V as the unnamed copyist, no Persian edition fetched,
-   corrections held for the audit. "Go" was taken as approval to commit and deploy, **not** as approval to edit the older docs: those are still uncorrected.
+   corrections (now made: see 1). "Go" was taken as approval to commit and deploy; the standing rule to correct older documents came next.
 3. **It is public now** (Ted said "go" after the plan's open questions). The repo's rules check passed on 1,963 staged files (no PDFs, no corpus DB). `research/artifacts/` carries
    page-cited paraphrase of a copyrighted dissertation: 77 short quoted spans, 455 quoted words in total, none over 20 words in one artifact. Look at that once; if you would rather it
    were private, the artifacts can be dropped from the repo without touching the game (`game/content.js` embeds only the ones scenes cite).

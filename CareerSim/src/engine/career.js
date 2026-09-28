@@ -229,22 +229,22 @@ export function attestedRows(state) {
   const m = state.memory;
   const rows = [];
   const row = (hist, yours) => rows.push({ hist, yours });
-  row('He studied in Cairo under Sayyid Ḥusayn Akhlāṭī, lettrist, alchemist and geomancer.',
+  row('Taken to Temür’s court at Samarkand in 1387, he left c. 1393 for Mecca and Cairo and was abroad about fifteen years, studying there under Sayyid Ḥusayn Akhlāṭī, lettrist, alchemist and geomancer.',
     m.circle_member ? 'so did you.' : 'you never entered the circle — a formation the historical man could not have skipped.');
   row('He served as Chief Judge of Isfahan, famous for defending the weak against the powerful.',
     m.took_judgeship ? (m.defended_weak ? 'you took the bench and ruled as he did.' : 'you took the bench; whether you used it as he did, your chronicle knows.') : 'you refused the bench he was defined by.');
-  row('In 1420 he completed Investigations — the first systematic summa of Islamic lettrism — as Ulugh Beg broke ground on the Samarkand observatory.',
+  row('His Investigations (the Mafāḥiṣ), the first systematic summa of Islamic lettrism, is dated 823/1420 — a colophon date that may record copying — and was revised and expanded in 1425 with Yazdī.',
     m.investigations_begun ? 'your summa exists.' : 'your summa was never written — the counterfactual is total.');
   row('His central diagram, the Ṭahawī Circle, survives in his own handwriting (Tehran, Majlis Library MS 10196, f. 63a).',
     m.tahawi_circle ? 'you drew it.' : 'you never drew the Circle; your system has no surviving image.');
-  row('He faced three state inquisitions engineered by rival colleagues: he won the first two and lost the third, c. 1427.',
+  row('He faced what Melvin-Koushki calls three trials, engineered by rival colleagues — c. 1422, 1426 and 1427 on his timeline (the mapping is this project’s reading): he won Shāhrukh’s favour twice, then was recalled, stripped, imprisoned and exiled in 1427.',
     m.third_inquisition === 'lost' ? 'the same road, ending the same way.'
       : m.third_inquisition === 'survived' ? 'you survived all three — a thing the record does not grant the historical man.'
       : m.recanted ? 'you bent, which the record says he refused to do.'
       : 'the third tribunal never reached you.');
-  row('Qāsim-i Anvār, his Cairo companion, was exiled in 1427 over the same lettrist associations.',
+  row('Qāsim-i Anvār, a Sufi friend and correspondent, was expelled from Herat in 1427 in the same purge, over suspected Ḥurūfī ties.',
     m.qasim_defended ? 'you stood by him.' : m.qasim_abandoned ? 'you let him go alone.' : 'in your life the friendship never came to its test.');
-  row('He died in 1432, impoverished and in legal limbo, after five years of wandering exile; Yazdī — who copied his autograph — outlived him by twenty-two years, and the platform they built became imperial cosmology across six court cultures.',
+  row('He died in 1432, impoverished and in legal limbo, after five years of wandering exile; Yazdī — who checked a copy of his autograph and attended its teaching — outlived him by twenty-two years, and the platform they built became imperial cosmology across six court cultures.',
     (m.yazdi_copied || m.yazdi_keeps) ? 'your Yazdī carries the copy too.' : 'your Yazdī never copied the work — history’s own transmission route, closed.');
   return rows;
 }
@@ -429,13 +429,13 @@ export const LEGACY_NOTES = {
   'court_exit=circle': 'He left the collapsing court with his collaborators — by then no longer only a man.',
   kept_patron: 'He kept a patron through the transition, and the protection was real when it was needed.',
 
-  // — The pivot —
+  // — The summa years (c. 1420) —
   'investigations_scope=systematic': 'He attempted the whole architecture at once — the first summa of its kind ever tried.',
   'investigations_scope=practical': 'He wrote the summa as a working handbook, and the learned called it thin.',
-  deferred_summa: 'He spent the pivot year deepening rather than writing, and the year did not come back.',
+  deferred_summa: 'He spent the year deepening rather than writing, and the year did not come back.',
   designed_for_uptake: 'He explained his diagrams and translated his terms for every audience — against the whole habit of the tradition.',
   concealed_core: 'He explained the frame and hid the working parts, and made the book depend on his being alive.',
-  wrote_hierarchy: 'He ranked the ways of knowing in plain Persian, lettrism at the summit, and let every ranked man read his place.',
+  wrote_hierarchy: 'He ranked the ways of knowing in seven tiers in plain Persian, lettrism sixth and a riddle at the seventh, and let every ranked man read his place.',
   wrote_hierarchy_soft: 'He described the ascent of knowing without naming who stood at its foot.',
   yazdi_coauthor: 'He and Yazdī rebuilt the summa together at one desk; neither could have written what came out of that room.',
   refused_yazdi_copy: 'He refused even Yazdī a copy, and the summa stayed one object in one room.',

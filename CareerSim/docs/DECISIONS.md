@@ -406,3 +406,28 @@ button). Remaining reading decisions queued in grimoire/LOG.md. One tooling
 lesson recorded in tools/test-thesis.mjs itself: the shell heredoc ate regex
 backslashes twice, so the invariant's regexes use [0-9] classes and a NaN guard —
 a test that silently matches nothing is a rubber stamp.
+
+## Corrections to the historical premise (2026-09-27)
+
+**Decision.** Bring the game's history into line with TurkaVita/docs/CORRECTIONS_BRIEF.md and TURKA_AUDIT.md (standing rule from Ted:
+always correct older documents to the most current information). Earlier entries above are left as written; this entry supersedes
+their historical claims. Text, labels, datelines, `source:` strings and a few grounding tags changed; encounter ids, effects, gates and
+structure did not (32/32 engine tests, 7/7 reachability, thesis test and 11/11 witness tests pass; 71 encounters, 33 Quintet gates,
+0 unreachable, unchanged).
+
+| # | was | now | source |
+|---|---|---|---|
+| 1 | Phase I "Cairo, c. 1385-1397"; title "Cairo 1385 - exile 1432"; Akhlāṭī's death as the end of the Cairo years | "Cairo and the road, c. 1393-1408"; Samarkand from 1387, Cairo from c. 1393, about fifteen years abroad, Akhlāṭī d. 1397 during them, return c. 1408; Phase II "c. 1408-1412" | dissertation pdf 51-52 |
+| 2 | "Second patron Bāysunghur from c. 1416" | no sourced start; governor 1415; addressee/commissioner of the Suʾl al-Mulūk (before 1426) and Nafsat II; kept as a game choice, labelled | pdf 52, 69-70, 74 |
+| 3 | "Iskandar Sultan c. 1409-1415" | Iskandar Mīrzā: Fars 1409, Isfahan court 1412-14, "attached to" (qadi post "(?)"), fall 1414; 1414-c. 1422 attempted retirement; "Iskandar Sultan" kept as alias | pdf 51-52, 69 |
+| 4 | Phase IV "The 1420 Pivot", one converging year | "The Summa, c. 1420": Mafāḥiṣ dated 823/1420 (colophon date), revised 1425; Shaqq-i Qamar 829/1426; observatory is context | pdf 52, 99, 126-128, 332 |
+| 5 | "three inquisitions... exact years not established" | MK's timeline: c. 1422, 1426, 1427; "three trials" is his phrase (fn. 99), the mapping is ours; staged charges (Q 2:102, a quoted passage) are the game's, so trial_first/second become PLAUSIBLE-GAP | pdf 52-53, 70-75 |
+| 6 | seven-tier hierarchy "partly unknown, do not invent" | all seven tiers known and stated in `pivot_wafq`; encounters may use them | pdf 332-334, 471-479 |
+| 7 | Yazdī meets Ibn Turka at the dials; "likely copies the autograph" | Yazdī accompanies him from Samarkand; ff. 52a/118b autograph, Yazdī checked the copy and attended teaching; MK's own texts differ on the hand of ff. 52a-56a; pivot_yazdi_copy PLAUSIBLE-GAP | pdf 51, 95, 97, 116 |
+| 8 | court_commission ATTESTED, "royal boons" | PLAUSIBLE-GAP; the boon language is ʿAlī Ṣafī's (1522), not Ibn Turka's | The Occult Court |
+| 9 | "the three papers in hand" (citations.js) | 43 texts held; the dissertation is named | corpus ingest |
+
+**Rejected.** Rewriting the staged trials around the sourced charges (Sufi bias 1422; heresy and Shiʿi proclivities from youthful
+writings 1426) and staging the Samarkand years as scenes: both change structure, not labels, and are recorded in NEXTSTEPS.md for Ted.
+**Consequence.** Grounding counts moved (P3 A10->A9, P4 A11->A10, P5 A7->A5). Published witnesses keep the text of the day they were
+published.

@@ -2,7 +2,7 @@
 
 **Grimoire page, 2026-09-02.** Grounded in *Prologue* (the fullest local statement),
 *OC*, *Meanings*, docs/BIOGRAPHY.md, the portal's `lettrism-universal` argument entry
-(turka.db), and the v2 engine's own derivations. ⚠ not held: "Of Islamic
+(turka.db), and the v2 engine's own derivations. ⚠ not held **[superseded 2026-09-27: held as `SRC-BEA1D7D187`]**: "Of Islamic
 Grammatology: Ibn Turka's Lettrist Metaphysics of Light," *Al-ʿUṣūr al-Wusṭā* 24
 (2016): 42–113 — the deep-dive; citation exact.
 
@@ -55,3 +55,8 @@ ever penned."
 Acevedo, *Alphanumeric Cosmology from Greek into Arabic* (2020) · Uy, *Lost in a Sea
 of Letters* (2025) — both cited in *Prologue*. See [GEMATRIA.md](GEMATRIA.md) for
 the number side, [SUFISM.md](SUFISM.md) for the boundary dispute.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`; dissertation `SRC-610EE1D6BA`, pdf = printed + 17): "Of Islamic Grammatology" is held (row 7), together with the dissertation (Chapter 7 on the *Mafāḥiṣ*'s circles) and the rest of the Melvin-Koushki corpus. The page's claims about
+what the *Prologue* says are unchanged; where they concern the *Mafāḥiṣ*'s structure, the dissertation's Ch. 7 is the deeper source.

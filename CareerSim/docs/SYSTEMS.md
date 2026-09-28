@@ -23,7 +23,8 @@ the fiction demands entities.**
 (rumors → rival challenges → formal accusations → inquisition). Spending patron
 favor or reputation can *delay* its consequences but not reduce the meter.
 Ibn Turka's arc — survive two inquisitions, lose the third — is modeled by
-compounding, not resetting, risk.
+compounding, not resetting, risk. (Corrected 2026-09-27: "three trials" is Melvin-Koushki's phrase; his timeline dates the episodes
+c. 1422, 1426 and 1427, he wins Shāhrukh's favour in the first two and is broken in 1427; the mapping is the project's reading.)
 
 ### 1b. The four reputations (replacing any single "authority" meter)
 
@@ -134,7 +135,7 @@ question — *serve the office, the patron, the book, the students, or the netwo
 is the Career part of the Career Sim.
 
 Phase III branches FTL-style: the player commits to Iskandar (experimental, unstable,
-high upside — and historically doomed), Baysunghur (manuscript arts, prestige), or
+high upside — and historically doomed), Baysunghur (manuscript arts, prestige; a game choice: the sources make him addressee and commissioner from 1426, with no dated patronage), or
 Samarkand (mathematics, observatory, Yazdi synergy). The un-chosen courts continue to
 exist in CourtMemory and can reappear (Iskandar's fall reaches you wherever you are).
 
@@ -194,3 +195,10 @@ Synthesis graph UI (the cosmogram — capability counters stand in for it in sli
 composition workbench, New-Brethren-as-institution management, multi-run meta-legacy,
 research-pipeline auto-generation of atoms at scale. Architecture leaves room; slices
 earn them one at a time.
+
+## Corrections (2026-09-27)
+
+The spec's history now follows TurkaVita/docs/CORRECTIONS_BRIEF.md (dissertation pdf page = printed + 17): Iskandar Mīrzā rules
+Fars 1409, court at Isfahan 1412-14, falls 1414 (pdf 51-52); Bāysunghur is addressee/commissioner of the Suʾl al-Mulūk (before
+1426) and Nafsat II, governor from 1415, with no sourced patronage start (pdf 52, 69-70, 74); the trials are c. 1422, 1426, 1427
+(pdf 52-53, 70-75). The mechanics are unchanged. See README.md, Corrections (2026-09-27).

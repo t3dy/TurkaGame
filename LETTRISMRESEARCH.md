@@ -87,6 +87,15 @@ is that every ruleset carries an `interpretation_note` and
 13 lines). Four items: *Prologue to Pythagorean Renaissance*, *The Occult Court*
 (2025), *The Meanings of Islamic Magic*, *Dr Dee's Ottoman Adventure* (2021).
 
+**[Corrected 2026-09-27: those four are only what `research/library/` holds. The whole
+Melvin-Koushki corpus is held — 43 texts (40 PDFs in `research inbox/`, 3 on `E:\pdf`), ingested
+page by page in `TurkaVita/db/corpus.db` (and 43 converted `.md` copies in the portal). It includes his 2012 Yale
+dissertation, *The Quest for a Universal Science* (`SRC-610EE1D6BA`, the spine source for Ibn Turka's life),
+*Of Islamic Grammatology*, *Selenocentrism and Heliocentrism*, *The New Brethren of Purity*, *Ibn Turka's
+Pythagorean Sensorium*, *The Second Aristotle Turns Astro-Lettrist* and *Timurid-Mughal Philosopher-Kings*. Search it with
+`TurkaVita/scripts/search.py` and `find.py`; TurkaVita's artifacts are the page-cited digest. Where this file's
+sections say a Melvin-Koushki claim rests on the *Prologue* alone, check the dissertation first.]**
+
 **What he is to this project.** The reason it exists. He is the historian who
 put Ibn Turka on the map as a philosopher rather than a curiosity, and his
 framing — occult science as *mathematics*, lettrism as the science that
@@ -139,10 +148,13 @@ A translation-with-commentary of the prologue to Ibn Turka's *Mafāḥiṣ*
   India to Anatolia" (n. 26) — the lettrist-alchemist-geomancer whose inspiration
   let Ibn Turka dismiss all other sources. He "would refuse to bend the knee
   during his three inquisitions, despite the danger and punishing consequences"
-  (p. 8).
+  (p. 8) — **[corrected 2026-09-27: this is the *Prologue*'s uncited remark, to be recorded as
+  Melvin-Koushki's remark, not a finding; the dissertation shows defensive apologies to Shāhrukh (1426) and Bāysunghur
+  (c. 1429–32), "produced under great duress" (pdf 25, 74–79). Also: Akhlāṭī died in 1397 *during* Ibn Turka's years
+  in Cairo (c. 1393–1408); before that Ibn Turka had been at Temür's court in Samarkand from 1387.]**
 - **CORPUS, art history** The *Ṭahawī Cycle*, the *Mafāḥiṣ*'s central diagram, is
   "the first Modern lettrist version of the Tetractys" (p. 9). Plate: Tehran,
-  Majlis Library MS 10196 — f. 52b is the autograph opening, f. 63a the circle.
+  Majlis Library MS 10196 — f. 52b is the autograph opening, f. 63a the circle **[corrected 2026-09-27: the dissertation, elsewhere bracketing "[52b]", identifies ff. 52a and 118b as the autograph incipit and explicit, and the circle is §1.15 on ff. 63a–65a; which folio side is meant is unsettled in the sources, and only the incipit and explicit are established as autograph]**.
 - **CORPUS, downstream** The *Mafāḥiṣ* was a major source for **Mīr Dāmād**
   (d. 1631), and their combined force "fueled the astonishing transformation of
   Safavid New Isfahan into the world's first purpose-built Pythagoropolis,
@@ -589,10 +601,15 @@ words and always name the source in the same breath; longer paraphrase is fine.
    the source of nearly everything in §3; we are reading it entirely through its
    readers. Unblocking: install Tesseract, add an OCR fallback to
    `../IslamicateOccultPortal/scripts/convert_corpus.py`.
-2. **"Of Islamic Grammatology: Ibn Turka's Lettrist Metaphysics of Light,"**
-   *Al-ʿUṣūr al-Wusṭā* 24 (2016): 42–113. The deep dive on the *Mafāḥiṣ*. Cited
-   exactly; not held. Everything the project says about Ibn Turka's *technical*
-   lettrism is inference from the *Prologue*.
+2. ~~**"Of Islamic Grammatology: Ibn Turka's Lettrist Metaphysics of Light,"**
+   *Al-ʿUṣūr al-Wusṭā* 24 (2016): 42–113. Cited exactly; not held.~~ **Corrected 2026-09-27: it
+   is held** (portal `corpus/sources/melvin-koushki-of-islamic-grammatology.md`; ingested as
+   `SRC-BEA1D7D187`), together with the dissertation and the rest of the Melvin-Koushki corpus (43
+   texts; see §2). "Everything the project says about Ibn Turka's *technical* lettrism is inference from the
+   *Prologue*" is no longer true; the dissertation's Chapter 7 (the *Mafāḥiṣ*, including the Ṭahawī and Yāsīnī
+   circles) and *Of Islamic Grammatology* are the deeper sources. What is *still* not held: John Dee is a scan without
+   a text layer; no Timurid chronicles; no Persian editions of Ibn Turka's own works (the apologies are read through
+   Melvin-Koushki's summaries).
 3. **Ibn ʿArabī, *Futūḥāt* ch. 2** — the letters and the mansions in the Sufi
    line. Not held; the Sufi ruleset's motive rests on portal entries.
 4. **Idel, *Golem* (1990)** and Scholem on the golem. Read only through Segol.
@@ -626,3 +643,17 @@ words and always name the source in the same breath; longer paraphrase is fine.
 7. **Write findings down where they will be found.** A finding that lives only in
    a session transcript is lost: `grimoire/themes/` for the theme,
    `docs/DECISIONS.md` for the call, this file for the citation.
+
+---
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source:
+`TurkaVita/docs/CORRECTIONS_BRIEF.md`, rows 7, 9, 11; bracketed edits above mark each change):
+
+- §2 "On disk" and §8 item 2: *Of Islamic Grammatology*, *Selenocentrism and Heliocentrism* and the rest of the
+  Melvin-Koushki corpus **are held** (43 texts); the "not held" list is recomputed in §8 item 2.
+- §2.1 biography bullet: the "refuse to bend the knee" remark is the *Prologue*'s, uncited; the apologies are duress
+  documents. The Akhlāṭī bullet now carries his chronology (d. 1397, during the Cairo years; Samarkand from 1387).
+- The manuscript folio bullet: only the incipit and explicit of MS Majlis 10196's *Mafāḥiṣ* are established as autograph.
+- Not changed: the extraction table (§6) and per-source claims; no other biography fact in this file was wrong.

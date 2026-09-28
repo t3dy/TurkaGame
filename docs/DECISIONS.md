@@ -1525,3 +1525,64 @@ stand whole) that is a better mode than the one first written. The letternames
 needed for taksīr introduced two stated choices — the dropped hamza and the ALF
 spelling — and a structural check that every lettername begins with its own letter.
 
+
+
+## 2026-09-27 — The older documents are corrected to the dissertation (Ted's standing rule)
+
+**Decision.** Ted's standing rule (2026-09-27): **always correct older documents to match the most
+current information.** The current information about Ibn Turka's life and works is
+`TurkaVita/docs/TURKA_AUDIT.md`, backed by `TurkaVita/docs/BIOGRAPHY.md` and `OEUVRE.md` and the
+artifacts in `TurkaVita/research/artifacts/`; its spine is Melvin-Koushki's 2012 Yale dissertation
+(`SRC-610EE1D6BA`, pdf page = printed page + 17). The prose documents of this project outside
+TurkaVita, CareerSim, site/, portal/ and IslamicateOccultPortal were corrected accordingly, each with a
+`## Corrections (2026-09-27)` section (table: `TurkaVita/docs/CORRECTIONS_BRIEF.md`). The frozen v1
+games were **not** changed; their premises the corrected biography revises are recorded in
+`games/visual-novel/ERRATA.md`, pending Ted's decision.
+
+The corrections, by brief row:
+
+1. **Formation.** "Cairo c. 1385–1397" and "a whole life from Cairo 1385" are wrong: born Isfahan 770/1369;
+   Temür takes Isfahan 1387 and takes the family to Samarkand; leaves c. 1393; abroad c. 1393–1408; returns
+   c. 1408; Akhlāṭī (d. 1397) dies during the Cairo years (pdf 51–52, 62–69).
+2. **Bāysunghur.** "Second patron from c. 1416" has no source. Addressee and commissioner from 1426;
+   1414–c. 1422 is an attempted retirement (pdf 52–53, 69–70, 74).
+3. **Patrons.** Pīr-Muḥammad (c. 1408–9) then Iskandar Mīrzā; Iskandar's fall is 1414 (not 1415).
+4. **"1420, the pivot year."** The *Mafāḥiṣ* is 823/1420 (possibly a copy date; revised 1425); the
+   *Shaqq-i Qamar* is 829/1426; the observatory is context.
+5. **Three inquisitions.** "Exact years not established" is superseded: c. 1422, 1426, 1427, as **our
+   reading** of Melvin-Koushki's "three trials" (fn. 99), which he never lists in one place.
+6. **The seven tiers.** The "open research gap (5 of 7 unconfirmed)" is closed; all seven are on the page of
+   the *R. Shaqq-i Qamar* (pdf 332–334, 471–479).
+7. **Sources.** "Three source papers in hand", "*Of Islamic Grammatology* not held", "*Selenocentrism* not in
+   hand" are superseded: 43 Melvin-Koushki texts are held (the portal entry of 2026-08-31 already said so;
+   `BIOGRAPHY.md` and `RESEARCH_BRIEF.md` had not caught up).
+8. Birthplace (Isfahan, almost certainly); Yazdī and the autograph (a conflict between MK's own texts);
+   "royal boons" (that is ʿAlī Ṣafī's 1522 *Boon for the Khan*); "refused to bend the knee" (an uncited
+   remark in the *Prologue*, not a finding); the apologies as duress documents; Ibn Khaldūn's alleged
+   attempt (one paper's claim); Qāsim-i Anvār as a "Cairo companion" is kept but hedged (Melvin-Koushki's note, from Niʿmatullahi hagiography; flat in *The Occult Court*), and his expulsion is placed in the 1427 purge.
+
+**Superseded earlier entries** (old entries are not edited; read them with these notes):
+- "Open items flagged at kickoff, not yet resolved" (the 7-tier blocker, the "4th PDF") — superseded 2026-09-27
+  by items 6 and 7 above.
+- "CareerSim kickoff": "Run shape: life-phase sectors (Cairo → Isfahan → Courts branch → 1420 Pivot →
+  Trials)" and "the seven-tier-hierarchy blocker … still stands" — superseded 2026-09-27: the phase list
+  omits Samarkand and the "1420 Pivot" bundles separate events (items 1, 4); the blocker is closed (item 6).
+  CareerSim's own decisions log is authoritative for CareerSim.
+- The 2026-09-07 Tribunal entry's quotation that he "would refuse to bend the knee during his three
+  inquisitions" — that is the *Prologue*'s uncited remark (item 8); the dissertation's evidence is
+  defensive apologies. The Tribunal's design (refusal as a real outcome) does not depend on the remark
+  being a finding; TurkaVita's duress rule is the current treatment.
+
+**Rationale.** A canonical biography that the spine source contradicts poisons every game drawn from it;
+the audit (`TURKA_AUDIT.md` § A) found two outright errors in the seven-tier and 1420 claims and one
+unsupported date (1416). Where Melvin-Koushki's own texts disagree (audit § B, C) the documents now state
+the disagreement instead of resolving it.
+
+**Rejected.** (a) Rewriting the historical records (CONVO*.md, raw transcripts, this ledger's old entries).
+(b) Editing the frozen games to match. (c) Choosing between the dissertation and the 2025 papers silently
+(e.g. who commissioned the *Mafāḥiṣ*).
+
+**Consequence.** Older documents now agree with the artifacts. Open for Ted: whether the frozen VN should
+carry the Samarkand years and drop the "Bāysunghur from c. 1416" premise (see `games/visual-novel/ERRATA.md`),
+and whether to read the 2025 papers' claim that Iskandar commissioned the *Mafāḥiṣ* against the
+dissertation's silence.

@@ -288,3 +288,13 @@ without being told") and could reuse the *Mafāḥiṣ*'s order — Planet (ment
    only after the slice-1 audit (recommended, since the 2025 papers might disagree with the dissertation)?
 4. **Fetching a Persian edition of the apologies** if one can be found: permission needed per the
    download rule. Without it, the 1426 apology scene is built from MK's summary alone.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information): open question 3 of § 8
+("correct the drifted docs now, or only after the slice-1 audit") is **decided: now**. On 2026-09-27
+`docs/BIOGRAPHY.md`, `docs/RESEARCH_BRIEF.md`, `LETTRISMRESEARCH.md` § 8 and the other prose documents were
+corrected to the dissertation (`docs/DECISIONS.md`, 2026-09-27); "`docs/BIOGRAPHY.md` was built from the three shorter
+papers and never touched it" (§ 1 item 1) and the § 2 table are therefore now past tense: the documents it lists as
+drifted have been corrected. The frozen v1 visual novel's "Cairo-first" premises are recorded in
+`games/visual-novel/ERRATA.md`, not changed.

@@ -137,8 +137,7 @@ large to be entirely explained that way, and two patterns hold up on reading:
   entity). That inverts the guide's rule 2 — invented choices are supposed to "nest inside
   real historiographical framing", so they need *more* anchoring than attested ones, not
   less.
-- **Phase V's real people vanish.** Qāsim-i Anvār's 1427 exile over the same lettrist
-  associations is the emotional core of the trials, and Yazdī's copy is the one thread by
+- **Phase V's real people vanish.** Qāsim-i Anvār's 1427 expulsion from Herat in the same purge (suspected Ḥurūfī ties) is the emotional core of the trials, and Yazdī's copy is the one thread by
   which the work survives. Neither is named in most of the phase's situations, even though
   both are attested and both are already in the corpus's people registry.
 
@@ -181,3 +180,10 @@ the writing than any editing pass.
 - Option detail stays inside ~70 characters and names someone real. Keep it.
 - **Do not** re-flag mixed voice in situations — checked 2026-08-31, every "he" is a third
   party (§2).
+
+## Corrections (2026-09-27)
+
+The Phase V remark above now reads "the same purge" rather than "the same lettrist associations" (dissertation pdf 73; CL-0078, CL-0110).
+Prose changes made in this pass are limited to date claims, labels and source strings: Phase I premise (Yazdī came with him from
+Samarkand, so "another Persian at the dials" is no longer a first meeting), the Phase IV seven-tier situation, and the road_home
+compression of the years abroad. The corpus-level scores above were not re-measured.

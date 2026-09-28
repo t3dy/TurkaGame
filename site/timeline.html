@@ -64,7 +64,7 @@
 </header>
 <main class="wide">
   <h1>Timeline</h1>
-  <p class="subtitle">50 dated events, 950–2025</p>
+  <p class="subtitle" id="tl-subtitle">Dated events, 950–2025</p>
 
   <div class="timeline-intro">
     <p>
@@ -76,6 +76,12 @@
       European Renaissance magi</strong> &mdash; not documented direct contact
       (there was none), but the explicit comparisons Matthew Melvin-Koushki draws
       to Cusa, Pico, Bruno, and Dee, plus surrounding context.
+    </p>
+    <p>
+      The biographical dates follow Matthew Melvin-Koushki&rsquo;s 2012 Yale
+      dissertation: a &ldquo;c.&rdquo; marks an approximate or conjectured date, and a
+      colophon date may record the copying of a text rather than its composition.
+      Where his later papers disagree with the dissertation, the entry says so.
     </p>
     <p>
       Every event is tagged with how well-grounded it is &mdash; see the legend at
@@ -169,7 +175,12 @@ function render() {
 
 fetch('data/timeline.json')
   .then(r => r.json())
-  .then(data => { EVENTS = data.slice().sort((a, b) => a.year_start - b.year_start); render(); })
+  .then(data => {
+    EVENTS = data.slice().sort((a, b) => a.year_start - b.year_start);
+    const first = EVENTS[0].year_start, last = EVENTS[EVENTS.length - 1].year_start;
+    document.getElementById('tl-subtitle').textContent = `${EVENTS.length} dated events, ${first}–${last}`;
+    render();
+  })
   .catch(err => {
     document.getElementById('tl').textContent = 'Could not load timeline data: ' + err.message;
   });

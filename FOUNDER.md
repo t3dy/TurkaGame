@@ -20,8 +20,8 @@ The historical sequence, grounded in the corpus:
 
 | Patron | What he gave | How it ended |
 |---|---|---|
-| **Iskandar Sulṭān** (1384–1415) | Commissioned *Of Letters*; the *Kitāb al-Mafāḥiṣ* was begun "almost certainly at his instance" (*Of Islamic Grammatology*, 66) | Rebelled against Shāhrukh; defeated, blinded, killed 1415. The commission became a liability. |
-| **Shāhrukh / Bāysunghur** | A place at court; Ibn Turka was close to Bāysunghur in particular (*The Quest*, 136) | **Exiled from Herat, 1427**, with Qāsim-i Anvār — official excuse, a putative Ḥurūfī connection (*The Quest*, 456 n.16) |
+| **Iskandar Sulṭān** (1384–1414) | *Of Letters* (*R. Ḥurūf*, 1414) "perhaps" for him (the dissertation's own query; the 2025 papers say flatly that he commissioned it); the *Kitāb al-Mafāḥiṣ* begun "almost certainly at his instance" (*Of Islamic Grammatology*, 66) — **a claim of the 2025 papers, not of the dissertation, which names no patron for it** | Rebelled against Shāhrukh; defeated, blinded, later killed (817/1414; one CE conversion prints 1415). His earlier attachment became a liability. |
+| **Shāhrukh / Bāysunghur** | A place at court; Ibn Turka was close to Bāysunghur in particular (*The Quest*, 136). **No source dates the start of a Bāysunghur patronage**: he is addressee and commissioner from 1426 | **Purged from Herat, 1427, and exiled**, with Qāsim-i Anvār — official excuse, a putative Ḥurūfī connection (*The Quest*, 456 n.16) |
 | **Ulugh Beg** (1394–1449) | *al-sulṭān al-faylasūf* — the philosopher-sultan; founder of the Samarkand Observatory, 1420 | **Never consummated.** Ibn Turka dies 1432; Ulugh Beg is killed 1449. |
 
 The point is not that Samarkand was one option among several. It is that Samarkand was
@@ -32,14 +32,15 @@ that the occult sciences were moved *out of the natural sciences and into the
 mathematical sciences* to reassert their legitimacy, and that this mathematicalization is
 "the immediate intellectual and sociopolitical context for … the celebrated mathematization
 of astronomy by the members of the Samarkand Observatory" (*Powers of One*, 1). The
-observatory and the *Mafāḥiṣ* were **begun in the same year, 1420**, a few hundred miles
-apart, by two men acting on one conviction: that a science earns its standing by becoming
+observatory was **begun in 1420** and the *Mafāḥiṣ* carries its colophon date **823/1420** in the same year
+(a date that may record copying rather than composition, and the work was revised in 1425; on the 2025 papers'
+account it was begun earlier, after *Of Letters*), a few hundred miles apart, by two men acting on one conviction: that a science earns its standing by becoming
 mathematical.
 
 He also names the pairing directly: "the model established by Iskandar Sulṭān and Ulugh
 Beg" is what ensured astronomy-astrology and lettrism *in particular* would go on being
 patronised by later Timurid, Indo-Timurid, Safavid and Ottoman courts
-(*Philosopher-Kings as Sultan-Scientists*, 599). **Ibn Turka's first patron and his
+(*Philosopher-Kings as Sultan-Scientists*, 599). **Ibn Turka's first patron (the later papers' label; the dissertation has Pīr-Muḥammad of Shiraz first, c. 1408–9) and his
 would-be last are the two poles of the model that outlived them both.**
 
 The tragedy has a coda worth using: Shāhjahān's *Zīj-i Shāhjahānī* updated Ulugh Beg's
@@ -69,7 +70,7 @@ Portal now builds to 56 pages.
 - `zij-i-sultani` and `munshaat-i-sain-i-turka` (his letter collection — a major
   biographical source I have no text entry for).
 - `baysunghur` and `shahrukh` as figures; the patron triad is currently missing its middle.
-- `qasim-i-anvar` — co-exile of 1427, Cairo associate, Ṣafaviyya propagandist.
+- `qasim-i-anvar` — co-exile of 1427 (expelled from Herat in the same purge), friend and correspondent of Ibn Turka, a Cairo companion per Melvin-Koushki's note (hagiographic in origin, dissertation pdf 32, 68; flat in *The Occult Court*), Ṣafaviyya propagandist.
 - `hurufism` — the heresy he had to be distinguished from. The dissertation's distinction
   is by **motive**: Ḥurūfīs proclaim a new dispensation; messianic Sufis promote themselves
   as saviours; *lettrists present themselves as occult philosophers working within the
@@ -139,9 +140,10 @@ falling. This one is just time running out.
 
 `phase4.js` already opens with "Everything converges in one year. Ulugh Beg breaks ground
 on the Samarkand observatory." Strengthen it: the player is **finishing the *Mafāḥiṣ*
-in the same year** (completed 823/1420). Make the sim state that explicitly — two
-foundations laid in one year, one in stone and one on paper. It is true, it is
-documented, and it is the thesis of the whole portal rendered as a single game beat.
+in the same year** (colophon dated 823/1420, a date the manuscript's own marginal correction says refers to
+copying; revised 1425). Make the sim state that explicitly and honestly — an observatory founded and a summa
+dated in one year, one in stone and one on paper, without claiming the summa was written in that year. The
+convergence itself is documented and it is the thesis of the whole portal rendered as a single game beat.
 
 ### 3.5 Proposal D — the two-hundred-year coda
 
@@ -274,3 +276,20 @@ commission a replacement for B.
 4. **Visual system** — phase palette ramp in CSS (§4.2), arch-mask portrait frame (§4.3).
 5. **Assets** — only after rights are settled per §5.
 
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source:
+`TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`, dissertation `SRC-610EE1D6BA`, pdf = printed + 17):
+
+- Iskandar's death: 1414 (817 AH; one CE conversion prints 1415), not 1415 (row 3).
+- The *Mafāḥiṣ*-for-Iskandar commission is a claim of the 2025 papers; the dissertation names no patron, and *R. Ḥurūf*
+  is only "perhaps" for him (TURKA_AUDIT § B). Iskandar was dead by 1420. Marked, not resolved.
+- "Iskandar = first patron": the dissertation names Pīr-Muḥammad (c. 1408–9) before Iskandar (row 3). "Would-be third
+  patron" is Melvin-Koushki's own phrase to Ted; on the pages read no letter is addressed to Ulugh Beg himself (the
+  link is a marginal dedication on the *Sharḥ al-Basmala* and a copy sent to Qāżīzāda, director of the observatory).
+- "Observatory and *Mafāḥiṣ* begun in the same year, 1420": the observatory, yes (context); the *Mafāḥiṣ*'s 1420 is a
+  colophon date that may record copying (row 4). The "1420 convergence beat" (§3.4) is kept but reworded.
+- Bāysunghur: no dated patronage; the letters show a close relationship (row 2).
+- Qāsim-i Anvār "Cairo associate": kept, with the hedge that it is a Niʿmatullahi hagiographic tradition (see `docs/BIOGRAPHY.md`).
+- Not changed: the portal entries listed in §2 are owned by the portal's own corrector; the `career.js` "three-patron
+  spine" belongs to `CareerSim/` (`patron=baysunghur` line should be revisited there).

@@ -79,3 +79,26 @@ European Scientific Revolution story.
   career-sim's late-game crisis event.
 - The Ṭahawī Circle (MS 10196, f. 63a) and the *Mafāḥiṣ* autograph opening (ff. 52a–56a)
   are concrete, citable manuscript targets for the first curated asset.
+
+## Addendum 2026-09-27
+
+This note summarises the *Prologue* as first read, and is left as written (it records what that paper says). Since then Melvin-Koushki's 2012
+dissertation (`SRC-610EE1D6BA`) and the rest of his corpus (43 texts) have been ingested (`TurkaVita/db/corpus.db`); "not in hand" below is
+superseded. Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`),
+where this note states something the dissertation revises:
+
+- **"Selenocentrism and Heliocentrism (not in hand)" and the seven tiers**: the paper is held, and the tiers are on the page of the *R. Shaqq-i Qamar*
+  (Q 54:1): (1) jurists and traditionists, (2) dialectical theologians, (3) peripatetic philosophers, (4) illuminationists, (5) verifying mystics of
+  Ibn ʿArabī's school, (6) lettrists, (7) ʿAlī and the Imams ("not entirely what it seems"; dissertation pdf 332–334, 471–479). The *Prologue*'s "lettrism at the
+  top" is a difference between Melvin-Koushki's texts.
+- **Patrons**: "Iskandar Sultan first, then Bāysunghur" is the *Prologue*'s. The dissertation has Pīr-Muḥammad (c. 1408–9) before Iskandar Mīrzā, and
+  no source dates a Bāysunghur patronage (addressee and commissioner from 1426; 1414–c. 1422 is an attempted retirement).
+- **"1420" and the observatory**: 823/1420 is the *Mafāḥiṣ*'s colophon date and may record copying (revised 1425); the *Shaqq-i Qamar* is 829/1426; the
+  observatory is context.
+- **Yazdī "likely copied" ff. 52a–56a**: the *Prologue* says "almost certainly" Yazdī's hand; the dissertation has autograph at ff. 52a and 118b only and a note that
+  Yazdī checked the copy and attended teaching (f. 119a). MK's own texts differ; unresolved. The Ṭahawī Circle is on ff. 63a–65a (§1.15).
+- **"Three inquisitions", "won the first two", "refuse to bend the knee"**: "three trials" is the dissertation's phrase (fn. 99), never listed together; on our reading
+  c. 1422, 1426, 1427. The "refuse to bend the knee" remark is uncited here; the dissertation shows defensive apologies under duress.
+- **"Cairo companion Qāsim-i Anvār"** (this note): the *Prologue* text, as searched, does not name him; the claim is in *The Occult Court* n. 24 and a dissertation note
+  (pdf 32) citing Niʿmatullahi hagiography. He was expelled from Herat in the 1427 purge (the third trial).
+- **Life before Cairo**: born Isfahan 770/1369; Samarkand from 1387; Cairo from c. 1393; back in Isfahan c. 1408 (abroad c. 1393–1408). Akhlāṭī died in 1397, during those years.

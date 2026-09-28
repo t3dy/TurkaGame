@@ -30,8 +30,8 @@ Persona: [NARRATIVEDESIGNER.md](../NARRATIVEDESIGNER.md).
 4. **Astrology is court service, and it is Selenocentric.** The applied layer is
    built (muwaqqit chain, `court_dynasty`, `court_razm_date`, `zij_contribution`);
    the unmined identity is the Moon — "Letters are Moons," ʿAlī-as-Moon (*Prologue*)
-   — and the standing rule holds: the seven-tier hierarchy lives in a paper we do
-   not hold; do not invent it (ASTROLOGY.md).
+   — and ~~the standing rule holds: the seven-tier hierarchy lives in a paper we do
+   not hold; do not invent it~~ **[superseded 2026-09-27: it is held and sourced; see the Corrections section and ASTROLOGY.md]**.
 5. **Geomancy is the exile science.** No instruments, no library, no patron — and
    defended in writing by the period's most rigorous mathematician-historian
    (Yazdī contra Ibn Khaldūn, held excerpt). It is also the game's most under-read
@@ -91,8 +91,8 @@ mansions, moonsighting (barāʿat al-istihlāl *is* a moonsighting), conjunction
 apogee — never generic zodiac furniture. One retitle makes it concrete: the
 nativity encounters' glosses should read position from the mansion of the Moon, and
 any ʿAlī-adjacent lettrist beat may key to the Moon (*Prologue*'s "Letters are
-Moons") — with the seal citing the page. The seven tiers stay unbuilt until the
-Selenocentrism paper is acquired; a gap named is better than a hierarchy faked.
+Moons") — with the seal citing the page. ~~The seven tiers stay unbuilt until the
+Selenocentrism paper is acquired~~ **[superseded 2026-09-27: acquired; the tiers are now buildable from the *Shaqq-i Qamar*, with the meaning of level seven marked as MK's inference]**; a gap named is better than a hierarchy faked.
 
 ## Anti-patterns (the research forbids)
 
@@ -104,7 +104,7 @@ Selenocentrism paper is acquired; a gap named is better than a hierarchy faked.
   writing; mockery in-world belongs to the Khaldūn-voice, and the game should let
   Yazdī answer him.
 - Inventing the seven-tier hierarchy, or any structure whose source is a paper we
-  do not hold. Acquire, then build (the standing rule, restated because it binds).
+  do not hold. Acquire, then build (the standing rule, restated because it binds). **[2026-09-27: the hierarchy is no longer invented; it is sourced. The rule about sources not held stands.]**
 - A talisman without its three parameters (commission, materials, conjunction).
   Loot is forbidden.
 
@@ -114,3 +114,10 @@ Selenocentrism paper is acquired; a gap named is better than a hierarchy faked.
 - [[SELENOCENTRISM.md]] — page to write the day the *Al-ʿUṣūr al-Wusṭā* 33 (2025) paper is acquired
 - [[TAKSIRPUZZLE.md]] — the full puzzle-UI version of D2, shared with Letter Machine (v1) and v2's reckoner
 - [[KHALDUN.md]] — the principled anti-occultist as recurring antagonist-of-ideas (GEOMANCY.md seeds him)
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`; dissertation `SRC-610EE1D6BA`, pdf = printed + 17):
+
+The seven-tier hierarchy is sourced (row 6; listed in `themes/ASTROLOGY.md`'s Corrections section), and the *Selenocentrism* paper is held (row 7). The reading's design points otherwise stand;
+the "unbuilt until acquired" note is now a build opportunity, not a block.

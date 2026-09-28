@@ -9,8 +9,9 @@
 // Refusing is not a worse kind of losing: it leaves the charge unproven and the
 // record clean, and it costs standing. Melvin-Koushki records that Ibn Turka
 // "would refuse to bend the knee during his three inquisitions, despite the
-// danger and punishing consequences" — so a game about him where refusal is
-// merely defeat would be lying about the one thing we know he chose.
+// danger and punishing consequences" (an uncited remark; the 2012 dissertation shows him
+// answering, in two apologies written under duress). The sources differ, so refusal is
+// a real outcome here and not a claim about what he did (docs/DECISIONS.md, 2026-09-27).
 //
 // Every court is NAMED here, unlike the Descent, where the metaphysics is hidden.
 // This mode asks a different question: not "whose rules am I under" but "what

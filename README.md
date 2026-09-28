@@ -21,7 +21,7 @@
 ### Play
 | | |
 |---|---|
-| **[Ibn Turka: The Occult Court](https://t3dy.github.io/TurkaGame/CareerSim/)** | Career roguelike — a whole life in five phases, 70 grounded encounters, obligations and patron contracts, compounding exposure, a two-axis ending. **Current build.** |
+| **[Ibn Turka: The Occult Court](https://t3dy.github.io/TurkaGame/CareerSim/)** | Career roguelike — a whole life in five phases, 71 grounded encounters, obligations and patron contracts, compounding exposure, a two-axis ending. **Current build.** |
 | **[The Visual Novel](https://t3dy.github.io/TurkaGame/games/visual-novel/)** | 40 branching life-choices across 8 acts, the Occult Quintet skill tree, 8 endings. Version 3. |
 
 ### Read
@@ -88,7 +88,8 @@ playable side by side rather than being overwritten.
 ## Research grounding
 
 Nothing here is invented fantasy dressing. [docs/RESEARCH_BRIEF.md](docs/RESEARCH_BRIEF.md)
-synthesizes three papers by Matthew Melvin-Koushki (University of South Carolina),
+synthesizes three papers by Matthew Melvin-Koushki (University of South Carolina; corrected
+2026-09-27 against his 2012 Yale dissertation, and the whole 43-text corpus is now held),
 the leading scholar of Ibn Turka and the Islamicate occult sciences. A sibling
 project, **IslamicateOccultPortal** (local only, not yet on GitHub), is the broader
 digital-humanities research home this game draws from — lettrism, the Brethren of
@@ -158,3 +159,15 @@ Manuscript images are used under the rights terms recorded per-image in
 `assets/manuscripts/registry.json` (mostly public domain / Creative Commons via
 Wikimedia Commons and Princeton University Library). The two pitch-overview images
 in `site/images/` are concept art for this project, not manuscript reproductions.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source:
+`TurkaVita/docs/CORRECTIONS_BRIEF.md`):
+
+- "Synthesizes three papers" reworded: the research brief and `docs/BIOGRAPHY.md` were first built from three papers and
+  are now corrected to the 2012 dissertation; the whole Melvin-Koushki corpus (43 texts) is held.
+- The life this README's links describe (`docs/BIOGRAPHY.md`) now reads: born Isfahan 1369; Samarkand from 1387; Cairo from
+  c. 1393; back in Isfahan c. 1408; the courts of Fars; three trials (c. 1422 / 1426 / 1427, our reading); exile; died in Herat 1432.
+  "Chief Judge of Isfahan" is the later papers' label (see `docs/BIOGRAPHY.md` Vitals).
+- The playable v3 visual novel is frozen and still carries the older premises: `games/visual-novel/ERRATA.md`.

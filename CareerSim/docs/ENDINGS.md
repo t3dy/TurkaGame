@@ -135,13 +135,13 @@ run-conditional response — the counterfactual made explicit:
 
 | The record says | Your run answers with |
 |---|---|
-| He studied in Cairo under Akhlāṭī | whether you entered the circle |
+| Taken to Samarkand in 1387, abroad c. 1393-1408; studied in Cairo under Akhlāṭī | whether you entered the circle |
 | He was Chief Judge of Isfahan, defender of the weak | whether you took the bench, and how you ruled |
-| He completed *Investigations* in 1420 | whether your summa exists at all |
+| *Investigations* (the Mafāḥiṣ) is dated 823/1420 (a colophon date), revised 1425 | whether your summa exists at all |
 | The Ṭahawī Circle survives in his own hand (Majlis MS 10196, f. 63a) | whether you drew it |
-| Three inquisitions: won two, lost the third, c. 1427 | your tribunal record against his |
-| Qāsim-i Anvār exiled 1427 over the same associations | whether you stood by him |
-| Died 1432, impoverished, in legal limbo; Yazdī's copy carried the work | whether your Yazdī holds a copy |
+| Three trials (MK's phrase; c. 1422, 1426, 1427): favour won twice, broken in 1427 | your tribunal record against his |
+| Qāsim-i Anvār expelled from Herat in the 1427 purge, over suspected Ḥurūfī ties | whether you stood by him |
+| Died 1432, impoverished, in legal limbo; Yazdī checked a copy of the autograph and attended its teaching | whether your Yazdī holds a copy |
 
 This is the single most educational surface in the game (AUDIT.md §3.3 called its
 absence "the highest-value educational feature the game lacked"). It also travels into
@@ -229,3 +229,11 @@ mode and confirm that high system-fates still co-occur with costly man-fates.
   the third tribunal at typical exposure lands on the attested fate.*
 - **Frequencies in this file go stale** the moment content changes. They are a
   snapshot, dated in the header; regenerate before citing them anywhere else.
+
+## Corrections (2026-09-27)
+
+The five table rows in section 5 were rewritten to match `src/engine/career.js` `attestedRows`, which now follows the dissertation
+(pdf 51-52 Samarkand 1387 / abroad c. 1393-1408; pdf 52, 99 the Mafāḥiṣ date 823/1420, a colophon date; pdf 52-53, 70-75 the trials
+c. 1422/1426/1427; pdf 73 the 1427 purge; pdf 95, 97, 116 Yazdī checked the copy and attended teaching, while MK's Prologue calls the
+hand of ff. 52a-56a "almost certainly" Yazdī's, unresolved). No ending, fate or tuning figure changed. Older tuning-history entries
+above are left as written.

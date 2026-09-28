@@ -1,11 +1,14 @@
-// phase2.js — Phase II: Isfahan, The Judge's City (c. 1397–1409).
+// phase2.js — Phase II: Isfahan, The Judge's City (c. 1408–1412).
+// CORRECTED 2026-09-27 (CORRECTIONS_BRIEF #1, #3): this phase was dated "c. 1397–1409", which assumed the Cairo years ended with
+// Akhlāṭī's death in 1397. The dissertation (pdf 51) has the return to Isfahan c. 1408 (perhaps 1408–9), a spell at Pīr-Muḥammad's court
+// in Shiraz c. 1408–9 (he was murdered 1409; not staged in the game), then Iskandar Mīrzā's court, Isfahan, from 1409/12.
 // The phase where the career acquires a day job. The judgeship is honorable, real,
 // and a permanent tax on the life's work — that competition IS this phase.
 
 export const PHASE = {
   id: 2,
   name: 'ISFAHAN — THE JUDGE’S CITY',
-  dateline: 'c. 1397–1409',
+  dateline: 'c. 1408–1412',
   time: 8,
   intro:
     'Home. The Turka family has held judicial office in Isfahan for generations, and the office is waiting for you — ' +
@@ -683,11 +686,11 @@ export const ENCOUNTERS = {
     id: 'isfahan_departure', phase: 2,
     rubric: 'THE SUMMONS · A PRINCE SENDS FOR YOU',
     grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — attachment to Iskandar Sultan’s court c. 1409',
+    source: 'Dissertation pdf 51–52 (timeline): Iskandar Mīrzā rules Fars from 1409; Ibn Turka is a member of / attached to his court, with a court at Isfahan c. 1412–14 and the qadi post marked "(?)" by MK. Corrected 2026-09-27: "c. 1409" is the start of Iskandar’s rule, not a sourced date of attachment',
     affordances: ['royal_summons'],
     situation:
       'A courier in Timurid livery, a sealed letter, and an invitation that is not really one: Iskandar Sultan, ' +
-      'prince and governor of Fars, has heard there is a judge in Isfahan who reads more than law. The Isfahan years end here.',
+      'prince and, from 1409, ruler of Fars, has heard there is a judge in Isfahan who reads more than law. The Isfahan years end here.',
     options: [
       {
         id: 'go_eager', label: 'Go, and bring the whole apparatus',

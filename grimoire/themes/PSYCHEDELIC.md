@@ -67,3 +67,8 @@ Knowledge* (Brill, 2025) · Gruber, "The Miʿrājnāma's Afterlife" (2021) · Da
 Weirdness* (MIT, 2019) · ⚠ MK, "Of Islamic Grammatology: Ibn Turka's Lettrist
 Metaphysics of Light," *Al-ʿUṣūr al-Wusṭā* 24 (2016): 42–113 (the ontogrammatology
 source; citation exact, text not held).
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`; dissertation `SRC-610EE1D6BA`, pdf = printed + 17) (row 7, source situation only): "Of Islamic Grammatology" (text not held) is now held (`SRC-BEA1D7D187`); the whole Melvin-Koushki corpus is held (43 texts). The page's claims are unchanged; they were grounded on the texts then held.
+The forthcoming *The Occult Science of Empire in Aqquyunlu-Safavid Iran* (where cited) is not held. This page states no biography fact that the corrections revise.

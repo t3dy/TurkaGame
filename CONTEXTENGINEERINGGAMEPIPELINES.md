@@ -306,3 +306,7 @@ Before starting a task, in order:
 - [docs/DECISIONS.md](docs/DECISIONS.md) — the decision log
 - [games/visual-novel/WRITING_GUIDE.md](games/visual-novel/WRITING_GUIDE.md) — the prose constraint §5 is about
 - `../IslamicateOccultPortal/CLAUDE.md` — the upstream research repo and its image catalog
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`): the illustrative "Ibn Turka's chief-judgeship in Isfahan is loadbearing" (§ on where a weaker model fails) is the later papers' label; the dissertation has the Isfahan qadiship as a family office and the Yazd judgeship (c. 1422) as his own. The point about specificity stands; check `docs/BIOGRAPHY.md` Vitals before naming the office in a scene.

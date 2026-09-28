@@ -39,3 +39,12 @@ taken at the plan's recommended default and **flagged as assumed**, so Ted can o
 12. **Port 7560, launch config `turkavita`** (in `C:\Dev\.claude\launch.json`).
 13. **Quotations are enforced by the build**: a quoted span of five or more words in an evidence artifact
     must appear on the cited page; none may exceed 40 words. Printed page is checked against the running head.
+
+## 2026-09-28: Ted's standing rule on corrections
+
+14. **Always correct older documents to match the most current information.** Ted (2026-09-27, after the game was live): "continue. always correct older documents to match the most current information."
+    **Supersedes decision 5** (older documents were held until Ted saw the audit). The corrections were made on 2026-09-28 across `TurkaGame/`, `IslamicateOccultPortal/`, the wiki and the workspace files, to the table in `docs/CORRECTIONS_BRIEF.md`; each document carries a "Corrections (2026-09-27)" section or a dated entry. Saved to memory as `feedback-correct-older-docs`.
+    **Why:** an audit that lists errors and leaves them in the documents means the next session reads the wrong picture.
+    **What it does not override:** `games/FROZEN.md` (game code and data stay as they are; their documents are corrected and `games/visual-novel/ERRATA.md` lists the premises), archived version snapshots, raw conversation transcripts, and already-published witnesses.
+15. **Where a live app's content states something the sources do not, correct the text, keep the mechanics.** The Tribunal's refusal outcome stays (the *Prologue* says he refused), but it is no longer presented as "what he actually did": the dissertation shows two apologies. CareerSim's phase labels and source strings are corrected; its encounter ids, effects and gates are unchanged.
+

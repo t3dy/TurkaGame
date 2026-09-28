@@ -161,8 +161,8 @@ accurate):
   agriculture — as bazm/razm content, paraphrased per the research note's caution.
 - VN choices **c11–c40**: only acts 1–2 were converted.
 - The **ascent–descent–ascent** journey structure and "form is content".
-- **Still blocked**: the seven-tier epistemic hierarchy, pending
-  "Selenocentrism and Heliocentrism". Do not invent the missing tiers — standing rule.
+- **No longer blocked (corrected 2026-09-27)**: the seven-tier epistemic hierarchy. All seven tiers are known and
+  encounters may use them: (1) jurists and traditionists; (2) dialectical theologians; (3) peripatetic philosophers; (4) illuminationists; (5) verifying mystics of the Ibn ʿArabī school; (6) lettrists; (7) ʿAlī and the Imams (level seven "not entirely what it seems", pdf 332-334, 471-479). Source: R. Shaqq-i Qamar on Q 54:1 (claims CL-0500..0525); `pivot_wafq` already states them.
 
 **By register.** The corpus is strongest in the sober-institutional mode and thinnest in
 comedy; the *bazm* material added last session is the only comic register in the game, and
@@ -199,3 +199,10 @@ Do not call any of this done on the strength of a diff. Run both harnesses:
 
 Each is one command. A claim in this file that is not backed by one of them should be
 treated as a guess.
+
+## Corrections (2026-09-27)
+
+The seven-tier "still blocked" item is closed (above). Phase names in this file's tables (P1 Cairo, P4 Pivot) are the measurement
+labels of the time; the phases are now "Cairo and the road, c. 1393-1408" and "The Summa, c. 1420" (ids unchanged). "The
+Bāysunghur Qurʾan as a full encounter" should be authored as a work of the manuscript court, without asserting a dated patronage of
+Ibn Turka by him (pdf 52, 69-70, 74).

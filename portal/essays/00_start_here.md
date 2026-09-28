@@ -94,21 +94,18 @@ was doing the same thing in the Ottoman lands. They had the same teacher.
 
 ## The life, briefly
 
-**Isfahan, 1369.** Born into a scholarly family with a judgeship in it. He studied under his
-elder brother Ṣadr al-Dīn for **twenty-five years** — alongside a fellow pupil named
-Qāḍīzāda Rūmī, who would grow up to run Ulugh Beg's observatory at Samarkand. Their teacher
+**Isfahan, 1369; Samarkand, 1387.** Born, almost certainly in Isfahan, into a scholarly family with a judgeship in it (the year is worked back from his own stated age of 59 in an apology of 1426). In 1387 Temür took Isfahan and massacred most of its people but spared the Turka family, taking it to his court at Samarkand, where his elder brother Ṣadr al-Dīn was made judge. Ibn Turka, a teenager, studied under that brother for what the dissertation calls the first **twenty-five years** of his life — alongside a fellow pupil named Qāḍīzāda Rūmī, who would grow up to run Ulugh Beg's observatory at Samarkand. Their teacher
 taught only the outward sciences, considering it **too dangerous to delve into esoteric
 matters in public**. Both students went on to spend their lives making hidden things
 calculable, one through the stars and one through the letters.
 
-**Cairo, 1393–1408.** Fifteen years abroad, arriving with a companion — Sharaf al-Dīn Yazdī,
-who would remain his disciple and closest friend for the rest of his life. He trained in
+**Cairo, c. 1393–1408.** About fifteen years abroad (the dates are conjectural), leaving Samarkand at his brother's insistence, with a companion — Sharaf al-Dīn Yazdī, said to have travelled with him and who would remain his disciple and closest friend for the rest of his life. He trained in
 law under a first-rank Shāfiʿī authority, and in the occult sciences under **Sayyid Ḥusayn
-Akhlātī**, personal physician-alchemist to the Mamluk sultan. Ibn Turka became one of that
+Akhlātī**, personal physician-alchemist to the Mamluk sultan. Akhlātī died in 1397, so the two overlapped for at most about four years. Ibn Turka became one of that
 sultan's courtiers. He also, the sources say, made **mortal enemies at court** — decades
 before they mattered.
 
-**Isfahan, 1409–1414.** Home, and into the service of Iskandar Sulṭān, Tīmūr's grandson: the
+**Isfahan and Shiraz, c. 1408–1414.** Home, and after a brief attachment to the court of Pīr-Muḥammad at Shiraz (murdered in 1409), into the court of his brother Iskandar Sulṭān, Tīmūr's grandson: the
 leading cultural patron of the age, interested in alchemy and astrology, and — historians
 now argue — **the first early modern absolutist sovereign**, running an eschatological
 theory of his own authority against his uncle Shāhrukh's conservative, juridical one. Ibn
@@ -117,23 +114,21 @@ Turka's science was staff work for the first programme and had no place in the s
 In 1414 Shāhrukh destroyed Iskandar: captured, blinded, later executed.
 
 **1414–1422.** Eight years attempting to retire from public life. It is the most productive
-stretch of his career. In **1420** he finished the *Kitāb al-Mafāḥiṣ*, the Book of Inquiries
-— **the first Arabic summa of Islamic neopythagoreanism**. Ulugh Beg broke ground on the
-Samarkand observatory the same year: two foundations laid twelve months apart by men working
-the same conviction, one in stone and one on paper.
+stretch of his career. The *Kitāb al-Mafāḥiṣ*, the Book of Inquiries
+— **the first Arabic summa of Islamic neopythagoreanism** — carries a colophon date of **1420** (a date the manuscript itself says may refer to copying, and which was revised and expanded in 1425). Later papers pair it with Ulugh Beg's founding of the Samarkand observatory in the same year — one foundation in stone and one on paper; the dissertation does not draw that parallel.
 
-**1422.** Rivals denounce him at Herat for *Sufi bias*. He travels there, answers in person,
-**wins**, and is given a second judgeship. It is the most impressive thing he ever did.
+**c. 1422.** Rivals denounce him at Herat for *Sufi bias*. He travels there, answers in person, **wins**, is offered Isfahan and chooses Yazd, where he is given the judgeship. It is the most impressive thing he ever did.
 
-**1427.** Expelled from Herat anyway — not for anything he wrote, but for the company he
-kept, under a charge of association with the Ḥurūfīs, a messianic letter-movement whose
+**1426.** Enemies in Yazd send a delegation to Herat, citing a youthful verse praising ʿAlī. Summoned again, he answers with an apology and a creed and regains the ruler's favour. (Melvin-Koushki writes of "three trials" without listing them; reading c. 1422, 1426 and 1427 as the three is this portal's inference.)
+
+**1427.** After a Ḥurūfī tried to kill the ruler outside the Herat mosque, Ibn Turka was recalled, stripped of position and property, tortured, imprisoned and exiled — not for anything he wrote, but on suspicion by association with the Ḥurūfīs, a messianic letter-movement whose
 founder the ruling family had executed.
 
-**1429–1432.** A refused hearing. A winter at Natanz. A promise of reinstatement, obtained
+**c. 1429–1432.** A refused hearing at Simnan. A winter at Natanz. A promise of reinstatement, obtained
 at last in a military camp. Then nine months in the capital, attending court weekly, waiting
 for the promise to become an order.
 
-It never did.
+It never did. He died at Herat on 12 August 1432.
 
 ---
 
@@ -163,13 +158,13 @@ was not there.
 ## What this portal is, and how to read it
 
 It is a reading of one scholar's research: **Matthew Melvin-Koushki**, whose work on Ibn
-Turka and the Islamicate occult sciences is what makes any of this sayable. Forty-four of
-his articles and his Yale dissertation sit behind these pages. Nothing here supersedes them;
+Turka and the Islamicate occult sciences is what makes any of this sayable. Forty-three of
+his texts, his Yale dissertation among them, sit behind these pages. Nothing here supersedes them;
 this organises them around one man.
 
 Three ways in:
 
-**The [[chronology|Chronology]]** — forty-seven dated events, each with a full account, from
+**The [[chronology|Chronology]]** — fifty dated events, each with a full account, from
 a celestial conjunction in 1365 to a death at Herat in 1432. If you want the life, start
 there.
 
@@ -186,3 +181,9 @@ difference between this and occult-fantasy dressing is whether the footnote exis
 every substantial entry ends with **What we do not know** — the gaps stated plainly, because
 half this man's work is still in manuscript and pretending otherwise would be its own kind
 of misfiling.
+
+---
+
+## Corrections (2026-09-27)
+
+This page was brought into line with the dissertation's chronology (Melvin-Koushki, *The Quest for a Universal Science*, Yale 2012, pdf 51–75). Changed: the early life now begins at Temür's court in Samarkand (1387) and the years abroad are c. 1393–1408, with Akhlātī overlapping at most about four years; the Iskandar sequence starts with Pīr-Muḥammad and has Ibn Turka at Iskandar's court before Isfahan; the 1420 Mafāḥiṣ date is marked as a possible copying date and the observatory pairing as the later papers' claim; the first two "trials" are dated (c. 1422, 1426) and the third (1427) now says what happened to him, with the mapping onto "three trials" marked as this portal's reading; the death date is given.

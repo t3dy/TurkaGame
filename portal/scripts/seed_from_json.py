@@ -228,6 +228,30 @@ def ingest_timeline(conn: sqlite3.Connection, events: list[dict]) -> int:
     return len(events)
 
 
+def ingest_extra_columns(conn: sqlite3.Connection, seed: dict[str, Any]) -> int:
+    """Carry the seed fields that the per-table INSERTs above do not list.
+
+    `plate` (a period image + credit, on figures/concepts/texts/institutions) and
+    bibliography `sections` were added to the DB by hand and were never written by this
+    script, so a re-seed (INSERT OR REPLACE) silently dropped every plate and every
+    section list from the rebuilt site. Added 2026-09-27 so the seed is the whole truth.
+    """
+    n = 0
+    for table, field in (('figures', 'plate'), ('concepts', 'plate'), ('texts', 'plate'),
+                         ('institutions', 'plate'), ('bibliography', 'sections')):
+        cols = [r[1] for r in conn.execute(f"PRAGMA table_info({table})")]
+        if field not in cols:
+            conn.execute(f"ALTER TABLE {table} ADD COLUMN {field} TEXT")
+        key = 'source_id' if table == 'bibliography' else 'slug'
+        for item in seed.get(table, []):
+            if field in item:
+                conn.execute(f"UPDATE {table} SET {field} = ? WHERE {key} = ?",
+                             (json.dumps(item[field]), item[key]))
+                n += 1
+    conn.commit()
+    return n
+
+
 def prune(conn: sqlite3.Connection, seed: dict[str, Any]) -> int:
     """Delete rows whose entry is no longer in seed.json.
 
@@ -283,8 +307,9 @@ def main() -> int:
         n_arg = ingest_arguments(conn, seed.get('arguments', []))
         n_bib = ingest_bibliography(conn, seed.get('bibliography', []))
         n_tl = ingest_timeline(conn, seed.get('timeline_events', []))
+        n_extra = ingest_extra_columns(conn, seed)
 
-        print(f"Ingested {n_fig} figures, {n_con} concepts, {n_inst} institutions, {n_txt} texts, {n_arg} arguments, {n_bib} bibliography entries, {n_tl} timeline events.")
+        print(f"Ingested {n_fig} figures, {n_con} concepts, {n_inst} institutions, {n_txt} texts, {n_arg} arguments, {n_bib} bibliography entries, {n_tl} timeline events, {n_extra} plate/sections fields.")
 
         if not args.no_prune:
             n_pruned = prune(conn, seed)

@@ -158,11 +158,20 @@ sitting unused in BIOGRAPHY.md.
   comparisons (Cusa, Pico, Bruno, Dee) are the modern historian's argument, not a
   historical event — see `docs/DECISIONS.md`'s "Comparison ≠ contact" entry. Never
   write a scene implying Ibn Turka met or corresponded with any of them.
-- **Do not resolve open research gaps by inventing the missing content.** The
-  7-tier epistemic hierarchy has 5 of 7 tiers unconfirmed; the first two
-  inquisitions have no established dates; don't write scene text that states a
-  specific missing tier name or a specific inquisition date as fact.
+- **Do not resolve open research gaps by inventing the missing content.** *[Corrected
+  2026-09-27: the two gaps this bullet named are closed.]* The 7-tier epistemic hierarchy is sourced
+  (all seven are on the page of the *R. Shaqq-i Qamar*; `docs/RESEARCH_BRIEF.md`), and the first two trials
+  are dated c. 1422 and 1426 (the third 1427) — but "three trials" is Melvin-Koushki's phrase and he never lists
+  them together, so the mapping is our reading; scene text should mark it as such. What is still open: no source
+  dates a Bāysunghur patronage; who commissioned the *Mafāḥiṣ*; whether its 1420 date is composition or copying; whose
+  hand ff. 52a–56a are in. Don't write scene text that states those as fact.
 - **Real texture is not the same as historical accuracy about outcomes.** The game
   is still "fully divergent" per `STATE_MODEL.md` — a player can choose paths
   history didn't take. Naming real institutions and texts doesn't mean every
   choice's *outcome* is attested; only the *world* the choice happens inside is.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, rows 5, 6): the "does not license" bullet on open gaps
+is updated as above. The guide's other rules stand. Scenes written under the old picture ("Cairo from 1385", "Bāysunghur from
+c. 1416") are listed in `ERRATA.md`.

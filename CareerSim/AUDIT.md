@@ -79,8 +79,7 @@ In BIOGRAPHY but absent from play before this session: the **Three Globes of Lig
 "form is content". ✅ Now a Phase IV encounter. Still un-mined (inventory): VN choices
 c11–c40 (only acts 1–2 were converted), the Bāysunghur Qurʾan as an encounter, *Boon for
 the Khan*'s named operations (sleeper interrogation, treasure dowsing, instant
-agriculture) as bazm/razm content, the seven-tier hierarchy (**blocked** on the missing
-source — do not invent; see parent DECISIONS).
+agriculture) as bazm/razm content, the seven-tier hierarchy (**was blocked; unblocked 2026-09-27**: all seven tiers are known, dissertation pdf 332/471–479; see Corrections below).
 
 ### 3.3 The historical run needs its witness
 The game's thesis requires the player to *feel* the counterfactual against the attested
@@ -149,3 +148,12 @@ companion to the cosmogram. Not started.
    Heliocentrism"; do not invent (standing rule).
 9. Slice 2 (Supabase accounts, editable chronicles) then Slice 3 (workbench, cosmogram)
    per ROADMAP — unchanged by this audit.
+
+## Corrections (2026-09-27)
+
+This audit's content-grounding statements predate TurkaVita/docs/TURKA_AUDIT.md. Superseded: (1) "the seven-tier hierarchy
+blocked on the missing source" is closed, all seven tiers are known (pdf 332-334, 471-479); (2) "Cairo" as Phase I's
+whole span: the years abroad were c. 1393-1408 after Samarkand from 1387 (pdf 51-52); (3) Bāysunghur/Iskandar dating
+in the Phase III grounding notes: see README.md, Corrections (2026-09-27). Grounding counts changed accordingly
+(P3 A10->A9, P4 A11->A10, P5 A7->A5, measured with `node tools/analyze-content.mjs shape`); encounter, gate and
+ending counts are unchanged.

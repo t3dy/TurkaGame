@@ -156,3 +156,11 @@ they can define it. Write it up.
 
 *Formalized with priorities, scope estimates, and explicit non-goals in
 [PROPOSAL.md](PROPOSAL.md).*
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`): this is a **recorded working session** and is left as
+recorded. Two things in it are premises the corrected biography revises: the Act I card "You have come to Cairo the way water finds
+a crack" (Cairo was the destination of c. 1393; he came from Samarkand, having been taken there from Isfahan in 1387), and
+the "Chief Judge post — the historical day job" (the Isfahan qadiship was a family office and the Yazd judgeship dates from c. 1422;
+"Chief Judge of Isfahan" is the later papers' label). See `ERRATA.md`.

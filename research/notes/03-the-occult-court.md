@@ -87,3 +87,15 @@ should paraphrase and restructure substantially — treat this list as an index 
 - The operation categories (putrefactions, suffumigations, endurance rites, etc.) are a
   strong model for ability/item flavor *categories* across all three prototypes, once
   reworded away from the source translation.
+
+## Addendum 2026-09-27
+
+This note summarises *The Occult Court* as first read, and is left as written. Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`,
+rows 7, 10, 13; `TURKA_AUDIT.md`), since it was written the dissertation and the rest of Melvin-Koushki's corpus have been ingested (`TurkaVita/db/corpus.db`):
+
+- **"Patronage is explicitly transactional … 'royal boon'"** is about **ʿAlī Ṣafī's *Boon for the Khan* (1522)**, commissioned by a Safavid Qizilbash governor of Khurasan
+  (Durmish Khān Shāmlū), not about Ibn Turka's own court life; later documents that generalised it to him were corrected.
+- **Qāsim-i Anvār "a companion of Ibn Turka's in Cairo"** is this paper's fn. 24, stated flatly; the dissertation's note (pdf 32, 68) rests it on Niʿmatullahi hagiography with a stake in
+  its saint's circle. The 1427 expulsion (from Herat, in the purge after the attempt on Shāhrukh) is in the dissertation (pdf 32, 56, 73).
+- The paper's other claims about Ibn Turka's life (where it touches them) are one source among several and should be read against `docs/BIOGRAPHY.md`, which was
+  rewritten to the dissertation on 2026-09-27.

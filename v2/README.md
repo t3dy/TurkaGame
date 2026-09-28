@@ -378,7 +378,7 @@ whole alphabet can ever be released that way, which is what makes it a puzzle.
 The first court demands that الم be seen **coming apart**; the third demands that
 نور stand **whole**, which it can only do where nothing severs. They are mirrors,
 and the gate checks it. You may also **refuse to answer**, which leaves the charge
-unproven and costs standing — and is what the historical man did, three times.
+unproven and costs standing — and is, on the *Prologue*'s uncited remark, what the historical man did (the dissertation shows apologies; see `apps/tribunal/README.md`).
 
 **Every register is available.** [`apps/shared/voice.js`](apps/shared/voice.js) puts
 a Voice menu in the topbar: austere, baroque, uncanny, warm. A voice changes how a
@@ -453,3 +453,9 @@ performing the write on a copy of the world.
   held against gravity fell through the floor on the live site while passing every test
   locally. All tokens under `v2/` are now the same number, bumped together, and
   `tools/check_repo_rules.py` **R6 fails the commit if they disagree**.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, row 11): the Tribunal paragraph's "what the historical man
+did, three times" is now attributed to the *Prologue*'s uncited remark; the dissertation's evidence is defensive apologies.
+No other statement of the biography in this file needed correcting.

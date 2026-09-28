@@ -36,9 +36,9 @@ and, in one case, wrong — so part of this session was repair.
 
 ### New this session
 - **`ulugh-beg`** — the would-be third patron. The framing is the design: Iskandar Sulṭān
-  commissioned the *Mafāḥiṣ* and was killed in 1415; Shāhrukh's court exiled him from Herat
+  [per the 2025 papers, commissioned the *Mafāḥiṣ*; the dissertation names no patron] and was killed in 1414 [not 1415]; Shāhrukh's court exiled him from Herat
   in 1427; Ulugh Beg, *al-sulṭān al-faylasūf*, was the one ruler whose programme **was** his
-  programme, and it never arrived. Observatory and *Mafāḥiṣ* both begun in 1420.
+  programme, and it never arrived. Observatory begun in 1420; the *Mafāḥiṣ* carries a 1420 colophon date (possibly a copy date) [not "begun in 1420"].
 - **`iskandar-sultan`** — without him, "third patron" means nothing.
 - **`samarkand-observatory`** — argues the observatory sits *inside* this story. *Powers of
   One* p.1 makes the mathematicalization of the occult sciences the immediate context for
@@ -58,7 +58,7 @@ and, in one case, wrong — so part of this session was repair.
   associate* — he attended his teacher's *majālis*, travelled with him to Herat, and cared
   for his children after his death.
 - **`kitab-al-mafahis`** now has real dates (823/1420, revised 828/1425), the patron
-  (Iskandar Sulṭān), the fourfold schema of the letter (*iḥṣāʾī* / *kitābī* / *kalāmī*, plus
+  (Iskandar Sulṭān — a claim of the 2025 papers, not the dissertation), the fourfold schema of the letter (*iḥṣāʾī* / *kitābī* / *kalāmī*, plus
   *fī anfusi-hā*), and its dependence on the uncreatedness of the Qur'an.
 - **`neoplatonism`** rewritten from a 298-character stub.
 - **`seed.json` had two duplicate figures** that `INSERT OR REPLACE` had been hiding, so the
@@ -221,7 +221,7 @@ through computed styles and `get_page_text`, not pixels. Don't chase it as a CSS
    dictionary entries** that explain how he fits into or contributed to each tradition —
    `neoplatonism` is the worked example of that pattern. Do the same to 01/02 and retire them.
 4. **Missing portal entries the new material needs:** `baysunghur`, `shahrukh` (the patron
-   triad has no middle), `qasim-i-anvar` (co-exile of 1427, Cairo associate, Ṣafaviyya
+   triad has no middle), `qasim-i-anvar` (co-exile of 1427, Sufi correspondent ["Cairo associate" rests on Niʿmatullahi hagiography, dissertation pdf 32, 68; stated flatly in *The Occult Court*], Ṣafaviyya
    propagandist), `hurufism` (the heresy he had to be distinguished from — the dissertation
    distinguishes lettrists by *motive*, p.456), `zij-i-sultani`, and
    `munshaat-i-sain-i-turka`, his letter collection and a major biographical source.
@@ -245,3 +245,15 @@ through computed styles and `get_page_text`, not pixels. Don't chase it as a CSS
   tracked source of truth.**
 - Mining discipline: `rank` → `kwic` → `read`, and every claim carries its page number.
   `python portal/scripts/mine_corpus.py --help`.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`; bracketed edits above mark the changed statements):
+
+- Iskandar Sulṭān's death is 1414 (817 AH; one CE conversion prints 1415).
+- "Iskandar commissioned the *Mafāḥiṣ*" is the 2025 papers' claim; the dissertation names no patron and Iskandar was dead by
+  1420 (TURKA_AUDIT § B). The portal's `kitab-al-mafahis` and `iskandar-sultan` entries should say so (portal corrector).
+- "Observatory and *Mafāḥiṣ* both begun in 1420": only the observatory; 1420 is the *Mafāḥiṣ*'s colophon date, which a marginal
+  correction says refers to copying; it was revised in 1425. The "1420 convergence beat" needs the same hedge (FOUNDER.md § 3.4).
+- Qāsim-i Anvār: "Cairo associate" is a hagiographic tradition (hedged in the dissertation, flat in *The Occult Court*); expelled from Herat in the 1427 purge.
+- "Patron triad has no middle" (§ Portal): no source dates a Bāysunghur patronage; he is addressee and commissioner from 1426.

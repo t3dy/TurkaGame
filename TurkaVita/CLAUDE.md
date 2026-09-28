@@ -27,7 +27,7 @@ works themselves) can show what he *held*; an apology can show only what he *tol
 | `docs/RESEARCHER_BRIEF.md` | the contract for anyone writing artifacts |
 | `docs/DECISIONS.md` | append-only ledger |
 | `docs/DESIGN.md` | the game: acts, scoring, court board, composer, the collection, the dispute |
-| `docs/TURKA_AUDIT.md` | the reconciliation of the dissertation against our older docs (nothing is corrected until Ted has seen it) |
+| `docs/TURKA_AUDIT.md` | the reconciliation of the dissertation against our older docs (the older documents were corrected to it on 2026-09-28; section F says what, and what was left on purpose) |
 | `docs/BIOGRAPHY.md`, `docs/OEUVRE.md` | generated from `research/` |
 | `schemas/artifacts.schema.json` | forked from PLOTINUSGAME's; adds `work`, `institution`, the duress fields |
 | `research/artifacts/<type>/*.json` | the knowledge layer. **The JSON files are the truth**; the DBs are indexes |

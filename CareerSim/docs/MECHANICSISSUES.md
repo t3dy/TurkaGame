@@ -335,3 +335,10 @@ because divergent memory produces divergent eligibility.
 Nothing here outranks the standing item in [../NEXTSTEPS.md](../NEXTSTEPS.md): **a cold
 human playtest.** Every figure above describes a machine playing; none of it tells you
 whether the game is any good.
+
+## Corrections (2026-09-27)
+
+Phase labels in this document ("Cairo", "1420 Pivot", "P4 Pivot") are the names of the time. The phases are now "Cairo and the road,
+c. 1393-1408" (Samarkand from 1387; Akhlāṭī died 1397 during the years abroad; return c. 1408) and "The Summa, c. 1420" (the Mafāḥiṣ is
+dated 823/1420, a colophon date; the Shaqq-i Qamar is 829/1426). Encounter ids (`pivot_*`), figures and gates are unchanged. Sources:
+dissertation pdf 51-52, 99, 126-128 via TurkaVita/docs/CORRECTIONS_BRIEF.md; full list in README.md, Corrections (2026-09-27).

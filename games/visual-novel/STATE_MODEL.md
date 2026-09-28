@@ -142,3 +142,8 @@ engine, not finalized here — this is the design sketch the engine gets built f
 - Both could be added later without restructuring the flag model underneath them
   (a meter is just a flag with more states) if playtesting shows the invisible
   version doesn't read as consequential enough.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, rows 11, 12): the gate table's "#34 hold firm — this is the historical choice and must stay reachable" rests on the *Prologue*'s uncited remark; the dissertation shows defensive
+apologies under duress, so "the historical choice" is not established (see `ERRATA.md` row 14). "The Bāysunghur Qur'an" (`c12`) is CONTEXT about Bāysunghur, not an attested Ibn Turka juncture (row 8). The state model itself is unchanged (the game is frozen).

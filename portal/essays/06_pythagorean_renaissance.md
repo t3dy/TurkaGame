@@ -24,7 +24,7 @@ the triangle of ten points encoding 1+2+3+4 — rebuilt out of Arabic letters. I
 survives in his own handwriting.
 
 But the comparison cuts in a direction that flatters nobody's assumptions. Ibn
-Turka was writing in **1420**. Cusa's *De docta ignorantia* comes in 1440; Pico's
+Turka's *Mafāḥiṣ* is dated **1420** (a colophon date that may record copying). Cusa's *De docta ignorantia* comes in 1440; Pico's
 *Oration* in 1486; Dee's *Monas hieroglyphica* in 1564. And where Dee spent his
 career failing to secure the patronage that would let him make his mathematics
 politically real, Ibn Turka's platform *did* become imperial cosmology across six
@@ -48,3 +48,9 @@ man who was destroyed for it?
 
 **Cross-references.** → *Pythagorean Cosmology*, *The Ṭahawī Circle* (concepts) ·
 the site timeline's COMPARATIVE entries · the two-axis ending of the Career Sim.
+
+---
+
+## Corrections (2026-09-27)
+
+The date of the *Mafāḥiṣ* is now given as a colophon date (823/1420) that the manuscript itself says may refer to copying (Melvin-Koushki, *The Quest*, pdf 99).

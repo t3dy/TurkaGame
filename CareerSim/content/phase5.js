@@ -1,6 +1,13 @@
 // phase5.js — Phase V: The Trials (c. 1422–1432).
 // Exposure comes due. Three inquisitions; historically he wins two and loses the
 // third, then five years of wandering exile. Here that arc is reachable, not fixed.
+// CORRECTED 2026-09-27 (TurkaVita/docs/CORRECTIONS_BRIEF.md #5, #11, #12): the years are no longer "not established". Melvin-Koushki's
+// timeline (dissertation pdf 52-53, 70-75) dates the three episodes c. 825/1422 (Isfahan enemies accuse him of sufigari at Shahrukh's
+// court in Herat; he wins favour), 829/1426 (a Yazd delegation, then a case built from youthful writings; Nafsat I + a creed tract; he
+// wins favour again) and 830/1427 (Ahmad-i Lur's attempt on Shahrukh, the Hurufi purge; recalled, stripped, tortured, imprisoned,
+// exiled). "Three trials" is MK's phrase (fn. 99) and he never lists them in one place: mapping them onto these dates is the project's
+// reading. The specific charges STAGED here (Q 2:102, a quoted passage) are the game's. The apologies were written under duress
+// (MK pdf 25), so nothing here claims they show what he held.
 
 export const PHASE = {
   id: 5,
@@ -54,8 +61,8 @@ export const ENCOUNTERS = {
   trial_first: {
     id: 'trial_first', phase: 5,
     rubric: 'THE TRIBUNAL · THE FIRST INQUISITION',
-    grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — three state inquisitions engineered by rival colleagues; he wins the first two',
+    grounding: 'PLAUSIBLE-GAP',
+    source: 'Dissertation pdf 52, 70–72 (timeline; CL-0064..0084): c. 825/1422 his Isfahan opponents go to Shāhrukh’s court at Herat and accuse him of Sufi bias (ṣūfīgarī); he travels to Herat, gains Shāhrukh’s favour, is given a judgeship in Yazd. Corrected 2026-09-27: the Q 2:102 charge staged here is the game’s; "three trials" is MK’s phrase (fn. 99) and this mapping onto c. 1422, 1426, 1427 is the project’s reading',
     affordances: ['legal_authority', 'public_audience', 'religious_authority'],
     plate: IMG('cs-p5-harut-marut.jpg', 'The fallen angels Hārūt and Mārūt, suspended at Babel — Iran, 16th–17th c. (Wikimedia Commons)'),
     situation:
@@ -131,8 +138,8 @@ export const ENCOUNTERS = {
   trial_second: {
     id: 'trial_second', phase: 5,
     rubric: 'THE TRIBUNAL · THE SECOND INQUISITION',
-    grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — he wins the first two inquisitions; exact years not established in sources in hand',
+    grounding: 'PLAUSIBLE-GAP',
+    source: 'Dissertation pdf 52–53, 72–75 (timeline; CL-0064..0084): 829/1426 his Yazd enemies send a delegation to Herat accusing him of heresy and Shiʿi proclivities (a case drawn from youthful writings, including a verse praising ʿAlī); summoned to Herat, he writes Nafsat al-Maṣdūr I and R. Iʿtiqādāt in his defence and again gains Shāhrukh’s favour. Corrected 2026-09-27: dated 1426, no longer "exact years not established"; the staged passage is the game’s',
     when: ['mem:first_inquisition=won'],
     exposure_min: 4,
     affordances: ['legal_authority', 'public_audience', 'religious_authority'],
@@ -188,7 +195,7 @@ export const ENCOUNTERS = {
     id: 'trial_third', phase: 5,
     rubric: 'THE TRIBUNAL · THE THIRD INQUISITION',
     grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — he loses the third, datable to c. 1427; five years of wandering exile follow, death 1432',
+    source: 'Dissertation pdf 53, 73–75 (timeline; CL-0077, CL-0078, CL-0660): 830/1427 the Ḥurūfī Aḥmad-i Lur attempts to kill Shāhrukh and is killed; Ibn Turka, just gone from Herat, is recalled, stripped, tortured, imprisoned and exiled, "much of the next five years"; death Herat 14 Dhū l-Ḥijja 835/12 Aug 1432. The panel and its outcomes here are the game’s; that this is "the third" trial is the project’s mapping (corrected 2026-09-27)',
     when: ['mem:second_inquisition=won'],
     exposure_min: 5,
     affordances: ['legal_authority', 'public_audience', 'religious_authority'],
@@ -438,7 +445,7 @@ export const ENCOUNTERS = {
     id: 'trial_qasim_exile', phase: 5,
     rubric: 'THE CIRCLE · QĀSIM-I ANVĀR IS EXILED',
     grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — Qāsim-i Anvār exiled in 1427 over lettrist associations, the same year as the third inquisition',
+    source: 'Dissertation pdf 73 (CL-0078, CL-0110): in the 830/1427 purge after Aḥmad-i Lur’s attempt Shāhrukh arrested figures with suspected Ḥurūfī ties, among them Qāsim-i Anvār, Maʿrūf-i Khaṭṭāt and Ibn Turka; Qāsim-i Anvār and Maʿrūf were expelled from Herat. Same year as the third episode (corrected 2026-09-27)',
     when: ['person:qasim', '!mem:qasim_abandoned'],
     affordances: ['private_audience'],
     situation:

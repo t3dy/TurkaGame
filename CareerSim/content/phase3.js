@@ -1,4 +1,10 @@
 // phase3.js — Phase III: The Courts (c. 1409–1419).
+// CORRECTED 2026-09-27 (TurkaVita/docs/CORRECTIONS_BRIEF.md #2, #3, #10): Iskandar Mīrzā rules Fars from 1409 and holds a court at
+// Isfahan c. 1412–14 (Ibn Turka "attached to" it; MK queries the qadi post with "(?)"); Iskandar falls in 1414 (817 AH; one CE
+// conversion prints 1415); 1414–c. 1422 is an attempted retirement, so the game's later "court" years are the game's compression.
+// Bāysunghur is governor of Mazandaran and western Khurasan from 1415 and the ADDRESSEE/COMMISSIONER of the Suʾl al-Mulūk
+// (before 1426, "at his request") and Nafsat II (c. 1429–32): no source dates a patronage from c. 1416. He is a court on the
+// board because he is an addressee, not because a start date is sourced (TURKA_AUDIT §D).
 // The patronage phase: choose a court, take commissions with deadlines, and learn
 // that every success raises what will be demanded next. Bazm and razm both appear.
 
@@ -10,7 +16,7 @@ export const PHASE = {
   intro:
     'Timurid court culture runs on two poles — bazm and razm, the feast and the war — and occult science is welcome ' +
     'at both. A prince’s patronage is money, protection, an atelier, and an audience. It is also a set of expectations ' +
-    'that only grow. Nine seasons at court, and the shape of your career is decided here.',
+    'that only grow. Nine seasons at court, and the shape of your career is decided here. (In the sources Iskandar’s court runs to his fall in 1414, and the years after it, to about 1422, are an attempted retirement; the game folds them into these seasons.)',
   // A commission arrives; you do not go shopping for one. Contracts are the only patron
   // pressure in the game and half of runs never met one (docs/MECHANICSISSUES.md §5).
   injections: ['court_commission', 'pressure_rumor', 'pressure_copy_request'],
@@ -56,10 +62,10 @@ export const ENCOUNTERS = {
     id: 'court_patron_choice', phase: 3,
     rubric: 'THE AUDIENCE HALL · WHOSE MAN WILL YOU BE',
     grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — Iskandar Sultan (c.1409–1415), then Bāysunghur (from c.1416)',
+    source: 'Dissertation pdf 51–52, 69 (timeline): Iskandar Mīrzā rules Fars 1409, court at Isfahan 1412–14 (attached to, "(?)" on the qadi post), falls 1414; Bāysunghur appears only as addressee/commissioner from 1426, no dated patronage. The choice of a second house is the game’s (corrected 2026-09-27)',
     affordances: ['royal_patronage', 'private_audience'],
     situation:
-      'Two houses want you, and a third possibility exists. Iskandar Sultan’s court at Shiraz fuses star science, ' +
+      'Two houses want you, and a third possibility exists. Iskandar’s court — Fars is his from 1409, Isfahan from 1412 — fuses star science, ' +
       'poetry and painting — brilliant and politically exposed. Bāysunghur, Shāh Rukh’s son, offers the finest ' +
       'book-workshop in the world and a father who is currently winning. Samarkand offers mathematics and Ulugh Beg.',
     options: [
@@ -83,7 +89,7 @@ export const ENCOUNTERS = {
       },
       {
         id: 'baysunghur', label: 'Take service with Bāysunghur',
-        detail: 'The manuscript machine, and the safer branch of the dynasty.',
+        detail: 'The manuscript machine, and the safer branch of the dynasty. (A game choice: the sources know Bāysunghur as the addressee and commissioner of your works from 1426, with no dated patronage before that.)',
         grantsObligation: {
           id: 'retainer', name: 'The Patron’s Retainer', cost: 1,
           gloss: 'Attendance, correspondence, availability: the household that pays you owns a season of every action.',
@@ -125,8 +131,8 @@ export const ENCOUNTERS = {
   court_commission: {
     id: 'court_commission', phase: 3,
     rubric: 'THE AUDIENCE HALL · THE PATRON WANTS SOMETHING USEFUL',
-    grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — works commissioned as royal "boons"; patronage was transactional and explicit',
+    grounding: 'PLAUSIBLE-GAP',
+    source: 'Dissertation pdf 52: the Suʾl al-Mulūk is written "at the request of" Bāysunghur (1426); the "royal boon" commission language in The Occult Court is applied there to ʿAlī Ṣafī’s Boon for the Khan (1522), not to Ibn Turka, so the transactional pattern here is the genre’s (corrected 2026-09-27)',
     when: ['mem:patron'],
     affordances: ['royal_patronage', 'private_audience'],
     situation:
@@ -981,11 +987,11 @@ export const ENCOUNTERS = {
     id: 'court_departure', phase: 3,
     rubric: 'TOWARD 1420 · THE COURT YEARS END',
     grounding: 'ATTESTED',
-    source: 'BIOGRAPHY — Iskandar Sultan defeated, blinded and executed 1415; patronage shifts to Bāysunghur c.1416',
+    source: 'Dissertation pdf 52 (timeline): Shāhrukh marches on Iskandar in 1414 (817 AH), who is captured, blinded and later executed (one CE conversion prints 1415); 1414–c. 1422 an attempted retirement. No source says patronage shifts to Bāysunghur c. 1416 (corrected 2026-09-27)',
     affordances: [],
     plate: IMG('cs-p3-shahnama-caesar-talisman.jpg', '"Caesar Makes a Talisman", folio from a Shahnama, Iran c. 1330–40 — MET (CC0)'),
     situation:
-      'Courts end. Iskandar Sultan overreached his uncle Shāh Rukh and paid for it in the way Timurid princes do; the ' +
+      'Courts end. Iskandar overreached his uncle Shāh Rukh and paid for it in the way Timurid princes do — captured, blinded, later executed; the ' +
       'workshops disperse, the patronage reshuffles, and men who were somebody last spring are looking for a house. ' +
       'What you take out of these years is the material the summa will be built from.',
     options: [
@@ -1002,7 +1008,7 @@ export const ENCOUNTERS = {
       },
       {
         id: 'keep_patron', label: 'Attach yourself to the surviving house',
-        detail: 'Bāysunghur’s establishment endures. Continuity of protection, at the price of visible loyalty.',
+        detail: 'Bāysunghur’s establishment endures (he is made a governor in 1415). Continuity of protection, at the price of visible loyalty — the game’s reading; no source dates a Bāysunghur patronage.',
         dropsObligation: 'retainer',
         requires: [],
         effects: { rep: { imperial: 2 }, meters: { exposure: 1 }, memory: { court_exit: 'patron', kept_patron: true } },

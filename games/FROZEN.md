@@ -53,3 +53,5 @@ These were true at the freeze and stay true:
 - No game in v1 has ever been played by a human being under observation.
 
 New work: [`../v2/README.md`](../v2/README.md).
+
+**Erratum (2026-09-27):** the frozen visual novel (`visual-novel/`) carries premises the corrected biography revises; they are listed, unchanged and undecided, in [`visual-novel/ERRATA.md`](visual-novel/ERRATA.md).

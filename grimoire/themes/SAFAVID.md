@@ -46,3 +46,8 @@ Qizilbash conquest a seamless Timurid-Safavid Sunni-Shiʿi continuum" (*OC*).
 
 Babayan, *Mystics, Monarchs, and Messiahs* (2002) · Woods, *The Aqquyunlu* (1999) ·
 Emami, *Isfahan* (2024) — cited in held texts.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`; dissertation `SRC-610EE1D6BA`, pdf = printed + 17) (row 7, source situation only): "World as (Arabic) Text" and "Mīr Dāmād's On Doffing" (⚠ not held) are now held (`SRC-21C7A36502` and `SRC-E9819D552D`); the whole Melvin-Koushki corpus is held (43 texts). The page's claims are unchanged; they were grounded on the texts then held.
+The forthcoming *The Occult Science of Empire in Aqquyunlu-Safavid Iran* (where cited) is not held. This page states no biography fact that the corrections revise.

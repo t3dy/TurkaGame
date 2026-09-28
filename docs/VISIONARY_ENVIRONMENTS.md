@@ -59,7 +59,7 @@ Ranked by a blunt criterion: **does the image carry a mechanic, or only a mood?*
 
 **The single most important comparandum this project has, and it is not close.**
 
-Made in Herat for **Shāh Rukh** — Ibn Turka's own patron, four years after his death — it
+Made in Herat for **Shāh Rukh** four years after Ibn Turka's death (c. 1436, against 1432) — the ruler to whom Ibn Turka addressed his 1426 apology (*Nafsat al-Maṣdūr I*) and under whose rule the purge of 1427 ended in Ibn Turka's exile — it
 holds the most complete cycle of ascension paintings in Islamic art: the Prophet's passage
 through the heavens, his encounters with prophets and angels, his colloquy with God, and
 visits to the heavenly and infernal realms. Its iconography carries visible Central Asian
@@ -149,7 +149,7 @@ on eight leaves have absorbed a century of scholarly attention: tinted drawings 
 out from under the calligraphy and into the margins**, and that do not illustrate their
 nearest verses so much as evoke the soul's quest.
 
-- **Why it matters here:** Sultan Ahmad ruled 1382–1410 — Ibn Turka's youth and Cairo years.
+- **Why it matters here:** Sultan Ahmad ruled 1382–1410 — Ibn Turka's youth, his years at Temür's court in Samarkand (from 1387) and in Cairo (c. 1393–1408), and his return.
   This is his contemporary visual world, not a later one, which none of the other candidates
   can claim.
 - **The mechanism:** the *margin* is the pictorial space, and the text is the terrain the
@@ -299,3 +299,14 @@ a different faculty.
 3. Mine the Yale dissertation's 25 "dream" hits with
    `portal/scripts/mine_corpus.py kwic dream` and write up what is actually attested about
    dreams in Ibn Turka's circle, before designing a dream mechanic around an assumption.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, rows 1, 2, 5):
+
+- Shāh Rukh is no longer called "Ibn Turka's own patron": the sources have him as the ruler under whom he was tried and exiled
+  and the addressee of his 1426 apology (later papers speak of Ibn Turka trying to cultivate his patronage). The
+  "four years after his death" (c. 1436 against 1432) was right and is kept; the sentence was rewritten only to
+  fix the patron label.
+- Sultan Ahmad's reign is set against his Samarkand (1387) and Cairo (c. 1393–1408) years rather than "youth and Cairo".
+- No other statement of his life in this document needed correcting.

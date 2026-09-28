@@ -1,10 +1,10 @@
 # ASTROLOGY.md — Star Science as the Continuum's Second Engine
 
 **Grimoire page, 2026-09-02.** Grounded in *Prologue*, *Meanings*, *OC*, BIOGRAPHY.
-⚠ not held: "Selenocentrism and Heliocentrism in Early Modern Persianate Imperial
+⚠ not held **[superseded 2026-09-27: the text is held as `SRC-81A5B2AA5E`, and the seven tiers are sourced; see the Corrections section]**: "Selenocentrism and Heliocentrism in Early Modern Persianate Imperial
 Cultures: ʿAlī versus Jesus, with Hermes Presiding. A Harranian Essay in
 Astro-Decoloniality," *Al-ʿUṣūr al-Wusṭā* 33 (2025): 217–66 — full citation now held
-(from *Prologue* bibliography), text still the project's standing acquisition gap
+(from *Prologue* bibliography), text formerly the project's standing acquisition gap
 (the seven-tier hierarchy blocker, per parent DECISIONS).
 
 ## The claim
@@ -40,11 +40,20 @@ mind-matter program" (*Meanings*) — predicated, note, "on the personhood of pl
   identity — the game's astrology should privilege lunar mansions, moon-sighting
   (barāʿat al-istihlāl IS a moonsighting), and ʿAlī-as-Moon symbolism over generic
   zodiac furniture.
-- The blocked seven-tier hierarchy lives in the Selenocentrism paper (242–43 per
-  *Prologue* n.57) — the standing rule holds: do not invent the tiers; acquire the
-  text.
+- ~~The blocked seven-tier hierarchy lives in the Selenocentrism paper — do not invent the tiers; acquire the
+  text.~~ **[Superseded 2026-09-27: acquired and sourced; see the Corrections section.]**
 
 ## Further reading
 
 Rutkin, *Sapientia Astrologica* vol. 1 (2019) · Noble, *Philosophising the Occult*
 (2021) — cited in held texts.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`; dissertation `SRC-610EE1D6BA`, pdf = printed + 17):
+
+- **The seven tiers are sourced** (row 6): in the *R. Shaqq-i Qamar* (829/1426), on Q 54:1, ascending: (1) jurists and traditionists, (2) dialectical theologians, (3) peripatetic philosophers, (4) illuminationists,
+  (5) verifying mystics of Ibn ʿArabī's school, (6) lettrists, (7) ʿAlī and the Imams; level seven is peculiar to the present time, marked by a conjunction (*saʿādat-qirān*), tied to *jafr*, and "not entirely what it seems"
+  (MK's reading; dissertation pdf 332–334, 471–479). The *Prologue* puts lettrism at the top and *Selenocentrism* has two lettrist levels: a difference between MK's texts, not resolved here.
+- The "not held" header is superseded: the Selenocentrism paper is held (row 7).
+- The old "standing rule: do not invent the tiers" is replaced by: **cite the page**; the tiers are attested, the meaning of level seven is MK's inference.

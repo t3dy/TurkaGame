@@ -262,3 +262,9 @@ A separate script generates clickable links when needed.
 **Corpus:** 43 sources, 42 converted (~6M characters), 1 scan-needs-OCR  
 **Database:** 11 tables, ready for seed data  
 **Portal status:** Scaffold complete; entries in progress
+
+## Corrections (2026-09-27)
+
+- **Status line above is stale.** Built: 20 figures, 18 concepts, 11 texts, 3 institutions, 8 arguments, 6 intersection essays, a 50-event chronology; the site is 69 pages.
+- **Chronology corrected to the dissertation** (Melvin-Koushki, Yale 2012): the Turka family goes to Temur's court at Samarkand in 1387; Ibn Turka leaves c. 1393 for Mecca and Cairo and is abroad c. 1393-1408 (Akhlati d. 1397, so the overlap is at most about four years); no source dates a Baysunghur patronage (addressee and commissioner from 1426); the three "trials" are Melvin-Koushki's phrase, dated c. 1422, 1426 and 1427 on this project's reading; the *Mafahis* date of 1420 is a colophon date that may record copying. Seed events added: `temur-takes-isfahan`, `second-inquisition`, `ahmad-i-lur-purge`. The full reconciliation is `TurkaGame/TurkaVita/docs/TURKA_AUDIT.md`.
+- **Rebuild:** `python portal/scripts/init_db.py`, `seed_from_json.py`, `build_site.py`. The seed script now also writes `plate` and `sections` (it dropped them before).

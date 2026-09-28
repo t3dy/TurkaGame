@@ -42,3 +42,8 @@ Bengal, and the "High Persianate tradition" is its mathematized crest.
 
 ⚠ Green, ed., *The Persianate World: The Frontiers of a Eurasian Lingua Franca* —
 general-knowledge anchor, not in corpus; verify before citing in shipped text.
+
+## Corrections (2026-09-27)
+
+Per Ted's standing rule (older documents are corrected to the most current information; source: `TurkaVita/docs/CORRECTIONS_BRIEF.md`, `TURKA_AUDIT.md`; dissertation `SRC-610EE1D6BA`, pdf = printed + 17) (row 7, source situation only): "Powers of One" (⚠ not held) is now held (`SRC-C7BAE7A2FB`); the whole Melvin-Koushki corpus is held (43 texts). The page's claims are unchanged; they were grounded on the texts then held.
+The forthcoming *The Occult Science of Empire in Aqquyunlu-Safavid Iran* (where cited) is not held. This page states no biography fact that the corrections revise.
