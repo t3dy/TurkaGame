@@ -1,6 +1,6 @@
 # HANDOVER: current state
 
-**2026-09-27: built end to end and playable locally; not deployed; nothing committed.** Read `CLAUDE.md`, then
+**2026-09-27: built end to end, committed (`3f8a294`) and live at https://t3dy.github.io/TurkaGame/TurkaVita/game/.** Read `CLAUDE.md`, then
 `docs/DESIGN.md` (what was built), then `docs/DECISIONS.md` (the kickoff calls, four of them **assumed**: Ted said
 "build the game" and did not answer the plan's questions), then `docs/TURKA_AUDIT.md` (where the older docs are wrong).
 
@@ -15,7 +15,7 @@
 | game | `game/` vanilla JS; court board, composer (three writing scenes), sorter (the collection), rulings, dossier/lens/commitment, "How to play" in full sentences; driven end to end through the UI (VERIFIED.md) |
 | tests | `python tests/run.py`: pipeline gates + 31 tests including Python↔JS engine parity (200 seeded runs), the historical-path walk, the dossier/duress-rule mechanics, source discipline |
 | docs | `docs/BIOGRAPHY.md` and `docs/OEUVRE.md` are generated (`python scripts/render_docs.py`) |
-| deploy | **not live.** See `DEPLOY_STATE.md` |
+| deploy | **live** on GitHub Pages; see `DEPLOY_STATE.md` |
 
 ## What needs Ted (in order)
 
@@ -24,10 +24,10 @@
    this game's own plan doc, which carries a correction banner. The VN (40 choices) and CareerSim (70 encounters) were built on the older picture
    (Cairo from 1385, Bāysunghur "from c. 1416"): decide whether they should be brought into line.
 2. **The four assumed calls** (DECISIONS 3–6): slice-3-first (moot now: all acts are built), Act V as the unnamed copyist, no Persian edition fetched,
-   corrections held for the audit.
-3. **Deploy?** Pushing is outward-facing and was not done. `DEPLOY_STATE.md` says how: the game is static and serves from `TurkaVita/game/`; the TurkaGame repo's
-   Pages root is the repo root, so the URL would be `https://t3dy.github.io/TurkaGame/TurkaVita/game/`. Run `python tools/check_repo_rules.py --staged` first: the
-   corpus DB and every PDF are gitignored, but `research/artifacts/` carries page-cited quotations of a copyrighted dissertation (short, verified, attributed).
+   corrections held for the audit. "Go" was taken as approval to commit and deploy, **not** as approval to edit the older docs: those are still uncorrected.
+3. **It is public now** (Ted said "go" after the plan's open questions). The repo's rules check passed on 1,963 staged files (no PDFs, no corpus DB). `research/artifacts/` carries
+   page-cited paraphrase of a copyrighted dissertation: 77 short quoted spans, 455 quoted words in total, none over 20 words in one artifact. Look at that once; if you would rather it
+   were private, the artifacts can be dropped from the repo without touching the game (`game/content.js` embeds only the ones scenes cite).
 4. **Read the audits** (`research/notes/AUDIT-A*.md`) and say which findings to apply. The lead applied the ones marked here as fixed.
 
 ## Known limits (say them in any write-up)

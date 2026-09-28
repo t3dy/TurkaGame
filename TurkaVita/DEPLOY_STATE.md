@@ -1,10 +1,10 @@
 # DEPLOY_STATE
 
-**Not deployed (2026-09-27).** No git commit, no push. This file exists so nobody has to reconstruct the position.
+**Live (2026-09-27): https://t3dy.github.io/TurkaGame/TurkaVita/game/** — commit `3f8a294` on `main`; the Pages build's commit matched HEAD and the live URL was fetched and played end to end (see VERIFIED.md). This file exists so nobody has to reconstruct the position.
 
 | item | value |
 |---|---|
-| canonical URL (planned) | `https://t3dy.github.io/TurkaGame/TurkaVita/game/` |
+| canonical URL | `https://t3dy.github.io/TurkaGame/TurkaVita/game/` |
 | host | GitHub Pages, from the `TurkaGame` repo (`git push origin main` is the whole deploy; see `../DEPLOY_STATE.md`) |
 | what is served | `TurkaVita/game/` only: `index.html`, `style.css`, `turka.css`, `engine.js`, `ui.js`, `content.js` (generated). No build step, no base-path env var: every asset is relative |
 | local | `preview_start turkavita` (port 7560, config in `../.claude/launch.json`), serving `TurkaVita/game` as root |

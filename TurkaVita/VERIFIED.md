@@ -27,13 +27,19 @@
   that claimed more than the claim said; a historian-desk ruling that scored a contested answer). **All FIX findings were applied** by three fixer passes and the lead, and the
   full suite was re-run after: 0 lint errors, 31 tests OK, 0 stuck in 20,000 walks. The audit found **no European contact and no "first/third trial"** anywhere.
 
+## Live (added after the push)
+
+- Commit `3f8a294` pushed to `main`; `gh api repos/t3dy/TurkaGame/pages/builds/latest` reported `built` with that commit.
+- `https://t3dy.github.io/TurkaGame/TurkaVita/game/`: the page and all five assets (`style.css`, `turka.css`, `content.js`, `engine.js`, `ui.js`, all `?v=4`) returned 200; 0 console errors; `CONTENT` had 36 scenes and 989 artifacts.
+- Played on the live host by real clicks along the record: 36 scenes, ended at "The life you lived beside the record"; the Herat 1422 scene showed "The record: this is what the sources say he did"; the apology composer had 5 slots with "Send it" disabled until all were chosen.
+
 ## NOT verified
 
-- **Not deployed and not committed.** No live URL exists (DEPLOY_STATE.md). Nothing was fetched from a host.
+- **No human playtest on the live site**, and only one browser was used.
 - **No human playtest.** Nobody unfamiliar with the design has played it; whether the closed-option notes read as intended consequences or dead ends is untested (as in NEXTSTEPS Tier 0).
 - **The audits were samples**: 109 of ~1,900 artifacts, and a full read of the scenes *by one auditor*; MINOR findings were not all applied; the fix passes were not re-audited independently. Treat "clean" as "no known errors".
 - **Everything rests on Melvin-Koushki.** The apologies, letters and manuscript are known only through his summary; no Persian or Arabic text, chronicle or manuscript was read. The duress rule is *his* position, adopted as a rule of the game.
 - **A paraphrase can straddle a page break** that the quote checker cannot see (seven of 72 sampled artifacts cite one page for words that run onto the next).
 - Lewisohn's readings are his documented method applied to each datum; his article was never opened.
 - The 1422 / 1426 / 1427 dating of the three trials is our reading (MK writes "three trials", fn. 99, and does not list them).
-- Desktop screenshots were taken at two screens only; the ending screen and Act VI were checked by text and by `scrollWidth`, not by eye.
+- Desktop screenshots were taken at two screens only, and none on the live host; the ending screen and Act VI were checked by text and by `scrollWidth`, not by eye.

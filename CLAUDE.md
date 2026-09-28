@@ -308,7 +308,7 @@ Python↔JS engine parity. Its spine source is Melvin-Koushki's **2012 dissertat
 "Bāysunghur from c. 1416" has no source; the seven-tier hierarchy gap is closed; the trials are dated c. 1422/1426/1427 by our reading of MK).
 House rule it adds: **the duress rule** — only what he wrote freely (letters, colophons, autograph, early work, the works) can support a
 claim about what he *held*; his apologies were written to the rulers judging him. Entry: `TurkaVita/HANDOVER.md`. Plan: `docs/PLAN_TURKA_VITA_GAME.md`.
-Serve with the `turkavita` launch config (port 7560). Not deployed.
+Serve with the `turkavita` launch config (port 7560). **Live: https://t3dy.github.io/TurkaGame/TurkaVita/game/**.
 
 ## Deploy
 
