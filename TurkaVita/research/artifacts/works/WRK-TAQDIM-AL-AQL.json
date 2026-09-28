@@ -1,0 +1,31 @@
+{
+ "id": "WRK-TAQDIM-AL-AQL",
+ "type": "work",
+ "status": "draft",
+ "title": "Taqdīm al-ʿAql ʿalā l-Nafs",
+ "transliterated_title": "Taqdīm al-ʿAql ʿalā l-Nafs (On Intellect's Superiority to the Soul)",
+ "language": "Arabic",
+ "genre": "brief lettrist work on four positions on intellect and soul",
+ "theme": "lettrism",
+ "date": {
+  "ce": "unknown",
+  "hijri": "unknown",
+  "basis": "The entry gives no date; no copy in MS Majlis 10196; the earliest dated copy is 10th/16th (?) century."
+ },
+ "date_kind": "unknown",
+ "place": "not stated",
+ "addressee": "not stated for the composition; one manuscript (Sipahsālār 2930/6) notes it was presented to a Dawlat-i Sayyidiyya-yi Imāmiyya-yi Rażaviyya (unidentified)",
+ "occasion": "not stated",
+ "manuscript": "MS Princeton 319 (1187) ff. 69b-70b (10th/16th (?)); MS Sipahsālār 2930/6 ff. 118b-121a (undated).",
+ "majlis_folios": "none listed",
+ "edited": false,
+ "summary": "A brief lettrist work setting out four views of how intellect stands to soul: those of the peripatetics, the illuminationists, the Sufis and the lettrists.",
+ "edition_note": "Unpublished.",
+ "supported_by": [
+  "EV-0678",
+  "EV-0679"
+ ],
+ "claims": [
+  "CL-0333"
+ ]
+}

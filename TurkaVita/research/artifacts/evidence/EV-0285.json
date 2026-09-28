@@ -1,0 +1,15 @@
+{
+ "id": "EV-0285",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 82,
+  "printed_page": "65",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, the second fault is that impostors pass themselves off as great Sufi masters, gathering sly, world-worshipping cheats who are sent to rulers and officials with claims of the master's asceticism and miracles, so that important people wish to see the master.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.82"
+}

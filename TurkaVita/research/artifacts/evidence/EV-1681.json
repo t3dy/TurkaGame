@@ -1,0 +1,15 @@
+{
+ "id": "EV-1681",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 454,
+  "printed_page": "437",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK says that Mullā ʿAlī Nūrī (d. 1246/1830), reviver of interest in Mullā Ṣadrā's ḥikmat-i mutaʿāliya, \"appears to have been\" acquainted with Ibn Turka's lettrist thought.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.454",
+ "refers_to_primary": "Nūrī, marginalia in MS Majlis 10196"
+}

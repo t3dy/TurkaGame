@@ -1,0 +1,15 @@
+{
+  "id": "EV-1077",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 347,
+    "printed_page": "330",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki calls the K. al-Mafāḥiṣ (Book of Inquiries) the cornerstone of Ibn Turka's oeuvre and the key to his universalist project, and the definitive systematization of the lettrist teachings of Sayyid Ḥusayn Akhlāṭī. He says it treats the meanings of the letters according to three forms, numerological (iḥsāʾī), symbological (kitābī) and phonological (kalāmī), as well as the letters in themselves.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.347"
+}

@@ -1,0 +1,34 @@
+{
+ "id": "CL-0731",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Four later papers link the Mafāḥiṣ to the founding of the Samarkand Observatory in 1420 (Prologue, Sensorium, New Brethren, Timurid-Mughal), and the Prologue credits Ibn Turka with impact on its construction and programme; New Brethren says he claimed it as a realisation of the New Brethren's project in the Sharḥ al-Basmala preface of c. 1426. The dissertation pages searched mention the observatory only through Qāżīzāda Rūmī as director and through Yazdī's later invitation, and do not date its founding or draw the 1420 coincidence.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1451",
+  "EV-1454",
+  "EV-1479",
+  "EV-1476",
+  "EV-1495",
+  "EV-1475",
+  "EV-1438",
+  "EV-1432"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "medium",
+   "note": "a synchronism offered as significant; MK calls it poetically perfect in the Prologue"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "searched for observatory",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

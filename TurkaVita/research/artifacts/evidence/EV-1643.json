@@ -1,0 +1,15 @@
+{
+ "id": "EV-1643",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 43,
+  "printed_page": "26",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK says the Munshaʾat-i Turka (some 50 letters or notes from or to Ibn Turka) is unedited, while the Munshaʾat-i Yazdi (a further seven or eight letters relating to him and his family) was edited by Īraj Afshār; he calls both veritable goldmines for reconstructing the networks around Ibn Turka.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R2b opened pdf p.43",
+ "refers_to_primary": "Munshaʾat-i Turka; Munshaʾat-i Yazdi (ed. Afshār 2009)"
+}

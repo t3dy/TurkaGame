@@ -1,0 +1,29 @@
+{
+  "title": "Ijāza for the K. al-Maṣābīḥ",
+  "transliterated_title": "Ijāza li-Kitāb al-Maṣābīḥ",
+  "language": "Arabic",
+  "genre": "ijāza (certificate)",
+  "theme": "other",
+  "date": {
+    "ce": "unknown",
+    "hijri": "unknown",
+    "basis": "MK gives no date on the page read; the ijāza is in MS Majlis 10196 (copied 828-38/1425-35), so it was written before ca. 838/1435"
+  },
+  "date_kind": "unknown",
+  "place": "unknown",
+  "addressee": "one of his prominent contemporaries (not named on the page read)",
+  "occasion": "a certificate for the K. al-Maṣābīḥ, given by Ibn Turka to a contemporary",
+  "manuscript": "MS Majlis 10196 f. 126a (Majlis Library, Tehran)",
+  "majlis_folios": "126a",
+  "edited": false,
+  "summary": "The only ijāza MK lists; it is a certificate for the K. al-Maṣābīḥ (Arabic), given by Ibn Turka to a prominent contemporary; MK gives no recipient or date on the page read.",
+  "supported_by": [
+    "EV-0886"
+  ],
+  "claims": [
+    "CL-0458"
+  ],
+  "id": "WRK-IJAZA-MASABIH",
+  "type": "work",
+  "status": "draft"
+}

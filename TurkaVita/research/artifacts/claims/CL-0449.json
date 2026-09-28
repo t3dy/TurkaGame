@@ -1,0 +1,28 @@
+{
+  "id": "CL-0449",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Sayyid Ḥusayn Akhlāṭī wrote to Ibn Turka, whom he called his bosom companion and the leading luminary among his disciples, urging him to write a work establishing the propositions and conjunctions of the science of letters; MK thinks this was perhaps the Mafāḥiṣ.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0868"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to received from Sayyid Ḥusayn Akhlāṭī",
+      "where": "MS Majlis 10196, front matter",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.163",
+      "shaping_risk": "medium",
+      "note": "The identification with the Mafāḥiṣ is MK's 'perhaps'"
+    }
+  ],
+  "domain": "doctrinal"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "CL-0524",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that Ibn Turka suggests comprehensive occult knowledge is latent in the Imams and has only begun to be actualized by the author and his circle, which implies a doctrine of progress and raises a paradox about how latter-day knowledge can be both superior to, and wholly subsidiary to, that of the Imams.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1009",
+    "EV-1005",
+    "EV-1045"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.334",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

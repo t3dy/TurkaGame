@@ -1,0 +1,15 @@
+{
+ "id": "EV-0423",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 100,
+  "printed_page": "83",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that the Anjām 'was completed on 17 Dhū l-Qaʿda 828/30 September 1425', the same day as the Majlis 10196 copy; the entry does not say whether that date comes from the work or from the copy's colophon, and gives no place.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Anjām",
+ "read_by": "R3 opened pdf p.100"
+}

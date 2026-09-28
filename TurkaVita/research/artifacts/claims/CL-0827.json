@@ -1,0 +1,23 @@
+{
+ "id": "CL-0827",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki interprets the success of the naw-mulhidan label, and its disastrous consequences, as the heterodoxification of Ibn Turka's thought by establishment opponents who used his esotericism against him.",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1672",
+  "EV-1671",
+  "EV-1675"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.455-456",
+   "shaping_risk": "medium",
+   "note": "MK's own interpretation, offered in support of his thesis that Ibn Turka was an occult philosopher."
+  }
+ ],
+ "domain": "political"
+}

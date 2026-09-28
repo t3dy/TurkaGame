@@ -1,0 +1,22 @@
+{
+ "id": "CL-0664",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Baghdadi calligrapher Maʿrūf Khaṭṭāt was implicated with Ibn Turka in the Hurufi attempt and expelled from Herat.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1279",
+  "EV-1282",
+  "EV-1290"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.32",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

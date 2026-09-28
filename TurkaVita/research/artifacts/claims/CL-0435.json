@@ -1,0 +1,30 @@
+{
+  "id": "CL-0435",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka wrote twice to Sayyid Amīr Niẓām al-Dīn Aḥmad Ṣāʿidī (presumed): once asking him to look into the position of Sharaf al-Dīn Yaʿqūb and a group of Sufis (letter 6), once sending an introductory treatise on the science of letters (letter 15, ca. 817/1414 Shiraz), probably the R. Ḥurūf or possibly the R. Anjām.",
+  "epistemic_type": "attested",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0821",
+    "EV-0831",
+    "EV-0832"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Niẓām al-Dīn Aḥmad Ṣāʿidī (presumed)",
+      "where": "Munshaʾāt-i Turka letters 6 and 15",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.158",
+      "shaping_risk": "medium",
+      "note": "Identity of the addressee and of the treatise are MK's presumptions"
+    }
+  ],
+  "domain": "social"
+}

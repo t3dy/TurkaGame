@@ -1,0 +1,28 @@
+{
+ "id": "CL-0084",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The next year, during Shāhrukh's campaign against the Qara Quyunlu in Azarbayjan, Ibn Turka obtained a hearing at the sultan's camp at Ṣāʾin Qalʿa near Sultaniyya and received a promise of reinstatement.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0164",
+  "EV-0048"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "presumably Nafsat al-Maṣdūr II",
+   "shaping_risk": "high",
+   "note": "the page cites no note; the promise is known only from Ibn Turka's own account as far as the pages read"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.74 and p.53",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

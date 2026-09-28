@@ -1,0 +1,15 @@
+{
+  "id": "EV-1112",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 358,
+    "printed_page": "341",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The third level of light in the Mafāḥiṣ, section 4, is the intellect or reason (al-ʿaql), which can perceive itself and all other existents, sensory or immaterial, present or absent. But it best perceives interior things, universals and the category of transcendence (taqdīs, tanzīh), and must rely on other faculties for external particulars and the category of similarity (tashbīh); those faculties conflict, so reason falls into ambiguity and doubt and is rarely able to carry out its office free of doubt.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.358"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1625",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 454,
+  "printed_page": "437",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that in the author's own hierarchies (levels three and four in the R. Shaqq-i Qamar, level three in the R. Madarij Afham al-Afwaj), Farabi and Suhravardi fall far short of universal knowledge; MK says Ṭabāṭabāʾī's ranking of Ibn Turka alongside them is therefore an injustice to him.",
+ "evidence_kind": "work",
+ "read_by": "R2b opened pdf p.454",
+ "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar; R. Madarij Afham al-Afwaj"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "CL-0514",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka applies the same seven levels to the meaning of 'the Hour' in Q 54:1: level one takes bodily resurrection on trust; level two argues God can reassemble the atoms; level three holds only the spirit is judged and returns to its origin; level four holds the spirit is a light returning enhanced; level five holds all things return to the source through the perfect form of the Seal; level six holds the return is in the 29 letters; level seven is peculiar to the present time and works by jafr.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1038",
+    "EV-1039",
+    "EV-1040",
+    "EV-1041",
+    "EV-1042",
+    "EV-1043",
+    "EV-1044",
+    "EV-1045"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.477-479",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

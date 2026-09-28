@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0054",
+ "type": "event",
+ "status": "draft",
+ "actor": "Hurufi rebels",
+ "date": {
+  "start": "1432",
+  "end": "1432",
+  "hijri": "835",
+  "basis": "Timeline A.1, pdf p.53.",
+  "date_kind": "context"
+ },
+ "place": "Isfahan and Tabriz",
+ "event_type": "uprising",
+ "description": "Hurufi uprisings in Isfahan and Tabriz.",
+ "claims": [
+  "CL-0091"
+ ],
+ "fixed_point": false
+}

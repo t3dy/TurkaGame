@@ -1,0 +1,21 @@
+{
+ "id": "CL-0192",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK notes that Ibn Turka's nephew Afżal al-Dīn expanded Shahrastānī with detailed arguments against all non-Sunni groups; MK offers it ‘cf.’ without saying whether it supports or complicates his reading of the uncle.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0335",
+  "EV-0336"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.93 (printed 76)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

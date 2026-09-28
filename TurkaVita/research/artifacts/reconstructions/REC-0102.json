@@ -1,0 +1,22 @@
+{
+  "id": "REC-0102",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "How can latter-day knowledge be both superior to that of the Imams and wholly subsidiary to it?",
+  "proposition": "Ibn Turka resolves the paradox by treating the Imams' knowledge as complete but latent, and his own circle's as its actualization: subsidiary in source, ahead in realization.",
+  "kind": "inferential",
+  "scholar": "Melvin-Koushki",
+  "reasoning": [
+    "Melvin-Koushki poses the paradox at pdf p.334 and says the answer must be sought in the identity of level seven.",
+    "He reads Ibn Turka as suggesting comprehensive occult knowledge lies latent in the Imams and has only begun to be actualized by the author and his circle (pdf p.334).",
+    "The treatise supports the 'latent' half: the Imams' derivation method (jafr) survives, and the earlier saints could not deduce the details (pdf pp.476-479).",
+    "The pages do not show Ibn Turka stating the paradox or its resolution himself; it is Melvin-Koushki's construction."
+  ],
+  "observed_facts": [
+    "CL-0524",
+    "CL-0513",
+    "CL-0521",
+    "CL-0594"
+  ],
+  "confidence": "low"
+}

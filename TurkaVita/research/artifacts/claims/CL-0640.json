@@ -1,0 +1,21 @@
+{
+ "id": "CL-0640",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The pages read describe Bisṭāmī as an Anatolian counterpart on a parallel project but report no meeting or correspondence between him and Ibn Turka.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1289"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.257",
+   "shaping_risk": "low",
+   "note": "an absence on the pages R7 opened, not a statement by MK that no contact existed"
+  }
+ ],
+ "domain": "social"
+}

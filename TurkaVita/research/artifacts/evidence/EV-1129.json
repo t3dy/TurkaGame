@@ -1,0 +1,15 @@
+{
+  "id": "EV-1129",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 345,
+    "printed_page": "328",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki quotes the end of the R. Ḥurūf, in a footnote, as saying the author's approach was to ignore the opinions of others and present only the firstfruits of our own time, and that he therefore declined to quote from books with their stale and timeworn treatments of the subject.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Ḥurūf",
+  "read_by": "R6 opened pdf p.345"
+}

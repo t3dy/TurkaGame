@@ -1,0 +1,15 @@
+{
+ "id": "EV-0248",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 32,
+  "printed_page": "15",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the apologies must be treated with caution as sources for Ibn Turka's own views, given the duress under which they were composed and the author's need to distance himself as far as possible from Sufism in general and hurufism in particular.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, apologies (collectively)",
+ "read_by": "R2a opened pdf p.32"
+}

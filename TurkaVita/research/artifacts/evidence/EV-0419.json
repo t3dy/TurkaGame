@@ -1,0 +1,15 @@
+{
+ "id": "EV-0419",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 99,
+  "printed_page": "82",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In the entry on the K. al-Mafāḥiṣ Melvin-Koushki says its earliest copy, MS Majlis 10196, features autograph sections at the beginning, middle and end of the copy (referring to appendix P.3 for examples of the handwriting).",
+ "evidence_kind": "autograph",
+ "refers_to_primary": "MS Majlis 10196, K. al-Mafāḥiṣ",
+ "read_by": "R3 opened pdf p.99"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "CL-0650",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Herat master of the second apology is almost certainly Qāsim-i Anvār (MK's identification; the apology itself does not name him).",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1267",
+  "EV-1243",
+  "EV-1272"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.447",
+   "shaping_risk": "medium",
+   "note": "MK: 'almost certainly'; the apology's phrase is 'a prominent master'"
+  }
+ ],
+ "domain": "biographical"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1221",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 288,
+  "printed_page": "271",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK cites a letter from Akhlāṭī to Ṣāʾin al-Dīn preserved in MS Majlis 10196 in which the teacher addresses his disciple (khalīlī) as the leading luminary of his circle of brethren (wāsiṭat ʿaqd ikhwāni-hi); MK takes this as confirming that Ṣāʾin al-Dīn was regarded as leader of the Isfahan Circle, and notes ikhwān may allude to the Ikhwān al-Ṣafāʾ network (Binbaş).",
+ "evidence_kind": "letter",
+ "refers_to_primary": "Akhlāṭī's letter to Ibn Turka, MS Majlis 10196 (TMN/M front matter; MK Part 2 §P.2.2)",
+ "read_by": "R7 opened pdf p.288"
+}

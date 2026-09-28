@@ -1,0 +1,22 @@
+{
+ "id": "CL-0207",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki suggests, with 'perhaps', that some of the works in the first half of MS Majlis 10196 were copied as part of the evidence in defence of Ibn Turka's orthodoxy during his first trip to Herat.",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0406",
+  "EV-0405"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.79",
+   "shaping_risk": "medium",
+   "note": "a conjecture about why they were copied; no source says so"
+  }
+ ],
+ "domain": "chronological"
+}

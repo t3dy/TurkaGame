@@ -1,0 +1,15 @@
+{
+ "id": "EV-0639",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 132,
+  "printed_page": "115",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 f. 122a carries Sharḥ Ḥadīth Nabawī, undated. A marginal note in that manuscript states that it was copied from the autograph included in a majmūʿa of Mawlānā Rukn al-Dīn Ṣāʿid Kirmānī.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.132",
+ "refers_to_primary": "Sharḥ Ḥadīth Nabawī, MS Majlis 10196 f. 122a"
+}

@@ -1,0 +1,20 @@
+{
+ "id": "CL-0324",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The entry for Sharḥ al-Tajallī al-Dhātī gives no date, place or addressee and lists no copy in MS Majlis 10196; the earliest dated copy is 1093/1682 (?).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0657"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.135, no. 39",
+   "shaping_risk": "low"
+  }
+ ]
+}

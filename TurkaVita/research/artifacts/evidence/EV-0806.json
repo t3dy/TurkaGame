@@ -1,0 +1,15 @@
+{
+ "id": "EV-0806",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 152,
+  "printed_page": "135",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Dānishgāh 2576 (12th/18th century, defective, grammatical errors throughout) is a hybrid collection whose Munshaʾāt-i Turka (pp. 168-217) here holds the remaining 32 (of 46) letters as found in MS Majlis-i Sinā 316 pp. 10-34, beginning mid-page with letter no. 15. Because what survives corresponds so closely to the Sinā 316 version, MK infers a standard collection of Ibn Turka's correspondence that may survive in other, unidentified copies.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R5 opened pdf p.152",
+ "refers_to_primary": "MS Dānishgāh 2576"
+}

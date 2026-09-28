@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0032",
+ "type": "event",
+ "status": "draft",
+ "actor": "Amīr Fīrūzshāh's family",
+ "date": {
+  "start": "1423",
+  "end": "1424",
+  "hijri": "827-828",
+  "basis": "Timeline A.1, pdf p.52.",
+  "date_kind": "context"
+ },
+ "place": "Isfahan",
+ "event_type": "political",
+ "description": "The family of Amīr Fīrūzshāh is given the governorship of Isfahan.",
+ "claims": [
+  "CL-0090"
+ ],
+ "fixed_point": false
+}

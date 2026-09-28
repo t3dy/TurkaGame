@@ -1,0 +1,27 @@
+{
+ "id": "CL-0318",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The only date in the entry for the R. fī Sharḥ Ḥaqīqat al-Waḥda is the MS Majlis 10196 copy date of 3 Dhū l-Ḥijja 827 (27 October 1424), the same day as the Sharḥ-i Ḥadīs-i ʿAmāʾ; the entry gives no composition date, and the folio range printed overlaps that of the ʿAmāʾ commentary (f. 120a-20b against ff. 119b-20b).",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0642"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 f. 120a-20b",
+   "shaping_risk": "medium",
+   "note": "copy date; no composition date"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.133, no. 36",
+   "shaping_risk": "low"
+  }
+ ]
+}

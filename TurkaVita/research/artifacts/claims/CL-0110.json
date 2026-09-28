@@ -1,0 +1,20 @@
+{
+ "id": "CL-0110",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Qāsim-i Anvār and the calligrapher Maʿrūf Khaṭṭāt Baghdādī were also expelled from Herat in the same purge, which Melvin-Koushki reads as part of Shāhrukh's consolidation of rule.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0246"
+ ],
+ "domain": "political",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.32 (printed 15)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": "CL-0323",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Two of Melvin-Koushki's statements pull against each other on the date of the Sharḥ-i Naẓm al-Durr: the commentary is dated to Dhū l-Ḥijja 806/1404, yet it is said to reference the Mafāḥiṣ (dated 823/1420) and the Sharḥ Fuṣūṣ al-Ḥikam (finished 814/1411, and 813 in the timeline). The dissertation does not comment on the tension on these pages; possible explanations (later revision of the Persian version, a different completion date for the Arabic version) are not supplied by the text and are not asserted here.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0652",
+  "EV-0649",
+  "EV-0655"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "game_reconstruction",
+   "who": "R4 (researcher pass), noticing the tension between two MK statements",
+   "where": "pdf pp.135, 173",
+   "shaping_risk": "low",
+   "note": "an observation, not a finding of Melvin-Koushki's; cross-check before use in a scene"
+  }
+ ]
+}

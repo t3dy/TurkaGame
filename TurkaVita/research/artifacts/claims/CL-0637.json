@@ -1,0 +1,28 @@
+{
+ "id": "CL-0637",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Qāsim-i Anvār (d. 837/1434), Niʿmat Allāh's khalīfa and a dāʿī for the Ṣafaviyya, is said by Niʿmatullahi hagiography to have been one of Ibn Turka's companions in Cairo.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1280",
+  "EV-1205"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Ṣunʿ Allāh Niʿmatullāhī, Savāniḥ al-Ayyām, via Mufīd Mustawfī",
+   "where": "3/16-17",
+   "shaping_risk": "high",
+   "note": "Niʿmatullahi hagiography with a stake in its saint's circle"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.32",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

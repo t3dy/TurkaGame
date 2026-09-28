@@ -1,0 +1,26 @@
+{
+ "id": "CL-0102",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat al-Maṣdūr I was written for Shāhrukh in 829/1426 as Ibn Turka's answer to accusations made by enemies in Herat (Melvin-Koushki's dating and description).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0202"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.75 (printed 58)",
+   "shaping_risk": "low"
+  }
+ ]
+}

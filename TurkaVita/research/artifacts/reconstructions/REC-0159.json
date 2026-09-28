@@ -1,0 +1,18 @@
+{
+ "id": "REC-0159",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why were a calligrapher and a lettrist implicated together in the Hurufi affair?",
+ "proposition": "Lettrism and calligraphy were linked practices in early Timurid Iran, so the pairing is unlikely to be accidental.",
+ "kind": "inferential",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK: it seems 'no accident'; more research needed.",
+  "The link with Bāysunghur, a calligrapher-prince and lettrism's patron, is offered as a parallel."
+ ],
+ "observed_facts": [
+  "CL-0664",
+  "CL-0643"
+ ],
+ "confidence": "low"
+}

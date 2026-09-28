@@ -1,0 +1,29 @@
+{
+  "id": "CL-0401",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The letters in MSS Sinā 316 and Dānishgāh 2576 are in rough chronological order from about 810/1408, but the order is not rigorous, the collection is not a complete record of his dealings, and only one letter to Yazdī survives from the first Fars stage.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0807",
+    "EV-0808"
+  ],
+  "mediation": [
+    {
+      "layer": "manuscript_colophon",
+      "who": "Compiler(s) of the standard collection",
+      "where": "MSS Sinā 316, Dānishgāh 2576",
+      "shaping_risk": "medium",
+      "note": "The ordering is the compiler's; who compiled it and when is not established."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.152",
+      "shaping_risk": "medium",
+      "note": "MK's inference from correspondence with other sources' chronology"
+    }
+  ],
+  "domain": "chronological"
+}

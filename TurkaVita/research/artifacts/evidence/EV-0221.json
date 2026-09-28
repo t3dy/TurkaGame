@@ -1,0 +1,15 @@
+{
+ "id": "EV-0221",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 77,
+  "printed_page": "60",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "According to Melvin-Koushki's footnote, Ibn Turka states in Nafsat II that five years have passed since he was sent into exile and nine months since he was promised a review of his case at the imperial seat in Herat, and that meanwhile he has appeared at court once or twice a week to no avail.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II, pp.199, 207 (per MK fn.105)",
+ "read_by": "R2a opened pdf p.77"
+}

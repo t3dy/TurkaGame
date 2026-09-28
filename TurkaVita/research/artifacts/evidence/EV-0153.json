@@ -1,0 +1,15 @@
+{
+ "id": "EV-0153",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 72,
+  "printed_page": "55",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The verse the accusers cited, as given by Maʿṣūm ʿAlī Shāh, says that the closed eyes of the first two are a byword for blindness while ʿAlī's eye is alive with insight. It is attributed to Ibn Turka's early writing by his accusers; the pages read do not say whether he owned or disowned it.",
+ "evidence_kind": "early_work",
+ "read_by": "R1 opened pdf p.72",
+ "refers_to_primary": "Ibn Turka, youthful verse (Ṭarāʾiq al-Ḥaqāʾiq, 3/30)"
+}

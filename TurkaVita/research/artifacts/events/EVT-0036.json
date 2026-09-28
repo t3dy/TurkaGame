@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0036",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1426",
+  "end": "1426",
+  "hijri": "829",
+  "basis": "Timeline A.1, pdf p.52.",
+  "date_kind": "colophon"
+ },
+ "place": "Yazd",
+ "event_type": "work",
+ "description": "Ibn Turka writes R. Shaqq-i Qamar, R. Suʾl al-Mulūk at Bāysunghur's request, and the Sharḥ al-Basmala, sending copies to Ulugh Beg and Qāżīzāda Rūmī.",
+ "claims": [
+  "CL-0096",
+  "CL-0048"
+ ],
+ "fixed_point": false
+}

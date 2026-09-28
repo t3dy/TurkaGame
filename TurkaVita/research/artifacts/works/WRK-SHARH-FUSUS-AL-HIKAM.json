@@ -1,0 +1,38 @@
+{
+ "id": "WRK-SHARH-FUSUS-AL-HIKAM",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ Fuṣūṣ al-Ḥikam",
+ "transliterated_title": "Sharḥ Fuṣūṣ al-Ḥikam",
+ "language": "Arabic",
+ "genre": "lettrist commentary on Ibn ʿArabī's Fuṣūṣ al-Ḥikam",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "finished 13 June 1411; corrected 1 March 1415",
+  "hijri": "finished 20 Ṣafar 814; corrected 19 Dhū l-Ḥijja 817",
+  "basis": "Colophon on MS Majlis 10196 f. 330a, which states completion and correction; the timeline (p.52) instead says 813/1411. The Majlis copy itself was completed in Shiraz 3 Rabīʿ I 831/22 Dec 1427 and vouched for in the author's hand 28 Ṣafar 832/4 Dec 1428."
+ },
+ "date_kind": "composition",
+ "place": "Not stated for the 814 completion; corrected in Fars (817); read in Herat (820); Majlis copy completed in Shiraz (831); author's note written at Chālū, Tabaristan (832).",
+ "addressee": "not stated",
+ "occasion": "not stated in the entry (the timeline links 813/1411 with a journey to the Hijaz, with a question mark)",
+ "manuscript": "MS Majlis 10196 ff. 241b-330a; MS Majlis 10082 (511 ff., 835/1432); MS Mishkāt 1294 (839/1435); partial Kastamonu 1233/2.",
+ "majlis_folios": "ff. 241b-330a (colophon and author's note on f. 330a)",
+ "edited": true,
+ "summary": "A long, subtle commentary on Ibn ʿArabī's Fuṣūṣ al-Ḥikam with frequent lettrist explanations and excursuses; it is one of Ibn Turka's four or five major works and is cited by his later R. Ḥurūf and by the Sharḥ-i Naẓm al-Durr.",
+ "edition_note": "Ed. Muḥsin Bīdārfar, 2 vols., Qom 2000 (Arabic, with Mullā ʿAlī Nūrī's marginalia in the footnotes).",
+ "supported_by": [
+  "EV-0622",
+  "EV-0623",
+  "EV-0624",
+  "EV-0625",
+  "EV-0626",
+  "EV-0627"
+ ],
+ "claims": [
+  "CL-0308",
+  "CL-0309",
+  "CL-0310",
+  "CL-0311"
+ ]
+}

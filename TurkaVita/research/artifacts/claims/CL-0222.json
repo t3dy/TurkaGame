@@ -1,0 +1,22 @@
+{
+ "id": "CL-0222",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Asrār al-Ṣalāt is dated 21 Jumādā II 820/5 August 1417 and placed in Herat, whereas its Majlis 10196 copy was made in Yazd on 26 Ramaḍān 828/11 August 1425; the two dates and places are different events.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0432",
+  "EV-0430"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.84-85",
+   "shaping_risk": "medium",
+   "note": "source of the 820 date not named"
+  }
+ ],
+ "domain": "chronological"
+}

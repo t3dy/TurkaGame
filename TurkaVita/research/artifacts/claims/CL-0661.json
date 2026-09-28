@@ -1,0 +1,22 @@
+{
+ "id": "CL-0661",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Whether the 830/1427 attempt on Shāhrukh was staged by the ruler himself is left open: MK says 'possibly staged' and cites Binbaş.",
+ "epistemic_type": "contested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1278",
+  "EV-1285"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.32",
+   "shaping_risk": "medium",
+   "note": "MK gives it as a possibility, not a finding"
+  }
+ ],
+ "domain": "political"
+}

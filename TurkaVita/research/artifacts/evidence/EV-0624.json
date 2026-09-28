@@ -1,0 +1,15 @@
+{
+ "id": "EV-0624",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 129,
+  "printed_page": "112",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The colophon on MS Majlis 10196 f. 330a states that the work was finished on 20 Ṣafar 814/13 June 1411 and corrected on 19 Dhū l-Ḥijja 817/1 March 1415 in Fars, and that it was read by Shams al-Dīn Muḥammad al-Māzyār to Sharaf al-Dīn Yazdī on 30 Rajab 820/12 September 1417 in Herat.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.129",
+ "refers_to_primary": "MS Majlis 10196 f. 330a, colophon"
+}

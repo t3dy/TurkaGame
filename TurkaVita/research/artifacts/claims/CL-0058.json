@@ -1,0 +1,21 @@
+{
+ "id": "CL-0058",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Timeline A.1 has Ibn Turka, attached to Iskandar's court in Isfahan in 815-17/1412-14, move back to Shiraz because of harassment by envious individuals and put forward his protégé Sharaf al-Dīn Yaʿqūb to replace him as qadi; the running text of §1.2 does not mention this move.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0023"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.52",
+   "shaping_risk": "medium",
+   "note": "timeline only; no source named"
+  }
+ ],
+ "domain": "biographical"
+}

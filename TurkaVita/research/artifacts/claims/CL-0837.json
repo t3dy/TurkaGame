@@ -1,0 +1,31 @@
+{
+ "id": "CL-0837",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki holds that the self-image in Ibn Turka's apologies, produced under great duress, is hardly reflective of his primary concerns; he nonetheless builds Chapter 1's biography primarily on the apologies together with Judi-Niʿmati's account, and calls Fujii Morio's Persian examination of the apologies 'rather unsatisfactory'.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1629",
+  "EV-1628",
+  "EV-1638",
+  "EV-1640"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, in the apologies (Nafsat al-Masdur)",
+   "where": "Nafsat al-Masdur I/II",
+   "shaping_risk": "high",
+   "note": "Written to the ruler judging him; MK: produced under great duress."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.25, 39",
+   "shaping_risk": "medium",
+   "note": "MK's judgement of how far the apologies reflect his concerns is itself part of his argument against the orthodox-Sunni-Sufi reading."
+  }
+ ],
+ "domain": "biographical"
+}

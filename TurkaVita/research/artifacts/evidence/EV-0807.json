@@ -1,0 +1,15 @@
+{
+  "id": "EV-0807",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 152,
+    "printed_page": "135",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK argues that the letters as presented in MS Sinā 316 and MS Dānishgāh 2576 follow a rough chronological order beginning after Ibn Turka's return to Iran from Cairo in ca. 810/1408. He thinks the first letter, which speaks of departing Isfahan for the Hijaz, is unlikely to mark the start of his studies abroad and rather suggests a pilgrimage made in his first period in Shiraz and Isfahan (ca. 810-17/1408-14), under the patronage first of Pīr Muḥammad b. ʿUmar Shaykh and then of Iskandar b. ʿUmar Shaykh.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.152",
+  "refers_to_primary": "Munshaʾāt-i Turka, ordering"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "CL-0596",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki attributes to Ibn Turka, after Ibn ʿArabī, a teleological view of history in which man is the singularity of creation, the purpose of creation is the Perfect Man, and the prophetic cycle ends in the end of history (maʿād) transposed to a higher level; no passage of Ibn Turka is cited on the page for this.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "low",
+  "supported_by": [
+    "EV-1116",
+    "EV-1117"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.340",
+      "shaping_risk": "high"
+    }
+  ],
+  "domain": "doctrinal"
+}

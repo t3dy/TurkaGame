@@ -1,0 +1,27 @@
+{
+ "id": "CL-0204",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In MS Majlis 10196 a colophon usually gives only the date of copying, which is then a terminus ad quem for the composition of the work, not its date; only occasionally do colophons give both dates.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0415"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196",
+   "where": "colophons",
+   "shaping_risk": "medium",
+   "note": "a date may be the copying"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.80",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

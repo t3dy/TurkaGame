@@ -1,0 +1,22 @@
+{
+  "id": "CL-0557",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Akhlāṭī wrote to Ibn Turka urging him to write a work establishing the propositions and conjunctions proper to the science of letters, and Melvin-Koushki reads the Mafāḥiṣ as Ibn Turka's answer.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1078",
+    "EV-1077"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki reporting a letter preserved in the Munshaʾāt",
+      "where": "pdf p.347",
+      "shaping_risk": "medium",
+      "note": "the letter is summarized in a footnote; the transcription is in Part 2, not opened"
+    }
+  ],
+  "domain": "textual"
+}

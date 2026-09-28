@@ -1,0 +1,100 @@
+{
+ "id": "SCN-0501",
+ "type": "scene",
+ "status": "draft",
+ "act": "copyist",
+ "title": "The copyist's charge",
+ "dramatic_question": "You are the hand that copies a scholar's works into one volume. No colophon says why. What is the book for?",
+ "situation": {
+  "when": "c. 1425–1435 (the dissertation gives the copying span three ways)",
+  "where": "Yazd, Herat, Shiraz and Mazandaran: the places the colophons give",
+  "based_on": [
+   "CL-0200",
+   "CL-0205",
+   "CL-0309"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki judges MS Majlis 10196 (425 folios, Majlis Library, Tehran) the earliest, most complete and most reliable collection of Ibn Turka's works: 35 works, poetry, and in its margins 15 letters and an ijāza.",
+   "claim": "CL-0200"
+  },
+  {
+   "text": "The incipit and explicit of the Mafāḥiṣ (ff. 52a and 118b) are in Ibn Turka's own hand, and the Sharḥ Fuṣūṣ al-Ḥikam carries an autograph note at the end.",
+   "claim": "CL-0201"
+  },
+  {
+   "text": "A note in Ibn Turka's own hand on f. 330a, dated 28 Ṣafar 832 (4 December 1428) at Chālū in Tabaristan, vouches for this copy of the Sharḥ Fuṣūṣ al-Ḥikam as read by the copyist in his presence.",
+   "claim": "CL-0309"
+  },
+  {
+   "text": "For many works the colophons do not show whether the date is composition or transcription; fully half the manuscript, almost two-thirds of the preserved works, was copied in the years 827–29/1425–27, bracketing the 1426 trip to Herat, which this claim calls his first trip to Shāhrukh's court (other pages put a first hearing c. 1422). The Hijri and Christian spans in that sentence do not correspond: 827 AH began in December 1423.",
+   "claim": "CL-0205"
+  }
+ ],
+ "prose": [
+  "You are the hand that copies, and the record does not give you a name. Melvin-Koushki reports, without endorsing it, Dānishpazhūh's conjecture that you are the Khwāja Ẓahīr al-Dīn Muḥammad to whom letter 46 is addressed. In December 1428, at Chālū, Ibn Turka writes in his own hand that he has heard a copy of the Sharḥ Fuṣūṣ read in his presence, and that reader was you. From that note, from his own hand on the Mafāḥiṣ, and from how the volume runs, Melvin-Koushki concludes you were in close contact with him and seem to have accompanied him in exile.",
+  "The first half of the volume is in almost perfect date order, and half of it was copied within a few years around his 1426 trip to Herat. Melvin-Koushki infers that those dates are copying dates, and suggests, with a 'perhaps', that some of the works were copied as evidence in defence of his orthodoxy. That is his conjecture: no colophon says why the volume was made.",
+  "Now you decide what it is for. Whatever you choose, the game does not know the answer, and neither do the sources."
+ ],
+ "unrecorded": true,
+ "choices": [
+  {
+   "id": "A",
+   "label": "Make it a defence dossier: copy the works as evidence of his orthodoxy, as Melvin-Koushki suggests some of them may have been.",
+   "strategy": "volume_as_defence_dossier",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0206",
+    "CL-0207"
+   ],
+   "requires": {},
+   "effects": {
+    "life.volume": "defence",
+    "press.works": 1,
+    "score.biography": 1
+   },
+   "feedback": "This is Melvin-Koushki's suggestion, hedged with 'perhaps' and limited to some works of the first half; behind it stand the near-perfect date order and the circumstances of the years around the 1426 trip to Herat. No colophon or note says it, and the same date order is his reason for doubting that the dates are composition dates."
+  },
+  {
+   "id": "B",
+   "label": "Make it his complete works: gather everything that can be found, in the order it reaches you, whatever its date.",
+   "strategy": "volume_as_complete_works",
+   "epistemic_label": "unknown",
+   "based_on": [
+    "CL-0200",
+    "CL-0208"
+   ],
+   "requires": {},
+   "effects": {
+    "life.volume": "complete",
+    "press.works": 1,
+    "score.calibration": 1
+   },
+   "feedback": "Nothing says you meant the volume to be complete. Melvin-Koushki's judgement that it is the most complete collection describes what survives, not what you intended. The second half, which is not in date order, would fit gathering what came to hand, but that is the game's own observation and not his."
+  },
+  {
+   "id": "C",
+   "label": "Make it a school's book: what his students and readers ask for, in the order they ask.",
+   "strategy": "volume_as_school_canon",
+   "epistemic_label": "unknown",
+   "based_on": [
+    "CL-0453",
+    "CL-0045"
+   ],
+   "requires": {},
+   "effects": {
+    "life.volume": "school",
+    "press.students": 1,
+    "score.calibration": 1
+   },
+   "feedback": "There was demand: a commander in Shāhrukh's army asked through the Yazdī collection for a volume of his Persian works, and the colophons on the earliest Mafāḥiṣ copies show Sharaf al-Dīn Yazdī checking a copy and attending teaching on it. Neither says the volume was a school's book, and the sources are silent on what it was for."
+  }
+ ],
+ "next": "SCN-0502",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

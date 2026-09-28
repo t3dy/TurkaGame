@@ -1,0 +1,27 @@
+{
+  "id": "CL-0464",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The Shāh Rukh prediction was well known later in the Timurid period: Davānī cites it in his R. Tuḥfa-yi Rūḥānī as a prime example of political prediction from the names of the actors.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0897"
+  ],
+  "mediation": [
+    {
+      "layer": "later_chronicler",
+      "who": "Davānī, R. Tuḥfa-yi Rūḥānī",
+      "where": "Majlis 5180 p. 420; Majlis 12559 p. 260, per MK",
+      "shaping_risk": "medium",
+      "note": "A later reader's use."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.328",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

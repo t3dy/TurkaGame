@@ -1,0 +1,23 @@
+{
+  "id": "CL-0587",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka upholds the principle of prisca sapientia: true knowledge is ancient, given to the prophets (above all Solomon) and to the ancient sages, then occulted around the advent of Islam, and he depends on the cryptic utterances of ʿAlī and Hermes.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1114",
+    "EV-1121",
+    "EV-1014",
+    "EV-1127"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.338, 342, 345",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

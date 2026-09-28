@@ -1,0 +1,15 @@
+{
+  "id": "EV-1058",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 180,
+    "printed_page": "163",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki notes (footnote 12) that in the introduction to the Mafāḥiṣ Ibn Turka explains that absolute being (al-wujūd al-muṭlaq), limited to existent objects, is an insufficiently universal object of study, whereas the letter encompasses all that is and is not, all that could be or cannot be, and is hence the proper object of a universal science.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.180"
+}

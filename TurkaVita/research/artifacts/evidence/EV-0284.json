@@ -1,0 +1,15 @@
+{
+ "id": "EV-0284",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 82,
+  "printed_page": "65",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka says that to understand such Sufi masters one must spend years of intellectual and practical discipline on the Muḥammadan path under a shaykh, and that those who never progress beyond envy, petulance and malice cannot have the faintest idea what the masters mean.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.82"
+}

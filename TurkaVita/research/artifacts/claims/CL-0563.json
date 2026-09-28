@@ -1,0 +1,20 @@
+{
+  "id": "CL-0563",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The Mafāḥiṣ has seven inquiries in its introduction, 36 in section 1 (mental form), 21 in section 2 (written), 18 in section 3 (spoken) and 74 in section 4.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1104"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.354",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "textual"
+}

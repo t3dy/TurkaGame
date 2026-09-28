@@ -1,0 +1,14 @@
+{
+  "id": "EV-1071",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 234,
+    "printed_page": "217",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki reads Ibn Turka as contesting Ibn al-Akfānī: metaphysics cannot be the most universal of the sciences, the palm going to lettrism; but the point that Sufism is simply applied metaphysics is well taken, and Ibn Turka similarly links philosophy and mysticism as two necessary approaches to wisdom that are best combined.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R6 opened pdf p.234"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1600",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 23,
+  "printed_page": "6",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that Henry Corbin gave Ibn Turka a brief but warm embrace as a \"standard-issue Shiʿi esotericist\", which MK says complicated the otherwise featureless \"mystical-scholastic\" picture somewhat.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.23",
+ "refers_to_primary": "Corbin, En Islam iranien 3/233-74"
+}

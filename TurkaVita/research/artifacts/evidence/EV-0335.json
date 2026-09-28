@@ -1,0 +1,15 @@
+{
+ "id": "EV-0335",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 93,
+  "printed_page": "76",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki notes for comparison that Ibn Turka's nephew Afżal al-Dīn translated Shahrastānī's K. al-Milal wa-l-Niḥal as the Tanqīḥ al-Adilla wa-l-ʿIlal, expanding it with detailed arguments disproving the doctrines of all non-Sunni groups.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Afżal al-Dīn Turka, Tanqīḥ al-Adilla wa-l-ʿIlal (per MK fn.154)",
+ "read_by": "R2a opened pdf p.93"
+}

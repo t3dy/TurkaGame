@@ -1,0 +1,15 @@
+{
+ "id": "EV-0630",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 131,
+  "printed_page": "114",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The work is dedicated to one Sulṭān Muḥammad, perhaps Sulṭān Muḥammad b. Bāysunghur; a footnote asks whether it might instead be the ruler of Gulbarga in India.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R4 opened pdf p.131",
+ "refers_to_primary": "Sharḥ-i Gulshan-i Rāz, dedication"
+}

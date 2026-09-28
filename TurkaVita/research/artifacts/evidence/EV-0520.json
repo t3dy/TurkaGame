@@ -1,0 +1,15 @@
+{
+ "id": "EV-0520",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 125,
+  "printed_page": "108",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Nuqṭa is a commentary on ʿAlī's saying 'I am the dot beneath the B', written in response to a friend (unnamed); it has been wrongly attributed to Jalāl al-Dīn Davānī, and was published by ʿAlī Farrūkh and by Ibrāhīm Dībājī (1377 Sh./1998).",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Nuqṭa",
+ "read_by": "R3 opened pdf p.125"
+}

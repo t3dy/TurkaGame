@@ -1,0 +1,32 @@
+{
+ "id": "REC-0056",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was Ibn Turka?",
+ "proposition": "Ibn Turka was an orthodox Sunni Sufi thinker.",
+ "kind": "inferential",
+ "scholar": "Leonard Lewisohn (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "Lewisohn's article studies the apologies (Nafsat al-Masdur), which he calls the 'Confessions' (pdf p.36 n.61), and MK says presents Ibn Turka as an orthodox Sunni Sufi thinker while calling for more research (p.25).",
+  "The evidence is the apologies, i.e. what Ibn Turka told the ruler who was judging him; under the project's duress rule that shows what he told whom and cannot show what he held.",
+  "MK's objection is precisely that: the image is 'produced under great duress' and 'hardly reflective of his primary concerns' (p.25). He also calls the reading a misrepresentation and prefers Shiʿi-Sunnism to either Corbin's or Lewisohn's label (p.25).",
+  "MK notes that Ibn Turka's own works also have Sunni features (Sharh al-Nahj, the salaf passage in the Mafahis, pp.91-92), but reads the salaf passage as a concession to less intelligent readers (p.92 n.150). MK also builds his Chapter 1 biography partly on the apologies (p.39), so his objection to Lewisohn is to how the apologies are read, not to using them. He marks the death date in Lewisohn's title with [sic] (p.36 n.61). MK is a partisan reporter. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0807",
+  "CL-0837",
+  "CL-0834",
+  "CL-0836",
+  "CL-0833",
+  "EV-1627",
+  "EV-1628",
+  "EV-1629",
+  "EV-1691",
+  "EV-1692"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0050",
+  "REC-0062"
+ ]
+}

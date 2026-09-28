@@ -1,0 +1,33 @@
+{
+  "id": "CL-0410",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Iskandar b. ʿUmar Shaykh was Ibn Turka's patron in Shiraz and Isfahan before Shāhrukh's western campaign of 817/1414: MK reads letter 8 as addressed to Iskandar (presumably) and letters 12 and 16 treat Iskandar as patron; in letter 8 Ibn Turka regrets being unable to call in person and writes to state his regard.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0823",
+    "EV-0824",
+    "EV-0828",
+    "EV-0833",
+    "EV-0807",
+    "EV-0808"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Iskandar b. ʿUmar Shaykh (addressee presumed)",
+      "where": "Munshaʾāt-i Turka letter 8",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.156",
+      "shaping_risk": "medium",
+      "note": "Addressee of letter 8 is MK's presumption ('?' in his heading)"
+    }
+  ],
+  "domain": "political"
+}

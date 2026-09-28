@@ -1,0 +1,15 @@
+{
+  "id": "EV-0803",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 151,
+    "printed_page": "134",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MS Majlis-i Sinā 316 (copied 12 Rabīʿ I 905/17 October 1499; colophon suggests a substantial part was done on 7 Shaʿbān 878/28 December 1473, and names Qivām al-Dīn Muḥammad Yazdī Ṣāʾinī as compiler with a copy date of 5 Rabīʿ I 849/11 June 1445) is a hybrid collection whose first element, the Munshaʾāt-i Ṣāʾin-i Turka (pp. 1-34), contains 45 letters, letter openings or notes from Ibn Turka. MK could see it only in an incomplete, partly illegible microfilm.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.151",
+  "refers_to_primary": "MS Majlis-i Sinā 316"
+}

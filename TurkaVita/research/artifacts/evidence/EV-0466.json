@@ -1,0 +1,15 @@
+{
+ "id": "EV-0466",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 110,
+  "printed_page": "93",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 f. 171b carries the R. Iʿtiqādiyya as an undated copy (citing Ḥāʾirī, Majlis, 32/239); Melvin-Koushki says it apparently survives only in this manuscript. Folio 171b lies inside the folio range (ff. 165b-72a) given for the Iʿtiqādāt.",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, R. Iʿtiqādiyya",
+ "read_by": "R3 opened pdf p.110"
+}

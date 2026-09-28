@@ -1,0 +1,27 @@
+{
+  "id": "CL-0457",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In a letter of ca. 817/1415 Yazdī congratulated Ibn Turka on finishing his commentary on the Fuṣūṣ al-Ḥikam and promised to accompany him to Khurasan and the shrine at Mashhad.",
+  "epistemic_type": "attested",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0884"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Sharaf al-Dīn Yazdī (?), to Ibn Turka",
+      "where": "YMN/MS pp. 257-58",
+      "shaping_risk": "medium",
+      "note": "Found only in MS Sinā 316, whose colophon is late; MK marks the letter's date and place with '?'."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.169",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "biographical"
+}

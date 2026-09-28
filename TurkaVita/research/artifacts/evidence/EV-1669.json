@@ -1,0 +1,15 @@
+{
+ "id": "EV-1669",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 455,
+  "printed_page": "438",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that in the R. al-Inzaliyya, written sometime before 828/1425, Ibn Turka decries the current unpopularity of lettrism in Iran, likening his local contemporaries' simplemindedness to suckling babies' rejection of solid food.",
+ "evidence_kind": "work",
+ "read_by": "R2b opened pdf p.455",
+ "refers_to_primary": "Ibn Turka, R. al-Inzaliyya, ed. Bihbahani, 144; cf. 138"
+}

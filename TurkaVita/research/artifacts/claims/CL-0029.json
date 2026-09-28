@@ -1,0 +1,22 @@
+{
+ "id": "CL-0029",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Muḥammad al-Jazarī (d. 833/1429 in Herat), originally of Damascus, became Ibn Turka's powerful opponent, and his enmity caused Ibn Turka much grief; MK develops this in §1.3, which R1 did not read.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0097",
+  "EV-0045"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.64 and p.53",
+   "shaping_risk": "medium",
+   "note": "the detail is deferred to a section outside the pages read"
+  }
+ ],
+ "domain": "social"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0672",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 139,
+  "printed_page": "122",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that the Tamhīd is by far Ibn Turka's best known and most influential work in the modern period, particularly in Imami circles: most surviving copies date to the late 19th century (the Qajar revival of Sadrian philosophy) and it heads the ʿirfān section of current seminary curricula in Qom.",
+ "evidence_kind": "reception",
+ "read_by": "R4 opened pdf p.139",
+ "refers_to_primary": "Tamhīd al-Qawāʿid, modern reception"
+}

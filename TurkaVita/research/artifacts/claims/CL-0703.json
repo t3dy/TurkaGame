@@ -1,0 +1,43 @@
+{
+ "id": "CL-0703",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "On the pages read, the dissertation dates the first trial, in Herat before Shāhrukh, to c. 825/1422 (followed by a judgeship in Yazd), and a second summons to Herat, described as being tried again, to 829/1426 (with Nafsat al-Maṣdūr I and R. Iʿtiqādāt). The 830/1427 arrest, torture and exile after the attempt on Shāhrukh is narrated without the word trial on its own page, but chapter 3 says he 'twice stood trial and was exiled' between 828/1425 and 831/1428, which on a natural reading counts 1426 and 1427. The dissertation does not list the three trials by date in one place; that mapping is an inference from these pages.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1415",
+  "EV-1417",
+  "EV-1419",
+  "EV-1420",
+  "EV-1428",
+  "EV-1424"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Herat proceedings of c. 1422, 1426, 1427"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I/II, as reported by Melvin-Koushki",
+   "where": "dissertation pdf 70-77",
+   "shaping_risk": "high",
+   "note": "written to the rulers judging him; the dissertation calls the apologies the primary source for his life (pdf 75)"
+  },
+  {
+   "layer": "manuscript_colophon",
+   "who": "MS Majlis 10196 colophons for Nafsat I and Iʿtiqādāt",
+   "where": "dissertation pdf 73",
+   "shaping_risk": "medium",
+   "note": "829/1426 date of the apology may be a transcription date"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 52-53, 70-75, 177",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

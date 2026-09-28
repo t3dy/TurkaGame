@@ -1,0 +1,40 @@
+{
+ "id": "WRK-SHARH-I-NAZM-AL-DURR",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ-i Naẓm al-Durr (al-Durar)",
+ "transliterated_title": "Sharḥ-i Naẓm al-Durr (al-Durar), Commentary on the Tāʾiyya al-Kubrā of Ibn al-Fāriḍ",
+ "language": "Persian",
+ "genre": "anthology-as-commentary on Ibn al-Fāriḍ's Tāʾiyya al-Kubrā; Arabic version and Persian translation",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "June 1404",
+  "hijri": "Dhū l-Ḥijja 806",
+  "basis": "Melvin-Koushki states completion in Dhū l-Ḥijja 806/June 1404, presumably in Cairo; the entry cites no colophon for the date. The Majlis copy is dated 8 Ramaḍān 828/24 July 1425. The commentary is said to reference the Mafāḥiṣ (823/1420) and the Sharḥ Fuṣūṣ (814/1411), which sits uneasily with 806."
+ },
+ "date_kind": "composition",
+ "place": "Cairo (presumed by Melvin-Koushki)",
+ "addressee": "friends who requested it (unnamed)",
+ "occasion": "written at the request of friends, first in Arabic and then translated into Persian",
+ "manuscript": "MS Majlis 10196 ff. '-1b-51b' (as printed; the original Arabic version is in its margins); MS 5423 ff. 2b-124a (842/1439); MS Sipahsālār 2930/11 ff. 281b-386a (845/1441); 16 copies listed.",
+ "majlis_folios": "ff. -1b-51b (as printed, sic; the Arabic version is in the margins)",
+ "edited": true,
+ "summary": "A popular mystical-philosophical commentary on Ibn al-Fāriḍ's Tāʾiyya al-Kubrā, treating each verse allusively with Arabic and Persian poetry, written first in Arabic and then in Persian; one of the major works.",
+ "edition_note": "Persian: ed. Akram Jūdī-Niʿmatī, Tehran 2005 (the SND edition); partial Arabic: ed. Majīd Hādīzāda, Tehran 2007.",
+ "supported_by": [
+  "EV-0648",
+  "EV-0649",
+  "EV-0650",
+  "EV-0651",
+  "EV-0652",
+  "EV-0653",
+  "EV-0654",
+  "EV-0655",
+  "EV-0656"
+ ],
+ "claims": [
+  "CL-0321",
+  "CL-0322",
+  "CL-0323"
+ ]
+}

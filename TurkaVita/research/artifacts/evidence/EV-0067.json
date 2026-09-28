@@ -1,0 +1,14 @@
+{
+ "id": "EV-0067",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 56,
+  "printed_page": "39",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ṣadr al-Dīn's Qawāʿid al-Tawḥīd treats absolute existence (wujūd muṭlaq) and tries to synthesize peripatetic and illuminationist philosophy with Ibn ʿArabian mystical theory; Ibn Turka expanded it in his commentary, al-Tamhīd fī Sharḥ Qawāʿid al-Tawḥīd (Tamhīd al-Qawāʿid), which became a staple teaching text for philosophical mysticism and the main basis of his modern reputation.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.56"
+}

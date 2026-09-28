@@ -1,0 +1,28 @@
+{
+ "id": "CL-0307",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The only date in the entry for Sharḥ-i Dah Bayt is the Majlis copy date of 18 Ramaḍān 838 (17 April 1435), three years after Melvin-Koushki's date for Ibn Turka's death (835/1432), so it is a posthumous copy and gives no composition date.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0619",
+  "EV-0603"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 ff. 225a-26a",
+   "shaping_risk": "medium",
+   "note": "posthumous by the dissertation's own death date"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.129, 53",
+   "shaping_risk": "low"
+  }
+ ]
+}

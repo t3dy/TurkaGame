@@ -1,0 +1,30 @@
+{
+ "id": "CL-0811",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Ibn Turka's legacy was partly obscured in late Timurid Iran by Jami's revisionism (countered by the Kashifis' lettrist writings), and by the mid-11th/17th century Safavid memory appears to have reduced him to an important intellectual and a failed Sufi; the 11th/17th-century Dabistan used him strictly as an authority on illuminationist philosophy.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1679",
+  "EV-1680",
+  "EV-1615"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Later Timurid and Safavid readers, as reconstructed by MK",
+   "where": "dissertation pdf p.453",
+   "shaping_risk": "medium",
+   "note": "MK hedges ('appears to'); popular memory is not directly recorded here."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.453",
+   "shaping_risk": "medium",
+   "note": "Reported through MK, who argues a rival reading."
+  }
+ ],
+ "domain": "social"
+}

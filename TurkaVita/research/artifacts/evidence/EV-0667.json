@@ -1,0 +1,15 @@
+{
+ "id": "EV-0667",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 137,
+  "printed_page": "120",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Sullam Dār al-Salām is a mystical exposition of the principles of doctrine and of the wisdom behind the pillars of Islamic belief and practice, drawing on the Quran, hadith and Sufi masters; it has an introduction on the spiritual meaning of worship and five short chapters (on the dual shahāda, prayer, the alms tax, the fast and the pilgrimage). It is unpublished.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.137",
+ "refers_to_primary": "Ibn Turka, Sullam Dār al-Salām"
+}

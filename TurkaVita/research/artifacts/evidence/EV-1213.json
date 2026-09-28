@@ -1,0 +1,15 @@
+{
+ "id": "EV-1213",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 285,
+  "printed_page": "268",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Dawlatshāh (writing in 892/1487) names Ibn Turka and Sharaf al-Dīn Yazdī as the two most prominent intellectuals of Shahrukhid Iran, with Khwāja Muḥammad Pārsā (Khwājagānī, d. 822/1419) and Ḥusayn Khwārazmī (Kubravī, d. ca. 839/1436) as the two Sufi masters of comparable status (as reported and translated by MK; MK gives Dawlatshāh's death as 900/1494 or 913/1507).",
+ "evidence_kind": "chronicle",
+ "refers_to_primary": "Dawlatshāh Samarqandī, Tazkirat al-Shuʿarā (892/1487), 340",
+ "read_by": "R7 opened pdf p.285"
+}

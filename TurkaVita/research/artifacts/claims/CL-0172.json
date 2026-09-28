@@ -1,0 +1,22 @@
+{
+ "id": "CL-0172",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK grants one point in the apologies as genuinely Ibn Turka's: his disapproval of Muʿtazili theology, since a created Quran contradicts his lettrism; he cites his censure of Zamakhsharī in the Mafāḥiṣ, so this is a case where an apology and a doctrinal work agree.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0252",
+  "EV-0253",
+  "EV-0334"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.85 (printed 68)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

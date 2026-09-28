@@ -1,0 +1,15 @@
+{
+ "id": "EV-0687",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 148,
+  "printed_page": "131",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 148b-53b carries Żawʾ al-Lamaʿāt (variant Sharḥ-i Lamaʿāt), copied on 8 Dhū l-Qaʿda 828/21 September 1425 (Ḥāʾirī, Majlis, 32/238); the entry prints the CE date twice. The earliest of the other copies is MS Ankara Adnan Ötüken 15/4 pp. 59-72, copied by ʿAbd al-Malik b. Badr al-Balkhī in 833/1429.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.148",
+ "refers_to_primary": "Żawʾ al-Lamaʿāt, MS Majlis 10196"
+}

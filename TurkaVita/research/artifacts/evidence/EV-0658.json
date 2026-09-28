@@ -1,0 +1,15 @@
+{
+ "id": "EV-0658",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 135,
+  "printed_page": "118",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Sharḥ al-Tajallī al-Dhātī is a 100-line versified commentary on Ibn Hūd al-Maghribī's saying about God's manifestation for Himself through Himself, after which the first existent was a Throne and the second a Footstool.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.135",
+ "refers_to_primary": "Ibn Turka, Sharḥ al-Tajallī al-Dhātī"
+}

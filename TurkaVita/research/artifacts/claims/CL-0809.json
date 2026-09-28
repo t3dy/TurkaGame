@@ -1,0 +1,30 @@
+{
+ "id": "CL-0809",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, older Western reference works knew Ibn Turka thinly: Brockelmann only the Fusus commentary, Storey as a Sufi author and stylist listing only the Munazarat-i Khams, Browne only in passing as converting Katibi to Sufism, and the EI2 has no entry for him though it has one for the three family members named Afdal al-Din Turka.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1634",
+  "EV-1635",
+  "EV-1636"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Brockelmann; Storey; Browne; EI2",
+   "where": "GALS 1/793; PL 3/2, 251; LHP 3/489",
+   "shaping_risk": "medium",
+   "note": "The position is this scholar's own; we have it only as summarised by Melvin-Koushki."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (reporter; partisan)",
+   "where": "dissertation pdf p.36-37",
+   "shaping_risk": "medium",
+   "note": "MK argues a rival reading (Ibn Turka as occult philosopher) and in places calls this reading an error; his summary may compress or foreshorten it."
+  }
+ ],
+ "domain": "textual"
+}

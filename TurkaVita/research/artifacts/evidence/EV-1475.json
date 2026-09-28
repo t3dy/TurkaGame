@@ -1,0 +1,14 @@
+{
+ "id": "EV-1475",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-4082EBB454",
+  "witness_page": 23,
+  "short_title": "Melvin-Koushki, The New Brethren of Purity (2025)"
+ },
+ "content": "The paper says that in circa 1426, in the dedicatory preface of the lengthy Arabic lettrist Sharḥ al-Basmala (unedited), Ibn Turka fashions Ulugh Beg the ultimate philosopher-king and sultan-scientist, the Archytas of the age, and claims the Samarkand Observatory as a realisation of the New Brethren's project; Qāżīzāda Rūmī's letter of thanks is extant. It says Qāżīzāda's friendship with Ibn Turka dated from childhood.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R8 opened pdf p.23",
+ "refers_to_primary": "Sharḥ al-Basmala, dedicatory preface"
+}

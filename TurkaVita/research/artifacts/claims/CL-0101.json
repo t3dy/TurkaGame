@@ -1,0 +1,20 @@
+{
+ "id": "CL-0101",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki frames the apology chapter with an epigraph from John Dee's 1604 petition to the king about slander; this is the modern author's comparison, and nothing on the page asserts any connection or contact between Dee and Ibn Turka.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0201"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.75 (printed 58)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

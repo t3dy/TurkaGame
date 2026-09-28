@@ -1,0 +1,27 @@
+{
+ "id": "CL-0708",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The New Brethren paper says Ibn Khaldūn, as a Maliki judge and Mamluk official, tried to have Ibn Turka and fellow Brethren in Cairo executed as sorcerers, and the Sensorium paper calls him Ibn Turka's most infamous enemy at court there. The dissertation page read records only that their Cairo residences overlapped by at least ten years; the New Brethren paper cites other works (Gardiner; MK on geomancy) rather than the dissertation for the rivalry. This is a new claim in the later papers that the dissertation pages read neither make nor deny.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1473",
+  "EV-1482",
+  "EV-1441"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Khaldūn's hostility in Cairo"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The New Brethren of Purity",
+   "where": "pdf 12",
+   "shaping_risk": "medium",
+   "note": "source is Gardiner and MK's earlier papers"
+  }
+ ],
+ "domain": "biographical"
+}

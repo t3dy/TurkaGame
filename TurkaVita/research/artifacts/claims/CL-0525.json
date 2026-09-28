@@ -1,0 +1,25 @@
+{
+  "id": "CL-0525",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that the seventh level should be understood as covering both the Imams and ancient prophets and sages such as Hermes, and 'those who can riddle their cryptic utterances', so that Ibn Turka and his lettrist colleagues stand alongside Pythagoras, Socrates and Euclid.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1019",
+    "EV-1020",
+    "EV-1011",
+    "EV-1014",
+    "EV-1016",
+    "EV-1015"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.335-337",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

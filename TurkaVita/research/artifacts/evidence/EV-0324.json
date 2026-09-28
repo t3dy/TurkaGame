@@ -1,0 +1,15 @@
+{
+ "id": "EV-0324",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 32,
+  "printed_page": "15",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says there are only two brief studies of the apologies to date, by Lewisohn and by Morio.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Lewisohn; Morio, ‘Taʾammulī dar Difāʿiyyāt-i Ṣāʾin al-Dīn ʿAlī Turka-yi Iṣfahānī’ (per MK fn.44)",
+ "read_by": "R2a opened pdf p.32"
+}

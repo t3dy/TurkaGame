@@ -1,0 +1,17 @@
+{
+ "id": "REC-0153",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why is Khwāndamīr's entry on Ibn Turka so thin beside those on Yazdī and Kātibī?",
+ "proposition": "Because Khwāndamīr privileged poets, historians and Sufis and Ibn Turka fitted none of those categories.",
+ "kind": "causal",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK's 'perhaps'; he offers it as a suggestion only.",
+  "The entry survives; nothing shows Khwāndamīr's intention."
+ ],
+ "observed_facts": [
+  "CL-0605"
+ ],
+ "confidence": "low"
+}

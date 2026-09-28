@@ -1,0 +1,22 @@
+{
+ "id": "CL-0648",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The great master who gave Ibn Turka the khirqa is not named on the pages read, and MK does not name him; Niʿmatullahi sources separately claim Ibn Turka and Yazdī sought out Niʿmat Allāh, which MK sets beside but does not equate with him.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1262",
+  "EV-1263"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.446",
+   "shaping_risk": "low",
+   "note": "an open question, not resolved by MK on these pages"
+  }
+ ],
+ "domain": "biographical"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-0888",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 170,
+    "printed_page": "153",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Among (mis)attributed works, MK lists a brief Persian treatise on jafr in MS 2950/5 attributed to Ibn Turka (Tehran University), which he supposes was written well after his death because the MS mentions the year 909/1504; it is unpublished.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.170",
+  "refers_to_primary": "Jafr (Persian)"
+}

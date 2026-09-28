@@ -1,0 +1,15 @@
+{
+ "id": "EV-0651",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 135,
+  "printed_page": "118",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "As Ṣāʾin al-Dīn states, he wrote the commentary at the request of friends, first in Arabic and then translating it into Persian for ease of comprehension; its theoretical introduction has one main section (aṣl) and fourteen subsections (vaṣl).",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.135",
+ "refers_to_primary": "Ibn Turka, Sharḥ-i Naẓm al-Durr, preface"
+}

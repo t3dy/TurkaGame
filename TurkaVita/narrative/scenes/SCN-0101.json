@@ -1,0 +1,94 @@
+{
+ "id": "SCN-0101",
+ "type": "scene",
+ "status": "draft",
+ "act": "hostage",
+ "title": "Samarkand, 1387: the family that was spared",
+ "unrecorded": true,
+ "dramatic_question": "Isfahan has fallen and most of its people have been killed, but your family has been spared and sent east to Temür's capital, where your brother is made a judge. You are in your teens. What do you do with the years in Samarkand?",
+ "situation": {
+  "when": "789/1387 and the years after",
+  "where": "Isfahan, then Temür's capital, Samarkand",
+  "based_on": [
+   "CL-0017",
+   "CL-0018",
+   "CL-0020",
+   "CL-0010",
+   "CL-0019"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "In 789/1387 Temür took Isfahan and massacred most of its inhabitants; he had made Samarkand his capital in 770/1369.",
+   "claim": "CL-0017"
+  },
+  {
+   "text": "The Turka family was spared and sent to Temür's court at Samarkand, where Temür appointed your elder brother Ṣadr al-Dīn qadi.",
+   "claim": "CL-0018"
+  }
+ ],
+ "prose": [
+  "Temür takes Isfahan in 789/1387 and most of its people are killed. Your family is not among them. You are a teenager, and you are carried east to Samarkand, where Temür appoints your elder brother Ṣadr al-Dīn qadi. Melvin-Koushki explains the sparing by Temür's policy of collecting eminent scholars and artists; that is his reading of the policy, not a report about your family's case.",
+  "Ṣadr al-Dīn is a scholar of hadith, Quran commentary, jurisprudence and the principles of religion, and he has been your teacher. By your own later statement to Shāhrukh, he taught you only the outward meaning of the Sharīʿa and thought deeper matters too dangerous to teach in public.",
+  "No source says what you did with these years. Melvin-Koushki infers that your wide learning in the religious sciences, above all the Sunni schools of law, dates from them. The hagiographer Kirmānī has the future astronomer Qāżīzāda Rūmī study under your brother alongside you; that they did so in Samarkand is Melvin-Koushki's inference."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Stay under your brother's teaching, as Melvin-Koushki infers you did, and master the Sunni schools of law.",
+   "strategy": "study_fiqh_under_brother",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0020",
+    "CL-0018"
+   ],
+   "requires": {},
+   "effects": {
+    "court.temur": 1,
+    "score.biography": 1,
+    "life.training": "fiqh"
+   },
+   "feedback": "Melvin-Koushki infers that your broad erudition in the religious sciences, especially the Sunni schools of fiqh, dates from this period; no dated source says so, and the record is silent on what you actually did with these years. The game marks this as a reconstruction, not as the record."
+  },
+  {
+   "id": "B",
+   "label": "Look for a post of your own at Temür's court and leave the schools to your brother.",
+   "strategy": "seek_court_post",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0018"
+   ],
+   "requires": {},
+   "effects": {
+    "court.temur": 2,
+    "press.livelihood": 1,
+    "score.biography": -1,
+    "life.training": "fiqh"
+   },
+   "feedback": "The only appointment the sources record at Samarkand is your brother's, and no source gives a teenage Ibn Turka a post at Temür's court. This is the game's own what-if; the game rejoins the record, and nothing later can be built on a career the sources do not contain."
+  },
+  {
+   "id": "C",
+   "label": "Spend the years among your brother's other students and make your friends there, above all Qāżīzāda Rūmī.",
+   "strategy": "cultivate_fellow_students",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0607",
+    "CL-0608"
+   ],
+   "requires": {},
+   "effects": {
+    "court.qazizada": 1,
+    "score.biography": 1,
+    "life.training": "fiqh"
+   },
+   "feedback": "Kirmānī, a Niʿmatullahi hagiographer, says Qāżīzāda Rūmī studied with Ibn Turka under Ṣadr al-Dīn. Melvin-Koushki says the warm friendship 'undoubtedly' began in those student years; the Samarkand setting and the warmth are his inference, since no source read says Samarkand for Rūmī. A reconstruction, not a report."
+  }
+ ],
+ "next": "SCN-0102",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

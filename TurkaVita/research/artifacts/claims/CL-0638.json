@@ -1,0 +1,21 @@
+{
+ "id": "CL-0638",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Qāsim-i Anvār had been a disciple of Ṣadr al-Dīn Ṣafavī (d. 794/1391) before joining Niʿmat Allāh, but there is no evidence he kept his Ardabil connection afterwards, against Savory's picture of him as an active Safavid propagandist.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1283"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.73",
+   "shaping_risk": "low",
+   "note": "MK relaying Binbaş against Savory"
+  }
+ ],
+ "domain": "biographical"
+}

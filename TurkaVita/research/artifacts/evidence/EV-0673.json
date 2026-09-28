@@ -1,0 +1,15 @@
+{
+ "id": "EV-0673",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 139,
+  "printed_page": "122",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says recent scholarship locates Ibn Turka, solely on the strength of the Tamhīd, at the chronological and intellectual midpoint between Ibn ʿArabī and Mullā Ṣadrā, and presumes that despite his lack of Shiʿi credentials he belongs to the Imami trajectory culminating in Sadrian philosophy; he adds that the Tamhīd's popularity has served to obscure and distort Ibn Turka's larger intellectual project.",
+ "evidence_kind": "reception",
+ "read_by": "R4 opened pdf p.139",
+ "refers_to_primary": "Tamhīd al-Qawāʿid, modern reception"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "CL-0704",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "None of the eight later papers read (Prologue, Occult Court, New Brethren, Sensorium, Grammatology, Second Aristotle, Timurid-Mughal, Selenocentrism) gives a year for the first or second inquisition or lists the three by date. The only later date attached to persecution is 1427, for Qāsim-i Anvār's exile with Ibn Turka in the Occult Court; the Timurid-Mughal chapter refers to the persecution of lettrists like Ibn Turka on the pretext of Hurufi association without a date. This is a statement about the pages read and about searches of the other pages, not about the whole of each paper.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1462",
+  "EV-1496",
+  "EV-1452"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers (2016-2025)",
+   "where": "see evidence",
+   "shaping_risk": "medium",
+   "note": "silence, not a negative finding"
+  }
+ ],
+ "domain": "chronological"
+}

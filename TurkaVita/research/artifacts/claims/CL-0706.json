@@ -1,0 +1,24 @@
+{
+ "id": "CL-0706",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Timurid-Mughal chapter says the political atmosphere of Shāhrukhid Iran featured the persecution of lettrists like Ibn Turka on the pretext of association with the Ḥurūfiyya, and that this made Ulugh Beg more modest and conservative in presenting his project; it cites Binbas and the dissertation ch. 8.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1496"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "persecution of lettrists under Shāhrukh"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Timurid-Mughal Philosopher-Kings",
+   "where": "pdf 16",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

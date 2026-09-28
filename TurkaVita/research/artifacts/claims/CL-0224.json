@@ -1,0 +1,29 @@
+{
+ "id": "CL-0224",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat al-Maṣdūr I answers the accusations made by Ibn Turka's enemies in Yazd at Shāhrukh's court in Herat, and was completed in Herat on 8 Rajab 829/16 May 1426 (also the date of its Majlis 10196 copy, in the chronological first half).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0510",
+  "EV-0511",
+  "EV-0509"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, in Nafsat al-Maṣdūr I",
+   "where": "Nafsat I",
+   "shaping_risk": "high",
+   "note": "his account of his accusers' motives; MK: apologies produced under great duress"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.105",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

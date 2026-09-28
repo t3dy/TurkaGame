@@ -1,0 +1,15 @@
+{
+ "id": "EV-0323",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 25,
+  "printed_page": "8",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the de facto scholarly consensus presents Ibn Turka as a mystical philosopher, effectively obscuring his explicitly occultist project, and that pace both Corbin and Lewisohn his confessional position is best described as Shiʿi-Sunnism or imamophilism.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "the scholarly literature on Ibn Turka",
+ "read_by": "R2a opened pdf p.25"
+}

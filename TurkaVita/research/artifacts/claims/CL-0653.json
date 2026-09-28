@@ -1,0 +1,22 @@
+{
+ "id": "CL-0653",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Whether the Isfahan confrontation happened as Ibn Turka describes cannot be checked on the pages read: his second apology, which calls it well-known, is the only witness.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1273",
+  "EV-1268"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.449",
+   "shaping_risk": "low",
+   "note": "an absence on the pages R7 opened"
+  }
+ ],
+ "domain": "biographical"
+}

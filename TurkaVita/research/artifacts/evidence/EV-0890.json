@@ -1,0 +1,15 @@
+{
+  "id": "EV-0890",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 172,
+    "printed_page": "155",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK lists further doubtful attributions: an Arabic al-Tawrāt (21 chapters of the Torah), probably wrongly linked to Ibn Turka by a cataloguer because it follows his Munāẓarāt-i Khams in the MS; an R. [fī] l-Wujūd in MS Malik 4196 (copied 1017/1608) following his R. Nuqṭa, which MK can only conjecture to be a copy of the Tamhīd al-Qawāʿid or the R. fī Sharḥ Ḥaqīqat al-Waḥda; and two otherwise unknown works (Muhayyij al-Ashwāq, Maʿjūn-i Ilāhī) credited to him by Aḥmad Munzavī.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.172",
+  "refers_to_primary": "al-Tawrāt; R. [fī] l-Wujūd; Muhayyij al-Ashwāq; Maʿjūn-i Ilāhī"
+}

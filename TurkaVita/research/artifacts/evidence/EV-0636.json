@@ -1,0 +1,15 @@
+{
+ "id": "EV-0636",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 131,
+  "printed_page": "114",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The listed copies of Sharḥ Ḥadīthayn (Arabic) begin with MS 10004/17 pp. 270-72 (Majlis, copied in Yazd 903-4/1497-98), MS 3035/7 (1084/1673) and MS Sipahsālār 2930 (undated); no copy in MS Majlis 10196 is listed. Variant titles are Sharḥ-i Dō Ḥadīs-i Nabavī and Javāb-i Chand Suʾāl dar Harāt (Answers to Several Questions in Herat).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.131",
+ "refers_to_primary": "Sharḥ Ḥadīthayn, MS list and variant titles"
+}

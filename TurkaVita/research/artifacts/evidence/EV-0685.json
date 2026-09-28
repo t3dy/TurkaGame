@@ -1,0 +1,15 @@
+{
+ "id": "EV-0685",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 148,
+  "printed_page": "131",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In the Tuḥfa-yi ʿAlāʾī (the sentence begins on p.147) Ibn Turka states that his family has always belonged to the Shafiʿi rite; the treatise refers the reader to the Iṣbāḥ al-Anwār for more detail, and its introduction complains of the harsh treatment he experienced in Herat.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.148",
+ "refers_to_primary": "Ibn Turka, Tuḥfa-yi ʿAlāʾī, introduction and rite statement"
+}

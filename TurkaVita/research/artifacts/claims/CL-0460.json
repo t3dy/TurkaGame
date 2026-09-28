@@ -1,0 +1,29 @@
+{
+  "id": "CL-0460",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The R. Suʾl al-Mulūk was written in or before 829/1426 at Bāysunghur b. Shāhrukh's request as an introductory work on both the practical-magical (alchemical, talismanic) and theoretical sides of lettrism, giving a broader overview than his other lettrist treatises.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0894",
+    "EV-0891"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.328",
+      "shaping_risk": "medium",
+      "note": "MK's account; the dedication is not quoted"
+    },
+    {
+      "layer": "manuscript_colophon",
+      "who": "Copyist of MS Majlis 10196 (f. 178a-b) and MS Majlis 10004",
+      "where": "as cited by MK, pdf p.331 fn.92",
+      "shaping_risk": "medium",
+      "note": "The date is not a colophon date on the pages read."
+    }
+  ],
+  "domain": "textual"
+}

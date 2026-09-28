@@ -1,0 +1,20 @@
+{
+  "id": "CL-0589",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Ḥurūf Ibn Turka points to the upward progress of the age (taraqqī-yi zamān) and to his contemporaries' improved capacity to grasp sciences of ultimate realities as signs that knowledge has reached new heights.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1123"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.343",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

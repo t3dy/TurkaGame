@@ -1,0 +1,41 @@
+{
+ "id": "CL-0617",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Bākharzī reports that Jāmī dismissed Yazdī's career, and Ibn Turka's by extension, telling Yazdī he had given himself over to amirs and bureaucrats and made a weak defence of Sufism; Bākharzī adds Shirvānī's comparison finding Jāmī the sounder and Yazdī's work accused of heterodoxy. This is Jāmī's opinion as relayed by his own hagiographer; MK does not vouch for it.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1248",
+  "EV-1249",
+  "EV-1250",
+  "EV-1220"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Jāmī and Yazdī on the bank of the Injīl canal, Herat, after 850/1446",
+   "where": "Maqāmāt-i Jāmī 106-7",
+   "shaping_risk": "high",
+   "note": "MK supposes Jāmī in his late thirties and Yazdī in his late seventies or early eighties; the encounter is known only from Bākharzī"
+  },
+  {
+   "layer": "later_chronicler",
+   "who": "ʿAbd al-Vāsiʿ Niẓāmī Bākharzī, Maqāmāt-i Jāmī",
+   "where": "pp. 106-7",
+   "shaping_risk": "high",
+   "note": "hostile hagiographer; MK: 'king-of-the-hill tendentiousness'; MK is translating a hostile reporter"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.442",
+   "shaping_risk": "low",
+   "note": "Jāmī saw a first draft (Binbaş), so the words may be his, but MK only says 'may be supposed'"
+  }
+ ],
+ "domain": "social",
+ "counterevidence": [
+  "EV-1253"
+ ]
+}

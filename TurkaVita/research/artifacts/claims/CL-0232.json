@@ -1,0 +1,21 @@
+{
+ "id": "CL-0232",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The al-Khaṣāʾiṣ is referred to in the K. al-Manāhij as a fuller work on logic with a wider frame of reference than the peripatetic; it is unpublished and no manuscript copies are known to survive.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0469",
+  "EV-0470"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.93",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

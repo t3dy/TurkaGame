@@ -1,0 +1,36 @@
+{
+ "id": "WRK-SUAL-AL-MULUK",
+ "type": "work",
+ "status": "draft",
+ "title": "Suʾl al-Mulūk",
+ "transliterated_title": "Suʾl al-Mulūk (Request of Kings; variants Suʾāl al-Mulūk, Maqbūl al-Mulūk, R. dar ʿIlm al-Ḥurūf, R. Khawāṣṣ al-Ḥurūf)",
+ "language": "Persian",
+ "genre": "treatise on the science of letters",
+ "theme": "lettrism",
+ "date": {
+  "ce": "before 15 May 1426",
+  "hijri": "before 7 Rajab 829",
+  "basis": "MS Majlis 10196 copy date, asterisked by Melvin-Koushki as possibly transcription; terminus ad quem only."
+ },
+ "date_kind": "transcription",
+ "place": "not stated",
+ "addressee": "Muʿizz al-Dawla Bāysunghur (Bāysunghur b. Shāhrukh)",
+ "occasion": "written at Bāysunghur's request",
+ "manuscript": "MS Majlis 10196 ff. 172b-79a; MS 5423 ff. 150b-65a (842/1439); MS 10004 pp. 173-203; 7 copies listed.",
+ "majlis_folios": "ff. 172b-79a",
+ "edited": false,
+ "summary": "A lettrist treatise with an introduction on letters' meaning and properties and two main sections, on the properties of letters and how to reach their essences, and on the theory of the science; an epilogue shows how the realities of all things arise from letters.",
+ "edition_note": "Unpublished elsewhere; Melvin-Koushki edits it in the dissertation Part 2, §T.4 (a player could read that edition).",
+ "supported_by": [
+  "EV-0660",
+  "EV-0661",
+  "EV-0662",
+  "EV-0663",
+  "EV-0664",
+  "EV-0600"
+ ],
+ "claims": [
+  "CL-0325",
+  "CL-0326"
+ ]
+}

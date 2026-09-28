@@ -1,0 +1,41 @@
+{
+ "id": "CL-0720",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Prologue, New Brethren and Sensorium call Bāysunghur Ibn Turka's second Timurid patron but none of the pages read dates the start of that patronage. The earliest dated Bāysunghur-linked items in the dissertation are Bazm u Razm and Suʾl al-Mulūk of 829/1426, then the Tuḥfa-yi ʿAlāʾiyya for Bāysunghur's son ʿAlāʾ al-Dīn (831/1428) and Nafsat al-Maṣdūr II (c. 832-35/1429-32); the dissertation's Munshaʾāt survey speaks of a close relationship, and lists one undated letter. The older project docs' 'second patron from c. 1416' is not found in any paper read.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1455",
+  "EV-1471",
+  "EV-1481",
+  "EV-1436",
+  "EV-1434",
+  "EV-1504",
+  "EV-1426",
+  "EV-1437",
+  "EV-1505"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "dates of the 829/1426 works",
+   "where": "dissertation pdf 119, 136",
+   "shaping_risk": "medium",
+   "note": "asterisked: may be transcription dates"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 53, 154, 177",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

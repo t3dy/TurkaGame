@@ -1,0 +1,18 @@
+{
+ "id": "REC-0008",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was behind the Hurufi attempt on Shāhrukh of 830/1427?",
+ "proposition": "The attempt may have been staged by Shāhrukh himself, giving him a pretext for the purge that ruined Ibn Turka.",
+ "kind": "causal",
+ "scholar": "Melvin-Koushki citing Binbaş",
+ "reasoning": [
+  "MK writes ‘possibly staged by the Timurid ruler himself’ and gives Binbaş's pages; the pages read give no argument.",
+  "A game must keep it a possibility, not a fact."
+ ],
+ "observed_facts": [
+  "EV-0245",
+  "EV-0244"
+ ],
+ "confidence": "low"
+}

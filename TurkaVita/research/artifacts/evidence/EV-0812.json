@@ -1,0 +1,15 @@
+{
+  "id": "EV-0812",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 154,
+    "printed_page": "137",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK observes that the first three Sufis named (Niʿmat Allāh Valī, Qāsim-i Anvār, Aḥmad Samarqandī) were great promoters of Ibn ʿArabī against often hostile reaction, and suggests this may have been a point of attraction for Ibn Turka.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.154",
+  "refers_to_primary": "Munshaʾāt-i Turka"
+}

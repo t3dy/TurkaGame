@@ -1,0 +1,28 @@
+{
+ "id": "CL-0201",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In MS Majlis 10196 the incipit and explicit of the K. al-Mafāḥiṣ (ff. 52a and 118b) are in Ibn Turka's own hand, and the Sharḥ Fuṣūṣ al-Ḥikam carries an autograph note at the end, according to marginal notes in the manuscript as reported by Melvin-Koushki.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0403",
+  "EV-0413"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "marginal notes in MS Majlis 10196",
+   "where": "ff. 52a, 118b",
+   "shaping_risk": "medium",
+   "note": "an autograph is the strongest witness to what he wrote; its date and the reason it was written out are separate questions"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.78, 80",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

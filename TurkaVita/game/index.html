@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turka Vita</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="turka.css?v=4">
+</head>
+<body>
+<header id="bar" class="bar-top" hidden>
+  <span class="brand caps">Turka Vita</span>
+  <nav>
+    <button id="btn-how" class="link" aria-expanded="false" aria-controls="how">How to play</button>
+    <button id="btn-board" class="link" aria-expanded="false" aria-controls="board">Court board</button>
+    <button id="btn-restart" class="link">Start over</button>
+  </nav>
+</header>
+<div id="howwrap"></div>
+<div id="boardwrap"></div>
+<main id="app" aria-live="polite"></main>
+<script src="content.js?v=4"></script>
+<script src="engine.js?v=4"></script>
+<script src="ui.js?v=4"></script>
+</body>
+</html>

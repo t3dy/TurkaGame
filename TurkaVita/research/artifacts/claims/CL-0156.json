@@ -1,0 +1,27 @@
+{
+ "id": "CL-0156",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat II names Shaykh Muḥammad al-Jazarī (d. 833/1429) as the reputation his enemies hide behind, dismissing him as learned only in Quran reading and some hadith and as having risen in Fars through native Arabic and ruler's favour.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0227",
+  "EV-0228"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing from exile to Bāysunghur b. Shāhrukh",
+   "where": "Nafsat al-Maṣdūr II",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.78 (printed 61)",
+   "shaping_risk": "low"
+  }
+ ]
+}

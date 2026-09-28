@@ -1,0 +1,15 @@
+{
+ "id": "EV-0641",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 132,
+  "printed_page": "115",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The only listed copy of Sharḥ Ḥadīth ʿUlwī is MS 8184, Āstān-i Quds Library, Mashhad, undated (Fikrat, Fihrist-i Alifbāʾī, 333). Melvin-Koushki did not have access to it and says examination may show it to be identical to one of the three preceding brief works; it is unpublished.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R4 opened pdf p.132",
+ "refers_to_primary": "Sharḥ Ḥadīth ʿUlwī, MS 8184"
+}

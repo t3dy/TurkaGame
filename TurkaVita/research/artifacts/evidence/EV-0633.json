@@ -1,0 +1,15 @@
+{
+ "id": "EV-0633",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 131,
+  "printed_page": "114",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that Sharḥ-i Ḥadīs-i ʿAmāʾ \"was completed before 3 Dhū l-Ḥijja 827/27 October 1424\" and marks the date with an asterisk (possible transcription date).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.131",
+ "refers_to_primary": "Sharḥ-i Ḥadīs-i ʿAmāʾ, date"
+}

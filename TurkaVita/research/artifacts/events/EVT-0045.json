@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0045",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1428",
+  "end": "1428",
+  "hijri": "832",
+  "basis": "Timeline A.1, pdf p.53.",
+  "date_kind": "colophon"
+ },
+ "place": "Mazandaran",
+ "event_type": "work",
+ "description": "Ibn Turka writes the R. Mabdaʾ u Maʿād for Shāh Rażī l-Dīn in Mazandaran.",
+ "claims": [
+  "CL-0098"
+ ],
+ "fixed_point": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-1083",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 349,
+    "printed_page": "332",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki says Ibn Turka is updating Ibn ʿArabī's concept of the creative imagination (khayāl) as all-encompassing faculty, making explicit what Ibn ʿArabī left implicit by privileging the letters in the mechanics of the creative imagination; letters, the most fundamental images, are the atoms of the imaginal realm.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.349"
+}

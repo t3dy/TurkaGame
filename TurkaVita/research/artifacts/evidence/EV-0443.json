@@ -1,0 +1,15 @@
+{
+ "id": "EV-0443",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 105,
+  "printed_page": "88",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The verse is unpublished; Dībājī reproduces five ghazals, three rubāʿīs and some Arabic verses from f. 121b in his edition of the K. al-Manāhij, and Khujandī's Tazkira attributes to Ibn Turka nine rubāʿīs and a fragment of which all but four are certainly by other poets (Abū Saʿīd b. Abī l-Khayr, Awḥadī Marāghaʾī, Niẓāmī, ʿIrāqī, Ḥāfiẓ).",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Dīvān",
+ "read_by": "R3 opened pdf p.105"
+}

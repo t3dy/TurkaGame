@@ -1,0 +1,28 @@
+{
+ "id": "CL-0188",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Even his most esoteric works name the Companions and Successors; the Mafāḥiṣ grounds the letter's supremacy in the Quran, hadith, ṣaḥāba and tābiʿūn (ʿAlī and Ḥusayn among the latter) and in Ibn Ḥanbal and Shāfiʿī on the uncreated Quran.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0358",
+  "EV-0359",
+  "EV-0360"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka in his own doctrinal work, as summarised by MK",
+   "where": "MS Majlis 10196 and other manuscripts as cited by MK",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.91 (printed 74)",
+   "shaping_risk": "low"
+  }
+ ]
+}

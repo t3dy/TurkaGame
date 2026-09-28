@@ -1,0 +1,27 @@
+{
+ "id": "CL-0309",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "A note in Ibn Turka's own hand on MS Majlis 10196 f. 330a, dated 28 Ṣafar 832 (4 December 1428) at Chālū in Tabaristan, vouches for the accuracy of this copy of the Sharḥ Fuṣūṣ al-Ḥikam as read by the copyist in his presence; it places him in Mazandaran in December 1428.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0623"
+ ],
+ "domain": "biographical",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 f. 330a",
+   "shaping_risk": "low",
+   "note": "an autograph note reported by Melvin-Koushki"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.129",
+   "shaping_risk": "low"
+  }
+ ]
+}

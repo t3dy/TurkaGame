@@ -1,0 +1,15 @@
+{
+ "id": "EV-1426",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 77,
+  "short_title": "Melvin-Koushki, dissertation (2012)",
+  "printed_page": "60"
+ },
+ "content": "Nafsat al-Maṣdūr II is described as written for Bāysunghur b. Shāhrukh some five years after the events of 830/1427, angrier in tone, detailing his wanderings and his inability to support ten children and a few wives; footnote 105 dates it between ca. 832-35/1429-32 from his own remarks (five years since exile, nine months since the promise of review).",
+ "evidence_kind": "apology",
+ "read_by": "R8 opened pdf p.77",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II 199, 206-7"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "CL-0310",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Sharḥ Fuṣūṣ al-Ḥikam was read to Sharaf al-Dīn Yazdī by Shams al-Dīn Muḥammad al-Māzyār in Herat on 30 Rajab 820 (12 September 1417), per the colophon; the entry does not say whether Ibn Turka was present.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0624"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 f. 330a",
+   "shaping_risk": "medium",
+   "note": "audition note"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.129",
+   "shaping_risk": "low"
+  }
+ ]
+}

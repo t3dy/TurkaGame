@@ -1,0 +1,20 @@
+{
+ "id": "CL-0001",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki's Timeline A.1 rests mostly on the colophons of MS Majlis 10196, the Munshaʾāt-i Turka and the Munshaʾāt-i Yazdī, with some dates and events conjectured or approximate; external political events are taken from Manz; it does not say entry by entry which source a date rests on.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0001"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.51, note 1",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

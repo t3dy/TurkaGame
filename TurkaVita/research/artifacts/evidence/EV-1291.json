@@ -1,0 +1,15 @@
+{
+ "id": "EV-1291",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 455,
+  "printed_page": "438",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK says Ṣāʾin al-Dīn and his circle were rewarded for their labours with the derisive label naw-mulḥidān (neo-bāṭinīs, even neo-Ismaʿilis), given them by the establishment Sufi Zayn al-Dīn Khwāfī; MK notes that Ṣāʾin al-Dīn in his R. al-Inzāliyya, written before 828/1425, already decries lettrism's unpopularity in Iran.",
+ "evidence_kind": "reception",
+ "refers_to_primary": "R. al-Inzāliyya (before 828/1425); Binbaş, Sharaf al-Dīn, 124-29 (via MK, fn 16)",
+ "read_by": "R7 opened pdf p.455"
+}

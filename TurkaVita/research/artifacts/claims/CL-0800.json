@@ -1,0 +1,30 @@
+{
+ "id": "CL-0800",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Henry Corbin presents Ibn Turka as an openly Shiʿi (standard-issue Shiʿi esotericist) thinker, in a study centred on the Risala-yi Shaqq-i Qamar u Bayan-i Saʿat rather than the Tamhid.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1600",
+  "EV-1601",
+  "EV-1602"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Henry Corbin",
+   "where": "En Islam iranien 3/233-74",
+   "shaping_risk": "medium",
+   "note": "The position is this scholar's own; we have it only as summarised by Melvin-Koushki."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (reporter; partisan)",
+   "where": "dissertation pdf p.23, 36, 86",
+   "shaping_risk": "medium",
+   "note": "MK argues a rival reading (Ibn Turka as occult philosopher) and in places calls this reading an error; his summary may compress or foreshorten it."
+  }
+ ],
+ "domain": "biographical"
+}

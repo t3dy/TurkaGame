@@ -1,0 +1,25 @@
+{
+ "id": "CL-0003",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka was born in Isfahan (Melvin-Koushki: almost certainly); Timeline A.1 states it without qualification.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0058",
+  "EV-0002"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Turka's birth"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.55 and p.51",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

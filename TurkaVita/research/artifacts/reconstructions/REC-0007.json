@@ -1,0 +1,17 @@
+{
+ "id": "REC-0007",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "How is Ibn Turka usually classified?",
+ "proposition": "The de facto consensus, as MK describes it, classes Ibn Turka as a mystical philosopher (Quiring-Zoche: ‘a Sufi poet, philosopher, and jurist’), which MK says obscures his occultism.",
+ "kind": "inferential",
+ "scholar": "Rosemarie Quiring-Zoche and the general literature (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "MK calls this description problematic and says it errs by focusing on the Tamhīd al-Qawāʿid."
+ ],
+ "observed_facts": [
+  "EV-0322",
+  "EV-0323"
+ ],
+ "confidence": "medium"
+}

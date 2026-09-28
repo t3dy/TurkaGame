@@ -1,0 +1,30 @@
+{
+ "id": "CL-0234",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Madārij Afhām al-Afvāj was completed on 6 Dhū l-Qaʿda 831/17 August 1428 in Mazandaran at the request of a local ruler, whom Melvin-Koushki tentatively suggests may be Sayyid Murtażā Marʿashī.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0479",
+  "EV-0480",
+  "EV-0478"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "Majlis 10196 colophon",
+   "where": "ff. 352b-59b",
+   "shaping_risk": "medium",
+   "note": "date equals the copy date"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.96 and n.25",
+   "shaping_risk": "medium",
+   "note": "the identification of the ruler is 'perhaps'"
+  }
+ ],
+ "domain": "biographical"
+}

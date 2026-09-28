@@ -1,0 +1,18 @@
+{
+ "id": "INS-ISKANDAR",
+ "type": "institution",
+ "status": "draft",
+ "name": "The court of Iskandar Mīrzā",
+ "ruler": "Iskandar b. ʿUmar-Shaykh",
+ "seat": "Shiraz, then Isfahan",
+ "tenure": "1409–1414",
+ "role": "patron",
+ "summary": "Takes his brother's place in Fars and builds a brilliant court at Isfahan; Ibn Turka is a member, presumably with a teaching post and judgeship, and may have written the R. Ḥurūf for him. Captured, blinded and later executed by Shāhrukh in 1414.",
+ "supported_by": [
+  "EV-0017",
+  "EV-0022",
+  "EV-0023",
+  "EV-0024",
+  "EV-0026"
+ ]
+}

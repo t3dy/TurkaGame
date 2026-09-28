@@ -1,0 +1,108 @@
+{
+ "id": "SCN-0403",
+ "type": "scene",
+ "status": "draft",
+ "act": "exile",
+ "title": "Writing for governors, 1428–30",
+ "dramatic_question": "Three readers are named in the works of these years: a Ḥanbalī named ʿAlāʾ al-Dīn b. Bāysunghur, a man named Shāh Rażī l-Dīn, at whose request you wrote, and your own son. In exile your writing is also your credit. For whom do you write first, and in what register?",
+ "situation": {
+  "when": "1428–1430 (831–33 AH)",
+  "where": "Mazandaran, then Natanz",
+  "based_on": [
+   "CL-0335",
+   "CL-0233",
+   "CL-0235",
+   "CL-0098"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "The Tuḥfa-yi ʿAlāʾī, a brief treatment of the hadith on iḥsān, īmān and islām, was completed on 1 Jumādā I 831/17 February 1428 for ʿAlāʾ al-Dīn b. Bāysunghur, a Ḥanbalī. Melvin-Koushki prints the date without an asterisk and does not name its source.",
+   "claim": "CL-0335"
+  },
+  {
+   "text": "The Mabdaʾ u Maʿād was written at the request of one Shāh Rażī l-Dīn and completed early Ṣafar 832/mid-November 1428 at Manzil-i Chālū in Mazandaran, the same date and place as its Majlis 10196 copy.",
+   "claim": "CL-0233"
+  },
+  {
+   "text": "The K. al-Manāhij, on logic, was written for his son Muḥammad and completed at Natanz on 20 Rajab 833/14 April 1430, the same day and place as its Majlis 10196 copy.",
+   "claim": "CL-0235"
+  }
+ ],
+ "prose": [
+  "Exile has not stopped your pen. Three works from these years carry dates, each for a different reader. The dates are Melvin-Koushki's: in the later part of MS Majlis 10196 he takes them to approximate composition, and the Tuḥfa's has no named source.",
+  "The Tuḥfa-yi ʿAlāʾī, for ʿAlāʾ al-Dīn b. Bāysunghur, a Ḥanbalī, takes the hadith on iḥsān, īmān and islām through the five fundamentals of practice and looks at how Ḥanbalīs and Shāfiʿīs each perform them. The Mabdaʾ u Maʿād gives Shāh Rażī l-Dīn, at his request, an overview of the religious sciences in the mystical manner. The Manāhij is a minutely detailed treatise on logic, in the manner of the latter-day philosophers, for Muḥammad.",
+  "You cannot write all three at once. Which do you take up first?"
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Take them in the order the dates give: the Tuḥfa-yi ʿAlāʾī for ʿAlāʾ al-Dīn b. Bāysunghur first, the Mabdaʾ u Maʿād for Shāh Rażī l-Dīn next, and the logic manual for your son Muḥammad when you winter at Natanz.",
+   "strategy": "write_in_order_of_commission",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0335",
+    "CL-0233",
+    "CL-0235",
+    "CL-0098"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.shah-razi-al-din": 1,
+    "press.works": 1,
+    "life.exile_writing": "in_order",
+    "score.biography": 2
+   },
+   "feedback": "This is the order Melvin-Koushki's dates give: February 1428, November 1428, April 1430. In the Tuḥfa you say your family has always been Shāfiʿī, and its introduction complains of the harsh treatment you had in Herat; those are statements to a patron, so they show what you told ʿAlāʾ al-Dīn, not clearly what you held. The game credits no standing with him, since no page read identifies him beyond his name, and only a small one with Shāh Rażī l-Dīn, whose request is recorded but not what he did for you."
+  },
+  {
+   "id": "B",
+   "label": "Write for your son first: the K. al-Manāhij, so that Muḥammad has his logic before you ask any patron for anything.",
+   "strategy": "write_for_son_first",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0235"
+   ],
+   "requires": {},
+   "effects": {
+    "press.works": 1,
+    "press.livelihood": -1,
+    "life.exile_writing": "son_first",
+    "score.biography": -1
+   },
+   "feedback": "You did write the Manāhij for Muḥammad, but at Natanz in April 1430, after the other two; the sources do not have it first. This is your own what-if, and the game returns you to the record: all three works are dated, and the patrons' works come first."
+  },
+  {
+   "id": "C",
+   "label": "Skip the commissions and write directly for Bāysunghur, who once asked you for a lettrist treatise: send him a new one, and ask for his help.",
+   "strategy": "write_lettrism_for_baysunghur",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0425",
+    "CL-0426",
+    "CL-0231"
+   ],
+   "requires_min": {
+    "court.baysunghur": 1
+   },
+   "effects": {
+    "court.baysunghur": 1,
+    "press.exposure": 1,
+    "press.works": 1,
+    "life.exile_writing": "lettrism_for_baysunghur",
+    "score.biography": -1
+   },
+   "costs": [
+    "Lettrist writing is what your enemies read as Ḥurūfī sympathy."
+   ],
+   "feedback": "Open to you because Bāysunghur has favoured you: he received you with particular favour and asked for the R. Suʾl al-Mulūk. The sources show no lettrist work for him from the exile; the one thing you address to him in these years is the second apology, later. The Iṣbāḥ al-Anwār, your fuller lettrist work, is the one Melvin-Koushki conjectures you left unfinished after 1427. The game returns you to the record."
+  }
+ ],
+ "next": "SCN-0404",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

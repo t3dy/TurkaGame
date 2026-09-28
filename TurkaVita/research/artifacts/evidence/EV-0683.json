@@ -1,0 +1,15 @@
+{
+ "id": "EV-0683",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 148,
+  "printed_page": "131",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that the Tuḥfa-yi ʿAlāʾī was written for ʿAlāʾ al-Dīn b. Bāysunghur (a Hanbali) and completed on 1 Jumādā I 831/17 February 1428; the Majlis copy is undated, so the entry does not say where the date comes from, and no asterisk is printed.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.148",
+ "refers_to_primary": "Ibn Turka, Tuḥfa-yi ʿAlāʾī"
+}

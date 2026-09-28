@@ -1,0 +1,28 @@
+{
+  "id": "CL-0412",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka wrote to Iskandar's chief vizier Ghiyās al-Dīn Ḥāfiẓ Rāzī (letter 12, ca. 816/1413) praising his regard for religious leaders and scholars and asking his help in installing Sharaf al-Dīn Yaʿqūb as qadi; he wrote again after Iskandar's fall (letter 43), a brief well-wishing to a man then mainly occupied with teaching.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0828",
+    "EV-0863"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Vazīr Ghiyās al-Dīn Ḥāfiẓ Rāzī",
+      "where": "Munshaʾāt-i Turka letters 12 and 43",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.157",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "political"
+}

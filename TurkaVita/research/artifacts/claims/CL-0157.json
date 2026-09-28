@@ -1,0 +1,27 @@
+{
+ "id": "CL-0157",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat II traces Jazarī's enmity to Ibn Turka's candid assessment of him to the Mamluk sultan in Egypt, which Jazarī could not name in Fars; this is Ibn Turka's own version of a grievance against a rival, and MK gives no corroboration on these pages.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0229",
+  "EV-0230"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing from exile to Bāysunghur b. Shāhrukh",
+   "where": "Nafsat al-Maṣdūr II",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.78 (printed 61)",
+   "shaping_risk": "low"
+  }
+ ]
+}

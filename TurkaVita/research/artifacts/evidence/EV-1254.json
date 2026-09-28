@@ -1,0 +1,15 @@
+{
+ "id": "EV-1254",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 444,
+  "printed_page": "427",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that the image of Ṣāʾin al-Dīn and Sharaf al-Dīn as failed Sufis, promulgated by Jāmī and his circle, persisted into the 11th/17th century, and was expanded in the Safavid-era tazkira Sullam al-Samāvāt of Kāzirūnī (fl. early 11th/17th c.) as quoted in Jāmiʿ-i Mufīdī; MK notes that Kāzirūnī's source was likely his teacher Afżal al-Dīn b. Ḥabīb Allāh Turka (d. 991/1583).",
+ "evidence_kind": "reception",
+ "refers_to_primary": "Abū l-Qāsim Anṣārī Kāzirūnī, Sullam al-Samāvāt, in Jāmiʿ-i Mufīdī 3/302",
+ "read_by": "R7 opened pdf p.444"
+}

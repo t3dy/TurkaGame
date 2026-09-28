@@ -1,0 +1,27 @@
+{
+ "id": "CL-0627",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka distinguishes Sufism (purification of the soul, subjective, moral, individual) from lettrism (systematic, objective, scientific and communal study of the two Books), in the R. Anjām and elsewhere.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1229"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, R. Anjām",
+   "where": "per MK, pdf p.435",
+   "shaping_risk": "low",
+   "note": "a doctrinal work, as reported by MK"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.435",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "doctrinal"
+}

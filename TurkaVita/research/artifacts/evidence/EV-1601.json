@@ -1,0 +1,15 @@
+{
+ "id": "EV-1601",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 36,
+  "printed_page": "19",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK names two sustained treatments of Ibn Turka in a western language: Corbin's study of the Risala-yi Shaqq-i Qamar u Bayan-i Saʿat (\"Typologie des spirituels\", ch. 3 of En Islam iranien) and Lewisohn's short study of the apologies.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.36",
+ "refers_to_primary": "Corbin, 'Typologie des spirituels'; Lewisohn, apologies article"
+}

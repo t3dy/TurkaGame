@@ -1,0 +1,20 @@
+{
+  "id": "CL-0520",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "On the Hour, Ibn Turka assigns to level six (lettrists) the view that all things return to their source in the form of the 29 letters revealed to the Seal (counting lām-alif), and that when their meanings manifest free of accretions everything from pre-eternity to post-eternity becomes manifest.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1044"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.479",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

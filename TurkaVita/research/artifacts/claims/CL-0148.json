@@ -1,0 +1,32 @@
+{
+ "id": "CL-0148",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The charge of ṣūfīgarī was probably meant to tie Ibn Turka to the subversive Ḥurūfiyya rather than to Sufism in general; MK's inference (‘no doubt meant’).",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0208"
+ ],
+ "domain": "political",
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "the accusation of ṣūfīgarī before Shāhrukh"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I, addressed to Shāhrukh",
+   "where": "Nafsat I",
+   "shaping_risk": "high",
+   "note": "the charge is known only from his own answer to it"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.76",
+   "shaping_risk": "medium",
+   "note": "'no doubt meant' is MK's inference about the accusers' intent"
+  }
+ ]
+}

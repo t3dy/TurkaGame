@@ -1,0 +1,29 @@
+{
+ "id": "CL-0812",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Mulla ʿAli Nuri owned the earliest and most comprehensive collection of Ibn Turka's works (MS Majlis 10196) and annotated the Mafahis and several lettrist treatises, which MK takes to show that Nuri was acquainted with the lettrist doctrine.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1682",
+  "EV-1681"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Mulla ʿAli Nuri (marginalia)",
+   "where": "dissertation pdf p.454",
+   "shaping_risk": "medium",
+   "note": "The marginalia are Nuri's; MK's inference that he knew the doctrine is MK's."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.454",
+   "shaping_risk": "medium",
+   "note": "Reported through MK, who argues a rival reading."
+  }
+ ],
+ "domain": "textual"
+}

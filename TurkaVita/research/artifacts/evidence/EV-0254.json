@@ -1,0 +1,15 @@
+{
+ "id": "EV-0254",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 85,
+  "printed_page": "68",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the first apology champions a type of orthodox Sufism much esteemed but by no means personally embraced by the author, who pointedly declined to identify as Sufi while keeping friendly, and in some cases hostile, relations with various prominent Sufi masters.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.85"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0206",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 76,
+  "printed_page": "59",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki summarises Nafsat I's two sections: (1) a commentary on nine hadith in censure of reprehensible innovation (bidʿa) in religion; (2) a commentary on the sayings of Sufi masters and leading religious authorities in support of the orthodoxy of Sufism, in which Sufis are identified as striving to know and imitate Muḥammad perfectly.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.76"
+}

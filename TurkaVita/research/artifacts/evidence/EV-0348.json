@@ -1,0 +1,15 @@
+{
+ "id": "EV-0348",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 89,
+  "printed_page": "72",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki gives as an example of the unease that accompanied this ambiguity Ḥusayn Vāʿiẓ Kāshifī (d. 910/1505), accused of being a Sunni in his home town of Sabzevar and of being a Shiʿi in Herat.",
+ "evidence_kind": "context",
+ "refers_to_primary": "Ḥusayn Vāʿiẓ Kāshifī (per MK)",
+ "read_by": "R2a opened pdf p.89"
+}

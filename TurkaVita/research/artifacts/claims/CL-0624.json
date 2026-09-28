@@ -1,0 +1,28 @@
+{
+ "id": "CL-0624",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka calls fellow lettrists ahl al-ḥarf, ramz-khwānān-i ḥurūf-i qurʾānī or arbāb-i ʿilm-i ḥurūf; Bisṭāmī likewise separates ḥarfiyya or ahl al-ḥarf (intellectual lettrists) from the messianic, incarnationist ḥurufiyya; MK follows Bisṭāmī in calling Fażl Allāh's followers Hurufis and Ibn Turka's circle lettrists.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1228",
+  "EV-1227"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, works",
+   "where": "per MK, pdf p.435",
+   "shaping_risk": "low",
+   "note": "usage reported by MK"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.435",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

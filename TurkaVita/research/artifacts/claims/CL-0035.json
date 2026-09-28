@@ -1,0 +1,26 @@
+{
+ "id": "CL-0035",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka never names Akhlāṭī in his writings, calling him instead 'our Sayyid', 'the Sayyidic Presence' or 'the sublime Sayyidic Threshold'.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0109"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "Ibn Turka's own works (R. Shaqq-i Qamar, R. Ḥurūf, R. Arbaʿīniyya, K. al-Mafāḥiṣ preface) as cited by MK",
+   "where": "pdf p.65, notes 56-58",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.65",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

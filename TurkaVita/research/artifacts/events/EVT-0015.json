@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0015",
+ "type": "event",
+ "status": "draft",
+ "actor": "Pīr-Muḥammad b. ʿUmar-Shaykh",
+ "date": {
+  "start": "1409",
+  "end": "1409",
+  "hijri": "812",
+  "basis": "Timeline A.1, pdf p.51.",
+  "date_kind": "context"
+ },
+ "place": "Fars",
+ "event_type": "murder",
+ "description": "Pīr-Muḥammad is murdered; his brother Iskandar rises to power in Fars.",
+ "claims": [
+  "CL-0053"
+ ],
+ "fixed_point": true
+}

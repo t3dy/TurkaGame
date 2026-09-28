@@ -1,0 +1,21 @@
+{
+  "id": "CL-0540",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki reads Ibn Turka as denying the Avicennan claim that metaphysics is the universal science, on the ground that resting on inductive reasoning alone it is confined to the abstract.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1057",
+    "EV-1058"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.179",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

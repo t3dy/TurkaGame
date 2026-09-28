@@ -1,0 +1,21 @@
+{
+ "id": "CL-0169",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK says the apologies, by the nature of the genre, reflect Shāhrukh's predilections and anxieties rather than Ibn Turka's own intellectual project, citing the omission of Akhlāṭī as the first of many signs.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0249",
+  "EV-0250"
+ ],
+ "domain": "biographical",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.80 (printed 63)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

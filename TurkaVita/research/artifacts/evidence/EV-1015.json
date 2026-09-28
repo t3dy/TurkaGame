@@ -1,0 +1,15 @@
+{
+  "id": "EV-1015",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 336,
+    "printed_page": "319",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "In a short work on defending against the plague, ʿAbd al-Raḥmān Bisṭāmī defines the ūlū l-aydī wa-l-abṣār as including in the first place Hermes Trismegistus and Luqmān, and secondarily other ancient authorities (Apollonius of Tyana, Āṣaf b. Barakhyā, Euclid, Aristophanes, Eudemus and others), presumed to have drawn their knowledge from contemporary prophets. Melvin-Koushki offers this as evidence that the list may be expanded at will.",
+  "evidence_kind": "reception",
+  "refers_to_primary": "ʿAbd al-Raḥmān Bisṭāmī, Waṣf al-Dawāʾ fī Kashf al-Āfāt wa-l-Wabāʾ",
+  "read_by": "R6 opened pdf p.336"
+}

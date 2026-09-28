@@ -1,0 +1,20 @@
+{
+ "id": "CL-0170",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK reads the shrill Sunnism and dismissal of Shiʿa, Muʿtazila and falāsifa in Nafsat I as a mirror of Shāhrukh's Sunnizing programme.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0250"
+ ],
+ "domain": "political",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.85 (printed 68)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

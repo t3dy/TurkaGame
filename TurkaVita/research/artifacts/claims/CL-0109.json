@@ -1,0 +1,20 @@
+{
+ "id": "CL-0109",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Hurufi attempt of 830/1427 was possibly staged by Shāhrukh himself (Melvin-Koushki citing Binbaş); MK's ‘possibly’ makes this a conjecture the game may not treat as fact.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0245"
+ ],
+ "domain": "political",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.32 (printed 15)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

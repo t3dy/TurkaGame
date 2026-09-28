@@ -1,0 +1,15 @@
+{
+  "id": "EV-0889",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 171,
+    "printed_page": "154",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK lists further doubtful attributions on this page: a Makhzan al-Gharāʾib (Arabic), which Āqā Buzurg says he has often seen in collections of Ibn Turka's works, so Ibn Turka is strongly suggested as author (Bodleian catalogue follows); a Sharḥ al-Hidāya whose attribution to one Khwāja Ṣāʾin al-Dīn makes Ibn Turka a possible candidate; and a Persian Taqrīr Masʾalat al-Tawḥīd in a 1309/1892 copy.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.171",
+  "refers_to_primary": "Makhzan al-Gharāʾib; Sharḥ al-Hidāya; Taqrīr Masʾalat al-Tawḥīd"
+}

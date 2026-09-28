@@ -1,0 +1,15 @@
+{
+  "id": "EV-0855",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 161,
+    "printed_page": "144",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 34, to Amīr ʿAlāʾ al-Dīn Gīlānī (ca. 831-32/1428-29, Gilan?): a letter of thanks sent after attending the amir's court and enjoying his solicitude, after the events of 830/1427; Ibn Turka calls himself sitam-dīda, a victim of injustice (TMN/M f. 122a, TMN/MS pp. 27-28, TMN/D pp. 203-5).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.161",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 34"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-1012",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 335,
+    "printed_page": "318",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The R. Madārij Afhām al-Afwāj is a commentary on Q 6:143-44 arranged by the views of seven groups in ascending order: exoteric exegetes, Sufis of outward practice, philosophers, the Sufi verifiers, the Sufi elite, those who understand the language of the prophets, and the House of the Prophet with the saints and ancient sages. It collapses theologians and peripatetic and illuminationist philosophers into one category and gives three categories to Sufis.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Madārij Afhām al-Afwāj",
+  "read_by": "R6 opened pdf p.335"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0272",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 81,
+  "printed_page": "64",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka argues that by his accusers' logic astronomy (ʿilm-i hayʾa) and astrology (nujūm), being based on physical principles sometimes at odds with quranic passages, would amount to unbelief, yet astrology is a central topic in royal majlises, especially since its revival following new astronomical observations.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.81"
+}

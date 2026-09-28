@@ -1,0 +1,29 @@
+{
+  "id": "CL-0453",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Muḥammad Ṣūfī b. Tarkhān, a commander in Shāhrukh's army, asked (through the Yazdī collection) for a volume of Ibn Turka's works in Persian and described them as directed toward the ūlū l-aydī wa-l-abṣār; the request shows demand for his writings among the military elite.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0878",
+    "EV-0879"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Muḥammad Ṣūfī b. Tarkhān, presumably to Sharaf al-Dīn Yazdī",
+      "where": "YMN/V ff. 59a-60a",
+      "shaping_risk": "medium",
+      "note": "An admirer's request; not written by Ibn Turka."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.167",
+      "shaping_risk": "medium",
+      "note": "MK says the letter was 'presumably' to Yazdī; 'shows demand' is this claim's gloss on MK's summary"
+    }
+  ],
+  "domain": "social"
+}

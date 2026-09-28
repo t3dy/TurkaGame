@@ -1,0 +1,23 @@
+{
+  "id": "CL-0408",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "MK suggests that the three great promoters of Ibn ʿArabī among Ibn Turka's Sufi correspondents (Niʿmat Allāh Valī, Qāsim-i Anvār, Aḥmad Samarqandī) may have attracted him for that reason.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0812",
+    "EV-0829",
+    "EV-0858"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.154",
+      "shaping_risk": "medium",
+      "note": "MK's suggestion; no letter says it"
+    }
+  ],
+  "domain": "doctrinal"
+}

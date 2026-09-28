@@ -1,0 +1,15 @@
+{
+ "id": "EV-0662",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 136,
+  "printed_page": "119",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Suʾl al-Mulūk was written at the request of Muʿizz al-Dawla Bāysunghur; the entry does not say which part of the text or manuscript gives this.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.136",
+ "refers_to_primary": "Ibn Turka, Suʾl al-Mulūk, request"
+}

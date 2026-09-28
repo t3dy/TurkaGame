@@ -1,0 +1,15 @@
+{
+ "id": "EV-1619",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 24,
+  "printed_page": "7",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that Muḥammad Taqī Dānishpazhūh called Ibn Turka the \"Spinoza of Iran\", which MK says was asserted rhetorically to underscore the need to publish and study his works.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.24",
+ "refers_to_primary": "Dānishpazhūh, 'Majmūʿa-yi Rasāʾil-i Khujandī', 312"
+}

@@ -1,0 +1,33 @@
+{
+ "id": "WRK-SHARH-I-DAH-BAYT",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ-i Dah Bayt-i Muḥyī l-Dīn Ibn-i ʿArabī",
+ "transliterated_title": "Sharḥ-i Dah Bayt-i Muḥyī l-Dīn Ibn-i ʿArabī (Commentary on Ten Verses by Ibn ʿArabī; variant Sharḥ-i Abyātī az Ibn-i ʿArabī)",
+ "language": "Persian",
+ "genre": "commentary on ten verses",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "not later than 17 April 1435 (a posthumous copy date)",
+  "hijri": "copied 18 Ramaḍān 838",
+  "basis": "The only date given is the MS Majlis 10196 copy date, which falls after Ibn Turka's death (835/1432 per the timeline); no composition date is stated."
+ },
+ "date_kind": "transcription",
+ "place": "not stated",
+ "addressee": "not stated",
+ "occasion": "not stated",
+ "manuscript": "MS Majlis 10196 ff. 225a-26a; MS 5423 ff. 333b-37a (842/1439); MS 10004 pp. 204-9; MS 3035/9; Microfilm 827.",
+ "majlis_folios": "ff. 225a-26a",
+ "edited": true,
+ "summary": "An exposition of select Ibn ʿArabī verses, especially on the difference between wujūd and kawn.",
+ "edition_note": "Chahārdah Risāla-yi Fārsī (Tehran 1972) pp. 299-306.",
+ "supported_by": [
+  "EV-0619",
+  "EV-0620",
+  "EV-0621",
+  "EV-0603"
+ ],
+ "claims": [
+  "CL-0307"
+ ]
+}

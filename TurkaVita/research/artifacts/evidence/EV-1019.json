@@ -1,0 +1,15 @@
+{
+  "id": "EV-1019",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 336,
+    "printed_page": "319",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki concludes that the seventh level of the R. Shaqq-i Qamar should be understood as referring both to the Imams and to ancient prophets such as Hermes Trismegistus, as well as to 'those who can riddle their cryptic utterances'.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.336"
+}

@@ -1,0 +1,29 @@
+{
+ "id": "CL-0047",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Kātibī's poems call Ibn Turka the 'shoot of purity' and the succourer of the Folk of Sincerity (muʿīn-i ahl-i ṣafā), and MK reads his three associations of Ibn Turka with ṣafā as almost certainly referring to the Ikhwān al-Ṣafāʾ network.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0147",
+  "EV-0148"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Kātibī Turshīzī's divan (Ankara MS Milli A.6869/3)",
+   "where": "pdf p.71-72",
+   "shaping_risk": "medium",
+   "note": "panegyric from a student"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.71",
+   "shaping_risk": "medium",
+   "note": "the identification with the Ikhwān is MK's 'almost certainly'"
+  }
+ ],
+ "domain": "social"
+}

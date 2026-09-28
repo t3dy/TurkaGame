@@ -1,0 +1,15 @@
+{
+  "id": "EV-0860",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 162,
+    "printed_page": "145",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 39: a brief note to Sayyid Bahāʾ al-Dīn, a Sufi shaykh (MK's footnote: possibly Bahāʾ al-Dīn ʿUmar Jaghāraʾī, d. 857/1453, a prominent Herati shaykh) (TMN/MS p. 31, TMN/D p. 210; edition in P.2.1).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.162",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 39"
+}

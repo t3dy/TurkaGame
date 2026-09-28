@@ -1,0 +1,35 @@
+{
+ "id": "WRK-SHAQQ-I-QAMAR",
+ "type": "work",
+ "status": "draft",
+ "title": "Shaqq-i Qamar u Bayān-i Sāʿat",
+ "transliterated_title": "Shaqq-i Qamar u Bayān-i Sāʿat (On the Splitting of the Moon and the Last Hour; variant Shaqq-i Qamar u Sāʿat)",
+ "language": "Persian",
+ "genre": "Quran commentary on Q 54:1 in seven hierarchical levels",
+ "theme": "lettrism",
+ "date": {
+  "ce": "before 28 January 1426 (the manuscript listing prints 27 February 1426)",
+  "hijri": "before 18 Rabīʿ I 829",
+  "basis": "MS Majlis 10196 copy date, asterisked by Melvin-Koushki as possibly transcription; CE equivalent printed as 27 Feb 1426 on p.126 and 28 Jan 1426 on p.128. Terminus ad quem only."
+ },
+ "date_kind": "transcription",
+ "place": "not stated",
+ "addressee": "not stated",
+ "occasion": "not stated",
+ "manuscript": "MS Majlis 10196 ff. 170b-72a; 30 copies listed (earliest after it: MS 5423 ff. 355b-61b, 842/1439).",
+ "majlis_folios": "ff. 170b-72a",
+ "edited": true,
+ "summary": "Explicates Quran 54:1 on seven levels, from hadith scholars up through theologians, peripatetics, illuminationists, Sufis and lettrists to the Imams and masters of jafr; it is the text in which Ibn Turka's epistemological hierarchy is most clearly laid out.",
+ "edition_note": "Persian text in Chahārdah Risāla-yi Fārsī (Tehran 1972) pp. 103-17; English translation by Melvin-Koushki in the dissertation Part 2, §T.1 (a player could read it).",
+ "supported_by": [
+  "EV-0607",
+  "EV-0608",
+  "EV-0609",
+  "EV-0610",
+  "EV-0611"
+ ],
+ "claims": [
+  "CL-0302",
+  "CL-0303"
+ ]
+}

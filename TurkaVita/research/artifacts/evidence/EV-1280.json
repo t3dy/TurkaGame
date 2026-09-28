@@ -1,0 +1,15 @@
+{
+ "id": "EV-1280",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 32,
+  "printed_page": "15",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In a note MK says Qāsim-i Anvār (d. 837/1434), apart from being Niʿmat Allāh Valī's khalīfa and a dāʿī for the Ṣafaviyya, was one of Ṣāʾin al-Dīn's companions in Cairo, citing the Niʿmatullahi Savāniḥ passage.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Mufīd Mustawfī, Jāmiʿ-i Mufīdī 3/16-17; Aubin, Majmūʿa, 156-57 (via MK fn 45)",
+ "read_by": "R7 opened pdf p.32"
+}

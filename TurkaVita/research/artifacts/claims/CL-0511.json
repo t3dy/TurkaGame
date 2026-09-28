@@ -1,0 +1,22 @@
+{
+  "id": "CL-0511",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka says the seventh level, the highest, is peculiar to the present time, which is ruled by an auspicious conjunction (saʿādat-qirān); it is not presented as a rank that belonged to the past alone.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1005",
+    "EV-1036",
+    "EV-1045"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.333, 476, 479",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

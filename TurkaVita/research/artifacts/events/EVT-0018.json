@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0018",
+ "type": "event",
+ "status": "draft",
+ "actor": "Shāhrukh",
+ "date": {
+  "start": "1411",
+  "end": "1411",
+  "hijri": "813",
+  "basis": "Timeline A.1, pdf p.52.",
+  "date_kind": "context"
+ },
+ "place": "Herat",
+ "event_type": "political",
+ "description": "Shāhrukh declares the Yasa abrogated, enforces the Shariʿa and closes the taverns.",
+ "claims": [
+  "CL-0090"
+ ],
+ "fixed_point": false
+}

@@ -1,0 +1,33 @@
+{
+  "id": "REC-0101",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "Does Ibn Turka place himself and the lettrists inside the seventh, highest level, or only below it?",
+  "proposition": "The seventh level is not the Imams alone. Ibn Turka's other texts widen it to the House of the Prophet, perfected saints who can riddle its utterances, and the ancient sages, and define the lettrists as the Prophet's true heirs; lettrists such as Ibn Turka thus stand equal to Pythagoras and Socrates, and the level's manifestation is peculiar to the present time.",
+  "kind": "inferential",
+  "scholar": "Melvin-Koushki",
+  "reasoning": [
+    "The seventh level is said to be peculiar to the present time and marked by a celestial conjunction (pdf pp.333, 476).",
+    "It is tied to jafr, the Imams' technique, which Melvin-Koushki identifies with lettrism taken to its occult extreme (pdf p.334).",
+    "The alternate hierarchy in the R. Madārij lists the House of the Prophet and the sages of antiquity at level seven (pdf p.335).",
+    "The R. al-Inzāliyya calls the lettrists the Prophet's associates and true heirs (pdf p.336); the Mafāḥiṣ is then a manual for an Imam-like status.",
+    "Melvin-Koushki's step from these to 'Ibn Turka counts himself at level seven' is his own inference; the treatise never says so in the first person on the pages read."
+  ],
+  "observed_facts": [
+    "CL-0522",
+    "CL-0523",
+    "CL-0525",
+    "CL-0526",
+    "CL-0528",
+    "CL-0529",
+    "CL-0511",
+    "CL-0513"
+  ],
+  "confidence": "medium",
+  "alternatives": [
+    "REC-0100"
+  ],
+  "counterevidence": [
+    "EV-1036"
+  ]
+}

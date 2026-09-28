@@ -1,0 +1,31 @@
+{
+ "id": "WRK-SHARH-HAQIQAT-AL-WAHDA",
+ "type": "work",
+ "status": "draft",
+ "title": "R. fī Sharḥ Ḥaqīqat al-Waḥda al-Muṭlaqa al-Dhātiyya",
+ "transliterated_title": "Risāla fī Sharḥ Ḥaqīqat al-Waḥda al-Muṭlaqa al-Dhātiyya (An Exposition of the Reality of Absolute and Essential Oneness; variant R. al-Khatmiyya)",
+ "language": "Arabic",
+ "genre": "brief mystical-philosophical treatise",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "not later than 27 October 1424",
+  "hijri": "copied 3 Dhū l-Ḥijja 827",
+  "basis": "Only the MS Majlis 10196 copy date is given, with no composition date and no asterisk; treated here as a copy date (terminus ad quem)."
+ },
+ "date_kind": "transcription",
+ "place": "not stated",
+ "addressee": "not stated",
+ "occasion": "not stated",
+ "manuscript": "MS Majlis 10196 f. 120a-20b (the only copy listed).",
+ "majlis_folios": "f. 120a-20b (printed so; overlaps ff. 119b-20b of the ʿAmāʾ commentary, no. 32)",
+ "edited": false,
+ "summary": "A brief mystical-philosophical treatment of absolute and essential oneness.",
+ "edition_note": "Unpublished.",
+ "supported_by": [
+  "EV-0642",
+  "EV-0643"
+ ],
+ "claims": [
+  "CL-0318"
+ ]
+}

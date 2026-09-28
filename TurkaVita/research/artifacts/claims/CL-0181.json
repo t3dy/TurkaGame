@@ -1,0 +1,26 @@
+{
+ "id": "CL-0181",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Kāshifī was called Sunni in Sabzevar and Shiʿi in Herat, the ambiguity being uncomfortable to live with.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0348"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "sources and scholars MK cites",
+   "where": "pdf p.89 (printed 72)",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.89 (printed 72)",
+   "shaping_risk": "low"
+  }
+ ]
+}

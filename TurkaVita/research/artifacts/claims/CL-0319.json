@@ -1,0 +1,20 @@
+{
+ "id": "CL-0319",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The entry gives no date for Sharḥ Khuṭbat al-Kashshāf; both listed copies (one in MS Majlis 10196 ff. 223b-24b) are undated.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0644"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.133, no. 37",
+   "shaping_risk": "low"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "REC-0053",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was Ibn Turka?",
+ "proposition": "Ibn Turka was a Shiʿi philosopher and Sufi of the Ibn ʿArabi school, harmonizing religion and philosophy, and linking Tusi to Mulla Sadra.",
+ "kind": "inferential",
+ "scholar": "Seyyed Hossein Nasr and Hossein Ziai (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "MK says the few Western scholars to mention Ibn Turka mostly 'faithfully reiterate' the Iranian Tamhid-based judgment (pdf p.24): Nasr as a peripatetic-illuminationist and Sufi of Ibn ʿArabi's school, a key Shiʿi link between Tusi and Sadra; Ziai as a Shiʿi thinker harmonizing religion and philosophy and promoting the political authority of divinely inspired ʿulamaʾ.",
+  "MK's objections: Ziai's statement is 'incorrect and anachronistic' and a mere reflection of the Tamhid's popularity in modern seminaries (p.24).",
+  "Nasr and Ziai also 'urge his study' (p.36), which MK counts as help. MK is a partisan reporter. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0805",
+  "CL-0803",
+  "EV-1616",
+  "EV-1617",
+  "EV-1618"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0052"
+ ]
+}

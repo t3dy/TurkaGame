@@ -1,0 +1,29 @@
+{
+ "id": "CL-0738",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki's papers give Shāhrukh's rule as 807-50/1405-47 (Grammatology), 811-850/1409-47 (Timurid-Mughal) and 1409-47 (New Brethren). The dissertation timeline gives no accession year, has him governor of Khurasan from 799/1397 and in control of Khurasan, Transoxania and Khwarazm by 815/1412.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1486",
+  "EV-1493",
+  "EV-1465",
+  "EV-1450"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 51-52",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

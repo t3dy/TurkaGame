@@ -1,0 +1,15 @@
+{
+  "id": "EV-0851",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 161,
+    "printed_page": "144",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 30, to Amīr Sayyid Nāṣir Kārkiyā (ca. 831-32/1428-29, Gilan): a congratulatory letter on Sayyid Nāṣir's conquest, as communicated by members of his court near Rayy and discussed in a recent majlis; Ibn Turka praises the amir's patronage of scholars and regrets he cannot attend the court because of physical infirmity (TMN/MS pp. 24-25, TMN/D pp. 196-99).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.161",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 30"
+}

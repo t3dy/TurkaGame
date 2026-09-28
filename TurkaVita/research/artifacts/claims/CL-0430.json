@@ -1,0 +1,28 @@
+{
+  "id": "CL-0430",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Letters 10 and 22 welcome the arrival of Fīrūzshāh's troops in Persian Iraq (ca. 817/1414 and ca. 827-28/1423-24); letter 22 calls it a boon to the scholars who had suffered from the region's unrest, and says Ibn Turka wishes to attend the amir's court at once but is prevented.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0826",
+    "EV-0841"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Amīr Fīrūzshāh",
+      "where": "Munshaʾāt-i Turka letters 10 and 22",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.159",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "political"
+}

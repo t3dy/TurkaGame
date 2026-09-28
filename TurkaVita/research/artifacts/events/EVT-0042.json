@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0042",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1427",
+  "end": "1430",
+  "hijri": "830-833",
+  "basis": "Timeline A.1 marks 'c.'; pdf p.53; §1.2, pdf p.73.",
+  "date_kind": "conjectured"
+ },
+ "place": "Mazandaran, Gilan, Hamadan, Azarbayjan, Natanz",
+ "event_type": "exile",
+ "description": "Exile: teaching hadith and tafsir, writing for governors, and sending letters to the Marʿashī and Kārkiyā sayyids and other patrons for clemency and support.",
+ "claims": [
+  "CL-0081",
+  "CL-0082"
+ ],
+ "fixed_point": false
+}

@@ -1,0 +1,28 @@
+{
+ "id": "CL-0027",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka implies he was a regular participant in scholarly majlises at the Mamluk court of Cairo.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0096",
+  "EV-0099"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "Nafsat al-Maṣdūr II, 211-12",
+   "shaping_risk": "high",
+   "note": "written to seek intercession from the ruler's son while his case was still unresolved"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.64",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

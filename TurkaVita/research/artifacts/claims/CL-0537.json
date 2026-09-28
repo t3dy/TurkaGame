@@ -1,0 +1,22 @@
+{
+  "id": "CL-0537",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The R. Shaqq-i Qamar presents itself as a response to a popular debate among traditionists and theologians over the splitting of the moon, framed as the author's journey through the marketplaces of the sciences; this frame is literary and is not evidence of a particular event.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1025",
+    "EV-1026"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.471",
+      "shaping_risk": "medium",
+      "note": "'upon a day … traveled the length and breadth of the engendered realm' is a conventional literary frame"
+    }
+  ],
+  "domain": "textual"
+}

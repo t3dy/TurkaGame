@@ -1,0 +1,21 @@
+{
+  "id": "CL-0533",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka refers to his teacher Akhlāṭī only as 'sayyid' or by allusion to his descent from the Imams, never by name, and his reverence was due not least to that descent.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1010"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.334",
+      "shaping_risk": "medium",
+      "note": "Melvin-Koushki's observation about usage in the works, given in a footnote"
+    }
+  ],
+  "domain": "biographical"
+}

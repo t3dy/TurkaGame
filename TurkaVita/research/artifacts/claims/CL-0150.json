@@ -1,0 +1,26 @@
+{
+ "id": "CL-0150",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "By Nafsat II Ibn Turka says five years have passed since his exile and nine months since a promised review of his case at Herat, during which he has attended court once or twice a week without result.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0221"
+ ],
+ "domain": "biographical",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing from exile to Bāysunghur b. Shāhrukh",
+   "where": "Nafsat al-Maṣdūr II",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.77 (printed 60)",
+   "shaping_risk": "low"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0104",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 64,
+  "printed_page": "47",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ibn Ḥajar al-ʿAsqalānī (d. 852/1449) relates that on Akhlāṭī's death his house was found to contain \"a golden cup, flagons of wine, clothes of priests, a copy of the Bible\" and more (Inbāʾ al-Ghumr, 3/336-38); continued on the next page.",
+ "evidence_kind": "chronicle",
+ "read_by": "R1 opened pdf p.64",
+ "refers_to_primary": "Ibn Ḥajar, Inbāʾ al-Ghumr, 3/336-38"
+}

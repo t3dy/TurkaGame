@@ -1,0 +1,22 @@
+{
+ "id": "EVT-0016",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1409",
+  "end": "1412",
+  "hijri": "812-815",
+  "basis": "Timeline A.1 marks the appointment '(?)'; §1.2 says the honours 'presumably' included teaching and judgeship (pdf p.51, p.69). The Isfahan court is dated 1412-14 elsewhere in the same timeline (pdf p.52).",
+  "date_kind": "conjectured"
+ },
+ "place": "Isfahan",
+ "event_type": "court",
+ "description": "Iskandar Mīrzā makes Ibn Turka a member of his court, presumably with a teaching post and judgeship.",
+ "claims": [
+  "CL-0054",
+  "CL-0055",
+  "CL-0056"
+ ],
+ "fixed_point": false
+}

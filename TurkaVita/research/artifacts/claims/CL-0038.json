@@ -1,0 +1,22 @@
+{
+ "id": "CL-0038",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Discipleship under Akhlāṭī transformed Ibn Turka from a competent scholar of the religious sciences into an ambitious universalist and thoroughgoing occult philosopher; Cairo left the deepest imprint on his thought.",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0103",
+  "EV-0094"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.63-64",
+   "shaping_risk": "medium",
+   "note": "MK's interpretation, not a statement Ibn Turka makes in the pages read"
+  }
+ ],
+ "domain": "doctrinal"
+}

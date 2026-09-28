@@ -1,0 +1,15 @@
+{
+ "id": "EV-0625",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 130,
+  "printed_page": "113",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that the Sharḥ Fuṣūṣ al-Ḥikam is referenced in Ibn Turka's own R. Ḥurūf, which he dates to completion in Ramaḍān 817/November 1414, and describes the work as a long and subtle commentary on Ibn ʿArabī's masterpiece featuring frequent lettrist explanations and excursuses.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.130",
+ "refers_to_primary": "Ibn Turka, Sharḥ Fuṣūṣ al-Ḥikam; R. Ḥurūf"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0606",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 126,
+  "printed_page": "109",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Qābiliyyat is published in Chahārdah Risāla-yi Fārsī az Ṣāʾin al-Dīn ʿAlī b. Muḥammad Turka-yi Iṣfahānī, ed. Bihbahānī and Dībājī, Tehran 1351 Sh./1972, pp. 271-75.",
+ "evidence_kind": "reception",
+ "read_by": "R4 opened pdf p.126",
+ "refers_to_primary": "Qābiliyyat, edition"
+}

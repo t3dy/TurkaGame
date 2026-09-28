@@ -1,0 +1,28 @@
+{
+ "id": "CL-0636",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Qāsim-i Anvār was remembered as a man of high attainment who could not control his disciples, some of whom Jāmī thought beyond the pale of Islam and Aḥrār's hagiographer said went about the bazaar gathering beardless boys; Ibn Turka himself refers to this failing explicitly, which is why Qāsim never received an independent hagiography.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1269",
+  "EV-1242"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Jāmī and Aḥrār's hagiographer, via Bashir, Sufi Bodies 145-46",
+   "where": "quoted by MK, pdf p.447 fn 42",
+   "shaping_risk": "high",
+   "note": "unfavourable reporters of a Sufi others admired; Bashir stresses that Qāsim is absolved of responsibility"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.447",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

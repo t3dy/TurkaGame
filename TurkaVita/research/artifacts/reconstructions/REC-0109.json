@@ -1,0 +1,23 @@
+{
+  "id": "REC-0109",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "Why does Ibn Turka raise the written form of the letter above the spoken?",
+  "proposition": "His preference for the written form expresses a millenarian consciousness: the conviction of living at a new phase of human evolution that can gather all accumulated knowledge.",
+  "kind": "psychological",
+  "scholar": "Melvin-Koushki",
+  "reasoning": [
+    "Melvin-Koushki calls the lionization of the written form a quintessential expression of Ibn Turka's millenarian consciousness (pdf p.350).",
+    "Ibn Turka's own stated reasons are different in kind: writing endures and carries the full complexity of prophecy; light-borne letterforms do not clash (pdf pp.355-356).",
+    "The two are compatible; only the first is a reading of motive."
+  ],
+  "observed_facts": [
+    "CL-0570",
+    "CL-0567",
+    "CL-0569"
+  ],
+  "confidence": "low",
+  "alternatives": [
+    "CL-0569"
+  ]
+}

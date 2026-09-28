@@ -1,0 +1,15 @@
+{
+ "id": "EV-0451",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 107,
+  "printed_page": "90",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 126b-28b carries the R. al-Inzāliyya, copied on 17 Ramaḍān 828/2 August 1425 (citing Ḥāʾirī, Majlis, 32/237); the only other listed copy is Majlis 10319/4 (13th/19th century).",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, R. al-Inzāliyya",
+ "read_by": "R3 opened pdf p.107"
+}

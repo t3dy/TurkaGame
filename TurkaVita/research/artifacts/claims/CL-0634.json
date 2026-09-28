@@ -1,0 +1,22 @@
+{
+ "id": "CL-0634",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's exile-period letters to Sufi masters and officials (nos. 35-47) look like an attempt to widen his network for help or a resolution of his situation (MK: 'suggest ... massaging').",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1244",
+  "EV-1245"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.439",
+   "shaping_risk": "medium",
+   "note": "MK's reading of undated, uncontextualized greetings"
+  }
+ ],
+ "domain": "social"
+}

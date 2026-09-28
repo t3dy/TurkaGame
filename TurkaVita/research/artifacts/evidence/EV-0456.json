@@ -1,0 +1,15 @@
+{
+ "id": "EV-0456",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 108,
+  "printed_page": "91",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the Iṣbāḥ al-Anwār is mentioned as incomplete, with the reader referred to it for more detail, in the R. Tuḥfa-yi ʿAlāʾī (written 1 Jumādā I 831/17 February 1428), and that the R. Muhr al-Nubuwwa and the K. al-Mafāḥiṣ refer to it too.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Iṣbāḥ al-Anwār",
+ "read_by": "R3 opened pdf p.108"
+}

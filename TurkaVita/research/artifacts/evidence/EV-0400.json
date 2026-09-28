@@ -1,0 +1,14 @@
+{
+ "id": "EV-0400",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 95,
+  "printed_page": "78",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki counts Ibn Turka's known oeuvre at 25 Persian and 19 (or 20) Arabic works (44 or 45 in total), a small Persian/Arabic dīvān, one ijāza and a body of correspondence including 58 letters, letter fragments and notes; twenty-two of the works have been edited or printed in some form. His list is based on Akram Jūdī-Niʿmatī's list in her edition of the Sharḥ-i Naẓm al-Durr, supplemented and corrected.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R3 opened pdf p.95"
+}

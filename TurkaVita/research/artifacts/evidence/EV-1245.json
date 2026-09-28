@@ -1,0 +1,15 @@
+{
+ "id": "EV-1245",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 440,
+  "printed_page": "423",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Further Sufi addressees in the Munshaʾāt named by MK: Khwāja Ẓahīr al-Dīn Muḥammad (letter 46, which opens praying against the wiles of the envious and hostile and invoking the Sufis' spiritual support), Sayyid Bahāʾ al-Dīn (possibly Bahāʾ al-Dīn ʿUmar Jaghāraʾī, d. 857/1453), Mīr Makhdūm and his disciples, Ẓāfir al-Dīn, and two unnamed Sufis whose letter reports the proceedings of a majlis.",
+ "evidence_kind": "letter",
+ "refers_to_primary": "Munshaʾāt-i Turka, letters 39, 40, 45, 46, 47",
+ "read_by": "R7 opened pdf p.440"
+}

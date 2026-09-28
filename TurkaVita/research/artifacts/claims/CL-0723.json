@@ -1,0 +1,38 @@
+{
+ "id": "CL-0723",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "On Suʾl al-Mulūk, New Brethren says it was written for Shāhrukh in early 1426, at the instance of his son Bāysunghur, as an attempt to cultivate Shāhrukh's patronage after Iskandar's fall. The dissertation says it was written at Bāysunghur's request and for Bāysunghur, before 7 Rajab 829/15 May 1426 (asterisked), one day before Nafsat al-Maṣdūr I, and it places Shāhrukh's first favour at c. 1422. Both agree that it ends with a prognostication from Shāhrukh's name of a century of Timurid glory.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1467",
+  "EV-1468",
+  "EV-1434",
+  "EV-1435",
+  "EV-1415",
+  "EV-1400"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "MS Majlis 10196 ff. 172b-79a copy date 7 Rajab 829",
+   "where": "dissertation pdf 136",
+   "shaping_risk": "medium",
+   "note": "copy date; the dissertation asterisks the completion date"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 136, 177",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The New Brethren of Purity",
+   "where": "pdf 33",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "textual"
+}

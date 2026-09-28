@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0052",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1431",
+  "end": "1431",
+  "hijri": "834",
+  "basis": "Timeline A.1 marks 'c.'; pdf p.53.",
+  "date_kind": "conjectured"
+ },
+ "place": "Herat",
+ "event_type": "travel",
+ "description": "Ibn Turka travels to Herat.",
+ "claims": [
+  "CL-0085"
+ ],
+ "fixed_point": false
+}

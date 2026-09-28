@@ -1,0 +1,15 @@
+{
+ "id": "EV-0616",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 129,
+  "printed_page": "112",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that Ṣāʾin al-Dīn refers the reader to the Sharḥ al-Basmala in a marginal note to the K. al-Mafāḥiṣ, MS Majlis 10196 f. 84a.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.129",
+ "refers_to_primary": "MS Majlis 10196 f. 84a, marginal note"
+}

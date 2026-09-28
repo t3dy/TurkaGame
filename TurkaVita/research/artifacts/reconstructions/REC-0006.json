@@ -1,0 +1,30 @@
+{
+ "id": "REC-0006",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "What was Ibn Turka's confessional position?",
+ "proposition": "Ibn Turka was a Shiʿi-Sunni (imamophile), preferring unification and synthesis to sectarian polemic; this was normal in his milieu.",
+ "kind": "inferential",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "Timurid confessional ambiguity was endemic (Hodgson, Masad, court examples, Sufi orders' ʿAlid filiation).",
+  "Ibn Turka wrote a Sunni-style manāqib work on ʿAlī, kept Companions in his esoteric works, yet rewrote a Sufi verse to praise the Imams and reserved highest praise for ʿAlī.",
+  "His millenarian esotericism, in MK's view, makes either-or labels unhelpful."
+ ],
+ "observed_facts": [
+  "EV-0331",
+  "EV-0351",
+  "EV-0337",
+  "EV-0356",
+  "EV-0358",
+  "EV-0362",
+  "EV-0364",
+  "EV-0352"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "REC-0003",
+  "REC-0004",
+  "REC-0005"
+ ]
+}

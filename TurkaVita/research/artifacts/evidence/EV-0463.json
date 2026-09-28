@@ -1,0 +1,15 @@
+{
+ "id": "EV-0463",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 109,
+  "printed_page": "92",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Iʿtiqādāt is a lengthy treatise that Melvin-Koushki says was written during Ibn Turka's second trip to Herat to clear his name of accusations of deviation from the Sunna and pro-Sufi bias; it presents the author as a staunch Sunni-Ashʿarī opposed to Muʿtazilism, philosophy, Shiʿism and all forms of messianic Sufism, taking as its theme Q 11:54.",
+ "evidence_kind": "creed_tract",
+ "refers_to_primary": "Ibn Turka, Iʿtiqādāt",
+ "read_by": "R3 opened pdf p.109"
+}

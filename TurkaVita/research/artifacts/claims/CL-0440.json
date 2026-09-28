@@ -1,0 +1,21 @@
+{
+  "id": "CL-0440",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The pages do not say whether Murtażā Marʿashī granted the stipend Ibn Turka asked for in letter 28; they show only a gracious reception.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0848"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.160",
+      "shaping_risk": "medium",
+      "note": "An attested silence on the pages read"
+    }
+  ],
+  "domain": "political"
+}

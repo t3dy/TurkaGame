@@ -1,0 +1,26 @@
+{
+ "id": "CL-0117",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I says Ibn Turka twice travelled from Persian Iraq to Khurasan and on the second visit submitted two statements to Shāhrukh; MK does not say on these pages whether these visits are the same as the first two trials.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0263"
+ ],
+ "domain": "biographical",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.80 (printed 63)",
+   "shaping_risk": "low"
+  }
+ ]
+}

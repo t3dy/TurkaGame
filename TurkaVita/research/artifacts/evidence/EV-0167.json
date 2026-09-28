@@ -1,0 +1,15 @@
+{
+ "id": "EV-0167",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 74,
+  "printed_page": "57",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ibn Turka died in Herat on Monday, 14 Dhū l-Ḥijja 835/12 August 1432, aged 63, \"frustrated, impoverished and in a state of limbo\" (Sharḥ-i Naẓm al-Durr, xlvii, cited for this passage).",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.74",
+ "refers_to_primary": "Sharḥ-i Naẓm al-Durr, ed. Jūdī-Niʿmatī, xlvii"
+}

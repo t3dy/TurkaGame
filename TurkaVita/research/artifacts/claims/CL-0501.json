@@ -1,0 +1,25 @@
+{
+  "id": "CL-0501",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka placed the lettrists (level six) above the peripatetic philosophers (level three) and below the seventh level of the men of might and vision, whom the treatise ties to the Prophet's House, the Imams and jafr.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1002",
+    "EV-1003",
+    "EV-1030",
+    "EV-1034",
+    "EV-1036",
+    "EV-1037"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.332-333, 473, 475-477",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

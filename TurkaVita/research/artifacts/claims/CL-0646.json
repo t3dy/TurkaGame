@@ -1,0 +1,30 @@
+{
+ "id": "CL-0646",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In Nafsat I Ibn Turka argues that even if he had had Sufi leanings, which he denies, true Sufis exemplify the Sunna; he cites Anṣārī, al-Tirmidhī, Ḥamuvayī and above all Muḥammad Pārsā, and separates them from charlatans who gather disciples and rulers or chant that everything is God, a barb MK says is clearly aimed at Fażl Allāh's followers among others.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1259",
+  "EV-1260",
+  "EV-1261"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Masdur I (829/1426, to Shahrukh's court)",
+   "where": "Nafsat I 173, 176-77",
+   "shaping_risk": "high",
+   "note": "written to the court that was judging him; MK: produced under duress, treat with caution (pdf p.32 fn 44)"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.446",
+   "shaping_risk": "low",
+   "note": "the barb's target is MK's inference"
+  }
+ ],
+ "domain": "doctrinal"
+}

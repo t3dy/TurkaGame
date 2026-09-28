@@ -1,0 +1,28 @@
+{
+ "id": "CL-0741",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Fusus commentary is dated 813/1411 in the dissertation timeline and in Grammatology, but the dissertation's own colophon note gives 20 Ṣafar 814/13 June 1411, corrected 817/1415. The Hijri year differs while the Gregorian year is the same.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1446",
+  "EV-1447",
+  "EV-1486"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "MS Majlis 10196 f. 330a",
+   "where": "dissertation pdf 129",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 52, 129",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

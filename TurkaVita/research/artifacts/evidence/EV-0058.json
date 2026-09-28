@@ -1,0 +1,14 @@
+{
+ "id": "EV-0058",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 55,
+  "printed_page": "38",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says Ibn Turka was born 'almost certainly in Isfahan'.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.55"
+}

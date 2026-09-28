@@ -1,0 +1,15 @@
+{
+ "id": "EV-0410",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 97,
+  "printed_page": "80",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS 10196, Majlis Library, Tehran, 425 ff., is described as copied between 828-41/1425-37 and containing 35 of Ibn Turka's major and minor works together with selections from his poetry.",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "MS Majlis 10196",
+ "read_by": "R3 opened pdf p.97"
+}

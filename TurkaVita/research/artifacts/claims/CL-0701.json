@@ -1,0 +1,25 @@
+{
+ "id": "CL-0701",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki's Prologue characterises Ibn Turka as refusing to bend the knee during his three inquisitions, despite the danger and punishing consequences. No source is cited for the characterisation on that page.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1453"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Turka's conduct at his inquisitions"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Prologue to Pythagorean Renaissance",
+   "where": "pdf 8",
+   "shaping_risk": "high",
+   "note": "offered as a rhetorical parallel to the lack of self-deprecation in the Mafāḥiṣ prologue; no citation"
+  }
+ ],
+ "domain": "biographical"
+}

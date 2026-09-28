@@ -1,0 +1,15 @@
+{
+ "id": "EV-0653",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 135,
+  "printed_page": "118",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The original Arabic version of the commentary is preserved only in the margins of the copy in MS Majlis 10196 and is far more succinct than the Persian translation, which in its ornate complexity effectively constitutes a different work.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.135",
+ "refers_to_primary": "Sharḥ-i Naẓm al-Durr, Arabic version"
+}

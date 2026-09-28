@@ -1,0 +1,30 @@
+{
+ "id": "CL-0807",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Leonard Lewisohn, writing on the apologies, presents Ibn Turka as an orthodox Sunni Sufi thinker; MK says this misrepresents him and rests on texts produced under great duress.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1627",
+  "EV-1628",
+  "EV-1629"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, in the apologies (Nafsat al-Masdur)",
+   "where": "Nafsat al-Masdur I/II",
+   "shaping_risk": "high",
+   "note": "Written to the ruler judging him; MK: produced under great duress."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.25",
+   "shaping_risk": "medium",
+   "note": "MK's judgement of how far the apologies reflect his concerns is itself part of his argument against the orthodox-Sunni-Sufi reading."
+  }
+ ],
+ "domain": "doctrinal"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0019",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1411",
+  "end": "1411",
+  "hijri": "813",
+  "basis": "Timeline A.1 queries the purpose ('for pilgrimage?'); pdf p.52. The Sharḥ Fuṣūṣ date is a completion date as the timeline gives it.",
+  "date_kind": "conjectured"
+ },
+ "place": "Hijaz",
+ "event_type": "travel",
+ "description": "Ibn Turka travels to the Hijaz, invites Sharaf al-Dīn, and completes the Sharḥ Fuṣūṣ al-Ḥikam.",
+ "claims": [
+  "CL-0062",
+  "CL-0093"
+ ],
+ "fixed_point": false
+}

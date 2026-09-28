@@ -1,0 +1,29 @@
+{
+  "id": "CL-0448",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Letter 46 to Khwāja Ẓahīr al-Dīn Muḥammad renews an old family friendship and asks after an estranged relative, Khwāja Burhān al-Dīn Yaqīn; MK thinks the addressee may be the copyist of MS Majlis 10196.",
+  "epistemic_type": "attested",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0866",
+    "EV-0870"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Khwāja Ẓahīr al-Dīn Muḥammad",
+      "where": "Munshaʾāt-i Turka letter 46; MS Majlis 10196 f. 188b",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.163",
+      "shaping_risk": "medium",
+      "note": "The copyist identification is MK's 'perhaps'"
+    }
+  ],
+  "domain": "social"
+}

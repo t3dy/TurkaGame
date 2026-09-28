@@ -1,0 +1,22 @@
+{
+ "id": "CL-0828",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "What naw-mulhidan meant as applied to Ibn Turka (freethinking subversion, neo-batini belief, or Ismaʿili leanings) cannot be determined from the material Melvin-Koushki gives; he thinks an Ismaʿili charge is possible.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1673",
+  "EV-1670"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.456",
+   "shaping_risk": "medium",
+   "note": "MK's own interpretation, offered in support of his thesis that Ibn Turka was an occult philosopher."
+  }
+ ],
+ "domain": "social"
+}

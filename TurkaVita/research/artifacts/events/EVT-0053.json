@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0053",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1431",
+  "end": "1432",
+  "hijri": "834-835",
+  "basis": "Timeline A.1, pdf p.53; §1.2, pdf p.74 (Nafsat al-Maṣdūr II is the main source).",
+  "date_kind": "attested"
+ },
+ "place": "Herat",
+ "event_type": "petition",
+ "description": "For nine months Ibn Turka attends court weekly, awaiting review of his case, and writes the Nafsat al-Maṣdūr II and the R. Iʿtiqādiyya for Bāysunghur.",
+ "claims": [
+  "CL-0085",
+  "CL-0086"
+ ],
+ "fixed_point": false
+}

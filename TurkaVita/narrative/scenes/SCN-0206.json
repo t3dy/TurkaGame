@@ -1,0 +1,166 @@
+{
+ "id": "SCN-0206",
+ "type": "scene",
+ "status": "draft",
+ "act": "courts",
+ "title": "Isfahan or Yazd, 1420: the Mafāḥiṣ",
+ "dramatic_question": "Your teacher Akhlāṭī asked long ago for a book that would fix the propositions of the science of letters. Do you write it, in what form, and whose name goes at the front?",
+ "situation": {
+  "when": "823/1420 (the year is fixed; the day and what the date records are disputed)",
+  "where": "Isfahan or Yazd (Melvin-Koushki queries the place)",
+  "based_on": [
+   "CL-0575",
+   "CL-0557",
+   "CL-0562"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki dates the completion of the K. al-Mafāḥiṣ to 823/1420. The two earliest manuscripts give 1 Shaʿbān 823 (11 August 1420) and 19 Dhū l-Ḥijja 823 (25 December 1420), and a marginal correction says the second date refers to copying (taswīd) only. Elsewhere he places the writing of the Mafāḥiṣ and the Fuṣūṣ commentary at 817-25/1414-22 in Shiraz and Yazd, and his timeline queries the place: 'Isfahan or Yazd?'.",
+   "claim": "CL-0575"
+  },
+  {
+   "text": "Akhlāṭī wrote to you urging a work that would establish the propositions and conjunctions proper to the science of letters, and Melvin-Koushki reads the Mafāḥiṣ as your answer (in one place he says 'perhaps'). The letter carries no date in the pages Melvin-Koushki gives.",
+   "claim": "CL-0557"
+  },
+  {
+   "text": "Akhlāṭī died in Cairo in 799/1397, so any such request is more than twenty years old.",
+   "claim": "CL-0034"
+  }
+ ],
+ "prose": [
+  "Akhlāṭī has been dead for over twenty years. Melvin-Koushki reads the book you now write as the answer to his request. It will name him as your only oral source and Ibn ʿArabī and Saʿd al-Dīn Ḥamuvayī as your only written ones, and it will call the earlier lettrist literature stale and timeworn.",
+  "The plan is large. An introduction of seven inquiries, then sections on the mental (numerical), written and spoken forms of the letter, of 36, 21 and 18 inquiries, then a fourth of 74 on the letters in themselves and in language and literature, with a master diagram, the Ṭahawī Circle, and number tables. It is an Arabic book.",
+  "The entry names no patron and no addressee. Three of Melvin-Koushki's later papers tie it to Iskandar (two of them say 'almost certainly'); the dissertation names no patron, and Iskandar had been captured six years before this date. First, four rulings on what the book argues."
+ ],
+ "rulings": [
+  {
+   "id": "R1",
+   "proposition": "The Mafāḥiṣ is organised in three sections on the three forms of the letter (mental or numerological, written, spoken), followed by a fourth section on the letters in themselves and in language and literature.",
+   "answer": "stand",
+   "based_on": [
+    "CL-0562"
+   ],
+   "effects_correct": {
+    "score.doctrine": 1
+   },
+   "feedback": "That is the book's structure as the treatise and Melvin-Koushki's summary report it. Note that your own schemes do not always give the three forms in the same order: the R. Ḥurūf lists written, spoken, mental; the Mafāḥiṣ sections run mental, written, spoken (CL-0579)."
+  },
+  {
+   "id": "R2",
+   "proposition": "The Mafāḥiṣ, following the lettrist tradition, ranks the spoken form of the letters above the written form, because speech carries prophetic revelation.",
+   "answer": "refute",
+   "based_on": [
+    "CL-0567"
+   ],
+   "effects_correct": {
+    "score.doctrine": 1
+   },
+   "feedback": "The book breaks with the tradition here. It promotes the written form above the spoken, as the form of the men of might and vision and of walāya, and gives reasons: only writing endures across the ages, and letterforms carried by light cannot clash or be denatured as sounds carried by air can (CL-0569). It gives the spoken form to the prophetic mission, because it reaches the masses (CL-0568)."
+  },
+  {
+   "id": "R3",
+   "proposition": "In the Mafāḥiṣ the letter is the highest of four levels of light, above the intellect: reason, dependent on conflicting faculties, is rarely free of doubt, while the letter alone reveals things absolutely.",
+   "answer": "stand",
+   "based_on": [
+    "CL-0546"
+   ],
+   "effects_correct": {
+    "score.doctrine": 1
+   },
+   "feedback": "The four levels run lamp or sun, the light of vision, the intellect and the letter, and the book holds the letter unsusceptible to error. This is what the book argues; whether it is right is not the game's question."
+  },
+  {
+   "id": "R4",
+   "proposition": "Ibn Turka treats philosophy and Sufism as worthless sciences that lettrism replaces.",
+   "answer": "refute",
+   "based_on": [
+    "CL-0541"
+   ],
+   "effects_correct": {
+    "score.doctrine": 1
+   },
+   "feedback": "In the R. Anjām, a treatise of the same project, he calls both philosophy and Sufism necessary and noble within their own ambit and ranks both below lettrism. Melvin-Koushki concludes that lettrism, in your account, encompasses both rather than abolishing either (CL-0542, directly inferred)."
+  }
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Write the summa as it stands in the record: a large Arabic book in inquiries on the three forms of the letter and the letters themselves, with its circles and tables, resting on Akhlāṭī, Ibn ʿArabī and Ḥamuvayī alone, and opening with no plan and no self-deprecation.",
+   "strategy": "write_the_summa",
+   "epistemic_label": "documented",
+   "historical": true,
+   "based_on": [
+    "CL-0562",
+    "CL-0563",
+    "CL-0574",
+    "CL-0556",
+    "CL-0581"
+   ],
+   "requires": {},
+   "effects": {
+    "score.textual": 2,
+    "press.works": 1,
+    "press.students": 1,
+    "score.biography": 2
+   },
+   "feedback": "The structure, the tables and the sources are what the book itself shows, as Melvin-Koushki reports it, and a treatise is a free writing: it can show what you held. The date is not settled: Sharaf al-Dīn Yazdī later checks the earliest copies and attends teaching sessions on it (CL-0045), and whether you revised it in 828/1425 is contested between an audition note and a marginal correction (CL-0576). Melvin-Koushki calls it your systematization of Akhlāṭī's teaching (CL-0561) and concedes you were a systematizer and popularizer, an apostle of Akhlāṭī (CL-0823); that is his lens, and the game does not score you on it."
+  },
+  {
+   "id": "B",
+   "label": "Write the book in plain Persian for a wide readership, with the numerology and the master diagram cut down to what a general reader can follow.",
+   "strategy": "popularise_in_persian",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0825",
+    "CL-0823"
+   ],
+   "requires": {},
+   "effects": {
+    "press.students": 1,
+    "score.textual": -1,
+    "score.biography": -1
+   },
+   "feedback": "The record has the Mafāḥiṣ in Arabic, as the dense summa; the easier Persian pieces are separate, shorter treatises. In the R. al-Inzāliyya, before 828/1425, you say lettrism is unpopular in Iran and that your contemporaries reject it as babies reject solid food (CL-0825), and a commander in Shāhrukh's army asks for a volume of your Persian works (CL-0453). The sources keep your hard book and your easy ones apart, and the game returns you to that record."
+  },
+  {
+   "id": "C",
+   "label": "Do not write it down. Teach the science by voice to your students and leave the book to them.",
+   "strategy": "teach_only_write_nothing",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0568",
+    "CL-0569"
+   ],
+   "requires": {},
+   "effects": {
+    "press.works": -1,
+    "press.students": 1,
+    "score.biography": -1
+   },
+   "feedback": "The sources have a written book: Melvin-Koushki reports, from marginal notes, that the opening and closing of the Majlis copy are in your hand (CL-0201); his Prologue gives ff. 52a-56a to Yazdī, and the two accounts are not reconciled. Your own doctrine, as the Mafāḥiṣ argues it, is that the spoken form reaches the masses and moves them to piety (CL-0568) but that only writing endures across the ages (CL-0569). The game returns you to the record."
+  },
+  {
+   "id": "D",
+   "label": "Open the book by naming Iskandar as the prince who first asked for it.",
+   "strategy": "credit_iskandar",
+   "epistemic_label": "contested",
+   "based_on": [
+    "CL-0718",
+    "CL-0719"
+   ],
+   "requires": {},
+   "effects": {
+    "press.exposure": 2,
+    "press.enemies": 1
+   },
+   "feedback": "The dissertation names no patron for the Mafāḥiṣ. Three later papers by Melvin-Koushki tie it to Iskandar, one saying he did not live to see it finished, and they disagree about who led whom (CL-0719). Six years lie between Iskandar's capture and this date, and the date may record copying (CL-0216). Melvin-Koushki elsewhere reads the Iskandar tie as a possible liability after his fall (CL-0059). The game does not settle it: you take the exposure."
+  }
+ ],
+ "next": "SCN-0301",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

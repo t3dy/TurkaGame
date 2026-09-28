@@ -1,0 +1,34 @@
+{
+ "id": "REC-0064",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "How much weight should the Tamhid carry in saying who he was?",
+ "proposition": "The Tamhid should carry little: it was of secondary though not minor importance to Ibn Turka and his contemporaries and is bare of his lettrist concerns.",
+ "kind": "inferential",
+ "scholar": "Matthew Melvin-Koushki",
+ "reasoning": [
+  "Grounds: the Mafahis introduction rejects absolute being, the Tamhid's subject (pdf p.26); Ibn Turka's own hierarchies rank Farabi and Suhravardi, the Tamhid's exemplars, at low levels (p.454 n.13); Khwandamir names three works but not the Tamhid (p.26 n.25); Afandi mentions only the Mafahis (p.26 n.25); the Tamhid was adopted as a teaching text 'probably' in the late Qajar period (p.23 n.15).",
+  "The rival view, per MK, is that the Tamhid is his definitive work and the basis of his modern reputation (pp.23, 454).",
+  "MK states the ranking ('as will be seen', p.25; 'considered by the man himself', p.468) but the pages read establish it only inferentially: no passage is cited in which Ibn Turka ranks his own works. The Tamhid's date is not given on these pages, so whether it is early or late work is unresolved here. MK is a partisan reporter. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0820",
+  "CL-0818",
+  "CL-0819",
+  "CL-0817",
+  "CL-0814",
+  "CL-0813",
+  "CL-0803",
+  "EV-1664",
+  "EV-1626",
+  "EV-1605"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "REC-0052"
+ ],
+ "counterevidence": [
+  "EV-1609",
+  "EV-1613"
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0047",
+ "type": "event",
+ "status": "draft",
+ "actor": "Shāhrukh",
+ "date": {
+  "start": "1429",
+  "end": "1429",
+  "hijri": "833",
+  "basis": "Timeline A.1, pdf p.53.",
+  "date_kind": "context"
+ },
+ "place": "Azarbayjan",
+ "event_type": "war",
+ "description": "Shāhrukh conducts his second Azarbayjan campaign against the Qara Quyunlu.",
+ "claims": [
+  "CL-0091"
+ ],
+ "fixed_point": false
+}

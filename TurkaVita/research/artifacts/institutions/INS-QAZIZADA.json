@@ -1,0 +1,16 @@
+{
+ "id": "INS-QAZIZADA",
+ "type": "institution",
+ "status": "draft",
+ "name": "Qāżīzāda Rūmī",
+ "ruler": "Qāżīzāda Rūmī",
+ "seat": "Samarkand",
+ "tenure": "d. 1432",
+ "role": "ally",
+ "summary": "Astronomer and mathematician, second director of Ulugh Beg's observatory, a member of Ibn Turka's circle to whom he sent a copy of the Sharḥ al-Basmala.",
+ "supported_by": [
+  "EV-0074",
+  "EV-0124",
+  "EV-0125"
+ ]
+}

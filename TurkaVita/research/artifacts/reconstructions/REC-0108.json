@@ -1,0 +1,20 @@
+{
+  "id": "REC-0108",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "Does Ibn Turka connect the cutting of letters with the splitting of the moon?",
+  "proposition": "For Ibn Turka the cutting of letters, the splitting of the moon and ʿAlī's Two-horned Sword form one continuum, lettrism emulating the cut letters that open 29 suras.",
+  "kind": "inferential",
+  "scholar": "Melvin-Koushki",
+  "reasoning": [
+    "What the treatise itself says is narrower: the lettrists read the splitting of the moon as meaning emerging from the written form, and raqam is identical to qamar by the letters (pdf p.476).",
+    "The link to the cut letters (muqaṭṭaʿāt) and ʿAlī's sword is asserted in a Prologue footnote (Prologue p.8 fn.25), in Melvin-Koushki's own idiom, without a citation to Ibn Turka on the page.",
+    "This is an extension by Melvin-Koushki of an attested raqam/qamar equivalence."
+  ],
+  "observed_facts": [
+    "CL-0509",
+    "CL-0586",
+    "CL-0508"
+  ],
+  "confidence": "low"
+}

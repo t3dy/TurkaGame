@@ -1,0 +1,28 @@
+{
+ "id": "CL-0734",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation's own figures do not agree on his age at death: its computation puts birth in 770/1369 (age 59 lunar years in Rajab 829), which gives about 65 at death on 14 Dhū l-Ḥijja 835, while page 57 says he died at the age of 63. This arithmetic is the recorder's, not the dissertation's.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1400",
+  "EV-1423"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I/II, as reported by Melvin-Koushki",
+   "where": "dissertation pdf 70-77",
+   "shaping_risk": "high",
+   "note": "written to the rulers judging him; the dissertation calls the apologies the primary source for his life (pdf 75)"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 55, 74",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

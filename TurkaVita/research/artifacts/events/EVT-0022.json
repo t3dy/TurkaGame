@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0022",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1412",
+  "end": "1414",
+  "hijri": "815-817",
+  "basis": "Timeline A.1, pdf p.52; the running text does not mention the return to Shiraz.",
+  "date_kind": "inferred"
+ },
+ "place": "Isfahan, then Shiraz",
+ "event_type": "court",
+ "description": "Attached to Iskandar's court, Ibn Turka moves back to Shiraz because of harassment by envious individuals and puts forward his protégé Sharaf al-Dīn Yaʿqūb to replace him as qadi.",
+ "claims": [
+  "CL-0058",
+  "CL-0054"
+ ],
+ "fixed_point": false
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1634",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 36,
+  "printed_page": "19",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK says Brockelmann knew only Ibn Turka's commentary on the Fuṣūṣ al-Ḥikam.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.36",
+ "refers_to_primary": "Brockelmann, GALS 1/793"
+}

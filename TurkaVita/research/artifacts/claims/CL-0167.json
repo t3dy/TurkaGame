@@ -1,0 +1,23 @@
+{
+ "id": "CL-0167",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki holds that the apologies were produced under great duress. Nafsat I answers a summons to trial and Nafsat II follows torture, imprisonment and exile.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0247",
+  "EV-0248",
+  "EV-0255",
+  "EV-0214"
+ ],
+ "domain": "biographical",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.25 (printed 8)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

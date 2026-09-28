@@ -1,0 +1,38 @@
+{
+ "id": "CL-0609",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Niʿmatullahi hagiography claims Ibn Turka and Yazdī sought out Niʿmat Allāh Valī at Kūhbanān and, at his direction, became disciples of Akhlāṭī and learned jafr; the Savāniḥ version adds Qāsim-i Anvār, Pīr Tāj Gīl and a roof collapsing, and makes Niʿmat Allāh's master a disciple of Akhlāṭī. MK reads both as hagiographic strategy to establish Akhlāṭī's mastery and then Niʿmat Allāh's greater one.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1201",
+  "EV-1204",
+  "EV-1205",
+  "EV-1206",
+  "EV-1263"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "ʿAbd al-Razzāq Kirmānī, Tazkira (fl. 900/1495)",
+   "where": "Aubin, Majmūʿa, 70",
+   "shaping_risk": "high",
+   "note": "written at the request of Niʿmat Allāh II to honour Niʿmat Allāh; wants credit for initiating the Akhlāṭī discipleship"
+  },
+  {
+   "layer": "later_chronicler",
+   "who": "Ṣunʿ Allāh Niʿmatullāhī, Savāniḥ al-Ayyām, via Mufīd Mustawfī (fl. 1091/1680)",
+   "where": "Jāmiʿ-i Mufīdī 3/16-17",
+   "shaping_risk": "high",
+   "note": "known only through a Safavid compiler who also mixed in Shūshtarī; more fabulous, wants Niʿmat Allāh's Shiʿism"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.244",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

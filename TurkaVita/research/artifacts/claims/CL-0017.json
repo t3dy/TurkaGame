@@ -1,0 +1,25 @@
+{
+ "id": "CL-0017",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Temür made Samarkand his capital after taking it in 770/1369, and took Isfahan in 789/1387, massacring most of its inhabitants.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0003",
+  "EV-0004"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Temür's conquests"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.51, timeline drawing on Manz",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

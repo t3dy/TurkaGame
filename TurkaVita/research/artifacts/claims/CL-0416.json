@@ -1,0 +1,28 @@
+{
+  "id": "CL-0416",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In mid-817/1414, when Shāhrukh summoned him during the first campaign in western Iran, Ibn Turka answered by letter, sent from Isfahan to Yazd for delivery by Sayyid Niʿmat Allāh Valī, professing admiration for the newly ascendant Shāhrukh (who had just captured Iskandar, his own erstwhile patron, and made Ibrāhīm Sulṭān governor of Fars) and promising to attend court.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0833"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Shāhrukh (via Niʿmat Allāh Valī)",
+      "where": "Munshaʾāt-i Turka letter 16; MS Majlis 10196 f. 148a",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.158",
+      "shaping_risk": "medium",
+      "note": "Written by a former client of the fallen Iskandar courting the conqueror; the flattery is that of a man changing sides"
+    }
+  ],
+  "domain": "political"
+}

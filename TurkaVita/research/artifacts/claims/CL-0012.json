@@ -1,0 +1,26 @@
+{
+ "id": "CL-0012",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Only two sons are known by name: Jamāl al-Dīn Muḥammad, for whom Ibn Turka wrote the logic manual K. al-Manāhij, and Najīb al-Dīn Ḥabīb Allāh, who appears to have written a brief lettrist treatise, Qavāʿid-i Jafr-i Jāmiʿ.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0077"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "manuscript catalogue (Bodleian 1298/48) and the Munshaʾāt-i Yazdī, via MK",
+   "where": "pdf p.59 and notes 21-22",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.59",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

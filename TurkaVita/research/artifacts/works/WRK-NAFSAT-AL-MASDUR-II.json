@@ -1,0 +1,36 @@
+{
+ "id": "WRK-NAFSAT-AL-MASDUR-II",
+ "type": "work",
+ "status": "draft",
+ "title": "Nafsat al-Maṣdūr II ('Tubercular Expectoration (II)')",
+ "transliterated_title": "Nafsat al-Maṣdūr II",
+ "language": "Persian",
+ "genre": "apology",
+ "theme": "apology",
+ "date": {
+  "ce": "ca. 1429-1432",
+  "hijri": "ca. 832-35",
+  "basis": "MK: not dated; 'context puts its composition sometime between ca. 832-35/1429-32'. The only dated witness is the Majlis 10196 copy of 838/1435, made after Ibn Turka's death (835/1432)."
+ },
+ "date_kind": "conjectured",
+ "addressee": "Bāysunghur, son of Shāhrukh",
+ "occasion": "Written after Ibn Turka's arrest, imprisonment and exile following the Hurufi attempt on Shāhrukh's life in 830/1427, to ask Bāysunghur to mediate an audience with the sultan.",
+ "manuscript": "5 items listed: MS Majlis 10196 ff. 226b-30a (838/1435); MS 5423 (842/1439); MS 10004 (903-4/1497-98); MS 3035/3 (1084/1673); Tehran microfilm 830.",
+ "majlis_folios": "ff. 226b-30a",
+ "edited": true,
+ "summary": "An apology describing the tribulations of Ibn Turka and his family in exile, attacking false Sufis and dismissing the Hurufi movement of Fażl Allāh Astarābādī, and seeking an audience with Shāhrukh.",
+ "supported_by": [
+  "EV-0513",
+  "EV-0514",
+  "EV-0515",
+  "EV-0516",
+  "EV-0517",
+  "EV-0421"
+ ],
+ "claims": [
+  "CL-0225",
+  "CL-0226",
+  "CL-0211",
+  "CL-0212"
+ ]
+}

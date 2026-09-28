@@ -1,0 +1,22 @@
+{
+  "id": "CL-0583",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki reads the Mafāḥiṣ's plan as a Hermetic journey: an ascent to the mental realm (Planet), a descent to the written realm (Pearl) and an ascent into the spoken realm (Peach), the whole a 'Descent between two Ascents' that glorifies the written over the spoken and sight over hearing.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "low",
+  "supported_by": [
+    "EV-1133",
+    "EV-1134",
+    "EV-1085"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "Prologue pp.8-9",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "textual"
+}

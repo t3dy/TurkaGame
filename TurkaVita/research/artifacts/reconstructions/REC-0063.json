@@ -1,0 +1,30 @@
+{
+ "id": "REC-0063",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Can the surviving record settle who Ibn Turka was?",
+ "proposition": "The record is skewed by duress and by editorial neglect, so it supports only a provisional identification; MK nonetheless argues that the record points to the occult philosopher.",
+ "kind": "inferential",
+ "scholar": "Matthew Melvin-Koushki",
+ "reasoning": [
+  "Duress: the apologies were 'produced under great duress' and are 'hardly reflective of his primary concerns' (pdf p.25); yet MK's Chapter 1 biography rests primarily on them together with Judi-Niʿmati's account (p.39).",
+  "Editorial state: 22 of 46 known works are published (p.37); most lettrist works, including the Mafahis, are unedited (pp.23, 454); the Munsha'at-i Turka (some 50 letters) is unedited (p.43); Akhlati's writings are largely inaccessible (p.468).",
+  "MK calls his study 'necessarily provisional' (p.44) and says any neat definition of Ibn Turka's contribution 'must be premature' (p.468), while stating that 'even a casual survey' of the writings suggests the occult-philosopher reading (p.25); both are on the record.",
+  "The pages read contain no argument that the record is too fragmentary to decide the question at all; MK's caveats apply to the contribution and to the completeness of the study. Whether they undermine his own reading is for the player to weigh, not for this artifact. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0837",
+  "CL-0838",
+  "CL-0839",
+  "CL-0840",
+  "CL-0841",
+  "EV-1629",
+  "EV-1642",
+  "EV-1643",
+  "EV-1638"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "REC-0060"
+ ]
+}

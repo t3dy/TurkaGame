@@ -1,0 +1,15 @@
+{
+ "id": "EV-1438",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 58,
+  "short_title": "Melvin-Koushki, dissertation (2012)",
+  "printed_page": "41"
+ },
+ "content": "Ibn Turka studied under his elder brother Ṣadr al-Dīn for the first 25 years of his life along with Qāżīzāda Rūmī; footnote 17 calls Qāżīzāda (d. 835/1432) the second director of Ulugh Beg's observatory at Samarkand.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R8 opened pdf p.58",
+ "refers_to_primary": "Eichner, EI3; Ragep, EI2"
+}

@@ -1,0 +1,14 @@
+{
+ "id": "EV-1642",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 37,
+  "printed_page": "20",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK counts 22 of Ibn Turka's 46 known works as published, so roughly half of his output remains in manuscript; the count leaves aside his diwan and a correspondence collection including 58 letters, letter fragments and notes.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R2b opened pdf p.37"
+}

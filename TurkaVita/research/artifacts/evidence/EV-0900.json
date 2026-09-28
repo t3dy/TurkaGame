@@ -1,0 +1,15 @@
+{
+  "id": "EV-0900",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 330,
+    "printed_page": "313",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The translated passage adds two examples: a Maghribi scholar who predicted a great earthquake in 702/1302-3 from Q 99:1 (reported in Ibn Khallikān), and Saʿd al-Dīn Ḥamuvayī's derivation of the states' fortunes from the two Ms of the name Muḥammad, which in his K. al-Maḥbūb mark Samarkand and Damascus. Ibn Turka declines to enter further into such cryptic treatments for fear of boring the reader.",
+  "evidence_kind": "work",
+  "read_by": "R5 opened pdf p.330",
+  "refers_to_primary": "R. Suʾl al-Mulūk, closing section"
+}

@@ -1,0 +1,26 @@
+{
+ "id": "CL-0126",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I argues the accusers are hypocrites because Zamakhsharī's Muʿtazili Kashshāf is universally promoted although its doctrine of a created Quran is deemed kufr by leading Hanafis and Shafiʿis.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0273"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.81 (printed 64)",
+   "shaping_risk": "low"
+  }
+ ]
+}

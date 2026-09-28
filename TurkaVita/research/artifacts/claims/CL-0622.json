@@ -1,0 +1,21 @@
+{
+ "id": "CL-0622",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Naqshbandi Kāshifīs, father and son, recognised Ibn Turka as the preeminent lettrist, and Yazdī appears in the Rashaḥāt as a promoter of Ibn ʿArabī, yet Jāmī minimised the Isfahan Circle (MK on pdf p.440; the sections on the Kāshifīs, §§4.4.2 and 4.4.4, were not read by R7).",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1246"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.440",
+   "shaping_risk": "low",
+   "note": "stated by MK with a pointer to sections R7 did not open"
+  }
+ ],
+ "domain": "social"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-0903",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 331,
+    "printed_page": "314",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The closing passage dismisses those who derive a person's Ascendant sign from his name without knowing the principles of ʿilm-i ḥarf, saying they merely approximate from experience (tajriba). MK's footnote points to Sayyid Ḥusayn Akhlāṭī's manual on extracting information from personal names and honorifics, published as Sifr-i Jafr (Tehran 2007).",
+  "evidence_kind": "work",
+  "read_by": "R5 opened pdf p.331",
+  "refers_to_primary": "R. Suʾl al-Mulūk, closing section"
+}

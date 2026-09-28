@@ -1,0 +1,15 @@
+{
+ "id": "EV-0315",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 84,
+  "printed_page": "67",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka says with Tirmizī that the sayings of the Sufi masters, like the Quran, contain ambiguities the intellect cannot parse, that one should not even dislike God's saints, much less call them unbelievers, and quotes Junayd on the divine threat against those who deny this group's right.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.84"
+}

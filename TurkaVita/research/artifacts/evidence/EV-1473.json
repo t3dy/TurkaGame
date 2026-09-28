@@ -1,0 +1,14 @@
+{
+ "id": "EV-1473",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-4082EBB454",
+  "witness_page": 12,
+  "short_title": "Melvin-Koushki, The New Brethren of Purity (2025)"
+ },
+ "content": "The paper says Ibn Khaldūn, as a Maliki judge and Mamluk official, attempted to have Ibn Turka and his fellow Brethren in Cairo executed as sorcerers and that his grudge was personal; it cites Gardiner and MK's own earlier papers, not the dissertation.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R8 opened pdf p.12",
+ "refers_to_primary": "Gardiner, Ibn Khaldūn versus the Occultists; Melvin-Koushki, In Defense of Geomancy"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "INS-FIRUZSHAH",
+ "type": "institution",
+ "status": "draft",
+ "name": "Amīr Jalāl al-Dīn Fīrūzshāh",
+ "ruler": "Amīr Fīrūzshāh",
+ "seat": "Isfahan and Fars",
+ "tenure": "letters c. 1413–1427",
+ "role": "ally",
+ "summary": "An amir to whom Ibn Turka writes six letters, from the years of Iskandar to the year of his fall, including a petition for redress after the arrest; his family is given the governorship of Isfahan in 1423–24.",
+ "supported_by": [
+  "EV-0033",
+  "EV-0040",
+  "EV-0819",
+  "EV-0826",
+  "EV-0840"
+ ]
+}

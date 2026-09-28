@@ -1,0 +1,33 @@
+{
+ "id": "CL-0215",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Majlis 10196 colophons place copies of the Asrār al-Ṣalāt and the R. Ḥurūf in Yazd (Ramaḍān and Dhū l-Qaʿda 828), the Iʿtiqādāt and Nafsat al-Maṣdūr I in Herat (Jumādā I and Rajab 829), the Mabdaʾ u Maʿād at Manzil-i Chālū in Mazandaran (Ṣafar 832) and the K. al-Manāhij in Natanz (Rajab 833): these are places of copying, which Melvin-Koushki takes as places of composition only for the second half.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0430",
+  "EV-0444",
+  "EV-0462",
+  "EV-0509",
+  "EV-0474",
+  "EV-0491",
+  "EV-0408"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196",
+   "where": "colophons",
+   "shaping_risk": "medium",
+   "note": "place named in the colophon"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.79, 84, 88, 92, 94, 100, 105",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "CL-0025",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "A 17th-century account places Ibn Turka and Sharaf al-Dīn in Baghdad seeking a Sufi master; Melvin-Koushki says to take it with grains of salt.",
+ "epistemic_type": "contested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0093"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Abū l-Qāsim Kāzirūnī, Sullam al-Samāvāt, drawing on his teacher Afżal al-Dīn b. Ḥabīb Allāh Turka",
+   "where": "pdf p.63, note 45",
+   "shaping_risk": "high",
+   "note": "written roughly two centuries after the events, via a Turka descendant"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.63",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "biographical"
+}

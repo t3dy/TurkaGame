@@ -1,0 +1,27 @@
+{
+ "id": "CL-0736",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Second Aristotle paper calls Afżal al-Dīn b. Ḥabīb Allāh Turka (d. 1583) Ibn Turka's great-great-grandson; the dissertation says Ḥabīb Allāh was possibly the great-great-grandson and Afżal al-Dīn, Ḥabīb Allāh's son, therefore one generation further down.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1490",
+  "EV-1442"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 60",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Second Aristotle Turns Astro-Lettrist",
+   "where": "pdf 7",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

@@ -1,0 +1,24 @@
+{
+ "id": "CL-0838",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, about half of Ibn Turka's 46 known works (22 published) remain in manuscript, including most lettrist works and the Munsha'at-i Turka (some 50 letters); Akhlati's own writings are mostly inaccessible; the published Tamhid is the most-studied work.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1641",
+  "EV-1642",
+  "EV-1643",
+  "EV-1646"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.23, 37, 43, 468",
+   "shaping_risk": "medium",
+   "note": "MK's own account of the state of the record, which also frames the limits of his argument."
+  }
+ ],
+ "domain": "textual"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "CL-0517",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "On the Hour, Ibn Turka assigns to level three (peripatetics) the view that only human spirits, immaterial substances, are held to account and return to their origin once all things have manifested in them.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1041"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.478",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

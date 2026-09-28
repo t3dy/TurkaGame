@@ -1,0 +1,15 @@
+{
+ "id": "EV-1223",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 33,
+  "printed_page": "16",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK describes Ṣāʾin al-Dīn's disciple network in western Iran as the Isfahan Circle, which Binbaş has called a Timurid 'Invisible College' and 'republic of letters' of extra-establishment esotericists; MK names Sharaf al-Dīn ʿAlī Yazdī (d. 858/1454) as Ibn Turka's chief disciple.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "MK, Introduction §I.3 (citing Binbaş, Sharaf al-Dīn)",
+ "read_by": "R7 opened pdf p.33"
+}

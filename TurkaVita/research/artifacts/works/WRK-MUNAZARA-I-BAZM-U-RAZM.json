@@ -1,0 +1,34 @@
+{
+ "id": "WRK-MUNAZARA-I-BAZM-U-RAZM",
+ "type": "work",
+ "status": "draft",
+ "title": "Munāẓara-yi Bazm u Razm ('The Debate of Fight and Feast')",
+ "transliterated_title": "Munāẓara-yi Bazm u Razm",
+ "language": "Persian",
+ "genre": "allegorical debate (munāẓara)",
+ "theme": "literary",
+ "date": {
+  "ce": "before 1426-03-06",
+  "hijri": "before 25 Rabīʿ II 829*",
+  "basis": "MK: 'completed before' 25 Rabīʿ II 829/6 March 1426, asterisked as probably a date of transcription; the Majlis 10196 copy (ff. 162b-65a) is dated five days earlier, 20 Rabīʿ II 829/1 March 1426, and both dates come from Āqā Buzurg (al-Dharīʿa, 22/293, no. 7152)."
+ },
+ "date_kind": "transcription",
+ "place": "Herat (asterisked; from Āqā Buzurg)",
+ "addressee": "Bāysunghur (Ritter and Reinert, as cited by MK)",
+ "manuscript": "8 items listed; earliest dated: MS Majlis 10196 ff. 162b-65a (20 Rabīʿ II 829/1 March 1426); then MS 5423 (842/1439), MS 1825 (851/1447), MS 10004 (903-4/1497-98), and later copies.",
+ "majlis_folios": "ff. 162b-65a",
+ "edited": false,
+ "summary": "An ornate mystical debate between the sword and the pen, in which Sulṭān ʿIshq judges between the warlike court of Majesty and the banqueting hall of Beauty.",
+ "supported_by": [
+  "EV-0501",
+  "EV-0502",
+  "EV-0503",
+  "EV-0504"
+ ],
+ "claims": [
+  "CL-0236",
+  "CL-0237",
+  "CL-0209",
+  "CL-0210"
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "id": "CL-0626",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka alludes elsewhere, generically and with hostility, to the Hurufis as one among several messianic Sufi movements marked by antinomianism and worldly ambition (MK: 'it would seem').",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1226",
+  "EV-1225"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.434",
+   "shaping_risk": "medium",
+   "note": "MK's reading of an unnamed target"
+  }
+ ],
+ "domain": "doctrinal"
+}

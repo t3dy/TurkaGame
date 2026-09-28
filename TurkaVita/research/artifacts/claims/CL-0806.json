@@ -1,0 +1,30 @@
+{
+ "id": "CL-0806",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Dānishpazhūh called Ibn Turka the 'Spinoza of Iran' as a rhetorical call to edit his works, and Zarrīnkūb objected that the title misrepresents his more mystical and lettrist concerns.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1619",
+  "EV-1620",
+  "EV-1621"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Muḥammad Taqī Dānishpazhūh; ʿAbd al-Ḥusayn Zarrīnkūb",
+   "where": "Dānishpazhūh 1966, p. 312; Zarrīnkūb, Dunbāla, 142",
+   "shaping_risk": "medium",
+   "note": "The position is this scholar's own; we have it only as summarised by Melvin-Koushki."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (reporter; partisan)",
+   "where": "dissertation pdf p.24",
+   "shaping_risk": "medium",
+   "note": "MK argues a rival reading (Ibn Turka as occult philosopher) and in places calls this reading an error; his summary may compress or foreshorten it."
+  }
+ ],
+ "domain": "doctrinal"
+}

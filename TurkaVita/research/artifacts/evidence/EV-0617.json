@@ -1,0 +1,15 @@
+{
+ "id": "EV-0617",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 128,
+  "printed_page": "111",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Sharḥ al-Basmala is a commentary on the basmala in the lettrist manner (Arabic); it is unpublished.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.128",
+ "refers_to_primary": "Ibn Turka, Sharḥ al-Basmala"
+}

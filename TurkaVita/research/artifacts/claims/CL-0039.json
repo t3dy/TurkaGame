@@ -1,0 +1,21 @@
+{
+ "id": "CL-0039",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Akhlāṭī wrote to Ibn Turka addressing him as khalīlī ('my bosom companion') and as the leading luminary of his circle of brethren.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0113"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Akhlāṭī's letter preserved in the Munshaʾāt-i Turka",
+   "where": "pdf p.66, note 61",
+   "shaping_risk": "medium",
+   "note": "a letter of praise from a teacher to a disciple; it shows what Akhlāṭī wrote, not what he privately thought"
+  }
+ ],
+ "domain": "social"
+}

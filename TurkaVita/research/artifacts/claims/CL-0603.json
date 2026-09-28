@@ -1,0 +1,27 @@
+{
+ "id": "CL-0603",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "A letter from Akhlāṭī to Ibn Turka preserved in MS Majlis 10196 addresses him as the leading luminary of his circle of brethren, and MK takes it as confirmation that Ibn Turka was regarded as leader of the Isfahan Circle.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1221"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Sayyid Ḥusayn Akhlāṭī to Ibn Turka",
+   "where": "MS Majlis 10196 front matter; MK Part 2 §P.2.2",
+   "shaping_risk": "medium",
+   "note": "a teacher's compliment to a disciple; the letter itself was not read by R7"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.288",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

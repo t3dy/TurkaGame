@@ -1,0 +1,204 @@
+{
+ "id": "SCN-0502",
+ "type": "scene",
+ "status": "draft",
+ "act": "copyist",
+ "title": "The collection: fifteen leaves on the table",
+ "dramatic_question": "Fifteen of the works lie in front of you, each with the date its colophon carries. In what order do they stand in the volume as it survives, and which of that order can dates tell you?",
+ "situation": {
+  "when": "c. 1425–1435",
+  "where": "MS Majlis 10196",
+  "based_on": [
+   "CL-0210",
+   "CL-0211",
+   "CL-0206"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "In MS Majlis 10196 a colophon usually gives only the date of copying, which is then a terminus ad quem for the composition of the work, not its date; only occasionally do colophons give both.",
+   "claim": "CL-0204"
+  },
+  {
+   "text": "Collated by the game from Melvin-Koushki's entries: from f. 120b to f. 189a the dated works stand in ascending order of their colophon dates (from 13 Jumādā II 828 to 4 Jumādā II 831); after f. 189a they do not.",
+   "claim": "CL-0210"
+  },
+  {
+   "text": "Collated by the game from Melvin-Koushki's entries: on the later folios the colophon dates are not in date order (the Nafsat al-Maṣdūr II at f. 226b is 838, the Mabdaʾ u Maʿād at f. 266b is Ṣafar 832, the Madārij at f. 352b is Dhū l-Qaʿda 831, the Manāhij at f. 382b is Rajab 833).",
+   "claim": "CL-0211"
+  }
+ ],
+ "prose": [
+  "The works are on the table. Each carries a date, but a date in this volume usually records when a copy was made, not when the text was written: it gives only a terminus ad quem, the latest the work can have been composed.",
+  "In the first part of the volume the dates climb without a reversal, which Melvin-Koushki reads as a sign that they are copying dates, and you can reason your way down it from the dates alone. In the second part they do not climb, and one of the works, the second apology, bears a copy date three years after its author's death. There the dates stop helping, and you are left with what you can infer about the volume, or a guess."
+ ],
+ "sorter": {
+  "prompt": "Put the fifteen works in the order they begin in MS Majlis 10196, first folio first. The note under each title gives the date its colophon carries; treat it as a copying date, a terminus ad quem, not always the date of writing. The key is the folio numbers Melvin-Koushki prints, and they are not perfectly clean: some ranges overlap (the Sharḥ-i Ḥadīs-i ʿAmāʾ and the Sharḥ Ḥaqīqat al-Waḥda, and the Shaqq-i Qamar which lies inside the Iʿtiqādāt's range) and some are misprinted (the Naẓm al-Durr, the Tamhīd), so only works whose folios are clean are here. The Arbaʿīniyya is left out because its first folio, 120b, is also claimed by the Waḥda. The dated first part can be reasoned out. The later works cannot: their dates will mislead you.",
+  "items": [
+   {
+    "id": "WRK-NAFSAT-AL-MASDUR-II",
+    "label": "Nafsat al-Maṣdūr II (the second apology, for Bāysunghur)",
+    "note": "copy dated 838/1435; the work itself is undated (composition ca. 832–35/1429–32 by Melvin-Koushki's conjecture); Ibn Turka died in 835/1432"
+   },
+   {
+    "id": "WRK-ANJAM",
+    "label": "Anjām, or Taṣavvuf u Ḥurūf",
+    "note": "colophon date 17 Dhū l-Qaʿda 828 (30 September 1425)"
+   },
+   {
+    "id": "WRK-SUAL-AL-MULUK",
+    "label": "R. Suʾl al-Mulūk (for Bāysunghur)",
+    "note": "copied before 7 Rajab 829 (15 May 1426)"
+   },
+   {
+    "id": "WRK-BAIYYA",
+    "label": "R. al-Bāʾiyya",
+    "note": "copied before 14 Ramaḍān 828 (30 July 1425)"
+   },
+   {
+    "id": "WRK-MANAHIJ",
+    "label": "K. al-Manāhij (logic, for his son Muḥammad)",
+    "note": "colophon date 20 Rajab 833 (14 April 1430), Natanz"
+   },
+   {
+    "id": "WRK-HURUF",
+    "label": "R. Ḥurūf",
+    "note": "colophon date 14 Dhū l-Qaʿda 828 (27 September 1425), Yazd; the work itself is dated by Melvin-Koushki to 817/1414"
+   },
+   {
+    "id": "WRK-ISTILAHAT-AL-SUFIYYA",
+    "label": "Iṣṭilāḥāt al-Ṣūfiyya (Sufi terminology)",
+    "note": "copied before 25 Rajab 829 (2 June 1426)"
+   },
+   {
+    "id": "WRK-MUHAMMADIYYA",
+    "label": "R. al-Muḥammadiyya",
+    "note": "copied before 5 Shawwāl 828 (20 August 1425); Melvin-Koushki marks the date as probably transcription"
+   },
+   {
+    "id": "WRK-SHARH-AL-BASMALA",
+    "label": "Sharḥ al-Basmala (a copy went to Qāżīzāda Rūmī)",
+    "note": "copied before 28 Shaʿbān 829 (5 July 1426); Melvin-Koushki marks the date as probably transcription"
+   },
+   {
+    "id": "WRK-ASRAR-AL-SALAT",
+    "label": "Asrār al-Ṣalāt",
+    "note": "colophon date 26 Ramaḍān 828 (11 August 1425), Yazd; the work itself is dated by Melvin-Koushki to 820/1417, Herat"
+   },
+   {
+    "id": "WRK-NAFSAT-AL-MASDUR-I",
+    "label": "Nafsat al-Maṣdūr I (the first apology, for Shāhrukh)",
+    "note": "colophon date 8 Rajab 829 (16 May 1426), Herat"
+   },
+   {
+    "id": "WRK-MABDA-U-MAAD",
+    "label": "Mabdaʾ u Maʿād (for Shāh Rażī l-Dīn)",
+    "note": "colophon date early Ṣafar 832 (mid-November 1428), Manzil-i Chālū"
+   },
+   {
+    "id": "WRK-ZAW-AL-LAMAAT",
+    "label": "Żawʾ al-Lamaʿāt (on ʿIrāqī's Lamaʿāt)",
+    "note": "copy dated 8 Dhū l-Qaʿda 828 (21 September 1425); Melvin-Koushki dates the writing to 815/1412"
+   },
+   {
+    "id": "WRK-NUQTA",
+    "label": "Nuqṭa ('On the Dot')",
+    "note": "copied before 16 Ramaḍān 828 (1 August 1425); Melvin-Koushki marks the date as probably transcription"
+   },
+   {
+    "id": "WRK-MUHR-AL-NUBUWWA",
+    "label": "Muhr al-Nubuwwa ('The Seal of Prophethood')",
+    "note": "copied before 4 Jumādā II 831 (21 March 1428), Shiraz; the date and place come from Āqā Buzurg, and Melvin-Koushki marks the date as probably transcription"
+   }
+  ],
+  "truth": [
+   "WRK-BAIYYA",
+   "WRK-NUQTA",
+   "WRK-ASRAR-AL-SALAT",
+   "WRK-MUHAMMADIYYA",
+   "WRK-ZAW-AL-LAMAAT",
+   "WRK-HURUF",
+   "WRK-ANJAM",
+   "WRK-SUAL-AL-MULUK",
+   "WRK-NAFSAT-AL-MASDUR-I",
+   "WRK-ISTILAHAT-AL-SUFIYYA",
+   "WRK-MUHR-AL-NUBUWWA",
+   "WRK-NAFSAT-AL-MASDUR-II",
+   "WRK-MABDA-U-MAAD",
+   "WRK-SHARH-AL-BASMALA",
+   "WRK-MANAHIJ"
+  ],
+  "based_on": [
+   "CL-0210",
+   "CL-0211",
+   "CL-0208",
+   "CL-0338",
+   "CL-0204"
+  ],
+  "scoring": {
+   "axis": "score.textual",
+   "max": 6
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "label": "Copy a page of his verse into the volume with the treatises, under his pen name ʿAlī.",
+   "strategy": "include_the_verse_page",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0210",
+    "CL-0229"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "press.works": 1,
+    "life.volume_verse": "included",
+    "score.biography": 2
+   },
+   "feedback": "The surviving volume has exactly this: f. 121b preserves a page of his verse, copied in early 828/1425. Melvin-Koushki describes it in two incompatible ways (nine Persian and three Arabic ghazals, four rubāʿīs, a qiṭʿa and two muʿammās, or eight ghazals, eight rubāʿīs and two Arabic fragments). The pages do not say the verses are early, or that they include the couplet praising ʿAlī and condemning ʿUmar and ʿUthmān that his Yazd enemies later cited, and the first apology never mentions it."
+  },
+  {
+   "id": "B",
+   "label": "Leave the verse out, and anything else an enemy could quote from: a volume of prose only.",
+   "strategy": "prose_only_volume",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0071",
+    "CL-0072"
+   ],
+   "requires": {},
+   "effects": {
+    "press.works": -1,
+    "life.volume_verse": "cut",
+    "score.biography": -1
+   },
+   "feedback": "His enemies did build a case in Yazd from statements in works of his youth, including a verse praising ʿAlī and condemning ʿUmar and ʿUthmān. But the surviving volume contains a page of verse, and the sources give no sign of anything being cut for that reason. The game returns you to the record: the page is there."
+  },
+  {
+   "id": "C",
+   "label": "Add the Munāẓarāt-i Khams, the five debates dated to Muḥarram 808/1405, to the volume.",
+   "strategy": "add_the_five_debates",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0092",
+    "CL-0218"
+   ],
+   "requires": {},
+   "effects": {
+    "press.works": 1,
+    "press.exposure": 1,
+    "life.volume_verse": "debates_added",
+    "score.biography": -1
+   },
+   "feedback": "Melvin-Koushki dates the Munāẓarāt-i Khams to Muḥarram 808/1405, but he lists no Majlis 10196 copy of it: its earliest listed copy is a separate manuscript dated 808/1406. Its verses are among the poetry Melvin-Koushki says is scattered through the works. This is your own what-if, and the game returns you to the record."
+  }
+ ],
+ "next": "SCN-0503",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

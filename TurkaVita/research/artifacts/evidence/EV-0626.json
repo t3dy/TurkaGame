@@ -1,0 +1,15 @@
+{
+ "id": "EV-0626",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 130,
+  "printed_page": "113",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The work is published as Sharḥ Fuṣūṣ al-Ḥikam in Ibn al-ʿArabī, Fuṣūṣ al-Ḥikam, ed. Muḥsin Bīdārfar, 2 vols., Qom, 1420/2000; that edition places in its footnotes the extensive marginal comments of Mullā ʿAlī Nūrī (d. 1246/1830).",
+ "evidence_kind": "reception",
+ "read_by": "R4 opened pdf p.130",
+ "refers_to_primary": "Sharḥ Fuṣūṣ al-Ḥikam, edition"
+}

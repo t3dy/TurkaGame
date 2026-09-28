@@ -1,0 +1,24 @@
+{
+ "id": "REC-0001",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Do the apologies show what Ibn Turka actually believed (an orthodox Sunni Sufi)?",
+ "proposition": "Leonard Lewisohn, as Melvin-Koushki reports him, takes the apologies at face value and so presents Ibn Turka as an orthodox Sunni Sufi thinker.",
+ "kind": "inferential",
+ "scholar": "Leonard Lewisohn (as reported by Melvin-Koushki; Lewisohn's own text was not read)",
+ "reasoning": [
+  "MK says Lewisohn insists on taking the apologies at face value (pp.66, 77 of his article) and misrepresents Ibn Turka as an orthodox Sunni Sufi thinker.",
+  "MK calls the insistence ‘well-taken’ in one place and ‘misrepresenting’ in another, and answers that the oeuvre and the duress make face value impossible.",
+  "Everything here is at second hand through MK; the article itself was not opened."
+ ],
+ "observed_facts": [
+  "EV-0318",
+  "EV-0319",
+  "EV-0320",
+  "EV-0324"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "REC-0002"
+ ]
+}

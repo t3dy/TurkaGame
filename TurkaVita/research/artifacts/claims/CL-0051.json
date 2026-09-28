@@ -1,0 +1,22 @@
+{
+ "id": "CL-0051",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka learned of Temür's death (807/1405) while still abroad and returned to Isfahan perhaps two or three years later (timeline: c. 810/1408).",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0131",
+  "EV-0014"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.69 and p.51",
+   "shaping_risk": "medium",
+   "note": "'perhaps' and 'c.'; no source cited"
+  }
+ ],
+ "domain": "chronological"
+}

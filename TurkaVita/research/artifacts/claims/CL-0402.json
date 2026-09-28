@@ -1,0 +1,28 @@
+{
+  "id": "CL-0402",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The first letter (to Yazdī, on the point of leaving Isfahan for the Hijaz) probably reflects a pilgrimage made during his first Shiraz-Isfahan period (ca. 810-17/1408-14), not the beginning of his studies abroad; MK places that period under the patronage first of Pīr Muḥammad b. ʿUmar Shaykh and then of Iskandar b. ʿUmar Shaykh.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0807",
+    "EV-0815"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Sharaf al-Dīn Yazdī",
+      "where": "Munshaʾāt-i Turka letter 1",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.152",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "biographical"
+}

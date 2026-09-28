@@ -1,0 +1,34 @@
+{
+ "id": "WRK-ISBAH-AL-ANWAR",
+ "type": "work",
+ "status": "draft",
+ "title": "Iṣbāḥ al-Anwār ('Lights' Dawning')",
+ "transliterated_title": "Iṣbāḥ al-Anwār (var. Sharḥ Ḥadīth al-Īmān (?); K. al-Iṣbāḥ)",
+ "language": "Arabic",
+ "genre": "unfinished lettrist hadith commentary",
+ "theme": "lettrism",
+ "date": {
+  "ce": "1438",
+  "hijri": "841",
+  "basis": "The only date is MK's '841/1438 (?)' for the partial Majlis 10196 copy (ff. 404b-16b), a copying date and itself queried. Composition undated: it was cited as incomplete in the R. Tuḥfa-yi ʿAlāʾī (1 Jumādā I 831/17 Feb 1428), so it existed in part by then; MK conjectures it was left unfinished after the events of 1427."
+ },
+ "date_kind": "transcription",
+ "occasion": "Conceived, MK conjectures ('perhaps'), as a fuller treatment of lettrism than the Mafāḥiṣ; left unfinished.",
+ "manuscript": "1 copy: MS Majlis 10196 ff. 404b-16b (partial, 841/1438 (?)), breaking off mid-page.",
+ "majlis_folios": "ff. 404b-16b",
+ "edited": false,
+ "summary": "A lettrist treatment of the hadith on iḥsān-īmān-islām, cited as incomplete by the Tuḥfa-yi ʿAlāʾī and other works; presumably never finished.",
+ "supported_by": [
+  "EV-0454",
+  "EV-0455",
+  "EV-0456",
+  "EV-0457",
+  "EV-0458"
+ ],
+ "claims": [
+  "CL-0230",
+  "CL-0231",
+  "CL-0211",
+  "CL-0212"
+ ]
+}

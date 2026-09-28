@@ -1,0 +1,15 @@
+{
+ "id": "EV-1269",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 447,
+  "printed_page": "430",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK quotes Bashir: fifteenth-century hagiography treats Qāsim-i Anvār as a man of high attainment unable to control those drawn to him; Jāmī considered some of his followers beyond the pale of Islam; a report in Aḥrār's name says followers in Transoxiana gathered beardless boys, justifying it as contemplating divine beauty, and that Qāsim asked “where have those pigs of mine gone?”; his hagiographic profile is marred and he was seen as somewhat of a failure as a Sufi master (the Rashaḥāt, by contrast, stresses his scruple for etiquette).",
+ "evidence_kind": "reception",
+ "refers_to_primary": "Bashir, Sufi Bodies, 145-46 (quoted by MK, fn 42); Jāmī; Aḥrār's hagiographer",
+ "read_by": "R7 opened pdf p.447"
+}

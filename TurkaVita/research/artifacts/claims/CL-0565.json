@@ -1,0 +1,20 @@
+{
+  "id": "CL-0565",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka states that the Mafāḥiṣ aims to show how all manifestation is rooted in the One and how multiplicity derives from it, so that the adept can manipulate the letters to reach and control every level of the cosmos.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1080"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.348",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "CL-0628",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka dismisses his establishment opponents as rasm-jūyān-i madrasa u khānaqāh, agents of conservatism and stultification.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1230"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, R. Anjām",
+   "where": "MS Majlis 10196 f. 159b",
+   "shaping_risk": "low",
+   "note": "a work, as reported by MK"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.435",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

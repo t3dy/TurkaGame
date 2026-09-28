@@ -1,0 +1,21 @@
+{
+ "id": "CL-0239",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki: the al-Khaṣāʾiṣ does not seem ever to have been finished (his hedge).",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0469",
+  "EV-0470"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.93",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

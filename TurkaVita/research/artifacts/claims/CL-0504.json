@@ -1,0 +1,22 @@
+{
+  "id": "CL-0504",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Shaqq-i Qamar Ibn Turka assigns the dialectical theologians (the text also names philosophers of Islam) to level two; on Q 54:1 they agree with level one that the moon was split but argue from God's free agency that it was possible, a miracle confirming the Prophet against deniers. Ibn Turka says God's wisdom has confined them to this level as well.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1002",
+    "EV-1029"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.332, 473",
+      "shaping_risk": "low",
+      "note": "the dissertation's summary names only the theologians at level two; the translated primary text also names philosophers, see notes"
+    }
+  ],
+  "domain": "doctrinal"
+}

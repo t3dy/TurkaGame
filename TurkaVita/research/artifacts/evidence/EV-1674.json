@@ -1,0 +1,15 @@
+{
+ "id": "EV-1674",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 456,
+  "printed_page": "439",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK's note, citing Virani: Qasim-i Anvar, Ibn Turka's charismatic associate from his Cairo days, was apparently claimed by Ismaʿilis; he was exiled from Herat in 1427 along with Ibn Turka for such suspect connections, though his putative connection with the Hurufis supplied the official excuse.",
+ "evidence_kind": "chronicle",
+ "read_by": "R2b opened pdf p.456",
+ "refers_to_primary": "Virani, The Ismailis in the Middle Ages, 103-4"
+}

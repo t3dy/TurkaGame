@@ -1,0 +1,15 @@
+{
+ "id": "EV-0230",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 78,
+  "printed_page": "61",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki notes in a footnote that Khwāja Pārsā's enemies likewise tried to use Jazarī's authority to discredit Pārsā's hadith credentials (citing Manz, Power, 76-77).",
+ "evidence_kind": "context",
+ "refers_to_primary": "Manz, Power, pp.76-77 (per MK fn.109)",
+ "read_by": "R2a opened pdf p.78"
+}

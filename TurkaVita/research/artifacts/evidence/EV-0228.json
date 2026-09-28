@@ -1,0 +1,15 @@
+{
+ "id": "EV-0228",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 78,
+  "printed_page": "61",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Melvin-Koushki's paraphrase, Ibn Turka says Jazarī secured a prominent position in Fars purely on the strength of his native Arabic, hailing from Damascus, and with the favour of rulers constantly caused problems in majlises for Ibn Turka's students.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II, pp.211-12 (per MK fn.109)",
+ "read_by": "R2a opened pdf p.78"
+}

@@ -1,0 +1,223 @@
+{
+  "id": "HYP-F",
+  "type": "hypothesis",
+  "status": "draft",
+  "dispute": "Who was Ibn Turka: what did he actually hold, and what does the surviving record allow us to say?",
+  "letter": "F",
+  "name": "The record cannot fix it",
+  "proposition": "The surviving record cannot fix who Ibn Turka was: the apologies were produced under great duress, about half the oeuvre and most lettrist works are unedited, Akhlāṭī's writings are largely inaccessible, the letters are dated by conjecture, and any neat definition of his contribution 'must be premature'. This is a caveat Melvin-Koushki attaches to his own reading, not a conclusion he draws: he does not argue that the question is undecidable and says 'even a casual survey' points to the occult philosopher.",
+  "commitments": {
+    "conviction": false
+  },
+  "entails": [
+    "The free writings, the letters, colophons and works, must be too incomplete, too undated, or too shaped by need to overcome the apologies' shaping.",
+    "The duress rule cannot be lifted by a survey, however casual, of texts most of which are unedited.",
+    "The same caution must apply to Melvin-Koushki's own biography, which rests primarily on the apologies and Jūdī-Niʿmatī, while he discounts the apologies for what Ibn Turka held.",
+    "'The record does not say' is itself a claim, and must be consistent with the consistency of the free writings that its opponents cite."
+  ],
+  "proponents": [
+    {
+      "scholar": "Matthew Melvin-Koushki (methodological caveat only)",
+      "cites": [
+        "REC-0063"
+      ],
+      "note": "His caveats, not his conclusion: the study is 'necessarily provisional' (dissertation pdf 44), half the oeuvre is unedited, and any neat definition of the contribution 'must be premature' (pdf 468). He argues the occult-philosopher reading regardless."
+    }
+  ],
+  "no_proponent_note": "Nobody in the sources argues that the question cannot be decided as a conclusion. The position is on the board because the caveats are real and the game must let a player say the record does not allow it; whether the player's dossier bears that out is for the player to weigh, not for this artifact.",
+  "alternatives": [
+    "HYP-A",
+    "HYP-B",
+    "HYP-C",
+    "HYP-D",
+    "HYP-E"
+  ],
+  "cites": [
+    "REC-0063",
+    "REC-0002"
+  ],
+  "bearings": [
+    {
+      "evidence": "EV-0261",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "Nafsat I praises Shāhrukh for bringing the Sharīʿa to a brilliance never before achieved and for abolishing the dīvān-i yarghū. Melvin-Koushki says the apologies do not reflect his own intellectual project but the anxieties and predilections of the judge they address.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0290",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "The nine hadith of Nafsat I's first section are nine standard Sunni traditions, 'nine being a propitious number for rulers'. The document is shaped to its reader down to the number of its proofs.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0279",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "Three readings compete for Nafsat I's equation of Shiʿism, Muʿtazilism and philosophy as enemies of the Sunna: sincere, a mask, or an exaggerated signal to the careful reader. F says the text cannot tell them apart, since intent cannot be observed.",
+      "attributed_to": "design inference"
+    },
+    {
+      "evidence": "EV-0153",
+      "kind": "early_work",
+      "direction": "supports",
+      "reading": "The verse the accusers cited is attributed to his early writing. Melvin-Koushki notes the first apology does not mention it, and the pages read do not say whether he owned or disowned it; the one early work on the board is known only through the accusation.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0608",
+      "kind": "colophon",
+      "direction": "supports",
+      "reading": "Melvin-Koushki marks the date of the R. Shaqq-i Qamar, completed before 18 Rabīʿ I 829/28 January 1426, with an asterisk: possibly the copying, not the composition.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0607",
+      "kind": "colophon",
+      "direction": "supports",
+      "reading": "The same Majlis colophon, 18 Rabīʿ I 829, is converted to 27 February 1426 in the manuscript list and to 28 January 1426 in the catalogue entry. The record cannot fix even the day its most important doctrinal treatise was finished.",
+      "attributed_to": "design inference"
+    },
+    {
+      "evidence": "EV-0420",
+      "kind": "autograph",
+      "direction": "supports",
+      "reading": "A marginal correction to his autograph colophon on the Mafāḥiṣ says the colophon's date refers to the copying only. Even an autograph date may not be the composition.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0415",
+      "kind": "colophon",
+      "direction": "supports",
+      "reading": "Melvin-Koushki says most colophons in MS Majlis 10196 give only the copying date, which then gives a terminus ad quem for composition. The dating of the free writings is an upper bound, not a date.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0513",
+      "kind": "colophon",
+      "direction": "supports",
+      "reading": "The Majlis copy of Nafsat II was made in 838/1435, three years after his death, with no day or place given, and the second apology is itself undated: Melvin-Koushki places it by context, between about 832 and 835/1429-32.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0466",
+      "kind": "colophon",
+      "direction": "supports",
+      "reading": "The R. Iʿtiqādiyya survives apparently only in the Majlis manuscript, as an undated copy at f. 171b, inside the folio range of the Iʿtiqādāt. The creed the apology tradition rests on is a single undated witness.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0468",
+      "kind": "creed_tract",
+      "direction": "supports",
+      "reading": "Melvin-Koushki says the Iʿtiqādiyya was 'presumably' written around the time of Nafsat II, because it mentions the R. Iʿtiqādāt. The order of the two creed texts is a presumption.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0814",
+      "kind": "letter",
+      "direction": "supports",
+      "reading": "Melvin-Koushki's list of the letters follows the order of two later manuscripts, with one note inserted at its conjectured chronological place. Only one letter had been published when he wrote.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0815",
+      "kind": "letter",
+      "direction": "supports",
+      "reading": "Letter 1 is dated 16 Jumādā I [814]/5 September [1411], with the year bracketed by Melvin-Koushki. Nearly every letter in the collection is dated by conjecture.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0857",
+      "kind": "letter",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reads the late greeting letters, of which the eulogy to Ḥasan ʿAṭṭār is one, as network management. Even the letters written to friends are shaped by need and by tact.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0168",
+      "kind": "chronicle",
+      "direction": "supports",
+      "reading": "Khwāndamīr's printed text gives 830 for his death and a manuscript gives 836. Melvin-Koushki says 830 is certainly wrong, since he wrote works after that date, and argues for 835/1432: the record wavers even on the year he died.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-1204",
+      "kind": "hagiography",
+      "direction": "supports",
+      "reading": "The Savāniḥ survives only in excerpts inside a seventeenth-century compilation, amplified from another source; Melvin-Koushki notes its concern to establish Niʿmat Allāh's Shiʿi leanings.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0093",
+      "kind": "hagiography",
+      "direction": "supports",
+      "reading": "Melvin-Koushki says Kāzirūnī's account of the two men's search in Baghdad for a Sufi master 'should be taken with several grains of salt'.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-1254",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reports that the picture of Ibn Turka and Yazdī as failed Sufis was promulgated by Jāmī's circle and elaborated in a Safavid tazkira. The later record about him is written by interested parties.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0653",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The Arabic original of the commentary on Ibn al-Fāriḍ is preserved only in the margins of the Majlis copy, and the ornate Persian translation is effectively a different work. Which text counts as his is itself in question.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-0455",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The Iṣbāḥ al-Anwār is unpublished, like most of the lettrist treatises, and Melvin-Koushki says roughly half of the oeuvre survives only in manuscript. Any reading of the lettrist half reaches us through catalogue entries and paraphrase.",
+      "attributed_to": "Matthew Melvin-Koushki (methodological caveat)"
+    },
+    {
+      "evidence": "EV-1651",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "The introduction to the Mafāḥiṣ explicitly rejects absolute being for the letter as the object of a universal science. Melvin-Koushki argues that 'even a casual survey' suggests what the writings are for; this is his ground.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0107",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "In his lettrist writings Ibn Turka invariably presents himself as only the systematizer of Akhlāṭī's teachings: a consistent self-description across many works, not a stray phrase.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0868",
+      "kind": "letter",
+      "direction": "strains",
+      "reading": "Akhlāṭī's letter names the commission, a work on the propositions and conjunctions of the science of letters, and Melvin-Koushki sees the Mafāḥiṣ as the answer. The free letters point in one direction.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1683",
+      "kind": "reception",
+      "direction": "strains",
+      "reading": "A colleague at Ulugh Beg's observatory wrote to thank him for the Sharḥ al-Basmala in terms that eulogized his spiritual perfection as an occultist. Contemporaries at least knew what he was known for.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0482",
+      "kind": "colophon",
+      "direction": "strains",
+      "reading": "The earliest Majlis copy of the Mafāḥiṣ is dated 823/1420 and carries autograph sections and his marginal explanations: a near-contemporary manuscript of the work, close to the author's hand.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1094",
+      "kind": "colophon",
+      "direction": "strains",
+      "reading": "The audition note in MS Landberg 146 says the author proofread the Mafāḥiṣ and added notes in 828/1425 in the company of Yazdī and a group of friends, students and children. It is a dated, witnessed scene of him working on the lettrist summa.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    }
+  ]
+}

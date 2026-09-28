@@ -1,0 +1,13 @@
+{
+ "id": "EV-1479",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-DEF403AE18",
+  "witness_page": 3,
+  "short_title": "Melvin-Koushki, Ibn Turka's Pythagorean Sensorium"
+ },
+ "content": "The Sensorium paper says the publication of the Mafāḥiṣ coincided with Ulugh Beg's founding of the Samarkand observatory in 823/1420, and calls Iskandar Sulṭān (r. 812-17/1409-14) Ibn Turka's first Timurid patron.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R8 opened pdf p.3"
+}

@@ -1,0 +1,31 @@
+{
+ "id": "REC-0058",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was Ibn Turka?",
+ "proposition": "Ibn Turka was a mystical philosopher: a Sufi-inflected scholastic between Tusi and Sadra, unobtrusively placed in the history of Iranian philosophy.",
+ "kind": "inferential",
+ "scholar": "The de facto scholarly consensus, as characterized by Melvin-Koushki",
+ "reasoning": [
+  "This is MK's own summary of the field ('such as it is'), which he says effectively obscures Ibn Turka's occultist project (pdf p.25); MK, not any single scholar, draws the line around a 'consensus'.",
+  "The consensus is traced to the Tamhid, to modern Iranian seminary curricula (pp.23, 454) and to earlier Western reference works that knew him thinly (pp.36-37); pre-modern readers offer mixed signals: the Safavid image 'appears' to have been that of a failed Sufi (p.453), while Afandi (d. 1130/1717) took him for a mystical philosopher of Shiʿi stock yet described the Mafahis as an occult work (p.26 n.25).",
+  "MK's objection is that it forgets what he treats as Ibn Turka's central work and that the man himself would have found the label 'cringe-inducing' (p.454).",
+  "MK is a partisan reporter and this is a construction of a field, not a position anyone in it holds in these words. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0810",
+  "CL-0811",
+  "CL-0813",
+  "CL-0803",
+  "CL-0809",
+  "EV-1622",
+  "EV-1624"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0052",
+  "REC-0053",
+  "REC-0056",
+  "REC-0060"
+ ]
+}

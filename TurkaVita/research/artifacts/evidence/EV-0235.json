@@ -1,0 +1,15 @@
+{
+ "id": "EV-0235",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 79,
+  "printed_page": "62",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says these episodes are recounted primarily to portray Ibn Turka as a staunch admonisher of wayward Sufi masters and vigorous upholder of the Sharīʿa, and hence of the Sunnizing Shahrukhid state.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II",
+ "read_by": "R2a opened pdf p.79"
+}

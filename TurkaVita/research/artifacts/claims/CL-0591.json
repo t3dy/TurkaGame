@@ -1,0 +1,22 @@
+{
+  "id": "CL-0591",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka is explicit that the approach to lettrism he promotes is unique to his generation and shows the upward evolution of human knowledge.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1066",
+    "EV-1129",
+    "EV-1123"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.183, 343, 345",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

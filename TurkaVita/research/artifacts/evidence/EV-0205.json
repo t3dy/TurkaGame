@@ -1,0 +1,15 @@
+{
+ "id": "EV-0205",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 75,
+  "printed_page": "58",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki writes that there ‘may have been’ a formal inquisitorial body handling charges of heterodoxy like those brought against Ibn Turka, and that the body Ṭūsī names was ‘presumably’ the same institution that conducted his three trials.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "the body that tried Ibn Turka",
+ "read_by": "R2a opened pdf p.75"
+}

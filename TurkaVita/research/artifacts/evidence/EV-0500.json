@@ -1,0 +1,15 @@
+{
+ "id": "EV-0500",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 118,
+  "printed_page": "101",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Muhr al-Nubuwwa consists of a preface and two sections, and at the end the author refers his readers to the K. al-Iṣbāḥ; it is unpublished, and the entry gives no fuller statement of its subject.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Muhr al-Nubuwwa",
+ "read_by": "R3 opened pdf p.118"
+}

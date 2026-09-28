@@ -1,0 +1,23 @@
+{
+ "id": "CL-0615",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "A letter in Ibn Turka's correspondence suggests the younger man's respect for Niʿmat Allāh; MK judges Ibn Turka closest to Niʿmat Allāh and Qāsim-i Anvār among the Sufi masters named in the Munshaʾāt.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1241",
+  "EV-1207",
+  "EV-1242"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.438",
+   "shaping_risk": "medium",
+   "note": "'appears to have been the closest'"
+  }
+ ],
+ "domain": "social"
+}

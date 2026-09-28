@@ -1,0 +1,30 @@
+{
+ "id": "CL-0096",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Timeline A.1 dates R. al-Inzāliyya, R. Anjām, R. Bāʾiyya, R. Nuqṭa and R. Muḥammadiyya to 828/1425 with the caveat 'writes (or has copied)' and a query on Yazd, and R. Shaqq-i Qamar, R. Suʾl al-Mulūk (for Bāysunghur) and Sharḥ al-Basmala (copies to Ulugh Beg and Qāżīzāda Rūmī) to 829/1426.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0034",
+  "EV-0035",
+  "EV-0142"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "colophons and audition notes of MS Majlis 10196 and related manuscripts, as summarised in MK's timeline (fn. 1)",
+   "where": "pdf p.51",
+   "shaping_risk": "medium",
+   "note": "a colophon date may record copying, not composition; the timeline does not say which entries rest on colophons"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.52",
+   "shaping_risk": "medium",
+   "note": "the 1425 group may date copying rather than composition"
+  }
+ ],
+ "domain": "textual"
+}

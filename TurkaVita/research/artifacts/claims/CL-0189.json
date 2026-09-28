@@ -1,0 +1,20 @@
+{
+ "id": "CL-0189",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK reads the Mafāḥiṣ's salaf catalogue as a concession to the less intelligent, the elite taking devotion to the Imams as guardians of the uncreated letters as given.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0361"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.92 (printed 75)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

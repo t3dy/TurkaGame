@@ -1,0 +1,27 @@
+{
+ "id": "CL-0316",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "A marginal note in MS Majlis 10196 says Sharḥ Ḥadīth Nabawī (f. 122a, undated) was copied from an autograph in a majmūʿa of Mawlānā Rukn al-Dīn Ṣāʿid Kirmānī; the note's author is not named and the autograph is not known to survive.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0639"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 f. 122a",
+   "shaping_risk": "medium",
+   "note": "marginal note of unknown hand"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.132, no. 34",
+   "shaping_risk": "low"
+  }
+ ]
+}

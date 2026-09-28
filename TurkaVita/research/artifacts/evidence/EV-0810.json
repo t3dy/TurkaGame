@@ -1,0 +1,15 @@
+{
+  "id": "EV-0810",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 154,
+    "printed_page": "137",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK explains that the letters are in highly stylized ornate prose whose formulae encode the addressee, office and spiritual status; because many lack identifying headers or subtextual information, for a few of them the identification of the addressee is only conjecture.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.154",
+  "refers_to_primary": "Munshaʾāt-i Turka, method"
+}

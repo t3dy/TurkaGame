@@ -1,0 +1,15 @@
+{
+  "id": "EV-0868",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 163,
+    "printed_page": "146",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter to Ibn Turka in MS Majlis 10196 (front matter), from Sayyid Ḥusayn Akhlāṭī: a warm letter urging his accomplished disciple, whom he calls khalīlī (my bosom companion) and the leading luminary among his circle of brethren, to write a work establishing the propositions and conjunctions proper to the science of letters (MK: perhaps the Mafāḥiṣ?). It closes with a brief lettrist analysis of a hadith on food, seemingly alluding to a recent stay by Ibn Turka at Akhlāṭī's residence (edition in P.2.2). MK's footnote cites Gāzurgāhī that Akhlāṭī's disciples, including Ibn Turka, Yazdī and Qāżīzāda Rūmī, did spiritual exercises in a room under his house.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.163",
+  "refers_to_primary": "Letter of Akhlāṭī, MS Majlis 10196"
+}

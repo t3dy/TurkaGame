@@ -1,0 +1,22 @@
+{
+  "id": "CL-0529",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "By the definition in the R. al-Inzāliyya, the K. al-Mafāḥiṣ, which explicates the letters' three forms, may be regarded as a manual for attaining an Imam-like status.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1017",
+    "EV-1016",
+    "EV-1079"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.336, 348",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

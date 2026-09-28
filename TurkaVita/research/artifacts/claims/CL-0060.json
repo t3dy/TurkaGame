@@ -1,0 +1,21 @@
+{
+ "id": "CL-0060",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "His enemies' later success in plaguing him had little to do with demonstrable doctrinal irregularities on his part and much to do with the political instability of western Iran and Shāhrukh's distrust of ambitious, independent-minded, mystically or millenarian-minded intellectuals.",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0137"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.69",
+   "shaping_risk": "medium",
+   "note": "MK's argument, following Binbaş"
+  }
+ ],
+ "domain": "political"
+}

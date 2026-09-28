@@ -1,0 +1,15 @@
+{
+ "id": "EV-0660",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 136,
+  "printed_page": "119",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 172b-79a carries Suʾl al-Mulūk (variant titles Suʾāl al-Mulūk, Maqbūl al-Mulūk, R. dar ʿIlm al-Ḥurūf, R. Khawāṣṣ al-Ḥurūf), copied on 7 Rajab 829/15 May 1426 (Ḥāʾirī, Majlis, 32/240); the next listed copy is MS 5423 ff. 150b-65a (842/1439).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.136",
+ "refers_to_primary": "Suʾl al-Mulūk, MS Majlis 10196"
+}

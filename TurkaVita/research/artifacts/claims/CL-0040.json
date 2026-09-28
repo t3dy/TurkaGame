@@ -1,0 +1,23 @@
+{
+ "id": "CL-0040",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka was Akhlāṭī's chief disciple in the east, animated by the same millenarian ethos as Akhlāṭī and Bedreddīn but expressing it in universalist and intellectual rather than messianic terms.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0112",
+  "EV-0113",
+  "EV-0054"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.66",
+   "shaping_risk": "medium",
+   "note": "MK's thesis about the network"
+  }
+ ],
+ "domain": "doctrinal"
+}

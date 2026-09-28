@@ -1,0 +1,21 @@
+{
+  "id": "CL-0588",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Anjām Ibn Turka narrates the history of wisdom as: abundant under the earlier prophets and Solomon, occulted as Muḥammad's advent drew near, revived under the Seal's light, and building ever higher as the cycle of ages nears the centrepoint of sanctified power.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1121",
+    "EV-1122"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.342-343",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

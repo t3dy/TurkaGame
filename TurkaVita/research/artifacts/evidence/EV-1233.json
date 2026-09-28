@@ -1,0 +1,15 @@
+{
+ "id": "EV-1233",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 436,
+  "printed_page": "419",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In his second apology, written in exile, Ṣāʾin al-Dīn is by MK's account particularly scathing about al-Jazarī: he says the man knew only Quran reading and a little hadith and won his position through his native Arabic, and began to make trouble for Ṣāʾin al-Dīn's students because Ṣāʾin al-Dīn had once given a less than glowing report of him when pressed by the Mamluk sultan in Cairo.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Nafsat al-Maṣdūr II, 211-12 (written in exile)",
+ "read_by": "R7 opened pdf p.436"
+}

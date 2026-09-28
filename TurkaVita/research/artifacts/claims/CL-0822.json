@@ -1,0 +1,21 @@
+{
+ "id": "CL-0822",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka saw the new phase of human evolution as heralded by a celestial conjunction, which Melvin-Koushki thinks is probably the Saturn-Jupiter conjunction in Scorpio of 767/1365 but says he is not certain.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1659"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.21",
+   "shaping_risk": "medium",
+   "note": "We have the work only as MK summarises or translates it; most of the lettrist works are unedited, so MK's paraphrase cannot be checked against a printed text."
+  }
+ ],
+ "domain": "doctrinal"
+}

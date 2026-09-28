@@ -1,0 +1,20 @@
+{
+  "id": "CL-0530",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In section 3.7 of the Mafāḥiṣ Ibn Turka assigns the spoken form of the letters to prophethood and the mental and written forms to walāya, the written form to the Seal of Sainthood, his family and heirs.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1018"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.336",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

@@ -1,0 +1,34 @@
+{
+ "id": "CL-0732",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Prologue says the opening of the Mafāḥiṣ in MS Majlis 10196 (ff. 52a-56a) was copied and added to between 1420-25 and is almost certainly in the hand of Sharaf al-Dīn Yazdī; the dissertation says that copy contains autograph sections at the beginning and end with authorial interpolations. The papers thus differ on whose hand the opening of the manuscript is in. The older project docs say both that it survives in Ibn Turka's own autograph and that Yazdī likely copied it.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1456",
+  "EV-1427"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "MS Majlis 10196 f. 52a-56a",
+   "where": "Prologue pdf 13; dissertation pdf 114",
+   "shaping_risk": "medium",
+   "note": "'autograph' and 'by Yazdī's hand' are both palaeographic judgments"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 114",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Prologue to Pythagorean Renaissance",
+   "where": "pdf 13",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "textual"
+}

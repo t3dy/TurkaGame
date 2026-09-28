@@ -1,0 +1,22 @@
+{
+ "id": "EVT-0023",
+ "type": "event",
+ "status": "draft",
+ "actor": "Shāhrukh",
+ "date": {
+  "start": "1414",
+  "end": "1414",
+  "hijri": "817",
+  "basis": "Timeline A.1, pdf p.52; §1.2, pdf p.69.",
+  "date_kind": "context"
+ },
+ "place": "Iraq",
+ "event_type": "war",
+ "description": "Shāhrukh marches against Iskandar, who flees, is captured, blinded and later executed; his son Ibrāhīm Sulṭān replaces him. Ibn Turka's earlier attachment to Iskandar becomes a liability.",
+ "claims": [
+  "CL-0057",
+  "CL-0059",
+  "CL-0060"
+ ],
+ "fixed_point": true
+}

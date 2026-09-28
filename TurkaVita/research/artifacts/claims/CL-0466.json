@@ -1,0 +1,21 @@
+{
+  "id": "CL-0466",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "MK says the Timurid elite, in particular Iskandar and Bāysunghur, showed obvious interest in Ibn Turka's lettrist doctrine, and that Bisṭāmī's lettrism served as a prop for Ottoman messianic self-understanding further west.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0895"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.328",
+      "shaping_risk": "medium",
+      "note": "MK's inference; the evidence is the letters and commissions"
+    }
+  ],
+  "domain": "political"
+}

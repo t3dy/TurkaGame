@@ -1,0 +1,31 @@
+{
+ "id": "CL-0632",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Munshaʾāt-i Turka testifies to warm relations with Niʿmat Allāh Valī, Qāsim-i Anvār, Aḥmad Samarqandī, ʿAlā al-Dīn Chishtī (administrator of Shāhrukh's Herat madrasa-khanaqah) and Ḥasan ʿAṭṭār, among others, and this corroborates his apologies' account of dealings with shaykhs.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1234",
+  "EV-1235",
+  "EV-1236",
+  "EV-1240",
+  "EV-1208"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Ibn Turka, Munshaʾāt-i Turka",
+   "where": "letters 3, 13, 16, 36-38",
+   "shaping_risk": "medium",
+   "note": "letters of greeting and petition; MK also reads the exile-period ones as network-building"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.436",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

@@ -1,0 +1,26 @@
+{
+ "id": "CL-0162",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The R. Iʿtiqādiyya, described by MK as a companion tract, presents its author as a standard-issue Ashʿari thinker.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0212"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, in a creedal tract of the apology group",
+   "where": "R. Iʿtiqādiyya",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.77 (printed 60)",
+   "shaping_risk": "low"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "id": "SCN-0601",
+ "type": "scene",
+ "status": "draft",
+ "act": "historian",
+ "unrecorded": true,
+ "show_dossier": true,
+ "title": "The desk: what he told his judges",
+ "dramatic_question": "You have lived the life; now you have to say who he was. Which witnesses do you open first?",
+ "situation": {
+  "when": "the modern dispute",
+  "where": "the desk",
+  "based_on": [
+   "CL-0167",
+   "CL-0101"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki holds that the apologies were produced under great duress: the first answers a summons to trial, the second follows torture, imprisonment and exile.",
+   "claim": "CL-0167"
+  },
+  {
+   "text": "Melvin-Koushki opens his chapter on the apologies with an epigraph from John Dee's 1604 petition to the king about slander. That is his comparison; nothing on the page asserts any contact.",
+   "claim": "CL-0101"
+  }
+ ],
+ "prose": [
+  "Nothing here is a moment in his life any more. What you have is what survives: his own words to the rulers who tried him, the letters he wrote to other people, the dates in the manuscript that carries his works, and what others said of him afterwards. Every reading in the dossier will be somebody's.",
+  "Most of what we know of his life comes from the two apologies, and that is the pile Melvin-Koushki warns you about: the first was written for the ruler judging him, the second for that ruler's son while the case was open.",
+  "Start with what he said to his judges. You may read one group now; you will have two more piles to open."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Read the first apology argument by argument: the nine hadith, the Sufi masters, the accusers' hypocrisy.",
+   "strategy": "read_apology_I",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0147",
+    "CL-0145",
+    "CL-0113"
+   ],
+   "effects": {
+    "dossier.EV-0210": true,
+    "dossier.EV-0211": true,
+    "dossier.EV-0258": true,
+    "dossier.EV-0261": true,
+    "dossier.EV-0264": true,
+    "dossier.EV-0279": true,
+    "dossier.EV-0280": true
+   },
+   "feedback": "You now hold seven of the moves Melvin-Koushki reports from Nafsat al-Maṣdūr I. Notice what they are for: each is an argument to Shāhrukh. On Melvin-Koushki's duress reading, what these readings show is what he told the ruler."
+  },
+  {
+   "id": "B",
+   "label": "Read the creed tracts and the second apology, written in exile to Bāysunghur.",
+   "strategy": "read_creeds_and_II",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0111",
+    "CL-0163",
+    "CL-0223"
+   ],
+   "effects": {
+    "dossier.EV-0212": true,
+    "dossier.EV-0237": true,
+    "dossier.EV-0463": true,
+    "dossier.EV-1257": true,
+    "dossier.EV-1260": true,
+    "dossier.EV-1273": true,
+    "dossier.EV-1275": true
+   },
+   "feedback": "This is the angrier witness, and the creeds. The Iʿtiqādiyya admits youthful learning at odds with orthodoxy that Nafsat I claims he never had; Melvin-Koushki does not draw this contrast; it is the game's observation. Both are addressed to power."
+  },
+  {
+   "id": "C",
+   "label": "Read only the passages where Melvin-Koushki himself says what the apologies cannot show.",
+   "strategy": "read_the_warning",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0080",
+    "CL-0160",
+    "CL-0147"
+   ],
+   "effects": {
+    "dossier.EV-0158": true,
+    "dossier.EV-0236": true,
+    "dossier.EV-0210": true
+   },
+   "feedback": "A short pile, and an honest one. He does not say the apologies are false; he says they were written under duress and are 'hardly reflective of his primary concerns'. Whether that is enough to set them aside is what the desk will ask."
+  }
+ ],
+ "next": "SCN-0602",
+ "epistemic_contract": {
+  "historical_status": "reconstruction",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

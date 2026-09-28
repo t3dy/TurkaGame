@@ -1,0 +1,15 @@
+{
+  "id": "EV-1022",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 175,
+    "printed_page": "158",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The dissertation's list of Quran commentaries gives the R. Shaqq-i Qamar u Bayān-i Sāʿat as dated 'before 829/1426' and the R. Madārij Afhām al-Afwāj as written in Mazandaran, 831/1428.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.175"
+}

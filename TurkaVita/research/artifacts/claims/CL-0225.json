@@ -1,0 +1,29 @@
+{
+ "id": "CL-0225",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat al-Maṣdūr II is an apology addressed to Bāysunghur, written after Ibn Turka's arrest, imprisonment and exile following the Hurufi attempt on Shāhrukh's life in 830/1427, asking Bāysunghur to mediate an audience with the sultan.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0514",
+  "EV-0516",
+  "EV-0515"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, in Nafsat al-Maṣdūr II",
+   "where": "Nafsat II",
+   "shaping_risk": "high",
+   "note": "written to an intercessor to obtain a hearing; harsh on Hurufis and on false Sufis"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.106",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

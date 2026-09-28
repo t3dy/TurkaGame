@@ -1,0 +1,15 @@
+{
+ "id": "EV-0226",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 78,
+  "printed_page": "61",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki notes that Dawlatshāh Samarqandī identifies Ibn Turka and Sharaf al-Dīn Yazdī as the two most prominent intellectuals of Shahrukhid Iran and states that Ibn Turka's writings are famous throughout the world.",
+ "evidence_kind": "chronicle",
+ "refers_to_primary": "Dawlatshāh Samarqandī, Tazkirat al-Shuʿarā, p.379 (per MK fn.108)",
+ "read_by": "R2a opened pdf p.78"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "CL-0512",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki reports that the fact that the manifestation of level seven belongs to the present time, marked by a celestial conjunction, was communicated to Ibn Turka by his teacher Sayyid Ḥusayn Akhlāṭī; the treatise elsewhere credits 'our Sayyid' with explaining what the earlier thinkers could not.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1005",
+    "EV-1045",
+    "EV-1010"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.333-334, 479",
+      "shaping_risk": "medium",
+      "note": "the pages do not name the conjunction or date the communication; Akhlāṭī is dated d. 1397 in the Prologue, so the timing is unexplained"
+    }
+  ],
+  "domain": "doctrinal"
+}

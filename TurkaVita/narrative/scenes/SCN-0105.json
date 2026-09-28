@@ -1,0 +1,111 @@
+{
+ "id": "SCN-0105",
+ "type": "scene",
+ "status": "draft",
+ "act": "hostage",
+ "title": "Cairo, 1397: the Sayyid dies",
+ "dramatic_question": "Akhlāṭī is dead. How do you present what you inherit from him?",
+ "situation": {
+  "when": "799/1397",
+  "where": "Cairo",
+  "based_on": [
+   "CL-0034",
+   "CL-0035",
+   "CL-0037",
+   "CL-0039",
+   "CL-0556",
+   "CL-0218",
+   "CL-0041"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Akhlāṭī died in Cairo in 799/1397.",
+   "claim": "CL-0034"
+  },
+  {
+   "text": "Akhlāṭī wrote to Ibn Turka calling him his bosom companion (khalīlī) and the leading luminary of his circle of brethren. This is a teacher's letter of praise to a disciple; it shows what Akhlāṭī wrote, not what he privately thought.",
+   "claim": "CL-0039"
+  },
+  {
+   "text": "Ibn Turka never names Akhlāṭī in his writings. He calls him 'our Sayyid', 'the Sayyidic Presence' or 'the sublime Sayyidic Threshold'. Among these writings the R. Ḥurūf (1414 on Melvin-Koushki's date) and the Mafāḥiṣ (1420; the date may record copying) are both later than 1397.",
+   "claim": "CL-0035"
+  },
+  {
+   "text": "In his lettrist writings he invariably presents himself as only the systematizer of Akhlāṭī's teachings, and defers to Akhlāṭī as his sole oral source for lettrism; later Iranian lettrists remember him as Akhlāṭī's greatest disciple.",
+   "claim": "CL-0037"
+  }
+ ],
+ "prose": [
+  "Akhlāṭī dies in Cairo in 799/1397. On the timeline's dates you have had at most about four years with him (our arithmetic, not Melvin-Koushki's). He wrote to you as his bosom companion and the leading luminary of his circle of brethren.",
+  "You are not the only disciple. Shaykh Bedreddīn, a judge and intellectual whose profile Melvin-Koushki says matched yours, is also said to have been Akhlāṭī's disciple in Cairo, and a later Ottoman manāqib has Akhlāṭī naming him successor; that is hagiography.",
+  "What you decide now can be read only in what you write later. In those writings, from the R. Ḥurūf (1414 on his date) to the Mafāḥiṣ (1420, possibly a copying date), the teacher is never named. What do you make of what he gave you?"
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Carry his teaching forward as its systematizer and never write his name: call him 'our Sayyid', and give him the credit for what you set in order.",
+   "strategy": "systematizer_our_sayyid",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0035",
+    "CL-0037",
+    "CL-0556"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.akhlati": 1,
+    "score.biography": 2,
+    "life.inheritance": "systematizer"
+   },
+   "feedback": "This is what his own works show, and Melvin-Koushki cites it. The motive is his reading, not a record: he takes the circumlocutions as an index of unparalleled regard, comparing Ibn Turka's 'our Khwāja' for Muḥammad Pārsā. Whether the silence protected him no source says. Note also that his first apology to Shāhrukh leaves Akhlāṭī out entirely, which Melvin-Koushki reads as shaping that text to the ruler's anxieties."
+  },
+  {
+   "id": "B",
+   "label": "Name Akhlāṭī openly in everything you write and put his authority in front of yours.",
+   "strategy": "name_the_teacher",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0035",
+    "CL-0033"
+   ],
+   "requires": {},
+   "effects": {
+    "court.akhlati": 1,
+    "press.exposure": 2,
+    "score.biography": -1,
+    "life.inheritance": "systematizer"
+   },
+   "feedback": "The sources have him never name Akhlāṭī in any writing, and Ibn Ḥajar's report (low confidence) that Akhlāṭī was exposed to charges of Shiʿism is the only hint of why naming him might cost. This is the game's own what-if, and the game returns you to the record: the sources put him writing 'our Sayyid', and nothing later can be built on a life in which the teacher's name is written."
+  },
+  {
+   "id": "C",
+   "label": "Take up the leadership of the brethren he addressed you among, and gather them in your own name as the head of the circle.",
+   "strategy": "lead_the_circle",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0039",
+    "CL-0040",
+    "CL-0046"
+   ],
+   "requires_min": {
+    "court.akhlati": 2
+   },
+   "effects": {
+    "court.akhlati": 1,
+    "press.students": 1,
+    "press.exposure": 2,
+    "score.biography": 1,
+    "life.inheritance": "circle-head"
+   },
+   "feedback": "Melvin-Koushki argues that you were Akhlāṭī's chief disciple in the east and, with Yazdī and the Isfahan circle, the eastern arm of a Neo-Ikhwān al-Ṣafāʾ network centred on him. That is his thesis about a network, not a report of what happened in 1397, and the sources do not have you gathering the brethren openly. It is open to you only if you have earned Akhlāṭī's regard."
+  }
+ ],
+ "next": "SCN-0106",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

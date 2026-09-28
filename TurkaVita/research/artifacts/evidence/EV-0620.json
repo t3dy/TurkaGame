@@ -1,0 +1,15 @@
+{
+ "id": "EV-0620",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 129,
+  "printed_page": "112",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Sharḥ-i Dah Bayt is an exposition of select verses by Ibn ʿArabī, especially treating the difference between wujūd and kawn (Persian; variant title Sharḥ-i Abyātī az Ibn-i ʿArabī).",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.129",
+ "refers_to_primary": "Ibn Turka, Sharḥ-i Dah Bayt-i Muḥyī l-Dīn Ibn-i ʿArabī"
+}

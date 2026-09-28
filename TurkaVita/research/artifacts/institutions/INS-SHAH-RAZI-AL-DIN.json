@@ -1,0 +1,14 @@
+{
+ "id": "INS-SHAH-RAZI-AL-DIN",
+ "type": "institution",
+ "status": "draft",
+ "name": "Shāh Rażī l-Dīn of Mazandaran",
+ "ruler": "Shāh Rażī l-Dīn",
+ "seat": "Mazandaran",
+ "tenure": "1428",
+ "role": "patron",
+ "summary": "The person for whom Ibn Turka wrote the R. Mabdaʾ u Maʿād in exile.",
+ "supported_by": [
+  "EV-0044"
+ ]
+}

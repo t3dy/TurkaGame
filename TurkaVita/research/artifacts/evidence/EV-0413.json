@@ -1,0 +1,15 @@
+{
+ "id": "EV-0413",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 97,
+  "printed_page": "80",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "According to marginal notes in MS Majlis 10196, the K. al-Mafāḥiṣ in the collection has an incipit and explicit in the author's own hand, easily distinguishable from the rest of the text, and the Sharḥ Fuṣūṣ al-Ḥikam likewise carries an autograph note at the end.",
+ "evidence_kind": "autograph",
+ "refers_to_primary": "MS Majlis 10196",
+ "read_by": "R3 opened pdf p.97"
+}

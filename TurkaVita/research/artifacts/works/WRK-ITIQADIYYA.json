@@ -1,0 +1,30 @@
+{
+ "id": "WRK-ITIQADIYYA",
+ "type": "work",
+ "status": "draft",
+ "title": "R. Iʿtiqādiyya ('Statement of Creed')",
+ "transliterated_title": "Risāla Iʿtiqādiyya",
+ "language": "Persian",
+ "genre": "brief creed in letter form",
+ "theme": "theology",
+ "date": {
+  "ce": "ca. 1429-1432",
+  "hijri": "ca. 832-35",
+  "basis": "MK: 'presumably' written around the time of Nafsat al-Maṣdūr II (ca. 832-35/1429-32) because it mentions the R. Iʿtiqādāt; that reasoning gives only a lower bound. The only witness, MS Majlis 10196 f. 171b, is undated."
+ },
+ "date_kind": "conjectured",
+ "occasion": "A statement of creed accompanying the second apology, offered to defend his wide learning against charges at odds with Sunnism.",
+ "manuscript": "1 copy: MS Majlis 10196 f. 171b (undated); apparently survives only there. Folio 171b lies inside the range given for the Iʿtiqādāt (ff. 165b-72a).",
+ "majlis_folios": "f. 171b",
+ "edited": true,
+ "summary": "A very brief statement of creed in the form of a letter, justifying his wide learning in youth by the hadith 'learn even sorcery' and saying that Sufi formulations he has carried over do not touch creed.",
+ "supported_by": [
+  "EV-0466",
+  "EV-0467",
+  "EV-0468"
+ ],
+ "claims": [
+  "CL-0227",
+  "CL-0228"
+ ]
+}

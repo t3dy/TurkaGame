@@ -1,0 +1,21 @@
+{
+  "id": "CL-0571",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the Mafāḥiṣ Ibn Turka admits only Ibn ʿArabī's Futūḥāt and Saʿd al-Dīn Ḥamuvayī's K. al-Maḥbūb as textual sources (with a quotation from Jābir b. Ḥayyān in the introduction).",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1088",
+    "EV-1095"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.350, 352",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "textual"
+}

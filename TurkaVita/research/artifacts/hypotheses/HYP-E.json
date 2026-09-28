@@ -1,0 +1,197 @@
+{
+  "id": "HYP-E",
+  "type": "hypothesis",
+  "status": "draft",
+  "dispute": "Who was Ibn Turka: what did he actually hold, and what does the surviving record allow us to say?",
+  "letter": "E",
+  "name": "Ḥurufī sympathiser or subversive",
+  "proposition": "Ibn Turka was a Ḥurufī sympathiser or, at the least, a subversive 'neo-bāṭinī' (naw-mulḥid): the reading the prosecution at Herat used against him after Aḥmad-i Lur's attempt on Shāhrukh in 830/1427, following the label given him by Zayn al-Dīn Khwāfī. It is held by no modern scholar; it is the reading he was punished under.",
+  "commitments": {
+    "conviction": true
+  },
+  "entails": [
+    "The second apology's contempt for the 'ringleaders of depravity and sedition', and the R. Bāʾiyya's polemic against certain Sufis' overinterpretation, must be insincere or aimed elsewhere.",
+    "The 829/1426 charge of ṣūfīgarī must have been what Melvin-Koushki calls a code for messianic political aspirations, and the charge already contained the later accusation.",
+    "The Ḥurufī link that the sources on these pages attach to Qāsim-i Anvār must extend to him, though no source read calls Ibn Turka himself a Ḥurufī.",
+    "A Shafiʿi qadi who applied the Sharīʿa impartially, and who wrote to Shāhrukh offering to serve it, must have been insincere in every profession of loyalty."
+  ],
+  "proponents": [],
+  "no_proponent_note": "Nobody in the sources holds this reading, and none of the pages read reports any source calling Ibn Turka himself a Ḥurufī. It is on the board as the reading that was used against him: the label naw-mulḥidān came from Zayn al-Dīn Khwāfī (dissertation pdf 455) and the official excuse for the 1427 exile was the putative Ḥurufī link of Qāsim-i Anvār (pdf 456 n.16), which attaches to Qāsim-i Anvār, not to Ibn Turka. Melvin-Koushki argues that Ibn Turka himself dismissed the Ḥurufīs as perverting the science (pdf 22 n.12, 28), that the difference between lettrists and Ḥurufīs is motive (pdf 456), and that the opponents 'effectively used his esotericism against him' (pdf 455); he admits he is himself unsure what naw-mulḥidān meant (pdf 456 n.16).",
+  "alternatives": [
+    "HYP-A",
+    "HYP-B",
+    "HYP-C",
+    "HYP-D",
+    "HYP-F"
+  ],
+  "cites": [
+    "REC-0059",
+    "REC-0152",
+    "REC-0154",
+    "REC-0158",
+    "REC-0061"
+  ],
+  "bearings": [
+    {
+      "evidence": "EV-1670",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Zayn al-Dīn Khwāfī, an establishment Sufi, labels Ibn Turka and his circle naw-mulḥidān, 'neo-bāṭinīs or even neo-Ismaʿilis'. This is the prosecution's word for the men it went after; the accusers' own arguments are not on the pages read.",
+      "attributed_to": "the prosecution at Herat"
+    },
+    {
+      "evidence": "EV-1674",
+      "kind": "chronicle",
+      "direction": "supports",
+      "reading": "Melvin-Koushki's note, citing Virani, says Qāsim-i Anvār, Ibn Turka's associate from Cairo, was exiled from Herat in 1427 along with Ibn Turka for suspect connections, his putative Ḥurufī link being the official excuse. The prosecution's chain runs through the company he kept.",
+      "attributed_to": "the prosecution at Herat"
+    },
+    {
+      "evidence": "EV-1420",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "After Aḥmad-i Lur's attempt on Shāhrukh at the Herat mosque in 830/1427, the ruler arrested people with suspected Ḥurufī ties, Ibn Turka among them. The arrest is the prosecution's reading put into action.",
+      "attributed_to": "the prosecution at Herat"
+    },
+    {
+      "evidence": "EV-0158",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "Recalled to Herat, he was stripped of position and property, tortured, imprisoned and exiled. The prosecution treated him as a man the state had reason to fear; the page does not say what proof was offered.",
+      "attributed_to": "the prosecution at Herat"
+    },
+    {
+      "evidence": "EV-1257",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reports that in 829/1426 his enemies accused him a second time of ṣūfīgarī, Sufi bias. He reads ṣūfīgarī as a code in Shahrukhid Iran for messianic political aspirations, the Ḥurufīs in particular, so the accusation was already heard as more than the word says.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1669",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "In the R. Inzāliyya, written before 828/1425, he already laments lettrism's unpopularity in Iran. Melvin-Koushki uses this to show the science was suspect before 1427, which is the soil in which a Ḥurufī label could take.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0152",
+      "kind": "chronicle",
+      "direction": "supports",
+      "reading": "When the delegation from Yazd failed, his enemies compiled a case from statements in works written in his youth, among them a verse praising ʿAlī and condemning ʿUmar and ʿUthmān. The prosecution's method is to read his esoteric writings for the worst they can mean.",
+      "attributed_to": "the prosecution at Herat"
+    },
+    {
+      "evidence": "EV-1264",
+      "kind": "hagiography",
+      "direction": "supports",
+      "reading": "Ḥurufī sources report that his father and his brother sought out Fażl Allāh in Isfahan to have their dreams interpreted. Melvin-Koushki draws no conclusion from this; the game notes it is the kind of kinship an accuser could point to, and that it comes from partisan Ḥurufī sources.",
+      "attributed_to": "design inference"
+    },
+    {
+      "evidence": "EV-1243",
+      "kind": "letter",
+      "direction": "supports",
+      "reading": "Letters 37 and 38 to Qāsim-i Anvār are friendly, letter 38 written after several days in his company, presumably at Herat in 830/1427 or 834/1431 (Melvin-Koushki). The prosecution's guilt by association needs exactly such a tie; Melvin-Koushki reads the letters as friendship, not as shared doctrine.",
+      "attributed_to": "design inference"
+    },
+    {
+      "evidence": "EV-0106",
+      "kind": "chronicle",
+      "direction": "supports",
+      "reading": "Ibn Ḥajar reports that Akhlāṭī's refusal to attend Friday prayers laid him open to charges of Shiʿism. The teacher through whom Ibn Turka's lettrism descends already had a heterodox name.",
+      "attributed_to": "Ibn Ḥajar al-ʿAsqalānī"
+    },
+    {
+      "evidence": "EV-0104",
+      "kind": "chronicle",
+      "direction": "supports",
+      "reading": "Ibn Ḥajar says Akhlāṭī's house was found on his death to contain a golden cup, flagons of wine, priests' clothes and a copy of the Bible. A hostile inventory of his teacher's house is the sort of thing an enemy could carry to the pupil.",
+      "attributed_to": "Ibn Ḥajar al-ʿAsqalānī"
+    },
+    {
+      "evidence": "EV-1230",
+      "kind": "work",
+      "direction": "neutral",
+      "reading": "Ibn Turka often dismisses his establishment opponents as 'seekers of form in madrasa and khanaqah', agents of conservatism. Melvin-Koushki reads this as the source of the enmity; it shows contempt for the establishment, not sympathy for the Ḥurufīs.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1265",
+      "kind": "hagiography",
+      "direction": "neutral",
+      "reading": "In the Ḥurufī Khwābnāma Fażl Allāh tells Ṣadr al-Dīn Turka to give up a planned book harmonizing religion and philosophy. Melvin-Koushki draws no conclusion from the family's contact with Fażl Allāh beyond noting it.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0236",
+      "kind": "apology",
+      "direction": "strains",
+      "reading": "Nafsat II ends by dismissing the Ḥurufī movement in harsh and bitterly resentful terms. Melvin-Koushki cites the dismissal against the charge; the game notes it stands in an apology, so it shows what he told Bāysunghur.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1260",
+      "kind": "apology",
+      "direction": "strains",
+      "reading": "Melvin-Koushki says the barb in Nafsat I at charlatans who chant 'Everything is God!' and fall into heresy is clearly directed at the followers of Fażl Allāh, among others.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1273",
+      "kind": "apology",
+      "direction": "strains",
+      "reading": "In Nafsat II he says he met in Isfahan the 'ringleaders of depravity and sedition', addressed them as he had the Sufi masters, and that the meeting degenerated into his recrimination and their brazenness.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1275",
+      "kind": "apology",
+      "direction": "strains",
+      "reading": "In Nafsat II he complains that the same group first made preoccupation with the science of letters a crime, and that he, who contended with them and warned against them, has had his family's honour smeared with the accusation.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1224",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "Melvin-Koushki reports that he never names Fażl Allāh or the Ḥurufīs in any of his lettrist works, 'perhaps not wishing to dignify them'; the only clear reference is the phrase 'ringleaders of depravity and sedition' in the second apology.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1667",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "Melvin-Koushki's note says lettrists like Ibn Turka dismissed gnostic-messianic movements such as the Ḥurufiyya as perverting the science for non-intellectual and non-Islamic ends.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1668",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "Melvin-Koushki says Ibn Turka has some very sharp words for the tendency to dissolve occult philosophy into extremist messianic movements such as the Ḥurufiyya, though the page gives no locus.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1225",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "The introduction to the R. Bāʾiyya gives as its reason for writing the wish to combat the 'baseless overinterpretations' and 'ideological propagandizing' of certain Sufis. Melvin-Koushki reads it, with some hesitation, as a generic allusion.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0437",
+      "kind": "colophon",
+      "direction": "strains",
+      "reading": "The R. Bāʾiyya was copied on 14 Ramaḍān 828/30 July 1425, two years before Aḥmad-i Lur's attempt. The polemic against Sufi overinterpretation is dated before the crisis, though the colophon may be the copying.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0846",
+      "kind": "letter",
+      "direction": "strains",
+      "reading": "Letter 27, which he wrote freely to Amīr Fīrūzshāh, says he was tortured and imprisoned by the debt- and tax-collectors of the royal dīvān and his property confiscated. The letter names fiscal collectors, not an inquisition into Ḥurufism.",
+      "attributed_to": "design inference"
+    }
+  ]
+}

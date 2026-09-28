@@ -1,0 +1,21 @@
+{
+ "id": "CL-0105",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "There may have been a formal inquisitorial body in the Timurid realm that handled charges of heterodoxy; the only attestation MK gives is Ṭūsī's mention of a majlis-i tafaḥḥuṣ u dīvān-i tajassus interrogating Hurufis, and MK presumes it was the institution that conducted Ibn Turka's three trials. The identification is MK's presumption, not attested.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0204",
+  "EV-0205"
+ ],
+ "domain": "institutional",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.75 (printed 58)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "id": "CL-0844",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Whether Ibn Turka was an original thinker or a systematizer is disputed only in outline: MK concedes systematizer and popularizer, and replies to Collins that 'minor' is a verdict of later priorities.",
+ "epistemic_type": "contested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1661",
+  "EV-1662",
+  "EV-1663",
+  "EV-1665"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.462, 467-468",
+   "shaping_risk": "medium",
+   "note": "MK's own interpretation, offered in support of his thesis that Ibn Turka was an occult philosopher."
+  }
+ ],
+ "domain": "doctrinal"
+}

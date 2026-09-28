@@ -1,0 +1,22 @@
+{
+ "id": "CL-0620",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Whether the Baghdad, Egypt and Tabriz quest of the Sullam story happened cannot be decided from the pages read: MK presents it as a retelling whose moral is impatience and spiritual superficiality, and offers no corroboration.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1255",
+  "EV-1256"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.445",
+   "shaping_risk": "low",
+   "note": "an attested silence about corroboration on the pages read; R7 did not search the rest of the dissertation for a parallel"
+  }
+ ],
+ "domain": "biographical"
+}

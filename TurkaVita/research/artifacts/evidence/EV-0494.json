@@ -1,0 +1,15 @@
+{
+ "id": "EV-0494",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 117,
+  "printed_page": "100",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The K. al-Manāhij is a minutely detailed treatise on logic in the manner of the latter-day philosophers, with a general introduction and four methods (manhaj); it follows contemporary method in the main (e.g. the four-term syllogism) but at points prefers the views of the ancients, and it was edited by Ibrāhīm Dībājī (Tehran, 1376 Sh./1997).",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, K. al-Manāhij",
+ "read_by": "R3 opened pdf p.117"
+}

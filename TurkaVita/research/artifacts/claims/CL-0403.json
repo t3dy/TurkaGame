@@ -1,0 +1,27 @@
+{
+  "id": "CL-0403",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In letter 1, dated Friday night 16 Jumādā I (year not given in the letter; MK brackets it as 814), Ibn Turka writes from Isfahan that he is about to set out for the Hijaz, presumably on pilgrimage, and asks his friend and fellow muḥaqqiq Sharaf al-Dīn Yazdī to write if he cannot join him.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0815"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Sharaf al-Dīn Yazdī",
+      "where": "Munshaʾāt-i Turka letter 1",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.155",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "biographical"
+}

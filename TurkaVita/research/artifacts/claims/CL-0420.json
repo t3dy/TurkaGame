@@ -1,0 +1,28 @@
+{
+  "id": "CL-0420",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Letter 19 says that when Ibn Turka was at the royal court about two months earlier he was not granted an audience with Shāhrukh but was exposed to attacks by fault-finders and defamers; the letter was sent to Bāysunghur, who had received him with particular favour, and it asks indulgence for his failure to come again in winter.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0837"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Bāysunghur",
+      "where": "Munshaʾāt-i Turka letter 19",
+      "shaping_risk": "medium",
+      "note": "Written by a supplicant asking a ruler or official for clemency, relief or a stipend; framed to win the favour asked, not as a neutral report."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.158",
+      "shaping_risk": "medium",
+      "note": "Date (ca. 826/1423?) and place (Yazd?) are MK's conjecture"
+    }
+  ],
+  "domain": "political"
+}

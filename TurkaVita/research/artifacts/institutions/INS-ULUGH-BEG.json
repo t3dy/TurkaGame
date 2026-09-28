@@ -1,0 +1,16 @@
+{
+ "id": "INS-ULUGH-BEG",
+ "type": "institution",
+ "status": "draft",
+ "name": "Ulugh Beg and the Samarkand observatory",
+ "ruler": "Ulugh Beg",
+ "seat": "Samarkand",
+ "tenure": "1420s–1430s",
+ "role": "recipient",
+ "summary": "Recipient, per the timeline, of a copy of the Sharḥ al-Basmala; the manuscript carries a marginal dedication to him. Qāżīzāda Rūmī, Ibn Turka's associate, is the second director of his observatory.",
+ "supported_by": [
+  "EV-0035",
+  "EV-0074",
+  "EV-0615"
+ ]
+}

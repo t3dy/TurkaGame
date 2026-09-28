@@ -1,0 +1,27 @@
+{
+  "id": "CL-0458",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "One ijāza by Ibn Turka survives: a certificate for his K. al-Maṣābīḥ (Arabic), given to an unnamed prominent contemporary, in MS Majlis 10196 f. 126a.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0886"
+  ],
+  "mediation": [
+    {
+      "layer": "manuscript_colophon",
+      "who": "Copyist of MS Majlis 10196",
+      "where": "MS Majlis 10196 f. 126a",
+      "shaping_risk": "medium",
+      "note": "The recipient is not named on the page read."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.170",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "textual"
+}

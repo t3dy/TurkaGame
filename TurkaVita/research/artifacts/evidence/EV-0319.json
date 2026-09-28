@@ -1,0 +1,15 @@
+{
+ "id": "EV-0319",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 32,
+  "printed_page": "15",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki notes Lewisohn's ‘well-taken’ insistence on taking the apologies at face value, but says they must still be treated with caution.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Lewisohn, ‘Sufism and Theology in the Confessions of Ṣā’in al-Dīn Turka Iṣfahānī’, pp.66, 77 (per MK fn.44)",
+ "read_by": "R2a opened pdf p.32"
+}

@@ -1,0 +1,14 @@
+{
+ "id": "EV-0054",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 54,
+  "printed_page": "37",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Diagram A.2 (Ibn Turka's intellectual network, updating Binbaş) sets Ṣāʾin al-Dīn Turka (d. 1432) at the centre with these nodes: Ṣadr al-Dīn Turka; Kātibī (d. 1436); Fażl Allāh Astarābādī; Sayyid Ḥusayn Akhlāṭī (d. 1397); al-Malik al-Ẓāhir Barqūq (r. 1382-99); Shaykh Bedreddīn (d. 1416); ʿAbd al-Raḥmān Bisṭāmī (d. 1454); Iskandar Mīrzā (r. 1409-14); Bāysunghur b. Shāhrukh (d. 1433); Qāsim-i Anvār (d. 1433); Qāżīzāda Rūmī (d. 1432); Sirāj al-Dīn al-Bulqīnī (d. 1403); Sharaf al-Dīn Yazdī (d. 1454); Niʿmat Allāh Valī (d. 1431). Arrow direction is influence and line thickness closeness; the arrows and thicknesses are not recoverable from the extracted text.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.54"
+}

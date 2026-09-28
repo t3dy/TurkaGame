@@ -1,0 +1,23 @@
+{
+ "id": "CL-0330",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation states the Tamhīd's completion in Shiraz in 830/1427 in the timeline and with a question mark in the thematic list, while the work entry asterisks the date as possibly transcription; the entry supports only a terminus ad quem and the Shiraz place of the copy.",
+ "epistemic_type": "contested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0676",
+  "EV-0677",
+  "EV-0670"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.52, 139, 174",
+   "shaping_risk": "low",
+   "note": "internal discrepancy in how firmly the date and place are stated"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0438",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 104,
+  "printed_page": "87",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the R. al-Bāʾiyya 'was completed before 14 Ramaḍān 828/30 July 1425', the date of the Majlis 10196 copy; no place or asterisk is given.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, R. al-Bāʾiyya",
+ "read_by": "R3 opened pdf p.104"
+}

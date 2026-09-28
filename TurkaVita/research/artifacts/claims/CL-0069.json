@@ -1,0 +1,28 @@
+{
+ "id": "CL-0069",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Other members of his Yazd-phase circle include Qivām al-Dīn Muḥammad (d. 830/1427), Sharaf al-Dīn's brother, who appears to have taken the takhalluṣ Ṣāʾinī out of veneration for him, and Mawlānā Rukn al-Dīn Ṣāʿid Kirmānī, for whom he wrote a brief commentary on a hadith.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0149",
+  "EV-0150"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Richard, 'Un témoignage inexploité', and a note in MS Majlis 10196 f. 122a",
+   "where": "pdf p.72, note 87",
+   "shaping_risk": "medium",
+   "note": "MK: 'appears to'; Kirmānī's membership is only 'suggested'"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.72",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

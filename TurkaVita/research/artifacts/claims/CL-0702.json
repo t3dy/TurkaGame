@@ -1,0 +1,30 @@
+{
+ "id": "CL-0702",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "There is a tension of emphasis between the Prologue's picture of Ibn Turka refusing to bend the knee at his inquisitions and the dissertation's picture of two apologies addressed to Shāhrukh and Bāysunghur: the first defends Sufism as within the Sunna, attacks his accusers and presents him as a standard Ashʿari in the companion creed; the second pleads at length for Bāysunghur's mediation. Neither page says the two accounts are the same event seen from different sides; this is a difference of characterisation the game should not resolve.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1453",
+  "EV-1425",
+  "EV-1426",
+  "EV-1422"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I/II, as reported by Melvin-Koushki",
+   "where": "dissertation pdf 70-77",
+   "shaping_risk": "high",
+   "note": "written to the rulers judging him; the dissertation calls the apologies the primary source for his life (pdf 75)"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Prologue to Pythagorean Renaissance",
+   "where": "pdf 8",
+   "shaping_risk": "high"
+  }
+ ],
+ "domain": "biographical"
+}

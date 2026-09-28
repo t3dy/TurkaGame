@@ -1,0 +1,29 @@
+{
+ "id": "CL-0007",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Timurid-era sources present his grandfather, the philosopher Ṣadr al-Dīn Muḥammad b. Ḥabīb Allāh, as close to the Ilkhanid vizier Rashīd al-Dīn and an executor of his estate; the letters that document this are probably inauthentic and Timurid, and Ḥaydar Āmulī counted Ṣadr al-Dīn among his main sources.",
+ "epistemic_type": "contested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0064",
+  "EV-0065",
+  "EV-0068"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Timurid-era sources and the Rashīd al-Dīn letters",
+   "where": "pdf p.56 and note 6",
+   "shaping_risk": "high",
+   "note": "MK asks why a 9th/15th-century Iran wanted this link posited"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.56-57",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

@@ -1,0 +1,28 @@
+{
+ "id": "CL-0081",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "For about five years, until his death in Herat, he wandered northern and northwestern Iran seeking a livelihood, teaching hadith and tafsir in local mosques and writing treatises for governors and amirs.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0159",
+  "EV-0041"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "Nafsat al-Maṣdūr II, 206-7",
+   "shaping_risk": "high",
+   "note": "written to seek intercession from the ruler's son while his case was still unresolved"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.73 and p.53",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

@@ -1,0 +1,22 @@
+{
+ "id": "REC-0004",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why do the apologies sound so Sunni?",
+ "proposition": "Āqā Buzurg Ṭihrānī reads the apologies as taqiyya: an obvious Shiʿi concealing his faith.",
+ "kind": "psychological",
+ "scholar": "Āqā Buzurg Ṭihrānī, al-Dharīʿa (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "MK cites the conclusion in a footnote without arguing for or against it; it sits beside Jūdī-Niʿmatī's weaker ‘crypto-Shiʿi in personal outlook’.",
+  "The reading assumes a Shiʿi identity, which MK's ‘Shiʿi-Sunni’ does not."
+ ],
+ "observed_facts": [
+  "EV-0328",
+  "EV-0329"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0006",
+  "REC-0001"
+ ]
+}

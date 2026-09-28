@@ -1,0 +1,25 @@
+{
+ "id": "CL-0077",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In 830/1427 the Hurufi Aḥmad-i Lur tried to kill Shāhrukh as he left the congregational mosque in Herat and was killed on the spot.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0157",
+  "EV-0039"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "the attempt on Shāhrukh"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.73 and p.53",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

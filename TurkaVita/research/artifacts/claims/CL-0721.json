@@ -1,0 +1,35 @@
+{
+ "id": "CL-0721",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "New Brethren names Ulugh Beg as one of Ibn Turka's three Timurid patrons and Timurid-Mughal says Ibn Turka cultivated his patronage by dedicating a lettrist work to him. The dissertation pages read say only that a copy of the Sharḥ al-Basmala was sent to Ulugh Beg (timeline) and that a marginal dedication to him stands in MS Majlis 10196 f. 332b; it describes Qāżīzāda's letter of thanks but no patron relationship with Ulugh Beg.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1470",
+  "EV-1495",
+  "EV-1433",
+  "EV-1439"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "MS Majlis 10196 f. 332b marginal dedication",
+   "where": "dissertation pdf 128",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 128, 458",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "social"
+}

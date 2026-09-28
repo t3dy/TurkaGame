@@ -1,0 +1,39 @@
+{
+ "id": "CL-0717",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "On who the R. Ḥurūf was for, the dissertation is hedged and the later papers are not. The dissertation says it was written at the request of a dignitary, perhaps Iskandar Mīrzā, completed 10 Ramaḍān 817/23 November 1414 in Shiraz shortly after Iskandar's rebellion was quashed, and that it is 'possible' Iskandar personally commissioned it. Grammatology says it was written in Shiraz in 817/1414 for Iskandar; New Brethren says written for Iskandar in 1414 and referenced by him in his Sultanic Compendium preface; the Sensorium says it defined Iskandar's programme. The dissertation's own footnote places completion after Iskandar's fall.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1412",
+  "EV-1411",
+  "EV-1413",
+  "EV-1486",
+  "EV-1466",
+  "EV-1483"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "R. Ḥurūf colophon date, MS Majlis 10196 f. 157b (copied 828/1425)",
+   "where": "dissertation pdf 105-107",
+   "shaping_risk": "medium",
+   "note": "the 817/1414 date is the work's own completion note; the earliest copy is 828/1425"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 106, 176",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "medium",
+   "note": "hedge dropped between 2012 and 2016/2025"
+  }
+ ],
+ "domain": "textual"
+}

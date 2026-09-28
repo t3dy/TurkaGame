@@ -1,0 +1,22 @@
+{
+ "id": "CL-0810",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki characterizes the de facto scholarly consensus as presenting Ibn Turka as a mystical philosopher, which in his view obscures an explicitly occultist project.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1622",
+  "EV-1608"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.25",
+   "shaping_risk": "medium",
+   "note": "MK's own summary of the field; a partisan characterization of the rival position."
+  }
+ ],
+ "domain": "doctrinal"
+}

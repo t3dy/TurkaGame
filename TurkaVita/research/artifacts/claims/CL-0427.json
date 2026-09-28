@@ -1,0 +1,27 @@
+{
+  "id": "CL-0427",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Bāysunghur's vizier Faṣīḥ Aḥmad Khwāfī received a brief letter of well-wishing from Ibn Turka (letter 44).",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0864"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Vazīr Faṣīḥ Khwāfī",
+      "where": "Munshaʾāt-i Turka letter 44",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.162",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "political"
+}

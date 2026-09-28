@@ -1,0 +1,32 @@
+{
+ "id": "CL-0002",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka was born in 770/1369; the year is derived from his own statement, in the Nafsat al-Maṣdūr I completed on 8 Rajab 829/16 May 1426, that he was 59 lunar years old, since no source gives the date directly.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0057",
+  "EV-0002"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Turka's birth"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I (829/1426), addressed to Shāhrukh",
+   "where": "Nafsat al-Maṣdūr I, 170",
+   "shaping_risk": "high",
+   "note": "his age as he stated it to Shāhrukh"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.55, note 2",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

@@ -1,0 +1,125 @@
+{
+ "id": "SCN-0306",
+ "type": "scene",
+ "status": "draft",
+ "act": "trials",
+ "title": "1426: a case built from your youth",
+ "dramatic_question": "The men of Yazd failed once at Herat. According to a later chronicler, they then claimed to find, in works of your youth, a verse praising ʿAlī and condemning ʿUmar and ʿUthmān, and Shāhrukh has summoned you. What do you say about it?",
+ "situation": {
+  "when": "829/1426",
+  "where": "Yazd, then Herat",
+  "based_on": [
+   "CL-0070",
+   "CL-0071",
+   "CL-0073"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Your unswerving, impartial application of the Sharīʿa earned you enemies among Yazd's entrenched elite, who sent a delegation to Shāhrukh seeking your dismissal (your own account, in the first apology).",
+   "claim": "CL-0070"
+  },
+  {
+   "text": "When the delegation failed, your enemies compiled a case from statements in works of your youth, claiming to find for example a verse praising ʿAlī and condemning ʿUmar and ʿUthmān. The witness is a later chronicler, Maʿṣūm ʿAlī Shāh, not the apology.",
+   "claim": "CL-0071"
+  },
+  {
+   "text": "Shāhrukh summoned Ibn Turka to Herat to be tried again (reported in his own apology and in Melvin-Koushki's summary of it).",
+   "claim": "CL-0073"
+  }
+ ],
+ "prose": [
+  "The delegation from Yazd asked Shāhrukh to dismiss you, and it failed. Your enemies then went through your early writings and, in the account of the later chronicler Maʿṣūm ʿAlī Shāh, claimed to find a verse praising ʿAlī and condemning ʿUmar and ʿUthmān. The chronicler is the witness; the first apology does not mention it.",
+  "Shāhrukh summons you to Herat. He is the ruler who abolished the Yasa and enforced the Sharīʿa, and the charge you answered in 1422 was Sufi bias, which Melvin-Koushki reads as probably meant to tie you to the Ḥurūfīs. If the chronicler is right, this one goes straight at your Sunni credentials.",
+  "The pages do not say whether you wrote the verse, or whether you owned or disowned it. What you say about it, or do not say, is what you have to decide."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Answer the charge of Sufi bias at length, and say nothing about the verse.",
+   "strategy": "answer_sufigari_silent_on_verse",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0072",
+    "CL-0147"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "press.exposure": 1,
+    "life.verse": "silent",
+    "score.biography": 2
+   },
+   "costs": [
+    "The verse stays in the file, unanswered."
+   ],
+   "feedback": "This is what the first apology does. Melvin-Koushki notes that it never mentions the verse but answers the charge of ṣūfīgarī, and that its sweeping dismissal of every position but the Sunni one clearly implies your Sunni credentials had also been questioned. The apology is your own word to the ruler judging you, so the silence is a fact about the text; what was said aloud at the hearing is not in the pages the game has read."
+  },
+  {
+   "id": "B",
+   "label": "Own the verse and defend love of ʿAlī openly, as a Shāfiʿī may.",
+   "strategy": "own_the_verse",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0071",
+    "CL-0186"
+   ],
+   "requires": {},
+   "effects": {
+    "press.exposure": 2,
+    "life.verse": "owned",
+    "score.biography": -1
+   },
+   "costs": [
+    "Exposure rises sharply: the accusers' charge is granted."
+   ],
+   "feedback": "No source has him owning the verse, and the apology is silent on it. Melvin-Koushki does note that his writing on ʿAlī and the Imams fits an established Sunni tradition of praise, which is the ground this line would stand on. The game returns you to the record: the apology answers a different charge."
+  },
+  {
+   "id": "C",
+   "label": "Deny that the verse is yours.",
+   "strategy": "disown_the_verse",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0071",
+    "CL-0072"
+   ],
+   "requires": {},
+   "effects": {
+    "press.exposure": 1,
+    "life.verse": "disowned",
+    "score.biography": -1
+   },
+   "feedback": "The sources do not say whether the verse was his, so this line asserts something the record cannot check. It is also not what the apology does: it says nothing about the verse at all. The game returns you to the record."
+  },
+  {
+   "id": "D",
+   "label": "Ask Bāysunghur to have the scholars at his court examine the charge, as you once invited him to have one of your treatises examined.",
+   "strategy": "refer_to_baysunghur_scholars",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0422",
+    "CL-0421"
+   ],
+   "requires_min": {
+    "court.baysunghur": 1
+   },
+   "effects": {
+    "court.baysunghur": -1,
+    "life.verse": "referred",
+    "score.biography": -1
+   },
+   "costs": [
+    "Needs Bāysunghur's favour already earned.",
+    "Spends it."
+   ],
+   "feedback": "In letter 17 you answered an objection to one of your treatises by inviting Bāysunghur to have his court's scholars examine it, so the habit is documented. No source has you doing this over the verse in 1426, and the sources put the hearing before Shāhrukh at Herat. The game returns you to the record."
+  }
+ ],
+ "next": "SCN-0307",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

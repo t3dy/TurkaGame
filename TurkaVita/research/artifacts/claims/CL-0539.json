@@ -1,0 +1,20 @@
+{
+  "id": "CL-0539",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Anjām Ibn Turka says philosophy deals only with universals, while historiography, astronomy and alchemy are enmeshed in particulars; lettrism alone covers both.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1055"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.179",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

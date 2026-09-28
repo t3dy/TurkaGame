@@ -1,0 +1,15 @@
+{
+  "id": "EV-1105",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 355,
+    "printed_page": "338",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "In the opening inquiry of section 1 (the mental form), as paraphrased by Melvin-Koushki, Ibn Turka argues that philosophers hold absolute existence to be the most comprehensive concept, but it is relativized by its opposite, absolute nonexistence; every positive category is twinned with its negative inversion. The sole exception is waḥda, oneness, which cannot be so relativized, so the One alone is all-encompassing; the concept of number is the fountainhead of all the sciences.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.355"
+}

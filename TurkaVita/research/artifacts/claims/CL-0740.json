@@ -1,0 +1,29 @@
+{
+ "id": "CL-0740",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Barqūq's reign is dated 784-801/1382-99 in the dissertation, the Occult Court and New Brethren, but 784-92/1382-90 in Grammatology (2016).",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1404",
+  "EV-1461",
+  "EV-1478",
+  "EV-1485"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 64",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Of Islamic Grammatology",
+   "where": "pdf 17",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

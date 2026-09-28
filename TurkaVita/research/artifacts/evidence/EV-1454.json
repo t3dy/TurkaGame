@@ -1,0 +1,13 @@
+{
+ "id": "EV-1454",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-2DC96A9F73",
+  "witness_page": 11,
+  "short_title": "Melvin-Koushki, Prologue to Pythagorean Renaissance"
+ },
+ "content": "The Prologue says the Mafāḥiṣ prologue coincided exactly with the construction of the Samarkand Observatory (1420) and the inception of its star tables; its title dates the Investigations to 1420.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R8 opened pdf p.11"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "MOD-0005",
+  "type": "biographical_model",
+  "status": "draft",
+  "scholar": "The prosecution at Herat (Zayn al-Dīn Khwāfī and the establishment opponents), as reported by Melvin-Koushki",
+  "title": "The suspected Ḥurufī",
+  "summary": "A subversive esotericist: a 'neo-bāṭinī' and possible Ḥurufī sympathiser, whose lettrism, teacher and friends put him on the wrong side of a state alarmed by mystical-messianic extremism. The accusers' own arguments are not on the pages read; this model is assembled from the label and its consequences, and from Melvin-Koushki's account of how it was used, not from anything the accusers wrote. No source read calls Ibn Turka himself a Ḥurufī.",
+  "phases": [
+    {
+      "label": "Attachment to the court of Iskandar Mīrzā",
+      "when": "c. 1409-1414",
+      "where": "Shiraz and Isfahan"
+    },
+    {
+      "label": "The Yazd years, and the youthful verse",
+      "when": "c. 1422-1426",
+      "where": "Yazd"
+    },
+    {
+      "label": "The second charge of ṣūfīgarī, heard as a code",
+      "when": "829/1426",
+      "where": "Herat"
+    },
+    {
+      "label": "Aḥmad-i Lur's attempt, and the arrest of those with suspected Ḥurufī ties",
+      "when": "830/1427",
+      "where": "Herat"
+    },
+    {
+      "label": "Exile of the 'neo-bāṭinīs'",
+      "when": "1427-1432",
+      "where": "northern Iran"
+    }
+  ],
+  "causal_emphasis": {
+    "suspect_esotericism_and_lettrism": "high",
+    "guilt_by_association_with_qasim_i_anvar": "high",
+    "state_pretext_and_purge": "medium",
+    "personal_enmity_khwafi_jazari": "medium",
+    "his_own_sunni_profession": "low"
+  },
+  "uses": [
+    "REC-0059",
+    "REC-0152",
+    "REC-0154",
+    "REC-0158",
+    "REC-0008"
+  ],
+  "cites": [
+    "EV-1670",
+    "EV-1674",
+    "EV-1420",
+    "EV-0152"
+  ]
+}

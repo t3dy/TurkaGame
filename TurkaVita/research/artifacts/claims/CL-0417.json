@@ -1,0 +1,22 @@
+{
+  "id": "CL-0417",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The single letter on MS Majlis 10196 f. 148a may be three: Dānishpazhūh reads one sent to Niʿmat Allāh Valī as dictated by Iskandar and two from Ibn Turka asking Niʿmat Allāh Valī to intercede with Shāhrukh; MK counts one letter, so what Ibn Turka asked of Niʿmat Allāh Valī is disputed between the two readings.",
+  "epistemic_type": "contested",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0834",
+    "EV-0833"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.158",
+      "shaping_risk": "medium",
+      "note": "A dispute between Dānishpazhūh and MK reported in a footnote"
+    }
+  ],
+  "domain": "textual"
+}

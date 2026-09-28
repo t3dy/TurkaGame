@@ -1,0 +1,29 @@
+{
+ "id": "CL-0235",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka wrote the K. al-Manāhij (logic) for his son Muḥammad, completing it in Natanz on 20 Rajab 833/14 April 1430, the same day and place as its Majlis 10196 copy.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0493",
+  "EV-0492",
+  "EV-0491"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "Majlis 10196 colophon",
+   "where": "ff. 382b-404a",
+   "shaping_risk": "medium",
+   "note": "date and place equal those of the copy"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.100",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

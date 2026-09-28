@@ -1,0 +1,15 @@
+{
+ "id": "EV-1200",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 241,
+  "printed_page": "224",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki describes Shāh Niʿmat Allāh Valī (ca. 730-834/1330-1431) as a prolific Persian writer with seven explicitly lettrist works, who appears to have drawn his lettrism largely from Ibn ʿArabī's Futūḥāt al-Makkiyya; MK calls it “the most complementary of contemporary forms of the science” with respect to Ṣāʾin al-Dīn's project, while stressing that Niʿmat Allāh is a popularizer, not an original thinker.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Niʿmat Allāh Valī, Sufi lettrism (§4.3.2)",
+ "read_by": "R7 opened pdf p.241"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "CL-0217",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation dates the K. al-Mafāḥiṣ to 823/1420 yet notes that the Arabic Sharḥ al-Tāʾiyya, 'presumably' written in Cairo before 806/1404 (?), also refers to it; Melvin-Koushki calls this confusing and does not resolve it here.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0487",
+  "EV-0488"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.98 n.28",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "chronological"
+}

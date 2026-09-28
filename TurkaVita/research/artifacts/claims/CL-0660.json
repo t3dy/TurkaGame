@@ -1,0 +1,29 @@
+{
+ "id": "CL-0660",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In 830/1427 the Hurufi Aḥmad-i Lur attacked Shāhrukh outside the congregational mosque in Herat and was killed; Ibn Turka, who had just left Herat, was recalled, stripped of position and property, imprisoned, tortured and exiled on the basis of claimed Hurufi sympathies.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1282",
+  "EV-1278",
+  "EV-1284"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Aḥmad-i Lur's attack on Shāhrukh, Herat, 830/1427",
+   "where": "MK citing Binbaş, 'The Anatomy of an Attempted Regicide'",
+   "shaping_risk": "medium",
+   "note": "no chronicler is named on the pages read"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.73",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

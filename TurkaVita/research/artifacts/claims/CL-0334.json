@@ -1,0 +1,28 @@
+{
+ "id": "CL-0334",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Tarjuma-yi Aḥādīs-i Mamzūj survives only in MS Majlis 10196 ff. 440b-41b, undated, with a seemingly defaced title and an abruptly truncated text, so the entry can give no date; the folio numbers exceed the 425 ff. the dissertation elsewhere assigns to the manuscript.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0680",
+  "EV-0602"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 ff. 440b-41b",
+   "shaping_risk": "medium",
+   "note": "defaced title, truncated"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.97, 147, no. 44",
+   "shaping_risk": "low"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0665",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 137,
+  "printed_page": "120",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 360b-66a carries Sullam Dār al-Salām, copied in Abarquh on 26 Shaʿbān 832/31 May 1429 (Ḥāʾirī, Majlis, 32/242); the other listed copies are MS 5423 ff. 310b-33a (842/1439) and MS 3035/17 (1084/1673).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.137",
+ "refers_to_primary": "Sullam Dār al-Salām, MS Majlis 10196"
+}

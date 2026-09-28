@@ -1,0 +1,19 @@
+{
+  "id": "REC-0110",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "Did Ibn Turka hold that history ends in a transposition to a higher level of being?",
+  "proposition": "Ibn Turka, after Ibn ʿArabī, saw man as the singularity of creation and the prophetic cycle as leading to the end of history, there to be transposed to a higher level and begin anew.",
+  "kind": "inferential",
+  "scholar": "Melvin-Koushki",
+  "reasoning": [
+    "Melvin-Koushki states this as the view of medieval Muslim thinkers like Ibn ʿArabī and Ibn Turka after him (pdf p.340).",
+    "The page cites no passage of Ibn Turka; its footnotes are to Rūmī, Pico and an ʿAlī saying.",
+    "The teleological claim rests on Melvin-Koushki's complexity argument; the attested support is the R. Anjām's cyclical ascent toward the centrepoint of sanctified power (pdf p.343)."
+  ],
+  "observed_facts": [
+    "CL-0596",
+    "CL-0588"
+  ],
+  "confidence": "low"
+}

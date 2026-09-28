@@ -1,0 +1,23 @@
+{
+ "id": "CL-0823",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki names Sayyid Husayn Akhlati as Ibn Turka's teacher and a master of jafr, and concedes that Ibn Turka was in his lettrist project a systematizer and popularizer, an apostle of Akhlati.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1660",
+  "EV-1661",
+  "EV-1646"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.22, 467, 468",
+   "shaping_risk": "medium",
+   "note": "MK's own interpretation, offered in support of his thesis that Ibn Turka was an occult philosopher."
+  }
+ ],
+ "domain": "biographical"
+}

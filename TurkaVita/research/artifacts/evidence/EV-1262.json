@@ -1,0 +1,15 @@
+{
+ "id": "EV-1262",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 446,
+  "printed_page": "429",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that in his second apology, written after arrest, torture and exile and so 'less guarded and angrier in tone', Ṣāʾin al-Dīn admits having received a khirqa-yi tabarruk (a blessing cloak) from a great Sufi master before going abroad to study, that is during his residence in Samarkand, and finding on return some fifteen years later that this master's disciples had become antinomian; a later meeting turned into a shouting match. MK does not name the master.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Nafsat al-Maṣdūr II, 212-13 (via MK)",
+ "read_by": "R7 opened pdf p.446"
+}

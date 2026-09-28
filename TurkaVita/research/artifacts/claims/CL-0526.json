@@ -1,0 +1,22 @@
+{
+  "id": "CL-0526",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In his R. Madārij Afhām al-Afwāj (a commentary on Q 6:143-44) Ibn Turka gives an alternate seven-tiered hierarchy in which the seventh group is the members of the House of the Prophet, those among the perfected saints who can riddle their cryptic utterances, and the sages of antiquity, disciples of the prophets; it merges theologians and philosophers into one group and splits the Sufis into three.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1011",
+    "EV-1012",
+    "EV-1022"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.335, 175",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

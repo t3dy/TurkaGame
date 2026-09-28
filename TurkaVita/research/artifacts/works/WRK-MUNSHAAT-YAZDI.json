@@ -1,0 +1,42 @@
+{
+  "title": "Munshaʾāt-i Yazdī (Sharaf al-Dīn ʿAlī Yazdī's correspondence, with items on Ibn Turka and his family)",
+  "transliterated_title": "Munshaʾāt-i Yazdī",
+  "language": "Persian",
+  "genre": "letter collection (munshaʾāt); not by Ibn Turka",
+  "theme": "correspondence",
+  "date": {
+    "ce": "unknown",
+    "hijri": "unknown",
+    "basis": "Items about the Turka family range from ca. 817/1415 to after 867/1463; the MS Sinā 316 colophon gives 849/1445 for the compilation, which is after Qivām al-Dīn's death (830/1427), so the attribution and date are confused"
+  },
+  "date_kind": "unknown",
+  "place": "Shiraz and Herat (Yazdī's office as Ibrāhīm Sulṭān's munshī)",
+  "addressee": "various Timurid notables; contains seven items (eight in MS Sinā 316) about Ibn Turka or his family",
+  "occasion": "Yazdī's letters, prefaces and inscriptions, often attributed to his brother Qivām al-Dīn; the Turka items include Jamāl al-Dīn's student petitions and Yazdī's condolence to Ibn Turka's children",
+  "manuscript": "MS Vahid Paşa 621; MS Revan 1019; MS Majlis-i Sinā 316; Cambridge H.5; MS Dānishgāh 2576",
+  "edited": true,
+  "summary": "Not a work of Ibn Turka but the second source for his circle: Yazdī's letters show him at his teacher's majlises and on journeys to Herat, caring for his children after his death, and include a request for Ibn Turka's Persian works from a Tarkhān amir; edited by Afshār and Abūʾī Mahrīzī (Tehran 2009).",
+  "supported_by": [
+    "EV-0873",
+    "EV-0874",
+    "EV-0877",
+    "EV-0876",
+    "EV-0878",
+    "EV-0880",
+    "EV-0881",
+    "EV-0882",
+    "EV-0883",
+    "EV-0884"
+  ],
+  "claims": [
+    "CL-0452",
+    "CL-0453",
+    "CL-0454",
+    "CL-0455",
+    "CL-0456",
+    "CL-0457"
+  ],
+  "id": "WRK-MUNSHAAT-YAZDI",
+  "type": "work",
+  "status": "draft"
+}

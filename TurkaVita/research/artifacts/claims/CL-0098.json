@@ -1,0 +1,30 @@
+{
+ "id": "CL-0098",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Timeline A.1 dates works of the exile years: R. Tuḥfa-yi ʿAlāʾī (831/1428, for ʿAlāʾ al-Dīn b. Bāysunghur), R. Mabdaʾ u Maʿād (832/1428, for Shāh Rażī l-Dīn in Mazandaran) and K. al-Manāhij (833/1430, in Natanz, for his son Muḥammad).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0042",
+  "EV-0044",
+  "EV-0047",
+  "EV-0160"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "colophons and audition notes of MS Majlis 10196 and related manuscripts, as summarised in MK's timeline (fn. 1)",
+   "where": "pdf p.51",
+   "shaping_risk": "medium",
+   "note": "a colophon date may record copying, not composition; the timeline does not say which entries rest on colophons"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.53",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

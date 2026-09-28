@@ -1,0 +1,35 @@
+{
+ "id": "REC-0052",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was Ibn Turka?",
+ "proposition": "Ibn Turka was a mystical philosopher, a preeminent synthesizer of peripatetic, illuminationist and Akbarian thought, best known and best read through the Tamhid al-Qawaʿid, and a precursor of the school of Isfahan.",
+ "kind": "inferential",
+ "scholar": "ʿAllāma Ṭabāṭabāʾī, Sayyid Jalāl al-Dīn Āshtiyānī and Ayatollah Javādī Āmulī (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "The grounds are the Tamhid (a work): a synthesis of Ibn Sina, Suhravardi and Ibn ʿArabi/Qunavi on absolute being, a staple Imami seminary text (pdf p.23); Ṭabāṭabāʾī ranks him with Farabi and Suhravardi in al-Mizan (p.24); Āshtiyānī and Javādī Āmulī treat the Tamhid as definitive (p.23 n.15).",
+  "MK's objections: the picture is 'distorted' and makes him 'a mere precursor to the philosophical school of Isfahan' (p.23 n.15); Ṭabāṭabāʾī's Sadrian outlook makes him dismissive of the occult dimension (p.24 n.16); the Tamhid is bare of lettrist reference (p.23 n.15) and does 'a patent injustice' by pairing him with thinkers he ranks low (p.454 n.13); the picture reflects the Tamhid's twentieth-century curricular success (p.454).",
+  "MK dates the Tamhid's adoption as a teaching text 'probably' to the late Qajar period (p.23 n.15) and its dominance of his reputation to the late 13th/19th century (p.454), which he uses to explain how the reading arose.",
+  "The reading is MK's account of the Iranian majority view; the three scholars are not read directly. MK is a partisan reporter, and calls the mystical-philosopher handle 'cringe-inducing to the man himself' (p.454). Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0803",
+  "CL-0804",
+  "CL-0818",
+  "CL-0819",
+  "CL-0820",
+  "EV-1611",
+  "EV-1614",
+  "EV-1624",
+  "EV-1626"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0060",
+  "REC-0050",
+  "REC-0056"
+ ],
+ "counterevidence": [
+  "EV-1651"
+ ]
+}

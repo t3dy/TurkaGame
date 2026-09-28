@@ -1,0 +1,13 @@
+{
+ "id": "EV-1458",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-2DC96A9F73",
+  "witness_page": 10,
+  "short_title": "Melvin-Koushki, Prologue to Pythagorean Renaissance"
+ },
+ "content": "The Prologue calls Isfahan Ibn Turka's 'hometown and resting place', in a passage on the city's Safavid transformation; no burial place is given on the page.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R8 opened pdf p.10"
+}

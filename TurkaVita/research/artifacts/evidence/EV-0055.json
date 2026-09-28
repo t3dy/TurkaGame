@@ -1,0 +1,14 @@
+{
+ "id": "EV-0055",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 54,
+  "printed_page": "37",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Diagram A.2 gives Fażl Allāh Astarābādī's death as 1393, whereas Timeline A.1 and the text of chapter 1 give 796/1394 (see pdf pp.51, 58).",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.54"
+}

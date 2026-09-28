@@ -1,0 +1,15 @@
+{
+ "id": "EV-0096",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 64,
+  "printed_page": "47",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ibn Turka implies that he was a regular participant in scholarly majlises at the Mamluk court: in his second apology he relates an episode in which Sultan Barqūq (r. 784-801/1382-99) pressed him for his opinion of another scholar (Nafsat al-Maṣdūr II, 211-12).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.64",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II, 211-12"
+}

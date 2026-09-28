@@ -1,0 +1,21 @@
+{
+  "id": "CL-0531",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In his Sharḥ-i Naẓm al-Durr Ibn Turka gives a three-tiered hierarchy of philosophers, Sufis and lettrists, none of whom needs poetry to reach supernal truths.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1006"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.333",
+      "shaping_risk": "medium",
+      "note": "reported in a footnote only"
+    }
+  ],
+  "domain": "doctrinal"
+}

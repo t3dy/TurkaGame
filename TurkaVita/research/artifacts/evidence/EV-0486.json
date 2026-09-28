@@ -1,0 +1,15 @@
+{
+ "id": "EV-0486",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 115,
+  "printed_page": "98",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In the K. al-Mafāḥiṣ Ibn Turka cites Sayyid Ḥusayn Akhlāṭī as his main oral source and Ibn ʿArabī and Saʿd al-Dīn Ḥamuvayī as his main textual sources.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+ "read_by": "R3 opened pdf p.115"
+}

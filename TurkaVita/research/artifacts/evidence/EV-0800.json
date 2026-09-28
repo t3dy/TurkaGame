@@ -1,0 +1,15 @@
+{
+  "id": "EV-0800",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 150,
+    "printed_page": "133",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki (MK) counts the Munshaʾāt-i Ṣāʾin-i Turka as 46 letters, letter fragments or notes sent by Ibn Turka to, or in a few cases received from, Timurid notables and associates. MS Majlis 10196 (the earliest, almost comprehensive collection, made largely in his lifetime) has only 12 of the 46 plus three letters unique to it; MS Malik 4029 has one more letter to him found nowhere else, so MK totals 50 letters or notes. With the Munshaʾāt-i Yazdī items about the Turka family he counts some 58 (pdf p.151).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.150",
+  "refers_to_primary": "Munshaʾāt-i Ṣāʾin-i Turka"
+}

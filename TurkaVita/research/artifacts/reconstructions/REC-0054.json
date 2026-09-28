@@ -1,0 +1,25 @@
+{
+ "id": "REC-0054",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Was Ibn Turka an original philosopher on the model of a European rationalist?",
+ "proposition": "Ibn Turka deserves to be called the 'Spinoza of Iran': a major independent thinker whose works ought to be edited and studied.",
+ "kind": "inferential",
+ "scholar": "Muḥammad Taqī Dānishpazhūh (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "The characterization is, per MK, rhetorical: it underscores the need to publish and study his works (pdf p.24 n.17; p.38), a call Bihbahani repeated.",
+  "MK's objection is irony, not denial of the call: Spinoza, as Bible critic, undercut the basis on which lettrism rests, so the title is unfitting (p.24 n.17).",
+  "Dānishpazhūh 'too recognized in passing' the importance of lettrism to Ibn Turka (p.38), so he is not a pure representative of the Tamhid-centred reading. MK is a partisan reporter. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0806",
+  "CL-0841",
+  "EV-1619",
+  "EV-1621",
+  "EV-1639"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0055"
+ ]
+}

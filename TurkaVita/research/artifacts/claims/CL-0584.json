@@ -1,0 +1,23 @@
+{
+  "id": "CL-0584",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki's Prologue gives the order of the three Globes three ways: Pearl-Peach-Planet (with Written-Spoken-Mental) on p.8, 'or rather' Planet-Pearl-Peach on p.9, and Pearl-Planet-Peach in the footnote on the word ʿabd on p.11; only the p.9 order matches the dissertation's section order (mental, written, spoken).",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1133",
+    "EV-1134",
+    "EV-1138",
+    "EV-1097"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "Prologue pp.8-11; dissertation p.352",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "textual"
+}

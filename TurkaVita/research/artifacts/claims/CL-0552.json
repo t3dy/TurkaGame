@@ -1,0 +1,23 @@
+{
+  "id": "CL-0552",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that Ibn Turka's presentation of lettrism contests the classifications of Ibn Khaldūn (lettrism as a subset of letter magic), Ibn al-Akfānī (metaphysics as most universal) and Āmulī (lettrism as a subset of Sufism); the pages do not show Ibn Turka naming any of them.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1070",
+    "EV-1071",
+    "EV-1072",
+    "EV-1068"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.186, 234",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

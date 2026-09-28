@@ -1,0 +1,29 @@
+{
+ "id": "WRK-MUNAZARAT-I-KHAMS",
+ "type": "work",
+ "status": "draft",
+ "title": "Munāẓarāt-i Khams, or ʿAql u ʿIshq ('The Five Debates', 'Love and Reason')",
+ "transliterated_title": "Munāẓarāt-i Khams (var. Munāẓara-yi ʿAql u ʿIshq; Munāẓarāt-i Khams-i Ṣāʾiniyya; Gulshan)",
+ "language": "Persian",
+ "genre": "allegorical debates (prose narrative)",
+ "theme": "literary",
+ "date": {
+  "ce": "1405-06",
+  "hijri": "Muḥarram 808",
+  "basis": "MK: 'completed in Muḥarram 808/June-July 1405', citing the earliest listed copy, Millī MS 55744, dated 808/1406. The work is not in MS Majlis 10196. The earliest surviving copy is a near-contemporary witness, not the source of the date."
+ },
+ "date_kind": "composition",
+ "occasion": "No occasion stated; the work mentions the Tamhīdāt (Tamhīd al-Qawāʿid) and, at the end, the qaṣīda Naẓm al-Durar.",
+ "manuscript": "29 items listed; earliest: Millī MS 55744 (808/1406); then MS 5423 (Rajab-Ramaḍān 842/1439), MS 1825/27 (851/1447), BL Add. 23983 (858/1454), Cairo copy (863/1459), and many later copies.",
+ "edited": true,
+ "summary": "Five debates among the interior faculties (ʿaql and ʿishq, vahm and ʿaql, vahm and khayāl, hearing and sight, lover and beloved) in ornate narrative style, influenced by Ibn Sīnā and especially Suhravardī.",
+ "supported_by": [
+  "EV-0505",
+  "EV-0506",
+  "EV-0507",
+  "EV-0508"
+ ],
+ "claims": [
+  "CL-0218"
+ ]
+}

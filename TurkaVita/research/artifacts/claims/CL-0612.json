@@ -1,0 +1,27 @@
+{
+ "id": "CL-0612",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Munshaʾāt letter 16, from Ibn Turka in Isfahan to Shāhrukh by way of Yazd, was to be delivered by Niʿmat Allāh Valī in reply to Shāhrukh's summons; it conveys admiration for the newly ascendant Shāhrukh and promises he will soon attend the court.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1208"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Ibn Turka to Shāhrukh, Munshaʾāt-i Turka letter 16",
+   "where": "TMN/M f. 148a; TMN/MS pp. 11-12; TMN/D pp. 170-73",
+   "shaping_risk": "high",
+   "note": "a petition to the ruler who had summoned him: written to be well received, not to state private conviction"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.245",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

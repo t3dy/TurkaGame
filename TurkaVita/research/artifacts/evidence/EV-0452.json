@@ -1,0 +1,15 @@
+{
+ "id": "EV-0452",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 107,
+  "printed_page": "90",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the R. al-Inzāliyya 'was completed before 17 Ramaḍān 828/2 August 1425', the date of the Majlis 10196 copy; no place or asterisk is given.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, R. al-Inzāliyya",
+ "read_by": "R3 opened pdf p.107"
+}

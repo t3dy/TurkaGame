@@ -1,0 +1,15 @@
+{
+  "id": "EV-1017",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 336,
+    "printed_page": "319",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki reasons that since the K. al-Mafāḥiṣ is devoted to explicating each of the three forms of the letters, by the R. al-Inzāliyya's definition it may be considered a manual for attaining an Imam-like status.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.336"
+}

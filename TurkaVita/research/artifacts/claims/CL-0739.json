@@ -1,0 +1,32 @@
+{
+ "id": "CL-0739",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Death years disagree by one in the papers: Bāysunghur d. 837/1433 in the dissertation (pdf 54 and 177) and Sensorium, but 1434 in New Brethren and 837/1434 in Grammatology; Qāsim-i Anvār d. 837/1433 in the dissertation and 1434 in the Occult Court. The Hijri year 837 began in August 1433, so both look like conversion differences, not disagreement about the year.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1449",
+  "EV-1435",
+  "EV-1440",
+  "EV-1481",
+  "EV-1467",
+  "EV-1488",
+  "EV-1462"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 54, 177, 68",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

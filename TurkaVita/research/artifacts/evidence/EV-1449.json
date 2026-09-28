@@ -1,0 +1,14 @@
+{
+ "id": "EV-1449",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 54,
+  "short_title": "Melvin-Koushki, dissertation (2012)",
+  "printed_page": "37"
+ },
+ "content": "The dissertation's network diagram A.2 gives death years Bāysunghur b. Shāhrukh (d. 1433), Qāsim-i Anvār (d. 1433), Qāżīzāda Rūmī (d. 1432), Niʿmat Allāh Valī (d. 1431), and Fażl Allāh Astarābādī (d. 1393).",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R8 opened pdf p.54"
+}

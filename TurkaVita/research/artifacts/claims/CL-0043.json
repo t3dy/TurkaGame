@@ -1,0 +1,28 @@
+{
+ "id": "CL-0043",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Munshaʾāt-i Turka and Munshaʾāt-i Yazdī testify to the closeness of Ibn Turka and Sharaf al-Dīn Yazdī, who wrote to each other, shared Ibn Turka's children's affairs, and in one manuscript blended Yazdī's Ḥulal-i Muṭarraz introduction into Ibn Turka's Tuḥfa-yi ʿAlāʾī.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0122",
+  "EV-0121",
+  "EV-0056"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Munshaʾāt-i Turka; Munshaʾāt-i Yazdī",
+   "where": "pdf p.67, note 64",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.67",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "CL-0727",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Timurid-Mughal chapter, searched by name, does not mention Bāysunghur at all; its Timurid figures are Iskandar, Shāhrukh, Ulugh Beg and, later, Mughals. So it offers nothing on Bāysunghur's relation to lettrism or to Ibn Turka.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1494"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Timurid-Mughal Philosopher-Kings",
+   "where": "whole chapter (searched)",
+   "shaping_risk": "low",
+   "note": "silence based on a name search of the extracted text, not on reading every page"
+  }
+ ],
+ "domain": "institutional"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0329",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 94,
+  "printed_page": "77",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that Akram Jūdī-Niʿmatī weighs all the evidence in Ibn Turka's writings and concludes that he was effectively a crypto-Shiʿi in personal outlook, though not necessarily in the sectarian sense of the term.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Akram Jūdī-Niʿmatī, in Sharḥ-i Naẓm al-Durr (SND), pp.lx-lxiii (per MK fn.156)",
+ "read_by": "R2a opened pdf p.94"
+}

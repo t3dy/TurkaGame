@@ -1,0 +1,28 @@
+{
+ "id": "CL-0177",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Confessional ambiguity between Sunni and Shiʿi was normal in 15th-century Iran; MK cites Hodgson's ʿAlid loyalism and treats the fringe movements as expressions of a wider unificationist ethos.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0337",
+  "EV-0338",
+  "EV-0352"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "sources and scholars MK cites",
+   "where": "pdf p.87 (printed 70)",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.87 (printed 70)",
+   "shaping_risk": "low"
+  }
+ ]
+}

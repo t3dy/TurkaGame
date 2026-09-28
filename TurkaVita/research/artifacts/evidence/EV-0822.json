@@ -1,0 +1,15 @@
+{
+  "id": "EV-0822",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 156,
+    "printed_page": "139",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 7, to Shams al-Dīn Muḥammad, i.e., Shaykh al-Islām Shams al-Dīn Muḥammad b. Saʿd al-Dīn Taftāzānī: a letter of greeting to this prominent member of Herat's religious establishment (TMN/MS p. 4; MK cross-refers to letter 3). MK's footnote adds that it is unlikely to be Shams al-Dīn Muḥammad Jazarī, who became one of his most implacable enemies.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.156",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 7"
+}

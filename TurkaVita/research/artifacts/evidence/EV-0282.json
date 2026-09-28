@@ -1,0 +1,15 @@
+{
+ "id": "EV-0282",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 82,
+  "printed_page": "65",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka defines Sufis as simply the Sunni elite, the name indicating only a certain level of perfection in knowledge and practice, and says Sufis are commonly accused of two faults of expression and behaviour.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.82"
+}

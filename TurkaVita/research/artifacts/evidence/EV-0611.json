@@ -1,0 +1,15 @@
+{
+ "id": "EV-0611",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 96,
+  "printed_page": "79",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the range of Ibn Turka's writings reflects the relative importance he gives to epistemological modes, laid out in particular in R. Shaqq-i Qamar and R. Madārij Afhām al-Afwāj; lettrist works dominate the oeuvre, followed by works synthesising Ibn ʿArabī's mysticism with philosophy.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R4 opened pdf p.96",
+ "refers_to_primary": "Ibn Turka, Shaqq-i Qamar"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "CL-0452",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The Munshaʾāt-i Yazdī contains seven items concerning Ibn Turka or the Turka family (eight in MS Sinā 316); they show Sharaf al-Dīn Yazdī's attendance at his teacher's majlises, his accompanying him to Herat and his care for Ibn Turka's children after his death.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0873",
+    "EV-0874",
+    "EV-0877"
+  ],
+  "mediation": [
+    {
+      "layer": "manuscript_colophon",
+      "who": "Compilers of the Yazdī collection (attribution to Qivām al-Dīn is confused)",
+      "where": "MSS Vahid Paşa 621, Sinā 316, Cambridge H.5",
+      "shaping_risk": "medium",
+      "note": "The colophon of MS Sinā 316 gives 849/1445, after Qivām al-Dīn's death."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.153",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "biographical"
+}

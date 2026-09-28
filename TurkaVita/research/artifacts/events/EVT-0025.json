@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0025",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1414",
+  "end": "1414",
+  "hijri": "817",
+  "basis": "Timeline A.1 marks the addressee '(?)'; pdf p.52.",
+  "date_kind": "conjectured"
+ },
+ "place": "Shiraz",
+ "event_type": "work",
+ "description": "Ibn Turka writes the R. Ḥurūf in Shiraz, perhaps for Iskandar.",
+ "claims": [
+  "CL-0063"
+ ],
+ "fixed_point": false
+}

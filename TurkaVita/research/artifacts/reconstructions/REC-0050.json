@@ -1,0 +1,26 @@
+{
+ "id": "REC-0050",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was Ibn Turka?",
+ "proposition": "Ibn Turka was a Shiʿi esotericist, openly Shiʿi in confessional allegiance.",
+ "kind": "inferential",
+ "scholar": "Henry Corbin (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "MK reports the position as Corbin's 'brief but warm embrace' of Ibn Turka as a standard-issue Shiʿi esotericist (pdf p.23), in the chapter on the R. Shaqq-i Qamar, one of only two sustained Western treatments (p.36).",
+  "The evidence Corbin leans on is a work (the R. Shaqq-i Qamar), not the Tamhid and not the apologies; MK reports no other basis.",
+  "MK's objection: absent the context of his own study Corbin's assertion is 'perfectly reasonable', but it ignores the Sunni-Shiʿi confessional ambiguity of the age (p.86), and MK lists it, with the Tamhid focus, among the errors of the other characterizations (p.25).",
+  "MK notes that Jean Aubin made the same assumption in 1957 and later changed his mind (p.86 n.125).",
+  "MK is a partisan reporter: he argues a rival reading and calls this one an error. He also marks the death date in Corbin's chapter title with [sic] (p.36 n.60). Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0800",
+  "CL-0801",
+  "CL-0842",
+  "EV-1600",
+  "EV-1602",
+  "EV-1603",
+  "EV-1605"
+ ],
+ "confidence": "low"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "CL-0214",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki reports, without endorsing it, Dānishpazhūh's conjecture that the copyist of MS Majlis 10196 is the Khwāja Ẓahīr al-Dīn Muḥammad of letter 46 of the Munshaʾāt-i Turka.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0418"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.80 n.5",
+   "shaping_risk": "low",
+   "note": "a conjecture by Dānishpazhūh, relayed"
+  }
+ ],
+ "domain": "textual"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "EVT-0005",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1393",
+  "end": "1393",
+  "hijri": "795",
+  "basis": "Timeline A.1 marks the date 'c.'; pdf p.51.",
+  "date_kind": "conjectured"
+ },
+ "place": "Samarkand to Mecca and Cairo",
+ "event_type": "travel",
+ "description": "At his brother's insistence Ibn Turka leaves Samarkand on the first of some fifteen years of study abroad, with Sharaf al-Dīn Yazdī said to accompany him.",
+ "claims": [
+  "CL-0022",
+  "CL-0023",
+  "CL-0024",
+  "CL-0025"
+ ],
+ "fixed_point": false
+}

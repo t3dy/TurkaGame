@@ -1,0 +1,13 @@
+{
+ "id": "EV-1463",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-8A882ECF7A",
+  "witness_page": 3,
+  "short_title": "Melvin-Koushki, The Occult Court (2025)"
+ },
+ "content": "The Boon for the Khan (Tuḥfa-yi khānī) of the title is ʿAlī Ṣafī's 1522 manual, commissioned by Durmish Khān Shāmlū, Qizilbash governor of Khurasan; on the pages read (pdf 1-10) the article uses commission and patron language for that book only, and does not describe Ibn Turka's own patronage as commissioned boons or as transactional.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R8 opened pdf p.3"
+}

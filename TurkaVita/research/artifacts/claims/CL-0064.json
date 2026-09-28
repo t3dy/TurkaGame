@@ -1,0 +1,32 @@
+{
+ "id": "CL-0064",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Around 825/1422 Isfahan enemies, jealous of his growing fame, went to Shāhrukh's court at Herat and accused him of deviating from the Sunna through a bias toward Sufism (ṣūfīgarī).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0138",
+  "EV-0031"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "first accusation at Herat"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I (829/1426), addressed to Shāhrukh",
+   "where": "Nafsat al-Maṣdūr I, 171-72",
+   "shaping_risk": "high",
+   "note": "he describes the accusers as connivers; the motives are his own attribution"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.70 and p.52",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

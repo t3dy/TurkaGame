@@ -1,0 +1,29 @@
+{
+ "id": "CL-0009",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "His father Afżal al-Dīn seems to have been in contact with Fażl Allāh Astarābādī, and Hurufi sources have the father and Ibn Turka's elder brother Ṣadr al-Dīn consult Fażl Allāh in Isfahan to have their dreams interpreted; Melvin-Koushki says the contact implies no Hurufi inclination on their part.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0070",
+  "EV-0072",
+  "EV-0071"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Hurufi hagiographical sources (Nāfajī's Khwābnāma and others)",
+   "where": "pdf p.58 and note 16",
+   "shaping_risk": "high",
+   "note": "MK: the point of the story is Fażl Allāh's fame, not the Turkas' loyalty"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.58",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

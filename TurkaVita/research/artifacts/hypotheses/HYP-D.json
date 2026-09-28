@@ -1,0 +1,231 @@
+{
+  "id": "HYP-D",
+  "type": "hypothesis",
+  "status": "draft",
+  "dispute": "Who was Ibn Turka: what did he actually hold, and what does the surviving record allow us to say?",
+  "letter": "D",
+  "name": "Occult philosopher: an intellectual lettrist and imamophile",
+  "proposition": "Ibn Turka was an occult philosopher, an intellectual lettrist whose universal science of the letter, with its kabbalah, numerology, astrology and natural magic, aimed to decipher the twin Books of Quran and cosmos and, in Melvin-Koushki's phrase, to rewrite reality; distinct from the Ḥurufīs by motive, and in confession a Shiʿi-Sunni, an imamophile, not a Shiʿi or a Sunni. This is Melvin-Koushki's thesis and Melvin-Koushki is its partisan.",
+  "commitments": {
+    "conviction": true
+  },
+  "entails": [
+    "The apologies, produced under great duress, show what he told his judges and are 'hardly reflective of his primary concerns'; Melvin-Koushki himself builds the biography of his first chapter chiefly on them.",
+    "The Ashʿarī, anti-Shiʿi self-portrait must be a self-misrepresentation exaggerated to the point of cartoon, though a creed was attested by the scholars at court.",
+    "The Tamhīd, which the modern Iranian tradition takes as his definitive work, must be of secondary though 'certainly not minor' importance, and bare of lettrist reference, though the catalogue entry says it refers the reader to the Mafāḥiṣ.",
+    "The claim is provisional by its author's own account: most lettrist works are unedited, about half the oeuvre is in manuscript, and Akhlāṭī's writings are largely inaccessible, yet 'even a casual survey' is said to point this way.",
+    "The label must survive his own concession that he was largely a systematizer and popularizer, 'an apostle of Akhlāṭī', not an original thinker."
+  ],
+  "proponents": [
+    {
+      "scholar": "Matthew Melvin-Koushki",
+      "cites": [
+        "REC-0060",
+        "REC-0062",
+        "REC-0061",
+        "REC-0065",
+        "REC-0064"
+      ],
+      "note": "The thesis is his. He concedes three things on the record: that Ibn Turka was largely a rearranger, systematizer and popularizer, 'an apostle of Akhlāṭī' (dissertation pdf 467); that the Tamhīd was 'certainly not minor' (pdf 468); and that his own study is 'necessarily provisional' and any neat definition of the contribution 'premature' (pdf 44, 468)."
+    }
+  ],
+  "alternatives": [
+    "HYP-A",
+    "HYP-B",
+    "HYP-C",
+    "HYP-E",
+    "HYP-F"
+  ],
+  "cites": [
+    "REC-0060",
+    "REC-0062",
+    "REC-0061",
+    "REC-0065",
+    "REC-0064",
+    "REC-0101"
+  ],
+  "bearings": [
+    {
+      "evidence": "EV-1651",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The introduction to the Mafāḥiṣ explicitly rejects absolute being, the focus of the Tamhīd, as an inadequate object of inquiry: only the letter encompasses all that is and is not. Melvin-Koushki's reading rests on the author's own ranking of his projects.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1080",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "Ibn Turka states that the Mafāḥiṣ aims to show the roots of all manifestation in the One so that the adept may manipulate the letters, the uncreated matrices of the One's self-manifestation, and control every epistemological and ontological level. Melvin-Koushki reads a universal science whose lettrist part would 'rewrite reality'.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1055",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "In the R. Anjām lettrism is the key to unifying all human knowledge of the cosmos, universals and particulars alike, where philosophy handles only universals. This is the universalist claim behind the label 'occult philosopher'.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1003",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The R. Shaqq-i Qamar's seven levels put the lettrists above the peripatetic and illuminationist philosophers and the verifying mystics, beneath only the men of might and vision. Melvin-Koushki reads the ranking as the author's own account of where the philosophers stand.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1016",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The R. Inzāliyya says it is specifically the lettrists who are the Prophet's companions and true heirs; Melvin-Koushki says this removes all doubt about who stands at the seventh level, against the plain deference reading he sets aside.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1625",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "In the author's own hierarchies Fārābī and Suhravardī fall far short of universal knowledge, so pairing him with them, as the Tamhīd consensus does, is in Melvin-Koushki's words an injustice.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1654",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "Melvin-Koushki notes that the Tamhīd is bare of any reference to the author's central lettrist concerns. A modern reputation built on this one work is a reputation built on what he did not care about most. The catalogue entry for the Tamhīd (EV-0671) says it refers the reader to the Mafāḥiṣ; the two statements are Melvin-Koushki's own and have not been reconciled.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0356",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reports a work that pairs hadith on ʿAlī's exceptionality from non-standard Sunni collections with select aphorisms of the Nahj al-Balāgha. It is his evidence for a Shiʿi-Sunni, imamophile Ibn Turka rather than a Shiʿi or a Sunni one.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0364",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "In the Ibn al-Fāriḍ commentary he acknowledges the roles of Abū Bakr, ʿUmar and ʿUthmān while reserving his highest praise for ʿAlī as repository of all knowledge: both halves of imamophilism in one passage.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0360",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The Mafāḥiṣ's catalogue of the salaf on the uncreated Qurʾan, ending with an exhortation to the less intelligent to follow the folk of the Sunna, is on Melvin-Koushki's reading a concession to lesser readers made inside a book whose real subject is the letter.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0894",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The R. Suʾl al-Mulūk, written at Bāysunghur's request, is on Melvin-Koushki's account the only minor lettrist treatise with pointedly political content, and covers the practical-magical (alchemical, talismanic) as well as the theoretical side of lettrism.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0902",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The treatise closes by reading the name Shāh Rukh as 'shah of 800' and predicting that the dynasty's glory will last through the ninth Islamic century: occult science put in the service of the court.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0126",
+      "kind": "letter",
+      "direction": "supports",
+      "reading": "Qāżīzāda Rūmī, director of Ulugh Beg's observatory, thanks him for a copy of his lettrist Sharḥ al-Basmala; Melvin-Koushki takes the letter as showing continuing occultist sympathies among men of the legitimate sciences.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0868",
+      "kind": "letter",
+      "direction": "supports",
+      "reading": "Akhlāṭī writes to his 'bosom companion', the leading luminary of his brethren, asking for a work on the propositions and conjunctions of the science of letters. Melvin-Koushki suggests the Mafāḥiṣ is the answer: the free letter that names his project.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0839",
+      "kind": "letter",
+      "direction": "supports",
+      "reading": "Letter 20, written to Shāhrukh about the time of the first apology, encloses a treatise on the occult properties of things and various occult sciences that the ruler 'should find interesting'; Melvin-Koushki thinks it most probably the R. Suʾl al-Mulūk.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1683",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Qāżīzāda's letter of thanks eulogizes his spiritual perfection as an occultist, calling him 'the alchemical matrix of everlasting life and eternal collyrium': how a colleague addressed him in 829/1426.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0482",
+      "kind": "colophon",
+      "direction": "supports",
+      "reading": "The earliest Majlis copy of the Mafāḥiṣ, dated 823/1420, carries autograph sections at the beginning and end and marginal explanations throughout. The lettrist summa is the work he annotated in his own hand.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0120",
+      "kind": "colophon",
+      "direction": "supports",
+      "reading": "The audition notes on the two earliest copies of the Mafāḥiṣ say Sharaf al-Dīn Yazdī checked the copy and attended teaching sessions on the work: a circle that studied the lettrist book with him.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0419",
+      "kind": "autograph",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reports autograph sections at the beginning, middle and end of the Mafāḥiṣ copy in MS Majlis 10196, with examples in his appendix.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0299",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "Even in Nafsat I the argument runs that the Prophet bequeathed two kinds of knowledge, the more precious hidden. Melvin-Koushki reads the second subsection as heading toward the inner prophetic knowledge his own project claims; the game adds that this is an apology, so it shows what he told Shāhrukh.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1291",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Melvin-Koushki says his circle was rewarded for its labours with the label naw-mulḥidān, given by Zayn al-Dīn Khwāfī, and that the R. Inzāliyya (before 828/1425) already laments the unpopularity of lettrism in Iran. Melvin-Koushki reads the label as the opponents using his esotericism against him.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0107",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "In his lettrist writings Ibn Turka invariably presents himself as only the systematizer of Akhlāṭī's teachings. Melvin-Koushki accepts the description: the position claims an occult philosopher, and concedes that he is an 'apostle of Akhlāṭī', a rearranger and popularizer, not an original.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0672",
+      "kind": "reception",
+      "direction": "strains",
+      "reading": "Melvin-Koushki reports that the Tamhīd is by far his best known and most influential work in the modern period. He concedes it was 'certainly not minor' for him, so the case for the Mafāḥiṣ has to carry the whole of the argument against it.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0671",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "The catalogue entry says the Tamhīd refers the reader to the Mafāḥiṣ, while Melvin-Koushki's own note calls it 'bare' of lettrist reference. If it points onward to the lettrist summa, the Tamhīd is less separable from the project than D needs it to be.",
+      "attributed_to": "design inference"
+    },
+    {
+      "evidence": "EV-0463",
+      "kind": "creed_tract",
+      "direction": "strains",
+      "reading": "The Iʿtiqādāt presents him as a staunch Sunni-Ashʿarī opposed to Muʿtazilism, philosophy, Shiʿism and messianic Sufism. Melvin-Koushki reads the apologies' self-portrait as 'a self-misrepresentation so exaggerated as to be cartoonish' and as shaped to Shāhrukh's programme; but it stands against the imamophile.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0264",
+      "kind": "apology",
+      "direction": "strains",
+      "reading": "Nafsat I says a creed of adherence to the Sunna and Jamāʿa was laid before the leading scholars at court, who testified to it. Melvin-Koushki reads Nafsat I as a mirror of Shāhrukh's Sunnizing programme, but a creed attested by the court's scholars is a hard piece of evidence for the imamophile to set aside.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+ "id": "REC-0154",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why was the charge against him in 829/1426 one of Sufi bias, when he criticised organised Sufism?",
+ "proposition": "Because ṣūfīgarī functioned in Shahrukhid Iran as a code for messianic political aspirations, hurufism in particular, so the charge was not about Sufi practice.",
+ "kind": "inferential",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK: the term 'seems to have' functioned so; hence the irony is lessened.",
+  "It is consistent with Ibn Turka's own defence, which stresses the orthodoxy of Sufis and attacks messianic ones."
+ ],
+ "observed_facts": [
+  "CL-0644",
+  "CL-0645",
+  "CL-0646"
+ ],
+ "confidence": "medium"
+}

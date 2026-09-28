@@ -1,0 +1,23 @@
+{
+  "id": "CL-0579",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka's own schemes present the three forms of the letter in different orders: the R. Ḥurūf lists written, spoken, then mental; the Mafāḥiṣ sections run mental, written, spoken; the Persian treatise On Letters, as quoted, runs sight (written), heart or mind (mental), hearing (spoken).",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1051",
+    "EV-1097",
+    "EV-1138"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.178, 352; Prologue p.11",
+      "shaping_risk": "medium",
+      "note": "the order is Melvin-Koushki's summary in each case"
+    }
+  ],
+  "domain": "textual"
+}

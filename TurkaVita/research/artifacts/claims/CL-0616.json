@@ -1,0 +1,29 @@
+{
+ "id": "CL-0616",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Jāmī deliberately left Ibn Turka and Sharaf al-Dīn Yazdī (and Niʿmat Allāh) out of the Nafaḥāt al-Uns, though ʿAlī Shīr Navāʾī added Yazdī, not Ibn Turka, to his Chaghatay version.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1210",
+  "EV-1247",
+  "EV-1246"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "ʿAbd al-Raḥmān Jāmī, Nafaḥāt al-Uns (omission)",
+   "where": "Ökten 175-77; Binbaş 86, 90",
+   "shaping_risk": "high",
+   "note": "MK: an act of Naqshbandi consolidation"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.441",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

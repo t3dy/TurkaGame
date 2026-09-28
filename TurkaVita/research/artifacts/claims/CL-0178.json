@@ -1,0 +1,26 @@
+{
+ "id": "CL-0178",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Imams served as repositories of hidden knowledge for Sunni and Shiʿi alike, so occult practitioners could be confessionally indistinguishable (Masad, as cited by MK).",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0339"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "sources and scholars MK cites",
+   "where": "pdf p.87 (printed 70)",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.87 (printed 70)",
+   "shaping_risk": "low"
+  }
+ ]
+}

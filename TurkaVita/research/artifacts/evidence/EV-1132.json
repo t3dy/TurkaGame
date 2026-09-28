@@ -1,0 +1,14 @@
+{
+  "id": "EV-1132",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-2DC96A9F73",
+    "witness_page": 8,
+    "short_title": "Melvin-Koushki, Prologue to Pythagorean Renaissance"
+  },
+  "content": "In the Prologue Melvin-Koushki says Ibn Turka's own prologue to the Mafāḥiṣ refuses the standard self-deprecation of author-as-wretch, dismisses all sources save two, thanks to his mentor Akhlāṭī, declines to give a book plan, and has no closing prayer.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.8"
+}

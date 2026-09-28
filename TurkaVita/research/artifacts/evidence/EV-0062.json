@@ -1,0 +1,15 @@
+{
+ "id": "EV-0062",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 55,
+  "printed_page": "38",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The name Turka ('little Turk') refers to the family's Turkic origins: an ancestor is said to have emigrated from Khujand in the Farghana valley to Isfahan in the Khwarazmshahid/Seljuq period (Nafsat al-Maṣdūr II, 203; Sharḥ-i Naẓm al-Durr, ed. Jūdī-Niʿmatī, xxxvi).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.55",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II, 203"
+}

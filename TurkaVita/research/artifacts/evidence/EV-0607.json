@@ -1,0 +1,15 @@
+{
+ "id": "EV-0607",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 126,
+  "printed_page": "109",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 170b-72a carries Shaqq-i Qamar u Bayān-i Sāʿat, copied on 18 Rabīʿ I 829, which this listing (p.126) renders as 27 February 1426; the same day is rendered 28 January 1426 in the entry's description on p.128 (Ḥāʾirī, Majlis, 32/239).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.126",
+ "refers_to_primary": "Shaqq-i Qamar, MS Majlis 10196"
+}

@@ -1,0 +1,30 @@
+{
+ "id": "CL-0321",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki dates the completion of the Sharḥ-i Naẓm al-Durr to Dhū l-Ḥijja 806 (June 1404), presumably in Cairo, but the entry cites no colophon for the date and marks the place as presumption; the Majlis copy (828/1425) is only a later copy.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0649",
+  "EV-0650",
+  "EV-0648"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 copy dated 8 Ramaḍān 828",
+   "shaping_risk": "medium",
+   "note": "copy date, not composition"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.51, 134-135, no. 38",
+   "shaping_risk": "medium",
+   "note": "the basis of the 806 date is not given in the entry"
+  }
+ ]
+}

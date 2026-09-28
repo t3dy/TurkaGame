@@ -1,0 +1,15 @@
+{
+ "id": "EV-0468",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 110,
+  "printed_page": "93",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the R. Iʿtiqādiyya was 'presumably' written around the same time as the Nafsat al-Maṣdūr II (ca. 832-35/1429-32), because it mentions the R. Iʿtiqādāt (there called R. ʿAqīda).",
+ "evidence_kind": "creed_tract",
+ "refers_to_primary": "Ibn Turka, R. Iʿtiqādiyya",
+ "read_by": "R3 opened pdf p.110"
+}

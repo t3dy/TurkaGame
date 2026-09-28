@@ -1,0 +1,28 @@
+{
+ "id": "CL-0080",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka, having just left Herat, was summoned back, imprisoned, stripped of position and property, tortured and then exiled (830/1427).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0158",
+  "EV-0040"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "presumably Nafsat al-Maṣdūr II",
+   "shaping_risk": "high",
+   "note": "MK names the second apology as the main source for the exile period but cites nothing for this sentence"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.73 and p.53",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

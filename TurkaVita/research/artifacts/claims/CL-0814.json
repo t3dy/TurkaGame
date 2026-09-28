@@ -1,0 +1,28 @@
+{
+ "id": "CL-0814",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Khwandamir's brief notice, as reported by Melvin-Koushki, names three works of Ibn Turka (the Fusus commentary, the Mafahis and the Sharh-i Nazm al-Durr); the Tamhid is not among the three named.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1657"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Khwandamir (d. 942/1535), Habib al-Siyar",
+   "where": "dissertation pdf p.26",
+   "shaping_risk": "medium",
+   "note": "A very brief notice; absence of the Tamhid from it is not a claim Khwandamir makes."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.26",
+   "shaping_risk": "medium",
+   "note": "Reported through MK, who argues a rival reading."
+  }
+ ],
+ "domain": "textual"
+}

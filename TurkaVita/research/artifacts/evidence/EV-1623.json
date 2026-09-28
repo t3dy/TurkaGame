@@ -1,0 +1,15 @@
+{
+ "id": "EV-1623",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 454,
+  "printed_page": "437",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK says that by the late 13th/19th century Ibn Turka seems to have become identified almost exclusively with the Tamhid, used as a staple teaching text in Imami seminaries, and has since been \"(mis)appreciated\" as a reasonably important mystical philosopher linking Ibn ʿArabi with Mullā Ṣadrā.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.454",
+ "refers_to_primary": "Ibn Turka, Tamhid al-Qawaʿid"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-1102",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 353,
+    "printed_page": "336",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The Mafāḥiṣ includes a master diagram, the Ṭahawī Circle, which functions as a cosmological key encompassing the cosmos from the perspective of both absolute existence (wujūd) and engendered existence (kawn); Ibn Turka refers to it separately in other works.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.353"
+}

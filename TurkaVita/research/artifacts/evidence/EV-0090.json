@@ -1,0 +1,15 @@
+{
+ "id": "EV-0090",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 63,
+  "printed_page": "46",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In his late twenties and at his brother's insistence Ibn Turka set out on some 15 years of travel in search of learning, roughly 795-810/1393-1408, because circumstances in Iran were too strait to carry on the family's legacy in philosophy and mystical theory (Nafsat al-Maṣdūr I, 170; Nafsat al-Maṣdūr II, 203).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.63",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I, 170; II, 203"
+}

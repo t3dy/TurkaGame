@@ -1,0 +1,21 @@
+{
+ "id": "CL-0111",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK counts four texts as ‘the apologies’: Nafsat al-Maṣdūr I and II and the creedal tracts R. Iʿtiqādāt and R. Iʿtiqādiyya. On the pages read here, the R. Iʿtiqādāt is named once and nothing is said about its content.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0240",
+  "EV-0212"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.32 (printed 15)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

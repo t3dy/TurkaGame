@@ -1,0 +1,15 @@
+{
+ "id": "EV-1220",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 288,
+  "printed_page": "271",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Bākharzī, Jāmī's hagiographer, reports Jāmī's dim view of Sharaf al-Dīn and Ṣāʾin al-Dīn: Yazdī could speak of the theory and vocabulary of Sufism but not convincingly, yet was held by contemporaries the most all-encompassing of scholars, while he himself said all his knowledge was an instance of the benevolence of Khwāja Ṣāʾin al-Dīn Turka and praised him constantly. MK notes the book was checked and approved by Jāmī himself (Binbaş).",
+ "evidence_kind": "reception",
+ "refers_to_primary": "ʿAbd al-Vāsiʿ Niẓāmī Bākharzī, Maqāmāt-i Jāmī, 107 (hostile reporter of Jāmī's opinion)",
+ "read_by": "R7 opened pdf p.288"
+}

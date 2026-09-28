@@ -1,0 +1,25 @@
+{
+ "id": "CL-0712",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "None of the later papers read mentions the removal of the Turka family to Temür's court at Samarkand in 1387 or the c. 1387-93 Samarkand years. They begin his career abroad in Cairo (Sensorium, Grammatology) or with the youthful travels described in his own Mafāḥiṣ prologue (Prologue); the friendship with Qāżīzāda Rūmī from childhood (Timurid-Mughal, New Brethren) is not located. Samarkand appears in those papers only as the observatory. This is a statement about the pages read and searches of the rest.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1482",
+  "EV-1485",
+  "EV-1457",
+  "EV-1495",
+  "EV-1475"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers (2016-2025)",
+   "where": "see evidence",
+   "shaping_risk": "medium",
+   "note": "silence, not a negative finding"
+  }
+ ],
+ "domain": "biographical"
+}

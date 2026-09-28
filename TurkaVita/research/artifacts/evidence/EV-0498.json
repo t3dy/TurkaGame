@@ -1,0 +1,15 @@
+{
+ "id": "EV-0498",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 118,
+  "printed_page": "101",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 f. 189a carries the Muhr al-Nubuwwa, copied on 4 Jumādā II 831/21 March 1428; a footnote says this date is given by Āqā Buzurg (al-Dharīʿa, 22/296, no. 9048), not read by Melvin-Koushki from the entry's usual Ḥāʾirī citation.",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, Muhr al-Nubuwwa",
+ "read_by": "R3 opened pdf p.118"
+}

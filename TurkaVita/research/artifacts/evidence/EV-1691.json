@@ -1,0 +1,15 @@
+{
+ "id": "EV-1691",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 92,
+  "printed_page": "75",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that in the final section of the Mafahis Ibn Turka cites Quranic verses and hadiths traced to the Prophet, the Companions and the Successors (a class to which he assigns ʿAlī and Ḥusayn), then salaf including Ibn Ḥanbal and Shāfiʿī on the uncreated Quran, and exhorts less intelligent and more fractious readers to follow the way of the Sunni forebears.",
+ "evidence_kind": "work",
+ "read_by": "R2b opened pdf p.92",
+ "refers_to_primary": "Ibn Turka, K. al-Mafaḥiṣ, MS Majlis 10196 ff. 89b-90a"
+}

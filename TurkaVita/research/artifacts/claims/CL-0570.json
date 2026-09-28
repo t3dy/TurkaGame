@@ -1,0 +1,21 @@
+{
+  "id": "CL-0570",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that Ibn Turka's exaltation of the written form is a quintessential expression of his millenarian consciousness, his conviction of witnessing a new phase of human evolution.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1087",
+    "EV-1086"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.350",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

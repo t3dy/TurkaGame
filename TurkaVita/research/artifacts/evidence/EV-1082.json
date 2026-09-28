@@ -1,0 +1,15 @@
+{
+  "id": "EV-1082",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 348,
+    "printed_page": "331",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki says Ibn Turka elsewhere contrasts the object of lettrism with the philosophical concept of absolute existence (al-wujūd al-muṭlaq), the focus of his Tamhīd al-Qawāʿid: because it is relevant only to things that exist, it cannot be the object of a universal science. Only the letter encompasses all that is and is not, all that can and cannot be; it alone is the coincidentia oppositorum.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ; Tamhīd al-Qawāʿid",
+  "read_by": "R6 opened pdf p.348"
+}

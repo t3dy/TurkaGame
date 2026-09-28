@@ -1,0 +1,15 @@
+{
+ "id": "EV-0156",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 73,
+  "printed_page": "56",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Nafsat al-Maṣdūr I and the R. Iʿtiqādāt are both dated 829/1426 and addressed to Shāhrukh; Melvin-Koushki calls them masterly defences.",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.73",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I; R. Iʿtiqādāt"
+}

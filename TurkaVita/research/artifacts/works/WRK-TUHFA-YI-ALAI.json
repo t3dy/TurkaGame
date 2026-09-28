@@ -1,0 +1,36 @@
+{
+ "id": "WRK-TUHFA-YI-ALAI",
+ "type": "work",
+ "status": "draft",
+ "title": "Tuḥfa-yi ʿAlāʾī",
+ "transliterated_title": "Tuḥfa-yi ʿAlāʾī (A Treatise Presented to ʿAlāʾ al-Dīn b. Bāysunghur)",
+ "language": "Persian",
+ "genre": "brief hadith treatise on iḥsān-īmān-islām and the five fundamentals",
+ "theme": "hadith",
+ "date": {
+  "ce": "17 February 1428",
+  "hijri": "1 Jumādā I 831",
+  "basis": "Melvin-Koushki states completion on this date without an asterisk; the MS Majlis 10196 copy is undated, so the source of the date is not given in the entry."
+ },
+ "date_kind": "composition",
+ "place": "not stated (the introduction complains of his treatment in Herat; the timeline places him in exile in this period)",
+ "addressee": "ʿAlāʾ al-Dīn b. Bāysunghur (a Hanbali)",
+ "occasion": "a treatise presented to ʿAlāʾ al-Dīn; the introduction complains of harsh treatment in Herat",
+ "manuscript": "MS Majlis 10196/47 ff. 371b-73b, 375b-82a (the only copy listed; undated).",
+ "majlis_folios": "ff. 371b-73b and 375b-82a",
+ "edited": true,
+ "summary": "A brief treatment of the hadith on iḥsān, īmān and islām, with the wisdom of the five fundamentals of practice and attention to Hanbali and Shafiʿi practice; states that his family has always been Shafiʿi.",
+ "edition_note": "Chahārdah Risāla-yi Fārsī (Tehran 1972) pp. 121-65; Persian.",
+ "supported_by": [
+  "EV-0682",
+  "EV-0683",
+  "EV-0684",
+  "EV-0685",
+  "EV-0686",
+  "EV-0603"
+ ],
+ "claims": [
+  "CL-0335",
+  "CL-0336"
+ ]
+}

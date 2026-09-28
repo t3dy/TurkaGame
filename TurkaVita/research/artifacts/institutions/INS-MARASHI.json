@@ -1,0 +1,16 @@
+{
+ "id": "INS-MARASHI",
+ "type": "institution",
+ "status": "draft",
+ "name": "Sayyid Murtażā Marʿashī, ruler of Sari",
+ "ruler": "Sayyid Murtażā Marʿashī",
+ "seat": "Sari, Mazandaran",
+ "tenure": "1417–1433",
+ "role": "patron",
+ "summary": "One of the exile courts at which he sought patronage; letter 28 is a pained account of his tribulations addressed to this ruler.",
+ "supported_by": [
+  "EV-0041",
+  "EV-0161",
+  "EV-0848"
+ ]
+}

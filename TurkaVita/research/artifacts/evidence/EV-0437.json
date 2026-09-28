@@ -1,0 +1,15 @@
+{
+ "id": "EV-0437",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 104,
+  "printed_page": "87",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 (item /13) ff. 122b-24a carries the R. al-Bāʾiyya, copied on 14 Ramaḍān 828/30 July 1425 (citing Ḥāʾirī, Majlis, 32/237); the only other listed copy is Sipahsālār MS 2930/1 (4 Ṣafar 845/1441).",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, R. al-Bāʾiyya",
+ "read_by": "R3 opened pdf p.104"
+}

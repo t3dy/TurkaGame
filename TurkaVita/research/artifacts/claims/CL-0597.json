@@ -1,0 +1,21 @@
+{
+  "id": "CL-0597",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka's disciple Sharaf al-Dīn Yazdī held a parallel evolutionary scheme: Quran, then the twelve Arabic sciences, then the age of the Seal of Sainthood whose potential for universal knowledge is unactualized until the present.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1126"
+  ],
+  "mediation": [
+    {
+      "layer": "later_chronicler",
+      "who": "Sharaf al-Dīn Yazdī, Ḥulal-i Muṭarraz, as summarized by Melvin-Koushki",
+      "where": "pdf p.345",
+      "shaping_risk": "medium",
+      "note": "a later reader's summary, not Ibn Turka's own words"
+    }
+  ],
+  "domain": "doctrinal"
+}

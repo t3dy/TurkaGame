@@ -1,0 +1,25 @@
+{
+ "id": "CL-0833",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki holds, against both Corbin and Lewisohn, that Ibn Turka's confessional position is best described as Shiʿi-Sunnism or imamophilism, a normal feature of the age, rather than as Shiʿi or Sunni.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1686",
+  "EV-1687",
+  "EV-1688",
+  "EV-1689",
+  "EV-1603"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.25, 86-90",
+   "shaping_risk": "medium",
+   "note": "MK's own term and reading; he himself calls the confessional position ambiguous."
+  }
+ ],
+ "domain": "doctrinal"
+}

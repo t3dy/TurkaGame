@@ -1,0 +1,15 @@
+{
+ "id": "EV-0475",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 112,
+  "printed_page": "95",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that the Mabdaʾ u Maʿād 'was completed early Ṣafar 832/mid-November 1428 at Manzil-i Chālū (Mazandaran)', the same time and place as the Majlis 10196 colophon.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Mabdaʾ u Maʿād",
+ "read_by": "R3 opened pdf p.112"
+}

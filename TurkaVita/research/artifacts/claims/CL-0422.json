@@ -1,0 +1,27 @@
+{
+  "id": "CL-0422",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In letter 17 Ibn Turka answered an objection to one of his treatises by inviting Bāysunghur to have the scholars at his court examine it, claiming it rested solely on traditional and rational sources; he was appealing to the prince as arbiter against a critic.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0835"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Bāysunghur",
+      "where": "Munshaʾāt-i Turka letter 17; MS Majlis 10196 f. 172a",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.158",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "textual"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-1049",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 177,
+    "printed_page": "160",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "At the end of the R. Suʾl al-Mulūk, written in 829/1426 for Bāysunghur, Ibn Turka offers a lettrist prognostication of the duration of the Timurid state: calculating from Shāhrukh's name, he predicts its glory will persist for one century, the whole of the ninth Islamic century. Melvin-Koushki calls this a fairly accurate prediction.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Suʾl al-Mulūk",
+  "read_by": "R6 opened pdf p.177"
+}

@@ -1,0 +1,28 @@
+{
+ "id": "CL-0826",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, the establishment Sufi Zayn al-Din Khwafi labelled Ibn Turka and his circle naw-mulhidan (neo-batinis, even neo-Ismaʿilis).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1670"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Zayn al-Din Khwafi (via Binbaş)",
+   "where": "dissertation pdf p.455",
+   "shaping_risk": "medium",
+   "note": "A hostile contemporary label as reported by a modern historian; date and occasion not given on this page."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.455",
+   "shaping_risk": "medium",
+   "note": "Reported through MK, who argues a rival reading."
+  }
+ ],
+ "domain": "social"
+}

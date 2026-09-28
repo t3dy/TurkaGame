@@ -1,0 +1,15 @@
+{
+  "id": "EV-1103",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 354,
+    "printed_page": "337",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The Mafāḥiṣ also contains master number tables called jadāwil al-baḥr, which Ibn Turka intends as a key or exemplar for all the issues treated in the work, from which the experienced student may extrapolate the sapiential realities within the letters of revelation.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.354"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "CL-0415",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka acted as patron and broker for a younger protégé, Sharaf al-Dīn Yaʿqūb, whom he recommended by letter to an amir (4), to Iskandar's vizier (12) and, in letter 6, asked another amir (Niẓām al-Dīn Aḥmad Ṣāʿidī) to look into the situation of; MK identifies him with the Sayyid Sharaf al-Dīn Yaʿqūb who became qadi of Yazd after his teacher's departure.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0815",
+    "EV-0819",
+    "EV-0821",
+    "EV-0828"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Fīrūzshāh, Ḥāfiẓ Rāzī, Niẓām al-Dīn Aḥmad",
+      "where": "Munshaʾāt-i Turka letters 1, 4, 6, 12",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.155",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "social"
+}

@@ -1,0 +1,22 @@
+{
+ "id": "CL-0658",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Fażl Allāh Astarābādī was executed at Alinjaq in 796/1394 on Temür's order and the Hurufis became a cult hostile to the dynasty; Shāhrukh persecuted them as a threat and his reign saw periodic Hurufi uprisings, including two in Isfahan and Tabriz in 835/1432, the year Ibn Turka died.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1287",
+  "EV-1288"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.255",
+   "shaping_risk": "low",
+   "note": "context, from MK following Bashir"
+  }
+ ],
+ "domain": "political"
+}

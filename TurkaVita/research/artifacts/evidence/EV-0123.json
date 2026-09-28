@@ -1,0 +1,14 @@
+{
+ "id": "EV-0123",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 67,
+  "printed_page": "50",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki proposes that Ibn Turka, Sharaf al-Dīn and their circle in western Iran form the eastern arm of a Neo-Ikhwān al-Ṣafāʾ extra-establishment network (being studied by Fleischer and Fazlıoğlu) centred in Cairo on Akhlāṭī and reaching Ottoman lands through Bedreddīn, ʿAbd al-Raḥmān Bisṭāmī and Mullā Fanārī; the network 'appears to have been' so centred.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.67"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1228",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 435,
+  "printed_page": "418",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that Ṣāʾin al-Dīn himself calls his fellow lettrists ahl al-ḥarf, ramz-khwānān-i ḥurūf-i qurʾānī or arbāb-i ʿilm-i ḥurūf.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka's own vocabulary for lettrists",
+ "read_by": "R7 opened pdf p.435"
+}

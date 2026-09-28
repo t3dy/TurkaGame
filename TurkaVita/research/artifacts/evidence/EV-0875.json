@@ -1,0 +1,15 @@
+{
+  "id": "EV-0875",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 167,
+    "printed_page": "150",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK says the pieces of correspondence from Ibrāhīm Sulṭān b. Shāhrukh in the Munshaʾāt-i Yazdī were written by Yazdī in his office as Ibrāhīm Sulṭān's munshī, and that the collection covers a wider range of addressees than the Munshaʾāt-i Turka: letters to the Mamluk sultan written for Ibrāhīm Sulṭān, to the sultan of Gulbarga for Sulṭān Saʿīd, and letters exchanged between Sulṭān Muḥammad b. Bāysunghur and various amirs (Fīrūzshāh, Zayn al-ʿĀbidīn among them).",
+  "evidence_kind": "context",
+  "read_by": "R5 opened pdf p.167",
+  "refers_to_primary": "Munshaʾāt-i Yazdī"
+}

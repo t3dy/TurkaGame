@@ -1,0 +1,15 @@
+{
+  "id": "EV-0808",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 153,
+    "printed_page": "136",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK says the letters then reflect in sequence: the start of his career in Shiraz and Isfahan under Iskandar's patronage; Shāhrukh's takeover of western Iran; the installation of amirs in Fars; harassment by local scholars and dīvān authorities; his journeys to the royal court in Herat to defend himself against accusations of heresy; the debacle of 830/1427 in which he lost position and property and was sent into exile; his exile in northern and northwestern Iran; and his final return to Herat to await review of his case. He cautions that the order is not rigorous and many letters could be later, and that the collection is not a complete record: one would expect many letters to Sharaf al-Dīn Yazdī, yet only one survives from the first Fars stage.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.153",
+  "refers_to_primary": "Munshaʾāt-i Turka, ordering"
+}

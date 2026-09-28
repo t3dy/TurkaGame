@@ -1,0 +1,15 @@
+{
+ "id": "EV-0516",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 123,
+  "printed_page": "106",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Nafsat al-Maṣdūr II is addressed to Shāhrukh's son Bāysunghur and asks his mediation in arranging an audience with the sultan.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II",
+ "read_by": "R3 opened pdf p.123"
+}

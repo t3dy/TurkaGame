@@ -1,0 +1,28 @@
+{
+ "id": "CL-0068",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The poet Kātibī Turshīzī (d. 839/1436) was among his Yazd students and is said to have been converted to the Sufi path at his hand; the first four poems of Kātibī's divan eulogize his teacher, praising his learning and scrupulous application of the law as qadi.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0145",
+  "EV-0146"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Dawlatshāh, Tazkirat al-Shuʿarā, 384; Kātibī's divan",
+   "where": "pdf p.70-71",
+   "shaping_risk": "medium",
+   "note": "'said to have been' converted; the poems are panegyric"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.70-71",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

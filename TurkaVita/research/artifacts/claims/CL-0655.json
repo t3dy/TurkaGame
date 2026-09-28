@@ -1,0 +1,23 @@
+{
+ "id": "CL-0655",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The second apology's Sufi and Hurufi passage is written chiefly to show Shāhrukh an implacable opponent of messianic and antinomian Sufism (MK); it cannot alone show what Ibn Turka held.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1276",
+  "EV-1261",
+  "EV-1273"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.450",
+   "shaping_risk": "medium",
+   "note": "MK's reading; the last clause applies the project's duress rule and is R7's gloss, not MK's"
+  }
+ ],
+ "domain": "biographical"
+}

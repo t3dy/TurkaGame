@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0007",
+ "type": "event",
+ "status": "draft",
+ "actor": "Fażl Allāh Astarābādī",
+ "date": {
+  "start": "1394",
+  "end": "1394",
+  "hijri": "796",
+  "basis": "Timeline A.1, pdf p.51; Diagram A.2 (pdf p.54) gives 1393.",
+  "date_kind": "context"
+ },
+ "place": "Alinjaq fortress",
+ "event_type": "execution",
+ "description": "Fażl Allāh Astarābādī, founder of the Ḥurūfiyya, is executed by Mīrānshāh b. Temür.",
+ "claims": [
+  "CL-0089"
+ ],
+ "fixed_point": true
+}

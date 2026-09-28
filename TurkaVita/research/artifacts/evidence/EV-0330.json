@@ -1,0 +1,15 @@
+{
+ "id": "EV-0330",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 94,
+  "printed_page": "77",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that among the very few marginal notes on a copy of Nafsat I (MS Majlis 10004, pp.230-1) are several expressing amazement at its stock dismissal of the Shiʿa, Muʿtazila and philosophers; one asks how such a scholar, known for enlightened Shiʿi and mystical views, could say this.",
+ "evidence_kind": "reception",
+ "refers_to_primary": "MS Majlis 10004, pp.230-1 (per MK fn.156)",
+ "read_by": "R2a opened pdf p.94"
+}

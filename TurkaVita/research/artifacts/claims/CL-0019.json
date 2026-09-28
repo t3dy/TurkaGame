@@ -1,0 +1,21 @@
+{
+ "id": "CL-0019",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Turka family was exempted from the bloodshed at Isfahan because of Temür's policy of sparing and collecting the eminent scholars and artists of conquered cities.",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0084"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.62",
+   "shaping_risk": "medium",
+   "note": "MK's explanation of why the family was spared; no source for the family's own case is cited"
+  }
+ ],
+ "domain": "political"
+}

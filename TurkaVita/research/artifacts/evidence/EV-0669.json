@@ -1,0 +1,15 @@
+{
+ "id": "EV-0669",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 137,
+  "printed_page": "120",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 189b-23a (as printed; the next work begins on f. 223b, so the end is presumably f. 223a) carries the Tamhīd al-Qawāʿid, copied in Shiraz on 2 Dhū l-Qaʿda 830/25 August 1427; no catalogue reference is printed. The next listed copy is MS Sipahsālār 2930/9 ff. 141-277 (29 Rabīʿ I 845/17 August 1441, titled al-Shahīd fī Sharḥ Risālat al-Tawḥīd).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.137",
+ "refers_to_primary": "Tamhīd al-Qawāʿid, MS Majlis 10196"
+}

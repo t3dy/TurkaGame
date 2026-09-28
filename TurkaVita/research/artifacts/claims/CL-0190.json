@@ -1,0 +1,28 @@
+{
+ "id": "CL-0190",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In the Sharḥ-i Naẓm al-Durr Ibn Turka rewrites Ibn al-Fāriḍ's line 619 to give ‘children and the holy Imams’ for ‘Companions and Followers’ and reads the second weighty thing of the ḥadīth al-thaqalayn as the ʿitra, yet still credits Abū Bakr, ʿUmar and ʿUthmān and gives ʿAlī the highest praise.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0362",
+  "EV-0363",
+  "EV-0364"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka in his own doctrinal work, as summarised by MK",
+   "where": "MS Majlis 10196 and other manuscripts as cited by MK",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.92 (printed 75)",
+   "shaping_risk": "low"
+  }
+ ]
+}

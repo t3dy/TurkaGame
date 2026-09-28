@@ -1,0 +1,15 @@
+{
+ "id": "EV-0300",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 83,
+  "printed_page": "66",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In the second subsection of Nafsat I, per Melvin-Koushki, the third tradition, quoted by Ghazālī, is that Abū Bakr was chosen caliph not for piety but for a secret knowledge, supported by a saying of ʿAlī that he could have filled seventy camel loads commenting on the Fātiḥa alone.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.83"
+}

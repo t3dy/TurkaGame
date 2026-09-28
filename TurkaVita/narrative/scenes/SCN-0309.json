@@ -1,0 +1,115 @@
+{
+ "id": "SCN-0309",
+ "type": "scene",
+ "status": "draft",
+ "act": "trials",
+ "title": "830/1427: the recall",
+ "dramatic_question": "A Ḥurūfī has struck at Shāhrukh outside the congregational mosque in Herat, and men with suspected Ḥurūfī ties are being taken. You have just left Herat. What do you do when the summons reaches you?",
+ "situation": {
+  "when": "830/1427",
+  "where": "Herat, and the road out of it",
+  "based_on": [
+   "CL-0077",
+   "CL-0078",
+   "CL-0080"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "In 830/1427 the Ḥurūfī Aḥmad-i Lur tried to kill Shāhrukh as he left the congregational mosque in Herat and was killed on the spot.",
+   "claim": "CL-0077"
+  },
+  {
+   "text": "After the attempt Shāhrukh arrested prominent figures with suspected Ḥurūfī ties, among them Qāsim-i Anvār, Maʿrūf-i Khaṭṭāt and Ibn Turka.",
+   "claim": "CL-0078"
+  },
+  {
+   "text": "The pages Melvin-Koushki gives do not say what tied Ibn Turka to the Ḥurūfiyya; the only Ḥurūfī contact they name is the family's dream-interpretation visits to Fażl Allāh, which he says imply no Ḥurūfī leaning.",
+   "claim": "CL-0079"
+  }
+ ],
+ "prose": [
+  "Aḥmad-i Lur strikes at Shāhrukh at the door of the congregational mosque in Herat, and is killed where he stands. After it Shāhrukh's men take those the court suspects of Ḥurūfī ties: Qāsim-i Anvār, the calligrapher Maʿrūf-i Khaṭṭāt, and you.",
+  "You have just left Herat. Your lettrist works never name the Ḥurūfīs, and the charge of Sufi bias made against you in 1422 is read by Melvin-Koushki as probably meant to tie you to them. He reads the purge as Shāhrukh consolidating the state, and notes that the attempt may have been staged by the ruler himself, a conjecture the game does not treat as fact.",
+  "A summons comes after you. You can obey it, you can turn away, or you can look to the people who have helped you before."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Obey the recall and go back to Herat.",
+   "strategy": "obey_the_recall",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0080",
+    "CL-0078"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "press.livelihood": -2,
+    "press.exposure": 2,
+    "life.recall": "obeyed",
+    "life.exile": "exiled",
+    "score.biography": 2
+   },
+   "costs": [
+    "You lose your post and property, and are imprisoned, then exiled.",
+    "Torture is reported; Melvin-Koushki names the second apology as the main source for the exile period."
+   ],
+   "feedback": "The record has you recalled, imprisoned, stripped of position and property, tortured and exiled. Melvin-Koushki's page gives no source for that sentence and names the second apology as the main source for the exile period, so the account is your word to another judge. What you do once in custody, including your surviving letter 27 to Amīr Fīrūzshāh, is the next scene."
+  },
+  {
+   "id": "B",
+   "label": "Do not go back. Turn away from Herat and try to reach a governor who will shelter you.",
+   "strategy": "run",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0080",
+    "CL-0078"
+   ],
+   "requires": {},
+   "effects": {
+    "press.exposure": 3,
+    "press.livelihood": -1,
+    "life.recall": "refused",
+    "life.exile": "exiled",
+    "score.biography": -1
+   },
+   "costs": [
+    "Running reads as guilt: exposure rises steeply."
+   ],
+   "feedback": "No source has him refusing a recall. The record has him summoned back and exiled; running would only change how it looks. The game returns you to the record."
+  },
+  {
+   "id": "C",
+   "label": "Obey the recall, but first ask Bāysunghur, who received you with particular favour and asked for the Suʾl al-Mulūk, to speak for you.",
+   "strategy": "obey_after_asking_baysunghur",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0421",
+    "CL-0086"
+   ],
+   "requires_min": {
+    "court.baysunghur": 1
+   },
+   "effects": {
+    "press.livelihood": -1,
+    "press.exposure": 2,
+    "life.recall": "obeyed",
+    "life.exile": "exiled",
+    "score.biography": -1
+   },
+   "costs": [
+    "Needs Bāysunghur's favour already earned.",
+    "You lose less, but not what the record says."
+   ],
+   "feedback": "The sources have Bāysunghur addressed for help only years later, in the second apology, which asks his intercession to little real effect. No source has him speaking for you in 1427. The game returns you to the record: the exile comes anyway."
+  }
+ ],
+ "next": "SCN-0401",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

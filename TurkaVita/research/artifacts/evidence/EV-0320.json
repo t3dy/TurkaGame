@@ -1,0 +1,15 @@
+{
+ "id": "EV-0320",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 85,
+  "printed_page": "68",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki's footnote says ‘pace’ Lewisohn's argument for taking the apologies at face value: even a cursory survey of Ibn Turka's oeuvre suggests the situation is more complicated than it would seem.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Lewisohn, ‘Sufism and Theology’, pp.66, 79 n.23 (per MK fn.121)",
+ "read_by": "R2a opened pdf p.85"
+}

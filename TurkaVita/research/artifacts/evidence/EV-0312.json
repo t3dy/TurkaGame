@@ -1,0 +1,15 @@
+{
+ "id": "EV-0312",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 84,
+  "printed_page": "67",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka cites Najm al-Dīn Rāzī's Mirṣād al-ʿIbād, which divides scholars into exoteric, esoteric and those combining both, the last being the poles of their age; he also cites Tirmizī's Nawādir al-Uṣūl as an example of inner interpretation.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.84"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0469",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 110,
+  "printed_page": "93",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The al-Khaṣāʾiṣ (Arabic) is known from the K. al-Manāhij, which refers to it as a more comprehensive work on logic, with a wider frame of reference than the peripatetics and more problematic issues, the Manāhij being a primer; Ibn Sīnā is often relied on.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, al-Khaṣāʾiṣ",
+ "read_by": "R3 opened pdf p.110"
+}

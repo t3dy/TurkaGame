@@ -1,0 +1,15 @@
+{
+ "id": "EV-0311",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 84,
+  "printed_page": "67",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki's footnote says that as an orthodox Khwājagānī shaykh and preeminent hadith authority, Pārsā's wide influence was a natural prop to Shāhrukh's Sunnizing programme and, more concretely, that Pārsā helped Shāhrukh stage his comeback in Bukhara (citing Manz).",
+ "evidence_kind": "context",
+ "refers_to_primary": "Manz, Power, p.76 (per MK fn.118)",
+ "read_by": "R2a opened pdf p.84"
+}

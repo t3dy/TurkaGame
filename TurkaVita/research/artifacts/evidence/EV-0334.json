@@ -1,0 +1,15 @@
+{
+ "id": "EV-0334",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 93,
+  "printed_page": "76",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki's footnote says Nafsat I extends the equivalency to say that all Sufis are Sunnis by necessity, but that as a lettrist Ibn Turka necessarily holds the Quran uncreated and was thus very much at odds with the Muʿtazila on that point.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I, pp.174-5 (per MK fn.155)",
+ "read_by": "R2a opened pdf p.93"
+}

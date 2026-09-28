@@ -1,0 +1,24 @@
+{
+ "id": "CL-0707",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The New Brethren paper says that eminent Sunni scholar-jurists like Ibn Turka could be and were tarred with accusations of unorthodoxy, even Ismāʿīlism, by jealous rivals with some success, and that the Ḥurūfiyya were the sharpest thorn in his side.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1477"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "accusations of unorthodoxy"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The New Brethren of Purity",
+   "where": "pdf 48",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

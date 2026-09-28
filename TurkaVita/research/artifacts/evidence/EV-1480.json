@@ -1,0 +1,13 @@
+{
+ "id": "EV-1480",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-DEF403AE18",
+  "witness_page": 3,
+  "short_title": "Melvin-Koushki, Ibn Turka's Pythagorean Sensorium"
+ },
+ "content": "Footnote 8: Ibn Turka gifted and dedicated the Sharḥ al-Basmala to Ulugh Beg six years later than 1420, explicitly styling him a Pythagorean-Platonic philosopher-king.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R8 opened pdf p.3"
+}

@@ -1,0 +1,29 @@
+{
+ "id": "CL-0337",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki dates the writing of Żawʾ al-Lamaʿāt to the year 815 (1412), presumably in Isfahan, with no colophon cited and no asterisk; the Majlis copy (8 Dhū l-Qaʿda 828/21 September 1425) is a later copy, and a copy made in Turkey in 833/1429 is the earliest other dated one.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0688",
+  "EV-0687"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 ff. 148b-53b copy dated 828",
+   "shaping_risk": "medium",
+   "note": "copy date, not composition"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.148-149, no. 46",
+   "shaping_risk": "medium",
+   "note": "basis of 815 not given in the entry; place presumed"
+  }
+ ]
+}

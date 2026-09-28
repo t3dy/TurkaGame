@@ -1,0 +1,15 @@
+{
+  "id": "EV-0849",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 160,
+    "printed_page": "143",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 29, to Sayyid Aḥmad, i.e., Amīr Sayyid Aḥmad Kārkiyā (ca. 831-32/1428-29, Gilan): Ibn Turka praises the amir's patronage of scholars and Sufis and congratulates him on a conquest (TMN/MS pp. 23-24, TMN/D pp. 194-96). MK's footnote: the Kārkiyā were Zaydī sayyids ruling Gilan; under Shāhrukh Sayyid Riżā Kārkiyā (d. 829/1426) ruled first, then Sayyid Nāṣir at Lahijan and Sayyid Aḥmad at Ranikuh; Sayyid Aḥmad is the most likely addressee, since the language shows an autonomous ruler and the letter belongs to the northern exile.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.160",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 29"
+}

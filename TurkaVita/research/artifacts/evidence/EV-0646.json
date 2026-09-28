@@ -1,0 +1,15 @@
+{
+ "id": "EV-0646",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 133,
+  "printed_page": "116",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that in his first apology (Nafsat al-Maṣdūr I) Ṣāʾin al-Dīn cites as a foil the widespread contemporary popularity of the Kashshāf despite its overt Muʿtazilī stance.",
+ "evidence_kind": "apology",
+ "read_by": "R4 opened pdf p.133",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I, on the Kashshāf"
+}

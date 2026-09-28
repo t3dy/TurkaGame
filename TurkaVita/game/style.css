@@ -1,0 +1,84 @@
+:root {
+  --ground: #efe8da;
+  --leaf: #f8f3e8;
+  --ink: #2a2420;
+  --ink-soft: #6b5f55;
+  --rule: #d6cab4;
+  --porphyry: #6e2a4a;       /* the purple of Porphyry's name */
+  --plotinus: #3d5a6c;
+  --historian: #4a5a3c;      /* the modern desk */
+  --strain: #9b3d25;         /* a reading that tells against a position */
+  --documented: #3f6b3a;
+  --reconstructed: #8a6a1f;
+  --contested: #9b3d25;
+  --unknown: #5a5a6e;
+  --counterfactual: #6e4a8a;
+  --serif: "EB Garamond", Garamond, "Times New Roman", serif;
+  --caps: "Cinzel", "Trajan Pro", Georgia, serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 19px/1.55 var(--serif); padding-inline: 16px; }
+main { max-width: 44rem; margin: 0 auto; padding-block: 2.5rem 4rem; }
+h1, h2, .caps { font-family: var(--caps); font-weight: 500; letter-spacing: .06em; }
+h1 { font-size: clamp(2.2rem, 7vw, 3.6rem); margin: 0 0 .2rem; text-align: center; }
+h2 { font-size: 1.45rem; margin: .1rem 0 .3rem; }
+.sub { text-align: center; color: var(--ink-soft); font-style: italic; margin: 0 0 2rem; }
+.leaf { background: var(--leaf); border: 1px solid var(--rule); padding: 1.6rem clamp(1rem, 4vw, 2.2rem); box-shadow: 0 1px 0 #fff inset, 0 8px 24px -18px #3a2c1a; }
+.act { font-family: var(--caps); font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; }
+.act.plotinus { color: var(--plotinus); }
+.act.porphyry { color: var(--porphyry); }
+.meta { color: var(--ink-soft); font-style: italic; margin: 0 0 1rem; }
+.question { border-left: 3px solid var(--rule); padding-left: .8rem; font-style: italic; margin: 1rem 0; }
+.attested { border: 1px dashed var(--documented); background: #f1f4ea; padding: .55rem .8rem; margin: 1rem 0; font-size: .92rem; }
+.attested b { font-family: var(--caps); font-weight: 500; font-size: .72rem; letter-spacing: .14em; color: var(--documented); display: block; }
+.attested ul { margin: .2rem 0 0; padding-left: 1.1rem; }
+.choices { list-style: none; padding: 0; margin: 1.4rem 0 0; display: grid; gap: .6rem; }
+.choice { width: 100%; text-align: left; font: inherit; color: inherit; background: #fffdf8; border: 1px solid var(--rule); padding: .7rem .9rem; cursor: pointer; display: flex; gap: .7rem; align-items: baseline; }
+.choice:hover, .choice:focus-visible { border-color: var(--ink); outline: none; }
+.choice .key { font-family: var(--caps); color: var(--ink-soft); }
+.chip { font-family: var(--caps); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; padding: .08rem .38rem; border: 1px solid currentColor; white-space: nowrap; margin-left: auto; align-self: center; }
+.chip.documented { color: var(--documented); } .chip.reconstructed { color: var(--reconstructed); } .chip.contested { color: var(--contested); }
+.chip.unknown { color: var(--unknown); } .chip.counterfactual { color: var(--counterfactual); }
+.feedback { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+details.why { margin: .9rem 0; font-size: .9rem; }
+details.why summary { cursor: pointer; font-family: var(--caps); font-size: .75rem; letter-spacing: .12em; color: var(--ink-soft); }
+.node { border-left: 2px solid var(--rule); padding: .25rem 0 .25rem .7rem; margin: .45rem 0; }
+.node .t { font-family: var(--caps); font-size: .66rem; letter-spacing: .12em; color: var(--ink-soft); }
+.node .cite { color: var(--ink-soft); font-style: italic; }
+.risk { color: var(--contested); }
+button.go { font-family: var(--caps); letter-spacing: .1em; font-size: .95rem; background: var(--ink); color: var(--leaf); border: 0; padding: .65rem 1.3rem; cursor: pointer; margin-top: 1rem; }
+button.go:hover, button.go:focus-visible { background: var(--porphyry); outline: none; }
+.center { text-align: center; }
+.axes { display: grid; gap: .55rem; margin: 1rem 0; }
+.axis { display: grid; grid-template-columns: 8.5rem 1fr 2.2rem; gap: .6rem; align-items: center; font-size: .95rem; }
+.bar { height: .55rem; background: #e6dcc8; position: relative; }
+.bar i { position: absolute; top: 0; bottom: 0; background: var(--ink); }
+.bar .zero { position: absolute; left: 50%; top: -.2rem; bottom: -.2rem; width: 1px; background: var(--ink-soft); }
+.note { font-size: .88rem; color: var(--ink-soft); }
+.rulings { margin: 1.2rem 0; }
+.rulings > .t { font-size: .72rem; letter-spacing: .14em; color: var(--ink-soft); }
+.ruling { border: 1px solid var(--rule); background: #fffdf8; padding: .6rem .8rem; margin: .5rem 0; }
+.ruling p { margin: 0 0 .4rem; }
+.ruling.done.right { border-left: 3px solid var(--documented); }
+.ruling.done.wrong { border-left: 3px solid var(--contested); }
+.ruling .verdict { font-style: italic; }
+button.rule { font-family: var(--caps); font-size: .72rem; letter-spacing: .1em; background: none; border: 1px solid var(--ink); color: var(--ink); padding: .35rem .7rem; margin-right: .4rem; cursor: pointer; }
+button.rule:hover, button.rule:focus-visible { background: var(--ink); color: var(--leaf); outline: none; }
+@media (max-width: 480px) { .axis { grid-template-columns: 6.5rem 1fr 2rem; } .choice { flex-wrap: wrap; } .chip { margin-left: 0; } }
+
+/* --- Act III: the historian's desk, and the provenance ledger --- */
+.act.historian { color: var(--historian); }
+.dossier { border: 1px solid var(--rule); background: #fbf7ee; padding: .6rem .85rem; margin: 1.2rem 0; }
+.dossier > .t { font-size: .72rem; letter-spacing: .14em; color: var(--ink-soft); margin-bottom: .45rem; }
+.dossier .note { margin: .5rem 0 0; }
+table.ledger { width: 100%; border-collapse: collapse; font-size: .9rem; }
+table.ledger td { padding: .18rem .35rem; vertical-align: middle; border-bottom: 1px solid #ece3d2; }
+table.ledger tr:last-child td { border-bottom: 0; }
+table.ledger tr.lead td { font-weight: 600; }
+table.ledger .let { font-family: var(--caps); color: var(--ink-soft); width: 1.2rem; }
+table.ledger .ct { color: var(--ink-soft); white-space: nowrap; font-size: .82rem; }
+table.ledger .nt { width: 34%; }
+table.ledger .nt i { display: block; height: .45rem; background: var(--ink); min-width: 1px; }
+table.ledger .nv { text-align: right; width: 2.2rem; font-variant-numeric: tabular-nums; }
+button.commit { width: 100%; text-align: left; font: inherit; color: inherit; background: #fffdf8; border: 1px solid var(--rule); padding: .7rem .9rem; cursor: pointer; }
+button.commit:hover, button.commit:focus-visible { border-color: var(--ink); outline: none; }

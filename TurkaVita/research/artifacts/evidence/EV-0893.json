@@ -1,0 +1,15 @@
+{
+  "id": "EV-0893",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 159,
+    "printed_page": "142",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK's footnote: the treatise sent with letter 20 also features a prognostication of the duration of the Timurid state, one century, based on a lettrist analysis of Shāhrukh's name (MS Majlis 10196 f. 178b).",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.159",
+  "refers_to_primary": "R. Suʾl al-Mulūk"
+}

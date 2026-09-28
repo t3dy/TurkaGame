@@ -1,0 +1,15 @@
+{
+  "id": "EV-0899",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 329,
+    "printed_page": "312",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "In the translated passage, the ALM calculation attributed to Ibn Barrajān runs: ALM = 71 in jummal-i kabīr, multiplied by biḍʿ (eight) gives 568; in jummal-i ṣaghīr ALM = 8, plus eight is 16, minus one is 15, added to 568 gives 583/1187, the year Muslims took Jerusalem from the Franks. MK's footnote (pdf p.330) notes this numerological rationale is Ibn ʿArabī's, not in Ibn Barrajān's own text.",
+  "evidence_kind": "work",
+  "read_by": "R5 opened pdf p.329",
+  "refers_to_primary": "R. Suʾl al-Mulūk, closing section"
+}

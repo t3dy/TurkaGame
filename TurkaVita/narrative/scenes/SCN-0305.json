@@ -1,0 +1,103 @@
+{
+ "id": "SCN-0305",
+ "type": "scene",
+ "status": "draft",
+ "act": "trials",
+ "title": "829/1426: where the Sharḥ al-Basmala goes",
+ "dramatic_question": "You have a long Arabic commentary on the basmala, read in the lettrist manner. Whose hands should it reach?",
+ "situation": {
+  "when": "829/1426 (a copy is dated 28 Shaʿbān 829/5 July 1426, possibly a copying date)",
+  "where": "Yazd; Samarkand",
+  "based_on": [
+   "CL-0304",
+   "CL-0305",
+   "CL-0607",
+   "CL-0608",
+   "CL-0450"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "The Sharḥ al-Basmala existed by 28 Shaʿbān 829 (5 July 1426); Melvin-Koushki flags the date as possibly a copying date, so it is the latest date, not the day of writing.",
+   "claim": "CL-0304"
+  },
+  {
+   "text": "A copy went to Qāżīzāda Rūmī, on the evidence of a letter from him to Ibn Turka in the margin of MS Majlis 10196 f. 153a; the same manuscript carries a marginal dedication to Ulugh Beg on f. 332b.",
+   "claim": "CL-0305"
+  },
+  {
+   "text": "Kirmānī says Qāżīzāda Rūmī studied with Ibn Turka under Ibn Turka's brother Ṣadr al-Dīn; Melvin-Koushki sets that in Samarkand by inference, and no source read says Samarkand for Rūmī.",
+   "claim": "CL-0607"
+  },
+  {
+   "text": "In the letters Melvin-Koushki describes, none is addressed to or received from Ulugh Beg himself; the only link to his court is Qāżīzāda's letter.",
+   "claim": "CL-0451"
+  }
+ ],
+ "prose": [
+  "The Sharḥ al-Basmala is a long commentary in Arabic, in the lettrist manner, on the formula that opens the suras of the Quran. A marginal note in the Majlis copy of your Mafāḥiṣ already sends readers to it. A copy of the commentary is dated 28 Shaʿbān 829/5 July 1426, so it exists by then.",
+  "Two men connected with Samarkand matter. Kirmānī says Qāżīzāda Rūmī studied with you under your brother Ṣadr al-Dīn; Melvin-Koushki sets that study in Samarkand, which no source he cites says. Rūmī is described as director of Ulugh Beg's observatory (first or second director, in Melvin-Koushki's different papers). The letters give no correspondence with Ulugh Beg himself; whatever line you have to his court runs through Qāżīzāda.",
+  "Who receives the book decides who can read it and what they can say you meant by it. The sources are not clear about what went to whom."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Send a copy of the commentary to Qāżīzāda Rūmī in Samarkand.",
+   "strategy": "qazizada_copy",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0305",
+    "CL-0450"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.qazizada": 1,
+    "press.works": 1,
+    "score.biography": 2
+   },
+   "feedback": "The copy to Qāżīzāda is attested by his letter of thanks (c. 829/1426), which recalls a meeting in Herat and reminds you of a promise to visit Samarkand. The same manuscript carries a marginal dedication to Ulugh Beg on f. 332b, but the entry does not say who wrote it, and the timeline's claim that copies went to both men is contested (see B)."
+  },
+  {
+   "id": "B",
+   "label": "Send copies to both Qāżīzāda Rūmī and Ulugh Beg himself.",
+   "strategy": "copies_to_both",
+   "epistemic_label": "contested",
+   "based_on": [
+    "CL-0306"
+   ],
+   "requires": {},
+   "effects": {
+    "court.qazizada": 1,
+    "court.ulugh-beg": 1
+   },
+   "feedback": "This is the timeline's version: copies sent to both Ulugh Beg and Qāżīzāda Rūmī. The work entry documents a copy to Qāżīzāda and only a dedication note for Ulugh Beg, and the dissertation does not reconcile the two accounts. The game scores neither as settled."
+  },
+  {
+   "id": "C",
+   "label": "Dedicate the commentary to Shāhrukh, who by your own account made you qadi, and send it to Herat.",
+   "strategy": "dedicate_to_shahrukh",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0060",
+    "CL-0305"
+   ],
+   "requires": {},
+   "effects": {
+    "court.shahrukh": 1,
+    "press.exposure": 1,
+    "score.biography": -1
+   },
+   "costs": [
+    "A lettrist commentary goes to a ruler whom Melvin-Koushki reads as distrusting mystically minded intellectuals."
+   ],
+   "feedback": "The sources put the dedication note in the margin at Ulugh Beg's name, not Shāhrukh's. Melvin-Koushki reads Shāhrukh as distrustful of ambitious, mystically or millenarian-minded intellectuals, which is the risk in this line. The game returns you to the record."
+  }
+ ],
+ "next": "SCN-0306",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "id": "CL-0325",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Suʾl al-Mulūk existed by 7 Rajab 829 (15 May 1426); Melvin-Koushki flags the date as possibly transcription, so it is a terminus ad quem, not a composition date.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0660",
+  "EV-0661",
+  "EV-0600"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 ff. 172b-79a",
+   "shaping_risk": "medium",
+   "note": "date may be the copying"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.136, no. 40",
+   "shaping_risk": "low",
+   "note": "asterisked"
+  }
+ ]
+}

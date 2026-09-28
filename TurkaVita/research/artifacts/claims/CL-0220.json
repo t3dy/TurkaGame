@@ -1,0 +1,21 @@
+{
+ "id": "CL-0220",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki says the R. Ḥurūf was written at the request of a dignitary, 'perhaps Iskandar Mīrzā', and that a copy went to Sayyid Niẓām al-Dīn Aḥmad in the same year; the identification of the dignitary is conjecture.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0446"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.89",
+   "shaping_risk": "medium",
+   "note": "'perhaps'"
+  }
+ ],
+ "domain": "chronological"
+}

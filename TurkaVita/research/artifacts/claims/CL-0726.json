@@ -1,0 +1,23 @@
+{
+ "id": "CL-0726",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Timurid-Mughal chapter says Ibn Turka cultivated Ulugh Beg's patronage by dedicating an important lettrist work to him and declaring the Samarkand Observatory the realisation of his own hopes, while Ulugh Beg, constrained by Shāhrukhid politics, wrote a zīj preface that does not explicitly invoke lettrism; Ulugh Beg is called a modern like Iskandar, unlike his father.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1495",
+  "EV-1497",
+  "EV-1494"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Timurid-Mughal Philosopher-Kings",
+   "where": "pdf 15-17",
+   "shaping_risk": "medium",
+   "note": "circumstantial; the chapter says elsewhere its Neopythagorean reading of Ulugh Beg rests on circumstantial evidence"
+  }
+ ],
+ "domain": "political"
+}

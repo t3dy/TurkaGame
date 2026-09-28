@@ -1,0 +1,94 @@
+{
+ "id": "SCN-0301",
+ "type": "scene",
+ "status": "draft",
+ "act": "trials",
+ "title": "Herat, 1422: the charge of Sufi bias",
+ "dramatic_question": "By his own later account, rivals from Isfahan have gone to Shāhrukh and called you a Sufi partisan. Herat is far from Fars, and by that same account you are old and frail. What do you do, and where do you ask to be judge?",
+ "situation": {
+  "when": "c. 825/1422",
+  "where": "Isfahan, then the court of Shāhrukh at Herat",
+  "based_on": [
+   "CL-0064",
+   "CL-0090",
+   "CL-0065",
+   "CL-0060",
+   "CL-0148"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "In his first apology Ibn Turka says that around 1422 rivals from Isfahan, jealous of his growing fame, went to Shāhrukh's court in Herat and accused him of deviating from the Sunna through a bias toward Sufism (ṣūfīgarī); the accusers' motives are his own attribution.",
+   "claim": "CL-0064"
+  },
+  {
+   "text": "Shāhrukh had abrogated the Yasa and enforced the Sharīʿa in 813/1411 (Melvin-Koushki's timeline adds that he had the taverns closed).",
+   "claim": "CL-0090"
+  }
+ ],
+ "prose": [
+  "Around 1422, in your own later telling, men from Isfahan carry a charge to Herat: that you lean toward Sufism (ṣūfīgarī). The charge is known only from your own answer to it. Melvin-Koushki reads it as probably meant to tie you to the Ḥurūfīs rather than to Sufism in general.",
+  "Melvin-Koushki argues, following Binbaş, that Shāhrukh distrusted ambitious, independent-minded, mystically or millenarian-minded intellectuals, and that this counted for more than any demonstrable irregularity in your doctrine. That is his reading, not a fact of the record, and the record does not tell you what your enemies said beyond the word itself. What you have is a choice of roads, and the knowledge that the cities of Fars differ: of the three main ones, Yazd was known as the most stable and quiescent, and the Isfahanis as repeatedly proactive."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Go to Herat in person, though old and frail, answer the charge before Shāhrukh, and when he offers to restore you as judge of Isfahan, ask for Yazd instead.",
+   "strategy": "answer_in_person_choose_yazd",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0065"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.shahrukh": 1,
+    "press.exposure": 1,
+    "life.seat": "yazd",
+    "score.biography": 2
+   },
+   "feedback": "This is the course his own first apology reports, and Melvin-Koushki takes it as given: he travelled despite age and frailty, won Shāhrukh's favour for the time being, and chose Yazd to escape intriguers. Note whose word that is: the reason and the frailty come from a text written four years later to the same ruler."
+  },
+  {
+   "id": "B",
+   "label": "Go to Herat, answer the charge, and accept the judgeship of Isfahan.",
+   "strategy": "answer_in_person_take_isfahan",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0065"
+   ],
+   "requires": {},
+   "effects": {
+    "court.shahrukh": 1,
+    "press.exposure": 1,
+    "press.enemies": 1,
+    "life.seat": "yazd",
+    "score.biography": -1
+   },
+   "feedback": "The record says Shāhrukh offered you Isfahan and you declined it. This is your own what-if: you stay among the very people who accused you. The game returns you to the record, because the sources put him in Yazd from 1422 to 1426, and nothing later can be built on a life the sources do not contain."
+  },
+  {
+   "id": "C",
+   "label": "Do not go. Write to Herat, plead ill health, and rely on your reputation to answer for you.",
+   "strategy": "stay_and_write",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0064"
+   ],
+   "requires": {},
+   "effects": {
+    "press.exposure": 2,
+    "press.enemies": 1,
+    "life.seat": "yazd",
+    "score.biography": -1
+   },
+   "feedback": "No source has him staying away or refusing to appear. Leaving a charge of Sufi bias unanswered under the ruler who abrogated the Yasa and closed the taverns is a bet the sources do not record anyone making. The game returns you to the record: he did go."
+  }
+ ],
+ "next": "SCN-0302",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

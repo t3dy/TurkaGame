@@ -1,0 +1,19 @@
+{
+ "id": "REC-0015",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "When was the R. Iʿtiqādiyya written, and does its admission of suspect sciences show his real position?",
+ "proposition": "Two of MK's descriptions pull apart: ‘companion tract’ to the 1426 Nafsat I and ‘among the last of his writings’. If late, the admission of youthful suspect sciences may be a later, less pressured statement, but MK does not argue this on these pages.",
+ "kind": "inferential",
+ "scholar": "Researcher's observation from Melvin-Koushki's two descriptions (not a claim by MK)",
+ "reasoning": [
+  "p.77 and p.79 describe the tract differently.",
+  "Because it is a creed_tract, the duress rule treats it as an apology-type witness regardless."
+ ],
+ "observed_facts": [
+  "EV-0212",
+  "EV-0237",
+  "EV-0238"
+ ],
+ "confidence": "low"
+}

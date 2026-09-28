@@ -1,0 +1,21 @@
+{
+  "id": "CL-0586",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that for Ibn Turka the cutting of letters, the splitting of the moon and the Two-horned Sword of ʿAlī form one continuum, so that lettrism emulates the cut letters (muqaṭṭaʿāt) that open 29 suras.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "low",
+  "supported_by": [
+    "EV-1131",
+    "EV-1035"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "Prologue p.8 fn.25",
+      "shaping_risk": "high"
+    }
+  ],
+  "domain": "doctrinal"
+}

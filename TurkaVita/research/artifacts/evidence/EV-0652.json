@@ -1,0 +1,15 @@
+{
+ "id": "EV-0652",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 135,
+  "printed_page": "118",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that the commentary references both the Mafāḥiṣ (including the Arabic version) and the Sharḥ Fuṣūṣ al-Ḥikam.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.135",
+ "refers_to_primary": "Ibn Turka, Sharḥ-i Naẓm al-Durr, cross-references"
+}

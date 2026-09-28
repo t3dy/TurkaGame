@@ -1,0 +1,15 @@
+{
+  "id": "EV-1024",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 479,
+    "printed_page": "462",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The treatise as translated ends with a note that it was completed on 18 Rabīʿ I 829, which Melvin-Koushki converts to 28 January 1426. His footnote says this may alternatively refer to the date on which the treatise was copied.",
+  "evidence_kind": "colophon",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.479"
+}

@@ -1,0 +1,337 @@
+{
+ "id": "SCN-0406",
+ "type": "scene",
+ "status": "draft",
+ "act": "exile",
+ "title": "Herat, 1431–32: nine months at court, and the second apology",
+ "dramatic_question": "You have followed Shāhrukh back to Herat, and the review you were promised has not come. You write to his son. What do you say, to whom do you ask, and what do you send with it?",
+ "situation": {
+  "when": "c. 834–35/1431–32 (the second apology is undated; Melvin-Koushki puts it between about 832 and 835/1429–32)",
+  "where": "Herat",
+  "based_on": [
+   "CL-0085",
+   "CL-0086",
+   "CL-0150"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "By the second apology Ibn Turka says five years have passed since his exile and nine months since a promised review of his case at Herat, during which he has attended court once or twice a week without result.",
+   "claim": "CL-0150"
+  },
+  {
+   "text": "He followed Shāhrukh back to Herat and spent the last year or so of his life in weekly attendance at court, waiting for a review of his case that never came in time.",
+   "claim": "CL-0085"
+  },
+  {
+   "text": "The second Nafsat al-Maṣdūr, with a brief creed (the R. Iʿtiqādiyya), is addressed to Shāhrukh's son Bāysunghur and asks his intercession, to little real effect.",
+   "claim": "CL-0086"
+  },
+  {
+   "text": "Melvin-Koushki holds the apologies were produced under great duress: the first answers a summons to trial, the second follows torture, imprisonment and exile.",
+   "claim": "CL-0167"
+  }
+ ],
+ "prose": [
+  "You are in Herat again, having followed Shāhrukh back. For nine months you have attended his court once or twice a week, waiting for the review of your case that was promised at Ṣāʾin Qalʿa. It has not come.",
+  "You write to Bāysunghur. This is your second apology, and it is not the first one over again: the first, for Shāhrukh in 1426, was about Sufism and doctrine. This one is more autobiographical and much angrier, and it is about your fame as a scholar, not mystical theory. Its date is a range: your own count of five years since exile and nine months of waiting points to about 835 (1432), while Melvin-Koushki's footnote gives 832–35 (1429–32), and the game does not pick.",
+  "Read it as a text written under duress. It shows what you told a prince whose help you needed, not necessarily what you held. Below, you build it from the moves Melvin-Koushki reports it making, and from some it does not make."
+ ],
+ "composer": {
+  "work": "WRK-NAFSAT-AL-MASDUR-II",
+  "prompt": "You are writing the Nafsat al-Maṣdūr II ('Tubercular Expectoration') for Bāysunghur, with a brief creed to go with it. Each slot is a move Melvin-Koushki reports the text making, or a move it does not make. Whatever you write is your account to a prince: none of it is proof of what you held. The moves the source reports earn textual credit; moves it does not report cost it.",
+  "slots": [
+   {
+    "id": "S1",
+    "question": "In what tone do you write?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Angrier and more autobiographical than the first apology, and about your fame as a scholar rather than about mystical theory.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0151"
+      ],
+      "effects": {
+       "score.textual": 1
+      },
+      "feedback": "This is what Melvin-Koushki says the second apology is: more autobiographical, angrier, about scholarly fame as such."
+     },
+     {
+      "id": "b",
+      "label": "Again as in the first: a strident Sunni defence dismissing the Shiʿa, the Muʿtazila and the philosophers.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0170"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "press.exposure": 1
+      },
+      "feedback": "Melvin-Koushki reads that stridency in the first apology as a mirror of Shāhrukh's Sunnizing programme. The sources do not have the second apology doing the same: it takes a different tack, and the record does not follow this path."
+     }
+    ]
+   },
+   {
+    "id": "S2",
+    "question": "How do you present your case?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Tell your wanderings and tribulations in exile, and say you have ten children and a few wives whom exile has left you unable to support.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0152"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.baysunghur": 1
+      },
+      "feedback": "The apology details the wanderings and gives the ten children and few wives, which Melvin-Koushki reads with a letter of Yazdī as three sons and seven daughters."
+     },
+     {
+      "id": "b",
+      "label": "Say that envoys have come from India and Anatolia seeking copies of your treatises, that your students are scattered across Shiraz, Samarkand, Anatolia and India, and that you are attacked as any prominent scholar is by envious peers.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0153",
+       "CL-0155",
+       "CL-0154"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "press.students": 1
+      },
+      "feedback": "The apology says exactly this, and the pages call it self-report and self-praise. Dawlatshāh, writing decades after your death, is reported by Melvin-Koushki to call you one of the two most prominent intellectuals of the reign, so the fame is not only your own claim."
+     },
+     {
+      "id": "c",
+      "label": "Plead only your innocence and your poverty, and say nothing of your fame or your students.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0151"
+      ],
+      "effects": {
+       "score.textual": -1
+      },
+      "feedback": "The apology is about scholarly fame, which is where it differs from the first. The sources do not have you leaving your fame out, so the record does not follow this path."
+     }
+    ]
+   },
+   {
+    "id": "S3",
+    "question": "Whom do you name as the source of your troubles?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Name al-Jazarī: dismiss him as learned only in Quran reading and some hadith, risen in Fars through his native Arabic and rulers' favour, and trace his enmity to what you told the Mamluk sultan about him in Egypt.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0156",
+       "CL-0157"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "press.enemies": 1
+      },
+      "feedback": "The apology makes each of these points, and says your enemies hide behind Jazarī's reputation. It is your own version of a grievance; Melvin-Koushki gives no corroboration on these pages. Jazarī died in Herat in 833/1429; the pages do not say whether he was still alive when you wrote."
+     },
+     {
+      "id": "b",
+      "label": "Name the impostor Sufis: masters whose disciples have dropped the Sharīʿa, one of whom took your admonition badly, while another Herati shaykh took it better.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0158",
+       "CL-0159",
+       "CL-0110"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.shahrukh": 1
+      },
+      "feedback": "The apology tells the episodes. Melvin-Koushki identifies the better-received shaykh as almost certainly Qāsim-i Anvār, who was expelled from Herat in the same purge as you, and reads the episodes as presenting you as an upholder of the Sharīʿa and so of Shāhrukh's state."
+     },
+     {
+      "id": "c",
+      "label": "Close on the Ḥurūfīs: dismiss Fażl Allāh Astarābādī's movement in harsh and bitter terms.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0160"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "press.enemies": -1
+      },
+      "feedback": "The apology ends this way. Coming from a man arrested as a suspected Ḥurūfī, the bitterness is read by Melvin-Koushki as part of the need to distance himself from Ḥurūfism as far as possible; it is not evidence of what you privately thought."
+     }
+    ]
+   },
+   {
+    "id": "S4",
+    "question": "To whom do you address it, and what do you ask?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Address Bāysunghur and ask him to intercede with his father and bring you an audience with the sultan.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0225",
+       "CL-0086"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.baysunghur": 1
+      },
+      "feedback": "The apology is addressed to Bāysunghur and asks him to mediate an audience with Shāhrukh. Of the outcome, Melvin-Koushki says only 'to little real effect'."
+     },
+     {
+      "id": "b",
+      "label": "Address Shāhrukh directly, as you did in 1426, and ask him to review the case.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0073",
+       "CL-0086"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "press.exposure": 1
+      },
+      "feedback": "The first apology was written for Shāhrukh; the second is addressed to his son. No source has the second apology sent to the sultan, and the record does not follow this path."
+     }
+    ]
+   },
+   {
+    "id": "S5",
+    "question": "What do you send with it?",
+    "options": [
+     {
+      "id": "a",
+      "label": "A brief creed, the R. Iʿtiqādiyya, presenting you as a standard Ashʿarī and admitting that in your youth you explored suspect sciences, justified by the hadith 'Learn even sorcery'.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0086",
+       "CL-0162",
+       "CL-0163"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "press.exposure": 1
+      },
+      "feedback": "The apology is accompanied by exactly such a creed. Melvin-Koushki says its Ashʿarī self-presentation and its comparison of you to Ghazālī and Rāzī are to be taken with several grains of salt."
+     },
+     {
+      "id": "b",
+      "label": "Nothing: let the apology stand alone.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0086"
+      ],
+      "effects": {
+       "score.textual": -1
+      },
+      "feedback": "The sources have a creed going with the apology. This is your own what-if, and the record does not follow it."
+     },
+     {
+      "id": "c",
+      "label": "The long creed you sent Shāhrukh in 1426, the R. Iʿtiqādāt, again.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0223",
+       "CL-0086"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "press.enemies": 1
+      },
+      "feedback": "The Iʿtiqādāt was the companion piece to the first apology, written to Shāhrukh. The sources tie the brief Iʿtiqādiyya, not the old creed, to the second apology, and the record does not follow this path."
+     }
+    ]
+   }
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "label": "Send it to Bāysunghur, and go on attending Shāhrukh's court once or twice a week while you wait.",
+   "strategy": "send_nafsat_ii_to_baysunghur",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0086",
+    "CL-0150"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.baysunghur": 1,
+    "press.livelihood": -1,
+    "life.nafsat2": "sent_to_baysunghur",
+    "score.biography": 2
+   },
+   "feedback": "This is what the sources report: the apology is addressed to Bāysunghur and you went on attending court. Melvin-Koushki's verdict is that it sought his intercession 'to little real effect'. Every argument in it is your own word to a prince whose help you needed, so it shows what you told him, not necessarily what you held."
+  },
+  {
+   "id": "B",
+   "label": "Ask to read it to Bāysunghur in his own majlis, as you once proposed in letter 18, rather than simply send it.",
+   "strategy": "read_it_in_baysunghurs_majlis",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0424",
+    "CL-0421"
+   ],
+   "requires_min": {
+    "court.baysunghur": 1
+   },
+   "effects": {
+    "court.baysunghur": 1,
+    "life.nafsat2": "read_in_majlis",
+    "score.biography": -1
+   },
+   "feedback": "Open to you because Bāysunghur has favoured you. In letter 18 you complain of two days in attendance without being allowed to see the prince and propose a majlis as an easier setting, so access to him was granted only in part. The pages show no majlis for this text, only an apology addressed to him. The game returns you to the record."
+  },
+  {
+   "id": "C",
+   "label": "Put it into Shāhrukh's own hands yourself at one of your weekly attendances.",
+   "strategy": "hand_nafsat_ii_to_shahrukh",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0150",
+    "CL-0086"
+   ],
+   "requires_min": {
+    "court.shahrukh": 1
+   },
+   "effects": {
+    "press.exposure": 1,
+    "life.nafsat2": "to_shahrukh",
+    "score.biography": -1
+   },
+   "costs": [
+    "You would go over the head of the prince whose help you asked for."
+   ],
+   "feedback": "Open to you because Shāhrukh has favoured you before. The apology is addressed to Bāysunghur, and the sources record no delivery to the sultan. Your case was never reviewed in time either way. The game returns you to the record."
+  },
+  {
+   "id": "D",
+   "label": "Hold it back and keep attending, on the strength of the promise you were given at Ṣāʾin Qalʿa.",
+   "strategy": "hold_back_and_wait",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0084",
+    "CL-0085"
+   ],
+   "requires": {},
+   "effects": {
+    "press.livelihood": -1,
+    "life.nafsat2": "held_back",
+    "score.biography": -1
+   },
+   "feedback": "The sources have you writing the apology after nine months of waiting, not holding it in reserve. Waiting on a promise was in fact what you did for those nine months, and it is where the record's frustration comes from. The game returns you to the record."
+  }
+ ],
+ "next": "SCN-0407",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

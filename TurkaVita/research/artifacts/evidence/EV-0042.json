@@ -1,0 +1,15 @@
+{
+ "id": "EV-0042",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 53,
+  "printed_page": "36",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Timeline A.1: 831/1428 he writes the R. Tuḥfa-yi ʿAlāʾī for ʿAlāʾ al-Dīn b. Bāysunghur.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.53",
+ "refers_to_primary": "Ibn Turka, R. Tuḥfa-yi ʿAlāʾī"
+}

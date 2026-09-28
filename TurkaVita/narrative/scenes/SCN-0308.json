@@ -1,0 +1,151 @@
+{
+ "id": "SCN-0308",
+ "type": "scene",
+ "status": "draft",
+ "act": "trials",
+ "unrecorded": true,
+ "title": "What the apology shows",
+ "dramatic_question": "You have just made, or read, the first of the apologies. Is it evidence of what you believed, or only of what you told the man judging you?",
+ "situation": {
+  "when": "829/1426, and every time it is read afterwards",
+  "where": "Herat; and the desk of anyone who reads the text now",
+  "based_on": [
+   "CL-0167",
+   "CL-0173"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki holds that the apologies were produced under great duress: Nafsat I answers a summons to trial, and Nafsat II follows torture, imprisonment and exile.",
+   "claim": "CL-0167"
+  },
+  {
+   "text": "Melvin-Koushki also calls the apologies the primary source of information about his life, and a uniquely candid look at the religio-political machinations of early Timurid Iran.",
+   "claim": "CL-0074"
+  }
+ ],
+ "prose": [
+  "For one scene the game steps out of 1426. The text you have just written will outlast the man it defended, and this question is about how it will be read, not about what Ibn Turka should do next. The record is silent on it, so no choice below is marked as the one that happened.",
+  "Two facts frame it. The apologies are the main source for the events of his life. They were also written to the people judging him, under duress. Both are Melvin-Koushki's, and he does not put them in a single sentence.",
+  "First, five statements. Stand or refute each on what the sources report. Then say how you would cite the apology in a biography."
+ ],
+ "rulings": [
+  {
+   "id": "R1",
+   "proposition": "Melvin-Koushki holds that Nafsat I is safe evidence of what Ibn Turka told the ruler judging him and how he defended himself, not of his beliefs.",
+   "answer": "stand",
+   "based_on": [
+    "CL-0167",
+    "CL-0173"
+   ],
+   "effects_correct": {
+    "score.calibration": 1
+   },
+   "feedback": "He does hold this, and calls the image in the apologies hardly reflective of Ibn Turka's primary concerns. The game's duress rule adopts it as a method; Leonard Lewisohn, as Melvin-Koushki reports him, reads the apologies at face value, and the game does not score which of them is right."
+  },
+  {
+   "id": "R2",
+   "proposition": "Nafsat I was addressed to the ruler who was judging him.",
+   "answer": "stand",
+   "based_on": [
+    "CL-0102",
+    "CL-0075"
+   ],
+   "effects_correct": {
+    "score.calibration": 1
+   },
+   "feedback": "It was written for Shāhrukh, in answer to the accusations against him. That fixes whose reader it was written for, which under the game's duress rule limits what it can show."
+  },
+  {
+   "id": "R3",
+   "proposition": "Nafsat I's account of his studies names his Cairo master, Sayyid Ḥusayn Akhlāṭī.",
+   "answer": "refute",
+   "based_on": [
+    "CL-0114"
+   ],
+   "effects_correct": {
+    "score.calibration": 1
+   },
+   "feedback": "It does not. Melvin-Koushki observes that the account of his studies makes no mention of Akhlāṭī, whom his own works treat as his teacher, and takes the omission as a sign that the apology reflects Shāhrukh's anxieties rather than Ibn Turka's own project."
+  },
+  {
+   "id": "R4",
+   "proposition": "On one point an apology and a free doctrinal work agree: he censures the Muʿtazilī Zamakhsharī in the Mafāḥiṣ as well.",
+   "answer": "stand",
+   "based_on": [
+    "CL-0172"
+   ],
+   "effects_correct": {
+    "score.calibration": 1
+   },
+   "feedback": "Melvin-Koushki grants that his disapproval of Muʿtazilī theology is genuinely his, since a created Quran contradicts his lettrism, and cites the Mafāḥiṣ. On his account, where a free work confirms it, an apology's claim can carry weight."
+  },
+  {
+   "id": "R5",
+   "proposition": "Melvin-Koushki calls the apologies the primary source of information about Ibn Turka's life.",
+   "answer": "stand",
+   "based_on": [
+    "CL-0074"
+   ],
+   "effects_correct": {
+    "score.calibration": 1
+   },
+   "feedback": "He does, and calls them a uniquely candid look at Timurid religio-political machinations. Set beside his duress warning, the game's rule is to trust what they report of events more than what they say of beliefs."
+  }
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Cite it as his defence: what he told Shāhrukh and how he argued. Take what he believed from his letters and works.",
+   "strategy": "cite_as_defence",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "REC-0002",
+    "CL-0173"
+   ],
+   "requires": {},
+   "effects": {
+    "score.calibration": 1,
+    "life.cites_apology": "as_defence"
+   },
+   "feedback": "This is Melvin-Koushki's reading of the apologies, and the game's duress rule adopts it as a method; the game scores the fit with its own rule, not because the field has settled it. Leonard Lewisohn takes them at face value, so it is a reading, not a fact. The record is silent on which is right."
+  },
+  {
+   "id": "B",
+   "label": "Cite it as his creed: an orthodox Sunni Sufi's statement of what he believed.",
+   "strategy": "cite_as_creed",
+   "epistemic_label": "contested",
+   "based_on": [
+    "REC-0001",
+    "CL-0166"
+   ],
+   "requires": {},
+   "effects": {
+    "life.cites_apology": "as_creed"
+   },
+   "feedback": "Leonard Lewisohn, as Melvin-Koushki reports him, takes the apologies at face value; Melvin-Koushki says Lewisohn misrepresents him, yet elsewhere calls his insistence on taking the apologies at face value well taken. The record is silent on which reading is right, and the game scores neither scholar: this option gains and loses nothing."
+  },
+  {
+   "id": "C",
+   "label": "Do not cite it at all: it was written under duress, so leave it out of the biography.",
+   "strategy": "leave_it_out",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0100",
+    "CL-0074"
+   ],
+   "requires": {},
+   "effects": {
+    "score.biography": -1,
+    "life.cites_apology": "not_cited"
+   },
+   "feedback": "The sources do not support leaving it out: Melvin-Koushki calls the apologies the primary source for the events of his life, and much of the biography rests on them. The record is silent on what a biography should do, but the duress rule limits what the apologies can show; it does not empty them."
+  }
+ ],
+ "next": "SCN-0309",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

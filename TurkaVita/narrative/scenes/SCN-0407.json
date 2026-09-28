@@ -1,0 +1,119 @@
+{
+ "id": "SCN-0407",
+ "type": "scene",
+ "status": "draft",
+ "act": "exile",
+ "title": "Herat, 14 Dhū l-Ḥijja 835 / 12 August 1432: what you leave",
+ "dramatic_question": "Your case has not been reviewed and you will not see it reviewed. Your books, your unfinished work and your household are all that is left in your hands. What do you entrust, and to whom?",
+ "situation": {
+  "when": "14 Dhū l-Ḥijja 835 / 12 August 1432",
+  "where": "Herat",
+  "based_on": [
+   "CL-0087",
+   "CL-0085"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Ibn Turka died in Herat on 14 Dhū l-Ḥijja 835/12 August 1432, aged 63, 'frustrated, impoverished and in a state of limbo' in the words of the editor of the Sharḥ-i Naẓm al-Durr, whom Melvin-Koushki cites. The game gives no weekday, because the source's does not fit that date in the Julian or the Gregorian calendar; Melvin-Koushki's age of 63 does not agree with the birth year the dissertation derives from the age he gives in the first apology, and the two are not reconciled.",
+   "claim": "CL-0087"
+  },
+  {
+   "text": "Sources disagree on the year of death (830 in the printed Khwāndamīr, 836 in a manuscript); Melvin-Koushki holds that 835 is right.",
+   "claim": "CL-0088"
+  },
+  {
+   "text": "He had followed Shāhrukh back to Herat and spent the last year or so of his life in weekly attendance at court, waiting for a review of his case that never came in time.",
+   "claim": "CL-0085"
+  }
+ ],
+ "prose": [
+  "It is 14 Dhū l-Ḥijja 835, in Herat: 12 August 1432. The review has not come. The editor of the Sharḥ-i Naẓm al-Durr, whom Melvin-Koushki cites, calls you frustrated, impoverished and in a state of limbo. The dissertation's own arithmetic on your age does not close, and the year of your death is itself disputed in the sources, though he holds it is 835.",
+  "Nothing in the sources says how you left your books, your papers or your household. What they do show, from other directions, is this. A volume of your works, MS Majlis 10196, was copied through your last years and after your death, and Melvin-Koushki thinks its copyist was near you in exile. Sharaf al-Dīn Yazdī, whose letters show his closeness to you, looked after your children afterwards. A lettrist work you began, the Iṣbāḥ al-Anwār, survives only in a partial copy that breaks off mid-page.",
+  "This scene is unrecorded. The sources are silent on what you entrusted and to whom; the choices below are what a person in your place could do, each labelled for what stands behind it."
+ ],
+ "unrecorded": true,
+ "choices": [
+  {
+   "id": "A",
+   "label": "Entrust your children and household to Sharaf al-Dīn Yazdī, whose letters show how close he was to you.",
+   "strategy": "entrust_household_to_yazdi",
+   "epistemic_label": "unknown",
+   "based_on": [
+    "CL-0452",
+    "CL-0454",
+    "CL-0043"
+   ],
+   "requires": {},
+   "effects": {
+    "court.yazdi": 1,
+    "press.students": 1,
+    "life.death_trust": "yazdi",
+    "score.calibration": 1
+   },
+   "feedback": "Nothing records that you asked. What the Yazdī letters show is an outcome: in a letter dated ca. 835/1432 with a query, probably soon after your death, your son Ḥabīb Allāh left for Herat after a money dispute with his brothers, and Yazdī intervened and housed him. Melvin-Koushki infers three sons and seven daughters from that letter. Yazdī's care is on the record; your request is not."
+  },
+  {
+   "id": "B",
+   "label": "Leave your works to a copyist whom Melvin-Koushki thinks may have been near you in exile, and ask him to go on copying them.",
+   "strategy": "entrust_works_to_copyist",
+   "epistemic_label": "unknown",
+   "based_on": [
+    "CL-0213",
+    "CL-0201",
+    "CL-0200"
+   ],
+   "requires": {},
+   "effects": {
+    "press.works": 1,
+    "life.death_trust": "copyist",
+    "score.calibration": 1
+   },
+   "feedback": "Melvin-Koushki infers that the copyist seems to have accompanied you in exile, and takes your autograph incipit and explicit on the Mafāḥiṣ as a sign that he was in close contact with you. That is an inference about contact, not a record of a bequest. The volume was still being copied after your death: one work in it has a copy date of 838/1435."
+  },
+  {
+   "id": "C",
+   "label": "Leave your writings to your students, who are scattered across Shiraz, Samarkand, Anatolia and India.",
+   "strategy": "leave_works_to_students",
+   "epistemic_label": "unknown",
+   "based_on": [
+    "CL-0153",
+    "CL-0453"
+   ],
+   "requires": {},
+   "effects": {
+    "press.students": 1,
+    "press.works": 1,
+    "life.death_trust": "students",
+    "score.calibration": 1
+   },
+   "feedback": "The scatter of students is what you say in the second apology, so it is self-report and self-praise, addressed to Bāysunghur. A separate, external sign of demand is a commander in Shāhrukh's army, Muḥammad Ṣūfī b. Tarkhān, who asked through the Yazdī collection for a volume of your Persian works. Neither says you left your writings to anyone."
+  },
+  {
+   "id": "D",
+   "label": "Ask Yazdī to finish the Iṣbāḥ al-Anwār, the lettrist work that, on Melvin-Koushki's conjecture, you left unfinished.",
+   "strategy": "ask_yazdi_to_finish_isbah",
+   "epistemic_label": "unknown",
+   "based_on": [
+    "CL-0230",
+    "CL-0231"
+   ],
+   "requires_min": {
+    "court.yazdi": 1
+   },
+   "effects": {
+    "court.yazdi": 1,
+    "press.works": 1,
+    "life.death_trust": "isbah",
+    "score.calibration": 1
+   },
+   "feedback": "The game opens this only once you have earned Yazdī's favour. Nothing records that you asked, and no source has anyone finishing it: the Iṣbāḥ existed at least in part by February 1428, when the Tuḥfa-yi ʿAlāʾī cites it as unfinished, and its only known copy is partial and breaks off mid-page. Melvin-Koushki conjectures you left it unfinished after the events of 1427."
+  }
+ ],
+ "next": "SCN-0501",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

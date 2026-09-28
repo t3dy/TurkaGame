@@ -1,0 +1,19 @@
+{
+ "id": "REC-0155",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who is the Herat master of the second apology whom Ibn Turka persuaded to restrain his disciples?",
+ "proposition": "Qāsim-i Anvār.",
+ "kind": "inferential",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK: 'almost certainly'. Qāsim held the post of naqīb in Herat (letter 37) and Ibn Turka wrote him warm letters.",
+  "The apology says only 'a prominent master'; MK notes that Qāsim's hagiographic profile is marred by disciples' antinomianism, which fits the apology's complaint."
+ ],
+ "observed_facts": [
+  "CL-0649",
+  "CL-0633",
+  "CL-0636"
+ ],
+ "confidence": "medium"
+}

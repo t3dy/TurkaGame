@@ -1,0 +1,39 @@
+{
+ "id": "CL-0715",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Four later papers (Prologue fn 34, Sensorium, New Brethren, Timurid-Mughal) call Iskandar Sulṭān Ibn Turka's first Timurid patron, and none of the pages read mentions Pīr-Muḥammad's court. The dissertation places Ibn Turka at Pīr-Muḥammad's court in Shiraz c. 810-12/1408-9 before Iskandar, and says Iskandar honoured him presumably with a teaching post and judgeship.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1455",
+  "EV-1479",
+  "EV-1464",
+  "EV-1502",
+  "EV-1405",
+  "EV-1406",
+  "EV-1408"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II 212",
+   "where": "dissertation pdf 69",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 69, 51",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "low",
+   "note": "'first' may mean first Timurid patron of lettrist works; the papers do not say"
+  }
+ ],
+ "domain": "biographical"
+}

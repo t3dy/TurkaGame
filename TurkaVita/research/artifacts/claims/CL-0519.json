@@ -1,0 +1,20 @@
+{
+  "id": "CL-0519",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "On the Hour, Ibn Turka assigns to level five (Sufis) the view that all things return to the source, the manifestation of the Real's form corresponding to the period from Adam to Muḥammad, whose perfect transcript makes him Seal.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1043"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.478",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

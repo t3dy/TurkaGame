@@ -1,0 +1,27 @@
+{
+ "id": "CL-0654",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka complains that the Hurufis were the very group that made preoccupation with the science of letters a crime and yet escaped the charge, while he, who had opposed them, saw his petition fail and his family's honour smeared.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1275"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Masdur II (ca. 832-35/1429-32, after exile)",
+   "where": "Nafsat II 212-15",
+   "shaping_risk": "high",
+   "note": "written to the court that was judging him; MK: produced under duress, treat with caution (pdf p.32 fn 44)"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.450",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0600",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 96,
+  "printed_page": "79",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki's stated convention for dating the works: where a date in MS Majlis 10196 seems to be a date of transcription rather than of composition, he flags it with an asterisk. He notes that in the first half of that manuscript the texts stand in almost perfect chronological order, which suggests their dates may refer only to transcription (possibly copies made as evidence for his orthodoxy at Shāhrukh's court in Herat), whereas in the second half (covering 829-38/1427-35, with perhaps no more than two copied after Ibn Turka's death) he assumes the dates are more likely to be, or approximate, composition dates.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R4 opened pdf p.96",
+ "refers_to_primary": "MS Majlis 10196, colophons"
+}

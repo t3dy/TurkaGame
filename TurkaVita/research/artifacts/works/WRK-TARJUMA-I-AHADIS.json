@@ -1,0 +1,32 @@
+{
+ "id": "WRK-TARJUMA-I-AHADIS",
+ "type": "work",
+ "status": "draft",
+ "title": "Tarjuma-yi Aḥādīs-i Mamzūj bā Sukhanān-i ʿAlī u Aʾimma",
+ "transliterated_title": "Tarjuma-yi Aḥādīs-i Mamzūj bā Sukhanān-i ʿAlī u Aʾimma (Translation of the Hadiths of ʿAlī and the Imams; variants Tarjuma-yi Aḥādīs az Amīr al-Muʾminīn, Sharḥ al-Nahj)",
+ "language": "Persian",
+ "genre": "translation and exposition of hadiths of ʿAlī and the Imams",
+ "theme": "hadith",
+ "date": {
+  "ce": "unknown",
+  "hijri": "unknown",
+  "basis": "The only copy (MS Majlis 10196) is undated and incomplete, with a defaced title."
+ },
+ "date_kind": "unknown",
+ "place": "not stated",
+ "addressee": "not stated",
+ "occasion": "not stated",
+ "manuscript": "MS Majlis 10196 ff. 440b-41b (the only known copy; undated, incomplete, title seemingly defaced).",
+ "majlis_folios": "ff. 440b-41b (beyond the 425 ff. the dissertation elsewhere gives for the manuscript)",
+ "edited": false,
+ "summary": "An exposition of hadiths of ʿAlī and the other Imams, known from one truncated copy with a defaced title.",
+ "edition_note": "Unpublished.",
+ "supported_by": [
+  "EV-0680",
+  "EV-0681",
+  "EV-0602"
+ ],
+ "claims": [
+  "CL-0334"
+ ]
+}

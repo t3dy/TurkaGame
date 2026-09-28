@@ -1,0 +1,15 @@
+{
+  "id": "EV-1121",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 342,
+    "printed_page": "325",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "In the R. Anjām, which Melvin-Koushki calls Ibn Turka's definitive statement on the theme, he says this science of wisdom was more prevalent in the time of the earlier prophets, especially Solomon, on whose teaching great thinkers such as Anaxagoras, Pythagoras and Socrates drew. By the time Muḥammad's advent drew near, these sciences had withdrawn into occultation, with only a small fraction communicated; the mainstream philosophy of the schoolmen, from Aristotle and reformulated by Ibn Sīnā, re-emerged from the impetus of the new revelation.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Anjām",
+  "read_by": "R6 opened pdf p.342"
+}

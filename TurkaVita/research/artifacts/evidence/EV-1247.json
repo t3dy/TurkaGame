@@ -1,0 +1,15 @@
+{
+ "id": "EV-1247",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 441,
+  "printed_page": "424",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that Jāmī pointedly excluded both Ṣāʾin al-Dīn and Sharaf al-Dīn Yazdī from the Nafaḥāt al-Uns; ʿAlī Shīr Navāʾī, however, added Sharaf al-Dīn to his Chaghatay Nasāʾim al-Maḥabba (pdf p.285 says neither of Navāʾī's works mentions Ṣāʾin al-Dīn).",
+ "evidence_kind": "reception",
+ "refers_to_primary": "Jāmī, Nafaḥāt al-Uns (Ökten; Binbaş)",
+ "read_by": "R7 opened pdf p.441"
+}

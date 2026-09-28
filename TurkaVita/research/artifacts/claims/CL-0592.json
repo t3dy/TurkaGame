@@ -1,0 +1,21 @@
+{
+  "id": "CL-0592",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Anjām Ibn Turka describes Akhlāṭī's writings as 'moon-splitting' (arqām-i aqmār inshiqāq-i sayyidī), by which locks on the veils over the Quran were opened.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1128"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.345",
+      "shaping_risk": "medium",
+      "note": "quoted in a footnote in Melvin-Koushki's translation"
+    }
+  ],
+  "domain": "doctrinal"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "CL-0206",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki infers that, because the first half of MS Majlis 10196 is in almost perfect chronological order, its dates do not necessarily refer to composition but only to transcription.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0405"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.79",
+   "shaping_risk": "low",
+   "note": "an inference from the order of the texts, not from any colophon"
+  }
+ ],
+ "domain": "chronological"
+}

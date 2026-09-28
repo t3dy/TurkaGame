@@ -1,0 +1,20 @@
+{
+  "id": "CL-0528",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. al-Inzāliyya Ibn Turka states that the lettrists (ahl al-ḥarf) are the associates of the Prophet Muḥammad and his true heirs, being those who understand the letters in their three forms.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1016"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.336",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

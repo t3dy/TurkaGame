@@ -1,0 +1,22 @@
+{
+ "id": "CL-0238",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation calls the 827-29/1425-27 stay at Shāhrukh's court in Herat Ibn Turka's 'first trip' (pp.78-79), yet describes the Iʿtiqādāt, written in Herat by 19 Jumādā I 829/29 March 1426, as written on his 'second trip to Herat' (p.92), and dates the Asrār al-Ṣalāt to Herat in 820/1417 (p.85); the numbering of his visits cannot be settled from these pages.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0404",
+  "EV-0463",
+  "EV-0432"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.78-79, 85, 92",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "biographical"
+}

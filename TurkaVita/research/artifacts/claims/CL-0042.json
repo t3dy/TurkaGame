@@ -1,0 +1,28 @@
+{
+ "id": "CL-0042",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Later Timurid sources report that Ibn Turka and Sharaf al-Dīn Yazdī lived and performed spiritual exercises together in rooms under Akhlāṭī's apartment on the Nile; MK dates their closeness to at least the Cairo period.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0117",
+  "EV-0116"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Gāzurgāhī, Majālis al-ʿUshshāq, majlis 34",
+   "where": "pdf p.66-67, note 64",
+   "shaping_risk": "high",
+   "note": "hagiographical tazkira"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.66-67",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

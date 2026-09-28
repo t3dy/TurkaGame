@@ -1,0 +1,28 @@
+{
+ "id": "CL-0050",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Munshaʾāt-i Turka confirms warm relations between Ibn Turka and Niʿmat Allāh Valī and Qāsim-i Anvār, and holds a letter from Ibn Turka to Shāhrukh, answering a summons to court, to be conveyed by Niʿmat Allāh.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0129",
+  "EV-0130"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Munshaʾāt-i Turka, letters incl. no. 16",
+   "where": "pdf p.68, notes 72 and 70",
+   "shaping_risk": "medium",
+   "note": "the letters are undated on the page"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.68",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

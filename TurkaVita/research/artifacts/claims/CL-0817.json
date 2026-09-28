@@ -1,0 +1,30 @@
+{
+ "id": "CL-0817",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, the Mafahis introduction rejects absolute being (the Tamhid's subject) as an adequate object of inquiry, names the letter as the proper object of a universal science, and cites Ibn ʿArabi, Hamuvayi and Akhlati as its main sources.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1651",
+  "EV-1652",
+  "EV-1653"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Turka, author of K. al-Mafaḥiṣ",
+   "where": "K. al-Mafaḥiṣ",
+   "shaping_risk": "low",
+   "note": "A doctrinal work, not addressed to a judge; the duress rule counts a work as evidence of what he held."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.26-27",
+   "shaping_risk": "medium",
+   "note": "We have the work only as MK summarises or translates it; most of the lettrist works are unedited, so MK's paraphrase cannot be checked against a printed text."
+  }
+ ],
+ "domain": "doctrinal"
+}

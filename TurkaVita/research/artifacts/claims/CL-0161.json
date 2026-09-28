@@ -1,0 +1,20 @@
+{
+ "id": "CL-0161",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK reads the imposter-Sufi episodes as told to present Ibn Turka as an upholder of the Sharīʿa and hence of Shāhrukh's Sunnizing state.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0235"
+ ],
+ "domain": "political",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.79 (printed 62)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

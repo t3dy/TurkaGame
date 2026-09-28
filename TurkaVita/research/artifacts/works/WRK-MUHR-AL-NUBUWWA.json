@@ -1,0 +1,30 @@
+{
+ "id": "WRK-MUHR-AL-NUBUWWA",
+ "type": "work",
+ "status": "draft",
+ "title": "Muhr al-Nubuwwa ('The Seal of Prophethood')",
+ "transliterated_title": "Muhr al-Nubuwwa",
+ "language": "Arabic",
+ "genre": "treatise",
+ "theme": "other",
+ "date": {
+  "ce": "before 1428-03-21",
+  "hijri": "before 4 Jumādā II 831*",
+  "basis": "MK: 'completed before' the date of the Majlis 10196 copy (f. 189a), asterisked as probably a date of transcription; both the date and the place (Shiraz) are taken from Āqā Buzurg (al-Dharīʿa, 22/296, no. 9048)."
+ },
+ "date_kind": "transcription",
+ "place": "Shiraz (asterisked; from Āqā Buzurg)",
+ "manuscript": "3 items listed: MS Majlis 10196 f. 189a (4 Jumādā II 831/21 March 1428); Sipahsālār MS 2930/4 (undated); Princeton MS 2002/4 (1094/1683).",
+ "majlis_folios": "f. 189a",
+ "edited": false,
+ "summary": "A treatise in a preface and two sections that refers the reader at the end to the K. al-Iṣbāḥ; the entry gives no fuller account of its subject.",
+ "supported_by": [
+  "EV-0498",
+  "EV-0499",
+  "EV-0500"
+ ],
+ "claims": [
+  "CL-0209",
+  "CL-0210"
+ ]
+}

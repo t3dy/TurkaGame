@@ -1,0 +1,33 @@
+{
+ "id": "WRK-ARBAINIYYA",
+ "type": "work",
+ "status": "draft",
+ "title": "R. al-Arbaʿīniyya ('On the Number Forty')",
+ "transliterated_title": "Risāla al-Arbaʿīniyya (var. Khaṣāʾiṣ ʿAdad al-Arbaʿīn)",
+ "language": "Arabic",
+ "genre": "brief hadith commentary",
+ "theme": "hadith",
+ "date": {
+  "ce": "before 1425-05-02",
+  "hijri": "before 13 Jumādā II 828",
+  "basis": "MK: 'completed before' the date of the Majlis 10196 copy (ff. 120b-21a); the date is a copying date and only a terminus ad quem for composition; not asterisked."
+ },
+ "date_kind": "transcription",
+ "addressee": "Sayyid Ḥusayn Akhlāṭī, for his son Nūr al-Dīn",
+ "occasion": "Written at Akhlāṭī's instance; the author thanks God for being led to Akhlāṭī's circle (Akhlāṭī is also the main oral source of the K. al-Mafāḥiṣ).",
+ "manuscript": "3 copies listed: MS Majlis 10196 ff. 120b-21a (13 Jumādā II 828/2 May 1425); Qazvin MS 312/10 (1272/1856); Sipahsālār MS 2930 ff. 115b-118a (undated).",
+ "majlis_folios": "ff. 120b-21a",
+ "edited": false,
+ "summary": "A brief commentary on the hadith man ḥafiẓa arbaʿīna ḥadīthan, written for the son of Sayyid Ḥusayn Akhlāṭī.",
+ "supported_by": [
+  "EV-0426",
+  "EV-0427",
+  "EV-0428",
+  "EV-0429",
+  "EV-0486"
+ ],
+ "claims": [
+  "CL-0221",
+  "CL-0210"
+ ]
+}

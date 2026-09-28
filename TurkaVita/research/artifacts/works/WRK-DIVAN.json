@@ -1,0 +1,30 @@
+{
+ "id": "WRK-DIVAN",
+ "type": "work",
+ "status": "draft",
+ "title": "Dīvān or Manẓūmāt (collected poetry)",
+ "transliterated_title": "Dīvān / Manẓūmāt",
+ "language": "Persian/Arabic",
+ "genre": "verse (ghazals, rubāʿīs, qiṭʿa, muʿammās)",
+ "theme": "literary",
+ "date": {
+  "ce": "1425",
+  "hijri": "early 828",
+  "basis": "MK dates the Majlis 10196 page (f. 121b) 'early 828/1425'; that is the copying of the page. The verses' composition dates are not given, and MK says the poetry is scattered through his works."
+ },
+ "date_kind": "transcription",
+ "manuscript": "4 items listed: MS Majlis 10196 f. 121b (early 828/1425); MS 5423 ff. 147b-49a (842/1439); Bāqir Riqqat majmūʿa (901/1496); MS 4029/4 (Edirne, 921/1515). Whether a full dīvān survives is unclear.",
+ "majlis_folios": "f. 121b",
+ "edited": false,
+ "summary": "Ibn Turka's poetical output appears to have been very modest; his pen name is ʿAlī; f. 121b of Majlis 10196 preserves the surviving page of ghazals, rubāʿīs and other forms, but MK's two descriptions of its contents differ.",
+ "supported_by": [
+  "EV-0440",
+  "EV-0441",
+  "EV-0442",
+  "EV-0443"
+ ],
+ "claims": [
+  "CL-0229",
+  "CL-0210"
+ ]
+}

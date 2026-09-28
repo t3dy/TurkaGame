@@ -1,0 +1,30 @@
+{
+  "id": "CL-0459",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Several works catalogued under Ibn Turka's name are of doubtful attribution or unidentified (a Persian jafr treatise datable after 909/1504, Makhzan al-Gharāʾib, Sharḥ al-Hidāya, Taqrīr Masʾalat al-Tawḥīd, al-Tawrāt, R. [fī] l-Wujūd, Muhayyij al-Ashwāq, Maʿjūn-i Ilāhī, and the untitled Kitāb Ṣāʾin al-Dīn ʿAlī Turka), which MK marks as mis- or possibly attributed and does not count as securely his.",
+  "epistemic_type": "contested",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0887",
+    "EV-0888",
+    "EV-0889",
+    "EV-0890"
+  ],
+  "mediation": [
+    {
+      "layer": "later_chronicler",
+      "who": "Catalogues (Āqā Buzurg, Munzavī, Dānishpazhūh, library catalogues)",
+      "where": "as cited by MK, pdf pp.170-172",
+      "shaping_risk": "medium",
+      "note": "Attributions in catalogues are often guesses."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.171",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "textual"
+}

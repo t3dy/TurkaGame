@@ -1,0 +1,15 @@
+{
+ "id": "EV-0223",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 78,
+  "printed_page": "61",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports (paraphrasing Nafsat II 209-10) that Ibn Turka says anyone who attains prominence in his art is liable to attack by envious peers who try to discredit him with local rulers, and that he is attacked by those who treat knowledge as a means to a comfortable life; no prominent person is safe.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II",
+ "read_by": "R2a opened pdf p.78"
+}

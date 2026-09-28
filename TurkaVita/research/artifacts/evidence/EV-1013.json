@@ -1,0 +1,15 @@
+{
+  "id": "EV-1013",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 335,
+    "printed_page": "318",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Ibn Turka also wrote a separate treatise, the R. Aṭvār-i Salāsa, analysing an alternate three-tiered Sufi hierarchy: muḥaqqiqān, abrār and akhyār.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Aṭvār-i Salāsa",
+  "read_by": "R6 opened pdf p.335"
+}

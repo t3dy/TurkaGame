@@ -1,0 +1,137 @@
+{
+ "id": "SCN-0205",
+ "type": "scene",
+ "status": "draft",
+ "act": "courts",
+ "title": "Iraq and Fars, 1414: Iskandar falls",
+ "dramatic_question": "Shāhrukh has come west, Iskandar is taken, and Shāhrukh's summons has reached you. Do you withdraw, stay in view, or go to the new master?",
+ "situation": {
+  "when": "mid-817/1414, and the years c. 817-25/1414-22",
+  "where": "Isfahan, Yazd and Shiraz",
+  "based_on": [
+   "CL-0057",
+   "CL-0416",
+   "CL-0061"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "In 817/1414 Shāhrukh marched against Iskandar in Iraq. Iskandar fled but was captured, blinded and later executed; Shāhrukh installed his own son Ibrāhīm Sulṭān and added Fars and Arab Iraq to his domains. Nothing you do prevents it.",
+   "claim": "CL-0057"
+  },
+  {
+   "text": "During Shāhrukh's first campaign in western Iran (mid-817/1414) he summoned you, and you answered by letter (no. 16) sent from Isfahan to Yazd to be carried by Sayyid Niʿmat Allāh Valī. It praises the newly ascendant ruler and promises to attend court. The letter carries no date of its own: its placement rests on Niʿmat Allāh's movements, and Dānishpazhūh reads the manuscript folio as three letters where Melvin-Koushki counts one.",
+   "claim": "CL-0416"
+  },
+  {
+   "text": "After Iskandar's fall you again attempted to retire from public life. Melvin-Koushki's timeline gives c. 817-25/1414-22, marks the dates 'c.' and cites no source.",
+   "claim": "CL-0061"
+  }
+ ],
+ "prose": [
+  "Shāhrukh has broken Iskandar in Iraq. Iskandar is captured and blinded, and later killed, and Shāhrukh puts his own son Ibrāhīm Sulṭān over Fars. You held a place at Iskandar's court, and the man who beat him has now sent for you.",
+  "Melvin-Koushki reads your tie to Iskandar as something that may have been seen as a liability, and thinks it not unlikely that it fed your later troubles in the region. He reads your choice of Niʿmat Allāh Valī as the bearer of your reply as a shield: no doubt, he says, you felt exposed and thought a Sufi master's eminence prudent. Both are his readings. The letter itself says only that you admire Shāhrukh and will come.",
+  "In the same year (817 AH) you finish the R. Ḥurūf in Shiraz (10 Ramaḍān 817/23 November 1414), a short Persian introduction to the science of letters, and correct your Fuṣūṣ commentary in Fars (19 Dhū l-Ḥijja 817/1 March 1415). The two dates sit uneasily: the R. Ḥurūf is said to mention the Fuṣūṣ commentary, which is dated later, and the entry does not reconcile them. Melvin-Koushki thinks it possible that Iskandar commissioned the R. Ḥurūf, but his own footnote puts its completion shortly after Iskandar's rebellion was quashed, and he does not reconcile the two. First, three rulings on what the treatise argues."
+ ],
+ "rulings": [
+  {
+   "id": "R1",
+   "proposition": "In the R. Ḥurūf the author says his purpose is to present the principles of the lettrists who seek the letters' underlying realities, not the occult properties of the letters that al-Būnī's followers pursue.",
+   "answer": "stand",
+   "based_on": [
+    "CL-0547"
+   ],
+   "effects_correct": {
+    "score.doctrine": 1
+   },
+   "feedback": "The treatise divides lettrists into those concerned with occult properties (ahl-i khavāṣṣ, the majority, chiefly al-Būnī) and those concerned with underlying realities (ahl-i ḥaqāyiq), and says it presents a few guiding principles of the second group. Melvin-Koushki concludes that you ranked theoretical lettrism above letter magic."
+  },
+  {
+   "id": "R2",
+   "proposition": "In the R. Ḥurūf the author holds that his age is in decline, and that his contemporaries are less able than earlier generations to grasp the sciences of ultimate realities.",
+   "answer": "refute",
+   "based_on": [
+    "CL-0589"
+   ],
+   "effects_correct": {
+    "score.doctrine": 1
+   },
+   "feedback": "The treatise says the opposite: it points to the upward progress of the age (taraqqī-yi zamān) and to his contemporaries' improved ability to grasp the sciences of ultimate realities. Melvin-Koushki reads this as part of a millenarian doctrine of progress, which is his interpretation; the passage is the evidence."
+  },
+  {
+   "id": "R3",
+   "proposition": "In the R. Ḥurūf the author says knowledge of this science had long been almost erased and is being revived in his own day through the disciples of Akhlāṭī.",
+   "answer": "stand",
+   "based_on": [
+    "CL-0590"
+   ],
+   "effects_correct": {
+    "score.doctrine": 1
+   },
+   "feedback": "Melvin-Koushki quotes the R. Ḥurūf for exactly this: the science had been all but erased long since and is being revived through the efforts of Akhlāṭī's disciples, with Akhlāṭī hailed as its restorer."
+  }
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Answer Shāhrukh's summons with a letter carried by Niʿmat Allāh Valī, praising him and promising to come, and then try to withdraw from public life.",
+   "strategy": "letter_via_nimat_allah_then_retire",
+   "epistemic_label": "documented",
+   "historical": true,
+   "based_on": [
+    "CL-0416",
+    "CL-0061"
+   ],
+   "requires": {},
+   "effects": {
+    "press.livelihood": -1,
+    "press.works": 1,
+    "score.biography": 2
+   },
+   "feedback": "Letter 16 is your own word to the ruler who had just taken power, so it shows what you told him, not how you felt. Melvin-Koushki's timeline has you attempting to retire c. 817-25/1414-22, with 'c.' and no cited source. The same years hold the R. Ḥurūf and the corrected Fuṣūṣ commentary, so retirement did not mean silence. His reading that Niʿmat Allāh was chosen as a shield is a psychological reconstruction (CL-0614), and the placement of the letter in 1414 is an inference (CL-0613)."
+  },
+  {
+   "id": "B",
+   "label": "Go yourself to Shāhrukh's camp and present yourself to the new ruler as his man.",
+   "strategy": "go_to_shahrukh_now",
+   "epistemic_label": "unknown",
+   "based_on": [
+    "CL-0416",
+    "CL-0429"
+   ],
+   "requires_min": {
+    "court.firuzshah": 1
+   },
+   "effects": {
+    "press.livelihood": 1,
+    "press.enemies": 1,
+    "score.calibration": 1
+   },
+   "feedback": "Letter 16 promises to attend court; the pages do not say whether you went before c. 1422, when the sources put your first accusations before Shāhrukh at Herat (CL-0064). The game opens this only if you have earned Fīrūzshāh's favour; no source has him speaking for you. The record is silent, so the game keeps this as an open possibility and builds nothing on it."
+  },
+  {
+   "id": "C",
+   "label": "Stay in office and in view, serving the new governor of Fars, Ibrāhīm Sulṭān, as you served Iskandar.",
+   "strategy": "stay_visible_under_ibrahim",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0057",
+    "CL-0059"
+   ],
+   "requires": {},
+   "effects": {
+    "press.exposure": 2,
+    "press.enemies": 1,
+    "press.livelihood": 1,
+    "score.biography": -1
+   },
+   "feedback": "No source has you serving Ibrāhīm Sulṭān; it is Sharaf al-Dīn Yazdī who serves him, as his munshī (CL-0456). Melvin-Koushki reads the Iskandar tie as a possible liability once Iskandar had fallen (CL-0059), and to stay in view was to invite that. The game returns you to the record: the sources have you trying to retire."
+  }
+ ],
+ "next": "SCN-0206",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "CL-0582",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that the Mafāḥiṣ's book plan is encoded in three Globes of Light in the prologue's imagery: Planet (the mental form), Pearl (the written form) and Peach (the spoken form), with a fourth part on the Letter itself.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1133",
+    "EV-1134",
+    "EV-1135",
+    "EV-1136",
+    "EV-1097"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "Prologue pp.8-9",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "textual"
+}

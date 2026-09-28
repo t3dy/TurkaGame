@@ -1,0 +1,15 @@
+{
+ "id": "EV-0246",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 32,
+  "printed_page": "15",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki notes that other suspect high-profile individuals, among them the Sufi master Qāsim-i Anvār and the calligrapher Maʿrūf Khaṭṭāt Baghdādī, were also expelled from Herat, and reads the purge in the context of Shāhrukh's attempts to consolidate his rule.",
+ "evidence_kind": "context",
+ "refers_to_primary": "the purge of 830/1427",
+ "read_by": "R2a opened pdf p.32"
+}

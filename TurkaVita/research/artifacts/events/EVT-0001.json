@@ -1,0 +1,29 @@
+{
+ "id": "EVT-0001",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1369",
+  "end": "1369",
+  "hijri": "770",
+  "basis": "Derived from his own statement of his age (59) in Nafsat al-Maṣdūr I, dated 8 Rajab 829; timeline A.1, pdf p.51; MK note 2, pdf p.55.",
+  "date_kind": "inferred"
+ },
+ "place": "Isfahan (almost certainly)",
+ "event_type": "birth",
+ "description": "Ibn Turka is born, into a family of scholars, philosophers and qadis.",
+ "claims": [
+  "CL-0002",
+  "CL-0003",
+  "CL-0004",
+  "CL-0005",
+  "CL-0006",
+  "CL-0007",
+  "CL-0008",
+  "CL-0009",
+  "CL-0016",
+  "CL-0014"
+ ],
+ "fixed_point": false
+}

@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0026",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1415",
+  "end": "1415",
+  "hijri": "817",
+  "basis": "Timeline A.1, pdf p.52. The timeline pairs hijri 817 with CE 1415 here but with CE 1414 for the R. Ḥurūf and Iskandar's fall; the same hijri year appears against two CE years.",
+  "date_kind": "colophon"
+ },
+ "place": "unknown",
+ "event_type": "work",
+ "description": "Ibn Turka completes a corrected version of the Sharḥ Fuṣūṣ al-Ḥikam.",
+ "claims": [
+  "CL-0093"
+ ],
+ "fixed_point": false
+}

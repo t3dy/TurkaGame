@@ -1,0 +1,15 @@
+{
+ "id": "EV-1617",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 24,
+  "printed_page": "7",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that Hossein Ziai characterizes Ibn Turka as a Shiʿi thinker primarily concerned with harmonizing religion and philosophy, seeking thereby to promote the political authority of divinely-inspired ʿulamaʾ.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.24",
+ "refers_to_primary": "Ziai, 'Recent Trends', 413-15"
+}

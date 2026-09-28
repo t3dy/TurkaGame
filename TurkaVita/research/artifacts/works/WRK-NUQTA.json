@@ -1,0 +1,31 @@
+{
+ "id": "WRK-NUQTA",
+ "type": "work",
+ "status": "draft",
+ "title": "Nuqṭa ('On the Dot')",
+ "transliterated_title": "Nuqṭa (var. Sharḥ-i Ḥadīs-i Nuqṭa)",
+ "language": "Persian",
+ "genre": "commentary on a saying of ʿAlī",
+ "theme": "hadith",
+ "date": {
+  "ce": "before 1425-08-01",
+  "hijri": "before 16 Ramaḍān 828*",
+  "basis": "MK: 'completed before' the date of the Majlis 10196 copy (ff. 124b-26a), flagged with his asterisk as probably a date of transcription rather than composition (p.79)."
+ },
+ "date_kind": "transcription",
+ "addressee": "An unnamed friend, to whom it was a response",
+ "occasion": "Written in response to a friend.",
+ "manuscript": "16 items listed; earliest dated: MS Majlis 10196 ff. 124b-26a (16 Ramaḍān 828/1 Aug 1425); then MS 5423 (842/1439), Bijapur MS Arabic BIJ 1238/3 (869-71/1465-67), Bāqir Riqqat majmūʿa (901/1496), and later copies; also misattributed to Davānī.",
+ "majlis_folios": "ff. 124b-26a",
+ "edited": true,
+ "summary": "A commentary on ʿAlī's saying 'I am the dot beneath the B', written in response to a friend; wrongly attributed in one publication to Jalāl al-Dīn Davānī.",
+ "supported_by": [
+  "EV-0518",
+  "EV-0519",
+  "EV-0520"
+ ],
+ "claims": [
+  "CL-0209",
+  "CL-0210"
+ ]
+}

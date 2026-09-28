@@ -1,0 +1,25 @@
+{
+ "id": "REC-0057",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was Ibn Turka?",
+ "proposition": "Ibn Turka was a Sufi poet, philosopher and jurist.",
+ "kind": "inferential",
+ "scholar": "Rosemarie Quiring-Zoche (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "The reading is the one-line description in her EIr entry on the family member 'Afżal-al-Din Torka' (pdf p.25 n.22).",
+  "MK's objection is that it is 'similarly problematic' to Lewisohn's (p.25); he gives no further argument on the page.",
+  "MK adds that the EI2 and EIr entries cover three different family members bearing the name Afdal al-Din Turka, so reference-work identification of Ibn Turka is itself unstable (p.37 n.66). MK is a partisan reporter. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0808",
+  "CL-0809",
+  "EV-1630",
+  "EV-1636",
+  "EV-1635"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0056"
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0472",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 111,
+  "printed_page": "94",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 f. 129a carries the Khavāṣṣ-i ʿIlm-i Ṣarf, copied 'presumably' in Ramaḍān 828/August 1425 (citing Ḥāʾirī, Majlis, 32/237); the date is inferred, not read from a colophon.",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, Khavāṣṣ-i ʿIlm-i Ṣarf",
+ "read_by": "R3 opened pdf p.111"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1670",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 455,
+  "printed_page": "438",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that Ibn Turka and his circle were given the derisive label naw-mulḥidān, \"neo-bāṭinīs or even neo-Ismaʿilis\", by the establishment Sufi Zayn al-Dīn Khwāfī (Binbaş, 124-29).",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.455",
+ "refers_to_primary": "Zayn al-Dīn Khwāfī, as reported in Binbaş, 'Sharaf al-Din', 124-29"
+}

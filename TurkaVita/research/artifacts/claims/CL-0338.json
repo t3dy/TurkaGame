@@ -1,0 +1,27 @@
+{
+ "id": "CL-0338",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The folio references for works in MS Majlis 10196 cannot all be taken at face value as an ordering key: the Sharḥ-i Ḥadīs-i ʿAmāʾ (ff. 119b-20b) and the R. fī Sharḥ Ḥaqīqat al-Waḥda (f. 120a-20b) overlap; the Naẓm al-Durr is printed at ff. '-1b-51b'; the Tamhīd end is printed '23a' (presumably 223a); the Tarjuma is at ff. 440b-41b in a manuscript given as 425 ff.; and the Tuḥfa-yi ʿAlāʾī range 375b-82a overlaps the reported interjected fragment at ff. 374b-75b.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0632",
+  "EV-0642",
+  "EV-0648",
+  "EV-0669",
+  "EV-0680",
+  "EV-0682",
+  "EV-0602"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "game_reconstruction",
+   "who": "R4 (researcher pass), comparing the entries' folio ranges",
+   "where": "pdf pp.97, 131, 133, 134, 137, 147",
+   "shaping_risk": "low",
+   "note": "observation about the source's own inconsistencies; the collection-ordering puzzle should not treat these ranges as exact without a check"
+  }
+ ]
+}

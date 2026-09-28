@@ -1,0 +1,21 @@
+{
+ "id": "CL-0313",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dedicatee of Sharḥ-i Gulshan-i Rāz is named only as one Sulṭān Muḥammad; Melvin-Koushki suggests Sulṭān Muḥammad b. Bāysunghur but also raises the ruler of Gulbarga.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0630"
+ ],
+ "domain": "political",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.131, no. 31 and fn. 54",
+   "shaping_risk": "medium",
+   "note": "'perhaps'; alternative raised in a footnote"
+  }
+ ]
+}

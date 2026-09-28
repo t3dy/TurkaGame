@@ -1,0 +1,15 @@
+{
+ "id": "EV-0489",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 116,
+  "printed_page": "99",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Marginal notes in the Majlis 10196 copy of the K. al-Mafāḥiṣ refer the reader to the author's Sharḥ al-Basmala (f. 84a) and unfinished K. al-Iṣbāḥ (f. 89a); the main text refers to the Sharḥ Fuṣūṣ al-Ḥikam (f. 75a), R. al-Muḥammadiyya (f. 76a) and R. Asrār al-Ṣalāt (f. 77a).",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+ "read_by": "R3 opened pdf p.116"
+}

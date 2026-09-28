@@ -1,0 +1,15 @@
+{
+ "id": "EV-0623",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 129,
+  "printed_page": "112",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "At the foot of the same page a note in the author's hand, signed ʿAlī b. Muḥammad b. Muḥammad Turka, testifies to the accuracy of this copy as read by the copyist in his presence, and is dated 28 Ṣafar 832/4 December 1428 at Chālū in Tabaristan (Mazandaran).",
+ "evidence_kind": "autograph",
+ "read_by": "R4 opened pdf p.129",
+ "refers_to_primary": "MS Majlis 10196 f. 330a, autograph note"
+}

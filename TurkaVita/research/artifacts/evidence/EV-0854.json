@@ -1,0 +1,15 @@
+{
+  "id": "EV-0854",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 161,
+    "printed_page": "144",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 33, to Amīr ʿAlāʾ al-Dīn (ca. 831-32/1428-29, Gilan?): a condolence letter on the death of one of his sons of the Bahādur line, consoling the amir that at the height of his powers he will soon father another heir (TMN/M f. 122a, TMN/MS p. 26-27, TMN/D pp. 202-3). MK's footnote lists three candidate identities for this ʿAlāʾ al-Dīn: ʿAlāʾ al-Dīn (al-Dawla) b. Bāysunghur (born 1417, so perhaps less likely), ʿAlāʾ al-Dīn ʿAlīka Kükältash, or ʿAlāʾ al-Dawla son of the vizier ʿIzz al-Dīn Ṭāhir Simnānī who served the ruler of Mazandaran.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.161",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 33"
+}

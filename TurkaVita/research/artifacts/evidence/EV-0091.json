@@ -1,0 +1,15 @@
+{
+ "id": "EV-0091",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 63,
+  "printed_page": "46",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ibn Turka mentions in several places that he spent time in Mecca (e.g. Nafsat al-Maṣdūr II, 203); he is also reported to have spent time in Baghdad.",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.63",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II, 203"
+}

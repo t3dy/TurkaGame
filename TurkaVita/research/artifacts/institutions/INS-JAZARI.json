@@ -1,0 +1,17 @@
+{
+ "id": "INS-JAZARI",
+ "type": "institution",
+ "status": "draft",
+ "name": "Shams al-Dīn Muḥammad al-Jazarī",
+ "ruler": "al-Jazarī",
+ "seat": "Damascus, Cairo, Fars, Herat",
+ "tenure": "d. 1429",
+ "role": "enemy",
+ "summary": "Scholar whom Barqūq asked Ibn Turka about, and whose enmity later caused him much grief, as Ibn Turka tells it; dies at Herat in 1429.",
+ "supported_by": [
+  "EV-0045",
+  "EV-0097",
+  "EV-0227",
+  "EV-0229"
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0152",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 72,
+  "printed_page": "55",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "When the delegation failed, the Yazd enemies compiled a case from statements in works written in his youth, claiming to have found, for example, a verse praising ʿAlī and condemning ʿUmar and ʿUthmān (Sharḥ-i Naẓm al-Durr, liv; Maʿṣūm ʿAlī Shāh, Ṭarāʾiq al-Ḥaqāʾiq, 3/30).",
+ "evidence_kind": "chronicle",
+ "read_by": "R1 opened pdf p.72",
+ "refers_to_primary": "Ma'ṣūm ʿAlī Shāh, Ṭarāʾiq al-Ḥaqāʾiq, 3/30"
+}

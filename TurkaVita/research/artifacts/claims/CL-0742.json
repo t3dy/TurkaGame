@@ -1,0 +1,27 @@
+{
+ "id": "CL-0742",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Sensorium says Ibn Turka published the Five Debates the very year of Ibn Khaldūn's death (808/1406); the dissertation timeline has the Five Debates at 808/1405 and Ibn Khaldūn's death at 808/1406 in adjacent-looking entries, one Hijri year converted two ways.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1482",
+  "EV-1448"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 51",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Ibn Turka's Pythagorean Sensorium",
+   "where": "pdf 5",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

@@ -1,0 +1,29 @@
+{
+ "id": "REC-0061",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Was Ibn Turka a Hurufi sympathiser?",
+ "proposition": "No: Ibn Turka was an intellectual lettrist, distinct from the Hurufis and messianic Sufis by motive, working within the tradition and insisting on the binding finality of the Muhammadan dispensation.",
+ "kind": "inferential",
+ "scholar": "Matthew Melvin-Koushki",
+ "reasoning": [
+  "MK's criterion is motive: Hurufis proclaim a new Persian dispensation, messianic Sufis promote themselves as political saviours, lettrists present themselves as occult philosophers within the tradition (pdf p.456).",
+  "Evidence is MK's report of Ibn Turka's own dismissal of the Hurufiyya as perverting the science for non-intellectual and non-Islamic ends (p.22 n.12; p.28), his 'unimpeachably Islamic' insistence on the finality of Muhammad's dispensation (p.456), and MK's argument that Hurufi vigour shows lettrism's broad valency rather than defining it (p.452). The loci for the first two are not given on the pages read.",
+  "MK concedes that Ibn Turka is 'a profoundly millenarian thinker by any standard' and that his efforts 'implicated' his circle in heterodox messianism and political intrigue (p.456), and that lettrism was born of Shiʿi gnostic-messianic and Sufi strains alike (p.452); the boundary is therefore drawn by motive, not by content.",
+  "MK gives no direct evidence on these pages for the charge itself, and records that the Hurufi link was Qasim-i Anvar's (p.456 n.16). MK is a partisan reporter of a defence. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0830",
+  "CL-0824",
+  "CL-0827",
+  "CL-0829",
+  "EV-1676",
+  "EV-1677",
+  "EV-1666",
+  "EV-1675"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "REC-0059"
+ ]
+}

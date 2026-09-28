@@ -1,0 +1,27 @@
+{
+ "id": "CL-0089",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Fażl Allāh Astarābādī, founder of the Ḥurūfiyya, was executed at Alinjaq by Mīrānshāh b. Temür in 796/1394 (Diagram A.2 gives 1393).",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0008"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "execution of Fażl Allāh"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.51, note 15 on p.58",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political",
+ "counterevidence": [
+  "EV-0055"
+ ]
+}

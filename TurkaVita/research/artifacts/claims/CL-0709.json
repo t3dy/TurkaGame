@@ -1,0 +1,37 @@
+{
+ "id": "CL-0709",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation and the Prologue agree on five years of wandering exile ending in death: the dissertation runs from the 830/1427 arrest to death at Herat in 835/1432 and says Nafsat al-Maṣdūr II was written about five years after 830/1427.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1421",
+  "EV-1426",
+  "EV-1423",
+  "EV-1452"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I/II, as reported by Melvin-Koushki",
+   "where": "dissertation pdf 70-77",
+   "shaping_risk": "high",
+   "note": "written to the rulers judging him; the dissertation calls the apologies the primary source for his life (pdf 75)"
+  },
+  {
+   "layer": "correspondence",
+   "who": "Ibn Turka's letters from exile",
+   "where": "dissertation pdf 73",
+   "shaping_risk": "medium",
+   "note": "pleas for clemency and help"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 73-77",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

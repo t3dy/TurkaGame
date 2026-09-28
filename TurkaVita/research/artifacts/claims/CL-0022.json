@@ -1,0 +1,41 @@
+{
+ "id": "CL-0022",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In his late twenties, at his brother's insistence, Ibn Turka set out on some fifteen years of study abroad (roughly 795-810/1393-1408, both dates marked 'c.' in the timeline), because, by his account, circumstances in Iran were too strait to carry on the family legacy in philosophy and mystical theory.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0090",
+  "EV-0007",
+  "EV-0006"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "the departure from Samarkand"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I (829/1426), addressed to Shāhrukh",
+   "where": "Nafsat al-Maṣdūr I, 170",
+   "shaping_risk": "high",
+   "note": "the reason given is his own"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "Nafsat al-Maṣdūr II, 203",
+   "shaping_risk": "high",
+   "note": "written to seek intercession from the ruler's son while his case was still unresolved"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.63 and p.51",
+   "shaping_risk": "low",
+   "note": "'late twenties' is MK's; the timeline dates are approximate"
+  }
+ ],
+ "domain": "biographical"
+}

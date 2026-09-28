@@ -1,0 +1,32 @@
+{
+ "id": "CL-0711",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Sensorium paper dates a fifteen-year tenure in Mamluk Cairo to ca. 795-810/1393-1408, and Of Islamic Grammatology calls him a longtime resident of Cairo who came to study law; both agree with the dissertation on the Cairo dates.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1482",
+  "EV-1485",
+  "EV-1484"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Cairo residence"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Ibn Turka's Pythagorean Sensorium",
+   "where": "pdf 5",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Of Islamic Grammatology",
+   "where": "pdf 13, 17",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

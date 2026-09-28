@@ -1,0 +1,36 @@
+{
+ "id": "CL-0716",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The later papers give Iskandar's reign as 1409-14 (812-17 AH) and, in Timurid-Mughal, say he was defeated and executed five years into it. The dissertation timeline splits Ibn Turka's time at Iskandar's court into 812-15/1409-12 (with a query-marked qadi appointment) and 815-17/1412-14, puts Iskandar's capture and blinding at 817/1414, but chapter 3 gives his death as 818/1415. The older project docs give his fall as 1415. Whether execution followed capture within a year is not settled by these pages.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1491",
+  "EV-1493",
+  "EV-1479",
+  "EV-1408",
+  "EV-1409",
+  "EV-1410",
+  "EV-1413"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Iskandar's defeat and death"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 51-52, 176",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Timurid-Mughal Philosopher-Kings",
+   "where": "pdf 3, 8",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

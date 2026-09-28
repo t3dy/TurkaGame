@@ -1,0 +1,15 @@
+{
+ "id": "EV-1639",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 38,
+  "printed_page": "21",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that Sayyid ʿAlī Mūsavī Bihbahānī (1971) drew attention to the prominent lettrist component of Ibn Turka's oeuvre, reiterating Dānishpazhūh's 1966 call to study his works, and that Dānishpazhūh too recognized in passing the importance of lettrism to his thought.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.38",
+ "refers_to_primary": "Bihbahānī 1971, 110; Dānishpazhūh 1966"
+}

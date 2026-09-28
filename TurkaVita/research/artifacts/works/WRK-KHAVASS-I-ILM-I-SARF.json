@@ -1,0 +1,27 @@
+{
+ "id": "WRK-KHAVASS-I-ILM-I-SARF",
+ "type": "work",
+ "status": "draft",
+ "title": "Khavāṣṣ-i ʿIlm-i Ṣarf ('On the Special Properties of the Science of Morphology')",
+ "transliterated_title": "Khavāṣṣ-i ʿIlm-i Ṣarf (var. R. dar Maʿnā-yi Khavāṣṣ-i ʿIlm-i Ṣarf; Ṣarf al-Qulūb)",
+ "language": "Persian",
+ "genre": "short treatise",
+ "theme": "lettrism",
+ "date": {
+  "ce": "1425-08",
+  "hijri": "Ramaḍān 828 (presumed)",
+  "basis": "MK: the Majlis 10196 copy (f. 129a) was copied 'presumably' in Ramaḍān 828/August 1425, a date inferred from its position between dated items, not from a colophon; no composition date is given."
+ },
+ "date_kind": "transcription",
+ "manuscript": "5 items listed: MS Majlis 10196 f. 129a (presumably Ramaḍān 828/Aug 1425); MS 5423 (842/1439); MS 10004 (903-4/1497-98); MS 3035/5 (1084/1673); Tehran microfilm 827.",
+ "majlis_folios": "f. 129a",
+ "edited": true,
+ "summary": "A lettrist treatment of morphology, defined as the process by which singularity becomes multiplicity, with the pronoun huwa as the source of the divine names.",
+ "supported_by": [
+  "EV-0472",
+  "EV-0473"
+ ],
+ "claims": [
+  "CL-0210"
+ ]
+}

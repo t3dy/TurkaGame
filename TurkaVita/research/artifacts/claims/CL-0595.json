@@ -1,0 +1,21 @@
+{
+  "id": "CL-0595",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki says Ibn Turka, in his K. al-Manāhij (Natanz, 833/1430, for his son Jamāl al-Dīn Muḥammad), rejected some post-Avicennan developments in logic as breaking unduly with the ancients.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1119"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.341",
+      "shaping_risk": "medium",
+      "note": "Melvin-Koushki's footnote cites El-Rouayheb's study of the work"
+    }
+  ],
+  "domain": "doctrinal"
+}

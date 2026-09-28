@@ -1,0 +1,15 @@
+{
+  "id": "EV-0891",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 158,
+    "printed_page": "141",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK's footnote on letter 15 calls Ibn Turka's R. Suʾl al-Mulūk his third introductory treatise on lettrism, completed in 829/1426 at the request of Bāysunghur.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.158",
+  "refers_to_primary": "R. Suʾl al-Mulūk"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1682",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 454,
+  "printed_page": "437",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK's note: Nūrī owned the earliest and most comprehensive collection of Ibn Turka's works, now MS Majlis 10196, and left marginal comments throughout, extensively on the K. al-Mafaḥiṣ and on R. Nuqṭa, R. Ḥurūf and R. Suʾl al-Mulūk.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.454",
+ "refers_to_primary": "MS Majlis 10196, marginalia of Mullā ʿAlī Nūrī"
+}

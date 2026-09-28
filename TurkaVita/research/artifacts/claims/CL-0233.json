@@ -1,0 +1,29 @@
+{
+ "id": "CL-0233",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Mabdaʾ u Maʿād was written at the request of one Shāh Rażī l-Dīn, as its introduction states, and was completed early Ṣafar 832/mid-November 1428 at Manzil-i Chālū in Mazandaran, the same date and place as its Majlis 10196 copy.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0476",
+  "EV-0475",
+  "EV-0474"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "Ibn Turka's introduction and the Majlis 10196 colophon",
+   "where": "ff. 266b-71a",
+   "shaping_risk": "medium",
+   "note": "date and place of the completion equal those of the copy"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.94-95",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

@@ -1,0 +1,29 @@
+{
+ "id": "CL-0819",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Ibn Turka's own hierarchies in the R. Shaqq-i Qamar and R. Madarij Afham al-Afwaj place philosophers such as Farabi and Suhravardi at low levels short of universal knowledge; this is the same treatise that Corbin's chapter studies.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1625",
+  "EV-1601"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Turka, author of R. Shaqq-i Qamar; R. Madārij Afhām al-Afwāj",
+   "where": "R. Shaqq-i Qamar; R. Madārij Afhām al-Afwāj",
+   "shaping_risk": "low",
+   "note": "A doctrinal work, not addressed to a judge; the duress rule counts a work as evidence of what he held."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.454",
+   "shaping_risk": "medium",
+   "note": "We have the work only as MK summarises or translates it; most of the lettrist works are unedited, so MK's paraphrase cannot be checked against a printed text."
+  }
+ ],
+ "domain": "doctrinal"
+}

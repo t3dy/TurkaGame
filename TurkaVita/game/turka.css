@@ -1,0 +1,52 @@
+/* turka.css — Turka Vita additions to the forked Plotinus stylesheet (style.css) */
+:root {
+  --hostage: #6b4a2a;
+  --courts: #2f5a5a;
+  --trials: #8a2e2e;
+  --exile: #5a4a6e;
+  --copyist: #6e2a4a;
+  --panel: #fbf7ee;
+}
+.act.hostage { color: var(--hostage); } .act.courts { color: var(--courts); } .act.trials { color: var(--trials); }
+.act.exile { color: var(--exile); } .act.copyist { color: var(--copyist); }
+.bar-top { position: sticky; top: 0; z-index: 5; display: flex; justify-content: space-between; align-items: center; gap: .8rem;
+  background: var(--ground); border-bottom: 1px solid var(--rule); padding: .45rem 0; max-width: 44rem; margin: 0 auto; }
+.bar-top[hidden] { display: none; }
+.bar-top .brand { font-size: .8rem; letter-spacing: .2em; color: var(--ink-soft); }
+.bar-top nav { display: flex; gap: .3rem; flex-wrap: wrap; }
+button.link { font: inherit; font-size: .85rem; background: none; border: 0; color: var(--ink); text-decoration: underline; cursor: pointer; padding: .2rem .4rem; }
+button.link:hover, button.link:focus-visible { color: var(--porphyry); outline: 1px solid var(--rule); }
+button.link[aria-expanded="true"] { font-weight: 600; }
+.panel { background: var(--panel); border: 1px solid var(--ink-soft); max-width: 44rem; margin: .6rem auto; padding: 1rem clamp(1rem, 4vw, 1.6rem); font-size: .95rem; }
+.panel h2 { margin-top: 0; }
+.panel p { margin: .55rem 0; }
+button.go[disabled] { opacity: .4; cursor: not-allowed; }
+button.go.alt { background: none; color: var(--ink); border: 1px solid var(--ink); }
+button.go.alt:hover, button.go.alt:focus-visible { background: var(--ink); color: var(--leaf); }
+ol.acts { display: flex; gap: .3rem; list-style: none; padding: 0; margin: .3rem 0 .7rem; justify-content: center; }
+ol.acts li { width: 2rem; text-align: center; border-bottom: 3px solid var(--rule); color: var(--ink-soft); font-size: .8rem; padding-bottom: .1rem; }
+ol.acts li.on { border-bottom-color: var(--ink); color: var(--ink); font-weight: 700; }
+.choice .body { display: flex; flex-direction: column; gap: .15rem; flex: 1; }
+.cost { display: block; font-size: .78rem; color: var(--ink-soft); font-style: italic; }
+.cost.lock { color: var(--contested); font-style: normal; }
+.choice.locked { opacity: .6; cursor: not-allowed; background: #f0eadc; }
+.choice.locked:hover { border-color: var(--rule); }
+.record { border-left: 3px solid var(--ink-soft); padding-left: .7rem; font-style: italic; margin: .8rem 0; }
+fieldset.slot { border: 1px solid var(--rule); background: #fffdf8; margin: .6rem 0; padding: .5rem .7rem; }
+fieldset.slot legend { font-family: var(--caps); font-size: .68rem; letter-spacing: .1em; color: var(--ink-soft); padding: 0 .3rem; }
+button.opt { display: flex; flex-wrap: wrap; gap: .3rem .7rem; align-items: baseline; width: 100%; text-align: left; font: inherit; color: inherit;
+  background: none; border: 1px solid transparent; padding: .45rem .5rem; cursor: pointer; }
+button.opt:hover, button.opt:focus-visible { border-color: var(--ink); outline: none; }
+button.opt.sel { border-color: var(--ink); background: #f3ecdc; box-shadow: 3px 0 0 var(--ink) inset; }
+button.opt .cost { flex-basis: 100%; }
+.preview { border: 1px dashed var(--ink-soft); padding: .5rem .8rem; margin: .8rem 0; background: #fbf7ee; }
+.preview p { margin: .25rem 0; font-size: .95rem; }
+.preview p.empty { color: var(--ink-soft); font-style: italic; }
+ol.sortlist { list-style: none; padding: 0; margin: .6rem 0; display: grid; gap: .3rem; }
+ol.sortlist li { display: grid; grid-template-columns: 1.6rem 1fr 2.2rem 2.2rem; gap: .4rem; align-items: center; border: 1px solid var(--rule); background: #fffdf8; padding: .35rem .5rem; }
+ol.sortlist .pos { font-family: var(--caps); color: var(--ink-soft); }
+ol.sortlist small { display: block; color: var(--ink-soft); font-style: italic; font-size: .75rem; }
+button.mv { font-size: .8rem; background: none; border: 1px solid var(--ink-soft); cursor: pointer; padding: .3rem 0; }
+button.mv:hover:not([disabled]), button.mv:focus-visible { background: var(--ink); color: var(--leaf); outline: none; }
+button.mv[disabled] { opacity: .25; cursor: default; }
+ol.sorted { padding-left: 1.4rem; font-size: .95rem; }

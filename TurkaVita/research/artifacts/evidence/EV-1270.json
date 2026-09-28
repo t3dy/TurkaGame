@@ -1,0 +1,15 @@
+{
+ "id": "EV-1270",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 448,
+  "printed_page": "431",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In the second apology Ṣāʾin al-Dīn says he never approved of those who monopolize shaykhdom with the capital of Sufi sciences and states, quoting Ḥāfiẓ on the Sufi's snare, and that on his travels he attacked two positions of such people: their announcement that the Mahdi (khātam al-vilāya) would come within the next two years, when the Sufis would rule the world, and their giving free rein to human impulses by removing the bridle of Sharīʿa duties.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Nafsat al-Maṣdūr II, 212-15 (Ḥāfiẓ quoted)",
+ "read_by": "R7 opened pdf p.448"
+}

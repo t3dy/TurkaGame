@@ -1,0 +1,28 @@
+{
+ "id": "CL-0333",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The entry for Taqdīm al-ʿAql ʿalā l-Nafs gives no date and lists no copy in MS Majlis 10196; one manuscript notes it was presented to a Dawlat-i Sayyidiyya-yi Imāmiyya-yi Rażaviyya, whom the entry does not identify, and which is a note on that copy, not shown to be the work's own dedication.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0678",
+  "EV-0679"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Sipahsālār 2930/6",
+   "shaping_risk": "medium",
+   "note": "a note on one late copy"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.146-147, no. 43",
+   "shaping_risk": "low"
+  }
+ ]
+}

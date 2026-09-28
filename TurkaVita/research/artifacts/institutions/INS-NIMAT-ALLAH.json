@@ -1,0 +1,17 @@
+{
+ "id": "INS-NIMAT-ALLAH",
+ "type": "institution",
+ "status": "draft",
+ "name": "Shāh Niʿmat Allāh Valī",
+ "ruler": "Niʿmat Allāh Valī (d. 1431)",
+ "seat": "Kirman",
+ "tenure": "d. 834/1431",
+ "role": "ally",
+ "summary": "Sufi master and lettrist; warm relations with Ibn Turka are confirmed by the letters, including one to Shāhrukh answering a summons that Niʿmat Allāh was to convey; Niʿmatullahi hagiographers credit him with sending Ibn Turka and Yazdī to Akhlāṭī.",
+ "supported_by": [
+  "EV-0127",
+  "EV-0128",
+  "EV-0129",
+  "EV-0130"
+ ]
+}

@@ -1,0 +1,1226 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "turkavita/artifacts.schema.json",
+ "title": "TURKAVITA artifact types",
+ "description": "The artifact schema for the Ibn Turka game, forked from PLOTINUSGAME's. One file per artifact; the id prefix names the type. Adds work (WRK) and institution (INS), the duress rule (evidence_kind, hypothesis commitments.conviction) and court/pressure state on choices.",
+ "$defs": {
+  "id": {
+   "type": "string",
+   "pattern": "^(EV|CL|REC|EVT|MOD|SIT|SCN|DEC|HYP|WRK|INS)-[0-9A-Z-]+$"
+  },
+  "ids": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/id"
+   }
+  },
+  "status": {
+   "enum": [
+    "draft",
+    "needs_review",
+    "approved",
+    "rejected",
+    "superseded"
+   ]
+  },
+  "confidence": {
+   "enum": [
+    "high",
+    "medium",
+    "low"
+   ]
+  },
+  "epistemic_type": {
+   "description": "WHAT KIND of claim this is. Kept separate from confidence (chat: 'I'd actually separate confidence from epistemic type').",
+   "enum": [
+    "attested",
+    "directly_inferred",
+    "inferential_reconstruction",
+    "causal_reconstruction",
+    "psychological_reconstruction",
+    "counterfactual",
+    "contested",
+    "undeterminable",
+    "analytical_construct"
+   ]
+  },
+  "mediation": {
+   "description": "Historiographical provenance, not just source provenance. The chain for Ibn Turka runs from the event through what he himself told the rulers judging him, to his letters, the colophons of the manuscript that carries his works, later chroniclers, Melvin-Koushki, and the game.",
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "layer",
+     "who"
+    ],
+    "properties": {
+     "layer": {
+      "enum": [
+       "event",
+       "subject_self_report",
+       "correspondence",
+       "manuscript_colophon",
+       "later_chronicler",
+       "modern_interpretation",
+       "game_reconstruction"
+      ]
+     },
+     "who": {
+      "type": "string"
+     },
+     "where": {
+      "type": "string",
+      "description": "e.g. 'VP 3', 'Enn. II.9'"
+     },
+     "shaping_risk": {
+      "enum": [
+       "low",
+       "medium",
+       "high"
+      ],
+      "description": "how likely this layer shaped the content to its own ends"
+     },
+     "note": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "citation": {
+   "type": "object",
+   "required": [
+    "source_id",
+    "witness_page"
+   ],
+   "properties": {
+    "source_id": {
+     "type": "string",
+     "pattern": "^SRC-[0-9A-F]{10}$"
+    },
+    "witness_page": {
+     "type": "integer",
+     "description": "1-based PDF page in corpus.db"
+    },
+    "printed_page": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "what the book calls the page; the build checks it against the running head"
+    },
+    "short_title": {
+     "type": "string"
+    }
+   }
+  },
+  "ekind": {
+   "enum": [
+    "apology",
+    "creed_tract",
+    "letter",
+    "colophon",
+    "autograph",
+    "early_work",
+    "work",
+    "hagiography",
+    "chronicle",
+    "reception",
+    "scholarly_argument",
+    "context"
+   ],
+   "description": "what sort of witness this is. The duress rule reads it: only letter/colophon/autograph/early_work/work can show what he HELD; apology and creed_tract were written to his judges."
+  },
+  "date_kind": {
+   "enum": [
+    "attested",
+    "colophon",
+    "conjectured",
+    "inferred",
+    "context"
+   ],
+   "description": "how the date is known. 'colophon' may be transcription, not composition."
+  }
+ },
+ "oneOf": [
+  {
+   "title": "evidence — a located, short, attributed piece of a source",
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "status",
+    "citation",
+    "content",
+    "read_by",
+    "evidence_kind"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "type": {
+     "const": "evidence"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    },
+    "citation": {
+     "$ref": "#/$defs/citation"
+    },
+    "content": {
+     "type": "string",
+     "description": "paraphrase, or a quotation under ~40 words in quotation marks"
+    },
+    "refers_to_primary": {
+     "type": "string",
+     "description": "the ancient locus the scholar is discussing, e.g. 'Porphyry, VP 3'"
+    },
+    "read_by": {
+     "type": "string",
+     "description": "who actually opened the page — honesty label"
+    },
+    "evidence_kind": {
+     "$ref": "#/$defs/ekind"
+    }
+   }
+  },
+  {
+   "title": "claim — a proposition, typed epistemically",
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "status",
+    "proposition",
+    "epistemic_type",
+    "confidence",
+    "supported_by"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "type": {
+     "const": "claim"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    },
+    "proposition": {
+     "type": "string"
+    },
+    "epistemic_type": {
+     "$ref": "#/$defs/epistemic_type"
+    },
+    "confidence": {
+     "$ref": "#/$defs/confidence"
+    },
+    "supported_by": {
+     "$ref": "#/$defs/ids"
+    },
+    "counterevidence": {
+     "$ref": "#/$defs/ids"
+    },
+    "mediation": {
+     "$ref": "#/$defs/mediation"
+    },
+    "domain": {
+     "enum": [
+      "biographical",
+      "doctrinal",
+      "textual",
+      "institutional",
+      "social",
+      "political",
+      "chronological"
+     ]
+    }
+   }
+  },
+  {
+   "title": "reconstruction — a scholar going beyond the evidence, with the reasoning kept",
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "status",
+    "question",
+    "proposition",
+    "kind",
+    "scholar",
+    "reasoning",
+    "observed_facts",
+    "confidence"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "type": {
+     "const": "reconstruction"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    },
+    "question": {
+     "type": "string",
+     "description": "the gap in the record this answers, e.g. 'Why did Plotinus leave Alexandria?'"
+    },
+    "proposition": {
+     "type": "string"
+    },
+    "kind": {
+     "enum": [
+      "inferential",
+      "causal",
+      "psychological",
+      "counterfactual"
+     ]
+    },
+    "scholar": {
+     "type": "string"
+    },
+    "reasoning": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "observed_facts": {
+     "$ref": "#/$defs/ids"
+    },
+    "cites": {
+     "$ref": "#/$defs/ids"
+    },
+    "alternatives": {
+     "$ref": "#/$defs/ids"
+    },
+    "counterevidence": {
+     "$ref": "#/$defs/ids"
+    },
+    "confidence": {
+     "$ref": "#/$defs/confidence"
+    }
+   }
+  },
+  {
+   "title": "event — a biographical event, separated from its interpretation",
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "status",
+    "actor",
+    "date",
+    "event_type",
+    "description",
+    "claims"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "type": {
+     "const": "event"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    },
+    "actor": {
+     "type": "string"
+    },
+    "date": {
+     "type": "object",
+     "properties": {
+      "start": {
+       "type": "string"
+      },
+      "end": {
+       "type": "string"
+      },
+      "basis": {
+       "type": "string"
+      },
+      "date_kind": {
+       "$ref": "#/$defs/date_kind"
+      },
+      "hijri": {
+       "type": "string"
+      }
+     }
+    },
+    "place": {
+     "type": "string"
+    },
+    "event_type": {
+     "type": "string"
+    },
+    "description": {
+     "type": "string"
+    },
+    "claims": {
+     "$ref": "#/$defs/ids"
+    },
+    "open_questions": {
+     "$ref": "#/$defs/ids",
+     "description": "reconstructions competing to explain it"
+    },
+    "career_effect": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "object",
+      "properties": {
+       "direction": {
+        "enum": [
+         "up",
+         "down",
+         "mixed",
+         "unknown"
+        ]
+       },
+       "magnitude": {
+        "enum": [
+         "minor",
+         "major",
+         "unknown"
+        ]
+       },
+       "basis": {
+        "$ref": "#/$defs/epistemic_type"
+       }
+      }
+     }
+    },
+    "fixed_point": {
+     "type": "boolean",
+     "description": "an external event the player cannot prevent"
+    },
+    "courts": {
+     "$ref": "#/$defs/ids"
+    }
+   }
+  },
+  {
+   "title": "scene — the API boundary between design and prose",
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "status",
+    "act",
+    "dramatic_question",
+    "situation",
+    "invariants",
+    "choices",
+    "epistemic_contract"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "type": {
+     "const": "scene"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    },
+    "act": {
+     "enum": [
+      "hostage",
+      "courts",
+      "trials",
+      "exile",
+      "copyist",
+      "historian"
+     ],
+     "description": "historian is the modern desk: the player weighing the scholarship rather than a character inside the history"
+    },
+    "title": {
+     "type": "string"
+    },
+    "dramatic_question": {
+     "type": "string"
+    },
+    "situation": {
+     "type": "object",
+     "required": [
+      "when",
+      "where",
+      "based_on"
+     ],
+     "properties": {
+      "when": {
+       "type": "string"
+      },
+      "where": {
+       "type": "string"
+      },
+      "based_on": {
+       "$ref": "#/$defs/ids"
+      }
+     }
+    },
+    "requires_state": {
+     "type": "object",
+     "description": "flags/knowledge that must already hold"
+    },
+    "invariants": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "text",
+       "claim"
+      ],
+      "properties": {
+       "text": {
+        "type": "string"
+       },
+       "claim": {
+        "$ref": "#/$defs/id"
+       }
+      }
+     }
+    },
+    "prose": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "rulings": {
+     "description": "doctrinal judgements the player makes before the choices appear; each scored against what the texts show",
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "proposition",
+       "answer",
+       "based_on",
+       "effects_correct",
+       "feedback"
+      ],
+      "properties": {
+       "id": {
+        "type": "string"
+       },
+       "proposition": {
+        "type": "string"
+       },
+       "answer": {
+        "enum": [
+         "stand",
+         "refute"
+        ]
+       },
+       "based_on": {
+        "$ref": "#/$defs/ids"
+       },
+       "effects_correct": {
+        "type": "object"
+       },
+       "effects_wrong": {
+        "type": "object"
+       },
+       "feedback": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "choices": {
+     "type": "array",
+     "minItems": 2,
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "label",
+       "strategy",
+       "effects"
+      ],
+      "properties": {
+       "id": {
+        "type": "string"
+       },
+       "label": {
+        "type": "string"
+       },
+       "strategy": {
+        "type": "string"
+       },
+       "based_on": {
+        "$ref": "#/$defs/ids"
+       },
+       "epistemic_label": {
+        "enum": [
+         "documented",
+         "reconstructed",
+         "contested",
+         "unknown",
+         "counterfactual"
+        ]
+       },
+       "effects": {
+        "type": "object",
+        "description": "state mutations: {'doctrine.one_beyond_being': +1, 'flag.met_ammonius': true, ...}"
+       },
+       "feedback": {
+        "type": "string"
+       },
+       "next": {
+        "type": "string"
+       },
+       "requires_min": {
+        "type": "object",
+        "description": "{key: n} means state[key] >= n (favour, exposure)",
+        "additionalProperties": {
+         "type": "number"
+        }
+       },
+       "requires_max": {
+        "type": "object",
+        "description": "{key: n} means state[key] <= n",
+        "additionalProperties": {
+         "type": "number"
+        }
+       },
+       "costs": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "description": "plain-language costs shown on the button: who pays what"
+       }
+      }
+     }
+    },
+    "next": {
+     "type": "string"
+    },
+    "epistemic_contract": {
+     "type": "object",
+     "required": [
+      "historical_status",
+      "invented_dialogue",
+      "invented_facts"
+     ],
+     "properties": {
+      "historical_status": {
+       "enum": [
+        "documented",
+        "reconstruction",
+        "counterfactual",
+        "mixed"
+       ]
+      },
+      "invented_dialogue": {
+       "type": "boolean"
+      },
+      "invented_facts": {
+       "const": false
+      }
+     }
+    },
+    "tests": {
+     "type": "array"
+    },
+    "show_dossier": {
+     "type": "boolean",
+     "description": "render the provenance ledger beside the scene"
+    },
+    "commitment": {
+     "description": "A dispute the player commits to after the rulings and before the choices. The game does not know which position is right and never scores that. It scores the fit between the commitment and the dossier the player assembled, and it prices a claim about what he HELD that rests only on testimony given to his judges (the duress rule).",
+     "type": "object",
+     "required": [
+      "question",
+      "options",
+      "underdetermined_option",
+      "scoring"
+     ],
+     "properties": {
+      "question": {
+       "type": "string"
+      },
+      "options": {
+       "type": "array",
+       "minItems": 2,
+       "items": {
+        "type": "object",
+        "required": [
+         "hypothesis",
+         "label"
+        ],
+        "properties": {
+         "hypothesis": {
+          "$ref": "#/$defs/id"
+         },
+         "label": {
+          "type": "string"
+         }
+        }
+       }
+      },
+      "underdetermined_option": {
+       "$ref": "#/$defs/id",
+       "description": "the 'the evidence does not fix this' option. UNKNOWN is not NONE: it is credited when the dossier really is underdetermined and charged when it is not."
+      },
+      "scoring": {
+       "description": "effects per outcome tag: coherent, incoherent, calibrated_unknown, over_caution, false_certainty, non_conviction, coerced_testimony, empty_dossier.",
+       "type": "object",
+       "additionalProperties": {
+        "type": "object"
+       }
+      },
+      "feedback": {
+       "type": "object",
+       "additionalProperties": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "composer": {
+     "type": "object",
+     "description": "a writing scene: the player assembles a work from the moves the source reports, one slot at a time",
+     "required": [
+      "work",
+      "slots"
+     ],
+     "properties": {
+      "work": {
+       "$ref": "#/$defs/id"
+      },
+      "prompt": {
+       "type": "string"
+      },
+      "slots": {
+       "type": "array",
+       "minItems": 1,
+       "items": {
+        "type": "object",
+        "required": [
+         "id",
+         "question",
+         "options"
+        ],
+        "properties": {
+         "id": {
+          "type": "string"
+         },
+         "question": {
+          "type": "string"
+         },
+         "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+           "type": "object",
+           "required": [
+            "id",
+            "label",
+            "epistemic_label",
+            "based_on",
+            "effects"
+           ],
+           "properties": {
+            "id": {
+             "type": "string"
+            },
+            "label": {
+             "type": "string"
+            },
+            "epistemic_label": {
+             "enum": [
+              "documented",
+              "reconstructed",
+              "contested",
+              "unknown",
+              "counterfactual"
+             ]
+            },
+            "based_on": {
+             "$ref": "#/$defs/ids"
+            },
+            "effects": {
+             "type": "object"
+            },
+            "feedback": {
+             "type": "string"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "sorter": {
+     "type": "object",
+     "description": "the collection puzzle: order items; scored by Kendall distance to the order of the real manuscript",
+     "required": [
+      "items",
+      "truth",
+      "based_on"
+     ],
+     "properties": {
+      "items": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "required": [
+         "id",
+         "label"
+        ],
+        "properties": {
+         "id": {
+          "type": "string"
+         },
+         "label": {
+          "type": "string"
+         },
+         "note": {
+          "type": "string"
+         }
+        }
+       }
+      },
+      "truth": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "based_on": {
+       "$ref": "#/$defs/ids"
+      },
+      "prompt": {
+       "type": "string"
+      },
+      "scoring": {
+       "type": "object"
+      }
+     }
+    }
+   }
+  },
+  {
+   "title": "biographical_model — one scholar's whole trajectory, built from their reconstructions",
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "status",
+    "scholar",
+    "title",
+    "summary",
+    "phases",
+    "uses"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "type": {
+     "const": "biographical_model"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    },
+    "scholar": {
+     "type": "string"
+    },
+    "title": {
+     "type": "string"
+    },
+    "summary": {
+     "type": "string"
+    },
+    "phases": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "label",
+       "when"
+      ],
+      "properties": {
+       "label": {
+        "type": "string"
+       },
+       "when": {
+        "type": "string"
+       },
+       "where": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "causal_emphasis": {
+     "type": "object",
+     "additionalProperties": {
+      "enum": [
+       "low",
+       "medium",
+       "high"
+      ]
+     },
+     "description": "analytical weights, not historical probabilities"
+    },
+    "uses": {
+     "$ref": "#/$defs/ids"
+    },
+    "cites": {
+     "$ref": "#/$defs/ids"
+    }
+   }
+  },
+  {
+   "title": "hypothesis - a position in a historiographical dispute, with how it reads each datum",
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "status",
+    "dispute",
+    "letter",
+    "name",
+    "proposition",
+    "commitments",
+    "bearings"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "type": {
+     "const": "hypothesis"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    },
+    "dispute": {
+     "type": "string",
+     "description": "the question all the hypotheses answer; they share it verbatim"
+    },
+    "letter": {
+     "type": "string",
+     "pattern": "^[A-Z]$",
+     "description": "the player-facing label"
+    },
+    "name": {
+     "type": "string"
+    },
+    "proposition": {
+     "type": "string"
+    },
+    "commitments": {
+     "description": "what the position is stuck with if it is asserted. The game uses these, not a truth value.",
+     "type": "object",
+     "required": [
+      "conviction"
+     ],
+     "properties": {
+      "conviction": {
+       "type": "boolean",
+       "description": "does the position say what he actually held or was? Only the underdetermined position does not."
+      }
+     }
+    },
+    "entails": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "what else must be true if this holds - shown to the player as the price of the position"
+    },
+    "proponents": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "scholar",
+       "cites"
+      ],
+      "properties": {
+       "scholar": {
+        "type": "string"
+       },
+       "cites": {
+        "$ref": "#/$defs/ids"
+       },
+       "note": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "no_proponent_note": {
+     "type": "string",
+     "description": "required in spirit when proponents is empty: say why a position with no advocate is on the board"
+    },
+    "alternatives": {
+     "$ref": "#/$defs/ids"
+    },
+    "cites": {
+     "$ref": "#/$defs/ids"
+    },
+    "bearings": {
+     "description": "how this position reads each datum. The direction is a reading, never a fact: the same evidence bears differently under a different lens, which is the whole mechanic.",
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "object",
+      "required": [
+       "evidence",
+       "kind",
+       "direction",
+       "reading",
+       "attributed_to"
+      ],
+      "properties": {
+       "evidence": {
+        "$ref": "#/$defs/id"
+       },
+       "kind": {
+        "enum": [
+         "apology",
+         "creed_tract",
+         "letter",
+         "colophon",
+         "autograph",
+         "early_work",
+         "work",
+         "hagiography",
+         "chronicle",
+         "reception"
+        ],
+        "description": "the kind of witness read. Only letter/colophon/autograph/early_work/work can carry a claim about what he held."
+       },
+       "direction": {
+        "enum": [
+         "supports",
+         "strains",
+         "neutral"
+        ]
+       },
+       "reading": {
+        "type": "string"
+       },
+       "attributed_to": {
+        "type": "string",
+        "description": "the scholar who reads the datum this way, or 'design inference' when the reading is the game's and not a scholar's"
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "title": "decision — a human editorial decision, kept as an artifact",
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "status",
+    "issue",
+    "decision",
+    "rationale",
+    "reviewer"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "type": {
+     "const": "decision"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    },
+    "issue": {
+     "type": "string"
+    },
+    "decision": {
+     "type": "string"
+    },
+    "rationale": {
+     "type": "string"
+    },
+    "reviewer": {
+     "type": "string"
+    },
+    "decides": {
+     "$ref": "#/$defs/ids"
+    }
+   }
+  },
+  {
+   "title": "work — one of his writings, dated only as far as the sources allow",
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "status",
+    "title",
+    "language",
+    "date_kind",
+    "supported_by"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "type": {
+     "const": "work"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    },
+    "title": {
+     "type": "string"
+    },
+    "transliterated_title": {
+     "type": "string"
+    },
+    "language": {
+     "enum": [
+      "Persian",
+      "Arabic",
+      "Persian/Arabic",
+      "unknown"
+     ]
+    },
+    "genre": {
+     "type": "string"
+    },
+    "theme": {
+     "enum": [
+      "lettrism",
+      "mystical_philosophy",
+      "philosophy",
+      "logic",
+      "theology",
+      "hadith",
+      "law",
+      "literary",
+      "correspondence",
+      "apology",
+      "other"
+     ]
+    },
+    "date": {
+     "type": "object",
+     "properties": {
+      "ce": {
+       "type": "string"
+      },
+      "hijri": {
+       "type": "string"
+      },
+      "basis": {
+       "type": "string"
+      }
+     }
+    },
+    "date_kind": {
+     "enum": [
+      "composition",
+      "transcription",
+      "conjectured",
+      "unknown"
+     ],
+     "description": "where the manuscript's date may be the copying and not the writing, it is flagged"
+    },
+    "place": {
+     "type": "string"
+    },
+    "addressee": {
+     "type": "string",
+     "description": "patron, dedicatee, or the ruler it was written to"
+    },
+    "institution": {
+     "$ref": "#/$defs/ids"
+    },
+    "occasion": {
+     "type": "string"
+    },
+    "manuscript": {
+     "type": "string",
+     "description": "e.g. 'MS Majlis 10196 ff. 179b-83b'"
+    },
+    "majlis_folios": {
+     "type": "string"
+    },
+    "edited": {
+     "type": "boolean"
+    },
+    "summary": {
+     "type": "string"
+    },
+    "supported_by": {
+     "$ref": "#/$defs/ids"
+    },
+    "claims": {
+     "$ref": "#/$defs/ids"
+    }
+   }
+  },
+  {
+   "title": "institution — a court, or a person who is one, as a position on the board",
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "status",
+    "name",
+    "role",
+    "supported_by"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "type": {
+     "const": "institution"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    },
+    "name": {
+     "type": "string"
+    },
+    "ruler": {
+     "type": "string"
+    },
+    "seat": {
+     "type": "string"
+    },
+    "tenure": {
+     "type": "string"
+    },
+    "role": {
+     "enum": [
+      "patron",
+      "judge",
+      "addressee",
+      "enemy",
+      "ally",
+      "teacher",
+      "context",
+      "recipient"
+     ]
+    },
+    "summary": {
+     "type": "string"
+    },
+    "supported_by": {
+     "$ref": "#/$defs/ids"
+    }
+   }
+  }
+ ]
+}

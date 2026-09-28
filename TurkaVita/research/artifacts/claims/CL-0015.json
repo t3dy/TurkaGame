@@ -1,0 +1,28 @@
+{
+ "id": "CL-0015",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's nephew Afżal al-Dīn Muḥammad translated and commented on Shahrastānī's K. al-Milal wa-l-Niḥal for Shāhrukh (finished 13 Rajab 843/20 December 1439), seems in his introduction to allude to his uncle's tribulations, and was executed by Shāhrukh after Sulṭān-Muḥammad's failed rebellion of 850/1446.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0081",
+  "EV-0082"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Dawlatshāh, Tazkirat al-Shuʿarā; the nephew's own Tanqīḥ al-Adilla",
+   "where": "pdf p.60, notes 26 and 28",
+   "shaping_risk": "medium",
+   "note": "the allusion to his uncle is MK's reading ('seems to')"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.60",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

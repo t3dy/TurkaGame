@@ -1,0 +1,15 @@
+{
+ "id": "EV-0109",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 65,
+  "printed_page": "48",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ibn Turka never names Akhlāṭī in his writings but calls him 'our Sayyid' (sayyid-i mā, R. Shaqq-i Qamar 116), 'the Sayyidic Presence' (R. Ḥurūf f. 156b; R. Arbaʿīniyya f. 120b, both MS Majlis 10196) and 'the sublime Sayyidic Threshold' (K. al-Mafāḥiṣ, preface, f. 52b). Melvin-Koushki takes this as an index of unparalleled regard.",
+ "evidence_kind": "work",
+ "read_by": "R1 opened pdf p.65",
+ "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar 116; R. Ḥurūf f. 156b; K. al-Mafāḥiṣ preface f. 52b"
+}

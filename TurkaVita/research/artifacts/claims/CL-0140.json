@@ -1,0 +1,27 @@
+{
+ "id": "CL-0140",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I's ninth hadith exalts the scholar over the ascetic and leads into the case that prophetic inheritance is inner knowledge.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0296",
+  "EV-0297"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.83 (printed 66)",
+   "shaping_risk": "low"
+  }
+ ]
+}

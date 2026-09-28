@@ -1,0 +1,23 @@
+{
+ "id": "CL-0743",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The older project biography says patronage in this period was transactional and explicit, with works commissioned as royal boons, and illustrates it with Boon for the Khan. On the pages read, The Occult Court uses that language only for ʿAlī Ṣafī's 1522 book commissioned by a Qizilbash governor. Of Ibn Turka it says that his project aimed at directly transforming Turko-Mongol warlords into occult philosopher-kings, that his court was equally imamophile, and that his Debate of Feast and Fight (1426) was a mirror for Timurid princes. It does not call his patronage transactional.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1463",
+  "EV-1461",
+  "EV-1460"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Occult Court",
+   "where": "pdf 3, 7, 9",
+   "shaping_risk": "medium",
+   "note": "the transactional reading, if any, is the older doc's, not this paper's"
+  }
+ ],
+ "domain": "social"
+}

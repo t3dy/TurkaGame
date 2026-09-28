@@ -1,0 +1,28 @@
+{
+ "id": "CL-0049",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Niʿmatullahi hagiographical sources record that Niʿmat Allāh Valī and Qāsim-i Anvār accompanied Ibn Turka and Sharaf al-Dīn on a visit to Akhlāṭī, and that Niʿmat Allāh had told them to seek Akhlāṭī out in the first place.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0127",
+  "EV-0128"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Niʿmatullahi hagiographical sources (discussed in MK §4.3.2)",
+   "where": "pdf p.68",
+   "shaping_risk": "high",
+   "note": "the sources credit their own saint with the careers of Ibn Turka and Sharaf al-Dīn"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.68",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1412",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 106,
+  "short_title": "Melvin-Koushki, dissertation (2012)",
+  "printed_page": "89"
+ },
+ "content": "The dissertation says the R. Ḥurūf was written at the request of a dignitary, 'perhaps Iskandar Mīrzā' and was completed on 10 Ramaḍān 817/23 November 1414 in Shiraz; footnote 15 adds that this is shortly after Iskandar's rebellion against Shāhrukh was violently quashed. A copy appears to have been sent that year to Sayyid Niẓām al-Dīn Aḥmad.",
+ "evidence_kind": "work",
+ "read_by": "R8 opened pdf p.106",
+ "refers_to_primary": "Ibn Turka, R. Ḥurūf"
+}

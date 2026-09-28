@@ -1,0 +1,29 @@
+{
+  "id": "CL-0414",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In letters 4 and 12 (ca. 816/1413, Isfahan?) Ibn Turka says he must leave the region for a time because of harassment by envious persons (letter 4) and is moving his family to Shiraz (letter 12); he uses both letters to recommend the young learned Sharaf al-Dīn Yaʿqūb as his replacement (letter 4 to Fīrūzshāh, letter 12 to Iskandar's vizier).",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0819",
+    "EV-0828"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Amīr Fīrūzshāh (presumed) and Vazīr Ḥāfiẓ Rāzī",
+      "where": "Munshaʾāt-i Turka letters 4 and 12",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.156",
+      "shaping_risk": "medium",
+      "note": "Addressee of letter 4 is 'almost certainly' Fīrūzshāh per MK"
+    }
+  ],
+  "domain": "biographical"
+}

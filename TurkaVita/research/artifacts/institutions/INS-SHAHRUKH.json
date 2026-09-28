@@ -1,0 +1,19 @@
+{
+ "id": "INS-SHAHRUKH",
+ "type": "institution",
+ "status": "draft",
+ "name": "Shāhrukh b. Temür, the court at Herat",
+ "ruler": "Shāhrukh",
+ "seat": "Herat",
+ "tenure": "1397–1447 (governor of Khurasan from 1397)",
+ "role": "judge",
+ "summary": "The ruler who enforces the Sharīʿa and closes the taverns, before whom Ibn Turka is accused, twice wins favour, and is finally stripped, tortured and exiled. Ibn Turka spends his last months in weekly attendance at this court awaiting review.",
+ "supported_by": [
+  "EV-0010",
+  "EV-0019",
+  "EV-0031",
+  "EV-0036",
+  "EV-0039",
+  "EV-0048"
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "id": "CL-0710",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation says the Turka family was sent to Temür's court at Samarkand in 789/1387, that Ibn Turka left c. 795/1393 for Mecca and Cairo with Sharaf al-Dīn Yazdī, studied in Cairo about fifteen years (c. 795-810/1393-1408), and returned to Isfahan c. 810/1408; MK warns that some timeline dates are conjectured or approximate.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1401",
+  "EV-1402",
+  "EV-1403"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Samarkand years and Cairo residence"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I 170, II 203",
+   "where": "dissertation pdf 63",
+   "shaping_risk": "high",
+   "note": "the fifteen-year period is reported through the apologies"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 51, 62-63",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

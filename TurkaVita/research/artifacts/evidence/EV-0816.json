@@ -1,0 +1,15 @@
+{
+  "id": "EV-0816",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 156,
+    "printed_page": "139",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK's footnote on letter 1: the two likeliest years for a Friday night 16 Jumādā I are 814 (5 September 1411) or 822 (10 June 1419); assuming rough chronological order in the collection he prefers the earlier date.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.156",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 1"
+}

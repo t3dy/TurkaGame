@@ -1,0 +1,21 @@
+{
+ "id": "CL-0665",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The 1427 purge belongs to Shāhrukh's drive to consolidate eastern and western Iran under direct control, which targeted messianic movements (Ḥurūfiyya, Nūrbakhshiyya) and extra-establishment intellectuals like Ibn Turka's circle as ungovernable threats, alongside his Sunnizing project (MK).",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1281"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.33",
+   "shaping_risk": "medium",
+   "note": "MK's 'best understood in the context of'"
+  }
+ ],
+ "domain": "political"
+}

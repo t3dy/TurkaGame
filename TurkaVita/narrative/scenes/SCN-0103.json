@@ -1,0 +1,110 @@
+{
+ "id": "SCN-0103",
+ "type": "scene",
+ "status": "draft",
+ "act": "hostage",
+ "title": "Cairo, c. 1393-1397: two masters",
+ "dramatic_question": "In Cairo a hadith scholar who distrusts extravagant Sufism and a Kurdish occultist rumoured to be the mahdi are both open to you. How do you divide yourself between them?",
+ "situation": {
+  "when": "c. 795-810/1393-1408 (both dates 'c.'); Akhlāṭī dies in 799/1397",
+  "where": "Cairo, under Sultan Barqūq",
+  "based_on": [
+   "CL-0026",
+   "CL-0031",
+   "CL-0032",
+   "CL-0027",
+   "CL-0034"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "In Cairo Ibn Turka studied hadith under Sirāj al-Dīn al-Bulqīnī (d. 805/1403), who was sympathetic to Sufism but not a partisan of it: when certain verses of Ibn al-Fāriḍ's Tāʾiyya were put to him he called them beyond the pale of belief. Melvin-Koushki cites no source for the discipleship itself.",
+   "claim": "CL-0026"
+  },
+  {
+   "text": "He also met and apprenticed himself to Sayyid Ḥusayn Akhlāṭī, the Kurdish occultist and rumoured mahdi. Melvin-Koushki cites no dated source for when the apprenticeship began.",
+   "claim": "CL-0031"
+  },
+  {
+   "text": "Akhlāṭī was a physician by trade and the resident alchemist and wonderworker at Barqūq's court, known for jafr, raml, the science of letters and taksīr. He died in Cairo in 799/1397, so on the timeline's own 'c.' dates the overlap with the Cairo years is at most about four years; that arithmetic is ours, not Melvin-Koushki's.",
+   "claim": "CL-0034"
+  },
+  {
+   "text": "Ibn Turka implies, in his second apology to Bāysunghur, that he was a regular participant in scholarly majlises at the Mamluk court.",
+   "claim": "CL-0027"
+  }
+ ],
+ "prose": [
+  "Sirāj al-Dīn al-Bulqīnī teaches hadith and is thought by some to be the renewer of his century. He is friendly to Sufism without belonging to it.",
+  "Sayyid Ḥusayn Akhlāṭī is a physician who serves Sultan Barqūq as alchemist and wonderworker, and he has a reputation as a master of letters and numbers. Ibn Ḥajar, a Cairo chronicler, reports that after Akhlāṭī's death his house was found to hold wine, a Bible and priests' clothes, and that his absence from Friday prayers exposed him to charges of Shiʿism (a low-confidence report).",
+  "Akhlāṭī will be dead in 799/1397 and Bulqīnī in 805/1403. Your own later account implies that you sat in the scholarly majlises at Barqūq's court. How do you spend the years you have?"
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Study hadith under Bulqīnī and apprentice yourself to Akhlāṭī as well, and keep to the scholarly majlises at Barqūq's court.",
+   "strategy": "both_masters_and_the_majlis",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0026",
+    "CL-0031",
+    "CL-0027",
+    "CL-0600",
+    "CL-0038"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.akhlati": 2,
+    "court.yazdi": 1,
+    "court.barquq": 1,
+    "press.exposure": 1,
+    "score.biography": 2,
+    "life.master": "akhlati"
+   },
+   "feedback": "Melvin-Koushki has both teachers, and reads your second apology, written to Bāysunghur, as implying you sat in the majlises. Neither apprenticeship is dated, and the record does not say how the hours were divided. The later tazkira of Gāzurgāhī has you and Yazdī spend years in spiritual exercises in the ground-floor rooms of Akhlāṭī's house, though Melvin-Koushki says its own death date for Akhlāṭī is wrong. He argues that the discipleship changed you from a competent scholar of the religious sciences into an occult philosopher, which is his reading; your first apology to Shāhrukh does not mention Akhlāṭī at all."
+  },
+  {
+   "id": "B",
+   "label": "Give your years to Bulqīnī and the hadith, and keep clear of the Sayyid.",
+   "strategy": "bulqini_only",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0026",
+    "CL-0031",
+    "CL-0600"
+   ],
+   "requires": {},
+   "effects": {
+    "court.barquq": 1,
+    "score.biography": -1,
+    "life.master": "akhlati"
+   },
+   "feedback": "No source has him avoid Akhlāṭī; a later tazkira (Gāzurgāhī) puts him in the Sayyid's house, and he later calls Akhlāṭī his sole oral source for lettrism. This is the game's own what-if, and it returns you to the record: nothing later can be built on a scholar who never met Akhlāṭī."
+  },
+  {
+   "id": "C",
+   "label": "Give yourself wholly to Akhlāṭī and let the hadith go.",
+   "strategy": "akhlati_only",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0031",
+    "CL-0032"
+   ],
+   "requires": {},
+   "effects": {
+    "court.akhlati": 3,
+    "press.exposure": 2,
+    "score.biography": -1,
+    "life.master": "akhlati"
+   },
+   "feedback": "The sources have you study hadith under Bulqīnī as well as follow Akhlāṭī. This is the game's own what-if, and the game returns you to the record as Melvin-Koushki gives it, where you have both."
+  }
+ ],
+ "next": "SCN-0104",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

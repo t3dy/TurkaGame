@@ -1,0 +1,38 @@
+{
+  "id": "CL-0405",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The closing run of the collection (letters 35-47) consists largely of uncontextualized greetings to Sufis and officials, which MK reads as an effort by the author to work his wider network in the hope of resolving his intolerable situation after 830/1427.",
+  "epistemic_type": "psychological_reconstruction",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0809",
+    "EV-0856",
+    "EV-0857",
+    "EV-0858",
+    "EV-0859",
+    "EV-0860",
+    "EV-0861",
+    "EV-0862",
+    "EV-0863",
+    "EV-0864",
+    "EV-0867"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Sufis and administrative officials",
+      "where": "Munshaʾāt-i Turka letters 35-47",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.153",
+      "shaping_risk": "medium",
+      "note": "MK's motive-attribution; the letters themselves state no such aim"
+    }
+  ],
+  "domain": "social"
+}

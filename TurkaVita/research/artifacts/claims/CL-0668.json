@@ -1,0 +1,24 @@
+{
+ "id": "CL-0668",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's own record does not name the Hurufis outside the second apology, yet Hurufi-sourced family contact with Fażl Allāh, the Hurufi label and the naw-mulḥidān label all gave enemies material for association; the pages read contain no passage in which Ibn Turka endorses Hurufi doctrine.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1224",
+  "EV-1264",
+  "EV-1291",
+  "EV-1285"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.256",
+   "shaping_risk": "medium",
+   "note": "R7's summary of MK's picture; the last clause is an absence on the pages read, not a statement by MK"
+  }
+ ],
+ "domain": "social"
+}

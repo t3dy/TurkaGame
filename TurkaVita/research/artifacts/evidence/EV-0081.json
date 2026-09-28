@@ -1,0 +1,14 @@
+{
+ "id": "EV-0081",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 60,
+  "printed_page": "43",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ibn Turka's nephew Afżal al-Dīn Abū l-Fatḥ Muḥammad (son of Ṣadr al-Dīn) made a Persian translation and commentary on Shahrastānī's K. al-Milal wa-l-Niḥal, Tanqīḥ al-Adilla wa-l-ʿIlal, dedicated to Shāhrukh and finished 13 Rajab 843/20 December 1439; in his introduction he seems to allude to the tribulations his uncle suffered because of his views.",
+ "evidence_kind": "reception",
+ "read_by": "R1 opened pdf p.60"
+}

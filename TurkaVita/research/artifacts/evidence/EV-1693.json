@@ -1,0 +1,15 @@
+{
+ "id": "EV-1693",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 92,
+  "printed_page": "75",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that in his Sharḥ-i Naẓm al-Durr, on Ibn al-Fāriḍ's Tāʾiyya al-Kubrā, Ibn Turka alters the second hemistich of line 619 from Companions and Followers as leaders of the faith to his children and the holy Imams, \"in what would seem to be specifically Shiʿi fashion\".",
+ "evidence_kind": "work",
+ "read_by": "R2b opened pdf p.92",
+ "refers_to_primary": "Ibn Turka, Sharḥ-i Naẓm al-Durr, 269; Ibn al-Fāriḍ, Dīwān"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0450",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 107,
+  "printed_page": "90",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The R. Ḥurūf is unpublished; Melvin-Koushki provides an edition and translation in Part 2 of the dissertation (§T.2), and states that the earliest surviving copy (Majlis 10196) was completed on 14 Dhū l-Qaʿda 828/27 September 1425 in Yazd.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, R. Ḥurūf",
+ "read_by": "R3 opened pdf p.107"
+}

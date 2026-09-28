@@ -1,0 +1,15 @@
+{
+  "id": "EV-1046",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 176,
+    "printed_page": "159",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki says it is possible that Mīrzā Iskandar personally commissioned Ibn Turka's first treatise on lettrism, the R. Ḥurūf, and presumes Iskandar also installed him as qadi of Isfahan; he adds that Iskandar was known for imamophilism and an esotericist bent and 'may be imagined' as taking warmly to Ibn Turka.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, R. Ḥurūf",
+  "read_by": "R6 opened pdf p.176"
+}

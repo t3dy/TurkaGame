@@ -1,0 +1,15 @@
+{
+  "id": "EV-0834",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 158,
+    "printed_page": "141",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK's footnote to letter 16: Dānishpazhūh identifies three separate letters on TMN/M f. 148a: one sent to Niʿmat Allāh Valī as dictated by Iskandar, followed by two from Ibn Turka to Niʿmat Allāh Valī asking him to intercede with Shāhrukh on his behalf. MK lists it as a single letter.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.158",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 16"
+}

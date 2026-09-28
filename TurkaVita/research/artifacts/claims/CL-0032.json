@@ -1,0 +1,28 @@
+{
+ "id": "CL-0032",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Akhlāṭī was a physician by trade and resident alchemist and wonderworker at Sultan Barqūq's court, known for mastery of jafr, raml, ḥurūf and taksīr; a later Shiraz manuscript of Gāzurgāhī shows him receiving gifts from Barqūq.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0101",
+  "EV-0102",
+  "EV-0115"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Sharḥ-i Naẓm al-Durr editor's introduction and Gāzurgāhī's Majālis al-ʿUshshāq (painting ca. 1560)",
+   "where": "pdf p.64, note 51",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.64",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

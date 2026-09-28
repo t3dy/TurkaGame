@@ -1,0 +1,31 @@
+{
+ "id": "REC-0059",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "What did his accusers think he was?",
+ "proposition": "Ibn Turka and his circle were 'neo-bāṭinīs' (naw-mulḥidān), and possibly neo-Ismaʿilis or Hurufi sympathisers: subversive esotericists dangerous to a state alarmed by mystical-messianic extremism.",
+ "kind": "inferential",
+ "scholar": "Zayn al-Dīn Khwāfī and the establishment opponents (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "The one accusation MK quotes on these pages is the label naw-mulhidan, given by the establishment Sufi Zayn al-Din Khwafi (pdf p.455, citing Binbaş 124-29). MK says the opponents 'effectively used his esotericism against him' and made the label stick with disastrous consequences (pp.455-456).",
+  "The Hurufi link on these pages attaches to his associate Qasim-i Anvar, whose putative Hurufi connection was the official excuse for the exile of Qasim and Ibn Turka from Herat in 1427 (p.456 n.16, citing Virani); Isma'ili claims on Qasim are also reported. The pages read do not report a source calling Ibn Turka himself a Hurufi; the charge in these pages is guilt by association plus the naw-mulhidan label.",
+  "MK is uncertain what the label meant, whether freethinking subversion, neo-Batinism or Isma'ilism, and calls the Isma'ili reading 'not beyond the realm of possibility' (p.456 n.16).",
+  "MK reads the episode as 'heterodoxification', a political use of his esotericism, and against the charge holds that Ibn Turka dismissed the Hurufis as perverting the science (p.22 n.12), and that what separates lettrists from Hurufis is motive (p.456). The accusers' own words are not on the pages read; the accusations answered in the apologies (Nafsat al-Masdur) are outside the pages read for this task. MK is a partisan reporter. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0826",
+  "CL-0828",
+  "CL-0829",
+  "CL-0827",
+  "CL-0831",
+  "CL-0824",
+  "EV-1671",
+  "EV-1673",
+  "EV-1667"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0060",
+  "REC-0061"
+ ]
+}

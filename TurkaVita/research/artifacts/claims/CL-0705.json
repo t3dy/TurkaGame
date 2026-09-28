@@ -1,0 +1,25 @@
+{
+ "id": "CL-0705",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Occult Court says Qāsim-i Anvār (d. 1434) was one of Ibn Turka's companions in Cairo and, like him, was cancelled and exiled in 1427 for his lettrist associations.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1462"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Qāsim-i Anvār's exile 1427"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Occult Court",
+   "where": "pdf 8, fn 24",
+   "shaping_risk": "medium",
+   "note": "a footnote in a paper about someone else; no citation given"
+  }
+ ],
+ "domain": "biographical"
+}

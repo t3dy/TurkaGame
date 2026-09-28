@@ -1,0 +1,22 @@
+{
+ "id": "CL-0036",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The circumlocutions for Akhlāṭī are an index of Ibn Turka's unparalleled regard for his teacher (compare his 'khwāja-yi mā' for Khwāja Muḥammad Pārsā).",
+ "epistemic_type": "psychological_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0109",
+  "EV-0110"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.65",
+   "shaping_risk": "medium",
+   "note": "MK's reading of an absence; Ibn Turka never says why he avoids the name"
+  }
+ ],
+ "domain": "social"
+}

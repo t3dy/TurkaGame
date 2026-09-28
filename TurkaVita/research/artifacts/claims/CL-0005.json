@@ -1,0 +1,33 @@
+{
+ "id": "CL-0005",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Turka family had been noted for its scholars since Ilkhanid times; Ibn Turka himself states its distinguished seven-century history, and an ancestor is said to have come from Khujand to Isfahan in the Khwarazmshahid/Seljuq period.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0061",
+  "EV-0062"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "the family's history"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "Nafsat al-Maṣdūr II, 203, 215",
+   "shaping_risk": "high",
+   "note": "written to seek intercession from the ruler's son while his case was still unresolved"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.55",
+   "shaping_risk": "low",
+   "note": "the family's own account; MK says information before the 8th/14th century is lost"
+  }
+ ],
+ "domain": "social"
+}

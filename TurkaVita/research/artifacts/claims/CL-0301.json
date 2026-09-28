@@ -1,0 +1,21 @@
+{
+ "id": "CL-0301",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki's entry for Qābiliyyat gives no date of composition, place, addressee or occasion, and lists no copy in MS Majlis 10196; the earliest dated copy he lists is of 842/1439.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0604",
+  "EV-0605"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.125-126, no. 26",
+   "shaping_risk": "low"
+  }
+ ]
+}

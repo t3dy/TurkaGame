@@ -1,0 +1,56 @@
+{
+  "id": "MOD-0002",
+  "type": "biographical_model",
+  "status": "draft",
+  "scholar": "Leonard Lewisohn (as reported by Melvin-Koushki)",
+  "title": "The orthodox Sunni Sufi",
+  "summary": "Lewisohn's article studies the apologies, and on Melvin-Koushki's report takes them at face value: a Shāfiʿī qadi and Ashʿarī by creed for whom Sufism is the discipline of the Sunni elite, driven from office by envious enemies. Lewisohn's own text was not read by the researchers; the phases follow how the apologies tell the life, and are the periodisation this reading needs, not his.",
+  "phases": [
+    {
+      "label": "A Shāfiʿī family of qadis and scholars; twenty-five years of the religious sciences under his brother",
+      "when": "1369-c. 1393",
+      "where": "Isfahan and Samarkand"
+    },
+    {
+      "label": "Fifteen years abroad, of tafsir, hadith, uṣūl and fiqh, as Nafsat I tells it",
+      "when": "c. 1393-1408"
+    },
+    {
+      "label": "Qadi and teacher at the courts of Fars",
+      "when": "c. 1408-1422",
+      "where": "Shiraz, Isfahan"
+    },
+    {
+      "label": "Cleared at Herat, qadi of Yazd, the creed laid before the court's scholars",
+      "when": "c. 1422-1426",
+      "where": "Herat and Yazd"
+    },
+    {
+      "label": "The first apology and the Iʿtiqādāt",
+      "when": "829/1426",
+      "where": "Herat"
+    },
+    {
+      "label": "Persecution and exile; the second apology and the Iʿtiqādiyya",
+      "when": "1427-1432",
+      "where": "northern Iran, then Herat"
+    }
+  ],
+  "causal_emphasis": {
+    "sincere_orthodoxy": "high",
+    "sufi_practice_and_authorities": "medium",
+    "philosophical_and_occult_interests": "low",
+    "political_pressure_on_the_record": "low",
+    "patronage": "medium"
+  },
+  "uses": [
+    "REC-0001",
+    "REC-0056"
+  ],
+  "cites": [
+    "EV-1627",
+    "EV-0463",
+    "EV-0264",
+    "EV-0212"
+  ]
+}

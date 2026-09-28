@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0017",
+ "type": "event",
+ "status": "draft",
+ "actor": "Shāhrukh",
+ "date": {
+  "start": "1410",
+  "end": "1410",
+  "hijri": "813",
+  "basis": "Timeline A.1, pdf p.52.",
+  "date_kind": "context"
+ },
+ "place": "Herat",
+ "event_type": "political",
+ "description": "Shāhrukh completes his madrasa-khanaqah complex in Herat and appoints teachers.",
+ "claims": [
+  "CL-0090"
+ ],
+ "fixed_point": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-1095",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 352,
+    "printed_page": "335",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Citing Akhlāṭī as his sole oral source and Ibn ʿArabī and Saʿd al-Dīn Ḥamuvayī as his sole textual sources, Ibn Turka opens the Mafāḥiṣ with an exordium on the excellence of the divine or metaphysical sciences, exemplified by lettrism.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.352"
+}

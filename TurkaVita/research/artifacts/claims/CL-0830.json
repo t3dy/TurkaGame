@@ -1,0 +1,24 @@
+{
+ "id": "CL-0830",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki distinguishes lettrists from Hurufis and messianic Sufis by motive: Hurufis proclaim a new Persian dispensation, messianic Sufis promote themselves as political saviours, lettrists present themselves as occult philosophers working within the tradition; Ibn Turka's millenarianism, he says, insists on the binding finality of Muhammad's dispensation.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1676",
+  "EV-1677",
+  "EV-1666",
+  "EV-1667"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.452, 456",
+   "shaping_risk": "medium",
+   "note": "MK's own interpretation, offered in support of his thesis that Ibn Turka was an occult philosopher."
+  }
+ ],
+ "domain": "doctrinal"
+}

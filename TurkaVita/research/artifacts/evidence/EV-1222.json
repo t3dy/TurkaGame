@@ -1,0 +1,15 @@
+{
+ "id": "EV-1222",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 288,
+  "printed_page": "271",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK observes that even an account 'so patently hostile' as Bākharzī's corroborates Dawlatshāh's statement that Ṣāʾin al-Dīn and Sharaf al-Dīn were considered the two leading intellectuals of their day.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "MK on Bākharzī",
+ "read_by": "R7 opened pdf p.288"
+}

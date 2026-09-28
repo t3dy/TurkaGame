@@ -1,0 +1,28 @@
+{
+ "id": "CL-0818",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, the Tamhid al-Qawaʿid addresses the doubts of the peripatetics and illuminationists on the Ibn ʿArabi school's terms and contains no reference to Ibn Turka's lettrist concerns.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1654"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Turka, author of Tamhid al-Qawaʿid",
+   "where": "Tamhid al-Qawaʿid",
+   "shaping_risk": "low",
+   "note": "A doctrinal work, not addressed to a judge; the duress rule counts a work as evidence of what he held."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.23",
+   "shaping_risk": "medium",
+   "note": "We have the work only as MK summarises or translates it; most of the lettrist works are unedited, so MK's paraphrase cannot be checked against a printed text."
+  }
+ ],
+ "domain": "doctrinal"
+}

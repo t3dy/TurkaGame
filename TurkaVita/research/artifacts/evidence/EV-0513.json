@@ -1,0 +1,15 @@
+{
+ "id": "EV-0513",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 123,
+  "printed_page": "106",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 226b-30a carries the Nafsat al-Maṣdūr II, copied in 838/1435 (citing Ḥāʾirī, Majlis, 32/241), i.e. after Ibn Turka's death in 835/1432; the entry gives no day or place.",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II",
+ "read_by": "R3 opened pdf p.123"
+}

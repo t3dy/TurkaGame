@@ -1,0 +1,27 @@
+{
+ "id": "CL-0129",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I reduces all non-Sunni positions to three: Muʿtazila, Shiʿa and philosophers, who share the same principles and are all enemies of the Sunna.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0276",
+  "EV-0279"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.82 (printed 65)",
+   "shaping_risk": "low"
+  }
+ ]
+}

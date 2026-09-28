@@ -1,0 +1,22 @@
+{
+  "id": "CL-0508",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Shaqq-i Qamar Ibn Turka assigns the lettrists (those who decipher the quranic letters) to level six; on Q 54:1 they read the moon as the level of speech, dependent on the Speaker, and the splitting of the moon as primordial meaning emerging from the written form without the mediation of reflection.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1003",
+    "EV-1034",
+    "EV-1035"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.333, 475-476",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

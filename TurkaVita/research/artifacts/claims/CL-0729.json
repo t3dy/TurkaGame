@@ -1,0 +1,38 @@
+{
+ "id": "CL-0729",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation dates the R. Shaqq-i Qamar only by a terminus: completed before 18 Rabīʿ I 829 (converted 28 January 1426 in the catalogue and 27 February 1426 beside the manuscript list), or written at the beginning of 829/1426 in chapter 6; its work list says before 829/1426. The asterisk marks a date that may be transcription. Selenocentrism calls it a 1426 treatise without qualification. No page read gives 1420 for it, so the older project docs' listing of it among the events of 1420 has no support in the papers read; the 1420 pairing is Mafāḥiṣ and observatory only.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1430",
+  "EV-1431",
+  "EV-1443",
+  "EV-1432",
+  "EV-1498"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "MS Majlis 10196 ff. 170b-72a",
+   "where": "dissertation pdf 126, 128",
+   "shaping_risk": "medium",
+   "note": "a copy date read as a completion terminus"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 126, 128, 173, 332",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Selenocentrism and Heliocentrism",
+   "where": "pdf 26",
+   "shaping_risk": "medium",
+   "note": "unqualified 1426"
+  }
+ ],
+ "domain": "chronological"
+}

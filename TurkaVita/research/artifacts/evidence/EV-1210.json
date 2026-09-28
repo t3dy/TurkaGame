@@ -1,0 +1,15 @@
+{
+ "id": "EV-1210",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 245,
+  "printed_page": "228",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that Niʿmat Allāh and Ṣāʾin al-Dīn were both objects of later 9th/15th-century Naqshbandi distaste, 'though for different reasons', shown in Jāmī's deliberate omission of both (and of Sharaf al-Dīn Yazdī) from his Nafaḥāt al-Uns.",
+ "evidence_kind": "reception",
+ "refers_to_primary": "Jāmī, Nafaḥāt al-Uns (omission), via Binbaş and Algar",
+ "read_by": "R7 opened pdf p.245"
+}

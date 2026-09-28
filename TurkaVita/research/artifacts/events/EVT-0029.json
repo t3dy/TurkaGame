@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0029",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1420",
+  "end": "1420",
+  "hijri": "823",
+  "basis": "Timeline A.1 queries the place ('in Isfahan or Yazd?'); pdf p.52.",
+  "date_kind": "colophon"
+ },
+ "place": "Isfahan or Yazd",
+ "event_type": "work",
+ "description": "Ibn Turka completes the K. al-Mafāḥiṣ, his lettrist summa.",
+ "claims": [
+  "CL-0094"
+ ],
+ "fixed_point": false
+}

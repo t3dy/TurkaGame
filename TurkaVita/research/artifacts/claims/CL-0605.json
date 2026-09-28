@@ -1,0 +1,28 @@
+{
+ "id": "CL-0605",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Khwāndamīr (921-35/1515-29) gave Ibn Turka only a short entry, praising his personal excellence and philanthropy and listing three works and his death date in Herat, which MK calls faint praise beside the entries for Yazdī and Kātibī.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1215",
+  "EV-1216"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Khwāndamīr, Ḥabīb al-Siyar",
+   "where": "p. 356; Tome 3, Pt 3, 359-61",
+   "shaping_risk": "medium",
+   "note": "late Timurid/early Safavid historian; the entry's death year is given as 83[5] with MK's bracket"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.286",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

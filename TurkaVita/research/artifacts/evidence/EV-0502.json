@@ -1,0 +1,15 @@
+{
+ "id": "EV-0502",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 119,
+  "printed_page": "102",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that the Munāẓara-yi Bazm u Razm was 'completed before 25 Rabīʿ II 829/6 March 1426 in Herat', with an asterisk, citing Āqā Buzurg; the five-day gap from the 20 Rabīʿ II copy date on the previous page is not explained.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Munāẓara-yi Bazm u Razm",
+ "read_by": "R3 opened pdf p.119"
+}

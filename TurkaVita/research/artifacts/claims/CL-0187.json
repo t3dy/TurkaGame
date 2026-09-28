@@ -1,0 +1,27 @@
+{
+ "id": "CL-0187",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka wrote a Sharḥ al-Nahj / Tarjuma-yi Ahādīs az Ḥażrat-i Amīr pairing Sunni hadith on ʿAlī with Nahj al-Balāgha aphorisms, later copied almost verbatim by Qundūzī. As a work of his own, it is a witness to what he held, unlike the apologies.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0356",
+  "EV-0357"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka in his own doctrinal work, as summarised by MK",
+   "where": "MS Majlis 10196 and other manuscripts as cited by MK",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.91 (printed 74)",
+   "shaping_risk": "low"
+  }
+ ]
+}

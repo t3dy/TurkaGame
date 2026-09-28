@@ -1,0 +1,34 @@
+{
+ "id": "WRK-ITIQADAT",
+ "type": "work",
+ "status": "draft",
+ "title": "Iʿtiqādāt ('Statement of Creed')",
+ "transliterated_title": "Iʿtiqādāt (var. Muʿtaqadāt; Muʿtaqadiyya; ʿAqīda; R. dar Iʿtiqād; Iẓhār-i Iʿtiqād)",
+ "language": "Persian",
+ "genre": "creed treatise",
+ "theme": "theology",
+ "date": {
+  "ce": "before 1426-03-29",
+  "hijri": "before 19 Jumādā I 829",
+  "basis": "MK: 'completed before' the date of the Majlis 10196 copy (Herat, ff. 165b-72a); a copying date and only a terminus ad quem; not asterisked. Place of composition only 'presumably' Herat."
+ },
+ "date_kind": "transcription",
+ "place": "Herat (presumed; the Majlis 10196 copy was made in Herat)",
+ "addressee": "Shāhrukh (MK, citing Āqā Buzurg); companion to Nafsat al-Maṣdūr I",
+ "occasion": "Written, per MK, during Ibn Turka's 'second trip to Herat' to clear his name of accusations of deviating from the Sunna and pro-Sufi bias.",
+ "manuscript": "8 items listed; earliest dated: MS Majlis 10196 ff. 165b-72a (Herat, 19 Jumādā I 829/29 March 1426); then MS 5423 (842/1439), MS 1825 (851/1447), BL Add. 23983 (858/1454), MS 10004 (903-4/1497-98), and later copies.",
+ "majlis_folios": "ff. 165b-72a",
+ "edited": true,
+ "summary": "A lengthy creed presenting Ibn Turka as a staunch Sunni-Ashʿarī and opponent of Muʿtazilism, philosophy, Shiʿism and messianic Sufism, on the theme of Q 11:54.",
+ "supported_by": [
+  "EV-0462",
+  "EV-0463",
+  "EV-0464",
+  "EV-0465"
+ ],
+ "claims": [
+  "CL-0223",
+  "CL-0238",
+  "CL-0210"
+ ]
+}

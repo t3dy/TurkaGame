@@ -1,0 +1,28 @@
+{
+ "id": "CL-0221",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The R. al-Arbaʿīniyya was written at the instance of Sayyid Ḥusayn Akhlāṭī for his son Nūr al-Dīn, and Akhlāṭī is the same man Ibn Turka names as his main oral source in the K. al-Mafāḥiṣ.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0429",
+  "EV-0486"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "Ibn Turka's own preface to the R. al-Arbaʿīniyya, as reported by Melvin-Koushki",
+   "where": "R. al-Arbaʿīniyya",
+   "shaping_risk": "medium",
+   "note": "the author's own account of the occasion"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.84, 98",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

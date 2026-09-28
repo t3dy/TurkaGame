@@ -1,0 +1,20 @@
+{
+ "id": "CL-0166",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK says the Ashʿari self-presentation, the comparison with Ghazālī and Rāzī and the appeals to Pārsā's orthodoxy are to be taken with several grains of salt because they tally too easily with Shāhrukh's programme.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0241"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.32 (printed 15)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

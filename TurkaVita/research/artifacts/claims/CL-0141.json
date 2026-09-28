@@ -1,0 +1,31 @@
+{
+ "id": "CL-0141",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In the second subsection Nafsat I assembles Companion sayings (seven aḥruf with ẓāhir, bāṭin, ḥadd and maṭlaʿ; two kinds of knowledge; Abū Bakr's secret knowledge; ʿAlī's seventy camel loads; Ḥusayn on KHYʿṢ) to conclude that true knowledge is hidden from most people.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0298",
+  "EV-0299",
+  "EV-0300",
+  "EV-0301",
+  "EV-0302",
+  "EV-0303"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.83 (printed 66)",
+   "shaping_risk": "low"
+  }
+ ]
+}

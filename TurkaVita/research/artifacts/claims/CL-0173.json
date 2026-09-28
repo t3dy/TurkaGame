@@ -1,0 +1,22 @@
+{
+ "id": "CL-0173",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "What the apologies can be used to show, on MK's account, is what Ibn Turka told the ruler judging him and how he defended himself: they are safe evidence of the defence, not of the beliefs.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0247",
+  "EV-0248",
+  "EV-0200"
+ ],
+ "domain": "biographical",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.25 (printed 8)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

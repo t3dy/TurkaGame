@@ -1,0 +1,15 @@
+{
+ "id": "EV-0166",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 74,
+  "printed_page": "57",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Nafsat al-Maṣdūr II, addressed to Shāhrukh's son Bāysunghur, details the enormity of Ibn Turka's tribulations in exile and seeks Bāysunghur's intercession with the sultan, 'to little real effect'; it is accompanied by a very brief formal statement of creed, the R. Iʿtiqādiyya (note 95).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.74",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II; R. Iʿtiqādiyya"
+}

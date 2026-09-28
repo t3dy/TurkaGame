@@ -1,0 +1,76 @@
+{
+ "id": "SCN-0201",
+ "type": "scene",
+ "status": "draft",
+ "act": "courts",
+ "title": "Isfahan, c. 1408-9: the governor's summons",
+ "dramatic_question": "You came home to teach and to be left alone. The governor of Fars, a grandson of Temür, sends for you. Do you go?",
+ "situation": {
+  "when": "c. 810-12/1408-9 (Melvin-Koushki's own 'c.')",
+  "where": "Isfahan, then Shiraz",
+  "based_on": [
+   "CL-0052",
+   "CL-0053",
+   "CL-0411"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Back in Isfahan you took up teaching, meaning to live quietly in contemplation (gūsha-nishīnī), until Pīr-Muḥammad b. ʿUmar-Shaykh, Temür's grandson and governor of Fars, summoned you to Shiraz. Melvin-Koushki cites no source for this passage and marks its dates 'c.'.",
+   "claim": "CL-0052"
+  },
+  {
+   "text": "Pīr-Muḥammad was murdered in 812/1409 and his brother Iskandar Mīrzā took his place in Shiraz. Nothing you do prevents it.",
+   "claim": "CL-0053"
+  },
+  {
+   "text": "None of the letters Melvin-Koushki lists is addressed to Pīr-Muḥammad, and nothing on those pages shows what you offered him or what he gave you.",
+   "claim": "CL-0411"
+  }
+ ],
+ "prose": [
+  "You are back in Isfahan and you have taken up teaching. You mean to live the way the sources call gūsha-nishīnī, the life of contemplation in a corner. It does not last.",
+  "Pīr-Muḥammad b. ʿUmar-Shaykh, a grandson of Temür, governs Fars from Shiraz, and he sends for you. Melvin-Koushki tells this without naming a source and dates it only 'c. 1408-9', so what you have is his summary of the episode, not a document from it.",
+  "The record does not say what the governor offered. What you can weigh is the quiet you meant to keep against a summons from the man who rules your province."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Answer the summons: go to Shiraz and let Pīr-Muḥammad make you a member of his court.",
+   "strategy": "answer_summons_shiraz",
+   "epistemic_label": "documented",
+   "historical": true,
+   "based_on": [
+    "CL-0052"
+   ],
+   "requires": {},
+   "effects": {
+    "court.pir-muhammad": 1,
+    "press.livelihood": 1,
+    "score.biography": 2
+   },
+   "feedback": "Melvin-Koushki reports that you went and were made a member of his court. He gives no source and marks the dates 'c.', so treat the detail as his summary. What is missing matters: no letter to Pīr-Muḥammad is in the list, so the record cannot tell you what you asked or received. His murder in 812/1409 is the fixed point that ends this tie; the next scene shows what you stood on afterwards."
+  },
+  {
+   "id": "B",
+   "label": "Refuse the summons, keep teaching in Isfahan, and stay out of the court.",
+   "strategy": "refuse_summons",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0052"
+   ],
+   "requires": {},
+   "effects": {
+    "press.livelihood": -1,
+    "score.biography": -1
+   },
+   "feedback": "No source has you refusing. Melvin-Koushki has you summoned and made a member of the court, and the honours that follow presuppose it. The quiet life is what he says you kept trying to return to (CL-0061), not what the sources say you kept. The game returns you to the record: you go, and the murder of 1409 arrives regardless."
+  }
+ ],
+ "next": "SCN-0202",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

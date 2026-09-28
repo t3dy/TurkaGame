@@ -1,0 +1,15 @@
+{
+ "id": "EV-0454",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 107,
+  "printed_page": "90",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 404b-16b carries a partial copy of the Iṣbāḥ al-Anwār made in 841/1438 (with Melvin-Koushki's question mark); it is the only surviving copy.",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, Iṣbāḥ al-Anwār",
+ "read_by": "R3 opened pdf p.107"
+}

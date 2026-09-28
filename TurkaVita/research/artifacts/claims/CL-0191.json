@@ -1,0 +1,26 @@
+{
+ "id": "CL-0191",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The epilogue of the R. Anjām cites al-Thaʿālibī on ʿAlī's reading of Q 42:1-2 as foretelling the community's bad treatment of the Prophet's family, combining a lettrist proof with a pro-ʿAlid view of early history.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0365"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka in his own doctrinal work, as summarised by MK",
+   "where": "MS Majlis 10196 and other manuscripts as cited by MK",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.93 (printed 76)",
+   "shaping_risk": "low"
+  }
+ ]
+}

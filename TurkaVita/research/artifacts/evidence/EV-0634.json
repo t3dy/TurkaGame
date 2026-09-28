@@ -1,0 +1,15 @@
+{
+ "id": "EV-0634",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 131,
+  "printed_page": "114",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Sharḥ-i Ḥadīs-i ʿAmāʾ is a brief lettrist commentary on the hadith given in answer to the question where God was before creation, in which the Prophet answers that He was in a thin cloud (ʿamāʾ) with air neither above nor below it.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.131",
+ "refers_to_primary": "Ibn Turka, Sharḥ-i Ḥadīs-i ʿAmāʾ"
+}

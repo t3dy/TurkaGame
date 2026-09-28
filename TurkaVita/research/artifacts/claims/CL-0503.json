@@ -1,0 +1,21 @@
+{
+  "id": "CL-0503",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Shaqq-i Qamar Ibn Turka assigns the traditionists and jurists (ahl-i ẓāhir) to level one; on Q 54:1 they take the splitting of the moon literally, forbid inquiry into how it happened as reprehensible innovation, and rest on imitation (taqlīd). Ibn Turka says God's wisdom has confined their thought to this level.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1002",
+    "EV-1028"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.332, 472",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

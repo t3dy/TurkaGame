@@ -1,0 +1,15 @@
+{
+ "id": "EV-0129",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 68,
+  "printed_page": "51",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Munshaʾāt-i Turka confirms warm relations between Ibn Turka and Niʿmat Allāh and Qāsim-i Anvār; it preserves a letter from Ibn Turka to Shāhrukh, answering a summons to attend his court, to be communicated to the newly ascendant ruler by Niʿmat Allāh (§2.1.3.1.1, no. 16). The pages read do not date it.",
+ "evidence_kind": "letter",
+ "read_by": "R1 opened pdf p.68",
+ "refers_to_primary": "Munshaʾāt-i Turka, letter 16 (via MK §2.1.3.1.1)"
+}

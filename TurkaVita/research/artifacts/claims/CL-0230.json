@@ -1,0 +1,22 @@
+{
+ "id": "CL-0230",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Iṣbāḥ al-Anwār was an unfinished work: it existed at least in part by 1 Jumādā I 831/17 February 1428, when the R. Tuḥfa-yi ʿAlāʾī cites it as incomplete, and its only known copy, a partial one, breaks off mid-page.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0456",
+  "EV-0457",
+  "EV-0454"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.91",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

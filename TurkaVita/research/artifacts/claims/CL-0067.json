@@ -1,0 +1,27 @@
+{
+ "id": "CL-0067",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In Yazd Ibn Turka acquired students who, he states, flocked to him from Shiraz, Samarkand, Anatolia and India.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0144"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "Nafsat al-Maṣdūr II, 209-10",
+   "shaping_risk": "high",
+   "note": "a boast in a plea; the numbers and origins are his"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.70",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

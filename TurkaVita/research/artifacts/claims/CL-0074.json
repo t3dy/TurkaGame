@@ -1,0 +1,21 @@
+{
+ "id": "CL-0074",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's apologies are the primary source of information about his life and give a uniquely candid look at the religio-political machinations of early Timurid Iran (Melvin-Koushki's assessment).",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0170"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.75",
+   "shaping_risk": "medium",
+   "note": "the historian's own view of the apologies; they were written to judges"
+  }
+ ],
+ "domain": "textual"
+}

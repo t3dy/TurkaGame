@@ -1,0 +1,26 @@
+{
+ "id": "EVT-0037",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1426",
+  "end": "1426",
+  "hijri": "829",
+  "basis": "Timeline A.1 (pdf p.52) and §1.2 (pdf pp.72-73); the apology is dated 8 Rajab 829/16 May 1426 (pdf p.55, note 2).",
+  "date_kind": "colophon"
+ },
+ "place": "Yazd and Herat",
+ "event_type": "trial",
+ "description": "Yazd enemies, angered by his impartial application of the Shariʿa, send a delegation to Herat and cite a youthful verse praising ʿAlī; Shāhrukh summons him, and he writes Nafsat al-Maṣdūr I and the R. Iʿtiqādāt, regaining Shāhrukh's favour.",
+ "claims": [
+  "CL-0070",
+  "CL-0071",
+  "CL-0072",
+  "CL-0073",
+  "CL-0075",
+  "CL-0074",
+  "CL-0076"
+ ],
+ "fixed_point": false
+}

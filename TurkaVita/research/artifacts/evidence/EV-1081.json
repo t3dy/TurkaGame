@@ -1,0 +1,15 @@
+{
+  "id": "EV-1081",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 348,
+    "printed_page": "331",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Ibn Turka says the subject of the science he has in view is the One (al-wāḥid) insofar as it is one; since the One is obviously all-pervasive with respect to existence, this science is necessarily superior to all others by an order of magnitude.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.348"
+}

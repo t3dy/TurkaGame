@@ -1,0 +1,113 @@
+{
+ "id": "SCN-0602",
+ "type": "scene",
+ "status": "draft",
+ "act": "historian",
+ "unrecorded": true,
+ "show_dossier": true,
+ "title": "The desk: what he wrote freely",
+ "dramatic_question": "What did he write that was not addressed to a judge, and what can it carry?",
+ "situation": {
+  "when": "the modern dispute",
+  "where": "the desk",
+  "based_on": [
+   "CL-0167"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki holds that the apologies were produced under great duress; the works, letters and manuscripts are the other kinds of witness.",
+   "claim": "CL-0167"
+  }
+ ],
+ "prose": [
+  "There is a second kind of witness: what he wrote for other purposes. His treatises, argued at length. His letters to friends, patrons and petitioned governors. The colophons and audition notes in the manuscript that carries his works. And the verse his enemies said they found in his youthful works.",
+  "These are not free of shaping. A letter begs; a colophon date may record a copyist's day and not the author's; a treatise is written for a prince. But most of them were not written to convince the man who could imprison him that he was orthodox, and that is the difference the duress rule is about.",
+  "Open one group."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Read what the treatises argue: the seven tiers, the lettrists above the philosophers, the Tamhīd's silence on lettrism.",
+   "strategy": "read_works",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0501",
+    "CL-0513",
+    "CL-0817"
+   ],
+   "effects": {
+    "dossier.EV-1036": true,
+    "dossier.EV-1037": true,
+    "dossier.EV-1651": true,
+    "dossier.EV-1003": true,
+    "dossier.EV-1006": true,
+    "dossier.EV-1625": true,
+    "dossier.EV-1654": true,
+    "dossier.EV-0671": true,
+    "dossier.EV-0625": true,
+    "dossier.EV-0689": true,
+    "dossier.EV-0507": true,
+    "dossier.EV-0494": true,
+    "dossier.EV-1669": true
+   },
+   "feedback": "Thirteen readings from his works. Here he ranks the groups who read a single verse and puts the lettrists sixth and ʿAlī and the Imams seventh, in a treatise dated 1426 (a date that may record copying), the year of the first apology. Melvin-Koushki reads the seventh tier as not simply the Imams; the plain reading is the rival."
+  },
+  {
+   "id": "B",
+   "label": "Read his letters and the colophons of the manuscript: what he asked for, whom he thanked, when copies were made.",
+   "strategy": "read_letters_colophons",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0048",
+    "CL-0400",
+    "CL-0403"
+   ],
+   "effects": {
+    "dossier.EV-0126": true,
+    "dossier.EV-0814": true,
+    "dossier.EV-0815": true,
+    "dossier.EV-0839": true,
+    "dossier.EV-0857": true,
+    "dossier.EV-0868": true,
+    "dossier.EV-0415": true,
+    "dossier.EV-0466": true,
+    "dossier.EV-0482": true,
+    "dossier.EV-0513": true,
+    "dossier.EV-1243": true,
+    "dossier.EV-1234": true,
+    "dossier.EV-0865": true
+   },
+   "feedback": "Thirteen readings, and a warning: the letters are a supplicant's, and MK cautions that the colophon dates may record copying and that much of the manuscript was copied in 1425–27, perhaps as evidence in his defence."
+  },
+  {
+   "id": "C",
+   "label": "Read the verse his enemies cited, the autograph pages and his teacher's letter: what predates or stands beside the accusations.",
+   "strategy": "read_early_and_autograph",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0071",
+    "CL-0006",
+    "CL-0188"
+   ],
+   "effects": {
+    "dossier.EV-0153": true,
+    "dossier.EV-0419": true,
+    "dossier.EV-0420": true,
+    "dossier.EV-0063": true,
+    "dossier.EV-0360": true,
+    "dossier.EV-0362": true,
+    "dossier.EV-0363": true,
+    "dossier.EV-0364": true,
+    "dossier.EV-0681": true
+   },
+   "feedback": "Nine readings from before or beside the accusations, including the verse his enemies cited and the pages in his own hand. It is also the thinnest pile, and the verse comes to us only through a nineteenth-century chronicler's report of what his enemies claimed to find."
+  }
+ ],
+ "next": "SCN-0603",
+ "epistemic_contract": {
+  "historical_status": "reconstruction",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

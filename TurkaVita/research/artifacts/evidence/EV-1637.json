@@ -1,0 +1,15 @@
+{
+ "id": "EV-1637",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 39,
+  "printed_page": "22",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK says that Akram Jūdī-Niʿmatī, uniquely among scholars, attempts a preliminary evaluation of Ibn Turka's thought on the basis of his oeuvre as a whole, which MK says can only produce an image \"very different from the caricature\" offered so far.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R2b opened pdf p.39",
+ "refers_to_primary": "Jūdī-Niʿmatī, introduction to Sharḥ-i Naẓm al-Durr (2005)"
+}

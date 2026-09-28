@@ -1,0 +1,28 @@
+{
+ "id": "CL-0835",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Ibn Turka's Sharh-i Nazm al-Durr alters a line of Ibn al-Farid to replace the Companions and Followers with his children and the holy Imams, in what MK says would seem to be specifically Shiʿi fashion.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1693"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Turka, author of Sharḥ-i Naẓm al-Durr",
+   "where": "Sharḥ-i Naẓm al-Durr",
+   "shaping_risk": "low",
+   "note": "A doctrinal work, not addressed to a judge; the duress rule counts a work as evidence of what he held."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.92",
+   "shaping_risk": "medium",
+   "note": "We have the work only as MK summarises or translates it; most of the lettrist works are unedited, so MK's paraphrase cannot be checked against a printed text."
+  }
+ ],
+ "domain": "doctrinal"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0353",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 90,
+  "printed_page": "73",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says that, on the one hand, Ibn Turka's Shafiʿi credentials are impeccable.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka's legal school",
+ "read_by": "R2a opened pdf p.90"
+}

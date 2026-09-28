@@ -1,0 +1,103 @@
+{
+ "id": "SCN-0203",
+ "type": "scene",
+ "status": "draft",
+ "act": "courts",
+ "title": "Fars, 1411-12: what to write for a prince",
+ "dramatic_question": "Iskandar's court has a taste for lettrism, and you have two long commentaries in hand, one on Ibn ʿArabī and one on ʿIrāqī. Do you put your name to them, and do you let the prince's taste steer what you write?",
+ "situation": {
+  "when": "813-15/1411-12 (Melvin-Koushki's timeline and colophon differ by a year for the first work)",
+  "where": "Shiraz or Isfahan; the sources do not settle it",
+  "based_on": [
+   "CL-0308",
+   "CL-0337",
+   "CL-0466",
+   "CL-0062",
+   "CL-0310"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "The colophon on MS Majlis 10196 f. 330a says your commentary on Ibn ʿArabī's Fuṣūṣ al-Ḥikam was finished on 20 Ṣafar 814 (13 June 1411) and corrected in Fars on 19 Dhū l-Ḥijja 817 (1 March 1415). Melvin-Koushki's timeline says 813/1411 instead, and puts the completion in a journey to the Hijaz that he marks with a question mark ('for pilgrimage?').",
+   "claim": "CL-0308"
+  },
+  {
+   "text": "Melvin-Koushki dates the writing of your Persian commentary on ʿIrāqī's Lamaʿāt, the Żawʾ al-Lamaʿāt, to 815/1412, 'presumably in Isfahan'. He cites no colophon for that, and the copy in the Majlis manuscript is a later one (Dhū l-Qaʿda 828/1425).",
+   "claim": "CL-0337"
+  },
+  {
+   "text": "Melvin-Koushki says the Timurid elite, Iskandar among them, took an obvious interest in your lettrist doctrine.",
+   "claim": "CL-0466"
+  }
+ ],
+ "prose": [
+  "Two works are in hand, a year apart. The first is a long Arabic commentary on Ibn ʿArabī's Fuṣūṣ al-Ḥikam, with lettrist explanations and excursuses running through it. The second is a Persian commentary on ʿIrāqī's Lamaʿāt in twenty-eight gleams, drawing on Ibn ʿArabī, Qūnavī and Aḥmad Ghazālī on love, the Breath of the Merciful and the Muḥammadan reality.",
+  "Neither work's entry names an addressee. Melvin-Koushki says only that men of Iskandar's rank showed a marked interest in your lettrism; he does not say either commentary was written for the prince.",
+  "His timeline also sends you to the Hijaz in 1411, where you invite Sharaf al-Dīn Yazdī and finish the Fuṣūṣ commentary. He marks the purpose with a question mark, and the letter that announces such a journey is undated. Whether you are in Fars or on the road when you finish is his conjecture; this scene does not decide it for you."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Put your own name to both commentaries and let the lettrism run through the Fuṣūṣ commentary as your own argument, whoever reads it.",
+   "strategy": "sign_both_commentaries",
+   "epistemic_label": "documented",
+   "historical": true,
+   "based_on": [
+    "CL-0308",
+    "CL-0337"
+   ],
+   "requires": {},
+   "effects": {
+    "score.textual": 2,
+    "press.works": 1,
+    "court.iskandar": 1,
+    "press.exposure": 1,
+    "score.biography": 2
+   },
+   "feedback": "Both works survive under your name in the Majlis manuscript, and the Fuṣūṣ commentary is one of your four or five major works. Read the dates with care: a colophon may record copying rather than composing, the date of the Żawʾ is Melvin-Koushki's presumption, and the two years he gives for the Fuṣūṣ (813 or 814) are not reconciled. He also reads the later enmity of Khwāfī's circle as following from your promotion of Ibn ʿArabī (CL-0630, a causal reading, not a stated fact); that is why exposure rises."
+  },
+  {
+   "id": "B",
+   "label": "Steer the work by Iskandar's known appetite for lettrism: let the lettrist excursuses carry the argument, and present it where the prince will see it.",
+   "strategy": "tailor_to_iskandar",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0056",
+    "CL-0466",
+    "CL-0559"
+   ],
+   "requires_min": {
+    "court.iskandar": 2
+   },
+   "effects": {
+    "score.textual": 1,
+    "press.works": 1,
+    "court.iskandar": 1,
+    "press.exposure": 2
+   },
+   "feedback": "This is only a possibility. Melvin-Koushki notes the elite's interest (CL-0466) and thinks it possible that Iskandar commissioned a different work, the R. Ḥurūf, a few years on, though the pages give no source for that (CL-0559). No source has either commentary written to the prince's order, and his later papers disagree about who led whom. It is open only to a man who already stands high with him."
+  },
+  {
+   "id": "C",
+   "label": "Keep both commentaries unsigned and unshown, and go on teaching.",
+   "strategy": "withhold_the_works",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0308"
+   ],
+   "requires": {},
+   "effects": {
+    "score.textual": -1,
+    "press.livelihood": -1,
+    "score.biography": -1
+   },
+   "feedback": "The record has the opposite: the Fuṣūṣ commentary was corrected in Fars in 1415 and was read to Sharaf al-Dīn Yazdī in Herat on 30 Rajab 820 (12 September 1417), so it circulated (CL-0310). The sources do not have you withholding it, and the game returns you to them."
+  }
+ ],
+ "next": "SCN-0204",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

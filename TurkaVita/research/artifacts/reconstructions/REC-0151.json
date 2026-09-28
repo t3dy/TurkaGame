@@ -1,0 +1,26 @@
+{
+ "id": "REC-0151",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why did Jāmī exclude Ibn Turka and Yazdī from the Nafaḥāt and dismiss them as failed Sufis?",
+ "proposition": "Because elements of the later Naqshbandiyya, Jāmī foremost, consolidated their ascendancy by distancing themselves from the more intellectual and suspect Isfahan Circle.",
+ "kind": "causal",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK calls Bākharzī's account 'king-of-the-hill' tendentiousness.",
+  "The Circle rejected organized Sufism as the end of human development, so the 'failed Sufi' charge misses their own aim (MK).",
+  "The rival reading is the account's own: they were inexpert, court-dependent and possibly heterodox. Bākharzī is a hostile hagiographer of Jāmī, though Jāmī saw the first draft."
+ ],
+ "observed_facts": [
+  "CL-0616",
+  "CL-0617",
+  "CL-0618"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "CL-0617"
+ ],
+ "counterevidence": [
+  "EV-1253"
+ ]
+}

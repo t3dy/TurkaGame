@@ -1,0 +1,28 @@
+{
+ "id": "WRK-ISTILAHAT-AL-SUFIYYA",
+ "type": "work",
+ "status": "draft",
+ "title": "Iṣṭilāḥāt al-Ṣūfiyya or Iṣṭilāḥāt-i Ṣūfiyān ('Sufi Terminology')",
+ "transliterated_title": "Iṣṭilāḥāt al-Ṣūfiyya",
+ "language": "Arabic",
+ "genre": "glossary",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "before 1426-06-02",
+  "hijri": "before 25 Rajab 829",
+  "basis": "MK: 'completed before' the date of the Majlis 10196 copy (ff. 184a-88b); a copying date and only a terminus ad quem; not asterisked."
+ },
+ "date_kind": "transcription",
+ "manuscript": "3 copies listed: MS Majlis 10196 ff. 184a-88b (25 Rajab 829/2 June 1426); Millī MS 2697/1 (1230/1815); Sipahsālār MS 2930/8 (undated).",
+ "majlis_folios": "ff. 184a-88b",
+ "edited": false,
+ "summary": "A list of Sufi terms in abjadī (not alifbāʾī) order.",
+ "supported_by": [
+  "EV-0459",
+  "EV-0460",
+  "EV-0461"
+ ],
+ "claims": [
+  "CL-0210"
+ ]
+}

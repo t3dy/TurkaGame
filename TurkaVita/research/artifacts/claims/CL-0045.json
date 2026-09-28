@@ -1,0 +1,29 @@
+{
+ "id": "CL-0045",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Sharaf al-Dīn Yazdī checked the two earliest copies of the K. al-Mafāḥiṣ and was present at teaching sessions on the work, as colophons or audition certificates on those copies state; the Mafāḥiṣ was revised and expanded in Yazd in his company (timeline: 828/1425).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0120",
+  "EV-0143",
+  "EV-0034"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "colophons and audition notes of MS Majlis 10196 and related manuscripts, as summarised in MK's timeline (fn. 1)",
+   "where": "pdf p.51",
+   "shaping_risk": "medium",
+   "note": "a colophon date may record copying, not composition; the timeline does not say which entries rest on colophons"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.67 and p.70, notes 64 and 79",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

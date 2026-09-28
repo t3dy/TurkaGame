@@ -1,0 +1,15 @@
+{
+ "id": "EV-1631",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 36,
+  "printed_page": "19",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In citing Lewisohn's study MK marks the death date given in its title (830/1437) with [sic]; the study is titled with the word \"Confessions\", which is Lewisohn's name for the apologies.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R2b opened pdf p.36",
+ "refers_to_primary": "Lewisohn, 'Sufism and Theology in the Confessions'"
+}

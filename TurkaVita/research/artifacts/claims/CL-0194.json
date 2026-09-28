@@ -1,0 +1,22 @@
+{
+ "id": "CL-0194",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK reads the apology's equating of Shiʿism, Muʿtazilism and falsafa as a signal to the careful reader of Ibn Turka's disgust with confessional posturing, and the Ashʿari self-portrait as self-misrepresentation ‘so exaggerated as to be cartoonish’. This is a reading of intent, and the rival readings are sincerity (Lewisohn) and taqiyya (Ṭihrānī).",
+ "epistemic_type": "psychological_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0332",
+  "EV-0333",
+  "EV-0330"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.93 (printed 76)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

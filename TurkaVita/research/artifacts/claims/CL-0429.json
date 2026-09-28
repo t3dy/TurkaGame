@@ -1,0 +1,33 @@
+{
+  "id": "CL-0429",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Six of the letters in the Munshaʾāt-i Turka (nos. 4, 10, 21, 22, 23, 27) are addressed to Amīr Jalāl al-Dīn Fīrūzshāh, whom MK, following Manz, calls the greatest patron of the religious establishment (Sufis included) among Shāhrukh's amirs; Fīrūzshāh was the principal amir Ibn Turka wrote to.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0819",
+    "EV-0826",
+    "EV-0840",
+    "EV-0841",
+    "EV-0842",
+    "EV-0846"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Amīr Fīrūzshāh",
+      "where": "Munshaʾāt-i Turka letters 4, 10, 21, 22, 23, 27",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.156",
+      "shaping_risk": "medium",
+      "note": "The identification of the addressee of letter 4 is 'almost certain' per MK"
+    }
+  ],
+  "domain": "political"
+}

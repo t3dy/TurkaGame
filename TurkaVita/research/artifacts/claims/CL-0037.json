@@ -1,0 +1,22 @@
+{
+ "id": "CL-0037",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In his lettrist writings Ibn Turka invariably presents himself as only the systematizer of Akhlāṭī's teachings, and the later Iranian lettrist tradition remembers him as Akhlāṭī's greatest disciple.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0107",
+  "EV-0108"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.65",
+   "shaping_risk": "low",
+   "note": "the first half reports his own writing; the second half is later reception (Kāshifī, Ḥājjī Khalīfa)"
+  }
+ ],
+ "domain": "doctrinal"
+}

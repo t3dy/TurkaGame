@@ -1,0 +1,15 @@
+{
+  "id": "EV-1124",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 344,
+    "printed_page": "327",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki reads the hierarchy of the R. Shaqq-i Qamar historically, as the cyclical contraction (synthesis) and incremental upward development of the Islamic tradition, building toward the 'centerpoint of sanctified power'. Ancient prophetic and philosophical knowledge was occulted, restored after Muḥammad, and flourished within Islam: first Quran and hadith study, then dialectical theology, then peripatetic rationalism, then illuminationism, then the Ibn ʿArabian mystics who criticize all these groups for being blinded by the forms of their belief and emphasize unveiling.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.344"
+}

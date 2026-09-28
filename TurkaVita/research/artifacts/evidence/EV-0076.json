@@ -1,0 +1,15 @@
+{
+ "id": "EV-0076",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 59,
+  "printed_page": "42",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ibn Turka states that he had 10 children, three sons and seven daughters (Nafsat al-Maṣdūr II, 206).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.59",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II, 206"
+}

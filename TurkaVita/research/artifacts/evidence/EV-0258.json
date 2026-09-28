@@ -1,0 +1,15 @@
+{
+ "id": "EV-0258",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 80,
+  "printed_page": "63",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki's paraphrase, Ibn Turka says his brother and other Samarkand teachers sent him abroad, that he studied there intensively for 15 years and returned at his teachers' direction, and that in those 15 years he studied nothing save tafsir, hadith, uṣūl al-dīn and jurisprudence, neglecting the outward dictates of the Sharīʿa ‘not a whit’.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.80"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0688",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 149,
+  "printed_page": "132",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that Żawʾ al-Lamaʿāt was written over the course of the year 815/1412, presumably in Isfahan; the entry does not say what the date rests on, and the place is presumption. He notes the existence of a contemporary copy in Turkey.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R4 opened pdf p.149",
+ "refers_to_primary": "Żawʾ al-Lamaʿāt, date and place"
+}

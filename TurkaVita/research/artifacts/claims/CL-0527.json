@@ -1,0 +1,21 @@
+{
+  "id": "CL-0527",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka held that the ancient philosophers Anaxagoras, Pythagoras and Socrates were disciples of Solomon and his companions, and thus drew their wisdom from prophetic teaching.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1014",
+    "EV-1121"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.335, 342",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0046",
+ "type": "event",
+ "status": "draft",
+ "actor": "Muḥammad al-Jazarī",
+ "date": {
+  "start": "1429",
+  "end": "1429",
+  "hijri": "833",
+  "basis": "Timeline A.1, pdf p.53.",
+  "date_kind": "context"
+ },
+ "place": "Herat",
+ "event_type": "death",
+ "description": "Muḥammad al-Jazarī, Ibn Turka's powerful opponent, dies in Herat.",
+ "claims": [
+  "CL-0029",
+  "CL-0091"
+ ],
+ "fixed_point": true
+}

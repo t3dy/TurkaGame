@@ -1,0 +1,29 @@
+{
+ "id": "CL-0802",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, John Cooper, relying largely on the Tamhid, describes Ibn Turka as one of the first to unify the Peripatetic, ishraqi and Akbarian strands in a Shiʿi-esotericist perspective and as learned in numerical symbolism.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1606",
+  "EV-1607"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "John Cooper",
+   "where": "'From al-Ṭūsī', 591",
+   "shaping_risk": "medium",
+   "note": "The position is this scholar's own; we have it only as summarised by Melvin-Koushki."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (reporter; partisan)",
+   "where": "dissertation pdf p.24-25",
+   "shaping_risk": "medium",
+   "note": "MK argues a rival reading (Ibn Turka as occult philosopher) and in places calls this reading an error; his summary may compress or foreshorten it."
+  }
+ ],
+ "domain": "doctrinal"
+}

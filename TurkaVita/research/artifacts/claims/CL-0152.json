@@ -1,0 +1,28 @@
+{
+ "id": "CL-0152",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat II gives an account of Ibn Turka's wanderings in exile and of the ten children and few wives he could not support (MK: three sons and seven daughters).",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0216",
+  "EV-0217",
+  "EV-0218"
+ ],
+ "domain": "biographical",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing from exile to Bāysunghur b. Shāhrukh",
+   "where": "Nafsat al-Maṣdūr II",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.77 (printed 60)",
+   "shaping_risk": "low"
+  }
+ ]
+}

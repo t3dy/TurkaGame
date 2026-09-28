@@ -1,0 +1,15 @@
+{
+ "id": "EV-0601",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 95,
+  "printed_page": "78",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says he took each work's date of composition from the colophons of MS Majlis 10196 where possible, but that in many instances it is impossible to tell whether a date is composition or transcription; fully half of the manuscript, nearly two-thirds of the preserved works, was copied in 827-29/1425-27.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R4 opened pdf p.95",
+ "refers_to_primary": "MS Majlis 10196, colophons"
+}

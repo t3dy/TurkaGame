@@ -1,0 +1,22 @@
+{
+  "id": "CL-0574",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The Mafāḥiṣ carries a master diagram, the Ṭahawī Circle (a cosmological key spanning wujūd and kawn), a Ḥāmīmī Circle for the spoken form, and master number tables (jadāwil al-baḥr) meant as a key to all its issues.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1102",
+    "EV-1103",
+    "EV-1110"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.353-354, 357",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "textual"
+}

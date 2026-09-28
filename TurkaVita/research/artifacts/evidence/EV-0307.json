@@ -1,0 +1,15 @@
+{
+ "id": "EV-0307",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 84,
+  "printed_page": "67",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka cites living masters who write to the same end: Khwāja Muḥammad Pārsā, who composed treatises on such topics and taught the qasida of Ibn al-Fāriḍ to his son, with a treatise showing his esteem for Ibn al-Fāriḍ; Sayyid Sharīf Jurjānī's famous Sufi treatise (the Taʿrīfāt); and Shams al-Dīn Fanārī.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.84"
+}

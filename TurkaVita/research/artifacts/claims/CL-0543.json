@@ -1,0 +1,22 @@
+{
+  "id": "CL-0543",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka held that only the letter encompasses all that is and is not, all that can and cannot be, whereas absolute existence (al-wujūd al-muṭlaq) applies only to what exists and so cannot be the object of a universal science.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1058",
+    "EV-1082",
+    "EV-1105"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.180, 348, 355",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

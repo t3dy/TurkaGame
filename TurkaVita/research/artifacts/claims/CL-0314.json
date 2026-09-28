@@ -1,0 +1,30 @@
+{
+ "id": "CL-0314",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Sharḥ-i Ḥadīs-i ʿAmāʾ existed by 3 Dhū l-Ḥijja 827 (27 October 1424); Melvin-Koushki flags the date as possibly transcription, so it is a terminus ad quem, not a composition date. It is the earliest-dated of the works in MS Majlis 10196 that fall in this range.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0632",
+  "EV-0633",
+  "EV-0600"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 ff. 119b-20b",
+   "shaping_risk": "medium",
+   "note": "date may be the copying"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.131, no. 32",
+   "shaping_risk": "low",
+   "note": "asterisked"
+  }
+ ]
+}

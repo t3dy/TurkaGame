@@ -1,0 +1,15 @@
+{
+  "id": "EV-0877",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 165,
+    "printed_page": "148",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MS Vahid Paşa 621 (Kütahya, copied 10 Dhū l-Qaʿda 868/15 July 1464) contains Yazdī's preface (dated 830/1427) for his brother Qivām al-Dīn's dīvān and 'assorted correspondence with various Timurid notables, including seven letters or incidental material concerning Ibn Turka or the members of his family'; the older Revan 1019 (copied 27 Shaʿbān 867/17 May 1463) is very similar but MK could not examine it.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.165",
+  "refers_to_primary": "Munshaʾāt-i Yazdī, manuscripts"
+}

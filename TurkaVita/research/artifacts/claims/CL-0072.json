@@ -1,0 +1,27 @@
+{
+ "id": "CL-0072",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The first apology does not mention the verse pretext but answers the charge of ṣūfīgarī, and its sweeping dismissal of all but the Sunni confessional position clearly implies that his Sunni credentials had also been questioned.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0154"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I (829/1426), addressed to Shāhrukh",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high",
+   "note": "what an apology omits and stresses is shaped by what its author wanted the ruler to hear"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.72, note 89",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "doctrinal"
+}

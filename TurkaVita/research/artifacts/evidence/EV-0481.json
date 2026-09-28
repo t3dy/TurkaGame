@@ -1,0 +1,15 @@
+{
+ "id": "EV-0481",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 113,
+  "printed_page": "96",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Madārij Afhām al-Afvāj is a relatively detailed commentary on Q 6:143-44 (the 'eight couples'), in two sections (exoteric, then esoteric) and seven ascending levels of interpretation, from exoteric exegetes through philosophers and Sufi verifiers to the House of the Prophet; it was edited by Najīb Māyil Haravī (1367 Sh./1988).",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Madārij Afhām al-Afvāj",
+ "read_by": "R3 opened pdf p.113"
+}

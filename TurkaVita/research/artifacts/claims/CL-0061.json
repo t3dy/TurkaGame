@@ -1,0 +1,29 @@
+{
+ "id": "CL-0061",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "After Iskandar's fall Ibn Turka again attempted to retire from public life (timeline: c. 817-25/1414-22).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0025",
+  "EV-0138"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.69-70 and p.52",
+   "shaping_risk": "low",
+   "note": "timeline marks the dates 'c.'; no source cited"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II, as MK cites it in a note",
+   "where": "pdf p.69/70 notes",
+   "shaping_risk": "high",
+   "note": "the detail is his own telling, in an apology to a ruler"
+  }
+ ],
+ "domain": "biographical"
+}

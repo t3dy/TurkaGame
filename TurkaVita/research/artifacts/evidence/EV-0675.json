@@ -1,0 +1,15 @@
+{
+ "id": "EV-0675",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 146,
+  "printed_page": "129",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Tamhīd is published as al-Tamhīd fī Sharḥ Qawāʿid al-Tawḥīd, ed. Ḥasan al-Ramaḍānī al-Khurasānī (Beirut 2003), and as Tamhīd al-Qawāʿid, ed. Sayyid Jalāl al-Dīn Āshtiyānī (Tehran 1976; reprinted 1981, 2002); a lithograph was first printed by Shaykh Aḥmad Shīrāzī (Tehran 1897/1315), and ʿAbd Allāh Javādī-Āmulī wrote a commentary, Taḥrīr-i Tamhīd al-Qawāʿid (1993).",
+ "evidence_kind": "reception",
+ "read_by": "R4 opened pdf p.146",
+ "refers_to_primary": "Tamhīd al-Qawāʿid, editions"
+}

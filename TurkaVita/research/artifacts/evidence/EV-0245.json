@@ -1,0 +1,15 @@
+{
+ "id": "EV-0245",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 32,
+  "printed_page": "15",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki adds that the 830/1427 attempt was ‘possibly staged by the Timurid ruler himself’, citing Binbaş.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Binbaş, ‘Sharaf al-Dīn’, pp.9, 114-19 (per MK fn.43)",
+ "read_by": "R2a opened pdf p.32"
+}

@@ -1,0 +1,19 @@
+{
+ "id": "REC-0011",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "What does the omission of Akhlāṭī show?",
+ "proposition": "Omitting his Cairo master shows the apologies were shaped to Shāhrukh's anxieties, not to Ibn Turka's own project.",
+ "kind": "inferential",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK calls the omission ‘the first indication of many’.",
+  "Nafsat I says he studied under his brother and unnamed teachers abroad, and only orthodox subjects."
+ ],
+ "observed_facts": [
+  "EV-0249",
+  "EV-0258",
+  "EV-0257"
+ ],
+ "confidence": "medium"
+}

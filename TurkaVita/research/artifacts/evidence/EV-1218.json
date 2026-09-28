@@ -1,0 +1,15 @@
+{
+ "id": "EV-1218",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 287,
+  "printed_page": "270",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reads Gāzurgāhī's inclusion of Qāżīzāda Rūmī among Akhlāṭī's disciples as corroborating a warm relationship between the astronomer and Ṣāʾin al-Dīn, 'undoubtedly' dating to the period they studied together in Samarkand under Ṣāʾin al-Dīn's elder brother Ṣadr al-Dīn (citing Eichner, EI3, and Ragep, EI2).",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "MK on Gāzurgāhī's inclusion of Qāżīzāda Rūmī",
+ "read_by": "R7 opened pdf p.287"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "CL-0437",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka wrote briefly to members of Herat's religious and financial establishment: Shaykh al-Islām Shams al-Dīn Muḥammad Taftāzānī (letter 7, and the greeting in 3), the Chishtī administrator of Shāhrukh's madrasa-khanaqah (3), and the chief ṣadr Jalāl al-Dīn Luṭf Allāh, whom he calls sulṭān al-ʿulamāʾ (41, 42).",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0818",
+    "EV-0822",
+    "EV-0862"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Herat religious officials",
+      "where": "Munshaʾāt-i Turka letters 3, 7, 41, 42",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.162",
+      "shaping_risk": "medium",
+      "note": "Identification of the Shams al-Dīn Muḥammad addressed is MK's 'presumably'"
+    }
+  ],
+  "domain": "institutional"
+}

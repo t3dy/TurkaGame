@@ -1,0 +1,22 @@
+{
+ "id": "EVT-0055",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1432-08-12",
+  "end": "1432-08-12",
+  "hijri": "835-12-14",
+  "basis": "MK, pdf p.74 (14 Dhū l-Ḥijja 835, a Monday); timeline A.1 gives 835/1432. MK's age of 63 does not agree with the birth year derived from Nafsat I.",
+  "date_kind": "attested"
+ },
+ "place": "Herat",
+ "event_type": "death",
+ "description": "Ibn Turka dies in Herat, frustrated, impoverished and in limbo.",
+ "claims": [
+  "CL-0087",
+  "CL-0088",
+  "CL-0015"
+ ],
+ "fixed_point": false
+}

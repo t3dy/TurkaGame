@@ -1,0 +1,19 @@
+{
+  "id": "REC-0104",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "Could Ibn Turka's deference to the ancients be read as pure restoration, with history in decline?",
+  "proposition": "On a perennialist model the wisdom tradition is static, its golden age at the dawn of time, and history can only decline from it; read this way Ibn Turka's ancients-first stance would be restoration alone.",
+  "kind": "inferential",
+  "scholar": "Melvin-Koushki (reading he sets aside)",
+  "reasoning": [
+    "Melvin-Koushki names this model (philosophia perennis) as the European attempt to resolve the prisca-theologia paradox and says it is profoundly conservative (pdf p.339).",
+    "He sets it aside for Ibn Turka, citing his belief in recovery, tajdīd and upward development (pdf pp.340-341, 344).",
+    "The pages attribute no perennialist statement to Ibn Turka; the reading is listed here only as the rival the dissertation names."
+  ],
+  "observed_facts": [
+    "EV-1115",
+    "CL-0595"
+  ],
+  "confidence": "low"
+}

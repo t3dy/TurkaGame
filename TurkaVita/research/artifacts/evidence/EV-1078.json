@@ -1,0 +1,15 @@
+{
+  "id": "EV-1078",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 347,
+    "printed_page": "330",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki notes that Akhlāṭī sent Ibn Turka a letter urging his accomplished disciple to write a work establishing the propositions (muqaddamāt) and conjunctions (iqtirānāt) proper to the science of letters, and says the Mafāḥiṣ is Ibn Turka's answer to this call.",
+  "evidence_kind": "letter",
+  "refers_to_primary": "Sayyid Ḥusayn Akhlāṭī, letter to Ibn Turka (Munshaʾāt)",
+  "read_by": "R6 opened pdf p.347"
+}

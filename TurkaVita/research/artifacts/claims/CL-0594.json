@@ -1,0 +1,23 @@
+{
+  "id": "CL-0594",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that Ibn Turka combined the principle of prisca sapientia with an unprecedented, millenarian doctrine of progress: his generation is the best generation and mind's golden age is present.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1127",
+    "EV-1130",
+    "EV-1066",
+    "EV-1009"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.345, 469",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

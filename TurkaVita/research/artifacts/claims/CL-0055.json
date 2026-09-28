@@ -1,0 +1,22 @@
+{
+ "id": "CL-0055",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The honours Iskandar gave him presumably included a teaching post and a judgeship (timeline: 'appointed qadi and teacher (?)').",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0133",
+  "EV-0017"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.69 and p.51",
+   "shaping_risk": "medium",
+   "note": "'presumably' and '(?)' are the dissertation's own; the apology does not name the offices"
+  }
+ ],
+ "domain": "institutional"
+}

@@ -1,0 +1,24 @@
+{
+ "id": "REC-0003",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Was Ibn Turka a Shiʿi?",
+ "proposition": "Corbin (and Aubin in 1957) treated Ibn Turka as a straightforwardly Shiʿi thinker.",
+ "kind": "inferential",
+ "scholar": "Henry Corbin; Jean Aubin (1957) (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "Corbin is said to take Ibn Turka as an openly Shiʿi esotericist; MK finds this reasonable absent context but blind to Timurid confessional ambiguity.",
+  "Aubin later modified the 1957 view in 1991, per Binbaş's tip to MK.",
+  "MK's correction is Shiʿi-Sunnism, not Sunnism."
+ ],
+ "observed_facts": [
+  "EV-0321",
+  "EV-0326",
+  "EV-0327",
+  "EV-0325"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "REC-0006"
+ ]
+}

@@ -1,0 +1,239 @@
+{
+  "id": "HYP-C",
+  "type": "hypothesis",
+  "status": "draft",
+  "dispute": "Who was Ibn Turka: what did he actually hold, and what does the surviving record allow us to say?",
+  "letter": "C",
+  "name": "Mystical philosopher, precursor of the school of Isfahan",
+  "proposition": "Ibn Turka was a mystical philosopher: a preeminent synthesizer of peripatetic philosophy, illuminationism and the school of Ibn ʿArabī, best known and best read through the Tamhīd al-Qawāʿid, and a precursor of the school of Isfahan linking Ṭūsī to Mullā Ṣadrā. This is the 'de facto scholarly consensus' as Melvin-Koushki constructs it: no scholar holds it in exactly these words, and it is described from the side of the man who rejects it.",
+  "commitments": {
+    "conviction": true
+  },
+  "entails": [
+    "The Tamhīd must be his definitive work, and the lettrist half of the oeuvre peripheral, although the Mafāḥiṣ's introduction explicitly rejects the Tamhīd's subject, absolute being, as the object of a universal science.",
+    "His own hierarchies, which place Fārābī and Suhravardī at the lower levels, must be set aside when he is ranked beside them.",
+    "The fame of the Mafāḥiṣ in the Timurid and Safavid periods, and the disciples and friends who wrote to him as an occultist, must be explained as something other than his main thought.",
+    "The consensus must be the modern seminary's reading of a text that most surviving copies date to the Qajar revival, not the reading of his own contemporaries."
+  ],
+  "proponents": [
+    {
+      "scholar": "ʿAllāma Ṭabāṭabāʾī, Sayyid Jalāl al-Dīn Āshtiyānī and Ayatollah Javādī Āmulī (as reported by Melvin-Koushki)",
+      "cites": [
+        "REC-0052"
+      ],
+      "note": "Their ground is the Tamhīd, a staple Imami seminary text; Ṭabāṭabāʾī ranks him with Fārābī and Suhravardī in al-Mīzān, and Āshtiyānī and Javādī Āmulī treat the Tamhīd as definitive. Melvin-Koushki calls the image distorted and says the man himself would find the label cringe-inducing."
+    },
+    {
+      "scholar": "Seyyed Hossein Nasr and Hossein Ziai (as reported by Melvin-Koushki)",
+      "cites": [
+        "REC-0053"
+      ],
+      "note": "Nasr: a peripatetic and illuminationist philosopher and Sufi of Ibn ʿArabī's school, a key Shiʿi link between Ṭūsī and Mullā Ṣadrā. Ziai: a Shiʿi thinker harmonizing religion and philosophy, which Melvin-Koushki calls 'incorrect and anachronistic'."
+    },
+    {
+      "scholar": "ʿAbd al-Ḥusayn Zarrīnkūb (as reported by Melvin-Koushki)",
+      "cites": [
+        "REC-0055"
+      ],
+      "note": "Objects to the 'Spinoza of Iran' title because it misrepresents his 'more mystical and lettrist concerns'; a mystic with lettrist concerns, closest of the group to position D, and Melvin-Koushki reports only a footnote."
+    },
+    {
+      "scholar": "Muḥammad Taqī Dānishpazhūh (as reported by Melvin-Koushki)",
+      "cites": [
+        "REC-0054"
+      ],
+      "note": "Called him the 'Spinoza of Iran' as a rhetorical spur to editing his works; Melvin-Koushki notes he also recognized the importance of lettrism in passing."
+    },
+    {
+      "scholar": "The de facto consensus, as characterized by Melvin-Koushki",
+      "cites": [
+        "REC-0058",
+        "REC-0007"
+      ],
+      "note": "Melvin-Koushki's own summary of the field 'such as it is', not a position anyone holds in these words."
+    }
+  ],
+  "alternatives": [
+    "HYP-A",
+    "HYP-B",
+    "HYP-D",
+    "HYP-E",
+    "HYP-F"
+  ],
+  "cites": [
+    "REC-0052",
+    "REC-0053",
+    "REC-0058",
+    "REC-0064"
+  ],
+  "bearings": [
+    {
+      "evidence": "EV-1613",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "In al-Mīzān ʿAllāma Ṭabāṭabāʾī celebrates Ibn Turka as a preeminent synthesizer of peripatetic philosophy and theoretical mysticism, ranking him with Fārābī and Suhravardī.",
+      "attributed_to": "Ṭabāṭabāʾī"
+    },
+    {
+      "evidence": "EV-0671",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "Melvin-Koushki's catalogue describes the Tamhīd as a commentary on his grandfather's work on absolute existence, running on the complementarity of philosophical and mystical modes of knowing, quoting Ibn Sīnā and Suhravardī and relying on Ibn ʿArabī as formulated by Qūnavī and Jandī. C reads this as the synthesis the consensus names.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1609",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reports that in Iran his modern reputation rests almost entirely on the Tamhīd, a synthesis of Ibn Sīnā, Suhravardī and Ibn ʿArabī/Qūnavī on absolute being and long a staple of Imami seminary teaching. This is what the consensus does with the record.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1610",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reports that Āshtiyānī and Ayatollah Javādī Āmulī limit themselves to a close discussion of the Tamhīd as a definitive mystico-philosophical treatment of absolute being.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0672",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reports that the Tamhīd heads the ʿirfān section of current seminary curricula in Qom, and that most surviving copies date from the Qajar revival of Sadrian philosophy: the text's institutional life is enormous.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0673",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reports that recent scholarship places Ibn Turka, on the strength of the Tamhīd, at the midpoint between Ibn ʿArabī and Mullā Ṣadrā, in the Imami trajectory culminating in Sadrian philosophy.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1616",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Nasr, as Melvin-Koushki reports him, calls Ibn Turka a peripatetic and illuminationist philosopher and Sufi of Ibn ʿArabī's school, a key Shiʿi thinker linking Ṭūsī and Mullā Ṣadrā.",
+      "attributed_to": "Seyyed Hossein Nasr"
+    },
+    {
+      "evidence": "EV-1617",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Ziai, as Melvin-Koushki reports him, calls Ibn Turka a Shiʿi thinker primarily concerned with harmonizing religion and philosophy. Melvin-Koushki calls this incorrect and anachronistic, and a reflection of the Tamhīd's popularity in the seminaries.",
+      "attributed_to": "Hossein Ziai"
+    },
+    {
+      "evidence": "EV-1607",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Cooper's formula, 'one of the first to unify the Peripatetic, ishrāqī and Akbarian strands', is the synthesis C wants, though he sets it 'in the perspective of Shīʿī esotericism'. He leans largely on the Tamhīd but, Melvin-Koushki says, acknowledges a larger project.",
+      "attributed_to": "John Cooper"
+    },
+    {
+      "evidence": "EV-1615",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Melvin-Koushki notes that the seventeenth-century Dābistān-i Mazāhib uses Ibn Turka strictly as an authority on illuminationist philosophy: a pre-modern precedent for reading him as a philosopher.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0625",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "Melvin-Koushki's catalogue calls the Sharḥ Fuṣūṣ al-Ḥikam a long and subtle commentary on Ibn ʿArabī's masterpiece, with frequent lettrist excursuses. C reads it as the Akbarian strand the consensus names.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0689",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The Żawʾ al-Lamaʿāt comments on ʿIrāqī's Lamaʿāt in 28 gleams, drawing on Ibn ʿArabī, Qūnavī and Aḥmad Ghazālī on love, the Breath of the Merciful, receptivity and effusion. C reads a writer at home in the theoretical mysticism the Tamhīd systematizes.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0507",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The Munāẓarāt-i Khams is a popular set of five debates among the interior faculties, influenced by Ibn Sīnā's and especially Suhravardī's allegories: philosophy in the allegorical mode, and popular in his own time.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0494",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The K. al-Manāhij is a minutely detailed logic in the manner of the latter-day philosophers, following contemporary method in the main. C reads a working scholastic, not only a lettrist.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0508",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The Munāẓarāt-i Khams, whose earliest copy is dated 808/1406, mentions the author's Tamhīdāt. If that mention is original, the Tamhīd is an early foundation rather than a late curiosity; the game notes the colophon on the extant Tamhīd (830/1427) is asterisked as possibly a copying date.",
+      "attributed_to": "design inference"
+    },
+    {
+      "evidence": "EV-0865",
+      "kind": "letter",
+      "direction": "supports",
+      "reading": "Letter 45, to two unnamed Sufis, is a letter 'on Sufi and illuminationist themes' reporting a majlis. C reads the man in the letters as the mystic-philosopher of the consensus; the catalogue says no more about its contents.",
+      "attributed_to": "design inference"
+    },
+    {
+      "evidence": "EV-0670",
+      "kind": "colophon",
+      "direction": "neutral",
+      "reading": "Melvin-Koushki marks the Tamhīd's date, completed before 2 Dhū l-Qaʿda 830/25 August 1427, with an asterisk: possibly the copying, not the composition. Where the Tamhīd falls in his life is not settled by the colophon.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1654",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "Melvin-Koushki notes that the Tamhīd 'is bare of any reference to the author's more central lettrist concerns'. The work the position is centred on says nothing of the project that fills half his oeuvre.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1651",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "The introduction to the Mafāḥiṣ explicitly rejects absolute being, the very focus of the Tamhīd, as an adequate object of inquiry: only the letter encompasses all that is and is not. The author himself demotes the Tamhīd's subject.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1625",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "In his own hierarchies Fārābī and Suhravardī fall far short of universal knowledge, so Ṭabāṭabāʾī's ranking of Ibn Turka alongside them is, Melvin-Koushki says, 'a patent injustice' to the man.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1003",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "The R. Shaqq-i Qamar's upper levels run: illuminationist philosophers, verifying mystics of Ibn ʿArabī's school, lettrists, and above them the men of might and vision. On his own scale the mystic-philosopher stands below lettrism.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1006",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "The Sharḥ-i Naẓm al-Durr sets out a three-tier hierarchy of philosophers, Sufis and lettrists, none of whom needs the medium of poetry to reach supernal truths: the lettrists are placed last and highest.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1657",
+      "kind": "chronicle",
+      "direction": "strains",
+      "reading": "Khwāndamīr's short notice names three works, the Fuṣūṣ commentary, the Mafāḥiṣ and the Ibn al-Fāriḍ commentary. The Tamhīd is not among them, so the sixteenth-century chronicler's picture of his oeuvre is not the modern one.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1655",
+      "kind": "reception",
+      "direction": "strains",
+      "reading": "Afandī (d. 1717) took him for a mystical philosopher of Shiʿi stock, yet Melvin-Koushki notes that the only work he mentions is the Mafāḥiṣ, which he calls a work of divine wisdom in an occult mode, not the Tamhīd.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    }
+  ]
+}

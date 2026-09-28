@@ -1,0 +1,15 @@
+{
+ "id": "EV-1667",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 22,
+  "printed_page": "5",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK's note: lettrists like Ibn Turka dismissed gnostic-messianic movements such as the Hurufiyya as perverting the science for non-intellectual and non-Islamic ends (to be discussed in Chapter 8).",
+ "evidence_kind": "work",
+ "read_by": "R2b opened pdf p.22",
+ "refers_to_primary": "Ibn Turka, works discussed in dissertation ch. 8"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0043",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1428",
+  "end": "1428",
+  "hijri": "831",
+  "basis": "Timeline A.1, pdf p.53.",
+  "date_kind": "colophon"
+ },
+ "place": "unknown",
+ "event_type": "work",
+ "description": "Ibn Turka writes the R. Tuḥfa-yi ʿAlāʾī for ʿAlāʾ al-Dīn b. Bāysunghur.",
+ "claims": [
+  "CL-0098",
+  "CL-0006"
+ ],
+ "fixed_point": false
+}

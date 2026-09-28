@@ -1,0 +1,15 @@
+{
+ "id": "EV-1654",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 23,
+  "printed_page": "6",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK's note on the Tamhid's content: it addresses the \"doubts of the peripatetics\" and illuminationists, relies primarily on the Ibn ʿArabi school as formulated by Qunavi and Jandi, and 'is bare of any reference to the author's more central lettrist concerns'.",
+ "evidence_kind": "work",
+ "read_by": "R2b opened pdf p.23",
+ "refers_to_primary": "Ibn Turka, Tamhid al-Qawaʿid"
+}

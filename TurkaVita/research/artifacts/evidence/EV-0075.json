@@ -1,0 +1,15 @@
+{
+ "id": "EV-0075",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 59,
+  "printed_page": "42",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ibn Turka states that his brother taught nothing beyond the outward meaning of the Shariʿa, deeming it too dangerous to delve into esoteric matters in public (Nafsat al-Maṣdūr I, 170).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.59",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I, 170"
+}

@@ -1,0 +1,22 @@
+{
+ "id": "CL-0331",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki holds that the Tamhīd, by far Ibn Turka's best-known work in the modern Imami world, has been read out of proportion and as if he belonged to the Imami mystico-philosophical line, obscuring the lettrist project that his other works show.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0672",
+  "EV-0673"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.139, no. 42",
+   "shaping_risk": "low",
+   "note": "this is his stated argument"
+  }
+ ]
+}

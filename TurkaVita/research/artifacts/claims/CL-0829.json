@@ -1,0 +1,28 @@
+{
+ "id": "CL-0829",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, citing Virani, Ibn Turka and his associate Qasim-i Anvar were exiled from Herat in 1427 for suspect connections (Isma'ili, Hurufi), the official excuse being Qasim's putative Hurufi connection.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1674"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Virani, The Ismailis in the Middle Ages (via MK)",
+   "where": "dissertation pdf p.456",
+   "shaping_risk": "medium",
+   "note": "A modern secondary account of an official excuse; the Hurufi link is called 'putative' and is Qasim's, not Ibn Turka's."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.456",
+   "shaping_risk": "medium",
+   "note": "Reported through MK, who argues a rival reading."
+  }
+ ],
+ "domain": "political"
+}

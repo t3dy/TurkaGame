@@ -1,0 +1,15 @@
+{
+ "id": "EV-0631",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 131,
+  "printed_page": "114",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The work is published as Sharḥ-i Gulshan-i Rāz: Az Ṣāʾin al-Dīn ʿAlī Turka, Shāriḥ-i Shīʿī-Mazhab-i Gulshan-i Rāz, ed. Kāẓim Dizfūliyān, Tehran, 1375 Sh./1996; the editor's title itself calls Ibn Turka a Shiʿi-madhhab commentator.",
+ "evidence_kind": "reception",
+ "read_by": "R4 opened pdf p.131",
+ "refers_to_primary": "Sharḥ-i Gulshan-i Rāz, edition"
+}

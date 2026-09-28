@@ -1,0 +1,15 @@
+{
+  "id": "EV-0813",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 154,
+    "printed_page": "137",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK cites two letters as evidence of open communication between occult philosophers like Ibn Turka and practitioners of the 'legitimate' sciences: one in MS Majlis 10196 f. 153b from Qāżīzāda Rūmī, director of Ulugh Beg's observatory in Samarkand, and letter no. 31 sending greetings to the astronomer Badr al-Dīn in Gilan.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.154",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 31; MS Majlis 10196 f. 153b"
+}

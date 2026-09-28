@@ -1,0 +1,28 @@
+{
+ "id": "CL-0606",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Kātibī Turshīzī, a leading poet of Shāhrukh's age, is identified by Dawlatshāh as Ibn Turka's disciple in ʿilm-i taṣavvuf, and a verse of Kātibī's uses the madrasa/khanaqah pairing that MK says had become a trope.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1214",
+  "EV-1231"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Dawlatshāh Samarqandī, Tazkirat al-Shuʿarā",
+   "where": "pp. 340, 384",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.285",
+   "shaping_risk": "low",
+   "note": "the Kātibī verse is cited from MS Majlis 7776 f. 31a on pdf p.435"
+  }
+ ],
+ "domain": "social"
+}

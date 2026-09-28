@@ -1,0 +1,22 @@
+{
+  "id": "CL-0554",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that developing lettrism as an umbrella science is the core of Ibn Turka's millenarian quest for knowledge.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1074",
+    "EV-1075",
+    "EV-1127"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.234-235",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

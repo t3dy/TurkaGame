@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0027",
+ "type": "event",
+ "status": "draft",
+ "actor": "Shāhrukh",
+ "date": {
+  "start": "1415",
+  "end": "1415",
+  "hijri": "818",
+  "basis": "Timeline A.1, pdf p.52.",
+  "date_kind": "context"
+ },
+ "place": "Fars",
+ "event_type": "political",
+ "description": "Disturbances in Fars; Shāhrukh campaigns to impose control and appoints Bāysunghur governor of Mazandaran and western Khurasan.",
+ "claims": [
+  "CL-0090"
+ ],
+ "fixed_point": false
+}

@@ -1,0 +1,20 @@
+{
+  "id": "CL-0547",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Ḥurūf Ibn Turka divides lettrists into those concerned with the letters' occult properties (ahl-i khavāṣṣ, the majority, chiefly al-Būnī) and those concerned with their underlying realities (ahl-i ḥaqāyiq), and declares that his own purpose is to present the principles of the second group.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1061"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.181",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

@@ -1,0 +1,103 @@
+{
+ "id": "SCN-0404",
+ "type": "scene",
+ "status": "draft",
+ "act": "exile",
+ "title": "Simnan, c. 1429–30: a hearing that does not come",
+ "dramatic_question": "Shāhrukh is on the march in Azarbayjan, within reach, and in the same year the powerful opponent who caused you so much grief dies at Herat. How do you press to be heard?",
+ "situation": {
+  "when": "833 AH: c. 1429 in Melvin-Koushki's timeline, 1430 in his narrative",
+  "where": "Simnan",
+  "based_on": [
+   "CL-0083",
+   "CL-0029",
+   "CL-0091"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "In 833/1430 (his timeline says c. 833/1429) Ibn Turka failed to obtain a hearing with Shāhrukh at Simnan, then went to Natanz and summoned his family there.",
+   "claim": "CL-0083"
+  },
+  {
+   "text": "Muḥammad al-Jazarī, originally of Damascus and Ibn Turka's powerful opponent, died in Herat in 833/1429; his enmity had caused Ibn Turka much grief.",
+   "claim": "CL-0029"
+  },
+  {
+   "text": "Shāhrukh conducted his second Azarbayjan campaign against the Qara Quyunlu in 833/1429 and returned to Herat in 834/1430.",
+   "claim": "CL-0091"
+  }
+ ],
+ "prose": [
+  "Shāhrukh has taken the field against the Qara Quyunlu in Azarbayjan. In the same year, 833/1429, al-Jazarī, the Damascus-born traditionist whom, by your own later account, your enemies hide behind, dies in Herat. Your own later account traces his enmity to a judgement of him you gave the Mamluk sultan in Egypt; Melvin-Koushki gives no second witness for that. The pages do not say what his death changed for you.",
+  "The year itself is unsure: the dissertation's timeline says c. 833/1429 and its narrative says 833/1430. What is not in doubt is the shape: a ruler within reach, no post, a family still in exile. You go to Simnan, or you find another way to reach him.",
+  "The record gives the outcome of the attempt away in one sentence, and it is not a good one. What you can choose is how you go about asking."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Go to the camp at Simnan yourself, in person, and ask to be heard.",
+   "strategy": "seek_hearing_in_person_at_simnan",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0083"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "press.livelihood": -1,
+    "life.simnan": "in_person",
+    "score.biography": 2
+   },
+   "feedback": "The second apology reports an unsuccessful bid for a hearing at Shāhrukh's camp in Simnan, in a sentence that gives no reason and no name; the pages do not say who turned you away or how. After it you went to Natanz and sent for your family. This reaches us in your own words to Bāysunghur, so it is what you told a prince, and it is the only source."
+  },
+  {
+   "id": "B",
+   "label": "Go first to Bāysunghur and ask him to bring you before his father, as he once received you when Shāhrukh would not.",
+   "strategy": "seek_hearing_via_baysunghur",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0420",
+    "CL-0421",
+    "CL-0424"
+   ],
+   "requires_min": {
+    "court.baysunghur": 1
+   },
+   "effects": {
+    "court.baysunghur": 1,
+    "life.simnan": "via_baysunghur",
+    "score.biography": -1
+   },
+   "feedback": "Open to you because Bāysunghur has favoured you. In letter 19 you say you were not granted an audience with Shāhrukh but were received by Bāysunghur with particular favour; in letter 18 you wait two days at his court and propose a majlis as an easier setting. The record has you turn to him for intercession only at the end, in the second apology, after nine months of weekly attendance; nothing puts him at Simnan. The game returns you to the record."
+  },
+  {
+   "id": "C",
+   "label": "Send a treatise ahead to Shāhrukh, as you did with letter 20, and let it ask for the hearing before you appear.",
+   "strategy": "seek_hearing_with_treatise",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0418",
+    "CL-0419"
+   ],
+   "requires_min": {
+    "court.shahrukh": 1
+   },
+   "effects": {
+    "press.exposure": 1,
+    "life.simnan": "treatise_first",
+    "score.biography": -1
+   },
+   "costs": [
+    "A treatise on occult properties, sent by a suspected Ḥurūfī, may read as one more charge."
+   ],
+   "feedback": "Open to you because Shāhrukh has favoured you in the past. In letter 20 (ca. 829/1426) you told him your aim was to be blameless before the Prophet and sent a treatise on the occult properties of things, which Melvin-Koushki thinks was most probably the R. Suʾl al-Mulūk, his own guess. No such letter is on record for 1429–30, and the sources are silent on whether one would have helped. The game returns you to the record."
+  }
+ ],
+ "next": "SCN-0405",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

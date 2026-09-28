@@ -1,0 +1,21 @@
+{
+  "id": "CL-0545",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the Mafāḥiṣ Ibn Turka takes the subject of lettrism to be the One (al-wāḥid) insofar as it is one, and holds that oneness, unlike existence, cannot be relativized by an opposite, so that number is the fountainhead of the sciences.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1081",
+    "EV-1105"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.348, 355",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "CL-0639",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "ʿAbd al-Raḥmān Bisṭāmī, Ibn Turka's younger counterpart in Anatolia, pursued the shared project of Ibn Turka, Yazdī and their 'Devoted Brethren'; unlike Ibn Turka, Bisṭāmī denounces Fażl Allāh by name as a satanic extremist.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1289",
+  "EV-1227"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.257",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

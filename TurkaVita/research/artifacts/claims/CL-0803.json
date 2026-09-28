@@ -1,0 +1,31 @@
+{
+ "id": "CL-0803",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Ibn Turka's modern reputation in Iran rests almost exclusively on the Tamhid al-Qawaʿid, taught in Imami seminaries; the Tamhid became a staple text 'probably' in the late Qajar period, and by the late 13th/19th century he was identified almost exclusively with it.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1609",
+  "EV-1612",
+  "EV-1623",
+  "EV-1610"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Āshtiyānī; Javādī Āmulī; Imami seminary tradition",
+   "where": "Tamhid editions of 1976 and 1993",
+   "shaping_risk": "medium",
+   "note": "The position is this scholar's own; we have it only as summarised by Melvin-Koushki."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (reporter; partisan)",
+   "where": "dissertation pdf p.23, 454",
+   "shaping_risk": "medium",
+   "note": "MK argues a rival reading (Ibn Turka as occult philosopher) and in places calls this reading an error; his summary may compress or foreshorten it."
+  }
+ ],
+ "domain": "doctrinal"
+}

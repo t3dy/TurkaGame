@@ -1,0 +1,15 @@
+{
+  "id": "EV-1091",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 351,
+    "printed_page": "334",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki says evidence suggests Ibn Turka planned a more exhaustive work on lettrism, perhaps to be identified with the unfinished K. Iṣbāḥ al-Anwār, but the tribulations he experienced from 830/1427 onwards, and his early death in 835/1432, quashed this hope.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, K. Iṣbāḥ al-Anwār",
+  "read_by": "R6 opened pdf p.351"
+}

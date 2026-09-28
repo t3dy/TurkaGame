@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0008",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ḥusayn Akhlāṭī",
+ "date": {
+  "start": "1397",
+  "end": "1397",
+  "hijri": "799",
+  "basis": "Timeline A.1, pdf p.51.",
+  "date_kind": "context"
+ },
+ "place": "Cairo",
+ "event_type": "death",
+ "description": "Akhlāṭī dies in Cairo.",
+ "claims": [
+  "CL-0034"
+ ],
+ "fixed_point": true
+}

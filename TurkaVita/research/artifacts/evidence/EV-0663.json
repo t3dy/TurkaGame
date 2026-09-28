@@ -1,0 +1,15 @@
+{
+ "id": "EV-0663",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 136,
+  "printed_page": "119",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Suʾl al-Mulūk is a treatise on the science of letters: an introduction on the meaning of letters and their properties and essential realities, then two main sections of three subsections each (on the properties (khavāṣṣ) of letters and how to reach their noble essences, and on the theoretical side of the science of letters), and an epilogue on how the realities of all things arise from the letters; it refers to the R. Asrār al-Ṣalāt.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.136",
+ "refers_to_primary": "Ibn Turka, Suʾl al-Mulūk"
+}

@@ -1,0 +1,39 @@
+{
+ "id": "CL-0728",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Dates given for the Mafāḥiṣ vary in kind. The dissertation records the Majlis manuscript as copied in 823/1420 with autograph sections, an audition note of 828/1425, and says it was produced in 817-25/1414-22; Sensorium gives 823-28/1420-25, Grammatology completed 823/1420 and revised 828/1425, the Prologue 1420 in its title and MS 'copied and added to between 1420-25'. The older project docs' 'completes the Mafāḥiṣ in 1420' is the copy date; no paper read says it was written in a single year.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1427",
+  "EV-1428",
+  "EV-1429",
+  "EV-1483",
+  "EV-1487",
+  "EV-1456",
+  "EV-1454"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "MS Majlis 10196 and Beinecke MS Landberg 146",
+   "where": "dissertation pdf 114",
+   "shaping_risk": "medium",
+   "note": "823/1420 is a copying date; the dissertation flags the Beinecke date with a query"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 114, 177, 52",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

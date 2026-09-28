@@ -1,0 +1,24 @@
+{
+ "id": "REC-0055",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was Ibn Turka?",
+ "proposition": "Ibn Turka was a mystic with lettrist concerns, wrongly captured by the label 'Spinoza of Iran'.",
+ "kind": "inferential",
+ "scholar": "ʿAbd al-Ḥusayn Zarrīnkūb (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "MK reports only that Zarrinkub objects to the 'Spinoza of Iran' title as misrepresentative of Ibn Turka's 'more mystical and lettrist concerns' (pdf p.24 n.17); his own account of Ibn Turka is not given on these pages.",
+  "So the reading has a lettrist element MK does not dispute; the point of difference is that it stays within mysticism. MK does not answer Zarrinkub directly on the page.",
+  "MK is a partisan reporter and this is one footnote: the reconstruction is thin. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0806",
+  "CL-0841",
+  "EV-1620"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0054",
+  "REC-0060"
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "id": "CL-0713",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In the Mafāḥiṣ prologue, as translated in the Prologue, Ibn Turka says that in his youth he sought a true education in the number sciences, travelling far and wide, and that guidance brought him to Cairo in the company of friends, among them Sharaf al-Dīn ʿAlī Yazdī, to meet Akhlāṭī. This corroborates the dissertation timeline's entry that Yazdī accompanied him (c. 1393).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1457",
+  "EV-1402"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, K. al-Mafāḥiṣ prologue, MS Majlis 10196 f. 52b",
+   "where": "Prologue pdf 16",
+   "shaping_risk": "medium",
+   "note": "a prefatory passage in a doctrinal work, not an apology; rhetorically shaped and given in MK's translation"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Prologue to Pythagorean Renaissance",
+   "where": "pdf 16",
+   "shaping_risk": "low",
+   "note": "translation is MK's, bracketed interpolations are his"
+  }
+ ],
+ "domain": "biographical"
+}

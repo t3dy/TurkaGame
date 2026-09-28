@@ -1,0 +1,22 @@
+{
+ "id": "EVT-0004",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1387",
+  "end": "1387",
+  "hijri": "789",
+  "basis": "Timeline A.1 (pdf p.51) and §1.2 (pdf p.62); no source cited.",
+  "date_kind": "attested"
+ },
+ "place": "Isfahan to Samarkand",
+ "event_type": "hostage",
+ "description": "The Turka family is sent to Temür's court at Samarkand; the elder brother Ṣadr al-Dīn is appointed qadi there and Ibn Turka, a teenager, studies under him.",
+ "claims": [
+  "CL-0018",
+  "CL-0020",
+  "CL-0010"
+ ],
+ "fixed_point": false
+}

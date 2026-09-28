@@ -1,0 +1,15 @@
+{
+ "id": "EV-1250",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 442,
+  "printed_page": "425",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Bākharzī also quotes Kamāl al-Dīn Masʿūd Shirvānī of Herat comparing Jāmī with Yazdī to Yazdī's disadvantage: Yazdī's work was widely received as, and accused of being, heterodox and deviant (the accusers bearing responsibility for their charge), whereas Jāmī walked the straight path of Sharīʿa and Sunna; Yazdī spent his whole life attached to the courts of rulers.",
+ "evidence_kind": "reception",
+ "refers_to_primary": "Kamāl al-Dīn Masʿūd Shirvānī, quoted in Bākharzī, Maqāmāt-i Jāmī, 106-7",
+ "read_by": "R7 opened pdf p.442"
+}

@@ -1,0 +1,30 @@
+{
+ "id": "CL-0657",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Hurufi sources say Ibn Turka's father Afẓal al-Dīn and brother Ṣadr al-Dīn attended Fażl Allāh's majlises in Isfahan to have their dreams interpreted; in the Khwābnāma account Fażl Allāh tells Ṣadr al-Dīn to drop a planned book harmonizing religion and philosophy and Afẓal al-Dīn dreams that God will build him a dome.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1264",
+  "EV-1265",
+  "EV-1266"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Naṣr Allāh Nāfajī, Khwābnāma; Sayyid Isḥāq, Khwābnāma (Hurufi sources)",
+   "where": "Vatican MS Persian 17 ff. 32a-33a; Millet MS Ali Emiri Farsça 1042 f. 23a",
+   "shaping_risk": "high",
+   "note": "partisan sources with an interest in showing notables attending Fażl Allāh; the Hurufi text calls Afẓal al-Dīn a member of Ṣadr al-Dīn's house where MK calls him Ṣāʾin al-Dīn's father"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.446",
+   "shaping_risk": "low",
+   "note": "MK mentions it in a parenthesis and draws no conclusion"
+  }
+ ],
+ "domain": "biographical"
+}

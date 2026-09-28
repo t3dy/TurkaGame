@@ -1,0 +1,20 @@
+{
+ "id": "CL-0100",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki holds that the apologies are the primary source of information about Ibn Turka's life and a uniquely candid record of Timurid religio-political machinations. Set beside his duress warning, this means the apologies are his main biographical witness and, on his own account, a shaped one.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0200"
+ ],
+ "domain": "biographical",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.75 (printed 58)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

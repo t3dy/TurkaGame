@@ -1,0 +1,26 @@
+{
+ "id": "CL-0160",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat II ends by dismissing Fażl Allāh Astarābādī's Hurufi movement in harsh and bitterly resentful terms.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0236"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing from exile to Bāysunghur b. Shāhrukh",
+   "where": "Nafsat al-Maṣdūr II",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.79 (printed 62)",
+   "shaping_risk": "low"
+  }
+ ]
+}

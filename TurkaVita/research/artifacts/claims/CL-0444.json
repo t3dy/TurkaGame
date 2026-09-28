@@ -1,0 +1,28 @@
+{
+  "id": "CL-0444",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka wrote to an Amīr ʿAlāʾ al-Dīn in Gilan (?): a condolence on the death of a son (letter 33) and a letter of thanks after attending the amir's court and being treated with solicitude after the events of 830/1427, in which he calls himself a victim of injustice (34).",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0854",
+    "EV-0855"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Amīr ʿAlāʾ al-Dīn",
+      "where": "Munshaʾāt-i Turka letters 33 and 34",
+      "shaping_risk": "medium",
+      "note": "Written by a supplicant asking a ruler or official for clemency, relief or a stipend; framed to win the favour asked, not as a neutral report."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.161",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "political"
+}

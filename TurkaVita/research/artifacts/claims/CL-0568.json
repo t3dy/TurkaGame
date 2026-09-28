@@ -1,0 +1,22 @@
+{
+  "id": "CL-0568",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka assigns the spoken form of the letters to the prophetic mission, because it reaches the masses and moves them to acts of piety, and notes that most religious duties (prayer, worship) concern the spoken form.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1106",
+    "EV-1110",
+    "EV-1018"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.336, 355, 357",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

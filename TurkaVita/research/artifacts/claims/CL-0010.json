@@ -1,0 +1,33 @@
+{
+ "id": "CL-0010",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's elder brother Ṣadr al-Dīn was an eminent scholar of hadith, tafsir, jurisprudence and uṣūl al-dīn, taught him for the first 25 years of his life, and (Ibn Turka states) taught nothing beyond the outward meaning of the Shariʿa, judging esoteric matters too dangerous to delve into in public.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0073",
+  "EV-0075",
+  "EV-0074"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "the brother's teaching"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I (829/1426), addressed to Shāhrukh",
+   "where": "Nafsat al-Maṣdūr I, 170",
+   "shaping_risk": "high",
+   "note": "the 'outward meaning' statement is Ibn Turka's; the 25 years is MK's statement, and its source is not cited on the page"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.58-59",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

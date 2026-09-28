@@ -1,0 +1,15 @@
+{
+  "id": "EV-0871",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 164,
+    "printed_page": "147",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letters in other MSS: (1) a letter to Amīrzāda Bāysunghur in microfilm 227/4 (Tehran University); (2) a letter from Amīr Riżā Kiyā to Ibn Turka in MS Malik 4029/6 and MS Revan Köşkü 2024 (Süleymaniye); (3) Ibn Turka's reply to it in MS Malik 4029/6 and microfilm 227/6. MK could not consult them; he supposes two of the three duplicate letters already in the Munshaʾāt-i Turka.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.164",
+  "refers_to_primary": "Letters in other MSS"
+}

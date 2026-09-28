@@ -1,0 +1,15 @@
+{
+ "id": "EV-0218",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 77,
+  "printed_page": "60",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki's footnote says the ten children comprised three sons and seven daughters, cross-referring to §2.1.3.1, no. 7; the split is not given as a quotation from the apology.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka's ten children",
+ "read_by": "R2a opened pdf p.77"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "CL-0630",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Zayn al-Dīn Khwāfī and his circle persecuted Ibn Turka because, as a promoter of Ibn ʿArabī's theory, he could not fail to provoke them (MK: 'not an accident'); Khwāfī likewise disowned his own chief disciple Aḥmad Samarqandī for teaching the Fuṣūṣ and reciting Qāsim-i Anvār.",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1238",
+  "EV-1237",
+  "EV-1239"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.437",
+   "shaping_risk": "medium",
+   "note": "MK's causal reading built on Bashir and Manz"
+  }
+ ],
+ "domain": "doctrinal"
+}

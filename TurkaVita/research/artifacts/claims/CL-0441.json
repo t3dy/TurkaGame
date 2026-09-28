@@ -1,0 +1,28 @@
+{
+  "id": "CL-0441",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka says in letter 28 that he passed through Gilan and found it uncongenial, preferring to go straight to Mazandaran.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0848"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Sayyid Murtażā Marʿashī",
+      "where": "Munshaʾāt-i Turka letter 28",
+      "shaping_risk": "medium",
+      "note": "Written by a supplicant asking a ruler or official for clemency, relief or a stipend; framed to win the favour asked, not as a neutral report."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.160",
+      "shaping_risk": "medium",
+      "note": "MK's footnote quotes Fūmanī's hostile picture of the Gilānīs, which is not Ibn Turka's"
+    }
+  ],
+  "domain": "biographical"
+}

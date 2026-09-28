@@ -1,0 +1,14 @@
+{
+ "id": "EV-0066",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 56,
+  "printed_page": "39",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The grandfather's philosophical works (al-Iʿtimād al-Kabīr, al-Ḥikma al-Manīʿa, al-Irhāṣ, Kunūz al-Afrāḥ, al-Ḥikma al-Rashīdiyya, Qawāʿid al-Tawḥīd) are mostly lost; the Qawāʿid al-Tawḥīd survives embedded in Ibn Turka's Tamhīd al-Qawāʿid and, per note 9, was edited separately from the earliest copy, checked by the author himself (MS Majlis 10196 ff. 189-222).",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.56"
+}

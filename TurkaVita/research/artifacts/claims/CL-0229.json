@@ -1,0 +1,23 @@
+{
+ "id": "CL-0229",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation describes the verse on MS Majlis 10196 f. 121b two ways, as nine Persian and three Arabic ghazals, four Persian rubāʿīs, a qiṭʿa and two muʿammās (p.87) and as eight ghazals, eight rubāʿīs and two Arabic fragments (pp.87-88); the contents of the page cannot be settled from these pages.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0440",
+  "EV-0441",
+  "EV-0442"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.87-88",
+   "shaping_risk": "medium",
+   "note": "an internal inconsistency"
+  }
+ ],
+ "domain": "textual"
+}

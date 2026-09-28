@@ -1,0 +1,28 @@
+{
+ "id": "CL-0227",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki presumes the R. Iʿtiqādiyya was written around the time of the Nafsat al-Maṣdūr II (ca. 832-35/1429-32) because it mentions the R. Iʿtiqādāt; this reasoning gives only a lower bound (after 829/1426), and the work is otherwise undated and survives only in Majlis 10196 f. 171b.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0468",
+  "EV-0466"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, in the R. Iʿtiqādiyya",
+   "where": "R. Iʿtiqādiyya",
+   "shaping_risk": "high",
+   "note": "a statement of creed offered to defend his learning"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.93",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "chronological"
+}

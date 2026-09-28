@@ -1,0 +1,15 @@
+{
+ "id": "EV-0322",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 25,
+  "printed_page": "8",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki calls similarly problematic Rosemarie Quiring-Zoche's description of Ibn Turka as “a Sufi poet, philosopher, and jurist”.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Quiring-Zoche, ‘Afżal-al-Din Torka’, EIr (per MK fn.22)",
+ "read_by": "R2a opened pdf p.25"
+}

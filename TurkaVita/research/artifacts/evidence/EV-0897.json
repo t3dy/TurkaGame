@@ -1,0 +1,15 @@
+{
+  "id": "EV-0897",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 328,
+    "printed_page": "311",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK reports that this prediction appears to have been common knowledge in the later Timurid period, since Davānī, in his R. Tuḥfa-yi Rūḥānī, cites it as a prime example of making political predictions from the names of the actors involved (Majlis 5180 p. 420, Majlis 12559 p. 260, per MK's footnote on pdf p.329).",
+  "evidence_kind": "reception",
+  "read_by": "R5 opened pdf p.328",
+  "refers_to_primary": "Davānī, R. Tuḥfa-yi Rūḥānī"
+}

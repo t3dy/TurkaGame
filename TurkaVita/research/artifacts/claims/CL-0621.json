@@ -1,0 +1,26 @@
+{
+ "id": "CL-0621",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Despite his personal tribulations, Ibn Turka and Yazdī's project was held in wide esteem in late Timurid Herat (MK's reading of Dawlatshāh, Gāzurgāhī and the hostile Bākharzī together).",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1212",
+  "EV-1222",
+  "EV-1213"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.284",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "social",
+ "counterevidence": [
+  "EV-1216",
+  "EV-1249"
+ ]
+}

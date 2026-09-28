@@ -1,0 +1,15 @@
+{
+ "id": "EV-0011",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 51,
+  "printed_page": "34",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Timeline A.1: Ibn Turka completes the Sharḥ-i Naẓm al-Durr in 806/1404. (Timeline footnote 1 says most dates rest on colophons, without specifying this one.)",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.51",
+ "refers_to_primary": "Ibn Turka, Sharḥ-i Naẓm al-Durr"
+}

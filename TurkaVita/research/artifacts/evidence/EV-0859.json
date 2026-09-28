@@ -1,0 +1,15 @@
+{
+  "id": "EV-0859",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 162,
+    "printed_page": "145",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 38, to Sayyid Qāsim-i Anvār (830/1427 or 834/1431?, Herat?): a brief letter written after the author spent several days in his company, describing him with a notable string of eulogistic epithets (TMN/MS pp. 30-31, TMN/D pp. 209-10).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.162",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 38"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0666",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 137,
+  "printed_page": "120",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that Sullam Dār al-Salām was completed before 26 Shaʿbān 832/31 May 1429 in Abarquh, and marks the date with an asterisk (possible transcription date).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.137",
+ "refers_to_primary": "Sullam Dār al-Salām, date and place"
+}

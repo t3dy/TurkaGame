@@ -1,0 +1,15 @@
+{
+  "id": "EV-1021",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 173,
+    "printed_page": "156",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki lists two works as organized according to an epistemological hierarchy, examining a topic from the standpoint of groups such as traditionists, philosophers, Sufis and lettrists in ascending order: the R. Shaqq-i Qamar u Bayān-i Sāʿat (dated 'before 829/1426') and the R. Madārij Afhām al-Afwāj (Mazandaran, 831/1428). He says the hierarchy is laid out most clearly in the R. Shaqq-i Qamar.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.173"
+}

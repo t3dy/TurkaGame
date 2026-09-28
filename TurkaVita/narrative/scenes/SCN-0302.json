@@ -1,0 +1,119 @@
+{
+ "id": "SCN-0302",
+ "type": "scene",
+ "status": "draft",
+ "act": "trials",
+ "title": "Yazd, 1422–1426: the qadi and the notables",
+ "dramatic_question": "You are qadi of Yazd, a city that likes quiet, under a ruler who wants the Sharīʿa enforced. The men who run the city expect a judge to bend. How strictly do you apply the law to them?",
+ "situation": {
+  "when": "c. 825–29/1422–26",
+  "where": "Yazd",
+  "based_on": [
+   "CL-0066",
+   "CL-0070",
+   "CL-0576",
+   "CL-0119"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki calls his residence in Yazd, c. 825–29/1422–26, relatively uneventful and productive: many lettrist works, and (in his timeline) the Mafāḥiṣ revised and expanded; the manuscripts dispute the revision (CL-0576).",
+   "claim": "CL-0066"
+  },
+  {
+   "text": "Sharaf al-Dīn Yazdī checked the two earliest copies of the Mafāḥiṣ and attended teaching sessions on it; the timeline puts the revision in 828/1425, but one manuscript's note reads that date as copying only.",
+   "claim": "CL-0045"
+  },
+  {
+   "text": "Students came to him in Yazd. He says, in the second apology written years later, that they flocked from Shiraz, Samarkand, Anatolia and India; that count is his own.",
+   "claim": "CL-0067"
+  },
+  {
+   "text": "Shāhrukh had abrogated the Yasa and enforced the Sharīʿa in 813/1411, and Chaqmāq had been governor of Yazd since c. 823/1420.",
+   "claim": "CL-0090"
+  }
+ ],
+ "prose": [
+  "Shāhrukh has made you qadi of Yazd, and Chaqmāq governs the city. The years look quiet from outside. Sharaf al-Dīn Yazdī checks copies of your Mafāḥiṣ and sits in on your teaching of it, and Melvin-Koushki's timeline has the book revised and expanded in his company in 828/1425, which the manuscripts dispute. Students come; you will later say they came from as far as Samarkand and India. The poet Kātibī Turshīzī is reported among them, and the first four poems of his divan praise his teacher's learning and his scrupulous use of the law.",
+  "The docket is where the danger lies. Yazd has an entrenched elite, the men the sources call mutaghallibān, and their disputes come before you. By your own later account, the powerful bend qadis to their backers' will. Your post comes from Shāhrukh, so a complaint about you can go over your head to Herat.",
+  "You have to decide how much of the Sharīʿa the notables of Yazd are going to get."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Apply the Sharīʿa as it stands, to the powerful and the poor alike, and keep teaching and writing.",
+   "strategy": "impartial_qadi",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0070",
+    "CL-0120",
+    "CL-0068"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "press.enemies": 1,
+    "press.students": 1,
+    "press.works": 1,
+    "life.judgeship": "impartial",
+    "score.biography": 2
+   },
+   "costs": [
+    "Powerful men in Yazd become your enemies.",
+    "Students and works multiply."
+   ],
+   "feedback": "The sources report this through two witnesses of different kinds. Your first apology, written to the ruler judging you, says the powerful bend qadis to their backers' will and so became your enemies because you would not; the second is a pupil's panegyric, Kātibī's poems, reported through Dawlatshāh (low confidence). Melvin-Koushki reads these as productive years, and the men you have crossed are the ones who go to Herat next."
+  },
+  {
+   "id": "B",
+   "label": "Keep the peace: where the leading families of Yazd are concerned, settle matters quietly and let the law bend a little.",
+   "strategy": "accommodate_the_elite",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0070",
+    "CL-0065"
+   ],
+   "requires": {},
+   "effects": {
+    "press.livelihood": 1,
+    "press.students": -1,
+    "life.judgeship": "accommodating",
+    "score.biography": -1
+   },
+   "costs": [
+    "Your household is easier; fewer students come."
+   ],
+   "feedback": "Nothing in the sources has him bending. What they report, by his own account in the first apology as Melvin-Koushki summarises it, is the opposite: an unswerving, impartial qadi with enemies among Yazd's entrenched men. The game returns you to the record; nothing later can be built on a Yazd career the sources do not contain."
+  },
+  {
+   "id": "C",
+   "label": "Before the notables can act, write to Shāhrukh yourself, report how they obstruct your court, and ask for his backing.",
+   "strategy": "write_first_to_shahrukh",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0070",
+    "CL-0119"
+   ],
+   "requires_min": {
+    "court.shahrukh": 1
+   },
+   "effects": {
+    "court.shahrukh": 1,
+    "press.enemies": 1,
+    "life.judgeship": "impartial",
+    "score.biography": -1
+   },
+   "costs": [
+    "Needs Shāhrukh's favour already earned at Herat.",
+    "The notables still become your enemies."
+   ],
+   "feedback": "The sources have the notables sending a delegation to Shāhrukh to seek your dismissal; none has you writing first. Your first apology says the king's support for the Sharīʿa largely defeated the powerful's attempts to intimidate you, which is the best thing said for this line and is your own word to a judge. The game returns you to the record: your enemies write first."
+  }
+ ],
+ "next": "SCN-0303",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

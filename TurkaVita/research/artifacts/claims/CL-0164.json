@@ -1,0 +1,27 @@
+{
+ "id": "CL-0164",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "As MK reports them, Nafsat I says Ibn Turka studied only tafsir, hadith, uṣūl and fiqh for 15 years abroad, while the R. Iʿtiqādiyya says he explored suspect sciences in his youth. The two self-reports sit uneasily together; MK does not draw this contrast on the pages read here. This is the researcher's observation, not MK's.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0258",
+  "EV-0237"
+ ],
+ "domain": "biographical",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.80 (printed 63)",
+   "shaping_risk": "low"
+  }
+ ]
+}

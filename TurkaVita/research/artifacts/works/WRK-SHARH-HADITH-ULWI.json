@@ -1,0 +1,30 @@
+{
+ "id": "WRK-SHARH-HADITH-ULWI",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ Ḥadīth ʿUlwī",
+ "transliterated_title": "Sharḥ Ḥadīth ʿUlwī",
+ "language": "Arabic",
+ "genre": "hadith commentary (content unknown to Melvin-Koushki)",
+ "theme": "hadith",
+ "date": {
+  "ce": "unknown",
+  "hijri": "unknown",
+  "basis": "The only listed copy is undated; Melvin-Koushki did not access it."
+ },
+ "date_kind": "unknown",
+ "place": "not stated",
+ "addressee": "not stated",
+ "occasion": "not stated",
+ "manuscript": "MS 8184, Āstān-i Quds Library, Mashhad (undated); not seen by Melvin-Koushki.",
+ "majlis_folios": "none listed",
+ "edited": false,
+ "summary": "Known only from a Mashhad catalogue entry; Melvin-Koushki suspects it may be identical to one of the three preceding brief hadith commentaries.",
+ "edition_note": "Unpublished.",
+ "supported_by": [
+  "EV-0641"
+ ],
+ "claims": [
+  "CL-0317"
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": "CL-0202",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation describes the autograph portions of the Majlis 10196 Mafāḥiṣ in two ways, as an incipit and explicit only (pp.78, 80) and as autograph sections at the beginning, middle and end (p.82); it does not reconcile them, and the number and location of the autograph sections cannot be settled from these pages.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0403",
+  "EV-0413",
+  "EV-0419"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.78, 80, 82",
+   "shaping_risk": "medium",
+   "note": "an internal inconsistency, not a scholarly dispute"
+  }
+ ],
+ "domain": "textual"
+}

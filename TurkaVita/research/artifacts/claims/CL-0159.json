@@ -1,0 +1,27 @@
+{
+ "id": "CL-0159",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The other Herati shaykh who took his exhortations better was ‘almost certainly’ Qāsim-i Anvār, by MK's identification.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0234",
+  "EV-0246"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing from exile to Bāysunghur b. Shāhrukh",
+   "where": "Nafsat al-Maṣdūr II",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.79 (printed 62)",
+   "shaping_risk": "low"
+  }
+ ]
+}

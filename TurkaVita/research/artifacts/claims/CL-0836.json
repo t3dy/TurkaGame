@@ -1,0 +1,22 @@
+{
+ "id": "CL-0836",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki reads the Mafahis passage on the salaf as a concession to less intelligent readers, implying that the elite take devotion to the Imams as given.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1692",
+  "EV-1691"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.92",
+   "shaping_risk": "medium",
+   "note": "MK's own interpretation, offered in support of his thesis that Ibn Turka was an occult philosopher."
+  }
+ ],
+ "domain": "doctrinal"
+}

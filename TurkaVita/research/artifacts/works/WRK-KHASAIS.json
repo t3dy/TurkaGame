@@ -1,0 +1,28 @@
+{
+ "id": "WRK-KHASAIS",
+ "type": "work",
+ "status": "draft",
+ "title": "al-Khaṣāʾiṣ (projected work on logic)",
+ "transliterated_title": "al-Khaṣāʾiṣ",
+ "language": "Arabic",
+ "genre": "logic (unfinished)",
+ "theme": "logic",
+ "date": {
+  "ce": "",
+  "hijri": "",
+  "basis": "no date given; referred to in the K. al-Manāhij (completed 833/1430 per the timeline); MK: it does not seem ever to have been finished; the R. Ḥurūf's Khaṣāyiṣ-i Kamālī is presumably a different work."
+ },
+ "date_kind": "unknown",
+ "occasion": "Referred to in the K. al-Manāhij as a more comprehensive work on logic than that primer.",
+ "manuscript": "No MS copies are known to survive.",
+ "edited": false,
+ "summary": "A more comprehensive work on logic, with a wider frame of reference than the peripatetics, that the author refers to in the K. al-Manāhij; apparently never finished.",
+ "supported_by": [
+  "EV-0469",
+  "EV-0470",
+  "EV-0471"
+ ],
+ "claims": [
+  "CL-0232"
+ ]
+}

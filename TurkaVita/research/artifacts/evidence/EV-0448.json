@@ -1,0 +1,15 @@
+{
+ "id": "EV-0448",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 106,
+  "printed_page": "89",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In a footnote glossing the March 1415 completion of the Sharḥ Fuṣūṣ al-Ḥikam, Melvin-Koushki says this was shortly after Iskandar's rebellion against Shāhrukh was violently quashed.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, R. Ḥurūf",
+ "read_by": "R3 opened pdf p.106"
+}

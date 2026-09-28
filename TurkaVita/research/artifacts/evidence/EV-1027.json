@@ -1,0 +1,15 @@
+{
+  "id": "EV-1027",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 472,
+    "printed_page": "455",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Ibn Turka says the levels of each group, ranked ascending by their doctrines and sciences, are given as a general but accurate and useful model that diligent seekers can apply to other matters; he names seven levels (ṭabaqa).",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.472"
+}

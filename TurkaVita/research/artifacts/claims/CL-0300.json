@@ -1,0 +1,23 @@
+{
+ "id": "CL-0300",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki holds that most colophon dates in MS Majlis 10196 record copying, so give only a terminus ad quem for composition; he flags with an asterisk each date he suspects is transcription, and treats dates in the manuscript's second half as more likely to approximate composition. He admits that for many works composition and transcription cannot be told apart.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0600",
+  "EV-0601",
+  "EV-0602"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.95-97",
+   "shaping_risk": "low",
+   "note": "his own method statement"
+  }
+ ]
+}

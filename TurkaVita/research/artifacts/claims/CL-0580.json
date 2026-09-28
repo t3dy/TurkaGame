@@ -1,0 +1,21 @@
+{
+  "id": "CL-0580",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Witnesses disagree on which faculty belongs to which form of the letter: the R. Ḥurūf, as summarized, ties the numerical or mental form to the heart, while Davānī ties the numerical value to the spirit and the oral form to the heart.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1051",
+    "EV-1100"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.178, 353",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "textual"
+}

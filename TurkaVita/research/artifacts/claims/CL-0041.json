@@ -1,0 +1,28 @@
+{
+ "id": "CL-0041",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Shaykh Bedreddīn, a judge and intellectual whose profile matched Ibn Turka's, also became Akhlāṭī's disciple in Cairo and then led a messianic-millenarian rebellion against the Ottomans in 819/1416; a manāqib portrays Akhlāṭī naming him successor.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0111",
+  "EV-0114"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Ḥāfiẓ Ḫalīl's manāqib of Bedreddīn and Ottoman sources",
+   "where": "pdf p.65-66, note 61",
+   "shaping_risk": "high",
+   "note": "hagiography for the successor claim"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.65-66",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

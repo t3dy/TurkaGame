@@ -1,0 +1,36 @@
+{
+ "id": "CL-0733",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation places the birth in 770/1369 almost certainly in Isfahan, computed from a self-reported age, and says he died in Herat; it gives no burial place on the pages read. The Prologue calls Isfahan his hometown and resting place, without citation. New Brethren traces the family to Khujand. Nothing read contradicts Isfahan as hometown; 'resting place' is unsupported on the pages read.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1400",
+  "EV-1423",
+  "EV-1458",
+  "EV-1474"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I (age 59 in 829)",
+   "where": "dissertation pdf 55",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 55, 74",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Prologue to Pythagorean Renaissance",
+   "where": "pdf 10",
+   "shaping_risk": "medium",
+   "note": "a rhetorical parallel with Bruno's Naples"
+  }
+ ],
+ "domain": "biographical"
+}

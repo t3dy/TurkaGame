@@ -1,0 +1,15 @@
+{
+ "id": "EV-0204",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 75,
+  "printed_page": "58",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In a footnote Melvin-Koushki reports that Muḥammad Ṭūsī, in his R. Majmaʿ al-Tahānī u Maḥżar al-Amānī written for Bāysunghur, refers to a majlis-i tafaḥḥuṣ u dīvān-i tajassus that was responsible for interrogating Hurufis brought to trial.",
+ "evidence_kind": "context",
+ "refers_to_primary": "Muḥammad Ṭūsī, R. Majmaʿ al-Tahānī u Maḥżar al-Amānī, p.30 (per MK fn.99)",
+ "read_by": "R2a opened pdf p.75"
+}

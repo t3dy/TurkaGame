@@ -1,0 +1,21 @@
+{
+  "id": "CL-0445",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The identity of the Amīr ʿAlāʾ al-Dīn of letters 33-34 cannot be fixed: MK lists three candidates (ʿAlāʾ al-Dīn b. Bāysunghur, ʿAlāʾ al-Dīn ʿAlīka Kükältash, ʿAlāʾ al-Dawla son of the Mazandarani vizier ʿIzz al-Dīn Ṭāhir Simnānī), the first less likely because born in 1417.",
+  "epistemic_type": "undeterminable",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0854"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.161",
+      "shaping_risk": "medium",
+      "note": "MK's footnote lists the candidates without choosing"
+    }
+  ],
+  "domain": "political"
+}

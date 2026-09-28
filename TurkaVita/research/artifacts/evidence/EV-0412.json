@@ -1,0 +1,15 @@
+{
+ "id": "EV-0412",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 97,
+  "printed_page": "80",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 was formerly catalogued as MSS Majlis 8503-5 and 8387 (citing Bihbahānī, 'Aḥvāl', 110).",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "MS Majlis 10196",
+ "read_by": "R3 opened pdf p.97"
+}

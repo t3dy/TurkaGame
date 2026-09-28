@@ -1,0 +1,21 @@
+{
+ "id": "CL-0231",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki conjectures that the Iṣbāḥ al-Anwār was planned as a fuller lettrist work than the Mafāḥiṣ and was left unfinished in the wake of the events of 1427 and the exile.",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0458"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.91",
+   "shaping_risk": "medium",
+   "note": "'perhaps'; no source states why it stopped"
+  }
+ ],
+ "domain": "textual"
+}

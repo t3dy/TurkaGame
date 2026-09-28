@@ -1,0 +1,27 @@
+{
+ "id": "CL-0165",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK calls the R. Iʿtiqādiyya both a ‘companion tract’ to the 1426 Nafsat I (p.77) and ‘among the last of his writings’ (p.79); the pages read do not reconcile these, so its date is undetermined here.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0212",
+  "EV-0237"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, in a creedal tract of the apology group",
+   "where": "R. Iʿtiqādiyya",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.77 (printed 60)",
+   "shaping_risk": "low"
+  }
+ ]
+}

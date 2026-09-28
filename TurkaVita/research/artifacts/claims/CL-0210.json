@@ -1,0 +1,36 @@
+{
+ "id": "CL-0210",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Read off from Melvin-Koushki's entries (a collation by the researcher, not a statement by him): in MS Majlis 10196 the dated works of ff. 120b-189a stand in ascending order of their colophon dates, from the R. al-Arbaʿīniyya (f. 120b, 13 Jumādā II 828) through the R. Ḥurūf (f. 154b, 14 Dhū l-Qaʿda 828), the Iʿtiqādāt (f. 165b, 19 Jumādā I 829), the Nafsat al-Maṣdūr I (f. 179b, 8 Rajab 829) and the Iṣṭilāḥāt (f. 184a, 25 Rajab 829) to the Muhr al-Nubuwwa (f. 189a, 4 Jumādā II 831). Two items do not sit cleanly in the sequence: the Dīvān page (f. 121b, 'early 828') follows an item dated Jumādā II 828, and the R. Iʿtiqādiyya (f. 171b) is undated and lies inside the Iʿtiqādāt.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0426",
+  "EV-0440",
+  "EV-0437",
+  "EV-0518",
+  "EV-0451",
+  "EV-0472",
+  "EV-0430",
+  "EV-0495",
+  "EV-0434",
+  "EV-0444",
+  "EV-0422",
+  "EV-0501",
+  "EV-0462",
+  "EV-0466",
+  "EV-0509",
+  "EV-0459",
+  "EV-0498"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "R3 researcher, collating Melvin-Koushki's folio and date lines (not stated by him)",
+   "where": "pp.83-101",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

@@ -1,0 +1,165 @@
+{
+ "id": "SCN-0605",
+ "type": "scene",
+ "status": "draft",
+ "act": "historian",
+ "unrecorded": true,
+ "show_dossier": true,
+ "title": "The desk: who was he?",
+ "dramatic_question": "You have read what you read. Commit, in print, to who Ibn Turka was, or to what the record can say.",
+ "situation": {
+  "when": "the modern dispute",
+  "where": "the desk",
+  "based_on": [
+   "CL-0167",
+   "CL-0101"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki holds that the apologies were produced under great duress: the first answers a summons to trial, the second follows torture, imprisonment and exile.",
+   "claim": "CL-0167"
+  },
+  {
+   "text": "Melvin-Koushki opens his chapter on the apologies with an epigraph from John Dee's 1604 petition to the king about slander. That is his comparison; nothing on the page asserts any contact.",
+   "claim": "CL-0101"
+  }
+ ],
+ "prose": [
+  "The game does not know who he was, and the scholars disagree. Melvin-Koushki calls him an occult philosopher and an imamophile; others read him as a Shiʿi esotericist, an orthodox Sunni Sufi, a mystical philosopher; and a reading the game builds from the purge of 1427 takes him for a Ḥurūfī sympathiser. Each is somebody's reading, and each leans on a different kind of witness.",
+  "You are not scored on being right. You are scored on whether what you say fits the dossier you actually built, and on whether you claimed to know what he held from evidence that could not carry it."
+ ],
+ "rulings": [
+  {
+   "id": "R1",
+   "proposition": "Melvin-Koushki treats the apologies as the primary source for the biography of Ibn Turka, but not as a guide to his primary concerns.",
+   "answer": "stand",
+   "based_on": [
+    "CL-0167",
+    "CL-0100"
+   ],
+   "effects_correct": {
+    "score.calibration": 1
+   },
+   "effects_wrong": {
+    "score.calibration": -1
+   },
+   "feedback": "That is his position: he builds his account of the life on them and holds that they were produced under great duress and are hardly reflective of his primary concerns. The game's duress rule is his position, adopted as a rule of the game; it is not a finding about who Ibn Turka was."
+  }
+ ],
+ "commitment": {
+  "question": "Who was Ibn Turka?",
+  "options": [
+   {
+    "hypothesis": "HYP-A",
+    "label": "A. Shiʿi esotericist"
+   },
+   {
+    "hypothesis": "HYP-B",
+    "label": "B. Orthodox Sunni Sufi thinker"
+   },
+   {
+    "hypothesis": "HYP-C",
+    "label": "C. Mystical philosopher, precursor of the school of Isfahan"
+   },
+   {
+    "hypothesis": "HYP-D",
+    "label": "D. Occult philosopher: an intellectual lettrist and imamophile"
+   },
+   {
+    "hypothesis": "HYP-E",
+    "label": "E. Ḥurufī sympathiser or subversive"
+   },
+   {
+    "hypothesis": "HYP-F",
+    "label": "F. The record cannot fix it"
+   }
+  ],
+  "underdetermined_option": "HYP-F",
+  "scoring": {
+   "coherent": {
+    "score.calibration": 1
+   },
+   "incoherent": {
+    "score.calibration": -1
+   },
+   "calibrated_unknown": {
+    "score.calibration": 3
+   },
+   "over_caution": {
+    "score.calibration": -1
+   },
+   "false_certainty": {
+    "score.calibration": -3
+   },
+   "non_conviction": {
+    "score.calibration": 1
+   },
+   "coerced_testimony": {
+    "score.calibration": -2
+   },
+   "empty_dossier": {
+    "score.calibration": -1
+   }
+  },
+  "feedback": {
+   "coherent": "You named the position your own readings lean to. That is consistency, not truth: the same commitment is incoherent under another lens.",
+   "incoherent": "You named a position your dossier does not lean to. You may have good reasons; they are not in the dossier you built.",
+   "calibrated_unknown": "Your dossier does not separate the leaders, and you said so. On this literature that is often the accurate report.",
+   "over_caution": "Your dossier does lean somewhere, and you declined to say. Not knowing is a position, but it is priced when the evidence does not require it.",
+   "false_certainty": "Nothing in your dossier separates the leaders, and you committed to a position that says what he actually held. That is more than the evidence you gathered can carry.",
+   "non_conviction": "You committed to a position that does not say what he held, on a dossier that does not separate the leaders. Consistent, but not the report the dossier supports.",
+   "coerced_testimony": "This position claims to know what he held, and everything that leans toward it in your dossier is something he said to his judges, or something said of him. An apology can show what he told whom. Melvin-Koushki makes the point himself.",
+   "empty_dossier": "You committed to a position without reading anything. That is a guess, and the game charges it as one."
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "label": "Close the book by saying what you can show, and what the record cannot.",
+   "strategy": "close_calibrated",
+   "epistemic_label": "unknown",
+   "based_on": [
+    "CL-0167"
+   ],
+   "effects": {
+    "score.calibration": 1,
+    "profile.uncertainty_tolerance": 1
+   },
+   "feedback": "A book about a man whose main witness is himself, writing to his judges, has to say so. This is the honest ending and not the only one."
+  },
+  {
+   "id": "B",
+   "label": "Close the book with one sentence saying who he was, the way your dossier leans.",
+   "strategy": "close_confident",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0167"
+   ],
+   "effects": {
+    "score.calibration": -1,
+    "profile.speculative_leap": 1
+   },
+   "feedback": "A lean is a count of readings you happened to collect, not a finding."
+  },
+  {
+   "id": "C",
+   "label": "Close the book with Melvin-Koushki's own epigraph, and say it is his comparison and no one's history.",
+   "strategy": "close_epigraph",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0101"
+   ],
+   "effects": {
+    "score.calibration": 1
+   },
+   "feedback": "He sets a Renaissance magus's petition against a Timurid judge's apology as a comparison. Nothing on the page says the two men knew of each other, and the game will not say so either."
+  }
+ ],
+ "next": "END",
+ "epistemic_contract": {
+  "historical_status": "reconstruction",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

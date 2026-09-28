@@ -1,0 +1,24 @@
+{
+ "id": "REC-0158",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why was Qāsim-i Anvār caught in the same 1427 action as Ibn Turka?",
+ "proposition": "The Hurufi link was the official excuse, while Ismaʿili claims on him and the general targeting of extra-establishment figures were the deeper suspicion.",
+ "kind": "causal",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK's footnote after Virani: Ismaʿilis apparently claimed him; his putative Hurufi link supplied the official excuse.",
+  "Qāsim's disciples were in ill repute (Bashir); MK also notes the Ṣafavī past but denies active propaganda.",
+  "MK's main text explains the purge by Shāhrukh's consolidation rather than by Qāsim's own doctrine."
+ ],
+ "observed_facts": [
+  "CL-0662",
+  "CL-0663",
+  "CL-0636",
+  "CL-0638"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "CL-0665"
+ ]
+}

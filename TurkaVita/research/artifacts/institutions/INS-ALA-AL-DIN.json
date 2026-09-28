@@ -1,0 +1,14 @@
+{
+ "id": "INS-ALA-AL-DIN",
+ "type": "institution",
+ "status": "draft",
+ "name": "ʿAlāʾ al-Dīn b. Bāysunghur",
+ "ruler": "ʿAlāʾ al-Dīn b. Bāysunghur",
+ "seat": "Herat court",
+ "tenure": "1428",
+ "role": "patron",
+ "summary": "The dedicatee of the R. Tuḥfa-yi ʿAlāʾī, written in exile.",
+ "supported_by": [
+  "EV-0042"
+ ]
+}

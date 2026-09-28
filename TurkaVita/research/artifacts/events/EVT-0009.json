@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0009",
+ "type": "event",
+ "status": "draft",
+ "actor": "Shāhrukh",
+ "date": {
+  "start": "1397",
+  "end": "1397",
+  "hijri": "799",
+  "basis": "Timeline A.1, pdf p.51.",
+  "date_kind": "context"
+ },
+ "place": "Khurasan",
+ "event_type": "political",
+ "description": "Shāhrukh b. Temür is appointed governor of Khurasan.",
+ "claims": [
+  "CL-0090"
+ ],
+ "fixed_point": true
+}

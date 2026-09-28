@@ -1,0 +1,29 @@
+{
+ "id": "CL-0062",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Timeline A.1 places a journey to the Hijaz (queried as 'for pilgrimage?'), in which Ibn Turka invites Sharaf al-Dīn and completes the Sharḥ Fuṣūṣ al-Ḥikam, in 813/1411; a letter in the Munshaʾāt-i Turka announces a planned departure from Isfahan for the Hijaz and invites Sharaf al-Dīn, but the pages read do not date the letter.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0020",
+  "EV-0092"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Munshaʾāt-i Turka, letter 1",
+   "where": "pdf p.63, note 45",
+   "shaping_risk": "medium",
+   "note": "the placement in 813/1411 is MK's"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.52",
+   "shaping_risk": "medium",
+   "note": "'(for pilgrimage?)'"
+  }
+ ],
+ "domain": "biographical"
+}

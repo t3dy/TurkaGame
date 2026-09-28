@@ -1,0 +1,27 @@
+{
+ "id": "CL-0130",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I recalls the Muʿtazila's early ʿAbbasid persecution of Aḥmad b. Ḥanbal and Shāfiʿī as showing that sectarian hostility is old, and adds that many falsely claimed to be Sunni while being Shiʿi, Muʿtazili or philosophical.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0277",
+  "EV-0278"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.82 (printed 65)",
+   "shaping_risk": "low"
+  }
+ ]
+}

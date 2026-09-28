@@ -1,0 +1,29 @@
+{
+ "id": "CL-0652",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In the second apology Ibn Turka says he met in Isfahan 'the ringleaders of depravity and sedition' (identified by MK as the Hurufis), addressed them as he had the Sufi masters, and that it ended in recrimination on his side and brazenness on theirs; he calls the episode well-known.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1273",
+  "EV-1268",
+  "EV-1224"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Masdur II (ca. 832-35/1429-32, after exile)",
+   "where": "Nafsat II 212-15",
+   "shaping_risk": "high",
+   "note": "the passage MK calls a direct testimony of popular heterodoxy and messianism; it is also his evidence of loyalty to Shāhrukh"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.447",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

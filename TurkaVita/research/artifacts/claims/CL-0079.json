@@ -1,0 +1,22 @@
+{
+ "id": "CL-0079",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The pages read do not say what tied Ibn Turka to the Ḥurūfiyya; the only Hurufi contact they name is the family's dream-interpretation visits to Fażl Allāh, which MK says imply no Hurufi leaning.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0162",
+  "EV-0071"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.73 and p.58",
+   "shaping_risk": "low",
+   "note": "an attested silence: R1 reports only what pdf pp.51-75 do not say"
+  }
+ ],
+ "domain": "political"
+}

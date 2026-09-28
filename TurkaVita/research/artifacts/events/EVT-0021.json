@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0021",
+ "type": "event",
+ "status": "draft",
+ "actor": "Iskandar Mīrzā",
+ "date": {
+  "start": "1412",
+  "end": "1414",
+  "hijri": "815-817",
+  "basis": "Timeline A.1, pdf p.52.",
+  "date_kind": "context"
+ },
+ "place": "Isfahan",
+ "event_type": "political",
+ "description": "Iskandar takes Isfahan and establishes a brilliant court there.",
+ "claims": [
+  "CL-0053"
+ ],
+ "fixed_point": false
+}

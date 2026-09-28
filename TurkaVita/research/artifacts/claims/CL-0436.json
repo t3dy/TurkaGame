@@ -1,0 +1,28 @@
+{
+  "id": "CL-0436",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka wrote to the vizier Sayyid Zayn al-ʿĀbidīn Junābādī (letters 11 and 24), praising his protection of the weak and support of religion and learning.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0827",
+    "EV-0843"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Zayn al-ʿĀbidīn Junābādī",
+      "where": "Munshaʾāt-i Turka letters 11 and 24",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.157",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "political"
+}

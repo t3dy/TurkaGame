@@ -1,0 +1,22 @@
+{
+  "id": "CL-0423",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The objector in letter 17 was perhaps Shams al-Dīn Muḥammad Jazarī, later one of Ibn Turka's most implacable enemies.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0835",
+    "EV-0822"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.158",
+      "shaping_risk": "medium",
+      "note": "MK: 'perhaps'; guess in a footnote"
+    }
+  ],
+  "domain": "biographical"
+}

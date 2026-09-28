@@ -1,0 +1,18 @@
+{
+ "id": "REC-0013",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was the other Herati shaykh Ibn Turka says he admonished?",
+ "proposition": "The shaykh was almost certainly Qāsim-i Anvār, who was later expelled from Herat.",
+ "kind": "inferential",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK writes ‘almost certainly’ without giving grounds on the page.",
+  "MK elsewhere notes Qāsim-i Anvār was Ibn Turka's Cairo companion; that note is on p.32."
+ ],
+ "observed_facts": [
+  "EV-0234",
+  "EV-0246"
+ ],
+ "confidence": "medium"
+}

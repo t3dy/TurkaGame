@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0014",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1408",
+  "end": "1409",
+  "hijri": "810-812",
+  "basis": "Timeline A.1 marks 'c.'; pdf p.51.",
+  "date_kind": "conjectured"
+ },
+ "place": "Shiraz",
+ "event_type": "court",
+ "description": "Pīr-Muḥammad b. ʿUmar-Shaykh summons Ibn Turka to Shiraz and makes him a member of his court.",
+ "claims": [
+  "CL-0052"
+ ],
+ "fixed_point": false
+}

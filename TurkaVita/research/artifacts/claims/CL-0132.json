@@ -1,0 +1,26 @@
+{
+ "id": "CL-0132",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I claims false Sunnis deflect suspicion by accusing others of doctrinal perversion, and mock orthodox scholars in private.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0281"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.82 (printed 65)",
+   "shaping_risk": "low"
+  }
+ ]
+}

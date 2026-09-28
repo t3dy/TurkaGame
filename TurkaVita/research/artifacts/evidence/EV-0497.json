@@ -1,0 +1,15 @@
+{
+ "id": "EV-0497",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 118,
+  "printed_page": "101",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that the R. al-Muḥammadiyya 'was completed before 5 Shawwāl 828/20 August 1425' and marks the date with his asterisk, i.e. as probably a date of transcription rather than composition.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, R. al-Muḥammadiyya",
+ "read_by": "R3 opened pdf p.118"
+}

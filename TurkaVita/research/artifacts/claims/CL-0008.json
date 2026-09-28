@@ -1,0 +1,22 @@
+{
+ "id": "CL-0008",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's Tamhīd al-Qawāʿid is a commentary that expands and refines his grandfather's Qawāʿid al-Tawḥīd, a treatise on absolute existence that tried to synthesize peripatetic and illuminationist philosophy with Ibn ʿArabian mystical theory; the Tamhīd became a staple teaching text and the main basis of Ibn Turka's modern reputation.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0067",
+  "EV-0066",
+  "EV-0069"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.56-57, notes 9-10 and 13",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "doctrinal"
+}

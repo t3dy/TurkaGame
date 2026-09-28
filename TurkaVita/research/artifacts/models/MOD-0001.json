@@ -1,0 +1,54 @@
+{
+  "id": "MOD-0001",
+  "type": "biographical_model",
+  "status": "draft",
+  "scholar": "Henry Corbin (as reported by Melvin-Koushki)",
+  "title": "The Shiʿi esotericist",
+  "summary": "Melvin-Koushki reports no biography from Corbin, only the assertion that Ibn Turka is an openly Shiʿi thinker, built on Corbin's study of the R. Shaqq-i Qamar u Bayān-i Sāʿat, which puts the Imams and their heirs at the summit of knowledge. The phases below are the periodisation this reading needs, using the life claims' dates; they are not Corbin's own. Completed by Ṭihrānī and Jūdī-Niʿmatī, the Sunni face of the apologies is taqiyya or a crypto-Shiʿi's cover.",
+  "phases": [
+    {
+      "label": "A scholars' family, spared by Temür and taken to Samarkand",
+      "when": "1369-c. 1393",
+      "where": "Isfahan, then Samarkand"
+    },
+    {
+      "label": "Study abroad, and the Cairo discipleship to Akhlāṭī",
+      "when": "c. 1393-1408",
+      "where": "Cairo, with Mecca and Baghdad reported"
+    },
+    {
+      "label": "Patrons in Fars",
+      "when": "c. 1408-1414",
+      "where": "Shiraz and Isfahan"
+    },
+    {
+      "label": "The typology of the spirituals, with the Imams at the summit",
+      "when": "before 18 Rabīʿ I 829/28 January 1426 (asterisked: possibly the copying date)"
+    },
+    {
+      "label": "Trial, apologies, arrest and exile; the Sunni face read as dissimulation",
+      "when": "1426-1432",
+      "where": "Herat and northern Iran"
+    }
+  ],
+  "causal_emphasis": {
+    "confessional_allegiance": "high",
+    "doctrinal_treatises": "high",
+    "taqiyya_under_persecution": "medium",
+    "patronage": "low",
+    "lettrism": "low",
+    "confessional_ambiguity_of_the_age": "low"
+  },
+  "uses": [
+    "REC-0050",
+    "REC-0003",
+    "REC-0004",
+    "REC-0005"
+  ],
+  "cites": [
+    "EV-1600",
+    "EV-1602",
+    "EV-0609",
+    "EV-0512"
+  ]
+}

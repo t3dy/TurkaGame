@@ -1,0 +1,23 @@
+{
+ "id": "CL-0656",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka blamed both mercenary messianic Sufis and reactionary schoolmen for crippling his lettrist project, and the Hurufis above all; his feelings toward them were bitter resentment and naked hostility (MK).",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1276",
+  "EV-1286",
+  "EV-1275"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.256",
+   "shaping_risk": "medium",
+   "note": "MK: 'understandably'; inference from the damage the Hurufi label did him"
+  }
+ ],
+ "domain": "biographical"
+}

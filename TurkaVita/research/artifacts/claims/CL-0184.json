@@ -1,0 +1,21 @@
+{
+ "id": "CL-0184",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK rejects a single fixed label and uses ‘Shiʿi-Sunnism’ or ‘imamophilism’; Jaʿfariyān proposes ‘Twelver Sunnism’.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0350",
+  "EV-0351"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.90 (printed 73)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

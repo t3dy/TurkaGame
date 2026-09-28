@@ -1,0 +1,34 @@
+{
+ "id": "WRK-MABDA-U-MAAD",
+ "type": "work",
+ "status": "draft",
+ "title": "Mabdaʾ u Maʿād ('Origin and Return')",
+ "transliterated_title": "Mabdaʾ u Maʿād (var. ʿAyn al-Ḥikma)",
+ "language": "Persian",
+ "genre": "treatise",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "1428-11",
+  "hijri": "early Ṣafar 832",
+  "basis": "MK: 'completed early Ṣafar 832/mid-November 1428' at Manzil-i Chālū; the same time and place as the Majlis 10196 colophon (ff. 266b-71a), but the folio lies in the second half, whose dates MK assumes are more likely composition (p.79); not asterisked."
+ },
+ "date_kind": "composition",
+ "place": "Manzil-i Chālū (Chalu), Mazandaran",
+ "addressee": "Shāh Rażī l-Dīn, at whose request it was written",
+ "occasion": "Written at a request for a mystical overview of the contemporary terrain of the religious sciences.",
+ "manuscript": "13 items listed; earliest dated: MS Majlis 10196 ff. 266b-71a (Chalu, Ṣafar 832/Nov 1428); then MS 5423 (842/1439), Bāqir Riqqat majmūʿa (901/1496), MS 10004 (903-4/1497-98), and later copies.",
+ "majlis_folios": "ff. 266b-71a",
+ "edited": false,
+ "summary": "An overview of origin and return in an introduction on the divisions of the human type, two chapters (exoteric, then Sufi) and an epilogue.",
+ "supported_by": [
+  "EV-0474",
+  "EV-0475",
+  "EV-0476",
+  "EV-0477"
+ ],
+ "claims": [
+  "CL-0233",
+  "CL-0211",
+  "CL-0215"
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "id": "REC-0010",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why does Nafsat I lean so heavily on Khwāja Pārsā?",
+ "proposition": "The appeal to Pārsā's orthodoxy is a courtly strategy: Pārsā was Shāhrukh's favourite and a prop to his Sunnizing programme.",
+ "kind": "inferential",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "Pārsā is the most-cited exemplar in Nafsat I and the last word in it.",
+  "MK notes the appeals are to Pārsā's ‘pointedly non-messianic’ orthodoxy and tally too easily with Shāhrukh's programme.",
+  "Pārsā's own enemies were also attacked through Jazarī, which gives him something in common with Ibn Turka."
+ ],
+ "observed_facts": [
+  "EV-0211",
+  "EV-0311",
+  "EV-0241",
+  "EV-0230"
+ ],
+ "confidence": "medium"
+}

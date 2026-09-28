@@ -1,0 +1,15 @@
+{
+ "id": "EV-0244",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 32,
+  "printed_page": "15",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says that after an attempt on Shāhrukh's life in 830/1427 by a Hurufi assassin, Ibn Turka was recalled to the capital and, on the basis of his claimed Hurufi sympathies, summarily stripped of position and property, imprisoned, tortured and exiled.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "the events of 830/1427",
+ "read_by": "R2a opened pdf p.32"
+}

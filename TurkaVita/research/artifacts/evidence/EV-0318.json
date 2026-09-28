@@ -1,0 +1,15 @@
+{
+ "id": "EV-0318",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 25,
+  "printed_page": "8",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says Leonard Lewisohn, in a recent article on the apologies, misrepresents Ibn Turka as an orthodox Sunni Sufi thinker while calling for more research.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Lewisohn, ‘The Confessions’, pp.65-78 (per MK fn.21)",
+ "read_by": "R2a opened pdf p.25"
+}

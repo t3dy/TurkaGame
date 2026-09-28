@@ -1,0 +1,15 @@
+{
+ "id": "EV-0678",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 146,
+  "printed_page": "129",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The listed copies of Taqdīm al-ʿAql ʿalā l-Nafs are MS Princeton 319 (1187) ff. 69b-70b (copied in the 10th/16th (?) century) and MS Sipahsālār 2930/6 ff. 118b-121a (undated), which is presented to a Dawlat-i Sayyidiyya-yi Imāmiyya-yi Rażaviyya; none is in MS Majlis 10196.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.146",
+ "refers_to_primary": "Taqdīm al-ʿAql ʿalā l-Nafs, MS list"
+}

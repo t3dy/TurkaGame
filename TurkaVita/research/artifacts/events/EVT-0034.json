@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0034",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1425",
+  "end": "1425",
+  "hijri": "828",
+  "basis": "Timeline A.1: 'writes (or has copied)', with a query on Yazd; pdf p.52. The dissertation flags that the date may record copying.",
+  "date_kind": "conjectured"
+ },
+ "place": "Yazd (queried)",
+ "event_type": "work",
+ "description": "R. al-Inzāliyya, R. Anjām, R. Bāʾiyya, R. Nuqṭa and R. Muḥammadiyya are written, or copied.",
+ "claims": [
+  "CL-0096"
+ ],
+ "fixed_point": false
+}

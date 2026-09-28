@@ -1,0 +1,22 @@
+{
+  "id": "CL-0507",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Shaqq-i Qamar Ibn Turka assigns the verifying Sufis of Ibn ʿArabī's school (ahl-i shuhūd) to level five; on Q 54:1 they read the moon as the perfect form (the human being), and its splitting as meaning emerging in full perfection from that form without ratiocination, a route vouchsafed the Seal.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1003",
+    "EV-1032",
+    "EV-1033"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.333, 474-475",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

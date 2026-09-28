@@ -1,0 +1,27 @@
+{
+ "id": "CL-0013",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Jamāl al-Dīn Muḥammad wrote to Isfahan officials that he had been sent from Herat to Shiraz to study and feared never finishing if he returned to Herat; Ḥabīb Allāh left for Herat after a money quarrel with his brother, and Sharaf al-Dīn Yazdī intervened and housed him.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0080",
+  "EV-0079"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Munshaʾāt-i Yazdī (letters of Jamāl al-Dīn and of Sharaf al-Dīn)",
+   "where": "pdf p.59-60, notes 22 and 24",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.59-60",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

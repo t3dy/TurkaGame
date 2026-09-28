@@ -1,0 +1,15 @@
+{
+ "id": "EV-0305",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 84,
+  "printed_page": "67",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka says Ḥakīm Tirmizī posed [157] questions only the elite of the Muḥammadan saints could answer, and that two people answered them: Saʿd al-Dīn Ḥamuvayī in Khurasan and Ibn ʿArabī in the Maghrib. The number 157 is in square brackets in Melvin-Koushki's text.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.84"
+}

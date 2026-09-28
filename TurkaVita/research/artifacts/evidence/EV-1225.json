@@ -1,0 +1,15 @@
+{
+ "id": "EV-1225",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 434,
+  "printed_page": "417",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In the introduction to his R. al-Bāʾiyya, Ṣāʾin al-Dīn gives as the reason for writing it the wish to combat the teachings of certain Sufis (mutaṣawwifa) on the subject, which he finds detestable for their “baseless overinterpretations (takallufāt wāhiya) and ideological propagandizing (tamaḥḥulāt)”, and contrasts this with his own lettrist approach (MK's translation).",
+ "evidence_kind": "work",
+ "refers_to_primary": "R. al-Bāʾiyya, introduction, MS Majlis 10196 f. 122a",
+ "read_by": "R7 opened pdf p.434"
+}

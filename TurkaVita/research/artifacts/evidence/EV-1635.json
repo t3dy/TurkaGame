@@ -1,0 +1,15 @@
+{
+ "id": "EV-1635",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 37,
+  "printed_page": "20",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that Storey recognizes Ibn Turka as a Sufi author and exponent of ornate prose but lists only the R. Munazarat-i Khams, and that Browne mentions incidentally that a certain Ṣá'inu'd-Dín Tarika was responsible for the poet Kātibī's conversion to Sufism.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.37",
+ "refers_to_primary": "Storey, PL 3/2, 251; Browne, LHP 3/489"
+}

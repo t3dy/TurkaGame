@@ -1,0 +1,119 @@
+{
+ "id": "SCN-0401",
+ "type": "scene",
+ "status": "draft",
+ "act": "exile",
+ "title": "Herat, 1427: stripped and sent away",
+ "dramatic_question": "A Ḥurūfī has just tried to kill Shāhrukh, and your name is on the list of the suspected. You have lost your post and your property and have been in the hands of the royal dīvān. Whom do you ask to look at your case first?",
+ "situation": {
+  "when": "830/1427",
+  "where": "Herat, then the road out",
+  "based_on": [
+   "CL-0077",
+   "CL-0080",
+   "CL-0432"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "In 830/1427 the Ḥurūfī Aḥmad-i Lur tried to kill Shāhrukh as he left the congregational mosque in Herat and was killed on the spot.",
+   "claim": "CL-0077"
+  },
+  {
+   "text": "Afterwards Shāhrukh arrested prominent figures with suspected Ḥurūfī ties, among them Qāsim-i Anvār, Maʿrūf-i Khaṭṭāt and Ibn Turka.",
+   "claim": "CL-0078"
+  },
+  {
+   "text": "Ibn Turka, who had just left Herat, was summoned back, imprisoned, stripped of position and property, tortured and then exiled. Melvin-Koushki gives no source for that sentence and names the second apology, written years later to Bāysunghur, as the main source for the exile period.",
+   "claim": "CL-0080"
+  },
+  {
+   "text": "The pages do not say what tied Ibn Turka to the Ḥurūfiyya; the only Ḥurūfī contact they name is his family's visits to Fażl Allāh to have dreams interpreted, which Melvin-Koushki says imply no Ḥurūfī leaning.",
+   "claim": "CL-0079"
+  }
+ ],
+ "prose": [
+  "You had left Herat with your second defence won. Then Aḥmad-i Lur, a Ḥurūfī, struck at Shāhrukh outside the congregational mosque and was killed where he stood. In the sweep that followed, the men taken up included Qāsim-i Anvār, the calligrapher Maʿrūf-i Khaṭṭāt and you. Melvin-Koushki reads the purge as part of Shāhrukh's consolidation of his rule.",
+  "You were called back, imprisoned and stripped of post and property. Your surviving letter 27 complains of torture and imprisonment at the hands of the debt- and tax-collectors of the royal dīvān, and says friends have since freed you. The pages name no charge beyond the word Ḥurūfī and do not say what tied you to it.",
+  "None of this is yours to undo. What is left is whom to ask first to hear your case, and whether anyone in Herat can safely be asked."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Write to Amīr Jalāl al-Dīn Fīrūzshāh, to whom you have written before, thank him for his attention to your case, and ask him to press it and restore your stipend.",
+   "strategy": "write_firuzshah_for_redress",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0432",
+    "CL-0429"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.firuzshah": 1,
+    "press.livelihood": -1,
+    "life.exile_first_appeal": "firuzshah",
+    "score.biography": 2
+   },
+   "costs": [
+    "Your position and property are already gone; the stipend is what you are asking to have back."
+   ],
+   "feedback": "Letter 27 (c. 830/1427, Herat?) is in your collection, so this is what you did; it is the same letter the recall scene cites, and here the game asks only whom you turn to first. It is a supplicant's letter: it shows what you asked of an amir, not what you held. Melvin-Koushki's footnote leaves open whether Fīrūzshāh had already ordered some of your property restored or was being asked to, and the pages give no reply and do not say whether the stipend was ever paid."
+  },
+  {
+   "id": "B",
+   "label": "Ask Fīrūzshāh for more than a stipend: ask him to carry your case to Shāhrukh himself.",
+   "strategy": "ask_firuzshah_to_intercede",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0432",
+    "CL-0429"
+   ],
+   "requires_min": {
+    "court.firuzshah": 1
+   },
+   "effects": {
+    "court.firuzshah": 1,
+    "press.exposure": 1,
+    "press.livelihood": -1,
+    "life.exile_first_appeal": "firuzshah_intercession",
+    "score.biography": -1
+   },
+   "costs": [
+    "Fīrūzshāh would be asked to put his own name beside a suspected Ḥurūfī, soon after the attempt on the ruler."
+   ],
+   "feedback": "The game opens this only once you have earned Fīrūzshāh's favour. Letter 27 asks him to pursue the case and restore the stipend; the sources do not show you asking him to speak to Shāhrukh, and they show no reply. This is your own what-if, and the game returns you to the record: the sources put you wandering northern and northwestern Iran."
+  },
+  {
+   "id": "C",
+   "label": "Ask to be heard by Shāhrukh himself before you leave Herat, on the strength of the favour he showed you after the hearings of c. 1422 and 1426.",
+   "strategy": "petition_shahrukh_directly",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0065",
+    "CL-0073",
+    "CL-0659"
+   ],
+   "requires_min": {
+    "court.shahrukh": 1
+   },
+   "effects": {
+    "press.exposure": 1,
+    "press.enemies": 1,
+    "press.livelihood": -1,
+    "life.exile_first_appeal": "shahrukh",
+    "score.biography": -1
+   },
+   "costs": [
+    "You would put yourself in front of the man who has just had you arrested."
+   ],
+   "feedback": "The game opens this only once Shāhrukh has favoured you; Melvin-Koushki has you defending yourself successfully at Herat in c. 1422 and 1426. No source has you petition him in 1427, and the first bid for a hearing that the sources record is at Simnan two or three years later, which fails. The game returns you to the record."
+  }
+ ],
+ "next": "SCN-0402",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0471",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 110,
+  "printed_page": "93",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki notes that in the R. Ḥurūf (completed 817/1414) the author refers to another work in progress called Khaṣāyiṣ-i Kamālī, seemingly lettrist and therefore presumably a different work from the logical al-Khaṣāʾiṣ.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, al-Khaṣāʾiṣ",
+ "read_by": "R3 opened pdf p.110"
+}

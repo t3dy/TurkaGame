@@ -1,0 +1,15 @@
+{
+  "id": "EV-1006",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 333,
+    "printed_page": "316",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "In a footnote Melvin-Koushki notes a three-tiered hierarchy in Ibn Turka's Sharḥ-i Naẓm al-Durr: philosophers, Sufis, lettrists, none of whom needs the medium of poetry to reach supernal truths.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, Sharḥ-i Naẓm al-Durr",
+  "read_by": "R6 opened pdf p.333"
+}

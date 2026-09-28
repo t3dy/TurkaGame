@@ -1,0 +1,108 @@
+{
+ "id": "SCN-0603",
+ "type": "scene",
+ "status": "draft",
+ "act": "historian",
+ "unrecorded": true,
+ "show_dossier": true,
+ "title": "The desk: what others said of him",
+ "dramatic_question": "Other people described him afterwards. How much of that is him?",
+ "situation": {
+  "when": "the modern dispute",
+  "where": "the desk",
+  "based_on": [
+   "CL-0167"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki holds that the apologies were produced under great duress; later chroniclers, hagiographers and scholars report on him at a distance.",
+   "claim": "CL-0167"
+  }
+ ],
+ "prose": [
+  "The third pile is what other people made of him: Ibn Ḥajar on his teacher's house, the Niʿmatullahi and Ḥurūfī hagiographers, Dawlatshāh, Jāmī, who left him out of his *Nafaḥāt*, and the modern scholars who read him as a Shiʿi, a Sufi or a philosopher.",
+  "None of these can show what he held. They can show how he was seen, and the seeing was often done by people with a purpose: a Sufi order that wanted him, a biographer who did not. Melvin-Koushki is translating most of them, and some are marked as hostile.",
+  "Open one group."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Read the chroniclers and hagiographers: Ibn Ḥajar, Dawlatshāh, the Niʿmatullahi and Ḥurūfī reports.",
+   "strategy": "read_chroniclers",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0033",
+    "CL-0071",
+    "CL-0088"
+   ],
+   "effects": {
+    "dossier.EV-0104": true,
+    "dossier.EV-0106": true,
+    "dossier.EV-0152": true,
+    "dossier.EV-0168": true,
+    "dossier.EV-1214": true,
+    "dossier.EV-1657": true,
+    "dossier.EV-1674": true,
+    "dossier.EV-1201": true,
+    "dossier.EV-1204": true,
+    "dossier.EV-1264": true,
+    "dossier.EV-1265": true,
+    "dossier.EV-0093": true
+   },
+   "feedback": "Twelve readings, from people who were not there and often had a reason. A chronicler's account of a teacher's house, a hagiographer's claim that a master sent him east: each shows how a later writer saw him, and some of them had a purpose."
+  },
+  {
+   "id": "B",
+   "label": "Read the modern scholars' readings of him: the Shiʿi philosopher, the mystic, the Sufi poet.",
+   "strategy": "read_scholars",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0800",
+    "CL-0802",
+    "CL-0803"
+   ],
+   "effects": {
+    "dossier.EV-1600": true,
+    "dossier.EV-1602": true,
+    "dossier.EV-1607": true,
+    "dossier.EV-1609": true,
+    "dossier.EV-1610": true,
+    "dossier.EV-1613": true,
+    "dossier.EV-1615": true,
+    "dossier.EV-1616": true,
+    "dossier.EV-1617": true,
+    "dossier.EV-0672": true,
+    "dossier.EV-0673": true,
+    "dossier.EV-1683": true
+   },
+   "feedback": "Twelve readings, and every one is a scholar's. Most lean on the Tamhīd, which Melvin-Koushki says was strictly secondary in Ibn Turka's own estimation, and he is a partisan in reporting them."
+  },
+  {
+   "id": "C",
+   "label": "Read how the Ḥurūfī purge and Jāmī's circle saw him: the label used against him, and the disdain of a hostile biographer.",
+   "strategy": "read_hostile",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0616",
+    "CL-0619",
+    "CL-0631"
+   ],
+   "effects": {
+    "dossier.EV-1247": true,
+    "dossier.EV-1254": true,
+    "dossier.EV-1291": true,
+    "dossier.EV-1655": true,
+    "dossier.EV-1670": true,
+    "dossier.EV-0330": true
+   },
+   "feedback": "Six readings from those who were hostile or threatened. They show what the prosecution's reading looked like and where it came from; they are the least able of all the piles to show what he himself held."
+  }
+ ],
+ "next": "SCN-0604",
+ "epistemic_contract": {
+  "historical_status": "reconstruction",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

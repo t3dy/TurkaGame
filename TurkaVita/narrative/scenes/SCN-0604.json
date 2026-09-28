@@ -1,0 +1,122 @@
+{
+ "id": "SCN-0604",
+ "type": "scene",
+ "status": "draft",
+ "act": "historian",
+ "unrecorded": true,
+ "show_dossier": true,
+ "title": "The desk: whose eyes?",
+ "dramatic_question": "The same dossier reads differently depending on whose eyes you borrow. Whose?",
+ "situation": {
+  "when": "the modern dispute",
+  "where": "the desk",
+  "based_on": [
+   "CL-0167"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki holds that the apologies were produced under great duress and are hardly reflective of his primary concerns.",
+   "claim": "CL-0167"
+  }
+ ],
+ "prose": [
+  "Every reading in your dossier is somebody's. Take a lens and the ledger recounts itself using only the readings that scholar actually makes; the evidence does not move, the standings do.",
+  "That is not a trick of the interface. It is what the dispute is: one pile of data, and six ways of taking it. Look at the ledger before you choose, and again after."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Henry Corbin. Read him as a Shiʿi esotericist, and take the seventh tier at its word.",
+   "strategy": "lens_corbin",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "REC-0050",
+    "REC-0003"
+   ],
+   "effects": {
+    "lens": "Henry Corbin",
+    "dossier.EV-1600": true
+   },
+   "feedback": "Under this lens only the readings Corbin makes show. He is on the board for the assumption Melvin-Koushki attributes to him, a standard-issue Shiʿi esotericist, and for his study of the Shaqq-i Qamar, so the ledger is thin: the lens subtracts most of the pile."
+  },
+  {
+   "id": "B",
+   "label": "Leonard Lewisohn. Take the apologies at face value, as the record of an orthodox Sunni Sufi.",
+   "strategy": "lens_lewisohn",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "REC-0001",
+    "REC-0056"
+   ],
+   "effects": {
+    "lens": "Leonard Lewisohn",
+    "dossier.EV-0463": true
+   },
+   "feedback": "Under this lens the apologies count. It is the only lens that does, and Melvin-Koushki grants the face-value insistence is well-taken while calling the result a misrepresentation. Remember what kind of witness the apologies are."
+  },
+  {
+   "id": "C",
+   "label": "Matthew Melvin-Koushki. Call him an occult philosopher and an imamophile, and read the apologies as what he told his judges, not what he held.",
+   "strategy": "lens_mk",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "REC-0060",
+    "REC-0062"
+   ],
+   "effects": {
+    "lens": "Matthew Melvin-Koushki",
+    "dossier.EV-1651": true
+   },
+   "feedback": "The widest of the scholars' lenses, and the project's own source. It is a partisan lens; he is reporting the rivals as well as arguing his case. The game does not treat it as the answer."
+  },
+  {
+   "id": "D",
+   "label": "The prosecution at Herat. The prosecution's reading, which is the game's reconstruction (no source shows what the arresters reasoned), with Khwāfī's label for his circle.",
+   "strategy": "lens_prosecution",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0826"
+   ],
+   "effects": {
+    "lens": "the prosecution at Herat",
+    "dossier.EV-1670": true
+   },
+   "feedback": "The prosecution's reading is the game's reconstruction: the sources do not say what tied him to the Ḥurūfiyya, and Khwāfī, whose label for the circle is used, was an establishment Sufi, not one of the arresters. No modern scholar holds this reading, and Melvin-Koushki argues Ibn Turka himself dismissed the Ḥurūfīs."
+  },
+  {
+   "id": "E",
+   "label": "Melvin-Koushki as methodologist. Ask what the evidence can carry before asking what it says.",
+   "strategy": "lens_caveat",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "REC-0063"
+   ],
+   "effects": {
+    "lens": "Matthew Melvin-Koushki (methodological caveat)",
+    "dossier.EV-0261": true
+   },
+   "feedback": "His lens mostly subtracts. The study is provisional; half the oeuvre is unedited; the apologies were written under duress. He does not conclude the question cannot be decided, but his caveats are on the record."
+  },
+  {
+   "id": "F",
+   "label": "No lens. Count every reading on the table, including the ones that cancel.",
+   "strategy": "lens_none",
+   "epistemic_label": "unknown",
+   "based_on": [
+    "CL-0167"
+   ],
+   "effects": {
+    "lens": "all",
+    "profile.uncertainty_tolerance": 1
+   },
+   "feedback": "The widest view, and usually the flattest ledger. Reading everybody does not produce certainty here; it produces a smaller margin."
+  }
+ ],
+ "next": "SCN-0605",
+ "epistemic_contract": {
+  "historical_status": "reconstruction",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

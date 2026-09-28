@@ -1,0 +1,30 @@
+{
+ "id": "CL-0737",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "On Qāżīzāda Rūmī, Grammatology (2016) calls him the first director of Ulugh Beg's observatory, while Timurid-Mughal and the dissertation call him the second director. The dissertation says he and Ibn Turka studied together under Ṣadr al-Dīn in Samarkand for years and that Qāżīzāda followed him to Cairo; New Brethren and Timurid-Mughal say the friendship dated from childhood without locating it.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1489",
+  "EV-1495",
+  "EV-1438",
+  "EV-1439",
+  "EV-1475"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 58, 458",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

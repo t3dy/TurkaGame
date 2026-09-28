@@ -1,0 +1,32 @@
+{
+ "id": "WRK-SHARH-HADITHAYN",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ Ḥadīthayn",
+ "transliterated_title": "Sharḥ Ḥadīthayn (variants Sharḥ-i Dō Ḥadīs-i Nabavī; Javāb-i Chand Suʾāl dar Harāt)",
+ "language": "Arabic",
+ "genre": "brief commentary on two hadiths",
+ "theme": "hadith",
+ "date": {
+  "ce": "unknown",
+  "hijri": "unknown",
+  "basis": "The entry gives no date and lists no MS Majlis 10196 copy; earliest listed copy is 903-4/1497-98."
+ },
+ "date_kind": "unknown",
+ "place": "not stated (a variant title mentions Herat)",
+ "addressee": "an unknown correspondent",
+ "occasion": "written in reply to an unknown correspondent",
+ "manuscript": "MS 10004/17 pp. 270-72 (Majlis, Yazd 903-4/1497-98); MS 3035/7 ff. 45b-46b; MS Sipahsālār 2930. None in MS Majlis 10196.",
+ "majlis_folios": "none listed",
+ "edited": true,
+ "summary": "A brief philosophical, mystical and lettrist commentary on two hadiths (on the heart of the Quran being Yā-Sīn, and on the Quran's descent on seven ḥurūf), written for an unidentified correspondent.",
+ "edition_note": "Chahārdah Risāla-yi Fārsī (Tehran 1972) pp. 289-91.",
+ "supported_by": [
+  "EV-0636",
+  "EV-0637",
+  "EV-0638"
+ ],
+ "claims": [
+  "CL-0315"
+ ]
+}

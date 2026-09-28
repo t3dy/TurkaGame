@@ -1,0 +1,38 @@
+{
+ "id": "WRK-HURUF",
+ "type": "work",
+ "status": "draft",
+ "title": "R. Ḥurūf ('On the Letters')",
+ "transliterated_title": "Ḥurūf (var. R. Ḥarfiyya; R. Ḥarf; R. Jāmiʿ-i Aṭvār-i ʿIlm-i Ḥurūf)",
+ "language": "Persian",
+ "genre": "introductory treatise",
+ "theme": "lettrism",
+ "date": {
+  "ce": "1414-11-23",
+  "hijri": "10 Ramaḍān 817",
+  "basis": "MK: 'completed on' this date in Shiraz; differs from the earliest surviving copy (Majlis 10196, Yazd, 14 Dhū l-Qaʿda 828/27 Sept 1425), so it is not the copy date; MK does not name the source of the 817 date. Tension: the work is said to mention the Sharḥ Fuṣūṣ al-Ḥikam, dated Dhū l-Ḥijja 817/March 1415, which is later than 10 Ramaḍān 817 (unreconciled in the entry)."
+ },
+ "date_kind": "composition",
+ "place": "Shiraz (composition, per MK); the Majlis 10196 copy was made in Yazd",
+ "addressee": "A dignitary, 'perhaps Iskandar Mīrzā' (MK); a copy went to Sayyid Niẓām al-Dīn Aḥmad with letter 15",
+ "occasion": "Written at a dignitary's request, shortly after (per MK's footnote) Iskandar's rebellion against Shāhrukh was violently quashed.",
+ "manuscript": "18 copies listed; earliest dated: MS 15/5 Ankara (833/1429) and MS Majlis 10196 ff. 154b-57b (Yazd, 14 Dhū l-Qaʿda 828/27 Sept 1425, the earliest surviving copy per MK); then MS 5423 (842/1439), BL Add. 23983 (858/1454), and later copies.",
+ "majlis_folios": "ff. 154b-57b",
+ "edited": true,
+ "summary": "A summary, introductory treatment of the premises of the science of letters in three aṣls (written, spoken and mental-spiritual form of the letters), aimed at the theoretical lettrists (ahl-i ḥaqāyiq); MK edits and translates it in Part 2 (§T.2).",
+ "supported_by": [
+  "EV-0444",
+  "EV-0445",
+  "EV-0446",
+  "EV-0447",
+  "EV-0448",
+  "EV-0449",
+  "EV-0450"
+ ],
+ "claims": [
+  "CL-0218",
+  "CL-0219",
+  "CL-0220",
+  "CL-0210"
+ ]
+}

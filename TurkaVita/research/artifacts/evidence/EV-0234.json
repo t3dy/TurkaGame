@@ -1,0 +1,15 @@
+{
+ "id": "EV-0234",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 79,
+  "printed_page": "62",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that Ibn Turka's similar exhortations to another prominent Herati shaykh, ‘almost certainly’ Qāsim-i Anvār, were better received.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II",
+ "read_by": "R2a opened pdf p.79"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-1009",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 334,
+    "printed_page": "317",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki reads Ibn Turka as suggesting that comprehensive occult knowledge is simply latent in the Imams and has only begun to be actualized by the author and his circle, a thesis he calls daring, profoundly millenarian in tone, and implying a doctrine of progress. He poses the resulting paradox: how can latter-day knowledge be at once superior to that of the Imams and wholly subsidiary to it?",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.334"
+}

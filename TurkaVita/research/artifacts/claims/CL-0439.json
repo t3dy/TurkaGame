@@ -1,0 +1,28 @@
+{
+  "id": "CL-0439",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In exile (ca. 831-32/1428-29) Ibn Turka wrote to Sayyid Murtażā Marʿashī, ruler of Sari in Mazandaran, seeking a stipend (dāranda) on the ground that scholars' work depends on royal patronage; he says he was punished for a full year despite the intercession of amirs and notables, and afterwards thanked the ruler for welcoming him at court, where he spent two days and agreed to stay two more.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0848"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Sayyid Murtażā Marʿashī",
+      "where": "Munshaʾāt-i Turka letter 28",
+      "shaping_risk": "medium",
+      "note": "Written by a supplicant asking a ruler or official for clemency, relief or a stipend; framed to win the favour asked, not as a neutral report."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.160",
+      "shaping_risk": "medium",
+      "note": "MK thinks two letters were combined here"
+    }
+  ],
+  "domain": "political"
+}

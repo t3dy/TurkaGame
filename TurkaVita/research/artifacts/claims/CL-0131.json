@@ -1,0 +1,27 @@
+{
+ "id": "CL-0131",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I claims all Sufi shaykhs are partisans of the Sunna, take no disciples who do not profess it, and that Sufis are simply the Sunni elite.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0280",
+  "EV-0282"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.82 (printed 65)",
+   "shaping_risk": "low"
+  }
+ ]
+}

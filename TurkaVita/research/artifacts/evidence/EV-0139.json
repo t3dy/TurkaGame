@@ -1,0 +1,15 @@
+{
+ "id": "EV-0139",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 70,
+  "printed_page": "53",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Despite advanced age and frail health Ibn Turka was forced to travel to Herat to clear his name; he gained Shāhrukh's favour and temporarily silenced his enemies (Nafsat al-Maṣdūr I, 171-72).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.70",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I, 171-72"
+}

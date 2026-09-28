@@ -1,0 +1,15 @@
+{
+  "id": "EV-0902",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 331,
+    "printed_page": "314",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The concluding computation of the R. Suʾl al-Mulūk (per MK's translation): R = 200 and Kh = 600, sum 800, so the name Shāh Rukh means 'shah of 800', that is the sovereign of the century called samān-miʾa (800), and the royal name shows the state will last to the end of the current century, God willing. The treatise ties this to the divine name al-Ẓāhir (the Manifest), and says the hope of the 9th century bloomed on the day of the king's emergence.",
+  "evidence_kind": "work",
+  "read_by": "R5 opened pdf p.331",
+  "refers_to_primary": "R. Suʾl al-Mulūk, MS Majlis 10196 f. 178a-b; MS Majlis 10004 pp. 200-203"
+}

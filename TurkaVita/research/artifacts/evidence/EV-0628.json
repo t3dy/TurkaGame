@@ -1,0 +1,15 @@
+{
+ "id": "EV-0628",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 130,
+  "printed_page": "113",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The only known copy of Sharḥ-i Gulshan-i Rāz is MS 3318, Central Library, Tehran University: a defective copy made between the 10th-13th/16th-19th centuries, apparently appended to MS Majlis 10196 and originally from Muḥammad Taqī Bahār's personal library; microfilms are at Harvard and Leiden.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.130",
+ "refers_to_primary": "Sharḥ-i Gulshan-i Rāz, MS 3318"
+}

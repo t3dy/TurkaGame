@@ -1,0 +1,15 @@
+{
+  "id": "EV-1101",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 353,
+    "printed_page": "336",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "A dominant theme of the Mafāḥiṣ's fourth section is the letter as coincidentia oppositorum (majmaʿ li-l-ṭarafayn wa-muʿtanaq li-l-mutaqābilayn): the letter alone can serve as matrix to the One, since only in the letter are opposites united, whereas every other existent is offset or relativized by its opposite.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.353"
+}

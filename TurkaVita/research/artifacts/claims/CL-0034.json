@@ -1,0 +1,25 @@
+{
+ "id": "CL-0034",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Akhlāṭī died in Cairo in 799/1397.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0009",
+  "EV-0054"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Akhlāṭī's death"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.51 and p.54",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

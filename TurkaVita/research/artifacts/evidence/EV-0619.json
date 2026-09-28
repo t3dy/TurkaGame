@@ -1,0 +1,15 @@
+{
+ "id": "EV-0619",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 129,
+  "printed_page": "112",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 225a-26a carries Sharḥ-i Dah Bayt-i Muḥyī l-Dīn Ibn-i ʿArabī, copied on 18 Ramaḍān 838/17 April 1435 (Ḥāʾirī, Majlis, 32/241); the next listed copy is MS 5423 ff. 333b-37a (842/1439). The entry gives no date of composition.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.129",
+ "refers_to_primary": "Sharḥ-i Dah Bayt, MS list"
+}

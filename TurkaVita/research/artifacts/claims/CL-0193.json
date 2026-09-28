@@ -1,0 +1,22 @@
+{
+ "id": "CL-0193",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's confessional position was Shiʿi-Sunni (‘both-and, not either-or’), on MK's reading of his millenarian esotericism in its 15th-century milieu.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0331",
+  "EV-0358",
+  "EV-0362"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.93 (printed 76)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

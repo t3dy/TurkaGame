@@ -1,0 +1,22 @@
+{
+ "id": "EVT-0040",
+ "type": "event",
+ "status": "draft",
+ "actor": "Aḥmad-i Lur",
+ "date": {
+  "start": "1427",
+  "end": "1427",
+  "hijri": "830",
+  "basis": "Timeline A.1, pdf p.53; §1.2, pdf p.73.",
+  "date_kind": "context"
+ },
+ "place": "Herat",
+ "event_type": "assassination attempt",
+ "description": "The Hurufi Aḥmad-i Lur attempts to kill Shāhrukh outside the congregational mosque in Herat and is killed; those with suspected Hurufi sympathies are arrested or exiled.",
+ "claims": [
+  "CL-0077",
+  "CL-0078",
+  "CL-0079"
+ ],
+ "fixed_point": true
+}

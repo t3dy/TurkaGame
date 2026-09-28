@@ -1,0 +1,15 @@
+{
+  "id": "EV-0873",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 150,
+    "printed_page": "133",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK describes the Munshaʾāt-i Yazdī (Yazdī's correspondence, poetry and incidental writings, often attributed to his brother Qivām al-Dīn, d. 830/1427) as having seven items (eight in MS Majlis-i Sinā 316) concerning Ibn Turka or the Turka family. It often appears in hybrid collections with early Timurid epistolary material such as the Tuḥfa-yi Nuṣratī of Abū Bakr Iskandarī.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.150",
+  "refers_to_primary": "Munshaʾāt-i Yazdī"
+}

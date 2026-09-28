@@ -1,0 +1,15 @@
+{
+  "id": "EV-0898",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 329,
+    "printed_page": "312",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The closing section of the R. Suʾl al-Mulūk (as MK translates it) holds up Ibn Barrajān's prediction of the Muslim reconquest of Jerusalem as an example of the straightforward use of the science, while citing the proper calculation supplied by Ibn ʿArabī. It then hints that more allusive, cryptic methods such as those of Saʿd al-Dīn Ḥamuvayī give more robust information but are beyond the scope of an introductory treatise. It begins by citing Abū l-ʿĀliya's report that the isolated Quranic letters indicate the rise and fall of states.",
+  "evidence_kind": "work",
+  "read_by": "R5 opened pdf p.329",
+  "refers_to_primary": "R. Suʾl al-Mulūk, closing section"
+}

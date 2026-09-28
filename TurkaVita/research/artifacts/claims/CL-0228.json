@@ -1,0 +1,21 @@
+{
+ "id": "CL-0228",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In the entries, the R. Iʿtiqādiyya (Majlis 10196 f. 171b) lies inside the folio range given for the Iʿtiqādāt (ff. 165b-72a); Melvin-Koushki does not comment on the overlap.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0466",
+  "EV-0462"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "R3 researcher, collating two folio ranges (not stated by Melvin-Koushki)",
+   "where": "pp.92-93",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

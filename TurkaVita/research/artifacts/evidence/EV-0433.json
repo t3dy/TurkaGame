@@ -1,0 +1,15 @@
+{
+ "id": "EV-0433",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 102,
+  "printed_page": "85",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Asrār al-Ṣalāt treats the symbolism and esoteric meaning of the prayer act from mystical and lettrist points of view, with attention also to the Shafiʿi and Hanafi legal positions; it is referred to in the R. Suʾl al-Mulūk and is much better represented in Iran than treatises of the same title attributed to Ibn ʿArabī, Ibn Ṭāwūs, Jīlānī or Niʿmat Allāh Valī.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Asrār al-Ṣalāt",
+ "read_by": "R3 opened pdf p.102"
+}

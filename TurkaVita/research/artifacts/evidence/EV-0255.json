@@ -1,0 +1,15 @@
+{
+ "id": "EV-0255",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 80,
+  "printed_page": "63",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki renders Nafsat I as opening with the statement that a group of defamers (badgūyān) has denounced the author to Shāhrukh and summoned him to Herat to stand trial, so that a written defence has become necessary.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.80"
+}

@@ -1,0 +1,39 @@
+{
+ "id": "CL-0718",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Three later papers tie the Mafāḥiṣ to Iskandar: Grammatology says Ibn Turka began it shortly after On Letters and almost certainly at Iskandar's instance; New Brethren says it was almost certainly commissioned by Iskandar; Timurid-Mughal footnote 24 says Iskandar did not live to see it completed but Ibn Turka began it in response to his interest. The dissertation pages read attribute it to no patron, date the manuscript copy 823/1420, place its production in 817-25/1414-22, and note a letter from Akhlāṭī urging him to write a lettrist work, perhaps the Mafāḥiṣ. Completion in 1420 falls about six years after Iskandar's fall.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1487",
+  "EV-1464",
+  "EV-1493",
+  "EV-1427",
+  "EV-1428",
+  "EV-1503"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "MS Majlis 10196, Beinecke MS Landberg 146",
+   "where": "dissertation pdf 114",
+   "shaping_risk": "medium",
+   "note": "823/1420 is the copy date; the dissertation flags the Beinecke date with a query"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 114, 163, 177",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "medium",
+   "note": "commission inferred, not documented on the pages read"
+  }
+ ],
+ "domain": "textual"
+}

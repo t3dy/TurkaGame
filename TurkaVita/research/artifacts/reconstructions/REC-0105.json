@@ -1,0 +1,19 @@
+{
+  "id": "REC-0105",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "Did Āmulī's theory/practice binary shape Ibn Turka's reclassification of lettrism?",
+  "proposition": "Ibn Turka's sharp distinction between theoretical and practical lettrism, and his championing of the former, was directly informed by Āmulī's recognition of a sīmiyāʾ/ʿilm al-ḥurūf binary, even though Ibn Turka inverts Āmulī's ranking.",
+  "kind": "inferential",
+  "scholar": "Melvin-Koushki",
+  "reasoning": [
+    "Melvin-Koushki says the distinction 'seems' directly informed by Āmulī (pdf p.234).",
+    "No passage of Ibn Turka citing Āmulī appears on the pages read; the link is by comparison of classification schemes.",
+    "Ibn Turka differs from Āmulī in ranking lettrism, not Sufism, as the supreme science."
+  ],
+  "observed_facts": [
+    "CL-0552",
+    "CL-0549"
+  ],
+  "confidence": "low"
+}

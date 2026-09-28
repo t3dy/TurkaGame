@@ -1,0 +1,22 @@
+{
+ "id": "CL-0168",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The self-image in the apologies is, in MK's judgment, ‘hardly reflective’ of Ibn Turka's primary concerns, and they must be treated with caution as sources for his own views; MK's basis is the comparison with his wider oeuvre, developed outside the pages read here.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0247",
+  "EV-0248",
+  "EV-0251"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.25 (printed 8)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

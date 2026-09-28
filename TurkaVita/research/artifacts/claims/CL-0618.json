@@ -1,0 +1,23 @@
+{
+ "id": "CL-0618",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Bākharzī's account is tendentious: it serves later Naqshbandi efforts to distance themselves from the more intellectual and suspect Isfahan Circle, portraying its members as inexpert, possibly heterodox, court-dependent failed Sufis (MK's judgement of the account's aim).",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1252",
+  "EV-1253",
+  "EV-1251"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.443",
+   "shaping_risk": "medium",
+   "note": "MK's paraphrase of the account's implied line is ironic; the 'may well have deserved the accusations' sentence is a description of Bākharzī's stance, not MK's"
+  }
+ ],
+ "domain": "social"
+}

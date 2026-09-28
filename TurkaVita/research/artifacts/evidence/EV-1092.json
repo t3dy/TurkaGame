@@ -1,0 +1,15 @@
+{
+  "id": "EV-1092",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 351,
+    "printed_page": "334",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki says the Mafāḥiṣ was completed in 823/1420, perhaps in Isfahan or Yazd, and gives the two dates found in the earliest manuscripts: 1 Shaʿbān 823 (11 August 1420) in MS Landberg 146, or 19 Dhū l-Ḥijja 823 (25 December 1420) in MS Majlis 10196, the latter supported by an entry in a biographical dictionary.",
+  "evidence_kind": "colophon",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.351"
+}

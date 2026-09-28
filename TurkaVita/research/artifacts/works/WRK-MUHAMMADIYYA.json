@@ -1,0 +1,30 @@
+{
+ "id": "WRK-MUHAMMADIYYA",
+ "type": "work",
+ "status": "draft",
+ "title": "R. al-Muḥammadiyya ('On the Name Muḥammad')",
+ "transliterated_title": "Risāla al-Muḥammadiyya",
+ "language": "Arabic",
+ "genre": "lettrist treatise",
+ "theme": "lettrism",
+ "date": {
+  "ce": "before 1425-08-20",
+  "hijri": "before 5 Shawwāl 828*",
+  "basis": "MK: 'completed before' the date of the Majlis 10196 copy (ff. 139b-45a), flagged with his asterisk as probably a date of transcription rather than composition (p.79). The K. al-Mafāḥiṣ (823/1420) refers to a R. al-Muḥammadiyya at f. 76a, but that text was revised in 828/1425."
+ },
+ "date_kind": "transcription",
+ "manuscript": "3 items listed: MS Majlis 10196 ff. 139b-45a (5 Shawwāl 828/20 Aug 1425); a Majlis copy cited with no shelfmark (32/238); Sipahsālār MS 2930/3 (Abarquh, 23 Ṣafar 845/1441).",
+ "majlis_folios": "ff. 139b-45a",
+ "edited": false,
+ "summary": "A lettrist treatment of the name Muḥammad, dealing with how the rulings of the Muḥammadan law were derived without reference to the intellectual sciences.",
+ "supported_by": [
+  "EV-0495",
+  "EV-0496",
+  "EV-0497",
+  "EV-0489"
+ ],
+ "claims": [
+  "CL-0209",
+  "CL-0210"
+ ]
+}

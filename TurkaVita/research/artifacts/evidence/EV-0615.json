@@ -1,0 +1,15 @@
+{
+ "id": "EV-0615",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 128,
+  "printed_page": "111",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The same manuscript (MS Majlis 10196) contains a dedication to Ulugh Beg in the margin of f. 332b, the opening folio of Sharḥ al-Basmala.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.128",
+ "refers_to_primary": "MS Majlis 10196 f. 332b, marginal dedication"
+}

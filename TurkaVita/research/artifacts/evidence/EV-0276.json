@@ -1,0 +1,15 @@
+{
+ "id": "EV-0276",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 82,
+  "printed_page": "65",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka says that although there were and are many madhhabs besides the Sunni, broadly they reduce to three: the Muʿtazila, the Shiʿa and the philosophers.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.82"
+}

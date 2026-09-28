@@ -1,0 +1,27 @@
+{
+ "id": "CL-0143",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I cites living authorities on the inner sciences: Pārsā (treatises; taught Ibn al-Fāriḍ's qasida to his son), Jurjānī's Taʿrīfāt, and Fanārī, and Ibn Turka's own attendance at Bulqīnī's Cairo lectures.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0307",
+  "EV-0308"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.84 (printed 67)",
+   "shaping_risk": "low"
+  }
+ ]
+}

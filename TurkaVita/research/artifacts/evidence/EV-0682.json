@@ -1,0 +1,15 @@
+{
+ "id": "EV-0682",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 147,
+  "printed_page": "130",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196/47 ff. 371b-73b and 375b-82a carries Tuḥfa-yi ʿAlāʾī, undated (Ḥāʾirī, Majlis, 32/243); it is the only copy listed. The gap between the two ranges falls where Melvin-Koushki elsewhere (p.97) reports an interjected fragment of Sharaf al-Dīn Yazdī's preface at ff. 374b-75b, which would overlap the resumption at f. 375b.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.147",
+ "refers_to_primary": "Tuḥfa-yi ʿAlāʾī, MS Majlis 10196"
+}

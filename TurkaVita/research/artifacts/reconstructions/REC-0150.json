@@ -1,0 +1,23 @@
+{
+ "id": "REC-0150",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why did Ibn Turka route his reply to Shāhrukh's summons through Niʿmat Allāh Valī?",
+ "proposition": "Because his ties to Iskandar Mīrzā's court made his standing in the new Shahrukhid state tenuous, and Niʿmat Allāh's eminence was a protective shield.",
+ "kind": "psychological",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK: he 'no doubt' felt his position tenuous and thought it prudent to protect himself.",
+  "The evidence is one undated letter and an inferred date; the motive itself is stated by no source read.",
+  "The Niʿmatullahi hagiographies frame the link differently, as the deference of Ibn Turka and Yazdī to the saint."
+ ],
+ "observed_facts": [
+  "CL-0612",
+  "CL-0613",
+  "CL-0609"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "CL-0609"
+ ]
+}

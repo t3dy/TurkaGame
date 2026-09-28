@@ -1,0 +1,15 @@
+{
+  "id": "EV-0878",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 167,
+    "printed_page": "150",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Yazdī collection item 1: a request (multamas) from Muḥammad Ṣūfī b. Ghiyās al-Dīn Tarkhān, presumably addressed to Sharaf al-Dīn Yazdī, for a volume of Ibn Turka's works in Persian, with an effusive description of their virtues; it states that Ibn Turka's writings are directed in particular toward the ūlū l-aydī wa-l-abṣār (YMN/V ff. 59a-60a, YMN/MS pp. 160-61; continues on pdf p.168).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.167",
+  "refers_to_primary": "Yazdī collection item 1"
+}

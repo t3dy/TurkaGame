@@ -1,0 +1,33 @@
+{
+ "id": "CL-0031",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In Cairo Ibn Turka met and apprenticed himself to Sayyid Kamāl al-Dīn Ḥusayn Akhlāṭī (d. 799/1397), the Kurdish occultist and rumoured mahdi.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0100",
+  "EV-0113",
+  "EV-0107"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "apprenticeship to Akhlāṭī"
+  },
+  {
+   "layer": "correspondence",
+   "who": "Munshaʾāt-i Turka: Akhlāṭī's letter to Ibn Turka",
+   "where": "pdf p.66, note 61",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.64",
+   "shaping_risk": "low",
+   "note": "no dated source for the start of the apprenticeship is cited on the page"
+  }
+ ],
+ "domain": "biographical"
+}

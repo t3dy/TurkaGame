@@ -1,0 +1,21 @@
+{
+ "id": "CL-0208",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki treats the second half of MS Majlis 10196 (not in chronological order, 829-38/1427-35, perhaps no more than two copied after Ibn Turka's death) as more likely to give, or approximate, composition dates, and its places as places of composition or nearby.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0408"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.79",
+   "shaping_risk": "low",
+   "note": "a working assumption stated by the scholar"
+  }
+ ],
+ "domain": "chronological"
+}

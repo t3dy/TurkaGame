@@ -1,0 +1,278 @@
+{
+ "id": "SCN-0303",
+ "type": "scene",
+ "status": "draft",
+ "act": "trials",
+ "title": "Yazd, 829/1426: the book Bāysunghur asked for",
+ "dramatic_question": "Bāysunghur b. Shāhrukh has asked you for a book on the science of letters. How much do you put in it, and do you let it say anything about kings?",
+ "situation": {
+  "when": "in or before 829/1426; the copy in MS Majlis 10196 is dated 7 Rajab 829/15 May 1426",
+  "where": "Yazd (the years' residence; the work itself gives no place)",
+  "based_on": [
+   "CL-0460",
+   "CL-0326",
+   "CL-0462",
+   "CL-0464",
+   "CL-0576"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki: the R. Suʾl al-Mulūk was written in or before 829/1426 at Bāysunghur b. Shāhrukh's request, as an introductory work on both the practical-magical (alchemical, talismanic) and the theoretical sides of lettrism.",
+   "claim": "CL-0460"
+  },
+  {
+   "text": "The only firm date is the Majlis 10196 copy, 7 Rajab 829/15 May 1426, which Melvin-Koushki marks with an asterisk as possibly a copying date. It fixes the latest date for the work, not the day it was written.",
+   "claim": "CL-0325"
+  },
+  {
+   "text": "Bāysunghur is the ruler's son with whom the letters show your closest relationship: four letters to him in the Munshaʾāt-i Turka, and this commission.",
+   "claim": "CL-0421"
+  }
+ ],
+ "prose": [
+  "Bāysunghur, Shāhrukh's son, is the member of the Timurid house you know best. Four of your surviving letters go to him, and in letter 19 you yourself say he received you with particular favour. Melvin-Koushki notes that the Timurid elite, above all Iskandar and Bāysunghur, showed obvious interest in your lettrist doctrine. Now the prince has asked for a book.",
+  "It is to be an introduction to the science of letters (ʿilm al-ḥurūf), not the Mafāḥiṣ, the large work that Melvin-Koushki's timeline has revised in Yazd in Sharaf al-Dīn Yazdī's company (the manuscripts dispute this). Your Mafāḥiṣ holds the letter above philosophy; your R. Ḥurūf says most lettrists, chiefly al-Būnī, deal in the letters' occult properties and that you mean to set out the principles of the other group. A prince's introduction can say less than either, or say it differently.",
+  "Melvin-Koushki judges this the only one of your minor lettrist treatises with pointedly political content. A ruler's name can be counted in the abjad like any other name, and the ruler whose son asked for this book is the one who abolished the Yasa and before whom you already answered a charge at Herat around 1422."
+ ],
+ "composer": {
+  "work": "WRK-SUAL-AL-MULUK",
+  "prompt": "You are writing the Suʾl al-Mulūk for Bāysunghur b. Shāhrukh, who asked for it. Choose one move in each of four places. A move marked as documented is one Melvin-Koushki reports the treatise making; a move marked counterfactual is something the treatise does not do, and the game says so when you pick it.",
+  "slots": [
+   {
+    "id": "S1",
+    "question": "How wide should the book be?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Cover both sides of the science: what letters mean and how they act, their properties and how to reach their essences, and the theory, ending with an epilogue on how the realities of all things arise from the letters.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0460",
+       "CL-0550"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.baysunghur": 1
+      },
+      "feedback": "This is the treatise: an introductory work on both the practical-magical and the theoretical sides, broader than your other lettrist treatises, treating the letters as giving both bodily healing and ascent toward nearness to God (Melvin-Koushki)."
+     },
+     {
+      "id": "b",
+      "label": "Give him theory only: the principles of the science and none of the practical properties.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0547",
+       "CL-0549"
+      ],
+      "effects": {
+       "score.textual": -1
+      },
+      "feedback": "The Suʾl does not do this. Melvin-Koushki concludes that you ranked theoretical lettrism above letter magic, and your R. Ḥurūf sets out the principles of the lettrists of realities, but this treatise runs the two together."
+     },
+     {
+      "id": "c",
+      "label": "Give him practice only: the properties (khavāṣṣ) of the letters, cures and talismans, with no theory.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0460",
+       "CL-0547"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "press.exposure": 1
+      },
+      "feedback": "The Suʾl does not do this either. Properties are the ground of most lettrists, chiefly al-Būnī, but the treatise joins them to the theory, so the practice is not left bare."
+     }
+    ]
+   },
+   {
+    "id": "S2",
+    "question": "Does the book say anything about kings and their states?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Yes: close the treatise with a political prediction about the reigning dynasty.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0462",
+       "CL-0463"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.baysunghur": 1
+      },
+      "feedback": "This is the move. Melvin-Koushki finds the Suʾl the only one of your minor lettrist treatises with pointedly political content, which he says fits its subject and addressee."
+     },
+     {
+      "id": "b",
+      "label": "No: keep politics out, as Melvin-Koushki finds you did in your other minor lettrist treatises.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0462"
+      ],
+      "effects": {
+       "score.textual": -1
+      },
+      "feedback": "The record has no political silence here. Melvin-Koushki judges this the only one of your minor lettrist treatises with pointedly political content, which he says fits its subject and addressee."
+     }
+    ]
+   },
+   {
+    "id": "S3",
+    "question": "What does the prediction rest on?",
+    "options": [
+     {
+      "id": "a",
+      "label": "The letters of the ruler's name: R is 200 and Kh is 600, total 800, so Shāh Rukh is the shah of 800 and the state lasts to the end of the present century, the name tied to the divine name al-Ẓāhir, the Manifest.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0463"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "press.works": 1
+      },
+      "feedback": "This is the closing computation as Melvin-Koushki translates it. His notes give the span two ways: the end of the 9th Islamic century in one place, one century in another, and the game does not choose."
+     },
+     {
+      "id": "b",
+      "label": "The Ascendant sign of the ruler's name, read off his name without further principle.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0465"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "score.calibration": -1
+      },
+      "feedback": "The treatise rejects this: it says those who derive a person's Ascendant from his name without knowing the principles of ʿilm-i ḥarf are merely approximating from experience. Choosing it would present a guess as the science."
+     },
+     {
+      "id": "c",
+      "label": "Saʿd al-Dīn Ḥamuvayī's cryptic method, set out in full.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0465"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "press.exposure": 1
+      },
+      "feedback": "The treatise declines. It says Ḥamuvayī's cryptic methods give sturdier information but are beyond an introductory work, and it will not risk boring the reader."
+     }
+    ]
+   },
+   {
+    "id": "S4",
+    "question": "What makes it lawful to read a fate from a name?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Precedent: Ibn Barrajān's prediction that the Muslims would retake Jerusalem, with the proper calculation supplied by Ibn ʿArabī (ALM is 71, times eight is 568, plus 15 gives 583/1187).",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0465"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "press.works": 1
+      },
+      "feedback": "The treatise holds up the Jerusalem prediction as the straightforward use of the science. Melvin-Koushki notes that the numerology is Ibn ʿArabī's, not in Ibn Barrajān's own text."
+     },
+     {
+      "id": "b",
+      "label": "Argument: titles of honour are heaven-sent, and the letters belonging to a person form a book in which his circumstances are revealed, so the fate of anything can be learned from its name.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0465"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.baysunghur": 1
+      },
+      "feedback": "The treatise argues exactly this before it turns to its closing computation, as Melvin-Koushki translates it. The game credits Bāysunghur's favour for a move that suits his request; no source says how he took it."
+     },
+     {
+      "id": "c",
+      "label": "Say only that you know it from your own science and cite no precedent.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0465"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "score.calibration": -1
+      },
+      "feedback": "No source has him resting the method on his own say-so. The treatise argues from named precedents and from the heaven-sent character of titles."
+     }
+    ]
+   }
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "label": "Write the treatise Bāysunghur asked for, and address it to him.",
+   "strategy": "deliver_to_baysunghur",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0326",
+    "CL-0460",
+    "CL-0421",
+    "CL-0464"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.baysunghur": 1,
+    "press.works": 1,
+    "score.biography": 2
+   },
+   "feedback": "The sources record the request, the addressee, the treatise and its closing prediction, which Davānī later cites as a prime example of political prediction from the names of the actors, so it was known. No page the game has read records a delivery or how the prince received it. The prince is the one whom your own letter 19 (dated by Melvin-Koushki's conjecture to ca. 826/1423?) says received you with particular favour."
+  },
+  {
+   "id": "B",
+   "label": "Deliver it to Bāysunghur, and send a copy to Shāhrukh as well, with a letter and a dervish.",
+   "strategy": "also_send_to_shahrukh",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0418",
+    "CL-0419"
+   ],
+   "requires": {},
+   "effects": {
+    "court.baysunghur": 1,
+    "court.shahrukh": 1,
+    "press.exposure": 1,
+    "score.biography": 1
+   },
+   "costs": [
+    "A lettrist prediction goes to a ruler whom Melvin-Koushki reads as distrusting mystically minded intellectuals."
+   ],
+   "feedback": "Letter 20 (c. 829/1426) tells Shāhrukh that your aim in serving the Sharīʿa is to be blameless before the Prophet and to further his own mission, says you sent a dervish to court, and sends a treatise on the occult properties of things. Melvin-Koushki thinks that treatise was most probably the Suʾl al-Mulūk, because it carries the prediction about the Shahrukhid state; that identification is an inference, not a document."
+  },
+  {
+   "id": "C",
+   "label": "Refuse the commission: tell Bāysunghur the science of letters is not to be written for princes.",
+   "strategy": "decline_the_commission",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0326",
+    "CL-0421"
+   ],
+   "requires": {},
+   "effects": {
+    "court.baysunghur": -1,
+    "score.biography": -1
+   },
+   "feedback": "No source has him declining. The record has the commission, the treatise, and letters showing more closeness to Bāysunghur than to any other Timurid. The game returns you to the record: you wrote it."
+  }
+ ],
+ "next": "SCN-0304",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "CL-0500",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Shaqq-i Qamar u Bayān-i Sāʿat Ibn Turka ranks seven groups by how they read Q 54:1, in ascending order: (1) jurists and traditionists, (2) dialectical theologians, (3) peripatetic philosophers, (4) illuminationist philosophers, (5) verifying Sufis of Ibn ʿArabī's school, (6) the lettrists, (7) ʿAlī and the Imams after him, the men of might and vision.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1000",
+    "EV-1002",
+    "EV-1003",
+    "EV-1027"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.332-333, 472",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

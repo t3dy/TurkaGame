@@ -1,0 +1,17 @@
+{
+ "id": "INS-AKHLATI",
+ "type": "institution",
+ "status": "draft",
+ "name": "Sayyid Ḥusayn Akhlāṭī",
+ "ruler": "Sayyid Ḥusayn Akhlāṭī",
+ "seat": "Cairo",
+ "tenure": "d. 1397",
+ "role": "teacher",
+ "summary": "The Kurdish occultist and rumoured mahdi, resident alchemist and wonderworker at Barqūq's court, master of jafr, raml, ḥurūf and taksīr, whose discipleship transformed Ibn Turka; he never names him, only 'our Sayyid'.",
+ "supported_by": [
+  "EV-0009",
+  "EV-0100",
+  "EV-0101",
+  "EV-0103"
+ ]
+}

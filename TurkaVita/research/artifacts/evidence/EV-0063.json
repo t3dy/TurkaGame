@@ -1,0 +1,15 @@
+{
+ "id": "EV-0063",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 55,
+  "printed_page": "38",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In his Tuḥfa-yi ʿAlāʾī Ibn Turka reports that his family has always belonged to the Shafiʿi rite (Tuḥfa-yi ʿAlāʾī, 147).",
+ "evidence_kind": "work",
+ "read_by": "R1 opened pdf p.55",
+ "refers_to_primary": "Ibn Turka, R. Tuḥfa-yi ʿAlāʾī, 147"
+}

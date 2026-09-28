@@ -1,0 +1,20 @@
+{
+ "id": "CL-0030",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's Sharḥ-i Naẓm al-Durr, an anthology-as-commentary, uses a hybrid genre cultivated in the Mamluk literary scene and reflects his embrace of Cairene high culture.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0098"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.64, deferring to §E.2",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

@@ -1,0 +1,33 @@
+{
+ "id": "CL-0843",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Whether Ibn Turka was primarily an occult philosopher (a universalist lettrist) rather than a mystical philosopher, a Shiʿi esotericist or an orthodox Sunni Sufi is contested: Melvin-Koushki's thesis rests chiefly on lettrist works that are mostly still unedited, the rival readings on the Tamhid and the apologies.",
+ "epistemic_type": "contested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1647",
+  "EV-1648",
+  "EV-1651",
+  "EV-1658",
+  "EV-1663",
+  "EV-1683"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.25-26, 468",
+   "shaping_risk": "medium",
+   "note": "MK's own interpretation, offered in support of his thesis that Ibn Turka was an occult philosopher."
+  }
+ ],
+ "domain": "doctrinal",
+ "counterevidence": [
+  "EV-1609",
+  "EV-1613",
+  "EV-1627",
+  "EV-1602",
+  "EV-1628"
+ ]
+}

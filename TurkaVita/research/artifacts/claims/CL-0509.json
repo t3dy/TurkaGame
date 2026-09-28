@@ -1,0 +1,20 @@
+{
+  "id": "CL-0509",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the level-six reading of Q 54:1 the R. Shaqq-i Qamar says that raqam (writing) is identical to qamar (moon) on the basis of the letters, so that the written form is what makes the moon-splitting readable as the emergence of meaning.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1035"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.476",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

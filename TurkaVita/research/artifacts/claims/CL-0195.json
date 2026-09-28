@@ -1,0 +1,26 @@
+{
+ "id": "CL-0195",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "An early reader of a manuscript of Nafsat I (MS Majlis 10004) noted with astonishment that a scholar known for Shiʿi and mystical views could dismiss those positions so.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0330"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "sources and scholars MK cites",
+   "where": "pdf p.94 (printed 77)",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.94 (printed 77)",
+   "shaping_risk": "low"
+  }
+ ]
+}

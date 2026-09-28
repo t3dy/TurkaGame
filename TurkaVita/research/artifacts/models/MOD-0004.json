@@ -1,0 +1,64 @@
+{
+  "id": "MOD-0004",
+  "type": "biographical_model",
+  "status": "draft",
+  "scholar": "Matthew Melvin-Koushki",
+  "title": "The occult philosopher",
+  "summary": "An intellectual lettrist, Akhlāṭī's disciple and systematizer, whose Mafāḥiṣ (completed 823/1420) aims at a universal science of the letter, whose confession is imamophile Shiʿi-Sunnism, and whose apologies are what he told his judges. The model is Melvin-Koushki's thesis, and it carries his own concessions: a rearranger and popularizer, 'an apostle of Akhlāṭī'; the Tamhīd 'certainly not minor'; the study provisional.",
+  "phases": [
+    {
+      "label": "A scholars' family; the youth in Samarkand",
+      "when": "1369-c. 1393",
+      "where": "Isfahan and Samarkand"
+    },
+    {
+      "label": "Study abroad and the discipleship to Akhlāṭī",
+      "when": "c. 1393-1408",
+      "where": "Cairo, with Mecca and Baghdad reported"
+    },
+    {
+      "label": "Patronage in Fars; the Fuṣūṣ commentary and the R. Ḥurūf",
+      "when": "c. 1408-1414",
+      "where": "Shiraz and Isfahan"
+    },
+    {
+      "label": "Retreat, the judgeship at Yazd, and the Mafāḥiṣ",
+      "when": "1414-1426",
+      "where": "Shiraz, Yazd"
+    },
+    {
+      "label": "The year of the treatises and the trial",
+      "when": "829/1426",
+      "where": "Yazd and Herat"
+    },
+    {
+      "label": "Purge, exile and the shaped apologies",
+      "when": "1427-1432",
+      "where": "northern Iran, then Herat"
+    }
+  ],
+  "causal_emphasis": {
+    "lettrist_project": "high",
+    "akhlati_discipleship": "high",
+    "duress_on_the_record": "high",
+    "confessional_ambiguity": "medium",
+    "patronage": "medium",
+    "the_tamhid": "low"
+  },
+  "uses": [
+    "REC-0060",
+    "REC-0062",
+    "REC-0061",
+    "REC-0065",
+    "REC-0064",
+    "REC-0101",
+    "REC-0011",
+    "REC-0002"
+  ],
+  "cites": [
+    "EV-1651",
+    "EV-0868",
+    "EV-1080",
+    "EV-0107"
+  ]
+}

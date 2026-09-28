@@ -1,0 +1,15 @@
+{
+ "id": "EV-0326",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 86,
+  "printed_page": "69",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says that, absent the context of his own study, Corbin's assertion that Ibn Turka is an openly Shiʿi thinker in confessional allegiance is perfectly reasonable, but that it ignores his historical context of rampant Sunni-Shiʿi ambiguity.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Corbin, ‘Typologie des spirituels selon Sâ’inoddîn ‘Alî Ispahânî’ (per MK fn.125)",
+ "read_by": "R2a opened pdf p.86"
+}

@@ -1,0 +1,30 @@
+{
+ "id": "CL-0327",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Sullam Dār al-Salām existed by 26 Shaʿbān 832 (31 May 1429), at Abarquh according to the Majlis copy; Melvin-Koushki flags the date as possibly transcription, so it is a terminus ad quem, and Abarquh is at least the place of the copy.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0665",
+  "EV-0666",
+  "EV-0600"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 ff. 360b-66a",
+   "shaping_risk": "medium",
+   "note": "date and place may be those of the copying"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.137, no. 41",
+   "shaping_risk": "low",
+   "note": "asterisked"
+  }
+ ]
+}

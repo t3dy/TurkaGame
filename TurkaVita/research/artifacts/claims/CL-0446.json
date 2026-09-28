@@ -1,0 +1,28 @@
+{
+  "id": "CL-0446",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In letter 35 Ibn Turka, travelling from Lahijan during the first ten days of Jumādā II (ca. 831-32/1428-29), wrote to the shaykh al-islām of Tabriz, Sayyid Muḥammad b. Shaykh Kajujī, and sent greetings to his khanaqah, saying he longed to be with them.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0856"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Sayyid Muḥammad b. Shaykh Kajujī",
+      "where": "Munshaʾāt-i Turka letter 35",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.161",
+      "shaping_risk": "medium",
+      "note": "Dating and route ('Lahijan-Tabriz?') are MK's conjecture"
+    }
+  ],
+  "domain": "biographical"
+}

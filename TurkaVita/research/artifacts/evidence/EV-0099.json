@@ -1,0 +1,14 @@
+{
+ "id": "EV-0099",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 64,
+  "printed_page": "47",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki notes that Ibn Turka's residence in Cairo would have overlapped that of Ibn Khaldūn, who died there in 808/1406.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.64"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "CL-0513",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka ties the seventh level to jafr: the Family of the Seal (ʿAlī and his sons) left a transcript, called jafr, which shows how to derive the full meaning of the Seal's speech, and he reads the wording of Q 54:1 as a demonstration of that path.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1007",
+    "EV-1037",
+    "EV-1045"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.334, 477, 479",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

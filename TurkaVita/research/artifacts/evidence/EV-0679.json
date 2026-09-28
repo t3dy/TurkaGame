@@ -1,0 +1,15 @@
+{
+ "id": "EV-0679",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 147,
+  "printed_page": "130",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Taqdīm al-ʿAql is a brief lettrist work discussing the views of four groups on the relation between intellect and soul: the peripatetics, the illuminationists, the Sufis and the muḥaqqiqīn, i.e. the lettrists; one manuscript notes that it was presented to one Dawlat-i Sayyidiyya-yi Imāmiyya-yi Rażaviyya. It is unpublished.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.147",
+ "refers_to_primary": "Ibn Turka, Taqdīm al-ʿAql ʿalā l-Nafs"
+}

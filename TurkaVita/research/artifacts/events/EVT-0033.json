@@ -1,0 +1,28 @@
+{
+ "id": "EVT-0033",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1422",
+  "end": "1426",
+  "hijri": "825-829",
+  "basis": "§1.2, pdf p.70 gives ca. 825-29/1422-26 for the Yazd residence.",
+  "date_kind": "conjectured"
+ },
+ "place": "Yazd",
+ "event_type": "residence",
+ "description": "Years in Yazd: productive, with many students and lettrist works; the Mafāḥiṣ is revised and expanded with Sharaf al-Dīn.",
+ "claims": [
+  "CL-0066",
+  "CL-0067",
+  "CL-0068",
+  "CL-0069",
+  "CL-0045",
+  "CL-0043",
+  "CL-0044",
+  "CL-0046",
+  "CL-0047"
+ ],
+ "fixed_point": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "MOD-0003",
+  "type": "biographical_model",
+  "status": "draft",
+  "scholar": "The Tamhīd consensus (Ṭabāṭabāʾī, Āshtiyānī, Javādī Āmulī, Nasr, Ziai), as characterized by Melvin-Koushki",
+  "title": "The mystical philosopher",
+  "summary": "Melvin-Koushki builds this 'de facto consensus' from the Tamhīd al-Qawāʿid, a staple of Imami seminary curricula: Ibn Turka as a synthesizer of Ibn Sīnā, Suhravardī and Ibn ʿArabī on absolute being, midway between Ṭūsī or Ibn ʿArabī and Mullā Ṣadrā, and so a precursor of the school of Isfahan. No scholar holds it in exactly these words, and the phases are the periodisation the reading needs, not any scholar's own.",
+  "phases": [
+    {
+      "label": "Heir to a philosophical family: his grandfather's treatise on absolute existence",
+      "when": "1369-c. 1393",
+      "where": "Isfahan and Samarkand"
+    },
+    {
+      "label": "Study abroad and the Akbarian turn",
+      "when": "c. 1393-1408"
+    },
+    {
+      "label": "Commentaries on Ibn al-Fāriḍ and Ibn ʿArabī",
+      "when": "806/1404 and 814-17/1411-15",
+      "where": "Fars (the Fuṣūṣ commentary)"
+    },
+    {
+      "label": "The Tamhīd al-Qawāʿid",
+      "when": "completed before 2 Dhū l-Qaʿda 830/25 August 1427 (asterisked: possibly the copying date)",
+      "where": "Shiraz"
+    },
+    {
+      "label": "The seminary text and the precursor of the school of Isfahan",
+      "when": "probably the late Qajar period onward (Melvin-Koushki's hedge)",
+      "where": "Iran"
+    }
+  ],
+  "causal_emphasis": {
+    "philosophical_synthesis": "high",
+    "tamhid_as_definitive_work": "high",
+    "imami_seminary_transmission": "medium",
+    "lettrism": "low",
+    "patronage": "low",
+    "duress_on_the_record": "low"
+  },
+  "uses": [
+    "REC-0052",
+    "REC-0053",
+    "REC-0058",
+    "REC-0007",
+    "REC-0057",
+    "REC-0054",
+    "REC-0055"
+  ],
+  "cites": [
+    "EV-1613",
+    "EV-1609",
+    "EV-0672",
+    "EV-0671"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1628",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 25,
+  "printed_page": "8",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK refers to the image Ibn Turka presents of himself in the apologies; this is the material on which Lewisohn's reading of him as an orthodox Sunni Sufi rests.",
+ "evidence_kind": "apology",
+ "read_by": "R2b opened pdf p.25",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Masdur I and II"
+}

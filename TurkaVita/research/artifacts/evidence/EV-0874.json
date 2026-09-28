@@ -1,0 +1,15 @@
+{
+  "id": "EV-0874",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 153,
+    "printed_page": "136",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK notes that the eight items in the Munshaʾāt-i Yazdī relating to Ibn Turka or his immediate family show Sharaf al-Dīn's attendance at his teacher's majlises, his accompanying Ibn Turka on journeys to Herat, and his concern for Ibn Turka's children after their father's death, among other things.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.153",
+  "refers_to_primary": "Munshaʾāt-i Yazdī"
+}

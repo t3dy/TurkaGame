@@ -1,0 +1,23 @@
+{
+ "id": "CL-0046",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka, Sharaf al-Dīn Yazdī and their Isfahan circle formed the eastern arm of a Neo-Ikhwān al-Ṣafāʾ network centred on Akhlāṭī in Cairo and reaching Ottoman lands through Bedreddīn, Bisṭāmī and Fanārī (Melvin-Koushki's proposal, following Binbaş).",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0123",
+  "EV-0147",
+  "EV-0054"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.67 and p.71",
+   "shaping_risk": "medium",
+   "note": "a hypothesis, stated as such ('appears to have been')"
+  }
+ ],
+ "domain": "social"
+}

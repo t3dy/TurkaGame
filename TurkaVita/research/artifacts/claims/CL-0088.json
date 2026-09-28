@@ -1,0 +1,27 @@
+{
+ "id": "CL-0088",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Sources disagree on the year of death (830 in printed Khwāndamīr, 836 in a manuscript); Melvin-Koushki holds 835 is right, since 830 is excluded by works written after that date and news of a death two weeks before the end of 835 would reach Fars only in 836.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0168"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Khwāndamīr, Ḥabīb al-Siyar, as reported by Bahār",
+   "where": "pdf p.74, note 96",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.74",
+   "shaping_risk": "low",
+   "note": "MK's reasoning from a later date of news"
+  }
+ ],
+ "domain": "chronological"
+}

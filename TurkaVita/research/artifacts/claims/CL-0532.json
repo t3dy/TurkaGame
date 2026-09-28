@@ -1,0 +1,21 @@
+{
+  "id": "CL-0532",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka wrote a separate treatise, the R. Aṭvār-i Salāsa, on a three-tiered Sufi hierarchy of verifiers (muḥaqqiqān), the righteous (abrār) and the elect (akhyār).",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1013"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.335",
+      "shaping_risk": "medium",
+      "note": "reported in a footnote only"
+    }
+  ],
+  "domain": "doctrinal"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0138",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 70,
+  "printed_page": "53",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Isfahan connivers, jealous of his growing fame, went to Shāhrukh's court in Herat and accused him of deviation from the Sunna through a bias toward Sufism (ṣūfīgarī) (Nafsat al-Maṣdūr I, 171-72).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.70",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I, 171-72"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0648",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 134,
+  "printed_page": "117",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 carries Sharḥ-i Naẓm al-Durr at ff. '-1b-51b' (as printed), copied on 8 Ramaḍān 828/24 July 1425 (Ḥāʾirī, Majlis, 32/235-36); the next listed copies are MS 5423 ff. 2b-124a (842/1439) and MS Sipahsālār 2930/11 (20 Rabīʿ II 845/7 September 1441).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.134",
+ "refers_to_primary": "Sharḥ-i Naẓm al-Durr, MS Majlis 10196"
+}

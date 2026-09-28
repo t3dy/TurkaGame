@@ -1,0 +1,15 @@
+{
+ "id": "EV-0225",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 78,
+  "printed_page": "61",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In the same passage of Nafsat II, Ibn Turka says his students are widely dispersed in places like Shiraz, Samarkand, Anatolia and India, concluding that he is a noted scholar.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II",
+ "read_by": "R2a opened pdf p.78"
+}

@@ -1,0 +1,33 @@
+{
+ "id": "CL-0700",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Prologue states that Ibn Turka was subject to three state inquisitions contrived by jealous and vengeful colleagues, that his first two defences succeeded and the third failed, and that after five years of wandering exile he died impoverished and in legal limbo. It names no dates for the three inquisitions and does not say what source the account rests on.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-1452"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "the three inquisitions",
+   "note": "dates not given in this paper"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka's apologies (per the dissertation, pdf 75)",
+   "where": "Prologue pdf 2",
+   "shaping_risk": "high",
+   "note": "the Prologue does not name its basis; the dissertation says the apologies are the primary source for his life"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Prologue to Pythagorean Renaissance",
+   "where": "pdf 2",
+   "shaping_risk": "medium",
+   "note": "framed as a 'classically Brunian' persecuted-visionary arc"
+  }
+ ],
+ "domain": "biographical"
+}

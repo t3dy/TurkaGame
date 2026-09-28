@@ -1,0 +1,20 @@
+{
+  "id": "CL-0577",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki says Ibn Turka probably intended a more exhaustive work on lettrism (perhaps the unfinished K. Iṣbāḥ al-Anwār) which the troubles of 830/1427 onward prevented.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1091"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.351",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "biographical"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "CL-0558",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Suʾl al-Mulūk, written for Bāysunghur, Ibn Turka calculated from Shāhrukh's name that the Timurid state's glory would last one century, the whole of the ninth Islamic century.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1049",
+    "EV-1053"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.177-178",
+      "shaping_risk": "medium",
+      "note": "a patronage text written for a Timurid prince"
+    }
+  ],
+  "domain": "doctrinal"
+}

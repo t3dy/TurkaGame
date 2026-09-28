@@ -1,0 +1,27 @@
+{
+ "id": "REC-0065",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Was Ibn Turka an original philosopher or a systematizer?",
+ "proposition": "Ibn Turka was largely a rearranger, systematizer and popularizer, an apostle of Akhlati, but a figure whose 'minor' rank is a verdict of later priorities.",
+ "kind": "inferential",
+ "scholar": "Matthew Melvin-Koushki",
+ "reasoning": [
+  "MK concedes Collins's rule that minor philosophers are minor for good reason applies to Ibn Turka in much of his work and particularly his lettrist project (pdf p.467).",
+  "He replies that judged against his own priorities and those of his circle Ibn Turka rightfully achieved renown as the most prominent occult philosopher of Shahrukhid Iran (p.468), and that the modern verdict 'abuses the magnifying glass' (p.467).",
+  "Akhlati's own writings are mostly inaccessible to MK, so the size of Ibn Turka's debt cannot be checked on the pages read (p.468 n.51). MK also places Ibn Turka as one of a host of thinkers, East and West, who read reality as text (p.462). MK is a partisan reporter. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0844",
+  "CL-0823",
+  "EV-1661",
+  "EV-1662",
+  "EV-1663",
+  "EV-1646",
+  "EV-1665"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "REC-0060"
+ ]
+}

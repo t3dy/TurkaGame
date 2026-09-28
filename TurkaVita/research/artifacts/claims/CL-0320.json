@@ -1,0 +1,29 @@
+{
+ "id": "CL-0320",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka opposes Zamakhsharī's Kashshāf as a Muʿtazilī text, consistently with a lettrism that presupposes an uncreated Quran: the Sharḥ Khuṭbat al-Kashshāf, a passage of the Mafāḥiṣ (end of the opening section of part four) and, as he presented it to Shāhrukh, the first apology all take this line. The apology item shows only what he told the ruler, not what he held.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0645",
+  "EV-0647",
+  "EV-0646"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka in Nafsat al-Maṣdūr I, written to Shāhrukh",
+   "where": "Nafsat al-Maṣdūr I (as reported)",
+   "shaping_risk": "high",
+   "note": "the apology strand of this claim comes through the text written for the ruler who was judging him"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.133, no. 37",
+   "shaping_risk": "low"
+  }
+ ]
+}

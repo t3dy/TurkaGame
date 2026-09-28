@@ -1,0 +1,15 @@
+{
+ "id": "EV-0355",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 91,
+  "printed_page": "74",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says Ibn Turka belongs to the specifically Sunni tradition of writing manāqib works on ʿAlī and the Imams, well established by the 7th/13th century.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka and the Sunni manāqib tradition",
+ "read_by": "R2a opened pdf p.91"
+}

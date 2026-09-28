@@ -1,0 +1,21 @@
+{
+ "id": "CL-0315",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The entry for Sharḥ Ḥadīthayn gives no date, place or named addressee (only an unknown correspondent), and lists no copy in MS Majlis 10196; a variant title mentions Herat, but the entry does not say the work was written there.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0636",
+  "EV-0637"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.131-132, no. 33",
+   "shaping_risk": "low"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "INS-BAYSUNGHUR",
+ "type": "institution",
+ "status": "draft",
+ "name": "Bāysunghur b. Shāhrukh",
+ "ruler": "Bāysunghur",
+ "seat": "Herat",
+ "tenure": "governor from 1415; d. 1433",
+ "role": "addressee",
+ "summary": "Shāhrukh's son, for whom Ibn Turka writes the R. Suʾl al-Mulūk and to whom he addresses the second apology, seeking his intercession with the sultan.",
+ "supported_by": [
+  "EV-0028",
+  "EV-0035",
+  "EV-0051",
+  "EV-0166"
+ ]
+}

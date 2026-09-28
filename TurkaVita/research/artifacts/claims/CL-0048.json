@@ -1,0 +1,36 @@
+{
+ "id": "CL-0048",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Qāżīzāda Rūmī studied with Ibn Turka in Samarkand under his brother Ṣadr al-Dīn, is counted a member of his circle, is reported to have been Akhlāṭī's disciple in Cairo, and about 829/1426 thanked Ibn Turka in a letter for a copy of his Sharḥ al-Basmala.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0124",
+  "EV-0125",
+  "EV-0126",
+  "EV-0074"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "letter of Qāżīzāda Rūmī in the Munshaʾāt-i Turka",
+   "where": "pdf p.68, note 69",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "later_chronicler",
+   "who": "Gāzurgāhī; Khwāndamīr, for the Akhlāṭī discipleship",
+   "where": "pdf p.68, note 68",
+   "shaping_risk": "high",
+   "note": "the Cairo discipleship is only 'reported'"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.67-68",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

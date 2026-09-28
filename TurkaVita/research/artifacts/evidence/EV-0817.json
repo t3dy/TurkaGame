@@ -1,0 +1,15 @@
+{
+  "id": "EV-0817",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 155,
+    "printed_page": "138",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 2: the opening only of a letter to Amīrzāda Bāysunghur, here called Malik Muʿizz al-Dawla wa-l-Dīn (TMN/MS p. 1). MK's footnote says that assuming rough chronological order this letter appears to be out of place.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.155",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 2"
+}

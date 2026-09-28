@@ -1,0 +1,14 @@
+{
+  "id": "EV-1131",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-2DC96A9F73",
+    "witness_page": 8,
+    "short_title": "Melvin-Koushki, Prologue to Pythagorean Renaissance"
+  },
+  "content": "In the Prologue Melvin-Koushki calls the Mafāḥiṣ's opening declaration 'Letters are Moons', whose quranic miraculous splitting (shaqq-i qamar) is the splitting of the Pen that writes the world; in a footnote he adds that for Ibn Turka the continuum from letter-cutting (the cut letters, muqaṭṭaʿāt, opening 29 suras) to moon-splitting to ʿAlī as Pythagoras redivivus and inventor of letter science 'could not be more patent'.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.8"
+}

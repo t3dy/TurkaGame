@@ -1,0 +1,15 @@
+{
+ "id": "EV-0605",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 126,
+  "printed_page": "109",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Qābiliyyat is a brief introductory treatment of Ibn ʿArabī's statement in the first chapter of the Fuṣūṣ al-Ḥikam on the most holy emanation (fayż-i aqdas), with several quotations from Rūmī and other Sufi poets; it dwells on receptivity (qābiliyyat) and the emergence of things from the First Intellect, and links receptivity to predestination versus free will, since human actions conform to levels of knowledge shaped by a person's preparedness and intention to receive.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.126",
+ "refers_to_primary": "Ibn Turka, Qābiliyyat"
+}

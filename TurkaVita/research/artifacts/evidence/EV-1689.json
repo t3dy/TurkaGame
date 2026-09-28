@@ -1,0 +1,15 @@
+{
+ "id": "EV-1689",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 90,
+  "printed_page": "73",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK prefers \"Shiʿi-Sunnism\" or \"imamophilism\" to Jaʿfariyān's \"Twelver Sunnism\" to cover a range of orientations, and says Ibn Turka's Shafiʿi credentials are impeccable, though Stewart's work problematizes Shafiʿism as a marker of Sunnism.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R2b opened pdf p.90",
+ "refers_to_primary": "Jaʿfariyān, Tārīkh-i Tashayyuʿ, 843"
+}

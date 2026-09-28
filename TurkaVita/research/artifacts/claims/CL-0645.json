@@ -1,0 +1,21 @@
+{
+ "id": "CL-0645",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In Shahrukhid Iran ṣūfīgarī functioned as code for messianic political aspirations, hurufism in particular (MK: 'seems to have').",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1258",
+  "EV-1257"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.445",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "political"
+}

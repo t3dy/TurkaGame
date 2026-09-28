@@ -1,0 +1,20 @@
+{
+ "id": "CL-0659",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka, a Shafiʿi qadi presenting lettrism as a corrective to both conservatism and Hurufi antinomianism, was summoned to Herat on suspicion of heterodoxy three times and defended himself successfully in ca. 825/1422 and 829/1426.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1277"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.32",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

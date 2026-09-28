@@ -1,0 +1,23 @@
+{
+  "id": "CL-0585",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki holds that on Ibn Turka's scheme hearing is ontologically superior yet epistemologically inferior to sight, reversing the Aristotelian-Avicennan ranking, and the written form (Davānī's 'low letters') is thereby the epistemologically highest.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1137",
+    "EV-1133",
+    "EV-1098",
+    "EV-1085"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "Prologue pp.8, 10; dissertation p.353",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

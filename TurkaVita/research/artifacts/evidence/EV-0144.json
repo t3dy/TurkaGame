@@ -1,0 +1,15 @@
+{
+ "id": "EV-0144",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 70,
+  "printed_page": "53",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Yazd Ibn Turka acquired a number of students who, he states, flocked to him from Shiraz, Samarkand, Anatolia and India (Nafsat al-Maṣdūr II, 209-10).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.70",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II, 209-10"
+}

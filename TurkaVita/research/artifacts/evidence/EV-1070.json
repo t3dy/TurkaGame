@@ -1,0 +1,14 @@
+{
+  "id": "EV-1070",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 234,
+    "printed_page": "217",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki reads Ibn Turka's presentation of lettrism as contesting the encyclopedists: against Ibn Khaldūn, lettrism is far more than a subset of letter magic, though essentially Islamic in its total dependency on the Quran as the transcript of reality and particularly identified with the writings of al-Būnī and Ibn ʿArabī.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R6 opened pdf p.234"
+}

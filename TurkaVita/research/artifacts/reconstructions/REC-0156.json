@@ -1,0 +1,18 @@
+{
+ "id": "REC-0156",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why does Ibn Turka never name Fażl Allāh or the Hurufis in his lettrist works?",
+ "proposition": "He may have wished not to dignify them with recognition.",
+ "kind": "psychological",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK's 'perhaps'.",
+  "The one exception is the second apology, written to a court that needed to hear the word."
+ ],
+ "observed_facts": [
+  "CL-0623",
+  "CL-0652"
+ ],
+ "confidence": "low"
+}

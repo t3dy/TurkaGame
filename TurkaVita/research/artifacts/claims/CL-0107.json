@@ -1,0 +1,20 @@
+{
+ "id": "CL-0107",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki says Ibn Turka defended himself successfully at the first two trials, ca. 825/1422 and 829/1426; the first date is given with ‘ca.’.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0243"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.32 (printed 15)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

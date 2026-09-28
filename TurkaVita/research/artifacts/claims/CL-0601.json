@@ -1,0 +1,29 @@
+{
+ "id": "CL-0601",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka was also remembered as Sharaf al-Dīn Yazdī's teacher: MK calls Yazdī his chief disciple, and in Bākharzī's report of Jāmī, Yazdī himself said his knowledge was an instance of Ṣāʾin al-Dīn's benevolence and praised him constantly.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1220",
+  "EV-1223",
+  "EV-1212"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "ʿAbd al-Vāsiʿ Niẓāmī Bākharzī, Maqāmāt-i Jāmī",
+   "where": "p. 107",
+   "shaping_risk": "high",
+   "note": "hostile reporter: Yazdī's words reach us through Jāmī's circle, which is running Yazdī and Ibn Turka down; MK is translating a hostile reporter"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.288",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

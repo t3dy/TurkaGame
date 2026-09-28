@@ -1,0 +1,23 @@
+{
+  "id": "CL-0522",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that the seventh level of the R. Shaqq-i Qamar 'is not entirely what it seems': it looks like a rank reserved for the Imams above the lettrists, but its manifestation is peculiar to the present time, and Ibn Turka links it with the science of jafr, that is, with lettrism at its occult extreme.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1004",
+    "EV-1005",
+    "EV-1007",
+    "EV-1008"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.333-334",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

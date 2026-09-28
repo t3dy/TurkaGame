@@ -1,0 +1,15 @@
+{
+ "id": "EV-0442",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 105,
+  "printed_page": "88",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "On the next page Melvin-Koushki describes the same f. 121b as preserving eight ghazals, eight rubāʿīs and two Arabic fragments, which does not match the count given on the previous page (nine Persian and three Arabic ghazals, four rubāʿīs, a qiṭʿa, two muʿammās).",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Dīvān",
+ "read_by": "R3 opened pdf p.105"
+}

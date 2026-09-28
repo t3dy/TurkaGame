@@ -1,0 +1,21 @@
+{
+  "id": "CL-0534",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The R. Shaqq-i Qamar u Bayān-i Sāʿat bears a completion note dated 18 Rabīʿ I 829 (Melvin-Koushki: 28 January 1426); the note may instead date a copying.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1024"
+  ],
+  "mediation": [
+    {
+      "layer": "manuscript_colophon",
+      "who": "manuscript colophon / copying note as reported by Melvin-Koushki",
+      "where": "pdf p.479",
+      "shaping_risk": "medium",
+      "note": "the translation's footnote says the note may refer to copying"
+    }
+  ],
+  "domain": "chronological"
+}

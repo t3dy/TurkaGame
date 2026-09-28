@@ -1,0 +1,30 @@
+{
+ "id": "CL-0329",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Tamhīd al-Qawāʿid existed by 2 Dhū l-Qaʿda 830 (25 August 1427); Melvin-Koushki asterisks the date as possibly transcription, so it is a terminus ad quem. The Majlis copy was made in Shiraz.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0669",
+  "EV-0670",
+  "EV-0600"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 ff. 189b-23a",
+   "shaping_risk": "medium",
+   "note": "date and place may be those of the copying"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.137, 139, no. 42",
+   "shaping_risk": "low",
+   "note": "asterisked"
+  }
+ ]
+}

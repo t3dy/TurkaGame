@@ -1,0 +1,15 @@
+{
+ "id": "EV-1231",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 435,
+  "printed_page": "418",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK cites a line by Ṣāʾin al-Dīn's disciple Kātibī Turshīzī (MS Majlis 7776 f. 31a) that contrasts outward learning of the madrasa with inward knowledge by the usage of the khanaqah, as evidence that the madrasa/khanaqah pairing had already become a trope.",
+ "evidence_kind": "context",
+ "refers_to_primary": "Kātibī Turshīzī, verse, MS Majlis 7776 f. 31a",
+ "read_by": "R7 opened pdf p.435"
+}

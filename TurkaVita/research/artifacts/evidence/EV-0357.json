@@ -1,0 +1,15 @@
+{
+ "id": "EV-0357",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 91,
+  "printed_page": "74",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki notes that Ibn Turka's treatment in the Sharḥ al-Nahj is repeated almost verbatim in the 13th/19th century by the Hanafi Naqshbandi shaykh Sulaymān al-Qundūzī in his Yanābīʿ al-Mawadda.",
+ "evidence_kind": "reception",
+ "refers_to_primary": "Sulaymān al-Qundūzī, Yanābīʿ al-Mawadda",
+ "read_by": "R2a opened pdf p.91"
+}

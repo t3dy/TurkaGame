@@ -1,0 +1,23 @@
+{
+  "id": "CL-0463",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "At its end the R. Suʾl al-Mulūk predicts, from the name Shāh Rukh (R = 200, Kh = 600, sum 800), that the Timurid-Shahrukhid state will last to the end of the 9th Islamic century, linking the name to the divine name al-Ẓāhir; MK's other note on it says the prediction gives the state one century.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-0896",
+    "EV-0902",
+    "EV-0893"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.331",
+      "shaping_risk": "low",
+      "note": "MK's translation of the closing section; the edition is in his Part 2, T.4.1"
+    }
+  ],
+  "domain": "doctrinal"
+}

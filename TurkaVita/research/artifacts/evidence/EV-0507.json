@@ -1,0 +1,15 @@
+{
+ "id": "EV-0507",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 121,
+  "printed_page": "104",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Munāẓarāt-i Khams is a popular work of five ornate debates among the interior faculties, influenced by Ibn Sīnā's and especially Suhravardī's allegories: ʿaql and ʿishq, vahm and ʿaql, vahm and khayāl, hearing and sight, lover and beloved; it is also titled Gulshan in one MS.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Munāẓarāt-i Khams",
+ "read_by": "R3 opened pdf p.121"
+}

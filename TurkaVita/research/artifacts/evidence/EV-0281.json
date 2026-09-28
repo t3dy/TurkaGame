@@ -1,0 +1,15 @@
+{
+ "id": "EV-0281",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 82,
+  "printed_page": "65",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka says the false Sunnis deflect attention from themselves by accusing others of doctrinal perversion, a technique of survival under so righteous and Sunni a sultan as Shāhrukh, and that they trouble orthodox scholars and then mock them in private.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.82"
+}

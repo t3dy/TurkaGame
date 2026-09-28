@@ -1,0 +1,23 @@
+{
+ "id": "CL-0842",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki dates Ibn Turka 770-835/1369-1432 and marks the death dates in the titles of Corbin's chapter (830/1427) and Lewisohn's article (830/1437) as errors with [sic]; he does not say on those pages why.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1633",
+  "EV-1632",
+  "EV-1631"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.21, 36",
+   "shaping_risk": "medium",
+   "note": "MK's dating against two rival scholars' titles."
+  }
+ ],
+ "domain": "chronological"
+}

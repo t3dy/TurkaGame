@@ -1,0 +1,24 @@
+{
+ "id": "CL-0021",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Temür died at Utrar in 807/1405.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0012"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Temür's death"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.51, timeline drawing on Manz",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

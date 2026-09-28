@@ -1,0 +1,20 @@
+{
+  "id": "CL-0553",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki says Ibn Turka took intellectual and Sufi lettrism as his point of departure while violently disapproving of the Hurufis.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1069"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.186",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

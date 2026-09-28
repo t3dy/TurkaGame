@@ -1,0 +1,37 @@
+{
+ "id": "CL-0735",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Grammatology and New Brethren call Ibn Turka Shāfiʿī chief judge of Isfahan and Yazd, and New Brethren says he inherited both. The dissertation has the Isfahan qadiship as a family office descended from Ṣadr al-Dīn's appointment at Samarkand, and has the Yazd judgeship granted by Shāhrukh c. 825/1422 at Ibn Turka's own request after his first Herat proceeding.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1484",
+  "EV-1474",
+  "EV-1415",
+  "EV-1413",
+  "EV-1417"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I/II, as reported by Melvin-Koushki",
+   "where": "dissertation pdf 70-77",
+   "shaping_risk": "high",
+   "note": "written to the rulers judging him; the dissertation calls the apologies the primary source for his life (pdf 75)"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 70, 176",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The New Brethren of Purity",
+   "where": "pdf 15",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "institutional"
+}

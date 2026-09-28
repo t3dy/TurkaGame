@@ -1,0 +1,21 @@
+{
+  "id": "CL-0590",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka held that lettrism had been almost erased long ago and was being revived in his own day through the disciples of Akhlāṭī, whom he hails as its restorer.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1118",
+    "EV-1084"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.341, 349",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

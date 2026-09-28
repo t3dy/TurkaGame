@@ -1,0 +1,348 @@
+{
+ "id": "SCN-0307",
+ "type": "scene",
+ "status": "draft",
+ "act": "trials",
+ "title": "8 Rajab 829/16 May 1426: the Nafsat al-Maṣdūr",
+ "dramatic_question": "You must answer Shāhrukh in writing, and the reader is the man judging you. Which moves do you make, and what do you leave unsaid?",
+ "situation": {
+  "when": "829/1426 (Majlis 10196 colophon: 8 Rajab 829/16 May 1426, possibly a copying date)",
+  "where": "Herat",
+  "based_on": [
+   "CL-0102",
+   "CL-0104"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Melvin-Koushki dates the first Nafsat al-Maṣdūr to 829/1426 and says it was written for Shāhrukh in response to accusations made against Ibn Turka by his enemies in Herat.",
+   "claim": "CL-0102"
+  },
+  {
+   "text": "The text is built as an introduction, an autobiography and an attack on the accusers' motives, followed by two sections: nine hadith against innovation, then the sayings of Sufi masters and authorities in support of Sufism's orthodoxy.",
+   "claim": "CL-0103"
+  },
+  {
+   "text": "Melvin-Koushki holds that the apologies were produced under great duress: Nafsat I answers a summons to trial.",
+   "claim": "CL-0167"
+  }
+ ],
+ "prose": [
+  "You are in Herat with a summons behind you and a ruler ahead. What you write will be read by Shāhrukh, the man who is judging you. The text itself presents itself as a defence made necessary because defamers denounced you to him and you were summoned to stand trial.",
+  "Melvin-Koushki lists what the finished text does. An autobiographical introduction that also abuses the accusers. A first section of nine hadith against innovation (bidʿa). A second of sayings of Sufi masters in support of Sufism's orthodoxy, with Khwāja Muḥammad Pārsā, Shāhrukh's own favourite, as the named example.",
+  "You will make one move in each of five places. The real text made several moves in each, so choosing one is choosing what you lean on. A move marked documented is one Melvin-Koushki reports in a source (in one case, a different text than this one, and the option says so); a move marked counterfactual is something the text does not do, and the game says so when you pick it. Whatever you write here is what you tell Shāhrukh, not a confession of what you hold."
+ ],
+ "composer": {
+  "work": "WRK-NAFSAT-AL-MASDUR-I",
+  "prompt": "You are writing the first Nafsat al-Maṣdūr for Shāhrukh. Choose one move in each of five places. Everything the text says comes to us through Melvin-Koushki's account of your own words to the ruler judging you.",
+  "slots": [
+   {
+    "id": "S1",
+    "question": "What do you tell Shāhrukh about your own life?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Twenty-five years under your elder brother, then fifteen abroad at your teachers' direction, and in all that time only tafsīr, hadith, uṣūl al-dīn and jurisprudence, never neglecting the Sharīʿa.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0113",
+       "CL-0114"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.shahrukh": 1
+      },
+      "feedback": "This is your self-presentation to Shāhrukh. Melvin-Koushki observes that it never mentions Akhlāṭī, your Cairo master, and takes that as the first of many signs that the apology reflects Shāhrukh's anxieties rather than your own project."
+     },
+     {
+      "id": "b",
+      "label": "Say you made your enemies as a qadi: you would not let the powerful oppress the poor, and under a king who has restored the Sharīʿa a judge must not fear the powerful.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0116",
+       "CL-0120"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.shahrukh": 1,
+       "press.enemies": 1
+      },
+      "feedback": "The text praises Shāhrukh for bringing the Sharīʿa to a brilliance never before achieved by abolishing the dīvān-i yarghū, and says the powerful bend qadis to their backers' will. Both are claims addressed to the man judging you, and they flatter him."
+     },
+     {
+      "id": "c",
+      "label": "Put into this text the admission your R. Iʿtiqādiyya makes: that in your youth you explored the suspect sciences, justified by the hadith 'Learn even sorcery.'",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0163",
+       "CL-0164"
+      ],
+      "effects": {
+       "press.exposure": 1
+      },
+      "feedback": "The admission is documented, but in another text: the R. Iʿtiqādiyya, among his last writings, makes it (CL-0163). Nafsat I, as Melvin-Koushki reports it, says fifteen years of the four orthodox sciences only, so putting the admission here departs from this text. The game notes the pair sits uneasily; Melvin-Koushki does not draw the contrast."
+     }
+    ]
+   },
+   {
+    "id": "S2",
+    "question": "What do you say of the men who accused you?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Abuse them: mafiosos (Melvin-Koushki's rendering), backbiters, men of little learning and many designs.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0128"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "press.enemies": 1
+      },
+      "feedback": "The introduction does this. It makes the dispute personal, and Melvin-Koushki calls the tone of the text shrill."
+     },
+     {
+      "id": "b",
+      "label": "Show they are hypocrites: astronomy and astrology, which on their logic amount to unbelief, flourish at royal majlises, and Zamakhsharī's Muʿtazilī Kashshāf is praised everywhere though leading Hanafis and Shāfiʿīs call its created Quran unbelief. Ask why they are silent about both.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0125",
+       "CL-0126",
+       "CL-0127"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.shahrukh": 1
+      },
+      "feedback": "The text argues this. A footnote of Melvin-Koushki's credits the recent revival of astrology at court not least to your associate Qāżīzāda Rūmī, so the argument brushes people you know."
+     },
+     {
+      "id": "c",
+      "label": "Leave their motives alone: answer the charge and say nothing of their character.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0128"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "press.enemies": -1
+      },
+      "feedback": "The text does the opposite: its introduction attacks the accusers' motives. Nothing in the sources has a gentler Nafsat I."
+     }
+    ]
+   },
+   {
+    "id": "S3",
+    "question": "How do you meet the charge that you quote Sufi masters?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Make three defences: under the Sharīʿa a charge cannot rest on something merely written; quoting another's words is no transgression, the blame is the original author's; and the Sufi authorities you quoted, Pārsā, Anṣārī, Tirmidhī, Ḥamuvayī, are held everywhere to be pious.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0122",
+       "CL-0123",
+       "CL-0124"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.shahrukh": 1
+      },
+      "feedback": "These are the text's three defences. Note what they do not say: none of them says you hold the teachings quoted, and the text elsewhere says that even if you had Sufi leanings, which you do not admit, Sufis epitomise the Sunna."
+     },
+     {
+      "id": "b",
+      "label": "Say plainly that you hold the Sufi teachings you quoted, and defend them as your own.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0147",
+       "CL-0171"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "press.exposure": 2
+      },
+      "feedback": "The record has the opposite. The text does not admit any Sufi leaning, and Melvin-Koushki says you pointedly declined to identify as a Sufi while dealing with Sufi masters."
+     },
+     {
+      "id": "c",
+      "label": "Defend the quotations by explaining your real project: lettrism, the supreme universal science, above philosophy and Sufism alike.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0538",
+       "CL-0169"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "press.exposure": 2,
+       "court.shahrukh": -1
+      },
+      "feedback": "This is the unmasked defence, and the record does not contain it. Your works hold lettrism above philosophy and Sufism, but Melvin-Koushki says the apologies are not meant to reflect your intellectual project, and the text never presents it."
+     }
+    ]
+   },
+   {
+    "id": "S4",
+    "question": "Where do you stand on the other confessions?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Reduce every non-Sunni position to three, Muʿtazila, Shiʿa and the philosophers, who share the same principles and are all enemies of the Sunna; add that many falsely claim to be Sunni.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0129",
+       "CL-0130"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.shahrukh": 1
+      },
+      "feedback": "The text says this. Melvin-Koushki reads it as a mirror of Shāhrukh's Sunnizing programme and, in a psychological reading marked as such, as a self-misrepresentation so exaggerated as to be cartoonish; only the rejection of Muʿtazilism is confirmed by your works. An early reader of one manuscript noted his astonishment at seeing a man known for Shiʿi and mystical views dismiss them so."
+     },
+     {
+      "id": "b",
+      "label": "Defend your regard for ʿAlī and the Imams openly, as your own Sharḥ al-Nahj does.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0187",
+       "CL-0186"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "press.exposure": 2
+      },
+      "feedback": "The Sharḥ al-Nahj is your work, and it pairs Sunni hadith on ʿAlī with Nahj al-Balāgha aphorisms. The apology is not that voice, and no source has it defending ʿAlī."
+     },
+     {
+      "id": "c",
+      "label": "Say nothing about Shiʿism or the other confessions, and keep the defence to Sufism.",
+      "epistemic_label": "counterfactual",
+      "based_on": [
+       "CL-0072",
+       "CL-0129"
+      ],
+      "effects": {
+       "score.textual": -1,
+       "court.shahrukh": -1
+      },
+      "feedback": "The text does not keep to Sufism. Melvin-Koushki says its sweeping dismissal of all but the Sunni position clearly implies that your Sunni credentials had been questioned too."
+     }
+    ]
+   },
+   {
+    "id": "S5",
+    "question": "What carries the body of the text?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Nine hadith against innovation: the first four on bidʿa, the sixth to argue that only actions, not motives, may be judged, the ninth that the scholar stands above the ascetic.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0136",
+       "CL-0138",
+       "CL-0140"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.shahrukh": 1
+      },
+      "feedback": "The first section does this, with nine chosen as a propitious number for rulers. The sixth hadith bears directly on a heresy charge, because it says motives are not to be judged."
+     },
+     {
+      "id": "b",
+      "label": "The sayings of the Sufi masters and the Companions, to show that Sufis are the Sunni elite and that true knowledge is hidden from most people.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0131",
+       "CL-0141",
+       "CL-0142"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "press.exposure": 1
+      },
+      "costs": [
+       "A long case for Sufism, in a trial about Sufi bias."
+      ],
+      "feedback": "The second section does this, citing Tirmidhī, Ghazālī, Anṣārī, Ḥamuvayī and Ibn ʿArabī and the Companion sayings on hidden knowledge. Melvin-Koushki says the text champions an orthodox Sufism esteemed but not personally embraced."
+     },
+     {
+      "id": "c",
+      "label": "Name Khwāja Muḥammad Pārsā, Shāhrukh's favourite and speaker at the royal majlis, as the living example of orthodox Sufism, and distinguish the impostor Sufis who send disciples to rulers and cause unrest.",
+      "epistemic_label": "documented",
+      "based_on": [
+       "CL-0145",
+       "CL-0134"
+      ],
+      "effects": {
+       "score.textual": 1,
+       "court.shahrukh": 1,
+       "press.enemies": 1
+      },
+      "feedback": "The text ends on Pārsā, and Melvin-Koushki notes that his orthodox Khwājagānī standing propped Shāhrukh's programme. In the game, marking some Sufi masters as impostors makes enemies among Sufis; no source reports that reaction."
+     }
+    ]
+   }
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "label": "Send the Nafsat with a creed of adherence to the Sunna and the Jamāʿa, the R. Iʿtiqādāt.",
+   "strategy": "apology_with_creed",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0073",
+    "CL-0118"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.shahrukh": 1,
+    "life.apology": "with_creed",
+    "score.biography": 2
+   },
+   "feedback": "The record has Nafsat I and the R. Iʿtiqādāt both dated 829/1426 and addressed to Shāhrukh, and has you earning his favour again and returning to Fars; all of this is his own account to the ruler judging him. Nafsat I also says you submitted a creed of adherence to the Sunna and Jamāʿa before the leading scholars at court, but Melvin-Koushki never identifies that creed with the R. Iʿtiqādāt, and does not say how the two visits Nafsat I mentions line up with the trials."
+  },
+  {
+   "id": "B",
+   "label": "Send the Nafsat alone, with no creed statement, and let the argument stand.",
+   "strategy": "apology_alone",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0073",
+    "CL-0118"
+   ],
+   "requires": {},
+   "effects": {
+    "press.exposure": 1,
+    "life.apology": "alone",
+    "score.biography": -1
+   },
+   "feedback": "The sources have a creed accompanying the apology in some form: the R. Iʿtiqādāt is dated the same year and Nafsat I mentions a creed statement. No source has the apology going alone. The game returns you to the record."
+  },
+  {
+   "id": "C",
+   "label": "Ask Shāhrukh to hear you and your accusers face to face before the scholars of his court, instead of sending a text.",
+   "strategy": "ask_for_disputation",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0104",
+    "CL-0118"
+   ],
+   "requires": {},
+   "effects": {
+    "press.enemies": 1,
+    "life.apology": "disputation",
+    "score.biography": -1
+   },
+   "feedback": "The apology is a written defence, and no source has you asking for a disputation. Nafsat I says your creed was delivered before the leading scholars at court, so scholars were in the room in some form. The game returns you to the record."
+  }
+ ],
+ "next": "SCN-0308",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

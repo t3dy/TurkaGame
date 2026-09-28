@@ -1,0 +1,29 @@
+{
+  "id": "CL-0450",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "About 829/1426 Qāżīzāda Rūmī wrote from Samarkand thanking Ibn Turka for a copy of his Sharḥ al-Basmala, saying he had met him in Herat and reminding him of a promise to visit Samarkand.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0869",
+    "EV-0870"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to received from Qāżīzāda Rūmī",
+      "where": "MS Majlis 10196 f. 153b",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.164",
+      "shaping_risk": "medium",
+      "note": "MK dates it by the treatise's completion 'by 829/1426'"
+    }
+  ],
+  "domain": "social"
+}

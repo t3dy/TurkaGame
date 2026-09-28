@@ -1,0 +1,32 @@
+{
+  "id": "CL-0442",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "During the exile Ibn Turka wrote four letters to Kārkiyā sayyids of Gilan (29 to Sayyid Aḥmad at Ranikuh, 30-31 to Sayyid Nāṣir at Lahijan, 32 to either): each in MK's description congratulates the amir on a conquest and praises his patronage of scholars or the Sufis' spiritual support, and where he declines to attend in person he cites family duties, ill health or infirmity; MK's descriptions record no request for money or protection.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0849",
+    "EV-0850",
+    "EV-0851",
+    "EV-0852",
+    "EV-0853"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Kārkiyā sayyids of Gilan",
+      "where": "Munshaʾāt-i Turka letters 29-32",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.161",
+      "shaping_risk": "medium",
+      "note": "The silence about requests is in MK's summaries, not necessarily in the letters"
+    }
+  ],
+  "domain": "political"
+}

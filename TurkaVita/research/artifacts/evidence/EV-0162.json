@@ -1,0 +1,14 @@
+{
+ "id": "EV-0162",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 73,
+  "printed_page": "56",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The page states that Shāhrukh arrested figures 'with suspected ties' to the Ḥurūfiyya and lists Ibn Turka among them, but gives no evidence of what tied him to the group; the only Hurufi contact named anywhere in the pages read is the family's dream-interpretation visits to Fażl Allāh (pdf p.58), which Melvin-Koushki says imply no Hurufi inclination.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.73"
+}

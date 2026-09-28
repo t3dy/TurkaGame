@@ -1,0 +1,22 @@
+{
+ "id": "CL-0056",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "At Iskandar's court Ibn Turka would have met the astronomers Giyās al-Dīn Kāshī and Maḥmūd Kāshī, the poets Busḥāq Aṭʿima and Mīr Ḥaydar and the historian Muʿīn al-Dīn Naṭanzī; Iskandar appears to have been an overt Shiʿi or devoted imamophile with a pronounced interest in lettrism.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0134",
+  "EV-0135"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.69, notes 74 and 76",
+   "shaping_risk": "medium",
+   "note": "'would have' and 'appears to'"
+  }
+ ],
+ "domain": "social"
+}

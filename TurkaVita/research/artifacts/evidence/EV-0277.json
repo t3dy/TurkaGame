@@ -1,0 +1,15 @@
+{
+ "id": "EV-0277",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 82,
+  "printed_page": "65",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka says the Muʿtazila gained ascendancy in the early ʿAbbasid period, tortured Aḥmad b. Ḥanbal and forced Shāfiʿī to flee to Egypt, so that fanatical hostility between Sunnis and other groups is of long standing.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.82"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-1051",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 178,
+    "printed_page": "161",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The R. Ḥurūf, possibly commissioned by Iskandar and completed in 817/1414 in Shiraz, is an introduction to the premises and principles of lettrism. After an introduction on the letter as such, it has three sections, one on each aspect of the letter: written-textual (raqamī kitābī), associated with sight; spoken-oral (lafẓī kalāmī), associated with hearing; and spiritual-mental (maʿnavī lubābī), i.e. numerical, associated with the heart. It closes with the Doubled Seven (sabʿ al-mathānī) as a test case.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Ḥurūf",
+  "read_by": "R6 opened pdf p.178"
+}

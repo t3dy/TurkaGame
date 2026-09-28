@@ -1,0 +1,15 @@
+{
+ "id": "EV-0051",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 53,
+  "printed_page": "36",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Timeline A.1: 834-35/1431-32 for nine months he is in weekly attendance at court waiting for review of his case; he writes the Nafsat al-Maṣdūr II and the R. Iʿtiqādiyya for Bāysunghur.",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.53",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II; R. Iʿtiqādiyya"
+}

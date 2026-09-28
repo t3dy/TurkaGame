@@ -1,0 +1,30 @@
+{
+ "id": "CL-0216",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The K. al-Mafāḥiṣ was completed in 823/1420, but the day and the sense of the date are disputed inside the entry: MS Landberg 146 gives 1 Shaʿbān 823, MS Majlis 10196 gives 19 Dhū l-Ḥijja 823 (a date supported by the Riyāḍ al-ʿUlamāʾ), yet a marginal correction to the Majlis autograph colophon says that date refers to copying (taswīd) only; the work was revised and expanded in 828/1425 in the presence of Sharaf al-Dīn Yazdī, and the place is 'perhaps' Isfahan or Yazd.",
+ "epistemic_type": "contested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0488",
+  "EV-0483",
+  "EV-0482",
+  "EV-0420"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "MS Landberg 146 and MS Majlis 10196 colophons",
+   "where": "Mafāḥiṣ",
+   "shaping_risk": "medium",
+   "note": "the two colophons differ; the marginal correction says one records copying"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.97, 99",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

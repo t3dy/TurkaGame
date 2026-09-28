@@ -1,0 +1,31 @@
+{
+ "id": "CL-0820",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Whether the Tamhid was of secondary importance in the estimation of Ibn Turka and his contemporaries is asserted by Melvin-Koushki and contradicted by the modern Iranian tradition that treats it as his definitive work; the pages read support MK's side with the Mafahis introduction, the author's own hierarchies and the Khwandamir and Afandi notices, but none states the ranking outright.",
+ "epistemic_type": "contested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1605",
+  "EV-1651",
+  "EV-1625",
+  "EV-1657",
+  "EV-1664",
+  "EV-1654"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.25, 454, 468",
+   "shaping_risk": "medium",
+   "note": "Central to MK's case; the rival (Tamhid-centred) position rests on the Tamhid's later curricular success."
+  }
+ ],
+ "domain": "doctrinal",
+ "counterevidence": [
+  "EV-1609",
+  "EV-1613",
+  "EV-1626"
+ ]
+}

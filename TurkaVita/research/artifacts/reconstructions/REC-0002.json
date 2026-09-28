@@ -1,0 +1,27 @@
+{
+ "id": "REC-0002",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Do the apologies show what Ibn Turka actually believed?",
+ "proposition": "The apologies were produced under great duress and their self-image is hardly reflective of Ibn Turka's primary concerns, so they show what he told his judges, not what he held.",
+ "kind": "inferential",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "Nafsat I answers a summons to trial; Nafsat II follows torture, imprisonment and exile.",
+  "The apologies omit his Cairo discipleship to Akhlāṭī and push a Sunnism that tallies too easily with Shāhrukh's programme.",
+  "His works elsewhere venerate the Imams and show philosophical skill, which the apologies disown.",
+  "MK's comparison with the oeuvre is developed outside the pages read here; only its conclusion is on these pages."
+ ],
+ "observed_facts": [
+  "EV-0247",
+  "EV-0248",
+  "EV-0249",
+  "EV-0250",
+  "EV-0251",
+  "EV-0241"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "REC-0001"
+ ]
+}

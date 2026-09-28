@@ -1,0 +1,34 @@
+{
+ "id": "WRK-SHARH-I-GULSHAN-I-RAZ",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ-i Gulshan-i Rāz",
+ "transliterated_title": "Sharḥ-i Gulshan-i Rāz (Commentary on Shabistarī's Garden of Secrets)",
+ "language": "Persian",
+ "genre": "commentary on Shabistarī's Gulshan-i Rāz",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "unknown",
+  "hijri": "unknown",
+  "basis": "The sole copy (MS 3318) is undated (10th-13th/16th-19th c.) and does not name the author; the entry gives no date of composition."
+ },
+ "date_kind": "unknown",
+ "place": "not stated",
+ "addressee": "A Sulṭān Muḥammad, perhaps Sulṭān Muḥammad b. Bāysunghur (Melvin-Koushki; footnote asks if the ruler of Gulbarga)",
+ "occasion": "not stated",
+ "manuscript": "MS 3318, Central Library, Tehran University: defective, the only known copy, apparently appended to MS Majlis 10196 from Bahār's library.",
+ "majlis_folios": "none (MS 3318 is a separate defective copy apparently appended to MS Majlis 10196; no folios of the Majlis foliation given)",
+ "edited": true,
+ "summary": "A Persian commentary on Shabistarī's Garden of Secrets whose attribution to Ibn Turka is likely on context and content but not certain.",
+ "edition_note": "Ed. Kāẓim Dizfūliyān, Tehran 1996; the edition title labels the commentator Shiʿi, a reception fact rather than evidence.",
+ "supported_by": [
+  "EV-0628",
+  "EV-0629",
+  "EV-0630",
+  "EV-0631"
+ ],
+ "claims": [
+  "CL-0312",
+  "CL-0313"
+ ]
+}

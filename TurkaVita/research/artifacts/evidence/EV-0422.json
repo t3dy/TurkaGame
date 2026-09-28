@@ -1,0 +1,15 @@
+{
+ "id": "EV-0422",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 99,
+  "printed_page": "82",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 158a-60a carries the Anjām (Taṣavvuf u Ḥurūf), copied on 17 Dhū l-Qaʿda 828/30 September 1425 (citing Ḥāʾirī, Majlis, 32/239); the copy gives no place.",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, Anjām",
+ "read_by": "R3 opened pdf p.99"
+}

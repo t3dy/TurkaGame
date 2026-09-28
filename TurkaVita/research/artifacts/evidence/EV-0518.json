@@ -1,0 +1,15 @@
+{
+ "id": "EV-0518",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 124,
+  "printed_page": "107",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 124b-26a carries the Nuqṭa (Sharḥ-i Ḥadīs-i Nuqṭa), copied on 16 Ramaḍān 828/1 August 1425 (citing Ḥāʾirī, Majlis, 32/237); fifteen further copies are listed, including the Bijapur royal-library MS Arabic BIJ 1238/3 (869-71/1465-67).",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, Nuqṭa",
+ "read_by": "R3 opened pdf p.124"
+}

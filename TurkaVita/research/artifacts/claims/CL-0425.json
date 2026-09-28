@@ -1,0 +1,35 @@
+{
+  "id": "CL-0425",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Bāysunghur's patronage was granted in two ways the pages show: he received Ibn Turka with particular favour (letter 19), and he asked for the R. Suʾl al-Mulūk, an introductory work on practical-magical and theoretical lettrism.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0837",
+    "EV-0894",
+    "EV-0891"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Bāysunghur",
+      "where": "Munshaʾāt-i Turka letter 19",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.158",
+      "shaping_risk": "medium"
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.328",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "political"
+}

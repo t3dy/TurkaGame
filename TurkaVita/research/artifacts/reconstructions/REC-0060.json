@@ -1,0 +1,40 @@
+{
+ "id": "REC-0060",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was Ibn Turka?",
+ "proposition": "Ibn Turka is best understood as an occult philosopher: a universalist thinker whose lettrist system, embracing kabbalah, numerology, astrology and natural magic, aimed to decipher the twin Books (Quran and cosmos) and, in MK's phrase, to rewrite reality; the most prominent of his kind in Shahrukhid Iran.",
+ "kind": "inferential",
+ "scholar": "Matthew Melvin-Koushki",
+ "reasoning": [
+  "Grounds are works: the Mafahis (completed 823/1420), whose introduction rejects absolute being for the letter as the proper object of a universal science (pdf p.26-27), his stated universalist goal (p.21), his teacher Akhlati (p.22), and the lettrist works and treatises that make up most of his still unedited output (pp.23, 43). Corroboration from contemporaries: Qazizada's letter praising his occultist perfection (p.458) and the Mafahis's fame (pp.26, 468).",
+  "MK claims this is visible in 'even a casual survey' of his writings (p.25), yet calls his own study 'necessarily provisional' and any definition of Ibn Turka's contribution 'premature' (pp.44, 468), and says most of the relevant lettrist works are unedited and half his oeuvre is in manuscript (pp.23, 37).",
+  "MK's objections to the rivals: the Tamhid was of secondary importance to Ibn Turka and his contemporaries and bare of lettrist reference (pp.23, 25, 454); the apologies were written under great duress and are hardly reflective of his primary concerns (p.25); Corbin's Shiʿi assumption ignores confessional ambiguity (p.86). He calls the Ziai statement 'incorrect and anachronistic' (p.24).",
+  "MK concedes three qualifications: the occult philosophy is a systematizer's rearrangement and popularization, 'an apostle of Akhlāṭī' (p.467); the Tamhid was 'certainly not minor' in importance (p.468); and Ibn Turka was one of a host of thinkers, East and West, who read reality as text (p.462).",
+  "MK is the partisan of this reading (his thesis); his own analysis is labelled scholarly_argument in the evidence. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0843",
+  "CL-0817",
+  "CL-0815",
+  "CL-0816",
+  "CL-0821",
+  "CL-0823",
+  "CL-0832",
+  "CL-0820",
+  "CL-0839",
+  "CL-0844",
+  "EV-1647",
+  "EV-1648",
+  "EV-1663"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "REC-0052",
+  "REC-0053",
+  "REC-0056",
+  "REC-0050",
+  "REC-0062",
+  "REC-0059"
+ ]
+}

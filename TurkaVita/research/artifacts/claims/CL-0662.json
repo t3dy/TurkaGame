@@ -1,0 +1,24 @@
+{
+ "id": "CL-0662",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Qāsim-i Anvār was swept into the same 1427 action against suspected Hurufi sympathisers: MK's chapter 1 says he was arrested, the introduction says he was expelled from Herat, and a note says he was exiled from Herat in 1427 with Ibn Turka on suspect connections.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1282",
+  "EV-1279",
+  "EV-1292",
+  "EV-1284"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.73",
+   "shaping_risk": "low",
+   "note": "the three passages use different verbs (arrested, expelled, exiled) and MK does not reconcile them"
+  }
+ ],
+ "domain": "political"
+}

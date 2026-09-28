@@ -1,0 +1,30 @@
+{
+ "id": "CL-0302",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Shaqq-i Qamar existed by 18 Rabīʿ I 829 (28 January 1426 by the entry's description; the manuscript listing prints 27 February 1426, a discrepancy within the dissertation); Melvin-Koushki flags the date as possibly a transcription date, so it is a terminus ad quem, not a composition date.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0607",
+  "EV-0608",
+  "EV-0600"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 ff. 170b-72a",
+   "shaping_risk": "medium",
+   "note": "date may be the copying"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.126, 128, no. 27",
+   "shaping_risk": "low",
+   "note": "asterisked; CE equivalent printed two ways"
+  }
+ ]
+}

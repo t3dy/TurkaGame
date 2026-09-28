@@ -1,0 +1,15 @@
+{
+ "id": "EV-0220",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 77,
+  "printed_page": "60",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports Ibn Turka saying in Nafsat II that his writings are sought out and used from Anatolia to Central Asia to India, and his students are as widely dispersed.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II",
+ "read_by": "R2a opened pdf p.77"
+}

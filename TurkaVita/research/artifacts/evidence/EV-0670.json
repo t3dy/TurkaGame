@@ -1,0 +1,15 @@
+{
+ "id": "EV-0670",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 139,
+  "printed_page": "122",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that the Tamhīd al-Qawāʿid was completed before 2 Dhū l-Qaʿda 830/25 August 1427 and marks the date with an asterisk (possible transcription date).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.139",
+ "refers_to_primary": "Tamhīd al-Qawāʿid, date"
+}

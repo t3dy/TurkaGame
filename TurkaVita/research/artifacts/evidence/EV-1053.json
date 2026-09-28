@@ -1,0 +1,15 @@
+{
+  "id": "EV-1053",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 178,
+    "printed_page": "161",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The R. Suʾl al-Mulūk, written in or before 829/1426 at the request of Bāysunghur b. Shāhrukh, is an introductory work treating both the practical (alchemical and talismanic) and the theoretical aspects of lettrism.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Suʾl al-Mulūk",
+  "read_by": "R6 opened pdf p.178"
+}

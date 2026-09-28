@@ -1,0 +1,28 @@
+{
+ "id": "CL-0825",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Ibn Turka wrote in the R. al-Inzaliyya, sometime before 828/1425, that lettrism was unpopular in Iran and that his contemporaries rejected it as babies reject solid food.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1669"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Turka, author of R. al-Inzāliyya",
+   "where": "R. al-Inzāliyya",
+   "shaping_risk": "low",
+   "note": "A doctrinal work, not addressed to a judge; the duress rule counts a work as evidence of what he held."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.455",
+   "shaping_risk": "medium",
+   "note": "We have the work only as MK summarises or translates it; most of the lettrist works are unedited, so MK's paraphrase cannot be checked against a printed text."
+  }
+ ],
+ "domain": "doctrinal"
+}

@@ -1,0 +1,29 @@
+{
+ "id": "CL-0033",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Ḥajar reports that after Akhlāṭī's death his house was found to hold a golden cup, flagons of wine, priests' clothes, a Bible, books of philosophy, astrology and geomancy and a chest of precious stones, and that his refusal to attend Friday prayers exposed him to charges of Shiʿism.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0104",
+  "EV-0105",
+  "EV-0106"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Ibn Ḥajar al-ʿAsqalānī, Inbāʾ al-Ghumr, 3/336-38",
+   "where": "pdf p.64-65",
+   "shaping_risk": "high",
+   "note": "a Mamluk chronicler writing about a rumoured mahdi after his death; MK uses it to illustrate boundary-crossing"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.64-65",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

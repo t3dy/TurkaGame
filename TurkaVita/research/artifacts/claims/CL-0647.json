@@ -1,0 +1,28 @@
+{
+ "id": "CL-0647",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In the second apology Ibn Turka admits having received a khirqa-yi tabarruk from a great Sufi master before going abroad to study, and, on returning after some fifteen years, finding that master's disciples antinomian; a meeting between them became a shouting match.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1262",
+  "EV-1271"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Masdur II (ca. 832-35/1429-32, after exile)",
+   "where": "Nafsat II 212-13",
+   "shaping_risk": "high",
+   "note": "less guarded and angrier in tone (MK), but still an account for the court"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.446",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

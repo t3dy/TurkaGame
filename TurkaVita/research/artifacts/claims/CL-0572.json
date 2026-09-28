@@ -1,0 +1,27 @@
+{
+  "id": "CL-0572",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka held that Ibn ʿArabī and Saʿd al-Dīn Ḥamuvayī attained the highest rank of walāya, since they alone could answer the 157 questions of Ḥakīm Tirmiẕī; the only support Melvin-Koushki cites is the Nafsat al-Maṣdūr I.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1089"
+  ],
+  "mediation": [
+    {
+      "layer": "subject_self_report",
+      "who": "Ibn Turka, Nafsat al-Maṣdūr I (first apology, written to the ruler judging him)",
+      "where": "pdf p.351",
+      "shaping_risk": "high",
+      "note": "an apology cannot show what he held, only what he told whom"
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.351",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

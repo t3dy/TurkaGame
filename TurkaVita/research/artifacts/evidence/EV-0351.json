@@ -1,0 +1,15 @@
+{
+ "id": "EV-0351",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 90,
+  "printed_page": "73",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki prefers the more generic terms Shiʿi-Sunnism or imamophilism, because Shiʿism in Iran was itself becoming ambiguous among Twelver, Ismaʿili, Zaydi and ghulāt traditions and because primary emphasis had long been on ʿAlī and Jaʿfar al-Ṣādiq in the wisdom tradition.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Shiʿi-Sunnism or imamophilism",
+ "read_by": "R2a opened pdf p.90"
+}

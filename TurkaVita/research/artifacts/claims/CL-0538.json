@@ -1,0 +1,23 @@
+{
+  "id": "CL-0538",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka held lettrism to be the supreme universal science, superior to both philosophy and Sufism, because its objective is investigation of everything in the cosmos, universals and particulars alike, and their ordering.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1052",
+    "EV-1055",
+    "EV-1056",
+    "EV-1064"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.178-179, 183",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

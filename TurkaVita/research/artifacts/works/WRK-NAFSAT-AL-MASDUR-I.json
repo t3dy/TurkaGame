@@ -1,0 +1,35 @@
+{
+ "id": "WRK-NAFSAT-AL-MASDUR-I",
+ "type": "work",
+ "status": "draft",
+ "title": "Nafsat al-Maṣdūr I ('Tubercular Expectoration (I)')",
+ "transliterated_title": "Nafsat al-Maṣdūr I",
+ "language": "Persian",
+ "genre": "apology",
+ "theme": "apology",
+ "date": {
+  "ce": "1426-05-16",
+  "hijri": "8 Rajab 829",
+  "basis": "MK: 'completed on 8 Rajab 829/16 May 1426 in Herat' (no asterisk). The Majlis colophon may record copying (MK's first-half caveat, pdf p.96); the same standard as WRK-MAFAHIS."
+ },
+ "date_kind": "conjectured",
+ "place": "Herat",
+ "addressee": "Shāhrukh",
+ "occasion": "Written in answer to the accusations of Ibn Turka's enemies in Yazd brought before Shāhrukh's court in Herat.",
+ "manuscript": "5 items listed: MS Majlis 10196 ff. 179b-83b (Herat, 8 Rajab 829/16 May 1426); MS 5423 (842/1439); MS 10004/12 (903-4/1497-98, with critical marginalia); MS 3035/2 (1084/1673); Tehran microfilm 830.",
+ "majlis_folios": "ff. 179b-83b",
+ "edited": true,
+ "summary": "An apology in an autobiographical introduction, a commentary on nine hadith condemning bidʿa, and a commentary on the sayings of Sufi masters in support of Sufi orthodoxy; a companion to the Iʿtiqādāt.",
+ "supported_by": [
+  "EV-0509",
+  "EV-0510",
+  "EV-0511",
+  "EV-0512"
+ ],
+ "claims": [
+  "CL-0224",
+  "CL-0223",
+  "CL-0215",
+  "CL-0210"
+ ]
+}

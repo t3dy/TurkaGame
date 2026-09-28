@@ -1,0 +1,15 @@
+{
+  "id": "EV-0876",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 169,
+    "printed_page": "152",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK's footnote on the Yazdī collection as it appears in MS Sinā 316: a postscript or colophon, possibly to the whole collection, attributes it to Qivām al-Dīn Yazdī as author and compiler and gives a completion date of 5 Rabīʿ I 849/11 June 1445, well beyond Qivām al-Dīn's death; that copy was made on 7 Shaʿbān 878/28 December 1473.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.169",
+  "refers_to_primary": "Munshaʾāt-i Yazdī"
+}

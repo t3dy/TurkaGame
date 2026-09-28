@@ -1,0 +1,15 @@
+{
+ "id": "EV-0172",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 75,
+  "printed_page": "58",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Muḥammad Ṭūsī, in a treatise written for Bāysunghur, refers to a majlis-i tafaḥḥuṣ u dīvān-i tajassus responsible for interrogating Hurufis brought to trial (R. Majmaʿ al-Tahānī, 30); Melvin-Koushki says this was presumably the same body that conducted Ibn Turka's three trials.",
+ "evidence_kind": "chronicle",
+ "read_by": "R1 opened pdf p.75",
+ "refers_to_primary": "Muḥammad Ṭūsī, R. Majmaʿ al-Tahānī u Maḥżar al-Amānī, 30"
+}

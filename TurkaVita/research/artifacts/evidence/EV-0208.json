@@ -1,0 +1,15 @@
+{
+ "id": "EV-0208",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 76,
+  "printed_page": "59",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reads the charge of ṣūfīgarī as hardly problematic on its face but ‘no doubt meant’ to cast the accused as sympathising with the more extremist, subversive and utopian Sufi movements of the period, particularly the Ḥurūfiyya.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "the charge of ṣūfīgarī",
+ "read_by": "R2a opened pdf p.76"
+}

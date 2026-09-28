@@ -1,0 +1,21 @@
+{
+ "id": "CL-0317",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Whether Sharḥ Ḥadīth ʿUlwī is a distinct work is undetermined: Melvin-Koushki could not consult the sole listed copy (MS 8184, Mashhad) and says it may be identical to one of the three preceding brief works (nos. 32-34).",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0641"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.132, no. 35",
+   "shaping_risk": "medium",
+   "note": "he did not see the manuscript"
+  }
+ ]
+}

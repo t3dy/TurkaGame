@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0002",
+ "type": "event",
+ "status": "draft",
+ "actor": "Temür",
+ "date": {
+  "start": "1369",
+  "end": "1369",
+  "hijri": "770",
+  "basis": "Timeline A.1 (from Manz), pdf p.51.",
+  "date_kind": "context"
+ },
+ "place": "Samarkand",
+ "event_type": "political",
+ "description": "Temür takes Samarkand and makes it his capital.",
+ "claims": [
+  "CL-0017"
+ ],
+ "fixed_point": false
+}

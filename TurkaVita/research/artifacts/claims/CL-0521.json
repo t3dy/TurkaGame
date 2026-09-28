@@ -1,0 +1,20 @@
+{
+  "id": "CL-0521",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "On the Hour, Ibn Turka says level seven is peculiar to the present time; earlier thinkers spoke of the return in general terms but could not construe the Judgment, the Balance, the weighing of deeds and the Pool, which are ʿAlī's sole preserve, nor find the method of extracting meaning from letters without human effort; jafr supplies the details.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1045"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.479",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0031",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1422",
+  "end": "1422",
+  "hijri": "825",
+  "basis": "Timeline A.1, pdf p.52.",
+  "date_kind": "colophon"
+ },
+ "place": "Herat",
+ "event_type": "work",
+ "description": "Ibn Turka writes the R. Asrār al-Ṣalāt in Herat.",
+ "claims": [
+  "CL-0095"
+ ],
+ "fixed_point": false
+}

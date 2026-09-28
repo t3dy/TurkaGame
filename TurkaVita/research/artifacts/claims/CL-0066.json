@@ -1,0 +1,30 @@
+{
+ "id": "CL-0066",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka lived in Yazd ca. 825-29/1422-26, years MK calls relatively uneventful and productive, in which he produced many lettrist works and revised and expanded the K. al-Mafāḥiṣ.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0142",
+  "EV-0034",
+  "EV-0035"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "colophons and audition notes of MS Majlis 10196 and related manuscripts, as summarised in MK's timeline (fn. 1)",
+   "where": "pdf p.51",
+   "shaping_risk": "medium",
+   "note": "a colophon date may record copying, not composition; the timeline does not say which entries rest on colophons"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.70",
+   "shaping_risk": "low",
+   "note": "the list of works is MK's summary; dates of individual works rest on the colophons MK cites"
+  }
+ ],
+ "domain": "biographical"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-0818",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 155,
+    "printed_page": "138",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 3, to Shaykh ʿAlāʾ al-Dīn ʿAlī [Chishtī]: a letter of greeting proper to a notable Sufi, referring to khanaqah life and dhikr, ending with greetings to one Mawlānā Shams al-Dīn Muḥammad (presumably Shams al-Dīn Muḥammad b. Saʿd al-Dīn Taftāzānī, shaykh al-islām of Herat) (TMN/MS pp. 1-2). MK notes that Shāhrukh appointed ʿAlāʾ al-Dīn ʿAlī Chishtī administrator of his madrasa-khanaqah complex in Herat, completed 813/1410.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.155",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 3"
+}

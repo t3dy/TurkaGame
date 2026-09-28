@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0012",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1405",
+  "end": "1405",
+  "hijri": "808",
+  "basis": "Timeline A.1, pdf p.51; dating basis not specified entry by entry.",
+  "date_kind": "colophon"
+ },
+ "place": "abroad",
+ "event_type": "work",
+ "description": "Ibn Turka writes the R. Munāẓarāt-i Khams.",
+ "claims": [
+  "CL-0092"
+ ],
+ "fixed_point": false
+}

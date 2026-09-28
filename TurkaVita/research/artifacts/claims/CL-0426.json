@@ -1,0 +1,29 @@
+{
+  "id": "CL-0426",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "What Ibn Turka gave Bāysunghur: the R. Suʾl al-Mulūk, a broader overview of lettrism than his other lettrist treatises, with a closing prediction that the Shahrukhid state would last to the end of the 9th century; and readiness to have his work judged before the prince's scholars.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0894",
+    "EV-0896",
+    "EV-0835"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.328",
+      "shaping_risk": "medium"
+    },
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Bāysunghur",
+      "where": "Munshaʾāt-i Turka letter 17",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    }
+  ],
+  "domain": "political"
+}

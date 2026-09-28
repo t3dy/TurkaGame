@@ -1,0 +1,15 @@
+{
+  "id": "EV-0828",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 157,
+    "printed_page": "140",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 12, to Vazīr Ghiyās al-Dīn Ḥāfiẓ Rāzī (ca. 816/1413, Isfahan?), Iskandar's chief vizier: he appreciates the vizier's regard for religious leaders and scholars, uses an epithet MK reads as showing esoteric interests, and recommends the young learned Mawlānā Sharaf al-Dīn Yaʿqūb to his service as qadi (presumably in Isfahan), since Ibn Turka is moving his family to Shiraz; he asks the vizier's help (TMN/MS pp. 7-8). Per MK's footnote, Ḥāfiẓ Rāzī (d. 825/1422), based in Yazd, was later charged by Shāhrukh with transporting the Yazd-made kiswa to the Hijaz.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.157",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 12"
+}

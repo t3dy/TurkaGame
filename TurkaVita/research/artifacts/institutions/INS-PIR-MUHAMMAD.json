@@ -1,0 +1,16 @@
+{
+ "id": "INS-PIR-MUHAMMAD",
+ "type": "institution",
+ "status": "draft",
+ "name": "Pīr-Muḥammad b. ʿUmar-Shaykh",
+ "ruler": "Pīr-Muḥammad, Temür's grandson",
+ "seat": "Shiraz",
+ "tenure": "c. 1408–1409",
+ "role": "patron",
+ "summary": "Governor of Fars who summons Ibn Turka from a quiet teaching life in Isfahan and makes him a member of his court; murdered in 1409.",
+ "supported_by": [
+  "EV-0015",
+  "EV-0016",
+  "EV-0132"
+ ]
+}

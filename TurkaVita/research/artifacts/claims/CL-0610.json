@@ -1,0 +1,28 @@
+{
+ "id": "CL-0610",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The two Niʿmatullahi accounts do not agree in detail: Kirmānī says the two went to Syria at Niʿmat Allāh's direction to become Akhlāṭī's disciples and omits the companions and the sealed box; the Savāniḥ has Niʿmat Allāh, Qāsim-i Anvār, Ibn Turka, Yazdī and Pīr Tāj Gīl arriving together at Akhlāṭī's Nile house.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1201",
+  "EV-1205",
+  "EV-1206"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Kirmānī and Ṣunʿ Allāh compared by MK",
+   "where": "pdf pp. 242-244",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.244",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

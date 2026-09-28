@@ -1,0 +1,15 @@
+{
+ "id": "EV-0664",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 137,
+  "printed_page": "120",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Suʾl al-Mulūk is unpublished; Melvin-Koushki gives an edition of it in Part 2, §T.4 of the dissertation.",
+ "evidence_kind": "reception",
+ "read_by": "R4 opened pdf p.137",
+ "refers_to_primary": "Suʾl al-Mulūk, edition"
+}

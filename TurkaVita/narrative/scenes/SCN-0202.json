@@ -1,0 +1,96 @@
+{
+ "id": "SCN-0202",
+ "type": "scene",
+ "status": "draft",
+ "act": "courts",
+ "title": "Shiraz and Isfahan, 1409-14: the second prince",
+ "dramatic_question": "Pīr-Muḥammad is dead and his brother Iskandar Mīrzā holds Fars. He wants you at his court too. How much of what he offers do you take?",
+ "situation": {
+  "when": "812-17/1409-14 (Melvin-Koushki's own dates for this court disagree; see the first item below)",
+  "where": "Shiraz, then Isfahan",
+  "based_on": [
+   "CL-0053",
+   "CL-0054",
+   "CL-0466",
+   "CL-0719",
+   "CL-0059"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Iskandar Mīrzā took his brother's place in Shiraz and soon afterwards set up a brilliant court in Isfahan. Melvin-Koushki's timeline is not consistent about when: one line has you a member of Iskandar's court in Isfahan from 812-15/1409-12, another has Iskandar taking Isfahan and founding that court only in 815-17/1412-14.",
+   "claim": "CL-0053"
+  },
+  {
+   "text": "Iskandar too made you a member of his court and gave you similar honours. This comes from your second apology, written to Bāysunghur while your own case was unresolved; Melvin-Koushki reports it.",
+   "claim": "CL-0054"
+  },
+  {
+   "text": "Melvin-Koushki says the Timurid elite, and in particular Iskandar and later Bāysunghur, showed obvious interest in your lettrist doctrine.",
+   "claim": "CL-0466"
+  }
+ ],
+ "prose": [
+  "You served one grandson of Temür; now you serve his brother. Iskandar Mīrzā takes Pīr-Muḥammad's place at Shiraz and, soon after, builds a court at Isfahan that Melvin-Koushki calls brilliant.",
+  "Melvin-Koushki reads Iskandar as an overt Shiʿi, or at least a devoted lover of the Imams, with a pronounced interest in lettrism (following Aubin). That is a scholar's reading of Iskandar's patronage, not something you are recorded saying. It leaves open who led whom: his later papers do not agree on whether Iskandar took up lettrism at your instance or commissioned you.",
+  "The record says you were given honours. It does not say which. Melvin-Koushki presumes a teaching post and a judgeship and puts a question mark beside it in his own timeline."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Become a member of Iskandar's court and accept the honours he gives, as you did under his brother.",
+   "strategy": "join_iskandar_court",
+   "epistemic_label": "documented",
+   "historical": true,
+   "based_on": [
+    "CL-0054"
+   ],
+   "requires": {},
+   "effects": {
+    "court.iskandar": 1,
+    "press.exposure": 1,
+    "score.biography": 2
+   },
+   "feedback": "This is what your second apology says, as Melvin-Koushki reports it: Iskandar made you a member of his court with similar honours. Note whose word it is: a plea to Bāysunghur in 1431-32, so it shows what you told him, not everything that happened. Melvin-Koushki thinks it not unlikely that this attachment was later seen as a liability (his own causal reading, not a fact in the sources); that is why your exposure rises."
+  },
+  {
+   "id": "B",
+   "label": "Take the offices Melvin-Koushki presumes, a teaching post and a judgeship, and take your seat among the astronomers, poets and historians the prince gathers.",
+   "strategy": "take_offices_and_circle",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0055",
+    "CL-0056"
+   ],
+   "requires": {},
+   "effects": {
+    "court.iskandar": 2,
+    "press.livelihood": 1,
+    "press.exposure": 2,
+    "score.biography": 1
+   },
+   "feedback": "This is a scholar's proposal, not a record. The post and judgeship are 'presumably' Melvin-Koushki's, with a '(?)' in his timeline (CL-0055). That you met the astronomers Ghiyās al-Dīn and Maḥmūd Kāshī, the poets Busḥāq Aṭʿima and Mīr Ḥaydar and the historian Muʿīn al-Dīn Naṭanzī is 'would have', from Soucek (CL-0056). The game lets you take it and charges you for it in exposure; it does not treat it as fact."
+  },
+  {
+   "id": "C",
+   "label": "Decline the honours and keep to your own teaching outside Iskandar's court.",
+   "strategy": "stay_outside_court",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0410"
+   ],
+   "requires": {},
+   "effects": {
+    "press.livelihood": -1,
+    "score.biography": -1
+   },
+   "feedback": "The sources put you inside this court, and Melvin-Koushki reads Iskandar as your patron in Shiraz and Isfahan until Shāhrukh's campaign of 817/1414 (CL-0410, from your letters). Nobody records you refusing him. The game returns you to the record."
+  }
+ ],
+ "next": "SCN-0203",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

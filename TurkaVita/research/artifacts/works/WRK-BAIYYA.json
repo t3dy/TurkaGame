@@ -1,0 +1,30 @@
+{
+ "id": "WRK-BAIYYA",
+ "type": "work",
+ "status": "draft",
+ "title": "R. al-Bāʾiyya ('On the B')",
+ "transliterated_title": "Risāla al-Bāʾiyya",
+ "language": "Arabic",
+ "genre": "short lettrist treatise",
+ "theme": "lettrism",
+ "date": {
+  "ce": "before 1425-07-30",
+  "hijri": "before 14 Ramaḍān 828",
+  "basis": "MK: 'completed before' the date of the Majlis 10196 copy (item /13, ff. 122b-24a); a copying date and only a terminus ad quem; not asterisked."
+ },
+ "date_kind": "transcription",
+ "addressee": "An unnamed postulant (murīd), who asked why the bāʾ is foremost among the letters",
+ "occasion": "A postulant's question about the precedence of the bāʾ.",
+ "manuscript": "2 copies listed: MS Majlis 10196/13 ff. 122b-24a (14 Ramaḍān 828/30 July 1425); Sipahsālār MS 2930/1 (4 Ṣafar 845/1441).",
+ "majlis_folios": "ff. 122b-24a",
+ "edited": true,
+ "summary": "A short lettrist treatise answering a postulant's question why the bāʾ is foremost in precedence among the letters; MK includes an edition in Part 2 (§T.5).",
+ "supported_by": [
+  "EV-0437",
+  "EV-0438",
+  "EV-0439"
+ ],
+ "claims": [
+  "CL-0210"
+ ]
+}

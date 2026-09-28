@@ -1,0 +1,15 @@
+{
+ "id": "EV-0477",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 112,
+  "printed_page": "95",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Mabdaʾ u Maʿād (variant title ʿAyn al-Ḥikma) consists of an introduction on the divisions of the human type and two chapters (origin and return as formulated by exoteric theoreticians, and by Sufis), with an epilogue; it is unpublished.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Mabdaʾ u Maʿād",
+ "read_by": "R3 opened pdf p.112"
+}

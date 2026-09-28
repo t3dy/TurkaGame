@@ -1,0 +1,27 @@
+{
+ "id": "CL-0326",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Suʾl al-Mulūk was written at the request of Muʿizz al-Dawla Bāysunghur (Bāysunghur b. Shāhrukh, in Melvin-Koushki's timeline); the entry does not specify where in the text or manuscript the request is stated.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0662"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka or the text's own statement of the request, as reported by MK",
+   "where": "Suʾl al-Mulūk (locus not given)",
+   "shaping_risk": "medium",
+   "note": "a text written for a prince and patron"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.136, no. 40",
+   "shaping_risk": "low"
+  }
+ ]
+}

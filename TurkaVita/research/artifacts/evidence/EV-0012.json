@@ -1,0 +1,14 @@
+{
+ "id": "EV-0012",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 51,
+  "printed_page": "34",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Timeline A.1: Temür dies at Utrar in 807/1405.",
+ "evidence_kind": "context",
+ "read_by": "R1 opened pdf p.51"
+}

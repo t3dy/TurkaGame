@@ -1,0 +1,36 @@
+{
+ "id": "EVT-0006",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1393",
+  "end": "1408",
+  "hijri": "795-810",
+  "basis": "Timeline A.1 marks both dates 'c.'; pdf p.51.",
+  "date_kind": "conjectured"
+ },
+ "place": "Cairo",
+ "event_type": "study",
+ "description": "Ibn Turka studies in Cairo under Bulqīnī, becomes a disciple of Akhlāṭī at Barqūq's court, and attends Mamluk majlises.",
+ "claims": [
+  "CL-0026",
+  "CL-0027",
+  "CL-0028",
+  "CL-0031",
+  "CL-0032",
+  "CL-0033",
+  "CL-0035",
+  "CL-0036",
+  "CL-0037",
+  "CL-0038",
+  "CL-0039",
+  "CL-0040",
+  "CL-0041",
+  "CL-0042",
+  "CL-0049",
+  "CL-0050",
+  "CL-0048"
+ ],
+ "fixed_point": false
+}

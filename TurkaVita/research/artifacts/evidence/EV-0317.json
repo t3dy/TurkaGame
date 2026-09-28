@@ -1,0 +1,15 @@
+{
+ "id": "EV-0317",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 85,
+  "printed_page": "68",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that Nafsat I closes its account of Pārsā's discourse because most people in the realm believe in his sanctity and accept his teachings.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I, pp.169-93 (per MK fn.120)",
+ "read_by": "R2a opened pdf p.85"
+}

@@ -1,0 +1,24 @@
+{
+ "id": "CL-0816",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki holds that the Mafahis is the centrepiece of Ibn Turka's oeuvre and the basis of his fame in the Timurid and Safavid periods; the evidence he adduces on the page is the Afandi and Khwandamir notices and the early copy.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1650",
+  "EV-1655",
+  "EV-1657",
+  "EV-1656"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.26",
+   "shaping_risk": "medium",
+   "note": "MK's own interpretation, offered in support of his thesis that Ibn Turka was an occult philosopher."
+  }
+ ],
+ "domain": "textual"
+}

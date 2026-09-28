@@ -1,0 +1,27 @@
+{
+ "id": "CL-0714",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Occult Court states as fact that Qāsim-i Anvār was a companion of Ibn Turka in Cairo; the dissertation reports the Cairo visit with Niʿmat Allāh Valī and Qāsim-i Anvār only as what Niʿmatullāhi hagiography records, while confirming warm relations from the Munshaʾāt.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1462",
+  "EV-1440"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Niʿmatullāhi hagiographical sources",
+   "where": "dissertation pdf 68",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Occult Court",
+   "where": "pdf 8",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "biographical"
+}

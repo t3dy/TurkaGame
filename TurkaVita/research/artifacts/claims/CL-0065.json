@@ -1,0 +1,34 @@
+{
+ "id": "CL-0065",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Despite age and frail health Ibn Turka travelled to Herat, gained Shāhrukh's favour and temporarily silenced his enemies; Shāhrukh offered to restore him as qadi of Isfahan, but he chose Yazd to escape intriguers (Yazd being the most stable and politically quiescent city of Fars); the timeline says he was given the judgeship of Yazd.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0139",
+  "EV-0140",
+  "EV-0141",
+  "EV-0031"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "first Herat hearing and the move to Yazd"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I (829/1426), addressed to Shāhrukh",
+   "where": "Nafsat al-Maṣdūr I, 171-72",
+   "shaping_risk": "high",
+   "note": "'age and frail health' and the reason for choosing Yazd are his own"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.70, note 78",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "CL-0725",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Timurid-Mughal chapter describes Shāhrukh as a conservative, Sunnizing ruler with little interest in science, who preferred Seljuq-style sultanship to occult philosopher-kingship and would not have accepted the thesis of Ulugh Beg's zīj preface. The dissertation's Shāhrukh is the ruler who twice granted Ibn Turka favour and then jailed him. The Timurid-Mughal chapter does not discuss Shāhrukh's dealings with Ibn Turka other than the persecution of lettrists.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1494",
+  "EV-1493",
+  "EV-1497",
+  "EV-1496"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Timurid-Mughal Philosopher-Kings",
+   "where": "pdf 8, 15-17",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

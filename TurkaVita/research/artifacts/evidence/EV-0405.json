@@ -1,0 +1,15 @@
+{
+ "id": "EV-0405",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 96,
+  "printed_page": "79",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki observes that in the first half of MS Majlis 10196 the texts stand in \"almost perfect chronological order\" and infers from this that their dates need not refer to composition but only to transcription.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "MS Majlis 10196 first half",
+ "read_by": "R3 opened pdf p.96"
+}

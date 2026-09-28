@@ -1,0 +1,27 @@
+{
+ "id": "CL-0151",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat II differs from Nafsat I in being more autobiographical, angrier, and about scholarly fame rather than mystical theory.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0215",
+  "EV-0219"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing from exile to Bāysunghur b. Shāhrukh",
+   "where": "Nafsat al-Maṣdūr II",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.77 (printed 60)",
+   "shaping_risk": "low"
+  }
+ ]
+}

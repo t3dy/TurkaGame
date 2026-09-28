@@ -1,0 +1,30 @@
+{
+ "id": "CL-0304",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Sharḥ al-Basmala existed by 28 Shaʿbān 829 (5 July 1426); Melvin-Koushki flags the date as possibly transcription, so it is a terminus ad quem, not a composition date.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0612",
+  "EV-0613",
+  "EV-0600"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 ff. 332b-51b",
+   "shaping_risk": "medium",
+   "note": "date may be the copying"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.128, no. 28",
+   "shaping_risk": "low",
+   "note": "asterisked"
+  }
+ ]
+}

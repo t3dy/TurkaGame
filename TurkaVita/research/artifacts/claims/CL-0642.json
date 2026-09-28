@@ -1,0 +1,27 @@
+{
+ "id": "CL-0642",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Kirmānī's hagiography says Ibn Turka and Yazdī were forced to go to Herat by the plotting of certain people diseased with egotistical desires.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1203"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "ʿAbd al-Raḥmān Kirmānī, Tazkira",
+   "where": "Aubin, Majmūʿa, 70-71",
+   "shaping_risk": "high",
+   "note": "hagiographer's version of the trials; MK relays it in a footnote"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.242",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "CL-0566",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the Mafāḥiṣ and the R. Ḥurūf Ibn Turka dismisses earlier lettrist literature as stale and timeworn, and says lettrism had been nearly erased before Akhlāṭī's circle revived it.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1084",
+    "EV-1129",
+    "EV-1118"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.341, 345, 349",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

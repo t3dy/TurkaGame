@@ -1,0 +1,22 @@
+{
+ "id": "CL-0831",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki holds that the orthodoxizing ethos of the Shahrukhid state and its alarm at mystical-messianic extremism, especially the Hurufis, damaged Ibn Turka personally.",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1678",
+  "EV-1670"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.453",
+   "shaping_risk": "medium",
+   "note": "MK's own interpretation, offered in support of his thesis that Ibn Turka was an occult philosopher."
+  }
+ ],
+ "domain": "political"
+}

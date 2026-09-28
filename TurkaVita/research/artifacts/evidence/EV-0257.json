@@ -1,0 +1,15 @@
+{
+ "id": "EV-0257",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 80,
+  "printed_page": "63",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki's paraphrase, Ibn Turka says he spent 25 years studying the religious sciences under his eminent elder brother, that his family had furthered the religious sciences for two centuries, and that he studied hadith, tafsir, jurisprudence and uṣūl al-dīn.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.80"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "CL-0158",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat II tells of a khirqa-yi tabarruk received from a prominent Sufi master before travelling abroad and of finding on return that the master's disciples had abandoned the Sharīʿa; his confrontation of the master went badly.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0232",
+  "EV-0233"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing from exile to Bāysunghur b. Shāhrukh",
+   "where": "Nafsat al-Maṣdūr II",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.78 (printed 61)",
+   "shaping_risk": "low"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "id": "CL-0006",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka reports in his Tuḥfa-yi ʿAlāʾī that his family has always belonged to the Shafiʿi rite.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0063"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, R. Tuḥfa-yi ʿAlāʾī (1428, written in exile for ʿAlāʾ al-Dīn b. Bāysunghur)",
+   "where": "Tuḥfa-yi ʿAlāʾī, 147",
+   "shaping_risk": "medium",
+   "note": "written while he sought patronage"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.55",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "doctrinal"
+}

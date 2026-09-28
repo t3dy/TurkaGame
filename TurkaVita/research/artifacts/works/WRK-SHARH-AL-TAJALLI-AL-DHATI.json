@@ -1,0 +1,32 @@
+{
+ "id": "WRK-SHARH-AL-TAJALLI-AL-DHATI",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ al-Tajallī al-Dhātī",
+ "transliterated_title": "Sharḥ al-Tajallī al-Dhātī (Commentary on the Essential [Divine] Self-disclosure; variants Sharḥ Kalimāt Ibn Hūd, Taṣḥīḥ Kalām Ibn Hūd al-Maghribī)",
+ "language": "Arabic",
+ "genre": "100-line versified commentary on a saying of Ibn Hūd al-Maghribī",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "unknown",
+  "hijri": "unknown",
+  "basis": "The entry gives no date; earliest listed copy is 1093/1682 (?) and none is in MS Majlis 10196."
+ },
+ "date_kind": "unknown",
+ "place": "not stated",
+ "addressee": "not stated",
+ "occasion": "not stated",
+ "manuscript": "MS Princeton 2002/5 ff. 60a-62a (1093/1682 (?)); MS Nūrbakhsh 868/6; MS Sipahsālār 2930/7 ff. 121b-24a; MS Mishkāt 1033/5 ff. 8b-11b. None in MS Majlis 10196.",
+ "majlis_folios": "none listed",
+ "edited": false,
+ "summary": "A 100-line versified commentary on Ibn Hūd al-Maghribī's saying on the essential divine self-disclosure and the emergence of Throne and Footstool.",
+ "edition_note": "Unpublished.",
+ "supported_by": [
+  "EV-0657",
+  "EV-0658",
+  "EV-0659"
+ ],
+ "claims": [
+  "CL-0324"
+ ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "CL-0598",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Shāhrukh was declared the renewer (mujaddid) of the ninth Islamic century by Jalāl al-Dīn Qāyinī, a claim repeated by Sharaf al-Dīn Yazdī and ʿAbd al-Razzāq Samarqandī; the pages do not say Ibn Turka made this claim.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1120"
+  ],
+  "mediation": [
+    {
+      "layer": "later_chronicler",
+      "who": "Qāyinī, Yazdī and Samarqandī, as cited in Melvin-Koushki's footnote",
+      "where": "pdf p.341",
+      "shaping_risk": "medium",
+      "note": "court historiography; context for the ninth-century framing"
+    }
+  ],
+  "domain": "political"
+}

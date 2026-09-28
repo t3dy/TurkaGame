@@ -1,0 +1,29 @@
+{
+ "id": "CL-0834",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Ibn Turka's works contain Sunni-side features: a Sharh al-Nahj in the Sunni manaqib tradition, mention of the Companions and Successors even in his most esoteric works, and a call in the Mafahis to follow the way of the Sunni forebears.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1690",
+  "EV-1691"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Turka, author of Sharḥ al-Nahj; K. al-Mafaḥiṣ",
+   "where": "Sharḥ al-Nahj; K. al-Mafaḥiṣ",
+   "shaping_risk": "low",
+   "note": "A doctrinal work, not addressed to a judge; the duress rule counts a work as evidence of what he held."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.91-92",
+   "shaping_risk": "medium",
+   "note": "We have the work only as MK summarises or translates it; most of the lettrist works are unedited, so MK's paraphrase cannot be checked against a printed text."
+  }
+ ],
+ "domain": "doctrinal"
+}

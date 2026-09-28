@@ -1,0 +1,15 @@
+{
+ "id": "EV-1602",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 86,
+  "printed_page": "69",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports Corbin's assertion that Ibn Turka is an openly Shiʿi thinker in terms of confessional allegiance; the note ties this to Corbin's study of the R. Shaqq-i Qamar.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.86",
+ "refers_to_primary": "Corbin, 'Typologie des spirituels' (En Islam iranien 3)"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "CL-0174",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The literature reflexively takes Ibn Turka to be Shiʿi or crypto-Shiʿi because of his emphasis on the Imams as sources of occult knowledge.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0325",
+  "EV-0321"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.86 (printed 69)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

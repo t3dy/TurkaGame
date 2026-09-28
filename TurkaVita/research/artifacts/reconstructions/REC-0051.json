@@ -1,0 +1,25 @@
+{
+ "id": "REC-0051",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Who was Ibn Turka?",
+ "proposition": "Ibn Turka was one of the first thinkers to unify the Peripatetic, ishraqi and Akbarian strands in a Shiʿi-esotericist perspective, and learned in numerical symbolism.",
+ "kind": "inferential",
+ "scholar": "John Cooper (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "Cooper leans largely on the Tamhid but, MK says, breaks ranks to acknowledge a larger project (pdf p.24), citing numerical symbolism 'incorporated into his writings' (p.25).",
+  "MK's objection: like the others it errs in focusing on the Tamhid, which he calls of secondary importance in the estimation of the author and his contemporaries, and in taking over Corbin's assumption (p.25).",
+  "Cooper is the one Western scholar in the Tamhid-centred camp who half-concedes MK's point, which is the nearest thing to common ground on these pages. MK is a partisan reporter. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0802",
+  "CL-0820",
+  "EV-1606",
+  "EV-1607",
+  "EV-1605"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0050"
+ ]
+}

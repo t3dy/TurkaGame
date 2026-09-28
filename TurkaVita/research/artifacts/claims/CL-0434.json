@@ -1,0 +1,30 @@
+{
+  "id": "CL-0434",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka wrote three letters to Amīr Yūsuf Khwāja (governor from Sultaniyya to Qom): a greeting (5), a welcome on the amir's arrival in Persian Iraq (9), and in letter 25 (ca. 829/1426?) a complaint that dīvān officials were harassing him despite his customary standing as Fars's leading man of letters, with a request for intervention.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0820",
+    "EV-0825",
+    "EV-0844"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Amīr Yūsuf Khwāja",
+      "where": "Munshaʾāt-i Turka letters 5, 9, 25",
+      "shaping_risk": "medium",
+      "note": "Written by a supplicant asking a ruler or official for clemency, relief or a stipend; framed to win the favour asked, not as a neutral report."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.159",
+      "shaping_risk": "medium",
+      "note": "Dates and place of letter 25 are queried by MK"
+    }
+  ],
+  "domain": "political"
+}

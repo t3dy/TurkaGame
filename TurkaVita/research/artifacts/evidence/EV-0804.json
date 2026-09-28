@@ -1,0 +1,15 @@
+{
+  "id": "EV-0804",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 152,
+    "printed_page": "135",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK calls MS Majlis-i Sinā 316 the most extensive early source for Ibn Turka's correspondence and for letters concerning the Turka family; it includes 12 letters from Ibn Turka that are not preserved elsewhere.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.152",
+  "refers_to_primary": "MS Majlis-i Sinā 316"
+}

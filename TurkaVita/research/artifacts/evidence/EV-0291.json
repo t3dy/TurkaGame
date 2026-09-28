@@ -1,0 +1,15 @@
+{
+ "id": "EV-0291",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 83,
+  "printed_page": "66",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, the first four of the nine hadith treat innovation; in the third Ibn Turka renders al-khulafāʾ al-rāshidūn as both ‘rightly-guiding’ and ‘rightly-guided’ (rāh-numā-yi rāh-yāfta).",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.83"
+}

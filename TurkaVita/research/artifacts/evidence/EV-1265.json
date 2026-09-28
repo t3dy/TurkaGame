@@ -1,0 +1,15 @@
+{
+ "id": "EV-1265",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 447,
+  "printed_page": "430",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In the Hurufi Khwābnāma of Naṣr Allāh Nāfajī as summarized by MK, Khwāja Ṣadr al-Dīn Turka tells Fażl Allāh a dream in which he kissed the Prophet's hand and left saliva on it; Fażl Allāh reads it as meaning Ṣadr al-Dīn planned a book harmonizing religion and philosophy and should give it up rather than risk shame before the Prophet.",
+ "evidence_kind": "hagiography",
+ "refers_to_primary": "Nāfajī, Khwābnāma (Vatican MS Persian 17 ff. 32a-33a), via MK",
+ "read_by": "R7 opened pdf p.447"
+}

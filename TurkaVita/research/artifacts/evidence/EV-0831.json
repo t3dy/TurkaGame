@@ -1,0 +1,15 @@
+{
+  "id": "EV-0831",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 157,
+    "printed_page": "140",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 15, to Sayyid Niẓām al-Dīn Aḥmad, presumably Sayyid Amīr Niẓām al-Dīn Aḥmad Ṣāʿidī (ca. 817/1414, Shiraz), almost certainly the addressee of letter 6: it accompanies an introductory treatise on the science of letters (TMN/MS pp. 10-11, TMN/D pp. 168-70).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.157",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 15"
+}

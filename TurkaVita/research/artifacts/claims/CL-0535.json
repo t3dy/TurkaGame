@@ -1,0 +1,29 @@
+{
+  "id": "CL-0535",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki dates the R. Shaqq-i Qamar to the beginning of 829/1426, the same year as Ibn Turka's second trial in Herat and his first, hyper-Sunni apology (Nafsat al-Maṣdūr I) and the R. Iʿtiqādāt.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1001",
+    "EV-1024",
+    "EV-1023"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.332",
+      "shaping_risk": "low"
+    },
+    {
+      "layer": "manuscript_colophon",
+      "who": "manuscript colophon / copying note as reported by Melvin-Koushki",
+      "where": "pdf pp.126, 479",
+      "shaping_risk": "medium",
+      "note": "copying-versus-composition uncertainty"
+    }
+  ],
+  "domain": "chronological"
+}

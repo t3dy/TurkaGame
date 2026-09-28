@@ -1,0 +1,24 @@
+{
+ "id": "CL-0016",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Almost to a man the Turkas of Isfahan were qadis, poets, philosophers and religious scholars, often given to the esoteric sciences; the qadi office was heritable in the family under Timurids and Safavids, and the family identity shifted from Shafiʿi to Shiʿi under the Safavids, a shift Melvin-Koushki calls hardly dramatic.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0083",
+  "EV-0086",
+  "EV-0087",
+  "EV-0088"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.62-63",
+   "shaping_risk": "low",
+   "note": "a synthesis over centuries of the family; Ibn Turka's own generation is only a part of it"
+  }
+ ],
+ "domain": "institutional"
+}

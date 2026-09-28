@@ -1,0 +1,33 @@
+{
+  "id": "CL-0421",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Bāysunghur b. Shāhrukh is the ruler's son with whom the letters show the closest relationship: four letters to him in the Munshaʾāt-i Turka (nos. 2, 17, 18, 19), a fifth in another MS, and the commissioning of the R. Suʾl al-Mulūk.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0811",
+    "EV-0817",
+    "EV-0835",
+    "EV-0836",
+    "EV-0837",
+    "EV-0871",
+    "EV-0894"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Bāysunghur",
+      "where": "Munshaʾāt-i Turka letters 2, 17, 18, 19",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.154",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "political"
+}

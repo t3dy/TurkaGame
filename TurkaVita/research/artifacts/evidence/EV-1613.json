@@ -1,0 +1,15 @@
+{
+ "id": "EV-1613",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 24,
+  "printed_page": "7",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that ʿAllāma Ṭabāṭabāʾī (d. 1402/1981), in al-Mīzān, celebrates Ibn Turka as a preeminent synthesizer of peripatetic philosophy and theoretical mysticism, ranking him with Fārābī and Suhravardī.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.24",
+ "refers_to_primary": "Ṭabāṭabāʾī, al-Mīzān 5/282-84"
+}

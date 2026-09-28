@@ -1,0 +1,41 @@
+{
+ "id": "WRK-TAMHID-AL-QAWAID",
+ "type": "work",
+ "status": "draft",
+ "title": "Tamhīd al-Qawāʿid (al-Tamhīd fī Sharḥ Qawāʿid al-Tawḥīd)",
+ "transliterated_title": "Tamhīd al-Qawāʿid or al-Tamhīd fī Sharḥ Qawāʿid al-Tawḥīd (Introduction to The Principles of Divine Unity; variant al-Shahīd fī Sharḥ Risālat al-Tawḥīd)",
+ "language": "Arabic",
+ "genre": "commentary on his grandfather Ṣadr al-Dīn's Qawāʿid al-Tawḥīd",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "before 25 August 1427",
+  "hijri": "before 2 Dhū l-Qaʿda 830",
+  "basis": "MS Majlis 10196 copy date and place (Shiraz), asterisked by Melvin-Koushki as possibly transcription; the timeline states completion in Shiraz in 830/1427 and the thematic list gives it with a question mark."
+ },
+ "date_kind": "transcription",
+ "place": "Shiraz (place of the Majlis copy; the timeline treats it as place of completion)",
+ "addressee": "not stated",
+ "occasion": "a commentary on his grandfather Ṣadr al-Dīn's Qawāʿid al-Tawḥīd",
+ "manuscript": "MS Majlis 10196 ff. 189b-23a (as printed); MS Sipahsālār 2930/9 ff. 141-277 (845/1441); 22 copies listed, most of the 19th century.",
+ "majlis_folios": "ff. 189b-23a (as printed; the end is presumably f. 223a, since the next work, no. 37, begins on f. 223b)",
+ "edited": true,
+ "summary": "Ibn Turka's commentary on his grandfather Ṣadr al-Dīn's treatise on absolute existence, joining peripatetic and illuminationist philosophy to Ibn ʿArabian mysticism; by far his best-known work in the modern period, and the reason for his placing between Ibn ʿArabī and Mullā Ṣadrā.",
+ "edition_note": "Ed. Ḥasan al-Ramaḍānī al-Khurasānī, Beirut 2003; ed. Jalāl al-Dīn Āshtiyānī, Tehran 1976 (repr. 1981, 2002); Javādī-Āmulī's Taḥrīr-i Tamhīd al-Qawāʿid (Persian commentary, 1993); Arabic text, so a player reads it in these editions.",
+ "supported_by": [
+  "EV-0669",
+  "EV-0670",
+  "EV-0671",
+  "EV-0672",
+  "EV-0673",
+  "EV-0674",
+  "EV-0675",
+  "EV-0676",
+  "EV-0677"
+ ],
+ "claims": [
+  "CL-0329",
+  "CL-0330",
+  "CL-0331",
+  "CL-0332"
+ ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "EV-1137",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-2DC96A9F73",
+    "witness_page": 10,
+    "short_title": "Melvin-Koushki, Prologue to Pythagorean Renaissance"
+  },
+  "content": "In the Prologue Melvin-Koushki says the calligraphy and Persian verse of the Shaykh Luṭf Allāh Mosque state explicitly that Hearing is ontologically superior and therefore epistemologically inferior to Sight; he describes the mosque as the most literal architectural incarnation of the Planet-Pearl-Peach series, despite and because of a riddling reversion to Pearl-Peach-Planet.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.10"
+}

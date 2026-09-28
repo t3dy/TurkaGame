@@ -1,0 +1,15 @@
+{
+ "id": "EV-0347",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 88,
+  "printed_page": "71",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki's footnote says Khwāja Muḥammad Pārsā's Faṣl al-Khiṭāb, despite a strongly pro-Sunni and anti-Rāfiḍī position, still gives a biography of the twelve Imams.",
+ "evidence_kind": "context",
+ "refers_to_primary": "Khwāja Muḥammad Pārsā, Faṣl al-Khiṭāb (per MK fn.136)",
+ "read_by": "R2a opened pdf p.88"
+}

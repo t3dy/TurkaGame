@@ -1,0 +1,20 @@
+{
+  "id": "CL-0462",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The R. Suʾl al-Mulūk appears, on MK's judgement, to be the only one of Ibn Turka's minor lettrist treatises with pointedly political content.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0894"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.328",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

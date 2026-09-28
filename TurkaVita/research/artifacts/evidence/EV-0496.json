@@ -1,0 +1,15 @@
+{
+ "id": "EV-0496",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 118,
+  "printed_page": "101",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The R. al-Muḥammadiyya treats the properties of the name Muḥammad in a lettrist manner, dealing in particular with how the rulings of the Muḥammadan law were derived without reference to any of the intellectual sciences; the K. al-Mafāḥiṣ is referenced at the end of its preface; it is unpublished.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, R. al-Muḥammadiyya",
+ "read_by": "R3 opened pdf p.118"
+}

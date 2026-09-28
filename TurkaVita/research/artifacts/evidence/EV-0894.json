@@ -1,0 +1,15 @@
+{
+  "id": "EV-0894",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 328,
+    "printed_page": "311",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK writes that among his minor lettrist treatises Ibn Turka's R. Suʾl al-Mulūk appears to be the only one with pointedly political content, fitting its subject and addressee: it was written in or before 829/1426 at Bāysunghur b. Shāhrukh's request as an introductory work on both the practical-magical (e.g., alchemical and talismanic) and the theoretical aspects of lettrism, giving a broader overview than his other lettrist treatises.",
+  "evidence_kind": "work",
+  "read_by": "R5 opened pdf p.328",
+  "refers_to_primary": "R. Suʾl al-Mulūk"
+}

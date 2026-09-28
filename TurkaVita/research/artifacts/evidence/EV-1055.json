@@ -1,0 +1,15 @@
+{
+  "id": "EV-1055",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 179,
+    "printed_page": "162",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "In the R. Anjām Ibn Turka presents lettrism as the key to unifying all human knowledge of the cosmos. Philosophy deals only with universals, and disciplines such as historiography, astronomy or alchemy are enmeshed in particulars; the objective of lettrism is 'investigation into everything in the cosmos', both universals and particulars, and their categorization (tarattub) by means of the science.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Anjām",
+  "read_by": "R6 opened pdf p.179"
+}

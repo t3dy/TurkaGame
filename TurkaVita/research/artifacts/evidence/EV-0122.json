@@ -1,0 +1,15 @@
+{
+ "id": "EV-0122",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 67,
+  "printed_page": "50",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Munshaʾāt-i Yazdī comprises two letters from Sharaf al-Dīn to Ibn Turka, a transcription of a few admonitory lines addressed by Ibn Turka to a majlis, and several items about Ibn Turka's children; the Munshaʾāt-i Turka and Munshaʾāt-i Yazdī both testify to the closeness of the two men.",
+ "evidence_kind": "letter",
+ "read_by": "R1 opened pdf p.67",
+ "refers_to_primary": "Munshaʾāt-i Yazdī (via MK §2.1.3.2)"
+}

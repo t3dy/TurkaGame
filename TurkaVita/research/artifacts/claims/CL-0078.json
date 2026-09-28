@@ -1,0 +1,26 @@
+{
+ "id": "CL-0078",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "After the attempt Shāhrukh arrested prominent figures with suspected Hurufi ties, among them Qāsim-i Anvār, Maʿrūf-i Khaṭṭāt and Ibn Turka.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0157",
+  "EV-0039"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "arrests after the attempt"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.73",
+   "shaping_risk": "low",
+   "note": "the basis for suspecting each man is not given"
+  }
+ ],
+ "domain": "political"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1434",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 136,
+  "short_title": "Melvin-Koushki, dissertation (2012)",
+  "printed_page": "119"
+ },
+ "content": "Suʾl al-Mulūk was written at the request of Muʿizz al-Dawla Bāysunghur and completed before 7 Rajab 829/15 May 1426 (asterisked date).",
+ "evidence_kind": "colophon",
+ "read_by": "R8 opened pdf p.136",
+ "refers_to_primary": "R. Suʾl al-Mulūk"
+}

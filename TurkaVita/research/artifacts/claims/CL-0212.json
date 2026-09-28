@@ -1,0 +1,23 @@
+{
+ "id": "CL-0212",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Two works of this range have Majlis 10196 copy dates after Ibn Turka's death on 14 Dhū l-Ḥijja 835/12 August 1432: the Nafsat al-Maṣdūr II (838/1435) and, partially and with a question mark, the Iṣbāḥ al-Anwār (841/1438); Melvin-Koushki says only that perhaps no more than two works in the second half were copied after his death and does not name them.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0421",
+  "EV-0513",
+  "EV-0454",
+  "EV-0408"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.79, 91, 106",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

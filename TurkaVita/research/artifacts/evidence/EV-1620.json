@@ -1,0 +1,15 @@
+{
+ "id": "EV-1620",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 24,
+  "printed_page": "7",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that ʿAbd al-Ḥusayn Zarrīnkūb (Dunbāla-yi Justujū dar Taṣavvuf-i Īrān, 142) takes issue with the \"Spinoza of Iran\" title as misrepresentative of Ibn Turka's \"more mystical and lettrist concerns\".",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.24",
+ "refers_to_primary": "Zarrīnkūb, Dunbāla-yi Justujū, 142"
+}

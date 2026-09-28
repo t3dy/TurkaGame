@@ -1,0 +1,23 @@
+{
+ "id": "CL-0306",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki's timeline says copies of Sharḥ al-Basmala were sent to both Ulugh Beg and Qāżīzāda Rūmī, whereas the work entry documents a copy sent to Qāżīzāda and only a marginal dedication to Ulugh Beg; the two accounts are not the same claim and the dissertation does not reconcile them on these pages.",
+ "epistemic_type": "contested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0618",
+  "EV-0614",
+  "EV-0615"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.52, 128",
+   "shaping_risk": "low",
+   "note": "internal discrepancy"
+  }
+ ]
+}

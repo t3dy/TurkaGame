@@ -1,0 +1,21 @@
+{
+ "id": "REC-0005",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "What was Ibn Turka's personal confessional outlook?",
+ "proposition": "Akram Jūdī-Niʿmatī concludes that Ibn Turka was effectively a crypto-Shiʿi in personal outlook, though not necessarily in a sectarian sense.",
+ "kind": "inferential",
+ "scholar": "Akram Jūdī-Niʿmatī, ed. Sharḥ-i Naẓm al-Durr (as reported by Melvin-Koushki)",
+ "reasoning": [
+  "Reported as weighing all the evidence in his writings.",
+  "The qualification ‘not necessarily in the sectarian sense’ moves it toward MK's view."
+ ],
+ "observed_facts": [
+  "EV-0329",
+  "EV-0328"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0006"
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0013",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1408",
+  "end": "1408",
+  "hijri": "810",
+  "basis": "Timeline A.1 marks 'c.'; pdf p.51; §1.2 says 'perhaps two or three years' after 807/1405 (pdf p.69).",
+  "date_kind": "conjectured"
+ },
+ "place": "Isfahan",
+ "event_type": "return",
+ "description": "Ibn Turka returns to Isfahan and takes up teaching, intending a retired life of contemplation.",
+ "claims": [
+  "CL-0051",
+  "CL-0052"
+ ],
+ "fixed_point": false
+}

@@ -1,0 +1,26 @@
+{
+ "id": "CL-0155",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat II explains the attacks as envy: knowledge treated as a means of comfortable living, peers discrediting a prominent man before rulers, no prominent person being safe.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0223"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing from exile to Bāysunghur b. Shāhrukh",
+   "where": "Nafsat al-Maṣdūr II",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.78 (printed 61)",
+   "shaping_risk": "low"
+  }
+ ]
+}

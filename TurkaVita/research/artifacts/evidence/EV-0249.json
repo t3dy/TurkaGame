@@ -1,0 +1,15 @@
+{
+ "id": "EV-0249",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 80,
+  "printed_page": "63",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki notes that Ibn Turka's account of his studies omits any reference to his formative discipleship to Sayyid Ḥusayn Akhlāṭī in Cairo, ‘the first indication of many’ that the apologies are not meant to reflect his own intellectual project but the predilections and anxieties of Shāhrukh.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.80"
+}

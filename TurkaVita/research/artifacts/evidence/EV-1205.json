@@ -1,0 +1,15 @@
+{
+ "id": "EV-1205",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 243,
+  "printed_page": "226",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Savāniḥ passage presents Niʿmat Allāh, Qāsim-i Anvār, Ṣāʾin al-Dīn Turka, Sharaf al-Dīn Yazdī and a shaykh called Pīr Tāj Gīl as travelling companions who came to Sayyid Ḥusayn Akhlāṭī's house on the bank of the Nile; Niʿmat Allāh moved them out of the guesthouse and its roof then collapsed. MK observes that this account links Niʿmat Allāh to Akhlāṭī more strongly than Kirmānī's does, and (via Aubin) that it names Mīr Muḥammad Āftāb as Niʿmat Allāh's master, whose own master was Akhlāṭī.",
+ "evidence_kind": "hagiography",
+ "refers_to_primary": "Ṣunʿ Allāh, Savāniḥ al-Ayyām, as quoted (Mufīd Mustawfī 3/16-17; Aubin, Majmūʿa, 156-57)",
+ "read_by": "R7 opened pdf p.243"
+}

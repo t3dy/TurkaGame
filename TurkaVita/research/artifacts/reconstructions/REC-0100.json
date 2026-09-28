@@ -1,0 +1,21 @@
+{
+  "id": "REC-0100",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "What is the plain reading of the hierarchy's seventh level?",
+  "proposition": "The seventh level is simply reserved for ʿAlī and the Imams, out of deference: Ibn Turka and the lettrists preside over the other five currents from level six but cannot reach level seven.",
+  "kind": "inferential",
+  "scholar": "Melvin-Koushki (reading he sets aside)",
+  "reasoning": [
+    "Melvin-Koushki states this as the first, apparent reading of the R. Shaqq-i Qamar (pdf p.333) before arguing that the seventh level is not entirely what it seems.",
+    "It rests on the treatise's list ending with 'ʿAlī and the line of the Imams' and on the translation's bracketed remark that the dignity belongs to the Imams alone.",
+    "Melvin-Koushki calls the resulting schema straightforward and unremarkable apart from its Shiʿi and lettrist slant, a map of the relative importance of six currents from Ibn Turka's own position."
+  ],
+  "observed_facts": [
+    "EV-1004",
+    "EV-1003",
+    "EV-1036",
+    "CL-0501"
+  ],
+  "confidence": "medium"
+}

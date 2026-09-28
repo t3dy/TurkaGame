@@ -1,0 +1,25 @@
+{
+ "id": "CL-0057",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In 817/1414 Shāhrukh marched against Iskandar in Iraq; Iskandar fled but was captured, blinded and later executed, Shāhrukh installed his own son Ibrāhīm Sulṭān, and Fars and Arab Iraq were added to Shāhrukh's domains.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0024",
+  "EV-0136"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Iskandar's revolt and its suppression"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.52 and p.69",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

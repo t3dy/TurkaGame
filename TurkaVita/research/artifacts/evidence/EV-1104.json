@@ -1,0 +1,15 @@
+{
+  "id": "EV-1104",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 354,
+    "printed_page": "337",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Ibn Turka structures each section of the Mafāḥiṣ as a series of inquiries (faḥṣ): the introduction has seven; section 1, on the mental form of the letters, 36; section 2, on the written form, 21; section 3, on the spoken form, 18; section 4, on the letters in themselves and their three forms in the context of language and literature, 74.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.354"
+}

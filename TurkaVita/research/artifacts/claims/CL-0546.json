@@ -1,0 +1,22 @@
+{
+  "id": "CL-0546",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the Mafāḥiṣ Ibn Turka ranks four levels of light (lamp or sun, the light of vision, the intellect, the letter) and holds that reason, dependent on conflicting faculties, is rarely free of doubt, while the letter alone reveals things absolutely and is unsusceptible to error.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1111",
+    "EV-1112",
+    "EV-1113"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.358",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

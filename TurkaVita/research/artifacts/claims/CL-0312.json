@@ -1,0 +1,22 @@
+{
+ "id": "CL-0312",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The attribution of Sharḥ-i Gulshan-i Rāz to Ibn Turka is uncertain: it rests on one late defective manuscript with no author's name, on context and content, and on Bahār's appending it to MS Majlis 10196.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0628",
+  "EV-0629"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.130, no. 31",
+   "shaping_risk": "medium",
+   "note": "MK's own weighing; his wording is that it is not certain but likely"
+  }
+ ]
+}

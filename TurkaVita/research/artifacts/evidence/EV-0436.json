@@ -1,0 +1,15 @@
+{
+ "id": "EV-0436",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 103,
+  "printed_page": "86",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Aṭvār-i Salāsa explicates three types of Sufi (the muḥaqqiqān, the abrār and the akhyār): an introduction and three aṣls, on the level of those who achieve taḥqīq, on the exposition of realities in the manner of Ibn ʿArabī, and on the formation of the human type; the number of early MSS suggests its popularity in the 9th/15th century.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Aṭvār-i Salāsa",
+ "read_by": "R3 opened pdf p.103"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0444",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 105,
+  "printed_page": "88",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 154b-57b carries the R. Ḥurūf, copied in Yazd on 14 Dhū l-Qaʿda 828/27 September 1425 (citing Ḥāʾirī, Majlis, 32/239); seventeen further copies are listed, the earliest dated being Ankara MS 15/5 (833/1429).",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, R. Ḥurūf",
+ "read_by": "R3 opened pdf p.105"
+}

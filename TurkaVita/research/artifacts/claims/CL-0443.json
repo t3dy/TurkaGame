@@ -1,0 +1,24 @@
+{
+  "id": "CL-0443",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The Kārkiyā addressed in the exile letters are Sayyid Aḥmad (Ranikuh) and Sayyid Nāṣir (Lahijan), not Sayyid Riżā Kārkiyā, who died in 829/1426 before Ibn Turka's stay; the other-MS letters labelled as from and to Riżā Kiyā are therefore misidentified, and the initial letter from the amir to Ibn Turka survives only there.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0849",
+    "EV-0853",
+    "EV-0871",
+    "EV-0872"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.164",
+      "shaping_risk": "medium",
+      "note": "MK's inference from Riżā Kārkiyā's death date"
+    }
+  ],
+  "domain": "chronological"
+}

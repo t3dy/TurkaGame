@@ -1,0 +1,22 @@
+{
+  "id": "CL-0549",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki concludes that Ibn Turka ranked theoretical lettrism above letter magic, inverting the relative importance that earlier classifications gave them.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1073",
+    "EV-1062",
+    "EV-1061"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.234",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

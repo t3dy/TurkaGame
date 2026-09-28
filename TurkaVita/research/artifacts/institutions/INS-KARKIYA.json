@@ -1,0 +1,17 @@
+{
+ "id": "INS-KARKIYA",
+ "type": "institution",
+ "status": "draft",
+ "name": "The Kārkiyā sayyids of Gilan",
+ "ruler": "Sayyids Aḥmad and Nāṣir Kārkiyā",
+ "seat": "Ranikuh and Lahijan, Gilan",
+ "tenure": "letters c. 1428–29",
+ "role": "patron",
+ "summary": "The other exile court he tried: letters 29–32 congratulate the amirs on conquests and praise their patronage of scholars and Sufis.",
+ "supported_by": [
+  "EV-0041",
+  "EV-0161",
+  "EV-0849",
+  "EV-0851"
+ ]
+}

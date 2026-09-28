@@ -1,0 +1,21 @@
+{
+ "id": "CL-0667",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Shāhrukh appears to have been happy to let the false Hurufi association stand and used the 830/1427 attempt as pretext to remove Ibn Turka and others (MK: 'appears to have been more than happy').",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1285",
+  "EV-1278"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.256",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "political"
+}

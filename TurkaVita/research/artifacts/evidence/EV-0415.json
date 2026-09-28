@@ -1,0 +1,15 @@
+{
+ "id": "EV-0415",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 97,
+  "printed_page": "80",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says many works in MS Majlis 10196 bear colophons that occasionally give both the date of composition and the date of copying, but more usually only the date of copying, which then provides a terminus ad quem for composition.",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "MS Majlis 10196 colophons",
+ "read_by": "R3 opened pdf p.97"
+}

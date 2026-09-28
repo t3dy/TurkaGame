@@ -1,0 +1,15 @@
+{
+  "id": "EV-0805",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 152,
+    "printed_page": "135",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MS Malik 4029/6 (54 ff., copied in Edirne on 28 Jumādā I 921/10 July 1515), a collection of six of Ibn Turka's minor treatises, contains two relevant letters, one of which is unique to that MS.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.152",
+  "refers_to_primary": "MS Malik 4029/6"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "CL-0133",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I concedes Sufis are accused of two faults and answers the first: ecstatic utterances seizing on ‘Everything is God’ come from lazy people who have not passed beyond animal nature; real understanding takes years of discipline under a shaykh.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0283",
+  "EV-0284"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.82 (printed 65)",
+   "shaping_risk": "low"
+  }
+ ]
+}

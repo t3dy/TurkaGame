@@ -1,0 +1,31 @@
+{
+ "id": "WRK-ANJAM",
+ "type": "work",
+ "status": "draft",
+ "title": "Anjām, or Taṣavvuf u Ḥurūf ('Conclusion'; 'Sufism and Lettrism')",
+ "transliterated_title": "Anjām / Taṣavvuf u Ḥurūf",
+ "language": "Persian",
+ "genre": "treatise (comparison of two sciences)",
+ "theme": "lettrism",
+ "date": {
+  "ce": "1425-09-30",
+  "hijri": "17 Dhū l-Qaʿda 828",
+  "basis": "MK: 'completed on' this date, which is also the date of the Majlis 10196 copy (ff. 158a-60a); the folio lies in the chronological first half that MK says may record transcription (pp.78-79); not asterisked. Treated as a copying date; composition may be earlier."
+ },
+ "date_kind": "transcription",
+ "manuscript": "9 copies listed; earliest dated: MS Majlis 10196 ff. 158a-60a (17 Dhū l-Qaʿda 828/30 Sept 1425); then MS 5423 (842/1439), MS 10004 (Yazd 903-4/1497-98), MS 1825 (Abarquh 851/1447), MS 9263/6, MS 3035/14, MS 326/6, MS 7136/5, MS Add. 16839 (BL).",
+ "majlis_folios": "ff. 158a-60a",
+ "edited": true,
+ "summary": "A comparison of Sufism with the science of letters, in an introduction and two sections, with an epilogue of three accounts in support of lettrism; section two refers the reader to the K. al-Mafāḥiṣ.",
+ "supported_by": [
+  "EV-0422",
+  "EV-0423",
+  "EV-0424",
+  "EV-0425",
+  "EV-0415"
+ ],
+ "claims": [
+  "CL-0205",
+  "CL-0210"
+ ]
+}

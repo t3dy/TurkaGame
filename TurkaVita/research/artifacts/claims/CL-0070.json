@@ -1,0 +1,28 @@
+{
+ "id": "CL-0070",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's unswerving and impartial application of the Shariʿa in Yazd earned him enemies among the city's entrenched elite, who sent a delegation to Shāhrukh seeking his dismissal.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0151",
+  "EV-0036"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I (829/1426), addressed to Shāhrukh",
+   "where": "Nafsat al-Maṣdūr I, 172",
+   "shaping_risk": "high",
+   "note": "the 'unswerving and impartial' motive is his own account of his enemies"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.72 and p.52",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

@@ -1,0 +1,38 @@
+{
+ "id": "WRK-SHARH-AL-BASMALA",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ al-Basmala",
+ "transliterated_title": "Sharḥ al-Basmala (Commentary on the Basmala)",
+ "language": "Arabic",
+ "genre": "lettrist commentary on the basmala",
+ "theme": "lettrism",
+ "date": {
+  "ce": "before 5 July 1426",
+  "hijri": "before 28 Shaʿbān 829",
+  "basis": "MS Majlis 10196 copy date, asterisked by Melvin-Koushki as possibly transcription; terminus ad quem only."
+ },
+ "date_kind": "transcription",
+ "place": "not stated",
+ "addressee": "Marginal dedication to Ulugh Beg (MS Majlis 10196 f. 332b); a copy sent to Qāżīzāda Rūmī (per his letter, f. 153a). Melvin-Koushki's timeline says copies went to both.",
+ "occasion": "not stated beyond the sending of copies",
+ "manuscript": "MS Majlis 10196 ff. 332b-51b; MS Sipahsālār 2930/20 ff. 6b-9b (845/1441).",
+ "majlis_folios": "ff. 332b-51b",
+ "edited": false,
+ "summary": "A commentary on the basmala in the lettrist manner, sent to Qāżīzāda Rūmī and carrying a marginal dedication to Ulugh Beg in the Majlis manuscript.",
+ "edition_note": "Unpublished.",
+ "supported_by": [
+  "EV-0612",
+  "EV-0613",
+  "EV-0614",
+  "EV-0615",
+  "EV-0616",
+  "EV-0617",
+  "EV-0618"
+ ],
+ "claims": [
+  "CL-0304",
+  "CL-0305",
+  "CL-0306"
+ ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "CL-0576",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Whether the Mafāḥiṣ was revised in 828/1425 is contested by the manuscripts: an audition note in MS Landberg 146 says the author proofread it and added notes that year, while a marginal correction in MS Majlis 10196 says its 828 date refers only to copying.",
+  "epistemic_type": "contested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1093",
+    "EV-1094"
+  ],
+  "mediation": [
+    {
+      "layer": "manuscript_colophon",
+      "who": "manuscript colophon / copying note as reported by Melvin-Koushki",
+      "where": "pdf pp.351-352",
+      "shaping_risk": "medium",
+      "note": "one manuscript reads the date as revision, another as copying"
+    }
+  ],
+  "domain": "chronological"
+}

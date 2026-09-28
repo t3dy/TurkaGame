@@ -1,0 +1,15 @@
+{
+ "id": "EV-0057",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 55,
+  "printed_page": "38",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In the Nafsat al-Maṣdūr I, completed on 8 Rajab 829/16 May 1426, Ibn Turka states that he is 59 lunar years old, which puts his birth sometime in 770/1369. The date of birth is nowhere given directly in the sources (dissertation, note 2).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.55",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I, 170"
+}

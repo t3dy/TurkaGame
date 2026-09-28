@@ -1,0 +1,15 @@
+{
+ "id": "EV-0659",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 136,
+  "printed_page": "119",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The entry ends 'Unpublished' and a footnote cross-refers to al-Dharīʿa for Sharḥ Maqālat Ibn Hūd and, separately, to a Persian translation of the R. Tajallī Dhātī by Ibn Turka (Āqā Buzurg, 11/136, no. 847).",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R4 opened pdf p.136",
+ "refers_to_primary": "Sharḥ al-Tajallī al-Dhātī, bibliography"
+}

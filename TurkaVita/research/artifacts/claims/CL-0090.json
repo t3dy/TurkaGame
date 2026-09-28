@@ -1,0 +1,30 @@
+{
+ "id": "CL-0090",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Shāhrukh b. Temür became governor of Khurasan in 799/1397, completed his Herat madrasa-khanaqah in 813/1410, abrogated the Yasa and enforced the Shariʿa in 813/1411, and by 815/1412 controlled Khurasan, Transoxania and Khwarazm; in the provinces, Fars was disturbed in 818/1415 and Bāysunghur named governor of Mazandaran and western Khurasan, Chaqmāq became governor of Yazd c. 823/1420, and Amīr Fīrūzshāh's family governed Isfahan in 827-28/1423-24.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0010",
+  "EV-0018",
+  "EV-0019",
+  "EV-0021",
+  "EV-0028",
+  "EV-0029",
+  "EV-0033"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Timurid political history"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.51-52, timeline drawing on Manz",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

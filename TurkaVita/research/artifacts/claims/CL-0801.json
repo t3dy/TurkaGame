@@ -1,0 +1,28 @@
+{
+ "id": "CL-0801",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Jean Aubin first assumed Ibn Turka's Shiʿi identity (1957) and later modified that opinion (1991).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1604"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Jean Aubin",
+   "where": "1957 and 1991 articles",
+   "shaping_risk": "medium",
+   "note": "The position is this scholar's own; we have it only as summarised by Melvin-Koushki."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (reporter; partisan)",
+   "where": "dissertation pdf p.86",
+   "shaping_risk": "medium",
+   "note": "MK argues a rival reading (Ibn Turka as occult philosopher) and in places calls this reading an error; his summary may compress or foreshorten it."
+  }
+ ],
+ "domain": "biographical"
+}

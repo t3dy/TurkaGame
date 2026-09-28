@@ -1,0 +1,31 @@
+{
+ "id": "REC-0062",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "What was his confessional allegiance?",
+ "proposition": "Ibn Turka's confessional position is ambiguous and best called Shiʿi-Sunnism or imamophilism, a defining feature of 9th/15th-century religiosity, neither Corbin's Shiʿism nor Lewisohn's Sunni orthodoxy.",
+ "kind": "inferential",
+ "scholar": "Matthew Melvin-Koushki",
+ "reasoning": [
+  "Grounds: his heavy emphasis on the Imams as sources of occult knowledge (pdf p.86); impeccable Shafiʿi credentials, though Shafiʿism is an unreliable marker of Sunnism (p.90); a Sunni-tradition Sharh al-Nahj and a Sunni salaf passage in the Mafahis (pp.91-92); a Shiʿi-looking alteration of Ibn al-Farid's Tāʾiyya (p.92).",
+  "MK's objection to Corbin is that his openly-Shiʿi verdict ignores the age's confessional ambiguity, and to Lewisohn that the Sunni Sufi reading takes the apologies at face value (p.25).",
+  "Pages 93 onward, where MK's discussion of this point continues, were not read for this task; the dissertation may qualify the reading there. MK reads the Mafahis salaf passage as a concession to the unintelligent (p.92 n.150), which is an interpretation, not a fact of the text.",
+  "MK is a partisan reporter. Confidence records how fully the pages of MK's dissertation let us reconstruct this position and its grounds, not whether it is true."
+ ],
+ "observed_facts": [
+  "CL-0833",
+  "CL-0834",
+  "CL-0835",
+  "CL-0836",
+  "CL-0800",
+  "CL-0807",
+  "EV-1686",
+  "EV-1689",
+  "EV-1688"
+ ],
+ "confidence": "medium",
+ "alternatives": [
+  "REC-0050",
+  "REC-0056"
+ ]
+}

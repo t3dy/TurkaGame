@@ -1,0 +1,22 @@
+{
+ "id": "CL-0614",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka sent his reply to Shāhrukh through Niʿmat Allāh because his close association with Iskandar's court left him feeling exposed in the Shahrukhid state and he thought the Sufi master's eminence a prudent shield (MK: 'no doubt').",
+ "epistemic_type": "psychological_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1209",
+  "EV-1208"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.245",
+   "shaping_risk": "medium",
+   "note": "MK's motive for the choice of intermediary; no source read states it"
+  }
+ ],
+ "domain": "political"
+}

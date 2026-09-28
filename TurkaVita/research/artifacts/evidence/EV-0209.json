@@ -1,0 +1,15 @@
+{
+ "id": "EV-0209",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 76,
+  "printed_page": "59",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that the introduction of Nafsat I calls Ibn Turka's accusers mafiosos and backbiters, comparable to the ‘plague scholars’ of the day: people of little learning but many designs (aghrāż).",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I, p.187 (per MK fn.100)",
+ "read_by": "R2a opened pdf p.76"
+}

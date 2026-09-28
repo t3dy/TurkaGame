@@ -1,0 +1,38 @@
+{
+ "id": "CL-0730",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The papers differ on where lettrism sits in the seven tiers of the Shaqq-i Qamar. The dissertation lists lettrists sixth and ʿAlī with the Imams seventh, finds it puzzling that lettrism is not top, then argues level seven (jafr) is lettrism at its extreme. The Prologue puts lettrism at the top as the apex of human perfection. Selenocentrism lists two lettrist levels, timefree sixth and timebound seventh, with ʿAlī as inventor of lettrism at seven. The tiers below lettrism agree in substance, with different labels for the philosophers.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1443",
+  "EV-1444",
+  "EV-1445",
+  "EV-1459",
+  "EV-1499",
+  "EV-1500"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, R. Shaqq-i Qamar 111-12, 116",
+   "where": "dissertation pdf 333-334",
+   "shaping_risk": "medium",
+   "note": "his own treatise, not an apology; MK's reading of the seventh tier is an interpretation"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 332-334",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, Selenocentrism and Heliocentrism",
+   "where": "pdf 26-27",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "doctrinal"
+}

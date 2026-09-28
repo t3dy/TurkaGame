@@ -1,0 +1,25 @@
+{
+  "id": "CL-0465",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The closing section of the R. Suʾl al-Mulūk teaches that the fate of a person or thing can be read from his or its name and honorific, cites Ibn Barrajān's Jerusalem prediction with Ibn ʿArabī's calculation and Saʿd al-Dīn Ḥamuvayī's cryptic method (declining to go into the latter in an introductory work), and dismisses Ascendant-from-name methods as mere approximation from experience.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0898",
+    "EV-0899",
+    "EV-0900",
+    "EV-0901",
+    "EV-0903"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.329",
+      "shaping_risk": "medium",
+      "note": "MK's translation and summary"
+    }
+  ],
+  "domain": "doctrinal"
+}

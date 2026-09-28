@@ -1,0 +1,115 @@
+{
+ "id": "SCN-0402",
+ "type": "scene",
+ "status": "draft",
+ "act": "exile",
+ "title": "Mazandaran and Gilan, c. 1428–29: which household to ask",
+ "dramatic_question": "You are teaching in provincial mosques and your household is hungry. A stipend from a provincial ruler is the only thing that will change that. Which ruler's door do you knock on first?",
+ "situation": {
+  "when": "c. 831–32/1428–29 (Melvin-Koushki's conjecture; the letters are undated)",
+  "where": "Mazandaran and Gilan",
+  "based_on": [
+   "CL-0081",
+   "CL-0082",
+   "CL-0439",
+   "CL-0442"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "For about five years, until his death in Herat, Ibn Turka wandered northern and northwestern Iran seeking a livelihood, teaching hadith and tafsir in local mosques and writing treatises for governors and amirs. This comes from his own second apology, written to Bāysunghur.",
+   "claim": "CL-0081"
+  },
+  {
+   "text": "His surviving letters from the exile are pleas to governors and amirs for clemency, so that he could keep his wives and children through hunger and frost, and requests to Sufi shaykhs and bureaucrats for help; he sought patronage at the Marʿashī court in Mazandaran and the Kārkiyā court in Gilan.",
+   "claim": "CL-0082"
+  },
+  {
+   "text": "In the second apology Ibn Turka says he has ten children and a few wives whom exile left him unable to support; Melvin-Koushki infers three sons and seven daughters from a letter of Sharaf al-Dīn Yazdī.",
+   "claim": "CL-0152"
+  }
+ ],
+ "prose": [
+  "You wander northern and northwestern Iran, teaching hadith and tafsir where a mosque will have you, and you write to anyone who might help. By your own later count you have ten children and a few wives to feed, through hunger and frost.",
+  "Three doors are open. Sayyid Murtażā Marʿashī rules at Sari in Mazandaran. The Kārkiyā sayyids, Zaydī rulers, hold Gilan: Sayyid Aḥmad at Ranikuh and Sayyid Nāṣir at Lahijan. And there is an Amīr ʿAlāʾ al-Dīn, whom Melvin-Koushki cannot identify: he lists three candidates.",
+  "You wrote to all of them, and the sources do not say in what order. Melvin-Koushki dates the letters only to about 831–32/1428–29, and they do not fit together neatly: one calls Gilan uncongenial while others court its amirs. So this scene has no single recorded answer. The record names the households and is silent on which came first."
+ ],
+ "unrecorded": true,
+ "choices": [
+  {
+   "id": "A",
+   "label": "Write to Sayyid Murtażā Marʿashī at Sari and ask outright for a stipend, on the ground that a scholar's work depends wholly on royal patronage.",
+   "strategy": "ask_marashi_stipend",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0439",
+    "CL-0440"
+   ],
+   "requires": {},
+   "effects": {
+    "court.marashi": 1,
+    "life.exile_household": "marashi",
+    "score.biography": 1
+   },
+   "feedback": "Letter 28 survives. It gives a pained account of your family's tribulations, says you passed through Gilan, found it uncongenial and went straight to Sari, says you were punished (imprisoned, on Melvin-Koushki's query) for a full year despite the intercession of amirs and notables, and afterwards thanks the ruler for a gracious welcome at court. It is a supplicant's letter, and the pages do not say whether the stipend was granted."
+  },
+  {
+   "id": "B",
+   "label": "Write to the Kārkiyā amirs of Gilan: congratulate them on a conquest, praise their patronage of scholars and the Sufis' spiritual support, and excuse yourself from attending in person.",
+   "strategy": "court_karkiya",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0442",
+    "CL-0443"
+   ],
+   "requires": {},
+   "effects": {
+    "court.karkiya": 1,
+    "life.exile_household": "karkiya",
+    "score.biography": 1
+   },
+   "feedback": "Four letters survive (29 to Sayyid Aḥmad, 30 and 31 to Sayyid Nāṣir, 32 to either). In Melvin-Koushki's descriptions each congratulates the amir on a conquest and praises his patronage or the Sufis' spiritual support, and where you decline to attend you cite family duties, ill health or infirmity; none asks outright for money or protection. The pages leave one tension open: letter 28 calls Gilan uncongenial, yet you write warmly to two of its amirs."
+  },
+  {
+   "id": "C",
+   "label": "Write to Amīr ʿAlāʾ al-Dīn: a condolence on the death of a son, and after attending his court a letter of thanks that calls you a victim of injustice.",
+   "strategy": "write_ala_al_din",
+   "epistemic_label": "contested",
+   "based_on": [
+    "CL-0444",
+    "CL-0445"
+   ],
+   "requires": {},
+   "effects": {
+    "court.ala-al-din": 1,
+    "life.exile_household": "ala-al-din",
+    "score.biography": 1
+   },
+   "feedback": "Letters 33 and 34 survive; in the second you call yourself sitam-dīda, a victim of injustice, after the events of 830/1427. Who the amir is cannot be settled: Melvin-Koushki lists ʿAlāʾ al-Dīn b. Bāysunghur (born 1417, so perhaps less likely), ʿAlāʾ al-Dīn ʿAlīka Kükältash, and ʿAlāʾ al-Dawla, son of a Mazandarani vizier. The game's court key ala-al-din stands for whichever of them it was; it does not say he is the same man as the dedicatee of the Tuḥfa-yi ʿAlāʾī."
+  },
+  {
+   "id": "D",
+   "label": "Ask no household. Teach hadith and tafsir in the local mosques and live on what the congregations give.",
+   "strategy": "ask_no_one",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0081",
+    "CL-0082"
+   ],
+   "requires": {},
+   "effects": {
+    "press.students": 1,
+    "press.livelihood": -1,
+    "life.exile_household": "none",
+    "score.biography": -1
+   },
+   "feedback": "The teaching is documented, but so is the asking: the surviving letters are largely pleas, and nothing shows you choosing to ask nobody. This is your own what-if, and the game returns you to the record: the sources have you writing to the courts of Mazandaran and Gilan."
+  }
+ ],
+ "next": "SCN-0403",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

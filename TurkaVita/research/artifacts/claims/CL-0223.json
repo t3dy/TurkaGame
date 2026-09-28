@@ -1,0 +1,39 @@
+{
+ "id": "CL-0223",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Iʿtiqādāt and the Nafsat al-Maṣdūr I are companion pieces addressed to Shāhrukh, both connected with the accusations of heresy against Ibn Turka at Herat and both with Majlis 10196 copy dates of Herat, 19 Jumādā I and 8 Rajab 829/1426; the Iʿtiqādāt is a creed presenting him as a Sunni-Ashʿarī, the Nafsat I an apology, and both were written to the ruler judging him.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0465",
+  "EV-0463",
+  "EV-0462",
+  "EV-0511",
+  "EV-0510",
+  "EV-0509"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to Shāhrukh",
+   "where": "Iʿtiqādāt; Nafsat al-Maṣdūr I",
+   "shaping_risk": "high",
+   "note": "written to the ruler judging him; what these show is what he told Shāhrukh, not necessarily what he held"
+  },
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist of MS Majlis 10196",
+   "where": "ff. 165b, 179b",
+   "shaping_risk": "medium",
+   "note": "copy dates and place"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.92, 105",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

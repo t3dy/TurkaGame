@@ -1,0 +1,29 @@
+{
+  "id": "CL-0409",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka was in correspondence with practitioners of the 'legitimate' sciences: Qāżīzāda Rūmī, director of Ulugh Beg's observatory in Samarkand, wrote to him, and letter 31 greets the astronomer Badr al-Dīn at the Kārkiyā court in Gilan.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0813",
+    "EV-0869",
+    "EV-0852"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Kārkiyā court / from Qāżīzāda Rūmī",
+      "where": "Munshaʾāt-i Turka letter 31; MS Majlis 10196 f. 153b",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.154",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "social"
+}

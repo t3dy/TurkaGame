@@ -1,0 +1,21 @@
+{
+ "id": "CL-0613",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Letter 16 belongs to the years around Shāhrukh's western Iranian campaign and the removal of Iskandar Mīrzā (816/1413-14), because Niʿmat Allāh's Shiraz visit of that date appears to have bracketed the campaign; MK does not date the letter itself.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1208"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.245",
+   "shaping_risk": "medium",
+   "note": "MK's 'appears to have bracketed'; the date 816/1413-14 is for Niʿmat Allāh's visit (pdf p.244), not for the letter"
+  }
+ ],
+ "domain": "chronological"
+}

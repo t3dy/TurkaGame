@@ -1,0 +1,27 @@
+{
+ "id": "CL-0075",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The first Nafsat al-Maṣdūr was written for Shāhrukh in 829/1426 in answer to accusations by his Herat enemies, with an autobiographical introduction and an attack on the accusers' motives, then two sections (vaṣl).",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0171"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr I (829/1426), addressed to Shāhrukh",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high",
+   "note": "structure of the text itself"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.75",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

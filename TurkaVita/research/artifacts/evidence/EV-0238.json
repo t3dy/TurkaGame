@@ -1,0 +1,15 @@
+{
+ "id": "EV-0238",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 79,
+  "printed_page": "62",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The R. Iʿtiqādiyya justifies that exploration on the strength of the hadith ‘Learn even sorcery’ (taʿallamū ḥattā l-siḥr), according to Melvin-Koushki.",
+ "evidence_kind": "creed_tract",
+ "refers_to_primary": "Ibn Turka, R. Iʿtiqādiyya, p.268 (per MK fn.111)",
+ "read_by": "R2a opened pdf p.79"
+}

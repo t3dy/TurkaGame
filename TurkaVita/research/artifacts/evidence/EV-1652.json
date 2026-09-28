@@ -1,0 +1,15 @@
+{
+ "id": "EV-1652",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 27,
+  "printed_page": "10",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK infers from the Mafahis introduction that lettrism is, for Ibn Turka, the only form of metaphysics worth the name; the note cites MS Majlis 10196 f. 55a and MS Esad Efendi 1731 ff. 8b-9a, and adds that the letter alone is the coincidentia oppositorum, not offset by an opposite (MS Majlis 10196 f. 58a).",
+ "evidence_kind": "work",
+ "read_by": "R2b opened pdf p.27",
+ "refers_to_primary": "Ibn Turka, K. al-Mafaḥiṣ, MS Majlis 10196 ff. 55a, 58a"
+}

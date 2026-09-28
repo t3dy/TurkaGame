@@ -1,0 +1,33 @@
+{
+  "id": "CL-0407",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The letters show friendly contact with Shāh Niʿmat Allāh Valī, Qāsim-i Anvār, Aḥmad Samarqandī, Ḥasan ʿAṭṭār and Sayyid Muḥammad b. Shaykh Kajujī; MK says this corroborates the apologies' account of his (mainly admonitory) dealings with Sufi shaykhs and counterbalances his criticism of organized Sufism.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0811",
+    "EV-0829",
+    "EV-0833",
+    "EV-0856",
+    "EV-0857",
+    "EV-0858",
+    "EV-0859"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Sufi shaykhs",
+      "where": "Munshaʾāt-i Turka letters 13, 16, 35-38",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.154",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "social"
+}

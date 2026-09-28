@@ -1,0 +1,23 @@
+{
+  "id": "CL-0550",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Suʾl al-Mulūk Ibn Turka treats the quranic letters as giving both bodily healing and ascent toward nearness to God, presenting the practical and theoretical modes as interdependent.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1063",
+    "EV-1053",
+    "EV-1054"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.178, 182",
+      "shaping_risk": "medium",
+      "note": "a work written for Bāysunghur, a patron interested in applied lettrism"
+    }
+  ],
+  "domain": "doctrinal"
+}

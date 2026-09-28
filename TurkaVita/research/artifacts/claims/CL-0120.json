@@ -1,0 +1,26 @@
+{
+ "id": "CL-0120",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I attributes some of his enmities to his conduct as qadi: refusing to let the powerful oppress the poor and so making enemies among those who shelter under powerful patrons.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0266"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.81 (printed 64)",
+   "shaping_risk": "low"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "id": "CL-0724",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "New Brethren calls the Debate of Feast and Fight (1426) Ibn Turka's last work written for Shāhrukh, at Bāysunghur's instance; Grammatology says it was completed 829/1426 for Bāysunghur. The dissertation says it was written for Bāysunghur and completed before 25 Rabīʿ II 829/6 March 1426 in Herat, which is earlier than Suʾl al-Mulūk (15 May 1426) and Nafsat al-Maṣdūr I (16 May 1426); on the dissertation's dates it would not be the last of the three 1426 works.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1469",
+  "EV-1488",
+  "EV-1436",
+  "EV-1434",
+  "EV-1400"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "MS Majlis 10196 ff. 162b-65a copy date (Aqa Buzurg)",
+   "where": "dissertation pdf 118-119",
+   "shaping_risk": "medium",
+   "note": "asterisked; the copy date is reported from a catalogue"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation",
+   "where": "pdf 119, 136",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "chronological"
+}

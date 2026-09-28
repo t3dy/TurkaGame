@@ -1,0 +1,21 @@
+{
+ "id": "CL-0611",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK found no overt reference to Niʿmat Allāh Valī in Ibn Turka's works that would support the Niʿmatullahi picture of the link.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1207"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.244",
+   "shaping_risk": "low",
+   "note": "an attested silence in MK's survey of the works; R7 did not read the works"
+  }
+ ],
+ "domain": "textual"
+}

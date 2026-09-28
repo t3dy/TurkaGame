@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0028",
+ "type": "event",
+ "status": "draft",
+ "actor": "Chaqmāq",
+ "date": {
+  "start": "1420",
+  "end": "1420",
+  "hijri": "823",
+  "basis": "Timeline A.1 marks 'c.'; pdf p.52.",
+  "date_kind": "context"
+ },
+ "place": "Yazd",
+ "event_type": "political",
+ "description": "Chaqmāq is appointed governor of Yazd.",
+ "claims": [
+  "CL-0090"
+ ],
+ "fixed_point": false
+}

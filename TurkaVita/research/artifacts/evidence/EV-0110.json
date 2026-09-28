@@ -1,0 +1,15 @@
+{
+ "id": "EV-0110",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 65,
+  "printed_page": "48",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ibn Turka similarly refers to Khwāja Muḥammad Pārsā simply as khwāja-yi mā in the Nafsat al-Maṣdūr I (193); Melvin-Koushki compares this with his forms of address for Akhlāṭī.",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.65",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I, 193"
+}

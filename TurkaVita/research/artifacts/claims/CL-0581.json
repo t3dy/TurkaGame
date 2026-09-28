@@ -1,0 +1,21 @@
+{
+  "id": "CL-0581",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki says Ibn Turka's own prologue to the Mafāḥiṣ gives no book plan and no closing prayer, and refuses the usual authorial self-deprecation.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1132",
+    "EV-1095"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "Prologue p.8",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "textual"
+}

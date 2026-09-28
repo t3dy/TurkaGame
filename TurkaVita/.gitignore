@@ -1,0 +1,6 @@
+# full text of copyrighted scholarship — never commit
+db/*.db
+db/*.db-*
+*.pdf
+__pycache__/
+research/ingest_run.log

@@ -1,0 +1,21 @@
+{
+ "id": "CL-0175",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Corbin took Ibn Turka to be an openly Shiʿi thinker; MK calls this reasonable in isolation but blind to Timurid confessional ambiguity.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0326",
+  "EV-0321"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.86 (printed 69)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

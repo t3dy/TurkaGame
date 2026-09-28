@@ -1,0 +1,27 @@
+{
+  "id": "CL-0431",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In letter 21 Ibn Turka petitioned Fīrūzshāh to receive Shaykh Burhān al-Dīn Amīr Shaykh, whom he vouched for, so acting as broker between a Yazdi Sufi and the amir's administration.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0840"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Amīr Fīrūzshāh",
+      "where": "Munshaʾāt-i Turka letter 21",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.159",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "social"
+}

@@ -1,0 +1,22 @@
+{
+ "id": "CL-0236",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Munāẓara-yi Bazm u Razm is given two dates within one entry, a Majlis 10196 copy date of 20 Rabīʿ II 829/1 March 1426 and 'completed before 25 Rabīʿ II 829/6 March 1426', the second later than the first by five days; both rest on Āqā Buzurg, and the later date is asterisked as transcription.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0501",
+  "EV-0502"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.101-102",
+   "shaping_risk": "medium",
+   "note": "both dates from al-Dharīʿa"
+  }
+ ],
+ "domain": "chronological"
+}

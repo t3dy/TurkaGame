@@ -1,0 +1,28 @@
+{
+ "id": "CL-0308",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to the colophon on MS Majlis 10196 f. 330a, Sharḥ Fuṣūṣ al-Ḥikam was finished on 20 Ṣafar 814 (13 June 1411) and corrected in Fars on 19 Dhū l-Ḥijja 817 (1 March 1415); here the colophon itself states completion and correction, and no asterisk is printed.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0624",
+  "EV-0600"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 f. 330a",
+   "shaping_risk": "medium",
+   "note": "the colophon itself records completion and correction, not just copying"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.129-130, no. 30",
+   "shaping_risk": "low"
+  }
+ ]
+}

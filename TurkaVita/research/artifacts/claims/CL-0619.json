@@ -1,0 +1,35 @@
+{
+ "id": "CL-0619",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The image of Ibn Turka and Yazdī as failed Sufis, promulgated by Jāmī and his circle, persisted into the 11th/17th century: the Safavid-era Sullam al-Samāvāt tells that they gave up their books to follow a Baghdad master, experienced no mystical opening, left him for Egypt, missed a secluded dervish there, and were told in Tabriz by a majzūba that the Egyptian refused them for their faithlessness.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1254",
+  "EV-1255",
+  "EV-1256"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Abū l-Qāsim Anṣārī Kāzirūnī, Sullam al-Samāvāt (fl. early 11th/17th c.)",
+   "where": "quoted in Jāmiʿ-i Mufīdī 3/302",
+   "shaping_risk": "high",
+   "note": "MK: Kāzirūnī's source was likely Afżal al-Dīn b. Ḥabīb Allāh Turka (d. 991/1583), his teacher; a moralising tale"
+  },
+  {
+   "layer": "later_chronicler",
+   "who": "Mufīd Mustawfī, Jāmiʿ-i Mufīdī",
+   "where": "3/302-3",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.444",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

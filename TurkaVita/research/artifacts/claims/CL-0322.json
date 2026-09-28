@@ -1,0 +1,27 @@
+{
+ "id": "CL-0322",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka wrote the Naẓm al-Durr commentary first in Arabic and then in Persian, at the request of friends; the Arabic version survives only in the margins of MS Majlis 10196.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0651",
+  "EV-0653"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka in the commentary's preface",
+   "where": "Sharḥ-i Naẓm al-Durr (as reported by MK)",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.135",
+   "shaping_risk": "low"
+  }
+ ]
+}

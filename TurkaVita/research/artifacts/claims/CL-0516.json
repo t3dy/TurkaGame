@@ -1,0 +1,20 @@
+{
+  "id": "CL-0516",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "On the Hour, Ibn Turka assigns to level two (dialectical theologians) the view that God, a free agent, can reassemble the atoms and recreate the same person, some allowing that restoring the original bodily parts suffices.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1040"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.477",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

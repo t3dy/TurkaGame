@@ -1,0 +1,15 @@
+{
+ "id": "EV-0604",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 125,
+  "printed_page": "108",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The listed copies of Qābiliyyat (Persian; variant title Aʿmāl u Afʿāl) begin with MS 5423 ff. 175b-77a (Fatih, Süleymaniye, Istanbul, copied Rajab-Ramaḍān 842/January-March 1439); the entry lists no copy in MS Majlis 10196 (a MS Majlis 10004 pp. 262-65, copied in Yazd 903-4/1497-98, is a different manuscript).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.125",
+ "refers_to_primary": "Qābiliyyat, MS list"
+}

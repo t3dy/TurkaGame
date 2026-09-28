@@ -1,0 +1,28 @@
+{
+ "id": "CL-0635",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Aḥmad Samarqandī, once Khwāfī's chief disciple, received a copy of Ibn Turka's Sharḥ-i Naẓm al-Durr (letter 13) and was disowned and persecuted by Khwāfī for teaching the Fuṣūṣ or reciting Qāsim-i Anvār's verse.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1239",
+  "EV-1240"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Ibn Turka to Aḥmad Samarqandī, letter 13",
+   "where": "TMN/MS pp. 8-9",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.438",
+   "shaping_risk": "low",
+   "note": "the persecution is MK repeating Bashir and Manz"
+  }
+ ],
+ "domain": "social"
+}

@@ -1,0 +1,28 @@
+{
+ "id": "CL-0633",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Two warm letters from Ibn Turka to Qāsim-i Anvār (nos. 37 and 38) are the only direct evidence of their relationship; one was written after several days in his company, probably in Herat, in 830/1427 or 834/1431 (MK), and calls Qāsim naqīb.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1242",
+  "EV-1243"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Ibn Turka to Qāsim-i Anvār, letters 37-38",
+   "where": "TMN/MS pp. 29-31",
+   "shaping_risk": "medium",
+   "note": "letters within the block MK reads as exile-period network building"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.439",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

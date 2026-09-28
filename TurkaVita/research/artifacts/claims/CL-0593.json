@@ -1,0 +1,22 @@
+{
+  "id": "CL-0593",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that Ibn Turka's hierarchy can be read as history: literalism, then dialectical theology, peripatetic rationalism, illuminationism and Ibn ʿArabian unveiling, and finally the lettrist synthesis that returns to the raw text of revelation.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1124",
+    "EV-1125",
+    "EV-1074"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.344",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

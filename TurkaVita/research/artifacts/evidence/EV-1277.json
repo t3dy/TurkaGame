@@ -1,0 +1,15 @@
+{
+ "id": "EV-1277",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 32,
+  "printed_page": "15",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK's summary: despite being a Shafiʿi qadi of unimpeachable religious standing in Isfahan and Yazd, and despite presenting his system as a corrective to both scholarly conservatism and the antinomian decadence of groups such as the Ḥurūfiyya, Ṣāʾin al-Dīn could not escape the taint of hurufism pinned on him by establishment opponents; thrice summoned to Herat for suspected heterodoxy, he defended himself successfully in ca. 825/1422 and 829/1426.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "MK, Introduction §I.2",
+ "read_by": "R7 opened pdf p.32"
+}

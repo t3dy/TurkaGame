@@ -1,0 +1,15 @@
+{
+ "id": "EV-0251",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 85,
+  "printed_page": "68",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the position of the apologies does not reflect Ibn Turka's own, since his veneration for the Imams and skill in philosophy are everywhere evident in his works.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.85"
+}

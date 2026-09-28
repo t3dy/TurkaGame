@@ -1,0 +1,21 @@
+{
+ "id": "CL-0020",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In Samarkand Ibn Turka continued his studies under his elder brother, and his broad erudition in the religious sciences, especially the Sunni schools of fiqh, dates from this period.",
+ "epistemic_type": "directly_inferred",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0089",
+  "EV-0073"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.63",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "CL-0599",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Davānī, following Ibn Turka, also links the written form of the letters with the men of might and vision.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1099"
+  ],
+  "mediation": [
+    {
+      "layer": "later_chronicler",
+      "who": "Jalāl al-Dīn Davānī, R. Tahlīliyya, as noted by Melvin-Koushki",
+      "where": "pdf p.350 fn.13",
+      "shaping_risk": "medium",
+      "note": "a later reader's summary, not Ibn Turka's own words"
+    }
+  ],
+  "domain": "doctrinal"
+}

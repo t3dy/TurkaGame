@@ -1,0 +1,15 @@
+{
+ "id": "EV-0612",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 128,
+  "printed_page": "111",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 332b-51b carries Sharḥ al-Basmala, copied on 28 Shaʿbān 829/5 July 1426 (Ḥāʾirī, Majlis, 32/242); the only other listed copy is MS Sipahsālār 2930/20 ff. 6b-9b, copied 18 Ṣafar 845/8 July 1441.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.128",
+ "refers_to_primary": "Sharḥ al-Basmala, MS list"
+}

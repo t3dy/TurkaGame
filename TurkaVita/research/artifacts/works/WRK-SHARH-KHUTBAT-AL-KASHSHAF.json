@@ -1,0 +1,34 @@
+{
+ "id": "WRK-SHARH-KHUTBAT-AL-KASHSHAF",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ Khuṭbat al-Kashshāf",
+ "transliterated_title": "Sharḥ Khuṭbat al-Kashshāf (Commentary on the Prologue to the Kashshāf; variant Ḥāshiyat al-Kashshāf)",
+ "language": "Arabic",
+ "genre": "commentary on the prologue of Zamakhsharī's Kashshāf",
+ "theme": "theology",
+ "date": {
+  "ce": "unknown",
+  "hijri": "unknown",
+  "basis": "Both listed copies are undated."
+ },
+ "date_kind": "unknown",
+ "place": "not stated",
+ "addressee": "not stated",
+ "occasion": "not stated",
+ "manuscript": "MS Majlis 10196 ff. 223b-24b; MS Sipahsālār 2930/10 ff. 277b-81a.",
+ "majlis_folios": "ff. 223b-24b",
+ "edited": false,
+ "summary": "A brief commentary on the prologue to Zamakhsharī's Kashshāf, offered as a model for reading the rest of it and directed against its Muʿtazilī stance.",
+ "edition_note": "Unpublished.",
+ "supported_by": [
+  "EV-0644",
+  "EV-0645",
+  "EV-0646",
+  "EV-0647"
+ ],
+ "claims": [
+  "CL-0319",
+  "CL-0320"
+ ]
+}

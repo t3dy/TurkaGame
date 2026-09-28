@@ -1,0 +1,15 @@
+{
+ "id": "EV-0344",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 88,
+  "printed_page": "71",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki reports that Ḥaydar Āmulī (d. after 787/1385) calls Sufism Shiʿism and Shiʿism Sufism, a slight overstatement of the trend which Melvin-Koushki thinks not unreasonable seen as reflecting new sociopolitical realities. The source given is Zarrīnkūb; nothing here concerns Zarrīnkūb's view of Ibn Turka.",
+ "evidence_kind": "context",
+ "refers_to_primary": "Ḥaydar Āmulī, per Zarrīnkūb, Dunbāla-yi Justujū, p.140 (per MK fn.134)",
+ "read_by": "R2a opened pdf p.88"
+}

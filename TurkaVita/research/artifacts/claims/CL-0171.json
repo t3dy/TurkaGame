@@ -1,0 +1,20 @@
+{
+ "id": "CL-0171",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "MK says the first apology champions an orthodox Sufism esteemed but not personally embraced, and that Ibn Turka pointedly declined to identify as a Sufi while dealing with various Sufi masters.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0254"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.85 (printed 68)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

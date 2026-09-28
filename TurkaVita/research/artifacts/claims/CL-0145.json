@@ -1,0 +1,30 @@
+{
+ "id": "CL-0145",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I makes Khwāja Muḥammad Pārsā, favourite of Shāhrukh and speaker at the royal majlis, its named Sufi exemplar, and ends on his dūbayt and the popular belief in his sanctity; MK notes Pārsā's orthodox Khwājagānī standing propped Shāhrukh's Sunnizing programme.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0211",
+  "EV-0310",
+  "EV-0311",
+  "EV-0316",
+  "EV-0317"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.77 (printed 60)",
+   "shaping_risk": "low"
+  }
+ ]
+}

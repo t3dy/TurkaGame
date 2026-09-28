@@ -1,0 +1,15 @@
+{
+ "id": "EV-0214",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 77,
+  "printed_page": "60",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In introducing Nafsat II, Melvin-Koushki describes the events of 830/1427 as the author's arrest, torture, imprisonment and exile in the wake of the Hurufi attempt on Shāhrukh's life.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "the events of 830/1427",
+ "read_by": "R2a opened pdf p.77"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0406",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 96,
+  "printed_page": "79",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki suggests, tentatively ('perhaps'), that some of the works in the first half of MS Majlis 10196 were copied as part of the evidence in defence of Ibn Turka's orthodoxy, given the circumstances of his life in those two and a half years or so.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "MS Majlis 10196 first half",
+ "read_by": "R3 opened pdf p.96"
+}

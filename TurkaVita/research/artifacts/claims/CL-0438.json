@@ -1,0 +1,28 @@
+{
+  "id": "CL-0438",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Two brief letters concern the fiscal administration: letter 14 to a dīvān official (Fayż Allāh?), in which Ibn Turka regrets being unable to finish correcting several books in the single day allotted him, and letter 26, a note asking dīvān bureaucrats to issue his stipend since it was winter and he had a large family.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0830",
+    "EV-0845"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to dīvān officials",
+      "where": "Munshaʾāt-i Turka letters 14 and 26",
+      "shaping_risk": "medium",
+      "note": "Written by a supplicant asking a ruler or official for clemency, relief or a stipend; framed to win the favour asked, not as a neutral report."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.159",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "institutional"
+}

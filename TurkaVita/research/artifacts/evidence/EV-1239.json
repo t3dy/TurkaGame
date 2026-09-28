@@ -1,0 +1,15 @@
+{
+ "id": "EV-1239",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 438,
+  "printed_page": "421",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports (from Bashir and Manz) that Aḥmad Samarqandī, sometime chief disciple of Zayn al-Dīn Khwāfī, was disowned, declared an unbeliever and persecuted by Khwāfī when he would not stop teaching the Fuṣūṣ or reciting the verses of Qāsim-i Anvār; Ṣāʾin al-Dīn had sent him a copy of his Sharḥ-i Naẓm al-Durr.",
+ "evidence_kind": "context",
+ "refers_to_primary": "Bashir, Sufi Bodies, 99, 191; Manz, Power (via MK)",
+ "read_by": "R7 opened pdf p.438"
+}

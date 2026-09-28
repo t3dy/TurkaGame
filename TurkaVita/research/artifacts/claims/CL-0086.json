@@ -1,0 +1,28 @@
+{
+ "id": "CL-0086",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The second Nafsat al-Maṣdūr, with a brief creed (R. Iʿtiqādiyya), was addressed to Shāhrukh's son Bāysunghur and asks his intercession, to little real effect.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0166",
+  "EV-0051"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "Nafsat al-Maṣdūr II; R. Iʿtiqādiyya",
+   "shaping_risk": "high",
+   "note": "written to seek intercession from the ruler's son while his case was still unresolved"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.74",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

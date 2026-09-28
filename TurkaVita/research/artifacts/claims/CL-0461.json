@@ -1,0 +1,24 @@
+{
+  "id": "CL-0461",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The date of the R. Suʾl al-Mulūk is given by MK in slightly different ways on different pages: 'completed in 829/1426' (pdf p.158), 'most probably written in 829/1426' (p.159), 'in or before 829/1426' (p.328) and 'before 829/1426' (p.173); all place completion at or before 829/1426.",
+  "epistemic_type": "contested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0891",
+    "EV-0892",
+    "EV-0894",
+    "EV-0839"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.173",
+      "shaping_risk": "medium",
+      "note": "An internal variation in MK's own dating"
+    }
+  ],
+  "domain": "chronological"
+}

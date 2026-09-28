@@ -1,0 +1,24 @@
+{
+ "id": "CL-0218",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Four works in this range are given composition dates that differ from any Majlis 10196 colophon: the Munāẓarāt-i Khams (Muḥarram 808/June-July 1405), the R. Ḥurūf (10 Ramaḍān 817/23 November 1414, Shiraz), the Asrār al-Ṣalāt (21 Jumādā II 820/5 August 1417, Herat) and the K. al-Mafāḥiṣ (823/1420); Melvin-Koushki does not name the source of the first three dates in the entries.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0506",
+  "EV-0445",
+  "EV-0432",
+  "EV-0488"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.85, 89, 99, 104",
+   "shaping_risk": "medium",
+   "note": "sources of the dates not stated in the entries"
+  }
+ ],
+ "domain": "chronological"
+}

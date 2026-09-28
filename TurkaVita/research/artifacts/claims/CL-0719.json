@@ -1,0 +1,26 @@
+{
+ "id": "CL-0719",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The papers differ on who led whom between Ibn Turka and Iskandar. Timurid-Mughal says Iskandar embraced lettrism at Ibn Turka's instance; New Brethren says Ibn Turka's key works were almost certainly commissioned by Iskandar; Selenocentrism calls Ibn Turka 'Iskandar's inspiration' and offers Iamblichus and Julian as the model; the dissertation says Iskandar was himself an imamophile with a pronounced interest in lettrism and may be imagined as taking warmly to Ibn Turka.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1492",
+  "EV-1464",
+  "EV-1498",
+  "EV-1501",
+  "EV-1407",
+  "EV-1413"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, later papers",
+   "where": "see evidence",
+   "shaping_risk": "medium",
+   "note": "framing, not documented event"
+  }
+ ],
+ "domain": "social"
+}

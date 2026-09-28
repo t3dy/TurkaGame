@@ -1,0 +1,15 @@
+{
+ "id": "EV-1251",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 442,
+  "printed_page": "425",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK notes that Jāmī was able to examine the first draft of Bākharzī's book before his death in 898/1492, so that the account 'may be supposed' to reflect Jāmī's words and general attitude (Binbaş).",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Binbaş, Sharaf al-Dīn, 72 n. 116 (via MK)",
+ "read_by": "R7 opened pdf p.442"
+}

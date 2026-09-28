@@ -1,0 +1,15 @@
+{
+ "id": "EV-0629",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 130,
+  "printed_page": "113",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the attribution to Ibn Turka is by no means certain, since the single late, defective copy does not mention the author, but that context and content suggest Ṣāʾin al-Dīn as a likely candidate; Malik al-Shuʿarāʾ Bahār seems to have appended it to MS Majlis 10196 for this reason. The entry also warns that it is sometimes confused with R. ʿAql u ʿIshq, titled Gulshan in MS Mishkāt 835.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R4 opened pdf p.130",
+ "refers_to_primary": "Sharḥ-i Gulshan-i Rāz, attribution"
+}

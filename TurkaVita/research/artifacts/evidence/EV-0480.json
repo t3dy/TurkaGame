@@ -1,0 +1,15 @@
+{
+ "id": "EV-0480",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 113,
+  "printed_page": "96",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the Madārij Afhām al-Afvāj was written at the request of a local ruler, and in a footnote suggests 'perhaps Sayyid Murtażā Marʿashī' (cf. letter 28 in §2.1.3.1).",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Madārij Afhām al-Afvāj",
+ "read_by": "R3 opened pdf p.113"
+}

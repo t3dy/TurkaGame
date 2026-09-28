@@ -1,0 +1,99 @@
+{
+ "id": "SCN-0106",
+ "type": "scene",
+ "status": "draft",
+ "act": "hostage",
+ "title": "1405: Temür is dead, and the road home",
+ "dramatic_question": "The man who took Isfahan and moved your family east is dead, and, on Melvin-Koushki's reading, you are still abroad. Do you go home, and how visible do you let yourself be when you get there?",
+ "situation": {
+  "when": "807/1405; the return is c. 810/1408 (a conjectured date)",
+  "where": "abroad; then Isfahan",
+  "based_on": [
+   "CL-0021",
+   "CL-0051",
+   "CL-0052",
+   "CL-0092",
+   "CL-0322"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Temür died at Utrar in 807/1405.",
+   "claim": "CL-0021"
+  },
+  {
+   "text": "Melvin-Koushki's timeline dates the completion of the Sharḥ-i Naẓm al-Durr to 806/1404 and the R. Munāẓarāt-i Khams to 808/1405. Both dates rest on manuscripts, and a manuscript date can record copying rather than composition; the timeline does not say which entries rest on which manuscript.",
+   "claim": "CL-0092"
+  }
+ ],
+ "prose": [
+  "In 807/1405 Temür dies at Utrar. On Melvin-Koushki's reading you are still abroad. The timeline dates two works to these years. The Sharḥ-i Naẓm al-Durr is a commentary on Ibn al-Fāriḍ's Tāʾiyya, written first in Arabic and then in Persian at the request of friends. The Munāẓarāt-i Khams is five debates among the faculties of the soul, of which the first is between reason and love.",
+  "The timeline brings you back to Isfahan about 810/1408, 'perhaps two or three years' after Temür's death; Melvin-Koushki cites no source for either the date or the interval. Your intention on returning, in his account, is to teach and to live in contemplative retirement, gūsha-nishīnī. That would close the fifteen years the timeline gives you abroad, roughly 1393 to 1408, both ends marked 'c.'.",
+  "The choice is whether to go, and how loudly."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Go home to Isfahan, take up teaching, and keep to the quiet life of contemplation you intend.",
+   "strategy": "return_and_teach_quietly",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0052",
+    "CL-0092",
+    "CL-0051"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "press.students": 1,
+    "press.works": 1,
+    "score.biography": 2,
+    "life.seat": "isfahan"
+   },
+   "feedback": "Melvin-Koushki has you take up teaching in Isfahan, intending a retired life of contemplation, until Pīr-Muḥammad, Temür's grandson and governor of Fars, summons you to Shiraz about 810-12/1408-9. He cites no source for the passage, and the return date is his 'perhaps' and 'c.'. The dates of the two works are colophon dates that may record copying, and the Naẓm al-Durr commentary is said to refer to works of 1411 and 1420, which sits oddly with 1404; the dissertation does not comment (the game's observation, CL-0323). That you were still abroad when Temür died is part of the same timeline reading (low confidence)."
+  },
+  {
+   "id": "B",
+   "label": "Do not go home. Stay abroad, because Iran is still too strait, and let the news of Temür's death pass.",
+   "strategy": "stay_abroad",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0022",
+    "CL-0052"
+   ],
+   "requires": {},
+   "effects": {
+    "score.biography": -1,
+    "life.seat": "isfahan"
+   },
+   "feedback": "Too strait for philosophy and mystical theory is the reason Ibn Turka gave, in his apologies, for leaving Iran; nothing says he decided the situation had not changed after Temür's death. The sources put him back in Isfahan, teaching, and then summoned to Shiraz. This is the game's own what-if, and the game returns you to the record: nothing later can be built on a life that stays abroad."
+  },
+  {
+   "id": "C",
+   "label": "Go home together with Sharaf al-Dīn Yazdī, and open a teaching circle in Isfahan in plain view.",
+   "strategy": "return_with_yazdi_and_open_a_circle",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0044",
+    "CL-0046"
+   ],
+   "requires_min": {
+    "court.yazdi": 2
+   },
+   "effects": {
+    "court.yazdi": 1,
+    "press.students": 2,
+    "press.exposure": 1,
+    "score.biography": 1,
+    "life.seat": "isfahan"
+   },
+   "feedback": "Yazdī later names Ibn Turka his teacher in occultism, and Melvin-Koushki speaks of their Isfahan circle as the eastern arm of a Neo-Ikhwān network. That is his reconstruction. No source we hold has Yazdī return with you or the two of you opening a circle in 1408, and the timeline has you intending retirement, not a public circle. It is open only if you have kept Yazdī close through Cairo."
+  }
+ ],
+ "next": "SCN-0201",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

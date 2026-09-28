@@ -1,0 +1,29 @@
+{
+ "id": "CL-0335",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Tuḥfa-yi ʿAlāʾī was completed on 1 Jumādā I 831 (17 February 1428) for ʿAlāʾ al-Dīn b. Bāysunghur; the timeline agrees on the year and the addressee. The entry states the date without an asterisk although the Majlis copy is undated, and does not name its source.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0683",
+  "EV-0603"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, in a treatise presented to a prince and patron",
+   "where": "Tuḥfa-yi ʿAlāʾī (as reported)",
+   "shaping_risk": "medium",
+   "note": "a work written for a patron, in a period MK's timeline calls exile"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.53, 148, no. 45",
+   "shaping_risk": "medium",
+   "note": "basis of the date not stated in the entry"
+  }
+ ]
+}

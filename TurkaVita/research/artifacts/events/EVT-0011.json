@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0011",
+ "type": "event",
+ "status": "draft",
+ "actor": "Temür",
+ "date": {
+  "start": "1405",
+  "end": "1405",
+  "hijri": "807",
+  "basis": "Timeline A.1, pdf p.51.",
+  "date_kind": "context"
+ },
+ "place": "Utrar",
+ "event_type": "death",
+ "description": "Temür dies at Utrar; Ibn Turka learns of it while still abroad.",
+ "claims": [
+  "CL-0021",
+  "CL-0051"
+ ],
+ "fixed_point": true
+}

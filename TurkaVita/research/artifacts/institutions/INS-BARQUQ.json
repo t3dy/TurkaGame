@@ -1,0 +1,16 @@
+{
+ "id": "INS-BARQUQ",
+ "type": "institution",
+ "status": "draft",
+ "name": "The Mamluk court of Sultan Barqūq",
+ "ruler": "al-Ẓāhir Barqūq (r. 1382–99)",
+ "seat": "Cairo",
+ "tenure": "1382–1399",
+ "role": "patron",
+ "summary": "Sultan whose court kept the alchemist and wonderworker Akhlāṭī; Ibn Turka implies he attended its scholarly majlises, and the sultan once pressed him for his opinion of another scholar.",
+ "supported_by": [
+  "EV-0096",
+  "EV-0097",
+  "EV-0101"
+ ]
+}

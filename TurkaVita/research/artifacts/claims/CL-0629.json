@@ -1,0 +1,28 @@
+{
+ "id": "CL-0629",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "By his own account Ibn Turka had fallen afoul of the traditionist Muḥammad al-Jazarī and the Herat Sufi Zayn al-Dīn Khwāfī, whom he calls mafiosos and backbiters, and says al-Jazarī began harassing his students after Ibn Turka gave the Mamluk sultan a poor report of him.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1232",
+  "EV-1233"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Masdur I (829/1426, to Shahrukh's court) / Ibn Turka, Nafsat al-Masdur II (ca. 832-35/1429-32, after exile)",
+   "where": "Nafsat I 187; Nafsat II 211-12",
+   "shaping_risk": "high",
+   "note": "the accused's account of his accusers; not independently confirmed on the pages read"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.436",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

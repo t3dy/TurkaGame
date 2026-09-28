@@ -1,0 +1,26 @@
+{
+ "id": "CL-0183",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The Safavid imposition of Twelver Shiʿism in the 10th/16th century ended the ambiguity that Ibn Turka lived in.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0342"
+ ],
+ "domain": "political",
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "sources and scholars MK cites",
+   "where": "pdf p.87 (printed 70)",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.87 (printed 70)",
+   "shaping_risk": "low"
+  }
+ ]
+}

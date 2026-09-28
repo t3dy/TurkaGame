@@ -1,0 +1,27 @@
+{
+ "id": "CL-0004",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's full name and forms of address: Ṣāʾin al-Dīn Abū Muḥammad ʿAlī b. Afżal al-Dīn Muḥammad b. Ṣadr al-Dīn Abī Ḥāmid Muḥammad Turka Iṣfahānī Khujandī; he uses the takhalluṣ ʿAlī in his verse, usually signs letters Ṣāyin-i Turka, and in one reading note calls himself ʿAlī b. Muḥammad b. Muḥammad Turka.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0059",
+  "EV-0060"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "reading note, MS Majlis 10196 f. 330a, and his signatures, as reported by MK",
+   "where": "pdf p.55, note 1",
+   "shaping_risk": "low"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.55",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

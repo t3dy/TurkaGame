@@ -1,0 +1,28 @@
+{
+  "id": "CL-0454",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka had three sons and seven daughters on MK's inference from Yazdī's letter to Afżal al-Dīn Turka, which fits his own statement in the second Nafsat that he had ten children and a few wives; after his death (ca. 835/1432?) his son Ḥabīb Allāh Turka quarrelled with his brothers over money and Yazdī housed him.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0883",
+    "EV-0885"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Sharaf al-Dīn Yazdī, to Afżal al-Dīn Muḥammad Turka",
+      "where": "YMN/V ff. 167b-68b",
+      "shaping_risk": "low",
+      "note": "A business letter, not about Ibn Turka's own doctrines."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.169",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "biographical"
+}

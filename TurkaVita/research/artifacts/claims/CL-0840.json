@@ -1,0 +1,29 @@
+{
+ "id": "CL-0840",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki says Akram Judi-Niʿmati alone evaluates Ibn Turka's thought on the whole oeuvre and produces an image very different from the caricature; MK relies on her account for his biography.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1637",
+  "EV-1638"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Akram Jūdī-Niʿmatī",
+   "where": "introduction to Sharḥ-i Naẓm al-Durr (2005)",
+   "shaping_risk": "medium",
+   "note": "The position is this scholar's own; we have it only as summarised by Melvin-Koushki."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (reporter; partisan)",
+   "where": "dissertation pdf p.39",
+   "shaping_risk": "medium",
+   "note": "MK argues a rival reading (Ibn Turka as occult philosopher) and in places calls this reading an error; his summary may compress or foreshorten it."
+  }
+ ],
+ "domain": "biographical"
+}

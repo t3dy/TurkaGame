@@ -1,0 +1,21 @@
+{
+ "id": "CL-0328",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki's thematic list classes Sullam Dār al-Salām among apologies and creedal works as well as works on Sufism, so a design that applies the duress rule to creedal tracts must decide whether to treat this work as free or coerced; that call is not made in the dissertation on these pages.",
+ "epistemic_type": "analytical_construct",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0668"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.175, §2.2 list 11",
+   "shaping_risk": "low",
+   "note": "classification only; the entry itself (p.137) does not call it an apology"
+  }
+ ]
+}

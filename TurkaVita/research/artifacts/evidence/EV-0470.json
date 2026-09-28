@@ -1,0 +1,15 @@
+{
+ "id": "EV-0470",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 110,
+  "printed_page": "93",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says the al-Khaṣāʾiṣ does not seem ever to have been finished, that it is unpublished, and that no MS copies are known to survive.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, al-Khaṣāʾiṣ",
+ "read_by": "R3 opened pdf p.110"
+}

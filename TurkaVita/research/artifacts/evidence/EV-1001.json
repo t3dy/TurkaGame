@@ -1,0 +1,15 @@
+{
+  "id": "EV-1001",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 332,
+    "printed_page": "315",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki dates the R. Shaqq-i Qamar to the beginning of 829/1426. His footnote adds that this is the same year as Ibn Turka's second trial in Herat and as the composition of his first, 'hyper-Sunni' apology, the Nafsat al-Maṣdūr I (together with the R. Iʿtiqādāt). The page draws no conclusion from the coincidence.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.332"
+}

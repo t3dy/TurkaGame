@@ -1,0 +1,30 @@
+{
+ "id": "CL-0083",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In 833/1430 (timeline: c. 833/1429) Ibn Turka failed to obtain a hearing with Shāhrukh in Simnan, then went to Natanz and summoned his family there.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0163",
+  "EV-0046",
+  "EV-0047"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "Nafsat al-Maṣdūr II, 207",
+   "shaping_risk": "high",
+   "note": "written to seek intercession from the ruler's son while his case was still unresolved"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.73-74 and p.53",
+   "shaping_risk": "medium",
+   "note": "the text says 833/1430 and the timeline c. 833/1429"
+  }
+ ],
+ "domain": "biographical"
+}

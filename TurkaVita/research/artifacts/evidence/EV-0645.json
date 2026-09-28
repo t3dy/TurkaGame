@@ -1,0 +1,15 @@
+{
+ "id": "EV-0645",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 133,
+  "printed_page": "116",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Sharḥ Khuṭbat al-Kashshāf is a brief commentary on the prologue to Zamakhsharī's Kashshāf; the author states that it is to be used as a model or key for interpreting the rest of the book. Melvin-Koushki notes that Ṣāʾin al-Dīn's lettrism presupposes an uncreated Quran, so he is here and elsewhere at pains to expose the pernicious aspects of Zamakhsharī's Muʿtazilī work.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.133",
+ "refers_to_primary": "Ibn Turka, Sharḥ Khuṭbat al-Kashshāf"
+}

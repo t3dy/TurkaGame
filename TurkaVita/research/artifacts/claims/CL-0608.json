@@ -1,0 +1,22 @@
+{
+ "id": "CL-0608",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The warm relationship between the astronomer Qāżīzāda Rūmī and Ibn Turka dates from their student years in Samarkand under Ṣadr al-Dīn Turka (MK's inference; MK's own word is 'undoubtedly').",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1218",
+  "EV-1202"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.287",
+   "shaping_risk": "medium",
+   "note": "MK infers the Samarkand setting and the warmth from Gāzurgāhī's list; no source read says 'Samarkand' for Rūmī"
+  }
+ ],
+ "domain": "biographical"
+}

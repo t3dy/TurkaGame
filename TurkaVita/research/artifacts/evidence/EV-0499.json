@@ -1,0 +1,15 @@
+{
+ "id": "EV-0499",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 118,
+  "printed_page": "101",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that the Muhr al-Nubuwwa was 'completed before 4 Jumādā II 831/21 March 1428 in Shiraz', with an asterisk (a probable transcription date), citing Āqā Buzurg for the place and date.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Muhr al-Nubuwwa",
+ "read_by": "R3 opened pdf p.118"
+}

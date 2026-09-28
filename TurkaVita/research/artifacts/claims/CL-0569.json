@@ -1,0 +1,22 @@
+{
+  "id": "CL-0569",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka gives reasons for the written form's primacy: only writing endures across the ages and can convey the full complexity latent in prophecy, and written letterforms, carried by light and not bodies, cannot clash or be denatured as spoken sounds carried by air can.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1107",
+    "EV-1108",
+    "EV-1109"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.355-356",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

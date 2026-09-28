@@ -1,0 +1,32 @@
+{
+ "id": "CL-0604",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Dawlatshāh (892/1487) named Ibn Turka and Sharaf al-Dīn Yazdī as the two most prominent intellectuals of Shahrukhid Iran, and MK notes that even the hostile Bākharzī corroborates that the two were held the leading intellectuals of their day.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1213",
+  "EV-1222",
+  "EV-1212"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Dawlatshāh Samarqandī, Tazkirat al-Shuʿarā",
+   "where": "p. 340 (892/1487)",
+   "shaping_risk": "medium",
+   "note": "writing about half a century after Ibn Turka's death"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.285",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social",
+ "counterevidence": [
+  "EV-1216"
+ ]
+}

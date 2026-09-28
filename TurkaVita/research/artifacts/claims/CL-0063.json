@@ -1,0 +1,28 @@
+{
+ "id": "CL-0063",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Timeline A.1 dates the R. Ḥurūf to 817/1414 in Shiraz, written for Iskandar (queried '(?)').",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0026"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "colophons and audition notes of MS Majlis 10196 and related manuscripts, as summarised in MK's timeline (fn. 1)",
+   "where": "pdf p.51",
+   "shaping_risk": "medium",
+   "note": "a colophon date may record copying, not composition; the timeline does not say which entries rest on colophons"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.52",
+   "shaping_risk": "medium",
+   "note": "query mark on the addressee; Iskandar was captured in 817/1414"
+  }
+ ],
+ "domain": "textual"
+}

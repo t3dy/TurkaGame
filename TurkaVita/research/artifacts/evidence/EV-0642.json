@@ -1,0 +1,15 @@
+{
+ "id": "EV-0642",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 133,
+  "printed_page": "116",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 f. 120a-20b (as printed) carries the R. fī Sharḥ Ḥaqīqat al-Waḥda al-Muṭlaqa al-Dhātiyya (variant title R. al-Khatmiyya), copied on 3 Dhū l-Ḥijja 827/27 October 1424; it is the only copy listed. No catalogue reference and no asterisk are printed, and the entry does not state a composition date.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.133",
+ "refers_to_primary": "R. fī Sharḥ Ḥaqīqat al-Waḥda, MS Majlis 10196"
+}

@@ -1,0 +1,26 @@
+{
+ "id": "CL-0123",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I's second defence: quoting another's words is not transgression; blame rests on the original author.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0269"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.81 (printed 64)",
+   "shaping_risk": "low"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "CL-0044",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Sharaf al-Dīn Yazdī identified Ibn Turka as his teacher in occultism, and the late Timurid period considered the two men the most prominent intellectuals of Shahrukhid Iran.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0118",
+  "EV-0119"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Bākharzī, Maqāmāt-i Jāmī; Dawlatshāh, Tazkirat al-Shuʿarā",
+   "where": "pdf p.67, notes 65-66",
+   "shaping_risk": "medium",
+   "note": "reception a century or more later"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.67",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

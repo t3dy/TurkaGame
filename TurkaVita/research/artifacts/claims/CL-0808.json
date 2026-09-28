@@ -1,0 +1,28 @@
+{
+ "id": "CL-0808",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Quiring-Zoche's EIr entry calls Ibn Turka 'a Sufi poet, philosopher, and jurist', a description MK calls similarly problematic.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1630"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Rosemarie Quiring-Zoche",
+   "where": "'Afżal-al-Din Torka', EIr",
+   "shaping_risk": "medium",
+   "note": "The position is this scholar's own; we have it only as summarised by Melvin-Koushki."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (reporter; partisan)",
+   "where": "dissertation pdf p.25",
+   "shaping_risk": "medium",
+   "note": "MK argues a rival reading (Ibn Turka as occult philosopher) and in places calls this reading an error; his summary may compress or foreshorten it."
+  }
+ ],
+ "domain": "biographical"
+}

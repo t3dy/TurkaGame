@@ -1,0 +1,15 @@
+{
+  "id": "EV-0801",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 151,
+    "printed_page": "134",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The 15 letters in the margins of MS Majlis 10196 (12 also in the Munshaʾāt-i Turka, 3 unique to the MS) sit on ff. 51b (4 letters), 122a (3), 139a (1), 148a (1), 153b (1), 160a (3), 172a (1) and 188b (1). MK notes that Dānishpazhūh's review of these marginal letters is not entirely reliable in identifying them.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.151",
+  "refers_to_primary": "MS Majlis 10196 marginal letters"
+}

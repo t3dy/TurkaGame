@@ -1,0 +1,15 @@
+{
+ "id": "EV-0420",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 99,
+  "printed_page": "82",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "A marginal correction in MS Majlis 10196 to Ṣāʾin al-Dīn's autograph colophon on the K. al-Mafāḥiṣ states that the colophon's date refers to the copying (taswīd) of the manuscript only.",
+ "evidence_kind": "autograph",
+ "refers_to_primary": "MS Majlis 10196, K. al-Mafāḥiṣ colophon",
+ "read_by": "R3 opened pdf p.99"
+}

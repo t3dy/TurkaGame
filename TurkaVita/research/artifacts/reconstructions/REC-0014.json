@@ -1,0 +1,19 @@
+{
+ "id": "REC-0014",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Was there a standing inquisitorial body?",
+ "proposition": "There may have been a formal body (majlis-i tafaḥḥuṣ u dīvān-i tajassus) that tried Ibn Turka's three trials.",
+ "kind": "inferential",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "Ṭūsī mentions such a body interrogating Hurufis; MK presumes it also handled Ibn Turka.",
+  "Both ‘may have been’ and ‘presumably’ are MK's hedges."
+ ],
+ "observed_facts": [
+  "EV-0204",
+  "EV-0205",
+  "EV-0242"
+ ],
+ "confidence": "low"
+}

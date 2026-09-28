@@ -1,0 +1,28 @@
+{
+ "id": "WRK-ATVAR-I-SALASA",
+ "type": "work",
+ "status": "draft",
+ "title": "Aṭvār-i Salāsa ('The Three Stages/Types [of Sufis]')",
+ "transliterated_title": "Aṭvār-i Salāsa (var. R. dar Taṣavvuf; R. fī l-Marātib al-Thalātha min al-Taṣawwuf)",
+ "language": "Persian",
+ "genre": "treatise",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "before 1425-08-22",
+  "hijri": "before 7 Shawwāl 828",
+  "basis": "MK: 'completed before' the date of the Majlis 10196 copy (ff. 145b-48a); a copying date and only a terminus ad quem for composition; not asterisked. A second early copy, MS Majlis 1918/21, is dated 828/1425."
+ },
+ "date_kind": "transcription",
+ "manuscript": "20 copies listed; earliest dated: MS Majlis 10196 ff. 145b-48a (7 Shawwāl 828/22 Aug 1425) and MS Majlis 1918/21 pp. 185-201 (828/1425); then MS 5423 (842/1439), MS 1825 (851/1447), BL Add. 23983 (858/1454), Cairo MS 5 (864/1460), and later copies.",
+ "majlis_folios": "ff. 145b-48a",
+ "edited": true,
+ "summary": "A treatise on three types of Sufi (muḥaqqiqān, abrār, akhyār) in an introduction and three aṣls; the number of early MSS suggests its popularity in the 9th/15th century.",
+ "supported_by": [
+  "EV-0434",
+  "EV-0435",
+  "EV-0436"
+ ],
+ "claims": [
+  "CL-0210"
+ ]
+}

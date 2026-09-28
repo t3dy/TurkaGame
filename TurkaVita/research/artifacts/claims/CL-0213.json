@@ -1,0 +1,22 @@
+{
+ "id": "CL-0213",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki says the copyist of MS Majlis 10196 seems to have accompanied Ibn Turka during the period of his exile after the trial of 830/1427.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0414",
+  "EV-0403"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.80",
+   "shaping_risk": "low",
+   "note": "'seems to'; based on the autograph and the colophon series"
+  }
+ ],
+ "domain": "textual"
+}

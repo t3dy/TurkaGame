@@ -1,0 +1,35 @@
+{
+ "id": "CL-0305",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "A copy of Sharḥ al-Basmala went to Qāżīzāda Rūmī, on the evidence of a letter from him to Ibn Turka in the margin of MS Majlis 10196 f. 153a, and the manuscript has a marginal dedication to Ulugh Beg on f. 332b.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0614",
+  "EV-0615"
+ ],
+ "domain": "social",
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Qāżīzāda Rūmī writing to Ibn Turka (marginal letter)",
+   "where": "MS Majlis 10196 f. 153a",
+   "shaping_risk": "medium",
+   "note": "R4 did not read the letter itself; only Melvin-Koushki's pointer"
+  },
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196, as reported by Melvin-Koushki citing Ḥāʾirī's catalogue",
+   "where": "MS Majlis 10196 f. 332b",
+   "shaping_risk": "medium",
+   "note": "the entry calls it a dedication in the margin; who wrote it is not stated"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.128",
+   "shaping_risk": "low"
+  }
+ ]
+}

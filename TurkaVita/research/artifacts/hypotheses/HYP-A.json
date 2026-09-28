@@ -1,0 +1,227 @@
+{
+  "id": "HYP-A",
+  "type": "hypothesis",
+  "status": "draft",
+  "dispute": "Who was Ibn Turka: what did he actually hold, and what does the surviving record allow us to say?",
+  "letter": "A",
+  "name": "Shiʿi esotericist",
+  "proposition": "Ibn Turka was a Shiʿi esotericist, openly Shiʿi in confessional allegiance: Corbin's 'standard-issue Shiʿi esotericist', built on the R. Shaqq-i Qamar u Bayān-i Sāʿat, which puts the Imams and their heirs at the summit of knowledge. The Sunni self-portrait of the apologies is then a cover (Ṭihrānī's taqiyya) or a personal crypto-Shiʿism (Jūdī-Niʿmatī). The formula 'Peripatetic, ishrāqī and Akbarian strands in the perspective of Shīʿī esotericism' is Cooper's, not Corbin's; Melvin-Koushki credits Corbin only with the Shiʿi-esotericist assumption the others took over.",
+  "commitments": {
+    "conviction": true
+  },
+  "entails": [
+    "The Sunni self-presentation of the apologies and creed tracts (Ashʿarī creed, Shiʿism named as an enemy of the Sunna) must be taqiyya or script for his judges; taqiyya is asserted, never observed.",
+    "His free writings must show confessional Shiʿism, not merely the reverence for ʿAlī and the Imams that Sunni manāqib writing also carries.",
+    "His Shāfiʿī family rite, and his acknowledgement of Abū Bakr, ʿUmar and ʿUthmān in the very commentary where he rewrites a verse for the Imams, must be compatible with open Shiʿism.",
+    "An openly Shiʿi qadi twice cleared by the Sunnizing Shāhrukh in Herat needs explaining."
+  ],
+  "proponents": [
+    {
+      "scholar": "Henry Corbin (as reported by Melvin-Koushki)",
+      "cites": [
+        "REC-0050",
+        "REC-0003"
+      ],
+      "note": "Two sustained Western treatments of Ibn Turka exist; Corbin's is a study of the R. Shaqq-i Qamar, and Melvin-Koushki reports no ground for the 'openly Shiʿi' verdict other than that treatise. Melvin-Koushki calls the verdict reasonable outside the context of his own study but blind to the age's confessional ambiguity."
+    },
+    {
+      "scholar": "Jean Aubin (1957)",
+      "cites": [
+        "REC-0003"
+      ],
+      "note": "Assumed a Shiʿi identity in a 1957 article on Timurid patronage at Shiraz and later modified the view (1991), a fact Melvin-Koushki owes to Binbaş."
+    },
+    {
+      "scholar": "Āqā Buzurg Ṭihrānī",
+      "cites": [
+        "REC-0004"
+      ],
+      "note": "Reads the apologies as taqiyya. Melvin-Koushki cites the conclusion in a footnote without arguing for or against it."
+    },
+    {
+      "scholar": "Akram Jūdī-Niʿmatī",
+      "cites": [
+        "REC-0005"
+      ],
+      "note": "Concludes that he was effectively crypto-Shiʿi in personal outlook, 'though not necessarily in a sectarian sense', which moves the reading toward Melvin-Koushki's."
+    },
+    {
+      "scholar": "John Cooper (as reported by Melvin-Koushki)",
+      "cites": [
+        "REC-0051"
+      ],
+      "note": "Holds the Shiʿi-esotericist framing in his own formula, which is not Corbin's. He leans largely on the Tamhīd but, Melvin-Koushki says, breaks ranks to acknowledge a larger project and the numerical symbolism."
+    }
+  ],
+  "alternatives": [
+    "HYP-B",
+    "HYP-C",
+    "HYP-D",
+    "HYP-E",
+    "HYP-F"
+  ],
+  "cites": [
+    "REC-0050",
+    "REC-0051",
+    "REC-0003",
+    "REC-0004",
+    "REC-0005",
+    "REC-0009"
+  ],
+  "bearings": [
+    {
+      "evidence": "EV-1600",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Corbin gives Ibn Turka a brief, warm embrace as a 'standard-issue Shiʿi esotericist'; Melvin-Koushki grants that this at least complicated the otherwise featureless 'mystical-scholastic' picture.",
+      "attributed_to": "Henry Corbin"
+    },
+    {
+      "evidence": "EV-1602",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Corbin asserts that Ibn Turka is an openly Shiʿi thinker in confessional allegiance. Melvin-Koushki's note ties the assertion to Corbin's study of the R. Shaqq-i Qamar and reports no other ground.",
+      "attributed_to": "Henry Corbin"
+    },
+    {
+      "evidence": "EV-0609",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The treatise Corbin studied ranks seven groups of interpreters, and at the top puts 'the men of might and vision', glossed as the Imams and their heirs, masters of jafr. On Corbin's ground this is the confessional allegiance showing in a doctrinal work.",
+      "attributed_to": "Henry Corbin"
+    },
+    {
+      "evidence": "EV-1037",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "In the same treatise the Amir ʿAlī and his sons possess the transcript called jafr that demonstrates the splitting of the moon: the esoteric science is placed in the Imams' keeping. This is the passage on which an openly Shiʿi reading of the treatise leans.",
+      "attributed_to": "Henry Corbin"
+    },
+    {
+      "evidence": "EV-0362",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reports that he alters a line of Ibn al-Fāriḍ from 'his Companions and the Followers' to 'his children and the holy Imams', 'in what seems a specifically Shiʿi fashion'. A is the reading that takes that at full confessional value; Melvin-Koushki himself files it under imamophilism.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0363",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "In the same commentary he invokes the hadith al-thaqalayn and equates the second 'weighty thing' with the Prophet's family (ʿitra) rather than with the Sunna. Melvin-Koushki reports it as Shiʿi-looking; A reads it as declared allegiance.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0681",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "A work devoted to the hadith of ʿAlī and the other Imams sits in the oeuvre. Melvin-Koushki counts his heavy emphasis on the Imams as sources of occult knowledge among his grounds for imamophilism; A reads the same emphasis as confession.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0153",
+      "kind": "early_work",
+      "direction": "supports",
+      "reading": "The verse his Yazd enemies took to Herat in 1426 (the closed eyes of the first two a byword for blindness, ʿAlī's eye alive with insight) is the one text on the board that is Shiʿi in a sectarian register. The pages read do not say whether he owned or disowned it.",
+      "attributed_to": "the prosecution at Herat"
+    },
+    {
+      "evidence": "EV-0330",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "An anonymous early reader of a Yazd copy of Nafsat I wrote in the margin that he was amazed at its dismissal of the Shiʿa, and asked how such a scholar, known for enlightened Shiʿi and mystical views, could say it. A reads 'known for' as his contemporary reputation.",
+      "attributed_to": "design inference"
+    },
+    {
+      "evidence": "EV-0279",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "Ṭihrānī's taqiyya reading takes Nafsat I's equation of Shiʿism, Muʿtazilism and philosophy as the three enemies of the Sunna as the protective colouring of 'an obvious Shiʿi'; Melvin-Koushki records the conclusion without arguing for or against it.",
+      "attributed_to": "Āqā Buzurg Ṭihrānī"
+    },
+    {
+      "evidence": "EV-0512",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Āqā Buzurg says in al-Dharīʿa that Ibn Turka asserts a Sunni identity in the apology out of taqiyya, despite the author's frank tone.",
+      "attributed_to": "Āqā Buzurg Ṭihrānī"
+    },
+    {
+      "evidence": "EV-0631",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "The editor of the Sharḥ-i Gulshan-i Rāz (Tehran 1996) titles Ibn Turka on the title page 'Shāriḥ-i Shīʿī-Mazhab', a Shiʿi-madhhab commentator: a modern editor's verdict, stated rather than argued.",
+      "attributed_to": "Kāẓim Dizfūliyān"
+    },
+    {
+      "evidence": "EV-1607",
+      "kind": "reception",
+      "direction": "supports",
+      "reading": "Cooper's formula is 'one of the first to unify the Peripatetic, ishrāqī and Akbarian strands in the perspective of Shīʿī esotericism'. It is Cooper's, not Corbin's: he leans largely on the Tamhīd but, Melvin-Koushki says, breaks ranks to acknowledge the numerical symbolism in the writings.",
+      "attributed_to": "John Cooper"
+    },
+    {
+      "evidence": "EV-1204",
+      "kind": "hagiography",
+      "direction": "neutral",
+      "reading": "The Savāniḥ puts Ibn Turka among Niʿmat Allāh's companions at Akhlāṭī's house on the Nile. Melvin-Koushki notes that the source is concerned to establish Niʿmat Allāh's Shiʿi leanings and may be early Safavid: a Shiʿi frame around the circle, about Niʿmat Allāh rather than about him.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0849",
+      "kind": "letter",
+      "direction": "supports",
+      "reading": "In exile he wrote to Sayyid Aḥmad Kārkiyā, one of the Zaydī sayyids who ruled Gilan, praising his patronage of scholars and Sufis. A reads a fugitive from a Sunnizing court seeking sayyid patrons; the game notes he wrote to Sufi shaykhs and Sunni governors in the same months.",
+      "attributed_to": "design inference"
+    },
+    {
+      "evidence": "EV-1036",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The translation of the R. Shaqq-i Qamar adds in brackets that the dignity of level seven belongs to the Imams alone. That is the plain deference reading Melvin-Koushki names and sets aside, and he flags the bracket as his own insertion, not the Persian; A can lean on it only as far as the bracket allows.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0680",
+      "kind": "colophon",
+      "direction": "neutral",
+      "reading": "Melvin-Koushki reports that the only known copy of the Tarjuma-yi Aḥādīs, the work of ʿAlī's and the Imams' sayings, has a seemingly defaced title and a text abruptly truncated. The record does not say by whom or why.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0364",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "In the following verses of the same commentary he acknowledges the roles of Abū Bakr, ʿUmar and ʿUthmān while reserving his highest praise for ʿAlī. Melvin-Koushki reads this as the imamophile's balance, which an openly Shiʿi confession would not need.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0063",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "In the Tuḥfa-yi ʿAlāʾī he says his family has always belonged to the Shāfiʿī rite. Melvin-Koushki counts the impeccable Shāfiʿī credentials against the openly Shiʿi reading, while adding that Shāfiʿism is an unreliable marker of Sunnism.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0360",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "The Mafāḥiṣ's closing catalogue of the salaf, Ibn Ḥanbal and al-Shāfiʿī among them, ends by urging the less intelligent to hold to the folk of the Sunna. Melvin-Koushki reads it as a concession to less intelligent readers; A must read it the same way.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0264",
+      "kind": "apology",
+      "direction": "strains",
+      "reading": "Nafsat I says he laid a creed of adherence to the Sunna and Jamāʿa before the leading scholars at court, who testified to it. Lewisohn's face-value reading takes this as his creed; A must call it script or taqiyya.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-0463",
+      "kind": "creed_tract",
+      "direction": "strains",
+      "reading": "The Iʿtiqādāt presents him as a staunch Sunni-Ashʿarī opposed to Muʿtazilism, philosophy, Shiʿism and messianic Sufism. Lewisohn takes the apologies literally; A has to call a whole treatise a mask.",
+      "attributed_to": "Leonard Lewisohn"
+    }
+  ]
+}

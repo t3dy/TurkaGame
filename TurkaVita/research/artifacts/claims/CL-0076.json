@@ -1,0 +1,28 @@
+{
+ "id": "CL-0076",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "A formal inquisitorial body (majlis-i tafaḥḥuṣ u dīvān-i tajassus) may have handled charges of heterodoxy, and presumably conducted Ibn Turka's three trials.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0172"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Muḥammad Ṭūsī, R. Majmaʿ al-Tahānī, written for Bāysunghur",
+   "where": "pdf p.75, note 99",
+   "shaping_risk": "medium",
+   "note": "refers to a body that interrogated Hurufis"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.75",
+   "shaping_risk": "medium",
+   "note": "'may have been' and 'presumably'; MK does not list the three trials on the pages read"
+  }
+ ],
+ "domain": "institutional"
+}

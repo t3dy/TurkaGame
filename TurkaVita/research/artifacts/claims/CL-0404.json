@@ -1,0 +1,22 @@
+{
+  "id": "CL-0404",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The year of letter 1 is 814 (5 September 1411) or 822 (10 June 1419); MK prefers 814 on the assumption of rough chronological order in the collection.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0816",
+    "EV-0807"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.156",
+      "shaping_risk": "medium",
+      "note": "Depends on the unproven chronological ordering of the collection"
+    }
+  ],
+  "domain": "chronological"
+}

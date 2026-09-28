@@ -1,0 +1,30 @@
+{
+ "id": "CL-0602",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The pages read frame Yazdī's relation to Ibn Turka two ways at once and do not reconcile them: as fellow disciple of Akhlāṭī (Gāzurgāhī) and as Ibn Turka's own disciple (Bākharzī reporting Jāmī; MK's 'chief disciple'); MK's own summary lists both as separate themes of the Herat image.",
+ "epistemic_type": "contested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1217",
+  "EV-1220",
+  "EV-1212",
+  "EV-1223"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Gāzurgāhī and Bākharzī, compared",
+   "where": "pdf pp. 286, 288",
+   "shaping_risk": "medium",
+   "note": "two later tazkiras with different aims"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.284",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

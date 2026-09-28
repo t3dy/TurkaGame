@@ -1,0 +1,15 @@
+{
+  "id": "EV-0853",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 161,
+    "printed_page": "144",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 32, to Amīr Sayyid Kārkiyā, either Sayyid Nāṣir or Sayyid Aḥmad (ca. 831-32/1428-29, Gilan): a brief congratulation on a conquest, crediting it to the presence of Sufis in the amir's retinue (TMN/M f. 51b, TMN/MS p. 26, TMN/D pp. 201-2). MK's footnote: their father Sayyid Riżā Kārkiyā died in 829/1426, before Ibn Turka's stay in Gilan.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.161",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 32"
+}

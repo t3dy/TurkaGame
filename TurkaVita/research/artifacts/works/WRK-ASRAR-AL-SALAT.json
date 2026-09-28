@@ -1,0 +1,33 @@
+{
+ "id": "WRK-ASRAR-AL-SALAT",
+ "type": "work",
+ "status": "draft",
+ "title": "Asrār al-Ṣalāt ('The Mysteries of Ritual Prayer')",
+ "transliterated_title": "Asrār al-Ṣalāt",
+ "language": "Persian",
+ "genre": "treatise",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "1417-08-05",
+  "hijri": "21 Jumādā II 820",
+  "basis": "MK: 'completed on' this date in Herat; differs from the Majlis 10196 copy (Yazd, 26 Ramaḍān 828/11 Aug 1425), so it is not merely the copy date; MK does not name the source of the 820 date. The K. al-Mafāḥiṣ (823/1420) refers to the work (f. 77a) and the R. Suʾl al-Mulūk refers to it."
+ },
+ "date_kind": "composition",
+ "place": "Herat (composition, per MK); the Majlis 10196 copy was made in Yazd",
+ "manuscript": "13 copies listed; earliest dated: MS Majlis 10196 ff. 129b-39a (Yazd, 26 Ramaḍān 828/11 Aug 1425); then MS 5423 (842/1439), MS 1825 (851/1447), Bāqir Riqqat majmūʿa (901/1496), and later copies. Āqā Buzurg mis-dates the Majlis copy to 17 Dhū l-Qaʿda 828.",
+ "majlis_folios": "ff. 129b-39a",
+ "edited": true,
+ "summary": "On the symbolism and esoteric meaning of the prayer act from mystical and lettrist points of view, with attention to Shafiʿi and Hanafi legal positions.",
+ "supported_by": [
+  "EV-0430",
+  "EV-0431",
+  "EV-0432",
+  "EV-0433",
+  "EV-0489"
+ ],
+ "claims": [
+  "CL-0222",
+  "CL-0218",
+  "CL-0210"
+ ]
+}

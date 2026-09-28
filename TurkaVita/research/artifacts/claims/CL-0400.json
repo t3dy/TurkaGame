@@ -1,0 +1,35 @@
+{
+  "id": "CL-0400",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka's correspondence survives as the Munshaʾāt-i Ṣāʾin-i Turka: 46 letters, fragments or notes by MK's count of the standard collection, 50 with three letters unique to MS Majlis 10196 and one unique to MS Malik 4029; MS Majlis 10196 (copied 828-38/1425-35) carries only 15 of them, in its margins.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-0800",
+    "EV-0801",
+    "EV-0803",
+    "EV-0804",
+    "EV-0805",
+    "EV-0806",
+    "EV-0802",
+    "EV-0814"
+  ],
+  "mediation": [
+    {
+      "layer": "manuscript_colophon",
+      "who": "Copyists of MSS Majlis 10196, Sinā 316, Dānishgāh 2576, Malik 4029",
+      "where": "see MK's manuscript list, pdf p.150-152",
+      "shaping_risk": "medium",
+      "note": "Later copies; the compilers' selection and order are not his."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.150",
+      "shaping_risk": "low",
+      "note": "MK's own counts differ from page to page; see notes file"
+    }
+  ],
+  "domain": "textual"
+}

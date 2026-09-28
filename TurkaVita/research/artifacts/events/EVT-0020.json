@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0020",
+ "type": "event",
+ "status": "draft",
+ "actor": "Shāhrukh",
+ "date": {
+  "start": "1412",
+  "end": "1412",
+  "hijri": "815",
+  "basis": "Timeline A.1, pdf p.52.",
+  "date_kind": "context"
+ },
+ "place": "Khurasan, Transoxania, Khwarazm",
+ "event_type": "political",
+ "description": "By this date Shāhrukh controls Khurasan, Transoxania and Khwarazm.",
+ "claims": [
+  "CL-0090"
+ ],
+ "fixed_point": false
+}

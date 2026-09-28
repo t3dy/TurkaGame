@@ -1,0 +1,15 @@
+{
+ "id": "EV-0680",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 147,
+  "printed_page": "130",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 440b-41b carries Tarjuma-yi Aḥādīs-i Mamzūj bā Sukhanān-i ʿAlī u Aʾimma (variants Tarjuma-yi Aḥādīs az Amīr al-Muʾminīn, Sharḥ al-Nahj), undated and incomplete; it is the only known copy. Melvin-Koushki reports that the title has seemingly been defaced and the text is abruptly truncated.",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.147",
+ "refers_to_primary": "Tarjuma-yi Aḥādīs, MS Majlis 10196"
+}

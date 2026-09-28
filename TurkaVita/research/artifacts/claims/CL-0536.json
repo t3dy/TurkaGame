@@ -1,0 +1,25 @@
+{
+  "id": "CL-0536",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The dissertation does not settle whether 18 Rabīʿ I 829 dates the composition or the copying of the R. Shaqq-i Qamar: it calls the treatise 'before 829/1426' in the work lists, 'the beginning of 829/1426' in chapter six, gives the colophon as 28 January 1426 with a note that it may date copying, and gives the same day as 27 February 1426 for the earliest manuscript's copy.",
+  "epistemic_type": "undeterminable",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1022",
+    "EV-1001",
+    "EV-1024",
+    "EV-1023",
+    "EV-1021"
+  ],
+  "mediation": [
+    {
+      "layer": "manuscript_colophon",
+      "who": "manuscript colophon / copying note as reported by Melvin-Koushki",
+      "where": "pdf pp.126, 175, 332, 479",
+      "shaping_risk": "medium",
+      "note": "three different framings of one date"
+    }
+  ],
+  "domain": "chronological"
+}

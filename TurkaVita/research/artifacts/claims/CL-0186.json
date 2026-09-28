@@ -1,0 +1,20 @@
+{
+ "id": "CL-0186",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's writing on ʿAlī and the Imams fits an established Sunni manāqib tradition.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0355"
+ ],
+ "domain": "textual",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.91 (printed 74)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

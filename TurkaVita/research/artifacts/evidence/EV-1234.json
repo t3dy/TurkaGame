@@ -1,0 +1,15 @@
+{
+ "id": "EV-1234",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 436,
+  "printed_page": "419",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK names the Munshaʾāt-i Turka as the primary source for Ṣāʾin al-Dīn's warm relations with Niʿmat Allāh Valī, Qāsim-i Anvār, Aḥmad Samarqandī, ʿAlā al-Dīn Chishtī and Ḥasan ʿAṭṭār, among others, and says this both corroborates what he says of his dealings with Sufi shaykhs in his apologies (chiefly in an admonitory role) and counterbalances his criticisms of organized Sufism.",
+ "evidence_kind": "letter",
+ "refers_to_primary": "Munshaʾāt-i Turka (MK's summary)",
+ "read_by": "R7 opened pdf p.436"
+}

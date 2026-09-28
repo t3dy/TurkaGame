@@ -1,0 +1,15 @@
+{
+  "id": "EV-0872",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 164,
+    "printed_page": "147",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK argues that the correspondent identified as Amīr Sayyid Riżā Kārkiyā in the other-MS letters cannot be right, because he died in 829/1426, before Ibn Turka's exile stay in Gilan, which coincided with the rule of Sayyid Nāṣir at Lahijan and his brother Sayyid Aḥmad at Ranikuh. The reply is therefore presumably identical to one of letters 29-32, while the initial letter from the amir is otherwise unpreserved. Letter 1 to Bāysunghur may likewise duplicate one of nos. 2, 17, 18 or 19.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.164",
+  "refers_to_primary": "Letters in other MSS"
+}

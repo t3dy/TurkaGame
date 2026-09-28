@@ -1,0 +1,15 @@
+{
+ "id": "EV-0013",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 51,
+  "printed_page": "34",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Timeline A.1: he writes the Risāla Munāẓarāt-i Khams in 808/1405. (Basis of the date not specified entry by entry.)",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.51",
+ "refers_to_primary": "Ibn Turka, R. Munāẓarāt-i Khams"
+}

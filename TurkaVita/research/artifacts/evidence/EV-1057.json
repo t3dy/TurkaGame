@@ -1,0 +1,15 @@
+{
+  "id": "EV-1057",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 179,
+    "printed_page": "162",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki reads Ibn Turka here as taking issue with the Avicennan concept of metaphysics as the universal science (al-ʿilm al-kullī) dealing with all existents: resting on inductive reasoning alone, metaphysics is confined to the abstract and so cannot truly claim to be universal.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, R. Anjām",
+  "read_by": "R6 opened pdf p.179"
+}

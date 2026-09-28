@@ -1,0 +1,21 @@
+{
+  "id": "CL-0561",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The K. al-Mafāḥiṣ (Book of Inquiries) is Ibn Turka's summa of lettrism, the key to his universalist project and his systematization of Akhlāṭī's teachings.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1077",
+    "EV-1078"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.347",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "textual"
+}

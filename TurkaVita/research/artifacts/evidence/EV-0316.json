@@ -1,0 +1,15 @@
+{
+ "id": "EV-0316",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 85,
+  "printed_page": "68",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Nafsat I, per Melvin-Koushki, summarises the basic Sufi position with a dūbayt often repeated by Khwāja Pārsā, whose last lines run: “You cannot attain it by knowing; you can only know by unknowing.”",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.85"
+}

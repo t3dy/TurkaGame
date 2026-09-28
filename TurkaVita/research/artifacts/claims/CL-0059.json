@@ -1,0 +1,21 @@
+{
+ "id": "CL-0059",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's attachment to Iskandar's court may have been seen as a liability after Iskandar's fall, and it is not unlikely that it contributed to his later problems in the region.",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0136"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.69",
+   "shaping_risk": "medium",
+   "note": "'not unlikely'; MK's inference"
+  }
+ ],
+ "domain": "political"
+}

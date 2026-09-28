@@ -1,0 +1,15 @@
+{
+ "id": "EV-0610",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 128,
+  "printed_page": "111",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Shaqq-i Qamar is published in Chahārdah Risāla-yi Fārsī (Tehran 1972) pp. 103-17; Melvin-Koushki provides his own translation in Part 2, §T.1 of the dissertation.",
+ "evidence_kind": "reception",
+ "read_by": "R4 opened pdf p.128",
+ "refers_to_primary": "Shaqq-i Qamar, edition"
+}

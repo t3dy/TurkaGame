@@ -1,0 +1,28 @@
+{
+ "id": "CL-0804",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, ʿAllāma Ṭabāṭabāʾī ranks Ibn Turka in al-Mizan with Farabi and Suhravardi as a reconciler of peripatetic philosophy and theoretical mysticism.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1613"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "ʿAllāma Ṭabāṭabāʾī",
+   "where": "al-Mizan 5/282-84",
+   "shaping_risk": "medium",
+   "note": "The position is this scholar's own; we have it only as summarised by Melvin-Koushki."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (reporter; partisan)",
+   "where": "dissertation pdf p.24",
+   "shaping_risk": "medium",
+   "note": "MK argues a rival reading (Ibn Turka as occult philosopher) and in places calls this reading an error; his summary may compress or foreshorten it."
+  }
+ ],
+ "domain": "doctrinal"
+}

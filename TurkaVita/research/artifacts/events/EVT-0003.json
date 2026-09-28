@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0003",
+ "type": "event",
+ "status": "draft",
+ "actor": "Temür",
+ "date": {
+  "start": "1387",
+  "end": "1387",
+  "hijri": "789",
+  "basis": "Timeline A.1, pdf p.51.",
+  "date_kind": "context"
+ },
+ "place": "Isfahan",
+ "event_type": "conquest",
+ "description": "Temür takes Isfahan and massacres most of its inhabitants; the Turka family is spared.",
+ "claims": [
+  "CL-0017",
+  "CL-0019"
+ ],
+ "fixed_point": true
+}

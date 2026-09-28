@@ -1,0 +1,15 @@
+{
+  "id": "EV-1128",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 345,
+    "printed_page": "328",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki quotes the R. Anjām, in a footnote, as saying that recently a number of locks securing the veils over the quranic grandeur have been opened through the 'moon-splitting writings' of Sayyid Akhlāṭī (arqām-i aqmār inshiqāq-i sayyidī), so that whoever can comprehend them may join those who understand the language of the new generation (naw-khāstagān-i zamān).",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Anjām",
+  "read_by": "R6 opened pdf p.345"
+}

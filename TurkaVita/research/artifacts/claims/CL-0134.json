@@ -1,0 +1,28 @@
+{
+ "id": "CL-0134",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Nafsat I answers the second fault: impostor masters, through disciples sent to rulers, gain influence, take allegiance from rulers and cause unrest; the king must be reminded to forestall this, and these are not true Sufis.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0285",
+  "EV-0286",
+  "EV-0287"
+ ],
+ "domain": "political",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, writing to the ruler who was judging him",
+   "where": "Nafsat al-Maṣdūr I",
+   "shaping_risk": "high"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.82 (printed 65)",
+   "shaping_risk": "low"
+  }
+ ]
+}

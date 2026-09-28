@@ -1,0 +1,33 @@
+{
+ "id": "WRK-MANAHIJ",
+ "type": "work",
+ "status": "draft",
+ "title": "K. al-Manāhij ('Book of Methods')",
+ "transliterated_title": "Kitāb al-Manāhij (fī l-Manṭiq)",
+ "language": "Arabic",
+ "genre": "manual of logic",
+ "theme": "logic",
+ "date": {
+  "ce": "1430-04-14",
+  "hijri": "20 Rajab 833",
+  "basis": "MK: 'completed on' this date in Natanz; the same day and place as the Majlis 10196 colophon (ff. 382b-404a); the folio lies in the second half, whose dates MK assumes are more likely composition (p.79); not asterisked."
+ },
+ "date_kind": "composition",
+ "place": "Natanz",
+ "addressee": "His son Muḥammad, for whom it was written",
+ "occasion": "Written for his son.",
+ "manuscript": "5 items listed; earliest dated: MS Majlis 10196 ff. 382b-404a (Natanz, 20 Rajab 833/14 April 1430); Sipahsālār MS 2930/12 (Abarquh, 845/1441); three Tehran microfilms (undated).",
+ "majlis_folios": "ff. 382b-404a",
+ "edited": true,
+ "summary": "A minutely detailed treatise on logic in the manner of the latter-day philosophers, in four methods; in the main contemporary but at points preferring the ancients.",
+ "supported_by": [
+  "EV-0491",
+  "EV-0492",
+  "EV-0493",
+  "EV-0494"
+ ],
+ "claims": [
+  "CL-0235",
+  "CL-0211"
+ ]
+}

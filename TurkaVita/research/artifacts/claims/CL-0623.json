@@ -1,0 +1,28 @@
+{
+ "id": "CL-0623",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka does not name Fażl Allāh Astarābādī or the Hurufis anywhere in his lettrist works (perhaps not wishing to dignify them, MK); his one clear reference is in the second apology (ca. 832-35/1429-32).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1224",
+  "EV-1228"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, lettrist works",
+   "where": "MK's survey; not read by R7",
+   "shaping_risk": "low",
+   "note": "an attested silence as MK reports it"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.434",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "doctrinal"
+}

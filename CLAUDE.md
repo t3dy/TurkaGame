@@ -298,6 +298,18 @@ the four engine modules byte-identical and runs them on the 22 Hebrew letters wi
 Sefer Yetsirah's 3/7/12 division. The vendoring found three real couplings to Arabic, all
 fixed upstream. A claim of reusability is worth what its second consumer says it is.
 
+## TurkaVita (added 2026-09-27)
+
+[`TurkaVita/`](TurkaVita/CLAUDE.md) — a game built like `C:\Dev\PLOTINUSGAME`: play Ibn Turka through the years the sources record
+(courts, trials, works), then the unnamed copyist of MS Majlis 10196, then the historian who must say who he was. **Forked pipeline,
+no shared code**: corpus DB, typed artifacts (evidence/claim/event/work/institution/hypothesis), provenance graph, narrative linter,
+Python↔JS engine parity. Its spine source is Melvin-Koushki's **2012 dissertation** (`research inbox/`, ingested page by page), which
+`docs/BIOGRAPHY.md` was never built from: **`TurkaVita/docs/TURKA_AUDIT.md` lists where the older docs differ** (Samarkand 1387–93 before Cairo;
+"Bāysunghur from c. 1416" has no source; the seven-tier hierarchy gap is closed; the trials are dated c. 1422/1426/1427 by our reading of MK).
+House rule it adds: **the duress rule** — only what he wrote freely (letters, colophons, autograph, early work, the works) can support a
+claim about what he *held*; his apologies were written to the rulers judging him. Entry: `TurkaVita/HANDOVER.md`. Plan: `docs/PLAN_TURKA_VITA_GAME.md`.
+Serve with the `turkavita` launch config (port 7560). Not deployed.
+
 ## Deploy
 
 **Live: https://t3dy.github.io/TurkaGame/** — GitHub Pages off `main` at the repo root;

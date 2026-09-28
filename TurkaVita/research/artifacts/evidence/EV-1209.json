@@ -1,0 +1,15 @@
+{
+ "id": "EV-1209",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 245,
+  "printed_page": "228",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK judges it significant that Ṣāʾin al-Dīn used Niʿmat Allāh as intermediary: given his close association with Iskandar's court he 'no doubt' felt his position in the expanding Shahrukhid state to be tenuous and thought it prudent to shelter behind the Sufi master's eminence.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka's letter 16 (MK's reading)",
+ "read_by": "R7 opened pdf p.245"
+}

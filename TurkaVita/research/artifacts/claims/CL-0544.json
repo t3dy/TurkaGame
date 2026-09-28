@@ -1,0 +1,22 @@
+{
+  "id": "CL-0544",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka held that the letter alone unites opposites (majmaʿ li-l-ṭarafayn), being the coincidentia oppositorum and hence the only matrix to the One, whereas every other existent is relativized by its opposite.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1082",
+    "EV-1101",
+    "EV-1113"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.348, 353, 358",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

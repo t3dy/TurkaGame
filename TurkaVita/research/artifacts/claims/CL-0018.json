@@ -1,0 +1,26 @@
+{
+ "id": "CL-0018",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "After the fall of Isfahan in 789/1387 the Turka family was spared and sent to Temür's court at Samarkand (Ṣadr al-Dīn, his son Afżal al-Dīn and the teenaged Ṣāʾin al-Dīn), where Temür appointed the elder brother Ṣadr al-Dīn qadi.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0005",
+  "EV-0085"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "the sparing of the Turka family"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.51 and p.62",
+   "shaping_risk": "low",
+   "note": "no source is cited on p.62 for this passage; p.51 does not mention the nephew"
+  }
+ ],
+ "domain": "biographical"
+}

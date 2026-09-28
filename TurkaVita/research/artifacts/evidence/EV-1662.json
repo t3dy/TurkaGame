@@ -1,0 +1,15 @@
+{
+ "id": "EV-1662",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 467,
+  "printed_page": "450",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK cites Randall Collins's contention that minor philosophers are minor for good reason, and replies that Ibn Turka appears minor only when judged by the priorities of a later period favouring \"serious philosophy\" or \"hard science\", which MK calls an abuse of the magnifying glass.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R2b opened pdf p.467",
+ "refers_to_primary": "Collins, The Sociology of Philosophies, 63"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-0802",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 151,
+    "printed_page": "134",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Microfilm 227 (Tehran University Central Library), from an unspecified MS copied by ʿAbd al-Raḥmān b. ʿAlī b. Muʾayyad and Rażī b. ʿAlī Ḥusaynī in Rabīʿ I-II 888/April-May 1483, contains two of Ibn Turka's letters (nos. 4 and 6 in the standard numbering) preserved elsewhere.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.151",
+  "refers_to_primary": "Microfilm 227 (Tehran University)"
+}

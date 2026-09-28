@@ -1,0 +1,15 @@
+{
+ "id": "EV-0342",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 87,
+  "printed_page": "70",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki's footnote says the imposition of Twelver Shiʿism on Iran in the 10th/16th century by the Safavids did much to restore the old Sunni-Shiʿi polarity.",
+ "evidence_kind": "context",
+ "refers_to_primary": "Safavid imposition of Twelver Shiʿism",
+ "read_by": "R2a opened pdf p.87"
+}

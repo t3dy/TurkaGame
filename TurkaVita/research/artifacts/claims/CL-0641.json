@@ -1,0 +1,35 @@
+{
+ "id": "CL-0641",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Muḥammad Pārsā (Naqshbandi, d. 822/1419) appears as one of two Sufi masters ranked with Ibn Turka and Yazdī by Dawlatshāh, and Ibn Turka dwells on Pārsā's orthodoxy in Nafsat I; the pages read report no personal relationship between them, and MK says the appeal to Pārsā should be taken with several grains of salt.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1213",
+  "EV-1260",
+  "EV-1261"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Masdur I (829/1426, to Shahrukh's court)",
+   "where": "Nafsat I 172, 176-77",
+   "shaping_risk": "high",
+   "note": "written to the court that was judging him; MK: produced under duress, treat with caution (pdf p.32 fn 44)"
+  },
+  {
+   "layer": "later_chronicler",
+   "who": "Dawlatshāh Samarqandī, Tazkirat al-Shuʿarā",
+   "where": "p. 340",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.446",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

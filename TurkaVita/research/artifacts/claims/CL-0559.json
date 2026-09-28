@@ -1,0 +1,21 @@
+{
+  "id": "CL-0559",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki thinks it possible that Iskandar commissioned the R. Ḥurūf, which was completed in Shiraz in 817/1414; the pages give no source for the commission.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "low",
+  "supported_by": [
+    "EV-1046",
+    "EV-1051"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.176, 178",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "biographical"
+}

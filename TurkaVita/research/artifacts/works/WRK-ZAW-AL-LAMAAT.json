@@ -1,0 +1,33 @@
+{
+ "id": "WRK-ZAW-AL-LAMAAT",
+ "type": "work",
+ "status": "draft",
+ "title": "Żawʾ al-Lamaʿāt",
+ "transliterated_title": "Żawʾ al-Lamaʿāt (Commentary on ʿIrāqī's Lamaʿāt; variant Sharḥ-i Lamaʿāt)",
+ "language": "Persian",
+ "genre": "commentary on ʿIrāqī's Lamaʿāt in 28 gleams",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "1412",
+  "hijri": "815",
+  "basis": "Melvin-Koushki says it was written over the course of 815/1412, presumably in Isfahan; the entry cites no colophon for this and prints no asterisk. The Majlis copy is dated 8 Dhū l-Qaʿda 828/21 September 1425."
+ },
+ "date_kind": "composition",
+ "place": "Isfahan (presumed by Melvin-Koushki)",
+ "addressee": "not stated",
+ "occasion": "not stated",
+ "manuscript": "MS Majlis 10196 ff. 148b-53b (copied 828/1425); MS Ankara 15/4 pp. 59-72 (833/1429); MS 5423 ff. 124b-38a (842/1439); 16 copies listed.",
+ "majlis_folios": "ff. 148b-53b",
+ "edited": true,
+ "summary": "A commentary on ʿIrāqī's Lamaʿāt in 28 gleams, drawing on Ibn ʿArabī, Qūnavī and Aḥmad Ghazālī on love, the Breath of the Merciful, the Muḥammadan reality, receptivity and effusion.",
+ "edition_note": "Chahārdah Risāla-yi Fārsī (Tehran 1972) pp. 3-38; Persian.",
+ "supported_by": [
+  "EV-0687",
+  "EV-0688",
+  "EV-0689",
+  "EV-0690"
+ ],
+ "claims": [
+  "CL-0337"
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-1111",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 358,
+    "printed_page": "341",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "In section 4 Ibn Turka divides visible things into luminous (nūrānī) and dark (ẓulmānī); only the luminous can give new information about the unknown. The first level of light comprises things such as a lamp, the sun and moon, which reveal objects without perceiving; the second level comprises things such as the light of vision, which perceive objects and make them perceptible to others but cannot perceive themselves or absent objects and often perceive inaccurately.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+  "read_by": "R6 opened pdf p.358"
+}

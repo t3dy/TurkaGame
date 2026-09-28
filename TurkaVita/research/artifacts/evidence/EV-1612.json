@@ -1,0 +1,15 @@
+{
+ "id": "EV-1612",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 23,
+  "printed_page": "6",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK says the Tamhid's adoption as a staple text in Imami seminaries came \"probably in the late Qajar period\" (his own hedge).",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.23",
+ "refers_to_primary": "Ibn Turka, Tamhid al-Qawaʿid"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-0869",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 163,
+    "printed_page": "146",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter to Ibn Turka from Qāżīzāda Rūmī, on receiving a copy of Ibn Turka's Sharḥ al-Basmala (ca. 829/1426, Samarkand): the astronomer opens with great respect, praising Ibn Turka's mastery of the whole Islamic tradition and spiritual perfection, and expresses a great desire to see him in person. MK's footnote: the treatise was completed by 829/1426, so the letter was written around the time of letters 24 and 25 above (MS Majlis 10196 f. 153b).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.163",
+  "refers_to_primary": "Letter of Qāżīzāda Rūmī, MS Majlis 10196 f. 153b"
+}

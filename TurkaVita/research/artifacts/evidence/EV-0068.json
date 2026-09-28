@@ -1,0 +1,14 @@
+{
+ "id": "EV-0068",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 57,
+  "printed_page": "40",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ḥaydar Āmulī (d. after 787/1385) acknowledged Ṣadr al-Dīn Turka as one of his main sources, second only to Naṣīr al-Dīn Ṭūsī and ʿAllāma Ḥillī, and mentions his treatise on absolute existence (Jāmiʿ al-Asrār, 497).",
+ "evidence_kind": "reception",
+ "read_by": "R1 opened pdf p.57"
+}

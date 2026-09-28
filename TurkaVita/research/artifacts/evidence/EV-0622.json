@@ -1,0 +1,15 @@
+{
+ "id": "EV-0622",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 129,
+  "printed_page": "112",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 241b-330a carries Sharḥ Fuṣūṣ al-Ḥikam, whose copy was completed in Shiraz on 3 Rabīʿ I 831/22 December 1427 (Ḥāʾirī, Majlis, 32/241); the other listed copies are MS 10082 (14 Shawwāl 835/14 June 1432), MS Mishkāt 1294 (20 Jumādā I 839/11 December 1435) and a partial copy at Kastamonu (1239/1822).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.129",
+ "refers_to_primary": "Sharḥ Fuṣūṣ al-Ḥikam, MS Majlis 10196"
+}

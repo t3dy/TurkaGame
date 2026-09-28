@@ -1,0 +1,20 @@
+{
+  "id": "CL-0518",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "On the Hour, Ibn Turka assigns to level four (illuminationists) the view that the return is solely of the immortal spirit, a light that returns from the body enhanced, able at last to comprehend universals and particulars alike.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1042"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf p.478",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

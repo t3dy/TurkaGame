@@ -1,0 +1,23 @@
+{
+  "id": "CL-0567",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka, against earlier lettrist tradition, promotes the written form of the letters above the spoken form, as the form of the men of might and vision and of walāya.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1085",
+    "EV-1086",
+    "EV-1107",
+    "EV-1018"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.336, 349-350, 356",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

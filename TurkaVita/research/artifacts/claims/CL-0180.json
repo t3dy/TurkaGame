@@ -1,0 +1,30 @@
+{
+ "id": "CL-0180",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Sufism carried Shiʿi content to Sunnism and back, and Sufi orders traced their line to ʿAlī; even the Naqshbandiyya distinguished tawalliʾ from Rāfiḍism, and Pārsā gave the twelve Imams' biographies in a pro-Sunni work.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0343",
+  "EV-0345",
+  "EV-0346",
+  "EV-0347",
+  "EV-0344"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "sources and scholars MK cites",
+   "where": "pdf p.88 (printed 71)",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.88 (printed 71)",
+   "shaping_risk": "low"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-0886",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 170,
+    "printed_page": "153",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Ijāzas: MK lists one, a certificate for the K. al-Maṣābīḥ (Arabic) given by Ibn Turka to one of his prominent contemporaries (not named on this page), in MS Majlis 10196 f. 126a.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.170",
+  "refers_to_primary": "K. al-Maṣābīḥ ijāza"
+}

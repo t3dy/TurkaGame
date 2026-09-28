@@ -1,0 +1,15 @@
+{
+  "id": "EV-0887",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 170,
+    "printed_page": "153",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK lists as an untitled work the Kitāb Ṣāʾin al-Dīn ʿAlī Turka in MS Add. 7611, ff. 85b-123b (British Library, copied 1137/1725), part of a Sufi compilation of extracts; given the compilation's theme he says examination may show it to be Ibn Turka's R. Aṭvār-i Salāsa or his Żawʾ al-Lamaʿāt, treatises popular with Sufi audiences.",
+  "evidence_kind": "scholarly_argument",
+  "read_by": "R5 opened pdf p.170",
+  "refers_to_primary": "Kitāb Ṣāʾin al-Dīn ʿAlī Turka"
+}

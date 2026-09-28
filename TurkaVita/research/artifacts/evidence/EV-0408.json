@@ -1,0 +1,15 @@
+{
+ "id": "EV-0408",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 96,
+  "printed_page": "79",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki describes the second half of MS Majlis 10196 as less problematic: its works are not in chronological order, cover 829-38/1427-35, and perhaps no more than two were copied after Ibn Turka's death; he therefore assumes its dates are more likely to be, or to approximate, the date of composition, and that places named refer to the place of composition or a nearby location.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "MS Majlis 10196 second half",
+ "read_by": "R3 opened pdf p.96"
+}

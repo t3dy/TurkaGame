@@ -1,0 +1,15 @@
+{
+ "id": "EV-0265",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 80,
+  "printed_page": "63",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "According to Melvin-Koushki's rendering of Nafsat I, the second statement was delivered to Shāhrukh at the Bāgh-i Mukhtār in Herat and expressed avid support for the king's efforts to restore the Sharīʿa; Shāhrukh responded graciously, told him to return to Persian Iraq, and appointed him qadi of Yazd.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.80"
+}

@@ -1,0 +1,33 @@
+{
+ "id": "WRK-MADARIJ-AFHAM-AL-AFVAJ",
+ "type": "work",
+ "status": "draft",
+ "title": "Madārij Afhām al-Afvāj fī Tafsīr Āyat Samāniyat Azvāj ('On the Levels of Understanding of Various Groups as to the Exegesis of the Verse Eight Couples')",
+ "transliterated_title": "Madārij Afhām al-Afvāj",
+ "language": "Persian",
+ "genre": "quranic commentary (Q 6:143-44)",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "1428-08-17",
+  "hijri": "6 Dhū l-Qaʿda 831",
+  "basis": "MK: 'completed on' this date in Mazandaran; the same as the Majlis 10196 colophon (ff. 352b-59b); the folio lies in the second half, whose dates MK assumes are more likely composition (p.79); not asterisked."
+ },
+ "date_kind": "composition",
+ "place": "Mazandaran",
+ "addressee": "A local ruler at whose request it was written; 'perhaps Sayyid Murtażā Marʿashī' (MK, n.25)",
+ "occasion": "Written at a local ruler's request.",
+ "manuscript": "4 items listed; earliest dated: MS Majlis 10196 ff. 352b-59b (6 Dhū l-Qaʿda 831/17 Aug 1428); then MS 5423 (842/1439), MS 10004 (903-4/1497-98), MS 3035/18 (1084/1673).",
+ "majlis_folios": "ff. 352b-59b",
+ "edited": true,
+ "summary": "A detailed commentary on the 'eight couples' verse, ascending through seven levels of interpretation from exoteric exegetes to the House of the Prophet.",
+ "supported_by": [
+  "EV-0478",
+  "EV-0479",
+  "EV-0480",
+  "EV-0481"
+ ],
+ "claims": [
+  "CL-0234",
+  "CL-0211"
+ ]
+}

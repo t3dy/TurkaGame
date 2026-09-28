@@ -1,0 +1,21 @@
+{
+  "id": "CL-0575",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The Mafāḥiṣ was completed in 823/1420, the two earliest manuscripts giving 1 Shaʿbān 823 (11 August 1420) and 19 Dhū l-Ḥijja 823 (25 December 1420).",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1092"
+  ],
+  "mediation": [
+    {
+      "layer": "manuscript_colophon",
+      "who": "manuscript colophon / copying note as reported by Melvin-Koushki",
+      "where": "pdf p.351",
+      "shaping_risk": "medium",
+      "note": "two colophon dates disagree by four months"
+    }
+  ],
+  "domain": "chronological"
+}

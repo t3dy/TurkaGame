@@ -1,0 +1,22 @@
+{
+  "id": "CL-0542",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka held that neither Sufism nor philosophy contains or gives rise to lettrism; as distinct, non-universal sciences, both are encompassed by it.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1073",
+    "EV-1072",
+    "EV-1052"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.178, 234",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

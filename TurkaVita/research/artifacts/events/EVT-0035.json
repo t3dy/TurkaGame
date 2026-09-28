@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0035",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1425",
+  "end": "1425",
+  "hijri": "828",
+  "basis": "Timeline A.1 (pdf p.52); audition certificates on the two earliest copies (pdf p.70, note 79).",
+  "date_kind": "colophon"
+ },
+ "place": "Yazd",
+ "event_type": "work",
+ "description": "Ibn Turka revises and expands the K. al-Mafāḥiṣ in company with Sharaf al-Dīn Yazdī and other associates.",
+ "claims": [
+  "CL-0045"
+ ],
+ "fixed_point": false
+}

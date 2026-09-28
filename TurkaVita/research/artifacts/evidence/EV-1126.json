@@ -1,0 +1,15 @@
+{
+  "id": "EV-1126",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 345,
+    "printed_page": "328",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki reports that Ibn Turka's disciple Sharaf al-Dīn Yazdī, in the theoretical introduction to his Ḥulal-i Muṭarraz, posits a similar intellectual evolution: from the revelation of the Quran, whose language is the key to all knowledge, first sprang the twelve Arabic sciences; this is followed by the age of the khātam al-walāya, the Imam or Seal of Sainthood, whose potential for universal knowledge has not been actualized until the present day.",
+  "evidence_kind": "reception",
+  "refers_to_primary": "Sharaf al-Dīn Yazdī, Ḥulal-i Muṭarraz",
+  "read_by": "R6 opened pdf p.345"
+}

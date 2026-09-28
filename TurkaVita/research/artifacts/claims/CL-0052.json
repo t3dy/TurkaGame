@@ -1,0 +1,22 @@
+{
+ "id": "CL-0052",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Back in Isfahan he took up teaching, intending a quiet contemplative life (gūsha-nishīnī), until Pīr-Muḥammad b. ʿUmar-Shaykh, Temür's grandson and governor of Fars, summoned him to Shiraz and made him a member of his court (c. 810-12/1408-9).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0132",
+  "EV-0015"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.69 and p.51",
+   "shaping_risk": "medium",
+   "note": "no source is cited for this passage; timeline dates are marked 'c.'"
+  }
+ ],
+ "domain": "biographical"
+}

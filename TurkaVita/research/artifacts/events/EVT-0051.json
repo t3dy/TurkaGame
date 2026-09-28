@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0051",
+ "type": "event",
+ "status": "draft",
+ "actor": "Shāhrukh",
+ "date": {
+  "start": "1430",
+  "end": "1430",
+  "hijri": "834",
+  "basis": "Timeline A.1, pdf p.53.",
+  "date_kind": "context"
+ },
+ "place": "Herat",
+ "event_type": "political",
+ "description": "Shāhrukh arrives back in Herat from the Azarbayjan campaign.",
+ "claims": [
+  "CL-0091"
+ ],
+ "fixed_point": false
+}

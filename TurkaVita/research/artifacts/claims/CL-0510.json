@@ -1,0 +1,23 @@
+{
+  "id": "CL-0510",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In the R. Shaqq-i Qamar level seven is the level of the men of might and vision (Q 38:45), the personal servants of the Seal and heirs of his supreme perfection; the treatise says the true derivation of the Seal's meanings is known only through the pillars of the prophetic House, and that perfected men who progressed toward it did not understand its full meaning.",
+  "epistemic_type": "attested",
+  "confidence": "high",
+  "supported_by": [
+    "EV-1003",
+    "EV-1005",
+    "EV-1036"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+      "where": "pdf pp.333, 476",
+      "shaping_risk": "medium",
+      "note": "the sentence that this dignity belongs to the Imams alone is a bracketed addition in Melvin-Koushki's translation, not the Persian text"
+    }
+  ],
+  "domain": "doctrinal"
+}

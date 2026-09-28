@@ -1,0 +1,15 @@
+{
+  "id": "EV-0842",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 159,
+    "printed_page": "142",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 23, to Amīr Fīrūzshāh: apparently only the opening of a letter, with no indication of its purpose (TMN/MS pp. 18-19, TMN/D p. 186).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.159",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 23"
+}

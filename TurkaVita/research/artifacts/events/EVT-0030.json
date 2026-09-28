@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0030",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1422",
+  "end": "1422",
+  "hijri": "825",
+  "basis": "Timeline A.1 marks 'c.'; pdf p.52; §1.2, pdf pp.70-71.",
+  "date_kind": "conjectured"
+ },
+ "place": "Isfahan, Herat, then Yazd",
+ "event_type": "trial",
+ "description": "Isfahan opponents accuse him at Herat of Sufi bias (ṣūfīgarī); he travels to Herat, gains Shāhrukh's favour, is offered Isfahan but chooses Yazd, and is given the judgeship there.",
+ "claims": [
+  "CL-0064",
+  "CL-0065"
+ ],
+ "fixed_point": false
+}

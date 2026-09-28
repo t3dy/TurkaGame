@@ -1,0 +1,34 @@
+{
+  "id": "CL-0447",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Late letters greet Sufi shaykhs in Herat and Central Asia: Ḥasan ʿAṭṭār (36, Naqshbandī), Qāsim-i Anvār (37, 38 after several days in his company, dated 830/1427 or 834/1431), Bahāʾ al-Dīn (39), Mīr Makhdūm (40), two unnamed Sufis (45) and Ẓāfir al-Dīn (47).",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0857",
+    "EV-0858",
+    "EV-0859",
+    "EV-0860",
+    "EV-0861",
+    "EV-0865",
+    "EV-0867"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Sufi shaykhs",
+      "where": "Munshaʾāt-i Turka letters 36-40, 45, 47",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.162",
+      "shaping_risk": "medium",
+      "note": "Addressee identifications of 39 are 'possibly' per MK; date of 38 is queried"
+    }
+  ],
+  "domain": "social"
+}

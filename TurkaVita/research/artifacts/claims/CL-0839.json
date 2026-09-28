@@ -1,0 +1,22 @@
+{
+ "id": "CL-0839",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki calls his own study the first on Ibn Turka's lettrist thought, necessarily provisional, and says any neat definition of Ibn Turka's contribution must be premature.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-1644",
+  "EV-1645"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.44, 468",
+   "shaping_risk": "medium",
+   "note": "MK's caveat sits beside his confident 'even a casual survey' claim; both are on the record."
+  }
+ ],
+ "domain": "textual"
+}

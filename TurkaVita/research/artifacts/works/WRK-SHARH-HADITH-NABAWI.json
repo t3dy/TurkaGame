@@ -1,0 +1,31 @@
+{
+ "id": "WRK-SHARH-HADITH-NABAWI",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ Ḥadīth Nabawī",
+ "transliterated_title": "Sharḥ Ḥadīth Nabawī",
+ "language": "Arabic",
+ "genre": "brief mystical hadith commentary",
+ "theme": "hadith",
+ "date": {
+  "ce": "unknown",
+  "hijri": "unknown",
+  "basis": "The only copy is in MS Majlis 10196 f. 122a and is undated."
+ },
+ "date_kind": "unknown",
+ "place": "not stated",
+ "addressee": "not stated",
+ "occasion": "not stated",
+ "manuscript": "MS Majlis 10196 f. 122a (the only copy listed); marginal note says copied from an autograph in a majmūʿa of Rukn al-Dīn Ṣāʿid Kirmānī.",
+ "majlis_folios": "f. 122a",
+ "edited": false,
+ "summary": "A brief mystical commentary on the hadith on the best speech being the Book of God; copied, by a marginal note, from an autograph in a majmūʿa of Rukn al-Dīn Ṣāʿid Kirmānī.",
+ "edition_note": "Unpublished.",
+ "supported_by": [
+  "EV-0639",
+  "EV-0640"
+ ],
+ "claims": [
+  "CL-0316"
+ ]
+}

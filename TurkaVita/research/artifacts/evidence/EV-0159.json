@@ -1,0 +1,15 @@
+{
+ "id": "EV-0159",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 73,
+  "printed_page": "56",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "For much of the next five years, up to his death in Herat, he wandered in northern and northwestern Iran in search of livelihood, teaching hadith and tafsir at local mosques and writing treatises for governors and amirs (Nafsat al-Maṣdūr II, 206-7).",
+ "evidence_kind": "apology",
+ "read_by": "R1 opened pdf p.73",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr II, 206-7"
+}

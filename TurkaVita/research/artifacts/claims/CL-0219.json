@@ -1,0 +1,22 @@
+{
+ "id": "CL-0219",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The R. Ḥurūf is dated 10 Ramaḍān 817/23 November 1414 yet is said to mention the Sharḥ Fuṣūṣ al-Ḥikam, dated Dhū l-Ḥijja 817/March 1415, which is later; Melvin-Koushki does not reconcile the two dates (a mention of a work in progress, or an error in one date, would each remove the tension, but the entry says neither).",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0445",
+  "EV-0447",
+  "EV-0448"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.89",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "chronological"
+}

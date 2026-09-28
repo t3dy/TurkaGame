@@ -1,0 +1,15 @@
+{
+ "id": "EV-0671",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 138,
+  "printed_page": "121",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Tamhīd is Ibn Turka's commentary on his grandfather Ṣadr al-Dīn's work on absolute existence (wujūd muṭlaq), Qawāʿid al-Tawḥīd; both texts run on the complementarity of philosophical and mystical modes of knowing. It quotes Ibn Sīnā and Suhravardī but, in answering the doubts of the philosophers, relies mainly on Ibn ʿArabian thought as formulated by Qūnavī and Jandī, and refers the reader to the Mafāḥiṣ.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.138",
+ "refers_to_primary": "Ibn Turka, Tamhīd al-Qawāʿid"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "CL-0548",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka accepted lettrism as a valid occult praxis but preferred to stress its neglected function as the basis of a broader occult philosophy.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1062",
+    "EV-1061",
+    "EV-1063"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.181-182",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

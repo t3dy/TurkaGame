@@ -1,0 +1,30 @@
+{
+ "id": "CL-0085",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "He followed Shāhrukh back to Herat and spent the last year or so of his life in weekly attendance at court, waiting for a review of his case that never came in time.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0165",
+  "EV-0051",
+  "EV-0050"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "Nafsat al-Maṣdūr II",
+   "shaping_risk": "high",
+   "note": "the 'nine months' of the timeline"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.74 and p.53",
+   "shaping_risk": "low",
+   "note": "'never came in time' is R1's paraphrase of MK: to little real effect, he died frustrated"
+  }
+ ],
+ "domain": "biographical"
+}

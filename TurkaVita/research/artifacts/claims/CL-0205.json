@@ -1,0 +1,27 @@
+{
+ "id": "CL-0205",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "For many of Ibn Turka's works it is impossible to tell from the Majlis 10196 colophons whether the date is composition or transcription; fully half of the manuscript, almost two-thirds of the preserved works, was copied between 827-29/1425-27, the years bracketing his first trip to Shāhrukh's court in Herat.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0404"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "copyist(s) of MS Majlis 10196",
+   "where": "colophons",
+   "shaping_risk": "medium",
+   "note": "the whole problem"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.78-79",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

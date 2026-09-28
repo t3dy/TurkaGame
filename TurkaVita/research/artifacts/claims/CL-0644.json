@@ -1,0 +1,27 @@
+{
+ "id": "CL-0644",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In 829/1426 Ibn Turka's enemies accused him a second time of ṣūfīgarī (Sufi bias); Nafsat al-Maṣdūr I was written after he was summoned to Herat to stand trial again.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1257"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Masdur I (829/1426, to Shahrukh's court)",
+   "where": "as reported by MK",
+   "shaping_risk": "high",
+   "note": "MK reports this from the apology; the accusation is framed by the accused"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.445",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

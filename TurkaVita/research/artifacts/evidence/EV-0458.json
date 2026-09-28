@@ -1,0 +1,15 @@
+{
+ "id": "EV-0458",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 108,
+  "printed_page": "91",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Citing a marginal note at MS Majlis 10196 f. 89a in the Mafāḥiṣ that refers the reader to the K. al-Iṣbāḥ, Melvin-Koushki conjectures ('perhaps') that the work was conceived as an even fuller treatment of lettrism than the Mafāḥiṣ but left unfinished in the wake of the difficult events of 1427 and the author's subsequent exile.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Iṣbāḥ al-Anwār",
+ "read_by": "R3 opened pdf p.108"
+}

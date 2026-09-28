@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0038",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1426",
+  "end": "1426",
+  "hijri": "829",
+  "basis": "Timeline A.1, pdf p.52.",
+  "date_kind": "colophon"
+ },
+ "place": "Herat",
+ "event_type": "work",
+ "description": "Ibn Turka writes the R. Bazm u Razm in Herat.",
+ "claims": [
+  "CL-0095"
+ ],
+ "fixed_point": false
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0069",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 57,
+  "printed_page": "40",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In the preface of the K. al-Mafāḥiṣ (MS Majlis 10196 f. 35a) Ibn Turka describes the rational-theoretical approach that does not swerve from the highway of intuitive all-comprehensiveness as the most persuasive of the methods current among the nations; Melvin-Koushki reads this as Ibn Turka calling mystical-philosophical synthesis the standard intellectual approach of his day.",
+ "evidence_kind": "work",
+ "read_by": "R1 opened pdf p.57",
+ "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ, preface, MS Majlis 10196 f. 35a"
+}

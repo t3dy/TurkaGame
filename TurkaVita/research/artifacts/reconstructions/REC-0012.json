@@ -1,0 +1,20 @@
+{
+ "id": "REC-0012",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why does Nafsat II tell the imposter-Sufi stories?",
+ "proposition": "They present Ibn Turka as an enforcer of the Sharīʿa against wayward Sufis, and so as an ally of the Sunnizing state.",
+ "kind": "psychological",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK says ‘primarily’ for this purpose; the anecdotes also show a khirqa received, so they are not only rhetoric.",
+  "Nafsat II then dismisses Hurufism harshly."
+ ],
+ "observed_facts": [
+  "EV-0235",
+  "EV-0232",
+  "EV-0233",
+  "EV-0236"
+ ],
+ "confidence": "medium"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0608",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 128,
+  "printed_page": "111",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that Shaqq-i Qamar \"was completed before 18 Rabīʿ I 829/28 January 1426\" and marks the date with an asterisk (possible transcription date, not composition).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.128",
+ "refers_to_primary": "Shaqq-i Qamar, date"
+}

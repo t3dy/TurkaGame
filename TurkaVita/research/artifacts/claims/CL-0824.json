@@ -1,0 +1,29 @@
+{
+ "id": "CL-0824",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Ibn Turka dismissed the Hurufiyya and similar gnostic-messianic movements as perverting the science of letters for non-intellectual and non-Islamic ends, and has sharp words for collapsing occult philosophy into Hurufism or Sufism or dismissing it as mere magic; the pages give no locus for either.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1667",
+  "EV-1668"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Ibn Turka, author of Ibn Turka's works (loci in dissertation ch. 8)",
+   "where": "Ibn Turka's works (loci in dissertation ch. 8)",
+   "shaping_risk": "low",
+   "note": "A doctrinal work, not addressed to a judge; the duress rule counts a work as evidence of what he held."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.22, 28",
+   "shaping_risk": "medium",
+   "note": "We have the work only as MK summarises or translates it; most of the lettrist works are unedited, so MK's paraphrase cannot be checked against a printed text."
+  }
+ ],
+ "domain": "doctrinal"
+}

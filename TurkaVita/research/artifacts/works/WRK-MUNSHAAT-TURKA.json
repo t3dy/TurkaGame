@@ -1,0 +1,40 @@
+{
+  "title": "Munshaʾāt-i Ṣāʾin-i Turka (correspondence)",
+  "transliterated_title": "Munshaʾāt-i Ṣāʾin-i Turka",
+  "language": "Persian/Arabic",
+  "genre": "letter collection (munshaʾāt)",
+  "theme": "correspondence",
+  "date": {
+    "ce": "letters from ca. 1411 to ca. 1429 or later",
+    "hijri": "ca. 814-32 or later",
+    "basis": "Letters are dated by MK by conjecture (letter 1: 16 Jumādā I [814] or 822; most others 'ca.'); collection order rough chronological; earliest copy MS Majlis 10196 was made 828-38/1425-35, so the marginal letters were copied in his lifetime"
+  },
+  "date_kind": "conjectured",
+  "place": "Isfahan, Shiraz, Yazd, Herat, Gilan, Mazandaran (letters)",
+  "addressee": "amirs, viziers and shaykhs; Bāysunghur; Shāhrukh; Iskandar; Kārkiyā and Marʿashī rulers; Sharaf al-Dīn Yazdī (see the letter evidence)",
+  "occasion": "a selection of his correspondence preserved after his death; the standard collection follows his career from Isfahan to exile",
+  "manuscript": "MS Majlis 10196 margins (15 letters, ff. 51b, 122a, 139a, 148a, 153b, 160a, 172a, 188b); MS Majlis-i Sinā 316 pp. 1-34; MS Dānishgāh 2576 pp. 168-217; MS Malik 4029/6; microfilm 227",
+  "majlis_folios": "51b, 122a, 139a, 148a, 153b, 160a, 172a, 188b (marginal letters)",
+  "edited": false,
+  "summary": "MK counts 46 letters, fragments or notes in the standard collection (50 with the unique ones), of which only letter 27 to Amīr Fīrūzshāh had been published; they show his dealings with amirs, viziers, Sufis and the rulers of Herat, Gilan and Mazandaran, and are MK's main free-hand witness to his career.",
+  "supported_by": [
+    "EV-0800",
+    "EV-0801",
+    "EV-0803",
+    "EV-0806",
+    "EV-0805",
+    "EV-0807",
+    "EV-0808",
+    "EV-0814"
+  ],
+  "claims": [
+    "CL-0400",
+    "CL-0401",
+    "CL-0402",
+    "CL-0405",
+    "CL-0406"
+  ],
+  "id": "WRK-MUNSHAAT-TURKA",
+  "type": "work",
+  "status": "draft"
+}

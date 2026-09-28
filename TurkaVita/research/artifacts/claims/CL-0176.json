@@ -1,0 +1,20 @@
+{
+ "id": "CL-0176",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Jean Aubin assumed Ibn Turka was Shiʿi in 1957 and revised his opinion by 1991.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0327"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.86 (printed 69)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

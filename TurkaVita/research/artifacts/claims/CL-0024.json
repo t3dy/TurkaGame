@@ -1,0 +1,27 @@
+{
+ "id": "CL-0024",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka mentions in several places that he spent time in Mecca on his travels.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0091"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II (1431-32), addressed to Bāysunghur",
+   "where": "Nafsat al-Maṣdūr II, 203",
+   "shaping_risk": "high",
+   "note": "written to seek intercession from the ruler's son while his case was still unresolved"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.63, note 45",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

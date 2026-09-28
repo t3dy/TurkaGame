@@ -1,0 +1,15 @@
+{
+  "id": "EV-0814",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 155,
+    "printed_page": "138",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "In MK's list the order is that of MSS Sinā 316 and Dānishgāh 2576; one note from MS Majlis 10196 not preserved elsewhere is inserted in its conjectured chronological position as no. 26 (in square brackets). Only one letter, to Amīr Fīrūzshāh (no. 27), had been published when MK wrote; he hoped to edit the collection, and letters he cites are transcribed in his appendix P.2.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.155",
+  "refers_to_primary": "Munshaʾāt-i Turka, list"
+}

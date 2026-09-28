@@ -1,0 +1,15 @@
+{
+ "id": "EV-0654",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 134,
+  "printed_page": "117",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Sharḥ-i Naẓm al-Durr is a popular mystical-philosophical commentary on Ibn al-Fāriḍ's Tāʾiyya al-Kubrā that treats each verse in an allusive and symbolic manner, quoting Arabic and Persian verse.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.134",
+ "refers_to_primary": "Ibn Turka, Sharḥ-i Naẓm al-Durr"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "CL-0014",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Jamāl al-Dīn Muḥammad may have been a key player in the Timurid-Turkmen power struggle in Fars in 872/1467-68 (a Jamāl al-Dīn Turka appears among the pro-Turkmen notables of Isfahan in the Kitāb-i Diyarbakriyya); nothing more is heard of him.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0078"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Kitāb-i Diyarbakriyya, as quoted by Binbaş",
+   "where": "pdf p.59, note 23",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.59",
+   "shaping_risk": "medium",
+   "note": "MK says 'may have been'; the identification of this Jamāl al-Dīn with Ibn Turka's son is an inference"
+  }
+ ],
+ "domain": "biographical"
+}

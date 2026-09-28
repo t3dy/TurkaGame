@@ -1,0 +1,22 @@
+{
+ "id": "CL-0643",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Prince Bāysunghur b. Shāhrukh, a calligrapher, was the Timurid prince most interested in Ibn Turka's lettrism; Ibn Turka's R. Suʾl al-Mulūk was written at his request, and Muḥammad Ṭūsī dedicated a censure of Fażl Allāh to him.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1290",
+  "EV-1274"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.405",
+   "shaping_risk": "low",
+   "note": "the R. Suʾl al-Mulūk is MK's Chapter 2 §2.1.2 no. 40; not read"
+  }
+ ],
+ "domain": "social"
+}

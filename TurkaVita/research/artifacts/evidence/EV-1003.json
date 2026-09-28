@@ -1,0 +1,15 @@
+{
+  "id": "EV-1003",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 333,
+    "printed_page": "316",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "As listed by Melvin-Koushki, levels four to seven are: (4) the illuminationist philosophers, previously called the ancient school of philosophy; (5) the 'verifying' or theoretically penetrating mystics, especially of Ibn ʿArabī's school, advocates of direct intuitive experience (ahl-i shuhūd); (6) the lettrists (ramz-khwānān-i ḥurūf-i qurʾānī, arbāb-i ʿilm-i ḥurūf); (7) ʿAlī and the line of the Imams after him, the sole mediators of the Prophetic legacy.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.333"
+}

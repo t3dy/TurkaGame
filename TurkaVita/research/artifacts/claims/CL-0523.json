@@ -1,0 +1,22 @@
+{
+  "id": "CL-0523",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki argues that by identifying level seven with jafr, Ibn Turka effectively awards the highest epistemological status to lettrism: the same lettrism as level six, taken to its occult extreme and reserved for an elite within the elite.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1007",
+    "EV-1008",
+    "EV-1037"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.334",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "doctrinal"
+}

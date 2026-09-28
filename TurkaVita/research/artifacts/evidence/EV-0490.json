@@ -1,0 +1,15 @@
+{
+ "id": "EV-0490",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 116,
+  "printed_page": "99",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The K. al-Mafāḥiṣ is unpublished; Melvin-Koushki is editing it on the basis of four of its five earliest copies, all made during the author's lifetime.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+ "read_by": "R3 opened pdf p.116"
+}

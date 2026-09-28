@@ -1,0 +1,15 @@
+{
+  "id": "EV-1000",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 332,
+    "printed_page": "315",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "In his R. Shaqq-i Qamar u Bayān-i Sāʿat, a short commentary on Q 54:1 (The Hour has drawn nigh: the moon is split), Ibn Turka gives seven different interpretations of the verse, each tied to a group of increasing sophistication. Melvin-Koushki calls this seven-tiered intellectual hierarchy the key to Ibn Turka's thought and to that of the Neo-Ikhwān al-Ṣafāʾ generally.",
+  "evidence_kind": "work",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.332"
+}

@@ -1,0 +1,34 @@
+{
+ "id": "CL-0607",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Qāżīzāda Rūmī studied with Ibn Turka under Ibn Turka's elder brother Ṣadr al-Dīn Turka (Kirmānī), and Gāzurgāhī lists Ibn al-Qāżī Rūmī among Akhlāṭī's disciples.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1202",
+  "EV-1217"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "ʿAbd al-Razzāq Kirmānī, Tazkira (fl. 900/1495)",
+   "where": "Aubin, Majmūʿa, 70-71",
+   "shaping_risk": "medium",
+   "note": "Niʿmatullahi hagiography"
+  },
+  {
+   "layer": "later_chronicler",
+   "who": "Gāzurgāhī, Majālis al-ʿUshshāq",
+   "where": "majlis 34",
+   "shaping_risk": "medium"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.287",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

@@ -1,0 +1,28 @@
+{
+ "id": "CL-0600",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Late Timurid biographers remembered Sharaf al-Dīn Yazdī and Ibn Turka as fellow disciples of Sayyid Ḥusayn Akhlāṭī in Cairo: Gāzurgāhī (909/1503-4) has both of them spending years in spiritual exercises in the ground-floor apartment of Akhlāṭī's house.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1217",
+  "EV-1212"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Kamāl al-Dīn Ḥusayn Gāzurgāhī, Majālis al-ʿUshshāq",
+   "where": "majlis 34, p. 189 (909/1503-4)",
+   "shaping_risk": "medium",
+   "note": "a tazkira written some decades after the men's deaths; MK says its death date for Akhlāṭī is wrong"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.286",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

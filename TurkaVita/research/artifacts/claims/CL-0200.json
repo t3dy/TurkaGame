@@ -1,0 +1,22 @@
+{
+ "id": "CL-0200",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki judges MS Majlis 10196 (425 ff., Majlis Library, Tehran) to be the earliest, most complete and most reliable collection of Ibn Turka's works, holding 35 of his works, poetry, and in its margins 15 items of correspondence and an ijāza.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0401",
+  "EV-0410",
+  "EV-0411"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.78, 80",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

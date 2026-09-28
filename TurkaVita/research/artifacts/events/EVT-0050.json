@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0050",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1430",
+  "end": "1430",
+  "hijri": "834",
+  "basis": "Timeline A.1 marks 'c.'; pdf p.53; §1.2, pdf p.74.",
+  "date_kind": "conjectured"
+ },
+ "place": "Ṣāʾin Qalʿa near Sultaniyya",
+ "event_type": "hearing",
+ "description": "Ibn Turka obtains a hearing at Shāhrukh's camp and receives a promise of reinstatement.",
+ "claims": [
+  "CL-0084"
+ ],
+ "fixed_point": false
+}

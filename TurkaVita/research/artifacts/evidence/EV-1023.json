@@ -1,0 +1,15 @@
+{
+  "id": "EV-1023",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 126,
+    "printed_page": "109",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "The first manuscript listed for the R. Shaqq-i Qamar u Bayān-i Sāʿat is MS 10196, ff. 170b-72a, Majlis Library, Tehran, described as copied on 18 Rabīʿ I 829, which the dissertation gives as 27 February 1426.",
+  "evidence_kind": "colophon",
+  "refers_to_primary": "Ibn Turka, R. Shaqq-i Qamar u Bayān-i Sāʿat",
+  "read_by": "R6 opened pdf p.126"
+}

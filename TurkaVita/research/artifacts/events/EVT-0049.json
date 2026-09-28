@@ -1,0 +1,24 @@
+{
+ "id": "EVT-0049",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1430",
+  "end": "1430",
+  "hijri": "833",
+  "basis": "Timeline A.1, pdf p.53.",
+  "date_kind": "colophon"
+ },
+ "place": "Natanz",
+ "event_type": "residence",
+ "description": "Ibn Turka winters in Natanz, sends for his family, and writes the K. al-Manāhij for his son Muḥammad.",
+ "claims": [
+  "CL-0083",
+  "CL-0098",
+  "CL-0012",
+  "CL-0013",
+  "CL-0011"
+ ],
+ "fixed_point": false
+}

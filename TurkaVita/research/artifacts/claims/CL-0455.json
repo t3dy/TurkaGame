@@ -1,0 +1,28 @@
+{
+  "id": "CL-0455",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Ibn Turka's son Jamāl al-Dīn Muḥammad wrote two letters, before 867/1463, to the governor of Isfahan Amīr Muḥammad Shāh (brother of Fīrūzshāh) and to a bureaucrat, about finishing his education: sent from Herat to Shiraz, he feared he would never complete his studies if he returned to Herat.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0881"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Jamāl al-Dīn Muḥammad Turka",
+      "where": "YMN/V ff. 139a-40b",
+      "shaping_risk": "medium",
+      "note": "A student's petition, decades after Ibn Turka's death."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.168",
+      "shaping_risk": "medium",
+      "note": "MK notes Jamāl al-Dīn may be another Turka's son"
+    }
+  ],
+  "domain": "social"
+}

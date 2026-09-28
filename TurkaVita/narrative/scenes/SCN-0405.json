@@ -1,0 +1,98 @@
+{
+ "id": "SCN-0405",
+ "type": "scene",
+ "status": "draft",
+ "act": "exile",
+ "title": "Ṣāʾin Qalʿa, c. 1430: a promise of reinstatement",
+ "dramatic_question": "At last you are heard, at Shāhrukh's camp near Sultaniyya, and you leave with a promise. How much do you rest on what you were promised?",
+ "situation": {
+  "when": "c. 834/1430 (the timeline marks the year 'c.')",
+  "where": "Ṣāʾin Qalʿa, near Sultaniyya, in Azarbayjan",
+  "based_on": [
+   "CL-0084",
+   "CL-0091"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "During Shāhrukh's campaign against the Qara Quyunlu in Azarbayjan, Ibn Turka obtained a hearing at the sultan's camp at Ṣāʾin Qalʿa near Sultaniyya and received a promise of reinstatement. Melvin-Koushki gives no note for that sentence and names the second apology as the main source for the period.",
+   "claim": "CL-0084"
+  },
+  {
+   "text": "Shāhrukh's second Azarbayjan campaign against the Qara Quyunlu (833/1429) ended with his return to Herat in 834/1430.",
+   "claim": "CL-0091"
+  }
+ ],
+ "prose": [
+  "The hearing itself is not yours to win or lose: the record gives it to you. At the camp at Ṣāʾin Qalʿa, near Sultaniyya, you are heard, and you come away with a promise of reinstatement.",
+  "That is all the pages say. They do not say what you asked for, in what words, or which post the promise covered. Everything we know of this hearing comes from your own later apology to Bāysunghur; no second witness is named.",
+  "What is left to you is how you take the promise: rest on it, press for more, or ask for something else."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Ask to be heard, and take Shāhrukh's promise of reinstatement as given: follow the camp back toward Herat.",
+   "strategy": "accept_promise_follow_to_herat",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0084",
+    "CL-0085"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.shahrukh": 1,
+    "life.sain_qala": "promise_accepted",
+    "score.biography": 2
+   },
+   "feedback": "The record has you obtain the promise and then follow Shāhrukh back to Herat, as the next scene shows. It is your own later word that a promise was made, told to Bāysunghur while pleading for help, so it should be treated as your claim. The pages do not say which post was promised or what was said."
+  },
+  {
+   "id": "B",
+   "label": "Ask that the promise be set down in writing under Shāhrukh's seal, and stay in the camp until you have the paper.",
+   "strategy": "ask_promise_in_writing",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0084",
+    "CL-0085"
+   ],
+   "requires_min": {
+    "court.shahrukh": 1
+   },
+   "effects": {
+    "press.enemies": 1,
+    "press.livelihood": -1,
+    "life.sain_qala": "asked_in_writing",
+    "score.biography": -1
+   },
+   "costs": [
+    "You would be pressing a ruler who has just promised you reinstatement, in the middle of a campaign."
+   ],
+   "feedback": "Open to you because Shāhrukh has favoured you. The sources record a promise and no document, and the review of your case never came in time. Nothing says whether he would have written one, and nothing can be built on a paper the sources do not contain. The game returns you to the record."
+  },
+  {
+   "id": "C",
+   "label": "Ask for less: leave to live in peace at Natanz with your family and to go on teaching, without your case being reopened.",
+   "strategy": "ask_for_peace_not_reinstatement",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0083",
+    "CL-0081"
+   ],
+   "requires": {},
+   "effects": {
+    "press.students": 1,
+    "press.livelihood": -1,
+    "life.sain_qala": "asked_for_peace",
+    "score.biography": -1
+   },
+   "feedback": "The family was at Natanz, where you had summoned them, and teaching is documented for these years. But the sources say what you got was a promise of reinstatement, which is not what a request for peace would have brought. This is your own what-if, and the game returns you to the record."
+  }
+ ],
+ "next": "SCN-0406",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

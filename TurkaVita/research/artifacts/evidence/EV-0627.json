@@ -1,0 +1,15 @@
+{
+ "id": "EV-0627",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 52,
+  "printed_page": "35",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki's timeline puts the completion of Sharḥ Fuṣūṣ al-Ḥikam at 813/1411 (alongside a journey to the Hijaz, with a question mark on the motive), and a corrected version at 817/1415.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R4 opened pdf p.52",
+ "refers_to_primary": "Timeline A.1, 813/1411 and 817/1415"
+}

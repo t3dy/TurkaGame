@@ -1,0 +1,27 @@
+{
+ "id": "CL-0091",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Other external events in Timeline A.1: Shāhrukh's second Azarbayjan campaign against the Qara Quyunlu (833/1429) and return to Herat (834/1430), Sharaf al-Dīn Yazdī's completion of his Ẓafarnāma (831/1428), and Hurufi uprisings in Isfahan and Tabriz (835/1432).",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0043",
+  "EV-0052",
+  "EV-0049",
+  "EV-0045"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Timurid political history"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.53, timeline drawing on Manz",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

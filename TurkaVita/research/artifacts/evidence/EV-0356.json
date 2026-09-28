@@ -1,0 +1,15 @@
+{
+ "id": "EV-0356",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 91,
+  "printed_page": "74",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says Ibn Turka wrote a Sharḥ al-Nahj, also called Tarjuma-yi Ahādīs az Ḥażrat-i Amīr, which he identifies as deriving from Shīrawayh Daylamī's Firdaws al-Akhbār and Aḥmad b. Ḥanbal's Musnad; it pairs hadith on ʿAlī's exceptionality from non-standard Sunni collections with select aphorisms from the Nahj al-Balāgha.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Sharḥ al-Nahj / Tarjuma-yi Ahādīs az Ḥażrat-i Amīr, MS Majlis 10196 f.330a (per MK fn.148)",
+ "read_by": "R2a opened pdf p.91"
+}

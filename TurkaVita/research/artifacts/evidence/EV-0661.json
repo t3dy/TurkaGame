@@ -1,0 +1,15 @@
+{
+ "id": "EV-0661",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 136,
+  "printed_page": "119",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that Suʾl al-Mulūk was 'completed before 7 Rajab 829/15 May 1426' and marks the date with an asterisk (possible transcription date).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.136",
+ "refers_to_primary": "Suʾl al-Mulūk, date"
+}

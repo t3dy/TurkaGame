@@ -1,0 +1,15 @@
+{
+ "id": "EV-1690",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 91,
+  "printed_page": "74",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that Ibn Turka wrote a Sharḥ al-Nahj (Tarjuma-yi Aḥādīth az Ḥażrat-i Amīr), drawing on the Firdaws al-Akhbār of Shīrawayh Daylamī and the Musnad of Aḥmad b. Ḥanbal, and places it in the Sunni tradition of manāqib works on ʿAlī and the Imams.",
+ "evidence_kind": "work",
+ "read_by": "R2b opened pdf p.91",
+ "refers_to_primary": "Ibn Turka, Sharḥ al-Nahj / Tarjuma-yi Aḥādīth az Ḥażrat-i Amīr, MS Majlis 10196 f. 330a"
+}

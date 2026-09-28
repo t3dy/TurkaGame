@@ -1,0 +1,21 @@
+{
+  "id": "CL-0411",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The letters as listed on pdf pp.155-163 include none identified as addressed to Pīr Muḥammad b. ʿUmar Shaykh, although MK names him as Ibn Turka's first patron in the Shiraz-Isfahan period; nothing on these pages shows what Ibn Turka offered him or received.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0807"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.152",
+      "shaping_risk": "medium",
+      "note": "An attested silence on the pages read, not a claim that no such letter exists"
+    }
+  ],
+  "domain": "political"
+}

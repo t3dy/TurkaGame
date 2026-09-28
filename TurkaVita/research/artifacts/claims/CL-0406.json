@@ -1,0 +1,27 @@
+{
+  "id": "CL-0406",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "MK's survey of the letters finds frequent dealings with Timurid amirs and a particularly close relationship with Bāysunghur b. Shāhrukh, plus friendly relations with leading Sufis of Iran.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0811"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to amirs, Bāysunghur and Sufi shaykhs",
+      "where": "Munshaʾāt-i Turka, passim",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.154",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "social"
+}

@@ -1,0 +1,14 @@
+{
+ "id": "EV-1456",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-2DC96A9F73",
+  "witness_page": 13,
+  "short_title": "Melvin-Koushki, Prologue to Pythagorean Renaissance"
+ },
+ "content": "Footnote 36: the opening of the Mafāḥiṣ in Tehran, Majlis MS 10196 ff. 52a-56a was copied and added to between 1420-25 as part of the earliest and almost complete collection of Ibn Turka's works with some court correspondence; the Prologue says it was almost certainly by the hand of his friend Sharaf al-Dīn Yazdī.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R8 opened pdf p.13",
+ "refers_to_primary": "MS Majlis 10196 ff. 52a-56a"
+}

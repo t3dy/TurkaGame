@@ -1,0 +1,15 @@
+{
+  "id": "EV-0862",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 162,
+    "printed_page": "145",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letters 41 and 42, both to Ṣadr Jalāl al-Dīn Luṭf Allāh (chief ṣadr under Shāhrukh, d. 842/1439, per MK's footnote): a brief letter expressing regard for the chief ṣadr, whom Ibn Turka calls sulṭān al-ʿulamāʾ (no. 41), and a brief letter of well-wishing (no. 42) (TMN/MS p. 31, TMN/D pp. 211-12).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.162",
+  "refers_to_primary": "Munshaʾāt-i Turka, letters 41-42"
+}

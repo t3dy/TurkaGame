@@ -1,0 +1,15 @@
+{
+ "id": "EV-1610",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 23,
+  "printed_page": "6",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK reports that Āshtiyānī (introduction to the 1976 Tehran edition) and Ayatollah Javādī Āmulī (Taḥrīr-i Tamhīd, 1993) limit themselves to a close discussion of the Tamhid as a definitive mystico-philosophical treatment of absolute being.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.23",
+ "refers_to_primary": "Āshtiyānī 1976; Javādī Āmulī 1993"
+}

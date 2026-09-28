@@ -1,0 +1,15 @@
+{
+ "id": "EV-0105",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 65,
+  "printed_page": "48",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Ibn Ḥajar's list of what was found in Akhlāṭī's house continues with books on philosophy, astrology and geomancy and a chest full of precious stones.",
+ "evidence_kind": "chronicle",
+ "read_by": "R1 opened pdf p.65",
+ "refers_to_primary": "Ibn Ḥajar, Inbāʾ al-Ghumr, 3/336-38"
+}

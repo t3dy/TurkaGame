@@ -1,0 +1,21 @@
+{
+  "id": "CL-0456",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Yazdī served as munshī to Ibrāhīm Sulṭān b. Shāhrukh, so the Munshaʾāt-i Yazdī contains letters to the Mamluk sultan and to Gulbarga written in a ruler's name, unlike the Munshaʾāt-i Turka; none of these is a letter by Ibn Turka.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0875"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.167",
+      "shaping_risk": "low",
+      "note": "Context, not about Ibn Turka"
+    }
+  ],
+  "domain": "political"
+}

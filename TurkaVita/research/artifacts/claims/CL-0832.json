@@ -1,0 +1,30 @@
+{
+ "id": "CL-0832",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Ibn Turka's close friend the astronomer Qazizada Rumi wrote to thank him (c. 829/1426) for a copy of his lettrist Sharh al-Basmala, praising his occultist perfection, and a second copy went to Ulugh Beg; MK reads this as showing that lettrism and 'legitimate' astronomy were developed in tandem.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1683",
+  "EV-1684",
+  "EV-1685"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Qazizada Rumi, in a letter of thanks to Ibn Turka",
+   "where": "TMN/M f. 153b",
+   "shaping_risk": "medium",
+   "note": "A friend's letter of thanks, so warm by convention; it shows how Qazizada regarded him, not what Ibn Turka held."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.457-458",
+   "shaping_risk": "medium",
+   "note": "The astronomy-lettrism synergy is MK's argument."
+  }
+ ],
+ "domain": "social"
+}

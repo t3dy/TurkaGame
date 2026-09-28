@@ -1,0 +1,27 @@
+{
+ "id": "CL-0651",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka says he attacked two positions of messianic Sufis on his travels: the announcement that the Mahdi would come within two years and the Sufis rule the world, and the loosening of Sharīʿa duties.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1270"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Masdur II (ca. 832-35/1429-32, after exile)",
+   "where": "Nafsat II 212-15",
+   "shaping_risk": "high",
+   "note": "written to the court that was judging him; MK: produced under duress, treat with caution (pdf p.32 fn 44)"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.448",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "doctrinal"
+}

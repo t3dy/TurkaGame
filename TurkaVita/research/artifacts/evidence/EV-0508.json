@@ -1,0 +1,15 @@
+{
+ "id": "EV-0508",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 122,
+  "printed_page": "105",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Munāẓarāt-i Khams mentions the author's Tamhīdāt (i.e. Tamhīd al-Qawāʿid) and, at the end, the qaṣīda Naẓm al-Durar; it was edited by Akram Jūdī-Niʿmatī (Tehran, 1375 Sh./1997).",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Munāẓarāt-i Khams",
+ "read_by": "R3 opened pdf p.122"
+}

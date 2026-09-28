@@ -1,0 +1,29 @@
+{
+ "id": "CL-0813",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, the 12th/18th-century biographer Mirza ʿAbd Allah Afandi assumed Ibn Turka was a mystical philosopher of Shiʿi stock yet named only the Mafahis and described it as comprising the mystical sciences in an occult mode; he saw an early copy made two years after its completion.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1655",
+  "EV-1656"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Mirza ʿAbd Allah Afandi (d. 1130/1717)",
+   "where": "dissertation pdf p.26",
+   "shaping_risk": "medium",
+   "note": "A single Shiʿi-oriented bio-bibliographer of the early 18th century."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (partisan)",
+   "where": "dissertation pdf p.26",
+   "shaping_risk": "medium",
+   "note": "Reported through MK, who argues a rival reading."
+  }
+ ],
+ "domain": "textual"
+}

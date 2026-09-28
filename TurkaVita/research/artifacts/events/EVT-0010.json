@@ -1,0 +1,22 @@
+{
+ "id": "EVT-0010",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1404",
+  "end": "1404",
+  "hijri": "806",
+  "basis": "Timeline A.1, pdf p.51; footnote 1 says most dates rest on colophons but does not say which; a colophon may record copying.",
+  "date_kind": "colophon"
+ },
+ "place": "Cairo (presumably; abroad until c. 1408)",
+ "event_type": "work",
+ "description": "Ibn Turka completes the Sharḥ-i Naẓm al-Durr, an anthology-as-commentary.",
+ "claims": [
+  "CL-0092",
+  "CL-0030",
+  "CL-0001"
+ ],
+ "fixed_point": false
+}

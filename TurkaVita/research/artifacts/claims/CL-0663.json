@@ -1,0 +1,21 @@
+{
+ "id": "CL-0663",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Qāsim-i Anvār was apparently claimed by the Ismaʿilis as one of their own, and MK's note (from Virani) says his putative Hurufi connection supplied the official excuse for his 1427 exile.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-1292"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.456",
+   "shaping_risk": "medium",
+   "note": "a footnote relaying Virani's Ismaʿili claim; 'apparently'"
+  }
+ ],
+ "domain": "political"
+}

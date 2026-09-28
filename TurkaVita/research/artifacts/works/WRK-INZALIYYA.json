@@ -1,0 +1,28 @@
+{
+ "id": "WRK-INZALIYYA",
+ "type": "work",
+ "status": "draft",
+ "title": "R. al-Inzāliyya ('On the Sending Down of Revelation')",
+ "transliterated_title": "Risāla al-Inzāliyya",
+ "language": "Arabic",
+ "genre": "treatise",
+ "theme": "theology",
+ "date": {
+  "ce": "before 1425-08-02",
+  "hijri": "before 17 Ramaḍān 828",
+  "basis": "MK: 'completed before' the date of the Majlis 10196 copy (ff. 126b-28b); a copying date and only a terminus ad quem; not asterisked."
+ },
+ "date_kind": "transcription",
+ "manuscript": "2 copies listed: MS Majlis 10196 ff. 126b-28b (17 Ramaḍān 828/2 Aug 1425); MS Majlis 10319/4 (13th/19th century).",
+ "majlis_folios": "ff. 126b-28b",
+ "edited": true,
+ "summary": "On the revelation of the heavenly Books treated in turn from exoteric, mystical and lettrist perspectives, rejecting two standard views of inzāl for the Sufis' applied metaphysical sense.",
+ "supported_by": [
+  "EV-0451",
+  "EV-0452",
+  "EV-0453"
+ ],
+ "claims": [
+  "CL-0210"
+ ]
+}

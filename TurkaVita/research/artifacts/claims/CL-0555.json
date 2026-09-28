@@ -1,0 +1,21 @@
+{
+  "id": "CL-0555",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Melvin-Koushki says Ibn Turka regarded his own synthesis of peripatetic-illuminationist philosophy and mystical theory as of secondary, though not minor, importance.",
+  "epistemic_type": "directly_inferred",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1076",
+    "EV-1064"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf p.468",
+      "shaping_risk": "low"
+    }
+  ],
+  "domain": "doctrinal"
+}

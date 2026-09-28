@@ -1,0 +1,21 @@
+{
+ "id": "CL-0185",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Ibn Turka's Shafiʿi legal credentials are impeccable, though Stewart shows Shafiʿism did not guarantee Sunnism in this period.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0353",
+  "EV-0354"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+   "where": "pdf p.90 (printed 73)",
+   "shaping_risk": "medium"
+  }
+ ]
+}

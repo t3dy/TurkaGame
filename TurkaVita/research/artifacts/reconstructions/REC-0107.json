@@ -1,0 +1,18 @@
+{
+  "id": "REC-0107",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "What does the dissertation say the Mafāḥiṣ's structure is, without the three-Globes reading?",
+  "proposition": "The Mafāḥiṣ is organized as an introduction of seven inquiries, three sections of inquiries on the mental (36), written (21) and spoken (18) forms of the letter, and a fourth section of 74 inquiries on the letters in themselves; no ascent-descent-ascent pattern is stated in this description.",
+  "kind": "inferential",
+  "scholar": "Melvin-Koushki, dissertation description",
+  "reasoning": [
+    "This is the dissertation's own plain description (pdf pp.352, 354).",
+    "It is offered as the rival to the Prologue reading, not as Melvin-Koushki's rejection of it: the dissertation does not discuss the Globes."
+  ],
+  "observed_facts": [
+    "CL-0562",
+    "CL-0563"
+  ],
+  "confidence": "medium"
+}

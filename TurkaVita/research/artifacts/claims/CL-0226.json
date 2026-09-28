@@ -1,0 +1,23 @@
+{
+ "id": "CL-0226",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The composition of Nafsat al-Maṣdūr II is placed between ca. 832-35/1429-32 by context; the work is undated, and its only dated witness is the Majlis 10196 copy of 838/1435, after Ibn Turka's death.",
+ "epistemic_type": "inferential_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0517",
+  "EV-0513",
+  "EV-0421"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.106",
+   "shaping_risk": "low",
+   "note": "'context puts its composition'; the context is not spelled out in the entry"
+  }
+ ],
+ "domain": "chronological"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0047",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 53,
+  "printed_page": "36",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Timeline A.1: 833/1430 he winters in Natanz, sends for his family, and while there writes the K. al-Manāhij for his son Muḥammad.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.53",
+ "refers_to_primary": "Ibn Turka, K. al-Manāhij"
+}

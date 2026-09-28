@@ -1,0 +1,23 @@
+{
+  "id": "CL-0578",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Davānī summarizes the three levels of letters as spiritual-mental (high letters), oral (medial letters) and written (low letters), with the written form visible to men of might and vision, and with the letters' spirits standing for their numerical value, hearts for oral form and bodies for written form; this is Davānī's mapping, not a passage of Ibn Turka.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1098",
+    "EV-1100",
+    "EV-1099"
+  ],
+  "mediation": [
+    {
+      "layer": "later_chronicler",
+      "who": "Jalāl al-Dīn Davānī, R. Tahlīliyya, as summarized by Melvin-Koushki",
+      "where": "pdf p.353",
+      "shaping_risk": "medium",
+      "note": "a later reader's summary, not Ibn Turka's own words"
+    }
+  ],
+  "domain": "doctrinal"
+}

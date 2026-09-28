@@ -1,0 +1,28 @@
+{
+ "id": "CL-0649",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In the second apology Ibn Turka says that on his first trip to Herat he fell in with an effusively friendly master whose disciples were unruly, admonished him privately, and persuaded him to disavow a number of them and correct their belief in the Mahdi's imminent advent; he says he admonished many other shaykhs likewise.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1272",
+  "EV-1267"
+ ],
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Masdur II (ca. 832-35/1429-32, after exile)",
+   "where": "Nafsat II 212-15",
+   "shaping_risk": "high",
+   "note": "written to the court that was judging him; MK: produced under duress, treat with caution (pdf p.32 fn 44)"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.449",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "biographical"
+}

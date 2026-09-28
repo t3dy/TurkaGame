@@ -1,0 +1,26 @@
+{
+ "id": "CL-0209",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Within the entries for works 1-25 Melvin-Koushki asterisks only four dates as probable transcription: the R. al-Muḥammadiyya, the Muhr al-Nubuwwa, the Munāẓara-yi Bazm u Razm and the Nuqṭa; the Muhr and Bazm u Razm dates rest on Āqā Buzurg's report, and several unasterisked works are given only as 'completed before' their Majlis copy date.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0407",
+  "EV-0497",
+  "EV-0499",
+  "EV-0502",
+  "EV-0519",
+  "EV-0498",
+  "EV-0501"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.79, 101, 102, 108",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "chronological"
+}

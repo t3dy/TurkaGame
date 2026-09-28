@@ -1,0 +1,29 @@
+{
+ "id": "CL-0023",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Timeline A.1 has Sharaf al-Dīn Yazdī accompany Ibn Turka when he left Samarkand for Mecca and Cairo (c. 795/1393); the pages read give no source for the departure itself, and the nearest sources are later hagiographical reports of the two living together in Cairo.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0006",
+  "EV-0117"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "later Timurid sources (Gāzurgāhī, Majālis al-ʿUshshāq)",
+   "where": "pdf p.67, note 64",
+   "shaping_risk": "high",
+   "note": "hagiographical"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.51",
+   "shaping_risk": "medium",
+   "note": "timeline entry, marked 'c.'"
+  }
+ ],
+ "domain": "biographical"
+}

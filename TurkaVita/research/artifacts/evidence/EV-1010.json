@@ -1,0 +1,15 @@
+{
+  "id": "EV-1010",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 334,
+    "printed_page": "317",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Melvin-Koushki observes in a footnote that Ibn Turka mentions Akhlāṭī only as 'sayyid' or with reference to his ʿAlid status, never by name or honorific, and that his veneration was due not least to Akhlāṭī's blood connection to the Imams.",
+  "evidence_kind": "scholarly_argument",
+  "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ; Nafsat al-Maṣdūr I",
+  "read_by": "R6 opened pdf p.334"
+}

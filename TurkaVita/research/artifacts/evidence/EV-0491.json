@@ -1,0 +1,15 @@
+{
+ "id": "EV-0491",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 117,
+  "printed_page": "100",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MS Majlis 10196 ff. 382b-404a carries the K. al-Manāhij, copied in Natanz on 20 Rajab 833/14 April 1430; the earliest other dated copy listed is Sipahsālār MS 2930/12 (Abarquh, 8 Jumādā I 845/1441).",
+ "evidence_kind": "colophon",
+ "refers_to_primary": "Ibn Turka, K. al-Manāhij",
+ "read_by": "R3 opened pdf p.117"
+}

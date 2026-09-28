@@ -1,0 +1,33 @@
+{
+ "id": "WRK-SHARH-I-HADIS-I-AMA",
+ "type": "work",
+ "status": "draft",
+ "title": "Sharḥ-i Ḥadīs-i ʿAmāʾ",
+ "transliterated_title": "Sharḥ-i Ḥadīs-i ʿAmāʾ (Commentary on the Hadith of the Thin Cloud; variant Sharḥ-i Ḥadīs-i Ghamām)",
+ "language": "Persian",
+ "genre": "brief lettrist hadith commentary",
+ "theme": "lettrism",
+ "date": {
+  "ce": "before 27 October 1424",
+  "hijri": "before 3 Dhū l-Ḥijja 827",
+  "basis": "MS Majlis 10196 copy date, asterisked by Melvin-Koushki as possibly transcription; terminus ad quem only."
+ },
+ "date_kind": "transcription",
+ "place": "not stated",
+ "addressee": "not stated",
+ "occasion": "not stated (a commentary on the hadith answering where God was before creation)",
+ "manuscript": "MS Majlis 10196/3 ff. 119b-20b; MS 10004 pp. 268-70; MS 3035/6; Princeton MS 2002/3.",
+ "majlis_folios": "ff. 119b-20b (the folio range printed for Sharḥ Ḥaqīqat al-Waḥda, no. 36, is f. 120a-20b, so 120a-20b is claimed by both entries)",
+ "edited": true,
+ "summary": "A brief lettrist commentary on the hadith of the thin cloud, in answer to the question where God was before creation.",
+ "edition_note": "Chahārdah Risāla-yi Fārsī (Tehran 1972) pp. 285-86.",
+ "supported_by": [
+  "EV-0632",
+  "EV-0633",
+  "EV-0634",
+  "EV-0635"
+ ],
+ "claims": [
+  "CL-0314"
+ ]
+}

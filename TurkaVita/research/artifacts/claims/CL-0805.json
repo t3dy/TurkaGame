@@ -1,0 +1,31 @@
+{
+ "id": "CL-0805",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "According to Melvin-Koushki, Nasr calls Ibn Turka a peripatetic-illuminationist philosopher and Sufi of the Ibn ʿArabi school linking Tusi and Sadra, and Ziai a Shiʿi thinker harmonizing religion and philosophy to promote the political authority of the ʿulamaʾ; MK calls Ziai's statement incorrect and anachronistic.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1616",
+  "EV-1617",
+  "EV-1618",
+  "EV-1608"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "S. H. Nasr; Hossein Ziai",
+   "where": "Nasr, Islamic Philosophy 209-10; Ziai, 'Recent Trends' 413-15",
+   "shaping_risk": "medium",
+   "note": "The position is this scholar's own; we have it only as summarised by Melvin-Koushki."
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (reporter; partisan)",
+   "where": "dissertation pdf p.24",
+   "shaping_risk": "medium",
+   "note": "MK argues a rival reading (Ibn Turka as occult philosopher) and in places calls this reading an error; his summary may compress or foreshorten it."
+  }
+ ],
+ "domain": "doctrinal"
+}

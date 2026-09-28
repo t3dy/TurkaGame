@@ -1,0 +1,23 @@
+{
+ "id": "CL-0203",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation gives three descriptions of the copying span of MS Majlis 10196 that do not coincide: 'the last eight years of the author's life and three years past his death' (p.78; with death in 835/1432 that would be roughly 827-38), 'between 828-41/1425-37' (p.80), and a Mafāḥiṣ copy dated 823/1420 (p.97). The span cannot be fixed from these pages.",
+ "epistemic_type": "undeterminable",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0402",
+  "EV-0410",
+  "EV-0421",
+  "EV-0482"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "pp.78, 80, 97",
+   "shaping_risk": "medium"
+  }
+ ],
+ "domain": "chronological"
+}

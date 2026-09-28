@@ -1,0 +1,15 @@
+{
+ "id": "EV-0364",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 93,
+  "printed_page": "76",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki's footnote says Ibn Turka does not hesitate in the following verses of the same commentary to acknowledge the roles of Abū Bakr, ʿUmar and ʿUthmān in early Islam, while reserving his highest praise for ʿAlī as repository of all knowledge.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Sharḥ-i Naẓm al-Durr, ll.621-4 (SND p.270; per MK fn.152)",
+ "read_by": "R2a opened pdf p.93"
+}

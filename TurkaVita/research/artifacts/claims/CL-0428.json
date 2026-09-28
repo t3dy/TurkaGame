@@ -1,0 +1,22 @@
+{
+  "id": "CL-0428",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "A further letter to Bāysunghur (microfilm 227/4) is known in another MS; MK supposes it duplicates one of letters 2, 17, 18 or 19.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0871",
+    "EV-0872"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.164",
+      "shaping_risk": "medium",
+      "note": "MK could not consult the MS"
+    }
+  ],
+  "domain": "textual"
+}

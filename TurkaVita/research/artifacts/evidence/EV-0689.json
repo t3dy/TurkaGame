@@ -1,0 +1,15 @@
+{
+ "id": "EV-0689",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 149,
+  "printed_page": "132",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Żawʾ al-Lamaʿāt is a commentary on Fakhr al-Dīn ʿIrāqī's Lamaʿāt in 28 gleams (lamʿa), drawing on Ibn ʿArabī, Qūnavī and Aḥmad Ghazālī and treating love and its manifestations, the Breath of the Merciful, the Muḥammadan reality, receptivity (qābiliyyat) and effusion (fayż).",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.149",
+ "refers_to_primary": "Ibn Turka, Żawʾ al-Lamaʿāt"
+}

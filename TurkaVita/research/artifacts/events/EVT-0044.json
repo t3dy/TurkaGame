@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0044",
+ "type": "event",
+ "status": "draft",
+ "actor": "Sharaf al-Dīn Yazdī",
+ "date": {
+  "start": "1428",
+  "end": "1428",
+  "hijri": "831",
+  "basis": "Timeline A.1, pdf p.53.",
+  "date_kind": "context"
+ },
+ "place": "unknown",
+ "event_type": "work",
+ "description": "Sharaf al-Dīn Yazdī completes his Ẓafarnāma.",
+ "claims": [
+  "CL-0091"
+ ],
+ "fixed_point": false
+}

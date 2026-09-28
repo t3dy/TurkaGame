@@ -1,0 +1,32 @@
+{
+ "id": "WRK-QABILIYYAT",
+ "type": "work",
+ "status": "draft",
+ "title": "Qābiliyyat",
+ "transliterated_title": "Qābiliyyat (On Receptivity; variant title Aʿmāl u Afʿāl)",
+ "language": "Persian",
+ "genre": "brief treatise / commentary on a Fuṣūṣ passage",
+ "theme": "mystical_philosophy",
+ "date": {
+  "ce": "unknown",
+  "hijri": "unknown",
+  "basis": "The entry gives no composition date and no copy in MS Majlis 10196; earliest dated copy listed is Rajab-Ramaḍān 842/January-March 1439 (MS 5423)."
+ },
+ "date_kind": "unknown",
+ "place": "not stated",
+ "addressee": "not stated",
+ "occasion": "not stated",
+ "manuscript": "Earliest listed: MS 5423 ff. 175b-77a, Fatih Collection, Süleymaniye Library, Istanbul (842/1439); 12 copies listed; none in MS Majlis 10196.",
+ "majlis_folios": "none listed",
+ "edited": true,
+ "summary": "A brief treatment of Ibn ʿArabī's teaching on the most holy emanation, centred on receptivity (qābiliyyat) and its bearing on predestination versus free will.",
+ "edition_note": "Chahārdah Risāla-yi Fārsī (Tehran 1972) pp. 271-75; Persian, so readable by a player with the edition.",
+ "supported_by": [
+  "EV-0604",
+  "EV-0605",
+  "EV-0606"
+ ],
+ "claims": [
+  "CL-0301"
+ ]
+}

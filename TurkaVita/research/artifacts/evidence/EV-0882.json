@@ -1,0 +1,15 @@
+{
+  "id": "EV-0882",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 169,
+    "printed_page": "152",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Yazdī collection item 5: from Sharaf al-Dīn Yazdī (?) to Ibn Turka, a petition to his teacher referring to one of his sons (makhdūm-zāda) (YMN/V ff. 165b-66b, YMN/MS p. 235). Item 6: a letter of condolence (taʿziyat-nāma) to Ibn Turka's children on their father's death (YMN/V ff. 166b-67b, YMN/MS pp. 235-36).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.169",
+  "refers_to_primary": "Yazdī collection items 5-6"
+}

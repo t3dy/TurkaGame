@@ -1,0 +1,15 @@
+{
+  "id": "EV-0826",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 157,
+    "printed_page": "140",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 10, to Amīr Fīrūzshāh (ca. 817/1414, Isfahan?): Ibn Turka expresses gladness at the arrival of the amir's troops (TMN/MS pp. 6-7).",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.157",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 10"
+}

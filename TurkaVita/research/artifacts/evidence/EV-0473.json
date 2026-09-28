@@ -1,0 +1,15 @@
+{
+ "id": "EV-0473",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 111,
+  "printed_page": "94",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "The Khavāṣṣ-i ʿIlm-i Ṣarf treats questions of morphology in a lettrist manner, defining morphology (language itself) as the process by which singularity becomes multiplicity, all proceeding from the maṣdar; the pronoun huwa is implicit in all forms and is the source of the divine names; it was published by Bihbahānī and Dībājī in 1351 Sh./1972. The entry gives no date of composition.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Khavāṣṣ-i ʿIlm-i Ṣarf",
+ "read_by": "R3 opened pdf p.111"
+}

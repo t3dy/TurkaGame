@@ -1,0 +1,15 @@
+{
+  "id": "EV-1100",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 353,
+    "printed_page": "336",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "In Davānī's summary the letters have spirits, bodies and hearts: their spirits represent their numerical values, their hearts their oral form, and their bodies their written form.",
+  "evidence_kind": "reception",
+  "refers_to_primary": "Jalāl al-Dīn Davānī, R. Tahlīliyya",
+  "read_by": "R6 opened pdf p.353"
+}

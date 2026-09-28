@@ -1,0 +1,15 @@
+{
+ "id": "EV-0640",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 132,
+  "printed_page": "115",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Sharḥ Ḥadīth Nabawī is a brief mystical commentary on the hadith beginning that the best speech is the Book of God and the best guidance that of Muḥammad, and that the worst of matters are its innovations and every innovation is error; it is Arabic and unpublished.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.132",
+ "refers_to_primary": "Ibn Turka, Sharḥ Ḥadīth Nabawī"
+}

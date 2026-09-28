@@ -1,0 +1,29 @@
+{
+  "id": "CL-0418",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In letter 20 (ca. 829/1426) Ibn Turka told Shāhrukh that his aim in serving the Sharīʿa was to be blameless before the Prophet and to further Shāhrukh's own Sharīʿa-promoting mission, said he had sent a darvīsh to court to discuss matters to that end, and sent with the letter a treatise on the occult properties of things and occult sciences that he thought the ruler should find interesting.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0838",
+    "EV-0839"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Shāhrukh (heading given by MK as 'Amīrzāda Shāhrukh')",
+      "where": "Munshaʾāt-i Turka letter 20",
+      "shaping_risk": "medium",
+      "note": "Letters to third parties ask or offer favours; the text survives only in copies made after his lifetime (except the marginal letters in MS Majlis 10196)."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.159",
+      "shaping_risk": "medium",
+      "note": "MK's heading calls Shāhrukh 'Amīrzāda' though the letter calls him sultan; see notes"
+    }
+  ],
+  "domain": "political"
+}

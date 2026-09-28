@@ -1,0 +1,22 @@
+{
+ "id": "CL-0311",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "The dissertation gives two years for the completion of the Sharḥ Fuṣūṣ al-Ḥikam: the work entry (colophon) says 20 Ṣafar 814/13 June 1411, while the timeline says 813/1411; the entry's date is the one tied to a stated colophon, and the dissertation does not reconcile the two on these pages.",
+ "epistemic_type": "contested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0624",
+  "EV-0627"
+ ],
+ "domain": "chronological",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.52, 129",
+   "shaping_risk": "low",
+   "note": "internal discrepancy: 813 vs 814"
+  }
+ ]
+}

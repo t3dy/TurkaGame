@@ -1,0 +1,20 @@
+{
+ "id": "EVT-0048",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1429",
+  "end": "1430",
+  "hijri": "833",
+  "basis": "Timeline A.1 says c. 833/1429; §1.2 says 833/1430 (pdf p.53 and p.73-74).",
+  "date_kind": "conjectured"
+ },
+ "place": "Simnan",
+ "event_type": "petition",
+ "description": "Ibn Turka makes a fruitless attempt to obtain a hearing with Shāhrukh at Simnan.",
+ "claims": [
+  "CL-0083"
+ ],
+ "fixed_point": false
+}

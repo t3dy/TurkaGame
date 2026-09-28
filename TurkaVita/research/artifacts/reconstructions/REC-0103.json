@@ -1,0 +1,27 @@
+{
+  "id": "REC-0103",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "Did Ibn Turka conceive his project as progress beyond the ancients or as restoration of their wisdom?",
+  "proposition": "Both: he upholds prisca sapientia (ancient wisdom occulted and restored) while insisting on an unprecedented, millenarian progress in which his generation stands at the peak.",
+  "kind": "inferential",
+  "scholar": "Melvin-Koushki",
+  "reasoning": [
+    "The R. Anjām narrates ancient wisdom, its occultation, revival and steady ascent toward a centrepoint of sanctified power (pdf pp.342-343).",
+    "The R. Ḥurūf points to the age's upward progress and calls lettrism nearly erased until Akhlāṭī's circle revived it (pdf pp.341, 343).",
+    "Melvin-Koushki calls him Janus-faced, looking to past and future, and says he resolves the paradox teleologically (pdf pp.340, 469).",
+    "The framing (entropy against complexity, Newton, Bacon) is Melvin-Koushki's comparative apparatus, not Ibn Turka's."
+  ],
+  "observed_facts": [
+    "CL-0587",
+    "CL-0588",
+    "CL-0589",
+    "CL-0590",
+    "CL-0594",
+    "CL-0591"
+  ],
+  "confidence": "medium",
+  "alternatives": [
+    "REC-0104"
+  ]
+}

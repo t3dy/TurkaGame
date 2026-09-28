@@ -1,0 +1,104 @@
+{
+ "id": "SCN-0503",
+ "type": "scene",
+ "status": "draft",
+ "act": "copyist",
+ "title": "The audition certificate",
+ "dramatic_question": "The Mafāḥiṣ is copied. The note at its end will say who checked it and who sat through the teaching. What do you write, and what do you leave out?",
+ "situation": {
+  "when": "828/1425 and after (the Landberg audition note is dated 828/1425)",
+  "where": "Yazd (?), on the timeline's query",
+  "based_on": [
+   "CL-0045",
+   "CL-0201",
+   "CL-0576"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "Sharaf al-Dīn Yazdī checked the two earliest copies of the K. al-Mafāḥiṣ and was present at teaching sessions on the work, as colophons or audition certificates on those copies state (MS Majlis 10196 f. 119a; Beinecke MS Landberg 146 f. 179b); the timeline says the Mafāḥiṣ was revised and expanded in Yazd in his company (828/1425), which the manuscripts dispute (CL-0576).",
+   "claim": "CL-0045"
+  },
+  {
+   "text": "Ibn Turka names Sayyid Ḥusayn Akhlāṭī as his main oral source in the K. al-Mafāḥiṣ.",
+   "claim": "CL-0221"
+  },
+  {
+   "text": "The incipit and explicit of the Mafāḥiṣ in MS Majlis 10196 (ff. 52a and 118b) are in the author's own hand.",
+   "claim": "CL-0201"
+  }
+ ],
+ "prose": [
+  "The Mafāḥiṣ ends at f. 118b, its opening and closing words in the author's own hand. What follows, at f. 119a, is the audition certificate: the kind of note that says a copy was checked and who was present when it was taught. Two of the earliest copies carry one.",
+  "What the certificates say, as Melvin-Koushki reports them, is that Sharaf al-Dīn Yazdī checked the copy and was present in teaching sessions on the book, and that it was revised and expanded in his company. They name one man. The timeline speaks of 'Yazdī and other associates' without naming anyone else.",
+  "The book itself names a different man as its main oral source: Sayyid Ḥusayn Akhlāṭī, Ibn Turka's master in Cairo, whom the first apology leaves out. Whose names do you put on the page?"
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Write that Sharaf al-Dīn Yazdī checked the copy and was present in the teaching sessions on the book, and that it was revised and expanded in his company (the manuscripts disagree on that, CL-0576).",
+   "strategy": "certificate_names_yazdi",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0045",
+    "CL-0576"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "court.yazdi": 1,
+    "press.works": 1,
+    "life.audition": "yazdi_named",
+    "score.textual": 1,
+    "score.biography": 2
+   },
+   "feedback": "This is what the certificates on the two earliest copies say, as Melvin-Koushki reports them from the manuscripts. It names one man, not the room. A date on such a note may also mark copying, not composition: a marginal correction to the autograph colophon on the Majlis Mafāḥiṣ says its date refers only to the copying, and the work itself is dated to 823/1420 with the day disputed."
+  },
+  {
+   "id": "B",
+   "label": "Give only the date and place and that the copy was checked, naming nobody.",
+   "strategy": "certificate_without_names",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0045"
+   ],
+   "requires": {},
+   "effects": {
+    "court.yazdi": -1,
+    "press.works": 1,
+    "life.audition": "anonymous",
+    "score.biography": -1
+   },
+   "feedback": "The certificates as they survive name Yazdī, so the record does not follow this path. An anonymous note would have kept him out of any reading of the volume as evidence, and would also have left no proof of who was present. The sources give no sign anyone asked for either."
+  },
+  {
+   "id": "C",
+   "label": "Add that the book rests on what he heard from Sayyid Ḥusayn Akhlāṭī, his master in Cairo.",
+   "strategy": "certificate_names_akhlati",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0221",
+    "CL-0449"
+   ],
+   "requires_min": {
+    "court.akhlati": 1
+   },
+   "effects": {
+    "court.akhlati": 1,
+    "press.exposure": 1,
+    "life.audition": "akhlati_added",
+    "score.biography": -1
+   },
+   "costs": [
+    "You would tie a volume that may be shown to judges to the Cairo circle the apologies leave out."
+   ],
+   "feedback": "The game opens this only once you have earned Akhlāṭī's favour. The Mafāḥiṣ itself names him as its main oral source, and a letter from him urges Ibn Turka to write a work on the science of letters, perhaps this one (Melvin-Koushki's guess). But the certificates as reported name only Yazdī, and the apologies omit Akhlāṭī altogether, which Melvin-Koushki reads as the first of many signs that they reflect Shāhrukh's anxieties rather than Ibn Turka's own project. The game returns you to the record."
+  }
+ ],
+ "next": "SCN-0601",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

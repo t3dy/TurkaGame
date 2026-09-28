@@ -1,0 +1,28 @@
+{
+ "id": "CL-0092",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Timeline A.1 dates Ibn Turka's Sharḥ-i Naẓm al-Durr to 806/1404 (completed) and the R. Munāẓarāt-i Khams to 808/1405.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0011",
+  "EV-0013"
+ ],
+ "mediation": [
+  {
+   "layer": "manuscript_colophon",
+   "who": "colophons and audition notes of MS Majlis 10196 and related manuscripts, as summarised in MK's timeline (fn. 1)",
+   "where": "pdf p.51",
+   "shaping_risk": "medium",
+   "note": "a colophon date may record copying, not composition; the timeline does not say which entries rest on colophons"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.51",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "textual"
+}

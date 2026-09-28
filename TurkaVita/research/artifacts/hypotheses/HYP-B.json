@@ -1,0 +1,225 @@
+{
+  "id": "HYP-B",
+  "type": "hypothesis",
+  "status": "draft",
+  "dispute": "Who was Ibn Turka: what did he actually hold, and what does the surviving record allow us to say?",
+  "letter": "B",
+  "name": "Orthodox Sunni Sufi thinker",
+  "proposition": "Ibn Turka was an orthodox Sunni Sufi thinker: a Shāfiʿī qadi, Ashʿarī by creed, who understood the Sufis as the Sunni elite and defended them from the charge of deviation, as Lewisohn reads the apologies at face value.",
+  "commitments": {
+    "conviction": true
+  },
+  "entails": [
+    "The apologies and creed tracts, all addressed to the men judging him, must report what he actually held; nothing in them may be shaped by the need to survive.",
+    "The lettrist and philosophical writings, the Akhlāṭī discipleship, and the Shiʿi-looking passages must be marginal to who he was, though the apologies never mention Akhlāṭī.",
+    "The apologies' claim of fifteen years of nothing but the religious sciences must be reconciled with the Iʿtiqādiyya's admission of youthful suspect sciences.",
+    "He must have accepted 'Sufi' as a description of himself, though in Nafsat I he defends Sufism conditionally ('even if') and his own lettrist writings draw a line between Sufism and lettrism."
+  ],
+  "proponents": [
+    {
+      "scholar": "Leonard Lewisohn (as reported by Melvin-Koushki)",
+      "cites": [
+        "REC-0001",
+        "REC-0056"
+      ],
+      "note": "His article studies the apologies, which he calls the 'Confessions'; Melvin-Koushki says he insists on taking them at face value and so presents an orthodox Sunni Sufi thinker, while calling for more research. Melvin-Koushki calls the insistence 'well-taken' in one footnote and 'misrepresenting' in the body; Lewisohn's own article was not read by the researchers."
+    },
+    {
+      "scholar": "Rosemarie Quiring-Zoche (as reported by Melvin-Koushki)",
+      "cites": [
+        "REC-0057"
+      ],
+      "note": "Her Encyclopaedia Iranica line, 'a Sufi poet, philosopher, and jurist', is a related but not identical reading; Melvin-Koushki calls it 'similarly problematic'."
+    }
+  ],
+  "alternatives": [
+    "HYP-A",
+    "HYP-C",
+    "HYP-D",
+    "HYP-E",
+    "HYP-F"
+  ],
+  "cites": [
+    "REC-0001",
+    "REC-0056",
+    "REC-0057",
+    "REC-0009"
+  ],
+  "bearings": [
+    {
+      "evidence": "EV-0463",
+      "kind": "creed_tract",
+      "direction": "supports",
+      "reading": "The Iʿtiqādāt, written on his second trip to Herat, presents him as a staunch Sunni-Ashʿarī opposed to Muʿtazilism, philosophy, Shiʿism and messianic Sufism. Lewisohn takes the apologies at face value.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-0212",
+      "kind": "creed_tract",
+      "direction": "supports",
+      "reading": "Melvin-Koushki calls the R. Iʿtiqādiyya a companion tract to Nafsat I, in which the author shows himself a standard-issue Ashʿarī thinker. Read literally, that is a creed.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-0467",
+      "kind": "creed_tract",
+      "direction": "supports",
+      "reading": "The Iʿtiqādiyya adds that whatever he has carried over from the formulations of the Sufi masters does not touch matters of creed, and compares himself to Ghazālī and Fakhr al-Dīn Rāzī: on Lewisohn's reading, a Sufi whose Sufism sits inside creed.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-0264",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "In Nafsat I he says he laid a creed of adherence to the Sunna and Jamāʿa before the leading scholars at court, who testified to it. Taken at face value, his orthodoxy was examined and attested by the men best placed to judge it.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-0279",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "Nafsat I says the Shiʿa and Muʿtazila rest on the same principles, agree in the main with the philosophers, and all three are enemies of the Sunna. Lewisohn's face-value reading takes this as sincere.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-0282",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "He defines the Sufis as simply the Sunni elite, the name marking a level of perfection in knowledge and practice. On this reading 'Sunni Sufi' is his own description of himself and of his teachers.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-0280",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "Nafsat I says the Sufi shaykhs are all partisans of the Sunna and Jamāʿa and take no disciples who do not profess it; the trouble comes from false Sunnis. Read literally, Sufism and orthodoxy are one thing in his mouth.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-0211",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "Nafsat I lists the orthodoxy of prominent Sufi masters, Anṣārī, Tirmidhī and Ḥamuvayī among them, dwelling on Khwāja Pārsā. Lewisohn's reading takes these as his real authorities.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-0299",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "The second subsection of Nafsat I argues that the Prophet bequeathed two kinds of knowledge, one far more precious and therefore hidden. Taken at face value this is the Sufi doctrine of inner knowledge stated inside the Sunna.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-0258",
+      "kind": "apology",
+      "direction": "supports",
+      "reading": "Nafsat I says that in his fifteen years abroad he studied nothing save tafsir, hadith, uṣūl al-dīn and jurisprudence. Taken at face value, that is the training of an orthodox scholar.",
+      "attributed_to": "Leonard Lewisohn"
+    },
+    {
+      "evidence": "EV-1690",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "Melvin-Koushki reports that his Sharḥ al-Nahj, drawn from Daylamī's Firdaws al-Akhbār and Ibn Ḥanbal's Musnad, belongs to the Sunni tradition of manāqib works on ʿAlī and the Imams. He grants the Sunni features of the free writings, which B can use.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0360",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "The Mafāḥiṣ's closing catalogue of the salaf on the uncreated Qurʾan and its exhortation to hold to the folk of the Sunna is a Sunni passage in his own summa. Melvin-Koushki reads it as a concession to the less intelligent; B reads it as the author speaking.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0063",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "In the Tuḥfa-yi ʿAlāʾī he says his family has always belonged to the Shāfiʿī rite. Melvin-Koushki grants impeccable Shāfiʿī credentials, though he adds that Shāfiʿism is an unreliable marker of Sunnism.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0253",
+      "kind": "work",
+      "direction": "supports",
+      "reading": "Melvin-Koushki cites his censure of Zamakhsharī in the Mafāḥiṣ as showing that the dislike of Muʿtazilī views expressed in the apology is also in his own doctrinal work.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1234",
+      "kind": "letter",
+      "direction": "supports",
+      "reading": "Melvin-Koushki says the Munshaʾāt corroborate what the apologies say of his dealings with Sufi shaykhs, Niʿmat Allāh, Qāsim-i Anvār, ʿAlāʾ al-Dīn Chishtī and Ḥasan ʿAṭṭār among them: letters written to third parties, not to his judges, that show a man moving among Sufis.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1214",
+      "kind": "chronicle",
+      "direction": "supports",
+      "reading": "Dawlatshāh names Kātibī Turshīzī as Ibn Turka's disciple in ʿilm-i taṣavvuf, Sufi knowledge: a chronicler of the next century remembers him as a teacher of Sufism.",
+      "attributed_to": "Dawlatshāh Samarqandī"
+    },
+    {
+      "evidence": "EV-1201",
+      "kind": "hagiography",
+      "direction": "supports",
+      "reading": "Kirmānī's Niʿmatullāhī hagiography has Ibn Turka and Yazdī seek out Niʿmat Allāh, a Sufi master. Melvin-Koushki notes the author's concern is to credit Niʿmat Allāh and to stress the two men's deference, so it shows a Sufi reputation rather than a known meeting.",
+      "attributed_to": "the Niʿmatullāhī hagiographers"
+    },
+    {
+      "evidence": "EV-0237",
+      "kind": "creed_tract",
+      "direction": "strains",
+      "reading": "The Iʿtiqādiyya admits that in his youth he explored suspect sciences, and defends this by the hadith 'learn even sorcery'. That sits badly with Nafsat I's account of fifteen years of nothing but the religious sciences; B must reconcile two documents that both belong to its own evidence.",
+      "attributed_to": "design inference"
+    },
+    {
+      "evidence": "EV-0210",
+      "kind": "apology",
+      "direction": "strains",
+      "reading": "Nafsat I argues that even if he had Sufi inclinations, which he does not admit, Sufis exemplify the Sunna. Melvin-Koushki notes the defence is conditional: the man on trial does not claim to be a Sufi, so 'Sufi thinker' is more than the text says.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1229",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "In the R. Anjām he draws a sharp line between Sufism, subjective, moral and individual, and lettrism, an objective, scientific and communal investigation of the two Books. Melvin-Koushki reads this as the author himself refusing to be classed as a Sufi.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1052",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "The R. Anjām sets Sufism beside philosophy as two noble quests for wisdom and says neither can compete with lettrism. A Sufi thinker would not rank his own path below another science.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0868",
+      "kind": "letter",
+      "direction": "strains",
+      "reading": "Akhlāṭī writes to his 'bosom companion', the leading luminary of his brethren, urging him to compose a work on the propositions and conjunctions of the science of letters. Melvin-Koushki sees the Mafāḥiṣ as the answer, a commission the apologies never mention.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-1247",
+      "kind": "reception",
+      "direction": "strains",
+      "reading": "Jāmī pointedly leaves Ibn Turka out of the Nafaḥāt al-Uns. Melvin-Koushki reads the omission as a Naqshbandī consolidation and says the pair never meant to be professional Sufis; either way the leading Sufi biographer did not count him.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0362",
+      "kind": "work",
+      "direction": "strains",
+      "reading": "He alters a line of Ibn al-Fāriḍ to 'his children and the holy Imams', in what Melvin-Koushki calls a specifically Shiʿi fashion. B has to explain a Shiʿi-looking edit in a Sufi commentary that the apologies never mention.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    },
+    {
+      "evidence": "EV-0330",
+      "kind": "reception",
+      "direction": "strains",
+      "reading": "Melvin-Koushki reports that several marginal notes in a Yazd copy of Nafsat I express amazement at its stock dismissal of the Shiʿa, Muʿtazila and philosophers. B has to say why an informed early reader did not take the passage as sincere.",
+      "attributed_to": "Matthew Melvin-Koushki"
+    }
+  ]
+}

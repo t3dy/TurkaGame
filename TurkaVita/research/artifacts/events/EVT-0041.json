@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0041",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1427",
+  "end": "1427",
+  "hijri": "830",
+  "basis": "Timeline A.1, pdf p.53; §1.2, pdf p.73.",
+  "date_kind": "attested"
+ },
+ "place": "Herat",
+ "event_type": "arrest",
+ "description": "Recalled to Herat, Ibn Turka is stripped of position and property, tortured and imprisoned, and writes to Amīr Fīrūzshāh seeking redress; he is then exiled.",
+ "claims": [
+  "CL-0080",
+  "CL-0078"
+ ],
+ "fixed_point": false
+}

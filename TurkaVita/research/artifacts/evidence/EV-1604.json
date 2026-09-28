@@ -1,0 +1,15 @@
+{
+ "id": "EV-1604",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 86,
+  "printed_page": "69",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK notes that Jean Aubin assumed Ibn Turka's Shiʿi identity in a 1957 article on Timurid patronage at Shiraz but later modified that opinion (1991), a fact MK owes to Dr. Binbaş.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.86",
+ "refers_to_primary": "Aubin 1957 'Le mécénat timouride à Chiraz'; Aubin 1991 'De Kûhbanân à Bidar'"
+}

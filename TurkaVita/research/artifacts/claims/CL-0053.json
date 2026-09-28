@@ -1,0 +1,33 @@
+{
+ "id": "CL-0053",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Pīr-Muḥammad was murdered in 812/1409; his brother Iskandar Mīrzā took his place in Shiraz and soon established a brilliant court in Isfahan (timeline: 815-17/1412-14).",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0016",
+  "EV-0022",
+  "EV-0133"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Timurid succession in Fars"
+  },
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka, Nafsat al-Maṣdūr II, as MK cites it in a note",
+   "where": "pdf p.69/70 notes",
+   "shaping_risk": "high",
+   "note": "the detail is his own telling, in an apology to a ruler"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.69, p.51-52",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

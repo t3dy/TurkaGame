@@ -1,0 +1,15 @@
+{
+ "id": "EV-0487",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 115,
+  "printed_page": "98",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki notes, calling it confusing, that the Arabic Sharḥ al-Tāʾiyya, 'presumably' written in Cairo, i.e. before 806/1404 (with his question mark), also refers to the K. al-Mafāḥiṣ, which he dates to 823/1420.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ",
+ "read_by": "R3 opened pdf p.115"
+}

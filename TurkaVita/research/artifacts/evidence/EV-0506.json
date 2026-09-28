@@ -1,0 +1,15 @@
+{
+ "id": "EV-0506",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 121,
+  "printed_page": "104",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that the Munāẓarāt-i Khams 'was completed in Muḥarram 808/June-July 1405', noting that the Millī 55744 copy is dated 808/1406; no place is given.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Munāẓarāt-i Khams",
+ "read_by": "R3 opened pdf p.121"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1636",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 37,
+  "printed_page": "20",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "MK notes that Ibn Turka lacks a basic entry in the EI2; it has one for \"Afḍal al-Dīn Turka\", the name of three different members of the family, much expanded in the EI3, and the EIr has an entry that covers the three individuals of that name.",
+ "evidence_kind": "reception",
+ "read_by": "R2b opened pdf p.37",
+ "refers_to_primary": "EI2; EI3; EIr"
+}

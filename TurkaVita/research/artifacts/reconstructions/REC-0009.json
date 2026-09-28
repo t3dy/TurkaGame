@@ -1,0 +1,28 @@
+{
+ "id": "REC-0009",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "Why does Nafsat I equate Shiʿism, Muʿtazilism and philosophy as enemies of the Sunna?",
+ "proposition": "Three readings compete: the equation is sincere (Lewisohn's face value), a mask (Ṭihrānī's taqiyya), or an exaggerated signal to the careful reader (MK).",
+ "kind": "psychological",
+ "scholar": "Melvin-Koushki (as against Lewisohn and Ṭihrānī)",
+ "reasoning": [
+  "MK calls the position facile and cartoonish and says it alerts the careful reader to disgust with confessionalism.",
+  "Evidence against sincerity: Ibn Turka's own works honour the Imams and philosophy; the created-Quran objection is the one genuine point.",
+  "A contemporary-or-later reader in MS Majlis 10004 was astonished, which suggests it did not read as sincere to at least one informed reader.",
+  "Intent cannot be observed; this is low confidence whichever reading is chosen."
+ ],
+ "observed_facts": [
+  "EV-0332",
+  "EV-0333",
+  "EV-0252",
+  "EV-0330",
+  "EV-0328",
+  "EV-0319"
+ ],
+ "confidence": "low",
+ "alternatives": [
+  "REC-0001",
+  "REC-0004"
+ ]
+}

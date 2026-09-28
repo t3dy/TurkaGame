@@ -1,0 +1,29 @@
+{
+ "id": "CL-0071",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "When the Yazd delegation failed, his enemies compiled a case from statements in works of his youth, claiming to find for example a verse praising ʿAlī and condemning ʿUmar and ʿUthmān.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0152",
+  "EV-0153",
+  "EV-0036"
+ ],
+ "mediation": [
+  {
+   "layer": "later_chronicler",
+   "who": "Maʿṣūm ʿAlī Shāh, Ṭarāʾiq al-Ḥaqāʾiq, 3/30, and the introduction to the Sharḥ-i Naẓm al-Durr",
+   "where": "pdf p.72, note 89",
+   "shaping_risk": "high",
+   "note": "a 19th-century Niʿmatullahi source; the first apology does not mention the pretext"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.72",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "political"
+}

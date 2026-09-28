@@ -1,0 +1,15 @@
+{
+  "id": "EV-0885",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 169,
+    "printed_page": "152",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "MK's footnote to Yazdī item 7 compares a passage in the second Nafsat al-Maṣdūr (p. 206) where Ibn Turka states that he has ten children and a few wives.",
+  "evidence_kind": "context",
+  "read_by": "R5 opened pdf p.169",
+  "refers_to_primary": "Yazdī collection item 7; Nafsat al-Maṣdūr II"
+}

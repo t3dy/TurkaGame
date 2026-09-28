@@ -1,0 +1,27 @@
+{
+ "id": "CL-0026",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In Cairo Ibn Turka studied hadith under Sirāj al-Dīn al-Bulqīnī (d. 805/1403), a scholar of Sufi sympathies who was nonetheless not a partisan of Sufism.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0094",
+  "EV-0095",
+  "EV-0007"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "study in Cairo"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.63 and p.51",
+   "shaping_risk": "low",
+   "note": "MK does not cite a source for the discipleship itself"
+  }
+ ],
+ "domain": "biographical"
+}

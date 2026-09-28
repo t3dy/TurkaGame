@@ -1,0 +1,28 @@
+{
+  "id": "CL-0424",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "In letter 18 (825/1422?, Herat) Ibn Turka complains that after two days in attendance at Bāysunghur's court he had still not been allowed to see the prince and proposes a majlis as an easier setting: access to the patron was granted only in part.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0836"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Bāysunghur",
+      "where": "Munshaʾāt-i Turka letter 18; MS Majlis 10196 f. 139a",
+      "shaping_risk": "medium",
+      "note": "Written by a supplicant asking a ruler or official for clemency, relief or a stipend; framed to win the favour asked, not as a neutral report."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.158",
+      "shaping_risk": "medium",
+      "note": "Date and place are MK's conjecture ('825/1422?')"
+    }
+  ],
+  "domain": "political"
+}

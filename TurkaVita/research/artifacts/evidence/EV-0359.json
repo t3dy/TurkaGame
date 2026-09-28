@@ -1,0 +1,15 @@
+{
+ "id": "EV-0359",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 92,
+  "printed_page": "75",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says that in the final section of the Mafāḥiṣ, his summa of lettrism, Ibn Turka speaks of the ontological supremacy of the letter as testified to by quranic verses, hadith traced to the Prophet, and hadith of the ṣaḥāba and the tābiʿūn, a category to which ʿAlī and Ḥusayn are assigned.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Mafāḥiṣ, MS Majlis 10196 f.89b (per MK fn.149)",
+ "read_by": "R2a opened pdf p.92"
+}

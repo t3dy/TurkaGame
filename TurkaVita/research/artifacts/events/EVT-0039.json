@@ -1,0 +1,21 @@
+{
+ "id": "EVT-0039",
+ "type": "event",
+ "status": "draft",
+ "actor": "Ibn Turka",
+ "date": {
+  "start": "1427",
+  "end": "1427",
+  "hijri": "830",
+  "basis": "Timeline A.1, pdf p.52.",
+  "date_kind": "colophon"
+ },
+ "place": "Shiraz",
+ "event_type": "work",
+ "description": "Ibn Turka completes the Tamhīd al-Qawāʿid, the commentary on his grandfather's Qawāʿid al-Tawḥīd.",
+ "claims": [
+  "CL-0097",
+  "CL-0008"
+ ],
+ "fixed_point": false
+}

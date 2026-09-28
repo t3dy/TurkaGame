@@ -1,0 +1,28 @@
+{
+ "id": "CL-0336",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In the Tuḥfa-yi ʿAlāʾī Ibn Turka says his family has always been Shafiʿi, in a treatise written for a Hanbali patron; and its introduction complains of the harsh treatment he suffered in Herat. As statements to a patron in his years after the 830 trial, these show what he told ʿAlāʾ al-Dīn, not clearly what he held.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0685",
+  "EV-0683"
+ ],
+ "domain": "biographical",
+ "mediation": [
+  {
+   "layer": "subject_self_report",
+   "who": "Ibn Turka to ʿAlāʾ al-Dīn b. Bāysunghur",
+   "where": "Tuḥfa-yi ʿAlāʾī, introduction",
+   "shaping_risk": "medium",
+   "note": "the addressee was a Hanbali; Melvin-Koushki does not say the statement is tailored"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf p.148, no. 45",
+   "shaping_risk": "low"
+  }
+ ]
+}

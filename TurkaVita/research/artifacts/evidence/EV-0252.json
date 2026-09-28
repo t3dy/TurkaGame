@@ -1,0 +1,15 @@
+{
+ "id": "EV-0252",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 85,
+  "printed_page": "68",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki grants that Ibn Turka is consistent in disapproving of Muʿtazili theology, the doctrine of the created Quran in particular being antithetical to his lettrist project.",
+ "evidence_kind": "scholarly_argument",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.85"
+}

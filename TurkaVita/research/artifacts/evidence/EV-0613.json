@@ -1,0 +1,15 @@
+{
+ "id": "EV-0613",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 128,
+  "printed_page": "111",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki states that Sharḥ al-Basmala \"was completed before 28 Shaʿbān 829/5 July 1426\" and marks the date with an asterisk (possible transcription date).",
+ "evidence_kind": "colophon",
+ "read_by": "R4 opened pdf p.128",
+ "refers_to_primary": "Sharḥ al-Basmala, date"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-0365",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 93,
+  "printed_page": "76",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki quotes the epilogue of Ibn Turka's R. Anjām, which cites al-Thaʿālibī's report that when Ḥ-M ʿ-S-Q (Q 42:1-2) was revealed the Prophet seemed exhausted, and ʿAlī explained that the verse indicates the community will “treat his exalted family most improperly”.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, R. Anjām, epilogue, MS Majlis 10196 f.159a (per MK fn.153)",
+ "read_by": "R2a opened pdf p.93"
+}

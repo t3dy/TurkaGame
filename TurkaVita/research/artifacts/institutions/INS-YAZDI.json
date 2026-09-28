@@ -1,0 +1,17 @@
+{
+ "id": "INS-YAZDI",
+ "type": "institution",
+ "status": "draft",
+ "name": "Sharaf al-Dīn ʿAlī Yazdī",
+ "ruler": "Sharaf al-Dīn ʿAlī Yazdī",
+ "seat": "Herat, Shiraz, Samarkand",
+ "tenure": "d. 1454",
+ "role": "ally",
+ "summary": "His closest friend and pupil, said to have accompanied him abroad; he checked early copies of the Mafāḥiṣ and attended teaching on it, and named Ibn Turka his teacher in occultism.",
+ "supported_by": [
+  "EV-0006",
+  "EV-0092",
+  "EV-0118",
+  "EV-0149"
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-0819",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 156,
+    "printed_page": "139",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 4, to Amīr Jalāl al-Dīn (ca. 816/1413, Isfahan?), 'almost certainly' Amīr Jalāl al-Dīn Fīrūzshāh per MK: Ibn Turka tells the amir that harassment (tashvīsh) by envious individuals obliges him to leave the region for a time (i.e., move to Shiraz), and recommends as his replacement the young but learned Mawlānā Sharaf al-Dīn Yaʿqūb (TMN/MS pp. 2-3). MK's footnote places this before Ibn Turka took the qadiship of Yazd in ca. 825/1422 after his first trial in Herat.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.156",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 4"
+}

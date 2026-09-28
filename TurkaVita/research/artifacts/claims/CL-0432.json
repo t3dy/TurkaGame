@@ -1,0 +1,29 @@
+{
+  "id": "CL-0432",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "Letter 27 (ca. 830/1427, Herat?) records that Fīrūzshāh gave attention to Ibn Turka's case and that some of his confiscated property was (or, on MK's alternative reading, was to be) restored; Ibn Turka asks him to pursue the case and restore the stipend, saying friends had freed him from imprisonment by the dīvān's debt- and tax-collectors.",
+  "epistemic_type": "attested",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-0846",
+    "EV-0847"
+  ],
+  "mediation": [
+    {
+      "layer": "correspondence",
+      "who": "Ibn Turka, writing to Amīr Fīrūzshāh",
+      "where": "Munshaʾāt-i Turka letter 27; MS Majlis 10196 f. 160a",
+      "shaping_risk": "medium",
+      "note": "Written by a supplicant asking a ruler or official for clemency, relief or a stipend; framed to win the favour asked, not as a neutral report."
+    },
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.159",
+      "shaping_risk": "medium",
+      "note": "MK's footnote: he may be requesting the restoration rather than acknowledging it"
+    }
+  ],
+  "domain": "political"
+}

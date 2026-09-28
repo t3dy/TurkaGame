@@ -1,0 +1,22 @@
+{
+ "id": "CL-0237",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki says the Munāẓara-yi Bazm u Razm was written for Bāysunghur and completed in Herat (asterisked); the attribution to Bāysunghur is taken from Ritter and Reinert's catalogue.",
+ "epistemic_type": "attested",
+ "confidence": "low",
+ "supported_by": [
+  "EV-0503",
+  "EV-0502"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (dissertation, 2012)",
+   "where": "p.102 and n.39",
+   "shaping_risk": "medium",
+   "note": "the addressee is reported from a manuscript catalogue"
+  }
+ ],
+ "domain": "social"
+}

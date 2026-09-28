@@ -1,0 +1,22 @@
+{
+  "id": "CL-0419",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The treatise sent to Shāhrukh with letter 20 was most probably the R. Suʾl al-Mulūk, written for Bāysunghur in 829/1426, which contains the prediction that the Shahrukhid state would last a century.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0839",
+    "EV-0893"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.159",
+      "shaping_risk": "medium",
+      "note": "MK writes 'most probably'; the letter names no title"
+    }
+  ],
+  "domain": "textual"
+}

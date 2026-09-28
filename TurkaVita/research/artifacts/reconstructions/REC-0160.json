@@ -1,0 +1,19 @@
+{
+ "id": "REC-0160",
+ "type": "reconstruction",
+ "status": "draft",
+ "question": "What work does Ibn Turka do in Niʿmatullahi hagiography?",
+ "proposition": "He is an authority, whose deference lifts Niʿmat Allāh above Akhlāṭī, so his link with the saint serves the hagiographers' ranking rather than reporting a known meeting.",
+ "kind": "inferential",
+ "scholar": "Melvin-Koushki",
+ "reasoning": [
+  "MK: both accounts share a strategy, first Akhlāṭī's supremacy in the occult sciences, then Niʿmat Allāh's greater still.",
+  "No overt reference to Niʿmat Allāh in Ibn Turka's works; the accounts differ in detail (route, companions)."
+ ],
+ "observed_facts": [
+  "CL-0609",
+  "CL-0610",
+  "CL-0611"
+ ],
+ "confidence": "medium"
+}

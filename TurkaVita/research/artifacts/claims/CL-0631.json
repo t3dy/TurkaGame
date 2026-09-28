@@ -1,0 +1,28 @@
+{
+ "id": "CL-0631",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Zayn al-Dīn Khwāfī gave Ibn Turka and his circle the derisive label naw-mulḥidān (neo-bāṭinīs, even neo-Ismaʿilis); MK is unsure whether it means freethinking subversives or Ismaʿilis.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1291",
+  "EV-1292"
+ ],
+ "mediation": [
+  {
+   "layer": "event",
+   "who": "Zayn al-Dīn Khwāfī",
+   "where": "cited by MK from Binbaş, Sharaf al-Dīn, 124-29",
+   "shaping_risk": "high",
+   "note": "a hostile label from an opponent"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.455",
+   "shaping_risk": "low"
+  }
+ ],
+ "domain": "social"
+}

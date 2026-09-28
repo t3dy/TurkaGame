@@ -1,0 +1,21 @@
+{
+ "id": "CL-0303",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "In Shaqq-i Qamar Ibn Turka ranks seven modes of reading Quran 54:1 as an ascending hierarchy with lettrists sixth and the Imams and masters of jafr at the top; Melvin-Koushki treats this as the clearest statement of his epistemological hierarchy.",
+ "epistemic_type": "attested",
+ "confidence": "high",
+ "supported_by": [
+  "EV-0609",
+  "EV-0611"
+ ],
+ "domain": "doctrinal",
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki (2012), reporting the entry",
+   "where": "pdf pp.96, 128",
+   "shaping_risk": "low"
+  }
+ ]
+}

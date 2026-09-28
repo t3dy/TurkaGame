@@ -1,0 +1,22 @@
+{
+  "id": "CL-0560",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "The dissertation places the composition of the Mafāḥiṣ and the Fuṣūṣ commentary at 817-25/1414-22 in Shiraz and Yazd in one place, and elsewhere dates the Mafāḥiṣ to 823/1420 (perhaps Isfahan or Yazd) and the Fuṣūṣ commentary to 814/1411.",
+  "epistemic_type": "undeterminable",
+  "confidence": "medium",
+  "supported_by": [
+    "EV-1047",
+    "EV-1092",
+    "EV-1139"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki's own argument",
+      "where": "pdf pp.177, 351",
+      "shaping_risk": "medium"
+    }
+  ],
+  "domain": "chronological"
+}

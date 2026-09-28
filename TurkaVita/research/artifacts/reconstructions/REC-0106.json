@@ -1,0 +1,26 @@
+{
+  "id": "REC-0106",
+  "type": "reconstruction",
+  "status": "draft",
+  "question": "Does the prologue's imagery of three Globes of Light encode the structure of the Mafāḥiṣ?",
+  "proposition": "The Mafāḥiṣ's structure is a Hermetic journey epitomized: up to the mental realm (Planet), down to the written (Pearl), then into the spoken (Peach), then a fourth part on the Letter itself.",
+  "kind": "inferential",
+  "scholar": "Melvin-Koushki",
+  "reasoning": [
+    "Melvin-Koushki says the plan is encoded in the prologue's cosmic trinity and identifies Planet, Pearl and Peach with the mental, written and spoken forms (Prologue pp.8-9).",
+    "He also says Ibn Turka declines to give a book plan (Prologue p.8), so the correspondence is his reading of imagery, not a stated plan.",
+    "His own ordering of the three Globes varies across the Prologue; only the p.9 order matches the dissertation's section order.",
+    "The dissertation's own description of the work (three sections, then a fourth) needs no such encoding (pdf p.352)."
+  ],
+  "observed_facts": [
+    "CL-0582",
+    "CL-0583",
+    "CL-0584",
+    "CL-0581",
+    "CL-0562"
+  ],
+  "confidence": "low",
+  "alternatives": [
+    "REC-0107"
+  ]
+}

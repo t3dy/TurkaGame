@@ -1,0 +1,14 @@
+{
+ "id": "EV-0100",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 64,
+  "printed_page": "47",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Cairo Ibn Turka met and apprenticed himself to Sayyid Kamāl al-Dīn Ḥusayn Akhlāṭī Afṭasī Ḥusaynī (d. 799/1397), the Kurdish occultist and rumoured mahdi, which Melvin-Koushki calls by far the most momentous event of his intellectual life.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.64"
+}

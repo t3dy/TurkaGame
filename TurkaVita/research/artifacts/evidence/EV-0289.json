@@ -1,0 +1,15 @@
+{
+ "id": "EV-0289",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 83,
+  "printed_page": "66",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In Nafsat I, per Melvin-Koushki, Ibn Turka announces that in the next section he will adduce the relevant hadith and translate them so that the padishah understands and can expunge innovation from the realm; the section has two subsections, (1) a Persian translation of hadith and (2) examples from the shaykhs and scholars of the Sunna from the Prophet's time to the present.",
+ "evidence_kind": "apology",
+ "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I",
+ "read_by": "R2a opened pdf p.83"
+}

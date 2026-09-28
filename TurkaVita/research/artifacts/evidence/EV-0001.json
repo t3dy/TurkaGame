@@ -1,0 +1,14 @@
+{
+ "id": "EV-0001",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 51,
+  "printed_page": "34",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki's note to the A.1 timeline: events in Ibn Turka's life are unitalicized and other events italic; because information on his life is sparse, some dates and events are conjectured or approximate; most rest on the colophons of MS Majlis 10196, the Munshaʾāt-i Turka and the Munshaʾāt-i Yazdī; select political events come from Manz, Power, Politics and Religion. The timeline does not say entry by entry which source a date rests on.",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R1 opened pdf p.51"
+}

@@ -1,0 +1,114 @@
+{
+ "id": "SCN-0102",
+ "type": "scene",
+ "status": "draft",
+ "act": "hostage",
+ "title": "Leaving Samarkand, c. 1393: fifteen years abroad",
+ "dramatic_question": "Your brother insists that you go abroad and study, because Iran is too strait for philosophy and mystical theory. Do you go, and by what road, and with whom?",
+ "situation": {
+  "when": "c. 795/1393 (a conjectured date)",
+  "where": "Samarkand; then the Hijaz and Cairo",
+  "based_on": [
+   "CL-0022",
+   "CL-0024",
+   "CL-0023",
+   "CL-0025"
+  ]
+ },
+ "invariants": [
+  {
+   "text": "At his brother's insistence Ibn Turka set out on some fifteen years of study abroad, roughly 795-810/1393-1408 (Melvin-Koushki's timeline marks both dates 'c.'). The reason is his own, given to Shāhrukh in 1426 and to Bāysunghur in 1431-32: circumstances in Iran were too strait to carry on the family legacy in philosophy and mystical theory.",
+   "claim": "CL-0022"
+  },
+  {
+   "text": "He mentions in several places that he spent time in Mecca on his travels (again from the second apology, so his own word to a ruler he needed).",
+   "claim": "CL-0024"
+  },
+  {
+   "text": "LOW CONFIDENCE: Melvin-Koushki's timeline has Sharaf al-Dīn Yazdī leave with him for Mecca and Cairo. The pages give no source for the departure itself; the nearest sources are later hagiographical reports of the two living together in Cairo.",
+   "claim": "CL-0023"
+  }
+ ],
+ "prose": [
+  "Perhaps six years after the fall of Isfahan (Melvin-Koushki's 'c. 795/1393') you are made to leave. Your brother presses you to go abroad and study for some fifteen years. The reason you will later give two rulers is that the times in Iran are too strait to carry on your family's work in philosophy and mystical theory.",
+  "The destinations are firmer than the road. Mecca is in your own writings. Cairo is on Melvin-Koushki's timeline, with Sharaf al-Dīn Yazdī beside you, though he cites no source for that. A tale written some two centuries later by Kāzirūnī, from a Turka descendant, has the two of you in Baghdad looking for a Sufi master; Melvin-Koushki says to take it with grains of salt."
+ ],
+ "choices": [
+  {
+   "id": "A",
+   "label": "Go abroad as your brother urges; the sources place you in Mecca and in Cairo.",
+   "strategy": "leave_for_mecca_and_cairo",
+   "epistemic_label": "documented",
+   "based_on": [
+    "CL-0022",
+    "CL-0024",
+    "CL-0026"
+   ],
+   "historical": true,
+   "requires": {},
+   "effects": {
+    "score.biography": 2,
+    "life.route": "mecca-cairo"
+   },
+   "feedback": "The departure, the fifteen years and Mecca are Ibn Turka's own account to Shāhrukh and Bāysunghur, so the reason for leaving is his own word to rulers who were judging him. The dates are Melvin-Koushki's, both 'c.'. The sources place you in Mecca and in Cairo; the road between them is not recorded."
+  },
+  {
+   "id": "B",
+   "label": "Refuse to go. Stay in Samarkand under your brother and take up the family's path of the law.",
+   "strategy": "stay_and_take_the_bench",
+   "epistemic_label": "counterfactual",
+   "based_on": [
+    "CL-0022",
+    "CL-0115"
+   ],
+   "requires": {},
+   "effects": {
+    "court.temur": 1,
+    "press.livelihood": 1,
+    "score.biography": -1,
+    "life.route": "mecca-cairo"
+   },
+   "feedback": "The record has your brother appointed qadi by Temür, and Ibn Turka claiming in the first apology that the judgeship passed from brother to him. But the sources send him abroad for some fifteen years, at that brother's insistence. This is the game's own what-if, and the game returns you to the record: nothing later can be built on a life spent at Samarkand."
+  },
+  {
+   "id": "C",
+   "label": "Go by way of Baghdad first and look for a Sufi master there, with Yazdī beside you, as a later account tells it.",
+   "strategy": "go_by_baghdad",
+   "epistemic_label": "contested",
+   "based_on": [
+    "CL-0025",
+    "CL-0022"
+   ],
+   "requires": {},
+   "effects": {
+    "court.yazdi": 1,
+    "score.biography": 0,
+    "life.route": "baghdad"
+   },
+   "feedback": "The only source for Baghdad is Kāzirūnī's Sullam al-Samāvāt, written roughly two centuries later and drawing on his teacher, a Turka descendant. Melvin-Koushki tells us to take it with grains of salt, and no other source has it. The game keeps it as a contested road and sends you on to Cairo, where every other source places you."
+  },
+  {
+   "id": "D",
+   "label": "Go abroad with Sharaf al-Dīn Yazdī beside you, as Melvin-Koushki's timeline has it.",
+   "strategy": "leave_with_yazdi",
+   "epistemic_label": "reconstructed",
+   "based_on": [
+    "CL-0023",
+    "CL-0022"
+   ],
+   "requires": {},
+   "effects": {
+    "court.yazdi": 1,
+    "score.biography": 1,
+    "life.route": "mecca-cairo"
+   },
+   "feedback": "Melvin-Koushki's timeline has Yazdī leave with you for Mecca and Cairo, but the pages give no source for the departure itself (low confidence). The nearest sources are later hagiographical reports of the two of you living together in Cairo. The game gives you the favour lightly; you will have to earn the rest in Cairo."
+  }
+ ],
+ "next": "SCN-0103",
+ "epistemic_contract": {
+  "historical_status": "mixed",
+  "invented_dialogue": false,
+  "invented_facts": false
+ }
+}

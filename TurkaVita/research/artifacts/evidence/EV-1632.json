@@ -1,0 +1,15 @@
+{
+ "id": "EV-1632",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 36,
+  "printed_page": "19",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "In citing Corbin's chapter MK marks the death date given in its title (ob. 830/1427) with [sic].",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "R2b opened pdf p.36",
+ "refers_to_primary": "Corbin, 'Typologie des spirituels', En Islam iranien 3/233-74"
+}

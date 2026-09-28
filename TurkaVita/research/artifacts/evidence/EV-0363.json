@@ -1,0 +1,15 @@
+{
+ "id": "EV-0363",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 93,
+  "printed_page": "76",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Melvin-Koushki says that in commenting on that line Ibn Turka invokes the ḥadīth al-thaqalayn, explicitly equating the second ‘weighty thing’ with the Prophetic family (ʿitra) rather than with the Sunna.",
+ "evidence_kind": "work",
+ "refers_to_primary": "Ibn Turka, Sharḥ-i Naẓm al-Durr, SND p.269",
+ "read_by": "R2a opened pdf p.93"
+}

@@ -1,0 +1,29 @@
+{
+ "id": "CL-0082",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "His surviving letters from the exile are pleas to governors and amirs for clemency so that he could support his wives and children against hunger and frost, and requests to Sufi shaykhs and bureaucrats for help; he appears to have been in Hamadan and Tabriz and sought patronage at the Marʿashī court in Mazandaran and the Karkiya court in Gilan.",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-0160",
+  "EV-0161"
+ ],
+ "mediation": [
+  {
+   "layer": "correspondence",
+   "who": "Munshaʾāt-i Turka, letters 26 and 28-34",
+   "where": "pdf p.73, notes 92-93",
+   "shaping_risk": "medium",
+   "note": "letters begging for help; they exaggerate need to persuade"
+  },
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki, dissertation (2012)",
+   "where": "pdf p.73",
+   "shaping_risk": "low",
+   "note": "MK: 'appears to have'"
+  }
+ ],
+ "domain": "social"
+}

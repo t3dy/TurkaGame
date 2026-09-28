@@ -1,0 +1,22 @@
+{
+  "id": "CL-0413",
+  "type": "claim",
+  "status": "draft",
+  "proposition": "MK reads the change in the honorific formula from letter 12 to letter 43 as recording the end of Ḥāfiẓ Rāzī's political career with Iskandar's downfall; that Ibn Turka kept up the relationship after the fall is a reading of the formula, not a statement in the letter.",
+  "epistemic_type": "inferential_reconstruction",
+  "confidence": "low",
+  "supported_by": [
+    "EV-0863",
+    "EV-0828"
+  ],
+  "mediation": [
+    {
+      "layer": "modern_interpretation",
+      "who": "Melvin-Koushki, summarising, dating and identifying the letter(s)",
+      "where": "dissertation pdf p.162",
+      "shaping_risk": "medium",
+      "note": "Rests on a single altered phrase"
+    }
+  ],
+  "domain": "political"
+}

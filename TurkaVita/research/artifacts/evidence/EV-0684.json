@@ -1,0 +1,15 @@
+{
+ "id": "EV-0684",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-610EE1D6BA",
+  "witness_page": 147,
+  "printed_page": "130",
+  "short_title": "Melvin-Koushki, dissertation (2012)"
+ },
+ "content": "Tuḥfa-yi ʿAlāʾī is a brief treatment of the hadith dividing religion into iḥsān, īmān and islām, taking each level with respect to five fundamentals (ritual purity, prayer, alms tax, fasting, pilgrimage) and the wisdom of their procedural requirements, with attention to how the different Sunni groups, especially Hanbalis and Shafiʿis, perform them.",
+ "evidence_kind": "work",
+ "read_by": "R4 opened pdf p.147",
+ "refers_to_primary": "Ibn Turka, Tuḥfa-yi ʿAlāʾī"
+}

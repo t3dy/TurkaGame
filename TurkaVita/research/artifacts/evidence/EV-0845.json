@@ -1,0 +1,15 @@
+{
+  "id": "EV-0845",
+  "type": "evidence",
+  "status": "draft",
+  "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 159,
+    "printed_page": "142",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+  },
+  "content": "Letter 26 (inserted from MS Majlis 10196 f. 160a in its conjectured position, ca. 829/1426?, Herat?): a brief request from Ibn Turka to dīvān bureaucrats that they issue his stipend (dāranda), given that it is winter and he has a large family to care for.",
+  "evidence_kind": "letter",
+  "read_by": "R5 opened pdf p.159",
+  "refers_to_primary": "Munshaʾāt-i Turka, letter 26"
+}
