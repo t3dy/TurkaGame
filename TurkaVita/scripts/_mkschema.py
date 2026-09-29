@@ -62,6 +62,10 @@ sc["properties"]["composer"] = {
         "slots": {"type": "array", "minItems": 1, "items": {
             "type": "object", "required": ["id", "question", "options"],
             "properties": {"id": {"type": "string"}, "question": {"type": "string"},
+                           "requires_pick": {"type": "object", "required": ["slot", "options"],
+                               "description": "this slot only matters once an earlier slot's pick makes it apply -- e.g. a slot about the shape of a prediction stops mattering once another slot says the work makes no prediction at all. The UI greys the slot out and the engine's effects skip it whenever the named slot's current pick is not one of these options.",
+                               "properties": {"slot": {"type": "string", "description": "an earlier slot's id"},
+                                              "options": {"type": "array", "items": {"type": "string"}, "description": "the option ids of that slot which keep this one live"}}},
                            "options": {"type": "array", "minItems": 2, "items": {
                                "type": "object", "required": ["id", "label", "epistemic_label", "based_on", "effects"],
                                "properties": {"id": {"type": "string"}, "label": {"type": "string"},

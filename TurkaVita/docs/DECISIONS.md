@@ -92,3 +92,42 @@ taken at the plan's recommended default and **flagged as assumed**, so Ted can o
     `plates.js` already carried the correct Bodleian Library/MS Marsh 144 attribution, so the registry record was
     corrected to match (a metadata fix, not a rights or fact change).
 
+## 2026-09-28 (continued): second cold playtest, one live composer bug fixed, two minor sub-fixes closed
+
+26. **A live composer bug from the first QA pass was confirmed still present by a second, independent cold
+    playtest** (`research/notes/QA-playtest-2.md`): in SCN-0303 (the Suʾl al-Mulūk for Bāysunghur), choosing "No:
+    keep politics out" at S2 did not disable S3 ("What does the prediction rest on?") or S4 ("What makes it
+    lawful to read a fate from a name?"), which only make sense when S2 says there *is* a political prediction —
+    so a player could fill in a prediction's basis and precedent for a letter that, by their own S2 pick, makes
+    no prediction at all, and the game would narrate the contradiction as if it were the sent text. Fixed with a
+    new, minimal schema field, `requires_pick: {slot, options}`, on a composer slot: the slot only applies while
+    the named earlier slot's current pick is one of `options`. Added to `schemas/artifacts.schema.json` (via
+    `scripts/_mkschema.py`) and to both engines identically — `scripts/narrative_lib.py`'s `slot_required()` /
+    `composer_effects()` and `game/engine.js`'s `slotRequired()` / `composerEffects()` / `pick()`'s completion
+    check — plus `game/ui.js`'s composer render, which greys a not-currently-required slot to
+    `<fieldset class="slot skip">` with "Not needed — an earlier choice already rules this out." and drops it
+    from the running-cost total and the post-Send reveal. Applied to SCN-0303's S3/S4 (`requires_pick: {slot:
+    "S2", options: ["a"]}`); SCN-0406, the only other multi-slot composer scene checked for the same shape, has
+    five mutually independent slots and needed no change. Verified live: picking S2 = "No" greys S3/S4, "Send it"
+    enables without them, and the sent letter's reveal shows only the S1/S2 cards. `python tests/run.py` (47
+    tests) and `simulate.py --random 10000` (0 stuck, 0 unreachable choices) both pass unchanged, since an
+    unrequired slot simply stops contributing to `composerEffects`/`composer_effects` rather than changing how
+    either is computed for a slot that does apply.
+27. **Two minor wording/feature findings from the same playtest, both closed.** (a) SCN-0307's S2 "Abuse them"
+    option called the accusers "mafiosos (Melvin-Koushki's rendering)" — flagged twice now (once in the first
+    audit pass, still present in the second) as an anachronistic aside the "Why? Show the evidence" drawer
+    already covers by citation; changed to plain "gangsters", aside dropped. (b) SCN-0203's "What the sources
+    establish" fixed box still stated the Fuṣūṣ commentary's colophon dates in full ("20 Ṣafar 814 (13 June
+    1411)... corrected in Fars on 19 Dhū l-Ḥijja 817 (1 March 1415)") — the exact kind of manuscript-dating
+    clutter the first pass asked to move behind the "More on the sources" toggle, missed for this one invariant.
+    Shortened to "A colophon dates your commentary on Ibn ʿArabī's Fuṣūṣ al-Ḥikam to 813-14/1411, later corrected
+    in Fars," with the full dates moved into the existing `detail` field.
+28. **The sorter's live-preview sentence, dropped rather than fixed in the first pass, was restored.** The first
+    pass's "How to play" text used to promise "the volume opens with X and closes with Y" as you reorder rows;
+    when the comparison-table feature shipped, the promise was removed from the instructions instead of the
+    feature being added, which resolved the false-promise contradiction the first playtest flagged but lost real
+    functionality the second playtest still missed. `game/ui.js`'s `sorter()` already computed `first`/`last`
+    from the draft order (dead code left over from the original design) — added one line rendering "As you have
+    it now, the volume opens with **X** and closes with **Y**," live under the instructions, and restored the
+    "How to play" sentence describing it.
+

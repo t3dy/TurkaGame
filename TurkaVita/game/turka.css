@@ -34,6 +34,8 @@ ol.acts li.on { border-bottom-color: var(--ink); color: var(--ink); font-weight:
 .record { border-left: 3px solid var(--ink-soft); padding-left: .7rem; font-style: italic; margin: .8rem 0; }
 fieldset.slot { border: 1px solid var(--rule); background: #fffdf8; margin: .6rem 0; padding: .5rem .7rem; }
 fieldset.slot legend { font-family: var(--caps); font-size: .68rem; letter-spacing: .1em; color: var(--ink-soft); padding: 0 .3rem; }
+fieldset.slot.skip { opacity: .55; background: #f0eadc; }
+fieldset.slot.skip p.note { margin: .2rem 0; font-style: italic; }
 button.opt { display: flex; flex-wrap: wrap; gap: .3rem .7rem; align-items: baseline; width: 100%; text-align: left; font: inherit; color: inherit;
   background: none; border: 1px solid transparent; padding: .45rem .5rem; cursor: pointer; }
 button.opt:hover, button.opt:focus-visible { border-color: var(--ink); outline: none; }

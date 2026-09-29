@@ -113,11 +113,23 @@
   }
 
   // mirrors narrative_lib.composer_effects
+  // mirrors narrative_lib.slot_required: is this slot currently live? A slot with `requires_pick`
+  // only applies while the named earlier slot's pick is one of its listed options. Unknown (the
+  // dependency hasn't been picked yet) defaults to required, so the player is still asked.
+  function slotRequired(slot, picks) {
+    const req = slot.requires_pick;
+    if (!req) return true;
+    const dep = picks[req.slot];
+    if (dep === undefined) return true;
+    return req.options.indexOf(dep) >= 0;
+  }
+
   function composerEffects(scene, picks) {
     const comp = scene.composer;
     if (!comp) return {};
     const eff = [];
     for (const slot of comp.slots) {
+      if (!slotRequired(slot, picks)) continue;
       const opt = slot.options.find((o) => o.id === picks[slot.id]);
       if (opt) eff.push(opt.effects);
     }
@@ -214,7 +226,7 @@
         const slot = s.composer.slots.find((x) => x.id === slotId);
         if (!slot || !slot.options.some((o) => o.id === optionId)) return false;
         picks[slotId] = optionId;
-        if (s.composer.slots.every((x) => picks[x.id])) {
+        if (s.composer.slots.every((x) => picks[x.id] || !slotRequired(x, picks))) {
           state = apply(composerEffects(s, picks), state);
           composerApplied = true;
         }
@@ -305,6 +317,6 @@
     };
   }
 
-  window.TurkaEngine = { createGame, available, apply, rulingEffects, composerEffects, sortEffects, kendall, AXES,
+  window.TurkaEngine = { createGame, available, apply, rulingEffects, composerEffects, slotRequired, sortEffects, kendall, AXES,
     dossier, lensOf, standings, verdict, commitTags, commitEffects, HELD_KINDS, UNDETERMINED_MARGIN };
 })();

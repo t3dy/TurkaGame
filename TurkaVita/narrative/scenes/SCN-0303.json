@@ -121,6 +121,12 @@
    {
     "id": "S3",
     "question": "What does the prediction rest on?",
+    "requires_pick": {
+     "slot": "S2",
+     "options": [
+      "a"
+     ]
+    },
     "options": [
      {
       "id": "a",
@@ -166,6 +172,12 @@
    {
     "id": "S4",
     "question": "What makes it lawful to read a fate from a name?",
+    "requires_pick": {
+     "slot": "S2",
+     "options": [
+      "a"
+     ]
+    },
     "options": [
      {
       "id": "a",

@@ -80,10 +80,39 @@ Ted's standing rule (DECISIONS 14) was applied across `TurkaGame/`, `IslamicateO
   `read_network_requests` showing repeated 200s for identical URLs). Fixed with a session blob-URL cache; after
   the fix, no scene in a 20-scene automated run exceeds 100ms.
 
+## Plate attributions, independently re-verified (2026-09-28, continued)
+
+- **Resolved:** the item below used to read "not independently re-verified by a second agent." A second agent
+  (`research/notes/AUDIT-A4-plates.md`) checked all 39 plates' attributions against the live Commons/source pages
+  directly, not against the illustrator's own notes: 39/39 CONFIRMED, including every attribution the illustrator
+  had flagged as uncertain. One unrelated pre-existing registry record was corrected to match (`docs/DECISIONS.md`
+  §25).
+
+## Second cold playtest, composer bug fixed (2026-09-28, continued)
+
+- **A second, independent cold playtest** (`research/notes/QA-playtest-2.md`, a different agent from the first,
+  playing by clicking with no engine access) re-checked all first-pass fixes and found 10 of 12 confirmed fixed,
+  plus one still-live bug and two minor sub-fixes left undone.
+- **The live composer bug** (SCN-0303: picking "no political prediction" at S2 left S3/S4 pickable, letting the
+  player assemble a self-contradicting letter) is fixed via a new `requires_pick` schema field, mirrored in both
+  engines (`docs/DECISIONS.md` §26). Verified live in the Browser pane against the exact repro: after S2 = "No,"
+  `document.querySelectorAll('fieldset.slot.skip').length === 2` (S3 and S4), `#send` is enabled without them, and
+  the post-Send reveal shows cards only for S1 and S2 — confirmed by reading the rendered page text, not just the
+  DOM class. `python tests/run.py` (47/47) and `simulate.py --random 10000` (0 stuck, 8,401 distinct score
+  vectors, no unreachable choice) both re-pass unchanged.
+- **Two minor findings closed** (`docs/DECISIONS.md` §27): SCN-0307's "mafiosos (Melvin-Koushki's rendering)" →
+  "gangsters"; SCN-0203's verbatim colophon dates moved out of the fixed "What the sources establish" box into
+  `detail`. Both confirmed live by rendering each scene and reading the page text.
+- **The sorter's live-preview sentence was restored** (`docs/DECISIONS.md` §28) — a feature the first pass
+  removed the promise of rather than building. Confirmed live: at SCN-0502, moving rows keeps a note reading "As
+  you have it now, the volume opens with **Nafsat al-Maṣdūr II** and closes with **Muhr al-Nubuwwa**," matching
+  the current draft order.
+- A full automated 36-scene playthrough after all four fixes: 0 console errors, all scenes reached, `END` state
+  hit cleanly.
+
 ## Still not verified
 
-- No live human playtest (the QA pass was an agent, not a person).
-- The illustration pass's Commons attributions were checked by the illustrator against the file description
-  pages, not independently re-verified by a second agent.
-- Not yet deployed: this pass's changes are staged for commit but the live URL still serves the pre-pass build
-  until pushed (see the next HANDOVER entry for what to do next).
+- No live human playtest (both QA passes were agents, not a person).
+- Whether the site actually serving `https://t3dy.github.io/TurkaGame/TurkaVita/game/` reflects this pass's
+  commit — check the next HANDOVER entry for the push/poll/verify-live record, or re-run it if this line is
+  older than the latest commit.

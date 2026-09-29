@@ -885,9 +885,9 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "The colophon on MS Majlis 10196 f. 330a says your commentary on Ibn ʿArabī's Fuṣūṣ al-Ḥikam was finished on 20 Ṣafar 814 (13 June 1411) and corrected in Fars on 19 Dhū l-Ḥijja 817 (1 March 1415).",
+     "text": "A colophon dates your commentary on Ibn ʿArabī's Fuṣūṣ al-Ḥikam to 813-14/1411, later corrected in Fars.",
      "claim": "CL-0308",
-     "detail": "Melvin-Koushki's timeline says 813/1411 instead, and puts the completion in a journey to the Hijaz that he marks with a question mark ('for pilgrimage?')."
+     "detail": "The colophon on MS Majlis 10196 f. 330a gives 20 Ṣafar 814 (13 June 1411) for finishing and 19 Dhū l-Ḥijja 817 (1 March 1415) for the Fars correction. Melvin-Koushki's timeline says 813/1411 instead, and puts the completion in a journey to the Hijaz that he marks with a question mark ('for pilgrimage?')."
     },
     {
      "text": "Melvin-Koushki dates the writing of your Persian commentary on ʿIrāqī's Lamaʿāt, the Żawʾ al-Lamaʿāt, to 815/1412, 'presumably in Isfahan'.",
@@ -1741,6 +1741,12 @@ window.CONTENT = {
      {
       "id": "S3",
       "question": "What does the prediction rest on?",
+      "requires_pick": {
+       "slot": "S2",
+       "options": [
+        "a"
+       ]
+      },
       "options": [
        {
         "id": "a",
@@ -1786,6 +1792,12 @@ window.CONTENT = {
      {
       "id": "S4",
       "question": "What makes it lawful to read a fate from a name?",
+      "requires_pick": {
+       "slot": "S2",
+       "options": [
+        "a"
+       ]
+      },
       "options": [
        {
         "id": "a",
@@ -2380,7 +2392,7 @@ window.CONTENT = {
       "options": [
        {
         "id": "a",
-        "label": "Abuse them: mafiosos (Melvin-Koushki's rendering), backbiters, men of little learning and many designs.",
+        "label": "Abuse them: gangsters, backbiters, men of little learning and many designs.",
         "epistemic_label": "documented",
         "based_on": [
          "CL-0128"

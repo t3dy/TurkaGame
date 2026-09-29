@@ -99,13 +99,31 @@ def ruling_outcomes(scene):
 
 
 # ---------------------------------------------------------------------------------- the composer
+def slot_required(slot, picks):
+    """Is this composer slot currently live? A slot with `requires_pick: {slot, options}` only
+    applies while the named earlier slot's pick is one of `options` — e.g. 'what does the
+    prediction rest on' stops mattering once 'does it predict at all' is answered no. Unknown
+    (the dependency hasn't been picked yet) defaults to required, so the player is still asked."""
+    req = slot.get("requires_pick")
+    if not req:
+        return True
+    dep = picks.get(req["slot"])
+    if dep is None:
+        return True
+    return dep in req["options"]
+
+
 def composer_effects(scene, picks):
-    """picks: {slot_id: option_id} -> merged effects of the chosen options, in slot order."""
+    """picks: {slot_id: option_id} -> merged effects of the chosen options, in slot order.
+    A slot whose requires_pick condition is not met contributes nothing, whether or not `picks`
+    happens to carry a stray value for it."""
     comp = scene.get("composer")
     if not comp:
         return {}
     eff = []
     for slot in comp["slots"]:
+        if not slot_required(slot, picks):
+            continue
         opt = next((o for o in slot["options"] if o["id"] == picks.get(slot["id"])), None)
         if opt:
             eff.append(opt["effects"])
