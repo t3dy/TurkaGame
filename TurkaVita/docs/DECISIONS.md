@@ -81,3 +81,14 @@ taken at the plan's recommended default and **flagged as assumed**, so Ted can o
     This is chiefly a local-dev-server cost (GitHub Pages sends real cache headers), but the fix removes a
     visible image-reload flash regardless of host and was worth keeping.
 
+## 2026-09-28 (continued): plate attributions independently verified
+
+25. **All 39 plates' attributions were independently checked against live source pages**
+    (`research/notes/AUDIT-A4-plates.md`): 39/39 CONFIRMED, zero serious or minor findings in `game/plates.js`
+    itself. Every uncertainty the illustrator flagged (the Lisbon frontispiece's disputed date, the giraffe
+    embassy's disputed date, several unstated holding institutions) was verified to hold, word for word, against
+    the actual Commons page. One unrelated, pre-existing registry record (`18f0369d-...`, `sufi-ursa-major`, not
+    part of this pass's `tv-` prefixed additions) still said `institution: "Wikimedia Commons"` with no shelfmark;
+    `plates.js` already carried the correct Bodleian Library/MS Marsh 144 attribution, so the registry record was
+    corrected to match (a metadata fix, not a rights or fact change).
+
