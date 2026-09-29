@@ -37,7 +37,7 @@
  ],
  "composer": {
   "work": "WRK-SUAL-AL-MULUK",
-  "prompt": "You are writing the Suʾl al-Mulūk for Bāysunghur b. Shāhrukh, who asked for it. Choose one move in each of four places. A move marked as documented is one Melvin-Koushki reports the treatise making; a move marked counterfactual is something the treatise does not do, and the game says so when you pick it.",
+  "prompt": "You are writing the Suʾl al-Mulūk for Bāysunghur b. Shāhrukh, who asked for it. Choose one move in each of four places. A move marked as documented is one Melvin-Koushki reports the treatise making; a move marked counterfactual is something the treatise does not do. The game tells you what the record says about each move once you press Send it, and it shows the total cost of your picks before you send.",
   "slots": [
    {
     "id": "S1",
@@ -213,7 +213,7 @@
  "choices": [
   {
    "id": "A",
-   "label": "Write the treatise Bāysunghur asked for, and address it to him.",
+   "label": "Finish the treatise for Bāysunghur and address it to him, as he asked.",
    "strategy": "deliver_to_baysunghur",
    "epistemic_label": "documented",
    "based_on": [
@@ -233,7 +233,7 @@
   },
   {
    "id": "B",
-   "label": "Deliver it to Bāysunghur, and send a copy to Shāhrukh as well, with a letter and a dervish.",
+   "label": "Address it to Bāysunghur and send Shāhrukh a copy as well, with a letter.",
    "strategy": "also_send_to_shahrukh",
    "epistemic_label": "reconstructed",
    "based_on": [
@@ -254,7 +254,7 @@
   },
   {
    "id": "C",
-   "label": "Refuse the commission: tell Bāysunghur the science of letters is not to be written for princes.",
+   "label": "Refuse the commission: tell Bāysunghur that letters are not a science to write for princes.",
    "strategy": "decline_the_commission",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -264,9 +264,14 @@
    "requires": {},
    "effects": {
     "court.baysunghur": -1,
-    "score.biography": -1
+    "score.biography": -1,
+    "press.exposure": -1,
+    "press.students": 1
    },
-   "feedback": "No source has him declining. The record has the commission, the treatise, and letters showing more closeness to Bāysunghur than to any other Timurid. The game returns you to the record: you wrote it."
+   "feedback": "No source has him declining. The record has the commission, the treatise, and letters showing more closeness to Bāysunghur than to any other Timurid. The game returns you to the record: you wrote it. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "Nothing political goes to the Timurids to be quoted, so exposure falls, and you keep to teaching. You lose the prince's goodwill."
+   ]
   }
  ],
  "next": "SCN-0304",

@@ -17,7 +17,7 @@
  },
  "invariants": [
   {
-   "text": "Melvin-Koushki calls his residence in Yazd, c. 825–29/1422–26, relatively uneventful and productive: many lettrist works, and (in his timeline) the Mafāḥiṣ revised and expanded; the manuscripts dispute the revision (CL-0576).",
+   "text": "Melvin-Koushki calls his residence in Yazd, c. 825–29/1422–26, relatively uneventful and productive: many lettrist works, and (in his timeline) the Mafāḥiṣ revised and expanded; the manuscripts dispute the revision.",
    "claim": "CL-0066"
   },
   {
@@ -66,7 +66,7 @@
   },
   {
    "id": "B",
-   "label": "Keep the peace: where the leading families of Yazd are concerned, settle matters quietly and let the law bend a little.",
+   "label": "Keep the peace: settle matters with the leading families quietly and let the law bend a little.",
    "strategy": "accommodate_the_elite",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -78,16 +78,17 @@
     "press.livelihood": 1,
     "press.students": -1,
     "life.judgeship": "accommodating",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.enemies": -1
    },
    "costs": [
-    "Your household is easier; fewer students come."
+    "The notables are appeased and your household is easier, so enemies fall. Fewer students come to a judge who bends."
    ],
-   "feedback": "Nothing in the sources has him bending. What they report, by his own account in the first apology as Melvin-Koushki summarises it, is the opposite: an unswerving, impartial qadi with enemies among Yazd's entrenched men. The game returns you to the record; nothing later can be built on a Yazd career the sources do not contain."
+   "feedback": "Nothing in the sources has him bending. What they report, by his own account in the first apology as Melvin-Koushki summarises it, is the opposite: an unswerving, impartial qadi with enemies among Yazd's entrenched men. The game returns you to the record; nothing later can be built on a Yazd career the sources do not contain. What you gained and paid here stays in your ledger; the story then rejoins the record."
   },
   {
    "id": "C",
-   "label": "Before the notables can act, write to Shāhrukh yourself, report how they obstruct your court, and ask for his backing.",
+   "label": "Write to Shāhrukh first, report how the notables obstruct your court, and ask for his backing.",
    "strategy": "write_first_to_shahrukh",
    "epistemic_label": "counterfactual",
    "based_on": [

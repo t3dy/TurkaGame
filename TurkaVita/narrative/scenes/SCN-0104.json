@@ -5,7 +5,7 @@
  "act": "hostage",
  "title": "Barqūq's majlis: an opinion is asked",
  "unrecorded": true,
- "dramatic_question": "In a majlis at the Sultan's court, Barqūq presses you for your opinion of another scholar. The record does not say what you answered. What do you say?",
+ "dramatic_question": "Barqūq presses you for your opinion of another scholar. The record does not say what you answered. What do you say?",
  "situation": {
   "when": "during Barqūq's reign (784-801/1382-99 in the dissertation; 784-92/1382-90 in Melvin-Koushki's 2016 book); the majlis is undated",
   "where": "the Mamluk court, Cairo",
@@ -19,16 +19,18 @@
  },
  "invariants": [
   {
-   "text": "According to Ibn Turka's second apology, Sultan Barqūq pressed him in a majlis for his opinion of another scholar, whom Melvin-Koushki identifies as Shams al-Dīn Muḥammad al-Jazarī (the identification is his). The apology was written in 1431-32 to Bāysunghur, to seek intercession while his case was unresolved.",
-   "claim": "CL-0028"
+   "text": "According to Ibn Turka's second apology, Sultan Barqūq pressed him in a majlis for his opinion of another scholar, whom Melvin-Koushki identifies as Shams al-Dīn Muḥammad al-Jazarī.",
+   "claim": "CL-0028",
+   "detail": "The identification is Melvin-Koushki's. The apology was written in 1431-32 to Bāysunghur, to seek intercession while his case was unresolved."
   },
   {
    "text": "Al-Jazarī, originally of Damascus (d. 833/1429 at Herat), later became Ibn Turka's powerful opponent, and his enmity caused Ibn Turka much grief.",
    "claim": "CL-0029"
   },
   {
-   "text": "The second apology traces al-Jazarī's enmity to Ibn Turka's candid assessment of him to the Mamluk sultan in Egypt. This is Ibn Turka's own version of a grievance; Melvin-Koushki gives no corroboration on the pages we hold, and the sources we hold do not say what the assessment was.",
-   "claim": "CL-0157"
+   "text": "The second apology traces al-Jazarī's enmity to Ibn Turka's candid assessment of him to the Mamluk sultan in Egypt.",
+   "claim": "CL-0157",
+   "detail": "This is Ibn Turka's own version of a grievance; Melvin-Koushki gives no corroboration on the pages we hold, and the sources we hold do not say what the assessment was."
   }
  ],
  "prose": [
@@ -69,10 +71,11 @@
    "requires": {},
    "effects": {
     "court.barquq": -1,
-    "press.enemies": 1
+    "press.enemies": 1,
+    "press.exposure": -1
    },
    "costs": [
-    "Flattery does not undo the record: al-Jazarī still becomes your enemy. This price is the game's, not the record's."
+    "Nothing you said can be quoted against you, so exposure falls. The sultan wanted a judgement and got flattery, and al-Jazarī becomes your enemy anyway. This price is the game's, not the record's."
    ],
    "feedback": "The record is silent on what you said, so this is not a counterfactual: nothing says you did not praise him. But al-Jazarī's later enmity is in the sources (attested, medium confidence), and Ibn Turka himself traces it to this hour, so the game does not let praise buy peace."
   },

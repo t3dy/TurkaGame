@@ -16,6 +16,59 @@ COMMIT_TAGS = {"coherent", "incoherent", "calibrated_unknown", "over_caution", "
 LABELS = {"documented", "reconstructed", "contested", "unknown", "counterfactual"}
 
 
+DEV_TEXT = re.compile(r"\b(?:CL|EV|REC|EVT|WRK|INS|HYP|SCN)-\d|\bMK\b")
+
+
+MAX_RULINGS = 3
+MAX_INVARIANT = 240
+
+
+def player_strings(s):
+    """Every string a player can read in a scene, as (where, text). Ids belong in based_on / claim /
+    evidence fields only; nothing here may show a claim id or the abbreviation MK."""
+    def one(where, v):
+        if isinstance(v, str):
+            yield where, v
+
+    yield from one("title", s.get("title"))
+    yield from one("dramatic_question", s.get("dramatic_question"))
+    for i, p in enumerate(s.get("prose") or []):
+        yield from one(f"prose[{i}]", p)
+    for i, inv in enumerate(s.get("invariants") or []):
+        yield from one(f"invariants[{i}].text", inv.get("text"))
+        yield from one(f"invariants[{i}].detail", inv.get("detail"))
+    for c in s.get("choices") or []:
+        yield from one(f"choice {c['id']} label", c.get("label"))
+        yield from one(f"choice {c['id']} feedback", c.get("feedback"))
+        for j, x in enumerate(c.get("costs") or []):
+            yield from one(f"choice {c['id']} costs[{j}]", x)
+    for r in s.get("rulings") or []:
+        yield from one(f"ruling {r['id']} proposition", r.get("proposition"))
+        yield from one(f"ruling {r['id']} feedback", r.get("feedback"))
+    comp = s.get("composer")
+    if comp:
+        yield from one("composer prompt", comp.get("prompt"))
+        for slot in comp["slots"]:
+            yield from one(f"slot {slot['id']} question", slot.get("question"))
+            for o in slot["options"]:
+                yield from one(f"slot {slot['id']}/{o['id']} label", o.get("label"))
+                yield from one(f"slot {slot['id']}/{o['id']} feedback", o.get("feedback"))
+    srt = s.get("sorter")
+    if srt:
+        yield from one("sorter prompt", srt.get("prompt"))
+        yield from one("sorter detail", srt.get("detail"))
+        for it in srt["items"]:
+            yield from one(f"sorter item {it['id']} label", it.get("label"))
+            yield from one(f"sorter item {it['id']} note", it.get("note"))
+    cm = s.get("commitment")
+    if cm:
+        yield from one("commitment question", cm.get("question"))
+        for o in cm["options"]:
+            yield from one(f"commitment option {o['hypothesis']}", o.get("label"))
+        for k, v in (cm.get("feedback") or {}).items():
+            yield from one(f"commitment feedback {k}", v)
+
+
 def grounded(aid, arts, seen=None):
     """Does this artifact bottom out in at least one evidence artifact?"""
     seen = seen or set()
@@ -72,6 +125,10 @@ def main():
                     lenses.add(v)
 
     for sid, s in scenes.items():
+        for where, text in player_strings(s):
+            m = DEV_TEXT.search(text)
+            if m:
+                err(sid, f"developer text in player-facing {where}: ...{text[max(0, m.start() - 30):m.end() + 30]}...")
         for ref in s["situation"]["based_on"]:
             if ref not in arts:
                 err(sid, f"situation based_on {ref} does not exist")
@@ -104,6 +161,15 @@ def main():
         ids = [r["id"] for r in s.get("rulings") or []]
         if len(ids) != len(set(ids)):
             err(sid, "duplicate ruling ids")
+        if len(ids) > MAX_RULINGS:
+            err(sid, f"{len(ids)} rulings; at most {MAX_RULINGS} per scene (keep the ones a re-reading of the box cannot answer)")
+        for i, inv in enumerate(s["invariants"]):
+            if len(inv["text"]) > MAX_INVARIANT:
+                err(sid, f"invariants[{i}].text is {len(inv['text'])} characters; keep the fact a player can act on in the text "
+                         f"(about 200) and move calendar, folio and who-says-what caveats into 'detail'")
+        srt_prompt = (s.get("sorter") or {}).get("prompt")
+        if srt_prompt and len(re.findall(r"[.!?](?:\s|$)", srt_prompt)) > 3:
+            warn(sid, "sorter prompt runs past three sentences; move caveats to sorter.detail")
 
         # --- the composer: a work assembled from the moves its source reports
         comp = s.get("composer")

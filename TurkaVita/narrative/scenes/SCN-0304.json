@@ -16,8 +16,9 @@
  },
  "invariants": [
   {
-   "text": "The R. Shaqq-i Qamar u Bayān-i Sāʿat ranks seven groups by how they read Q 54:1, in ascending order: jurists and traditionists, dialectical theologians, peripatetic philosophers, illuminationists, verifying Sufis of Ibn ʿArabī's school, the lettrists, and ʿAlī and the Imams after him, the men of might and vision.",
-   "claim": "CL-0500"
+   "text": "The R. Shaqq-i Qamar u Bayān-i Sāʿat ranks seven groups by how they read Q 54:1, ascending from jurists and traditionists to ʿAlī and the Imams after him, the men of might and vision.",
+   "claim": "CL-0500",
+   "detail": "In full, in ascending order: jurists and traditionists, dialectical theologians, peripatetic philosophers, illuminationists, verifying Sufis of Ibn ʿArabī's school, the lettrists, and ʿAlī and the Imams after him."
   },
   {
    "text": "Ibn Turka says the seventh level is peculiar to the present time, which is ruled by an auspicious conjunction (saʿādat-qirān); it is not presented as a rank that belonged to the past alone.",
@@ -31,22 +32,9 @@
  "prose": [
   "The verse is 54:1, the Hour has drawn near and the moon was split. The treatise you are writing, the R. Shaqq-i Qamar u Bayān-i Sāʿat, is built on a ranking: seven groups of readers, from the jurists who take the verse literally to the highest level, each with its own reading of what splitting means.",
   "You offer the ranking as a general model that seekers can apply to other questions, and you apply it again to the meaning of the Hour. What you have to settle is where people go. Your own school, the lettrists, has a place. So do ʿAlī and the Imams. The two placements are not the same question, and the way you write them will be read.",
-  "First, check what the seven levels say. Then write the top of the ranking."
+  "First, three rulings on what the levels say. Then write the top of the ranking."
  ],
  "rulings": [
-  {
-   "id": "R1",
-   "proposition": "In the ranking, the lettrists stand below the peripatetic philosophers.",
-   "answer": "refute",
-   "based_on": [
-    "CL-0500",
-    "CL-0501"
-   ],
-   "effects_correct": {
-    "score.doctrine": 1
-   },
-   "feedback": "The lettrists are level six and the peripatetics level three. The lettrists stand above the philosophers and below the seventh level, the men of might and vision."
-  },
   {
    "id": "R2",
    "proposition": "The jurists and traditionists take the splitting of the moon literally and forbid asking how it happened, and the treatise says God's wisdom has confined their thought to that level.",
@@ -80,27 +68,15 @@
     "CL-0509"
    ],
    "effects_correct": {
-    "score.doctrine": 1
+    "score.doctrine": 2
    },
    "feedback": "Level six: the moon is speech, and its splitting is meaning emerging from the written letters. The identity of raqam and qamar is argued from the letters."
-  },
-  {
-   "id": "R5",
-   "proposition": "The treatise says the seventh level belonged to the past alone.",
-   "answer": "refute",
-   "based_on": [
-    "CL-0511"
-   ],
-   "effects_correct": {
-    "score.doctrine": 1
-   },
-   "feedback": "Ibn Turka says level seven is peculiar to the present time, ruled by an auspicious conjunction. Melvin-Koushki reports that his teacher Akhlāṭī communicated this to him, and the game notes that no page identifies the conjunction."
   }
  ],
  "choices": [
   {
    "id": "A",
-   "label": "Write the ranking as you did: the lettrists at six, and at seven ʿAlī and the Imams, the men of might and vision, a level peculiar to the present time under an auspicious conjunction.",
+   "label": "Write the ranking with the lettrists at six and ʿAlī and the Imams at seven, a level peculiar to the present age.",
    "strategy": "seven_tiers_lettrists_six",
    "epistemic_label": "documented",
    "based_on": [
@@ -115,11 +91,11 @@
     "life.hierarchy": "imams_seventh",
     "score.biography": 2
    },
-   "feedback": "This is the ranking as the treatise gives it: the lettrists above the peripatetics and below level seven, which it ties to the Prophet's House, the Imams and jafr. Melvin-Koushki's footnote dates it to the beginning of 829/1426 and calls that the year of your second trial and of your first apology; the game does not enumerate the trials or resolve what that pairing means. Whether level seven holds the Imams alone or the lettrists too is his reading against a rival, and the game does not score it."
+   "feedback": "This is the ranking as the treatise gives it (level seven is peculiar to the present time, under an auspicious conjunction): the lettrists above the peripatetics and below level seven, which it ties to the Prophet's House, the Imams and jafr. Melvin-Koushki's footnote dates it to the beginning of 829/1426 and calls that the year of your second trial and of your first apology; the game does not enumerate the trials or resolve what that pairing means. Whether level seven holds the Imams alone or the lettrists too is his reading against a rival, and the game does not score it."
   },
   {
    "id": "B",
-   "label": "Write level seven wide enough to hold yourselves: the Imams, the House of the Prophet, perfected saints who can riddle their cryptic utterances, and the sages of antiquity.",
+   "label": "Write level seven wide enough to hold yourselves, with the Imams, the Prophet's House, perfected saints and the sages of antiquity.",
    "strategy": "widen_level_seven",
    "epistemic_label": "reconstructed",
    "based_on": [
@@ -129,10 +105,11 @@
    "requires": {},
    "effects": {
     "press.exposure": 1,
-    "life.hierarchy": "lettrists_within_seven"
+    "life.hierarchy": "lettrists_within_seven",
+    "press.students": 1
    },
    "costs": [
-    "Exposure rises: you place your own school at the top."
+    "Placing your own school at the top draws students to it. It also draws attention to a school that is already suspected, and exposure rises."
    ],
    "feedback": "This is Melvin-Koushki's reading, not a sentence of this treatise. He argues that level seven is not entirely what it seems, because it is tied to jafr, lettrism at its occult extreme, and your R. Madārij does widen the seventh group in just this way. The rival reading, which he sets aside, is plain deference: the lettrists preside over five currents but cannot reach seven."
   },
@@ -148,9 +125,14 @@
    "requires": {},
    "effects": {
     "life.hierarchy": "three_tier",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.exposure": -1,
+    "press.works": -1
    },
-   "feedback": "The three-tier ranking of philosophers, Sufis and lettrists is in your Sharḥ-i Naẓm al-Durr, a different work. The Shaqq-i Qamar has seven tiers with the Imams at the top, and no source has you shortening it. The game returns you to the record."
+   "feedback": "The three-tier ranking of philosophers, Sufis and lettrists is in your Sharḥ-i Naẓm al-Durr, a different work. The Shaqq-i Qamar has seven tiers with the Imams at the top, and no source has you shortening it. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "A ranking with no Imams at the top is safer to have written, so exposure falls. It loses what made the treatise distinctive, and fewer readers copy it."
+   ]
   }
  ],
  "next": "SCN-0305",

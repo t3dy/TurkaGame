@@ -15,8 +15,9 @@
  },
  "invariants": [
   {
-   "text": "Ibn Turka died in Herat on 14 Dhū l-Ḥijja 835/12 August 1432, aged 63, 'frustrated, impoverished and in a state of limbo' in the words of the editor of the Sharḥ-i Naẓm al-Durr, whom Melvin-Koushki cites. The game gives no weekday, because the source's does not fit that date in the Julian or the Gregorian calendar; Melvin-Koushki's age of 63 does not agree with the birth year the dissertation derives from the age he gives in the first apology, and the two are not reconciled.",
-   "claim": "CL-0087"
+   "text": "Ibn Turka died in Herat on 14 Dhū l-Ḥijja 835/12 August 1432, aged 63, 'frustrated, impoverished and in a state of limbo' in the words of the editor of the Sharḥ-i Naẓm al-Durr, whom Melvin-Koushki cites.",
+   "claim": "CL-0087",
+   "detail": "The game gives no weekday, because the source's does not fit that date in the Julian or the Gregorian calendar. Melvin-Koushki's age of 63 does not agree with the birth year the dissertation derives from the age he gives in the first apology, and the two are not reconciled."
   },
   {
    "text": "Sources disagree on the year of death (830 in the printed Khwāndamīr, 836 in a manuscript); Melvin-Koushki holds that 835 is right.",
@@ -85,9 +86,13 @@
     "press.students": 1,
     "press.works": 1,
     "life.death_trust": "students",
-    "score.calibration": 1
+    "score.calibration": 1,
+    "press.exposure": 1
    },
-   "feedback": "The scatter of students is what you say in the second apology, so it is self-report and self-praise, addressed to Bāysunghur. A separate, external sign of demand is a commander in Shāhrukh's army, Muḥammad Ṣūfī b. Tarkhān, who asked through the Yazdī collection for a volume of your Persian works. Neither says you left your writings to anyone."
+   "feedback": "The scatter of students is what you say in the second apology, so it is self-report and self-praise, addressed to Bāysunghur. A separate, external sign of demand is a commander in Shāhrukh's army, Muḥammad Ṣūfī b. Tarkhān, who asked through the Yazdī collection for a volume of your Persian works. Neither says you left your writings to anyone.",
+   "costs": [
+    "Your students carry your writings on. Writings scattered beyond your control are read by every kind of reader, and exposure rises. This price is the game's, not the record's."
+   ]
   },
   {
    "id": "D",
@@ -105,9 +110,13 @@
     "court.yazdi": 1,
     "press.works": 1,
     "life.death_trust": "isbah",
-    "score.calibration": 1
+    "score.calibration": 1,
+    "press.exposure": 1
    },
-   "feedback": "The game opens this only once you have earned Yazdī's favour. Nothing records that you asked, and no source has anyone finishing it: the Iṣbāḥ existed at least in part by February 1428, when the Tuḥfa-yi ʿAlāʾī cites it as unfinished, and its only known copy is partial and breaks off mid-page. Melvin-Koushki conjectures you left it unfinished after the events of 1427."
+   "feedback": "The game opens this only once you have earned Yazdī's favour. Nothing records that you asked, and no source has anyone finishing it: the Iṣbāḥ existed at least in part by February 1428, when the Tuḥfa-yi ʿAlāʾī cites it as unfinished, and its only known copy is partial and breaks off mid-page. Melvin-Koushki conjectures you left it unfinished after the events of 1427.",
+   "costs": [
+    "The lettrist work might be finished. It is the kind of writing your enemies read as Ḥurūfī sympathy, and exposure rises. This price is the game's, not the record's."
+   ]
   }
  ],
  "next": "SCN-0501",

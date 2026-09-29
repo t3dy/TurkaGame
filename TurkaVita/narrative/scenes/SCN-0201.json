@@ -4,7 +4,7 @@
  "status": "draft",
  "act": "courts",
  "title": "Isfahan, c. 1408-9: the governor's summons",
- "dramatic_question": "You came home to teach and to be left alone. The governor of Fars, a grandson of Temür, sends for you. Do you go?",
+ "dramatic_question": "The governor of Fars sends for you. Do you go?",
  "situation": {
   "when": "c. 810-12/1408-9 (Melvin-Koushki's own 'c.')",
   "where": "Isfahan, then Shiraz",
@@ -16,8 +16,9 @@
  },
  "invariants": [
   {
-   "text": "Back in Isfahan you took up teaching, meaning to live quietly in contemplation (gūsha-nishīnī), until Pīr-Muḥammad b. ʿUmar-Shaykh, Temür's grandson and governor of Fars, summoned you to Shiraz. Melvin-Koushki cites no source for this passage and marks its dates 'c.'.",
-   "claim": "CL-0052"
+   "text": "Back in Isfahan you took up teaching, meaning to live quietly in contemplation (gūsha-nishīnī), until Pīr-Muḥammad, Temür's grandson and governor of Fars, summoned you to Shiraz.",
+   "claim": "CL-0052",
+   "detail": "The governor's full name is Pīr-Muḥammad b. ʿUmar-Shaykh. Melvin-Koushki cites no source for this passage and marks its dates 'c.'."
   },
   {
    "text": "Pīr-Muḥammad was murdered in 812/1409 and his brother Iskandar Mīrzā took his place in Shiraz. Nothing you do prevents it.",
@@ -36,7 +37,7 @@
  "choices": [
   {
    "id": "A",
-   "label": "Answer the summons: go to Shiraz and let Pīr-Muḥammad make you a member of his court.",
+   "label": "Answer the summons: go to Shiraz and take a place at Pīr-Muḥammad's court.",
    "strategy": "answer_summons_shiraz",
    "epistemic_label": "documented",
    "historical": true,
@@ -53,7 +54,7 @@
   },
   {
    "id": "B",
-   "label": "Refuse the summons, keep teaching in Isfahan, and stay out of the court.",
+   "label": "Refuse the summons: stay in Isfahan, keep teaching, and keep out of the court.",
    "strategy": "refuse_summons",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -62,9 +63,14 @@
    "requires": {},
    "effects": {
     "press.livelihood": -1,
-    "score.biography": -1
+    "score.biography": -1,
+    "press.exposure": -1,
+    "press.students": 1
    },
-   "feedback": "No source has you refusing. Melvin-Koushki has you summoned and made a member of the court, and the honours that follow presuppose it. The quiet life is what he says you kept trying to return to (CL-0061), not what the sources say you kept. The game returns you to the record: you go, and the murder of 1409 arrives regardless."
+   "feedback": "No source has you refusing. Melvin-Koushki has you summoned and made a member of the court, and the honours that follow presuppose it. The quiet life is what Melvin-Koushki says you kept trying to return to, not something the sources show you keeping. The game returns you to the record: you go, and the murder of 1409 arrives regardless. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "You keep your students and stay clear of the court, so exposure falls. You forgo the governor's stipend, and your household is poorer."
+   ]
   }
  ],
  "next": "SCN-0202",

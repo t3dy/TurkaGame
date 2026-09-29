@@ -740,5 +740,993 @@
     "added_date": "2026-08-31",
     "usage_status": "approved",
     "notes": "Sourced via OCCULTIMGDB catalog (rights-cleared). Place: Persia / Islamic world"
+  },
+  {
+    "id": "bb07eca2-70ce-43bf-81db-988d34093886",
+    "title": "Timur grants an audience on his accession at Balkh, 9 April 1370 (frontispiece, Zafarnama of Ibrahim Sultan)",
+    "institution": "Smithsonian Institution, Freer|Sackler (the Commons page links object S1986.133.1; the leaves of this Zafarnama are dispersed)",
+    "shelfmark": "S1986.133.1 (as linked by the Commons page)",
+    "folio": null,
+    "date_or_period": "1436 (AH 839)",
+    "creator_or_scribe": "Unnamed painters of Ibrahim Sultan's atelier; text by Sharaf al-Din 'Ali Yazdi",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3ATimur_grants_an_audience_on_the_occasion_of_his_accession_to_the_throne_at_Balkh%2C_on_9_April_1370._Zafarnama_of_Ibrahim_Sultan%2C_Timurid_Shiraz%2C_1436._Frontispiece._Facing_folios_129r-128vjpg.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3ATimur_grants_an_audience_on_the_occasion_of_his_accession_to_the_throne_at_Balkh%2C_on_9_April_1370._Zafarnama_of_Ibrahim_Sultan%2C_Timurid_Shiraz%2C_1436._Frontispiece._Facing_folios_129r-128vjpg.jpg.",
+    "local_file": "tv-zaf-accession-1370.jpg",
+    "sha256": "319f1991af57704795e0012f856fbfd5260a8cbbac2d4a5bb0a538b688fc3ed3",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "hostage"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id zaf-accession-1370. Temur's court as a Shiraz workshop painted it in 1436, four years after Ibn Turka died; it shows an accession audience of 1370, not his 1387 Samarkand and not any moment of his life."
+  },
+  {
+    "id": "9adc15a8-d20d-465e-bbc2-dcaf809a2c19",
+    "title": "Frontispiece of the Anthology of Iskandar Sultan",
+    "institution": "Calouste Gulbenkian Museum, Lisbon",
+    "shelfmark": "LA 161",
+    "folio": null,
+    "date_or_period": "1410 (the Commons file page says '14th century', which its own category and sister files contradict)",
+    "creator_or_scribe": "Unnamed painters of Iskandar Sultan's atelier",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AFrontispiece_of_the_Anthology_of_Sultan_Iskandar_%28MCG_LA161%29.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AFrontispiece_of_the_Anthology_of_Sultan_Iskandar_%28MCG_LA161%29.jpg.",
+    "local_file": "tv-isk-frontispiece-lisbon.jpg",
+    "sha256": "67a90d4d10f4fca165e97d6d619c24a85cf46369277f718d9a379549067a1709",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "courts"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id isk-frontispiece-lisbon. The opening of the book made for Iskandar Sultan, the prince this act serves, at Shiraz in 1410; a picture of his court, not of any scene in Ibn Turka's service, and the figures are not identified."
+  },
+  {
+    "id": "7baf8b04-a11f-4e4a-8b48-9ec5cfdd4854",
+    "title": "Frontispiece of a Kalila wa Dimna copied for Baysunghur",
+    "institution": "Topkapi Palace Museum Library, Istanbul",
+    "shelfmark": "R. 1022",
+    "folio": null,
+    "date_or_period": "1429",
+    "creator_or_scribe": "Unnamed Herat court painters",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AFrontispiece_from_a_copy_of_Kalila_wa_Dimna_of_Abu%CA%BCl-Ma%CA%BBali_Nasr_Allah._Herat%2C_1429%2C_for_Baysunghur._Istanbul%2C_Topkap%C4%B1_Palace_Museum%2C_R._1022.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AFrontispiece_from_a_copy_of_Kalila_wa_Dimna_of_Abu%CA%BCl-Ma%CA%BBali_Nasr_Allah._Herat%2C_1429%2C_for_Baysunghur._Istanbul%2C_Topkap%C4%B1_Palace_Museum%2C_R._1022.jpg.",
+    "local_file": "tv-herat-kalila-1429-front.jpg",
+    "sha256": "a8eaeaa86a23085945659c440d3ad577b6ede356c3c7ee0e321f9204aa26b6ed",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "trials"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id herat-kalila-1429-front. A garden assembly around Shahrukh's son Baysunghur at Herat in 1429, three years after the 1426 hearings of this act; the prince is the man who asked Ibn Turka for a book, but this is a frontispiece to a fable book, not a trial."
+  },
+  {
+    "id": "8170ea25-f5c1-4068-a5da-552cc32a8c80",
+    "title": "Burzoy and the physicians setting off on their journey (Kalila wa Dimna)",
+    "institution": "Bodleian Library, Oxford",
+    "shelfmark": "MS Pococke 400, fol. 12v",
+    "folio": null,
+    "date_or_period": "755 AH / 1354",
+    "creator_or_scribe": "Unnamed Mamluk-period painter (text by Ibn al-Muqaffa')",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3ABurzoy_and_physicians_setting_off_on_their_journey._Ibn_al-Muqaffa%CA%BF%2C_Kal%C4%ABla_wa-Dimna%3B_Egypt_or_Syria%2C_dated_755H-1354._Bodleian_Pococke_400%2C_fol._12v.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3ABurzoy_and_physicians_setting_off_on_their_journey._Ibn_al-Muqaffa%CA%BF%2C_Kal%C4%ABla_wa-Dimna%3B_Egypt_or_Syria%2C_dated_755H-1354._Bodleian_Pococke_400%2C_fol._12v.jpg.",
+    "local_file": "tv-mam-kalila-1354-burzoy.jpg",
+    "sha256": "8e7afddbc5112a16d9a71ac8253ab6635a8767343cbf00116d2f991707f4c148",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "exile"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id mam-kalila-1354-burzoy. A road picture from a Mamluk-era fable book made about seventy-five years before Ibn Turka's exile; it shows travellers on animals, not his roads and not his flight from Herat."
+  },
+  {
+    "id": "23775c78-873c-433c-97d8-4978a7700c87",
+    "title": "Colophon page of Hafiz-i Abru's Kulliyat-i Tarikhi, f. 297v",
+    "institution": "Topkapi Palace Museum Library, Istanbul",
+    "shelfmark": "MS Bagdat 282 (B. 282), f. 297v",
+    "folio": null,
+    "date_or_period": "1415-16 (the Commons file names 1415; its category says 1417)",
+    "creator_or_scribe": "Hafiz-i Abru (text); copyist not named on the Commons page",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AColophon._Kulliyy%C4%81t-i_T%C4%81r%C4%ABkh%C4%AB_by_%E1%B8%A4%C4%81fi%E1%BA%93_Abr%C5%AB_%28Topkapi_Palace_Library%2C_B._282%29_f._297v.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AColophon._Kulliyy%C4%81t-i_T%C4%81r%C4%ABkh%C4%AB_by_%E1%B8%A4%C4%81fi%E1%BA%93_Abr%C5%AB_%28Topkapi_Palace_Library%2C_B._282%29_f._297v.jpg.",
+    "local_file": "tv-herat-kulliyat-colophon.jpg",
+    "sha256": "32c6abeff0ebf957b2b2417a883d0cb8541e28628c102fefad6049de2f65655a",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "copyist"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id herat-kulliyat-colophon. The kind of page where a copyist in Shahrukh's Herat records the book's making, drawn from a historian's chronicle; it is not a colophon from any Ibn Turka manuscript."
+  },
+  {
+    "id": "364ca299-3d4c-4530-a153-2d35caf1433d",
+    "title": "Ophiuchus, from al-Sufi's Book of the Fixed Stars made for Ulugh Beg",
+    "institution": "Bibliotheque nationale de France, Manuscrits",
+    "shelfmark": "arabe 5036, fol. 81v",
+    "folio": null,
+    "date_or_period": "c. 1430-1440",
+    "creator_or_scribe": "Unnamed painters; text by 'Abd al-Rahman al-Sufi (d. 986)",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AOphiuchus_-_miniature_from_the_%22Kit%C4%81b_%E1%B9%A3uwar_al-kaw%C4%81kib_al-%E1%B9%AF%C4%81bita%22.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AOphiuchus_-_miniature_from_the_%22Kit%C4%81b_%E1%B9%A3uwar_al-kaw%C4%81kib_al-%E1%B9%AF%C4%81bita%22.jpg.",
+    "local_file": "tv-astro-sufi-ophiuchus-5036.jpg",
+    "sha256": "a8fe2ce8169460bdfafccb9bf6979ea4d42832f11120b3bd434c290bbc0b91da",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "historian"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id astro-sufi-ophiuchus-5036. A star-book of Ibn Turka's own last years, made for the Timurid prince who ran the Samarkand observatory, showing how that world drew and labelled the sky; it is not evidence about Ibn Turka."
+  },
+  {
+    "id": "b0705885-cfe6-4bd8-83dd-5fcd4befd699",
+    "title": "Samarqand receives Shahrukh as governor, September 1394 (double page, Zafarnama of Ibrahim Sultan)",
+    "institution": "Freer Gallery of Art, Washington (F1948.18, per the Commons description, which says the Freer leaf is one half of a double-page composition)",
+    "shelfmark": "F1948.18",
+    "folio": null,
+    "date_or_period": "1436 (AH 839)",
+    "creator_or_scribe": "Unnamed painters of Ibrahim Sultan's atelier; text by Sharaf al-Din 'Ali Yazdi",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3ASamarqand_receives_Shah_Rukh_as_new_Governor_in_September_1394._Zafarnama_of_1436%2C_folios_249v-249r.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3ASamarqand_receives_Shah_Rukh_as_new_Governor_in_September_1394._Zafarnama_of_1436%2C_folios_249v-249r.jpg.",
+    "local_file": "tv-zaf-samarkand-1394.jpg",
+    "sha256": "638b0d4c0bb3e1aaf0e7381e9ce7f1ab7830a5bff6dc52460d8d49fcbfeebce8",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "hostage"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id zaf-samarkand-1394. Samarkand as Temur's capital, painted in 1436; the event is Shahrukh's arrival in 1394, not the removal of Ibn Turka's family in 1387."
+  },
+  {
+    "id": "2639b3ba-0717-41dd-8403-fa3596e6e2ae",
+    "title": "The Ka'ba at Mecca and the road to it (fols. 362-363, Anthology of Iskandar Sultan)",
+    "institution": "British Library, London (the Commons title still says 'British Museum')",
+    "shelfmark": "Add. 27261, fols. 362-363",
+    "folio": null,
+    "date_or_period": "1410-11",
+    "creator_or_scribe": "Unnamed painters of Iskandar Sultan's atelier",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AAnthology_of_lskandar._View_of_the_Kaaba_at_Mecca_%28folios_362-363%29_-_Shiraz%2C_1410-1411._London%2C_British_Museum%2C_Add._27_261.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AAnthology_of_lskandar._View_of_the_Kaaba_at_Mecca_%28folios_362-363%29_-_Shiraz%2C_1410-1411._London%2C_British_Museum%2C_Add._27_261.jpg.",
+    "local_file": "tv-isk-kaaba.jpg",
+    "sha256": "d35a4d9b41b6e0cd560c8f49fdd2ed17b58f7862fd1209d3257f7be13ce7e51c",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "hostage"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id isk-kaaba. How a Timurid prince's book pictured the Hijaz sanctuary in 1410-11; Ibn Turka went there c. 1393, so this is later, made in Shiraz, and is not a record of his pilgrimage or route."
+  },
+  {
+    "id": "366aa1ea-c4fc-442b-8f59-b8840aadf980",
+    "title": "Opening double page of juz' 9 of the so-called Sultan Barquq's Qur'an",
+    "institution": "British Library, London",
+    "shelfmark": "Or. 848, fols. 1v-2r",
+    "folio": null,
+    "date_or_period": "c. 1370-75",
+    "creator_or_scribe": "Copied by 'Ali ibn Muhammad al-Mukattib al-Ashrafi and illuminated by Ibrahim al-Amidi (both attributions)",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AOpening_double-page_from_the_juz%27_9_of_the_Sultan_Barquq%27s_Qur%27an_%28BL_Or_848_f._1v-2r%29.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AOpening_double-page_from_the_juz%27_9_of_the_Sultan_Barquq%27s_Qur%27an_%28BL_Or_848_f._1v-2r%29.jpg.",
+    "local_file": "tv-mam-barquq-quran-open.jpg",
+    "sha256": "ef234274c40b859b5f095622e1d9bc429adbe4046793914fe75f3ebd1d01b2cc",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "hostage"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id mam-barquq-quran-open. The finest Cairo bookmaking of the generation before Ibn Turka arrived: probably made for Sultan Sha'ban or his mother, later endowed to a Cairo mosque by Barquq's son Faraj; it belongs to his Cairo, not to his teachers or his books."
+  },
+  {
+    "id": "14beb4ac-6a77-4b1e-8063-4c818dba7c3c",
+    "title": "An enthroned prince, from al-Hariri's Maqamat",
+    "institution": "Austrian National Library, Vienna (the Commons category names the Vienna manuscript)",
+    "shelfmark": "Cod. A.F. 9 (per the Commons category name 'Vienna ONB AF9')",
+    "folio": null,
+    "date_or_period": "1334 (Commons: 'probably Egypt'; a sister file suggests the sultan al-Nasir Muhammad, unproven)",
+    "creator_or_scribe": "Unnamed painter of a copy of al-Hariri's Maqamat",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AMaqamat_of_al-Hariri._Enthroned_Prince._Probably_Egypt_1334.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AMaqamat_of_al-Hariri._Enthroned_Prince._Probably_Egypt_1334.jpg.",
+    "local_file": "tv-mam-maqamat-prince-1334.jpg",
+    "sha256": "a965929da67f68ebb61e442d2726d97d658dcc2b95375c14036939ce51db6328",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "hostage"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id mam-maqamat-prince-1334. The nearest period picture of a Mamluk ruler holding court, painted sixty years before Barquq's majlis; it is not Barquq, and not a gathering of scholars."
+  },
+  {
+    "id": "09ae1b04-f579-41af-a04d-2205eb96611c",
+    "title": "Envoys of the Mamluk sultan Faraj ibn Barquq present a giraffe to Temur (double page, Zafarnama of Ibrahim Sultan)",
+    "institution": "Worcester Art Museum, Massachusetts (per the Commons description's link; the Zafarnama's leaves are dispersed)",
+    "shelfmark": "fols. 399v-400r",
+    "folio": null,
+    "date_or_period": "1436 (AH 839); the event is dated 1404 in the Commons description but October 1405 in the file name, and Temur died in February 1405, so treat the event date as uncertain",
+    "creator_or_scribe": "Unnamed painters of Ibrahim Sultan's atelier",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AThe_Ambassadors_of_the_Egyptian_Sultan_al-Nasir_Faraj_ibn_Barquq_Present_their_Gifts_of_Tribute%2C_Including_a_Giraffe%2C_to_Timur_in_October_1405._Zafarnama_of_Ibrahim_Sultan_%281436%29._Facing_folios_400r%2C_399v.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AThe_Ambassadors_of_the_Egyptian_Sultan_al-Nasir_Faraj_ibn_Barquq_Present_their_Gifts_of_Tribute%2C_Including_a_Giraffe%2C_to_Timur_in_October_1405._Zafarnama_of_Ibrahim_Sultan_%281436%29._Facing_folios_400r%2C_399v.jpg.",
+    "local_file": "tv-zaf-giraffe-embassy.jpg",
+    "sha256": "ecb6986897303af9677b3ea2797863b26352ff852737bad323c0d39144df628c",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "hostage"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id zaf-giraffe-embassy. Cairo and Temur's court in one picture, the axis on which Ibn Turka's own life turned; it shows an embassy, not his return home and not a dated event of 1405."
+  },
+  {
+    "id": "e92d6551-a067-486b-828c-a549719df66f",
+    "title": "Abu Zayd before the governor of Rahba (al-Hariri's Maqamat)",
+    "institution": "Bibliotheque nationale de France, Manuscrits",
+    "shelfmark": "arabe 5847 (per the Commons category)",
+    "folio": null,
+    "date_or_period": "1237",
+    "creator_or_scribe": "Attributed to Yahya ibn Mahmud al-Wasiti's illustrated copy",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AAbu_Zaid_before_the_Governor_of_Rahba._Maqamat_of_al-Hariri%2C_Baghdad_1237.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AAbu_Zaid_before_the_Governor_of_Rahba._Maqamat_of_al-Hariri%2C_Baghdad_1237.jpg.",
+    "local_file": "tv-law-governor-rahba-1237.jpg",
+    "sha256": "858489b20aa5d7710cda2f50be6861dfe79dbde8b23e388f4a8e736d85e7b853",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "courts"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id law-governor-rahba-1237. A petitioner standing before a seated governor in a Baghdad manuscript of 1237, earlier and Abbasid rather than Timurid; it shows the shape of a governor's audience, not Fars and not Pir-Muhammad."
+  },
+  {
+    "id": "1ba973ed-49ea-4ad8-bc02-61e281020079",
+    "title": "The prince Bahram Gur, a portrait of Iskandar Sultan (Anthology of Iskandar Sultan)",
+    "institution": "Calouste Gulbenkian Museum, Lisbon",
+    "shelfmark": "LA 161",
+    "folio": null,
+    "date_or_period": "1410",
+    "creator_or_scribe": "Unnamed painters of Iskandar Sultan's atelier",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AEskandar-Soltan_%28full_length%29._Prince_Bahram-Gor%2C_illustration_of_Nezami_intended_for_the_Timurid_prince_Eskandar-Soltan_%28whose_portrait_it_is%29%2C_Shiraz_%28Iran%29%2C_1410%3B_Gulbenkian_Foundation%2C_Lisbon.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AEskandar-Soltan_%28full_length%29._Prince_Bahram-Gor%2C_illustration_of_Nezami_intended_for_the_Timurid_prince_Eskandar-Soltan_%28whose_portrait_it_is%29%2C_Shiraz_%28Iran%29%2C_1410%3B_Gulbenkian_Foundation%2C_Lisbon.jpg.",
+    "local_file": "tv-isk-gulbenkian-portrait.jpg",
+    "sha256": "b76044022fef1457a95789f8d365cd199f1b1cd3a0257e88e0fbcb4895d5c0c9",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "courts"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id isk-gulbenkian-portrait. Iskandar Sultan in the guise of the hero Bahram Gur, as the Commons title for this folio identifies him; the second prince of this scene, pictured by his own atelier, not a scene from Ibn Turka's service."
+  },
+  {
+    "id": "df13446d-28d9-4d06-a6a7-ed084b737875",
+    "title": "Astrological themes (Anthology of Iskandar Sultan, f. 539)",
+    "institution": "British Library, London (the Commons title says 'British Museum')",
+    "shelfmark": "Add. 27261, f. 539",
+    "folio": null,
+    "date_or_period": "1410-11",
+    "creator_or_scribe": "Unnamed scribe and painters of Iskandar Sultan's atelier",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AAnthology_of_Iskandar._Astrological_themes_%28folio_539%29_-_Shiraz%2C_1410-1410._London%2C_British_Museum%2C_Add._27261.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AAnthology_of_Iskandar._Astrological_themes_%28folio_539%29_-_Shiraz%2C_1410-1410._London%2C_British_Museum%2C_Add._27261.jpg.",
+    "local_file": "tv-isk-astrological.jpg",
+    "sha256": "be67e53ffd7e7672045f0e62c27e4928f731b4805fef04fac7d570e8941803e1",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "courts"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id isk-astrological. A page on the constellations from the miscellany of the prince these two commentaries are for, showing that court's taste for the sciences of the heavens; it is not a page of either commentary."
+  },
+  {
+    "id": "470c6bae-1085-4591-8789-bf5c8d00da55",
+    "title": "Horoscope of Iskandar Sultan, chart for his birth on 25 April 1384 (from the Book of the Birth of Iskandar)",
+    "institution": "Wellcome Collection, London",
+    "shelfmark": "MS Persian 474 (from the Commons record; item L0025988 / L0015229)",
+    "folio": null,
+    "date_or_period": "undated on the Commons record (the chart is for a birth of 25 April 1384)",
+    "creator_or_scribe": "Unnamed astrologer and painters",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AHoroscope_of_Iskandar_Sultan_based_on_his_birthdate_%2825_Avril_1384%29%2C_from_%27The_book_of_birth_of_Iskandar%22_Wellcome_%28_L0025988_USE_L15229%29_L0025988.jpg",
+    "rights_note": "CC BY 4.0 (Commons licence key 'cc-by-4.0', class CC-BY), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AHoroscope_of_Iskandar_Sultan_based_on_his_birthdate_%2825_Avril_1384%29%2C_from_%27The_book_of_birth_of_Iskandar%22_Wellcome_%28_L0025988_USE_L15229%29_L0025988.jpg. Attribution required and displayed: Image: Wellcome Collection, CC BY 4.0.",
+    "local_file": "tv-isk-horoscope.jpg",
+    "sha256": "ad9b0c68c2bab5098a8bd673a94eb859e9cf82a27d7fcea4133fc38e99f70f86",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "courts"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id isk-horoscope. The prince's own birth chart, made for a book about him; it says nothing about 1414 or his fall."
+  },
+  {
+    "id": "f2ff74f9-c551-4213-9150-b2e717bf9de4",
+    "title": "Leo, from the Kitab al-Bulhan (Book of Wonders)",
+    "institution": "Bodleian Library, Oxford",
+    "shelfmark": "MS Arab. d. 138 (from the OCCULTIMGDB catalogue; the Commons page links the Bodleian record)",
+    "folio": null,
+    "date_or_period": "1350-1450 on Commons (our OCCULTIMGDB catalogue places this manuscript in Jalayirid Baghdad, late 14th century; not stated on the Commons page)",
+    "creator_or_scribe": "Text attributed on the Commons record to 'Abd al-Hasan al-Isfahani; painter unnamed",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AKitab_al-Bulhan%2C_Leo.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AKitab_al-Bulhan%2C_Leo.jpg.",
+    "local_file": "tv-bulhan-leo.jpg",
+    "sha256": "dfaabaa5fe38c3bbda4cc07720065565c3f626f2c58144e214c7e34b57288119",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "courts"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: occultimgdb. Plate id bulhan-leo. A page of astrological figures from a divination book of Ibn Turka's own age, showing a neighbouring occult science; it is not lettrism and not the Mafahis."
+  },
+  {
+    "id": "13e0f868-2bcf-4193-b41d-a71c3cd757ca",
+    "title": "Shahrukh, detail from the Zafarnama of Ibrahim Sultan (painted in his lifetime)",
+    "institution": "Freer Gallery of Art, Washington (F1948.18, per the Commons description); this file is a retouched detail",
+    "shelfmark": "F1948.18",
+    "folio": null,
+    "date_or_period": "1435-36",
+    "creator_or_scribe": "Unnamed painters of Ibrahim Sultan's atelier",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AContemporary_portrait_of_Shah_Rukh%2C_painted_in_his_lifetime_in_1435-36%2C_by_commission_of_his_son_Ibrahim_Sultan.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AContemporary_portrait_of_Shah_Rukh%2C_painted_in_his_lifetime_in_1435-36%2C_by_commission_of_his_son_Ibrahim_Sultan.jpg.",
+    "local_file": "tv-zaf-shahrukh-portrait.jpg",
+    "sha256": "fb93996b4a822339f3e1e5b0c8ca5936fa52263546ff3bb395caa0efb0a25401",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "trials"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id zaf-shahrukh-portrait. A court likeness of the ruler who receives the charge, commissioned by his son in 1436; it is not a Herat audience of 1422 and the Commons file is a lightly retouched detail."
+  },
+  {
+    "id": "4877dc3e-44ec-4d34-a8d6-3ee00b8c01e9",
+    "title": "Frontispiece of the thirteenth section of the Fatawa (legal opinions) of Qadikhan",
+    "institution": "Los Angeles County Museum of Art",
+    "shelfmark": "M.73.5.22",
+    "folio": null,
+    "date_or_period": "second half of the 15th century (later than this scene)",
+    "creator_or_scribe": "Unnamed Mamluk scribe and illuminator",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AFrontispiece_from_the_Thirteenth_Section_of_the_Fatawi_%28Legal_Opinions%29_of_Qadi_Khan_LACMA_M.73.5.22.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AFrontispiece_from_the_Thirteenth_Section_of_the_Fatawi_%28Legal_Opinions%29_of_Qadi_Khan_LACMA_M.73.5.22.jpg.",
+    "local_file": "tv-mam-fatawi-qadikhan-13.jpg",
+    "sha256": "7034eb5eb89cd621fe0e02732f99c3909d534faaa19ff3404eedd354d265f357",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "trials"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id mam-fatawi-qadikhan-13. A working legal compendium from Mamluk Egypt, a later copy, showing what a qadi's library and its certifying notes looked like; it says nothing about the school Ibn Turka judged by or about Yazd."
+  },
+  {
+    "id": "8654b7fe-9480-45da-87cc-a6fbfd3a3564",
+    "title": "Baysunghur attending a hunt, detail of the frontispiece of Baysunghur's Shahnama",
+    "institution": "Golestan Palace Library, Tehran",
+    "shelfmark": "MS 716",
+    "folio": null,
+    "date_or_period": "1430",
+    "creator_or_scribe": "Unnamed Herat court painters",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3ABaysunghur_attending_a_hunt._Shahnama_%28Baysunghur%29_%28Gulistan_Museum_Ms_716%29_Frontispiece%2C_1430_painting.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3ABaysunghur_attending_a_hunt._Shahnama_%28Baysunghur%29_%28Gulistan_Museum_Ms_716%29_Frontispiece%2C_1430_painting.jpg.",
+    "local_file": "tv-herat-baysunghur-hunt.jpg",
+    "sha256": "8f87a526d6a6bc2472c6479cca0c155c5c8918de5491dcd3c08b6fed733a2750",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "trials"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id herat-baysunghur-hunt. The prince who asked for the book, in his own Shahnama four years after the request; it is a detail of a hunt frontispiece, not the commission or any part of the treatise."
+  },
+  {
+    "id": "83c47877-f1c2-40fa-8915-0115f4f6a64b",
+    "title": "The journey of the Prophet Muhammad, folio from Hafiz-i Abru's Majma' al-tawarikh",
+    "institution": "Metropolitan Museum of Art, New York (the Commons record names the museum but gives no accession number)",
+    "shelfmark": "not given on the Commons record",
+    "folio": null,
+    "date_or_period": "1425",
+    "creator_or_scribe": "Unnamed Herat painters (text by Hafiz-i Abru)",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AJourney_of_the_Prophet_Muhammad%2C_Folio_from_the_Majma_al-Tavarikh%2C_1425%2C_Metmuseum.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AJourney_of_the_Prophet_Muhammad%2C_Folio_from_the_Majma_al-Tavarikh%2C_1425%2C_Metmuseum.jpg.",
+    "local_file": "tv-herat-majma-journey-1425.jpg",
+    "sha256": "1bf87ff01c3088932e9cf57f3c8ee7a66a7c97b8011de855e59f58e4ecc82738",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "trials"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id herat-majma-journey-1425. A Herat picture of the Prophet's life painted a year before this treatise, showing how the court's own historian illustrated prophetic events; it does not show the splitting of the moon."
+  },
+  {
+    "id": "44a7b68e-f0b1-4065-a61d-99577d6bf663",
+    "title": "Heading of chapter VIII, al-Anfal, with the opening formula (double page, so-called Sultan Barquq's Qur'an)",
+    "institution": "British Library, London",
+    "shelfmark": "Or. 848, fols. 26v-27r",
+    "folio": null,
+    "date_or_period": "c. 1370-75",
+    "creator_or_scribe": "Copied by 'Ali ibn Muhammad al-Mukattib al-Ashrafi and illuminated by Ibrahim al-Amidi (both attributions)",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AHeading_for_Chapter_VIII%2C_Al-Anfal._Double-page_from_the_juz%27_9_of_the_Sultan_Barquq%27s_Qur%27an_%28BL_Or_848_f._26v-27r%29.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AHeading_for_Chapter_VIII%2C_Al-Anfal._Double-page_from_the_juz%27_9_of_the_Sultan_Barquq%27s_Qur%27an_%28BL_Or_848_f._26v-27r%29.jpg.",
+    "local_file": "tv-mam-barquq-quran-anfal.jpg",
+    "sha256": "384307b3294a201e8fd62f8b918bf005324550ecafb1922a858d42a87f543f3c",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "trials"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id mam-barquq-quran-anfal. A sura opening from a Cairo Qur'an, where the formula this commentary explains stands in its illuminated place; it is not a lettrist or Timurid copy."
+  },
+  {
+    "id": "391f6b3f-75dc-44cb-ab8d-f6753d8ee2cd",
+    "title": "Abu Zayd before the governor of Merv (thirty-eighth maqama, al-Hariri's Maqamat)",
+    "institution": "St Petersburg (the Commons title says only 'Saint-Petersburg Ms. S.23'; the holding library is not named on the file page)",
+    "shelfmark": "Ms. S.23",
+    "folio": null,
+    "date_or_period": "13th century",
+    "creator_or_scribe": "Unnamed Iraqi painter",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AAbu_Zayd_before_the_governor_of_Merv_%28thirty-eighth_maq%C4%81ma%29._Al-Hariri%2C_Maq%C4%81m%C4%81t%2C_thirteenth_century._Saint-Petersburg_Ms._S.23.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AAbu_Zayd_before_the_governor_of_Merv_%28thirty-eighth_maq%C4%81ma%29._Al-Hariri%2C_Maq%C4%81m%C4%81t%2C_thirteenth_century._Saint-Petersburg_Ms._S.23.jpg.",
+    "local_file": "tv-law-governor-merv-s23.jpg",
+    "sha256": "5dba9a45621e00b70e0d1524d7500614a752403322055496f93332d8478d70e3",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "trials"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id law-governor-merv-s23. A hearing before a governor, in an Iraqi manuscript two centuries earlier; it pictures being made to answer, not Herat and not 1426."
+  },
+  {
+    "id": "349e3467-d0e6-44f1-a300-159045e570e3",
+    "title": "A royal court, Baysunghur's Shahnama (folio not identified)",
+    "institution": "Golestan Palace Library, Tehran (per the Commons category 'Baysunghur's Shahnameh'; the file page does not name the folio)",
+    "shelfmark": "MS 716 (assumed from the category)",
+    "folio": null,
+    "date_or_period": "1430",
+    "creator_or_scribe": "Unnamed Herat court painters",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3ARoyal_court._Shahnama_of_Baysunghur_%281430%29.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3ARoyal_court._Shahnama_of_Baysunghur_%281430%29.jpg.",
+    "local_file": "tv-herat-baysunghur-royal-court.jpg",
+    "sha256": "ebc801d8076538fd92cfa5633765b39f57ba833628a60ce12d3452d05b26b65e",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "trials"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id herat-baysunghur-royal-court. A court audience in the Herat manuscript Shahrukh's son commissioned in 1430, four years after the hearing; it shows a Shahnama reign as the atelier imagined a court, not this hearing."
+  },
+  {
+    "id": "2f93513f-2a47-481e-b048-189347b213aa",
+    "title": "Two camel riders in bedouin costume (al-Hariri's Maqamat)",
+    "institution": "British Library, London",
+    "shelfmark": "Or. 9718",
+    "folio": null,
+    "date_or_period": "late 13th century",
+    "creator_or_scribe": "Unnamed Syrian painter",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AMaqamat%2C_Syria%2C_late_13th-century%2C_British_Library%2C_Ms._Or._9718_Two_camel_riders_in_Arab_bedouin_costumes.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AMaqamat%2C_Syria%2C_late_13th-century%2C_British_Library%2C_Ms._Or._9718_Two_camel_riders_in_Arab_bedouin_costumes.jpg.",
+    "local_file": "tv-mam-camel-riders-or9718.jpg",
+    "sha256": "f765f2e325725145edf8f02b06ae303bd5141527d70c0457c47927be373a5dbd",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "exile"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id mam-camel-riders-or9718. The period's picture of travelling, made a century and a half before the exile; it is not Timurid and not the road out of Herat."
+  },
+  {
+    "id": "41c3f3bf-a898-4055-b0d4-9d02364f205c",
+    "title": "The Poet at the Judge's Court (Sa'di's Bustan, the Cairo Bustan)",
+    "institution": "Dar al-Kutub, Cairo (National Library of Egypt)",
+    "shelfmark": "Adab Farisi 22, f. 30b",
+    "folio": null,
+    "date_or_period": "1488-89 (fifty-six years after Ibn Turka's death)",
+    "creator_or_scribe": "Bihzad (his signature is on the porch inscription, per the Commons page)",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AThe_Poet_at_the_Judge%E2%80%99s_Court%2C_from_the_Cairo_Bustan._Herat%2C_December_1488%E2%80%93November_1489._Bihzad._Dar_al-kutub%2C_Adab_farisi_22%2C_folio_30b.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AThe_Poet_at_the_Judge%E2%80%99s_Court%2C_from_the_Cairo_Bustan._Herat%2C_December_1488%E2%80%93November_1489._Bihzad._Dar_al-kutub%2C_Adab_farisi_22%2C_folio_30b.jpg.",
+    "local_file": "tv-bustan-poet-judge.jpg",
+    "sha256": "c9b517caf309a1a4fb2f4f68836374f5a8a722f540ad22ffb63236aaef5bbe2c",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "exile"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: gallery. Plate id bustan-poet-judge. A judge's court painted in Herat in 1488, late but from the same city and craft; it pictures a hearing, not this one, and not Simnan."
+  },
+  {
+    "id": "465daa61-95fb-489c-8e22-48680bee7c79",
+    "title": "Mourning at the bier of Muhammad Sultan Mirza (double page, Zafarnama of Ibrahim Sultan)",
+    "institution": "dispersed leaves of the Zafarnama; the holding is not recorded on the Commons page (folios 373v-374r)",
+    "shelfmark": "fols. 373v-374r",
+    "folio": null,
+    "date_or_period": "1436 (AH 839); the death pictured is of 1403",
+    "creator_or_scribe": "Unnamed painters of Ibrahim Sultan's atelier",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AThe_funerals_of_Muhammad_Sultan_Mirza_ibn_Jahangir_in_late_Spring_1403._Zafarnama_of_1436._Facing_folios_373v-374r.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AThe_funerals_of_Muhammad_Sultan_Mirza_ibn_Jahangir_in_late_Spring_1403._Zafarnama_of_1436._Facing_folios_373v-374r.jpg.",
+    "local_file": "tv-zaf-funeral-1403.jpg",
+    "sha256": "fb79c28d7e82e23aedf1642ec5be401b50b9aec57de8c130e6328efa7c34253f",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "exile"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id zaf-funeral-1403. How the Timurid court painted mourning in 1436, for a prince who died in 1403; it is a mourning picture of the age, not Ibn Turka's death or burial."
+  },
+  {
+    "id": "4cc34349-3756-4b55-97ad-c0175ca57260",
+    "title": "First text page of Prince Baysunghur's Gulistan",
+    "institution": "Chester Beatty Library, Dublin",
+    "shelfmark": "Per 119.10, f. 1v",
+    "folio": null,
+    "date_or_period": "830 AH / 1427",
+    "creator_or_scribe": "Calligraphy in nasta'liq by Ja'far Tabrizi",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AFirst_Page_of_the_Baysunghur%27s_Gulistan_%28CBL_Per119.10f.1.v%29.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AFirst_Page_of_the_Baysunghur%27s_Gulistan_%28CBL_Per119.10f.1.v%29.jpg.",
+    "local_file": "tv-herat-gulistan-1427-first-page.jpg",
+    "sha256": "894373d934cb041f372d6060bb459bd17abbc3eb930025cc7072734351271aec",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "copyist"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id herat-gulistan-1427-first-page. A dated, signed first page from the Herat royal workshop in the very years Ibn Turka's copyists worked; it is the kind of page Act V's copyist produces, not one of his."
+  },
+  {
+    "id": "083ee812-ca4b-4c0a-9fe3-ad120a76b0a2",
+    "title": "A library, from al-Hariri's Maqamat",
+    "institution": "Bibliotheque nationale de France, Manuscrits",
+    "shelfmark": "arabe 5847 (per the Commons category)",
+    "folio": null,
+    "date_or_period": "1237",
+    "creator_or_scribe": "Attributed to Yahya ibn Mahmud al-Wasiti",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AA_Library_in_Golden_Islamic_Age.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AA_Library_in_Golden_Islamic_Age.jpg.",
+    "local_file": "tv-law-library-basra-1237.jpg",
+    "sha256": "710bc77c73b46a5b25583b0fdccfec8271d47023c0da67c5b8a6f3e19c66dfb3",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "copyist"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id law-library-basra-1237. Readers before a wall of books in 1237: the idea of a collection to be consulted; it is not fifteen leaves and not MS Majlis 10196."
+  },
+  {
+    "id": "c862565c-236f-455a-8683-033cbf3f16d9",
+    "title": "Title page and autograph ijaza of al-Hariri for the copyist (Maqamat, MS Cairo Adab 105, f. 5a)",
+    "institution": "Dar al-Kutub, Cairo (per the source cited on the Commons page, MacKay 1971)",
+    "shelfmark": "Adab 105, f. 5a",
+    "folio": null,
+    "date_or_period": "12th century (al-Hariri died 1122)",
+    "creator_or_scribe": "al-Hariri (autograph certificate); copyist not named on the Commons page",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AMs_Cairo_Adab_105%2C_folio_5a%2C._Title_and_autograph_ijaza_written_by_al-Hariri_for_the_copyist.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AMs_Cairo_Adab_105%2C_folio_5a%2C._Title_and_autograph_ijaza_written_by_al-Hariri_for_the_copyist.jpg.",
+    "local_file": "tv-ijaza-cairo-adab105.jpg",
+    "sha256": "328ae19c65fc9ad697f65d93aff5adb40f56abd1fe52e02d75c0074809493e95",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "copyist"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id ijaza-cairo-adab105. An author's own certificate of transmission for a copyist, two centuries before Ibn Turka; it is the kind of document an audition note belongs to, not the Landberg note, and the reproduction is a rough high-contrast scan."
+  },
+  {
+    "id": "53aa1216-15c7-44d6-8ba4-a1e9635f0cbd",
+    "title": "Title page of the Histoire de Timur-Bec (Delft, 1723), Petis de la Croix's French translation of Yazdi's Zafarnama",
+    "institution": "Copy offered by a bookseller (the Commons page cites AbeBooks); the holder is not a library",
+    "shelfmark": "not applicable",
+    "folio": null,
+    "date_or_period": "1723 (MDCCXXIII)",
+    "creator_or_scribe": "Translated by Petis de la Croix from the Persian of Sharaf al-Din 'Ali Yazdi; printed by Reinier Boitet",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AHistoire_de_Timur-Bec._Title_page%2C_1723_edition.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 printed reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AHistoire_de_Timur-Bec._Title_page%2C_1723_edition.jpg.",
+    "local_file": "tv-print-timurbec-fr-title.jpg",
+    "sha256": "9d67810440f0c7147491003c33b6b50f4b5925333c5319d689f918d0820c26e4",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "printed",
+      "historian"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id print-timurbec-fr-title. Yazdi, who attended Ibn Turka's teaching, reached Europe through this 1723 translation; a printed edition of one chronicler among others' reports of the age, and it does not mention Ibn Turka."
+  },
+  {
+    "id": "97f42317-45ae-4e34-b713-418e8feb8586",
+    "title": "Khusraw and Shirin in a garden (Anthology of Iskandar Sultan, f. 159b)",
+    "institution": "British Library, London",
+    "shelfmark": "Add. 27261, f. 159b",
+    "folio": null,
+    "date_or_period": "1410-11",
+    "creator_or_scribe": "Unnamed painters of Iskandar Sultan's atelier",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AKhosrau_and_Shirin_in_a_garden._Anthology_of_Iskandar_Sultan._%28British_Library%2C_Add._27261%29_folio_159b.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AKhosrau_and_Shirin_in_a_garden._Anthology_of_Iskandar_Sultan._%28British_Library%2C_Add._27261%29_folio_159b.jpg.",
+    "local_file": "tv-isk-shirin-garden.jpg",
+    "sha256": "1c18d65de14156aa63609b4ffe1d041daee4218f5e9536265aeaafd32dd082dc",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "courts"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id isk-shirin-garden. A princely garden gathering from Iskandar's own book, for any scene in his courts that has no picture of its own; it illustrates Nizami, not Ibn Turka."
+  },
+  {
+    "id": "0e4caff8-6aad-494a-aba2-dc7f3564100c",
+    "title": "Timur receiving guests at the wedding of his son Jahangir, 1374 (folio 139, Zafarnama of Ibrahim Sultan)",
+    "institution": "Villa I Tatti, Harvard University Center for Italian Renaissance Studies, Florence (per the Commons sister file)",
+    "shelfmark": "folio 139",
+    "folio": null,
+    "date_or_period": "1436 (AH 839); the wedding pictured is of June 1374",
+    "creator_or_scribe": "Unnamed painters of Ibrahim Sultan's atelier",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3ATimur_Receiving_Guests_at_the_Wedding_of_His_Son%2C_Illustrated_folio_from_the_Zafarnama_by_Yazdi%2C_Iran%2C_Shiraz%2C_Timurid_period%2C_1436.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3ATimur_Receiving_Guests_at_the_Wedding_of_His_Son%2C_Illustrated_folio_from_the_Zafarnama_by_Yazdi%2C_Iran%2C_Shiraz%2C_Timurid_period%2C_1436.jpg.",
+    "local_file": "tv-zaf-wedding-guests.jpg",
+    "sha256": "1daa8776e6318242dae1dc143bf9e21b5cfc9aae2aa98e2d49a7272aa433e2b0",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "hostage"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id zaf-wedding-guests. The wedding of Temur's son Jahangir, who was the father of Pir-Muhammad; a Timurid court scene painted in 1436, not Ibn Turka's time and, as its own historians note, a stock image of a ruler with attendants."
+  },
+  {
+    "id": "80568e29-5f20-44c4-b5c3-a86264408863",
+    "title": "Timur hunting near Bukhara, spring 1389 (folio 160v, Zafarnama of Ibrahim Sultan)",
+    "institution": "Arthur M. Sackler Gallery, Smithsonian Institution (Art and History Trust collection, per the Commons description)",
+    "shelfmark": "folio 160v",
+    "folio": null,
+    "date_or_period": "1436 (AH 839); the hunt pictured is of 1389",
+    "creator_or_scribe": "Unnamed painters of Ibrahim Sultan's atelier",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3ATimur_hunting_near_Bukhara_after_the_spring_campaign_of_1389._Zafarnama_of_1436._Folio_160v.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3ATimur_hunting_near_Bukhara_after_the_spring_campaign_of_1389._Zafarnama_of_1436._Folio_160v.jpg.",
+    "local_file": "tv-zaf-hunt-bukhara.jpg",
+    "sha256": "f9887ff7455fcefa9698b67e37599603789d825bb01fef1d83c3a69fdf68780b",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "hostage"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id zaf-hunt-bukhara. Temur's Transoxiana in the years just after Ibn Turka's family was taken there; a hunt of 1389 painted in 1436, not any event of his life."
+  },
+  {
+    "id": "eafd2c45-348a-4d11-a77b-9e5e89347213",
+    "title": "The Egyptian embassy and the giraffe, in The History of Timur-Bec (Darby's English translation, vol. 2, pp. 360-61)",
+    "institution": "Scan from the Internet Archive (per the Commons page); the copy is a library copy of the 1723 edition",
+    "shelfmark": "not applicable",
+    "folio": null,
+    "date_or_period": "1723",
+    "creator_or_scribe": "Translated by John Darby from Petis de la Croix's French, after Sharaf al-Din 'Ali Yazdi",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AA_giraffe_from_Egypt_in_Timur%27s_Samarcand_in_1404%2C_in_The_History_of_Timur-Bec_%28Vol._2%29%2C_by_Sharaf_al-D%C4%ABn_%CA%BBAl%C4%AB%2C_translation_by_John_Darby_in_1723.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 printed reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AA_giraffe_from_Egypt_in_Timur%27s_Samarcand_in_1404%2C_in_The_History_of_Timur-Bec_%28Vol._2%29%2C_by_Sharaf_al-D%C4%ABn_%CA%BBAl%C4%AB%2C_translation_by_John_Darby_in_1723.jpg.",
+    "local_file": "tv-print-timurbec-giraffe.jpg",
+    "sha256": "2ee4200df7c36f79e2042760f51ac0fabee2fd4b763ca97f02fd22e759edc5db",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "printed",
+      "hostage"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id print-timurbec-giraffe. The printed 1723 text of Yazdi's account of the Mamluk envoys who brought a giraffe; a page of an early modern translation, not a period picture and not Ibn Turka."
+  },
+  {
+    "id": "8578dc98-ee98-4d8a-992f-d0f5f73cd584",
+    "title": "Pastoral scene with yurts (marginal drawing, possibly by Sultan Ahmad Jalayir)",
+    "institution": "not named on the Commons record (a Jalayirid divan folio)",
+    "shelfmark": "not given",
+    "folio": null,
+    "date_or_period": "1400-1403",
+    "creator_or_scribe": "Possibly Sultan Ahmad Jalayir (Commons: 'possibly')",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3ADrawing_of_pastoral_scene_with_yurts._Possibly_made_by_Sultan_Ahmad%2C_1400-1403%2C_Baghdad.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3ADrawing_of_pastoral_scene_with_yurts._Possibly_made_by_Sultan_Ahmad%2C_1400-1403%2C_Baghdad.jpg.",
+    "local_file": "tv-jal-yurts.jpg",
+    "sha256": "c6d4375401711e8c8f26d19bcdc9ef7930ed245e5860604374ce8a6e2620d412",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "exile"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: gallery. Plate id jal-yurts. How the Jalayirid court in Baghdad drew a nomad camp c. 1400, a road-and-camp picture from the years of Temur's wars; it is not a place Ibn Turka lived."
+  },
+  {
+    "id": "52f3d36d-a28d-4500-acd7-aae722b49f95",
+    "title": "Adam and the angels, from Hafiz-i Abru's Kulliyat-i Tarikhi",
+    "institution": "Topkapi Palace Museum Library, Istanbul",
+    "shelfmark": "MS Bagdat 282 (B. 282), f. 16",
+    "folio": null,
+    "date_or_period": "1415-16",
+    "creator_or_scribe": "Attributed on the Commons record to Ma'ruf Baghdadi",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AIstanbul%2C_Topkap%C4%B1_Saray_M%C3%BCzesi_K%C3%BCt%C3%BCphanesi%2C_MS_Ba%C4%9Fdat_282_fol_16_Adam_and_the_Angels_watched_by_Iblis.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 painting reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AIstanbul%2C_Topkap%C4%B1_Saray_M%C3%BCzesi_K%C3%BCt%C3%BCphanesi%2C_MS_Ba%C4%9Fdat_282_fol_16_Adam_and_the_Angels_watched_by_Iblis.jpg.",
+    "local_file": "tv-herat-kulliyat-adam-angels.jpg",
+    "sha256": "67dfd7e0bdafdf9861e2acf24e1e3680863f6981bfe765787457f340e0c003c8",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "painting",
+      "historian"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id herat-kulliyat-adam-angels. A page from the chronicle of Shahrukh's court historian, the kind of source through which others' reports of the age reach the desk; the picture is Adam and the angels and says nothing of Ibn Turka."
+  },
+  {
+    "id": "ba7e4bc8-2a68-451a-897b-aed0fcccf246",
+    "title": "Orion, from al-Sufi's Book of the Fixed Stars made for Ulugh Beg",
+    "institution": "Bibliotheque nationale de France, Manuscrits",
+    "shelfmark": "arabe 5036, fol. 193v",
+    "folio": null,
+    "date_or_period": "c. 1430-1440",
+    "creator_or_scribe": "Unnamed painters; text by 'Abd al-Rahman al-Sufi",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AKit%C4%81b_suwar_al-kaw%C4%81kib_al-%E1%B9%AF%C4%81bita%2C_Orion%2C_BnF-Arabe-5036-193v.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AKit%C4%81b_suwar_al-kaw%C4%81kib_al-%E1%B9%AF%C4%81bita%2C_Orion%2C_BnF-Arabe-5036-193v.jpg.",
+    "local_file": "tv-astro-sufi-orion-5036.jpg",
+    "sha256": "6b275ed7bcec235de18aca8cb8eb4f617514be337fb52e8db626021d4d077f63",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "historian"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: web. Plate id astro-sufi-orion-5036. Another page of the Timurid star-book of the 1430s, for the historian's desk to show what a learned manuscript of Ibn Turka's world looked like; not evidence about him."
+  },
+  {
+    "id": "41a245e6-aa1e-4e5f-8c71-b21020ee6772",
+    "title": "Sagittarius (a centaur archer), from the Kitab al-Bulhan",
+    "institution": "Bodleian Library, Oxford",
+    "shelfmark": "MS Arab. d. 138 (from the OCCULTIMGDB catalogue)",
+    "folio": null,
+    "date_or_period": "see the Leo plate (Commons dates the manuscript 1350-1450)",
+    "creator_or_scribe": "Text attributed to 'Abd al-Hasan al-Isfahani; painter unnamed",
+    "digitization_source_url": "https://commons.wikimedia.org/wiki/File%3AKitab_al-Bulhan_---_zodiac_centaur_sagittarius.jpg",
+    "rights_note": "Public domain (Commons licence key 'pd', class PD), read from Commons' structured licence data by the imagelab/scripts/fetch_commons.py gate plus a stricter NC/ND check (TurkaVita/scripts/fetch_plates.py) on 2026-09-28. A pre-1900 manuscript reproduced faithfully in 2-D. Source page: https://commons.wikimedia.org/wiki/File%3AKitab_al-Bulhan_---_zodiac_centaur_sagittarius.jpg.",
+    "local_file": "tv-bulhan-sagittarius.jpg",
+    "sha256": "71ff3fc6a7e0e061866725964ec80197e337a9fd07ae35564b70c31623387bc9",
+    "cited_in": [
+      "turkavita-plates"
+    ],
+    "tags": [
+      "turkavita",
+      "plate",
+      "manuscript",
+      "historian"
+    ],
+    "added_by": "claude (TurkaVita illustrator pass)",
+    "added_date": "2026-09-28",
+    "usage_status": "approved",
+    "notes": "TurkaVita illustrator pass 2026-09-28. Origin: occultimgdb. Plate id bulhan-sagittarius. A second astrological figure from the same divination book, for the historian's desk; another science of the age, not evidence about Ibn Turka."
   }
 ]

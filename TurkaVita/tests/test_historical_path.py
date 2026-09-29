@@ -15,35 +15,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(HERE), "scripts"))
 import narrative_lib as nl                                                      # noqa: E402
 
 
-def historical_walk(scenes, hyps):
-    sid, state, trail, seen = nl.first_scene(scenes), {}, [], set()
-    while sid != "END":
-        if sid in seen:
-            return trail, state, f"cycle at {sid}"
-        seen.add(sid)
-        s = scenes[sid]
-        if s.get("rulings"):
-            wrong = {r["id"]: ("refute" if r["answer"] == "stand" else "stand") for r in s["rulings"]}
-            state = nl.apply(nl.ruling_effects(s, wrong), state)
-        if s.get("commitment"):
-            state = nl.apply(nl.commit_effects(hyps, state, s, s["commitment"]["underdetermined_option"]), state)
-        if s.get("composer"):
-            state = nl.apply(nl.composer_effects(s, {x["id"]: x["options"][0]["id"] for x in s["composer"]["slots"]}), state)
-        if s.get("sorter"):
-            state = nl.apply(nl.sort_effects(s, list(reversed(s["sorter"]["truth"]))), state)
-        hist = [c for c in s["choices"] if c.get("historical")]
-        if s.get("unrecorded"):
-            pick = next((c for c in s["choices"] if not (c.get("requires") or c.get("requires_min") or c.get("requires_max"))), None)
-        else:
-            pick = hist[0] if hist else None
-        if pick is None:
-            return trail, state, f"{sid}: no historical choice and not marked unrecorded"
-        if not nl.available(pick, state):
-            return trail, state, f"{sid}: the historical choice {pick['id']} is closed to a player who followed the record so far (state {({k: v for k, v in state.items() if k.startswith(('court.', 'press.'))})})"
-        trail.append((sid, pick["id"]))
-        state = nl.apply(pick["effects"], state)
-        sid = pick.get("next") or s["next"]
-    return trail, state, None
+historical_walk = nl.historical_walk
 
 
 class HistoricalPath(unittest.TestCase):

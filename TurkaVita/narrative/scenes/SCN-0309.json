@@ -4,7 +4,7 @@
  "status": "draft",
  "act": "trials",
  "title": "830/1427: the recall",
- "dramatic_question": "A Ḥurūfī has struck at Shāhrukh outside the congregational mosque in Herat, and men with suspected Ḥurūfī ties are being taken. You have just left Herat. What do you do when the summons reaches you?",
+ "dramatic_question": "The summons reaches you on the road out of Herat. What do you do?",
  "situation": {
   "when": "830/1427",
   "where": "Herat, and the road out of it",
@@ -29,14 +29,14 @@
   }
  ],
  "prose": [
-  "Aḥmad-i Lur strikes at Shāhrukh at the door of the congregational mosque in Herat, and is killed where he stands. After it Shāhrukh's men take those the court suspects of Ḥurūfī ties: Qāsim-i Anvār, the calligrapher Maʿrūf-i Khaṭṭāt, and you.",
+  "Shāhrukh's men are taking those the court suspects of Ḥurūfī ties: Qāsim-i Anvār, the calligrapher Maʿrūf-i Khaṭṭāt, and you.",
   "You have just left Herat. Your lettrist works never name the Ḥurūfīs, and the charge of Sufi bias made against you in 1422 is read by Melvin-Koushki as probably meant to tie you to them. He reads the purge as Shāhrukh consolidating the state, and notes that the attempt may have been staged by the ruler himself, a conjecture the game does not treat as fact.",
   "A summons comes after you. You can obey it, you can turn away, or you can look to the people who have helped you before."
  ],
  "choices": [
   {
    "id": "A",
-   "label": "Obey the recall and go back to Herat.",
+   "label": "Obey the recall and go back to Herat, whatever waits there.",
    "strategy": "obey_the_recall",
    "epistemic_label": "documented",
    "based_on": [
@@ -60,7 +60,7 @@
   },
   {
    "id": "B",
-   "label": "Do not go back. Turn away from Herat and try to reach a governor who will shelter you.",
+   "label": "Turn away from Herat and try to reach a governor who will shelter you.",
    "strategy": "run",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -76,13 +76,13 @@
     "score.biography": -1
    },
    "costs": [
-    "Running reads as guilt: exposure rises steeply."
+    "You keep more of what you have: your livelihood falls by less than the record has it fall. Running reads as guilt, and exposure rises steeply."
    ],
-   "feedback": "No source has him refusing a recall. The record has him summoned back and exiled; running would only change how it looks. The game returns you to the record."
+   "feedback": "No source has him refusing a recall. The record has him summoned back and exiled; running would only change how it looks. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
   },
   {
    "id": "C",
-   "label": "Obey the recall, but first ask Bāysunghur, who received you with particular favour and asked for the Suʾl al-Mulūk, to speak for you.",
+   "label": "Obey the recall, but first ask Bāysunghur, who favoured you, to speak for you.",
    "strategy": "obey_after_asking_baysunghur",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -97,13 +97,14 @@
     "press.exposure": 2,
     "life.recall": "obeyed",
     "life.exile": "exiled",
-    "score.biography": -1
+    "score.biography": -1,
+    "court.baysunghur": -1
    },
    "costs": [
-    "Needs Bāysunghur's favour already earned.",
-    "You lose less, but not what the record says."
+    "Needs Bāysunghur's favour already earned, and spends it.",
+    "You lose less than the record has you lose. Asking a prince to speak for a suspect adds to your exposure."
    ],
-   "feedback": "The sources have Bāysunghur addressed for help only years later, in the second apology, which asks his intercession to little real effect. No source has him speaking for you in 1427. The game returns you to the record: the exile comes anyway."
+   "feedback": "The sources have Bāysunghur addressed for help only years later, in the second apology, which asks his intercession to little real effect. No source has him speaking for you in 1427. The game returns you to the record: the exile comes anyway. What you gained and paid here stays in your ledger; the story then rejoins the record."
   }
  ],
  "next": "SCN-0401",

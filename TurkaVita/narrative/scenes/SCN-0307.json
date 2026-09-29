@@ -19,8 +19,9 @@
    "claim": "CL-0102"
   },
   {
-   "text": "The text is built as an introduction, an autobiography and an attack on the accusers' motives, followed by two sections: nine hadith against innovation, then the sayings of Sufi masters and authorities in support of Sufism's orthodoxy.",
-   "claim": "CL-0103"
+   "text": "The first Nafsat is built as an introduction, an autobiography and an attack on the accusers' motives, followed by two sections.",
+   "claim": "CL-0103",
+   "detail": "The first section is nine hadith against innovation; the second, the sayings of Sufi masters and authorities in support of Sufism's orthodoxy."
   },
   {
    "text": "Melvin-Koushki holds that the apologies were produced under great duress: Nafsat I answers a summons to trial.",
@@ -30,7 +31,7 @@
  "prose": [
   "You are in Herat with a summons behind you and a ruler ahead. What you write will be read by Shāhrukh, the man who is judging you. The text itself presents itself as a defence made necessary because defamers denounced you to him and you were summoned to stand trial.",
   "Melvin-Koushki lists what the finished text does. An autobiographical introduction that also abuses the accusers. A first section of nine hadith against innovation (bidʿa). A second of sayings of Sufi masters in support of Sufism's orthodoxy, with Khwāja Muḥammad Pārsā, Shāhrukh's own favourite, as the named example.",
-  "You will make one move in each of five places. The real text made several moves in each, so choosing one is choosing what you lean on. A move marked documented is one Melvin-Koushki reports in a source (in one case, a different text than this one, and the option says so); a move marked counterfactual is something the text does not do, and the game says so when you pick it. Whatever you write here is what you tell Shāhrukh, not a confession of what you hold."
+  "You will make one move in each of five places. The real text made several moves in each, so choosing one is choosing what you lean on. A move marked documented is one Melvin-Koushki reports in a source (in one case, a different text than this one, and the option says so); a move marked counterfactual is something the text does not do. The game tells you what the record says about each move once you press Send it, and it shows the total cost of your picks before you send. Whatever you write here is what you tell Shāhrukh, not a confession of what you hold."
  ],
  "composer": {
   "work": "WRK-NAFSAT-AL-MASDUR-I",
@@ -80,7 +81,7 @@
       "effects": {
        "press.exposure": 1
       },
-      "feedback": "The admission is documented, but in another text: the R. Iʿtiqādiyya, among his last writings, makes it (CL-0163). Nafsat I, as Melvin-Koushki reports it, says fifteen years of the four orthodox sciences only, so putting the admission here departs from this text. The game notes the pair sits uneasily; Melvin-Koushki does not draw the contrast."
+      "feedback": "The admission is documented, but in another text: the R. Iʿtiqādiyya, among his last writings, makes it. Nafsat I, as Melvin-Koushki reports it, says fifteen years of the four orthodox sciences only, so putting the admission here departs from this text. The game notes the pair sits uneasily; Melvin-Koushki does not draw the contrast."
      }
     ]
    },
@@ -288,7 +289,7 @@
  "choices": [
   {
    "id": "A",
-   "label": "Send the Nafsat with a creed of adherence to the Sunna and the Jamāʿa, the R. Iʿtiqādāt.",
+   "label": "Send the Nafsat with a creed of adherence to the Sunna and the Jamāʿa.",
    "strategy": "apology_with_creed",
    "epistemic_label": "documented",
    "based_on": [
@@ -302,11 +303,11 @@
     "life.apology": "with_creed",
     "score.biography": 2
    },
-   "feedback": "The record has Nafsat I and the R. Iʿtiqādāt both dated 829/1426 and addressed to Shāhrukh, and has you earning his favour again and returning to Fars; all of this is his own account to the ruler judging him. Nafsat I also says you submitted a creed of adherence to the Sunna and Jamāʿa before the leading scholars at court, but Melvin-Koushki never identifies that creed with the R. Iʿtiqādāt, and does not say how the two visits Nafsat I mentions line up with the trials."
+   "feedback": "The creed is the R. Iʿtiqādāt. The record has Nafsat I and the R. Iʿtiqādāt both dated 829/1426 and addressed to Shāhrukh, and has you earning his favour again and returning to Fars; all of this is his own account to the ruler judging him. Nafsat I also says you submitted a creed of adherence to the Sunna and Jamāʿa before the leading scholars at court, but Melvin-Koushki never identifies that creed with the R. Iʿtiqādāt, and does not say how the two visits Nafsat I mentions line up with the trials."
   },
   {
    "id": "B",
-   "label": "Send the Nafsat alone, with no creed statement, and let the argument stand.",
+   "label": "Send the Nafsat alone, without a creed, and let the argument stand.",
    "strategy": "apology_alone",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -317,13 +318,17 @@
    "effects": {
     "press.exposure": 1,
     "life.apology": "alone",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.works": 1
    },
-   "feedback": "The sources have a creed accompanying the apology in some form: the R. Iʿtiqādāt is dated the same year and Nafsat I mentions a creed statement. No source has the apology going alone. The game returns you to the record."
+   "feedback": "The sources have a creed accompanying the apology in some form: the R. Iʿtiqādāt is dated the same year and Nafsat I mentions a creed statement. No source has the apology going alone. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "An argument that stands alone is what readers copy. With no creed attached the charge stays open, and you earn no favour from Shāhrukh."
+   ]
   },
   {
    "id": "C",
-   "label": "Ask Shāhrukh to hear you and your accusers face to face before the scholars of his court, instead of sending a text.",
+   "label": "Ask Shāhrukh to hear you and your accusers face to face before his scholars instead.",
    "strategy": "ask_for_disputation",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -332,11 +337,15 @@
    ],
    "requires": {},
    "effects": {
-    "press.enemies": 1,
+    "press.enemies": 2,
     "life.apology": "disputation",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.exposure": -1
    },
-   "feedback": "The apology is a written defence, and no source has you asking for a disputation. Nafsat I says your creed was delivered before the leading scholars at court, so scholars were in the room in some form. The game returns you to the record."
+   "feedback": "The apology is a written defence, and no source has you asking for a disputation. Nafsat I says your creed was delivered before the leading scholars at court, so scholars were in the room in some form. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "If the scholars hear you, the charge loses force, so exposure falls. Your accusers stand in the room and become openly your enemies."
+   ]
   }
  ],
  "next": "SCN-0308",

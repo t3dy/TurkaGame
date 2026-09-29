@@ -28,8 +28,9 @@
    "claim": "CL-0309"
   },
   {
-   "text": "For many works the colophons do not show whether the date is composition or transcription; fully half the manuscript, almost two-thirds of the preserved works, was copied in the years 827–29/1425–27, bracketing the 1426 trip to Herat, which this claim calls his first trip to Shāhrukh's court (other pages put a first hearing c. 1422). The Hijri and Christian spans in that sentence do not correspond: 827 AH began in December 1423.",
-   "claim": "CL-0205"
+   "text": "For many works the colophons do not show whether the date is composition or transcription. Fully half the manuscript, almost two-thirds of the preserved works, was copied in 1425-27, around the 1426 trip to Herat.",
+   "claim": "CL-0205",
+   "detail": "The years are given as 827-29 AH, and the claim calls the 1426 trip his first to Shāhrukh's court (other pages put a first hearing c. 1422). The Hijri and Christian spans in that sentence do not correspond: 827 AH began in December 1423."
   }
  ],
  "prose": [

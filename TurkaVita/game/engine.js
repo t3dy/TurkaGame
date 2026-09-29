@@ -264,6 +264,21 @@
         sceneId = content.start; state = {}; trail = []; pending = null;
         answers = {}; rulingsApplied = false; committed = null; picks = {}; composerApplied = false; sorted = null;
       },
+      // save and resume: a plain-data snapshot of everything a run holds, and its inverse. It changes no rule;
+      // the parity test drives the rules, tests/test_snapshot.py drives this.
+      snapshot() {
+        return JSON.parse(JSON.stringify({ v: 1, sceneId, state, trail, pendingId: pending ? pending.id : null,
+          answers, rulingsApplied, committed, picks, composerApplied, sorted }));
+      },
+      restore(snap) {
+        if (!snap || snap.v !== 1 || !(snap.sceneId === "END" || content.scenes[snap.sceneId])) return false;
+        sceneId = snap.sceneId; state = snap.state || {}; trail = snap.trail || [];
+        answers = snap.answers || {}; rulingsApplied = !!snap.rulingsApplied; committed = snap.committed || null;
+        picks = snap.picks || {}; composerApplied = !!snap.composerApplied; sorted = snap.sorted || null;
+        pending = null;
+        if (snap.pendingId && sceneId !== "END") pending = content.scenes[sceneId].choices.find((c) => c.id === snap.pendingId) || null;
+        return true;
+      },
       // the court board: favour per court, pressure per kind, only what has moved
       board() {
         const rows = { court: [], press: [] };

@@ -46,7 +46,11 @@ PAUSE = 0.6           # be polite to the API
 # short name is prose ("Public domain", "CC0"). Match either, as whole tokens —
 # an earlier version anchored on "pd-" and rejected every plain "pd" file in the
 # corpus, which is exactly the kind of failure a rights gate must not have.
-FREE_KEY = re.compile(r"^(pd|pd-\S*|cc0|cc-zero|cc-by(-sa)?(-\S*)?|attribution)$", re.I)
+FREE_KEY = re.compile(r"^(pd|pd-\S*|cc0|cc-zero|cc-by(-sa)?(-(?!nc|nd)\S*)?|attribution)$", re.I)
+# A licence that forbids commercial use or derivatives is not free for this project, whatever else its slug or name matches.
+# (Found 2026-09-28 by the plates pass: the old FREE_KEY also matched cc-by-nc-4.0 and cc-by-nd-4.0, and FREE_NAME matches
+# any "Creative Commons" short name, NonCommercial included.)
+NONFREE = re.compile(r"(non-?commercial|no-?deriv|(^|[-_ \s])(nc|nd)([-_ \s]|$))", re.I)
 FREE_NAME = re.compile(r"(public domain|cc0|creative commons)", re.I)
 
 
@@ -187,6 +191,8 @@ def rights_verdict(meta):
     name = (meta.get("licence_short") or "").strip()
     if meta.get("restrictions"):
         return "BLOCKED", "Commons records a restriction: " + meta["restrictions"]
+    if NONFREE.search(key) or NONFREE.search(name):
+        return "BLOCKED", "Licence restricts commercial use or derivatives: key=%r name=%r" % (key or None, name or None)
     if FREE_KEY.match(key) or FREE_NAME.search(name):
         return "CLEARABLE", (
             "Commons licence: %s. Free for reuse; a pre-1700 painting is out of copyright, "

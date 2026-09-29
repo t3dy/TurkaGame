@@ -177,6 +177,39 @@ def first_scene(scenes):
     return roots[0] if roots else sorted(scenes)[0]
 
 
+# --------------------------------------------------------------------------- the record's own course
+
+def historical_walk(scenes, hyps):
+    sid, state, trail, seen = first_scene(scenes), {}, [], set()
+    while sid != "END":
+        if sid in seen:
+            return trail, state, f"cycle at {sid}"
+        seen.add(sid)
+        s = scenes[sid]
+        if s.get("rulings"):
+            wrong = {r["id"]: ("refute" if r["answer"] == "stand" else "stand") for r in s["rulings"]}
+            state = apply(ruling_effects(s, wrong), state)
+        if s.get("commitment"):
+            state = apply(commit_effects(hyps, state, s, s["commitment"]["underdetermined_option"]), state)
+        if s.get("composer"):
+            state = apply(composer_effects(s, {x["id"]: x["options"][0]["id"] for x in s["composer"]["slots"]}), state)
+        if s.get("sorter"):
+            state = apply(sort_effects(s, list(reversed(s["sorter"]["truth"]))), state)
+        hist = [c for c in s["choices"] if c.get("historical")]
+        if s.get("unrecorded"):
+            pick = next((c for c in s["choices"] if not (c.get("requires") or c.get("requires_min") or c.get("requires_max"))), None)
+        else:
+            pick = hist[0] if hist else None
+        if pick is None:
+            return trail, state, f"{sid}: no historical choice and not marked unrecorded"
+        if not available(pick, state):
+            return trail, state, f"{sid}: the historical choice {pick['id']} is closed to a player who followed the record so far (state {({k: v for k, v in state.items() if k.startswith(('court.', 'press.'))})})"
+        trail.append((sid, pick["id"]))
+        state = apply(pick["effects"], state)
+        sid = pick.get("next") or s["next"]
+    return trail, state, None
+
+
 # --------------------------------------------------------------------------- the provenance dossier
 #
 # A hypothesis (HYP-*) says, datum by datum, how it reads the evidence. The player collects data

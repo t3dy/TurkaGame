@@ -4,7 +4,7 @@
  "status": "draft",
  "act": "exile",
  "title": "Herat, 1431–32: nine months at court, and the second apology",
- "dramatic_question": "You have followed Shāhrukh back to Herat, and the review you were promised has not come. You write to his son. What do you say, to whom do you ask, and what do you send with it?",
+ "dramatic_question": "You are writing to Shāhrukh's son Bāysunghur. What do you say, to whom do you ask, and what do you send with it?",
  "situation": {
   "when": "c. 834–35/1431–32 (the second apology is undated; Melvin-Koushki puts it between about 832 and 835/1429–32)",
   "where": "Herat",
@@ -271,7 +271,7 @@
   },
   {
    "id": "B",
-   "label": "Ask to read it to Bāysunghur in his own majlis, as you once proposed in letter 18, rather than simply send it.",
+   "label": "Ask to read it to Bāysunghur in his own majlis, as you once proposed, rather than send it.",
    "strategy": "read_it_in_baysunghurs_majlis",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -282,11 +282,16 @@
     "court.baysunghur": 1
    },
    "effects": {
-    "court.baysunghur": 1,
+    "court.baysunghur": 2,
     "life.nafsat2": "read_in_majlis",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.livelihood": -1,
+    "press.exposure": 1
    },
-   "feedback": "Open to you because Bāysunghur has favoured you. In letter 18 you complain of two days in attendance without being allowed to see the prince and propose a majlis as an easier setting, so access to him was granted only in part. The pages show no majlis for this text, only an apology addressed to him. The game returns you to the record."
+   "feedback": "Open to you because Bāysunghur has favoured you. In letter 18 you complain of two days in attendance without being allowed to see the prince and propose a majlis as an easier setting, so access to him was granted only in part. The pages show no majlis for this text, only an apology addressed to him. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "The prince hears it from you, and his favour grows. An angry text read aloud is heard by everyone in his majlis, and exposure rises."
+   ]
   },
   {
    "id": "C",
@@ -303,12 +308,15 @@
    "effects": {
     "press.exposure": 1,
     "life.nafsat2": "to_shahrukh",
-    "score.biography": -1
+    "score.biography": -1,
+    "court.shahrukh": 1,
+    "court.baysunghur": -1
    },
    "costs": [
-    "You would go over the head of the prince whose help you asked for."
+    "Needs Shāhrukh's favour already earned.",
+    "If the ruler reads it himself the waiting may end, and his favour grows. You go over the head of the prince whose help you asked for, and exposure rises."
    ],
-   "feedback": "Open to you because Shāhrukh has favoured you before. The apology is addressed to Bāysunghur, and the sources record no delivery to the sultan. Your case was never reviewed in time either way. The game returns you to the record."
+   "feedback": "Open to you because Shāhrukh has favoured you before. The apology is addressed to Bāysunghur, and the sources record no delivery to the sultan. Your case was never reviewed in time either way. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
   },
   {
    "id": "D",
@@ -323,9 +331,13 @@
    "effects": {
     "press.livelihood": -1,
     "life.nafsat2": "held_back",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.exposure": -1
    },
-   "feedback": "The sources have you writing the apology after nine months of waiting, not holding it in reserve. Waiting on a promise was in fact what you did for those nine months, and it is where the record's frustration comes from. The game returns you to the record."
+   "feedback": "The sources have you writing the apology after nine months of waiting, not holding it in reserve. Waiting on a promise was in fact what you did for those nine months, and it is where the record's frustration comes from. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "Nothing angry is put on paper for others to quote, so exposure falls. You do without the prince's intercession, and your household waits."
+   ]
   }
  ],
  "next": "SCN-0407",

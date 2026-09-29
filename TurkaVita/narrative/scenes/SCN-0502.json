@@ -24,8 +24,9 @@
    "claim": "CL-0210"
   },
   {
-   "text": "Collated by the game from Melvin-Koushki's entries: on the later folios the colophon dates are not in date order (the Nafsat al-Maṣdūr II at f. 226b is 838, the Mabdaʾ u Maʿād at f. 266b is Ṣafar 832, the Madārij at f. 352b is Dhū l-Qaʿda 831, the Manāhij at f. 382b is Rajab 833).",
-   "claim": "CL-0211"
+   "text": "On the later folios the colophon dates are not in date order: down the volume they run 838, Ṣafar 832, Dhū l-Qaʿda 831 and Rajab 833.",
+   "claim": "CL-0211",
+   "detail": "Collated by the game from Melvin-Koushki's entries: the Nafsat al-Maṣdūr II at f. 226b is 838, the Mabdaʾ u Maʿād at f. 266b is Ṣafar 832, the Madārij at f. 352b is Dhū l-Qaʿda 831, the Manāhij at f. 382b is Rajab 833."
   }
  ],
  "prose": [
@@ -33,7 +34,7 @@
   "In the first part of the volume the dates climb without a reversal, which Melvin-Koushki reads as a sign that they are copying dates, and you can reason your way down it from the dates alone. In the second part they do not climb, and one of the works, the second apology, bears a copy date three years after its author's death. There the dates stop helping, and you are left with what you can infer about the volume, or a guess."
  ],
  "sorter": {
-  "prompt": "Put the fifteen works in the order they begin in MS Majlis 10196, first folio first. The note under each title gives the date its colophon carries; treat it as a copying date, a terminus ad quem, not always the date of writing. The key is the folio numbers Melvin-Koushki prints, and they are not perfectly clean: some ranges overlap (the Sharḥ-i Ḥadīs-i ʿAmāʾ and the Sharḥ Ḥaqīqat al-Waḥda, and the Shaqq-i Qamar which lies inside the Iʿtiqādāt's range) and some are misprinted (the Naẓm al-Durr, the Tamhīd), so only works whose folios are clean are here. The Arbaʿīniyya is left out because its first folio, 120b, is also claimed by the Waḥda. The dated first part can be reasoned out. The later works cannot: their dates will mislead you.",
+  "prompt": "Put the fifteen works in the order they begin in MS Majlis 10196, first folio first. The note under each title gives the date its colophon carries, which is usually a copying date: the latest the work can have been written, not when it was written. In the first part of the volume the dates will guide you; in the later part they will mislead you.",
   "items": [
    {
     "id": "WRK-NAFSAT-AL-MASDUR-II",
@@ -138,7 +139,8 @@
   "scoring": {
    "axis": "score.textual",
    "max": 6
-  }
+  },
+  "detail": "The order is the folio numbers Melvin-Koushki prints, and they are not perfectly clean. Some ranges overlap (the Sharḥ-i Ḥadīs-i ʿAmāʾ and the Sharḥ Ḥaqīqat al-Waḥda, and the Shaqq-i Qamar, which lies inside the Iʿtiqādāt's range) and some are misprinted (the Naẓm al-Durr, the Tamhīd), so only works whose folios are clean are here. The Arbaʿīniyya is left out because its first folio, 120b, is also claimed by the Waḥda."
  },
  "choices": [
   {

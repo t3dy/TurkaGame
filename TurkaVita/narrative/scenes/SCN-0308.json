@@ -27,7 +27,7 @@
  "prose": [
   "For one scene the game steps out of 1426. The text you have just written will outlast the man it defended, and this question is about how it will be read, not about what Ibn Turka should do next. The record is silent on it, so no choice below is marked as the one that happened.",
   "Two facts frame it. The apologies are the main source for the events of his life. They were also written to the people judging him, under duress. Both are Melvin-Koushki's, and he does not put them in a single sentence.",
-  "First, five statements. Stand or refute each on what the sources report. Then say how you would cite the apology in a biography."
+  "First, three statements. Stand or refute each on what the sources report. Then say how you would cite the apology in a biography."
  ],
  "rulings": [
   {
@@ -42,19 +42,6 @@
     "score.calibration": 1
    },
    "feedback": "He does hold this, and calls the image in the apologies hardly reflective of Ibn Turka's primary concerns. The game's duress rule adopts it as a method; Leonard Lewisohn, as Melvin-Koushki reports him, reads the apologies at face value, and the game does not score which of them is right."
-  },
-  {
-   "id": "R2",
-   "proposition": "Nafsat I was addressed to the ruler who was judging him.",
-   "answer": "stand",
-   "based_on": [
-    "CL-0102",
-    "CL-0075"
-   ],
-   "effects_correct": {
-    "score.calibration": 1
-   },
-   "feedback": "It was written for Shāhrukh, in answer to the accusations against him. That fixes whose reader it was written for, which under the game's duress rule limits what it can show."
   },
   {
    "id": "R3",
@@ -79,18 +66,6 @@
     "score.calibration": 1
    },
    "feedback": "Melvin-Koushki grants that his disapproval of Muʿtazilī theology is genuinely his, since a created Quran contradicts his lettrism, and cites the Mafāḥiṣ. On his account, where a free work confirms it, an apology's claim can carry weight."
-  },
-  {
-   "id": "R5",
-   "proposition": "Melvin-Koushki calls the apologies the primary source of information about Ibn Turka's life.",
-   "answer": "stand",
-   "based_on": [
-    "CL-0074"
-   ],
-   "effects_correct": {
-    "score.calibration": 1
-   },
-   "feedback": "He does, and calls them a uniquely candid look at Timurid religio-political machinations. Set beside his duress warning, the game's rule is to trust what they report of events more than what they say of beliefs."
   }
  ],
  "choices": [

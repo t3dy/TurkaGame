@@ -4,7 +4,7 @@
  "status": "draft",
  "act": "courts",
  "title": "Iraq and Fars, 1414: Iskandar falls",
- "dramatic_question": "Shāhrukh has come west, Iskandar is taken, and Shāhrukh's summons has reached you. Do you withdraw, stay in view, or go to the new master?",
+ "dramatic_question": "Shāhrukh's summons has reached you. Do you withdraw, stay in view, or go to the new master?",
  "situation": {
   "when": "mid-817/1414, and the years c. 817-25/1414-22",
   "where": "Isfahan, Yazd and Shiraz",
@@ -16,12 +16,14 @@
  },
  "invariants": [
   {
-   "text": "In 817/1414 Shāhrukh marched against Iskandar in Iraq. Iskandar fled but was captured, blinded and later executed; Shāhrukh installed his own son Ibrāhīm Sulṭān and added Fars and Arab Iraq to his domains. Nothing you do prevents it.",
-   "claim": "CL-0057"
+   "text": "In 817/1414 Shāhrukh marched against Iskandar in Iraq. Iskandar fled but was captured, blinded and later executed. Nothing you do prevents it.",
+   "claim": "CL-0057",
+   "detail": "Shāhrukh installed his own son Ibrāhīm Sulṭān and added Fars and Arab Iraq to his domains."
   },
   {
-   "text": "During Shāhrukh's first campaign in western Iran (mid-817/1414) he summoned you, and you answered by letter (no. 16) sent from Isfahan to Yazd to be carried by Sayyid Niʿmat Allāh Valī. It praises the newly ascendant ruler and promises to attend court. The letter carries no date of its own: its placement rests on Niʿmat Allāh's movements, and Dānishpazhūh reads the manuscript folio as three letters where Melvin-Koushki counts one.",
-   "claim": "CL-0416"
+   "text": "In mid-817/1414 Shāhrukh summoned you, and you answered by letter (no. 16), carried by Sayyid Niʿmat Allāh Valī. It praises the newly ascendant ruler and promises to attend court.",
+   "claim": "CL-0416",
+   "detail": "This was during Shāhrukh's first campaign in western Iran; the letter was sent from Isfahan to Yazd. It carries no date of its own: its placement rests on Niʿmat Allāh's movements, and Dānishpazhūh reads the manuscript folio as three letters where Melvin-Koushki counts one."
   },
   {
    "text": "After Iskandar's fall you again attempted to retire from public life. Melvin-Koushki's timeline gives c. 817-25/1414-22, marks the dates 'c.' and cites no source.",
@@ -54,7 +56,7 @@
     "CL-0589"
    ],
    "effects_correct": {
-    "score.doctrine": 1
+    "score.doctrine": 2
    },
    "feedback": "The treatise says the opposite: it points to the upward progress of the age (taraqqī-yi zamān) and to his contemporaries' improved ability to grasp the sciences of ultimate realities. Melvin-Koushki reads this as part of a millenarian doctrine of progress, which is his interpretation; the passage is the evidence."
   },
@@ -74,7 +76,7 @@
  "choices": [
   {
    "id": "A",
-   "label": "Answer Shāhrukh's summons with a letter carried by Niʿmat Allāh Valī, praising him and promising to come, and then try to withdraw from public life.",
+   "label": "Answer Shāhrukh with a letter praising him and promising to come, then try to withdraw from public life.",
    "strategy": "letter_via_nimat_allah_then_retire",
    "epistemic_label": "documented",
    "historical": true,
@@ -88,7 +90,7 @@
     "press.works": 1,
     "score.biography": 2
    },
-   "feedback": "Letter 16 is your own word to the ruler who had just taken power, so it shows what you told him, not how you felt. Melvin-Koushki's timeline has you attempting to retire c. 817-25/1414-22, with 'c.' and no cited source. The same years hold the R. Ḥurūf and the corrected Fuṣūṣ commentary, so retirement did not mean silence. His reading that Niʿmat Allāh was chosen as a shield is a psychological reconstruction (CL-0614), and the placement of the letter in 1414 is an inference (CL-0613)."
+   "feedback": "Letter 16 is your own word to the ruler who had just taken power, so it shows what you told him, not how you felt. Melvin-Koushki's timeline has you attempting to retire c. 817-25/1414-22, with 'c.' and no cited source. The same years hold the R. Ḥurūf and the corrected Fuṣūṣ commentary, so retirement did not mean silence. His reading that Niʿmat Allāh was chosen as a shield is a psychological reconstruction, and the placement of the letter in 1414 is an inference."
   },
   {
    "id": "B",
@@ -107,11 +109,14 @@
     "press.enemies": 1,
     "score.calibration": 1
    },
-   "feedback": "Letter 16 promises to attend court; the pages do not say whether you went before c. 1422, when the sources put your first accusations before Shāhrukh at Herat (CL-0064). The game opens this only if you have earned Fīrūzshāh's favour; no source has him speaking for you. The record is silent, so the game keeps this as an open possibility and builds nothing on it."
+   "feedback": "Letter 16 promises to attend court; the pages do not say whether you went before c. 1422, when the sources put your first accusations before Shāhrukh at Herat. The game opens this only if you have earned Fīrūzshāh's favour; no source has him speaking for you. The record is silent, so the game keeps this as an open possibility and builds nothing on it.",
+   "costs": [
+    "Your livelihood may improve in the new master's camp; you are marked as his man, and enemies notice. The record is silent, so this price is the game's."
+   ]
   },
   {
    "id": "C",
-   "label": "Stay in office and in view, serving the new governor of Fars, Ibrāhīm Sulṭān, as you served Iskandar.",
+   "label": "Stay in office and in view, serving Ibrāhīm Sulṭān, the new governor of Fars, as you served Iskandar.",
    "strategy": "stay_visible_under_ibrahim",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -123,9 +128,13 @@
     "press.exposure": 2,
     "press.enemies": 1,
     "press.livelihood": 1,
-    "score.biography": -1
+    "score.biography": -1,
+    "press.students": 1
    },
-   "feedback": "No source has you serving Ibrāhīm Sulṭān; it is Sharaf al-Dīn Yazdī who serves him, as his munshī (CL-0456). Melvin-Koushki reads the Iskandar tie as a possible liability once Iskandar had fallen (CL-0059), and to stay in view was to invite that. The game returns you to the record: the sources have you trying to retire."
+   "feedback": "No source has you serving Ibrāhīm Sulṭān; it is Sharaf al-Dīn Yazdī who serves him, as his munshī. Melvin-Koushki reads the Iskandar tie as a possible liability once Iskandar had fallen, and to stay in view was to invite that. The game returns you to the record: the sources have you trying to retire. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "A post, a stipend and pupils under the new governor. You stay in view as Iskandar's former man, and enemies gather."
+   ]
   }
  ],
  "next": "SCN-0206",

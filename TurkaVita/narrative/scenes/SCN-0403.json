@@ -17,8 +17,9 @@
  },
  "invariants": [
   {
-   "text": "The Tuḥfa-yi ʿAlāʾī, a brief treatment of the hadith on iḥsān, īmān and islām, was completed on 1 Jumādā I 831/17 February 1428 for ʿAlāʾ al-Dīn b. Bāysunghur, a Ḥanbalī. Melvin-Koushki prints the date without an asterisk and does not name its source.",
-   "claim": "CL-0335"
+   "text": "The Tuḥfa-yi ʿAlāʾī, a brief treatment of the hadith on iḥsān, īmān and islām, was completed on 1 Jumādā I 831/17 February 1428 for ʿAlāʾ al-Dīn b. Bāysunghur, a Ḥanbalī.",
+   "claim": "CL-0335",
+   "detail": "Melvin-Koushki prints the date without an asterisk and does not name its source."
   },
   {
    "text": "The Mabdaʾ u Maʿād was written at the request of one Shāh Rażī l-Dīn and completed early Ṣafar 832/mid-November 1428 at Manzil-i Chālū in Mazandaran, the same date and place as its Majlis 10196 copy.",
@@ -37,7 +38,7 @@
  "choices": [
   {
    "id": "A",
-   "label": "Take them in the order the dates give: the Tuḥfa-yi ʿAlāʾī for ʿAlāʾ al-Dīn b. Bāysunghur first, the Mabdaʾ u Maʿād for Shāh Rażī l-Dīn next, and the logic manual for your son Muḥammad when you winter at Natanz.",
+   "label": "Take up the Tuḥfa-yi ʿAlāʾī first, for ʿAlāʾ al-Dīn b. Bāysunghur, and the other two commissions after it.",
    "strategy": "write_in_order_of_commission",
    "epistemic_label": "documented",
    "based_on": [
@@ -58,7 +59,7 @@
   },
   {
    "id": "B",
-   "label": "Write for your son first: the K. al-Manāhij, so that Muḥammad has his logic before you ask any patron for anything.",
+   "label": "Take up the K. al-Manāhij first, for your son Muḥammad, so he has his logic before any patron is asked.",
    "strategy": "write_for_son_first",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -69,13 +70,17 @@
     "press.works": 1,
     "press.livelihood": -1,
     "life.exile_writing": "son_first",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.students": 1
    },
-   "feedback": "You did write the Manāhij for Muḥammad, but at Natanz in April 1430, after the other two; the sources do not have it first. This is your own what-if, and the game returns you to the record: all three works are dated, and the patrons' works come first."
+   "feedback": "You did write the Manāhij for Muḥammad, but at Natanz in April 1430, after the other two; the sources do not have it first. This is your own what-if, and the game returns you to the record: all three works are dated, and the patrons' works come first. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "Your son is taught and the manual circulates. No patron is served first, so no stipend comes yet."
+   ]
   },
   {
    "id": "C",
-   "label": "Skip the commissions and write directly for Bāysunghur, who once asked you for a lettrist treatise: send him a new one, and ask for his help.",
+   "label": "Take up a new lettrist treatise first, for Bāysunghur, and ask him for his help instead of the commissions.",
    "strategy": "write_lettrism_for_baysunghur",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -88,15 +93,16 @@
    },
    "effects": {
     "court.baysunghur": 1,
-    "press.exposure": 1,
+    "press.exposure": 2,
     "press.works": 1,
     "life.exile_writing": "lettrism_for_baysunghur",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.livelihood": 1
    },
    "costs": [
-    "Lettrist writing is what your enemies read as Ḥurūfī sympathy."
+    "A prince who favoured you may help with your household. Lettrist writing is what your enemies read as Ḥurūfī sympathy, and exposure rises."
    ],
-   "feedback": "Open to you because Bāysunghur has favoured you: he received you with particular favour and asked for the R. Suʾl al-Mulūk. The sources show no lettrist work for him from the exile; the one thing you address to him in these years is the second apology, later. The Iṣbāḥ al-Anwār, your fuller lettrist work, is the one Melvin-Koushki conjectures you left unfinished after 1427. The game returns you to the record."
+   "feedback": "Open to you because Bāysunghur has favoured you: he received you with particular favour and asked for the R. Suʾl al-Mulūk. The sources show no lettrist work for him from the exile; the one thing you address to him in these years is the second apology, later. The Iṣbāḥ al-Anwār, your fuller lettrist work, is the one Melvin-Koushki conjectures you left unfinished after 1427. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
   }
  ],
  "next": "SCN-0404",

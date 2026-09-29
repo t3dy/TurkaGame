@@ -1,0 +1,683 @@
+{
+ "_note": "Hand-written selection for scripts/build_plates.py. One entry per plate. 'cid' keys the Commons fetch record in research/plates_commons.json (licence, source page); 'registry_file' names the local_file of its record in ../assets/manuscripts/registry.json. Nothing here is copied from a Commons page by machine: titles, holders, dates and the one-sentence 'relevance' were read from the file pages and checked against the caption text; where a page is silent the entry says so. Written 2026-09-28 (illustrator pass).",
+ "acts": {
+  "hostage": {
+   "card": "zaf-accession-1370",
+   "extras": [
+    "zaf-wedding-guests",
+    "zaf-hunt-bukhara",
+    "print-timurbec-giraffe"
+   ]
+  },
+  "courts": {
+   "card": "isk-frontispiece-lisbon",
+   "extras": [
+    "isk-shirin-garden"
+   ]
+  },
+  "trials": {
+   "card": "herat-kalila-1429-front",
+   "extras": []
+  },
+  "exile": {
+   "card": "mam-kalila-1354-burzoy",
+   "extras": [
+    "jal-yurts"
+   ]
+  },
+  "copyist": {
+   "card": "herat-kulliyat-colophon",
+   "extras": []
+  },
+  "historian": {
+   "card": "astro-sufi-ophiuchus-5036",
+   "extras": [
+    "herat-kulliyat-adam-angels",
+    "astro-sufi-orion-5036",
+    "sufi-ursa-major",
+    "bulhan-sagittarius"
+   ]
+  }
+ },
+ "scenes": {
+  "SCN-0101": "zaf-samarkand-1394",
+  "SCN-0102": "isk-kaaba",
+  "SCN-0103": "mam-barquq-quran-open",
+  "SCN-0104": "mam-maqamat-prince-1334",
+  "SCN-0106": "zaf-giraffe-embassy",
+  "SCN-0201": "law-governor-rahba-1237",
+  "SCN-0202": "isk-gulbenkian-portrait",
+  "SCN-0203": "isk-astrological",
+  "SCN-0205": "isk-horoscope",
+  "SCN-0206": "bulhan-leo",
+  "SCN-0301": "zaf-shahrukh-portrait",
+  "SCN-0302": "mam-fatawi-qadikhan-13",
+  "SCN-0303": "herat-baysunghur-hunt",
+  "SCN-0304": "herat-majma-journey-1425",
+  "SCN-0305": "mam-barquq-quran-anfal",
+  "SCN-0306": "law-governor-merv-s23",
+  "SCN-0307": "herat-baysunghur-royal-court",
+  "SCN-0401": "mam-camel-riders-or9718",
+  "SCN-0404": "bustan-poet-judge",
+  "SCN-0407": "zaf-funeral-1403",
+  "SCN-0501": "herat-gulistan-1427-first-page",
+  "SCN-0502": "law-library-basra-1237",
+  "SCN-0503": "ijaza-cairo-adab105",
+  "SCN-0603": "print-timurbec-fr-title"
+ },
+ "plates": {
+  "zaf-accession-1370": {
+   "cid": "zaf-accession-1370",
+   "registry_file": "tv-zaf-accession-1370.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Temür grants an audience on his accession at Balkh, 9 April 1370 (frontispiece, Zafarnama of Ibrahim Sultan)",
+   "creator": "Unnamed painters of Ibrahim Sultan's atelier; text by Sharaf al-Din 'Ali Yazdi",
+   "date": "1436 (AH 839)",
+   "place": "Shiraz",
+   "institution": "Smithsonian Institution, Freer|Sackler (the Commons page links object S1986.133.1; the leaves of this Zafarnama are dispersed)",
+   "shelfmark": "S1986.133.1 (as linked by the Commons page)",
+   "alt": "Two damaged facing leaves of a Persian manuscript: a crowd of courtiers on horseback and on foot at the left, and a ruler seated under a tree with attendants at the right, in a green and gold garden setting.",
+   "relevance": "Temür's court as a Shiraz workshop painted it in 1436, four years after Ibn Turka died; it shows an accession audience of 1370, not his 1387 Samarkand and not any moment of his life."
+  },
+  "isk-frontispiece-lisbon": {
+   "cid": "isk-frontispiece-lisbon",
+   "registry_file": "tv-isk-frontispiece-lisbon.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Frontispiece of the Anthology of Iskandar Sultan",
+   "creator": "Unnamed painters of Iskandar Sultan's atelier",
+   "date": "1410 (the Commons file page says '14th century', which its own category and sister files contradict)",
+   "place": "Shiraz",
+   "institution": "Calouste Gulbenkian Museum, Lisbon",
+   "shelfmark": "LA 161",
+   "alt": "A double-page garden scene of a princely gathering: a seated ruler with attendants on the left leaf, courtiers kneeling and standing on the right, under flowering trees on a gold ground.",
+   "relevance": "The opening of the book made for Iskandar Sultan, the prince this act serves, at Shiraz in 1410; a picture of his court, not of any scene in Ibn Turka's service, and the figures are not identified."
+  },
+  "herat-kalila-1429-front": {
+   "cid": "herat-kalila-1429-front",
+   "registry_file": "tv-herat-kalila-1429-front.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Frontispiece of a Kalila wa Dimna copied for Bāysunghur",
+   "creator": "Unnamed Herat court painters",
+   "date": "1429",
+   "place": "Herat",
+   "institution": "Topkapi Palace Museum Library, Istanbul",
+   "shelfmark": "R. 1022",
+   "alt": "A double-page scene of a royal gathering in a garden of blossoming trees: a prince seated on a carpet at the right, attendants around him, musicians and a table of wine bottles in the foreground.",
+   "relevance": "A garden assembly around Shāhrukh's son Bāysunghur at Herat in 1429, three years after the 1426 hearings of this act; the prince is the man who asked Ibn Turka for a book, but this is a frontispiece to a fable book, not a trial."
+  },
+  "mam-kalila-1354-burzoy": {
+   "cid": "mam-kalila-1354-burzoy",
+   "registry_file": "tv-mam-kalila-1354-burzoy.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Burzoy and the physicians setting off on their journey (Kalila wa Dimna)",
+   "creator": "Unnamed Mamluk-period painter (text by Ibn al-Muqaffa')",
+   "date": "755 AH / 1354",
+   "place": "Egypt or Syria",
+   "institution": "Bodleian Library, Oxford",
+   "shelfmark": "MS Pococke 400, fol. 12v",
+   "alt": "Three travellers riding mules and donkeys between flowering trees, above a block of Arabic text.",
+   "relevance": "A road picture from a Mamluk-era fable book made about seventy-five years before Ibn Turka's exile; it shows travellers on animals, not his roads and not his flight from Herat."
+  },
+  "herat-kulliyat-colophon": {
+   "cid": "herat-kulliyat-colophon",
+   "registry_file": "tv-herat-kulliyat-colophon.jpg",
+   "origin": "web",
+   "kind": "manuscript",
+   "title": "Colophon page of Hafiz-i Abru's Kulliyat-i Tarikhi, f. 297v",
+   "creator": "Hafiz-i Abru (text); copyist not named on the Commons page",
+   "date": "1415-16 (the Commons file names 1415; its category says 1417)",
+   "place": "Herat",
+   "institution": "Topkapi Palace Museum Library, Istanbul",
+   "shelfmark": "MS Bagdat 282 (B. 282), f. 297v",
+   "alt": "A page of dense Persian script written in a shaped block that narrows to a diamond and a small red cartouche at the foot: the closing colophon of a chronicle manuscript.",
+   "relevance": "The kind of page where a copyist in Shāhrukh's Herat records the book's making, drawn from a historian's chronicle; it is not a colophon from any Ibn Turka manuscript."
+  },
+  "astro-sufi-ophiuchus-5036": {
+   "cid": "astro-sufi-ophiuchus-5036",
+   "registry_file": "tv-astro-sufi-ophiuchus-5036.jpg",
+   "origin": "web",
+   "kind": "manuscript",
+   "title": "Ophiuchus, from al-Sufi's Book of the Fixed Stars made for Ulugh Beg",
+   "creator": "Unnamed painters; text by 'Abd al-Rahman al-Sufi (d. 986)",
+   "date": "c. 1430-1440",
+   "place": "probably Samarkand",
+   "institution": "Bibliotheque nationale de France, Manuscrits",
+   "shelfmark": "arabe 5036, fol. 81v",
+   "alt": "A drawn figure of a man in pale robes holding a coiling serpent that winds around his body, marked with gold-ringed stars, beside Arabic labels.",
+   "relevance": "A star-book of Ibn Turka's own last years, made for the Timurid prince who ran the Samarkand observatory, showing how that world drew and labelled the sky; it is not evidence about Ibn Turka."
+  },
+  "zaf-samarkand-1394": {
+   "cid": "zaf-samarkand-1394",
+   "registry_file": "tv-zaf-samarkand-1394.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Samarqand receives Shāhrukh as governor, September 1394 (double page, Zafarnama of Ibrahim Sultan)",
+   "creator": "Unnamed painters of Ibrahim Sultan's atelier; text by Sharaf al-Din 'Ali Yazdi",
+   "date": "1436 (AH 839)",
+   "place": "Shiraz",
+   "institution": "Freer Gallery of Art, Washington (F1948.18, per the Commons description, which says the Freer leaf is one half of a double-page composition)",
+   "shelfmark": "F1948.18",
+   "alt": "A mounted commander on a grey horse in front of a red pavilion at the left, and at the right a page of ruled Persian text in diagonal panels.",
+   "relevance": "Samarkand as Temür's capital, painted in 1436; the event is Shāhrukh's arrival in 1394, not the removal of Ibn Turka's family in 1387."
+  },
+  "isk-kaaba": {
+   "cid": "isk-kaaba",
+   "registry_file": "tv-isk-kaaba.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "The Ka'ba at Mecca and the road to it (fols. 362-363, Anthology of Iskandar Sultan)",
+   "creator": "Unnamed painters of Iskandar Sultan's atelier",
+   "date": "1410-11",
+   "place": "Shiraz",
+   "institution": "British Library, London (the Commons title still says 'British Museum')",
+   "shelfmark": "Add. 27261, fols. 362-363",
+   "alt": "A double page: on the left the Ka'ba at the centre of a crowded courtyard of pilgrims, on the right a rocky road winding past a blue-and-white tent and small towns.",
+   "relevance": "How a Timurid prince's book pictured the Hijaz sanctuary in 1410-11; Ibn Turka went there c. 1393, so this is later, made in Shiraz, and is not a record of his pilgrimage or route."
+  },
+  "mam-barquq-quran-open": {
+   "cid": "mam-barquq-quran-open",
+   "registry_file": "tv-mam-barquq-quran-open.jpg",
+   "origin": "web",
+   "kind": "manuscript",
+   "title": "Opening double page of juz' 9 of the so-called Sultan Barquq's Qur'an",
+   "creator": "Copied by 'Ali ibn Muhammad al-Mukattib al-Ashrafi and illuminated by Ibrahim al-Amidi (both attributions)",
+   "date": "c. 1370-75",
+   "place": "Cairo",
+   "institution": "British Library, London",
+   "shelfmark": "Or. 848, fols. 1v-2r",
+   "alt": "An open Qur'an showing an illuminated carpet page in blue and gold with a star pattern at the right and a gold-framed text panel at the left.",
+   "relevance": "The finest Cairo bookmaking of the generation before Ibn Turka arrived: probably made for Sultan Sha'ban or his mother, later endowed to a Cairo mosque by Barquq's son Faraj; it belongs to his Cairo, not to his teachers or his books."
+  },
+  "mam-maqamat-prince-1334": {
+   "cid": "mam-maqamat-prince-1334",
+   "registry_file": "tv-mam-maqamat-prince-1334.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "An enthroned prince, from al-Hariri's Maqamat",
+   "creator": "Unnamed painter of a copy of al-Hariri's Maqamat",
+   "date": "1334 (Commons: 'probably Egypt'; a sister file suggests the sultan al-Nasir Muhammad, unproven)",
+   "place": "probably Egypt",
+   "institution": "Austrian National Library, Vienna (the Commons category names the Vienna manuscript)",
+   "shelfmark": "Cod. A.F. 9 (per the Commons category name 'Vienna ONB AF9')",
+   "alt": "A ruler in a white turban seated at the centre of a group of winged and turbaned attendants and musicians, framed by a border of blue and gold arabesque.",
+   "relevance": "The nearest period picture of a Mamluk ruler holding court, painted sixty years before Barquq's majlis; it is not Barquq, and not a gathering of scholars."
+  },
+  "zaf-giraffe-embassy": {
+   "cid": "zaf-giraffe-embassy",
+   "registry_file": "tv-zaf-giraffe-embassy.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Envoys of the Mamluk sultan Faraj ibn Barquq present a giraffe to Temür (double page, Zafarnama of Ibrahim Sultan)",
+   "creator": "Unnamed painters of Ibrahim Sultan's atelier",
+   "date": "1436 (AH 839); the event is dated 1404 in the Commons description but October 1405 in the file name, and Temür died in February 1405, so treat the event date as uncertain",
+   "place": "Shiraz",
+   "institution": "Worcester Art Museum, Massachusetts (per the Commons description's link; the Zafarnama's leaves are dispersed)",
+   "shelfmark": "fols. 399v-400r",
+   "alt": "A tall spotted giraffe led by a man in a pale robe and a courtier in red at the left, and Temür seated on a carpet under a blue-and-white canopy at the right, on a blue ground.",
+   "relevance": "Cairo and Temür's court in one picture, the axis on which Ibn Turka's own life turned; it shows an embassy, not his return home and not a dated event of 1405."
+  },
+  "law-governor-rahba-1237": {
+   "cid": "law-governor-rahba-1237",
+   "registry_file": "tv-law-governor-rahba-1237.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Abu Zayd before the governor of Rahba (al-Hariri's Maqamat)",
+   "creator": "Attributed to Yahya ibn Mahmud al-Wasiti's illustrated copy",
+   "date": "1237",
+   "place": "Baghdad",
+   "institution": "Bibliotheque nationale de France, Manuscrits",
+   "shelfmark": "arabe 5847 (per the Commons category)",
+   "alt": "A ruler in a green robe and tall hat seated on a red cushion on a stepped dais, holding a spear, while an old man and a young man in patterned robes stand before him.",
+   "relevance": "A petitioner standing before a seated governor in a Baghdad manuscript of 1237, earlier and Abbasid rather than Timurid; it shows the shape of a governor's audience, not Fars and not Pīr-Muḥammad."
+  },
+  "isk-gulbenkian-portrait": {
+   "cid": "isk-gulbenkian-portrait",
+   "registry_file": "tv-isk-gulbenkian-portrait.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "The prince Bahram Gur, a portrait of Iskandar Sultan (Anthology of Iskandar Sultan)",
+   "creator": "Unnamed painters of Iskandar Sultan's atelier",
+   "date": "1410",
+   "place": "Shiraz",
+   "institution": "Calouste Gulbenkian Museum, Lisbon",
+   "shelfmark": "LA 161",
+   "alt": "A full-length standing prince in a crimson brocade coat and white turban, holding a small round object, before a woven wall and a blue-and-gold arch.",
+   "relevance": "Iskandar Sultan in the guise of the hero Bahram Gur, as the Commons title for this folio identifies him; the second prince of this scene, pictured by his own atelier, not a scene from Ibn Turka's service."
+  },
+  "isk-astrological": {
+   "cid": "isk-astrological",
+   "registry_file": "tv-isk-astrological.jpg",
+   "origin": "web",
+   "kind": "manuscript",
+   "title": "Astrological themes (Anthology of Iskandar Sultan, f. 539)",
+   "creator": "Unnamed scribe and painters of Iskandar Sultan's atelier",
+   "date": "1410-11",
+   "place": "Shiraz",
+   "institution": "British Library, London (the Commons title says 'British Museum')",
+   "shelfmark": "Add. 27261, f. 539",
+   "alt": "A page of Persian text framed by gold and blue, with a small painted tortoise and a red lion in panels and two running hounds along the foot.",
+   "relevance": "A page on the constellations from the miscellany of the prince these two commentaries are for, showing that court's taste for the sciences of the heavens; it is not a page of either commentary."
+  },
+  "isk-horoscope": {
+   "cid": "isk-horoscope",
+   "registry_file": "tv-isk-horoscope.jpg",
+   "origin": "web",
+   "kind": "manuscript",
+   "title": "Horoscope of Iskandar Sultan, chart for his birth on 25 April 1384 (from the Book of the Birth of Iskandar)",
+   "creator": "Unnamed astrologer and painters",
+   "date": "undated on the Commons record (the chart is for a birth of 25 April 1384)",
+   "place": "not stated (Timurid Iran)",
+   "institution": "Wellcome Collection, London",
+   "shelfmark": "MS Persian 474 (from the Commons record; item L0025988 / L0015229)",
+   "alt": "An open book showing a large blue-and-gold circle divided into twelve houses with personified planets and zodiac signs, framed by illuminated borders.",
+   "relevance": "The prince's own birth chart, made for a book about him; it says nothing about 1414 or his fall.",
+   "credit": "Image: Wellcome Collection, CC BY 4.0"
+  },
+  "bulhan-leo": {
+   "cid": "bulhan-leo",
+   "registry_file": "tv-bulhan-leo.jpg",
+   "origin": "occultimgdb",
+   "kind": "manuscript",
+   "title": "Leo, from the Kitab al-Bulhan (Book of Wonders)",
+   "creator": "Text attributed on the Commons record to 'Abd al-Hasan al-Isfahani; painter unnamed",
+   "date": "1350-1450 on Commons (our OCCULTIMGDB catalogue places this manuscript in Jalayirid Baghdad, late 14th century; not stated on the Commons page)",
+   "place": "Iraq or Iran (see date)",
+   "institution": "Bodleian Library, Oxford",
+   "shelfmark": "MS Arab. d. 138 (from the OCCULTIMGDB catalogue; the Commons page links the Bodleian record)",
+   "alt": "A framed page with a crowned figure seated on a lion inside a blue-and-gold roundel, three small standing figures in boxes beneath, and Arabic headings above.",
+   "relevance": "A page of astrological figures from a divination book of Ibn Turka's own age, showing a neighbouring occult science; it is not lettrism and not the Mafahis."
+  },
+  "zaf-shahrukh-portrait": {
+   "cid": "zaf-shahrukh-portrait",
+   "registry_file": "tv-zaf-shahrukh-portrait.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Shāhrukh, detail from the Zafarnama of Ibrahim Sultan (painted in his lifetime)",
+   "creator": "Unnamed painters of Ibrahim Sultan's atelier",
+   "date": "1435-36",
+   "place": "Shiraz",
+   "institution": "Freer Gallery of Art, Washington (F1948.18, per the Commons description); this file is a retouched detail",
+   "shelfmark": "F1948.18",
+   "alt": "A bearded man in a white domed hat with a blue brim and an orange robe with blue sleeves, seen against a pink patterned ground.",
+   "relevance": "A court likeness of the ruler who receives the charge, commissioned by his son in 1436; it is not a Herat audience of 1422 and the Commons file is a lightly retouched detail."
+  },
+  "mam-fatawi-qadikhan-13": {
+   "cid": "mam-fatawi-qadikhan-13",
+   "registry_file": "tv-mam-fatawi-qadikhan-13.jpg",
+   "origin": "web",
+   "kind": "manuscript",
+   "title": "Frontispiece of the thirteenth section of the Fatawa (legal opinions) of Qadikhan",
+   "creator": "Unnamed Mamluk scribe and illuminator",
+   "date": "second half of the 15th century (later than this scene)",
+   "place": "Egypt",
+   "institution": "Los Angeles County Museum of Art",
+   "shelfmark": "M.73.5.22",
+   "alt": "An illuminated title page with a gold cartouche and a lobed blue-and-gold panel, with written notes in the margins.",
+   "relevance": "A working legal compendium from Mamluk Egypt, a later copy, showing what a qadi's library and its certifying notes looked like; it says nothing about the school Ibn Turka judged by or about Yazd."
+  },
+  "herat-baysunghur-hunt": {
+   "cid": "herat-baysunghur-hunt",
+   "registry_file": "tv-herat-baysunghur-hunt.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Bāysunghur attending a hunt, detail of the frontispiece of Bāysunghur's Shahnama",
+   "creator": "Unnamed Herat court painters",
+   "date": "1430",
+   "place": "Herat",
+   "institution": "Golestan Palace Library, Tehran",
+   "shelfmark": "MS 716",
+   "alt": "A young prince in a crested gold hat and green robe holding out a cup, on horseback against a dark ground.",
+   "relevance": "The prince who asked for the book, in his own Shahnama four years after the request; it is a detail of a hunt frontispiece, not the commission or any part of the treatise."
+  },
+  "herat-majma-journey-1425": {
+   "cid": "herat-majma-journey-1425",
+   "registry_file": "tv-herat-majma-journey-1425.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "The journey of the Prophet Muhammad, folio from Hafiz-i Abru's Majma' al-tawarikh",
+   "creator": "Unnamed Herat painters (text by Hafiz-i Abru)",
+   "date": "1425",
+   "place": "Herat",
+   "institution": "Metropolitan Museum of Art, New York (the Commons record names the museum but gives no accession number)",
+   "shelfmark": "not given on the Commons record",
+   "alt": "Above a page of Persian text, a turbaned figure riding a camel in a snowy landscape, followed by riders on other animals.",
+   "relevance": "A Herat picture of the Prophet's life painted a year before this treatise, showing how the court's own historian illustrated prophetic events; it does not show the splitting of the moon."
+  },
+  "mam-barquq-quran-anfal": {
+   "cid": "mam-barquq-quran-anfal",
+   "registry_file": "tv-mam-barquq-quran-anfal.jpg",
+   "origin": "web",
+   "kind": "manuscript",
+   "title": "Heading of chapter VIII, al-Anfal, with the opening formula (double page, so-called Sultan Barquq's Qur'an)",
+   "creator": "Copied by 'Ali ibn Muhammad al-Mukattib al-Ashrafi and illuminated by Ibrahim al-Amidi (both attributions)",
+   "date": "c. 1370-75",
+   "place": "Cairo",
+   "institution": "British Library, London",
+   "shelfmark": "Or. 848, fols. 26v-27r",
+   "alt": "An open Qur'an with a blue-and-gold sura heading at the left and, at the right, a page of five lines of large script with gold roundels marking verses.",
+   "relevance": "A sura opening from a Cairo Qur'an, where the formula this commentary explains stands in its illuminated place; it is not a lettrist or Timurid copy."
+  },
+  "law-governor-merv-s23": {
+   "cid": "law-governor-merv-s23",
+   "registry_file": "tv-law-governor-merv-s23.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Abu Zayd before the governor of Merv (thirty-eighth maqama, al-Hariri's Maqamat)",
+   "creator": "Unnamed Iraqi painter",
+   "date": "13th century",
+   "place": "Iraq",
+   "institution": "St Petersburg (the Commons title says only 'Saint-Petersburg Ms. S.23'; the holding library is not named on the file page)",
+   "shelfmark": "Ms. S.23",
+   "alt": "A seated ruler under a domed canopy at the upper right, petitioners gesturing before him at the left and a group of seated men in a lower panel, within a red arcade.",
+   "relevance": "A hearing before a governor, in an Iraqi manuscript two centuries earlier; it pictures being made to answer, not Herat and not 1426."
+  },
+  "herat-baysunghur-royal-court": {
+   "cid": "herat-baysunghur-royal-court",
+   "registry_file": "tv-herat-baysunghur-royal-court.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "A royal court, Bāysunghur's Shahnama (folio not identified)",
+   "creator": "Unnamed Herat court painters",
+   "date": "1430",
+   "place": "Herat",
+   "institution": "Golestan Palace Library, Tehran (per the Commons category 'Bāysunghur's Shahnameh'; the file page does not name the folio)",
+   "shelfmark": "MS 716 (assumed from the category)",
+   "alt": "A ruler enthroned in a spring garden among blossoming trees, with courtiers, musicians and a table of vessels around him.",
+   "relevance": "A court audience in the Herat manuscript Shāhrukh's son commissioned in 1430, four years after the hearing; it shows a Shahnama reign as the atelier imagined a court, not this hearing."
+  },
+  "mam-camel-riders-or9718": {
+   "cid": "mam-camel-riders-or9718",
+   "registry_file": "tv-mam-camel-riders-or9718.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Two camel riders in bedouin costume (al-Hariri's Maqamat)",
+   "creator": "Unnamed Syrian painter",
+   "date": "late 13th century",
+   "place": "Syria",
+   "institution": "British Library, London",
+   "shelfmark": "Or. 9718",
+   "alt": "Two riders on one red camel, one with a sword, against a plain ground with a stylised palm frond.",
+   "relevance": "The period's picture of travelling, made a century and a half before the exile; it is not Timurid and not the road out of Herat."
+  },
+  "bustan-poet-judge": {
+   "cid": "bustan-poet-judge",
+   "registry_file": "tv-bustan-poet-judge.jpg",
+   "origin": "gallery",
+   "kind": "painting",
+   "title": "The Poet at the Judge's Court (Sa'di's Bustan, the Cairo Bustan)",
+   "creator": "Bihzad (his signature is on the porch inscription, per the Commons page)",
+   "date": "1488-89 (fifty-six years after Ibn Turka's death)",
+   "place": "Herat",
+   "institution": "Dar al-Kutub, Cairo (National Library of Egypt)",
+   "shelfmark": "Adab Farisi 22, f. 30b",
+   "alt": "A judge and his clerks seated in a tiled arched hall, with a poet and men waiting outside in a courtyard, under a tiled and inscribed portal.",
+   "relevance": "A judge's court painted in Herat in 1488, late but from the same city and craft; it pictures a hearing, not this one, and not Simnan."
+  },
+  "zaf-funeral-1403": {
+   "cid": "zaf-funeral-1403",
+   "registry_file": "tv-zaf-funeral-1403.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Mourning at the bier of Muhammad Sultan Mirza (double page, Zafarnama of Ibrahim Sultan)",
+   "creator": "Unnamed painters of Ibrahim Sultan's atelier",
+   "date": "1436 (AH 839); the death pictured is of 1403",
+   "place": "Shiraz",
+   "institution": "dispersed leaves of the Zafarnama; the holding is not recorded on the Commons page (folios 373v-374r)",
+   "shelfmark": "fols. 373v-374r",
+   "alt": "Two facing pages: at the left, black-clad women and a man tearing their hair beneath a tree, and at the right, mourners weeping around a dark bier.",
+   "relevance": "How the Timurid court painted mourning in 1436, for a prince who died in 1403; it is a mourning picture of the age, not Ibn Turka's death or burial."
+  },
+  "herat-gulistan-1427-first-page": {
+   "cid": "herat-gulistan-1427-first-page",
+   "registry_file": "tv-herat-gulistan-1427-first-page.jpg",
+   "origin": "web",
+   "kind": "manuscript",
+   "title": "First text page of Prince Bāysunghur's Gulistan",
+   "creator": "Calligraphy in nasta'liq by Ja'far Tabrizi",
+   "date": "830 AH / 1427",
+   "place": "Herat",
+   "institution": "Chester Beatty Library, Dublin",
+   "shelfmark": "Per 119.10, f. 1v",
+   "alt": "A cream page with a blue and gold illuminated headpiece above panels of fine nasta'liq script, photographed with a dark edge at the right.",
+   "relevance": "A dated, signed first page from the Herat royal workshop in the very years Ibn Turka's copyists worked; it is the kind of page Act V's copyist produces, not one of his."
+  },
+  "law-library-basra-1237": {
+   "cid": "law-library-basra-1237",
+   "registry_file": "tv-law-library-basra-1237.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "A library, from al-Hariri's Maqamat",
+   "creator": "Attributed to Yahya ibn Mahmud al-Wasiti",
+   "date": "1237",
+   "place": "Baghdad",
+   "institution": "Bibliotheque nationale de France, Manuscrits",
+   "shelfmark": "arabe 5847 (per the Commons category)",
+   "alt": "A row of turbaned men seated in front of a large wall of shelves and book cubbies under a decorated roofline.",
+   "relevance": "Readers before a wall of books in 1237: the idea of a collection to be consulted; it is not fifteen leaves and not MS Majlis 10196."
+  },
+  "ijaza-cairo-adab105": {
+   "cid": "ijaza-cairo-adab105",
+   "registry_file": "tv-ijaza-cairo-adab105.jpg",
+   "origin": "web",
+   "kind": "manuscript",
+   "title": "Title page and autograph ijaza of al-Hariri for the copyist (Maqamat, MS Cairo Adab 105, f. 5a)",
+   "creator": "al-Hariri (autograph certificate); copyist not named on the Commons page",
+   "date": "12th century (al-Hariri died 1122)",
+   "place": "Iraq",
+   "institution": "Dar al-Kutub, Cairo (per the source cited on the Commons page, MacKay 1971)",
+   "shelfmark": "Adab 105, f. 5a",
+   "alt": "A high-contrast black-and-white reproduction of a page of Arabic script with a heading and lines of certificate text and signatures.",
+   "relevance": "An author's own certificate of transmission for a copyist, two centuries before Ibn Turka; it is the kind of document an audition note belongs to, not the Landberg note, and the reproduction is a rough high-contrast scan."
+  },
+  "print-timurbec-fr-title": {
+   "cid": "print-timurbec-fr-title",
+   "registry_file": "tv-print-timurbec-fr-title.jpg",
+   "origin": "web",
+   "kind": "printed",
+   "title": "Title page of the Histoire de Timur-Bec (Delft, 1723), Petis de la Croix's French translation of Yazdi's Zafarnama",
+   "creator": "Translated by Petis de la Croix from the Persian of Sharaf al-Din 'Ali Yazdi; printed by Reinier Boitet",
+   "date": "1723 (MDCCXXIII)",
+   "place": "Delft",
+   "institution": "Copy offered by a bookseller (the Commons page cites AbeBooks); the holder is not a library",
+   "shelfmark": "not applicable",
+   "alt": "A printed title page in red and black type: 'Histoire de Timur-Bec, connu sous le nom du grand Tamerlan', volume one, printed at Delft by Reinier Boitet, 1723.",
+   "relevance": "Yazdi, who attended Ibn Turka's teaching, reached Europe through this 1723 translation; a printed edition of one chronicler among others' reports of the age, and it does not mention Ibn Turka."
+  },
+  "isk-shirin-garden": {
+   "cid": "isk-shirin-garden",
+   "registry_file": "tv-isk-shirin-garden.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Khusraw and Shirin in a garden (Anthology of Iskandar Sultan, f. 159b)",
+   "creator": "Unnamed painters of Iskandar Sultan's atelier",
+   "date": "1410-11",
+   "place": "Shiraz or Isfahan (the Commons sister files say so)",
+   "institution": "British Library, London",
+   "shelfmark": "Add. 27261, f. 159b",
+   "alt": "A princely couple seated on a striped carpet under a flowering tree, attendants and a tray of vessels below, and clouds above.",
+   "relevance": "A princely garden gathering from Iskandar's own book, for any scene in his courts that has no picture of its own; it illustrates Nizami, not Ibn Turka."
+  },
+  "zaf-wedding-guests": {
+   "cid": "zaf-wedding-guests",
+   "registry_file": "tv-zaf-wedding-guests.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Temür receiving guests at the wedding of his son Jahangir, 1374 (folio 139, Zafarnama of Ibrahim Sultan)",
+   "creator": "Unnamed painters of Ibrahim Sultan's atelier",
+   "date": "1436 (AH 839); the wedding pictured is of June 1374",
+   "place": "Shiraz",
+   "institution": "Villa I Tatti, Harvard University Center for Italian Renaissance Studies, Florence (per the Commons sister file)",
+   "shelfmark": "folio 139",
+   "alt": "An enthroned ruler seated at the front of a purple tent, flanked by attendants on a flowering ground under a bare tree.",
+   "relevance": "The wedding of Temür's son Jahangir, who was the father of Pīr-Muḥammad; a Timurid court scene painted in 1436, not Ibn Turka's time and, as its own historians note, a stock image of a ruler with attendants."
+  },
+  "zaf-hunt-bukhara": {
+   "cid": "zaf-hunt-bukhara",
+   "registry_file": "tv-zaf-hunt-bukhara.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Temür hunting near Bukhara, spring 1389 (folio 160v, Zafarnama of Ibrahim Sultan)",
+   "creator": "Unnamed painters of Ibrahim Sultan's atelier",
+   "date": "1436 (AH 839); the hunt pictured is of 1389",
+   "place": "Shiraz",
+   "institution": "Arthur M. Sackler Gallery, Smithsonian Institution (Art and History Trust collection, per the Commons description)",
+   "shelfmark": "folio 160v",
+   "alt": "A mounted hunter in a blue hat on a brown horse in a rocky landscape, a groom at the left, animals and a tree above, beside a column of text.",
+   "relevance": "Temür's Transoxiana in the years just after Ibn Turka's family was taken there; a hunt of 1389 painted in 1436, not any event of his life."
+  },
+  "print-timurbec-giraffe": {
+   "cid": "print-timurbec-giraffe",
+   "registry_file": "tv-print-timurbec-giraffe.jpg",
+   "origin": "web",
+   "kind": "printed",
+   "title": "The Egyptian embassy and the giraffe, in The History of Timur-Bec (Darby's English translation, vol. 2, pp. 360-61)",
+   "creator": "Translated by John Darby from Petis de la Croix's French, after Sharaf al-Din 'Ali Yazdi",
+   "date": "1723",
+   "place": "London",
+   "institution": "Scan from the Internet Archive (per the Commons page); the copy is a library copy of the 1723 edition",
+   "shelfmark": "not applicable",
+   "alt": "Two facing pages of printed English text, headed 'The history of Timur-Bec', with a note about a giraffe from Egypt at the foot of the left page.",
+   "relevance": "The printed 1723 text of Yazdi's account of the Mamluk envoys who brought a giraffe; a page of an early modern translation, not a period picture and not Ibn Turka."
+  },
+  "jal-yurts": {
+   "cid": "jal-yurts",
+   "registry_file": "tv-jal-yurts.jpg",
+   "origin": "gallery",
+   "kind": "manuscript",
+   "title": "Pastoral scene with yurts (marginal drawing, possibly by Sultan Ahmad Jalayir)",
+   "creator": "Possibly Sultan Ahmad Jalayir (Commons: 'possibly')",
+   "date": "1400-1403",
+   "place": "Baghdad",
+   "institution": "not named on the Commons record (a Jalayirid divan folio)",
+   "shelfmark": "not given",
+   "alt": "A tinted pen drawing of a camp of round tents and figures resting on the ground at the foot of a page of Persian verse.",
+   "relevance": "How the Jalayirid court in Baghdad drew a nomad camp c. 1400, a road-and-camp picture from the years of Temür's wars; it is not a place Ibn Turka lived."
+  },
+  "herat-kulliyat-adam-angels": {
+   "cid": "herat-kulliyat-adam-angels",
+   "registry_file": "tv-herat-kulliyat-adam-angels.jpg",
+   "origin": "web",
+   "kind": "painting",
+   "title": "Adam and the angels, from Hafiz-i Abru's Kulliyat-i Tarikhi",
+   "creator": "Attributed on the Commons record to Ma'ruf Baghdadi",
+   "date": "1415-16",
+   "place": "Herat",
+   "institution": "Topkapi Palace Museum Library, Istanbul",
+   "shelfmark": "MS Bagdat 282 (B. 282), f. 16",
+   "alt": "A crowned figure standing on a throne-like platform, angels bowing on a gold ground, and a dark winged Iblis standing apart beneath a tree.",
+   "relevance": "A page from the chronicle of Shāhrukh's court historian, the kind of source through which others' reports of the age reach the desk; the picture is Adam and the angels and says nothing of Ibn Turka."
+  },
+  "astro-sufi-orion-5036": {
+   "cid": "astro-sufi-orion-5036",
+   "registry_file": "tv-astro-sufi-orion-5036.jpg",
+   "origin": "web",
+   "kind": "manuscript",
+   "title": "Orion, from al-Sufi's Book of the Fixed Stars made for Ulugh Beg",
+   "creator": "Unnamed painters; text by 'Abd al-Rahman al-Sufi",
+   "date": "c. 1430-1440",
+   "place": "Samarkand (per the Commons page)",
+   "institution": "Bibliotheque nationale de France, Manuscrits",
+   "shelfmark": "arabe 5036, fol. 193v",
+   "alt": "A drawn bearded warrior raising a red club and girdled with a blue sword, his body marked with gold-ringed stars.",
+   "relevance": "Another page of the Timurid star-book of the 1430s, for the historian's desk to show what a learned manuscript of Ibn Turka's world looked like; not evidence about him."
+  },
+  "sufi-ursa-major": {
+   "cid": "sufi-ursa-major",
+   "registry_file": "c14-sufi-fixed-stars.jpg",
+   "origin": "registry",
+   "kind": "manuscript",
+   "title": "Ursa Major, from al-Sufi's Book of the Fixed Stars (earliest surviving copy)",
+   "creator": "Text by 'Abd al-Rahman al-Sufi; copyist not named",
+   "date": "c. 1009 (the oldest extant copy, per the Commons description of the text as of c. 964)",
+   "place": "not stated",
+   "institution": "Bodleian Library, Oxford",
+   "shelfmark": "MS Marsh 144",
+   "alt": "A drawn bear-like animal with red-ringed stars on its body and Arabic labels, on a worn brown page.",
+   "relevance": "The oldest surviving copy of the star-book that the Timurid copy for Ulugh Beg descends from, four centuries before it; the historian's reminder of how old the science was, not evidence about Ibn Turka."
+  },
+  "bulhan-sagittarius": {
+   "cid": "bulhan-sagittarius",
+   "registry_file": "tv-bulhan-sagittarius.jpg",
+   "origin": "occultimgdb",
+   "kind": "manuscript",
+   "title": "Sagittarius (a centaur archer), from the Kitab al-Bulhan",
+   "creator": "Text attributed to 'Abd al-Hasan al-Isfahani; painter unnamed",
+   "date": "see the Leo plate (Commons dates the manuscript 1350-1450)",
+   "place": "Iraq or Iran",
+   "institution": "Bodleian Library, Oxford",
+   "shelfmark": "MS Arab. d. 138 (from the OCCULTIMGDB catalogue)",
+   "alt": "A centaur with a red human torso and a blue horse body drawing a bow, with red and gold stars and Arabic headings.",
+   "relevance": "A second astrological figure from the same divination book, for the historian's desk; another science of the age, not evidence about Ibn Turka."
+  }
+ },
+ "rejected": [
+  {
+   "what": "Persian Astrolabe (brass); Mughal celestial globe; British Museum geomantic instrument of 1241/42 (registry items b46e97b3, a440fc2a, 2ca205ed)",
+   "reason": "Museum-object photographs, not paintings, manuscripts or printed pages (Ted's rule)."
+  },
+  {
+   "what": "Hilye-i Serif (registry ccf9a150; OCCULTIMGDB lettrism__hilya, hilya2)",
+   "reason": "Ottoman calligraphic panel of the 18th-19th century, later than any scene, and the first is a CC BY 3.0 photograph credited to an uploader; not a period painting, manuscript page or printed page of Ibn Turka's world."
+  },
+  {
+   "what": "The 30 registry items and OCCULTIMGDB Shams al-Ma'arif pages (registry 79900a51, d63f51fd, fe918759, 69b528d3, ec2d02fd, c7fe7b30 ...)",
+   "reason": "Wrong period (17th c. manuscript; 1920s Cairo printing of a text the project does not tie to Ibn Turka; a 19th-century European engraving) or wrong subject for any scene. Cleared for the older acts' design docs, not for these scenes."
+  },
+  {
+   "what": "Portal image catalogue (IslamicateOccultPortal db, 552 rows; 5 CURATED): Mafahis f. 52b/63a and Dee/Ottoman images",
+   "reason": "Every row is a raster extracted from a copyrighted scholarly PDF; rights_status is UNDETERMINED and no source page verifies any of them. The Tahawi circle (Majlis 10196, f. 63a) would be the ideal plate for Act II and is refused for that reason."
+  },
+  {
+   "what": "Khalili Collection al-Buni manuscript mss 0300 (registry 3752302f, CC BY-SA 3.0 IGO)",
+   "reason": "The rights gate could not parse the IGO licence key (fetch_commons reads it as no licence), and the folio is undated 13th-14th century, unconnected to any scene."
+  },
+  {
+   "what": "Nihayat al-su'l (British Library Add. 18866, Mamluk 1371), horseman and bear, CC BY-SA 4.0",
+   "reason": "Cleared and fetched, but no scene needs a lance manual; the Vienna Maqamat prince serves Barquq's majlis better. Kept in research/plates_commons.json for later."
+  },
+  {
+   "what": "Mamluk Qur'an of about 1380, open to sura 16 (Commons, CC BY-SA)",
+   "reason": "A photograph of an open book in a museum display case, not a page image."
+  },
+  {
+   "what": "Zafarnama double page 'The campaign against China' (Feb 1405)",
+   "reason": "The Commons file joins a colour photograph to a black-and-white one; rejected on image quality, though it would suit SCN-0106."
+  },
+  {
+   "what": "Buduh magic square (al-Qazwini, registry 90b5218f)",
+   "reason": "The file is a 224 x 127 px crop, too small to show."
+  },
+  {
+   "what": "Shahnama folio 'Caesar Makes a Talisman' (Ilkhanid c. 1330-40, Met, CC0)",
+   "reason": "The digitised folio has a blank white silhouette where the figure is missing, and no scene turns on it."
+  },
+  {
+   "what": "Mi'rajnama of 1436 (Herat, BnF Suppl. turc 190), 'Muhammad received by four angels'",
+   "reason": "Only a 400 x 341 px copy on Commons."
+  },
+  {
+   "what": "Hafiz-i Abru leaf 'Amir Sa'id Khvajah leading the army of Shah Rukh in 1405' (Herat c. 1430)",
+   "reason": "Cleared and fetched, but the Commons file is a black-and-white halftone detail from a printed art-history book, unreadable as a plate; it would have suited SCN-0205."
+  },
+  {
+   "what": "Iskandar Sultan anthology 'Prisoners brought before Khusraw', 'Shirin looking at Khusraw's portrait', 'Iskandar visiting the sage' and Gulistan 1427 'The king takes pity on the beggar', Humay and Humayun (Herat c. 1430, CC BY 2.0)",
+   "reason": "Fetched and cleared; held back because each is pretty but has no honest tie to a scene (for the last, the CC BY 2.0 photograph adds an attribution burden for nothing)."
+  },
+  {
+   "what": "Kitab al-Bulhan devils/birds, Jalayirid 'Angels amidst clouds' and 'Pastoral scene' (gallery), Ilkhanid Mi'raj-nama",
+   "reason": "Cleared, in our gallery, but no scene they honestly fit; the Jalayirid yurt drawing is used as one fallback plate."
+  },
+  {
+   "what": "'Ulugh Beg with ladies of his harem' (Freer, Timurid 1425-50) and the Ulugh Beg facsimile photographs",
+   "reason": "Dating uncertain (attributed range) and, for the facsimile, a photograph of a modern reproduction; not fetched."
+  },
+  {
+   "what": "Every photograph of a place: the Barquq complex in Cairo, Gur-e Amir, Ulugh Beg observatory and madrasa, Isfahan and Yazd architecture",
+   "reason": "Modern photographs of places, refused by Ted's rule."
+  }
+ ]
+}

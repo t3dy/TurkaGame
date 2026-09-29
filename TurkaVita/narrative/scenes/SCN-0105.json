@@ -24,16 +24,19 @@
    "claim": "CL-0034"
   },
   {
-   "text": "Akhlāṭī wrote to Ibn Turka calling him his bosom companion (khalīlī) and the leading luminary of his circle of brethren. This is a teacher's letter of praise to a disciple; it shows what Akhlāṭī wrote, not what he privately thought.",
-   "claim": "CL-0039"
+   "text": "Akhlāṭī wrote to Ibn Turka calling him his bosom companion (khalīlī) and the leading luminary of his circle of brethren.",
+   "claim": "CL-0039",
+   "detail": "This is a teacher's letter of praise to a disciple; it shows what Akhlāṭī wrote, not what he privately thought."
   },
   {
-   "text": "Ibn Turka never names Akhlāṭī in his writings. He calls him 'our Sayyid', 'the Sayyidic Presence' or 'the sublime Sayyidic Threshold'. Among these writings the R. Ḥurūf (1414 on Melvin-Koushki's date) and the Mafāḥiṣ (1420; the date may record copying) are both later than 1397.",
-   "claim": "CL-0035"
+   "text": "Ibn Turka never names Akhlāṭī in his writings. He calls him 'our Sayyid', 'the Sayyidic Presence' or 'the sublime Sayyidic Threshold'.",
+   "claim": "CL-0035",
+   "detail": "Among these writings the R. Ḥurūf (1414 on Melvin-Koushki's date) and the Mafāḥiṣ (1420; the date may record copying) are both later than 1397."
   },
   {
-   "text": "In his lettrist writings he invariably presents himself as only the systematizer of Akhlāṭī's teachings, and defers to Akhlāṭī as his sole oral source for lettrism; later Iranian lettrists remember him as Akhlāṭī's greatest disciple.",
-   "claim": "CL-0037"
+   "text": "In his lettrist writings he invariably presents himself as only the systematizer of Akhlāṭī's teachings, and defers to Akhlāṭī as his sole oral source for lettrism.",
+   "claim": "CL-0037",
+   "detail": "Later Iranian lettrists remember him as Akhlāṭī's greatest disciple."
   }
  ],
  "prose": [
@@ -44,7 +47,7 @@
  "choices": [
   {
    "id": "A",
-   "label": "Carry his teaching forward as its systematizer and never write his name: call him 'our Sayyid', and give him the credit for what you set in order.",
+   "label": "Carry his teaching forward as its systematizer, giving him the credit but never writing his name.",
    "strategy": "systematizer_our_sayyid",
    "epistemic_label": "documented",
    "based_on": [
@@ -72,16 +75,20 @@
    ],
    "requires": {},
    "effects": {
-    "court.akhlati": 1,
+    "court.akhlati": 2,
     "press.exposure": 2,
     "score.biography": -1,
-    "life.inheritance": "systematizer"
+    "life.inheritance": "systematizer",
+    "press.students": 1
    },
-   "feedback": "The sources have him never name Akhlāṭī in any writing, and Ibn Ḥajar's report (low confidence) that Akhlāṭī was exposed to charges of Shiʿism is the only hint of why naming him might cost. This is the game's own what-if, and the game returns you to the record: the sources put him writing 'our Sayyid', and nothing later can be built on a life in which the teacher's name is written."
+   "feedback": "The sources have him never name Akhlāṭī in any writing, and Ibn Ḥajar's report (low confidence) that Akhlāṭī was exposed to charges of Shiʿism is the only hint of why naming him might cost. This is the game's own what-if, and the game returns you to the record: the sources put him writing 'our Sayyid', and nothing later can be built on a life in which the teacher's name is written. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "His circle stands behind you and sends students. Your name is tied in writing to the Sayyid, and exposure rises."
+   ]
   },
   {
    "id": "C",
-   "label": "Take up the leadership of the brethren he addressed you among, and gather them in your own name as the head of the circle.",
+   "label": "Take up the leadership of the brethren he addressed you among, and gather them as head of the circle.",
    "strategy": "lead_the_circle",
    "epistemic_label": "reconstructed",
    "based_on": [

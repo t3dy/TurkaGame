@@ -9,7 +9,7 @@ window.CONTENT = {
    "act": "hostage",
    "title": "Samarkand, 1387: the family that was spared",
    "unrecorded": true,
-   "dramatic_question": "Isfahan has fallen and most of its people have been killed, but your family has been spared and sent east to Temür's capital, where your brother is made a judge. You are in your teens. What do you do with the years in Samarkand?",
+   "dramatic_question": "You are in your teens. What do you do with the years in Samarkand?",
    "situation": {
     "when": "789/1387 and the years after",
     "where": "Isfahan, then Temür's capital, Samarkand",
@@ -32,7 +32,7 @@ window.CONTENT = {
     }
    ],
    "prose": [
-    "Temür takes Isfahan in 789/1387 and most of its people are killed. Your family is not among them. You are a teenager, and you are carried east to Samarkand, where Temür appoints your elder brother Ṣadr al-Dīn qadi. Melvin-Koushki explains the sparing by Temür's policy of collecting eminent scholars and artists; that is his reading of the policy, not a report about your family's case.",
+    "You are a teenager, carried east with your family. Melvin-Koushki explains the sparing by Temür's policy of collecting eminent scholars and artists; that is his reading of the policy, not a report about your family's case.",
     "Ṣadr al-Dīn is a scholar of hadith, Quran commentary, jurisprudence and the principles of religion, and he has been your teacher. By your own later statement to Shāhrukh, he taught you only the outward meaning of the Sharīʿa and thought deeper matters too dangerous to teach in public.",
     "No source says what you did with these years. Melvin-Koushki infers that your wide learning in the religious sciences, above all the Sunni schools of law, dates from them. The hagiographer Kirmānī has the future astronomer Qāżīzāda Rūmī study under your brother alongside you; that they did so in Samarkand is Melvin-Koushki's inference."
    ],
@@ -67,9 +67,13 @@ window.CONTENT = {
       "court.temur": 2,
       "press.livelihood": 1,
       "score.biography": -1,
-      "life.training": "fiqh"
+      "life.training": "fiqh",
+      "press.students": -1
      },
-     "feedback": "The only appointment the sources record at Samarkand is your brother's, and no source gives a teenage Ibn Turka a post at Temür's court. This is the game's own what-if; the game rejoins the record, and nothing later can be built on a career the sources do not contain."
+     "feedback": "The only appointment the sources record at Samarkand is your brother's, and no source gives a teenage Ibn Turka a post at Temür's court. This is the game's own what-if; the game rejoins the record, and nothing later can be built on a career the sources do not contain. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "A post and an income of your own, and Temür's regard. You leave the schools, so no students gather around you."
+     ]
     },
     {
      "id": "C",
@@ -102,7 +106,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "hostage",
    "title": "Leaving Samarkand, c. 1393: fifteen years abroad",
-   "dramatic_question": "Your brother insists that you go abroad and study, because Iran is too strait for philosophy and mystical theory. Do you go, and by what road, and with whom?",
+   "dramatic_question": "Do you go abroad, and by what road and with whom?",
    "situation": {
     "when": "c. 795/1393 (a conjectured date)",
     "where": "Samarkand; then the Hijaz and Cairo",
@@ -115,26 +119,28 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "At his brother's insistence Ibn Turka set out on some fifteen years of study abroad, roughly 795-810/1393-1408 (Melvin-Koushki's timeline marks both dates 'c.'). The reason is his own, given to Shāhrukh in 1426 and to Bāysunghur in 1431-32: circumstances in Iran were too strait to carry on the family legacy in philosophy and mystical theory.",
-     "claim": "CL-0022"
+     "text": "At his brother's insistence Ibn Turka went abroad for some fifteen years, roughly 1393-1408. His own reason: Iran was too strait to carry on the family legacy in philosophy and mystical theory.",
+     "claim": "CL-0022",
+     "detail": "Melvin-Koushki's timeline marks both dates 'c.' (795-810 AH). The reason is his own word, given to Shāhrukh in 1426 and to Bāysunghur in 1431-32."
     },
     {
      "text": "He mentions in several places that he spent time in Mecca on his travels (again from the second apology, so his own word to a ruler he needed).",
      "claim": "CL-0024"
     },
     {
-     "text": "LOW CONFIDENCE: Melvin-Koushki's timeline has Sharaf al-Dīn Yazdī leave with him for Mecca and Cairo. The pages give no source for the departure itself; the nearest sources are later hagiographical reports of the two living together in Cairo.",
-     "claim": "CL-0023"
+     "text": "LOW CONFIDENCE: Melvin-Koushki's timeline has Sharaf al-Dīn Yazdī leave with him for Mecca and Cairo.",
+     "claim": "CL-0023",
+     "detail": "The pages give no source for the departure itself; the nearest sources are later hagiographical reports of the two living together in Cairo."
     }
    ],
    "prose": [
-    "Perhaps six years after the fall of Isfahan (Melvin-Koushki's 'c. 795/1393') you are made to leave. Your brother presses you to go abroad and study for some fifteen years. The reason you will later give two rulers is that the times in Iran are too strait to carry on your family's work in philosophy and mystical theory.",
+    "Perhaps six years after the fall of Isfahan (Melvin-Koushki's 'c. 795/1393') you are made to leave. Your brother presses you to go and study, and the reason you will later give two rulers is the one in the box above.",
     "The destinations are firmer than the road. Mecca is in your own writings. Cairo is on Melvin-Koushki's timeline, with Sharaf al-Dīn Yazdī beside you, though he cites no source for that. A tale written some two centuries later by Kāzirūnī, from a Turka descendant, has the two of you in Baghdad looking for a Sufi master; Melvin-Koushki says to take it with grains of salt."
    ],
    "choices": [
     {
      "id": "A",
-     "label": "Go abroad as your brother urges; the sources place you in Mecca and in Cairo.",
+     "label": "Go abroad as your brother urges, to study for some fifteen years.",
      "strategy": "leave_for_mecca_and_cairo",
      "epistemic_label": "documented",
      "based_on": [
@@ -152,7 +158,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Refuse to go. Stay in Samarkand under your brother and take up the family's path of the law.",
+     "label": "Refuse to go: stay in Samarkand under your brother and take up the family's path of the law.",
      "strategy": "stay_and_take_the_bench",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -164,13 +170,17 @@ window.CONTENT = {
       "court.temur": 1,
       "press.livelihood": 1,
       "score.biography": -1,
-      "life.route": "mecca-cairo"
+      "life.route": "mecca-cairo",
+      "press.works": -1
      },
-     "feedback": "The record has your brother appointed qadi by Temür, and Ibn Turka claiming in the first apology that the judgeship passed from brother to him. But the sources send him abroad for some fifteen years, at that brother's insistence. This is the game's own what-if, and the game returns you to the record: nothing later can be built on a life spent at Samarkand."
+     "feedback": "The record has your brother appointed qadi by Temür, and Ibn Turka claiming in the first apology that the judgeship passed from brother to him. But the sources send him abroad for some fifteen years, at that brother's insistence. This is the game's own what-if, and the game returns you to the record: nothing later can be built on a life spent at Samarkand. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "A safe household under your brother's roof, and Temür's regard. You give up the years of study your later writings rest on."
+     ]
     },
     {
      "id": "C",
-     "label": "Go by way of Baghdad first and look for a Sufi master there, with Yazdī beside you, as a later account tells it.",
+     "label": "Go abroad by way of Baghdad, looking for a Sufi master there, as a later account tells it.",
      "strategy": "go_by_baghdad",
      "epistemic_label": "contested",
      "based_on": [
@@ -181,9 +191,13 @@ window.CONTENT = {
      "effects": {
       "court.yazdi": 1,
       "score.biography": 0,
-      "life.route": "baghdad"
+      "life.route": "baghdad",
+      "press.livelihood": -1
      },
-     "feedback": "The only source for Baghdad is Kāzirūnī's Sullam al-Samāvāt, written roughly two centuries later and drawing on his teacher, a Turka descendant. Melvin-Koushki tells us to take it with grains of salt, and no other source has it. The game keeps it as a contested road and sends you on to Cairo, where every other source places you."
+     "feedback": "The only source for Baghdad is Kāzirūnī's Sullam al-Samāvāt, written roughly two centuries later and drawing on his teacher, a Turka descendant. Melvin-Koushki tells us to take it with grains of salt, and no other source has it. The game keeps it as a contested road and sends you on to Cairo, where every other source places you.",
+     "costs": [
+      "The road by way of Baghdad is longer, and no post waits at the end of it. This price is the game's guess, not the record's."
+     ]
     },
     {
      "id": "D",
@@ -198,9 +212,13 @@ window.CONTENT = {
      "effects": {
       "court.yazdi": 1,
       "score.biography": 1,
-      "life.route": "mecca-cairo"
+      "life.route": "mecca-cairo",
+      "press.livelihood": -1
      },
-     "feedback": "Melvin-Koushki's timeline has Yazdī leave with you for Mecca and Cairo, but the pages give no source for the departure itself (low confidence). The nearest sources are later hagiographical reports of the two of you living together in Cairo. The game gives you the favour lightly; you will have to earn the rest in Cairo."
+     "feedback": "Melvin-Koushki's timeline has Yazdī leave with you for Mecca and Cairo, but the pages give no source for the departure itself (low confidence). The nearest sources are later hagiographical reports of the two of you living together in Cairo. The game gives you the favour lightly; you will have to earn the rest in Cairo.",
+     "costs": [
+      "You travel as two, and one purse feeds both. This price is the game's guess, not the record's."
+     ]
     }
    ],
    "next": "SCN-0103",
@@ -230,16 +248,18 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "In Cairo Ibn Turka studied hadith under Sirāj al-Dīn al-Bulqīnī (d. 805/1403), who was sympathetic to Sufism but not a partisan of it: when certain verses of Ibn al-Fāriḍ's Tāʾiyya were put to him he called them beyond the pale of belief. Melvin-Koushki cites no source for the discipleship itself.",
-     "claim": "CL-0026"
+     "text": "In Cairo Ibn Turka studied hadith under Sirāj al-Dīn al-Bulqīnī (d. 805/1403), who was sympathetic to Sufism but not a partisan of it.",
+     "claim": "CL-0026",
+     "detail": "When certain verses of Ibn al-Fāriḍ's Tāʾiyya were put to him he called them beyond the pale of belief. Melvin-Koushki cites no source for the discipleship itself."
     },
     {
      "text": "He also met and apprenticed himself to Sayyid Ḥusayn Akhlāṭī, the Kurdish occultist and rumoured mahdi. Melvin-Koushki cites no dated source for when the apprenticeship began.",
      "claim": "CL-0031"
     },
     {
-     "text": "Akhlāṭī was a physician by trade and the resident alchemist and wonderworker at Barqūq's court, known for jafr, raml, the science of letters and taksīr. He died in Cairo in 799/1397, so on the timeline's own 'c.' dates the overlap with the Cairo years is at most about four years; that arithmetic is ours, not Melvin-Koushki's.",
-     "claim": "CL-0034"
+     "text": "Akhlāṭī was a physician by trade and the resident alchemist and wonderworker at Barqūq's court. He died in Cairo in 799/1397.",
+     "claim": "CL-0034",
+     "detail": "He was known for jafr, raml, the science of letters and taksīr. On the timeline's own 'c.' dates the overlap with the Cairo years is at most about four years; that arithmetic is ours, not Melvin-Koushki's."
     },
     {
      "text": "Ibn Turka implies, in his second apology to Bāysunghur, that he was a regular participant in scholarly majlises at the Mamluk court.",
@@ -254,7 +274,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Study hadith under Bulqīnī and apprentice yourself to Akhlāṭī as well, and keep to the scholarly majlises at Barqūq's court.",
+     "label": "Divide your years between Bulqīnī's hadith and Akhlāṭī's circle, and sit in the majlises at Barqūq's court.",
      "strategy": "both_masters_and_the_majlis",
      "epistemic_label": "documented",
      "based_on": [
@@ -278,7 +298,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Give your years to Bulqīnī and the hadith, and keep clear of the Sayyid.",
+     "label": "Give your years to Bulqīnī and the hadith, and keep clear of Akhlāṭī and his circle.",
      "strategy": "bulqini_only",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -290,13 +310,17 @@ window.CONTENT = {
      "effects": {
       "court.barquq": 1,
       "score.biography": -1,
-      "life.master": "akhlati"
+      "life.master": "akhlati",
+      "press.livelihood": 1
      },
-     "feedback": "No source has him avoid Akhlāṭī; a later tazkira (Gāzurgāhī) puts him in the Sayyid's house, and he later calls Akhlāṭī his sole oral source for lettrism. This is the game's own what-if, and it returns you to the record: nothing later can be built on a scholar who never met Akhlāṭī."
+     "feedback": "No source has him avoid Akhlāṭī; a later tazkira (Gāzurgāhī) puts him in the Sayyid's house, and he later calls Akhlāṭī his sole oral source for lettrism. This is the game's own what-if, and it returns you to the record: nothing later can be built on a scholar who never met Akhlāṭī. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Safer: your name is not tied to the Sayyid, and the hadith give you a scholar's living. You earn none of his regard, and doors that open only through him stay shut."
+     ]
     },
     {
      "id": "C",
-     "label": "Give yourself wholly to Akhlāṭī and let the hadith go.",
+     "label": "Give yourself wholly to Akhlāṭī and his circle, and let the hadith and Bulqīnī go.",
      "strategy": "akhlati_only",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -308,9 +332,13 @@ window.CONTENT = {
       "court.akhlati": 3,
       "press.exposure": 2,
       "score.biography": -1,
-      "life.master": "akhlati"
+      "life.master": "akhlati",
+      "press.livelihood": -1
      },
-     "feedback": "The sources have you study hadith under Bulqīnī as well as follow Akhlāṭī. This is the game's own what-if, and the game returns you to the record as Melvin-Koushki gives it, where you have both."
+     "feedback": "The sources have you study hadith under Bulqīnī as well as follow Akhlāṭī. This is the game's own what-if, and the game returns you to the record as Melvin-Koushki gives it, where you have both. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Deeper standing with the Sayyid than the record gives you. Your name is tied to his circle, and without the hadith your living is thinner."
+     ]
     }
    ],
    "next": "SCN-0104",
@@ -327,7 +355,7 @@ window.CONTENT = {
    "act": "hostage",
    "title": "Barqūq's majlis: an opinion is asked",
    "unrecorded": true,
-   "dramatic_question": "In a majlis at the Sultan's court, Barqūq presses you for your opinion of another scholar. The record does not say what you answered. What do you say?",
+   "dramatic_question": "Barqūq presses you for your opinion of another scholar. The record does not say what you answered. What do you say?",
    "situation": {
     "when": "during Barqūq's reign (784-801/1382-99 in the dissertation; 784-92/1382-90 in Melvin-Koushki's 2016 book); the majlis is undated",
     "where": "the Mamluk court, Cairo",
@@ -341,16 +369,18 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "According to Ibn Turka's second apology, Sultan Barqūq pressed him in a majlis for his opinion of another scholar, whom Melvin-Koushki identifies as Shams al-Dīn Muḥammad al-Jazarī (the identification is his). The apology was written in 1431-32 to Bāysunghur, to seek intercession while his case was unresolved.",
-     "claim": "CL-0028"
+     "text": "According to Ibn Turka's second apology, Sultan Barqūq pressed him in a majlis for his opinion of another scholar, whom Melvin-Koushki identifies as Shams al-Dīn Muḥammad al-Jazarī.",
+     "claim": "CL-0028",
+     "detail": "The identification is Melvin-Koushki's. The apology was written in 1431-32 to Bāysunghur, to seek intercession while his case was unresolved."
     },
     {
      "text": "Al-Jazarī, originally of Damascus (d. 833/1429 at Herat), later became Ibn Turka's powerful opponent, and his enmity caused Ibn Turka much grief.",
      "claim": "CL-0029"
     },
     {
-     "text": "The second apology traces al-Jazarī's enmity to Ibn Turka's candid assessment of him to the Mamluk sultan in Egypt. This is Ibn Turka's own version of a grievance; Melvin-Koushki gives no corroboration on the pages we hold, and the sources we hold do not say what the assessment was.",
-     "claim": "CL-0157"
+     "text": "The second apology traces al-Jazarī's enmity to Ibn Turka's candid assessment of him to the Mamluk sultan in Egypt.",
+     "claim": "CL-0157",
+     "detail": "This is Ibn Turka's own version of a grievance; Melvin-Koushki gives no corroboration on the pages we hold, and the sources we hold do not say what the assessment was."
     }
    ],
    "prose": [
@@ -391,10 +421,11 @@ window.CONTENT = {
      "requires": {},
      "effects": {
       "court.barquq": -1,
-      "press.enemies": 1
+      "press.enemies": 1,
+      "press.exposure": -1
      },
      "costs": [
-      "Flattery does not undo the record: al-Jazarī still becomes your enemy. This price is the game's, not the record's."
+      "Nothing you said can be quoted against you, so exposure falls. The sultan wanted a judgement and got flattery, and al-Jazarī becomes your enemy anyway. This price is the game's, not the record's."
      ],
      "feedback": "The record is silent on what you said, so this is not a counterfactual: nothing says you did not praise him. But al-Jazarī's later enmity is in the sources (attested, medium confidence), and Ibn Turka himself traces it to this hour, so the game does not let praise buy peace."
     },
@@ -453,16 +484,19 @@ window.CONTENT = {
      "claim": "CL-0034"
     },
     {
-     "text": "Akhlāṭī wrote to Ibn Turka calling him his bosom companion (khalīlī) and the leading luminary of his circle of brethren. This is a teacher's letter of praise to a disciple; it shows what Akhlāṭī wrote, not what he privately thought.",
-     "claim": "CL-0039"
+     "text": "Akhlāṭī wrote to Ibn Turka calling him his bosom companion (khalīlī) and the leading luminary of his circle of brethren.",
+     "claim": "CL-0039",
+     "detail": "This is a teacher's letter of praise to a disciple; it shows what Akhlāṭī wrote, not what he privately thought."
     },
     {
-     "text": "Ibn Turka never names Akhlāṭī in his writings. He calls him 'our Sayyid', 'the Sayyidic Presence' or 'the sublime Sayyidic Threshold'. Among these writings the R. Ḥurūf (1414 on Melvin-Koushki's date) and the Mafāḥiṣ (1420; the date may record copying) are both later than 1397.",
-     "claim": "CL-0035"
+     "text": "Ibn Turka never names Akhlāṭī in his writings. He calls him 'our Sayyid', 'the Sayyidic Presence' or 'the sublime Sayyidic Threshold'.",
+     "claim": "CL-0035",
+     "detail": "Among these writings the R. Ḥurūf (1414 on Melvin-Koushki's date) and the Mafāḥiṣ (1420; the date may record copying) are both later than 1397."
     },
     {
-     "text": "In his lettrist writings he invariably presents himself as only the systematizer of Akhlāṭī's teachings, and defers to Akhlāṭī as his sole oral source for lettrism; later Iranian lettrists remember him as Akhlāṭī's greatest disciple.",
-     "claim": "CL-0037"
+     "text": "In his lettrist writings he invariably presents himself as only the systematizer of Akhlāṭī's teachings, and defers to Akhlāṭī as his sole oral source for lettrism.",
+     "claim": "CL-0037",
+     "detail": "Later Iranian lettrists remember him as Akhlāṭī's greatest disciple."
     }
    ],
    "prose": [
@@ -473,7 +507,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Carry his teaching forward as its systematizer and never write his name: call him 'our Sayyid', and give him the credit for what you set in order.",
+     "label": "Carry his teaching forward as its systematizer, giving him the credit but never writing his name.",
      "strategy": "systematizer_our_sayyid",
      "epistemic_label": "documented",
      "based_on": [
@@ -501,16 +535,20 @@ window.CONTENT = {
      ],
      "requires": {},
      "effects": {
-      "court.akhlati": 1,
+      "court.akhlati": 2,
       "press.exposure": 2,
       "score.biography": -1,
-      "life.inheritance": "systematizer"
+      "life.inheritance": "systematizer",
+      "press.students": 1
      },
-     "feedback": "The sources have him never name Akhlāṭī in any writing, and Ibn Ḥajar's report (low confidence) that Akhlāṭī was exposed to charges of Shiʿism is the only hint of why naming him might cost. This is the game's own what-if, and the game returns you to the record: the sources put him writing 'our Sayyid', and nothing later can be built on a life in which the teacher's name is written."
+     "feedback": "The sources have him never name Akhlāṭī in any writing, and Ibn Ḥajar's report (low confidence) that Akhlāṭī was exposed to charges of Shiʿism is the only hint of why naming him might cost. This is the game's own what-if, and the game returns you to the record: the sources put him writing 'our Sayyid', and nothing later can be built on a life in which the teacher's name is written. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "His circle stands behind you and sends students. Your name is tied in writing to the Sayyid, and exposure rises."
+     ]
     },
     {
      "id": "C",
-     "label": "Take up the leadership of the brethren he addressed you among, and gather them in your own name as the head of the circle.",
+     "label": "Take up the leadership of the brethren he addressed you among, and gather them as head of the circle.",
      "strategy": "lead_the_circle",
      "epistemic_label": "reconstructed",
      "based_on": [
@@ -544,7 +582,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "hostage",
    "title": "1405: Temür is dead, and the road home",
-   "dramatic_question": "The man who took Isfahan and moved your family east is dead, and, on Melvin-Koushki's reading, you are still abroad. Do you go home, and how visible do you let yourself be when you get there?",
+   "dramatic_question": "Temür is dead. Do you go home, and how visible do you let yourself be when you get there?",
    "situation": {
     "when": "807/1405; the return is c. 810/1408 (a conjectured date)",
     "where": "abroad; then Isfahan",
@@ -562,8 +600,9 @@ window.CONTENT = {
      "claim": "CL-0021"
     },
     {
-     "text": "Melvin-Koushki's timeline dates the completion of the Sharḥ-i Naẓm al-Durr to 806/1404 and the R. Munāẓarāt-i Khams to 808/1405. Both dates rest on manuscripts, and a manuscript date can record copying rather than composition; the timeline does not say which entries rest on which manuscript.",
-     "claim": "CL-0092"
+     "text": "Melvin-Koushki's timeline dates the completion of the Sharḥ-i Naẓm al-Durr to 806/1404 and the R. Munāẓarāt-i Khams to 808/1405.",
+     "claim": "CL-0092",
+     "detail": "Both dates rest on manuscripts, and a manuscript date can record copying rather than composition; the timeline does not say which entries rest on which manuscript."
     }
    ],
    "prose": [
@@ -590,7 +629,7 @@ window.CONTENT = {
       "score.biography": 2,
       "life.seat": "isfahan"
      },
-     "feedback": "Melvin-Koushki has you take up teaching in Isfahan, intending a retired life of contemplation, until Pīr-Muḥammad, Temür's grandson and governor of Fars, summons you to Shiraz about 810-12/1408-9. He cites no source for the passage, and the return date is his 'perhaps' and 'c.'. The dates of the two works are colophon dates that may record copying, and the Naẓm al-Durr commentary is said to refer to works of 1411 and 1420, which sits oddly with 1404; the dissertation does not comment (the game's observation, CL-0323). That you were still abroad when Temür died is part of the same timeline reading (low confidence)."
+     "feedback": "Melvin-Koushki has you take up teaching in Isfahan, intending a retired life of contemplation, until Pīr-Muḥammad, Temür's grandson and governor of Fars, summons you to Shiraz about 810-12/1408-9. He cites no source for the passage, and the return date is his 'perhaps' and 'c.'. The dates of the two works are colophon dates that may record copying, and the Naẓm al-Durr commentary is said to refer to works of 1411 and 1420, which sits oddly with 1404; the dissertation does not comment (the game's observation). That you were still abroad when Temür died is part of the same timeline reading (low confidence)."
     },
     {
      "id": "B",
@@ -604,9 +643,14 @@ window.CONTENT = {
      "requires": {},
      "effects": {
       "score.biography": -1,
-      "life.seat": "isfahan"
+      "life.seat": "isfahan",
+      "press.exposure": -1,
+      "press.students": -1
      },
-     "feedback": "Too strait for philosophy and mystical theory is the reason Ibn Turka gave, in his apologies, for leaving Iran; nothing says he decided the situation had not changed after Temür's death. The sources put him back in Isfahan, teaching, and then summoned to Shiraz. This is the game's own what-if, and the game returns you to the record: nothing later can be built on a life that stays abroad."
+     "feedback": "Too strait for philosophy and mystical theory is the reason Ibn Turka gave, in his apologies, for leaving Iran; nothing says he decided the situation had not changed after Temür's death. The sources put him back in Isfahan, teaching, and then summoned to Shiraz. This is the game's own what-if, and the game returns you to the record: nothing later can be built on a life that stays abroad. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Abroad, your name stays out of Iran's quarrels, so exposure falls. You gather no students and no readers at home."
+     ]
     },
     {
      "id": "C",
@@ -643,7 +687,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "courts",
    "title": "Isfahan, c. 1408-9: the governor's summons",
-   "dramatic_question": "You came home to teach and to be left alone. The governor of Fars, a grandson of Temür, sends for you. Do you go?",
+   "dramatic_question": "The governor of Fars sends for you. Do you go?",
    "situation": {
     "when": "c. 810-12/1408-9 (Melvin-Koushki's own 'c.')",
     "where": "Isfahan, then Shiraz",
@@ -655,8 +699,9 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "Back in Isfahan you took up teaching, meaning to live quietly in contemplation (gūsha-nishīnī), until Pīr-Muḥammad b. ʿUmar-Shaykh, Temür's grandson and governor of Fars, summoned you to Shiraz. Melvin-Koushki cites no source for this passage and marks its dates 'c.'.",
-     "claim": "CL-0052"
+     "text": "Back in Isfahan you took up teaching, meaning to live quietly in contemplation (gūsha-nishīnī), until Pīr-Muḥammad, Temür's grandson and governor of Fars, summoned you to Shiraz.",
+     "claim": "CL-0052",
+     "detail": "The governor's full name is Pīr-Muḥammad b. ʿUmar-Shaykh. Melvin-Koushki cites no source for this passage and marks its dates 'c.'."
     },
     {
      "text": "Pīr-Muḥammad was murdered in 812/1409 and his brother Iskandar Mīrzā took his place in Shiraz. Nothing you do prevents it.",
@@ -675,7 +720,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Answer the summons: go to Shiraz and let Pīr-Muḥammad make you a member of his court.",
+     "label": "Answer the summons: go to Shiraz and take a place at Pīr-Muḥammad's court.",
      "strategy": "answer_summons_shiraz",
      "epistemic_label": "documented",
      "historical": true,
@@ -692,7 +737,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Refuse the summons, keep teaching in Isfahan, and stay out of the court.",
+     "label": "Refuse the summons: stay in Isfahan, keep teaching, and keep out of the court.",
      "strategy": "refuse_summons",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -701,9 +746,14 @@ window.CONTENT = {
      "requires": {},
      "effects": {
       "press.livelihood": -1,
-      "score.biography": -1
+      "score.biography": -1,
+      "press.exposure": -1,
+      "press.students": 1
      },
-     "feedback": "No source has you refusing. Melvin-Koushki has you summoned and made a member of the court, and the honours that follow presuppose it. The quiet life is what he says you kept trying to return to (CL-0061), not what the sources say you kept. The game returns you to the record: you go, and the murder of 1409 arrives regardless."
+     "feedback": "No source has you refusing. Melvin-Koushki has you summoned and made a member of the court, and the honours that follow presuppose it. The quiet life is what Melvin-Koushki says you kept trying to return to, not something the sources show you keeping. The game returns you to the record: you go, and the murder of 1409 arrives regardless. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "You keep your students and stay clear of the court, so exposure falls. You forgo the governor's stipend, and your household is poorer."
+     ]
     }
    ],
    "next": "SCN-0202",
@@ -719,7 +769,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "courts",
    "title": "Shiraz and Isfahan, 1409-14: the second prince",
-   "dramatic_question": "Pīr-Muḥammad is dead and his brother Iskandar Mīrzā holds Fars. He wants you at his court too. How much of what he offers do you take?",
+   "dramatic_question": "Iskandar Mīrzā wants you at his court too. How much of what he offers do you take?",
    "situation": {
     "when": "812-17/1409-14 (Melvin-Koushki's own dates for this court disagree; see the first item below)",
     "where": "Shiraz, then Isfahan",
@@ -733,8 +783,9 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "Iskandar Mīrzā took his brother's place in Shiraz and soon afterwards set up a brilliant court in Isfahan. Melvin-Koushki's timeline is not consistent about when: one line has you a member of Iskandar's court in Isfahan from 812-15/1409-12, another has Iskandar taking Isfahan and founding that court only in 815-17/1412-14.",
-     "claim": "CL-0053"
+     "text": "Iskandar Mīrzā took his brother's place in Shiraz and soon afterwards set up a brilliant court in Isfahan.",
+     "claim": "CL-0053",
+     "detail": "Melvin-Koushki's timeline is not consistent about when: one line has you a member of Iskandar's court in Isfahan from 812-15/1409-12, another has Iskandar taking Isfahan and founding that court only in 815-17/1412-14."
     },
     {
      "text": "Iskandar too made you a member of his court and gave you similar honours. This comes from your second apology, written to Bāysunghur while your own case was unresolved; Melvin-Koushki reports it.",
@@ -753,7 +804,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Become a member of Iskandar's court and accept the honours he gives, as you did under his brother.",
+     "label": "Join Iskandar's court and accept the honours he gives, as you did under his brother.",
      "strategy": "join_iskandar_court",
      "epistemic_label": "documented",
      "historical": true,
@@ -770,7 +821,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Take the offices Melvin-Koushki presumes, a teaching post and a judgeship, and take your seat among the astronomers, poets and historians the prince gathers.",
+     "label": "Take the teaching post and judgeship Melvin-Koushki presumes, and sit among the scholars the prince gathers.",
      "strategy": "take_offices_and_circle",
      "epistemic_label": "reconstructed",
      "based_on": [
@@ -784,11 +835,11 @@ window.CONTENT = {
       "press.exposure": 2,
       "score.biography": 1
      },
-     "feedback": "This is a scholar's proposal, not a record. The post and judgeship are 'presumably' Melvin-Koushki's, with a '(?)' in his timeline (CL-0055). That you met the astronomers Ghiyās al-Dīn and Maḥmūd Kāshī, the poets Busḥāq Aṭʿima and Mīr Ḥaydar and the historian Muʿīn al-Dīn Naṭanzī is 'would have', from Soucek (CL-0056). The game lets you take it and charges you for it in exposure; it does not treat it as fact."
+     "feedback": "This is a scholar's proposal, not a record. The post and judgeship are 'presumably' Melvin-Koushki's, with a '(?)' in his timeline. That you met the astronomers Ghiyās al-Dīn and Maḥmūd Kāshī, the poets Busḥāq Aṭʿima and Mīr Ḥaydar and the historian Muʿīn al-Dīn Naṭanzī is 'would have', from Soucek. The game lets you take it and charges you for it in exposure; it does not treat it as fact."
     },
     {
      "id": "C",
-     "label": "Decline the honours and keep to your own teaching outside Iskandar's court.",
+     "label": "Decline the honours and go on teaching on your own, outside Iskandar's court.",
      "strategy": "stay_outside_court",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -797,9 +848,14 @@ window.CONTENT = {
      "requires": {},
      "effects": {
       "press.livelihood": -1,
-      "score.biography": -1
+      "score.biography": -1,
+      "press.exposure": -1,
+      "press.students": 1
      },
-     "feedback": "The sources put you inside this court, and Melvin-Koushki reads Iskandar as your patron in Shiraz and Isfahan until Shāhrukh's campaign of 817/1414 (CL-0410, from your letters). Nobody records you refusing him. The game returns you to the record."
+     "feedback": "The sources put you inside this court, and Melvin-Koushki reads Iskandar as your patron in Shiraz and Isfahan until Shāhrukh's campaign of 817/1414, from your letters. Nobody records you refusing him. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "You keep your students and stay clear of a court that may later count against you, so exposure falls. You lose the honours and the income that came with them."
+     ]
     }
    ],
    "next": "SCN-0203",
@@ -829,12 +885,14 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "The colophon on MS Majlis 10196 f. 330a says your commentary on Ibn ʿArabī's Fuṣūṣ al-Ḥikam was finished on 20 Ṣafar 814 (13 June 1411) and corrected in Fars on 19 Dhū l-Ḥijja 817 (1 March 1415). Melvin-Koushki's timeline says 813/1411 instead, and puts the completion in a journey to the Hijaz that he marks with a question mark ('for pilgrimage?').",
-     "claim": "CL-0308"
+     "text": "The colophon on MS Majlis 10196 f. 330a says your commentary on Ibn ʿArabī's Fuṣūṣ al-Ḥikam was finished on 20 Ṣafar 814 (13 June 1411) and corrected in Fars on 19 Dhū l-Ḥijja 817 (1 March 1415).",
+     "claim": "CL-0308",
+     "detail": "Melvin-Koushki's timeline says 813/1411 instead, and puts the completion in a journey to the Hijaz that he marks with a question mark ('for pilgrimage?')."
     },
     {
-     "text": "Melvin-Koushki dates the writing of your Persian commentary on ʿIrāqī's Lamaʿāt, the Żawʾ al-Lamaʿāt, to 815/1412, 'presumably in Isfahan'. He cites no colophon for that, and the copy in the Majlis manuscript is a later one (Dhū l-Qaʿda 828/1425).",
-     "claim": "CL-0337"
+     "text": "Melvin-Koushki dates the writing of your Persian commentary on ʿIrāqī's Lamaʿāt, the Żawʾ al-Lamaʿāt, to 815/1412, 'presumably in Isfahan'.",
+     "claim": "CL-0337",
+     "detail": "He cites no colophon for that, and the copy in the Majlis manuscript is a later one (Dhū l-Qaʿda 828/1425)."
     },
     {
      "text": "Melvin-Koushki says the Timurid elite, Iskandar among them, took an obvious interest in your lettrist doctrine.",
@@ -849,7 +907,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Put your own name to both commentaries and let the lettrism run through the Fuṣūṣ commentary as your own argument, whoever reads it.",
+     "label": "Put your name to both commentaries and let the lettrism run through the Fuṣūṣ commentary as your own argument.",
      "strategy": "sign_both_commentaries",
      "epistemic_label": "documented",
      "historical": true,
@@ -865,11 +923,11 @@ window.CONTENT = {
       "press.exposure": 1,
       "score.biography": 2
      },
-     "feedback": "Both works survive under your name in the Majlis manuscript, and the Fuṣūṣ commentary is one of your four or five major works. Read the dates with care: a colophon may record copying rather than composing, the date of the Żawʾ is Melvin-Koushki's presumption, and the two years he gives for the Fuṣūṣ (813 or 814) are not reconciled. He also reads the later enmity of Khwāfī's circle as following from your promotion of Ibn ʿArabī (CL-0630, a causal reading, not a stated fact); that is why exposure rises."
+     "feedback": "Both works survive under your name in the Majlis manuscript, and the Fuṣūṣ commentary is one of your four or five major works. Read the dates with care: a colophon may record copying rather than composing, the date of the Żawʾ is Melvin-Koushki's presumption, and the two years he gives for the Fuṣūṣ (813 or 814) are not reconciled. He also reads the later enmity of Khwāfī's circle as following from your promotion of Ibn ʿArabī (a causal reading, not a stated fact); that is why exposure rises."
     },
     {
      "id": "B",
-     "label": "Steer the work by Iskandar's known appetite for lettrism: let the lettrist excursuses carry the argument, and present it where the prince will see it.",
+     "label": "Shape the work to Iskandar's known appetite for lettrism, and present it where the prince will see it.",
      "strategy": "tailor_to_iskandar",
      "epistemic_label": "reconstructed",
      "based_on": [
@@ -886,11 +944,11 @@ window.CONTENT = {
       "court.iskandar": 1,
       "press.exposure": 2
      },
-     "feedback": "This is only a possibility. Melvin-Koushki notes the elite's interest (CL-0466) and thinks it possible that Iskandar commissioned a different work, the R. Ḥurūf, a few years on, though the pages give no source for that (CL-0559). No source has either commentary written to the prince's order, and his later papers disagree about who led whom. It is open only to a man who already stands high with him."
+     "feedback": "This is only a possibility. Melvin-Koushki notes the elite's interest and thinks it possible that Iskandar commissioned a different work, the R. Ḥurūf, a few years on, though the pages give no source for that. No source has either commentary written to the prince's order, and his later papers disagree about who led whom. It is open only to a man who already stands high with him."
     },
     {
      "id": "C",
-     "label": "Keep both commentaries unsigned and unshown, and go on teaching.",
+     "label": "Leave both commentaries unsigned and unshown, and go on teaching your students.",
      "strategy": "withhold_the_works",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -900,9 +958,15 @@ window.CONTENT = {
      "effects": {
       "score.textual": -1,
       "press.livelihood": -1,
-      "score.biography": -1
+      "score.biography": -1,
+      "press.exposure": -1,
+      "press.students": 1,
+      "press.works": -1
      },
-     "feedback": "The record has the opposite: the Fuṣūṣ commentary was corrected in Fars in 1415 and was read to Sharaf al-Dīn Yazdī in Herat on 30 Rajab 820 (12 September 1417), so it circulated (CL-0310). The sources do not have you withholding it, and the game returns you to them."
+     "feedback": "The record has the opposite: the Fuṣūṣ commentary was corrected in Fars in 1415 and was read to Sharaf al-Dīn Yazdī in Herat on 30 Rajab 820 (12 September 1417), so it circulated. The sources do not have you withholding it, and the game returns you to them. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Safer: nothing signed for enemies to quote, and your teaching goes on. The commentaries reach no readers, and no patron pays you for them."
+     ]
     }
    ],
    "next": "SCN-0204",
@@ -930,8 +994,9 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "In two letters (nos. 4 and 12 of the Munshaʾāt-i Turka, ca. 816/1413, 'Isfahan?') you say that harassment by envious persons forces you to leave the region for a time, and that you are moving your family to Shiraz. Melvin-Koushki warns that his dating of the letters is conjecture and their order not rigorous.",
-     "claim": "CL-0414"
+     "text": "In two letters (nos. 4 and 12 of the Munshaʾāt-i Turka) you say harassment by envious persons forces you to leave the region for a time, and that you are moving your family to Shiraz.",
+     "claim": "CL-0414",
+     "detail": "Melvin-Koushki dates the letters ca. 816/1413 and places them at 'Isfahan?'; he warns that his dating is conjecture and their order not rigorous."
     },
     {
      "text": "Six of your surviving letters go to Amīr Jalāl al-Dīn Fīrūzshāh, whom Melvin-Koushki, following Manz, calls the greatest patron of the religious establishment, Sufis included, among Shāhrukh's amirs.",
@@ -950,7 +1015,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Write to Amīr Fīrūzshāh and to Iskandar's vizier Ḥāfiẓ Rāzī, say that harassment forces you to leave for a time, and ask each of them to take Sharaf al-Dīn Yaʿqūb as your replacement.",
+     "label": "Write to Amīr Fīrūzshāh and to Iskandar's vizier Ḥāfiẓ Rāzī, asking each to take Sharaf al-Dīn Yaʿqūb as your replacement.",
      "strategy": "broker_yaqub_to_amir_and_vizier",
      "epistemic_label": "documented",
      "historical": true,
@@ -966,11 +1031,11 @@ window.CONTENT = {
       "press.students": 1,
       "score.biography": 2
      },
-     "feedback": "These are letters 4 and 12 as Melvin-Koushki summarises them, and the first of the six letters he counts to Fīrūzshāh. Take the datings as his conjecture (letter 10, which welcomes Fīrūzshāh's troops to Iraq, is put at ca. 817/1414, so the order is not strict). Two things are unsettled: the timeline has your move to Shiraz but his running text does not mention it (CL-0058), and Melvin-Koushki identifies Yaʿqūb with the man who became qadi of Yazd, so the sources do not say whether he replaced you in Isfahan or in Yazd."
+     "feedback": "These are letters 4 and 12 as Melvin-Koushki summarises them, and the first of the six letters he counts to Fīrūzshāh. Take the datings as his conjecture (letter 10, which welcomes Fīrūzshāh's troops to Iraq, is put at ca. 817/1414, so the order is not strict). Two things are unsettled: the timeline has your move to Shiraz but his running text does not mention it, and Melvin-Koushki identifies Yaʿqūb with the man who became qadi of Yazd, so the sources do not say whether he replaced you in Isfahan or in Yazd."
     },
     {
      "id": "B",
-     "label": "Write to the vizier and the amir asking for an office for yourself in Iraq.",
+     "label": "Write to Amīr Fīrūzshāh and the vizier Ḥāfiẓ Rāzī, asking each for an office of your own in Iraq.",
      "strategy": "ask_for_yourself",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -983,11 +1048,14 @@ window.CONTENT = {
       "press.enemies": 1,
       "score.biography": -1
      },
-     "feedback": "None of the letters Melvin-Koushki places near ca. 816/1413 asks anything for you: letters 4 and 12 recommend Yaʿqūb (CL-0414) and letter 6 asks an amir to look into his situation (CL-0415). The requests for a stipend and for restored property come later, from exile (CL-0432). The sources put you asking for others first; the game returns you to the record."
+     "feedback": "None of the letters Melvin-Koushki places near ca. 816/1413 asks anything for you: letters 4 and 12 recommend Yaʿqūb and letter 6 asks an amir to look into his situation. The requests for a stipend and for restored property come later, from exile. The sources put you asking for others first; the game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "An office of your own to feed the household. Envious men see you asking for yourself and have one more reason to work against you."
+     ]
     },
     {
      "id": "C",
-     "label": "Write to Iskandar himself, with your regard and your regret that you cannot call in person.",
+     "label": "Write to Iskandar himself, with your regard and your regret that you cannot call on him in person.",
      "strategy": "write_to_iskandar",
      "epistemic_label": "reconstructed",
      "based_on": [
@@ -999,7 +1067,7 @@ window.CONTENT = {
       "score.biography": 1,
       "press.exposure": 1
      },
-     "feedback": "This is letter 8. Its addressee is Melvin-Koushki's presumption, read from a partly illegible opening line and a benediction on the perfect sultanate (CL-0410, directly inferred). It shows what you wrote to a prince, and it does the vizier's and the amir's work for Yaʿqūb not at all. It also ties you more openly to Iskandar in the period before Shāhrukh's campaign of 817/1414."
+     "feedback": "This is letter 8. Its addressee is Melvin-Koushki's presumption, read from a partly illegible opening line and a benediction on the perfect sultanate (directly inferred). It shows what you wrote to a prince, and it does the vizier's and the amir's work for Yaʿqūb not at all. It also ties you more openly to Iskandar in the period before Shāhrukh's campaign of 817/1414."
     }
    ],
    "next": "SCN-0205",
@@ -1015,7 +1083,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "courts",
    "title": "Iraq and Fars, 1414: Iskandar falls",
-   "dramatic_question": "Shāhrukh has come west, Iskandar is taken, and Shāhrukh's summons has reached you. Do you withdraw, stay in view, or go to the new master?",
+   "dramatic_question": "Shāhrukh's summons has reached you. Do you withdraw, stay in view, or go to the new master?",
    "situation": {
     "when": "mid-817/1414, and the years c. 817-25/1414-22",
     "where": "Isfahan, Yazd and Shiraz",
@@ -1027,12 +1095,14 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "In 817/1414 Shāhrukh marched against Iskandar in Iraq. Iskandar fled but was captured, blinded and later executed; Shāhrukh installed his own son Ibrāhīm Sulṭān and added Fars and Arab Iraq to his domains. Nothing you do prevents it.",
-     "claim": "CL-0057"
+     "text": "In 817/1414 Shāhrukh marched against Iskandar in Iraq. Iskandar fled but was captured, blinded and later executed. Nothing you do prevents it.",
+     "claim": "CL-0057",
+     "detail": "Shāhrukh installed his own son Ibrāhīm Sulṭān and added Fars and Arab Iraq to his domains."
     },
     {
-     "text": "During Shāhrukh's first campaign in western Iran (mid-817/1414) he summoned you, and you answered by letter (no. 16) sent from Isfahan to Yazd to be carried by Sayyid Niʿmat Allāh Valī. It praises the newly ascendant ruler and promises to attend court. The letter carries no date of its own: its placement rests on Niʿmat Allāh's movements, and Dānishpazhūh reads the manuscript folio as three letters where Melvin-Koushki counts one.",
-     "claim": "CL-0416"
+     "text": "In mid-817/1414 Shāhrukh summoned you, and you answered by letter (no. 16), carried by Sayyid Niʿmat Allāh Valī. It praises the newly ascendant ruler and promises to attend court.",
+     "claim": "CL-0416",
+     "detail": "This was during Shāhrukh's first campaign in western Iran; the letter was sent from Isfahan to Yazd. It carries no date of its own: its placement rests on Niʿmat Allāh's movements, and Dānishpazhūh reads the manuscript folio as three letters where Melvin-Koushki counts one."
     },
     {
      "text": "After Iskandar's fall you again attempted to retire from public life. Melvin-Koushki's timeline gives c. 817-25/1414-22, marks the dates 'c.' and cites no source.",
@@ -1065,7 +1135,7 @@ window.CONTENT = {
       "CL-0589"
      ],
      "effects_correct": {
-      "score.doctrine": 1
+      "score.doctrine": 2
      },
      "feedback": "The treatise says the opposite: it points to the upward progress of the age (taraqqī-yi zamān) and to his contemporaries' improved ability to grasp the sciences of ultimate realities. Melvin-Koushki reads this as part of a millenarian doctrine of progress, which is his interpretation; the passage is the evidence."
     },
@@ -1085,7 +1155,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Answer Shāhrukh's summons with a letter carried by Niʿmat Allāh Valī, praising him and promising to come, and then try to withdraw from public life.",
+     "label": "Answer Shāhrukh with a letter praising him and promising to come, then try to withdraw from public life.",
      "strategy": "letter_via_nimat_allah_then_retire",
      "epistemic_label": "documented",
      "historical": true,
@@ -1099,7 +1169,7 @@ window.CONTENT = {
       "press.works": 1,
       "score.biography": 2
      },
-     "feedback": "Letter 16 is your own word to the ruler who had just taken power, so it shows what you told him, not how you felt. Melvin-Koushki's timeline has you attempting to retire c. 817-25/1414-22, with 'c.' and no cited source. The same years hold the R. Ḥurūf and the corrected Fuṣūṣ commentary, so retirement did not mean silence. His reading that Niʿmat Allāh was chosen as a shield is a psychological reconstruction (CL-0614), and the placement of the letter in 1414 is an inference (CL-0613)."
+     "feedback": "Letter 16 is your own word to the ruler who had just taken power, so it shows what you told him, not how you felt. Melvin-Koushki's timeline has you attempting to retire c. 817-25/1414-22, with 'c.' and no cited source. The same years hold the R. Ḥurūf and the corrected Fuṣūṣ commentary, so retirement did not mean silence. His reading that Niʿmat Allāh was chosen as a shield is a psychological reconstruction, and the placement of the letter in 1414 is an inference."
     },
     {
      "id": "B",
@@ -1118,11 +1188,14 @@ window.CONTENT = {
       "press.enemies": 1,
       "score.calibration": 1
      },
-     "feedback": "Letter 16 promises to attend court; the pages do not say whether you went before c. 1422, when the sources put your first accusations before Shāhrukh at Herat (CL-0064). The game opens this only if you have earned Fīrūzshāh's favour; no source has him speaking for you. The record is silent, so the game keeps this as an open possibility and builds nothing on it."
+     "feedback": "Letter 16 promises to attend court; the pages do not say whether you went before c. 1422, when the sources put your first accusations before Shāhrukh at Herat. The game opens this only if you have earned Fīrūzshāh's favour; no source has him speaking for you. The record is silent, so the game keeps this as an open possibility and builds nothing on it.",
+     "costs": [
+      "Your livelihood may improve in the new master's camp; you are marked as his man, and enemies notice. The record is silent, so this price is the game's."
+     ]
     },
     {
      "id": "C",
-     "label": "Stay in office and in view, serving the new governor of Fars, Ibrāhīm Sulṭān, as you served Iskandar.",
+     "label": "Stay in office and in view, serving Ibrāhīm Sulṭān, the new governor of Fars, as you served Iskandar.",
      "strategy": "stay_visible_under_ibrahim",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -1134,9 +1207,13 @@ window.CONTENT = {
       "press.exposure": 2,
       "press.enemies": 1,
       "press.livelihood": 1,
-      "score.biography": -1
+      "score.biography": -1,
+      "press.students": 1
      },
-     "feedback": "No source has you serving Ibrāhīm Sulṭān; it is Sharaf al-Dīn Yazdī who serves him, as his munshī (CL-0456). Melvin-Koushki reads the Iskandar tie as a possible liability once Iskandar had fallen (CL-0059), and to stay in view was to invite that. The game returns you to the record: the sources have you trying to retire."
+     "feedback": "No source has you serving Ibrāhīm Sulṭān; it is Sharaf al-Dīn Yazdī who serves him, as his munshī. Melvin-Koushki reads the Iskandar tie as a possible liability once Iskandar had fallen, and to stay in view was to invite that. The game returns you to the record: the sources have you trying to retire. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "A post, a stipend and pupils under the new governor. You stay in view as Iskandar's former man, and enemies gather."
+     ]
     }
    ],
    "next": "SCN-0206",
@@ -1164,12 +1241,14 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "Melvin-Koushki dates the completion of the K. al-Mafāḥiṣ to 823/1420. The two earliest manuscripts give 1 Shaʿbān 823 (11 August 1420) and 19 Dhū l-Ḥijja 823 (25 December 1420), and a marginal correction says the second date refers to copying (taswīd) only. Elsewhere he places the writing of the Mafāḥiṣ and the Fuṣūṣ commentary at 817-25/1414-22 in Shiraz and Yazd, and his timeline queries the place: 'Isfahan or Yazd?'.",
-     "claim": "CL-0575"
+     "text": "Melvin-Koushki dates the completion of the K. al-Mafāḥiṣ to 823/1420. The two earliest manuscripts give 1 Shaʿbān 823 (11 August 1420) and 19 Dhū l-Ḥijja 823 (25 December 1420).",
+     "claim": "CL-0575",
+     "detail": "A marginal correction says the second date refers to copying (taswīd) only. Elsewhere Melvin-Koushki places the writing of the Mafāḥiṣ and the Fuṣūṣ commentary at 817-25/1414-22 in Shiraz and Yazd, and his timeline queries the place: 'Isfahan or Yazd?'."
     },
     {
-     "text": "Akhlāṭī wrote to you urging a work that would establish the propositions and conjunctions proper to the science of letters, and Melvin-Koushki reads the Mafāḥiṣ as your answer (in one place he says 'perhaps'). The letter carries no date in the pages Melvin-Koushki gives.",
-     "claim": "CL-0557"
+     "text": "Akhlāṭī wrote to you urging a work that would establish the propositions and conjunctions proper to the science of letters, and Melvin-Koushki reads the Mafāḥiṣ as your answer.",
+     "claim": "CL-0557",
+     "detail": "In one place he says 'perhaps'. The letter carries no date in the pages Melvin-Koushki gives."
     },
     {
      "text": "Akhlāṭī died in Cairo in 799/1397, so any such request is more than twenty years old.",
@@ -1179,21 +1258,9 @@ window.CONTENT = {
    "prose": [
     "Akhlāṭī has been dead for over twenty years. Melvin-Koushki reads the book you now write as the answer to his request. It will name him as your only oral source and Ibn ʿArabī and Saʿd al-Dīn Ḥamuvayī as your only written ones, and it will call the earlier lettrist literature stale and timeworn.",
     "The plan is large. An introduction of seven inquiries, then sections on the mental (numerical), written and spoken forms of the letter, of 36, 21 and 18 inquiries, then a fourth of 74 on the letters in themselves and in language and literature, with a master diagram, the Ṭahawī Circle, and number tables. It is an Arabic book.",
-    "The entry names no patron and no addressee. Three of Melvin-Koushki's later papers tie it to Iskandar (two of them say 'almost certainly'); the dissertation names no patron, and Iskandar had been captured six years before this date. First, four rulings on what the book argues."
+    "The entry names no patron and no addressee. Three of Melvin-Koushki's later papers tie it to Iskandar (two of them say 'almost certainly'); the dissertation names no patron, and Iskandar had been captured six years before this date. First, three rulings on what the book argues."
    ],
    "rulings": [
-    {
-     "id": "R1",
-     "proposition": "The Mafāḥiṣ is organised in three sections on the three forms of the letter (mental or numerological, written, spoken), followed by a fourth section on the letters in themselves and in language and literature.",
-     "answer": "stand",
-     "based_on": [
-      "CL-0562"
-     ],
-     "effects_correct": {
-      "score.doctrine": 1
-     },
-     "feedback": "That is the book's structure as the treatise and Melvin-Koushki's summary report it. Note that your own schemes do not always give the three forms in the same order: the R. Ḥurūf lists written, spoken, mental; the Mafāḥiṣ sections run mental, written, spoken (CL-0579)."
-    },
     {
      "id": "R2",
      "proposition": "The Mafāḥiṣ, following the lettrist tradition, ranks the spoken form of the letters above the written form, because speech carries prophetic revelation.",
@@ -1202,9 +1269,9 @@ window.CONTENT = {
       "CL-0567"
      ],
      "effects_correct": {
-      "score.doctrine": 1
+      "score.doctrine": 2
      },
-     "feedback": "The book breaks with the tradition here. It promotes the written form above the spoken, as the form of the men of might and vision and of walāya, and gives reasons: only writing endures across the ages, and letterforms carried by light cannot clash or be denatured as sounds carried by air can (CL-0569). It gives the spoken form to the prophetic mission, because it reaches the masses (CL-0568)."
+     "feedback": "The book breaks with the tradition here. It promotes the written form above the spoken, as the form of the men of might and vision and of walāya, and gives reasons: only writing endures across the ages, and letterforms carried by light cannot clash or be denatured as sounds carried by air can. It gives the spoken form to the prophetic mission, because it reaches the masses."
     },
     {
      "id": "R3",
@@ -1228,13 +1295,13 @@ window.CONTENT = {
      "effects_correct": {
       "score.doctrine": 1
      },
-     "feedback": "In the R. Anjām, a treatise of the same project, he calls both philosophy and Sufism necessary and noble within their own ambit and ranks both below lettrism. Melvin-Koushki concludes that lettrism, in your account, encompasses both rather than abolishing either (CL-0542, directly inferred)."
+     "feedback": "In the R. Anjām, a treatise of the same project, he calls both philosophy and Sufism necessary and noble within their own ambit and ranks both below lettrism. Melvin-Koushki concludes that lettrism, in your account, encompasses both rather than abolishing either (directly inferred)."
     }
    ],
    "choices": [
     {
      "id": "A",
-     "label": "Write the summa as it stands in the record: a large Arabic book in inquiries on the three forms of the letter and the letters themselves, with its circles and tables, resting on Akhlāṭī, Ibn ʿArabī and Ḥamuvayī alone, and opening with no plan and no self-deprecation.",
+     "label": "Write the large Arabic book as the record shows it, with its circles and tables and its three named sources.",
      "strategy": "write_the_summa",
      "epistemic_label": "documented",
      "historical": true,
@@ -1252,11 +1319,11 @@ window.CONTENT = {
       "press.students": 1,
       "score.biography": 2
      },
-     "feedback": "The structure, the tables and the sources are what the book itself shows, as Melvin-Koushki reports it, and a treatise is a free writing: it can show what you held. The date is not settled: Sharaf al-Dīn Yazdī later checks the earliest copies and attends teaching sessions on it (CL-0045), and whether you revised it in 828/1425 is contested between an audition note and a marginal correction (CL-0576). Melvin-Koushki calls it your systematization of Akhlāṭī's teaching (CL-0561) and concedes you were a systematizer and popularizer, an apostle of Akhlāṭī (CL-0823); that is his lens, and the game does not score you on it."
+     "feedback": "The structure, the tables and the sources are what the book itself shows, as Melvin-Koushki reports it, and a treatise is a free writing: it can show what you held. The date is not settled: Sharaf al-Dīn Yazdī later checks the earliest copies and attends teaching sessions on it, and whether you revised it in 828/1425 is contested between an audition note and a marginal correction. Melvin-Koushki calls it your systematization of Akhlāṭī's teaching and concedes you were a systematizer and popularizer, an apostle of Akhlāṭī; that is his lens, and the game does not score you on it."
     },
     {
      "id": "B",
-     "label": "Write the book in plain Persian for a wide readership, with the numerology and the master diagram cut down to what a general reader can follow.",
+     "label": "Write it in plain Persian for a wide readership, with the numerology and diagram cut down for general readers.",
      "strategy": "popularise_in_persian",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -1267,13 +1334,18 @@ window.CONTENT = {
      "effects": {
       "press.students": 1,
       "score.textual": -1,
-      "score.biography": -1
+      "score.biography": -1,
+      "press.works": 2,
+      "press.exposure": 1
      },
-     "feedback": "The record has the Mafāḥiṣ in Arabic, as the dense summa; the easier Persian pieces are separate, shorter treatises. In the R. al-Inzāliyya, before 828/1425, you say lettrism is unpopular in Iran and that your contemporaries reject it as babies reject solid food (CL-0825), and a commander in Shāhrukh's army asks for a volume of your Persian works (CL-0453). The sources keep your hard book and your easy ones apart, and the game returns you to that record."
+     "feedback": "The record has the Mafāḥiṣ in Arabic, as the dense summa; the easier Persian pieces are separate, shorter treatises. In the R. al-Inzāliyya, before 828/1425, you say lettrism is unpopular in Iran and that your contemporaries reject it as babies reject solid food, and a commander in Shāhrukh's army asks for a volume of your Persian works. The sources keep your hard book and your easy ones apart, and the game returns you to that record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "More readers and more students for the book. The wider it goes, the more of it can be quoted against you, and a cut-down book counts for less as scholarship."
+     ]
     },
     {
      "id": "C",
-     "label": "Do not write it down. Teach the science by voice to your students and leave the book to them.",
+     "label": "Do not write it down: teach the science by voice to your students and leave the book to them.",
      "strategy": "teach_only_write_nothing",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -1283,14 +1355,18 @@ window.CONTENT = {
      "requires": {},
      "effects": {
       "press.works": -1,
-      "press.students": 1,
-      "score.biography": -1
+      "press.students": 2,
+      "score.biography": -1,
+      "press.exposure": -1
      },
-     "feedback": "The sources have a written book: Melvin-Koushki reports, from marginal notes, that the opening and closing of the Majlis copy are in your hand (CL-0201); his Prologue gives ff. 52a-56a to Yazdī, and the two accounts are not reconciled. Your own doctrine, as the Mafāḥiṣ argues it, is that the spoken form reaches the masses and moves them to piety (CL-0568) but that only writing endures across the ages (CL-0569). The game returns you to the record."
+     "feedback": "The sources have a written book: Melvin-Koushki reports, from marginal notes, that the opening and closing of the Majlis copy are in your hand; his Prologue gives ff. 52a-56a to Yazdī, and the two accounts are not reconciled. Your own doctrine, as the Mafāḥiṣ argues it, is that the spoken form reaches the masses and moves them to piety but that only writing endures across the ages. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Nothing written down can be quoted against you, so exposure falls, and your students carry the teaching. The science leaves fewer copies behind."
+     ]
     },
     {
      "id": "D",
-     "label": "Open the book by naming Iskandar as the prince who first asked for it.",
+     "label": "Write the large book, and open it by naming Iskandar as the prince who first asked for it.",
      "strategy": "credit_iskandar",
      "epistemic_label": "contested",
      "based_on": [
@@ -1300,9 +1376,13 @@ window.CONTENT = {
      "requires": {},
      "effects": {
       "press.exposure": 2,
-      "press.enemies": 1
+      "press.enemies": 1,
+      "press.works": 2
      },
-     "feedback": "The dissertation names no patron for the Mafāḥiṣ. Three later papers by Melvin-Koushki tie it to Iskandar, one saying he did not live to see it finished, and they disagree about who led whom (CL-0719). Six years lie between Iskandar's capture and this date, and the date may record copying (CL-0216). Melvin-Koushki elsewhere reads the Iskandar tie as a possible liability after his fall (CL-0059). The game does not settle it: you take the exposure."
+     "feedback": "The dissertation names no patron for the Mafāḥiṣ. Three later papers by Melvin-Koushki tie it to Iskandar, one saying he did not live to see it finished, and they disagree about who led whom. Six years lie between Iskandar's capture and this date, and the date may record copying. Melvin-Koushki elsewhere reads the Iskandar tie as a possible liability after his fall. The game does not settle it: you take the exposure.",
+     "costs": [
+      "A princely name gives the book standing, and readers copy it. It ties you to a fallen prince and gives enemies something to use. The game does not settle whether the tie is real."
+     ]
     }
    ],
    "next": "SCN-0301",
@@ -1318,7 +1398,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "trials",
    "title": "Herat, 1422: the charge of Sufi bias",
-   "dramatic_question": "By his own later account, rivals from Isfahan have gone to Shāhrukh and called you a Sufi partisan. Herat is far from Fars, and by that same account you are old and frail. What do you do, and where do you ask to be judge?",
+   "dramatic_question": "Herat is far from Fars, and by your own later account you are old and frail. What do you do, and where do you ask to be judge?",
    "situation": {
     "when": "c. 825/1422",
     "where": "Isfahan, then the court of Shāhrukh at Herat",
@@ -1332,8 +1412,9 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "In his first apology Ibn Turka says that around 1422 rivals from Isfahan, jealous of his growing fame, went to Shāhrukh's court in Herat and accused him of deviating from the Sunna through a bias toward Sufism (ṣūfīgarī); the accusers' motives are his own attribution.",
-     "claim": "CL-0064"
+     "text": "In his first apology Ibn Turka says that around 1422 rivals from Isfahan went to Shāhrukh's court in Herat and accused him of deviating from the Sunna through a bias toward Sufism (ṣūfīgarī).",
+     "claim": "CL-0064",
+     "detail": "He says the rivals were jealous of his growing fame; the accusers' motives are his own attribution."
     },
     {
      "text": "Shāhrukh had abrogated the Yasa and enforced the Sharīʿa in 813/1411 (Melvin-Koushki's timeline adds that he had the taverns closed).",
@@ -1347,7 +1428,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Go to Herat in person, though old and frail, answer the charge before Shāhrukh, and when he offers to restore you as judge of Isfahan, ask for Yazd instead.",
+     "label": "Go to Herat in person and answer the charge, and ask to be judge of Yazd rather than Isfahan.",
      "strategy": "answer_in_person_choose_yazd",
      "epistemic_label": "documented",
      "based_on": [
@@ -1361,11 +1442,11 @@ window.CONTENT = {
       "life.seat": "yazd",
       "score.biography": 2
      },
-     "feedback": "This is the course his own first apology reports, and Melvin-Koushki takes it as given: he travelled despite age and frailty, won Shāhrukh's favour for the time being, and chose Yazd to escape intriguers. Note whose word that is: the reason and the frailty come from a text written four years later to the same ruler."
+     "feedback": "This is the course his own first apology reports, and Melvin-Koushki takes it as given: he travelled despite age and frailty, won Shāhrukh's favour for the time being, and when Shāhrukh offered to restore him as judge of Isfahan he chose Yazd instead, to escape intriguers. Note whose word that is: the reason and the frailty come from a text written four years later to the same ruler."
     },
     {
      "id": "B",
-     "label": "Go to Herat, answer the charge, and accept the judgeship of Isfahan.",
+     "label": "Go to Herat in person, answer the charge, and take the judgeship of Isfahan when it is offered.",
      "strategy": "answer_in_person_take_isfahan",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -1377,13 +1458,18 @@ window.CONTENT = {
       "press.exposure": 1,
       "press.enemies": 1,
       "life.seat": "yazd",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.livelihood": 1,
+      "press.students": 1
      },
-     "feedback": "The record says Shāhrukh offered you Isfahan and you declined it. This is your own what-if: you stay among the very people who accused you. The game returns you to the record, because the sources put him in Yazd from 1422 to 1426, and nothing later can be built on a life the sources do not contain."
+     "feedback": "The record says Shāhrukh offered you Isfahan and you declined it. This is your own what-if: you stay among the very people who accused you. The game returns you to the record, because the sources put him in Yazd from 1422 to 1426, and nothing later can be built on a life the sources do not contain. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Your own city and your old office back: an income and more students. You settle among the very people who accused you, and enemies rise."
+     ]
     },
     {
      "id": "C",
-     "label": "Do not go. Write to Herat, plead ill health, and rely on your reputation to answer for you.",
+     "label": "Stay in Fars: write to Herat, plead ill health, and let your reputation answer for you.",
      "strategy": "stay_and_write",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -1394,9 +1480,15 @@ window.CONTENT = {
       "press.exposure": 2,
       "press.enemies": 1,
       "life.seat": "yazd",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.students": 1,
+      "press.livelihood": 1,
+      "court.shahrukh": -1
      },
-     "feedback": "No source has him staying away or refusing to appear. Leaving a charge of Sufi bias unanswered under the ruler who abrogated the Yasa and closed the taverns is a bet the sources do not record anyone making. The game returns you to the record: he did go."
+     "feedback": "No source has him staying away or refusing to appear. Leaving a charge of Sufi bias unanswered under the ruler who abrogated the Yasa and closed the taverns is a bet the sources do not record anyone making. The game returns you to the record: he did go. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "You keep teaching at home and are spared the road. A charge left unanswered under this ruler costs you his favour, and exposure and enemies rise."
+     ]
     }
    ],
    "next": "SCN-0302",
@@ -1425,7 +1517,7 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "Melvin-Koushki calls his residence in Yazd, c. 825–29/1422–26, relatively uneventful and productive: many lettrist works, and (in his timeline) the Mafāḥiṣ revised and expanded; the manuscripts dispute the revision (CL-0576).",
+     "text": "Melvin-Koushki calls his residence in Yazd, c. 825–29/1422–26, relatively uneventful and productive: many lettrist works, and (in his timeline) the Mafāḥiṣ revised and expanded; the manuscripts dispute the revision.",
      "claim": "CL-0066"
     },
     {
@@ -1474,7 +1566,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Keep the peace: where the leading families of Yazd are concerned, settle matters quietly and let the law bend a little.",
+     "label": "Keep the peace: settle matters with the leading families quietly and let the law bend a little.",
      "strategy": "accommodate_the_elite",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -1486,16 +1578,17 @@ window.CONTENT = {
       "press.livelihood": 1,
       "press.students": -1,
       "life.judgeship": "accommodating",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.enemies": -1
      },
      "costs": [
-      "Your household is easier; fewer students come."
+      "The notables are appeased and your household is easier, so enemies fall. Fewer students come to a judge who bends."
      ],
-     "feedback": "Nothing in the sources has him bending. What they report, by his own account in the first apology as Melvin-Koushki summarises it, is the opposite: an unswerving, impartial qadi with enemies among Yazd's entrenched men. The game returns you to the record; nothing later can be built on a Yazd career the sources do not contain."
+     "feedback": "Nothing in the sources has him bending. What they report, by his own account in the first apology as Melvin-Koushki summarises it, is the opposite: an unswerving, impartial qadi with enemies among Yazd's entrenched men. The game returns you to the record; nothing later can be built on a Yazd career the sources do not contain. What you gained and paid here stays in your ledger; the story then rejoins the record."
     },
     {
      "id": "C",
-     "label": "Before the notables can act, write to Shāhrukh yourself, report how they obstruct your court, and ask for his backing.",
+     "label": "Write to Shāhrukh first, report how the notables obstruct your court, and ask for his backing.",
      "strategy": "write_first_to_shahrukh",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -1564,7 +1657,7 @@ window.CONTENT = {
    ],
    "composer": {
     "work": "WRK-SUAL-AL-MULUK",
-    "prompt": "You are writing the Suʾl al-Mulūk for Bāysunghur b. Shāhrukh, who asked for it. Choose one move in each of four places. A move marked as documented is one Melvin-Koushki reports the treatise making; a move marked counterfactual is something the treatise does not do, and the game says so when you pick it.",
+    "prompt": "You are writing the Suʾl al-Mulūk for Bāysunghur b. Shāhrukh, who asked for it. Choose one move in each of four places. A move marked as documented is one Melvin-Koushki reports the treatise making; a move marked counterfactual is something the treatise does not do. The game tells you what the record says about each move once you press Send it, and it shows the total cost of your picks before you send.",
     "slots": [
      {
       "id": "S1",
@@ -1740,7 +1833,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Write the treatise Bāysunghur asked for, and address it to him.",
+     "label": "Finish the treatise for Bāysunghur and address it to him, as he asked.",
      "strategy": "deliver_to_baysunghur",
      "epistemic_label": "documented",
      "based_on": [
@@ -1760,7 +1853,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Deliver it to Bāysunghur, and send a copy to Shāhrukh as well, with a letter and a dervish.",
+     "label": "Address it to Bāysunghur and send Shāhrukh a copy as well, with a letter.",
      "strategy": "also_send_to_shahrukh",
      "epistemic_label": "reconstructed",
      "based_on": [
@@ -1781,7 +1874,7 @@ window.CONTENT = {
     },
     {
      "id": "C",
-     "label": "Refuse the commission: tell Bāysunghur the science of letters is not to be written for princes.",
+     "label": "Refuse the commission: tell Bāysunghur that letters are not a science to write for princes.",
      "strategy": "decline_the_commission",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -1791,9 +1884,14 @@ window.CONTENT = {
      "requires": {},
      "effects": {
       "court.baysunghur": -1,
-      "score.biography": -1
+      "score.biography": -1,
+      "press.exposure": -1,
+      "press.students": 1
      },
-     "feedback": "No source has him declining. The record has the commission, the treatise, and letters showing more closeness to Bāysunghur than to any other Timurid. The game returns you to the record: you wrote it."
+     "feedback": "No source has him declining. The record has the commission, the treatise, and letters showing more closeness to Bāysunghur than to any other Timurid. The game returns you to the record: you wrote it. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Nothing political goes to the Timurids to be quoted, so exposure falls, and you keep to teaching. You lose the prince's goodwill."
+     ]
     }
    ],
    "next": "SCN-0304",
@@ -1821,8 +1919,9 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "The R. Shaqq-i Qamar u Bayān-i Sāʿat ranks seven groups by how they read Q 54:1, in ascending order: jurists and traditionists, dialectical theologians, peripatetic philosophers, illuminationists, verifying Sufis of Ibn ʿArabī's school, the lettrists, and ʿAlī and the Imams after him, the men of might and vision.",
-     "claim": "CL-0500"
+     "text": "The R. Shaqq-i Qamar u Bayān-i Sāʿat ranks seven groups by how they read Q 54:1, ascending from jurists and traditionists to ʿAlī and the Imams after him, the men of might and vision.",
+     "claim": "CL-0500",
+     "detail": "In full, in ascending order: jurists and traditionists, dialectical theologians, peripatetic philosophers, illuminationists, verifying Sufis of Ibn ʿArabī's school, the lettrists, and ʿAlī and the Imams after him."
     },
     {
      "text": "Ibn Turka says the seventh level is peculiar to the present time, which is ruled by an auspicious conjunction (saʿādat-qirān); it is not presented as a rank that belonged to the past alone.",
@@ -1836,22 +1935,9 @@ window.CONTENT = {
    "prose": [
     "The verse is 54:1, the Hour has drawn near and the moon was split. The treatise you are writing, the R. Shaqq-i Qamar u Bayān-i Sāʿat, is built on a ranking: seven groups of readers, from the jurists who take the verse literally to the highest level, each with its own reading of what splitting means.",
     "You offer the ranking as a general model that seekers can apply to other questions, and you apply it again to the meaning of the Hour. What you have to settle is where people go. Your own school, the lettrists, has a place. So do ʿAlī and the Imams. The two placements are not the same question, and the way you write them will be read.",
-    "First, check what the seven levels say. Then write the top of the ranking."
+    "First, three rulings on what the levels say. Then write the top of the ranking."
    ],
    "rulings": [
-    {
-     "id": "R1",
-     "proposition": "In the ranking, the lettrists stand below the peripatetic philosophers.",
-     "answer": "refute",
-     "based_on": [
-      "CL-0500",
-      "CL-0501"
-     ],
-     "effects_correct": {
-      "score.doctrine": 1
-     },
-     "feedback": "The lettrists are level six and the peripatetics level three. The lettrists stand above the philosophers and below the seventh level, the men of might and vision."
-    },
     {
      "id": "R2",
      "proposition": "The jurists and traditionists take the splitting of the moon literally and forbid asking how it happened, and the treatise says God's wisdom has confined their thought to that level.",
@@ -1885,27 +1971,15 @@ window.CONTENT = {
       "CL-0509"
      ],
      "effects_correct": {
-      "score.doctrine": 1
+      "score.doctrine": 2
      },
      "feedback": "Level six: the moon is speech, and its splitting is meaning emerging from the written letters. The identity of raqam and qamar is argued from the letters."
-    },
-    {
-     "id": "R5",
-     "proposition": "The treatise says the seventh level belonged to the past alone.",
-     "answer": "refute",
-     "based_on": [
-      "CL-0511"
-     ],
-     "effects_correct": {
-      "score.doctrine": 1
-     },
-     "feedback": "Ibn Turka says level seven is peculiar to the present time, ruled by an auspicious conjunction. Melvin-Koushki reports that his teacher Akhlāṭī communicated this to him, and the game notes that no page identifies the conjunction."
     }
    ],
    "choices": [
     {
      "id": "A",
-     "label": "Write the ranking as you did: the lettrists at six, and at seven ʿAlī and the Imams, the men of might and vision, a level peculiar to the present time under an auspicious conjunction.",
+     "label": "Write the ranking with the lettrists at six and ʿAlī and the Imams at seven, a level peculiar to the present age.",
      "strategy": "seven_tiers_lettrists_six",
      "epistemic_label": "documented",
      "based_on": [
@@ -1920,11 +1994,11 @@ window.CONTENT = {
       "life.hierarchy": "imams_seventh",
       "score.biography": 2
      },
-     "feedback": "This is the ranking as the treatise gives it: the lettrists above the peripatetics and below level seven, which it ties to the Prophet's House, the Imams and jafr. Melvin-Koushki's footnote dates it to the beginning of 829/1426 and calls that the year of your second trial and of your first apology; the game does not enumerate the trials or resolve what that pairing means. Whether level seven holds the Imams alone or the lettrists too is his reading against a rival, and the game does not score it."
+     "feedback": "This is the ranking as the treatise gives it (level seven is peculiar to the present time, under an auspicious conjunction): the lettrists above the peripatetics and below level seven, which it ties to the Prophet's House, the Imams and jafr. Melvin-Koushki's footnote dates it to the beginning of 829/1426 and calls that the year of your second trial and of your first apology; the game does not enumerate the trials or resolve what that pairing means. Whether level seven holds the Imams alone or the lettrists too is his reading against a rival, and the game does not score it."
     },
     {
      "id": "B",
-     "label": "Write level seven wide enough to hold yourselves: the Imams, the House of the Prophet, perfected saints who can riddle their cryptic utterances, and the sages of antiquity.",
+     "label": "Write level seven wide enough to hold yourselves, with the Imams, the Prophet's House, perfected saints and the sages of antiquity.",
      "strategy": "widen_level_seven",
      "epistemic_label": "reconstructed",
      "based_on": [
@@ -1934,10 +2008,11 @@ window.CONTENT = {
      "requires": {},
      "effects": {
       "press.exposure": 1,
-      "life.hierarchy": "lettrists_within_seven"
+      "life.hierarchy": "lettrists_within_seven",
+      "press.students": 1
      },
      "costs": [
-      "Exposure rises: you place your own school at the top."
+      "Placing your own school at the top draws students to it. It also draws attention to a school that is already suspected, and exposure rises."
      ],
      "feedback": "This is Melvin-Koushki's reading, not a sentence of this treatise. He argues that level seven is not entirely what it seems, because it is tied to jafr, lettrism at its occult extreme, and your R. Madārij does widen the seventh group in just this way. The rival reading, which he sets aside, is plain deference: the lettrists preside over five currents but cannot reach seven."
     },
@@ -1953,9 +2028,14 @@ window.CONTENT = {
      "requires": {},
      "effects": {
       "life.hierarchy": "three_tier",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.exposure": -1,
+      "press.works": -1
      },
-     "feedback": "The three-tier ranking of philosophers, Sufis and lettrists is in your Sharḥ-i Naẓm al-Durr, a different work. The Shaqq-i Qamar has seven tiers with the Imams at the top, and no source has you shortening it. The game returns you to the record."
+     "feedback": "The three-tier ranking of philosophers, Sufis and lettrists is in your Sharḥ-i Naẓm al-Durr, a different work. The Shaqq-i Qamar has seven tiers with the Imams at the top, and no source has you shortening it. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "A ranking with no Imams at the top is safer to have written, so exposure falls. It loses what made the treatise distinctive, and fewer readers copy it."
+     ]
     }
    ],
    "next": "SCN-0305",
@@ -2009,7 +2089,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Send a copy of the commentary to Qāżīzāda Rūmī in Samarkand.",
+     "label": "Send a copy of the commentary to Qāżīzāda Rūmī at Ulugh Beg's observatory in Samarkand.",
      "strategy": "qazizada_copy",
      "epistemic_label": "documented",
      "based_on": [
@@ -2023,11 +2103,11 @@ window.CONTENT = {
       "press.works": 1,
       "score.biography": 2
      },
-     "feedback": "The copy to Qāżīzāda is attested by his letter of thanks (c. 829/1426), which recalls a meeting in Herat and reminds you of a promise to visit Samarkand. The same manuscript carries a marginal dedication to Ulugh Beg on f. 332b, but the entry does not say who wrote it, and the timeline's claim that copies went to both men is contested (see B)."
+     "feedback": "Rūmī is described as director of Ulugh Beg's observatory, and the copy to him is attested by his letter of thanks (c. 829/1426), which recalls a meeting in Herat and reminds you of a promise to visit Samarkand. The same manuscript carries a marginal dedication to Ulugh Beg on f. 332b, but the entry does not say who wrote it, and the timeline's claim that copies went to both men is contested (see B)."
     },
     {
      "id": "B",
-     "label": "Send copies to both Qāżīzāda Rūmī and Ulugh Beg himself.",
+     "label": "Send copies to both Qāżīzāda Rūmī and Ulugh Beg himself, as the timeline has it.",
      "strategy": "copies_to_both",
      "epistemic_label": "contested",
      "based_on": [
@@ -2042,7 +2122,7 @@ window.CONTENT = {
     },
     {
      "id": "C",
-     "label": "Dedicate the commentary to Shāhrukh, who by your own account made you qadi, and send it to Herat.",
+     "label": "Dedicate the commentary to Shāhrukh, who made you qadi, and send it to Herat.",
      "strategy": "dedicate_to_shahrukh",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -2053,12 +2133,13 @@ window.CONTENT = {
      "effects": {
       "court.shahrukh": 1,
       "press.exposure": 1,
-      "score.biography": -1
+      "score.biography": -1,
+      "press.livelihood": 1
      },
      "costs": [
-      "A lettrist commentary goes to a ruler whom Melvin-Koushki reads as distrusting mystically minded intellectuals."
+      "The ruler who made you qadi may reward a dedication (the game's guess, not a record). A lettrist commentary in front of a ruler whom Melvin-Koushki reads as distrusting mystically minded intellectuals raises your exposure."
      ],
-     "feedback": "The sources put the dedication note in the margin at Ulugh Beg's name, not Shāhrukh's. Melvin-Koushki reads Shāhrukh as distrustful of ambitious, mystically or millenarian-minded intellectuals, which is the risk in this line. The game returns you to the record."
+     "feedback": "The sources put the dedication note in the margin at Ulugh Beg's name, not Shāhrukh's. Melvin-Koushki reads Shāhrukh as distrustful of ambitious, mystically or millenarian-minded intellectuals, which is the risk in this line. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
     }
    ],
    "next": "SCN-0306",
@@ -2074,14 +2155,15 @@ window.CONTENT = {
    "status": "draft",
    "act": "trials",
    "title": "1426: a case built from your youth",
-   "dramatic_question": "The men of Yazd failed once at Herat. According to a later chronicler, they then claimed to find, in works of your youth, a verse praising ʿAlī and condemning ʿUmar and ʿUthmān, and Shāhrukh has summoned you. What do you say about it?",
+   "dramatic_question": "Shāhrukh has summoned you over the verse. What do you say about it?",
    "situation": {
     "when": "829/1426",
     "where": "Yazd, then Herat",
     "based_on": [
      "CL-0070",
      "CL-0071",
-     "CL-0073"
+     "CL-0073",
+     "CL-0180"
     ]
    },
    "invariants": [
@@ -2090,17 +2172,22 @@ window.CONTENT = {
      "claim": "CL-0070"
     },
     {
-     "text": "When the delegation failed, your enemies compiled a case from statements in works of your youth, claiming to find for example a verse praising ʿAlī and condemning ʿUmar and ʿUthmān. The witness is a later chronicler, Maʿṣūm ʿAlī Shāh, not the apology.",
-     "claim": "CL-0071"
+     "text": "When the delegation failed, your enemies compiled a case from statements in works of your youth, claiming to find for example a verse praising ʿAlī and condemning ʿUmar and ʿUthmān.",
+     "claim": "CL-0071",
+     "detail": "The witness is a later chronicler, Maʿṣūm ʿAlī Shāh, not the apology."
     },
     {
      "text": "Shāhrukh summoned Ibn Turka to Herat to be tried again (reported in his own apology and in Melvin-Koushki's summary of it).",
      "claim": "CL-0073"
+    },
+    {
+     "text": "Even the staunchly Sunni Naqshbandiyya allowed praise of ʿAlī and the Imams (tawalliʾ) but not hateful condemnation of the first three caliphs and ʿĀʾisha, which was called Rāfiḍism (tabarruʾ).",
+     "claim": "CL-0180"
     }
    ],
    "prose": [
     "The delegation from Yazd asked Shāhrukh to dismiss you, and it failed. Your enemies then went through your early writings and, in the account of the later chronicler Maʿṣūm ʿAlī Shāh, claimed to find a verse praising ʿAlī and condemning ʿUmar and ʿUthmān. The chronicler is the witness; the first apology does not mention it.",
-    "Shāhrukh summons you to Herat. He is the ruler who abolished the Yasa and enforced the Sharīʿa, and the charge you answered in 1422 was Sufi bias, which Melvin-Koushki reads as probably meant to tie you to the Ḥurūfīs. If the chronicler is right, this one goes straight at your Sunni credentials.",
+    "Shāhrukh summons you to Herat. He is the ruler who abolished the Yasa and enforced the Sharīʿa, and the charge you answered in 1422 was Sufi bias, which Melvin-Koushki reads as probably meant to tie you to the Ḥurūfīs. If the chronicler is right, this one goes straight at your Sunni credentials. Melvin-Koushki's timeline gives the accusation of 1426 as heresy and Shiʿi proclivities. On the line that even the staunchly Sunni Naqshbandiyya drew, praising ʿAlī was allowed and condemning the first caliphs was not; a verse that condemns ʿUmar and ʿUthmān falls on the wrong side of it (our reading of that line, not a report of the trial).",
     "The pages do not say whether you wrote the verse, or whether you owned or disowned it. What you say about it, or do not say, is what you have to decide."
    ],
    "choices": [
@@ -2127,7 +2214,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Own the verse and defend love of ʿAlī openly, as a Shāfiʿī may.",
+     "label": "Own the verse, and defend your love of ʿAlī openly as a Shāfiʿī may.",
      "strategy": "own_the_verse",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -2138,16 +2225,18 @@ window.CONTENT = {
      "effects": {
       "press.exposure": 2,
       "life.verse": "owned",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.enemies": 1,
+      "press.students": 1
      },
      "costs": [
-      "Exposure rises sharply: the accusers' charge is granted."
+      "Those who share your devotion to ʿAlī rally to you, and you stand on the ground of an old Sunni tradition. The accusers' charge is granted, and exposure and enemies rise."
      ],
-     "feedback": "No source has him owning the verse, and the apology is silent on it. Melvin-Koushki does note that his writing on ʿAlī and the Imams fits an established Sunni tradition of praise, which is the ground this line would stand on. The game returns you to the record: the apology answers a different charge."
+     "feedback": "No source has him owning the verse, and the apology is silent on it. Melvin-Koushki does note that his writing on ʿAlī and the Imams fits an established Sunni tradition of praise, which is the ground this line would stand on. The game returns you to the record: the apology answers a different charge. What you gained and paid here stays in your ledger; the story then rejoins the record."
     },
     {
      "id": "C",
-     "label": "Deny that the verse is yours.",
+     "label": "Deny that the verse is yours, and answer the charge of Sufi bias as well.",
      "strategy": "disown_the_verse",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -2156,15 +2245,20 @@ window.CONTENT = {
      ],
      "requires": {},
      "effects": {
-      "press.exposure": 1,
+      "press.exposure": -1,
       "life.verse": "disowned",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.enemies": 2,
+      "score.calibration": -1
      },
-     "feedback": "The sources do not say whether the verse was his, so this line asserts something the record cannot check. It is also not what the apology does: it says nothing about the verse at all. The game returns you to the record."
+     "feedback": "The sources do not say whether the verse was his, so this line asserts something the record cannot check. It is also not what the apology does: it says nothing about the verse at all. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "If the denial is believed the charge loses force, so exposure falls. If the page is produced you are a liar as well as a suspect, and enemies rise. It claims what the record cannot check."
+     ]
     },
     {
      "id": "D",
-     "label": "Ask Bāysunghur to have the scholars at his court examine the charge, as you once invited him to have one of your treatises examined.",
+     "label": "Ask Bāysunghur to have the scholars of his court examine the charge instead.",
      "strategy": "refer_to_baysunghur_scholars",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -2177,13 +2271,13 @@ window.CONTENT = {
      "effects": {
       "court.baysunghur": -1,
       "life.verse": "referred",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.exposure": -1
      },
      "costs": [
-      "Needs Bāysunghur's favour already earned.",
-      "Spends it."
+      "Needs Bāysunghur's favour already earned, and spends it. If his scholars clear you, the charge loses force, so exposure falls."
      ],
-     "feedback": "In letter 17 you answered an objection to one of your treatises by inviting Bāysunghur to have his court's scholars examine it, so the habit is documented. No source has you doing this over the verse in 1426, and the sources put the hearing before Shāhrukh at Herat. The game returns you to the record."
+     "feedback": "In letter 17 you answered an objection to one of your treatises by inviting Bāysunghur to have his court's scholars examine it, so the habit is documented. No source has you doing this over the verse in 1426, and the sources put the hearing before Shāhrukh at Herat. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
     }
    ],
    "next": "SCN-0307",
@@ -2214,8 +2308,9 @@ window.CONTENT = {
      "claim": "CL-0102"
     },
     {
-     "text": "The text is built as an introduction, an autobiography and an attack on the accusers' motives, followed by two sections: nine hadith against innovation, then the sayings of Sufi masters and authorities in support of Sufism's orthodoxy.",
-     "claim": "CL-0103"
+     "text": "The first Nafsat is built as an introduction, an autobiography and an attack on the accusers' motives, followed by two sections.",
+     "claim": "CL-0103",
+     "detail": "The first section is nine hadith against innovation; the second, the sayings of Sufi masters and authorities in support of Sufism's orthodoxy."
     },
     {
      "text": "Melvin-Koushki holds that the apologies were produced under great duress: Nafsat I answers a summons to trial.",
@@ -2225,7 +2320,7 @@ window.CONTENT = {
    "prose": [
     "You are in Herat with a summons behind you and a ruler ahead. What you write will be read by Shāhrukh, the man who is judging you. The text itself presents itself as a defence made necessary because defamers denounced you to him and you were summoned to stand trial.",
     "Melvin-Koushki lists what the finished text does. An autobiographical introduction that also abuses the accusers. A first section of nine hadith against innovation (bidʿa). A second of sayings of Sufi masters in support of Sufism's orthodoxy, with Khwāja Muḥammad Pārsā, Shāhrukh's own favourite, as the named example.",
-    "You will make one move in each of five places. The real text made several moves in each, so choosing one is choosing what you lean on. A move marked documented is one Melvin-Koushki reports in a source (in one case, a different text than this one, and the option says so); a move marked counterfactual is something the text does not do, and the game says so when you pick it. Whatever you write here is what you tell Shāhrukh, not a confession of what you hold."
+    "You will make one move in each of five places. The real text made several moves in each, so choosing one is choosing what you lean on. A move marked documented is one Melvin-Koushki reports in a source (in one case, a different text than this one, and the option says so); a move marked counterfactual is something the text does not do. The game tells you what the record says about each move once you press Send it, and it shows the total cost of your picks before you send. Whatever you write here is what you tell Shāhrukh, not a confession of what you hold."
    ],
    "composer": {
     "work": "WRK-NAFSAT-AL-MASDUR-I",
@@ -2275,7 +2370,7 @@ window.CONTENT = {
         "effects": {
          "press.exposure": 1
         },
-        "feedback": "The admission is documented, but in another text: the R. Iʿtiqādiyya, among his last writings, makes it (CL-0163). Nafsat I, as Melvin-Koushki reports it, says fifteen years of the four orthodox sciences only, so putting the admission here departs from this text. The game notes the pair sits uneasily; Melvin-Koushki does not draw the contrast."
+        "feedback": "The admission is documented, but in another text: the R. Iʿtiqādiyya, among his last writings, makes it. Nafsat I, as Melvin-Koushki reports it, says fifteen years of the four orthodox sciences only, so putting the admission here departs from this text. The game notes the pair sits uneasily; Melvin-Koushki does not draw the contrast."
        }
       ]
      },
@@ -2483,7 +2578,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Send the Nafsat with a creed of adherence to the Sunna and the Jamāʿa, the R. Iʿtiqādāt.",
+     "label": "Send the Nafsat with a creed of adherence to the Sunna and the Jamāʿa.",
      "strategy": "apology_with_creed",
      "epistemic_label": "documented",
      "based_on": [
@@ -2497,11 +2592,11 @@ window.CONTENT = {
       "life.apology": "with_creed",
       "score.biography": 2
      },
-     "feedback": "The record has Nafsat I and the R. Iʿtiqādāt both dated 829/1426 and addressed to Shāhrukh, and has you earning his favour again and returning to Fars; all of this is his own account to the ruler judging him. Nafsat I also says you submitted a creed of adherence to the Sunna and Jamāʿa before the leading scholars at court, but Melvin-Koushki never identifies that creed with the R. Iʿtiqādāt, and does not say how the two visits Nafsat I mentions line up with the trials."
+     "feedback": "The creed is the R. Iʿtiqādāt. The record has Nafsat I and the R. Iʿtiqādāt both dated 829/1426 and addressed to Shāhrukh, and has you earning his favour again and returning to Fars; all of this is his own account to the ruler judging him. Nafsat I also says you submitted a creed of adherence to the Sunna and Jamāʿa before the leading scholars at court, but Melvin-Koushki never identifies that creed with the R. Iʿtiqādāt, and does not say how the two visits Nafsat I mentions line up with the trials."
     },
     {
      "id": "B",
-     "label": "Send the Nafsat alone, with no creed statement, and let the argument stand.",
+     "label": "Send the Nafsat alone, without a creed, and let the argument stand.",
      "strategy": "apology_alone",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -2512,13 +2607,17 @@ window.CONTENT = {
      "effects": {
       "press.exposure": 1,
       "life.apology": "alone",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.works": 1
      },
-     "feedback": "The sources have a creed accompanying the apology in some form: the R. Iʿtiqādāt is dated the same year and Nafsat I mentions a creed statement. No source has the apology going alone. The game returns you to the record."
+     "feedback": "The sources have a creed accompanying the apology in some form: the R. Iʿtiqādāt is dated the same year and Nafsat I mentions a creed statement. No source has the apology going alone. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "An argument that stands alone is what readers copy. With no creed attached the charge stays open, and you earn no favour from Shāhrukh."
+     ]
     },
     {
      "id": "C",
-     "label": "Ask Shāhrukh to hear you and your accusers face to face before the scholars of his court, instead of sending a text.",
+     "label": "Ask Shāhrukh to hear you and your accusers face to face before his scholars instead.",
      "strategy": "ask_for_disputation",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -2527,11 +2626,15 @@ window.CONTENT = {
      ],
      "requires": {},
      "effects": {
-      "press.enemies": 1,
+      "press.enemies": 2,
       "life.apology": "disputation",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.exposure": -1
      },
-     "feedback": "The apology is a written defence, and no source has you asking for a disputation. Nafsat I says your creed was delivered before the leading scholars at court, so scholars were in the room in some form. The game returns you to the record."
+     "feedback": "The apology is a written defence, and no source has you asking for a disputation. Nafsat I says your creed was delivered before the leading scholars at court, so scholars were in the room in some form. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "If the scholars hear you, the charge loses force, so exposure falls. Your accusers stand in the room and become openly your enemies."
+     ]
     }
    ],
    "next": "SCN-0308",
@@ -2570,7 +2673,7 @@ window.CONTENT = {
    "prose": [
     "For one scene the game steps out of 1426. The text you have just written will outlast the man it defended, and this question is about how it will be read, not about what Ibn Turka should do next. The record is silent on it, so no choice below is marked as the one that happened.",
     "Two facts frame it. The apologies are the main source for the events of his life. They were also written to the people judging him, under duress. Both are Melvin-Koushki's, and he does not put them in a single sentence.",
-    "First, five statements. Stand or refute each on what the sources report. Then say how you would cite the apology in a biography."
+    "First, three statements. Stand or refute each on what the sources report. Then say how you would cite the apology in a biography."
    ],
    "rulings": [
     {
@@ -2585,19 +2688,6 @@ window.CONTENT = {
       "score.calibration": 1
      },
      "feedback": "He does hold this, and calls the image in the apologies hardly reflective of Ibn Turka's primary concerns. The game's duress rule adopts it as a method; Leonard Lewisohn, as Melvin-Koushki reports him, reads the apologies at face value, and the game does not score which of them is right."
-    },
-    {
-     "id": "R2",
-     "proposition": "Nafsat I was addressed to the ruler who was judging him.",
-     "answer": "stand",
-     "based_on": [
-      "CL-0102",
-      "CL-0075"
-     ],
-     "effects_correct": {
-      "score.calibration": 1
-     },
-     "feedback": "It was written for Shāhrukh, in answer to the accusations against him. That fixes whose reader it was written for, which under the game's duress rule limits what it can show."
     },
     {
      "id": "R3",
@@ -2622,18 +2712,6 @@ window.CONTENT = {
       "score.calibration": 1
      },
      "feedback": "Melvin-Koushki grants that his disapproval of Muʿtazilī theology is genuinely his, since a created Quran contradicts his lettrism, and cites the Mafāḥiṣ. On his account, where a free work confirms it, an apology's claim can carry weight."
-    },
-    {
-     "id": "R5",
-     "proposition": "Melvin-Koushki calls the apologies the primary source of information about Ibn Turka's life.",
-     "answer": "stand",
-     "based_on": [
-      "CL-0074"
-     ],
-     "effects_correct": {
-      "score.calibration": 1
-     },
-     "feedback": "He does, and calls them a uniquely candid look at Timurid religio-political machinations. Set beside his duress warning, the game's rule is to trust what they report of events more than what they say of beliefs."
     }
    ],
    "choices": [
@@ -2698,7 +2776,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "trials",
    "title": "830/1427: the recall",
-   "dramatic_question": "A Ḥurūfī has struck at Shāhrukh outside the congregational mosque in Herat, and men with suspected Ḥurūfī ties are being taken. You have just left Herat. What do you do when the summons reaches you?",
+   "dramatic_question": "The summons reaches you on the road out of Herat. What do you do?",
    "situation": {
     "when": "830/1427",
     "where": "Herat, and the road out of it",
@@ -2723,14 +2801,14 @@ window.CONTENT = {
     }
    ],
    "prose": [
-    "Aḥmad-i Lur strikes at Shāhrukh at the door of the congregational mosque in Herat, and is killed where he stands. After it Shāhrukh's men take those the court suspects of Ḥurūfī ties: Qāsim-i Anvār, the calligrapher Maʿrūf-i Khaṭṭāt, and you.",
+    "Shāhrukh's men are taking those the court suspects of Ḥurūfī ties: Qāsim-i Anvār, the calligrapher Maʿrūf-i Khaṭṭāt, and you.",
     "You have just left Herat. Your lettrist works never name the Ḥurūfīs, and the charge of Sufi bias made against you in 1422 is read by Melvin-Koushki as probably meant to tie you to them. He reads the purge as Shāhrukh consolidating the state, and notes that the attempt may have been staged by the ruler himself, a conjecture the game does not treat as fact.",
     "A summons comes after you. You can obey it, you can turn away, or you can look to the people who have helped you before."
    ],
    "choices": [
     {
      "id": "A",
-     "label": "Obey the recall and go back to Herat.",
+     "label": "Obey the recall and go back to Herat, whatever waits there.",
      "strategy": "obey_the_recall",
      "epistemic_label": "documented",
      "based_on": [
@@ -2754,7 +2832,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Do not go back. Turn away from Herat and try to reach a governor who will shelter you.",
+     "label": "Turn away from Herat and try to reach a governor who will shelter you.",
      "strategy": "run",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -2770,13 +2848,13 @@ window.CONTENT = {
       "score.biography": -1
      },
      "costs": [
-      "Running reads as guilt: exposure rises steeply."
+      "You keep more of what you have: your livelihood falls by less than the record has it fall. Running reads as guilt, and exposure rises steeply."
      ],
-     "feedback": "No source has him refusing a recall. The record has him summoned back and exiled; running would only change how it looks. The game returns you to the record."
+     "feedback": "No source has him refusing a recall. The record has him summoned back and exiled; running would only change how it looks. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
     },
     {
      "id": "C",
-     "label": "Obey the recall, but first ask Bāysunghur, who received you with particular favour and asked for the Suʾl al-Mulūk, to speak for you.",
+     "label": "Obey the recall, but first ask Bāysunghur, who favoured you, to speak for you.",
      "strategy": "obey_after_asking_baysunghur",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -2791,13 +2869,14 @@ window.CONTENT = {
       "press.exposure": 2,
       "life.recall": "obeyed",
       "life.exile": "exiled",
-      "score.biography": -1
+      "score.biography": -1,
+      "court.baysunghur": -1
      },
      "costs": [
-      "Needs Bāysunghur's favour already earned.",
-      "You lose less, but not what the record says."
+      "Needs Bāysunghur's favour already earned, and spends it.",
+      "You lose less than the record has you lose. Asking a prince to speak for a suspect adds to your exposure."
      ],
-     "feedback": "The sources have Bāysunghur addressed for help only years later, in the second apology, which asks his intercession to little real effect. No source has him speaking for you in 1427. The game returns you to the record: the exile comes anyway."
+     "feedback": "The sources have Bāysunghur addressed for help only years later, in the second apology, which asks his intercession to little real effect. No source has him speaking for you in 1427. The game returns you to the record: the exile comes anyway. What you gained and paid here stays in your ledger; the story then rejoins the record."
     }
    ],
    "next": "SCN-0401",
@@ -2813,7 +2892,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "exile",
    "title": "Herat, 1427: stripped and sent away",
-   "dramatic_question": "A Ḥurūfī has just tried to kill Shāhrukh, and your name is on the list of the suspected. You have lost your post and your property and have been in the hands of the royal dīvān. Whom do you ask to look at your case first?",
+   "dramatic_question": "You have lost your post and your property. Whom do you ask to look at your case first?",
    "situation": {
     "when": "830/1427",
     "where": "Herat, then the road out",
@@ -2825,31 +2904,20 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "In 830/1427 the Ḥurūfī Aḥmad-i Lur tried to kill Shāhrukh as he left the congregational mosque in Herat and was killed on the spot.",
-     "claim": "CL-0077"
-    },
-    {
-     "text": "Afterwards Shāhrukh arrested prominent figures with suspected Ḥurūfī ties, among them Qāsim-i Anvār, Maʿrūf-i Khaṭṭāt and Ibn Turka.",
-     "claim": "CL-0078"
-    },
-    {
-     "text": "Ibn Turka, who had just left Herat, was summoned back, imprisoned, stripped of position and property, tortured and then exiled. Melvin-Koushki gives no source for that sentence and names the second apology, written years later to Bāysunghur, as the main source for the exile period.",
-     "claim": "CL-0080"
-    },
-    {
-     "text": "The pages do not say what tied Ibn Turka to the Ḥurūfiyya; the only Ḥurūfī contact they name is his family's visits to Fażl Allāh to have dreams interpreted, which Melvin-Koushki says imply no Ḥurūfī leaning.",
-     "claim": "CL-0079"
+     "text": "Ibn Turka, who had just left Herat, was summoned back, imprisoned, stripped of position and property, tortured and then exiled.",
+     "claim": "CL-0080",
+     "detail": "Melvin-Koushki gives no source for that sentence and names the second apology, written years later to Bāysunghur, as the main source for the exile period."
     }
    ],
    "prose": [
-    "You had left Herat with your second defence won. Then Aḥmad-i Lur, a Ḥurūfī, struck at Shāhrukh outside the congregational mosque and was killed where he stood. In the sweep that followed, the men taken up included Qāsim-i Anvār, the calligrapher Maʿrūf-i Khaṭṭāt and you. Melvin-Koushki reads the purge as part of Shāhrukh's consolidation of his rule.",
+    "You had left Herat with your second defence won. Melvin-Koushki reads the purge that took you as part of Shāhrukh's consolidation of his rule.",
     "You were called back, imprisoned and stripped of post and property. Your surviving letter 27 complains of torture and imprisonment at the hands of the debt- and tax-collectors of the royal dīvān, and says friends have since freed you. The pages name no charge beyond the word Ḥurūfī and do not say what tied you to it.",
     "None of this is yours to undo. What is left is whom to ask first to hear your case, and whether anyone in Herat can safely be asked."
    ],
    "choices": [
     {
      "id": "A",
-     "label": "Write to Amīr Jalāl al-Dīn Fīrūzshāh, to whom you have written before, thank him for his attention to your case, and ask him to press it and restore your stipend.",
+     "label": "Write to Amīr Fīrūzshāh, thank him for his attention to your case, and ask him to press it and restore your stipend.",
      "strategy": "write_firuzshah_for_redress",
      "epistemic_label": "documented",
      "based_on": [
@@ -2871,7 +2939,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Ask Fīrūzshāh for more than a stipend: ask him to carry your case to Shāhrukh himself.",
+     "label": "Write to Amīr Fīrūzshāh and ask him for more than a stipend: to carry your case to Shāhrukh himself.",
      "strategy": "ask_firuzshah_to_intercede",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -2883,19 +2951,19 @@ window.CONTENT = {
      },
      "effects": {
       "court.firuzshah": 1,
-      "press.exposure": 1,
-      "press.livelihood": -1,
+      "press.exposure": 2,
+      "press.livelihood": 1,
       "life.exile_first_appeal": "firuzshah_intercession",
       "score.biography": -1
      },
      "costs": [
-      "Fīrūzshāh would be asked to put his own name beside a suspected Ḥurūfī, soon after the attempt on the ruler."
+      "If Fīrūzshāh carries your case, the stipend is likelier to come back. He would be putting his name beside a suspected Ḥurūfī soon after the attempt on the ruler, and exposure rises."
      ],
-     "feedback": "The game opens this only once you have earned Fīrūzshāh's favour. Letter 27 asks him to pursue the case and restore the stipend; the sources do not show you asking him to speak to Shāhrukh, and they show no reply. This is your own what-if, and the game returns you to the record: the sources put you wandering northern and northwestern Iran."
+     "feedback": "The game opens this only once you have earned Fīrūzshāh's favour. Letter 27 asks him to pursue the case and restore the stipend; the sources do not show you asking him to speak to Shāhrukh, and they show no reply. This is your own what-if, and the game returns you to the record: the sources put you wandering northern and northwestern Iran. What you gained and paid here stays in your ledger; the story then rejoins the record."
     },
     {
      "id": "C",
-     "label": "Ask to be heard by Shāhrukh himself before you leave Herat, on the strength of the favour he showed you after the hearings of c. 1422 and 1426.",
+     "label": "Ask to be heard by Shāhrukh himself before you leave Herat, on the strength of the favour he once showed you.",
      "strategy": "petition_shahrukh_directly",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -2907,16 +2975,17 @@ window.CONTENT = {
       "court.shahrukh": 1
      },
      "effects": {
-      "press.exposure": 1,
+      "press.exposure": 2,
       "press.enemies": 1,
-      "press.livelihood": -1,
+      "press.livelihood": 1,
       "life.exile_first_appeal": "shahrukh",
-      "score.biography": -1
+      "score.biography": -1,
+      "court.shahrukh": 1
      },
      "costs": [
-      "You would put yourself in front of the man who has just had you arrested."
+      "If the ruler hears you himself, favour and income may return. You put yourself in front of the man who has just had you arrested, and enemies take note."
      ],
-     "feedback": "The game opens this only once Shāhrukh has favoured you; Melvin-Koushki has you defending yourself successfully at Herat in c. 1422 and 1426. No source has you petition him in 1427, and the first bid for a hearing that the sources record is at Simnan two or three years later, which fails. The game returns you to the record."
+     "feedback": "The game opens this only once Shāhrukh has favoured you; Melvin-Koushki has you defending yourself successfully at Herat in c. 1422 and 1426. No source has you petition him in 1427, and the first bid for a hearing that the sources record is at Simnan two or three years later, which fails. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
     }
    ],
    "next": "SCN-0402",
@@ -2945,12 +3014,14 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "For about five years, until his death in Herat, Ibn Turka wandered northern and northwestern Iran seeking a livelihood, teaching hadith and tafsir in local mosques and writing treatises for governors and amirs. This comes from his own second apology, written to Bāysunghur.",
-     "claim": "CL-0081"
+     "text": "For about five years, until his death in Herat, Ibn Turka wandered northern and northwestern Iran seeking a livelihood, teaching hadith and tafsir in local mosques and writing treatises for governors and amirs.",
+     "claim": "CL-0081",
+     "detail": "This comes from his own second apology, written to Bāysunghur."
     },
     {
-     "text": "His surviving letters from the exile are pleas to governors and amirs for clemency, so that he could keep his wives and children through hunger and frost, and requests to Sufi shaykhs and bureaucrats for help; he sought patronage at the Marʿashī court in Mazandaran and the Kārkiyā court in Gilan.",
-     "claim": "CL-0082"
+     "text": "His surviving letters from the exile are pleas to governors and amirs for clemency, so that he could keep his wives and children through hunger and frost, and requests to Sufi shaykhs and bureaucrats for help.",
+     "claim": "CL-0082",
+     "detail": "He sought patronage at the Marʿashī court in Mazandaran and the Kārkiyā court in Gilan."
     },
     {
      "text": "In the second apology Ibn Turka says he has ten children and a few wives whom exile left him unable to support; Melvin-Koushki infers three sons and seven daughters from a letter of Sharaf al-Dīn Yazdī.",
@@ -2960,7 +3031,7 @@ window.CONTENT = {
    "prose": [
     "You wander northern and northwestern Iran, teaching hadith and tafsir where a mosque will have you, and you write to anyone who might help. By your own later count you have ten children and a few wives to feed, through hunger and frost.",
     "Three doors are open. Sayyid Murtażā Marʿashī rules at Sari in Mazandaran. The Kārkiyā sayyids, Zaydī rulers, hold Gilan: Sayyid Aḥmad at Ranikuh and Sayyid Nāṣir at Lahijan. And there is an Amīr ʿAlāʾ al-Dīn, whom Melvin-Koushki cannot identify: he lists three candidates.",
-    "You wrote to all of them, and the sources do not say in what order. Melvin-Koushki dates the letters only to about 831–32/1428–29, and they do not fit together neatly: one calls Gilan uncongenial while others court its amirs. So this scene has no single recorded answer. The record names the households and is silent on which came first."
+    "You wrote to all of them, and the sources do not say in what order. Melvin-Koushki dates the letters only to about 831–32/1428–29, and they do not fit together neatly: one calls Gilan uncongenial while others court its amirs. So this scene has no single recorded answer. The record names all three households; it does not say which came first."
    ],
    "unrecorded": true,
    "choices": [
@@ -3029,9 +3100,13 @@ window.CONTENT = {
       "press.students": 1,
       "press.livelihood": -1,
       "life.exile_household": "none",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.exposure": -1
      },
-     "feedback": "The teaching is documented, but so is the asking: the surviving letters are largely pleas, and nothing shows you choosing to ask nobody. This is your own what-if, and the game returns you to the record: the sources have you writing to the courts of Mazandaran and Gilan."
+     "feedback": "The teaching is documented, but so is the asking: the surviving letters are largely pleas, and nothing shows you choosing to ask nobody. This is your own what-if, and the game returns you to the record: the sources have you writing to the courts of Mazandaran and Gilan. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Attached to no court, your name draws no notice, so exposure falls, and your students grow. Your household goes hungrier without a patron's stipend."
+     ]
     }
    ],
    "next": "SCN-0403",
@@ -3060,8 +3135,9 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "The Tuḥfa-yi ʿAlāʾī, a brief treatment of the hadith on iḥsān, īmān and islām, was completed on 1 Jumādā I 831/17 February 1428 for ʿAlāʾ al-Dīn b. Bāysunghur, a Ḥanbalī. Melvin-Koushki prints the date without an asterisk and does not name its source.",
-     "claim": "CL-0335"
+     "text": "The Tuḥfa-yi ʿAlāʾī, a brief treatment of the hadith on iḥsān, īmān and islām, was completed on 1 Jumādā I 831/17 February 1428 for ʿAlāʾ al-Dīn b. Bāysunghur, a Ḥanbalī.",
+     "claim": "CL-0335",
+     "detail": "Melvin-Koushki prints the date without an asterisk and does not name its source."
     },
     {
      "text": "The Mabdaʾ u Maʿād was written at the request of one Shāh Rażī l-Dīn and completed early Ṣafar 832/mid-November 1428 at Manzil-i Chālū in Mazandaran, the same date and place as its Majlis 10196 copy.",
@@ -3080,7 +3156,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Take them in the order the dates give: the Tuḥfa-yi ʿAlāʾī for ʿAlāʾ al-Dīn b. Bāysunghur first, the Mabdaʾ u Maʿād for Shāh Rażī l-Dīn next, and the logic manual for your son Muḥammad when you winter at Natanz.",
+     "label": "Take up the Tuḥfa-yi ʿAlāʾī first, for ʿAlāʾ al-Dīn b. Bāysunghur, and the other two commissions after it.",
      "strategy": "write_in_order_of_commission",
      "epistemic_label": "documented",
      "based_on": [
@@ -3101,7 +3177,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Write for your son first: the K. al-Manāhij, so that Muḥammad has his logic before you ask any patron for anything.",
+     "label": "Take up the K. al-Manāhij first, for your son Muḥammad, so he has his logic before any patron is asked.",
      "strategy": "write_for_son_first",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -3112,13 +3188,17 @@ window.CONTENT = {
       "press.works": 1,
       "press.livelihood": -1,
       "life.exile_writing": "son_first",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.students": 1
      },
-     "feedback": "You did write the Manāhij for Muḥammad, but at Natanz in April 1430, after the other two; the sources do not have it first. This is your own what-if, and the game returns you to the record: all three works are dated, and the patrons' works come first."
+     "feedback": "You did write the Manāhij for Muḥammad, but at Natanz in April 1430, after the other two; the sources do not have it first. This is your own what-if, and the game returns you to the record: all three works are dated, and the patrons' works come first. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Your son is taught and the manual circulates. No patron is served first, so no stipend comes yet."
+     ]
     },
     {
      "id": "C",
-     "label": "Skip the commissions and write directly for Bāysunghur, who once asked you for a lettrist treatise: send him a new one, and ask for his help.",
+     "label": "Take up a new lettrist treatise first, for Bāysunghur, and ask him for his help instead of the commissions.",
      "strategy": "write_lettrism_for_baysunghur",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -3131,15 +3211,16 @@ window.CONTENT = {
      },
      "effects": {
       "court.baysunghur": 1,
-      "press.exposure": 1,
+      "press.exposure": 2,
       "press.works": 1,
       "life.exile_writing": "lettrism_for_baysunghur",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.livelihood": 1
      },
      "costs": [
-      "Lettrist writing is what your enemies read as Ḥurūfī sympathy."
+      "A prince who favoured you may help with your household. Lettrist writing is what your enemies read as Ḥurūfī sympathy, and exposure rises."
      ],
-     "feedback": "Open to you because Bāysunghur has favoured you: he received you with particular favour and asked for the R. Suʾl al-Mulūk. The sources show no lettrist work for him from the exile; the one thing you address to him in these years is the second apology, later. The Iṣbāḥ al-Anwār, your fuller lettrist work, is the one Melvin-Koushki conjectures you left unfinished after 1427. The game returns you to the record."
+     "feedback": "Open to you because Bāysunghur has favoured you: he received you with particular favour and asked for the R. Suʾl al-Mulūk. The sources show no lettrist work for him from the exile; the one thing you address to him in these years is the second apology, later. The Iṣbāḥ al-Anwār, your fuller lettrist work, is the one Melvin-Koushki conjectures you left unfinished after 1427. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
     }
    ],
    "next": "SCN-0404",
@@ -3155,7 +3236,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "exile",
    "title": "Simnan, c. 1429–30: a hearing that does not come",
-   "dramatic_question": "Shāhrukh is on the march in Azarbayjan, within reach, and in the same year the powerful opponent who caused you so much grief dies at Herat. How do you press to be heard?",
+   "dramatic_question": "Shāhrukh is within reach. How do you press to be heard?",
    "situation": {
     "when": "833 AH: c. 1429 in Melvin-Koushki's timeline, 1430 in his narrative",
     "where": "Simnan",
@@ -3182,7 +3263,7 @@ window.CONTENT = {
    "prose": [
     "Shāhrukh has taken the field against the Qara Quyunlu in Azarbayjan. In the same year, 833/1429, al-Jazarī, the Damascus-born traditionist whom, by your own later account, your enemies hide behind, dies in Herat. Your own later account traces his enmity to a judgement of him you gave the Mamluk sultan in Egypt; Melvin-Koushki gives no second witness for that. The pages do not say what his death changed for you.",
     "The year itself is unsure: the dissertation's timeline says c. 833/1429 and its narrative says 833/1430. What is not in doubt is the shape: a ruler within reach, no post, a family still in exile. You go to Simnan, or you find another way to reach him.",
-    "The record gives the outcome of the attempt away in one sentence, and it is not a good one. What you can choose is how you go about asking."
+    "What you can choose is how you go about asking."
    ],
    "choices": [
     {
@@ -3204,7 +3285,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Go first to Bāysunghur and ask him to bring you before his father, as he once received you when Shāhrukh would not.",
+     "label": "Go first to Bāysunghur and ask him to bring you before his father.",
      "strategy": "seek_hearing_via_baysunghur",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -3218,13 +3299,17 @@ window.CONTENT = {
      "effects": {
       "court.baysunghur": 1,
       "life.simnan": "via_baysunghur",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.enemies": 1
      },
-     "feedback": "Open to you because Bāysunghur has favoured you. In letter 19 you say you were not granted an audience with Shāhrukh but were received by Bāysunghur with particular favour; in letter 18 you wait two days at his court and propose a majlis as an easier setting. The record has you turn to him for intercession only at the end, in the second apology, after nine months of weekly attendance; nothing puts him at Simnan. The game returns you to the record."
+     "feedback": "Open to you because Bāysunghur has favoured you. In letter 19 you say you were not granted an audience with Shāhrukh but were received by Bāysunghur with particular favour; in letter 18 you wait two days at his court and propose a majlis as an easier setting. The record has you turn to him for intercession only at the end, in the second apology, after nine months of weekly attendance; nothing puts him at Simnan. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "You use a prince's goodwill to go round his father, and those who resent the detour take note. Your household is spared the cost of waiting in the camp."
+     ]
     },
     {
      "id": "C",
-     "label": "Send a treatise ahead to Shāhrukh, as you did with letter 20, and let it ask for the hearing before you appear.",
+     "label": "Send a treatise ahead to Shāhrukh and let it ask for the hearing before you appear.",
      "strategy": "seek_hearing_with_treatise",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -3237,12 +3322,14 @@ window.CONTENT = {
      "effects": {
       "press.exposure": 1,
       "life.simnan": "treatise_first",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.works": 1,
+      "press.enemies": 1
      },
      "costs": [
-      "A treatise on occult properties, sent by a suspected Ḥurūfī, may read as one more charge."
+      "The treatise circulates and may win you the hearing. Sent by a suspected Ḥurūfī, a treatise on occult properties may read as one more charge."
      ],
-     "feedback": "Open to you because Shāhrukh has favoured you in the past. In letter 20 (ca. 829/1426) you told him your aim was to be blameless before the Prophet and sent a treatise on the occult properties of things, which Melvin-Koushki thinks was most probably the R. Suʾl al-Mulūk, his own guess. No such letter is on record for 1429–30, and the sources are silent on whether one would have helped. The game returns you to the record."
+     "feedback": "Open to you because Shāhrukh has favoured you in the past. In letter 20 (ca. 829/1426) you told him your aim was to be blameless before the Prophet and sent a treatise on the occult properties of things, which Melvin-Koushki thinks was most probably the R. Suʾl al-Mulūk, his own guess. No such letter is on record for 1429–30, and the sources are silent on whether one would have helped. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
     }
    ],
    "next": "SCN-0405",
@@ -3258,7 +3345,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "exile",
    "title": "Ṣāʾin Qalʿa, c. 1430: a promise of reinstatement",
-   "dramatic_question": "At last you are heard, at Shāhrukh's camp near Sultaniyya, and you leave with a promise. How much do you rest on what you were promised?",
+   "dramatic_question": "How much do you rest on the promise you leave with?",
    "situation": {
     "when": "c. 834/1430 (the timeline marks the year 'c.')",
     "where": "Ṣāʾin Qalʿa, near Sultaniyya, in Azarbayjan",
@@ -3269,8 +3356,9 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "During Shāhrukh's campaign against the Qara Quyunlu in Azarbayjan, Ibn Turka obtained a hearing at the sultan's camp at Ṣāʾin Qalʿa near Sultaniyya and received a promise of reinstatement. Melvin-Koushki gives no note for that sentence and names the second apology as the main source for the period.",
-     "claim": "CL-0084"
+     "text": "During Shāhrukh's campaign against the Qara Quyunlu in Azarbayjan, Ibn Turka obtained a hearing at the sultan's camp at Ṣāʾin Qalʿa near Sultaniyya and received a promise of reinstatement.",
+     "claim": "CL-0084",
+     "detail": "Melvin-Koushki gives no note for that sentence and names the second apology as the main source for the period."
     },
     {
      "text": "Shāhrukh's second Azarbayjan campaign against the Qara Quyunlu (833/1429) ended with his return to Herat in 834/1430.",
@@ -3278,7 +3366,7 @@ window.CONTENT = {
     }
    ],
    "prose": [
-    "The hearing itself is not yours to win or lose: the record gives it to you. At the camp at Ṣāʾin Qalʿa, near Sultaniyya, you are heard, and you come away with a promise of reinstatement.",
+    "The hearing itself is not yours to win or lose: the record gives it to you, and you come away with a promise.",
     "That is all the pages say. They do not say what you asked for, in what words, or which post the promise covered. Everything we know of this hearing comes from your own later apology to Bāysunghur; no second witness is named.",
     "What is left to you is how you take the promise: rest on it, press for more, or ask for something else."
    ],
@@ -3315,14 +3403,15 @@ window.CONTENT = {
      },
      "effects": {
       "press.enemies": 1,
-      "press.livelihood": -1,
+      "press.livelihood": 1,
       "life.sain_qala": "asked_in_writing",
-      "score.biography": -1
+      "score.biography": -1,
+      "court.shahrukh": -1
      },
      "costs": [
-      "You would be pressing a ruler who has just promised you reinstatement, in the middle of a campaign."
+      "A promise in writing is something to live on. Pressing a ruler in the middle of a campaign costs you his goodwill and makes enemies."
      ],
-     "feedback": "Open to you because Shāhrukh has favoured you. The sources record a promise and no document, and the review of your case never came in time. Nothing says whether he would have written one, and nothing can be built on a paper the sources do not contain. The game returns you to the record."
+     "feedback": "Open to you because Shāhrukh has favoured you. The sources record a promise and no document, and the review of your case never came in time. Nothing says whether he would have written one, and nothing can be built on a paper the sources do not contain. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
     },
     {
      "id": "C",
@@ -3338,9 +3427,13 @@ window.CONTENT = {
       "press.students": 1,
       "press.livelihood": -1,
       "life.sain_qala": "asked_for_peace",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.exposure": -1
      },
-     "feedback": "The family was at Natanz, where you had summoned them, and teaching is documented for these years. But the sources say what you got was a promise of reinstatement, which is not what a request for peace would have brought. This is your own what-if, and the game returns you to the record."
+     "feedback": "The family was at Natanz, where you had summoned them, and teaching is documented for these years. But the sources say what you got was a promise of reinstatement, which is not what a request for peace would have brought. This is your own what-if, and the game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Peace at Natanz with your family and your teaching, and your case is not reopened, so exposure falls. You give up the reinstatement that was on offer."
+     ]
     }
    ],
    "next": "SCN-0406",
@@ -3356,7 +3449,7 @@ window.CONTENT = {
    "status": "draft",
    "act": "exile",
    "title": "Herat, 1431–32: nine months at court, and the second apology",
-   "dramatic_question": "You have followed Shāhrukh back to Herat, and the review you were promised has not come. You write to his son. What do you say, to whom do you ask, and what do you send with it?",
+   "dramatic_question": "You are writing to Shāhrukh's son Bāysunghur. What do you say, to whom do you ask, and what do you send with it?",
    "situation": {
     "when": "c. 834–35/1431–32 (the second apology is undated; Melvin-Koushki puts it between about 832 and 835/1429–32)",
     "where": "Herat",
@@ -3623,7 +3716,7 @@ window.CONTENT = {
     },
     {
      "id": "B",
-     "label": "Ask to read it to Bāysunghur in his own majlis, as you once proposed in letter 18, rather than simply send it.",
+     "label": "Ask to read it to Bāysunghur in his own majlis, as you once proposed, rather than send it.",
      "strategy": "read_it_in_baysunghurs_majlis",
      "epistemic_label": "counterfactual",
      "based_on": [
@@ -3634,11 +3727,16 @@ window.CONTENT = {
       "court.baysunghur": 1
      },
      "effects": {
-      "court.baysunghur": 1,
+      "court.baysunghur": 2,
       "life.nafsat2": "read_in_majlis",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.livelihood": -1,
+      "press.exposure": 1
      },
-     "feedback": "Open to you because Bāysunghur has favoured you. In letter 18 you complain of two days in attendance without being allowed to see the prince and propose a majlis as an easier setting, so access to him was granted only in part. The pages show no majlis for this text, only an apology addressed to him. The game returns you to the record."
+     "feedback": "Open to you because Bāysunghur has favoured you. In letter 18 you complain of two days in attendance without being allowed to see the prince and propose a majlis as an easier setting, so access to him was granted only in part. The pages show no majlis for this text, only an apology addressed to him. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "The prince hears it from you, and his favour grows. An angry text read aloud is heard by everyone in his majlis, and exposure rises."
+     ]
     },
     {
      "id": "C",
@@ -3655,12 +3753,15 @@ window.CONTENT = {
      "effects": {
       "press.exposure": 1,
       "life.nafsat2": "to_shahrukh",
-      "score.biography": -1
+      "score.biography": -1,
+      "court.shahrukh": 1,
+      "court.baysunghur": -1
      },
      "costs": [
-      "You would go over the head of the prince whose help you asked for."
+      "Needs Shāhrukh's favour already earned.",
+      "If the ruler reads it himself the waiting may end, and his favour grows. You go over the head of the prince whose help you asked for, and exposure rises."
      ],
-     "feedback": "Open to you because Shāhrukh has favoured you before. The apology is addressed to Bāysunghur, and the sources record no delivery to the sultan. Your case was never reviewed in time either way. The game returns you to the record."
+     "feedback": "Open to you because Shāhrukh has favoured you before. The apology is addressed to Bāysunghur, and the sources record no delivery to the sultan. Your case was never reviewed in time either way. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
     },
     {
      "id": "D",
@@ -3675,9 +3776,13 @@ window.CONTENT = {
      "effects": {
       "press.livelihood": -1,
       "life.nafsat2": "held_back",
-      "score.biography": -1
+      "score.biography": -1,
+      "press.exposure": -1
      },
-     "feedback": "The sources have you writing the apology after nine months of waiting, not holding it in reserve. Waiting on a promise was in fact what you did for those nine months, and it is where the record's frustration comes from. The game returns you to the record."
+     "feedback": "The sources have you writing the apology after nine months of waiting, not holding it in reserve. Waiting on a promise was in fact what you did for those nine months, and it is where the record's frustration comes from. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+     "costs": [
+      "Nothing angry is put on paper for others to quote, so exposure falls. You do without the prince's intercession, and your household waits."
+     ]
     }
    ],
    "next": "SCN-0407",
@@ -3704,8 +3809,9 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "Ibn Turka died in Herat on 14 Dhū l-Ḥijja 835/12 August 1432, aged 63, 'frustrated, impoverished and in a state of limbo' in the words of the editor of the Sharḥ-i Naẓm al-Durr, whom Melvin-Koushki cites. The game gives no weekday, because the source's does not fit that date in the Julian or the Gregorian calendar; Melvin-Koushki's age of 63 does not agree with the birth year the dissertation derives from the age he gives in the first apology, and the two are not reconciled.",
-     "claim": "CL-0087"
+     "text": "Ibn Turka died in Herat on 14 Dhū l-Ḥijja 835/12 August 1432, aged 63, 'frustrated, impoverished and in a state of limbo' in the words of the editor of the Sharḥ-i Naẓm al-Durr, whom Melvin-Koushki cites.",
+     "claim": "CL-0087",
+     "detail": "The game gives no weekday, because the source's does not fit that date in the Julian or the Gregorian calendar. Melvin-Koushki's age of 63 does not agree with the birth year the dissertation derives from the age he gives in the first apology, and the two are not reconciled."
     },
     {
      "text": "Sources disagree on the year of death (830 in the printed Khwāndamīr, 836 in a manuscript); Melvin-Koushki holds that 835 is right.",
@@ -3774,9 +3880,13 @@ window.CONTENT = {
       "press.students": 1,
       "press.works": 1,
       "life.death_trust": "students",
-      "score.calibration": 1
+      "score.calibration": 1,
+      "press.exposure": 1
      },
-     "feedback": "The scatter of students is what you say in the second apology, so it is self-report and self-praise, addressed to Bāysunghur. A separate, external sign of demand is a commander in Shāhrukh's army, Muḥammad Ṣūfī b. Tarkhān, who asked through the Yazdī collection for a volume of your Persian works. Neither says you left your writings to anyone."
+     "feedback": "The scatter of students is what you say in the second apology, so it is self-report and self-praise, addressed to Bāysunghur. A separate, external sign of demand is a commander in Shāhrukh's army, Muḥammad Ṣūfī b. Tarkhān, who asked through the Yazdī collection for a volume of your Persian works. Neither says you left your writings to anyone.",
+     "costs": [
+      "Your students carry your writings on. Writings scattered beyond your control are read by every kind of reader, and exposure rises. This price is the game's, not the record's."
+     ]
     },
     {
      "id": "D",
@@ -3794,9 +3904,13 @@ window.CONTENT = {
       "court.yazdi": 1,
       "press.works": 1,
       "life.death_trust": "isbah",
-      "score.calibration": 1
+      "score.calibration": 1,
+      "press.exposure": 1
      },
-     "feedback": "The game opens this only once you have earned Yazdī's favour. Nothing records that you asked, and no source has anyone finishing it: the Iṣbāḥ existed at least in part by February 1428, when the Tuḥfa-yi ʿAlāʾī cites it as unfinished, and its only known copy is partial and breaks off mid-page. Melvin-Koushki conjectures you left it unfinished after the events of 1427."
+     "feedback": "The game opens this only once you have earned Yazdī's favour. Nothing records that you asked, and no source has anyone finishing it: the Iṣbāḥ existed at least in part by February 1428, when the Tuḥfa-yi ʿAlāʾī cites it as unfinished, and its only known copy is partial and breaks off mid-page. Melvin-Koushki conjectures you left it unfinished after the events of 1427.",
+     "costs": [
+      "The lettrist work might be finished. It is the kind of writing your enemies read as Ḥurūfī sympathy, and exposure rises. This price is the game's, not the record's."
+     ]
     }
    ],
    "next": "SCN-0501",
@@ -3836,8 +3950,9 @@ window.CONTENT = {
      "claim": "CL-0309"
     },
     {
-     "text": "For many works the colophons do not show whether the date is composition or transcription; fully half the manuscript, almost two-thirds of the preserved works, was copied in the years 827–29/1425–27, bracketing the 1426 trip to Herat, which this claim calls his first trip to Shāhrukh's court (other pages put a first hearing c. 1422). The Hijri and Christian spans in that sentence do not correspond: 827 AH began in December 1423.",
-     "claim": "CL-0205"
+     "text": "For many works the colophons do not show whether the date is composition or transcription. Fully half the manuscript, almost two-thirds of the preserved works, was copied in 1425-27, around the 1426 trip to Herat.",
+     "claim": "CL-0205",
+     "detail": "The years are given as 827-29 AH, and the claim calls the 1426 trip his first to Shāhrukh's court (other pages put a first hearing c. 1422). The Hijri and Christian spans in that sentence do not correspond: 827 AH began in December 1423."
     }
    ],
    "prose": [
@@ -3932,8 +4047,9 @@ window.CONTENT = {
      "claim": "CL-0210"
     },
     {
-     "text": "Collated by the game from Melvin-Koushki's entries: on the later folios the colophon dates are not in date order (the Nafsat al-Maṣdūr II at f. 226b is 838, the Mabdaʾ u Maʿād at f. 266b is Ṣafar 832, the Madārij at f. 352b is Dhū l-Qaʿda 831, the Manāhij at f. 382b is Rajab 833).",
-     "claim": "CL-0211"
+     "text": "On the later folios the colophon dates are not in date order: down the volume they run 838, Ṣafar 832, Dhū l-Qaʿda 831 and Rajab 833.",
+     "claim": "CL-0211",
+     "detail": "Collated by the game from Melvin-Koushki's entries: the Nafsat al-Maṣdūr II at f. 226b is 838, the Mabdaʾ u Maʿād at f. 266b is Ṣafar 832, the Madārij at f. 352b is Dhū l-Qaʿda 831, the Manāhij at f. 382b is Rajab 833."
     }
    ],
    "prose": [
@@ -3941,7 +4057,7 @@ window.CONTENT = {
     "In the first part of the volume the dates climb without a reversal, which Melvin-Koushki reads as a sign that they are copying dates, and you can reason your way down it from the dates alone. In the second part they do not climb, and one of the works, the second apology, bears a copy date three years after its author's death. There the dates stop helping, and you are left with what you can infer about the volume, or a guess."
    ],
    "sorter": {
-    "prompt": "Put the fifteen works in the order they begin in MS Majlis 10196, first folio first. The note under each title gives the date its colophon carries; treat it as a copying date, a terminus ad quem, not always the date of writing. The key is the folio numbers Melvin-Koushki prints, and they are not perfectly clean: some ranges overlap (the Sharḥ-i Ḥadīs-i ʿAmāʾ and the Sharḥ Ḥaqīqat al-Waḥda, and the Shaqq-i Qamar which lies inside the Iʿtiqādāt's range) and some are misprinted (the Naẓm al-Durr, the Tamhīd), so only works whose folios are clean are here. The Arbaʿīniyya is left out because its first folio, 120b, is also claimed by the Waḥda. The dated first part can be reasoned out. The later works cannot: their dates will mislead you.",
+    "prompt": "Put the fifteen works in the order they begin in MS Majlis 10196, first folio first. The note under each title gives the date its colophon carries, which is usually a copying date: the latest the work can have been written, not when it was written. In the first part of the volume the dates will guide you; in the later part they will mislead you.",
     "items": [
      {
       "id": "WRK-NAFSAT-AL-MASDUR-II",
@@ -4046,7 +4162,8 @@ window.CONTENT = {
     "scoring": {
      "axis": "score.textual",
      "max": 6
-    }
+    },
+    "detail": "The order is the folio numbers Melvin-Koushki prints, and they are not perfectly clean. Some ranges overlap (the Sharḥ-i Ḥadīs-i ʿAmāʾ and the Sharḥ Ḥaqīqat al-Waḥda, and the Shaqq-i Qamar, which lies inside the Iʿtiqādāt's range) and some are misprinted (the Naẓm al-Durr, the Tamhīd), so only works whose folios are clean are here. The Arbaʿīniyya is left out because its first folio, 120b, is also claimed by the Waḥda."
    },
    "choices": [
     {
@@ -4128,8 +4245,9 @@ window.CONTENT = {
    },
    "invariants": [
     {
-     "text": "Sharaf al-Dīn Yazdī checked the two earliest copies of the K. al-Mafāḥiṣ and was present at teaching sessions on the work, as colophons or audition certificates on those copies state (MS Majlis 10196 f. 119a; Beinecke MS Landberg 146 f. 179b); the timeline says the Mafāḥiṣ was revised and expanded in Yazd in his company (828/1425), which the manuscripts dispute (CL-0576).",
-     "claim": "CL-0045"
+     "text": "Sharaf al-Dīn Yazdī checked the two earliest copies of the K. al-Mafāḥiṣ and was present at teaching sessions on the work, as audition certificates on those copies state.",
+     "claim": "CL-0045",
+     "detail": "The certificates are on MS Majlis 10196 f. 119a and Beinecke MS Landberg 146 f. 179b. The timeline says the Mafāḥiṣ was revised and expanded in Yazd in his company (828/1425), which the manuscripts dispute."
     },
     {
      "text": "Ibn Turka names Sayyid Ḥusayn Akhlāṭī as his main oral source in the K. al-Mafāḥiṣ.",
@@ -4148,7 +4266,7 @@ window.CONTENT = {
    "choices": [
     {
      "id": "A",
-     "label": "Write that Sharaf al-Dīn Yazdī checked the copy and was present in the teaching sessions on the book, and that it was revised and expanded in his company (the manuscripts disagree on that, CL-0576).",
+     "label": "Name Sharaf al-Dīn Yazdī as the man who checked the copy and sat in the teaching sessions on the book.",
      "strategy": "certificate_names_yazdi",
      "epistemic_label": "documented",
      "based_on": [
@@ -4164,7 +4282,7 @@ window.CONTENT = {
       "score.textual": 1,
       "score.biography": 2
      },
-     "feedback": "This is what the certificates on the two earliest copies say, as Melvin-Koushki reports them from the manuscripts. It names one man, not the room. A date on such a note may also mark copying, not composition: a marginal correction to the autograph colophon on the Majlis Mafāḥiṣ says its date refers only to the copying, and the work itself is dated to 823/1420 with the day disputed."
+     "feedback": "This is what the certificates on the two earliest copies say, as Melvin-Koushki reports them from the manuscripts. It names one man, not the room. The timeline adds that the book was revised and expanded in his company, which the manuscripts dispute. A date on such a note may also mark copying, not composition: a marginal correction to the autograph colophon on the Majlis Mafāḥiṣ says its date refers only to the copying, and the work itself is dated to 823/1420 with the day disputed."
     },
     {
      "id": "B",
@@ -4394,7 +4512,7 @@ window.CONTENT = {
       "dossier.EV-1234": true,
       "dossier.EV-0865": true
      },
-     "feedback": "Thirteen readings, and a warning: the letters are a supplicant's, and MK cautions that the colophon dates may record copying and that much of the manuscript was copied in 1425–27, perhaps as evidence in his defence."
+     "feedback": "Thirteen readings, and a warning: the letters are a supplicant's, and Melvin-Koushki cautions that the colophon dates may record copying and that much of the manuscript was copied in 1425–27, perhaps as evidence in his defence."
     },
     {
      "id": "C",
@@ -13395,7 +13513,7 @@ window.CONTENT = {
    "id": "CL-0211",
    "type": "claim",
    "status": "draft",
-   "proposition": "Read off from Melvin-Koushki's entries (researcher's collation): in the later folios of MS Majlis 10196 the colophon dates are not in date order by folio: Nafsat al-Maṣdūr II (f. 226b, 838), Mabdaʾ u Maʿād (f. 266b, Ṣafar 832), Madārij Afhām al-Afvāj (f. 352b, Dhū l-Qaʿda 831), K. al-Manāhij (f. 382b, Rajab 833), Iṣbāḥ al-Anwār (f. 404b, 841).",
+   "proposition": "Read off from Melvin-Koushki's entries (this project's own collation of his folio and date lines): in the later folios of MS Majlis 10196 the colophon dates are not in date order by folio: Nafsat al-Maṣdūr II (f. 226b, 838), Mabdaʾ u Maʿād (f. 266b, Ṣafar 832), Madārij Afhām al-Afvāj (f. 352b, Dhū l-Qaʿda 831), K. al-Manāhij (f. 382b, Rajab 833), Iṣbāḥ al-Anwār (f. 404b, 841).",
    "epistemic_type": "directly_inferred",
    "confidence": "medium",
    "supported_by": [
@@ -13408,7 +13526,7 @@ window.CONTENT = {
    "mediation": [
     {
      "layer": "modern_interpretation",
-     "who": "R3 researcher, collating Melvin-Koushki's folio and date lines (not stated by him)",
+     "who": "this project (collating Melvin-Koushki's folio and date lines; not stated by him)",
      "where": "pp.94-108",
      "shaping_risk": "low"
     }
@@ -13475,7 +13593,7 @@ window.CONTENT = {
    "id": "CL-0210",
    "type": "claim",
    "status": "draft",
-   "proposition": "Read off from Melvin-Koushki's entries (a collation by the researcher, not a statement by him): in MS Majlis 10196 the dated works of ff. 120b-189a stand in ascending order of their colophon dates, from the R. al-Arbaʿīniyya (f. 120b, 13 Jumādā II 828) through the R. Ḥurūf (f. 154b, 14 Dhū l-Qaʿda 828), the Iʿtiqādāt (f. 165b, 19 Jumādā I 829), the Nafsat al-Maṣdūr I (f. 179b, 8 Rajab 829) and the Iṣṭilāḥāt (f. 184a, 25 Rajab 829) to the Muhr al-Nubuwwa (f. 189a, 4 Jumādā II 831). Two items do not sit cleanly in the sequence: the Dīvān page (f. 121b, 'early 828') follows an item dated Jumādā II 828, and the R. Iʿtiqādiyya (f. 171b) is undated and lies inside the Iʿtiqādāt.",
+   "proposition": "Read off from Melvin-Koushki's entries (this project's own collation of his folio and date lines, not a statement by him): in MS Majlis 10196 the dated works of ff. 120b-189a stand in ascending order of their colophon dates, from the R. al-Arbaʿīniyya (f. 120b, 13 Jumādā II 828) through the R. Ḥurūf (f. 154b, 14 Dhū l-Qaʿda 828), the Iʿtiqādāt (f. 165b, 19 Jumādā I 829), the Nafsat al-Maṣdūr I (f. 179b, 8 Rajab 829) and the Iṣṭilāḥāt (f. 184a, 25 Rajab 829) to the Muhr al-Nubuwwa (f. 189a, 4 Jumādā II 831). Two items do not sit cleanly in the sequence: the Dīvān page (f. 121b, 'early 828') follows an item dated Jumādā II 828, and the R. Iʿtiqādiyya (f. 171b) is undated and lies inside the Iʿtiqādāt.",
    "epistemic_type": "directly_inferred",
    "confidence": "medium",
    "supported_by": [
@@ -13500,7 +13618,7 @@ window.CONTENT = {
    "mediation": [
     {
      "layer": "modern_interpretation",
-     "who": "R3 researcher, collating Melvin-Koushki's folio and date lines (not stated by him)",
+     "who": "this project (collating Melvin-Koushki's folio and date lines; not stated by him)",
      "where": "pp.83-101",
      "shaping_risk": "low"
     }
@@ -16973,6 +17091,83 @@ window.CONTENT = {
    "evidence_kind": "letter",
    "refers_to_primary": "Munshaʾāt-i Turka, letter 27"
   },
+  "CL-0077": {
+   "id": "CL-0077",
+   "type": "claim",
+   "status": "draft",
+   "proposition": "In 830/1427 the Hurufi Aḥmad-i Lur tried to kill Shāhrukh as he left the congregational mosque in Herat and was killed on the spot.",
+   "epistemic_type": "attested",
+   "confidence": "high",
+   "supported_by": [
+    "EV-0157",
+    "EV-0039"
+   ],
+   "mediation": [
+    {
+     "layer": "event",
+     "who": "the attempt on Shāhrukh"
+    },
+    {
+     "layer": "modern_interpretation",
+     "who": "Melvin-Koushki, dissertation (2012)",
+     "where": "pdf p.73 and p.53",
+     "shaping_risk": "low"
+    }
+   ],
+   "domain": "political"
+  },
+  "EV-0039": {
+   "id": "EV-0039",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 53,
+    "printed_page": "36",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "Timeline A.1: 830/1427 Aḥmad-i Lur's assassination attempt against Shāhrukh, followed by the arrest and exile of those with suspected Hurufi sympathies.",
+   "evidence_kind": "context"
+  },
+  "EV-0157": {
+   "id": "EV-0157",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 73,
+    "printed_page": "56",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "In 830/1427 the Hurufi Aḥmad-i Lur made an attempt on Shāhrukh's life as he left the congregational mosque in Herat and was killed on the spot; Shāhrukh then arrested prominent figures with suspected ties to the Ḥurūfiyya, including Qāsim-i Anvār, Maʿrūf-i Khaṭṭāt and Ibn Turka.",
+   "evidence_kind": "context"
+  },
+  "CL-0078": {
+   "id": "CL-0078",
+   "type": "claim",
+   "status": "draft",
+   "proposition": "After the attempt Shāhrukh arrested prominent figures with suspected Hurufi ties, among them Qāsim-i Anvār, Maʿrūf-i Khaṭṭāt and Ibn Turka.",
+   "epistemic_type": "attested",
+   "confidence": "medium",
+   "supported_by": [
+    "EV-0157",
+    "EV-0039"
+   ],
+   "mediation": [
+    {
+     "layer": "event",
+     "who": "arrests after the attempt"
+    },
+    {
+     "layer": "modern_interpretation",
+     "who": "Melvin-Koushki, dissertation (2012)",
+     "where": "pdf p.73",
+     "shaping_risk": "low",
+     "note": "the basis for suspecting each man is not given"
+    }
+   ],
+   "domain": "political"
+  },
   "CL-0079": {
    "id": "CL-0079",
    "type": "claim",
@@ -17019,117 +17214,6 @@ window.CONTENT = {
     "short_title": "Melvin-Koushki, dissertation (2012)"
    },
    "content": "The page states that Shāhrukh arrested figures 'with suspected ties' to the Ḥurūfiyya and lists Ibn Turka among them, but gives no evidence of what tied him to the group; the only Hurufi contact named anywhere in the pages read is the family's dream-interpretation visits to Fażl Allāh (pdf p.58), which Melvin-Koushki says imply no Hurufi inclination.",
-   "evidence_kind": "scholarly_argument"
-  },
-  "CL-0078": {
-   "id": "CL-0078",
-   "type": "claim",
-   "status": "draft",
-   "proposition": "After the attempt Shāhrukh arrested prominent figures with suspected Hurufi ties, among them Qāsim-i Anvār, Maʿrūf-i Khaṭṭāt and Ibn Turka.",
-   "epistemic_type": "attested",
-   "confidence": "medium",
-   "supported_by": [
-    "EV-0157",
-    "EV-0039"
-   ],
-   "mediation": [
-    {
-     "layer": "event",
-     "who": "arrests after the attempt"
-    },
-    {
-     "layer": "modern_interpretation",
-     "who": "Melvin-Koushki, dissertation (2012)",
-     "where": "pdf p.73",
-     "shaping_risk": "low",
-     "note": "the basis for suspecting each man is not given"
-    }
-   ],
-   "domain": "political"
-  },
-  "EV-0039": {
-   "id": "EV-0039",
-   "type": "evidence",
-   "status": "draft",
-   "citation": {
-    "source_id": "SRC-610EE1D6BA",
-    "witness_page": 53,
-    "printed_page": "36",
-    "short_title": "Melvin-Koushki, dissertation (2012)"
-   },
-   "content": "Timeline A.1: 830/1427 Aḥmad-i Lur's assassination attempt against Shāhrukh, followed by the arrest and exile of those with suspected Hurufi sympathies.",
-   "evidence_kind": "context"
-  },
-  "EV-0157": {
-   "id": "EV-0157",
-   "type": "evidence",
-   "status": "draft",
-   "citation": {
-    "source_id": "SRC-610EE1D6BA",
-    "witness_page": 73,
-    "printed_page": "56",
-    "short_title": "Melvin-Koushki, dissertation (2012)"
-   },
-   "content": "In 830/1427 the Hurufi Aḥmad-i Lur made an attempt on Shāhrukh's life as he left the congregational mosque in Herat and was killed on the spot; Shāhrukh then arrested prominent figures with suspected ties to the Ḥurūfiyya, including Qāsim-i Anvār, Maʿrūf-i Khaṭṭāt and Ibn Turka.",
-   "evidence_kind": "context"
-  },
-  "CL-0077": {
-   "id": "CL-0077",
-   "type": "claim",
-   "status": "draft",
-   "proposition": "In 830/1427 the Hurufi Aḥmad-i Lur tried to kill Shāhrukh as he left the congregational mosque in Herat and was killed on the spot.",
-   "epistemic_type": "attested",
-   "confidence": "high",
-   "supported_by": [
-    "EV-0157",
-    "EV-0039"
-   ],
-   "mediation": [
-    {
-     "layer": "event",
-     "who": "the attempt on Shāhrukh"
-    },
-    {
-     "layer": "modern_interpretation",
-     "who": "Melvin-Koushki, dissertation (2012)",
-     "where": "pdf p.73 and p.53",
-     "shaping_risk": "low"
-    }
-   ],
-   "domain": "political"
-  },
-  "CL-0074": {
-   "id": "CL-0074",
-   "type": "claim",
-   "status": "draft",
-   "proposition": "Ibn Turka's apologies are the primary source of information about his life and give a uniquely candid look at the religio-political machinations of early Timurid Iran (Melvin-Koushki's assessment).",
-   "epistemic_type": "attested",
-   "confidence": "high",
-   "supported_by": [
-    "EV-0170"
-   ],
-   "mediation": [
-    {
-     "layer": "modern_interpretation",
-     "who": "Melvin-Koushki, dissertation (2012)",
-     "where": "pdf p.75",
-     "shaping_risk": "medium",
-     "note": "the historian's own view of the apologies; they were written to judges"
-    }
-   ],
-   "domain": "textual"
-  },
-  "EV-0170": {
-   "id": "EV-0170",
-   "type": "evidence",
-   "status": "draft",
-   "citation": {
-    "source_id": "SRC-610EE1D6BA",
-    "witness_page": 75,
-    "printed_page": "58",
-    "short_title": "Melvin-Koushki, dissertation (2012)"
-   },
-   "content": "Melvin-Koushki: Ibn Turka's apologies are \"the primary source of information about his life\" and, beyond their autobiographical value, give a uniquely candid look at the religio-political machinations that made intellectual life in early Timurid Iran so fraught.",
    "evidence_kind": "scholarly_argument"
   },
   "CL-0172": {
@@ -17194,87 +17278,6 @@ window.CONTENT = {
     }
    ]
   },
-  "CL-0075": {
-   "id": "CL-0075",
-   "type": "claim",
-   "status": "draft",
-   "proposition": "The first Nafsat al-Maṣdūr was written for Shāhrukh in 829/1426 in answer to accusations by his Herat enemies, with an autobiographical introduction and an attack on the accusers' motives, then two sections (vaṣl).",
-   "epistemic_type": "attested",
-   "confidence": "high",
-   "supported_by": [
-    "EV-0171"
-   ],
-   "mediation": [
-    {
-     "layer": "subject_self_report",
-     "who": "Ibn Turka, Nafsat al-Maṣdūr I (829/1426), addressed to Shāhrukh",
-     "where": "Nafsat al-Maṣdūr I",
-     "shaping_risk": "high",
-     "note": "structure of the text itself"
-    },
-    {
-     "layer": "modern_interpretation",
-     "who": "Melvin-Koushki, dissertation (2012)",
-     "where": "pdf p.75",
-     "shaping_risk": "low"
-    }
-   ],
-   "domain": "textual"
-  },
-  "EV-0171": {
-   "id": "EV-0171",
-   "type": "evidence",
-   "status": "draft",
-   "citation": {
-    "source_id": "SRC-610EE1D6BA",
-    "witness_page": 75,
-    "printed_page": "58",
-    "short_title": "Melvin-Koushki, dissertation (2012)"
-   },
-   "content": "The first Nafsat al-Maṣdūr ('Tubercular Expectoration') was written for Shāhrukh in 829/1426 in response to accusations by Ibn Turka's enemies in Herat; it has an introduction with autobiographical details and a discussion of the superficial character and base motives of his accusers, followed by two sections (vaṣl).",
-   "evidence_kind": "apology",
-   "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I"
-  },
-  "CL-0102": {
-   "id": "CL-0102",
-   "type": "claim",
-   "status": "draft",
-   "proposition": "Nafsat al-Maṣdūr I was written for Shāhrukh in 829/1426 as Ibn Turka's answer to accusations made by enemies in Herat (Melvin-Koushki's dating and description).",
-   "epistemic_type": "attested",
-   "confidence": "medium",
-   "supported_by": [
-    "EV-0202"
-   ],
-   "domain": "chronological",
-   "mediation": [
-    {
-     "layer": "subject_self_report",
-     "who": "Ibn Turka, writing to the ruler who was judging him",
-     "where": "Nafsat al-Maṣdūr I",
-     "shaping_risk": "high"
-    },
-    {
-     "layer": "modern_interpretation",
-     "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
-     "where": "pdf p.75 (printed 58)",
-     "shaping_risk": "low"
-    }
-   ]
-  },
-  "EV-0202": {
-   "id": "EV-0202",
-   "type": "evidence",
-   "status": "draft",
-   "citation": {
-    "source_id": "SRC-610EE1D6BA",
-    "witness_page": 75,
-    "printed_page": "58",
-    "short_title": "Melvin-Koushki, dissertation (2012)"
-   },
-   "content": "Melvin-Koushki dates Ibn Turka's first apology, the Nafsat al-Maṣdūr (‘Tubercular Expectoration’) I, to 829/1426 and says it was written for Shāhrukh in response to accusations made against him by his enemies in Herat.",
-   "evidence_kind": "apology",
-   "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I"
-  },
   "CL-0173": {
    "id": "CL-0173",
    "type": "claim",
@@ -17296,6 +17299,40 @@ window.CONTENT = {
      "shaping_risk": "medium"
     }
    ]
+  },
+  "CL-0074": {
+   "id": "CL-0074",
+   "type": "claim",
+   "status": "draft",
+   "proposition": "Ibn Turka's apologies are the primary source of information about his life and give a uniquely candid look at the religio-political machinations of early Timurid Iran (Melvin-Koushki's assessment).",
+   "epistemic_type": "attested",
+   "confidence": "high",
+   "supported_by": [
+    "EV-0170"
+   ],
+   "mediation": [
+    {
+     "layer": "modern_interpretation",
+     "who": "Melvin-Koushki, dissertation (2012)",
+     "where": "pdf p.75",
+     "shaping_risk": "medium",
+     "note": "the historian's own view of the apologies; they were written to judges"
+    }
+   ],
+   "domain": "textual"
+  },
+  "EV-0170": {
+   "id": "EV-0170",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 75,
+    "printed_page": "58",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "Melvin-Koushki: Ibn Turka's apologies are \"the primary source of information about his life\" and, beyond their autobiographical value, give a uniquely candid look at the religio-political machinations that made intellectual life in early Timurid Iran so fraught.",
+   "evidence_kind": "scholarly_argument"
   },
   "CL-0166": {
    "id": "CL-0166",
@@ -18649,6 +18686,46 @@ window.CONTENT = {
    "evidence_kind": "apology",
    "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I"
   },
+  "CL-0102": {
+   "id": "CL-0102",
+   "type": "claim",
+   "status": "draft",
+   "proposition": "Nafsat al-Maṣdūr I was written for Shāhrukh in 829/1426 as Ibn Turka's answer to accusations made by enemies in Herat (Melvin-Koushki's dating and description).",
+   "epistemic_type": "attested",
+   "confidence": "medium",
+   "supported_by": [
+    "EV-0202"
+   ],
+   "domain": "chronological",
+   "mediation": [
+    {
+     "layer": "subject_self_report",
+     "who": "Ibn Turka, writing to the ruler who was judging him",
+     "where": "Nafsat al-Maṣdūr I",
+     "shaping_risk": "high"
+    },
+    {
+     "layer": "modern_interpretation",
+     "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+     "where": "pdf p.75 (printed 58)",
+     "shaping_risk": "low"
+    }
+   ]
+  },
+  "EV-0202": {
+   "id": "EV-0202",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 75,
+    "printed_page": "58",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "Melvin-Koushki dates Ibn Turka's first apology, the Nafsat al-Maṣdūr (‘Tubercular Expectoration’) I, to 829/1426 and says it was written for Shāhrukh in response to accusations made against him by his enemies in Herat.",
+   "evidence_kind": "apology",
+   "refers_to_primary": "Ibn Turka, Nafsat al-Maṣdūr I"
+  },
   "CL-0422": {
    "id": "CL-0422",
    "type": "claim",
@@ -18675,6 +18752,106 @@ window.CONTENT = {
     }
    ],
    "domain": "textual"
+  },
+  "CL-0180": {
+   "id": "CL-0180",
+   "type": "claim",
+   "status": "draft",
+   "proposition": "Sufism carried Shiʿi content to Sunnism and back, and Sufi orders traced their line to ʿAlī; even the Naqshbandiyya distinguished tawalliʾ from Rāfiḍism, and Pārsā gave the twelve Imams' biographies in a pro-Sunni work.",
+   "epistemic_type": "attested",
+   "confidence": "high",
+   "supported_by": [
+    "EV-0343",
+    "EV-0345",
+    "EV-0346",
+    "EV-0347",
+    "EV-0344"
+   ],
+   "domain": "doctrinal",
+   "mediation": [
+    {
+     "layer": "later_chronicler",
+     "who": "sources and scholars MK cites",
+     "where": "pdf p.88 (printed 71)",
+     "shaping_risk": "medium"
+    },
+    {
+     "layer": "modern_interpretation",
+     "who": "Melvin-Koushki, The Quest for a Universal Science (Yale 2012)",
+     "where": "pdf p.88 (printed 71)",
+     "shaping_risk": "low"
+    }
+   ]
+  },
+  "EV-0344": {
+   "id": "EV-0344",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 88,
+    "printed_page": "71",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "Melvin-Koushki reports that Ḥaydar Āmulī (d. after 787/1385) calls Sufism Shiʿism and Shiʿism Sufism, a slight overstatement of the trend which Melvin-Koushki thinks not unreasonable seen as reflecting new sociopolitical realities. The source given is Zarrīnkūb; nothing here concerns Zarrīnkūb's view of Ibn Turka.",
+   "evidence_kind": "context",
+   "refers_to_primary": "Ḥaydar Āmulī, per Zarrīnkūb, Dunbāla-yi Justujū, p.140 (per MK fn.134)"
+  },
+  "EV-0347": {
+   "id": "EV-0347",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 88,
+    "printed_page": "71",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "Melvin-Koushki's footnote says Khwāja Muḥammad Pārsā's Faṣl al-Khiṭāb, despite a strongly pro-Sunni and anti-Rāfiḍī position, still gives a biography of the twelve Imams.",
+   "evidence_kind": "context",
+   "refers_to_primary": "Khwāja Muḥammad Pārsā, Faṣl al-Khiṭāb (per MK fn.136)"
+  },
+  "EV-0346": {
+   "id": "EV-0346",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 88,
+    "printed_page": "71",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "Melvin-Koushki argues that the very reactionariness of that distinction shows the prevalence of tashayyuʿ ḥasan, a moderate inclination toward Shiʿism, in 9th/15th-century Iran.",
+   "evidence_kind": "scholarly_argument",
+   "refers_to_primary": "tashayyuʿ ḥasan in 9th/15th-century Iran"
+  },
+  "EV-0345": {
+   "id": "EV-0345",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 88,
+    "printed_page": "71",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "Melvin-Koushki says the staunchly Sunni Naqshbandiyya, who traced their filiation to Abū Bakr rather than ʿAlī, still distinguished praiseworthy veneration of ʿAlī and the Imams (tawalliʾ) from hateful condemnation of the first three caliphs and ʿĀʾisha, Rāfiḍism (tabarruʾ).",
+   "evidence_kind": "context",
+   "refers_to_primary": "Naqshbandiyya on tawalliʾ and tabarruʾ"
+  },
+  "EV-0343": {
+   "id": "EV-0343",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 88,
+    "printed_page": "71",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "Melvin-Koushki says Sufism from the 7th/13th century onward acted as an interface passing Shiʿi content to Sunnism and vice versa, the nearly universal filiation of the emergent Sufi orders to ʿAlī being symptomatic, the main shared doctrine being wilāya/walāya.",
+   "evidence_kind": "context",
+   "refers_to_primary": "Sufism between Shiʿism and Sunnism"
   },
   "CL-0070": {
    "id": "CL-0070",
@@ -20555,70 +20732,6 @@ window.CONTENT = {
    "evidence_kind": "work",
    "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ"
   },
-  "CL-0562": {
-   "id": "CL-0562",
-   "type": "claim",
-   "status": "draft",
-   "proposition": "The Mafāḥiṣ is organized in three sections on the three forms of the letter (mental or numerological, written or symbological, spoken or phonological) followed by a fourth section on the letters in themselves and in language and literature.",
-   "epistemic_type": "attested",
-   "confidence": "high",
-   "supported_by": [
-    "EV-1077",
-    "EV-1097",
-    "EV-1104"
-   ],
-   "mediation": [
-    {
-     "layer": "modern_interpretation",
-     "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
-     "where": "pdf pp.347, 352, 354",
-     "shaping_risk": "low"
-    }
-   ],
-   "domain": "textual"
-  },
-  "EV-1104": {
-   "id": "EV-1104",
-   "type": "evidence",
-   "status": "draft",
-   "citation": {
-    "source_id": "SRC-610EE1D6BA",
-    "witness_page": 354,
-    "printed_page": "337",
-    "short_title": "Melvin-Koushki, dissertation (2012)"
-   },
-   "content": "Ibn Turka structures each section of the Mafāḥiṣ as a series of inquiries (faḥṣ): the introduction has seven; section 1, on the mental form of the letters, 36; section 2, on the written form, 21; section 3, on the spoken form, 18; section 4, on the letters in themselves and their three forms in the context of language and literature, 74.",
-   "evidence_kind": "work",
-   "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ"
-  },
-  "EV-1097": {
-   "id": "EV-1097",
-   "type": "evidence",
-   "status": "draft",
-   "citation": {
-    "source_id": "SRC-610EE1D6BA",
-    "witness_page": 352,
-    "printed_page": "335",
-    "short_title": "Melvin-Koushki, dissertation (2012)"
-   },
-   "content": "The Mafāḥiṣ is organized in three sections according to the three forms of the letters, mental, written and spoken, followed by a fourth section on the letters as they are in themselves and more generally in the context of language and literature.",
-   "evidence_kind": "work",
-   "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ"
-  },
-  "EV-1077": {
-   "id": "EV-1077",
-   "type": "evidence",
-   "status": "draft",
-   "citation": {
-    "source_id": "SRC-610EE1D6BA",
-    "witness_page": 347,
-    "printed_page": "330",
-    "short_title": "Melvin-Koushki, dissertation (2012)"
-   },
-   "content": "Melvin-Koushki calls the K. al-Mafāḥiṣ (Book of Inquiries) the cornerstone of Ibn Turka's oeuvre and the key to his universalist project, and the definitive systematization of the lettrist teachings of Sayyid Ḥusayn Akhlāṭī. He says it treats the meanings of the letters according to three forms, numerological (iḥsāʾī), symbological (kitābī) and phonological (kalāmī), as well as the letters in themselves.",
-   "evidence_kind": "scholarly_argument",
-   "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ"
-  },
   "CL-0719": {
    "id": "CL-0719",
    "type": "claim",
@@ -21106,6 +21219,70 @@ window.CONTENT = {
     }
    ],
    "domain": "textual"
+  },
+  "EV-1104": {
+   "id": "EV-1104",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 354,
+    "printed_page": "337",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "Ibn Turka structures each section of the Mafāḥiṣ as a series of inquiries (faḥṣ): the introduction has seven; section 1, on the mental form of the letters, 36; section 2, on the written form, 21; section 3, on the spoken form, 18; section 4, on the letters in themselves and their three forms in the context of language and literature, 74.",
+   "evidence_kind": "work",
+   "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ"
+  },
+  "CL-0562": {
+   "id": "CL-0562",
+   "type": "claim",
+   "status": "draft",
+   "proposition": "The Mafāḥiṣ is organized in three sections on the three forms of the letter (mental or numerological, written or symbological, spoken or phonological) followed by a fourth section on the letters in themselves and in language and literature.",
+   "epistemic_type": "attested",
+   "confidence": "high",
+   "supported_by": [
+    "EV-1077",
+    "EV-1097",
+    "EV-1104"
+   ],
+   "mediation": [
+    {
+     "layer": "modern_interpretation",
+     "who": "Melvin-Koushki, paraphrasing or translating Ibn Turka's own work",
+     "where": "pdf pp.347, 352, 354",
+     "shaping_risk": "low"
+    }
+   ],
+   "domain": "textual"
+  },
+  "EV-1097": {
+   "id": "EV-1097",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 352,
+    "printed_page": "335",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "The Mafāḥiṣ is organized in three sections according to the three forms of the letters, mental, written and spoken, followed by a fourth section on the letters as they are in themselves and more generally in the context of language and literature.",
+   "evidence_kind": "work",
+   "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ"
+  },
+  "EV-1077": {
+   "id": "EV-1077",
+   "type": "evidence",
+   "status": "draft",
+   "citation": {
+    "source_id": "SRC-610EE1D6BA",
+    "witness_page": 347,
+    "printed_page": "330",
+    "short_title": "Melvin-Koushki, dissertation (2012)"
+   },
+   "content": "Melvin-Koushki calls the K. al-Mafāḥiṣ (Book of Inquiries) the cornerstone of Ibn Turka's oeuvre and the key to his universalist project, and the definitive systematization of the lettrist teachings of Sayyid Ḥusayn Akhlāṭī. He says it treats the meanings of the letters according to three forms, numerological (iḥsāʾī), symbological (kitābī) and phonological (kalāmī), as well as the letters in themselves.",
+   "evidence_kind": "scholarly_argument",
+   "refers_to_primary": "Ibn Turka, K. al-Mafāḥiṣ"
   },
   "CL-0034": {
    "id": "CL-0034",
@@ -25805,5 +25982,28 @@ window.CONTENT = {
     "EV-0149"
    ]
   }
+ },
+ "benchmark": {
+  "court.temur": 1,
+  "score.biography": 53,
+  "court.akhlati": 3,
+  "court.yazdi": 3,
+  "court.barquq": 2,
+  "press.exposure": 8,
+  "court.jazari": -1,
+  "press.enemies": 4,
+  "press.students": 5,
+  "press.works": 14,
+  "court.pir-muhammad": 1,
+  "press.livelihood": -5,
+  "court.iskandar": 2,
+  "score.textual": 13,
+  "court.firuzshah": 2,
+  "court.shahrukh": 7,
+  "court.baysunghur": 6,
+  "court.qazizada": 1,
+  "score.calibration": 1,
+  "court.marashi": 1,
+  "court.shah-razi-al-din": 1
  }
 };

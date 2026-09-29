@@ -42,7 +42,7 @@
  "choices": [
   {
    "id": "A",
-   "label": "Send a copy of the commentary to Qāżīzāda Rūmī in Samarkand.",
+   "label": "Send a copy of the commentary to Qāżīzāda Rūmī at Ulugh Beg's observatory in Samarkand.",
    "strategy": "qazizada_copy",
    "epistemic_label": "documented",
    "based_on": [
@@ -56,11 +56,11 @@
     "press.works": 1,
     "score.biography": 2
    },
-   "feedback": "The copy to Qāżīzāda is attested by his letter of thanks (c. 829/1426), which recalls a meeting in Herat and reminds you of a promise to visit Samarkand. The same manuscript carries a marginal dedication to Ulugh Beg on f. 332b, but the entry does not say who wrote it, and the timeline's claim that copies went to both men is contested (see B)."
+   "feedback": "Rūmī is described as director of Ulugh Beg's observatory, and the copy to him is attested by his letter of thanks (c. 829/1426), which recalls a meeting in Herat and reminds you of a promise to visit Samarkand. The same manuscript carries a marginal dedication to Ulugh Beg on f. 332b, but the entry does not say who wrote it, and the timeline's claim that copies went to both men is contested (see B)."
   },
   {
    "id": "B",
-   "label": "Send copies to both Qāżīzāda Rūmī and Ulugh Beg himself.",
+   "label": "Send copies to both Qāżīzāda Rūmī and Ulugh Beg himself, as the timeline has it.",
    "strategy": "copies_to_both",
    "epistemic_label": "contested",
    "based_on": [
@@ -75,7 +75,7 @@
   },
   {
    "id": "C",
-   "label": "Dedicate the commentary to Shāhrukh, who by your own account made you qadi, and send it to Herat.",
+   "label": "Dedicate the commentary to Shāhrukh, who made you qadi, and send it to Herat.",
    "strategy": "dedicate_to_shahrukh",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -86,12 +86,13 @@
    "effects": {
     "court.shahrukh": 1,
     "press.exposure": 1,
-    "score.biography": -1
+    "score.biography": -1,
+    "press.livelihood": 1
    },
    "costs": [
-    "A lettrist commentary goes to a ruler whom Melvin-Koushki reads as distrusting mystically minded intellectuals."
+    "The ruler who made you qadi may reward a dedication (the game's guess, not a record). A lettrist commentary in front of a ruler whom Melvin-Koushki reads as distrusting mystically minded intellectuals raises your exposure."
    ],
-   "feedback": "The sources put the dedication note in the margin at Ulugh Beg's name, not Shāhrukh's. Melvin-Koushki reads Shāhrukh as distrustful of ambitious, mystically or millenarian-minded intellectuals, which is the risk in this line. The game returns you to the record."
+   "feedback": "The sources put the dedication note in the margin at Ulugh Beg's name, not Shāhrukh's. Melvin-Koushki reads Shāhrukh as distrustful of ambitious, mystically or millenarian-minded intellectuals, which is the risk in this line. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
   }
  ],
  "next": "SCN-0306",

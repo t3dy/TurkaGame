@@ -4,7 +4,7 @@
  "status": "draft",
  "act": "exile",
  "title": "Simnan, c. 1429–30: a hearing that does not come",
- "dramatic_question": "Shāhrukh is on the march in Azarbayjan, within reach, and in the same year the powerful opponent who caused you so much grief dies at Herat. How do you press to be heard?",
+ "dramatic_question": "Shāhrukh is within reach. How do you press to be heard?",
  "situation": {
   "when": "833 AH: c. 1429 in Melvin-Koushki's timeline, 1430 in his narrative",
   "where": "Simnan",
@@ -31,7 +31,7 @@
  "prose": [
   "Shāhrukh has taken the field against the Qara Quyunlu in Azarbayjan. In the same year, 833/1429, al-Jazarī, the Damascus-born traditionist whom, by your own later account, your enemies hide behind, dies in Herat. Your own later account traces his enmity to a judgement of him you gave the Mamluk sultan in Egypt; Melvin-Koushki gives no second witness for that. The pages do not say what his death changed for you.",
   "The year itself is unsure: the dissertation's timeline says c. 833/1429 and its narrative says 833/1430. What is not in doubt is the shape: a ruler within reach, no post, a family still in exile. You go to Simnan, or you find another way to reach him.",
-  "The record gives the outcome of the attempt away in one sentence, and it is not a good one. What you can choose is how you go about asking."
+  "What you can choose is how you go about asking."
  ],
  "choices": [
   {
@@ -53,7 +53,7 @@
   },
   {
    "id": "B",
-   "label": "Go first to Bāysunghur and ask him to bring you before his father, as he once received you when Shāhrukh would not.",
+   "label": "Go first to Bāysunghur and ask him to bring you before his father.",
    "strategy": "seek_hearing_via_baysunghur",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -67,13 +67,17 @@
    "effects": {
     "court.baysunghur": 1,
     "life.simnan": "via_baysunghur",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.enemies": 1
    },
-   "feedback": "Open to you because Bāysunghur has favoured you. In letter 19 you say you were not granted an audience with Shāhrukh but were received by Bāysunghur with particular favour; in letter 18 you wait two days at his court and propose a majlis as an easier setting. The record has you turn to him for intercession only at the end, in the second apology, after nine months of weekly attendance; nothing puts him at Simnan. The game returns you to the record."
+   "feedback": "Open to you because Bāysunghur has favoured you. In letter 19 you say you were not granted an audience with Shāhrukh but were received by Bāysunghur with particular favour; in letter 18 you wait two days at his court and propose a majlis as an easier setting. The record has you turn to him for intercession only at the end, in the second apology, after nine months of weekly attendance; nothing puts him at Simnan. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "You use a prince's goodwill to go round his father, and those who resent the detour take note. Your household is spared the cost of waiting in the camp."
+   ]
   },
   {
    "id": "C",
-   "label": "Send a treatise ahead to Shāhrukh, as you did with letter 20, and let it ask for the hearing before you appear.",
+   "label": "Send a treatise ahead to Shāhrukh and let it ask for the hearing before you appear.",
    "strategy": "seek_hearing_with_treatise",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -86,12 +90,14 @@
    "effects": {
     "press.exposure": 1,
     "life.simnan": "treatise_first",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.works": 1,
+    "press.enemies": 1
    },
    "costs": [
-    "A treatise on occult properties, sent by a suspected Ḥurūfī, may read as one more charge."
+    "The treatise circulates and may win you the hearing. Sent by a suspected Ḥurūfī, a treatise on occult properties may read as one more charge."
    ],
-   "feedback": "Open to you because Shāhrukh has favoured you in the past. In letter 20 (ca. 829/1426) you told him your aim was to be blameless before the Prophet and sent a treatise on the occult properties of things, which Melvin-Koushki thinks was most probably the R. Suʾl al-Mulūk, his own guess. No such letter is on record for 1429–30, and the sources are silent on whether one would have helped. The game returns you to the record."
+   "feedback": "Open to you because Shāhrukh has favoured you in the past. In letter 20 (ca. 829/1426) you told him your aim was to be blameless before the Prophet and sent a treatise on the occult properties of things, which Melvin-Koushki thinks was most probably the R. Suʾl al-Mulūk, his own guess. No such letter is on record for 1429–30, and the sources are silent on whether one would have helped. The game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record."
   }
  ],
  "next": "SCN-0405",

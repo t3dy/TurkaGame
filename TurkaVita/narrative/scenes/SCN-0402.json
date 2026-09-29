@@ -17,12 +17,14 @@
  },
  "invariants": [
   {
-   "text": "For about five years, until his death in Herat, Ibn Turka wandered northern and northwestern Iran seeking a livelihood, teaching hadith and tafsir in local mosques and writing treatises for governors and amirs. This comes from his own second apology, written to Bāysunghur.",
-   "claim": "CL-0081"
+   "text": "For about five years, until his death in Herat, Ibn Turka wandered northern and northwestern Iran seeking a livelihood, teaching hadith and tafsir in local mosques and writing treatises for governors and amirs.",
+   "claim": "CL-0081",
+   "detail": "This comes from his own second apology, written to Bāysunghur."
   },
   {
-   "text": "His surviving letters from the exile are pleas to governors and amirs for clemency, so that he could keep his wives and children through hunger and frost, and requests to Sufi shaykhs and bureaucrats for help; he sought patronage at the Marʿashī court in Mazandaran and the Kārkiyā court in Gilan.",
-   "claim": "CL-0082"
+   "text": "His surviving letters from the exile are pleas to governors and amirs for clemency, so that he could keep his wives and children through hunger and frost, and requests to Sufi shaykhs and bureaucrats for help.",
+   "claim": "CL-0082",
+   "detail": "He sought patronage at the Marʿashī court in Mazandaran and the Kārkiyā court in Gilan."
   },
   {
    "text": "In the second apology Ibn Turka says he has ten children and a few wives whom exile left him unable to support; Melvin-Koushki infers three sons and seven daughters from a letter of Sharaf al-Dīn Yazdī.",
@@ -32,7 +34,7 @@
  "prose": [
   "You wander northern and northwestern Iran, teaching hadith and tafsir where a mosque will have you, and you write to anyone who might help. By your own later count you have ten children and a few wives to feed, through hunger and frost.",
   "Three doors are open. Sayyid Murtażā Marʿashī rules at Sari in Mazandaran. The Kārkiyā sayyids, Zaydī rulers, hold Gilan: Sayyid Aḥmad at Ranikuh and Sayyid Nāṣir at Lahijan. And there is an Amīr ʿAlāʾ al-Dīn, whom Melvin-Koushki cannot identify: he lists three candidates.",
-  "You wrote to all of them, and the sources do not say in what order. Melvin-Koushki dates the letters only to about 831–32/1428–29, and they do not fit together neatly: one calls Gilan uncongenial while others court its amirs. So this scene has no single recorded answer. The record names the households and is silent on which came first."
+  "You wrote to all of them, and the sources do not say in what order. Melvin-Koushki dates the letters only to about 831–32/1428–29, and they do not fit together neatly: one calls Gilan uncongenial while others court its amirs. So this scene has no single recorded answer. The record names all three households; it does not say which came first."
  ],
  "unrecorded": true,
  "choices": [
@@ -101,9 +103,13 @@
     "press.students": 1,
     "press.livelihood": -1,
     "life.exile_household": "none",
-    "score.biography": -1
+    "score.biography": -1,
+    "press.exposure": -1
    },
-   "feedback": "The teaching is documented, but so is the asking: the surviving letters are largely pleas, and nothing shows you choosing to ask nobody. This is your own what-if, and the game returns you to the record: the sources have you writing to the courts of Mazandaran and Gilan."
+   "feedback": "The teaching is documented, but so is the asking: the surviving letters are largely pleas, and nothing shows you choosing to ask nobody. This is your own what-if, and the game returns you to the record: the sources have you writing to the courts of Mazandaran and Gilan. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "Attached to no court, your name draws no notice, so exposure falls, and your students grow. Your household goes hungrier without a patron's stipend."
+   ]
   }
  ],
  "next": "SCN-0403",

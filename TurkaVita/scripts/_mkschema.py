@@ -83,6 +83,11 @@ sc["properties"]["commitment"]["description"] = (
 sc["properties"]["commitment"]["properties"]["scoring"]["description"] = (
     "effects per outcome tag: coherent, incoherent, calibrated_unknown, over_caution, false_certainty, non_conviction, "
     "coerced_testimony, empty_dossier.")
+# 2026-09-28: fields the UI renders behind a "More on the sources" toggle (the playtest found the fixed-fact boxes unreadable)
+sc["properties"]["invariants"]["items"]["properties"]["detail"] = {
+    "type": "string", "description": "the calendar, folio and who-says-what caveats of an invariant: shown behind a toggle so the box stays short"}
+sc["properties"]["sorter"]["properties"]["detail"] = {"type": "string", "description": "the caveats behind the sorter's answer key, shown behind a toggle"}
+
 hy = find("hypothesis")
 hy["properties"]["commitments"]["required"] = ["conviction"]
 hy["properties"]["commitments"]["properties"] = {"conviction": {

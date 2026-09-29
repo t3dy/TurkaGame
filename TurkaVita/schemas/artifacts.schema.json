@@ -478,6 +478,10 @@
        },
        "claim": {
         "$ref": "#/$defs/id"
+       },
+       "detail": {
+        "type": "string",
+        "description": "the calendar, folio and who-says-what caveats of an invariant: shown behind a toggle so the box stays short"
        }
       }
      }
@@ -801,6 +805,10 @@
       },
       "scoring": {
        "type": "object"
+      },
+      "detail": {
+       "type": "string",
+       "description": "the caveats behind the sorter's answer key, shown behind a toggle"
       }
      }
     }

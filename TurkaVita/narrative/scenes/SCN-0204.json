@@ -16,8 +16,9 @@
  },
  "invariants": [
   {
-   "text": "In two letters (nos. 4 and 12 of the Munshaʾāt-i Turka, ca. 816/1413, 'Isfahan?') you say that harassment by envious persons forces you to leave the region for a time, and that you are moving your family to Shiraz. Melvin-Koushki warns that his dating of the letters is conjecture and their order not rigorous.",
-   "claim": "CL-0414"
+   "text": "In two letters (nos. 4 and 12 of the Munshaʾāt-i Turka) you say harassment by envious persons forces you to leave the region for a time, and that you are moving your family to Shiraz.",
+   "claim": "CL-0414",
+   "detail": "Melvin-Koushki dates the letters ca. 816/1413 and places them at 'Isfahan?'; he warns that his dating is conjecture and their order not rigorous."
   },
   {
    "text": "Six of your surviving letters go to Amīr Jalāl al-Dīn Fīrūzshāh, whom Melvin-Koushki, following Manz, calls the greatest patron of the religious establishment, Sufis included, among Shāhrukh's amirs.",
@@ -36,7 +37,7 @@
  "choices": [
   {
    "id": "A",
-   "label": "Write to Amīr Fīrūzshāh and to Iskandar's vizier Ḥāfiẓ Rāzī, say that harassment forces you to leave for a time, and ask each of them to take Sharaf al-Dīn Yaʿqūb as your replacement.",
+   "label": "Write to Amīr Fīrūzshāh and to Iskandar's vizier Ḥāfiẓ Rāzī, asking each to take Sharaf al-Dīn Yaʿqūb as your replacement.",
    "strategy": "broker_yaqub_to_amir_and_vizier",
    "epistemic_label": "documented",
    "historical": true,
@@ -52,11 +53,11 @@
     "press.students": 1,
     "score.biography": 2
    },
-   "feedback": "These are letters 4 and 12 as Melvin-Koushki summarises them, and the first of the six letters he counts to Fīrūzshāh. Take the datings as his conjecture (letter 10, which welcomes Fīrūzshāh's troops to Iraq, is put at ca. 817/1414, so the order is not strict). Two things are unsettled: the timeline has your move to Shiraz but his running text does not mention it (CL-0058), and Melvin-Koushki identifies Yaʿqūb with the man who became qadi of Yazd, so the sources do not say whether he replaced you in Isfahan or in Yazd."
+   "feedback": "These are letters 4 and 12 as Melvin-Koushki summarises them, and the first of the six letters he counts to Fīrūzshāh. Take the datings as his conjecture (letter 10, which welcomes Fīrūzshāh's troops to Iraq, is put at ca. 817/1414, so the order is not strict). Two things are unsettled: the timeline has your move to Shiraz but his running text does not mention it, and Melvin-Koushki identifies Yaʿqūb with the man who became qadi of Yazd, so the sources do not say whether he replaced you in Isfahan or in Yazd."
   },
   {
    "id": "B",
-   "label": "Write to the vizier and the amir asking for an office for yourself in Iraq.",
+   "label": "Write to Amīr Fīrūzshāh and the vizier Ḥāfiẓ Rāzī, asking each for an office of your own in Iraq.",
    "strategy": "ask_for_yourself",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -69,11 +70,14 @@
     "press.enemies": 1,
     "score.biography": -1
    },
-   "feedback": "None of the letters Melvin-Koushki places near ca. 816/1413 asks anything for you: letters 4 and 12 recommend Yaʿqūb (CL-0414) and letter 6 asks an amir to look into his situation (CL-0415). The requests for a stipend and for restored property come later, from exile (CL-0432). The sources put you asking for others first; the game returns you to the record."
+   "feedback": "None of the letters Melvin-Koushki places near ca. 816/1413 asks anything for you: letters 4 and 12 recommend Yaʿqūb and letter 6 asks an amir to look into his situation. The requests for a stipend and for restored property come later, from exile. The sources put you asking for others first; the game returns you to the record. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "An office of your own to feed the household. Envious men see you asking for yourself and have one more reason to work against you."
+   ]
   },
   {
    "id": "C",
-   "label": "Write to Iskandar himself, with your regard and your regret that you cannot call in person.",
+   "label": "Write to Iskandar himself, with your regard and your regret that you cannot call on him in person.",
    "strategy": "write_to_iskandar",
    "epistemic_label": "reconstructed",
    "based_on": [
@@ -85,7 +89,7 @@
     "score.biography": 1,
     "press.exposure": 1
    },
-   "feedback": "This is letter 8. Its addressee is Melvin-Koushki's presumption, read from a partly illegible opening line and a benediction on the perfect sultanate (CL-0410, directly inferred). It shows what you wrote to a prince, and it does the vizier's and the amir's work for Yaʿqūb not at all. It also ties you more openly to Iskandar in the period before Shāhrukh's campaign of 817/1414."
+   "feedback": "This is letter 8. Its addressee is Melvin-Koushki's presumption, read from a partly illegible opening line and a benediction on the perfect sultanate (directly inferred). It shows what you wrote to a prince, and it does the vizier's and the amir's work for Yaʿqūb not at all. It also ties you more openly to Iskandar in the period before Shāhrukh's campaign of 817/1414."
   }
  ],
  "next": "SCN-0205",

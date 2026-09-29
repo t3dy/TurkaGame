@@ -2,7 +2,7 @@
  "id": "CL-0211",
  "type": "claim",
  "status": "draft",
- "proposition": "Read off from Melvin-Koushki's entries (researcher's collation): in the later folios of MS Majlis 10196 the colophon dates are not in date order by folio: Nafsat al-Maṣdūr II (f. 226b, 838), Mabdaʾ u Maʿād (f. 266b, Ṣafar 832), Madārij Afhām al-Afvāj (f. 352b, Dhū l-Qaʿda 831), K. al-Manāhij (f. 382b, Rajab 833), Iṣbāḥ al-Anwār (f. 404b, 841).",
+ "proposition": "Read off from Melvin-Koushki's entries (this project's own collation of his folio and date lines): in the later folios of MS Majlis 10196 the colophon dates are not in date order by folio: Nafsat al-Maṣdūr II (f. 226b, 838), Mabdaʾ u Maʿād (f. 266b, Ṣafar 832), Madārij Afhām al-Afvāj (f. 352b, Dhū l-Qaʿda 831), K. al-Manāhij (f. 382b, Rajab 833), Iṣbāḥ al-Anwār (f. 404b, 841).",
  "epistemic_type": "directly_inferred",
  "confidence": "medium",
  "supported_by": [
@@ -15,7 +15,7 @@
  "mediation": [
   {
    "layer": "modern_interpretation",
-   "who": "R3 researcher, collating Melvin-Koushki's folio and date lines (not stated by him)",
+   "who": "this project (collating Melvin-Koushki's folio and date lines; not stated by him)",
    "where": "pp.94-108",
    "shaping_risk": "low"
   }

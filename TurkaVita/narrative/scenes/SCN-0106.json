@@ -4,7 +4,7 @@
  "status": "draft",
  "act": "hostage",
  "title": "1405: Temür is dead, and the road home",
- "dramatic_question": "The man who took Isfahan and moved your family east is dead, and, on Melvin-Koushki's reading, you are still abroad. Do you go home, and how visible do you let yourself be when you get there?",
+ "dramatic_question": "Temür is dead. Do you go home, and how visible do you let yourself be when you get there?",
  "situation": {
   "when": "807/1405; the return is c. 810/1408 (a conjectured date)",
   "where": "abroad; then Isfahan",
@@ -22,8 +22,9 @@
    "claim": "CL-0021"
   },
   {
-   "text": "Melvin-Koushki's timeline dates the completion of the Sharḥ-i Naẓm al-Durr to 806/1404 and the R. Munāẓarāt-i Khams to 808/1405. Both dates rest on manuscripts, and a manuscript date can record copying rather than composition; the timeline does not say which entries rest on which manuscript.",
-   "claim": "CL-0092"
+   "text": "Melvin-Koushki's timeline dates the completion of the Sharḥ-i Naẓm al-Durr to 806/1404 and the R. Munāẓarāt-i Khams to 808/1405.",
+   "claim": "CL-0092",
+   "detail": "Both dates rest on manuscripts, and a manuscript date can record copying rather than composition; the timeline does not say which entries rest on which manuscript."
   }
  ],
  "prose": [
@@ -50,7 +51,7 @@
     "score.biography": 2,
     "life.seat": "isfahan"
    },
-   "feedback": "Melvin-Koushki has you take up teaching in Isfahan, intending a retired life of contemplation, until Pīr-Muḥammad, Temür's grandson and governor of Fars, summons you to Shiraz about 810-12/1408-9. He cites no source for the passage, and the return date is his 'perhaps' and 'c.'. The dates of the two works are colophon dates that may record copying, and the Naẓm al-Durr commentary is said to refer to works of 1411 and 1420, which sits oddly with 1404; the dissertation does not comment (the game's observation, CL-0323). That you were still abroad when Temür died is part of the same timeline reading (low confidence)."
+   "feedback": "Melvin-Koushki has you take up teaching in Isfahan, intending a retired life of contemplation, until Pīr-Muḥammad, Temür's grandson and governor of Fars, summons you to Shiraz about 810-12/1408-9. He cites no source for the passage, and the return date is his 'perhaps' and 'c.'. The dates of the two works are colophon dates that may record copying, and the Naẓm al-Durr commentary is said to refer to works of 1411 and 1420, which sits oddly with 1404; the dissertation does not comment (the game's observation). That you were still abroad when Temür died is part of the same timeline reading (low confidence)."
   },
   {
    "id": "B",
@@ -64,9 +65,14 @@
    "requires": {},
    "effects": {
     "score.biography": -1,
-    "life.seat": "isfahan"
+    "life.seat": "isfahan",
+    "press.exposure": -1,
+    "press.students": -1
    },
-   "feedback": "Too strait for philosophy and mystical theory is the reason Ibn Turka gave, in his apologies, for leaving Iran; nothing says he decided the situation had not changed after Temür's death. The sources put him back in Isfahan, teaching, and then summoned to Shiraz. This is the game's own what-if, and the game returns you to the record: nothing later can be built on a life that stays abroad."
+   "feedback": "Too strait for philosophy and mystical theory is the reason Ibn Turka gave, in his apologies, for leaving Iran; nothing says he decided the situation had not changed after Temür's death. The sources put him back in Isfahan, teaching, and then summoned to Shiraz. This is the game's own what-if, and the game returns you to the record: nothing later can be built on a life that stays abroad. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "Abroad, your name stays out of Iran's quarrels, so exposure falls. You gather no students and no readers at home."
+   ]
   },
   {
    "id": "C",

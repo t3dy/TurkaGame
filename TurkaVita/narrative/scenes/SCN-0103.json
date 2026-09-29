@@ -18,16 +18,18 @@
  },
  "invariants": [
   {
-   "text": "In Cairo Ibn Turka studied hadith under Sirāj al-Dīn al-Bulqīnī (d. 805/1403), who was sympathetic to Sufism but not a partisan of it: when certain verses of Ibn al-Fāriḍ's Tāʾiyya were put to him he called them beyond the pale of belief. Melvin-Koushki cites no source for the discipleship itself.",
-   "claim": "CL-0026"
+   "text": "In Cairo Ibn Turka studied hadith under Sirāj al-Dīn al-Bulqīnī (d. 805/1403), who was sympathetic to Sufism but not a partisan of it.",
+   "claim": "CL-0026",
+   "detail": "When certain verses of Ibn al-Fāriḍ's Tāʾiyya were put to him he called them beyond the pale of belief. Melvin-Koushki cites no source for the discipleship itself."
   },
   {
    "text": "He also met and apprenticed himself to Sayyid Ḥusayn Akhlāṭī, the Kurdish occultist and rumoured mahdi. Melvin-Koushki cites no dated source for when the apprenticeship began.",
    "claim": "CL-0031"
   },
   {
-   "text": "Akhlāṭī was a physician by trade and the resident alchemist and wonderworker at Barqūq's court, known for jafr, raml, the science of letters and taksīr. He died in Cairo in 799/1397, so on the timeline's own 'c.' dates the overlap with the Cairo years is at most about four years; that arithmetic is ours, not Melvin-Koushki's.",
-   "claim": "CL-0034"
+   "text": "Akhlāṭī was a physician by trade and the resident alchemist and wonderworker at Barqūq's court. He died in Cairo in 799/1397.",
+   "claim": "CL-0034",
+   "detail": "He was known for jafr, raml, the science of letters and taksīr. On the timeline's own 'c.' dates the overlap with the Cairo years is at most about four years; that arithmetic is ours, not Melvin-Koushki's."
   },
   {
    "text": "Ibn Turka implies, in his second apology to Bāysunghur, that he was a regular participant in scholarly majlises at the Mamluk court.",
@@ -42,7 +44,7 @@
  "choices": [
   {
    "id": "A",
-   "label": "Study hadith under Bulqīnī and apprentice yourself to Akhlāṭī as well, and keep to the scholarly majlises at Barqūq's court.",
+   "label": "Divide your years between Bulqīnī's hadith and Akhlāṭī's circle, and sit in the majlises at Barqūq's court.",
    "strategy": "both_masters_and_the_majlis",
    "epistemic_label": "documented",
    "based_on": [
@@ -66,7 +68,7 @@
   },
   {
    "id": "B",
-   "label": "Give your years to Bulqīnī and the hadith, and keep clear of the Sayyid.",
+   "label": "Give your years to Bulqīnī and the hadith, and keep clear of Akhlāṭī and his circle.",
    "strategy": "bulqini_only",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -78,13 +80,17 @@
    "effects": {
     "court.barquq": 1,
     "score.biography": -1,
-    "life.master": "akhlati"
+    "life.master": "akhlati",
+    "press.livelihood": 1
    },
-   "feedback": "No source has him avoid Akhlāṭī; a later tazkira (Gāzurgāhī) puts him in the Sayyid's house, and he later calls Akhlāṭī his sole oral source for lettrism. This is the game's own what-if, and it returns you to the record: nothing later can be built on a scholar who never met Akhlāṭī."
+   "feedback": "No source has him avoid Akhlāṭī; a later tazkira (Gāzurgāhī) puts him in the Sayyid's house, and he later calls Akhlāṭī his sole oral source for lettrism. This is the game's own what-if, and it returns you to the record: nothing later can be built on a scholar who never met Akhlāṭī. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "Safer: your name is not tied to the Sayyid, and the hadith give you a scholar's living. You earn none of his regard, and doors that open only through him stay shut."
+   ]
   },
   {
    "id": "C",
-   "label": "Give yourself wholly to Akhlāṭī and let the hadith go.",
+   "label": "Give yourself wholly to Akhlāṭī and his circle, and let the hadith and Bulqīnī go.",
    "strategy": "akhlati_only",
    "epistemic_label": "counterfactual",
    "based_on": [
@@ -96,9 +102,13 @@
     "court.akhlati": 3,
     "press.exposure": 2,
     "score.biography": -1,
-    "life.master": "akhlati"
+    "life.master": "akhlati",
+    "press.livelihood": -1
    },
-   "feedback": "The sources have you study hadith under Bulqīnī as well as follow Akhlāṭī. This is the game's own what-if, and the game returns you to the record as Melvin-Koushki gives it, where you have both."
+   "feedback": "The sources have you study hadith under Bulqīnī as well as follow Akhlāṭī. This is the game's own what-if, and the game returns you to the record as Melvin-Koushki gives it, where you have both. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "Deeper standing with the Sayyid than the record gives you. Your name is tied to his circle, and without the hadith your living is thinner."
+   ]
   }
  ],
  "next": "SCN-0104",

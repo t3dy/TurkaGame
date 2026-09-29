@@ -5,7 +5,7 @@
  "act": "hostage",
  "title": "Samarkand, 1387: the family that was spared",
  "unrecorded": true,
- "dramatic_question": "Isfahan has fallen and most of its people have been killed, but your family has been spared and sent east to Temür's capital, where your brother is made a judge. You are in your teens. What do you do with the years in Samarkand?",
+ "dramatic_question": "You are in your teens. What do you do with the years in Samarkand?",
  "situation": {
   "when": "789/1387 and the years after",
   "where": "Isfahan, then Temür's capital, Samarkand",
@@ -28,7 +28,7 @@
   }
  ],
  "prose": [
-  "Temür takes Isfahan in 789/1387 and most of its people are killed. Your family is not among them. You are a teenager, and you are carried east to Samarkand, where Temür appoints your elder brother Ṣadr al-Dīn qadi. Melvin-Koushki explains the sparing by Temür's policy of collecting eminent scholars and artists; that is his reading of the policy, not a report about your family's case.",
+  "You are a teenager, carried east with your family. Melvin-Koushki explains the sparing by Temür's policy of collecting eminent scholars and artists; that is his reading of the policy, not a report about your family's case.",
   "Ṣadr al-Dīn is a scholar of hadith, Quran commentary, jurisprudence and the principles of religion, and he has been your teacher. By your own later statement to Shāhrukh, he taught you only the outward meaning of the Sharīʿa and thought deeper matters too dangerous to teach in public.",
   "No source says what you did with these years. Melvin-Koushki infers that your wide learning in the religious sciences, above all the Sunni schools of law, dates from them. The hagiographer Kirmānī has the future astronomer Qāżīzāda Rūmī study under your brother alongside you; that they did so in Samarkand is Melvin-Koushki's inference."
  ],
@@ -63,9 +63,13 @@
     "court.temur": 2,
     "press.livelihood": 1,
     "score.biography": -1,
-    "life.training": "fiqh"
+    "life.training": "fiqh",
+    "press.students": -1
    },
-   "feedback": "The only appointment the sources record at Samarkand is your brother's, and no source gives a teenage Ibn Turka a post at Temür's court. This is the game's own what-if; the game rejoins the record, and nothing later can be built on a career the sources do not contain."
+   "feedback": "The only appointment the sources record at Samarkand is your brother's, and no source gives a teenage Ibn Turka a post at Temür's court. This is the game's own what-if; the game rejoins the record, and nothing later can be built on a career the sources do not contain. What you gained and paid here stays in your ledger; the story then rejoins the record.",
+   "costs": [
+    "A post and an income of your own, and Temür's regard. You leave the schools, so no students gather around you."
+   ]
   },
   {
    "id": "C",

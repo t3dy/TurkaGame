@@ -16,8 +16,9 @@
  },
  "invariants": [
   {
-   "text": "Sharaf al-Dīn Yazdī checked the two earliest copies of the K. al-Mafāḥiṣ and was present at teaching sessions on the work, as colophons or audition certificates on those copies state (MS Majlis 10196 f. 119a; Beinecke MS Landberg 146 f. 179b); the timeline says the Mafāḥiṣ was revised and expanded in Yazd in his company (828/1425), which the manuscripts dispute (CL-0576).",
-   "claim": "CL-0045"
+   "text": "Sharaf al-Dīn Yazdī checked the two earliest copies of the K. al-Mafāḥiṣ and was present at teaching sessions on the work, as audition certificates on those copies state.",
+   "claim": "CL-0045",
+   "detail": "The certificates are on MS Majlis 10196 f. 119a and Beinecke MS Landberg 146 f. 179b. The timeline says the Mafāḥiṣ was revised and expanded in Yazd in his company (828/1425), which the manuscripts dispute."
   },
   {
    "text": "Ibn Turka names Sayyid Ḥusayn Akhlāṭī as his main oral source in the K. al-Mafāḥiṣ.",
@@ -36,7 +37,7 @@
  "choices": [
   {
    "id": "A",
-   "label": "Write that Sharaf al-Dīn Yazdī checked the copy and was present in the teaching sessions on the book, and that it was revised and expanded in his company (the manuscripts disagree on that, CL-0576).",
+   "label": "Name Sharaf al-Dīn Yazdī as the man who checked the copy and sat in the teaching sessions on the book.",
    "strategy": "certificate_names_yazdi",
    "epistemic_label": "documented",
    "based_on": [
@@ -52,7 +53,7 @@
     "score.textual": 1,
     "score.biography": 2
    },
-   "feedback": "This is what the certificates on the two earliest copies say, as Melvin-Koushki reports them from the manuscripts. It names one man, not the room. A date on such a note may also mark copying, not composition: a marginal correction to the autograph colophon on the Majlis Mafāḥiṣ says its date refers only to the copying, and the work itself is dated to 823/1420 with the day disputed."
+   "feedback": "This is what the certificates on the two earliest copies say, as Melvin-Koushki reports them from the manuscripts. It names one man, not the room. The timeline adds that the book was revised and expanded in his company, which the manuscripts dispute. A date on such a note may also mark copying, not composition: a marginal correction to the autograph colophon on the Majlis Mafāḥiṣ says its date refers only to the copying, and the work itself is dated to 823/1420 with the day disputed."
   },
   {
    "id": "B",
