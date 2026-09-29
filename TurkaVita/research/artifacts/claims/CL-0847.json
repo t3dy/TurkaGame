@@ -1,0 +1,21 @@
+{
+ "id": "CL-0847",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Qāżīzāda Rūmī, second director of the Samarkand Observatory, was Ibn Turka's friend from childhood and kept up a warm correspondence with him; Melvin-Koushki reads it as no coincidence that Ibn Turka completed the Mafāḥiṣ the same year, 1420, that construction of the observatory began, though he stops short of saying the Mafāḥiṣ was addressed to Ulugh Beg (contrast the Sharḥ al-Basmala, CL-0846).",
+ "epistemic_type": "causal_reconstruction",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1696"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki",
+   "where": "\"Timurid-Mughal Philosopher-Kings\" (2024) pdf p.16",
+   "shaping_risk": "medium",
+   "note": "The friendship/correspondence is MK's own established finding elsewhere (cited to his The Quest, pp.50-51, 146-147, not independently checked here); the synchronicity reading (\"no coincidence\") is MK's causal argument, not a documented statement by Ibn Turka."
+  }
+ ],
+ "domain": "biographical"
+}

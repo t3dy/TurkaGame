@@ -1,0 +1,15 @@
+{
+ "id": "EV-1696",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-7356048139",
+  "witness_page": 16,
+  "printed_page": "611",
+  "short_title": "Melvin-Koushki, \"Timurid-Mughal Philosopher-Kings\" (2024)"
+ },
+ "content": "MK on Qāżīzāda Rūmī, the observatory's second director: he \"was a friend to Ibn Turka from childhood, and the two carried on a warm correspondence\"; MK reads it as no coincidence that Ibn Turka completed the Mafāḥiṣ \"in 1420, the same year construction of the Samarkand Observatory was begun.\"",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "this session, opened pdf p.16 directly via scripts/search.py",
+ "refers_to_primary": "K. al-Mafāḥiṣ; Qāżīzāda Rūmī's tenure at the Samarkand Observatory"
+}

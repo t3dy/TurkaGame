@@ -1,0 +1,21 @@
+{
+ "id": "CL-0845",
+ "type": "claim",
+ "status": "draft",
+ "proposition": "Melvin-Koushki's 2019 article on the Munāẓara-yi Bazm u Razm states, more strongly than the dissertation's plain \"written for\" (CL-0237), that it was written at Bāysunghur's request -- grouping it as the fourth of four treatises MK reads as written at a named Timurid patron's request or instance (Suʾl al-Mulūk for Shāhrukh at Bāysunghur's instance; Sharḥ al-Basmala for Ulugh Beg; the Bazm u Razm itself, for and now also at the request of, Bāysunghur).",
+ "epistemic_type": "attested",
+ "confidence": "medium",
+ "supported_by": [
+  "EV-1694"
+ ],
+ "mediation": [
+  {
+   "layer": "modern_interpretation",
+   "who": "Melvin-Koushki",
+   "where": "\"Imperial Talismanic Love\" (2019) pdf p.22",
+   "shaping_risk": "medium",
+   "note": "MK's own synthesis, not a document quoted from the work itself; no citation is given on this page for the request beyond MK's own claim, so this is uncited testimony from the same scholar rather than independently corroborated -- rated no lower than CL-0237's cited claim."
+  }
+ ],
+ "domain": "textual"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "EV-1694",
+ "type": "evidence",
+ "status": "draft",
+ "citation": {
+  "source_id": "SRC-C76AC7CBBD",
+  "witness_page": 22,
+  "printed_page": "63",
+  "short_title": "Melvin-Koushki, \"Imperial Talismanic Love\" (2019)"
+ },
+ "content": "Listing the Munāẓara-yi Bazm u Razm as the fourth of four dedicated treatises (after the Suʾl al-Mulūk, the Sharḥ al-Basmala and, earlier in the article, the R. Ḥurūf), MK writes that it, \"like the Query of Kings, was written at the request of Bāysunghur\" -- stronger language than the dissertation's plain \"written for\" (CL-0237).",
+ "evidence_kind": "scholarly_argument",
+ "read_by": "this session, opened pdf p.22 directly via scripts/search.py",
+ "refers_to_primary": "Munāẓara-yi Bazm u Razm"
+}

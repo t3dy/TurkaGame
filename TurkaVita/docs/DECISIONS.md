@@ -131,3 +131,43 @@ taken at the plan's recommended default and **flagged as assumed**, so Ted can o
     it now, the volume opens with **X** and closes with **Y**," live under the instructions, and restored the
     "How to play" sentence describing it.
 
+## 2026-09-28 (continued): three sources fully ingested, zero claims extracted — three new claims added
+
+29. **A sibling, uncommitted project (`../QueryOfKings/`, another session's work, not this project's own) turned
+    up a real gap: three sources were fully ingested into `db/corpus.db` and readable, but had zero TurkaVita
+    claim/evidence artifacts citing them** — "How to Rule the World" (2018, SRC-E08F7EA3B8), "Imperial Talismanic
+    Love" (2019, SRC-C76AC7CBBD) and "Early Modern Islamicate Empire" (2016, SRC-90A1B459C9). QueryOfKings'
+    `research/COURTLY_MANUAL_BRIEF.md` had already digested these with page citations for its own purposes; rather
+    than trust it blindly, every fact taken from it was independently re-read against the actual pdf page via
+    `scripts/search.py --page` before anything was added here, per this project's own evidence rules.
+30. **Three new claims added** (CL-0845/0846/0847, supported by EV-1694/1695/1696), all citing pages this session
+    opened directly: (a) Melvin-Koushki's 2019 article states, more strongly than the dissertation's plain
+    "written for" (CL-0237), that the Munāẓara-yi Bazm u Razm was written **at Bāysunghur's request** — grouped
+    with three other treatises MK reads as written at a named patron's instance; (b) in the Sharḥ al-Basmala
+    itself — a freely offered dedication, not an apology — Ibn Turka addresses Ulugh Beg as an intended
+    philosopher-king patron with a line MK translates as "Long have I held out hope for just such a time – and
+    that time is yours!" (MS Majlis 10196 f. 332b); (c) Qāżīzāda Rūmī, the Samarkand Observatory's second
+    director, was Ibn Turka's childhood friend and correspondent, and MK reads no coincidence in the Mafāḥiṣ
+    being completed the same year (1420) construction of the observatory began — though MK does **not** say the
+    Mafāḥiṣ itself was dedicated to Ulugh Beg, and CL-0847 says so explicitly rather than overclaiming past
+    WRK-MAFAHIS's existing "no addressee stated."
+31. **Independently audited before being treated as shipped** (per `C:\Dev\CLAUDE.md`'s "anything that summarizes
+    or synthesizes sources gets an independent read" rule): a separate agent re-opened every cited page fresh.
+    Result: 3 of 6 clean outright; 2 fixed (EV-1696 and CL-0847 had silently borrowed a phrase — "through the
+    height of their careers" — from a *different* cited source's page than the one named, a violation of "only
+    write about a page you opened"; the phrase was dropped from both); 1 calibration fix (CL-0845's
+    `shaping_risk` was `"low"` for an *uncited* claim sitting next to CL-0237's `"medium"` for a *cited* one —
+    backwards; bumped to `"medium"`, and the proposition's wording tightened so "at Bāysunghur's instance"
+    (true of Suʾl al-Mulūk) isn't blurred with "dedicated to" (true of the Sharḥ al-Basmala, not the Suʾl).
+    Rebuilt clean: `build_artifacts.py` 0 errors, `lint_scenes.py` unchanged (36 scenes, 0/0), all 47 tests still
+    pass — this pass only touched the knowledge layer, no scene.
+32. **Left unbuilt, on purpose: no new scene.** These facts open real scene material — a second royal dedication
+    (Ulugh Beg, alongside Iskandar and Bāysunghur), a quotable freely-written line to a prince, and a corrected
+    "was this a commission?" answer for the Bazm u Razm — but writing a scene is a DESIGNER/BUILDER job with its
+    own independent-audit gate (`docs/DECISIONS.md`'s own precedent, AUDIT-A3), not something to fold into a
+    research-layer patch. Per this workspace's unresearched-vs-unbuilt discipline: these three claims move the
+    Ulugh Beg/Mafāḥiṣ material from *unresearched* to *researched-but-unbuilt*. `QueryOfKings/DESIGN.md` already
+    sketches one way to stage it (a Samarkand/Ulugh Beg scene, its own courtly-manual table); worth reading before
+    designing a TurkaVita scene from scratch, though QueryOfKings is a separate, sibling project and not this
+    one's code.
+
