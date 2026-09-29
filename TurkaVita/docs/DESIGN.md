@@ -5,7 +5,10 @@ This file says what was built, and where it differs from the plan.
 
 ## The shape
 
-Six acts, 34 scenes, one path that follows the record and a margin of choices around it.
+Six acts, 36 scenes, one path that follows the record and a margin of choices around it. Non-historical
+options in Acts I–IV carry real cost/benefit trades on the margin measures (favour, exposure, livelihood,
+students, works), not just a biography penalty — added 2026-09-28 so that departing from the record is a
+genuine trade-off rather than a worse-labelled version of the "right" answer (DECISIONS 23).
 
 | act | you are | scenes | fixed points (invariants) | the margin |
 |---|---|---|---|---|
@@ -29,6 +32,17 @@ Six acts, 34 scenes, one path that follows the record and a margin of choices ar
   work}`; an apology, creed tract or report cannot support a claim about what he *held*.
 - **`historical` and `unrecorded`**: after every choice the game shows what the sources say he did, or that they are silent.
 - **A How-to-play panel in full sentences** and a court board reachable from the top bar at all times.
+- **Save/resume** (localStorage): autosaves after every step; "Continue" on the title screen; erasing a run asks
+  for confirmation first (added 2026-09-28 after a cold playtest found the original "How to play" button silently
+  wiped a saved run).
+- **39 period plates** (paintings, manuscript pages, printed sources only — Ted's rule, 2026-09-28): an act-card
+  title plate per act, a scene plate where an honest one exists (24 of 36 scenes), each captioned "illustrative
+  plate, not a depiction of this event" with a two-line default caption and a "Provenance" toggle for the rest.
+- **A glossary**: the first use of an Arabic/Persian technical term on a screen gets a dotted underline with a
+  one-line gloss (`game/ui.js`'s `GLOSS` table).
+- **The ending's margin table**: the player's final state on the game abstractions (exposure, enemies, livelihood,
+  students, works) set beside where the record's own course would leave them, computed at export time by walking
+  the historical path (`scripts/narrative_lib.py:historical_walk`, embedded in `content.js` as `benchmark`).
 
 ## Scoring
 
@@ -44,9 +58,21 @@ Four bars: **biography** (the record), **works** (`textual`: composer moves, the
 - No game text numbers "the third trial": MK never lists the three in one place.
 - Act IV's *which work first* scene was cut to three options because the sources give an order only by date.
 
+## Verification passes (added 2026-09-28)
+
+Each independently audited by a different agent from the one that built it:
+- **Illustration pass** (39 plates) — attributions checked against source pages, `AUDIT-A4-plates.md`.
+- **Cold playtest** (an agent clicking through, never touching the engine handle) found 3 blockers and 9 major
+  issues; fixed; reverified by a second cold playtest, `QA-playtest.md` / `QA-playtest-2.md`.
+- **The agency/rulings/density rewrite** — diffed scene-by-scene against the prior commit and the claims it
+  cites; zero FIX-level findings, `AUDIT-A3-rewrite.md`.
+- **A real perf bug** (a full re-render on every ruling/pick/sort click re-fetched the current plate image over
+  the network — up to ~5.9s per scene under rapid clicking) found and fixed with a session blob-URL cache.
+
 ## Not built
 
-- A save file (a run is one sitting).
 - The *Ṭahawī Circle* mini-game and the lettrist-engine bridge. The plan put them behind the slice-3 gate on purpose.
 - A Persian edition of the apologies: the 1426 scene uses only the moves Melvin-Koushki reports.
-- Deployment. GitHub Pages under the TurkaGame repo is the plan; it has not been pushed.
+- A save file that is portable across browsers/devices (the localStorage save is per-browser only; "Copy/download
+  your record" exports a human-readable summary, not a resumable file).
+- A human playtest (two cold playtests so far were both agents).
