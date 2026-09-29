@@ -1,9 +1,12 @@
 # HANDOVER: current state
 
-**2026-09-28: illustrated, given save/resume, QA'd and re-audited; committed (`4d3f017`) and live at
+**2026-09-28 (continued): a second cold playtest's one live bug (a composer dependent-slot bug in
+SCN-0303) and two minor findings are fixed; committed (`69a3e49`) and live at
 https://t3dy.github.io/TurkaGame/TurkaVita/game/.** Read `CLAUDE.md`, then `docs/DESIGN.md` (what was built), then
-`docs/DECISIONS.md` (the full ledger, including decisions 16–24 from this pass), then `docs/TURKA_AUDIT.md` (where the
+`docs/DECISIONS.md` (the full ledger, decisions 26–28 are this pass), then `docs/TURKA_AUDIT.md` (where the
 older docs were wrong, and were corrected). `VERIFIED.md` has the detail of what was actually checked, pass by pass.
+Per the second playtest's own verdict (`research/notes/QA-playtest-2.md`), this closes every item it flagged
+except a live human playtest, which nothing here can substitute for.
 
 ## What exists
 
