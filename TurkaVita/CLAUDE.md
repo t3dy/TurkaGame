@@ -33,8 +33,9 @@ works themselves) can show what he *held*; an apology can show only what he *tol
 | `research/artifacts/<type>/*.json` | the knowledge layer. **The JSON files are the truth**; the DBs are indexes |
 | `research/notes/` | each researcher's page-cited notes and discrepancies |
 | `narrative/scenes/SCN-*.json` | scene specs |
-| `game/` | the playable prototype (`content.js` is generated) |
-| `tests/` | `python tests/run.py` — gates + unit tests + Python↔JS engine parity |
+| `game/` | the playable prototype (`content.js` and `plates.js` are generated); save/resume is localStorage-only |
+| `game/plate_selection.json`, `docs/PLATES.md` | the illustration set: 39 period plates (paintings/manuscripts/printed sources only), provenance in `../assets/manuscripts/registry.json` |
+| `tests/` | `python tests/run.py` — gates + unit tests (47) + Python↔JS engine parity + save/resume round-trip + plate provenance |
 
 ## Commands (from `C:\Dev\TurkaGame\TurkaVita`)
 
@@ -48,6 +49,7 @@ python scripts/build_artifacts.py --ancestry SCN-0004      # why does this scene
 python scripts/lint_scenes.py              # narrative linter
 python scripts/simulate.py [--random N]    # state simulation
 python scripts/export_game.py              # gated on build + lint -> game/content.js
+python scripts/build_plates.py             # game/plate_selection.json -> game/img/ + game/plates.js
 python tests/run.py
 ```
 
@@ -74,3 +76,11 @@ Serve: launch config `turkavita` (port 7560) in `C:\Dev\.claude\launch.json`.
 11. No contact with any European figure, ever. Dee/Cusa/Bruno are Melvin-Koushki's comparison, kept to the historian's layer.
 12. Scenes reveal the real world (`../games/visual-novel/WRITING_GUIDE.md`): every scene surfaces a named text, person,
     institution or practice, never generic occult atmosphere.
+13. **Illustrations are period paintings, manuscript pages or printed sources only** — no modern photographs, no object
+    photographs (astrolabes, globes), no renders, no AI images (Ted, 2026-09-28). Every plate is provenance-recorded
+    in `../assets/manuscripts/registry.json` via `../research/scripts/register_asset.py`, never hand-added, and
+    captioned with what it actually is ("illustrative plate, not a depiction of this event") — never claimed as a
+    depiction of the scene it sits beside. A scene with no honest plate gets none.
+14. **A full-scene re-render on every micro-interaction (a ruling, a composer pick, a sort move) is expensive once
+    plates are involved** — the local dev server sends no cache headers, so a naive re-render re-fetches the image
+    every time. `game/ui.js`'s `plateSrc` blob-URL cache exists to stop this; keep it if you touch `render()`.

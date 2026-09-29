@@ -15,7 +15,10 @@ choice carries a label (documented, reconstructed, contested, unknown, counterfa
 cd TurkaVita/game && python -m http.server 7560
 ```
 
-Open <http://localhost:7560/>. Read **How to play** first; it is written out in full. A run is a single sitting (no save file).
+Open <http://localhost:7560/>. Read **How to play** first; it is written out in full. It saves itself in your browser after
+every step, so you can close the tab and come back — press **Continue** on the title screen.
+
+Live: <https://t3dy.github.io/TurkaGame/TurkaVita/game/>
 
 ## What is in here
 
@@ -25,6 +28,7 @@ Open <http://localhost:7560/>. Read **How to play** first; it is written out in 
 | 3 writing scenes | *Suʾl al-Mulūk* for Bāysunghur, the first apology to Shāhrukh, the second apology from exile: each built from the moves the source reports |
 | a puzzle | order fifteen works as they stand in MS Majlis 10196 |
 | a dispute | six positions on who he was, 146 readings of 118 pieces of evidence, a lens for each scholar, and the **duress rule** |
+| 39 period plates | paintings, manuscript pages and printed sources only, each captioned with what it is and is not |
 | ~1,000 page-cited evidence artifacts | `research/artifacts/`; the build checks each citation's printed page and every quotation against the book |
 
 ## Read next
